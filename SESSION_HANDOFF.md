@@ -1,35 +1,35 @@
 # Session Handoff
 
-Last Updated: 2026-04-21 (post-evidence closeout)
+Last Updated: 2026-04-21 (FE-002 complete)
 
 ## Current Context
 
-- Active ticket: FE-002 (`SCR-PUB-005`, `SCR-PUB-010`)
+- Active ticket: BE-001
 - Active repo(s): signmons-governance, frontend-marketing
 
 ## Completed This Session
 
-- Synced frontend with governance workflow and executed FE-001 scope only
-- Implemented FE-001 homepage sections:
-  - Hero with `Try Demo` and `Join Early Access`
-  - Value pillars section (3 required cards)
-  - 5-step how-it-works section
-  - Trust/safety section aligned to grounded claims
-  - CTA close section repeating both CTAs
-- Ran required frontend gates:
-  - `npm run -s build` (pass)
-  - `npm run -s lint` (pass)
-  - `npm test -- --runInBand` (fails: no `test` script in repo)
-- Captured FE-001 evidence assets:
-  - `/Users/debynyhanbanks/Web Projects/signmons-marketing-web-feat-marketing-site/evidence/FE-001/home-mobile-full.png`
-  - `/Users/debynyhanbanks/Web Projects/signmons-marketing-web-feat-marketing-site/evidence/FE-001/home-desktop-full.png`
-  - `/Users/debynyhanbanks/Web Projects/signmons-marketing-web-feat-marketing-site/evidence/FE-001/home-cta-closeup.png`
+- Completed FE-002 across both screens:
+  - `SCR-PUB-005` (`/trust`): trust/safety/compliance page with control stack, compliance notes, FAQ, CTA continuity.
+  - `SCR-PUB-010` (`/legal`): privacy, terms, and SMS program terms page with HELP/STOP and consent language.
+- Added frontend test harness so ticket gate command is now executable:
+  - `vitest` + `jsdom` + Testing Library setup
+  - `npm test -- --runInBand` wrapper script (`scripts/test.mjs`) to maintain command contract
+  - Route smoke test for `/legal`
+- FE-002 code commits on `codex/fe-002-trust`:
+  - `2c903e6` (`feat(marketing): implement FE-002 trust safety compliance screen`)
+  - `7b873a5` (`feat(marketing): complete FE-002 legal screen and test gate`)
+- FE-002 gate evidence:
+  - `npm run -s build` pass
+  - `npm run -s lint` pass
+  - `npm test -- --runInBand` pass
+  - Evidence path: `/Users/debynyhanbanks/Web Projects/signmons-marketing-web-feat-marketing-site/evidence/FE-002/`
 
 ## Next Actions
 
-1. Create/confirm `TICKETS/FE-002.md` and start FE-002 only
-2. Add frontend test script/harness so required test gate is executable
-3. Keep FE-002 as one focused commit with full evidence capture
+1. Start BE-001 scope in backend repo per execution board
+2. Keep FE branch available for FE-002 PR/merge
+3. Maintain test script contract (`npm test -- --runInBand`) for future frontend tickets
 
 ## Resume Commands
 
