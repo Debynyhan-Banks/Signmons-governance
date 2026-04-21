@@ -38,6 +38,7 @@ Signmons is a multi-tenant call-intake and booking SaaS for home-service busines
 - Required gates pass:
   - Backend: `npm run -s build`, `npm test -- --runInBand`, `npm run -s arch:check`
   - Frontend: `npm run -s build`, `npm run -s lint`, `npm test -- --runInBand` (or approved equivalent)
+- `QUALITY_GATES.md` checklist satisfied (architecture/security/contracts)
 - Evidence attached (logs/tests/screenshots/API proof)
 - `SESSION_HANDOFF.md` updated
 - One focused commit

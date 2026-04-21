@@ -21,7 +21,7 @@ If documents conflict, precedence is:
 1. `SAAS_SCOPE_DOD.md`
 2. `EXECUTION_BOARD.md`
 3. plan docs (`MVP_BACKLOG.md`, `REFACTOR*.md`)
-4. implementation docs (`DESIGN_SYSTEM.md`, `DATA_CONTRACTS.md`, `SECURITY_BASELINE.md`)
+4. implementation docs (`DESIGN_SYSTEM.md`, `DATA_CONTRACTS.md`, `SECURITY_BASELINE.md`, `QUALITY_GATES.md`)
 
 ## Governance Documents
 
@@ -33,6 +33,7 @@ If documents conflict, precedence is:
 - `ENGINEERING_STANDARDS.md` - SOLID, modularity, SoC, testing conventions
 - `DATA_CONTRACTS.md` - API/event contract rules and compatibility policy
 - `SECURITY_BASELINE.md` - OWASP-aligned baseline controls
+- `QUALITY_GATES.md` - mandatory architecture, security, contract, and test gates
 - `AI_WORKFLOW_RULES.md` - mandatory operating rules for AI coding sessions
 - `SESSION_HANDOFF.md` - current session state and next actions
 

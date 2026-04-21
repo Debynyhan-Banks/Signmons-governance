@@ -9,6 +9,7 @@ Purpose: single active queue for execution.
 3. Do not pull from `Later` directly to `Now`.
 4. Every completed ticket includes objective evidence.
 5. Update this board before changing scope.
+6. Ticket completion must satisfy `QUALITY_GATES.md`.
 
 ## Required Completion Gates
 

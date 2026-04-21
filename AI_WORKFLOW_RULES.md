@@ -8,6 +8,7 @@ Before coding, the AI agent must read:
 - `EXECUTION_BOARD.md`
 - `MVP_BACKLOG.md`
 - `SCREEN_INVENTORY.md`
+- `QUALITY_GATES.md`
 - `SESSION_HANDOFF.md`
 
 ## Execution Rules
@@ -15,6 +16,7 @@ Before coding, the AI agent must read:
 - Execute only the current `Now` ticket
 - No scope expansion
 - One focused commit per ticket
+- Enforce `QUALITY_GATES.md` before marking ticket complete
 - Report file changes and rationale
 - Run required gates for touched repo
 - Update `SESSION_HANDOFF.md` before ending session
