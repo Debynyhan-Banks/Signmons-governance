@@ -19,13 +19,16 @@ Purpose: single active queue for execution.
 
 ## Now
 
-- [ ] GOV-001 Bootstrap governance docs and cross-repo pointers
+- [ ] FE-001 Marketing Home (`SCR-PUB-001`)
+  - Source: `MVP_BACKLOG.md`
+  - Ticket spec: `TICKETS/FE-001.md`
+  - Evidence required: acceptance checklist complete + frontend gate output + screenshot proof
 
 ## Next
 
-- [ ] FE-001 Marketing Home (`SCR-PUB-001`)
 - [ ] FE-002 Public trust/compliance pages (`SCR-PUB-005`, `SCR-PUB-010`)
 - [ ] BE-001 Enforce keyword opt-in/out persistence and telemetry
+- [ ] FE-003 AI CSR page (`SCR-PUB-003`)
 
 ## Later
 
@@ -37,4 +40,5 @@ Purpose: single active queue for execution.
 
 ## Done
 
-- None yet
+- [x] GOV-001 Bootstrap governance docs
+- [x] GOV-002 Cross-repo docs pointers (`DOCS_INDEX.md`)

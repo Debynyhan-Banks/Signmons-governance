@@ -4,19 +4,21 @@ Last Updated: 2026-04-20
 
 ## Current Context
 
-- Active ticket: GOV-001
+- Active ticket: FE-001
 - Active repo(s): signmons-governance, backend, frontend-marketing
 
 ## Completed This Session
 
 - Bootstrapped canonical governance documents
 - Added cross-repo `DOCS_INDEX.md` pointers
+- Added explicit FE-001 execution spec in `TICKETS/FE-001.md`
+- Moved execution board `Now` to FE-001
 
 ## Next Actions
 
-1. Commit and push governance doc baseline
-2. Open FE-001 and map to `SCR-PUB-001`
-3. Start implementation with one focused ticket
+1. Commit and push governance updates
+2. Start FE-001 in frontend repo on focused branch
+3. Implement home page and capture evidence
 
 ## Resume Commands
 

@@ -8,7 +8,7 @@
 
 ## Epic E2 - Public Marketing Funnel
 
-- FE-001: Home page (`SCR-PUB-001`)
+- FE-001: Home page (`SCR-PUB-001`) - ticket spec: `TICKETS/FE-001.md`
 - FE-002: How it works (`SCR-PUB-002`)
 - FE-003: AI CSR page (`SCR-PUB-003`)
 - FE-004: Trust/Safety (`SCR-PUB-005`)
