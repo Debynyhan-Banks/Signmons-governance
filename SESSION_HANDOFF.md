@@ -1,10 +1,10 @@
 # Session Handoff
 
-Last Updated: 2026-04-21
+Last Updated: 2026-04-21 (post-evidence closeout)
 
 ## Current Context
 
-- Active ticket: FE-001 (`SCR-PUB-001`)
+- Active ticket: FE-002 (`SCR-PUB-005`, `SCR-PUB-010`)
 - Active repo(s): signmons-governance, frontend-marketing
 
 ## Completed This Session
@@ -20,12 +20,16 @@ Last Updated: 2026-04-21
   - `npm run -s build` (pass)
   - `npm run -s lint` (pass)
   - `npm test -- --runInBand` (fails: no `test` script in repo)
+- Captured FE-001 evidence assets:
+  - `/Users/debynyhanbanks/Web Projects/signmons-marketing-web-feat-marketing-site/evidence/FE-001/home-mobile-full.png`
+  - `/Users/debynyhanbanks/Web Projects/signmons-marketing-web-feat-marketing-site/evidence/FE-001/home-desktop-full.png`
+  - `/Users/debynyhanbanks/Web Projects/signmons-marketing-web-feat-marketing-site/evidence/FE-001/home-cta-closeup.png`
 
 ## Next Actions
 
-1. Commit and push FE-001 frontend changes as one focused ticket commit
-2. Capture screenshot evidence (mobile, desktop, CTA close-up) for FE-001 artifact set
-3. Add/approve frontend test harness strategy for required test gate compliance
+1. Create/confirm `TICKETS/FE-002.md` and start FE-002 only
+2. Add frontend test script/harness so required test gate is executable
+3. Keep FE-002 as one focused commit with full evidence capture
 
 ## Resume Commands
 
