@@ -8,28 +8,34 @@ If docs conflict, resolve in this exact order:
 
 1. `SYSTEM_OF_RECORD.md`
 2. `SAAS_SCOPE_DOD.md`
-3. `EXECUTION_BOARD.md`
-4. `SCREEN_INVENTORY.md`
-5. `MVP_BACKLOG.md`
-6. `DATA_CONTRACTS.md`
-7. `QUALITY_GATES.md`
-8. `AI_WORKFLOW_RULES.md`
-9. `SESSION_HANDOFF.md`
+3. `MARKETING_RELEASE_DOD.md`
+4. `EXECUTION_BOARD.md`
+5. `GLOBAL_EXECUTION_POINTER.md`
+6. `SCREEN_INVENTORY.md`
+7. `SCREEN_ROUTE_API_MATRIX.md`
+8. `LINK_CTA_MAP.md`
+9. `MVP_BACKLOG.md`
+10. `DATA_CONTRACTS.md`
+11. `QUALITY_GATES.md`
+12. `AI_WORKFLOW_RULES.md`
+13. `SESSION_HANDOFF.md`
 
 All other docs are reference-only unless explicitly listed above.
 
 ## Canonical Artifacts
 
 - Program charter and DoD: `SAAS_SCOPE_DOD.md`
+- Marketing release DoD: `MARKETING_RELEASE_DOD.md`
 - Active execution queue: `EXECUTION_BOARD.md`
 - Global cross-repo state: `GLOBAL_EXECUTION_POINTER.md`
 - Screen IDs: `SCREEN_INVENTORY.md`
-- Delivery roadmap: `MVP_BACKLOG.md`
 - Screen/route/API mapping: `SCREEN_ROUTE_API_MATRIX.md`
 - CTA/link behavior map: `LINK_CTA_MAP.md`
+- Delivery roadmap: `MVP_BACKLOG.md`
 - API/event contract policy: `DATA_CONTRACTS.md`
 - Required quality gates: `QUALITY_GATES.md`
 - Agent workflow contract: `AI_WORKFLOW_RULES.md`
+- Universal chatbot starter: `UNIVERSAL_AGENT_EXECUTION_GUIDE.md`
 - Session continuity: `SESSION_HANDOFF.md`
 
 ## Non-Contradiction Rules
@@ -38,6 +44,7 @@ All other docs are reference-only unless explicitly listed above.
 - Every public CTA route must exist in `SCREEN_ROUTE_API_MATRIX.md` and `LINK_CTA_MAP.md`.
 - `Now` ticket in `EXECUTION_BOARD.md` must be unique (WIP=1).
 - Superseded docs/tickets must be moved to `ARCHIVE/` in the same PR.
+- Do not run APP ticket implementation while marketing-first phase is active unless explicitly moved in board/pointer.
 
 ## Strict Sequencing Rule
 
@@ -51,5 +58,5 @@ PRs must pass docs consistency checks:
 - screen IDs exist and are unique,
 - `Now` section contains exactly one unchecked ticket,
 - ticket screen references resolve,
-- CTA map routes resolve against route matrix,
+- CTA map routes/endpoints resolve against route matrix,
 - superseded tickets are not referenced in `Now`/`Next`.

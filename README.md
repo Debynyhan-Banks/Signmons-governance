@@ -16,17 +16,22 @@ Read and enforce in this order:
 
 1. `SYSTEM_OF_RECORD.md`
 2. `SAAS_SCOPE_DOD.md`
-3. `EXECUTION_BOARD.md`
-4. `SCREEN_INVENTORY.md`
-5. `MVP_BACKLOG.md`
-6. `DATA_CONTRACTS.md`
-7. `QUALITY_GATES.md`
-8. `AI_WORKFLOW_RULES.md`
-9. `SESSION_HANDOFF.md`
+3. `MARKETING_RELEASE_DOD.md`
+4. `EXECUTION_BOARD.md`
+5. `GLOBAL_EXECUTION_POINTER.md`
+6. `SCREEN_INVENTORY.md`
+7. `SCREEN_ROUTE_API_MATRIX.md`
+8. `LINK_CTA_MAP.md`
+9. `MVP_BACKLOG.md`
+10. `DATA_CONTRACTS.md`
+11. `QUALITY_GATES.md`
+12. `AI_WORKFLOW_RULES.md`
+13. `SESSION_HANDOFF.md`
 
 ## Governance Documents
 
 - `SYSTEM_OF_RECORD.md` - precedence, non-contradiction rules, CI policy
+- `MARKETING_RELEASE_DOD.md` - high-ticket marketing completion criteria
 - `GLOBAL_EXECUTION_POINTER.md` - cross-repo single pointer to active ticket
 - `EXECUTION_BOARD.md` - governance board and sequencing
 - `SCREEN_INVENTORY.md` - canonical screen IDs
@@ -35,6 +40,7 @@ Read and enforce in this order:
 - `MVP_BACKLOG.md` - ticket roadmap
 - `TICKET_TEMPLATE.md` - required ticket spec format
 - `WORKFLOW_RUNBOOK.md` - repeatable session protocol for bots/humans
+- `UNIVERSAL_AGENT_EXECUTION_GUIDE.md` - copy-paste prompt for any chatbot agent
 - `DESIGN_SYSTEM.md`, `ENGINEERING_STANDARDS.md`, `DATA_CONTRACTS.md`, `SECURITY_BASELINE.md`, `QUALITY_GATES.md` - implementation standards
 - `AI_WORKFLOW_RULES.md` - mandatory AI operating rules
 - `SESSION_HANDOFF.md` - current session state and next handoff

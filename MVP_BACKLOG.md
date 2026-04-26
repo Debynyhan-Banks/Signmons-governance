@@ -5,17 +5,20 @@
 - GOV-001: Establish governance repo and canonical docs
 - GOV-002: Wire `DOCS_INDEX.md` into backend and frontend repos
 - GOV-003: Adopt session handoff discipline across all contributors
+- GOV-005: Enforce docs consistency CI + global pointer synchronization
 
-## Epic E2 - Public Marketing Funnel
+## Epic E2 - Public Marketing Funnel (High-Ticket First)
 
-- FE-001: Home page (`SCR-PUB-001`) - ticket spec: `TICKETS/FE-001.md`
-- FE-002: How it works (`SCR-PUB-002`)
-- FE-003: AI CSR page (`SCR-PUB-003`)
-- FE-004: Trust/Safety (`SCR-PUB-005`)
-- FE-005: Demo request and contact (`SCR-PUB-007`, `SCR-PUB-009`)
-- FE-006: Privacy + Terms + SMS Terms (`SCR-PUB-010`)
+- FE-001: Home page (`SCR-PUB-001`) - shipped
+- FE-002: Trust + legal baseline (`SCR-PUB-005`, `SCR-PUB-010`) - shipped
+- FE-003: Reusable component refactor (`SCR-PUB-001`, `SCR-PUB-007`, `SCR-PUB-009`) - shipped
+- FE-004: Pricing reposition (`SCR-PUB-006`) - shipped
+- FE-005: Pricing consistency analyzer + CI (`SCR-PUB-006`) - shipped
+- FE-006: Privacy + Terms + SMS terms route/content parity (`SCR-PUB-010`)
+- FE-007: Contact capture (email-minimum) with backend persistence (`SCR-PUB-009`)
+- FE-008: Live demo flow + CTA route parity hardening (`SCR-PUB-001`, `SCR-PUB-006`, `SCR-PUB-007`, `SCR-PUB-009`)
 
-## Epic E3 - Tenant Product Experience
+## Epic E3 - Tenant Product Experience (Starts After Marketing DoD)
 
 - APP-001: Tenant dashboard foundation (`SCR-APP-002`)
 - APP-002: Conversations list + detail (`SCR-APP-003`, `SCR-APP-004`)
@@ -35,10 +38,11 @@
 
 ## Epic E4 - Security and Reliability
 
-- BE-001: OWASP baseline enforcement audit
-- BE-002: Signature and auth fail-closed checks
-- BE-003: Data contract validation and backward compatibility tests
-- BE-004: Observability and audit logs for critical flows
+- BE-001: Keyword opt-in/out persistence and telemetry enforcement
+- BE-002: Marketing lead-capture API persistence contract
+- BE-003: Signature and auth fail-closed checks
+- BE-004: Data contract validation and backward compatibility tests
+- BE-005: Observability and audit logs for critical flows
 
 ## Epic E5 - Launch Readiness
 

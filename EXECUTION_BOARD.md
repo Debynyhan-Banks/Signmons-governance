@@ -10,23 +10,25 @@ Purpose: single active queue for execution.
 4. Every completed ticket includes objective evidence.
 5. Update this board before changing scope.
 6. Ticket completion must satisfy `QUALITY_GATES.md`.
+7. Marketing-first phase remains active until `MARKETING_RELEASE_DOD.md` exit criteria are met.
 
 ## Required Completion Gates
 
 - Backend tickets: `npm run -s build` + `npm test -- --runInBand` + `npm run -s arch:check`
-- Frontend tickets: `npm run -s build` + `npm run -s lint` + test command for touched surface
+- Frontend tickets: `npm run -s build` + `npm run -s lint` + `npm test -- --runInBand`
+- Governance tickets: `node scripts/docs-consistency-check.mjs`
 
 ---
 
 ## Now
 
-- [ ] APP-006 Intake review and booking readiness (`SCR-APP-012`)
+- [ ] FE-007 Contact capture email-minimum with backend persistence (`SCR-PUB-009`)
 
 ## Next
 
-- [ ] APP-007 Urgency classification and escalation review (`SCR-APP-013`)
-- [ ] APP-008 Dispatch board and technician assignment (`SCR-APP-014`, `SCR-APP-017`)
-- [ ] BE-001 Enforce keyword opt-in/out persistence and telemetry
+- [ ] FE-008 Live demo flow + CTA route parity hardening (`SCR-PUB-001`, `SCR-PUB-006`, `SCR-PUB-007`, `SCR-PUB-009`)
+- [ ] FE-006 Privacy + Terms + SMS terms route/content parity (`SCR-PUB-010`)
+- [ ] APP-006 Intake review and booking readiness (`SCR-APP-012`) - unlocks after marketing DoD exit criteria
 
 ## Later
 
@@ -42,38 +44,8 @@ Purpose: single active queue for execution.
 - [x] GOV-002 Cross-repo docs pointers (`DOCS_INDEX.md`)
 - [x] GOV-004 PWA dispatch governance re-baseline
   - Ticket specs: `TICKETS/GOV-004.md`, `TICKETS/APP-006.md` ... `TICKETS/APP-015.md`
-  - Code commits:
-    - `9586785` (`docs(governance): implement GOV-004 pwa dispatch baseline`)
-    - `aedb4c9` (`docs(governance): expand high-ticket dispatch screen and ticket map`)
-    - `fdde828` (`docs(governance): normalize high-ticket roadmap to APP-006 through APP-015`)
-  - Evidence:
-    - `SCREEN_INVENTORY.md` expanded through `SCR-APP-024`, `SCR-TECH-005`, `SCR-CUST-005`, `SCR-ADM-007`
-    - `MVP_BACKLOG.md` normalized to `APP-006` ... `APP-015`
 - [x] FE-001 Marketing Home (`SCR-PUB-001`)
-  - Code commit: `a0063be` (`feat(marketing): implement FE-001 home screen`)
-  - Gate evidence:
-    - `npm run -s build` pass (`/Users/debynyhanbanks/Web Projects/signmons-marketing-web-feat-marketing-site/evidence/FE-001/build.txt`)
-    - `npm run -s lint` pass (`/Users/debynyhanbanks/Web Projects/signmons-marketing-web-feat-marketing-site/evidence/FE-001/lint.txt`)
-    - `npm test -- --runInBand` unavailable (`Missing script: "test"`) (`/Users/debynyhanbanks/Web Projects/signmons-marketing-web-feat-marketing-site/evidence/FE-001/test.txt`)
-  - Screenshot evidence:
-    - Mobile full page: `/Users/debynyhanbanks/Web Projects/signmons-marketing-web-feat-marketing-site/evidence/FE-001/home-mobile-full.png`
-    - Desktop full page: `/Users/debynyhanbanks/Web Projects/signmons-marketing-web-feat-marketing-site/evidence/FE-001/home-desktop-full.png`
-    - CTA close-up: `/Users/debynyhanbanks/Web Projects/signmons-marketing-web-feat-marketing-site/evidence/FE-001/home-cta-closeup.png`
 - [x] FE-002 Public trust/compliance pages (`SCR-PUB-005`, `SCR-PUB-010`)
-  - Ticket spec: `TICKETS/FE-002.md`
-  - Code commits:
-    - `2c903e6` (`feat(marketing): implement FE-002 trust safety compliance screen`)
-    - `7b873a5` (`feat(marketing): complete FE-002 legal screen and test gate`)
-  - Gate evidence:
-    - `npm run -s build` pass (`/Users/debynyhanbanks/Web Projects/signmons-marketing-web-feat-marketing-site/evidence/FE-002/build.txt`)
-    - `npm run -s lint` pass (`/Users/debynyhanbanks/Web Projects/signmons-marketing-web-feat-marketing-site/evidence/FE-002/lint.txt`)
-    - `npm test -- --runInBand` pass (`/Users/debynyhanbanks/Web Projects/signmons-marketing-web-feat-marketing-site/evidence/FE-002/test.txt`)
-  - Screenshot evidence:
-    - Trust desktop/mobile/close-up:
-      - `/Users/debynyhanbanks/Web Projects/signmons-marketing-web-feat-marketing-site/evidence/FE-002/trust-desktop-full.png`
-      - `/Users/debynyhanbanks/Web Projects/signmons-marketing-web-feat-marketing-site/evidence/FE-002/trust-mobile-full.png`
-      - `/Users/debynyhanbanks/Web Projects/signmons-marketing-web-feat-marketing-site/evidence/FE-002/trust-controls-closeup.png`
-    - Legal desktop/mobile/close-up:
-      - `/Users/debynyhanbanks/Web Projects/signmons-marketing-web-feat-marketing-site/evidence/FE-002/legal-desktop-full.png`
-      - `/Users/debynyhanbanks/Web Projects/signmons-marketing-web-feat-marketing-site/evidence/FE-002/legal-mobile-full.png`
-      - `/Users/debynyhanbanks/Web Projects/signmons-marketing-web-feat-marketing-site/evidence/FE-002/legal-sections-closeup.png`
+- [x] FE-003 Reusable component refactor (`SCR-PUB-001`, `SCR-PUB-007`, `SCR-PUB-009`)
+- [x] FE-004 Pricing reposition (`SCR-PUB-006`)
+- [x] FE-005 Pricing consistency analyzer and CI enforcement (`SCR-PUB-006`)

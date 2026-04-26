@@ -6,9 +6,12 @@ Before coding, the AI agent must read:
 
 - `SYSTEM_OF_RECORD.md`
 - `SAAS_SCOPE_DOD.md`
+- `MARKETING_RELEASE_DOD.md`
 - `EXECUTION_BOARD.md`
 - `GLOBAL_EXECUTION_POINTER.md`
 - `SCREEN_INVENTORY.md`
+- `SCREEN_ROUTE_API_MATRIX.md`
+- `LINK_CTA_MAP.md`
 - `MVP_BACKLOG.md`
 - `QUALITY_GATES.md`
 - `SESSION_HANDOFF.md`
@@ -23,6 +26,11 @@ Before coding, the AI agent must read:
 - Archive superseded docs/tickets in the same PR.
 - Update `SESSION_HANDOFF.md` before ending session.
 - Report changed files, rationale, gates, and risks.
+
+## Marketing-First Phase Rule
+
+- While `MARKETING_RELEASE_DOD.md` is active, APP ticket implementation is blocked unless `EXECUTION_BOARD.md` and `GLOBAL_EXECUTION_POINTER.md` move `Now` to APP explicitly.
+- FE-007 must complete before FE-008; FE-008 must complete before APP-006 unlock.
 
 ## Cross-Repo Alignment Rules
 
