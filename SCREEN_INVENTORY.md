@@ -20,7 +20,9 @@
 - `SCR-APP-003` Conversations List
 - `SCR-APP-004` Conversation Detail
 - `SCR-APP-005` Jobs / Dispatch Queue
-- `SCR-APP-006` Payment Links, Deposits, and Booking Gate
+- `SCR-APP-006A` Payment Links / Deposit Requests
+- `SCR-APP-006B` Payment Status and Webhook Events
+- `SCR-APP-006C` Booking Policy Gate
 - `SCR-APP-007` Tenant Settings (fees, policy, messaging)
 - `SCR-APP-008` Integrations and Channel Settings
 - `SCR-APP-009` Analytics / Reporting

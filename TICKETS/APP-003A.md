@@ -1,5 +1,8 @@
 # APP-003A - Intake to Dispatch Inbox (Manual-First)
 
+> Status: Superseded by `APP-006`, `APP-007`, and `APP-008` in the normalized high-ticket roadmap.  
+> Keep for historical trace only; do not schedule as `Now`/`Next`.
+
 ## Ticket Summary
 
 - Ticket ID: `APP-003A`

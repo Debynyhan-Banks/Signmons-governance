@@ -24,7 +24,9 @@ Purpose: single active queue for execution.
 
 ## Next
 
-- [ ] APP-003A Intake to dispatch inbox (manual-first) (`SCR-APP-012`, `SCR-APP-013`, `SCR-APP-014`)
+- [ ] APP-006 Intake review and booking readiness (`SCR-APP-012`)
+- [ ] APP-007 Urgency classification and escalation review (`SCR-APP-013`)
+- [ ] APP-008 Dispatch board and technician assignment (`SCR-APP-014`, `SCR-APP-017`)
 - [ ] BE-001 Enforce keyword opt-in/out persistence and telemetry
 
 ## Later
