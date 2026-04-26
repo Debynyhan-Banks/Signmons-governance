@@ -16,16 +16,17 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 
 ## Current Pointer (as of 2026-04-26)
 
-- Program `Now`: `APP-006` (`SCR-APP-012`)
+- Program `Now`: `FE-007` (`SCR-PUB-009`)
+- Program phase: marketing-first high-ticket completion
 - Sequencing: strict (`Now` -> `Done` before starting `Next`)
 
 ### Repo Status
 
 | Repo | Active Ticket | State |
 | --- | --- | --- |
-| Governance | `APP-006` pointer and standards enforcement | aligned |
-| Backend | `APP-006` implementation owner | active next execution repo |
-| Frontend marketing | no active implementation ticket (blocked by strict sequencing) | standby |
+| Governance | `FE-007` standards and alignment owner | active |
+| Frontend marketing | `FE-007` implementation owner | active |
+| Backend | support endpoint/provider alignment for FE-007 | supporting |
 
 ## Synchronization Rules
 

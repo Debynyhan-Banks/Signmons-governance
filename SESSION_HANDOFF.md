@@ -4,48 +4,34 @@ Last Updated: 2026-04-26
 
 ## Current Program Pointer
 
-- Global `Now`: `APP-006` (`SCR-APP-012`)
-- Canonical pointer file: `GLOBAL_EXECUTION_POINTER.md`
-- Sequencing: strict (`Now` -> `Done` before starting `Next`)
-
-## Repos And Board State
-
-- `signmons-governance`
-  - Board `Now`: `APP-006`
-  - Added governance canon + docs consistency CI gate
-- `signmons-calldesk-backend`
-  - Board synced to `APP-006` in `Now`
-- `signmons-marketing-web-feat-marketing-site`
-  - Added per-repo board
-  - Status: standby until `APP-006` completes
+- Global `Now`: `FE-007` (`SCR-PUB-009`)
+- Program phase: marketing-first high-ticket completion
+- Sequencing: strict (`Now` -> `Done` before `Next`)
 
 ## Completed In This Session
 
-- Added canonical governance docs:
+- Added unambiguous marketing completion contract:
+  - `MARKETING_RELEASE_DOD.md`
+- Added universal chatbot execution starter:
+  - `UNIVERSAL_AGENT_EXECUTION_GUIDE.md`
+- Switched governance queue to marketing-first sequencing:
+  - `EXECUTION_BOARD.md` now set to `FE-007`
+  - `GLOBAL_EXECUTION_POINTER.md` now set to `FE-007`
+- Normalized backlog and ticket coverage:
+  - updated `MVP_BACKLOG.md`
+  - added missing FE ticket specs: `TICKETS/FE-004.md` ... `TICKETS/FE-008.md`
+- Updated source-of-truth docs to include marketing DoD and chatbot guide:
   - `SYSTEM_OF_RECORD.md`
-  - `GLOBAL_EXECUTION_POINTER.md`
-  - `SCREEN_ROUTE_API_MATRIX.md`
-  - `LINK_CTA_MAP.md`
-  - `WORKFLOW_RUNBOOK.md`
-  - `TICKET_TEMPLATE.md`
-- Added CI enforcement:
-  - `.github/workflows/docs-consistency.yml`
-  - `scripts/docs-consistency-check.mjs`
-- Archived superseded ticket:
-  - moved `TICKETS/APP-003A.md` -> `ARCHIVE/TICKETS/APP-003A.md`
-- Added missing active ticket spec:
-  - `TICKETS/BE-001.md`
-- Updated governance standards docs:
   - `README.md`
   - `AI_WORKFLOW_RULES.md`
-  - `QUALITY_GATES.md`
-- Validation:
-  - `node scripts/docs-consistency-check.mjs` passed
+  - `WORKFLOW_RUNBOOK.md`
+- Updated status summary:
+  - `DELIVERY_COMPLETION_MATRIX.md`
 
 ## Next Actions (Strict Order)
 
-1. Commit/push governance changes and open PR.
-2. Commit/push backend board sync change.
-3. Commit/push marketing board sync change.
-4. Execute `APP-006` only.
-5. After `APP-006` is done, unlock FE tickets for live demo flow and email-min capture (`FE-006`, `FE-007`).
+1. Merge governance PR with marketing-first docs updates.
+2. Sync per-repo boards to `FE-007` pointer (marketing active, backend supporting).
+3. Execute `FE-007` only.
+4. After FE-007 done, execute `FE-008`.
+5. After FE-008 and FE-006 done with evidence, move global `Now` to `APP-006`.
