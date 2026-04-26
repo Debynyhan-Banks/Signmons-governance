@@ -20,11 +20,10 @@ Purpose: single active queue for execution.
 
 ## Now
 
-- [ ] GOV-004 PWA dispatch governance re-baseline (screen map expansion for tenant + technician + customer + admin dispatch operations)
+- [ ] APP-006 Intake review and booking readiness (`SCR-APP-012`)
 
 ## Next
 
-- [ ] APP-006 Intake review and booking readiness (`SCR-APP-012`)
 - [ ] APP-007 Urgency classification and escalation review (`SCR-APP-013`)
 - [ ] APP-008 Dispatch board and technician assignment (`SCR-APP-014`, `SCR-APP-017`)
 - [ ] BE-001 Enforce keyword opt-in/out persistence and telemetry
@@ -41,6 +40,15 @@ Purpose: single active queue for execution.
 
 - [x] GOV-001 Bootstrap governance docs
 - [x] GOV-002 Cross-repo docs pointers (`DOCS_INDEX.md`)
+- [x] GOV-004 PWA dispatch governance re-baseline
+  - Ticket specs: `TICKETS/GOV-004.md`, `TICKETS/APP-006.md` ... `TICKETS/APP-015.md`
+  - Code commits:
+    - `9586785` (`docs(governance): implement GOV-004 pwa dispatch baseline`)
+    - `aedb4c9` (`docs(governance): expand high-ticket dispatch screen and ticket map`)
+    - `fdde828` (`docs(governance): normalize high-ticket roadmap to APP-006 through APP-015`)
+  - Evidence:
+    - `SCREEN_INVENTORY.md` expanded through `SCR-APP-024`, `SCR-TECH-005`, `SCR-CUST-005`, `SCR-ADM-007`
+    - `MVP_BACKLOG.md` normalized to `APP-006` ... `APP-015`
 - [x] FE-001 Marketing Home (`SCR-PUB-001`)
   - Code commit: `a0063be` (`feat(marketing): implement FE-001 home screen`)
   - Gate evidence:
