@@ -20,11 +20,14 @@ Purpose: single active queue for execution.
 
 ## Now
 
-- [ ] BE-001 Enforce keyword opt-in/out persistence and telemetry
+- [ ] GOV-004 PWA dispatch governance re-baseline (screen map expansion for tenant + technician + customer + admin dispatch operations)
 
 ## Next
 
-- [ ] FE-003 AI CSR page (`SCR-PUB-003`)
+- [ ] APP-006 Intake review and booking readiness (`SCR-APP-012`)
+- [ ] APP-007 Urgency classification and escalation review (`SCR-APP-013`)
+- [ ] APP-008 Dispatch board and technician assignment (`SCR-APP-014`, `SCR-APP-017`)
+- [ ] BE-001 Enforce keyword opt-in/out persistence and telemetry
 
 ## Later
 

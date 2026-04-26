@@ -19,9 +19,19 @@
 
 - APP-001: Tenant dashboard foundation (`SCR-APP-002`)
 - APP-002: Conversations list + detail (`SCR-APP-003`, `SCR-APP-004`)
-- APP-003: Jobs queue and lifecycle (`SCR-APP-005`)
-- APP-004: Payment/intake settings (`SCR-APP-006`, `SCR-APP-007`)
-- APP-005: Analytics and quality panels (`SCR-APP-009`)
+- APP-003: Jobs queue and lifecycle foundation (`SCR-APP-005`)
+- APP-004: Tenant settings and controls (`SCR-APP-007`, `SCR-APP-008`, `SCR-APP-010`)
+- APP-005: Audit and compliance visibility (`SCR-APP-011`)
+- APP-006: Intake review and booking readiness (`SCR-APP-012`)
+- APP-007: Urgency classification and escalation review (`SCR-APP-013`)
+- APP-008: Dispatch board and technician assignment (`SCR-APP-014`, `SCR-APP-017`)
+- APP-009: Technician mobile job workflow (`SCR-TECH-001`, `SCR-TECH-002`, `SCR-TECH-003`)
+- APP-010: Routing rules, service areas, and availability (`SCR-APP-015`, `SCR-APP-016`, `SCR-APP-024`, `SCR-TECH-004`)
+- APP-011: Customer booking status and confirmation flow (`SCR-CUST-001`, `SCR-CUST-003`)
+- APP-012: Payment gate and webhook status workflow (`SCR-APP-006A`, `SCR-APP-006B`, `SCR-APP-006C`, `SCR-APP-023`, `SCR-CUST-002`)
+- APP-013: Notification center and customer messaging templates (`SCR-APP-021`, `SCR-APP-022`, `SCR-TECH-005`)
+- APP-014: Revenue recovery and conversion analytics (`SCR-APP-018`, `SCR-APP-019`)
+- APP-015: AI quality and failure review (`SCR-APP-020`, `SCR-ADM-005`)
 
 ## Epic E4 - Security and Reliability
 
