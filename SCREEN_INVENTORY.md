@@ -26,6 +26,10 @@
 - `SCR-APP-009` Analytics / Reporting
 - `SCR-APP-010` Team and Access Control
 - `SCR-APP-011` Audit Logs
+- `SCR-APP-012` Technician Job View (Secure PWA Link)
+- `SCR-APP-013` Dispatch Inbox (Owner/Dispatcher Triage)
+- `SCR-APP-014` Routing Rules and Escalation Policies
+- `SCR-APP-015` Notification Center (Owner/Tech/Customer Events)
 
 ## Platform Admin
 

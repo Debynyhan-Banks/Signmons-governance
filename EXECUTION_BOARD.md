@@ -20,11 +20,12 @@ Purpose: single active queue for execution.
 
 ## Now
 
-- [ ] BE-001 Enforce keyword opt-in/out persistence and telemetry
+- [ ] GOV-004 PWA dispatch governance re-baseline (`SCR-APP-005`, `SCR-APP-012`, `SCR-APP-013`, `SCR-APP-014`, `SCR-APP-015`)
 
 ## Next
 
-- [ ] FE-003 AI CSR page (`SCR-PUB-003`)
+- [ ] APP-003A Intake to dispatch inbox (manual-first) (`SCR-APP-005`, `SCR-APP-013`)
+- [ ] BE-001 Enforce keyword opt-in/out persistence and telemetry
 
 ## Later
 
