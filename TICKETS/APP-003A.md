@@ -4,7 +4,7 @@
 
 - Ticket ID: `APP-003A`
 - Repo: `signmons-calldesk-backend` (+ frontend surface repo for app UI)
-- Screen IDs: `SCR-APP-005`, `SCR-APP-013`
+- Screen IDs: `SCR-APP-012`, `SCR-APP-013`, `SCR-APP-014`
 - Objective: ship dispatch-assist MVP foundation where AI creates booking-ready jobs and routes to owner/dispatcher review, without autonomous technician assignment.
 
 ## Product Positioning Constraint
@@ -35,7 +35,8 @@ No full auto-dispatch in this ticket.
   - `New Request`
   - `Needs Review`
   - `Ready to Assign`
-- Dispatch inbox list/card view for owner/dispatcher with core triage actions.
+- Intake review and booking-readiness screen with missing-field indicators and urgency explanation.
+- Dispatch board list/card view for owner/dispatcher with core triage actions.
 - Owner/dispatcher notifications on new request and emergency classification.
 - Audit event write on status transitions.
 

@@ -20,11 +20,11 @@ Purpose: single active queue for execution.
 
 ## Now
 
-- [ ] GOV-004 PWA dispatch governance re-baseline (`SCR-APP-005`, `SCR-APP-012`, `SCR-APP-013`, `SCR-APP-014`, `SCR-APP-015`)
+- [ ] GOV-004 PWA dispatch governance re-baseline (screen map expansion for tenant + technician + customer + admin dispatch operations)
 
 ## Next
 
-- [ ] APP-003A Intake to dispatch inbox (manual-first) (`SCR-APP-005`, `SCR-APP-013`)
+- [ ] APP-003A Intake to dispatch inbox (manual-first) (`SCR-APP-012`, `SCR-APP-013`, `SCR-APP-014`)
 - [ ] BE-001 Enforce keyword opt-in/out persistence and telemetry
 
 ## Later
