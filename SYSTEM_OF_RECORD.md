@@ -7,24 +7,26 @@ Purpose: establish one unambiguous source-of-truth hierarchy so any coding agent
 If docs conflict, resolve in this exact order:
 
 1. `SYSTEM_OF_RECORD.md`
-2. `SAAS_SCOPE_DOD.md`
-3. `MARKETING_RELEASE_DOD.md`
-4. `EXECUTION_BOARD.md`
-5. `GLOBAL_EXECUTION_POINTER.md`
-6. `SCREEN_INVENTORY.md`
-7. `SCREEN_ROUTE_API_MATRIX.md`
-8. `LINK_CTA_MAP.md`
-9. `MVP_BACKLOG.md`
-10. `DATA_CONTRACTS.md`
-11. `QUALITY_GATES.md`
-12. `AI_WORKFLOW_RULES.md`
-13. `SESSION_HANDOFF.md`
+2. `WHAT_SIGNMONS_IS_AND_DOD.md`
+3. `SAAS_SCOPE_DOD.md`
+4. `MARKETING_RELEASE_DOD.md`
+5. `EXECUTION_BOARD.md`
+6. `GLOBAL_EXECUTION_POINTER.md`
+7. `SCREEN_INVENTORY.md`
+8. `SCREEN_ROUTE_API_MATRIX.md`
+9. `LINK_CTA_MAP.md`
+10. `MVP_BACKLOG.md`
+11. `DATA_CONTRACTS.md`
+12. `QUALITY_GATES.md`
+13. `AI_WORKFLOW_RULES.md`
+14. `SESSION_HANDOFF.md`
 
 All other docs are reference-only unless explicitly listed above.
 
 ## Canonical Artifacts
 
 - Program charter and DoD: `SAAS_SCOPE_DOD.md`
+- Product definition + anti-drift DoD: `WHAT_SIGNMONS_IS_AND_DOD.md`
 - Marketing release DoD: `MARKETING_RELEASE_DOD.md`
 - Active execution queue: `EXECUTION_BOARD.md`
 - Global cross-repo state: `GLOBAL_EXECUTION_POINTER.md`

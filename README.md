@@ -15,22 +15,24 @@ This repository defines what Signmons builds, how work is executed, and what "do
 Read and enforce in this order:
 
 1. `SYSTEM_OF_RECORD.md`
-2. `SAAS_SCOPE_DOD.md`
-3. `MARKETING_RELEASE_DOD.md`
-4. `EXECUTION_BOARD.md`
-5. `GLOBAL_EXECUTION_POINTER.md`
-6. `SCREEN_INVENTORY.md`
-7. `SCREEN_ROUTE_API_MATRIX.md`
-8. `LINK_CTA_MAP.md`
-9. `MVP_BACKLOG.md`
-10. `DATA_CONTRACTS.md`
-11. `QUALITY_GATES.md`
-12. `AI_WORKFLOW_RULES.md`
-13. `SESSION_HANDOFF.md`
+2. `WHAT_SIGNMONS_IS_AND_DOD.md`
+3. `SAAS_SCOPE_DOD.md`
+4. `MARKETING_RELEASE_DOD.md`
+5. `EXECUTION_BOARD.md`
+6. `GLOBAL_EXECUTION_POINTER.md`
+7. `SCREEN_INVENTORY.md`
+8. `SCREEN_ROUTE_API_MATRIX.md`
+9. `LINK_CTA_MAP.md`
+10. `MVP_BACKLOG.md`
+11. `DATA_CONTRACTS.md`
+12. `QUALITY_GATES.md`
+13. `AI_WORKFLOW_RULES.md`
+14. `SESSION_HANDOFF.md`
 
 ## Governance Documents
 
 - `SYSTEM_OF_RECORD.md` - precedence, non-contradiction rules, CI policy
+- `WHAT_SIGNMONS_IS_AND_DOD.md` - canonical product definition + anti-drift DoD
 - `MARKETING_RELEASE_DOD.md` - high-ticket marketing completion criteria
 - `GLOBAL_EXECUTION_POINTER.md` - cross-repo single pointer to active ticket
 - `EXECUTION_BOARD.md` - governance board and sequencing

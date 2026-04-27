@@ -6,6 +6,7 @@ Purpose: repeatable execution flow usable by any coding bot or human contributor
 
 1. Open governance source-of-truth docs:
    - `SYSTEM_OF_RECORD.md`
+   - `WHAT_SIGNMONS_IS_AND_DOD.md`
    - `SAAS_SCOPE_DOD.md`
    - `MARKETING_RELEASE_DOD.md`
    - `EXECUTION_BOARD.md`
