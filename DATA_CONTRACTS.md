@@ -72,6 +72,25 @@ Required persisted fields for FE-007 minimum:
 - Scheduling payloads must carry timezone and preferred window.
 - Booking creation must record calendar sync result status.
 
+Calendar payload baseline:
+- `tenantId` (required)
+- `jobId` (required)
+- `technicianId` (required)
+- `startAt` (required, ISO-8601)
+- `endAt` (required, ISO-8601)
+- `timezone` (required)
+- `serviceAreaId` (optional)
+- `calendarProvider` (required: `google`)
+- `calendarEventId` (optional until sync success)
+- `syncStatus` (required: `pending` | `synced` | `failed`)
+
+Conflict check payload baseline:
+- `technicianId` (required)
+- `startAt` (required)
+- `endAt` (required)
+- `bufferMinutes` (optional)
+- `result` (required: `clear` | `conflict`)
+
 ## Emergency Fee Policy Contract (Locked)
 
 Emergency fee behavior is conditional by:
@@ -91,6 +110,69 @@ Per-tenant single voice profile:
 - `greetingStyle`
 - `forbiddenPhrases`
 - `escalationLanguage`
+
+Profile payload baseline:
+- `tenantId` (required)
+- `profileVersion` (required)
+- `brandTone` (required)
+- `greetingStyle` (required)
+- `serviceFeeDisclosureTemplate` (required)
+- `closingScript` (required)
+- `forbiddenPhrases` (required, string[])
+- `fallbackEscalationLanguage` (required)
+- `updatedBy` (required)
+- `updatedAt` (required, ISO-8601)
+
+## Business Rules and Automation Contract (New)
+
+Rules are stored in DB config and evaluated deterministically.
+
+Rule entity baseline:
+- `id` (required)
+- `tenantId` (required)
+- `ruleType` (required: `routing` | `urgency` | `payment` | `after_hours` | `messaging`)
+- `priority` (required, integer)
+- `conditions` (required, structured JSON)
+- `actions` (required, structured JSON)
+- `isActive` (required, boolean)
+- `effectiveFrom` (optional)
+- `effectiveTo` (optional)
+- `updatedBy` (required)
+- `updatedAt` (required, ISO-8601)
+
+Rule evaluation trace baseline:
+- `traceId` (required)
+- `tenantId` (required)
+- `inputContext` (required)
+- `matchedRuleIds` (required, string[])
+- `selectedAction` (required)
+- `decisionReasonCodes` (required, string[])
+- `evaluatedAt` (required, ISO-8601)
+
+## Customer Profile and Service History Contract (New)
+
+Customer profile baseline:
+- `customerId` (required)
+- `tenantId` (required)
+- `fullName` (required)
+- `phone` (required, E.164)
+- `email` (optional)
+- `primaryAddress` (required)
+- `tags` (optional, string[])
+- `createdAt` (required)
+- `updatedAt` (required)
+
+Service history baseline:
+- `customerId` (required)
+- `jobId` (required)
+- `conversationId` (optional)
+- `serviceCategory` (required)
+- `urgency` (required)
+- `status` (required)
+- `paymentStatus` (required)
+- `scheduledWindow` (optional)
+- `completedAt` (optional)
+- `summary` (optional)
 
 ## Dispatch Mode Contract (Locked)
 

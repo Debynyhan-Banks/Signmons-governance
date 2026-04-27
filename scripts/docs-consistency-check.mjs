@@ -41,6 +41,7 @@ const screensDoc = mustRead('SCREEN_INVENTORY.md');
 const pointer = mustRead('GLOBAL_EXECUTION_POINTER.md');
 const routeMatrix = mustRead('SCREEN_ROUTE_API_MATRIX.md');
 const ctaMap = mustRead('LINK_CTA_MAP.md');
+const backlog = mustRead('MVP_BACKLOG.md');
 
 const screenIdRegex = /`(SCR-[A-Z]+-\d+[A-Z]?)`/g;
 const screenIds = new Set();
@@ -52,6 +53,29 @@ for (const match of screensDoc.matchAll(screenIdRegex)) {
 
 if (screenIds.size === 0) {
   errors.push('[screen-inventory-empty] no screen IDs found in SCREEN_INVENTORY.md');
+}
+
+const backlogScreenRefs = extractInlineCode(backlog).filter((token) => token.startsWith('SCR-'));
+for (const screenId of backlogScreenRefs) {
+  if (!screenIds.has(screenId)) {
+    errors.push(`[backlog-unknown-screen-ref] MVP_BACKLOG.md references ${screenId} not found in SCREEN_INVENTORY.md`);
+  }
+}
+
+const matrixScreenRefs = extractInlineCode(routeMatrix).filter((token) => token.startsWith('SCR-'));
+for (const screenId of matrixScreenRefs) {
+  if (!screenIds.has(screenId)) {
+    errors.push(`[matrix-unknown-screen-ref] SCREEN_ROUTE_API_MATRIX.md references ${screenId} not found in SCREEN_INVENTORY.md`);
+  }
+}
+
+const backlogFeatureLines = backlog
+  .split('\n')
+  .filter((line) => /^- (APP|FE)-\d+[A-Z]?:/.test(line));
+for (const line of backlogFeatureLines) {
+  if (!/`SCR-[A-Z]+-\d+[A-Z]?`/.test(line)) {
+    errors.push(`[backlog-missing-screen-id] ${line.trim()}`);
+  }
 }
 
 const nowSection = board.match(/## Now([\s\S]*?)(?:\n## |$)/);
