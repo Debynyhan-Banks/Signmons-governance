@@ -2,31 +2,117 @@
 
 ## Purpose
 
-Ensure backend, frontend, SMS/voice flows, and integrations stay compatible over time.
+Define canonical request/response/event/data shapes so frontend, backend, and governance stay aligned.
 
-## Contract Rules
+## Global Contract Rules
 
-- Contract-first: define schema before implementation
-- Version when breaking changes are introduced
-- Backward compatibility is required by default
-- Validate all external payloads at ingress boundaries
+- Contract-first: define schema before implementation.
+- Backward compatibility by default.
+- Breaking changes require versioning + migration note.
+- Validate ingress payloads at boundary.
+- Persist canonical IDs for lead/demo/job flows.
 
-## Required Contract Categories
+## FE-007 Marketing Lead Capture Contract (Required)
 
-- Public API DTOs
-- Internal event payloads
-- Webhook payload normalization
-- Persistence model invariants for critical flows
+Endpoint:
+- `POST /api/marketing/lead-capture`
 
-## Change Policy
+Request body:
+- `email` (required, string, normalized lowercase)
+- `firstName` (optional)
+- `lastName` (optional)
+- `businessName` (optional)
+- `phone` (optional, E.164 when provided)
+- `industries` (optional, string[])
+- `callsPerWeek` (optional, enum/string)
+- `notes` (optional)
+- `consentToContact` (required, boolean)
+- `consentTextVersion` (required, string)
+- `utm` (optional: source/medium/campaign)
+- `referrerUrl` (optional)
 
-- Non-breaking: additive fields, optional fields, safer defaults
-- Breaking: renames/removals/type changes require:
-  - migration plan
-  - compatibility window
-  - explicit release note
+Success response (`202` or `201`):
+- `leadId` (required)
+- `status` (required: `accepted` | `queued`)
+- `createdAt` (required, ISO-8601)
+
+Validation error (`400`):
+- `errorCode` (required)
+- `message` (required)
+
+## FE-008 Try-Demo Contract (Existing, Retained)
+
+Endpoints:
+- `POST /api/marketing/try-demo`
+- `GET /api/marketing/try-demo/:leadId`
+- `POST /api/marketing/try-demo/status`
+
+Required invariants:
+- `leadId` returned from submit is pollable on status endpoint.
+- Status transitions are deterministic and auditable.
+
+## Persistence Contract
+
+`marketingLead` is canonical storage for both:
+- contact-capture leads,
+- try-demo leads.
+
+Required persisted fields for FE-007 minimum:
+- `id`, `email`, `consentToContact`, `consentTextVersion`, `createdAt`
+
+## Business Rules Source Of Truth (Locked)
+
+- Source of truth: **DB config**.
+- JSON is allowed only as onboarding template seed.
+- UI form builder is a management layer over DB config (not the source of truth).
+
+## Scheduling + Calendar Contract (Locked)
+
+- Google Calendar integration is a hard MVP requirement.
+- Scheduling payloads must carry timezone and preferred window.
+- Booking creation must record calendar sync result status.
+
+## Emergency Fee Policy Contract (Locked)
+
+Emergency fee behavior is conditional by:
+- trade/category,
+- time window.
+
+Required policy output shape:
+- `isEmergency` (boolean)
+- `emergencyFeeApplied` (boolean)
+- `emergencyFeeCents` (number)
+- `reasonCode` (string)
+
+## Tenant Brand Voice Contract (Locked)
+
+Per-tenant single voice profile:
+- `brandTone`
+- `greetingStyle`
+- `forbiddenPhrases`
+- `escalationLanguage`
+
+## Dispatch Mode Contract (Locked)
+
+- Starter: manual dispatch
+- Growth: recommended dispatch
+- Pro/Enterprise: optional auto-dispatch
+
+Decision payload must include:
+- `mode`
+- `recommendedAssigneeId` (nullable)
+- `reasonCodes` (string[])
+
+## KPI Contract (Top 5 MVP)
+
+1. `leadToBookingRate`
+2. `paymentLinkCompletionRate`
+3. `missedCallRecoveryRate`
+4. `emergencyCaptureRate`
+5. `firstResponseLatencyP95Ms`
 
 ## Verification
 
-- Contract tests for critical request/response shapes
-- Schema validation in CI for changed contracts
+- Contract tests for FE-007 and FE-008 endpoints.
+- CI validation for route/CTA/API mapping docs.
+- Evidence in ticket completion notes.
