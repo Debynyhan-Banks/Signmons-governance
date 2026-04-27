@@ -4,18 +4,18 @@ Purpose: remove dead links and ambiguous CTA behavior.
 
 ## Public CTA Contract
 
-| Location | CTA Label | Route/Action | Capture Requirement | Backend | Status |
+| Location | CTA Label | Route/Action | Capture Requirement | Backend | Delivery Ticket |
 | --- | --- | --- | --- | --- | --- |
-| Header nav | Demo | `/demo` | optional (demo flow captures) | `POST /api/marketing/try-demo` | active |
-| Home hero | Experience the Demo | `/demo` | yes (phone + consent in live demo flow) | `POST /api/marketing/try-demo` | active |
-| Pricing plans | Book Revenue Demo / Build My AI Dispatcher / Talk to Sales | `/contact` | yes (email minimum) | `POST /api/marketing/lead-capture` (target) | target |
-| Contact form | Submit | `/contact` form submit | yes (email minimum, required) | `POST /api/marketing/lead-capture` (target) | target |
-| Contact success | live demo | `/demo` | none | none | active |
-| Footer nav | Demo | `/demo` | optional | `POST /api/marketing/try-demo` | active |
+| Header nav | Demo | `/demo` | optional (demo flow captures) | `POST /api/marketing/try-demo` | FE-008 |
+| Home hero | Experience the Demo | `/demo` | yes (phone + consent) | `POST /api/marketing/try-demo` | FE-008 |
+| Pricing plans | Book Revenue Demo / Build My AI Dispatcher / Talk to Sales | `/contact` | yes (email minimum) | `POST /api/marketing/lead-capture` | FE-007 + BE-002 |
+| Contact form | Submit | `/contact` form submit | yes (email minimum, required) | `POST /api/marketing/lead-capture` | FE-007 + BE-002 |
+| Contact success | Live Demo | `/demo` | none | none | FE-008 |
+| Footer nav | Demo | `/demo` | optional | `POST /api/marketing/try-demo` | FE-008 |
 
 ## Rules
 
 - CTA routes must resolve in `SCREEN_ROUTE_API_MATRIX.md`.
 - No `#` dead links for primary conversion CTAs.
-- Demo route must open live demo flow, not static dead-end content.
-- Minimum lead capture is email on contact conversion paths.
+- Demo route must use live demo API flow.
+- Contact conversion must persist backend lead record with email minimum.
