@@ -5,6 +5,7 @@
 Before coding, the AI agent must read:
 
 - `SYSTEM_OF_RECORD.md`
+- `WHAT_SIGNMONS_IS_AND_DOD.md`
 - `SAAS_SCOPE_DOD.md`
 - `MARKETING_RELEASE_DOD.md`
 - `EXECUTION_BOARD.md`

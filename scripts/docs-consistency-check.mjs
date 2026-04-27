@@ -16,6 +16,7 @@ const extractInlineCode = (text) => [...text.matchAll(/`([^`]+)`/g)].map((m) => 
 
 const requiredFiles = [
   'SYSTEM_OF_RECORD.md',
+  'WHAT_SIGNMONS_IS_AND_DOD.md',
   'SAAS_SCOPE_DOD.md',
   'EXECUTION_BOARD.md',
   'SCREEN_INVENTORY.md',

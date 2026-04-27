@@ -10,6 +10,8 @@ Last Updated: 2026-04-26
 
 ## Completed In This Session
 
+- Added canonical product identity + anti-drift DoD:
+  - `WHAT_SIGNMONS_IS_AND_DOD.md`
 - Added unambiguous marketing completion contract:
   - `MARKETING_RELEASE_DOD.md`
 - Added universal chatbot execution starter:
@@ -21,6 +23,7 @@ Last Updated: 2026-04-26
   - updated `MVP_BACKLOG.md`
   - added missing FE ticket specs: `TICKETS/FE-004.md` ... `TICKETS/FE-008.md`
 - Updated source-of-truth docs to include marketing DoD and chatbot guide:
+  - `WHAT_SIGNMONS_IS_AND_DOD.md`
   - `SYSTEM_OF_RECORD.md`
   - `README.md`
   - `AI_WORKFLOW_RULES.md`

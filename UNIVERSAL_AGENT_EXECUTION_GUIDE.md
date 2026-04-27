@@ -9,6 +9,7 @@ You are my coding agent in <repo-path>.
 
 Before coding, read:
 - /Users/debynyhanbanks/Web Projects/signmons-governance/SYSTEM_OF_RECORD.md
+- /Users/debynyhanbanks/Web Projects/signmons-governance/WHAT_SIGNMONS_IS_AND_DOD.md
 - /Users/debynyhanbanks/Web Projects/signmons-governance/SAAS_SCOPE_DOD.md
 - /Users/debynyhanbanks/Web Projects/signmons-governance/MARKETING_RELEASE_DOD.md
 - /Users/debynyhanbanks/Web Projects/signmons-governance/EXECUTION_BOARD.md
