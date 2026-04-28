@@ -12,6 +12,15 @@
 - `SCR-PUB-008` About / Vision
 - `SCR-PUB-009` Contact / Waitlist / Demo Request
 - `SCR-PUB-010` Privacy + Terms + SMS Terms
+- `SCR-PUB-011` Done-For-You Setup
+- `SCR-PUB-012` Business Rules and Custom Logic
+- `SCR-PUB-013` Brand Voice and AI Personality
+- `SCR-PUB-014` Dispatch and Scheduling
+- `SCR-PUB-015` Revenue Recovery Dashboard
+- `SCR-PUB-016` ROI Calculator
+- `SCR-PUB-017` Signmons vs Answering Services
+- `SCR-PUB-018` Signmons vs Field Service Software
+- `SCR-PUB-019` Customer and Technician Experience
 
 ## Tenant Product
 
@@ -41,6 +50,10 @@
 - `SCR-APP-022` Customer Messaging Templates
 - `SCR-APP-023` Payment Policy Rules
 - `SCR-APP-024` Service Areas and Trade Coverage
+- `SCR-APP-025` Calendar and Scheduling Board
+- `SCR-APP-026` Business Rules and Automation Center
+- `SCR-APP-027` Brand Voice and AI Personality Settings
+- `SCR-APP-028` Customer Profiles and Service History
 
 ## Technician Portal
 

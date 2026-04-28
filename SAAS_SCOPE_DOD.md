@@ -28,6 +28,11 @@ Signmons is a multi-tenant call-intake and booking SaaS for home-service busines
 - Payment webhook validation is server-side and fail-closed
 - No cross-tenant data access
 - No silent assumptions for critical customer fields
+- Tenant brand voice policy must control greeting, tone, prohibited phrases, escalation language, fee language, and closeout messaging
+- Business rules must be tenant-scoped, auditable, versioned, and enforced server-side
+- Scheduling and calendar decisions must respect technician availability, service windows, urgency, and payment-gate status
+- Customer profile/history access must remain tenant-isolated with no cross-tenant exposure
+- Human fallback/escalation must exist for urgent, unclear, failed, or policy-sensitive flows
 
 ## 5) Definition of Done
 
@@ -65,3 +70,10 @@ Signmons is a multi-tenant call-intake and booking SaaS for home-service busines
 - Payment link completion rate
 - Repeat-question rate and first-response latency
 - Tenant retention/churn trends
+
+## 7) High-Ticket Copy Guardrails
+
+- Do not claim "zero staff required"; use "human handoff for urgent or unclear cases."
+- Do not claim "2-minute setup" for full workflow setup; use "call forwarding in minutes, full workflow setup guided."
+- Do not publish performance claims (for example, "3x bookings", "98% answer rate", "$0 no-shows") without linked evidence.
+- Pricing claims must map to implemented or explicitly scoped capabilities.
