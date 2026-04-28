@@ -4,16 +4,16 @@ Last Updated: 2026-04-28
 
 ## Current Program Pointer
 
-- Global `Now`: `FE-012` (dispatch and scheduling page) — implementation shipped to branch, awaiting merge.
-- Previous `Now`: `FE-011` (brand voice and AI personality page) — completed (`3a81801`).
+- Global `Now`: `FE-013` (revenue dashboard and ROI calculator).
+- Previous `Now`: `FE-012` (dispatch and scheduling page) — completed and pointer advanced.
 - Program phase: marketing-first high-ticket completion.
 - Sequencing: strict (`Now` -> `Done` before `Next`).
 
-## FE-012 Implementation Context
+## FE-012 Completion Context
 
 - Repo: `signmons-marketing-web-feat-marketing-site`.
 - Branch: `codex/fe-012-dispatch-scheduling` (cut from clean `main`; HEAD on `53c4eef`).
-- Screen: `SCR-PUB-014` -> route `/dispatch-scheduling` (matrix status moves from `placeholder` to `implemented` on merge).
+- Screen: `SCR-PUB-014` -> route `/dispatch-scheduling` (matrix now `implemented`).
 - Acceptance criteria (`TICKETS/FE-012.md`) all satisfied; see `evidence/FE-012/parity-checklist.md`:
   - AC-1 Route registered (`/dispatch-scheduling` + `.html` + `/site/...html`).
   - AC-2 Page sections aligned to `MARKETING_SITEMAP.md` Sprint 2 contract: Dispatch Board (4 lanes), Routing Logic (3 rules), Scheduling Lifecycle (4 steps), Policy Integrity governance.
@@ -25,9 +25,8 @@ Last Updated: 2026-04-28
   - `src/styles/site/dispatch-scheduling.css`
   - `src/App.tsx`, `src/main.tsx`
   - `evidence/FE-012/{build,lint,test,parity-checklist,mapping}`
-- One focused commit on the FE-012 branch.
-  - Commit (current, post-amend): `235b0aa feat(fe-012): add dispatch and scheduling public page`.
-  - Pre-amend commit `7d2664d` was already pushed to `origin/codex/fe-012-dispatch-scheduling` and must be force-replaced; user push requires `git push -f origin codex/fe-012-dispatch-scheduling`.
+- One focused commit on the FE-012 branch:
+  - `235b0aa feat(fe-012): add dispatch and scheduling public page`.
 - Non-goals respected: no backend dispatch implementation changes; no APP screen implementation. `SchedulingWindow` / `Appointment` / `DispatchPolicy` remain display dependencies (APP-016 / APP-017 own runtime contracts).
 
 ## Completed In This Session
@@ -40,12 +39,6 @@ Last Updated: 2026-04-28
 
 ## Next Actions (Strict Order)
 
-1. Force-push `codex/fe-012-dispatch-scheduling` to refresh the existing PR with the amended commit (`235b0aa`).
-2. After FE-012 merges:
-   - Update `EXECUTION_BOARD.md`: move FE-012 to `Done` with merge commit reference.
-   - Update `GLOBAL_EXECUTION_POINTER.md`: pointer advances to FE-013.
-   - Update `SCREEN_ROUTE_API_MATRIX.md`: SCR-PUB-014 status `placeholder` -> `implemented`.
-   - Add `Dispatch and Scheduling page` row to `LINK_CTA_MAP.md` mirroring Business Rules / Brand Voice rows.
-3. Execute FE-013 (`SCR-PUB-015`, `SCR-PUB-016` — Revenue Recovery Dashboard + ROI Calculator) only.
-4. Execute FE-014 (`SCR-PUB-017`, `SCR-PUB-018` — competitive comparison pages) only after FE-013 merges.
-5. Keep APP-006 blocked until marketing DoD exit criteria are satisfied.
+1. Execute FE-013 (`SCR-PUB-015`, `SCR-PUB-016` — Revenue Recovery Dashboard + ROI Calculator) only.
+2. Execute FE-014 (`SCR-PUB-017`, `SCR-PUB-018` — competitive comparison pages) only after FE-013 merges.
+3. Keep APP-006 blocked until marketing DoD exit criteria are satisfied.
