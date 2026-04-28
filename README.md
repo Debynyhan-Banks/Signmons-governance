@@ -18,22 +18,24 @@ Read and enforce in this order:
 2. `WHAT_SIGNMONS_IS_AND_DOD.md`
 3. `SAAS_SCOPE_DOD.md`
 4. `MARKETING_RELEASE_DOD.md`
-5. `EXECUTION_BOARD.md`
-6. `GLOBAL_EXECUTION_POINTER.md`
-7. `SCREEN_INVENTORY.md`
-8. `SCREEN_ROUTE_API_MATRIX.md`
-9. `LINK_CTA_MAP.md`
-10. `MVP_BACKLOG.md`
-11. `DATA_CONTRACTS.md`
-12. `QUALITY_GATES.md`
-13. `AI_WORKFLOW_RULES.md`
-14. `SESSION_HANDOFF.md`
+5. `MARKETING_SITEMAP.md`
+6. `EXECUTION_BOARD.md`
+7. `GLOBAL_EXECUTION_POINTER.md`
+8. `SCREEN_INVENTORY.md`
+9. `SCREEN_ROUTE_API_MATRIX.md`
+10. `LINK_CTA_MAP.md`
+11. `MVP_BACKLOG.md`
+12. `DATA_CONTRACTS.md`
+13. `QUALITY_GATES.md`
+14. `AI_WORKFLOW_RULES.md`
+15. `SESSION_HANDOFF.md`
 
 ## Governance Documents
 
 - `SYSTEM_OF_RECORD.md` - precedence, non-contradiction rules, CI policy
 - `WHAT_SIGNMONS_IS_AND_DOD.md` - canonical product definition + anti-drift DoD
 - `MARKETING_RELEASE_DOD.md` - high-ticket marketing completion criteria
+- `MARKETING_SITEMAP.md` - canonical high-ticket marketing information architecture and page routing
 - `GLOBAL_EXECUTION_POINTER.md` - cross-repo single pointer to active ticket
 - `EXECUTION_BOARD.md` - governance board and sequencing
 - `SCREEN_INVENTORY.md` - canonical screen IDs
