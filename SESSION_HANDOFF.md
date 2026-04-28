@@ -1,10 +1,10 @@
 # Session Handoff
 
-Last Updated: 2026-04-27
+Last Updated: 2026-04-28
 
 ## Current Program Pointer
 
-- Global `Now`: `FE-007` (`SCR-PUB-009`)
+- Global `Now`: `FE-006` (`SCR-PUB-010`)
 - Program phase: marketing-first high-ticket completion
 - Sequencing: strict (`Now` -> `Done` before `Next`)
 
@@ -36,11 +36,16 @@ Last Updated: 2026-04-27
   - commit: `8b7ddf0`
   - PR (open): `https://github.com/Debynyhan-Banks/Signmons-Marketing-Web-Feat-Marketing-Site/pull/new/codex/fe-007-contact-capture-clean`
   - evidence files: `evidence/FE-007-build.txt`, `evidence/FE-007-lint.txt`, `evidence/FE-007-test.txt`
+- FE-007 merged to `main`:
+  - merge commit: `319ea5f`
+- FE-008 merged to `main`:
+  - merge commit: `c5169df`
+  - PR: `https://github.com/Debynyhan-Banks/Signmons-Marketing-Web-Feat-Marketing-Site/pull/8`
+  - evidence files: `evidence/FE-008/build.txt`, `evidence/FE-008/lint.txt`, `evidence/FE-008/test.txt`, `evidence/FE-008/mapping.md`, `evidence/FE-008/parity-checklist.md`
 
 ## Next Actions (Strict Order)
 
-1. Merge governance PR with marketing-first docs updates.
-2. Merge FE-007 frontend PR (`codex/fe-007-contact-capture-clean`) into `main`.
-3. Update governance pointers from `FE-007` to `FE-008`.
-4. Execute `FE-008` only (live demo parity) and merge.
-5. After FE-008 and FE-006 are done with evidence, move global `Now` to `APP-006`.
+1. Execute `FE-006` only (privacy/terms/SMS route-content parity).
+2. Collect FE-006 evidence and merge FE-006 PR.
+3. Update governance pointer from `FE-006` to `APP-006`.
+4. Start `APP-006` only after marketing DoD exit criteria are met.

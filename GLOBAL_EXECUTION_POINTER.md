@@ -14,9 +14,9 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
   - Repo: `signmons-marketing-web-feat-marketing-site`
   - Board: `EXECUTION_BOARD.md`
 
-## Current Pointer (as of 2026-04-26)
+## Current Pointer (as of 2026-04-28)
 
-- Program `Now`: `FE-007` (`SCR-PUB-009`)
+- Program `Now`: `FE-006` (`SCR-PUB-010`)
 - Program phase: marketing-first high-ticket completion
 - Sequencing: strict (`Now` -> `Done` before starting `Next`)
 
@@ -24,9 +24,9 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 
 | Repo | Active Ticket | State |
 | --- | --- | --- |
-| Governance | `FE-007` standards and alignment owner | active |
-| Frontend marketing | `FE-007` implementation owner | active |
-| Backend | support endpoint/provider alignment for FE-007 | supporting |
+| Governance | `FE-006` standards and alignment owner | active |
+| Frontend marketing | `FE-006` implementation owner | active |
+| Backend | support endpoint/provider alignment for FE-006 | supporting |
 
 ## Synchronization Rules
 
