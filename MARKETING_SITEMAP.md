@@ -30,6 +30,7 @@ Signmons is the AI front office and dispatch intelligence system for trades busi
 
 - `/how-it-works` -> `SCR-PUB-002`
 - `/ai-dispatcher` -> `SCR-PUB-003`
+- `/about` -> `SCR-PUB-008`
 - `/done-for-you-setup` -> `SCR-PUB-011`
 - `/business-rules` -> `SCR-PUB-012`
 - `/brand-voice` -> `SCR-PUB-013`
@@ -50,15 +51,15 @@ Signmons is the AI front office and dispatch intelligence system for trades busi
 
 ### Industry
 
-- `/industries` (hub)
-- `/industries/hvac`
-- `/industries/plumbing`
-- `/industries/electrical`
-- `/industries/drains`
-- `/industries/roofing`
-- `/industries/construction`
-- `/industries/landscaping`
-- `/industries/multi-location`
+- `/industries` -> `SCR-PUB-004` (Trades verticals hub)
+- `/industries/hvac` -> child route (inherits `SCR-PUB-004`)
+- `/industries/plumbing` -> child route (inherits `SCR-PUB-004`)
+- `/industries/electrical` -> child route (inherits `SCR-PUB-004`)
+- `/industries/drains` -> child route (inherits `SCR-PUB-004`)
+- `/industries/roofing` -> child route (inherits `SCR-PUB-004`)
+- `/industries/construction` -> child route (inherits `SCR-PUB-004`)
+- `/industries/landscaping` -> child route (inherits `SCR-PUB-004`)
+- `/industries/multi-location` -> child route (inherits `SCR-PUB-004`)
 
 ### Trust and Legal
 
@@ -110,3 +111,15 @@ Signmons is the AI front office and dispatch intelligence system for trades busi
 - Every route added here must map to a screen ID in `SCREEN_INVENTORY.md`.
 - Every CTA target must exist in `LINK_CTA_MAP.md` before merge.
 - Claims on these pages must obey `SAAS_SCOPE_DOD.md` high-ticket guardrails and proof-lock rules.
+
+## Child Route Governance
+
+- `/industries` maps to `SCR-PUB-004`.
+- Industry child routes inherit `SCR-PUB-004` unless promoted into standalone screen IDs.
+- `/compare/answering-services` maps to `SCR-PUB-017`.
+- Answering-service competitor child pages (for example `/compare/smith-ai`) inherit `SCR-PUB-017`.
+- `/compare/field-service-software` maps to `SCR-PUB-018`.
+- FSM competitor child pages (for example `/compare/workiz`, `/compare/jobber`, `/compare/housecall-pro`, `/compare/servicetitan`) inherit `SCR-PUB-018`.
+- `/security` and `/responsible-ai` inherit `SCR-PUB-005` unless promoted into standalone screen IDs.
+- `/about` maps to `SCR-PUB-008`.
+- `/blog` and `/resources` are content surfaces outside MVP screen enforcement unless promoted into governed screens.
