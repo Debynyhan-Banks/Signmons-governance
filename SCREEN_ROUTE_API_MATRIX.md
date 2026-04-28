@@ -13,7 +13,7 @@ Purpose: canonical alignment between screen IDs, frontend routes, and backend AP
 | `SCR-PUB-010` | `/privacy`, `/terms`, `/sms-terms` | `signmons-marketing-web-feat-marketing-site` | none required | n/a | FE-006 | implemented |
 | `SCR-PUB-011` | `/done-for-you-setup` | `signmons-marketing-web-feat-marketing-site` | none required | `BusinessRuleSet`, `TenantBrandProfile` (messaging dependency) | FE-009 | implemented |
 | `SCR-PUB-012` | `/business-rules` | `signmons-marketing-web-feat-marketing-site` | none required | `BusinessRuleSet`, `DispatchPolicy`, `PaymentPolicy` | FE-010 | implemented |
-| `SCR-PUB-013` | `/brand-voice` | `signmons-marketing-web-feat-marketing-site` | none required | `TenantBrandProfile` | FE-011 | placeholder |
+| `SCR-PUB-013` | `/brand-voice` | `signmons-marketing-web-feat-marketing-site` | none required | `TenantBrandProfile` | FE-011 | implemented |
 | `SCR-PUB-014` | `/dispatch-scheduling` | `signmons-marketing-web-feat-marketing-site` | none required | `SchedulingWindow`, `Appointment`, `DispatchPolicy` | FE-012 | placeholder |
 | `SCR-PUB-015` | `/revenue-dashboard` | `signmons-marketing-web-feat-marketing-site` | none required | `RevenueEvent` | FE-013 | placeholder |
 | `SCR-PUB-016` | `/roi-calculator` | `signmons-marketing-web-feat-marketing-site` | none required | `RevenueEvent` (input assumptions) | FE-013 | placeholder |
