@@ -16,7 +16,7 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 
 ## Current Pointer (as of 2026-04-28)
 
-- Program `Now`: `FE-009` (done-for-you setup page)
+- Program `Now`: `FE-010` (business rules and custom logic page)
 - Program phase: marketing-first high-ticket completion
 - Sequencing: strict (`Now` -> `Done` before starting `Next`)
 
@@ -24,8 +24,8 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 
 | Repo | Active Ticket | State |
 | --- | --- | --- |
-| Governance | `GOV-009` merged; pointer synchronized | done |
-| Frontend marketing | `FE-009` done-for-you setup page | active |
+| Governance | FE-009 merged and pointer advanced to FE-010 | done |
+| Frontend marketing | `FE-010` business rules and custom logic page | active |
 | Backend | waiting on `GOV-008` contract additions | queued |
 
 ## Synchronization Rules
