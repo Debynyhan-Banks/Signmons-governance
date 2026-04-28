@@ -193,3 +193,28 @@ Required fields:
 - `sourceFlow` (`voice` | `sms` | `chat` | `manual`)
 - `jobId` (nullable)
 - `leadId` (nullable)
+
+### NotificationPolicy
+
+Required fields:
+- `tenantId`
+- `eventType`
+- `recipientType` (`owner` | `dispatcher` | `technician` | `customer`)
+- `channels` (array of `sms` | `email` | `push`)
+- `templateId`
+- `retryPolicy`
+- `quietHoursPolicy` (nullable)
+- `updatedAt`
+
+### PaymentPolicy
+
+Required fields:
+- `tenantId`
+- `serviceFeeRequired` (boolean)
+- `serviceFeeCents` (nullable)
+- `depositRequired` (boolean)
+- `depositPolicy` (typed object)
+- `emergencyFeePolicy` (typed object)
+- `paymentGateMode` (`fail_closed` | `manual_override`)
+- `webhookValidationRequired` (boolean)
+- `updatedAt`
