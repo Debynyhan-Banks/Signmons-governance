@@ -116,3 +116,80 @@ Decision payload must include:
 - Contract tests for FE-007 and FE-008 endpoints.
 - CI validation for route/CTA/API mapping docs.
 - Evidence in ticket completion notes.
+
+## GOV-008 High-Ticket Domain Contracts (High-Level)
+
+### TenantBrandProfile
+
+Required fields:
+- `tenantId`
+- `greeting`
+- `tonePreset`
+- `forbiddenPhrases` (string[])
+- `serviceFeeLanguage`
+- `escalationLanguage`
+- `closeoutLanguage`
+- `updatedAt`
+
+### BusinessRuleSet
+
+Required fields:
+- `tenantId`
+- `version`
+- `rules` (typed object)
+- `status` (`draft` | `active`)
+- `updatedBy`
+- `updatedAt`
+
+### DispatchPolicy
+
+Required fields:
+- `tenantId`
+- `dispatchMode` (`manual` | `recommended` | `auto`)
+- `serviceAreaRules`
+- `skillRoutingRules`
+- `afterHoursRules`
+- `fallbackEscalationRules`
+
+### SchedulingWindow
+
+Required fields:
+- `tenantId`
+- `timezone`
+- `businessHours`
+- `afterHoursPolicy`
+- `bufferMinutes`
+
+### Appointment
+
+Required fields:
+- `appointmentId`
+- `tenantId`
+- `jobId`
+- `scheduledStart`
+- `scheduledEnd`
+- `assignedTechnicianId` (nullable)
+- `status`
+- `calendarSyncStatus`
+
+### CustomerProfile
+
+Required fields:
+- `customerId`
+- `tenantId`
+- `name`
+- `primaryPhone`
+- `addresses` (array)
+- `consentFlags`
+- `lastInteractionAt`
+
+### RevenueEvent
+
+Required fields:
+- `eventId`
+- `tenantId`
+- `eventType`
+- `eventTimestamp`
+- `sourceFlow` (`voice` | `sms` | `chat` | `manual`)
+- `jobId` (nullable)
+- `leadId` (nullable)

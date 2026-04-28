@@ -17,6 +17,13 @@
 - FE-006: Privacy + Terms + SMS terms route/content parity (`SCR-PUB-010`)
 - FE-007: Contact capture (email-minimum) with backend persistence (`SCR-PUB-009`)
 - FE-008: Live demo flow + CTA route parity hardening (`SCR-PUB-001`, `SCR-PUB-006`, `SCR-PUB-007`, `SCR-PUB-009`)
+- FE-009: Done-for-you setup page (`SCR-PUB-011`)
+- FE-010: Business rules and custom logic page (`SCR-PUB-012`)
+- FE-011: Brand voice and AI personality page (`SCR-PUB-013`)
+- FE-012: Dispatch and scheduling page (`SCR-PUB-014`)
+- FE-013: Revenue dashboard and ROI calculator (`SCR-PUB-015`, `SCR-PUB-016`)
+- FE-014: Competitive comparison pages (`SCR-PUB-017`, `SCR-PUB-018`)
+- FE-015: Customer and technician experience page (`SCR-PUB-019`)
 
 ## Epic E3 - Tenant Product Experience (Starts After Marketing DoD)
 
@@ -35,6 +42,10 @@
 - APP-013: Notification center and customer messaging templates (`SCR-APP-021`, `SCR-APP-022`, `SCR-TECH-005`)
 - APP-014: Revenue recovery and conversion analytics (`SCR-APP-018`, `SCR-APP-019`)
 - APP-015: AI quality and failure review (`SCR-APP-020`, `SCR-ADM-005`)
+- APP-016: Calendar scheduling and appointment management (`SCR-APP-025`, `SCR-APP-015`, `SCR-APP-005`)
+- APP-017: Business rules and automation center (`SCR-APP-026`, `SCR-APP-016`, `SCR-APP-023`, `SCR-APP-022`)
+- APP-018: Brand voice and AI personality configuration (`SCR-APP-027`, `SCR-APP-007`, `SCR-APP-022`)
+- APP-019: Customer profiles and service history (`SCR-APP-028`, `SCR-APP-003`, `SCR-APP-005`)
 
 ## Epic E4 - Security and Reliability
 
