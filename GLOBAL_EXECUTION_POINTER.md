@@ -16,8 +16,7 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 
 ## Current Pointer (as of 2026-04-28)
 
-- Program `Now`: `FE-008` (`SCR-PUB-001`, `SCR-PUB-006`, `SCR-PUB-007`, `SCR-PUB-009`)
-- Previous `Now`: `FE-007` (completed; implementation commit `83a1edb`)
+- Program `Now`: `GOV-008` (high-ticket surface expansion)
 - Program phase: marketing-first high-ticket completion
 - Sequencing: strict (`Now` -> `Done` before starting `Next`)
 
@@ -25,9 +24,9 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 
 | Repo | Active Ticket | State |
 | --- | --- | --- |
-| Governance | `FE-008` pointer + standards alignment owner | active |
-| Frontend marketing | `FE-008` implementation owner (branch `codex/fe-008-live-demo-parity`) | active |
-| Backend | support `POST /api/marketing/try-demo` provider alignment for FE-008 | supporting |
+| Governance | `GOV-008` standards and alignment owner | active |
+| Frontend marketing | waiting on `GOV-008` merge for FE-009+ sequence | queued |
+| Backend | waiting on `GOV-008` contract additions | queued |
 
 ## Synchronization Rules
 
