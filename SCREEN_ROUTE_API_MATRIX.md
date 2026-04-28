@@ -11,8 +11,8 @@ Purpose: canonical alignment between screen IDs, frontend routes, and backend AP
 | `SCR-PUB-007` | `/demo` | `signmons-marketing-web-feat-marketing-site` | `POST /api/marketing/try-demo`, `GET /api/marketing/try-demo/:leadId`, `POST /api/marketing/try-demo/status` | marketingLead/try-demo contract | FE-008 | implemented |
 | `SCR-PUB-009` | `/contact` | `signmons-marketing-web-feat-marketing-site` | `POST /api/marketing/lead-capture` | FE-007 lead-capture contract | FE-007 + BE-002 | implemented |
 | `SCR-PUB-010` | `/privacy`, `/terms`, `/sms-terms` | `signmons-marketing-web-feat-marketing-site` | none required | n/a | FE-006 | implemented |
-| `SCR-PUB-011` | `/done-for-you-setup` | `signmons-marketing-web-feat-marketing-site` | none required | `BusinessRuleSet`, `TenantBrandProfile` (messaging dependency) | FE-009 | placeholder |
-| `SCR-PUB-012` | `/business-rules` | `signmons-marketing-web-feat-marketing-site` | none required | `BusinessRuleSet`, `DispatchPolicy`, `PaymentPolicy` | FE-010 | placeholder |
+| `SCR-PUB-011` | `/done-for-you-setup` | `signmons-marketing-web-feat-marketing-site` | none required | `BusinessRuleSet`, `TenantBrandProfile` (messaging dependency) | FE-009 | implemented |
+| `SCR-PUB-012` | `/business-rules` | `signmons-marketing-web-feat-marketing-site` | none required | `BusinessRuleSet`, `DispatchPolicy`, `PaymentPolicy` | FE-010 | implemented |
 | `SCR-PUB-013` | `/brand-voice` | `signmons-marketing-web-feat-marketing-site` | none required | `TenantBrandProfile` | FE-011 | placeholder |
 | `SCR-PUB-014` | `/dispatch-scheduling` | `signmons-marketing-web-feat-marketing-site` | none required | `SchedulingWindow`, `Appointment`, `DispatchPolicy` | FE-012 | placeholder |
 | `SCR-PUB-015` | `/revenue-dashboard` | `signmons-marketing-web-feat-marketing-site` | none required | `RevenueEvent` | FE-013 | placeholder |
