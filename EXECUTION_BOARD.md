@@ -22,11 +22,10 @@ Purpose: single active queue for execution.
 
 ## Now
 
-- [ ] FE-007 Contact capture email-minimum with backend persistence (`SCR-PUB-009`)
+- [ ] FE-008 Live demo flow + CTA route parity hardening (`SCR-PUB-001`, `SCR-PUB-006`, `SCR-PUB-007`, `SCR-PUB-009`)
 
 ## Next
 
-- [ ] FE-008 Live demo flow + CTA route parity hardening (`SCR-PUB-001`, `SCR-PUB-006`, `SCR-PUB-007`, `SCR-PUB-009`)
 - [ ] FE-006 Privacy + Terms + SMS terms route/content parity (`SCR-PUB-010`)
 - [ ] APP-006 Intake review and booking readiness (`SCR-APP-012`) - unlocks after marketing DoD exit criteria
 
@@ -49,3 +48,6 @@ Purpose: single active queue for execution.
 - [x] FE-003 Reusable component refactor (`SCR-PUB-001`, `SCR-PUB-007`, `SCR-PUB-009`)
 - [x] FE-004 Pricing reposition (`SCR-PUB-006`)
 - [x] FE-005 Pricing consistency analyzer and CI enforcement (`SCR-PUB-006`)
+- [x] FE-007 Contact capture email-minimum with backend persistence (`SCR-PUB-009`)
+  - Implementation commit: `83a1edb feat(fe-007): persist contact leads with email-min validation`
+  - Evidence: pending backfill under `signmons-marketing-web-feat-marketing-site/evidence/FE-007/` (carry-forward task)
