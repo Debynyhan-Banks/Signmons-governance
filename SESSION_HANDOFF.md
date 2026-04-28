@@ -4,7 +4,7 @@ Last Updated: 2026-04-28
 
 ## Current Program Pointer
 
-- Global `Now`: `FE-006` (`SCR-PUB-010`)
+- Global `Now`: `GOV-008` (high-ticket surface expansion)
 - Program phase: marketing-first high-ticket completion
 - Sequencing: strict (`Now` -> `Done` before `Next`)
 
@@ -42,10 +42,14 @@ Last Updated: 2026-04-28
   - merge commit: `c5169df`
   - PR: `https://github.com/Debynyhan-Banks/Signmons-Marketing-Web-Feat-Marketing-Site/pull/8`
   - evidence files: `evidence/FE-008/build.txt`, `evidence/FE-008/lint.txt`, `evidence/FE-008/test.txt`, `evidence/FE-008/mapping.md`, `evidence/FE-008/parity-checklist.md`
+- FE-006 merged to `main`:
+  - merge commit: `d9c1fec`
+  - PR: `https://github.com/Debynyhan-Banks/Signmons-Marketing-Web-Feat-Marketing-Site/pull/9`
+  - evidence files: `evidence/FE-006/build.txt`, `evidence/FE-006/lint.txt`, `evidence/FE-006/test.txt`, `evidence/FE-006/parity-checklist.md`
 
 ## Next Actions (Strict Order)
 
-1. Execute `FE-006` only (privacy/terms/SMS route-content parity).
-2. Collect FE-006 evidence and merge FE-006 PR.
-3. Update governance pointer from `FE-006` to `APP-006`.
-4. Start `APP-006` only after marketing DoD exit criteria are met.
+1. Execute `GOV-008` only (high-ticket surface expansion in governance docs).
+2. Merge GOV-008 and sync all repo boards/pointers to GOV-008 outputs.
+3. Start FE-009 through FE-011 sequence from updated governance contracts/screens.
+4. Unlock APP-006 only after marketing DoD exit criteria are met.
