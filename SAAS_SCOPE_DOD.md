@@ -77,3 +77,6 @@ Signmons is a multi-tenant call-intake and booking SaaS for home-service busines
 - Do not claim "2-minute setup" for full workflow setup; use "call forwarding in minutes, full workflow setup guided."
 - Do not publish performance claims (for example, "3x bookings", "98% answer rate", "$0 no-shows") without linked evidence.
 - Pricing claims must map to implemented or explicitly scoped capabilities.
+- No high-ticket marketing claim may ship unless it maps to:
+  - one metric in Section 6 (or an approved extension), and
+  - one evidence source (dashboard panel, report extract, or ticket evidence artifact).
