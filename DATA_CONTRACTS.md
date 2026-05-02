@@ -218,3 +218,68 @@ Required fields:
 - `paymentGateMode` (`fail_closed` | `manual_override`)
 - `webhookValidationRequired` (boolean)
 - `updatedAt`
+
+## GOV-017 Commercial Contracts (Locked)
+
+### PricingPlan
+
+Required fields:
+- `planId` (`starter` | `growth` | `pro` | `enterprise`)
+- `publicMonthlyPriceCents`
+- `publicAnnualMonthlyPriceCents` (nullable for enterprise)
+- `setupFeeCents`
+- `includedCallVolume`
+- `overageBlockSizeCalls`
+- `overageBlockPriceCents`
+- `maxActiveVehicles` (nullable)
+- `maxTechnicianSeats` (nullable)
+- `status` (`active` | `legacy` | `draft`)
+- `effectiveFrom`
+- `effectiveTo` (nullable)
+
+### PerformanceFeePolicy
+
+Required fields:
+- `tenantId`
+- `planId`
+- `qualifiedBookedJobFeeCents` (nullable)
+- `emergencyCapturedJobFeeCents` (nullable)
+- `revenueShareBps` (nullable)
+- `billingMode` (`subscription_only` | `subscription_plus_performance` | `custom_enterprise`)
+- `enabled` (boolean)
+- `effectiveFrom`
+- `effectiveTo` (nullable)
+
+### BillableEvent
+
+Required fields:
+- `billableEventId`
+- `tenantId`
+- `eventType` (`qualified_booked_job` | `emergency_captured_job` | `overage_block_consumed`)
+- `sourceEventId`
+- `jobId` (nullable)
+- `leadId` (nullable)
+- `occurredAt`
+- `billableAmountCents`
+- `currency`
+- `status` (`pending` | `finalized` | `voided`)
+- `reasonCode`
+
+### InvoiceRule
+
+Required fields:
+- `tenantId`
+- `invoiceCadence` (`monthly` | `custom`)
+- `roundingMode` (`none` | `nearest_cent`)
+- `trialPolicy` (`none` | `time_limited`)
+- `creditPolicy` (typed object)
+- `lineItemRules` (typed object; includes setup, subscription, overage, performance fees)
+- `disputeWindowDays`
+- `effectiveFrom`
+
+## Commercial Verification Rules
+
+- A `qualified_booked_job` billable event may be emitted only when required booking fields are complete and job status has transitioned to booked/scheduled under tenant policy.
+- An `emergency_captured_job` billable event may be emitted only when urgency is `emergency` and dispatch or escalated dispatch has been triggered according to tenant rules.
+- `BillableEvent` must be immutable after `finalized`; reversals occur through explicit credit/void events.
+- Pricing page and ROI calculator must never calculate invoice totals from hardcoded constants when contract-backed pricing data is available.

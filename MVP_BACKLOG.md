@@ -6,6 +6,7 @@
 - GOV-002: Wire `DOCS_INDEX.md` into backend and frontend repos
 - GOV-003: Adopt session handoff discipline across all contributors
 - GOV-005: Enforce docs consistency CI + global pointer synchronization
+- GOV-017: Commercial offer architecture lock (pricing/fees/billable-event governance)
 
 ## Epic E2 - Public Marketing Funnel (High-Ticket First)
 
@@ -24,6 +25,7 @@
 - FE-013: Revenue dashboard and ROI calculator (`SCR-PUB-015`, `SCR-PUB-016`)
 - FE-014: Competitive comparison pages (`SCR-PUB-017`, `SCR-PUB-018`)
 - FE-015: Customer and technician experience page (`SCR-PUB-019`)
+- FE-016: Pricing mechanics hardening (setup/overage/performance fees/add-ons/invoice examples) (`SCR-PUB-006`)
 
 ## Epic E3 - Tenant Product Experience (Starts After Marketing DoD)
 
@@ -54,6 +56,7 @@
 - BE-003: Signature and auth fail-closed checks
 - BE-004: Data contract validation and backward compatibility tests
 - BE-005: Observability and audit logs for critical flows
+- BE-006: Billable events + invoice-rule pipeline for performance fees
 
 ## Epic E5 - Launch Readiness
 
