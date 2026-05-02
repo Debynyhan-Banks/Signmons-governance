@@ -19,6 +19,15 @@ The site must prove this operational claim without ambiguity:
 - `SCR-PUB-007` Demo Experience
 - `SCR-PUB-009` Contact / Waitlist / Demo Request
 - `SCR-PUB-010` Privacy + Terms + SMS Terms
+- `SCR-PUB-011` Done-for-you Setup
+- `SCR-PUB-012` Business Rules and Custom Logic
+- `SCR-PUB-013` Brand Voice and AI Personality
+- `SCR-PUB-014` Dispatch and Scheduling
+- `SCR-PUB-015` Revenue Dashboard
+- `SCR-PUB-016` ROI Calculator
+- `SCR-PUB-017` Compare: Answering Services
+- `SCR-PUB-018` Compare: Field Service Software
+- `SCR-PUB-019` Customer and Technician Experience
 
 ## High-Ticket Readiness Gates
 
@@ -46,6 +55,10 @@ The site must prove this operational claim without ambiguity:
 - Pricing copy is contract-driven and validated by `pricing:check`.
 - Tier boundaries are non-conflicting (included vs add-on language).
 - Setup fee + volume policy + overage policy are explicit.
+- Performance fee policy disclosure is explicit (qualified booked jobs, emergency captured jobs).
+- "How pricing works" formula is visible:
+  - `Monthly Total = Base + Overage + Performance Fees + Add-ons`.
+- Billable-event definitions are linked and consistent with governed specs.
 
 ### 5) Legal/Trust Integrity
 

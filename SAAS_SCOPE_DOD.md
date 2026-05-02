@@ -33,6 +33,10 @@ Signmons is a multi-tenant call-intake and booking SaaS for home-service busines
 - Scheduling and calendar decisions must respect technician availability, service windows, urgency, and payment-gate status
 - Customer profile/history access must remain tenant-isolated with no cross-tenant exposure
 - Human fallback/escalation must exist for urgent, unclear, failed, or policy-sensitive flows
+- Public pricing must follow a five-part model: base subscription, setup fee, usage/overage policy, performance fees, and add-ons
+- Billing and performance fees must be computed from backend billable events, not frontend display state
+- A "qualified booked job" and an "emergency captured job" must be defined in governed contracts before performance fees can be enabled
+- Every fee-related claim must include a plain-language disclosure on what is billable and what is excluded
 
 ## 5) Definition of Done
 
@@ -80,3 +84,21 @@ Signmons is a multi-tenant call-intake and booking SaaS for home-service busines
 - No high-ticket marketing claim may ship unless it maps to:
   - one metric in Section 6 (or an approved extension), and
   - one evidence source (dashboard panel, report extract, or ticket evidence artifact).
+
+## 8) Commercial Model Guardrails (High-Ticket)
+
+- Public plan ladder target:
+  - Starter: `$299/mo`
+  - Growth: `$799/mo`
+  - Pro: `$1,499/mo`
+  - Enterprise: `from $3,500/mo`
+- Setup fee targets:
+  - Starter: `$499`
+  - Growth: `$1,000`
+  - Pro: `$2,500`
+  - Enterprise: custom (`$5,000+` default proposal baseline)
+- Performance fee model must be configurable by plan with strict definitions:
+  - qualified booked job fee (example range `$10-$25`)
+  - emergency captured job fee (example range `$50-$100`)
+- Marketing may describe performance fee ranges, but invoicing must use tenant policy values from backend configuration.
+- Annual pricing discount policy must be explicit and versioned (default target: `15%-20%`).

@@ -82,6 +82,54 @@ Signmons is the AI front office and dispatch intelligence system for trades busi
 7. Pricing teaser
 8. Final CTA
 
+## Commercial Offer Map (High-Ticket)
+
+Signmons public offer is intentionally multi-layered:
+
+1. Base subscription (monthly/annual)
+2. Setup fee (one-time)
+3. Included call volume + overage blocks
+4. Performance fees (qualified booked jobs, emergency captured jobs)
+5. Add-ons (advanced recovery/escalation/seats/locations/custom setup)
+
+Target public ladder:
+
+- Starter: `$299/mo` + `$499` setup
+- Growth: `$799/mo` + `$1,000` setup
+- Pro: `$1,499/mo` + `$2,500` setup
+- Enterprise: `from $3,500/mo` + custom setup (`$5,000+` baseline)
+
+## Pricing Page Section Contract (`SCR-PUB-006`)
+
+Pricing page must include all sections below:
+
+1. Tier cards (Starter/Growth/Pro/Enterprise)
+2. Setup fee disclosure by tier
+3. Included volume + overage policy disclosure
+4. Performance fee disclosure:
+   - qualified booked job fee (range/policy)
+   - emergency captured job fee (range/policy)
+5. Add-ons section
+6. Annual billing discount disclosure
+7. "How pricing works" formula:
+   - `Monthly Total = Base + Overage + Performance Fees + Add-ons`
+8. Billable event definitions summary with link to full policy
+9. Tier-specific CTA map:
+   - Starter: `Start Early Access`
+   - Growth: `Book Revenue Demo`
+   - Pro: `Build My AI Dispatcher`
+   - Enterprise: `Talk to Sales`
+
+## Revenue and ROI Pages Contract (`SCR-PUB-015`, `SCR-PUB-016`)
+
+Revenue Dashboard and ROI calculator pages must include:
+
+1. Plain-language assumptions panel
+2. Inputs that map to governed contracts (`PricingPlan`, `PerformanceFeePolicy`)
+3. Output disclosure distinguishing estimates vs realized values
+4. "What counts as billable" summary
+5. Contact conversion CTA to `/contact`
+
 ## Build Priority
 
 ### Sprint 1: Core conversion

@@ -14,6 +14,7 @@ It is built to:
 - route work with controlled rules,
 - notify owner/dispatcher/technician/customer,
 - report revenue outcomes with auditability.
+- monetize through a governed commercial model (base subscription, setup fee, usage/overage, performance fees, and add-ons).
 
 Primary ICP:
 - HVAC, plumbing, electrical, and adjacent home-service operators.
@@ -91,3 +92,7 @@ A feature or phase is not complete unless all are true:
 
 - This doc must be read at session start for any repo execution.
 - If a proposal conflicts with this doc, it is blocked until governance is updated.
+- Commercial claims and pricing mechanics must align with:
+  - `PRICING_AND_FEES_POLICY.md`
+  - `OFFER_CATALOG.md`
+  - `BILLABLE_EVENTS_SPEC.md`

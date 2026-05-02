@@ -7,16 +7,16 @@ Purpose: canonical alignment between screen IDs, frontend routes, and backend AP
 | Screen ID | Route | UI Owner Repo | Backend Endpoint(s) | Contract Dependency | Delivery Ticket | Status |
 | --- | --- | --- | --- | --- | --- | --- |
 | `SCR-PUB-001` | `/` | `signmons-marketing-web-feat-marketing-site` | none required | n/a | FE baseline shipped | implemented |
-| `SCR-PUB-006` | `/pricing` | `signmons-marketing-web-feat-marketing-site` | none required | `PaymentPolicy` (display dependency) | FE baseline shipped | implemented |
+| `SCR-PUB-006` | `/pricing` | `signmons-marketing-web-feat-marketing-site` | none required (static MVP), optional pricing-catalog API (post-MVP) | `PricingPlan`, `PerformanceFeePolicy`, `InvoiceRule`, `PaymentPolicy` | FE baseline shipped + FE-016 (pricing mechanics hardening) | implemented |
 | `SCR-PUB-007` | `/demo` | `signmons-marketing-web-feat-marketing-site` | `POST /api/marketing/try-demo`, `GET /api/marketing/try-demo/:leadId`, `POST /api/marketing/try-demo/status` | marketingLead/try-demo contract | FE-008 | implemented |
 | `SCR-PUB-009` | `/contact` | `signmons-marketing-web-feat-marketing-site` | `POST /api/marketing/lead-capture` | FE-007 lead-capture contract | FE-007 + BE-002 | implemented |
 | `SCR-PUB-010` | `/privacy`, `/terms`, `/sms-terms` | `signmons-marketing-web-feat-marketing-site` | none required | n/a | FE-006 | implemented |
 | `SCR-PUB-011` | `/done-for-you-setup` | `signmons-marketing-web-feat-marketing-site` | none required | `BusinessRuleSet`, `TenantBrandProfile` (messaging dependency) | FE-009 | implemented |
 | `SCR-PUB-012` | `/business-rules` | `signmons-marketing-web-feat-marketing-site` | none required | `BusinessRuleSet`, `DispatchPolicy`, `PaymentPolicy` | FE-010 | implemented |
 | `SCR-PUB-013` | `/brand-voice` | `signmons-marketing-web-feat-marketing-site` | none required | `TenantBrandProfile` | FE-011 | implemented |
-| `SCR-PUB-014` | `/dispatch-scheduling` | `signmons-marketing-web-feat-marketing-site` | none required | `SchedulingWindow`, `Appointment`, `DispatchPolicy` | FE-012 | placeholder |
-| `SCR-PUB-015` | `/revenue-dashboard` | `signmons-marketing-web-feat-marketing-site` | none required | `RevenueEvent` | FE-013 | placeholder |
-| `SCR-PUB-016` | `/roi-calculator` | `signmons-marketing-web-feat-marketing-site` | none required | `RevenueEvent` (input assumptions) | FE-013 | placeholder |
+| `SCR-PUB-014` | `/dispatch-scheduling` | `signmons-marketing-web-feat-marketing-site` | none required | `SchedulingWindow`, `Appointment`, `DispatchPolicy` | FE-012 | implemented |
+| `SCR-PUB-015` | `/revenue-dashboard` | `signmons-marketing-web-feat-marketing-site` | none required (static MVP), optional revenue-summary API (post-MVP) | `RevenueEvent`, `BillableEvent`, `PerformanceFeePolicy` | FE-013 | placeholder |
+| `SCR-PUB-016` | `/roi-calculator` | `signmons-marketing-web-feat-marketing-site` | none required (calculator model in FE), optional ROI estimate API (post-MVP) | `PricingPlan`, `PerformanceFeePolicy`, `BillableEvent`, `RevenueEvent` | FE-013 + FE-016 | placeholder |
 | `SCR-PUB-017` | `/compare/answering-services` | `signmons-marketing-web-feat-marketing-site` | none required | n/a | FE-014 | placeholder |
 | `SCR-PUB-018` | `/compare/field-service-software` | `signmons-marketing-web-feat-marketing-site` | none required | n/a | FE-014 | placeholder |
 | `SCR-PUB-019` | `/customer-technician-experience` | `signmons-marketing-web-feat-marketing-site` | none required | `NotificationPolicy`, `CustomerProfile`, `Appointment` | FE-015 | placeholder |
@@ -36,3 +36,4 @@ Purpose: canonical alignment between screen IDs, frontend routes, and backend AP
 - Every route in `LINK_CTA_MAP.md` must appear in this matrix.
 - Every backend endpoint here must be defined in `DATA_CONTRACTS.md`.
 - Delivery ticket ownership must be explicit for each API-dependent screen.
+- Any page that presents total monthly cost, savings, or performance-fee upside must map to `PricingPlan` + `PerformanceFeePolicy` contracts.

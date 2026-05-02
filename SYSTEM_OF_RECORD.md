@@ -17,9 +17,12 @@ If docs conflict, resolve in this exact order:
 9. `LINK_CTA_MAP.md`
 10. `MVP_BACKLOG.md`
 11. `DATA_CONTRACTS.md`
-12. `QUALITY_GATES.md`
-13. `AI_WORKFLOW_RULES.md`
-14. `SESSION_HANDOFF.md`
+12. `PRICING_AND_FEES_POLICY.md`
+13. `BILLABLE_EVENTS_SPEC.md`
+14. `OFFER_CATALOG.md`
+15. `QUALITY_GATES.md`
+16. `AI_WORKFLOW_RULES.md`
+17. `SESSION_HANDOFF.md`
 
 All other docs are reference-only unless explicitly listed above.
 
@@ -35,6 +38,9 @@ All other docs are reference-only unless explicitly listed above.
 - CTA/link behavior map: `LINK_CTA_MAP.md`
 - Delivery roadmap: `MVP_BACKLOG.md`
 - API/event contract policy: `DATA_CONTRACTS.md`
+- Commercial pricing/fee policy: `PRICING_AND_FEES_POLICY.md`
+- Billable event definitions: `BILLABLE_EVENTS_SPEC.md`
+- Plan and feature packaging: `OFFER_CATALOG.md`
 - Required quality gates: `QUALITY_GATES.md`
 - Agent workflow contract: `AI_WORKFLOW_RULES.md`
 - Universal chatbot starter: `UNIVERSAL_AGENT_EXECUTION_GUIDE.md`
