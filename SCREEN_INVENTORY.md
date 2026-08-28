@@ -70,6 +70,7 @@
 - `SCR-CUST-003` Customer Confirmation / Reschedule
 - `SCR-CUST-004` Customer Photo / Notes Upload
 - `SCR-CUST-005` Customer Review Request
+- `SCR-CUST-006` Customer Webchat Intake
 
 ## Platform Admin
 

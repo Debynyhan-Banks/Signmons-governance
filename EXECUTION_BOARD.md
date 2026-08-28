@@ -22,10 +22,11 @@ Purpose: single active queue for execution.
 
 ## Now
 
-- [ ] FE-013 Revenue dashboard and ROI calculator (`SCR-PUB-015`, `SCR-PUB-016`)
+- [ ] BE-003 Eternity webchat backend production readiness (`SCR-CUST-006`)
 
 ## Next
 
+- [ ] FE-013 Revenue dashboard and ROI calculator (`SCR-PUB-015`, `SCR-PUB-016`) — paused by owner-approved BE-003 priority override
 - [ ] FE-014 Competitive comparison pages (`SCR-PUB-017`, `SCR-PUB-018`)
 - [ ] APP-006 Intake review and booking readiness (`SCR-APP-012`) - unlocks after marketing DoD exit criteria
 
@@ -35,7 +36,7 @@ Purpose: single active queue for execution.
 
 ## Blockers
 
-- None recorded
+- Live Eternity connection remains blocked until BE-003 gates pass and the website privacy notice is updated for AI message processing.
 
 ## Done
 

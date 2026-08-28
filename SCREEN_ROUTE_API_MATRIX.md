@@ -31,6 +31,12 @@ Purpose: canonical alignment between screen IDs, frontend routes, and backend AP
 | `SCR-APP-027` | `/app/brand-voice` (planned) | backend app surface | tenant brand voice profile API set (ticket-defined) | `TenantBrandProfile` | APP-018 | planned |
 | `SCR-APP-028` | `/app/customers` (planned) | backend app surface | customer profile/history API set (ticket-defined) | `CustomerProfile`, `NotificationPolicy` | APP-019 | planned |
 
+## Customer Integration Pilot
+
+| Screen ID | Route / surface | UI owner | Backend endpoint | Contract dependency | Delivery ticket | Status |
+| --- | --- | --- | --- | --- | --- | --- |
+| `SCR-CUST-006` | Embedded tenant website assistant; Eternity pilot uses a server-side website proxy | tenant website | `POST /api/integrations/webchat/triage` | BE-003 webchat request, response, credential and safety contract | BE-003 | in progress |
+
 ## Contract Rules
 
 - Every route in `LINK_CTA_MAP.md` must appear in this matrix.

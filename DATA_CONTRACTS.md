@@ -117,6 +117,41 @@ Decision payload must include:
 - CI validation for route/CTA/API mapping docs.
 - Evidence in ticket completion notes.
 
+## BE-003 Server-to-Server Webchat Triage Contract
+
+Endpoint:
+- `POST /api/integrations/webchat/triage`
+
+Authentication and tenancy:
+- The tenant website calls its own server-side proxy; browser code never receives the Signmons credential.
+- The proxy sends `Authorization: Bearer <integration secret>` over HTTPS.
+- Signmons stores only a SHA-256 credential hash in configuration and resolves `tenantId` from the matched credential.
+- The request body cannot supply or override `tenantId`.
+
+Request body:
+- `sessionId` (required, 4–64 safe identifier characters)
+- `message` (required, 1–1000 characters after normalization)
+
+Reply response:
+- `status: "reply"`
+- `reply` (string)
+
+Life-safety response:
+- `status: "safety_escalation"`
+- `reply` (deterministic emergency guidance)
+- `requiresHumanHandoff: true`
+- `emergencyServicesRecommended: true`
+
+Tool response:
+- Existing tenant-scoped `job_created` response may be returned only after required fields validate and the configured tool budget permits it.
+
+Contract rules:
+- The assistant must disclose that it is automated and is not a technician.
+- It must not diagnose equipment, promise an appointment or arrival, publish a fee, or upsell unless an approved tenant policy expressly allows that behavior.
+- Gas odor, carbon monoxide, fire, smoke, sparks or immediate electrical danger must be intercepted before the AI provider is called.
+- Rate limits apply per resolved integration tenant.
+- Direct browser CORS access is not part of this contract.
+
 ## GOV-008 High-Ticket Domain Contracts (High-Level)
 
 ### TenantBrandProfile

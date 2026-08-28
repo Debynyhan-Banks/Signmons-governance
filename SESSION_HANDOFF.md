@@ -1,12 +1,12 @@
 # Session Handoff
 
-Last Updated: 2026-04-28
+Last Updated: 2026-08-28
 
 ## Current Program Pointer
 
-- Global `Now`: `FE-013` (revenue dashboard and ROI calculator).
-- Previous `Now`: `FE-012` (dispatch and scheduling page) — completed and pointer advanced.
-- Program phase: marketing-first high-ticket completion.
+- Global `Now`: `BE-003` (Eternity webchat backend production readiness).
+- Paused `Now`: `FE-013` (revenue dashboard and ROI calculator) — preserved in `Next` by explicit product-owner direction.
+- Program phase: backend safety/readiness exception before a real customer pilot.
 - Sequencing: strict (`Now` -> `Done` before `Next`).
 
 ## FE-012 Completion Context
@@ -39,6 +39,6 @@ Last Updated: 2026-04-28
 
 ## Next Actions (Strict Order)
 
-1. Execute FE-013 (`SCR-PUB-015`, `SCR-PUB-016` — Revenue Recovery Dashboard + ROI Calculator) only.
-2. Execute FE-014 (`SCR-PUB-017`, `SCR-PUB-018` — competitive comparison pages) only after FE-013 merges.
-3. Keep APP-006 blocked until marketing DoD exit criteria are satisfied.
+1. Complete BE-003 gates and evidence without connecting the live Eternity website.
+2. Obtain deployment configuration and update Eternity privacy disclosures before enabling message processing.
+3. Return the global pointer to FE-013 after BE-003 is complete.
