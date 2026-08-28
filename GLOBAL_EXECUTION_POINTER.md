@@ -16,17 +16,17 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 
 ## Current Pointer (as of 2026-08-28)
 
-- Program `Now`: `BE-003` (Eternity webchat backend production readiness)
-- Program phase: owner-approved backend safety and readiness exception; marketing implementation is paused, not discarded
+- Program `Now`: `FE-013` (revenue dashboard and ROI calculator)
+- Program phase: marketing-first implementation resumed after the completed owner-approved BE-003 safety exception
 - Sequencing: strict (`Now` -> `Done` before starting `Next`)
 
 ### Repo Status
 
 | Repo | Active Ticket | State |
 | --- | --- | --- |
-| Governance | BE-003 contract and safety gates active | active |
-| Frontend marketing | `FE-013` preserved in `Next` during the backend readiness exception | paused |
-| Backend | `BE-003` Eternity webchat production readiness | active |
+| Governance | FE-013 contract and evidence alignment | active |
+| Frontend marketing | `FE-013` revenue dashboard and ROI calculator | active |
+| Backend | `BE-003` complete; deployment remains a separately approved operation | queued |
 
 ## Synchronization Rules
 

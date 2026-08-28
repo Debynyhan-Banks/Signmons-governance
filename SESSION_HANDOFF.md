@@ -4,9 +4,9 @@ Last Updated: 2026-08-28
 
 ## Current Program Pointer
 
-- Global `Now`: `BE-003` (Eternity webchat backend production readiness).
-- Paused `Now`: `FE-013` (revenue dashboard and ROI calculator) — preserved in `Next` by explicit product-owner direction.
-- Program phase: backend safety/readiness exception before a real customer pilot.
+- Global `Now`: `FE-013` (revenue dashboard and ROI calculator).
+- Completed exception: `BE-003` (Eternity webchat backend production readiness).
+- Program phase: marketing-first work resumed; backend deployment and live Eternity connection remain separate approval gates.
 - Sequencing: strict (`Now` -> `Done` before `Next`).
 
 ## FE-012 Completion Context
@@ -31,6 +31,10 @@ Last Updated: 2026-08-28
 
 ## Completed In This Session
 
+- Completed BE-003 on backend branch `codex/be-003-eternity-webchat-readiness` at commit `9586d9c`.
+- Verified clean install, PostgreSQL 16 migrations with legacy preservation, 38 tests, lint, build, architecture, compiled runtime health/auth/safety smoke checks, and zero critical production advisories.
+- Added tenant-bound hashed webchat credentials and deterministic life-safety interception without connecting the live Eternity website.
+- Returned the global execution pointer to FE-013 after the owner-approved backend exception.
 - Verified existing FE-012 implementation on `codex/fe-012-dispatch-scheduling`.
 - Authored `evidence/FE-012/parity-checklist.md` and `evidence/FE-012/mapping.md`.
 - Refreshed `evidence/FE-012/{build,lint,test}.txt` from current branch state.
@@ -39,6 +43,6 @@ Last Updated: 2026-08-28
 
 ## Next Actions (Strict Order)
 
-1. Complete BE-003 gates and evidence without connecting the live Eternity website.
-2. Obtain deployment configuration and update Eternity privacy disclosures before enabling message processing.
-3. Return the global pointer to FE-013 after BE-003 is complete.
+1. Execute FE-013 under the marketing board and ticket contract.
+2. Keep backend deployment and live Eternity website connection blocked until separately approved configuration and privacy work are complete.
+3. Recheck BE-003 dependency advisories before any backend deployment.
