@@ -77,7 +77,7 @@ Execute the product in this order unless the governance pointer explicitly appro
 
 1. CallDesk reliability, safety, intake integrity, booking, and notifications
 2. Tenant dashboard, customer/job history, and booking-readiness review
-3. Calendar, dispatch, technician assignment, and customer confirmations
+3. Calendar, dispatch, technician assignment, and durable customer confirmations with secure appointment-management access
 4. Professional estimates, invoices, deposits, payments, and receipts
 5. Technician mobile workflow and pricebook
 6. Voice/SMS depth, accounting/CRM/FSM integrations, reviews, and maintenance plans
