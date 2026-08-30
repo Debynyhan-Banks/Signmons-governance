@@ -10,7 +10,7 @@ Last Updated: 2026-08-30
 - Approved limited Founding Partner bridge: `$199/mo` + `$299` setup for the first `10` approved external businesses, with a `12`-month price lock while active.
 - Public target ladder remains `$299/$799/$1,499/from $3,500`, subject to implementation and claim-evidence gates.
 - Per-tier call overages replace the unsupported `$99/250 calls` target; performance fees remain disabled by default until attribution and dispute safeguards ship.
-- The marketing-site source currently contains an older `$199/$499/$999` public ladder and `$299/$750/$1,500` setup fees. FE-016 must reconcile implementation to governance; this documentation decision does not silently publish price changes.
+- FE-016 pricing reconciliation is complete on marketing branch `codex/fe-016-pricing-reconcile` at commit `83462ec`: the public ladder, setup fees, annual discounts, per-tier overages, Founding Partner disclosure, planned invoicing boundary, provider-fee disclosure, add-ons, tests, and `pricing:check` now match governance. Publishing/merging remains a separate operation.
 
 ## Current Program Pointer
 
