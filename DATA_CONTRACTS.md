@@ -309,12 +309,50 @@ Required fields:
 - `trialPolicy` (`none` | `time_limited`)
 - `creditPolicy` (typed object)
 - `lineItemRules` (typed object; includes setup, subscription, overage, performance fees)
+- `providerFeeRules` (typed object; disclosed pass-through fees only)
 - `disputeWindowDays`
 - `effectiveFrom`
+
+### Contractor Customer Billing Contracts (Reserved for APP-020)
+
+These contracts govern a tenant contractor billing its homeowner/business customer. They are separate from `InvoiceRule`, which governs Signmons billing the tenant.
+
+`ServiceEstimate` required fields:
+
+- `tenantId`, `estimateId`, `estimateNumber`, `customerId`, `propertyAddressId`, `jobId`
+- `status` (`draft` | `sent` | `approved` | `declined` | `expired` | `converted` | `voided`)
+- versioned line items, subtotal, tax, discount, total, currency, terms, and expiration
+- customer approval identity/method/timestamp when approved
+- created/updated/sent timestamps and audit source
+
+`JobInvoice` required fields:
+
+- `tenantId`, `invoiceId`, tenant-unique `invoiceNumber`, `customerId`, `jobId`, optional `estimateId`
+- `status` (`draft` | `sent` | `partially_paid` | `paid` | `overdue` | `voided`)
+- immutable issued line-item snapshot, subtotal, tax, discount, total, balance, currency, due date
+- processor references only; no raw card data
+- created/updated/issued/sent/paid timestamps and audit source
+
+`CustomerPaymentAllocation` required fields:
+
+- `tenantId`, `allocationId`, `invoiceId`, provider payment reference, amount, currency, status
+- idempotency key, allocation timestamp, refund/credit references, and audit source
+
+`CustomerReceipt` required fields:
+
+- `tenantId`, `receiptId`, `invoiceId`, payment allocation references, paid amount, currency, issued timestamp
+- immutable customer-facing receipt snapshot and delivery status
+
+Rules:
+
+- Estimate and invoice numbering is unique and sequential within the configured tenant policy; it never shares a sequence with Signmons SaaS invoices.
+- Estimate approval, invoice issue, payment allocation, refund, credit, and void transitions are auditable and tenant-scoped.
+- General-ledger posting, payroll, tax filing, and bank reconciliation remain outside these contracts and flow through approved accounting adapters.
 
 ## Commercial Verification Rules
 
 - A `qualified_booked_job` billable event may be emitted only when required booking fields are complete and job status has transitioned to booked/scheduled under tenant policy.
 - An `emergency_captured_job` billable event may be emitted only when urgency is `emergency` and dispatch or escalated dispatch has been triggered according to tenant rules.
+- An `overage_block_consumed` event may be emitted only from deduplicated qualifying-call counts under `BILLABLE_EVENTS_SPEC.md`; excluded calls must carry a reason code.
 - `BillableEvent` must be immutable after `finalized`; reversals occur through explicit credit/void events.
 - Pricing page and ROI calculator must never calculate invoice totals from hardcoded constants when contract-backed pricing data is available.

@@ -1,6 +1,16 @@
 # Session Handoff
 
-Last Updated: 2026-08-28
+Last Updated: 2026-08-30
+
+## Owner-Approved Product Direction (2026-08-30)
+
+- Owner approved Signmons as one AI front-office and dispatch platform with governed CallDesk, Dispatch, Money, Field, Customers, Growth, and Intelligence modules.
+- Professional estimates/invoices/payment links/receipts are a core paid-plan capability after the Signmons Money release gate; Signmons does not become general-ledger accounting.
+- Approved delivery sequence is recorded in `WHAT_SIGNMONS_IS_AND_DOD.md`; new work cannot bypass the active governance pointer.
+- Approved limited Founding Partner bridge: `$199/mo` + `$299` setup for the first `10` approved external businesses, with a `12`-month price lock while active.
+- Public target ladder remains `$299/$799/$1,499/from $3,500`, subject to implementation and claim-evidence gates.
+- Per-tier call overages replace the unsupported `$99/250 calls` target; performance fees remain disabled by default until attribution and dispute safeguards ship.
+- The marketing-site source currently contains an older `$199/$499/$999` public ladder and `$299/$750/$1,500` setup fees. FE-016 must reconcile implementation to governance; this documentation decision does not silently publish price changes.
 
 ## Current Program Pointer
 

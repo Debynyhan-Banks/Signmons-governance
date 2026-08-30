@@ -54,6 +54,10 @@
 - `SCR-APP-026` Business Rules and Automation Center
 - `SCR-APP-027` Brand Voice and AI Personality Settings
 - `SCR-APP-028` Customer Profiles and Service History
+- `SCR-APP-029` Estimates, Invoices, Receipts, and Aging
+- `SCR-APP-030` Service Pricebook and Estimate Options
+- `SCR-APP-031` Reviews and Maintenance-Plan Automation
+- `SCR-APP-032` Accounting Integration and Reconciliation
 
 ## Technician Portal
 
@@ -71,6 +75,7 @@
 - `SCR-CUST-004` Customer Photo / Notes Upload
 - `SCR-CUST-005` Customer Review Request
 - `SCR-CUST-006` Customer Webchat Intake
+- `SCR-CUST-007` Estimate Approval, Invoice, Payment, and Receipt
 
 ## Platform Admin
 

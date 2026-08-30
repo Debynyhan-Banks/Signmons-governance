@@ -30,12 +30,17 @@ Purpose: canonical alignment between screen IDs, frontend routes, and backend AP
 | `SCR-APP-026` | `/app/business-rules` (planned) | backend app surface | tenant rules policy API set (ticket-defined) | `BusinessRuleSet`, `DispatchPolicy`, `PaymentPolicy` | APP-017 | planned |
 | `SCR-APP-027` | `/app/brand-voice` (planned) | backend app surface | tenant brand voice profile API set (ticket-defined) | `TenantBrandProfile` | APP-018 | planned |
 | `SCR-APP-028` | `/app/customers` (planned) | backend app surface | customer profile/history API set (ticket-defined) | `CustomerProfile`, `NotificationPolicy` | APP-019 | planned |
+| `SCR-APP-029` | `/app/invoices` (planned) | backend app surface | estimate/invoice/receipt API set (ticket-defined) | `ServiceEstimate`, `JobInvoice`, `CustomerPaymentAllocation`, `CustomerReceipt` | APP-020 | planned |
+| `SCR-APP-030` | `/app/pricebook` (planned) | backend app surface | pricebook API set (ticket-defined) | service/pricebook contract (ticket-defined) | APP-021 | planned |
+| `SCR-APP-031` | `/app/growth` (planned) | backend app surface | review/maintenance automation API set (ticket-defined) | review/maintenance policy contract (ticket-defined) | APP-022 | planned |
+| `SCR-APP-032` | `/app/integrations/accounting` (planned) | backend app surface | accounting adapter/reconciliation API set (ticket-defined) | accounting adapter contract (ticket-defined) | APP-023 | planned |
 
 ## Customer Integration Pilot
 
 | Screen ID | Route / surface | UI owner | Backend endpoint | Contract dependency | Delivery ticket | Status |
 | --- | --- | --- | --- | --- | --- | --- |
 | `SCR-CUST-006` | Embedded tenant website assistant; Eternity pilot uses a server-side website proxy | tenant website | `POST /api/integrations/webchat/triage` | BE-003 webchat request, response, credential and safety contract | BE-003 | in progress |
+| `SCR-CUST-007` | Customer estimate/invoice link (planned) | customer web surface | estimate approval, payment, and receipt API set (ticket-defined) | `ServiceEstimate`, `JobInvoice`, `CustomerPaymentAllocation`, `CustomerReceipt` | APP-020 | planned |
 
 ## Contract Rules
 
