@@ -61,6 +61,7 @@
 - BE-004: Data contract validation and backward compatibility tests
 - BE-005: Observability and audit logs for critical flows
 - BE-006: Billable events + invoice-rule pipeline for performance fees
+- BE-007: Tenant lead-source reporting pilot for booked/completed attribution
 
 ## Epic E5 - Launch Readiness
 

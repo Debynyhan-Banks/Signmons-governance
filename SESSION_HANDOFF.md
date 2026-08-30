@@ -14,9 +14,9 @@ Last Updated: 2026-08-30
 
 ## Current Program Pointer
 
-- Global `Now`: `FE-013` (revenue dashboard and ROI calculator).
+- Global `Now`: `BE-007` (tenant lead-source reporting pilot), explicitly approved by the owner after the Eternity production attribution acceptance passed.
 - Completed exception: `BE-003` (Eternity webchat backend production readiness).
-- Program phase: marketing-first work resumed; backend deployment and live Eternity connection remain separate approval gates.
+- Program phase: narrow Eternity pilot reporting exception; FE-013 returns to `Next` and resumes after BE-007.
 - Sequencing: strict (`Now` -> `Done` before `Next`).
 
 ## FE-012 Completion Context
@@ -53,6 +53,6 @@ Last Updated: 2026-08-30
 
 ## Next Actions (Strict Order)
 
-1. Execute FE-013 under the marketing board and ticket contract.
-2. Keep backend deployment and live Eternity website connection blocked until separately approved configuration and privacy work are complete.
-3. Recheck BE-003 dependency advisories before any backend deployment.
+1. Implement and verify BE-007 under its tenant-isolated, PII-free reporting contract.
+2. Deploy BE-007 only after backend gates and production-safe aggregate proof pass.
+3. Return the program pointer to FE-013 after BE-007 completion.

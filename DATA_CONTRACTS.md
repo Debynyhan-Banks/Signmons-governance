@@ -152,6 +152,39 @@ Contract rules:
 - Rate limits apply per resolved integration tenant.
 - Direct browser CORS access is not part of this contract.
 
+## BE-007 Tenant Lead-Source Report Contract
+
+Endpoint:
+- `GET /reports/lead-sources?from=<ISO-8601>&to=<ISO-8601>`
+
+Authentication and tenancy:
+- Firebase bearer authentication is required in production.
+- The authenticated tenant claim is authoritative; the request cannot supply or override `tenantId`.
+- Only `owner`, `admin` and `manager` roles may read the report.
+
+Date rules:
+- `from` is inclusive and `to` is exclusive.
+- Both values must be valid ISO-8601 timestamps with explicit timezone offsets.
+- `to` must be later than `from`; the range may not exceed 366 days.
+
+Response:
+- `period`: normalized UTC `from` and `to`.
+- `totals`: raw counts for `created`, `booked`, `completed`, `cancelled`, `attributed` and `unattributed`.
+- `rates`: `leadToBooking` and `bookedToCompleted`, returned with their raw denominators in `totals`.
+- `bySource`: privacy-safe channel/source/medium/campaign groups with the same counts and rates.
+- `topLandingPages`: normalized site paths and job counts.
+
+Metric lineage:
+- Created: `Job.createdAt` falls inside the requested period.
+- Booked: accepted lineage exists (`acceptedAt`) or current status is `ACCEPTED`, `IN_PROGRESS` or `COMPLETED`.
+- Completed: completed lineage exists (`completedAt`) or current status is `COMPLETED`.
+- Cancelled: current status is `CANCELLED`.
+- Attribution: bounded values from `Job.policySnapshot.leadAttribution`; missing values are grouped as `unattributed`.
+
+Privacy rules:
+- The report must not select or return customer names, phone numbers, addresses, free-text descriptions, conversation contents, calendar event IDs or appointment-management credentials.
+- Reporting credentials must remain server-side and must never be embedded in browser JavaScript.
+
 ## GOV-008 High-Ticket Domain Contracts (High-Level)
 
 ### TenantBrandProfile

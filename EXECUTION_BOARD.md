@@ -22,10 +22,11 @@ Purpose: single active queue for execution.
 
 ## Now
 
-- [ ] FE-013 Revenue dashboard and ROI calculator (`SCR-PUB-015`, `SCR-PUB-016`)
+- [ ] BE-007 Tenant lead-source reporting pilot (`SCR-APP-018`, `SCR-APP-019`)
 
 ## Next
 
+- [ ] FE-013 Revenue dashboard and ROI calculator (`SCR-PUB-015`, `SCR-PUB-016`)
 - [ ] FE-014 Competitive comparison pages (`SCR-PUB-017`, `SCR-PUB-018`)
 - [ ] APP-006 Intake review and booking readiness (`SCR-APP-012`) - unlocks after marketing DoD exit criteria
 
