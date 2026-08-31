@@ -26,7 +26,7 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 | --- | --- | --- |
 | Governance | APP-008 dispatch contract and evidence alignment | active |
 | Frontend marketing | `FE-014` competitive comparison pages | paused |
-| Backend | `APP-008` implementation next; APP-007 implementation is verified with release pending | active |
+| Backend | `APP-008` implementation next; APP-007 is released | active |
 
 ## Synchronization Rules
 

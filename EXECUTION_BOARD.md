@@ -40,7 +40,7 @@ Purpose: single active queue for execution.
 ## Done
 
 - [x] APP-007 Urgency classification and escalation review (`SCR-APP-013`)
-  - Backend/UI implementation verified locally on `codex/app-007-urgency-escalation-review`; release pending; evidence in `signmons-calldesk-backend/evidence/APP-007/readiness-report.md`.
+  - Backend commit `afb3644`; migration execution `signmons-calldesk-migrate-fp7rp`; Cloud Run revision `signmons-calldesk-staging-00019-swf`; console `https://signmons-calldesk.web.app/app/urgency-review`; evidence in `signmons-calldesk-backend/evidence/APP-007/readiness-report.md`.
 - [x] APP-006 Intake review and booking readiness (`SCR-APP-012`)
   - Backend merge `2b715e4`; release configuration merge `2c3e608`; Cloud Run revision `signmons-calldesk-staging-00018-mxr`; console `https://signmons-calldesk.web.app/app/intake-review`; evidence in `signmons-calldesk-backend/evidence/APP-006/readiness-report.md`.
 - [x] APP-003 Job completion lifecycle foundation (`SCR-APP-005`)
