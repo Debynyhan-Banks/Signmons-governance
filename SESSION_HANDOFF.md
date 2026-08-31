@@ -14,10 +14,10 @@ Last Updated: 2026-08-31
 
 ## Current Program Pointer
 
-- Global `Now`: `FE-014` (competitive comparison pages).
+- Global `Now`: `APP-006` (intake review and booking readiness).
 - Completed exception: `BE-003` (Eternity webchat backend production readiness).
 - Completed exceptions: `BE-007` lead-source reporting and `APP-003` audited job completion.
-- Program phase: marketing-first work resumed after APP-003 completion.
+- Program phase: owner-approved CallDesk-first product execution; `FE-014` is paused, not cancelled.
 - Sequencing: strict (`Now` -> `Done` before `Next`).
 
 ## FE-012 Completion Context
@@ -71,6 +71,7 @@ Last Updated: 2026-08-31
 
 ## Next Actions (Strict Order)
 
-1. Execute FE-014 under the marketing board and ticket contract.
+1. Execute APP-006 under the backend board and ticket contract.
 2. Keep APP-003 completion behind authenticated owner/admin access; do not add a public Eternity control.
-3. Do not change a real job without confirmed field completion.
+3. Keep FE-014 paused until the owner returns the pointer to marketing work.
+4. Do not change a real job without confirmed field completion.
