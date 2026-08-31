@@ -26,7 +26,7 @@ Purpose: canonical alignment between screen IDs, frontend routes, and backend AP
 | Screen ID | Route | UI Owner Repo | Backend Endpoint(s) | Contract Dependency | Delivery Ticket | Status |
 | --- | --- | --- | --- | --- | --- | --- |
 | `SCR-APP-012` | `/app/intake-review` (planned) | backend app surface | intake read model + job readiness API (ticket-defined) | intake/job readiness contract | APP-006 | planned |
-| `SCR-APP-005` | `/app/jobs` (planned) | backend app surface | `POST /jobs/:jobId/complete` pilot; broader queue/lifecycle APIs remain ticket-defined | audited job completion contract | APP-003 | pilot backend in progress |
+| `SCR-APP-005` | `/app/jobs` (planned) | backend app surface | `POST /jobs/:jobId/complete` pilot deployed; broader queue/lifecycle APIs remain ticket-defined | audited job completion contract | APP-003 | pilot backend deployed; UI planned |
 | `SCR-APP-018`, `SCR-APP-019` | `/app/revenue`, `/app/conversion` (planned) | backend app surface | `GET /reports/lead-sources` pilot; broader revenue/funnel APIs remain APP-014 | tenant lead-source report contract | BE-007 pilot + APP-014 | pilot backend implemented; UI planned |
 | `SCR-APP-025` | `/app/schedule` (planned) | backend app surface | scheduling/availability API set (ticket-defined) | `SchedulingWindow`, `Appointment` | APP-016 | planned |
 | `SCR-APP-026` | `/app/business-rules` (planned) | backend app surface | tenant rules policy API set (ticket-defined) | `BusinessRuleSet`, `DispatchPolicy`, `PaymentPolicy` | APP-017 | planned |

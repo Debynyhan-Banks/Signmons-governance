@@ -22,11 +22,10 @@ Purpose: single active queue for execution.
 
 ## Now
 
-- [ ] APP-003 Job completion lifecycle foundation (`SCR-APP-005`)
+- [ ] FE-013 Revenue dashboard and ROI calculator (`SCR-PUB-015`, `SCR-PUB-016`)
 
 ## Next
 
-- [ ] FE-013 Revenue dashboard and ROI calculator (`SCR-PUB-015`, `SCR-PUB-016`)
 - [ ] FE-014 Competitive comparison pages (`SCR-PUB-017`, `SCR-PUB-018`)
 - [ ] APP-006 Intake review and booking readiness (`SCR-APP-012`) - unlocks after marketing DoD exit criteria
 
@@ -36,10 +35,12 @@ Purpose: single active queue for execution.
 
 ## Blockers
 
-- Live Eternity connection remains blocked until backend deployment configuration is approved and the website privacy notice is updated for AI message processing.
+- The APP-003 completion API has no public or operator UI; real job completion remains a protected operator action and requires confirmed field status.
 
 ## Done
 
+- [x] APP-003 Job completion lifecycle foundation (`SCR-APP-005`)
+  - Backend commit `55d59de`; Cloud Run revision `signmons-calldesk-staging-00016-jz9`; evidence in `signmons-calldesk-backend/evidence/APP-003/readiness-report.md`.
 - [x] BE-007 Tenant lead-source reporting pilot (`SCR-APP-018`, `SCR-APP-019`)
   - Backend commit `8264c74`; Cloud Run revision `signmons-calldesk-staging-00015-7hq`; evidence in `signmons-calldesk-backend/evidence/BE-007/readiness-report.md`.
 - [x] BE-003 Eternity webchat backend production readiness (`SCR-CUST-006`)

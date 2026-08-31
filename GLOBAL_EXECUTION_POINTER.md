@@ -16,17 +16,17 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 
 ## Current Pointer (as of 2026-08-30)
 
-- Program `Now`: `APP-003` (job completion lifecycle foundation)
-- Program phase: owner-approved Eternity pilot operations exception; marketing-first work resumes at FE-013 after APP-003 completion
+- Program `Now`: `FE-013` (revenue dashboard and ROI calculator)
+- Program phase: marketing-first work resumed after the completed APP-003 owner-approved Eternity pilot operations exception
 - Sequencing: strict (`Now` -> `Done` before starting `Next`)
 
 ### Repo Status
 
 | Repo | Active Ticket | State |
 | --- | --- | --- |
-| Governance | APP-003 contract and evidence alignment | active |
-| Frontend marketing | `FE-013` revenue dashboard and ROI calculator | queued |
-| Backend | `APP-003` audited job completion transition | active |
+| Governance | FE-013 contract and evidence alignment | active |
+| Frontend marketing | `FE-013` revenue dashboard and ROI calculator | active |
+| Backend | `APP-003` complete; implementation queue blocked | queued |
 
 ## Synchronization Rules
 
