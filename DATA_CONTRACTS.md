@@ -215,6 +215,45 @@ Audit rules:
 - Metadata may contain only the prior status and completion timestamp.
 - Customer names, contact details, addresses, descriptions, calendar identifiers and management credentials are prohibited from the response and audit metadata.
 
+## APP-007 Urgency Classification And Escalation Review Contract
+
+Endpoints:
+- `GET /jobs/urgency-review`
+- `GET /jobs/urgency-review/:jobId`
+- `POST /jobs/:jobId/urgency/override`
+- `POST /jobs/:jobId/escalations`
+
+Authentication and tenancy:
+- Firebase bearer authentication is required in production.
+- Tenant and actor identity come only from verified request context; request payloads cannot supply or override either value.
+- `owner`, `admin` and `dispatcher` roles may review urgency, record authorized overrides and initiate an internal escalation.
+- Missing and cross-tenant jobs return the same not-found boundary.
+
+Urgency rules:
+- Canonical urgency values are `EMERGENCY`, `HIGH` and `STANDARD`; `HIGH` must not be collapsed into `STANDARD` during persistence.
+- The review response includes a concise operational rationale, trigger reason codes, the decision source and a confidence note. It must not expose hidden model reasoning or imply diagnostic certainty.
+- The response includes an escalation-path preview and a chronological history of urgency overrides and escalation delivery attempts.
+
+Override request:
+- `urgency` (required: `EMERGENCY` | `HIGH` | `STANDARD`)
+- `reason` (required, normalized string, 10-500 characters)
+
+Override rules:
+- The job update and `AuditLog` entry commit in one database transaction.
+- Audit action: `job.urgency_overridden`.
+- Idempotent same-value overrides do not create duplicate audit entries.
+- Audit metadata may contain only prior/new urgency, normalized reason, decision source and timestamp.
+
+Escalation request and result:
+- An escalation request notifies the tenant's configured internal operations recipients through configured channels; customer recipients are out of scope.
+- Every attempt is audit logged with action `job.urgency_escalated`, including privacy-safe channel, recipient group, outcome and timestamp.
+- A configured-provider failure is returned as a recorded failed outcome and must not be presented as delivered.
+- If no notification channel is configured, the request is audit logged with a `not_configured` outcome.
+
+Privacy and safety:
+- Review-list and audit responses must not contain customer phone numbers, email addresses, street addresses, full transcripts, calendar identifiers or appointment-management credentials.
+- Urgency classification is an operational routing aid, not a diagnosis or emergency-services determination.
+
 ## GOV-008 High-Ticket Domain Contracts (High-Level)
 
 ### TenantBrandProfile
