@@ -14,9 +14,9 @@ Last Updated: 2026-08-30
 
 ## Current Program Pointer
 
-- Global `Now`: `BE-007` (tenant lead-source reporting pilot), explicitly approved by the owner after the Eternity production attribution acceptance passed.
+- Global `Now`: `FE-013` (revenue dashboard and ROI calculator).
 - Completed exception: `BE-003` (Eternity webchat backend production readiness).
-- Program phase: narrow Eternity pilot reporting exception; FE-013 returns to `Next` and resumes after BE-007.
+- Program phase: marketing-first work resumed after the completed owner-approved BE-007 reporting exception.
 - Sequencing: strict (`Now` -> `Done` before `Next`).
 
 ## FE-012 Completion Context
@@ -41,6 +41,10 @@ Last Updated: 2026-08-30
 
 ## Completed In This Session
 
+- Completed BE-007 on backend branch `codex/residential-calendar-booking` at commit `8264c74`.
+- Deployed Cloud Run revision `signmons-calldesk-staging-00015-7hq` at 100 percent traffic; health passed and the live reporting route rejected unauthenticated access with HTTP 401.
+- Verified the August Eternity aggregate without selecting customer PII: 8 created, 5 booked, 0 completed, 1 cancelled, 1 attributed and 7 legacy unattributed jobs.
+
 - Completed BE-003 on backend branch `codex/be-003-eternity-webchat-readiness` at commit `9586d9c`.
 - Verified clean install, PostgreSQL 16 migrations with legacy preservation, 38 tests, lint, build, architecture, compiled runtime health/auth/safety smoke checks, and zero critical production advisories.
 - Added tenant-bound hashed webchat credentials and deterministic life-safety interception without connecting the live Eternity website.
@@ -53,6 +57,6 @@ Last Updated: 2026-08-30
 
 ## Next Actions (Strict Order)
 
-1. Implement and verify BE-007 under its tenant-isolated, PII-free reporting contract.
-2. Deploy BE-007 only after backend gates and production-safe aggregate proof pass.
-3. Return the program pointer to FE-013 after BE-007 completion.
+1. Execute FE-013 under the marketing board and ticket contract.
+2. Keep the BE-007 report behind authenticated tenant access; never place reporting credentials or raw business metrics in public browser code.
+3. Build the broader authenticated APP-014 dashboard only when its program ticket becomes `Now`.

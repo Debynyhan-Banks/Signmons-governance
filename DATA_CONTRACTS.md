@@ -184,6 +184,8 @@ Metric lineage:
 Privacy rules:
 - The report must not select or return customer names, phone numbers, addresses, free-text descriptions, conversation contents, calendar event IDs or appointment-management credentials.
 - Reporting credentials must remain server-side and must never be embedded in browser JavaScript.
+- Rate values are ratios from `0` to `1`, rounded to four decimal places.
+- Responses use `Cache-Control: private, no-store`.
 
 ## GOV-008 High-Ticket Domain Contracts (High-Level)
 

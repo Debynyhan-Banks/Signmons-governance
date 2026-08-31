@@ -16,17 +16,17 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 
 ## Current Pointer (as of 2026-08-30)
 
-- Program `Now`: `BE-007` (tenant lead-source reporting pilot)
-- Program phase: owner-approved Eternity pilot reporting exception; marketing-first work resumes at FE-013 after BE-007 completion
+- Program `Now`: `FE-013` (revenue dashboard and ROI calculator)
+- Program phase: marketing-first work resumed after the completed owner-approved BE-007 reporting exception
 - Sequencing: strict (`Now` -> `Done` before starting `Next`)
 
 ### Repo Status
 
 | Repo | Active Ticket | State |
 | --- | --- | --- |
-| Governance | BE-007 contract and evidence alignment | active |
-| Frontend marketing | `FE-013` revenue dashboard and ROI calculator | queued |
-| Backend | `BE-007` tenant lead-source reporting pilot | active |
+| Governance | FE-013 contract and evidence alignment | active |
+| Frontend marketing | `FE-013` revenue dashboard and ROI calculator | active |
+| Backend | `BE-007` complete; reporting revision is live | queued |
 
 ## Synchronization Rules
 
