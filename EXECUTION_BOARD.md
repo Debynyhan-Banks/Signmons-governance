@@ -10,7 +10,7 @@ Purpose: single active queue for execution.
 4. Every completed ticket includes objective evidence.
 5. Update this board before changing scope.
 6. Ticket completion must satisfy `QUALITY_GATES.md`.
-7. Owner-approved CallDesk-first execution supersedes the marketing-first pointer while APP-006 is active; paused marketing work remains governed by `MARKETING_RELEASE_DOD.md` when resumed.
+7. Owner-approved CallDesk-first execution supersedes the marketing-first pointer while the active APP ticket is in `Now`; paused marketing work remains governed by `MARKETING_RELEASE_DOD.md` when resumed.
 
 ## Required Completion Gates
 
@@ -22,11 +22,11 @@ Purpose: single active queue for execution.
 
 ## Now
 
-- [ ] APP-006 Intake review and booking readiness (`SCR-APP-012`)
+- [ ] APP-007 Urgency classification and escalation review (`SCR-APP-013`)
 
 ## Next
 
-- [ ] APP-007 Urgency classification and escalation review (`SCR-APP-013`)
+- [ ] APP-008 Dispatch board and technician assignment (`SCR-APP-014`, `SCR-APP-017`)
 
 ## Later
 
@@ -39,6 +39,8 @@ Purpose: single active queue for execution.
 
 ## Done
 
+- [x] APP-006 Intake review and booking readiness (`SCR-APP-012`)
+  - Backend merge `2b715e4`; release configuration merge `2c3e608`; Cloud Run revision `signmons-calldesk-staging-00018-mxr`; console `https://signmons-calldesk.web.app/app/intake-review`; evidence in `signmons-calldesk-backend/evidence/APP-006/readiness-report.md`.
 - [x] APP-003 Job completion lifecycle foundation (`SCR-APP-005`)
   - Backend commit `55d59de`; Cloud Run revision `signmons-calldesk-staging-00016-jz9`; evidence in `signmons-calldesk-backend/evidence/APP-003/readiness-report.md`.
 - [x] BE-007 Tenant lead-source reporting pilot (`SCR-APP-018`, `SCR-APP-019`)
