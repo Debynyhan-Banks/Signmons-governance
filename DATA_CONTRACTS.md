@@ -187,6 +187,34 @@ Privacy rules:
 - Rate values are ratios from `0` to `1`, rounded to four decimal places.
 - Responses use `Cache-Control: private, no-store`.
 
+## APP-003 Audited Job Completion Contract
+
+Endpoint:
+- `POST /jobs/:jobId/complete`
+
+Authentication and tenancy:
+- Firebase bearer authentication is required in production.
+- Tenant and actor identity come only from verified request context.
+- The pilot permits `owner` and `admin` roles.
+
+Transition rules:
+- `ACCEPTED -> COMPLETED` and `IN_PROGRESS -> COMPLETED` are allowed.
+- `COMPLETED -> COMPLETED` is an idempotent replay and does not create a second audit entry.
+- Created, offered, declined, expired and cancelled jobs cannot be completed through this endpoint.
+- Missing and cross-tenant jobs return the same not-found boundary without revealing another tenant's data.
+
+Success response:
+- `jobId`
+- `status: "COMPLETED"`
+- `completedAt` (ISO-8601)
+- `changed` (`true` for the first transition; `false` for idempotent replay)
+
+Audit rules:
+- The first transition and its `AuditLog` record commit in one database transaction.
+- Audit action: `job.completed`.
+- Metadata may contain only the prior status and completion timestamp.
+- Customer names, contact details, addresses, descriptions, calendar identifiers and management credentials are prohibited from the response and audit metadata.
+
 ## GOV-008 High-Ticket Domain Contracts (High-Level)
 
 ### TenantBrandProfile

@@ -14,9 +14,9 @@ Last Updated: 2026-08-30
 
 ## Current Program Pointer
 
-- Global `Now`: `FE-013` (revenue dashboard and ROI calculator).
+- Global `Now`: `APP-003` (job completion lifecycle foundation), owner-approved after BE-007 exposed the need for reliable completed-job status.
 - Completed exception: `BE-003` (Eternity webchat backend production readiness).
-- Program phase: marketing-first work resumed after the completed owner-approved BE-007 reporting exception.
+- Program phase: narrow Eternity pilot operations exception; FE-013 resumes after APP-003.
 - Sequencing: strict (`Now` -> `Done` before `Next`).
 
 ## FE-012 Completion Context
@@ -57,6 +57,6 @@ Last Updated: 2026-08-30
 
 ## Next Actions (Strict Order)
 
-1. Execute FE-013 under the marketing board and ticket contract.
-2. Keep the BE-007 report behind authenticated tenant access; never place reporting credentials or raw business metrics in public browser code.
-3. Build the broader authenticated APP-014 dashboard only when its program ticket becomes `Now`.
+1. Implement and verify APP-003 under its tenant-isolated, idempotent and auditable completion contract.
+2. Do not change a real Eternity job without confirmed field completion.
+3. Return the pointer to FE-013 after APP-003 completion.
