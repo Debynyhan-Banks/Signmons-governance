@@ -15,8 +15,8 @@ Purpose: canonical alignment between screen IDs, frontend routes, and backend AP
 | `SCR-PUB-012` | `/business-rules` | `signmons-marketing-web-feat-marketing-site` | none required | `BusinessRuleSet`, `DispatchPolicy`, `PaymentPolicy` | FE-010 | implemented |
 | `SCR-PUB-013` | `/brand-voice` | `signmons-marketing-web-feat-marketing-site` | none required | `TenantBrandProfile` | FE-011 | implemented |
 | `SCR-PUB-014` | `/dispatch-scheduling` | `signmons-marketing-web-feat-marketing-site` | none required | `SchedulingWindow`, `Appointment`, `DispatchPolicy` | FE-012 | implemented |
-| `SCR-PUB-015` | `/revenue-dashboard` | `signmons-marketing-web-feat-marketing-site` | none required (static MVP), optional revenue-summary API (post-MVP) | `RevenueEvent`, `BillableEvent`, `PerformanceFeePolicy` | FE-013 | placeholder |
-| `SCR-PUB-016` | `/roi-calculator` | `signmons-marketing-web-feat-marketing-site` | none required (calculator model in FE), optional ROI estimate API (post-MVP) | `PricingPlan`, `PerformanceFeePolicy`, `BillableEvent`, `RevenueEvent` | FE-013 + FE-016 | placeholder |
+| `SCR-PUB-015` | `/revenue-dashboard` | `signmons-marketing-web-feat-marketing-site` | none required (static MVP), optional revenue-summary API (post-MVP) | `RevenueEvent`, `BillableEvent`, `PerformanceFeePolicy` | FE-013 | implemented |
+| `SCR-PUB-016` | `/roi-calculator` | `signmons-marketing-web-feat-marketing-site` | none required (calculator model in FE), optional ROI estimate API (post-MVP) | `PricingPlan`, `PerformanceFeePolicy`, `BillableEvent`, `RevenueEvent` | FE-013 + FE-016 | implemented |
 | `SCR-PUB-017` | `/compare/answering-services` | `signmons-marketing-web-feat-marketing-site` | none required | n/a | FE-014 | placeholder |
 | `SCR-PUB-018` | `/compare/field-service-software` | `signmons-marketing-web-feat-marketing-site` | none required | n/a | FE-014 | placeholder |
 | `SCR-PUB-019` | `/customer-technician-experience` | `signmons-marketing-web-feat-marketing-site` | none required | `NotificationPolicy`, `CustomerProfile`, `Appointment` | FE-015 | placeholder |

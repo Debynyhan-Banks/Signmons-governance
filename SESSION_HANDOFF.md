@@ -1,6 +1,6 @@
 # Session Handoff
 
-Last Updated: 2026-08-30
+Last Updated: 2026-08-31
 
 ## Owner-Approved Product Direction (2026-08-30)
 
@@ -14,7 +14,7 @@ Last Updated: 2026-08-30
 
 ## Current Program Pointer
 
-- Global `Now`: `FE-013` (revenue dashboard and ROI calculator).
+- Global `Now`: `FE-014` (competitive comparison pages).
 - Completed exception: `BE-003` (Eternity webchat backend production readiness).
 - Completed exceptions: `BE-007` lead-source reporting and `APP-003` audited job completion.
 - Program phase: marketing-first work resumed after APP-003 completion.
@@ -42,6 +42,13 @@ Last Updated: 2026-08-30
 
 ## Completed In This Session
 
+- Completed FE-013 on marketing branch `codex/fe-013-revenue-roi-reconciled` at commit `f8a83ef`, based on the approved FE-016 pricing foundation.
+- Implemented `/revenue-dashboard` and `/roi-calculator` with governed CTA parity, sample-data labeling, plain-language assumptions, estimate-versus-realized disclosures, and billable-event summaries.
+- Replaced unsupported emergency-uplift and deposit-as-extra-revenue math with a traceable recovered-lead -> booked-job -> completed-job model.
+- ROI plan cost now derives from governed `PricingPlan` values, qualifying-call overage, and an explicitly enabled `PerformanceFeePolicy`; performance fees remain disabled by default.
+- FE-013 gates passed: build, lint, 12 test files / 24 tests, `pricing:check` (98 checks), and `ui:check` (17 checks).
+- Chrome desktop and 390px mobile QA evidence is stored in `signmons-marketing-web-feat-marketing-site/evidence/FE-013/`.
+
 - Completed APP-003 on backend branch `codex/residential-calendar-booking` at implementation commit `55d59de`; deployment evidence is recorded at docs commit `35a49b5`.
 - Deployed Cloud Run revision `signmons-calldesk-staging-00016-jz9` with image `55d59de` at 100 percent traffic.
 - Verified readiness and a sanitized unauthenticated HTTP 401 using a non-existent job UUID; no real customer job was changed.
@@ -62,6 +69,6 @@ Last Updated: 2026-08-30
 
 ## Next Actions (Strict Order)
 
-1. Execute FE-013 under the marketing board and ticket contract.
+1. Execute FE-014 under the marketing board and ticket contract.
 2. Keep APP-003 completion behind authenticated owner/admin access; do not add a public Eternity control.
 3. Do not change a real job without confirmed field completion.

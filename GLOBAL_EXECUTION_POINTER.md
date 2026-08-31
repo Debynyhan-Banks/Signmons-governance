@@ -14,9 +14,9 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
   - Repo: `signmons-marketing-web-feat-marketing-site`
   - Board: `EXECUTION_BOARD.md`
 
-## Current Pointer (as of 2026-08-30)
+## Current Pointer (as of 2026-08-31)
 
-- Program `Now`: `FE-013` (revenue dashboard and ROI calculator)
+- Program `Now`: `FE-014` (competitive comparison pages)
 - Program phase: marketing-first work resumed after the completed APP-003 owner-approved Eternity pilot operations exception
 - Sequencing: strict (`Now` -> `Done` before starting `Next`)
 
@@ -24,8 +24,8 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 
 | Repo | Active Ticket | State |
 | --- | --- | --- |
-| Governance | FE-013 contract and evidence alignment | active |
-| Frontend marketing | `FE-013` revenue dashboard and ROI calculator | active |
+| Governance | FE-014 comparison-page contract and evidence alignment | active |
+| Frontend marketing | `FE-014` competitive comparison pages | active |
 | Backend | `APP-003` complete; implementation queue blocked | queued |
 
 ## Synchronization Rules
