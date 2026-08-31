@@ -41,13 +41,17 @@
 - APP-010: Routing rules, service areas, and availability (`SCR-APP-015`, `SCR-APP-016`, `SCR-APP-024`, `SCR-TECH-004`)
 - APP-011: Customer booking status and confirmation flow (`SCR-CUST-001`, `SCR-CUST-003`)
 - APP-012: Payment gate and webhook status workflow (`SCR-APP-006A`, `SCR-APP-006B`, `SCR-APP-006C`, `SCR-APP-023`, `SCR-CUST-002`)
-- APP-013: Notification center and customer messaging templates (`SCR-APP-021`, `SCR-APP-022`, `SCR-TECH-005`)
+- APP-013: Notification center and transactional customer messaging templates, including durable appointment-confirmation delivery (`SCR-APP-021`, `SCR-APP-022`, `SCR-TECH-005`)
 - APP-014: Revenue recovery and conversion analytics (`SCR-APP-018`, `SCR-APP-019`)
 - APP-015: AI quality and failure review (`SCR-APP-020`, `SCR-ADM-005`)
-- APP-016: Calendar scheduling and appointment management (`SCR-APP-025`, `SCR-APP-015`, `SCR-APP-005`)
+- APP-016: Calendar scheduling and appointment management, including secure customer view/reschedule/cancel access (`SCR-APP-025`, `SCR-APP-015`, `SCR-APP-005`)
 - APP-017: Business rules and automation center (`SCR-APP-026`, `SCR-APP-016`, `SCR-APP-023`, `SCR-APP-022`)
 - APP-018: Brand voice and AI personality configuration (`SCR-APP-027`, `SCR-APP-007`, `SCR-APP-022`)
 - APP-019: Customer profiles and service history (`SCR-APP-028`, `SCR-APP-003`, `SCR-APP-005`)
+- APP-020: Professional estimates, approvals, invoices, receipts, and aging (`SCR-APP-029`, `SCR-CUST-007`, `SCR-APP-006B`)
+- APP-021: Governed service pricebook and estimate options (`SCR-APP-030`, `SCR-TECH-002`, `SCR-APP-029`)
+- APP-022: Review requests and maintenance-plan renewal workflows (`SCR-APP-031`, `SCR-CUST-005`, `SCR-APP-022`)
+- APP-023: QuickBooks Online accounting adapter and reconciliation status (`SCR-APP-032`, `SCR-APP-006B`, `SCR-APP-029`)
 
 ## Epic E4 - Security and Reliability
 
@@ -57,6 +61,7 @@
 - BE-004: Data contract validation and backward compatibility tests
 - BE-005: Observability and audit logs for critical flows
 - BE-006: Billable events + invoice-rule pipeline for performance fees
+- BE-007: Tenant lead-source reporting pilot for booked/completed attribution
 
 ## Epic E5 - Launch Readiness
 

@@ -117,6 +117,104 @@ Decision payload must include:
 - CI validation for route/CTA/API mapping docs.
 - Evidence in ticket completion notes.
 
+## BE-003 Server-to-Server Webchat Triage Contract
+
+Endpoint:
+- `POST /api/integrations/webchat/triage`
+
+Authentication and tenancy:
+- The tenant website calls its own server-side proxy; browser code never receives the Signmons credential.
+- The proxy sends `Authorization: Bearer <integration secret>` over HTTPS.
+- Signmons stores only a SHA-256 credential hash in configuration and resolves `tenantId` from the matched credential.
+- The request body cannot supply or override `tenantId`.
+
+Request body:
+- `sessionId` (required, 4–64 safe identifier characters)
+- `message` (required, 1–1000 characters after normalization)
+
+Reply response:
+- `status: "reply"`
+- `reply` (string)
+
+Life-safety response:
+- `status: "safety_escalation"`
+- `reply` (deterministic emergency guidance)
+- `requiresHumanHandoff: true`
+- `emergencyServicesRecommended: true`
+
+Tool response:
+- Existing tenant-scoped `job_created` response may be returned only after required fields validate and the configured tool budget permits it.
+
+Contract rules:
+- The assistant must disclose that it is automated and is not a technician.
+- It must not diagnose equipment, promise an appointment or arrival, publish a fee, or upsell unless an approved tenant policy expressly allows that behavior.
+- Gas odor, carbon monoxide, fire, smoke, sparks or immediate electrical danger must be intercepted before the AI provider is called.
+- Rate limits apply per resolved integration tenant.
+- Direct browser CORS access is not part of this contract.
+
+## BE-007 Tenant Lead-Source Report Contract
+
+Endpoint:
+- `GET /reports/lead-sources?from=<ISO-8601>&to=<ISO-8601>`
+
+Authentication and tenancy:
+- Firebase bearer authentication is required in production.
+- The authenticated tenant claim is authoritative; the request cannot supply or override `tenantId`.
+- Only `owner`, `admin` and `manager` roles may read the report.
+
+Date rules:
+- `from` is inclusive and `to` is exclusive.
+- Both values must be valid ISO-8601 timestamps with explicit timezone offsets.
+- `to` must be later than `from`; the range may not exceed 366 days.
+
+Response:
+- `period`: normalized UTC `from` and `to`.
+- `totals`: raw counts for `created`, `booked`, `completed`, `cancelled`, `attributed` and `unattributed`.
+- `rates`: `leadToBooking` and `bookedToCompleted`, returned with their raw denominators in `totals`.
+- `bySource`: privacy-safe channel/source/medium/campaign groups with the same counts and rates.
+- `topLandingPages`: normalized site paths and job counts.
+
+Metric lineage:
+- Created: `Job.createdAt` falls inside the requested period.
+- Booked: accepted lineage exists (`acceptedAt`) or current status is `ACCEPTED`, `IN_PROGRESS` or `COMPLETED`.
+- Completed: completed lineage exists (`completedAt`) or current status is `COMPLETED`.
+- Cancelled: current status is `CANCELLED`.
+- Attribution: bounded values from `Job.policySnapshot.leadAttribution`; missing values are grouped as `unattributed`.
+
+Privacy rules:
+- The report must not select or return customer names, phone numbers, addresses, free-text descriptions, conversation contents, calendar event IDs or appointment-management credentials.
+- Reporting credentials must remain server-side and must never be embedded in browser JavaScript.
+- Rate values are ratios from `0` to `1`, rounded to four decimal places.
+- Responses use `Cache-Control: private, no-store`.
+
+## APP-003 Audited Job Completion Contract
+
+Endpoint:
+- `POST /jobs/:jobId/complete`
+
+Authentication and tenancy:
+- Firebase bearer authentication is required in production.
+- Tenant and actor identity come only from verified request context.
+- The pilot permits `owner` and `admin` roles.
+
+Transition rules:
+- `ACCEPTED -> COMPLETED` and `IN_PROGRESS -> COMPLETED` are allowed.
+- `COMPLETED -> COMPLETED` is an idempotent replay and does not create a second audit entry.
+- Created, offered, declined, expired and cancelled jobs cannot be completed through this endpoint.
+- Missing and cross-tenant jobs return the same not-found boundary without revealing another tenant's data.
+
+Success response:
+- `jobId`
+- `status: "COMPLETED"`
+- `completedAt` (ISO-8601)
+- `changed` (`true` for the first transition; `false` for idempotent replay)
+
+Audit rules:
+- The first transition and its `AuditLog` record commit in one database transaction.
+- Audit action: `job.completed`.
+- Metadata may contain only the prior status and completion timestamp.
+- Customer names, contact details, addresses, descriptions, calendar identifiers and management credentials are prohibited from the response and audit metadata.
+
 ## GOV-008 High-Ticket Domain Contracts (High-Level)
 
 ### TenantBrandProfile
@@ -274,12 +372,50 @@ Required fields:
 - `trialPolicy` (`none` | `time_limited`)
 - `creditPolicy` (typed object)
 - `lineItemRules` (typed object; includes setup, subscription, overage, performance fees)
+- `providerFeeRules` (typed object; disclosed pass-through fees only)
 - `disputeWindowDays`
 - `effectiveFrom`
+
+### Contractor Customer Billing Contracts (Reserved for APP-020)
+
+These contracts govern a tenant contractor billing its homeowner/business customer. They are separate from `InvoiceRule`, which governs Signmons billing the tenant.
+
+`ServiceEstimate` required fields:
+
+- `tenantId`, `estimateId`, `estimateNumber`, `customerId`, `propertyAddressId`, `jobId`
+- `status` (`draft` | `sent` | `approved` | `declined` | `expired` | `converted` | `voided`)
+- versioned line items, subtotal, tax, discount, total, currency, terms, and expiration
+- customer approval identity/method/timestamp when approved
+- created/updated/sent timestamps and audit source
+
+`JobInvoice` required fields:
+
+- `tenantId`, `invoiceId`, tenant-unique `invoiceNumber`, `customerId`, `jobId`, optional `estimateId`
+- `status` (`draft` | `sent` | `partially_paid` | `paid` | `overdue` | `voided`)
+- immutable issued line-item snapshot, subtotal, tax, discount, total, balance, currency, due date
+- processor references only; no raw card data
+- created/updated/issued/sent/paid timestamps and audit source
+
+`CustomerPaymentAllocation` required fields:
+
+- `tenantId`, `allocationId`, `invoiceId`, provider payment reference, amount, currency, status
+- idempotency key, allocation timestamp, refund/credit references, and audit source
+
+`CustomerReceipt` required fields:
+
+- `tenantId`, `receiptId`, `invoiceId`, payment allocation references, paid amount, currency, issued timestamp
+- immutable customer-facing receipt snapshot and delivery status
+
+Rules:
+
+- Estimate and invoice numbering is unique and sequential within the configured tenant policy; it never shares a sequence with Signmons SaaS invoices.
+- Estimate approval, invoice issue, payment allocation, refund, credit, and void transitions are auditable and tenant-scoped.
+- General-ledger posting, payroll, tax filing, and bank reconciliation remain outside these contracts and flow through approved accounting adapters.
 
 ## Commercial Verification Rules
 
 - A `qualified_booked_job` billable event may be emitted only when required booking fields are complete and job status has transitioned to booked/scheduled under tenant policy.
 - An `emergency_captured_job` billable event may be emitted only when urgency is `emergency` and dispatch or escalated dispatch has been triggered according to tenant rules.
+- An `overage_block_consumed` event may be emitted only from deduplicated qualifying-call counts under `BILLABLE_EVENTS_SPEC.md`; excluded calls must carry a reason code.
 - `BillableEvent` must be immutable after `finalized`; reversals occur through explicit credit/void events.
 - Pricing page and ROI calculator must never calculate invoice totals from hardcoded constants when contract-backed pricing data is available.

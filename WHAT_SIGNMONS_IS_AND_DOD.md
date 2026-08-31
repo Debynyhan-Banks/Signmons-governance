@@ -13,11 +13,39 @@ It is built to:
 - produce booking-ready and dispatch-ready jobs,
 - route work with controlled rules,
 - notify owner/dispatcher/technician/customer,
-- report revenue outcomes with auditability.
+- report revenue outcomes with auditability,
 - monetize through a governed commercial model (base subscription, setup fee, usage/overage, performance fees, and add-ons).
 
 Primary ICP:
 - HVAC, plumbing, electrical, and adjacent home-service operators.
+
+## Product Family (Canonical)
+
+Signmons is one platform with the following governed product modules:
+
+1. **Signmons CallDesk**
+   - AI-assisted phone, SMS, and web-chat intake
+   - qualification, safety screening, booking, summaries, and human handoff
+2. **Signmons Dispatch**
+   - calendar availability, booking readiness, dispatch board, technician assignment, service-area rules, and rescheduling
+3. **Signmons Money**
+   - professional estimates, customer approval, deposits, invoices, payment links, receipts, reminders, refunds, and payment audit history
+4. **Signmons Field**
+   - technician job workflow, customer/equipment context, notes, photos, signatures, and status updates
+5. **Signmons Customers**
+   - tenant-isolated customer, property, equipment, service, payment, and communication history
+6. **Signmons Growth**
+   - missed-call recovery, review requests, maintenance-plan renewal workflows, and lead-source attribution
+7. **Signmons Intelligence**
+   - booking, response-time, payment, revenue, dispatch, and AI-quality reporting
+
+These are modules of one product, not seven disconnected applications. Shared tenant identity, customer/job records, business rules, audit events, and permissions are mandatory.
+
+## Canonical Customer Workflow
+
+`call/text/chat -> identify -> qualify -> safety/policy check -> schedule -> collect required booking fee/deposit -> dispatch -> estimate/approve -> perform work -> final invoice -> collect balance -> receipt -> review/retain -> report`
+
+Signmons may integrate with an existing CRM/FSM/accounting system at any stage, but the workflow must remain explainable and recoverable inside Signmons.
 
 ## What Signmons Is Not
 
@@ -25,10 +53,37 @@ Primary ICP:
 - Not just an AI answering service.
 - Not a full fleet optimization suite in MVP.
 - Not a replacement for all CRM/FSM systems in MVP.
+- Not general-ledger accounting, payroll, bank reconciliation, tax filing, or an ERP.
+- Not a promise that every governed module is available before its delivery ticket is complete.
 
 ## Product North Star
 
 "Get paid before dispatch while maintaining high booking quality and dispatch confidence."
+
+Supporting outcome: "Move a qualified customer from first contact to documented payment without duplicate data entry or unanswered ownership."
+
+## Financial Workflow Boundary
+
+- Professional estimates and invoices are a core Signmons product capability, not a separate accounting product.
+- Basic branded estimates, invoices, payment links, and receipts belong in every paid plan once `Signmons Money` is released.
+- Advanced deposits, progress/recurring invoicing, automated reminders, approval workflows, and accounting synchronization are tiered capabilities.
+- Signmons must not store raw card data; payment collection uses an approved PCI-compliant processor.
+- Accounting remains the system of record for general ledger, payroll, tax filing, and bank reconciliation; Signmons integrates through approved adapters.
+- There are two distinct billing domains: contractor-to-customer job invoices and Signmons-to-tenant SaaS invoices. Data, numbering, policies, and permissions must not be conflated.
+
+## Delivery Sequence (Anti-Drift)
+
+Execute the product in this order unless the governance pointer explicitly approves an exception:
+
+1. CallDesk reliability, safety, intake integrity, booking, and notifications
+2. Tenant dashboard, customer/job history, and booking-readiness review
+3. Calendar, dispatch, technician assignment, and durable customer confirmations with secure appointment-management access
+4. Professional estimates, invoices, deposits, payments, and receipts
+5. Technician mobile workflow and pricebook
+6. Voice/SMS depth, accounting/CRM/FSM integrations, reviews, and maintenance plans
+7. Advanced automation, auto-dispatch, multi-location controls, and intelligence
+
+Marketing work may explain a planned module only when it is labeled as planned/early access. It must not present an unshipped module as generally available.
 
 ## Non-Negotiable Product Rules
 
@@ -74,6 +129,12 @@ A feature or phase is not complete unless all are true:
 
 5. **Claim alignment**
 - Marketing claims do not exceed implemented behavior.
+
+6. **Workflow ownership**
+- Every created lead, booking, job, estimate, invoice, payment, dispatch action, and notification has a tenant-scoped owner/status and an auditable failure path.
+
+7. **Focus protection**
+- Work outside the delivery sequence requires an explicit governance decision and cannot displace the active `Now` ticket silently.
 
 ## Required MVP Metric Set (Top 5)
 

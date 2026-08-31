@@ -54,10 +54,13 @@ The site must prove this operational claim without ambiguity:
 
 - Pricing copy is contract-driven and validated by `pricing:check`.
 - Tier boundaries are non-conflicting (included vs add-on language).
-- Setup fee + volume policy + overage policy are explicit.
+- Setup fee + volume policy + per-tier qualifying-call overage policy are explicit.
 - Performance fee policy disclosure is explicit (qualified booked jobs, emergency captured jobs).
+- Performance fees are described as disabled by default unless explicitly enabled in the tenant contract.
+- Founding Partner pricing, when displayed, is labeled limited early access and is not presented as a permanent public tier.
+- Basic invoicing is not marketed as bookkeeping/accounting; provider fees and release availability are disclosed.
 - "How pricing works" formula is visible:
-  - `Monthly Total = Base + Overage + Performance Fees + Add-ons`.
+  - `Monthly Total = Base + Overage + Enabled Performance Fees + Add-ons + Disclosed Pass-Through Provider Fees`.
 - Billable-event definitions are linked and consistent with governed specs.
 
 ### 5) Legal/Trust Integrity

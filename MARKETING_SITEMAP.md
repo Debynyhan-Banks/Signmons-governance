@@ -88,9 +88,9 @@ Signmons public offer is intentionally multi-layered:
 
 1. Base subscription (monthly/annual)
 2. Setup fee (one-time)
-3. Included call volume + overage blocks
-4. Performance fees (qualified booked jobs, emergency captured jobs)
-5. Add-ons (advanced recovery/escalation/seats/locations/custom setup)
+3. Included call volume + per-tier qualifying-call overage
+4. Enabled performance fees (qualified booked jobs, emergency captured jobs)
+5. Add-ons and disclosed pass-through provider fees
 
 Target public ladder:
 
@@ -99,26 +99,35 @@ Target public ladder:
 - Pro: `$1,499/mo` + `$2,500` setup
 - Enterprise: `from $3,500/mo` + custom setup (`$5,000+` baseline)
 
+Limited bridge offer:
+
+- Founding Partner: `$199/mo` + `$299` setup, first `10` approved external businesses, `12`-month price lock while active
+- Must be labeled early access; unshipped capabilities cannot be represented as generally available or billed before activation
+
 ## Pricing Page Section Contract (`SCR-PUB-006`)
 
 Pricing page must include all sections below:
 
 1. Tier cards (Starter/Growth/Pro/Enterprise)
 2. Setup fee disclosure by tier
-3. Included volume + overage policy disclosure
+3. Included volume + per-tier qualifying-call overage disclosure
 4. Performance fee disclosure:
    - qualified booked job fee (range/policy)
    - emergency captured job fee (range/policy)
 5. Add-ons section
 6. Annual billing discount disclosure
 7. "How pricing works" formula:
-   - `Monthly Total = Base + Overage + Performance Fees + Add-ons`
+   - `Monthly Total = Base + Overage + Enabled Performance Fees + Add-ons + Disclosed Pass-Through Provider Fees`
 8. Billable event definitions summary with link to full policy
 9. Tier-specific CTA map:
    - Starter: `Start Early Access`
    - Growth: `Book Revenue Demo`
    - Pro: `Build My AI Dispatcher`
    - Enterprise: `Talk to Sales`
+10. Professional invoicing disclosure:
+   - basic estimates/invoices/payment links/receipts included after the Signmons Money release gate
+   - no basic Signmons per-invoice fee
+   - processor and other pass-through provider fees disclosed separately
 
 ## Revenue and ROI Pages Contract (`SCR-PUB-015`, `SCR-PUB-016`)
 

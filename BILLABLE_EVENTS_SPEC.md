@@ -42,10 +42,20 @@ Exclusions:
 
 An `overage_block_consumed` event is emitted when included monthly call volume is exceeded by one configured block unit.
 
+A qualifying AI-handled call must:
+
+- reach the tenant AI experience and contain customer speech or a valid accessibility-equivalent input,
+- pass configured minimum-duration/engagement rules,
+- have a stable source communication ID for deduplication,
+- not be identified as spam, blocked traffic, a silent hang-up, or an approved test call.
+
 Required:
 
 - explicit block size and price from active pricing plan,
 - deterministic counter state at month boundary.
+- auditable qualifying-call count and exclusion reason codes.
+
+A per-call overage is represented by a configured block size of `1`; larger contracted blocks remain supported.
 
 ## Amount Calculation Rules
 
