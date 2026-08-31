@@ -10,7 +10,7 @@ Purpose: single active queue for execution.
 4. Every completed ticket includes objective evidence.
 5. Update this board before changing scope.
 6. Ticket completion must satisfy `QUALITY_GATES.md`.
-7. Marketing-first phase remains active until `MARKETING_RELEASE_DOD.md` exit criteria are met.
+7. Owner-approved CallDesk-first execution supersedes the marketing-first pointer while APP-006 is active; paused marketing work remains governed by `MARKETING_RELEASE_DOD.md` when resumed.
 
 ## Required Completion Gates
 
@@ -22,14 +22,15 @@ Purpose: single active queue for execution.
 
 ## Now
 
-- [ ] FE-014 Competitive comparison pages (`SCR-PUB-017`, `SCR-PUB-018`)
+- [ ] APP-006 Intake review and booking readiness (`SCR-APP-012`)
 
 ## Next
 
-- [ ] APP-006 Intake review and booking readiness (`SCR-APP-012`) - unlocks after marketing DoD exit criteria
+- [ ] APP-007 Urgency classification and escalation review (`SCR-APP-013`)
 
 ## Later
 
+- [ ] FE-014 Competitive comparison pages (`SCR-PUB-017`, `SCR-PUB-018`) - paused by owner-approved CallDesk-first focus
 - Remaining MVP epics in `MVP_BACKLOG.md`
 
 ## Blockers

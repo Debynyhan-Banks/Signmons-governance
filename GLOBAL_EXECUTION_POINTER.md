@@ -16,17 +16,17 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 
 ## Current Pointer (as of 2026-08-31)
 
-- Program `Now`: `FE-014` (competitive comparison pages)
-- Program phase: marketing-first work resumed after the completed APP-003 owner-approved Eternity pilot operations exception
+- Program `Now`: `APP-006` (intake review and booking readiness)
+- Program phase: owner-approved CallDesk-first product execution; `FE-014` is paused, not cancelled
 - Sequencing: strict (`Now` -> `Done` before starting `Next`)
 
 ### Repo Status
 
 | Repo | Active Ticket | State |
 | --- | --- | --- |
-| Governance | FE-014 comparison-page contract and evidence alignment | active |
-| Frontend marketing | `FE-014` competitive comparison pages | active |
-| Backend | `APP-003` complete; implementation queue blocked | queued |
+| Governance | APP-006 intake-readiness contract and evidence alignment | active |
+| Frontend marketing | `FE-014` competitive comparison pages | paused |
+| Backend | `APP-006` implementation verified locally; release pending | active |
 
 ## Synchronization Rules
 
