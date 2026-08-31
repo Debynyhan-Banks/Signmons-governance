@@ -14,7 +14,7 @@ Last Updated: 2026-08-31
 
 ## Current Program Pointer
 
-- Global `Now`: `APP-006` (intake review and booking readiness).
+- Global `Now`: `APP-007` (urgency classification and escalation review).
 - Completed exception: `BE-003` (Eternity webchat backend production readiness).
 - Completed exceptions: `BE-007` lead-source reporting and `APP-003` audited job completion.
 - Program phase: owner-approved CallDesk-first product execution; `FE-014` is paused, not cancelled.
@@ -45,7 +45,10 @@ Last Updated: 2026-08-31
 - Rebased the global program to owner-approved CallDesk-first execution with APP-006 active and FE-014 paused, not cancelled.
 - Implemented APP-006 locally on backend branch `codex/app-006-intake-review` at commit `14be641`.
 - Added tenant-scoped intake list/detail APIs, explicit missing-field readiness, owner/admin/dispatcher enforcement, priority visibility, redacted conversation trace and PII-free readiness-review auditing.
-- Added the private `/app/intake-review` operator route with responsive Chrome evidence. Backend and UI gates pass; deployment and production operator authentication configuration remain pending.
+- Added the private `/app/intake-review` operator route with responsive Chrome evidence; backend and UI gates passed before release.
+- Merged APP-006 to backend `main`, built image `2b715e4`, and deployed Cloud Run revision `signmons-calldesk-staging-00018-mxr` at 100 percent traffic.
+- Deployed the operator shell to the dedicated `signmons-calldesk` Firebase Hosting site without changing the public Signmons marketing site; live readiness, sanitized unauthenticated access, and console-origin CORS checks passed.
+- Revoked the temporary Cloud Build bucket and Artifact Registry grants and disabled the build service account after the successful image build.
 
 - Completed FE-013 on marketing branch `codex/fe-013-revenue-roi-reconciled` at commit `f8a83ef`, based on the approved FE-016 pricing foundation.
 - Implemented `/revenue-dashboard` and `/roi-calculator` with governed CTA parity, sample-data labeling, plain-language assumptions, estimate-versus-realized disclosures, and billable-event summaries.
@@ -76,7 +79,7 @@ Last Updated: 2026-08-31
 
 ## Next Actions (Strict Order)
 
-1. Review and release APP-006 under the backend board; keep the global pointer on APP-006 until the release decision is recorded.
+1. Implement APP-007 urgency classification and escalation review under the backend board.
 2. Keep APP-003 completion behind authenticated owner/admin access; do not add a public Eternity control.
 3. Keep FE-014 paused until the owner returns the pointer to marketing work.
 4. Do not change a real job without confirmed field completion.

@@ -16,7 +16,7 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 
 ## Current Pointer (as of 2026-08-31)
 
-- Program `Now`: `APP-006` (intake review and booking readiness)
+- Program `Now`: `APP-007` (urgency classification and escalation review)
 - Program phase: owner-approved CallDesk-first product execution; `FE-014` is paused, not cancelled
 - Sequencing: strict (`Now` -> `Done` before starting `Next`)
 
@@ -24,9 +24,9 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 
 | Repo | Active Ticket | State |
 | --- | --- | --- |
-| Governance | APP-006 intake-readiness contract and evidence alignment | active |
+| Governance | APP-007 urgency/escalation contract and evidence alignment | active |
 | Frontend marketing | `FE-014` competitive comparison pages | paused |
-| Backend | `APP-006` implementation verified locally; release pending | active |
+| Backend | `APP-007` implementation next; APP-006 is released | active |
 
 ## Synchronization Rules
 
