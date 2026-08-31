@@ -26,7 +26,7 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 | --- | --- | --- |
 | Governance | APP-006 intake-readiness contract and evidence alignment | active |
 | Frontend marketing | `FE-014` competitive comparison pages | paused |
-| Backend | `APP-006` intake review and booking readiness | active |
+| Backend | `APP-006` implementation verified locally; release pending | active |
 
 ## Synchronization Rules
 

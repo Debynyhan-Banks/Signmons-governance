@@ -42,6 +42,11 @@ Last Updated: 2026-08-31
 
 ## Completed In This Session
 
+- Rebased the global program to owner-approved CallDesk-first execution with APP-006 active and FE-014 paused, not cancelled.
+- Implemented APP-006 locally on backend branch `codex/app-006-intake-review` at commit `14be641`.
+- Added tenant-scoped intake list/detail APIs, explicit missing-field readiness, owner/admin/dispatcher enforcement, priority visibility, redacted conversation trace and PII-free readiness-review auditing.
+- Added the private `/app/intake-review` operator route with responsive Chrome evidence. Backend and UI gates pass; deployment and production operator authentication configuration remain pending.
+
 - Completed FE-013 on marketing branch `codex/fe-013-revenue-roi-reconciled` at commit `f8a83ef`, based on the approved FE-016 pricing foundation.
 - Implemented `/revenue-dashboard` and `/roi-calculator` with governed CTA parity, sample-data labeling, plain-language assumptions, estimate-versus-realized disclosures, and billable-event summaries.
 - Replaced unsupported emergency-uplift and deposit-as-extra-revenue math with a traceable recovered-lead -> booked-job -> completed-job model.
@@ -71,7 +76,7 @@ Last Updated: 2026-08-31
 
 ## Next Actions (Strict Order)
 
-1. Execute APP-006 under the backend board and ticket contract.
+1. Review and release APP-006 under the backend board; keep the global pointer on APP-006 until the release decision is recorded.
 2. Keep APP-003 completion behind authenticated owner/admin access; do not add a public Eternity control.
 3. Keep FE-014 paused until the owner returns the pointer to marketing work.
 4. Do not change a real job without confirmed field completion.
