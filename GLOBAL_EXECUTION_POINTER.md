@@ -16,7 +16,7 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 
 ## Current Pointer (as of 2026-08-31)
 
-- Program `Now`: `APP-008` (dispatch board and technician assignment)
+- Program `Now`: `APP-009` (technician mobile job workflow)
 - Program phase: owner-approved CallDesk-first product execution; `FE-014` is paused, not cancelled
 - Sequencing: strict (`Now` -> `Done` before starting `Next`)
 
@@ -24,9 +24,9 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 
 | Repo | Active Ticket | State |
 | --- | --- | --- |
-| Governance | APP-008 dispatch contract and evidence alignment | active |
+| Governance | APP-009 technician workflow contract and evidence alignment | active |
 | Frontend marketing | `FE-014` competitive comparison pages | paused |
-| Backend | `APP-008` implementation next; APP-007 is released | active |
+| Backend | `APP-009` implementation next; APP-008 is released | active |
 
 ## Synchronization Rules
 

@@ -21,13 +21,13 @@ Purpose: canonical alignment between screen IDs, frontend routes, and backend AP
 | `SCR-PUB-018` | `/compare/field-service-software` | `signmons-marketing-web-feat-marketing-site` | none required | n/a | FE-014 | placeholder |
 | `SCR-PUB-019` | `/customer-technician-experience` | `signmons-marketing-web-feat-marketing-site` | none required | `NotificationPolicy`, `CustomerProfile`, `Appointment` | FE-015 | placeholder |
 
-## APP Sequence (Blocked Until Marketing DoD Exit)
+## APP Sequence (Owner-Approved CallDesk-First)
 
 | Screen ID | Route | UI Owner Repo | Backend Endpoint(s) | Contract Dependency | Delivery Ticket | Status |
 | --- | --- | --- | --- | --- | --- | --- |
 | `SCR-APP-012` | `/app/intake-review` | backend app surface | `GET /jobs/intake-review`, `GET /jobs/intake-review/:jobId`, `POST /jobs/:jobId/readiness/review` | intake/job readiness contract | APP-006 | implementation verified; release pending |
 | `SCR-APP-013` | `/app/urgency-review` | backend app surface | `GET /jobs/urgency-review`, `GET /jobs/urgency-review/:jobId`, `POST /jobs/:jobId/urgency/override`, `POST /jobs/:jobId/escalations` | urgency classification and escalation review contract | APP-007 | released |
-| `SCR-APP-014`, `SCR-APP-017` | `/app/dispatch` | backend app surface | `GET /jobs/dispatch-board`, `GET /jobs/dispatch-board/:jobId`, `POST /jobs/:jobId/assignments`, `POST /jobs/:jobId/assignments/cancel`, `POST /jobs/:jobId/escalations` | dispatch board and technician assignment contract | APP-008 | implementation verified; release pending |
+| `SCR-APP-014`, `SCR-APP-017` | `/app/dispatch` | backend app surface | `GET /jobs/dispatch-board`, `GET /jobs/dispatch-board/:jobId`, `POST /jobs/:jobId/assignments`, `POST /jobs/:jobId/assignments/cancel`, `POST /jobs/:jobId/escalations` | dispatch board and technician assignment contract | APP-008 | released |
 | `SCR-APP-005` | `/app/jobs` (planned) | backend app surface | `POST /jobs/:jobId/complete` pilot deployed; broader queue/lifecycle APIs remain ticket-defined | audited job completion contract | APP-003 | pilot backend deployed; UI planned |
 | `SCR-APP-018`, `SCR-APP-019` | `/app/revenue`, `/app/conversion` (planned) | backend app surface | `GET /reports/lead-sources` pilot; broader revenue/funnel APIs remain APP-014 | tenant lead-source report contract | BE-007 pilot + APP-014 | pilot backend implemented; UI planned |
 | `SCR-APP-025` | `/app/schedule` (planned) | backend app surface | scheduling/availability API set (ticket-defined) | `SchedulingWindow`, `Appointment` | APP-016 | planned |
