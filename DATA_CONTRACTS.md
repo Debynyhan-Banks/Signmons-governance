@@ -254,6 +254,56 @@ Privacy and safety:
 - Review-list and audit responses must not contain customer phone numbers, email addresses, street addresses, full transcripts, calendar identifiers or appointment-management credentials.
 - Urgency classification is an operational routing aid, not a diagnosis or emergency-services determination.
 
+## APP-008 Dispatch Board And Technician Assignment Contract
+
+Endpoints:
+- `GET /jobs/dispatch-board`
+- `GET /jobs/dispatch-board/:jobId`
+- `POST /jobs/:jobId/assignments`
+- `POST /jobs/:jobId/assignments/cancel`
+- `POST /jobs/:jobId/escalations` (shared APP-007 operation)
+
+Authentication and tenancy:
+- Firebase bearer authentication is required in production.
+- Tenant and actor identity come only from verified request context; request payloads cannot supply or override either value.
+- `owner`, `admin` and `dispatcher` roles may view and operate the dispatch board.
+- `tech` and `read_only` roles cannot assign, reassign, cancel assignments or initiate dispatch escalation.
+- Candidate technicians and jobs must be selected within the verified tenant boundary. Missing and cross-tenant jobs return the same not-found boundary.
+
+Board response:
+- Active jobs are returned in one of `NEW_REQUEST`, `READY_TO_ASSIGN`, `ASSIGNED` or `ESCALATED`.
+- `ASSIGNED` takes precedence when a job has a current technician; an unassigned escalated job is `ESCALATED`; scheduled/accepted work is `READY_TO_ASSIGN`; remaining active intake is `NEW_REQUEST`.
+- Dispatch-inactive (`DECLINED`, `EXPIRED`, `COMPLETED`, `CANCELLED`) and soft-deleted jobs are excluded.
+- Each summary may contain only job reference, queue, service category, urgency, status, service window, current assigned technician name/role, and timestamps.
+
+Recommendation response:
+- Recommendation version is `dispatch-v1`.
+- Candidate ranking is deterministic and uses enabled service capability, proficiency, operator-maintained availability, overlapping availability blocks and active assignment count.
+- A recommendation is decision support only; CallDesk does not automatically dispatch the job.
+- The response exposes bounded reason codes and plain-language operational factors, never hidden model reasoning or diagnostic claims.
+- Operators may select a non-recommended or otherwise ineligible active candidate only with a normalized 10-500 character override reason.
+
+Assignment request:
+- `technicianId` (required UUID)
+- `expectedUpdatedAt` (required ISO-8601 timestamp used as the optimistic concurrency token)
+- `reason` (optional for the current recommendation; required, normalized and 10-500 characters for reassignment or recommendation override)
+
+Assignment-cancellation request:
+- `expectedUpdatedAt` (required ISO-8601 timestamp)
+- `reason` (required, normalized string, 10-500 characters)
+- Cancellation clears only the technician assignment. It does not cancel or close the customer job.
+
+Concurrency, idempotency and audit:
+- Assignment writes must match both tenant and `expectedUpdatedAt`; a stale token returns conflict and creates no audit event.
+- Assigning the already assigned technician is idempotent and creates no duplicate audit event.
+- Job update and audit event commit in one database transaction.
+- Audit actions are `job.assigned`, `job.reassigned` and `job.assignment_cancelled`.
+- Audit metadata may contain only prior/new technician identifiers, recommendation version and reason codes, override flag, and normalized operator reason.
+
+Privacy and safety:
+- Board, detail, recommendation and assignment-history responses must not contain customer names, phone numbers, email addresses, street addresses, job descriptions, transcripts, calendar identifiers, payment credentials or appointment-management credentials.
+- Assignment history exposes actor identifiers for internal accountability but no actor contact information.
+
 ## GOV-008 High-Ticket Domain Contracts (High-Level)
 
 ### TenantBrandProfile
