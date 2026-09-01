@@ -215,6 +215,95 @@ Audit rules:
 - Metadata may contain only the prior status and completion timestamp.
 - Customer names, contact details, addresses, descriptions, calendar identifiers and management credentials are prohibited from the response and audit metadata.
 
+## APP-007 Urgency Classification And Escalation Review Contract
+
+Endpoints:
+- `GET /jobs/urgency-review`
+- `GET /jobs/urgency-review/:jobId`
+- `POST /jobs/:jobId/urgency/override`
+- `POST /jobs/:jobId/escalations`
+
+Authentication and tenancy:
+- Firebase bearer authentication is required in production.
+- Tenant and actor identity come only from verified request context; request payloads cannot supply or override either value.
+- `owner`, `admin` and `dispatcher` roles may review urgency, record authorized overrides and initiate an internal escalation.
+- Missing and cross-tenant jobs return the same not-found boundary.
+
+Urgency rules:
+- Canonical urgency values are `EMERGENCY`, `HIGH` and `STANDARD`; `HIGH` must not be collapsed into `STANDARD` during persistence.
+- The review response includes a concise operational rationale, trigger reason codes, the decision source and a confidence note. It must not expose hidden model reasoning or imply diagnostic certainty.
+- The response includes an escalation-path preview and a chronological history of urgency overrides and escalation delivery attempts.
+
+Override request:
+- `urgency` (required: `EMERGENCY` | `HIGH` | `STANDARD`)
+- `reason` (required, normalized string, 10-500 characters)
+
+Override rules:
+- The job update and `AuditLog` entry commit in one database transaction.
+- Audit action: `job.urgency_overridden`.
+- Idempotent same-value overrides do not create duplicate audit entries.
+- Audit metadata may contain only prior/new urgency, normalized reason, decision source and timestamp.
+
+Escalation request and result:
+- An escalation request notifies the tenant's configured internal operations recipients through configured channels; customer recipients are out of scope.
+- Every attempt is audit logged with action `job.urgency_escalated`, including privacy-safe channel, recipient group, outcome and timestamp.
+- A configured-provider failure is returned as a recorded failed outcome and must not be presented as delivered.
+- If no notification channel is configured, the request is audit logged with a `not_configured` outcome.
+
+Privacy and safety:
+- Review-list and audit responses must not contain customer phone numbers, email addresses, street addresses, full transcripts, calendar identifiers or appointment-management credentials.
+- Urgency classification is an operational routing aid, not a diagnosis or emergency-services determination.
+
+## APP-008 Dispatch Board And Technician Assignment Contract
+
+Endpoints:
+- `GET /jobs/dispatch-board`
+- `GET /jobs/dispatch-board/:jobId`
+- `POST /jobs/:jobId/assignments`
+- `POST /jobs/:jobId/assignments/cancel`
+- `POST /jobs/:jobId/escalations` (shared APP-007 operation)
+
+Authentication and tenancy:
+- Firebase bearer authentication is required in production.
+- Tenant and actor identity come only from verified request context; request payloads cannot supply or override either value.
+- `owner`, `admin` and `dispatcher` roles may view and operate the dispatch board.
+- `tech` and `read_only` roles cannot assign, reassign, cancel assignments or initiate dispatch escalation.
+- Candidate technicians and jobs must be selected within the verified tenant boundary. Missing and cross-tenant jobs return the same not-found boundary.
+
+Board response:
+- Active jobs are returned in one of `NEW_REQUEST`, `READY_TO_ASSIGN`, `ASSIGNED` or `ESCALATED`.
+- `ASSIGNED` takes precedence when a job has a current technician; an unassigned escalated job is `ESCALATED`; scheduled/accepted work is `READY_TO_ASSIGN`; remaining active intake is `NEW_REQUEST`.
+- Dispatch-inactive (`DECLINED`, `EXPIRED`, `COMPLETED`, `CANCELLED`) and soft-deleted jobs are excluded.
+- Each summary may contain only job reference, queue, service category, urgency, status, service window, current assigned technician name/role, and timestamps.
+
+Recommendation response:
+- Recommendation version is `dispatch-v1`.
+- Candidate ranking is deterministic and uses enabled service capability, proficiency, operator-maintained availability, overlapping availability blocks and active assignment count.
+- A recommendation is decision support only; CallDesk does not automatically dispatch the job.
+- The response exposes bounded reason codes and plain-language operational factors, never hidden model reasoning or diagnostic claims.
+- Operators may select a non-recommended or otherwise ineligible active candidate only with a normalized 10-500 character override reason.
+
+Assignment request:
+- `technicianId` (required UUID)
+- `expectedUpdatedAt` (required ISO-8601 timestamp used as the optimistic concurrency token)
+- `reason` (optional for the current recommendation; required, normalized and 10-500 characters for reassignment or recommendation override)
+
+Assignment-cancellation request:
+- `expectedUpdatedAt` (required ISO-8601 timestamp)
+- `reason` (required, normalized string, 10-500 characters)
+- Cancellation clears only the technician assignment. It does not cancel or close the customer job.
+
+Concurrency, idempotency and audit:
+- Assignment writes must match both tenant and `expectedUpdatedAt`; a stale token returns conflict and creates no audit event.
+- Assigning the already assigned technician is idempotent and creates no duplicate audit event.
+- Job update and audit event commit in one database transaction.
+- Audit actions are `job.assigned`, `job.reassigned` and `job.assignment_cancelled`.
+- Audit metadata may contain only prior/new technician identifiers, recommendation version and reason codes, override flag, and normalized operator reason.
+
+Privacy and safety:
+- Board, detail, recommendation and assignment-history responses must not contain customer names, phone numbers, email addresses, street addresses, job descriptions, transcripts, calendar identifiers, payment credentials or appointment-management credentials.
+- Assignment history exposes actor identifiers for internal accountability but no actor contact information.
+
 ## GOV-008 High-Ticket Domain Contracts (High-Level)
 
 ### TenantBrandProfile

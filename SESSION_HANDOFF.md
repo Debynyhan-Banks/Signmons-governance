@@ -14,7 +14,7 @@ Last Updated: 2026-08-31
 
 ## Current Program Pointer
 
-- Global `Now`: `APP-007` (urgency classification and escalation review).
+- Global `Now`: `APP-008` (dispatch board and technician assignment).
 - Completed exception: `BE-003` (Eternity webchat backend production readiness).
 - Completed exceptions: `BE-007` lead-source reporting and `APP-003` audited job completion.
 - Program phase: owner-approved CallDesk-first product execution; `FE-014` is paused, not cancelled.
@@ -42,6 +42,15 @@ Last Updated: 2026-08-31
 
 ## Completed In This Session
 
+- Completed and released APP-007 from backend commit `afb3644` on branch `codex/app-007-urgency-escalation-review`.
+- Added a canonical three-level `JobUrgency` model so `HIGH` is no longer collapsed into `STANDARD`, with a forward database migration.
+- Added tenant-scoped urgency list/detail, mandatory-reason override and internal escalation endpoints protected for owner/admin/dispatcher roles.
+- Added bounded rationale, escalation-path previews, privacy-safe override/escalation history and truthful notification delivery outcomes.
+- Added the responsive `/app/urgency-review` operator route; backend and UI gates passed and Chrome desktop/mobile QA recorded no console errors or horizontal document overflow.
+- Evidence: `signmons-calldesk-backend/evidence/APP-007/readiness-report.md`.
+- Applied the `HIGH` urgency migration with reusable Cloud Run job execution `signmons-calldesk-migrate-fp7rp`.
+- Deployed backend revision `signmons-calldesk-staging-00019-swf` at 100 percent traffic and published `/app/urgency-review` to the dedicated CallDesk hosting site.
+- Live readiness, sanitized unauthenticated access, console-origin CORS and Chrome route verification passed; the disabled build service account remained disabled.
 - Rebased the global program to owner-approved CallDesk-first execution with APP-006 active and FE-014 paused, not cancelled.
 - Implemented APP-006 locally on backend branch `codex/app-006-intake-review` at commit `14be641`.
 - Added tenant-scoped intake list/detail APIs, explicit missing-field readiness, owner/admin/dispatcher enforcement, priority visibility, redacted conversation trace and PII-free readiness-review auditing.
@@ -79,7 +88,7 @@ Last Updated: 2026-08-31
 
 ## Next Actions (Strict Order)
 
-1. Implement APP-007 urgency classification and escalation review under the backend board.
+1. Implement APP-008 dispatch board and technician assignment under the backend board.
 2. Keep APP-003 completion behind authenticated owner/admin access; do not add a public Eternity control.
 3. Keep FE-014 paused until the owner returns the pointer to marketing work.
 4. Do not change a real job without confirmed field completion.
