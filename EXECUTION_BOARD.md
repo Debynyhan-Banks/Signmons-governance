@@ -23,6 +23,7 @@ Purpose: single active queue for execution.
 ## Now
 
 - [ ] APP-009 Technician mobile job workflow (`SCR-TECH-001`, `SCR-TECH-002`, `SCR-TECH-003`)
+  - Implementation is review-ready on backend branch `codex/app-009-technician-workflow`; authenticated mobile visual review and release approval remain.
 
 ## Next
 

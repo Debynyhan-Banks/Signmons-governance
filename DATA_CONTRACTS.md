@@ -304,6 +304,45 @@ Privacy and safety:
 - Board, detail, recommendation and assignment-history responses must not contain customer names, phone numbers, email addresses, street addresses, job descriptions, transcripts, calendar identifiers, payment credentials or appointment-management credentials.
 - Assignment history exposes actor identifiers for internal accountability but no actor contact information.
 
+## APP-009 Technician Mobile Job Workflow Contract
+
+Endpoints:
+- `POST /jobs/technician-links/:technicianId`
+- `GET /technician/jobs`
+- `GET /technician/jobs/:jobId`
+- `POST /technician/jobs/:jobId/status`
+
+Link issuance and access:
+- Only authenticated `owner`, `admin` and `dispatcher` operators may issue a link for an active technician in the verified tenant.
+- The credential is an HMAC-signed, versioned bearer token scoped to one tenant and one technician, with an explicit issue time, expiration and nonce.
+- The token is returned only in the URL fragment so normal HTTP requests do not send it as a route or query value.
+- Link lifetime is bounded to 1-168 hours; production requires a dedicated secret of at least 32 characters.
+- Signature validation is constant-time and canonical. Missing, malformed, tampered, future-issued and expired links return the same unauthorized boundary.
+- Every read and write revalidates that the technician remains active with role `tech` in the signed tenant.
+
+Technician list and detail:
+- A technician may read only non-deleted jobs currently assigned to their tenant-scoped user identity.
+- The list groups assigned work into `today`, `upcoming` and the most recent 90 days of `completed`, using the tenant timezone.
+- List summaries include job reference, service category, service address, service window, urgency, technician status, available actions and update token.
+- Assigned-job detail may additionally include customer contact fields, access notes, issue summary and preferred-time text required for field service.
+- Responses use `Cache-Control: private, no-store` and never expose another technician's assignments.
+
+Status actions and transitions:
+- Supported actions are `accept`, `decline`, `on_my_way`, `in_progress`, `complete` and `cannot_take`.
+- `ASSIGNED` permits accept, decline or cannot-take.
+- `ACCEPTED` permits on-my-way, in-progress, decline or cannot-take.
+- `EN_ROUTE` permits in-progress or cannot-take.
+- `IN_PROGRESS` permits complete; `COMPLETED` is terminal.
+- Decline and cannot-take release only the technician assignment so dispatch can reassign the open job.
+- Accept, in-progress and complete update the shared job lifecycle fields used by dispatcher workflows.
+
+Concurrency and audit:
+- Every mutation requires `expectedUpdatedAt`; a stale value returns conflict and creates no audit event.
+- Replaying the already-current technician status is idempotent.
+- The job write and audit event commit in one database transaction.
+- Audit actions are `job.technician_accepted`, `job.technician_declined`, `job.technician_en_route`, `job.technician_started`, `job.technician_completed` and `job.technician_unavailable`.
+- Audit metadata is limited to prior/new technician status, assignment-release flag and an optional normalized note of at most 500 characters.
+
 ## GOV-008 High-Ticket Domain Contracts (High-Level)
 
 ### TenantBrandProfile

@@ -1,6 +1,6 @@
 # Session Handoff
 
-Last Updated: 2026-08-31
+Last Updated: 2026-09-01
 
 ## Owner-Approved Product Direction (2026-08-30)
 
@@ -14,7 +14,7 @@ Last Updated: 2026-08-31
 
 ## Current Program Pointer
 
-- Global `Now`: `APP-008` (dispatch board and technician assignment).
+- Global `Now`: `APP-009` (technician mobile job workflow).
 - Completed exception: `BE-003` (Eternity webchat backend production readiness).
 - Completed exceptions: `BE-007` lead-source reporting and `APP-003` audited job completion.
 - Program phase: owner-approved CallDesk-first product execution; `FE-014` is paused, not cancelled.
@@ -41,6 +41,13 @@ Last Updated: 2026-08-31
 - Non-goals respected: no backend dispatch implementation changes; no APP screen implementation. `SchedulingWindow` / `Appointment` / `DispatchPolicy` remain display dependencies (APP-016 / APP-017 own runtime contracts).
 
 ## Completed In This Session
+
+- APP-009 implementation commit `01bc84a` plus review hardening commit `4cb11d9` are review-ready on backend branch `codex/app-009-technician-workflow`; they are not merged, migrated or released.
+- A bounded validation/hardening section made signature tampering canonical and fail-closed, corrected Prisma test-schema selection, and restored executable full-backend lint.
+- Current gates pass: backend build, 23 suites / 156 tests, architecture check and lint; UI build, lint and 11 tests.
+- Isolated HTTP evidence verified assigned list/detail, technician accept propagation, and expired-link rejection; the temporary fixture was removed.
+- Evidence: `signmons-calldesk-backend/evidence/APP-009/readiness-report.md`.
+- APP-009 remains `Now` pending human authenticated mobile list/detail review and explicit release approval.
 
 - Completed and released APP-007 from backend commit `afb3644` on branch `codex/app-007-urgency-escalation-review`.
 - Added a canonical three-level `JobUrgency` model so `HIGH` is no longer collapsed into `STANDARD`, with a forward database migration.
@@ -88,7 +95,7 @@ Last Updated: 2026-08-31
 
 ## Next Actions (Strict Order)
 
-1. Implement APP-008 dispatch board and technician assignment under the backend board.
-2. Keep APP-003 completion behind authenticated owner/admin access; do not add a public Eternity control.
-3. Keep FE-014 paused until the owner returns the pointer to marketing work.
-4. Do not change a real job without confirmed field completion.
+1. Review APP-009 on `codex/app-009-technician-workflow`, including one authenticated mobile secure-link pass against isolated data.
+2. Keep APP-009 in `Now`; do not advance to APP-010 without owner approval.
+3. Do not run the APP-009 migration, merge, deploy, or change a real job without explicit approval.
+4. Keep FE-014 paused until the owner returns the pointer to marketing work.
