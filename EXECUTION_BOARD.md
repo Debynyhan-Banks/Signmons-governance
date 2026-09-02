@@ -22,12 +22,11 @@ Purpose: single active queue for execution.
 
 ## Now
 
-- [ ] APP-009 Technician mobile job workflow (`SCR-TECH-001`, `SCR-TECH-002`, `SCR-TECH-003`)
-  - Implementation is review-ready on backend branch `codex/app-009-technician-workflow`; authenticated mobile visual review and release approval remain.
+- [ ] APP-012 Payment gate and webhook status workflow (`SCR-APP-006A`, `SCR-APP-006B`, `SCR-APP-006C`, `SCR-APP-023`, `SCR-CUST-002`)
 
 ## Next
 
-- [ ] APP-010 Routing rules, service areas, and availability (`SCR-APP-015`, `SCR-APP-016`, `SCR-APP-024`, `SCR-TECH-004`)
+- [ ] APP-013 Twilio-backed notification center and transactional customer messaging (`SCR-APP-021`, `SCR-APP-022`, `SCR-TECH-005`)
 
 ## Later
 
@@ -40,6 +39,12 @@ Purpose: single active queue for execution.
 
 ## Done
 
+- [x] APP-011 Customer booking status and confirmation flow (`SCR-CUST-001`, `SCR-CUST-003`)
+  - Backend PR `#13` merged at `28d394f`; migration `signmons-calldesk-migrate-xztrh`; Cloud Run revision `signmons-calldesk-staging-00024-wwn`; customer page `https://signmons-calldesk.web.app/appointment/manage`; release evidence in `signmons-calldesk-backend/evidence/APP-011/readiness-report.md`.
+- [x] APP-010 Routing rules, service areas, and availability (`SCR-APP-015`, `SCR-APP-016`, `SCR-APP-024`, `SCR-TECH-004`)
+  - Backend PR `#11` merged at `b809b9d`; Cloud Run revision `signmons-calldesk-staging-00023-47g`; Firebase console `https://signmons-calldesk.web.app/app/routing`; isolated staging acceptance verified strict ZIP, available/on-call constraints, `routing-v1` evaluation and an eligible `dispatch-v2` recommendation on 2026-09-02.
+- [x] APP-009 Technician mobile job workflow (`SCR-TECH-001`, `SCR-TECH-002`, `SCR-TECH-003`)
+  - Backend commit `413b671`; Cloud Run revision `signmons-calldesk-staging-00021-boh`; technician UI `https://signmons-calldesk.web.app/app/technician`; owner confirmed authenticated real-phone list/detail/action and dispatcher status/audit acceptance on 2026-09-02.
 - [x] APP-008 Dispatch board and technician assignment (`SCR-APP-014`, `SCR-APP-017`)
   - Backend merge `d8de259`; Cloud Build `5dca0dd5-3c59-4968-b19b-d6e1bdee23d6`; Cloud Run revision `signmons-calldesk-staging-00020-m2m`; console `https://signmons-calldesk.web.app/app/dispatch`; evidence in `signmons-calldesk-backend/evidence/APP-008/readiness-report.md`.
 - [x] APP-007 Urgency classification and escalation review (`SCR-APP-013`)
