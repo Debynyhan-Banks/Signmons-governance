@@ -1,20 +1,22 @@
 # Session Handoff
 
-Last Updated: 2026-08-31
+Last Updated: 2026-09-02
 
-## Owner-Approved Product Direction (2026-08-30)
+## Owner-Approved Product Direction (2026-09-01)
 
 - Owner approved Signmons as one AI front-office and dispatch platform with governed CallDesk, Dispatch, Money, Field, Customers, Growth, and Intelligence modules.
 - Professional estimates/invoices/payment links/receipts are a core paid-plan capability after the Signmons Money release gate; Signmons does not become general-ledger accounting.
 - Approved delivery sequence is recorded in `WHAT_SIGNMONS_IS_AND_DOD.md`; new work cannot bypass the active governance pointer.
-- Approved limited Founding Partner bridge: `$199/mo` + `$299` setup for the first `10` approved external businesses, with a `12`-month price lock while active.
-- Public target ladder remains `$299/$799/$1,499/from $3,500`, subject to implementation and claim-evidence gates.
-- Per-tier call overages replace the unsupported `$99/250 calls` target; performance fees remain disabled by default until attribution and dispute safeguards ship.
-- FE-016 pricing reconciliation is complete on marketing branch `codex/fe-016-pricing-reconcile` at commit `83462ec`: the public ladder, setup fees, annual discounts, per-tier overages, Founding Partner disclosure, planned invoicing boundary, provider-fee disclosure, add-ons, tests, and `pricing:check` now match governance. Publishing/merging remains a separate operation.
+- Owner approved subscription-only Signmons-to-tenant pricing. Signmons does not charge setup, per-call overage, booked-job, emergency-capture, revenue-share, required MVP add-on, or basic per-invoice fees.
+- Approved limited Founding Partner bridge: `$199/mo` for the first `10` approved external businesses, with guided setup included and a `12`-month price lock while active.
+- Public target ladder remains Starter `$299/mo`, Growth `$799/mo`, Pro `$1,499/mo`, and Enterprise fixed custom monthly/annual subscription.
+- Plan capacity is nonfinancial suitability guidance. Approaching or sustained excess usage triggers notification and an agreed fixed-price upgrade, not automatic metered billing.
+- Normal Twilio and AI usage is included within plan economics. Contractor-to-customer Stripe payments and processor costs remain separate from Signmons subscription billing.
+- The earlier setup/overage/performance/add-on policy is superseded. The fixed-subscription marketing and ROI correction was merged in marketing PR `#23` and deployed to Firebase Hosting site `signmons`; repository hosting configuration was corrected in PRs `#24` and `#25`.
 
 ## Current Program Pointer
 
-- Global `Now`: `APP-008` (dispatch board and technician assignment).
+- Global `Now`: `APP-012` (payment gate and webhook status workflow).
 - Completed exception: `BE-003` (Eternity webchat backend production readiness).
 - Completed exceptions: `BE-007` lead-source reporting and `APP-003` audited job completion.
 - Program phase: owner-approved CallDesk-first product execution; `FE-014` is paused, not cancelled.
@@ -42,6 +44,27 @@ Last Updated: 2026-08-31
 
 ## Completed In This Session
 
+- Merged APP-011 backend PR `#13` at `28d394f`, applied migration `20260902130000_add_customer_audit_actor` through execution `signmons-calldesk-migrate-xztrh`, deployed Cloud Run revision `signmons-calldesk-staging-00024-wwn`, and published `/appointment/manage` to Firebase Hosting.
+- APP-011 live liveness, readiness, CORS and fail-closed secure-link checks passed; owner accepted the customer and dispatcher experiences before release.
+- Revoked all temporary build grants and disabled `signmons-build`; APP-011 is `Done` and APP-012 is promoted to `Now`.
+
+- Merged APP-010 backend PR `#11` at `b809b9d`, ran migration job `signmons-calldesk-migrate-gsf6l`, deployed Cloud Run revision `signmons-calldesk-staging-00023-47g`, and published `/app/routing` to Firebase Hosting.
+- Completed isolated staging tenant acceptance: ZIP `44119`, strict available/on-call rule, deployed technician configuration, covered `routing-v1` evaluation, and eligible `dispatch-v2` recommendation.
+- Removed the temporary anonymous acceptance identity and token files; the owner account remains enabled with approved owner/tenant claims and password sign-in remains disabled.
+- APP-010 is `Done`; APP-011 is promoted to `Now`. Real tenant and technician provisioning remains a separate operational onboarding/cutover item.
+
+- APP-010 remains review-ready on backend branch `codex/app-010-routing`; a bounded continuation pass hardened missing/cross-tenant routing-rule and service-area update handling and rejected whitespace-only required names.
+- APP-010 backend, UI, Prisma, architecture, governance and responsive browser gates passed after the hardening section; no merge, migration, deployment or production action was performed.
+- Evidence: `signmons-calldesk-backend/evidence/APP-010/readiness-report.md`.
+
+- Merged APP-009 PR `#9` at backend commit `413b671`, applied migration `20260831180000_add_technician_job_workflow`, and deployed image `413b671` to Cloud Run revision `signmons-calldesk-staging-00021-boh` at 100 percent traffic.
+- Published `/app/technician` to `https://signmons-calldesk.web.app/app/technician`; release UI gates passed with 11 tests, clean lint/type checks, and successful static generation.
+- Live readiness passed; the unsigned technician endpoint returned a sanitized `401`, and the hosted missing-link route failed closed without horizontal overflow or application-origin console errors.
+- Created `technician-link-secret` without exposing its value and scoped access only to `signmons-calldesk-runtime@signmons.iam.gserviceaccount.com`.
+- Revoked all temporary build grants immediately after release and confirmed `signmons-build@signmons.iam.gserviceaccount.com` is disabled with zero residual project, build-bucket, or Artifact Registry bindings.
+- Evidence: `signmons-calldesk-backend/evidence/APP-009/readiness-report.md`.
+- Owner completed and accepted the authenticated real-phone technician list/detail/action workflow and confirmed dispatcher status/audit propagation on 2026-09-02. APP-009 is `Done` and APP-010 is promoted to `Now`.
+
 - Completed and released APP-007 from backend commit `afb3644` on branch `codex/app-007-urgency-escalation-review`.
 - Added a canonical three-level `JobUrgency` model so `HIGH` is no longer collapsed into `STANDARD`, with a forward database migration.
 - Added tenant-scoped urgency list/detail, mandatory-reason override and internal escalation endpoints protected for owner/admin/dispatcher roles.
@@ -60,9 +83,9 @@ Last Updated: 2026-08-31
 - Revoked the temporary Cloud Build bucket and Artifact Registry grants and disabled the build service account after the successful image build.
 
 - Completed FE-013 on marketing branch `codex/fe-013-revenue-roi-reconciled` at commit `f8a83ef`, based on the approved FE-016 pricing foundation.
-- Implemented `/revenue-dashboard` and `/roi-calculator` with governed CTA parity, sample-data labeling, plain-language assumptions, estimate-versus-realized disclosures, and billable-event summaries.
+- Implemented `/revenue-dashboard` and `/roi-calculator` with governed CTA parity, sample-data labeling, plain-language assumptions, estimate-versus-realized disclosures, and legacy billable-event summaries.
 - Replaced unsupported emergency-uplift and deposit-as-extra-revenue math with a traceable recovered-lead -> booked-job -> completed-job model.
-- ROI plan cost now derives from governed `PricingPlan` values, qualifying-call overage, and an explicitly enabled `PerformanceFeePolicy`; performance fees remain disabled by default.
+- The ROI plan-cost model was corrected to the fixed subscription with nonfinancial capacity guidance, merged in marketing PR `#23`, and deployed to Firebase Hosting site `signmons`.
 - FE-013 gates passed: build, lint, 12 test files / 24 tests, `pricing:check` (98 checks), and `ui:check` (17 checks).
 - Chrome desktop and 390px mobile QA evidence is stored in `signmons-marketing-web-feat-marketing-site/evidence/FE-013/`.
 - Merged marketing PR `#20` to `main` at `8d4b3c6` and governance PR `#17` to `main` at `fb88891`; both post-merge checks passed.
@@ -88,7 +111,7 @@ Last Updated: 2026-08-31
 
 ## Next Actions (Strict Order)
 
-1. Implement APP-008 dispatch board and technician assignment under the backend board.
-2. Keep APP-003 completion behind authenticated owner/admin access; do not add a public Eternity control.
-3. Keep FE-014 paused until the owner returns the pointer to marketing work.
-4. Do not change a real job without confirmed field completion.
+1. Reconcile APP-012 with the subscription-only pricing policy and the approved Stripe payment-before-booking requirement.
+2. Implement the payment gate, signed webhook processing, idempotent payment state and customer recovery flow.
+3. Keep APP-013 in `Next`; do not start Twilio implementation until APP-012 is accepted and marked `Done`.
+4. Keep FE-014 paused until the owner returns the pointer to marketing work.
