@@ -14,7 +14,7 @@ It is built to:
 - route work with controlled rules,
 - notify owner/dispatcher/technician/customer,
 - report revenue outcomes with auditability,
-- monetize through a governed commercial model (base subscription, setup fee, usage/overage, performance fees, and add-ons).
+- monetize through predictable fixed monthly or annual subscriptions, without setup, per-call, per-booking, emergency-capture, revenue-share, or basic per-invoice Signmons fees.
 
 Primary ICP:
 - HVAC, plumbing, electrical, and adjacent home-service operators.
@@ -25,7 +25,8 @@ Signmons is one platform with the following governed product modules:
 
 1. **Signmons CallDesk**
    - AI-assisted phone, SMS, and web-chat intake
-   - qualification, safety screening, booking, summaries, and human handoff
+   - Twilio-backed call routing, inbound/outbound SMS, missed-call text-back, and transactional notifications
+   - qualification, safety screening, booking, summaries, delivery tracking, communication history, and human handoff
 2. **Signmons Dispatch**
    - calendar availability, booking readiness, dispatch board, technician assignment, service-area rules, and rescheduling
 3. **Signmons Money**
@@ -66,21 +67,25 @@ Supporting outcome: "Move a qualified customer from first contact to documented 
 
 - Professional estimates and invoices are a core Signmons product capability, not a separate accounting product.
 - Basic branded estimates, invoices, payment links, and receipts belong in every paid plan once `Signmons Money` is released.
+- Basic fail-closed Stripe payment-before-booking enforcement belongs in every paid plan once `Signmons Money` is released; it is a core product promise, not an upsell.
 - Advanced deposits, progress/recurring invoicing, automated reminders, approval workflows, and accounting synchronization are tiered capabilities.
+- Growth and higher tiers may add configurable deposit/preauthorization rules, exception approvals, partial-payment policy, and payment recovery controls without removing the basic gate from Starter.
 - Signmons must not store raw card data; payment collection uses an approved PCI-compliant processor.
 - Accounting remains the system of record for general ledger, payroll, tax filing, and bank reconciliation; Signmons integrates through approved adapters.
 - There are two distinct billing domains: contractor-to-customer job invoices and Signmons-to-tenant SaaS invoices. Data, numbering, policies, and permissions must not be conflated.
+- Stripe payment-before-booking, deposits, estimates, and job invoices are money the contractor collects from its customer; they are product workflows, not additional Signmons charges.
+- Signmons-to-tenant billing is subscription-only. Plan capacity drives a fixed-price upgrade conversation rather than an automatic usage or outcome fee.
 
 ## Delivery Sequence (Anti-Drift)
 
 Execute the product in this order unless the governance pointer explicitly approves an exception:
 
-1. CallDesk reliability, safety, intake integrity, booking, and notifications
+1. CallDesk reliability, safety, intake integrity, booking, and the Twilio communications foundation (voice routing, inbound/outbound SMS, missed-call recovery, transactional notifications, consent/opt-out handling, delivery status, and communication history)
 2. Tenant dashboard, customer/job history, and booking-readiness review
 3. Calendar, dispatch, technician assignment, and durable customer confirmations with secure appointment-management access
 4. Professional estimates, invoices, deposits, payments, and receipts
 5. Technician mobile workflow and pricebook
-6. Voice/SMS depth, accounting/CRM/FSM integrations, reviews, and maintenance plans
+6. Advanced voice AI and SMS automation, accounting/CRM/FSM integrations, reviews, and maintenance plans
 7. Advanced automation, auto-dispatch, multi-location controls, and intelligence
 
 Marketing work may explain a planned module only when it is labeled as planned/early access. It must not present an unshipped module as generally available.
@@ -156,4 +161,4 @@ A feature or phase is not complete unless all are true:
 - Commercial claims and pricing mechanics must align with:
   - `PRICING_AND_FEES_POLICY.md`
   - `OFFER_CATALOG.md`
-  - `BILLABLE_EVENTS_SPEC.md`
+  - `USAGE_METRICS_SPEC.md`

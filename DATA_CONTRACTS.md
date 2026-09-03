@@ -277,7 +277,7 @@ Board response:
 - Each summary may contain only job reference, queue, service category, urgency, status, service window, current assigned technician name/role, and timestamps.
 
 Recommendation response:
-- Recommendation version is `dispatch-v1`.
+- Recommendation version is `dispatch-v2` after APP-010 and includes a bounded `routing-v1` policy trace.
 - Candidate ranking is deterministic and uses enabled service capability, proficiency, operator-maintained availability, overlapping availability blocks and active assignment count.
 - A recommendation is decision support only; CallDesk does not automatically dispatch the job.
 - The response exposes bounded reason codes and plain-language operational factors, never hidden model reasoning or diagnostic claims.
@@ -342,6 +342,41 @@ Concurrency and audit:
 - The job write and audit event commit in one database transaction.
 - Audit actions are `job.technician_accepted`, `job.technician_declined`, `job.technician_en_route`, `job.technician_started`, `job.technician_completed` and `job.technician_unavailable`.
 - Audit metadata is limited to prior/new technician status, assignment-release flag and an optional normalized note of at most 500 characters.
+
+## APP-010 Routing Rules, Service Areas, And Availability Contract
+
+Endpoints:
+- `GET /jobs/routing`
+- `POST /jobs/routing/rules`
+- `POST /jobs/routing/rules/:ruleId`
+- `POST /jobs/routing/service-areas`
+- `POST /jobs/routing/service-areas/:serviceAreaId`
+- `POST /jobs/routing/technicians/:technicianId`
+- `POST /jobs/:jobId/routing/evaluate`
+
+Authentication and tenancy:
+- Production requires verified Firebase operator identity. Only `owner`, `admin` and `dispatcher` roles may read or change routing configuration.
+- Tenant and actor identity come only from verified request context. Rule, service-area, service-category and technician identifiers are resolved inside that tenant boundary.
+- Missing and cross-tenant resources use the same not-found or invalid-reference boundary.
+
+Routing configuration:
+- A routing rule has a tenant-scoped name, active state, deterministic integer priority, optional service category, optional service area, optional urgency, time scope, availability/on-call requirements and emergency escalation targets.
+- Lower numeric priority wins. Rules are evaluated deterministically by priority and stable identifier.
+- ZIP service areas contain normalized US postal codes and may be activated or deactivated without deleting their audit history.
+- Technician controls include base availability, on-call state, service capabilities and bounded availability blocks.
+
+Evaluation and enforcement:
+- Evaluation version is `routing-v1`; the combined dispatch recommendation is `dispatch-v2`.
+- Business hours are evaluated in the tenant timezone. Until tenant-specific hours are introduced, the baseline is Monday-Friday, 8:00 AM-6:00 PM.
+- Once applicable active rules exist, the service address must match an active configured service area. Out-of-area work is ineligible for normal recommendation.
+- Availability, schedule-conflict and on-call requirements are enforced before a candidate is eligible. An authorized human override remains possible only with the existing normalized reason requirement.
+- Emergency rules may return owner/administrator and on-call escalation targets. The output is decision support and does not autonomously notify, diagnose or dispatch.
+- The response exposes bounded reason codes and plain-language factors, not hidden model reasoning.
+
+Audit:
+- Configuration actions are `routing.rule_created`, `routing.rule_updated`, `routing.service_area_created`, `routing.service_area_updated` and `routing.technician_updated`.
+- Explicit evaluations create `routing.rule_evaluated`; assignment audits embed the exact bounded `routing-v1` trace used by `dispatch-v2`.
+- Configuration writes and their audit event commit in one transaction.
 
 ## GOV-008 High-Ticket Domain Contracts (High-Level)
 
@@ -445,7 +480,7 @@ Required fields:
 - `webhookValidationRequired` (boolean)
 - `updatedAt`
 
-## GOV-017 Commercial Contracts (Locked)
+## GOV-017 Subscription Commercial Contracts (Locked)
 
 ### PricingPlan
 
@@ -453,60 +488,72 @@ Required fields:
 - `planId` (`starter` | `growth` | `pro` | `enterprise`)
 - `publicMonthlyPriceCents`
 - `publicAnnualMonthlyPriceCents` (nullable for enterprise)
-- `setupFeeCents`
-- `includedCallVolume`
-- `overageBlockSizeCalls`
-- `overageBlockPriceCents`
+- `fairUseCallCapacity` (nullable for enterprise; nonfinancial plan-suitability guide)
+- `maxLocations` (nullable)
 - `maxActiveVehicles` (nullable)
 - `maxTechnicianSeats` (nullable)
 - `status` (`active` | `legacy` | `draft`)
 - `effectiveFrom`
 - `effectiveTo` (nullable)
 
-### PerformanceFeePolicy
+### SubscriptionEntitlement
 
 Required fields:
 - `tenantId`
 - `planId`
-- `qualifiedBookedJobFeeCents` (nullable)
-- `emergencyCapturedJobFeeCents` (nullable)
-- `revenueShareBps` (nullable)
-- `billingMode` (`subscription_only` | `subscription_plus_performance` | `custom_enterprise`)
-- `enabled` (boolean)
+- `billingMode` (`subscription_only` | `fixed_enterprise`)
+- `monthlySubscriptionPriceCents`
+- `annualSubscriptionPriceCents` (nullable)
+- `featureEntitlements` (versioned typed object)
+- `capacityEntitlements` (versioned typed object)
+- `status` (`trial` | `active` | `past_due` | `paused` | `cancelled`)
 - `effectiveFrom`
 - `effectiveTo` (nullable)
 
-### BillableEvent
+Rules:
+
+- No entitlement may define setup, per-call overage, booked-job, emergency-capture, revenue-share, or basic per-invoice Signmons fees.
+- Every active paid-plan entitlement includes the basic Stripe payment-before-booking gate after the Signmons Money release gate. The gate is fail-closed whenever the tenant's governed payment policy requires a booking fee or deposit.
+- Growth and higher entitlements may add advanced deposit/preauthorization rules, exception approvals, partial-payment policy, and payment recovery controls; they do not own exclusive access to the basic gate.
+- Capacity is nonfinancial and cannot alter an invoice automatically.
+- A plan change requires explicit tenant acceptance and a new effective entitlement version.
+
+### UsageMetricEvent
 
 Required fields:
-- `billableEventId`
+- `usageMetricEventId`
 - `tenantId`
-- `eventType` (`qualified_booked_job` | `emergency_captured_job` | `overage_block_consumed`)
+- `eventType` (`ai_call_handled` | `sms_sent` | `sms_received` | `booking_confirmed` | `emergency_escalated` | `active_technician_observed` | `location_observed`)
 - `sourceEventId`
 - `jobId` (nullable)
-- `leadId` (nullable)
 - `occurredAt`
-- `billableAmountCents`
-- `currency`
-- `status` (`pending` | `finalized` | `voided`)
+- `quantity`
+- `excludedFromCapacity` (boolean)
 - `reasonCode`
 
-### InvoiceRule
+Rules:
+
+- Usage metrics support operations, plan-suitability warnings, forecasting, and product analytics only.
+- A usage metric carries no billable amount and cannot create a Signmons invoice line item.
+- Duplicate, spam, silent, blocked, failed-test, and approved-test events must be excluded with an auditable reason code.
+
+### SubscriptionInvoiceRule
 
 Required fields:
 - `tenantId`
+- `planId`
 - `invoiceCadence` (`monthly` | `custom`)
+- `fixedSubscriptionPriceCents`
 - `roundingMode` (`none` | `nearest_cent`)
 - `trialPolicy` (`none` | `time_limited`)
 - `creditPolicy` (typed object)
-- `lineItemRules` (typed object; includes setup, subscription, overage, performance fees)
-- `providerFeeRules` (typed object; disclosed pass-through fees only)
+- `prorationPolicy` (typed object)
 - `disputeWindowDays`
 - `effectiveFrom`
 
 ### Contractor Customer Billing Contracts (Reserved for APP-020)
 
-These contracts govern a tenant contractor billing its homeowner/business customer. They are separate from `InvoiceRule`, which governs Signmons billing the tenant.
+These contracts govern a tenant contractor billing its homeowner/business customer. They are separate from `SubscriptionInvoiceRule`, which governs Signmons billing the tenant.
 
 `ServiceEstimate` required fields:
 
@@ -542,8 +589,9 @@ Rules:
 
 ## Commercial Verification Rules
 
-- A `qualified_booked_job` billable event may be emitted only when required booking fields are complete and job status has transitioned to booked/scheduled under tenant policy.
-- An `emergency_captured_job` billable event may be emitted only when urgency is `emergency` and dispatch or escalated dispatch has been triggered according to tenant rules.
-- An `overage_block_consumed` event may be emitted only from deduplicated qualifying-call counts under `BILLABLE_EVENTS_SPEC.md`; excluded calls must carry a reason code.
-- `BillableEvent` must be immutable after `finalized`; reversals occur through explicit credit/void events.
-- Pricing page and ROI calculator must never calculate invoice totals from hardcoded constants when contract-backed pricing data is available.
+- Signmons invoices use the fixed active `SubscriptionEntitlement` price only, subject to versioned trial, credit, proration, and applicable-tax policy.
+- `UsageMetricEvent` records never contain a billable amount and never create an invoice line item.
+- Plan-capacity warnings use deduplicated usage under `USAGE_METRICS_SPEC.md`; exclusions carry a reason code.
+- A fixed-price plan change requires explicit tenant acceptance and a new effective entitlement version.
+- Contractor booking fees, deposits, estimates, job invoices, and Stripe processor costs remain in the contractor-to-customer billing domain.
+- Pricing pages and ROI calculators must not add setup, usage, booked-job, emergency-capture, revenue-share, or basic per-invoice Signmons fees.
