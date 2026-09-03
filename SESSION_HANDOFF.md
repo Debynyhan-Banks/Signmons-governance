@@ -22,6 +22,18 @@ Last Updated: 2026-09-02
 - Program phase: owner-approved CallDesk-first product execution; `FE-014` is paused, not cancelled.
 - Sequencing: strict (`Now` -> `Done` before `Next`).
 
+## APP-012 Review Checkpoint (2026-09-03)
+
+- Backend branch `codex/app-012-payment-gate` implements one bounded payment-before-dispatch gate slice from backend `origin/main` at `8247a0a`.
+- A shared reducer derives required payment from the tenant/job policy snapshot and fails closed unless canonical payment status is `SUCCEEDED`.
+- Locked jobs remain in `NEW_REQUEST`, produce no eligible recommendation and reject new assignment before mutation or audit creation.
+- The dispatcher UI visibly explains the lock and disables assignment; desktop and 390px browser evidence is in `signmons-calldesk-backend/evidence/APP-012/`.
+- Backend build/lint, 24 suites and 175 tests, architecture and Prisma validation pass. UI build/lint and 4 suites/17 tests pass.
+- Isolated local HTTP proof covered pending lock/HTTP 409/no mutation/no audit and simulated successful canonical state/unlocked recommendation; the fixture was removed.
+- No Stripe call or secret configuration, production migration, deployment, IAM, billing or real-data action occurred.
+- APP-012 remains active and unreleased. Payment requests, signed/idempotent webhook processing, customer recovery/status and payment-transition auditing remain open.
+- Estimated completion: APP-012 approximately 20%; governed APP-006 through APP-016 sequence approximately 56%.
+
 ## FE-012 Completion Context
 
 - Repo: `signmons-marketing-web-feat-marketing-site`.
@@ -111,7 +123,7 @@ Last Updated: 2026-09-02
 
 ## Next Actions (Strict Order)
 
-1. Reconcile APP-012 with the subscription-only pricing policy and the approved Stripe payment-before-booking requirement.
-2. Implement the payment gate, signed webhook processing, idempotent payment state and customer recovery flow.
+1. Review the APP-012 payment-gate checkpoint and keep APP-012 in `Now`.
+2. Continue APP-012 with payment/deposit request creation, signature-verified idempotent webhook processing, customer recovery/status and transition audits.
 3. Keep APP-013 in `Next`; do not start Twilio implementation until APP-012 is accepted and marked `Done`.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.

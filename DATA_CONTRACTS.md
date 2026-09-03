@@ -343,6 +343,39 @@ Concurrency and audit:
 - Audit actions are `job.technician_accepted`, `job.technician_declined`, `job.technician_en_route`, `job.technician_started`, `job.technician_completed` and `job.technician_unavailable`.
 - Audit metadata is limited to prior/new technician status, assignment-release flag and an optional normalized note of at most 500 characters.
 
+## APP-012 Payment-Before-Dispatch Gate Contract
+
+Current bounded endpoints:
+- `GET /jobs/dispatch-board`
+- `GET /jobs/dispatch-board/:jobId`
+- `POST /jobs/:jobId/assignments`
+
+Policy source and state:
+- The job's tenant-policy snapshot is authoritative for this checkpoint.
+- Payment is required when `depositRequired` or `serviceFeeRequired` is explicitly `true`.
+- Gate state is `NOT_REQUIRED`, `LOCKED` or `UNLOCKED`.
+- Only canonical payment status `SUCCEEDED` unlocks a required job. Not requested, pending, failed, canceled and refunded states fail closed.
+- `manual_override` is reserved by `PaymentPolicy` but is not implemented by this checkpoint; operator assignment reasons cannot bypass a locked payment gate.
+
+Privacy-safe projection:
+- Dispatch list and detail return `paymentGate` with `required`, `state`, `paymentStatus`, `amountTotalCents`, `currency`, `reasonCode` and a bounded operator label.
+- Provider credentials, checkout tokens, payment-intent identifiers, checkout-session identifiers and charge identifiers are prohibited from this projection.
+
+Dispatch enforcement:
+- A locked, unassigned, non-escalated job stays in `NEW_REQUEST`, produces no eligible recommendation and cannot be newly assigned. An urgency escalation remains visibly `ESCALATED`, but it still cannot be assigned while locked.
+- A locked assignment request returns conflict before candidate lookup, job mutation or audit creation.
+- An existing assignment is not silently removed if a later payment state locks the gate; refund/cancellation follow-up is an explicit later APP-012 workflow.
+- Successful canonical payment state restores normal routing eligibility and `READY_TO_ASSIGN` behavior.
+
+Commercial boundary:
+- This gate covers a tenant contractor's required customer deposit/service payment.
+- It does not create a Signmons setup, usage, booked-job, emergency-capture, revenue-share or per-invoice charge; Signmons-to-tenant pricing remains subscription-only.
+
+Remaining APP-012 contract work:
+- Payment/deposit request creation and secure customer status/recovery endpoints.
+- Signature-verified, idempotent Stripe webhook ingestion and visible processing outcomes.
+- Tenant-scoped audit actions for payment/gate transitions and any governed manual override.
+
 ## GOV-008 High-Ticket Domain Contracts (High-Level)
 
 ### TenantBrandProfile

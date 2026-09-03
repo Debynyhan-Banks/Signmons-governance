@@ -23,6 +23,7 @@ Purpose: single active queue for execution.
 ## Now
 
 - [ ] APP-012 Payment gate and webhook status workflow (`SCR-APP-006A`, `SCR-APP-006B`, `SCR-APP-006C`, `SCR-APP-023`, `SCR-CUST-002`)
+  - Payment-before-dispatch gate checkpoint is review-ready; payment requests, signed webhooks, customer recovery and transition audits remain open.
 
 ## Next
 
