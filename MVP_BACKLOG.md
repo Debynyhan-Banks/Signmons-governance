@@ -25,7 +25,7 @@
 - FE-013: Revenue dashboard and ROI calculator (`SCR-PUB-015`, `SCR-PUB-016`)
 - FE-014: Competitive comparison pages (`SCR-PUB-017`, `SCR-PUB-018`)
 - FE-015: Customer and technician experience page (`SCR-PUB-019`)
-- FE-016: Pricing mechanics hardening (setup/overage/performance fees/add-ons/invoice examples) (`SCR-PUB-006`)
+- FE-016: Subscription-only pricing reconciliation (fixed tiers, capacity guidance, no setup/overage/performance/add-on fees, and contractor-payment boundary) (`SCR-PUB-006`)
 
 ## Epic E3 - Tenant Product Experience (Starts After Marketing DoD)
 
@@ -41,7 +41,7 @@
 - APP-010: Routing rules, service areas, and availability (`SCR-APP-015`, `SCR-APP-016`, `SCR-APP-024`, `SCR-TECH-004`)
 - APP-011: Customer booking status and confirmation flow (`SCR-CUST-001`, `SCR-CUST-003`)
 - APP-012: Payment gate and webhook status workflow (`SCR-APP-006A`, `SCR-APP-006B`, `SCR-APP-006C`, `SCR-APP-023`, `SCR-CUST-002`)
-- APP-013: Notification center and transactional customer messaging templates, including durable appointment-confirmation delivery (`SCR-APP-021`, `SCR-APP-022`, `SCR-TECH-005`)
+- APP-013: Twilio-backed notification center and transactional customer messaging templates, including durable appointment confirmations, technician status messages, dispatcher alerts, delivery/failure status, and communication history (`SCR-APP-021`, `SCR-APP-022`, `SCR-TECH-005`)
 - APP-014: Revenue recovery and conversion analytics (`SCR-APP-018`, `SCR-APP-019`)
 - APP-015: AI quality and failure review (`SCR-APP-020`, `SCR-ADM-005`)
 - APP-016: Calendar scheduling and appointment management, including secure customer view/reschedule/cancel access (`SCR-APP-025`, `SCR-APP-015`, `SCR-APP-005`)
@@ -60,8 +60,9 @@
 - BE-003: Signature and auth fail-closed checks
 - BE-004: Data contract validation and backward compatibility tests
 - BE-005: Observability and audit logs for critical flows
-- BE-006: Billable events + invoice-rule pipeline for performance fees
+- BE-006: Subscription entitlements, nonfinancial usage visibility, fixed-plan upgrade signals, and SaaS invoice integrity
 - BE-007: Tenant lead-source reporting pilot for booked/completed attribution
+- BE-008: Twilio communications foundation: voice routing, inbound/outbound SMS, missed-call text-back, consent and STOP/HELP handling, quiet-hour policy, idempotent delivery, provider status webhooks, safe retry, and provider abstraction
 
 ## Epic E5 - Launch Readiness
 

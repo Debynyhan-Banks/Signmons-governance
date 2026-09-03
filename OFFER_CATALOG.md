@@ -20,10 +20,10 @@ Modules share one tenant-scoped operating record. They are not sold as disconnec
 
 ## Founding Partner Program (Limited Early Access)
 
-- `$199/mo` + `$299` one-time guided setup
+- `$199/mo` with guided setup included
 - limited to the first `10` external businesses approved for the program
-- up to `100` AI-handled calls/month
-- CallDesk web intake, calendar booking, owner alerts, customer/job history, and basic professional estimates/invoices as each capability is released
+- approximately `100` AI-handled calls/month as a fair-use suitability guide
+- CallDesk phone/SMS/web intake, calendar booking, owner alerts, customer/job history, and basic professional estimates/invoices as each capability is released
 - month-to-month; founding price locked for `12` months while the account remains active
 - early-access or planned capabilities must be labeled accurately and cannot be billed before activation
 - founding accounts convert to a public plan only with advance notice and affirmative acceptance
@@ -36,24 +36,23 @@ Best for:
 - solo owner-operators
 
 Includes:
-- `100` AI-handled calls/month
+- approximately `100` AI-handled calls/month as a fair-use suitability guide
+- `1` location, `1` phone number, and up to `2` technicians
 - `24/7` call answering
 - SMS + web chat intake
+- missed-call text-back
 - booking-ready summaries
-- payment link handoff
-- basic appointment request collection
-- basic lead history
+- calendar booking and a basic Stripe payment-before-booking gate when the contractor's policy requires a booking fee or deposit
+- customer confirmations and appointment management
+- customer/job history and basic technician workflow
 - owner alerts (email/SMS)
 - branded estimates and invoices
 - customer approval, payment link, and receipt
 
 Excludes:
 - advanced dispatch and routing
-- no-payment-no-dispatch enforcement
+- advanced payment-gate rules, preauthorization, exception approvals, and partial-payment policy
 - advanced analytics and integrations
-
-Setup fee:
-- `$499` one-time
 
 ### Growth (`$799/mo`)
 
@@ -61,12 +60,13 @@ Best for:
 - `2-5` truck teams
 
 Includes Starter plus:
-- `500` AI-handled calls/month
+- approximately `500` AI-handled calls/month as a fair-use suitability guide
+- `1` location and up to `5` technicians
 - missed-call recovery (basic)
 - urgency classification (emergency/high-priority/standard)
 - after-hours capture
-- deposit collection + service-fee preauthorization
-- no-payment-no-dispatch gate
+- configurable deposit collection + service-fee preauthorization
+- advanced no-payment-no-dispatch rules, exception approvals, and payment recovery controls
 - multi-tech routing (`up to 5` vehicles)
 - basic dispatch board
 - customer confirmations
@@ -78,16 +78,14 @@ Includes Starter plus:
 - invoice reminders, credits, refunds, and payment-status reporting
 - customer review requests
 
-Setup fee:
-- `$1,000` one-time
-
 ### Pro (`$1,499/mo`)
 
 Best for:
 - `5-15` truck operations
 
 Includes Growth plus:
-- `1,500` AI-handled calls/month
+- approximately `1,500` AI-handled calls/month as a fair-use suitability guide
+- up to `3` locations and `15` technicians
 - advanced dispatch rules
 - calendar and scheduling board
 - technician availability and skill routing
@@ -104,10 +102,7 @@ Includes Growth plus:
 - advanced revenue reporting
 - monthly optimization review
 
-Setup fee:
-- `$2,500` one-time
-
-### Enterprise (`from $3,500/mo`)
+### Enterprise (fixed custom subscription)
 
 Best for:
 - multi-location/franchise operations
@@ -122,33 +117,24 @@ Includes Pro plus:
 - custom integrations/data pipelines
 - advanced compliance controls
 
-Setup fee:
-- custom (`$5,000+` baseline)
+## Subscription Packaging Rules
 
-## Performance Fee Options
-
-Per-tenant policy-controlled options:
-- qualified booked job fee
-- emergency captured job fee
-- optional revenue-share model
-
-Billable definitions and constraints:
-- governed in `BILLABLE_EVENTS_SPEC.md`
-- enforced by contracts in `DATA_CONTRACTS.md`
-
-Performance fees are disabled by default at launch. They may be enabled only after billable-event attribution, tenant contract acceptance, invoice evidence, dispute handling, and credits/voids are production-ready.
+- Signmons charges a fixed monthly or annual subscription only.
+- There is no setup, per-call overage, booked-job, emergency-capture, revenue-share, or basic per-invoice Signmons fee.
+- Plan capacity is nonfinancial guidance. Approaching or sustained excess usage triggers a plan review and agreed fixed-price upgrade, not automatic metered billing.
+- Normal Twilio and AI operating costs are included within plan economics. Exceptional Enterprise requirements are priced into the fixed custom subscription.
 
 ## Invoice and Payment Packaging Rules
 
 - Basic professional estimates, invoices, payment links, and receipts are included in every paid public plan after Signmons Money is released.
 - Do not charge a Signmons per-invoice fee for the basic feature.
-- Processor, ACH, chargeback, financing, and optional third-party invoicing fees are disclosed and passed through according to the tenant contract.
+- Processor, ACH, chargeback, and financing costs belong to contractor-to-customer payment processing and are separate from Signmons subscription billing.
 - Signmons does not provide bookkeeping, payroll, tax filing, or general-ledger accounting.
 - Advanced deposits, progress/recurring invoicing, automated reminders, pricebook controls, margin reporting, and accounting synchronization may be tiered.
 
 ## Upgrade Logic
 
-- Founding Partner -> Starter: generally available CallDesk + Money baseline and standard support
-- Starter -> Growth: payment gate + multi-tech routing + advanced invoicing + dashboard
+- Founding Partner -> Starter: generally available CallDesk + Money baseline, standard support, and fixed subscription capacity
+- Starter -> Growth: advanced payment policy + multi-tech routing + advanced invoicing + dashboard
 - Growth -> Pro: scheduling/routing intelligence + field workflow + integrations + auditability
 - Pro -> Enterprise: multi-location + custom policy/compliance + SLA

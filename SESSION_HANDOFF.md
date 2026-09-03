@@ -1,6 +1,6 @@
 # Session Handoff
 
-Last Updated: 2026-09-02
+Last Updated: 2026-09-03
 
 ## Owner-Approved Product Direction (2026-09-01)
 
@@ -12,6 +12,7 @@ Last Updated: 2026-09-02
 - Public target ladder remains Starter `$299/mo`, Growth `$799/mo`, Pro `$1,499/mo`, and Enterprise fixed custom monthly/annual subscription.
 - Plan capacity is nonfinancial suitability guidance. Approaching or sustained excess usage triggers notification and an agreed fixed-price upgrade, not automatic metered billing.
 - Normal Twilio and AI usage is included within plan economics. Contractor-to-customer Stripe payments and processor costs remain separate from Signmons subscription billing.
+- Owner approved basic Stripe payment-before-booking enforcement as a core Starter-and-higher entitlement after the Signmons Money release gate. Growth and higher differentiate through advanced deposit, preauthorization, exception, partial-payment, and recovery controls—not exclusive access to the basic gate.
 - The earlier setup/overage/performance/add-on policy is superseded. The fixed-subscription marketing and ROI correction was merged in marketing PR `#23` and deployed to Firebase Hosting site `signmons`; repository hosting configuration was corrected in PRs `#24` and `#25`.
 
 ## Current Program Pointer

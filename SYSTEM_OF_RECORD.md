@@ -18,7 +18,7 @@ If docs conflict, resolve in this exact order:
 10. `MVP_BACKLOG.md`
 11. `DATA_CONTRACTS.md`
 12. `PRICING_AND_FEES_POLICY.md`
-13. `BILLABLE_EVENTS_SPEC.md`
+13. `USAGE_METRICS_SPEC.md`
 14. `OFFER_CATALOG.md`
 15. `QUALITY_GATES.md`
 16. `AI_WORKFLOW_RULES.md`
@@ -39,7 +39,7 @@ All other docs are reference-only unless explicitly listed above.
 - Delivery roadmap: `MVP_BACKLOG.md`
 - API/event contract policy: `DATA_CONTRACTS.md`
 - Commercial pricing/fee policy: `PRICING_AND_FEES_POLICY.md`
-- Billable event definitions: `BILLABLE_EVENTS_SPEC.md`
+- Nonfinancial usage-metric definitions: `USAGE_METRICS_SPEC.md`
 - Plan and feature packaging: `OFFER_CATALOG.md`
 - Required quality gates: `QUALITY_GATES.md`
 - Agent workflow contract: `AI_WORKFLOW_RULES.md`

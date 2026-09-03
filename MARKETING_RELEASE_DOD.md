@@ -53,15 +53,14 @@ The site must prove this operational claim without ambiguity:
 ### 4) Pricing Integrity
 
 - Pricing copy is contract-driven and validated by `pricing:check`.
-- Tier boundaries are non-conflicting (included vs add-on language).
-- Setup fee + volume policy + per-tier qualifying-call overage policy are explicit.
-- Performance fee policy disclosure is explicit (qualified booked jobs, emergency captured jobs).
-- Performance fees are described as disabled by default unless explicitly enabled in the tenant contract.
-- Founding Partner pricing, when displayed, is labeled limited early access and is not presented as a permanent public tier.
-- Basic invoicing is not marketed as bookkeeping/accounting; provider fees and release availability are disclosed.
+- Tier feature, location, technician, and fair-use capacity boundaries are non-conflicting.
+- Pricing clearly states that Signmons-to-tenant billing is a fixed monthly or annual subscription.
+- Pricing contains no setup, per-call overage, booked-job, emergency-capture, revenue-share, or required MVP add-on fee.
+- Founding Partner pricing, when displayed, is `$199/mo`, limited to the first `10` approved businesses, and not presented as a permanent public tier.
+- Basic invoicing is not marketed as bookkeeping/accounting; Stripe customer-payment processing is clearly separated from Signmons subscription billing.
 - "How pricing works" formula is visible:
-  - `Monthly Total = Base + Overage + Enabled Performance Fees + Add-ons + Disclosed Pass-Through Provider Fees`.
-- Billable-event definitions are linked and consistent with governed specs.
+  - `Signmons subscription total = fixed selected-plan subscription` (plus applicable taxes only).
+- Capacity and usage-metric definitions are linked and explicitly described as nonfinancial.
 
 ### 5) Legal/Trust Integrity
 
