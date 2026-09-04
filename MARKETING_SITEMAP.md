@@ -84,24 +84,23 @@ Signmons is the AI front office and dispatch intelligence system for trades busi
 
 ## Commercial Offer Map (High-Ticket)
 
-Signmons public offer is intentionally multi-layered:
+Signmons public offer is intentionally simple:
 
-1. Base subscription (monthly/annual)
-2. Setup fee (one-time)
-3. Included call volume + per-tier qualifying-call overage
-4. Enabled performance fees (qualified booked jobs, emergency captured jobs)
-5. Add-ons and disclosed pass-through provider fees
+1. Fixed subscription (monthly/annual)
+2. Tier-specific feature, location, technician, and fair-use capacity
+3. Fixed-price plan upgrade or Enterprise subscription when needs consistently exceed the current tier
+4. No setup, per-call overage, per-booking, emergency-capture, revenue-share, or required MVP add-on fees
 
 Target public ladder:
 
-- Starter: `$299/mo` + `$499` setup
-- Growth: `$799/mo` + `$1,000` setup
-- Pro: `$1,499/mo` + `$2,500` setup
-- Enterprise: `from $3,500/mo` + custom setup (`$5,000+` baseline)
+- Starter: `$299/mo`
+- Growth: `$799/mo`
+- Pro: `$1,499/mo`
+- Enterprise: fixed custom monthly/annual subscription
 
 Limited bridge offer:
 
-- Founding Partner: `$199/mo` + `$299` setup, first `10` approved external businesses, `12`-month price lock while active
+- Founding Partner: `$199/mo`, first `10` approved external businesses, `12`-month price lock while active, no setup fee
 - Must be labeled early access; unshipped capabilities cannot be represented as generally available or billed before activation
 
 ## Pricing Page Section Contract (`SCR-PUB-006`)
@@ -109,16 +108,14 @@ Limited bridge offer:
 Pricing page must include all sections below:
 
 1. Tier cards (Starter/Growth/Pro/Enterprise)
-2. Setup fee disclosure by tier
-3. Included volume + per-tier qualifying-call overage disclosure
-4. Performance fee disclosure:
-   - qualified booked job fee (range/policy)
-   - emergency captured job fee (range/policy)
-5. Add-ons section
-6. Annual billing discount disclosure
-7. "How pricing works" formula:
-   - `Monthly Total = Base + Overage + Enabled Performance Fees + Add-ons + Disclosed Pass-Through Provider Fees`
-8. Billable event definitions summary with link to full policy
+2. Included feature, location, technician, and fair-use capacity guidance
+3. Explicit no-setup/no-overage/no-outcome-fee disclosure
+4. Fixed-price upgrade policy when needs consistently exceed the current tier
+5. Annual billing discount disclosure
+6. "How pricing works" formula:
+   - `Signmons subscription total = fixed selected-plan subscription` (plus applicable taxes only)
+7. Contractor-to-customer Stripe payment boundary
+8. Basic payment-before-booking gate included in every paid public plan after the Signmons Money release gate; Growth and higher differentiate through advanced payment-policy controls
 9. Tier-specific CTA map:
    - Starter: `Start Early Access`
    - Growth: `Book Revenue Demo`
@@ -134,9 +131,9 @@ Pricing page must include all sections below:
 Revenue Dashboard and ROI calculator pages must include:
 
 1. Plain-language assumptions panel
-2. Inputs that map to governed contracts (`PricingPlan`, `PerformanceFeePolicy`)
+2. Inputs that map to governed contracts (`PricingPlan`, `SubscriptionEntitlement`, `UsageMetricEvent`)
 3. Output disclosure distinguishing estimates vs realized values
-4. "What counts as billable" summary
+4. "What the subscription includes" and nonfinancial capacity assumptions summary
 5. Contact conversion CTA to `/contact`
 
 ## Build Priority

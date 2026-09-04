@@ -1,6 +1,6 @@
 # Session Handoff
 
-Last Updated: 2026-09-02
+Last Updated: 2026-09-04
 
 ## Owner-Approved Product Direction (2026-09-01)
 
@@ -12,6 +12,7 @@ Last Updated: 2026-09-02
 - Public target ladder remains Starter `$299/mo`, Growth `$799/mo`, Pro `$1,499/mo`, and Enterprise fixed custom monthly/annual subscription.
 - Plan capacity is nonfinancial suitability guidance. Approaching or sustained excess usage triggers notification and an agreed fixed-price upgrade, not automatic metered billing.
 - Normal Twilio and AI usage is included within plan economics. Contractor-to-customer Stripe payments and processor costs remain separate from Signmons subscription billing.
+- Owner approved basic Stripe payment-before-booking enforcement as a core Starter-and-higher entitlement after the Signmons Money release gate. Growth and higher differentiate through advanced deposit, preauthorization, exception, partial-payment, and recovery controls—not exclusive access to the basic gate.
 - The earlier setup/overage/performance/add-on policy is superseded. The fixed-subscription marketing and ROI correction was merged in marketing PR `#23` and deployed to Firebase Hosting site `signmons`; repository hosting configuration was corrected in PRs `#24` and `#25`.
 
 ## Current Program Pointer
@@ -33,6 +34,18 @@ Last Updated: 2026-09-02
 - No Stripe call or secret configuration, production migration, deployment, IAM, billing or real-data action occurred.
 - APP-012 remains active and unreleased. Payment requests, signed/idempotent webhook processing, customer recovery/status and payment-transition auditing remain open.
 - Estimated completion: APP-012 approximately 20%; governed APP-006 through APP-016 sequence approximately 56%.
+
+## APP-012 Payment Request Checkpoint (2026-09-04)
+
+- Continued backend branch `codex/app-012-payment-gate` with one bounded server-side payment/deposit request section.
+- Backend implementation commit `88d4b3ef001ceb04dc973ddd0263c105f9a6a701` is pushed and remote-verified.
+- Authenticated owner/admin/dispatcher endpoints create and track tenant-scoped payment requests. Amount and currency are derived only from the job's policy/pricing snapshots; stale, closed, cross-tenant, incomplete-pricing and unready-account cases fail before provider access.
+- Stripe Checkout uses a direct charge on the contractor's enabled connected account and records a zero Signmons application fee. Checkout creation requires a version-4 idempotency key, stores only its SHA-256 hash and does not expose provider identifiers in API/audit projections.
+- Request success and bounded provider failure are audited. A replay with the same key does not duplicate the success audit.
+- Backend build/lint, 26 suites and 189 tests, architecture and Prisma validation pass. The new migration and authenticated POST/replay/GET path passed in a disposable local PostgreSQL schema, which was removed after proof.
+- No real Stripe request, secret/configuration change, staging or production migration, deployment, IAM, billing or real-data action occurred. This backend-only slice changed no rendered UI, so prior responsive gate evidence remains current and no new visual browser artifact was warranted.
+- APP-012 remains active and unreleased. Signed/idempotent webhook ingestion, secure customer status/recovery, operator request UI and verified payment/gate transition auditing remain open.
+- Estimated completion: APP-012 approximately 40%; governed APP-006 through APP-016 sequence approximately 58%.
 
 ## FE-012 Completion Context
 
@@ -123,7 +136,7 @@ Last Updated: 2026-09-02
 
 ## Next Actions (Strict Order)
 
-1. Review the APP-012 payment-gate checkpoint and keep APP-012 in `Now`.
-2. Continue APP-012 with payment/deposit request creation, signature-verified idempotent webhook processing, customer recovery/status and transition audits.
+1. Review the APP-012 payment-gate and payment-request checkpoints and keep APP-012 in `Now`.
+2. Continue APP-012 with signature-verified idempotent webhook processing, customer recovery/status and transition audits.
 3. Keep APP-013 in `Next`; do not start Twilio implementation until APP-012 is accepted and marked `Done`.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
