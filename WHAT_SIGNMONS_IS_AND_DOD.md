@@ -33,6 +33,7 @@ Signmons is one platform with the following governed product modules:
    - professional estimates, customer approval, deposits, invoices, payment links, receipts, reminders, refunds, and payment audit history
 4. **Signmons Field**
    - technician job workflow, customer/equipment context, notes, photos, signatures, and status updates
+   - structured trade-specific diagnostic capture, deterministic measurement calculations, branded findings reports, and secure customer delivery
 5. **Signmons Customers**
    - tenant-isolated customer, property, equipment, service, payment, and communication history
 6. **Signmons Growth**
@@ -76,6 +77,15 @@ Supporting outcome: "Move a qualified customer from first contact to documented 
 - Stripe payment-before-booking, deposits, estimates, and job invoices are money the contractor collects from its customer; they are product workflows, not additional Signmons charges.
 - Signmons-to-tenant billing is subscription-only. Plan capacity drives a fixed-price upgrade conversation rather than an automatic usage or outcome fee.
 
+## Diagnostic Reporting Boundary
+
+- System diagnostic reports are a governed Signmons Field capability, not an AI-generated substitute for an on-site licensed technician.
+- Technician-entered and device-imported readings are the source of truth. AI may organize findings, identify missing or contradictory fields, and draft plain-language explanations, but it must never invent measurements or independently assert a diagnosis.
+- Calculations such as superheat, subcooling, temperature split, electrical comparison, combustion results, and airflow-derived values must use deterministic, versioned formulas with units and source readings retained.
+- Every report is tenant-scoped, linked to the job, customer, property, and equipment record, and retains its author, timestamps, revisions, approvals, delivery status, and audit trail.
+- Customers receive only an approved, tenant-branded report through a private expiring link or generated PDF. Internal notes, hidden AI reasoning, credentials, and unrelated customer records must never be exposed.
+- Starter includes simple job notes, photos, equipment details, and a completion summary. Growth requires the full branded diagnostic report workflow. Pro adds configurable multi-trade templates, quality-control review, equipment trends, and approved integrations.
+
 ## Delivery Sequence (Anti-Drift)
 
 Execute the product in this order unless the governance pointer explicitly approves an exception:
@@ -84,7 +94,7 @@ Execute the product in this order unless the governance pointer explicitly appro
 2. Tenant dashboard, customer/job history, and booking-readiness review
 3. Calendar, dispatch, technician assignment, and durable customer confirmations with secure appointment-management access
 4. Professional estimates, invoices, deposits, payments, and receipts
-5. Technician mobile workflow and pricebook
+5. Technician mobile workflow, pricebook, and structured diagnostic reporting
 6. Advanced voice AI and SMS automation, accounting/CRM/FSM integrations, reviews, and maintenance plans
 7. Advanced automation, auto-dispatch, multi-location controls, and intelligence
 

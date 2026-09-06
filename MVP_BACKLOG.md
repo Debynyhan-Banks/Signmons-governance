@@ -50,6 +50,7 @@
 - APP-019: Customer profiles and service history (`SCR-APP-028`, `SCR-APP-003`, `SCR-APP-005`)
 - APP-020: Professional estimates, approvals, invoices, receipts, and aging (`SCR-APP-029`, `SCR-CUST-007`, `SCR-APP-006B`)
 - APP-021: Governed service pricebook and estimate options (`SCR-APP-030`, `SCR-TECH-002`, `SCR-APP-029`)
+- APP-024: Structured system diagnostic capture, deterministic calculations, tenant-branded reports, quality review, and secure customer delivery (`SCR-APP-033`, `SCR-TECH-006`, `SCR-CUST-008`)
 - APP-022: Review requests and maintenance-plan renewal workflows (`SCR-APP-031`, `SCR-CUST-005`, `SCR-APP-022`)
 - APP-023: QuickBooks Online accounting adapter and reconciliation status (`SCR-APP-032`, `SCR-APP-006B`, `SCR-APP-029`)
 

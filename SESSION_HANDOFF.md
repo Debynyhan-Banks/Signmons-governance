@@ -13,6 +13,7 @@ Last Updated: 2026-09-03
 - Plan capacity is nonfinancial suitability guidance. Approaching or sustained excess usage triggers notification and an agreed fixed-price upgrade, not automatic metered billing.
 - Normal Twilio and AI usage is included within plan economics. Contractor-to-customer Stripe payments and processor costs remain separate from Signmons subscription billing.
 - Owner approved basic Stripe payment-before-booking enforcement as a core Starter-and-higher entitlement after the Signmons Money release gate. Growth and higher differentiate through advanced deposit, preauthorization, exception, partial-payment, and recovery controls—not exclusive access to the basic gate.
+- Owner approved structured system diagnostic reporting as a governed Signmons Field capability. Starter receives basic notes/photos/equipment details and a completion summary; the complete branded report workflow is required for Growth launch readiness; Pro adds configurable templates, quality review, equipment trends, and approved integrations. This future scope does not displace APP-012 or APP-013.
 - The earlier setup/overage/performance/add-on policy is superseded. The fixed-subscription marketing and ROI correction was merged in marketing PR `#23` and deployed to Firebase Hosting site `signmons`; repository hosting configuration was corrected in PRs `#24` and `#25`.
 
 ## Current Program Pointer

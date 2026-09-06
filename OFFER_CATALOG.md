@@ -11,7 +11,7 @@ Stop sending trucks to unpaid jobs. Signmons answers, qualifies, collects paymen
 - **CallDesk:** phone/SMS/web intake, qualification, safety, booking, summaries, and handoff
 - **Dispatch:** calendars, availability, booking readiness, routing, assignment, and confirmations
 - **Money:** estimates, approvals, deposits, invoices, payment links, receipts, reminders, and refunds
-- **Field:** technician jobs, notes, photos, signatures, equipment context, and status updates
+- **Field:** technician jobs, notes, photos, signatures, equipment context, status updates, structured diagnostic capture, and branded findings reports
 - **Customers:** customer/property/equipment/service/communication history
 - **Growth:** missed-call recovery, reviews, maintenance-plan renewal, and attribution
 - **Intelligence:** conversion, payment, dispatch, revenue, and AI-quality reporting
@@ -45,6 +45,7 @@ Includes:
 - calendar booking and a basic Stripe payment-before-booking gate when the contractor's policy requires a booking fee or deposit
 - customer confirmations and appointment management
 - customer/job history and basic technician workflow
+- technician notes, photos, equipment details, and a simple completion summary
 - owner alerts (email/SMS)
 - branded estimates and invoices
 - customer approval, payment link, and receipt
@@ -77,6 +78,7 @@ Includes Starter plus:
 - estimate-to-job-to-invoice conversion
 - invoice reminders, credits, refunds, and payment-status reporting
 - customer review requests
+- full tenant-branded system diagnostic reports with structured readings, deterministic calculations, technician findings, recommendations, signatures, secure customer delivery, and PDF export
 
 ### Pro (`$1,499/mo`)
 
@@ -98,6 +100,7 @@ Includes Growth plus:
 - QuickBooks Online integration; Xero follows through an approved adapter
 - advanced estimate options, progress/recurring invoices, and approval workflows
 - technician mobile workflow and governed pricebook
+- configurable multi-trade diagnostic templates, supervisor quality-control review, equipment-history trends, and approved diagnostic-data integrations
 - maintenance-plan renewal workflows
 - advanced revenue reporting
 - monthly optimization review
@@ -132,9 +135,17 @@ Includes Pro plus:
 - Signmons does not provide bookkeeping, payroll, tax filing, or general-ledger accounting.
 - Advanced deposits, progress/recurring invoicing, automated reminders, pricebook controls, margin reporting, and accounting synchronization may be tiered.
 
+## Diagnostic Report Packaging Rules
+
+- Starter includes basic job notes, photos, equipment details, and a simple completion summary.
+- Growth includes the complete tenant-branded diagnostic-report workflow and this capability is required before Growth is marketed as generally available.
+- Pro adds configurable multi-trade templates, supervisor review, fleet and equipment trends, and approved device/CRM/FSM integrations.
+- AI may draft report language and flag missing or contradictory fields only from retained technician-entered or approved device-imported data. It may not fabricate measurements or present an unverified diagnosis as fact.
+- Signmons does not charge a per-report fee. Diagnostic-report access follows the fixed subscription and plan entitlements.
+
 ## Upgrade Logic
 
 - Founding Partner -> Starter: generally available CallDesk + Money baseline, standard support, and fixed subscription capacity
 - Starter -> Growth: advanced payment policy + multi-tech routing + advanced invoicing + dashboard
-- Growth -> Pro: scheduling/routing intelligence + field workflow + integrations + auditability
+- Growth -> Pro: scheduling/routing intelligence + advanced field controls + integrations + auditability
 - Pro -> Enterprise: multi-location + custom policy/compliance + SLA

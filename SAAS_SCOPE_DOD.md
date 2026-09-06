@@ -15,6 +15,7 @@ Signmons is a multi-tenant AI front-office and dispatch SaaS for home-service bu
 - Customer, property, equipment, communication, and service history
 - Professional estimates, approvals, deposits, invoices, payment links, receipts, and reminders
 - Technician mobile job workflow
+- Structured technician diagnostic capture, verified calculations, branded customer reports, and secure report delivery
 - Approved accounting/CRM/FSM integration adapters
 - Review-request, missed-call recovery, and maintenance-plan renewal workflows
 - Tenant dashboards for operations and visibility
@@ -52,6 +53,9 @@ Signmons is a multi-tenant AI front-office and dispatch SaaS for home-service bu
 - Plan capacity is a suitability and fair-use boundary. Approaching or sustained excess usage triggers notification and a fixed-price plan-upgrade conversation, not an automatic metered charge
 - Normal Twilio, messaging, and AI usage is included within the subscribed plan; exceptional Enterprise volume is reflected in a negotiated fixed subscription
 - Contractor-to-customer Stripe processing costs remain separate from the Signmons subscription and must never be presented as a Signmons performance fee
+- Technician-entered or approved device-imported measurements are authoritative for diagnostic reports; AI may summarize and validate completeness but must not invent readings or independently claim a diagnosis
+- Diagnostic formulas, units, source readings, report revisions, approvals, and delivery events must be deterministic, versioned, tenant-scoped, and auditable
+- Customer diagnostic reports must exclude internal notes and hidden AI reasoning and use private access or generated documents with controlled delivery
 
 ## 5) Definition of Done
 
@@ -92,6 +96,7 @@ Signmons is a multi-tenant AI front-office and dispatch SaaS for home-service bu
 - Tenant retention/churn trends
 - Estimate approval rate and invoice payment completion rate after Signmons Money is released
 - Time from completed work to paid invoice after Signmons Money is released
+- Diagnostic-report completion and customer-delivery success after Signmons Field reporting is released
 
 ## 7) High-Ticket Copy Guardrails
 
@@ -117,4 +122,5 @@ Signmons is a multi-tenant AI front-office and dispatch SaaS for home-service bu
 - Basic professional estimates/invoices/payment links/receipts are included after the Signmons Money release gate without a basic per-invoice Signmons fee.
 - Basic Stripe payment-before-booking enforcement is included in Starter and every higher paid plan after the Signmons Money release gate. Growth and higher tiers differentiate through advanced deposit, preauthorization, exception, partial-payment, and recovery controls rather than access to the core gate.
 - Stripe and other customer-payment processor fees belong to the contractor-to-customer transaction and are separate from Signmons subscription billing.
+- Starter includes a simple technician completion summary; the complete branded diagnostic-report workflow is required for Growth launch readiness; Pro adds configurable templates, quality-control review, equipment trends, and approved integrations.
 - Annual pricing discount policy must be explicit and versioned (default target: `15%-20%`).
