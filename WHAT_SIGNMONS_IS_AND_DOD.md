@@ -41,6 +41,8 @@ Signmons is one platform with the following governed product modules:
 7. **Signmons Intelligence**
    - booking, response-time, payment, revenue, dispatch, and AI-quality reporting
 
+Cross-module operating foundations include memberships, job costing, inventory and purchasing, employee time capture and payroll export, offline field synchronization, customer financing handoff, guided migration/onboarding, and tested operational recovery. These foundations support the seven modules; they do not create separate products or expand Signmons into payroll, general-ledger accounting, banking, or ERP.
+
 These are modules of one product, not seven disconnected applications. Shared tenant identity, customer/job records, business rules, audit events, and permissions are mandatory.
 
 ## Canonical Customer Workflow
@@ -96,7 +98,8 @@ Execute the product in this order unless the governance pointer explicitly appro
 4. Professional estimates, invoices, deposits, payments, and receipts
 5. Technician mobile workflow, pricebook, and structured diagnostic reporting
 6. Advanced voice AI and SMS automation, accounting/CRM/FSM integrations, reviews, and maintenance plans
-7. Advanced automation, auto-dispatch, multi-location controls, and intelligence
+7. Memberships, job costing, inventory/purchasing, employee time export, customer financing, and guided data migration
+8. Advanced automation, auto-dispatch, multi-location controls, intelligence, and tested operational recovery
 
 Marketing work may explain a planned module only when it is labeled as planned/early access. It must not present an unshipped module as generally available.
 
@@ -168,6 +171,7 @@ A feature or phase is not complete unless all are true:
 
 - This doc must be read at session start for any repo execution.
 - If a proposal conflicts with this doc, it is blocked until governance is updated.
+- Trades-platform completeness and future capability boundaries must remain aligned with `TRADES_PLATFORM_COMPLETENESS.md`.
 - Commercial claims and pricing mechanics must align with:
   - `PRICING_AND_FEES_POLICY.md`
   - `OFFER_CATALOG.md`
