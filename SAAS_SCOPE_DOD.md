@@ -7,7 +7,7 @@ Signmons is a multi-tenant AI front-office and dispatch SaaS for home-service bu
 ## 2) In Scope
 
 - Multi-tenant backend with strict tenant isolation
-- Twilio-backed voice intake and call routing with deterministic policy-driven flow
+- Twilio-backed inbound call handling connected to an OpenAI-powered conversational intake workflow with deterministic safety, confirmation, escalation, booking, and payment-policy boundaries
 - Twilio-backed inbound/outbound SMS as the canonical confirmation channel for key fields
 - Missed-call text-back, transactional customer/technician/dispatcher notifications, delivery status, and communication history
 - Payment-first booking gate
@@ -47,6 +47,8 @@ Signmons is a multi-tenant AI front-office and dispatch SaaS for home-service bu
 - Voice is persuasive intake, not canonical authority
 - SMS confirmation is canonical for required fields
 - Twilio is an MVP infrastructure dependency, but telephony and messaging must sit behind a provider abstraction so Signmons is not permanently vendor-locked
+- OpenAI-powered voice intake must sit behind a governed orchestration boundary; the model may converse and summarize, but server-side policy owns safety, required confirmations, payment eligibility, booking, and dispatch decisions
+- Voice recording and transcript capture must be disabled unless tenant policy, notice/consent, retention, access, redaction, and jurisdictional requirements are explicitly configured
 - Communication delivery must be idempotent and auditable, with consent, opt-out/STOP and HELP handling, quiet-hour policy, delivery/failure status, safe retry, and duplicate-message protection
 - Payment webhook validation is server-side and fail-closed
 - No cross-tenant data access

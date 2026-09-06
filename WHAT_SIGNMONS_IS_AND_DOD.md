@@ -24,7 +24,8 @@ Primary ICP:
 Signmons is one platform with the following governed product modules:
 
 1. **Signmons CallDesk**
-   - AI-assisted phone, SMS, and web-chat intake
+   - Twilio receives and routes inbound calls into an OpenAI-powered conversational intake workflow that answers, identifies, qualifies, screens for safety and urgency, confirms critical facts, and hands off to booking, payment, dispatch, or a human
+   - AI-assisted SMS and web-chat intake
    - Twilio-backed call routing, inbound/outbound SMS, missed-call text-back, and transactional notifications
    - qualification, safety screening, booking, summaries, delivery tracking, communication history, and human handoff
 2. **Signmons Dispatch**
@@ -92,7 +93,7 @@ Supporting outcome: "Move a qualified customer from first contact to documented 
 
 Execute the product in this order unless the governance pointer explicitly approves an exception:
 
-1. CallDesk reliability, safety, intake integrity, booking, and the Twilio communications foundation (voice routing, inbound/outbound SMS, missed-call recovery, transactional notifications, consent/opt-out handling, delivery status, and communication history)
+1. CallDesk reliability, safety, intake integrity, booking, and the Twilio communications foundation (Twilio-to-OpenAI voice answering, voice routing, inbound/outbound SMS, missed-call recovery, transactional notifications, consent/opt-out handling, delivery status, and communication history)
 2. Tenant dashboard, customer/job history, and booking-readiness review
 3. Calendar, dispatch, technician assignment, and durable customer confirmations with secure appointment-management access
 4. Professional estimates, invoices, deposits, payments, and receipts

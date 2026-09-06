@@ -61,6 +61,7 @@
 - APP-030: Customer financing presentation and status tracking alongside estimates without retaining sensitive financing application data (screens and contracts ticket-defined)
 - APP-031: Guided tenant onboarding, data migration, reconciliation, export, retention, and account-closure controls (screens and contracts ticket-defined)
 - APP-032: Platform reliability, backup, restore, provider-outage, retry/dead-letter, incident, and operational recovery controls (screens and contracts ticket-defined)
+- APP-033: OpenAI-powered voice intake and booking orchestration over the Twilio communications foundation, including safety, canonical confirmation, payment/booking handoff, human escalation, summaries, latency, and failure recovery (screens and contracts ticket-defined)
 
 Roadmap boundaries, outcome requirements, and sequencing constraints for APP-025 through APP-032 are defined in `TRADES_PLATFORM_COMPLETENESS.md`. These tickets remain future scope and do not displace the active `Now` ticket.
 

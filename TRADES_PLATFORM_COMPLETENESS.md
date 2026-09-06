@@ -58,6 +58,23 @@ This promise extends the Revenue Integrity Dispatch differentiator. Feature coun
 - Backup policy covers databases, objects, configurations, and required audit evidence.
 - Restore procedures are exercised on a schedule with recovery-time and recovery-point evidence; a successful backup job alone is insufficient.
 
+### APP-033 OpenAI Voice Intake And Booking Orchestration
+
+- Twilio-delivered inbound calls enter a tenant-configured OpenAI conversational workflow with controlled tools and server-owned policy decisions.
+- The workflow identifies and qualifies the request, screens safety/urgency, confirms critical facts, and hands off to canonical SMS, scheduling, payment, dispatch, or a human.
+- Model/provider failure, silence, interruption, dropped calls, unsupported requests, emergencies, and transfer failures preserve recoverable state and visible ownership.
+
+## Additional Trade-Critical Requirements
+
+The following requirements must be decomposed into governed tickets before the affected capability is marketed as complete:
+
+- **Identity and administrative security:** MFA, optional SSO for eligible plans, session/device controls, granular roles, approval limits, access review, and tamper-evident security audit history.
+- **Sales and change control:** good/better/best estimate options, add-ons, change orders, scope revisions, customer approval/signature, expiration, financing handoff, and immutable accepted-version evidence.
+- **Equipment, warranty, and compliance records:** equipment lifecycle, serial/model data, warranty dates and claims references, permit/inspection artifacts, maintenance history, and jurisdiction/tenant-configured disclaimers without claiming legal or code authority.
+- **Commercial service:** organizations with multiple contacts and locations, purchase-order/authorization requirements, recurring inspections, multi-stage work orders, consolidated billing references, and role-based customer access.
+- **Governed tenant knowledge:** approved service facts, hours, service areas, policies, FAQs, exclusions, credentials, and effective dates used by voice/chat/SMS; unsupported or stale knowledge fails to a human.
+- **Implementation and support readiness:** guided launch validation, number forwarding/porting checks, sandbox calls/messages/payments, help content, support ownership, release notes, customer-visible status, and a recoverable escalation path.
+
 ## Cross-Cutting Acceptance Standard
 
 Each capability must demonstrate:
@@ -77,5 +94,6 @@ Each capability must demonstrate:
 2. Complete APP-013 communications, consent, delivery, and failure handling.
 3. Continue the governed APP-014 through APP-024 workflow in the order approved by the global pointer.
 4. Promote APP-025 through APP-032 individually only after contracts, screens, acceptance criteria, dependencies, and evidence plans are written.
+5. Promote APP-033 only after BE-008 has an accepted communications boundary and the voice safety, latency, knowledge, recording/transcript, and human-fallback contracts are approved.
 
 No item in this document is `Now` merely because it is documented. The global execution pointer and WIP limit remain authoritative.
