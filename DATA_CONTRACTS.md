@@ -378,21 +378,25 @@ Audit:
 - Explicit evaluations create `routing.rule_evaluated`; assignment audits embed the exact bounded `routing-v1` trace used by `dispatch-v2`.
 - Configuration writes and their audit event commit in one transaction.
 
-## APP-012 Payment Gate And Payment Request Contract
+## APP-012 Payment Gate And Payment Lifecycle Contract
 
-Current bounded endpoints:
+Endpoints:
 - `GET /jobs/dispatch-board`
 - `GET /jobs/dispatch-board/:jobId`
 - `POST /jobs/:jobId/assignments`
 - `POST /jobs/:jobId/payment-requests`
 - `GET /jobs/:jobId/payment-request`
+- `GET /jobs/:jobId/payment-events`
+- `POST /jobs/:jobId/payment-exception`
+- `POST /appointments/manage` (`continue_payment` under the signed customer link)
+- `POST /webhooks/stripe`
 
 Policy source and state:
 - The job's tenant-policy snapshot is authoritative for whether payment is required. Payment is required when `depositRequired` or `serviceFeeRequired` is explicitly `true`.
 - The job's pricing snapshot is authoritative for checkout amount and currency. A required deposit uses positive integer `depositAmountCents`; a required service fee uses positive integer `serviceFeeAmountCents`; when both are required, the checkout amount is their sum. Currency is a three-letter code from `pricingSnapshot.currency`.
 - Missing or invalid required pricing fails closed before provider access.
 - Gate state is `NOT_REQUIRED`, `LOCKED` or `UNLOCKED`. Only canonical payment status `SUCCEEDED` unlocks a required job; not requested, pending, failed, canceled and refunded states fail closed.
-- `manual_override` is reserved by `PaymentPolicy` but is not implemented by this checkpoint; operator assignment reasons cannot bypass a locked payment gate.
+- An exception can unlock the gate only when the trusted policy selects `manual_override`, an active/trialing Growth, Pro or Enterprise entitlement is effective, an owner/admin supplies a normalized reason and optimistic job concurrency succeeds. The exception never changes canonical payment status, and revocation restores the normal fail-closed gate.
 
 Payment request boundary:
 - Only verified `owner`, `admin` and `dispatcher` roles may create or track a payment request. Tenant and actor identity come from verified request context, never the body.
@@ -407,6 +411,17 @@ Privacy and audit:
 - Successful request creation audits `payment.request_created`; provider failure audits `payment.request_failed` with a bounded reason code. Audit metadata contains internal job/payment IDs, request kind, amount, currency, status and expiry, never provider identifiers or checkout URLs.
 - Payment reservation and final audit persistence are tenant-scoped. Webhook processing remains separately responsible for canonical payment-state transitions.
 
+Webhook boundary:
+- The public endpoint verifies the Stripe signature over the exact raw body with a five-minute freshness tolerance before processing.
+- Only the configured event set is handled. A handled event must contain a boolean top-level `livemode` equal to explicit `STRIPE_WEBHOOK_LIVEMODE`; a mismatch fails before tenant or payment lookup. Production Stripe configuration is invalid without an explicit expected mode.
+- The top-level connected-account ID must map to the same tenant and payment destination account. Successful transitions require trusted amount/currency equality.
+- Event IDs are tenant-scoped and idempotent. Late failures/expiration cannot downgrade success, and late success cannot downgrade a full refund.
+- Stored event evidence is limited to event type, Stripe-created timestamp and internal payment ID. Operator event projections omit provider identifiers, payloads and errors and return at most the 20 newest rows for the tenant/job payment.
+
+Customer recovery and redirect authority:
+- The signed customer management link returns only a current open, unpaid and unexpired Checkout from the same enabled connected account; it never creates a new request.
+- The success/cancel return page is advisory. Only a verified webhook transition changes canonical payment truth or unlocks dispatch.
+
 Dispatch enforcement:
 - A locked, unassigned, non-escalated job stays in `NEW_REQUEST`, produces no eligible recommendation and cannot be newly assigned. An urgency escalation remains visibly `ESCALATED`, but it still cannot be assigned while locked.
 - A locked assignment request returns conflict before candidate lookup, job mutation or audit creation.
@@ -417,10 +432,9 @@ Commercial boundary:
 - The gate and checkout cover a tenant contractor's required customer deposit/service payment.
 - They do not create a Signmons setup, usage, booked-job, emergency-capture, revenue-share, application or per-invoice fee; Signmons-to-tenant pricing remains subscription-only.
 
-Remaining APP-012 contract work:
-- Secure customer status/recovery endpoints and operator request UI.
-- Signature-verified, idempotent Stripe webhook ingestion and visible processing outcomes.
-- Payment/gate transition audits after verified webhooks and any separately governed manual override.
+Remaining APP-012 release work:
+- Continuous deployed staging acceptance using the approved persistent Connect destination, secret-vault configuration and migration/deployment workflow.
+- Owner sign-off, merge and live release remain separate approval gates.
 
 ## GOV-008 High-Ticket Domain Contracts (High-Level)
 

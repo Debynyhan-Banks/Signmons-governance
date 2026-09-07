@@ -23,7 +23,7 @@ Purpose: single active queue for execution.
 ## Now
 
 - [ ] APP-012 Payment gate and webhook status workflow (`SCR-APP-006A`, `SCR-APP-006B`, `SCR-APP-006C`, `SCR-APP-023`, `SCR-CUST-002`)
-  - Payment-before-dispatch and authenticated payment-request API checkpoints are review-ready; signed webhooks, operator/customer recovery surfaces and verified transition audits remain open.
+  - Payment-before-dispatch, authenticated requests, signed mode-bound webhooks, operator/customer recovery, governed exceptions and linked transition evidence are review-ready with conditional local acceptance. Continuous deployed staging acceptance, owner sign-off and release remain approval-gated.
 
 ## Next
 

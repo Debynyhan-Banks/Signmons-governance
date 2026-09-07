@@ -1,6 +1,6 @@
 # Session Handoff
 
-Last Updated: 2026-09-04
+Last Updated: 2026-09-07
 
 ## Owner-Approved Product Direction (2026-09-01)
 
@@ -46,6 +46,16 @@ Last Updated: 2026-09-04
 - No real Stripe request, secret/configuration change, staging or production migration, deployment, IAM, billing or real-data action occurred. This backend-only slice changed no rendered UI, so prior responsive gate evidence remains current and no new visual browser artifact was warranted.
 - APP-012 remains active and unreleased. Signed/idempotent webhook ingestion, secure customer status/recovery, operator request UI and verified payment/gate transition auditing remain open.
 - Estimated completion: APP-012 approximately 40%; governed APP-006 through APP-016 sequence approximately 58%.
+
+## APP-012 Lifecycle And Release-Readiness Checkpoint (2026-09-06 to 2026-09-07)
+
+- Backend branch `codex/app-012-payment-gate` progressed in bounded pushed commits from the September 4 request checkpoint through signature-verified/idempotent Connect webhook transitions, genuine isolated Stripe CLI delivery proof, signed customer recovery/status, operator request/event visibility, governed Growth-and-higher payment exceptions and final acceptance preparation.
+- The release checklist records conditional local acceptance across linked proofs; it does not claim one deployed end-to-end staging transaction. Continuous staging deployment, migration and persistent sandbox endpoint/secret configuration remain explicitly approval-gated.
+- The September 7 hardening requires handled signed events' top-level Stripe `livemode` to match explicit `STRIPE_WEBHOOK_LIVEMODE` configuration before any database access. Production validation also requires an explicit mode and rejects recognizable Stripe key prefixes that conflict with it.
+- Backend mode-boundary implementation/evidence commit `27d595da21406704b6bc66804ba03d2e90643b23` is on `codex/app-012-payment-gate`.
+- Full backend build/lint, 28 suites and 224 tests, architecture, Prisma validation and critical audit gate pass. UI build/lint and 4 suites/17 tests pass; existing September 6 desktop/390px browser evidence remains applicable because the mode section has no rendered change.
+- No persistent endpoint, credential, IAM policy, database migration, payment, deployment, merge, release or real customer/appointment state was changed in the September 7 section.
+- APP-012 remains the sole `Now` ticket at approximately 95%; APP-006 through APP-016 is approximately 68%. Do not begin APP-013 until APP-012 staging acceptance, owner sign-off and release are recorded.
 
 ## FE-012 Completion Context
 
@@ -136,7 +146,8 @@ Last Updated: 2026-09-04
 
 ## Next Actions (Strict Order)
 
-1. Review the APP-012 payment-gate and payment-request checkpoints and keep APP-012 in `Now`.
-2. Continue APP-012 with signature-verified idempotent webhook processing, customer recovery/status and transition audits.
-3. Keep APP-013 in `Next`; do not start Twilio implementation until APP-012 is accepted and marked `Done`.
-4. Keep FE-014 paused until the owner returns the pointer to marketing work.
+1. Review APP-012 through backend commit `27d595da21406704b6bc66804ba03d2e90643b23` and keep APP-012 in `Now` and unreleased.
+2. Await explicit owner approval before persistent Stripe sandbox endpoint/secret configuration, staging migration/deployment or the continuous staging acceptance run.
+3. After that staging run passes, obtain owner acceptance before merge or release; live mode remains a separate approval gate.
+4. Keep APP-013 in `Next`; do not start Twilio implementation until APP-012 is accepted and marked `Done`.
+5. Keep FE-014 paused until the owner returns the pointer to marketing work.
