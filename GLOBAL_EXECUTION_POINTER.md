@@ -14,9 +14,9 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
   - Repo: `signmons-marketing-web-feat-marketing-site`
   - Board: `EXECUTION_BOARD.md`
 
-## Current Pointer (as of 2026-09-02)
+## Current Pointer (as of 2026-09-07)
 
-- Program `Now`: `APP-012` (payment gate and webhook status workflow)
+- Program `Now`: `APP-013` (Twilio-backed notification center and transactional customer messaging)
 - Program phase: owner-approved CallDesk-first product execution; `FE-014` is paused, not cancelled
 - Sequencing: strict (`Now` -> `Done` before starting `Next`)
 
@@ -24,9 +24,9 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 
 | Repo | Active Ticket | State |
 | --- | --- | --- |
-| Governance | APP-012 contract and evidence alignment | active |
+| Governance | APP-013 contract and communications-boundary alignment | active |
 | Frontend marketing | `FE-014` competitive comparison pages | paused |
-| Backend | `APP-012` implementation next; APP-011 is accepted and released | active |
+| Backend | `APP-013` planning next; APP-012 is accepted and released | active |
 
 ## Synchronization Rules
 
