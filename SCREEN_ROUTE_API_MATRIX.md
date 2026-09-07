@@ -40,6 +40,7 @@ Purpose: canonical alignment between screen IDs, frontend routes, and backend AP
 | `SCR-APP-030` | `/app/pricebook` (planned) | backend app surface | pricebook API set (ticket-defined) | service/pricebook contract (ticket-defined) | APP-021 | planned |
 | `SCR-APP-031` | `/app/growth` (planned) | backend app surface | review/maintenance automation API set (ticket-defined) | review/maintenance policy contract (ticket-defined) | APP-022 | planned |
 | `SCR-APP-032` | `/app/integrations/accounting` (planned) | backend app surface | accounting adapter/reconciliation API set (ticket-defined) | accounting adapter contract (ticket-defined) | APP-023 | planned |
+| `SCR-APP-033`, `SCR-TECH-006` | `/app/diagnostics`, `/app/technician` (planned) | backend app surface | diagnostic template, measurement, calculation, approval, version and delivery API set (ticket-defined) | diagnostic report contracts (ticket-defined) | APP-024 | planned |
 
 ## Customer Integration Pilot
 
@@ -47,6 +48,7 @@ Purpose: canonical alignment between screen IDs, frontend routes, and backend AP
 | --- | --- | --- | --- | --- | --- | --- |
 | `SCR-CUST-006` | Embedded tenant website assistant; Eternity pilot uses a server-side website proxy | tenant website | `POST /api/integrations/webchat/triage` | BE-003 webchat request, response, credential and safety contract | BE-003 | in progress |
 | `SCR-CUST-007` | Customer estimate/invoice link (planned) | customer web surface | estimate approval, payment, and receipt API set (ticket-defined) | `ServiceEstimate`, `JobInvoice`, `CustomerPaymentAllocation`, `CustomerReceipt` | APP-020 | planned |
+| `SCR-CUST-008` | Customer diagnostic report link (planned) | customer web surface | approved diagnostic report view/PDF API set (ticket-defined) | diagnostic report and secure-delivery contracts (ticket-defined) | APP-024 | planned |
 
 ## Contract Rules
 

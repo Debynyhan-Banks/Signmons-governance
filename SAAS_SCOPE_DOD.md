@@ -7,7 +7,7 @@ Signmons is a multi-tenant AI front-office and dispatch SaaS for home-service bu
 ## 2) In Scope
 
 - Multi-tenant backend with strict tenant isolation
-- Twilio-backed voice intake and call routing with deterministic policy-driven flow
+- Twilio-backed inbound call handling connected to an OpenAI-powered conversational intake workflow with deterministic safety, confirmation, escalation, booking, and payment-policy boundaries
 - Twilio-backed inbound/outbound SMS as the canonical confirmation channel for key fields
 - Missed-call text-back, transactional customer/technician/dispatcher notifications, delivery status, and communication history
 - Payment-first booking gate
@@ -15,11 +15,20 @@ Signmons is a multi-tenant AI front-office and dispatch SaaS for home-service bu
 - Customer, property, equipment, communication, and service history
 - Professional estimates, approvals, deposits, invoices, payment links, receipts, and reminders
 - Technician mobile job workflow
+- Structured technician diagnostic capture, verified calculations, branded customer reports, and secure report delivery
 - Approved accounting/CRM/FSM integration adapters
 - Review-request, missed-call recovery, and maintenance-plan renewal workflows
 - Tenant dashboards for operations and visibility
 - Marketing site and conversion funnel
 - Admin/ops controls with auditability
+- Memberships and recurring service agreements
+- Job costing and estimated-versus-actual profitability
+- Inventory, purchasing, warehouse, and truck-stock controls
+- Employee time capture, timesheet approval, and payroll export
+- Offline-capable technician workflows with conflict-safe synchronization
+- Customer financing presentation and status tracking through approved providers
+- Guided onboarding, import, reconciliation, export, retention, and account-closure controls
+- Backup, restore, retry/dead-letter, provider-outage, and incident-recovery controls
 
 ## 3) Out of Scope (MVP)
 
@@ -27,6 +36,8 @@ Signmons is a multi-tenant AI front-office and dispatch SaaS for home-service bu
 - Advanced voice AI, transcription analytics, sentiment analysis, and automated outbound campaigns
 - Broad ERP/CRM two-way sync beyond approved adapters
 - General-ledger accounting, payroll, bank reconciliation, tax filing, or an ERP replacement
+- Lending decisions, underwriting, custody of financing application data, or representation as a lender
+- Supplier marketplace ownership or ungoverned automated purchasing
 - Raw payment-card storage or custom payment processing outside an approved PCI-compliant provider
 - Unvalidated multilingual claims
 - Features without acceptance criteria and evidence
@@ -36,6 +47,8 @@ Signmons is a multi-tenant AI front-office and dispatch SaaS for home-service bu
 - Voice is persuasive intake, not canonical authority
 - SMS confirmation is canonical for required fields
 - Twilio is an MVP infrastructure dependency, but telephony and messaging must sit behind a provider abstraction so Signmons is not permanently vendor-locked
+- OpenAI-powered voice intake must sit behind a governed orchestration boundary; the model may converse and summarize, but server-side policy owns safety, required confirmations, payment eligibility, booking, and dispatch decisions
+- Voice recording and transcript capture must be disabled unless tenant policy, notice/consent, retention, access, redaction, and jurisdictional requirements are explicitly configured
 - Communication delivery must be idempotent and auditable, with consent, opt-out/STOP and HELP handling, quiet-hour policy, delivery/failure status, safe retry, and duplicate-message protection
 - Payment webhook validation is server-side and fail-closed
 - No cross-tenant data access
@@ -52,6 +65,15 @@ Signmons is a multi-tenant AI front-office and dispatch SaaS for home-service bu
 - Plan capacity is a suitability and fair-use boundary. Approaching or sustained excess usage triggers notification and a fixed-price plan-upgrade conversation, not an automatic metered charge
 - Normal Twilio, messaging, and AI usage is included within the subscribed plan; exceptional Enterprise volume is reflected in a negotiated fixed subscription
 - Contractor-to-customer Stripe processing costs remain separate from the Signmons subscription and must never be presented as a Signmons performance fee
+- Technician-entered or approved device-imported measurements are authoritative for diagnostic reports; AI may summarize and validate completeness but must not invent readings or independently claim a diagnosis
+- Diagnostic formulas, units, source readings, report revisions, approvals, and delivery events must be deterministic, versioned, tenant-scoped, and auditable
+- Customer diagnostic reports must exclude internal notes and hidden AI reasoning and use private access or generated documents with controlled delivery
+- Offline field writes must be tenant-scoped, encrypted where retained locally, idempotently replayed, conflict-visible, and safely recoverable
+- Inventory and job-cost changes must retain actor, source, quantity, cost basis, job attribution, and correction history
+- Time tracking may feed approved payroll exports but Signmons must not calculate statutory payroll, withholdings, or taxes in MVP
+- Customer financing must use approved providers and retain only the minimum governed application reference and status needed for the estimate workflow
+- Imports must be previewable, validated, reversible before finalization, and accompanied by reconciliation evidence; tenants must have a governed export path
+- Backup and restore claims require recurring restore evidence, not backup-job success alone
 
 ## 5) Definition of Done
 
@@ -92,6 +114,7 @@ Signmons is a multi-tenant AI front-office and dispatch SaaS for home-service bu
 - Tenant retention/churn trends
 - Estimate approval rate and invoice payment completion rate after Signmons Money is released
 - Time from completed work to paid invoice after Signmons Money is released
+- Diagnostic-report completion and customer-delivery success after Signmons Field reporting is released
 
 ## 7) High-Ticket Copy Guardrails
 
@@ -117,4 +140,5 @@ Signmons is a multi-tenant AI front-office and dispatch SaaS for home-service bu
 - Basic professional estimates/invoices/payment links/receipts are included after the Signmons Money release gate without a basic per-invoice Signmons fee.
 - Basic Stripe payment-before-booking enforcement is included in Starter and every higher paid plan after the Signmons Money release gate. Growth and higher tiers differentiate through advanced deposit, preauthorization, exception, partial-payment, and recovery controls rather than access to the core gate.
 - Stripe and other customer-payment processor fees belong to the contractor-to-customer transaction and are separate from Signmons subscription billing.
+- Starter includes a simple technician completion summary; the complete branded diagnostic-report workflow is required for Growth launch readiness; Pro adds configurable templates, quality-control review, equipment trends, and approved integrations.
 - Annual pricing discount policy must be explicit and versioned (default target: `15%-20%`).

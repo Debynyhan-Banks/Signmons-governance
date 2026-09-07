@@ -1,6 +1,6 @@
 # Session Handoff
 
-Last Updated: 2026-09-03
+Last Updated: 2026-09-07
 
 ## Owner-Approved Product Direction (2026-09-01)
 
@@ -13,11 +13,14 @@ Last Updated: 2026-09-03
 - Plan capacity is nonfinancial suitability guidance. Approaching or sustained excess usage triggers notification and an agreed fixed-price upgrade, not automatic metered billing.
 - Normal Twilio and AI usage is included within plan economics. Contractor-to-customer Stripe payments and processor costs remain separate from Signmons subscription billing.
 - Owner approved basic Stripe payment-before-booking enforcement as a core Starter-and-higher entitlement after the Signmons Money release gate. Growth and higher differentiate through advanced deposit, preauthorization, exception, partial-payment, and recovery controls—not exclusive access to the basic gate.
+- Owner approved structured system diagnostic reporting as a governed Signmons Field capability. Starter receives basic notes/photos/equipment details and a completion summary; the complete branded report workflow is required for Growth launch readiness; Pro adds configurable templates, quality review, equipment trends, and approved integrations. This future scope does not displace APP-012 or APP-013.
+- Owner approved the trades-platform completeness standard and future APP-025 through APP-032 roadmap covering memberships, job costing, inventory/purchasing, employee time export, offline field synchronization, customer financing, migration/data ownership, and operational recovery. `TRADES_PLATFORM_COMPLETENESS.md` defines the boundaries; none of these items displaces the active APP-012 pointer.
+- Owner clarified that MVP scope includes Twilio-delivered calls answered through an OpenAI-powered conversational intake workflow plus governed inbound/outbound and transactional SMS. BE-008 now owns communications transport/compliance/recovery, APP-033 owns AI voice orchestration, and APP-013 explicitly owns transactional SMS/email templates and status. These future specifications do not displace APP-012.
 - The earlier setup/overage/performance/add-on policy is superseded. The fixed-subscription marketing and ROI correction was merged in marketing PR `#23` and deployed to Firebase Hosting site `signmons`; repository hosting configuration was corrected in PRs `#24` and `#25`.
 
 ## Current Program Pointer
 
-- Global `Now`: `APP-012` (payment gate and webhook status workflow).
+- Global `Now`: `APP-013` (Twilio-backed notification center and transactional customer messaging).
 - Completed exception: `BE-003` (Eternity webchat backend production readiness).
 - Completed exceptions: `BE-007` lead-source reporting and `APP-003` audited job completion.
 - Program phase: owner-approved CallDesk-first product execution; `FE-014` is paused, not cancelled.
@@ -44,6 +47,11 @@ Last Updated: 2026-09-03
 - Non-goals respected: no backend dispatch implementation changes; no APP screen implementation. `SchedulingWindow` / `Appointment` / `DispatchPolicy` remain display dependencies (APP-016 / APP-017 own runtime contracts).
 
 ## Completed In This Session
+
+- APP-012 sandbox acceptance passed with an automatic post-destination `$100.00 USD` Stripe Checkout, HTTP 200 webhook delivery, canonical paid transition, zero Signmons application fee, contractor-account binding, dispatch unlock and Stripe-originated duplicate idempotency.
+- Owner authorized merge and staging release. Backend PR `#14` merged at `068f4c2`; Cloud Build `dd7ca7ec-1777-45b6-8659-fba8998a9b63` produced digest `sha256:838121ce33dc17343ec2182bee83d39118626a68aa702802b13205635d501a33`; migration `signmons-calldesk-migrate-pgr84` succeeded; Cloud Run revision `signmons-calldesk-staging-app012release` serves 100 percent of staging traffic; Firebase payment/dispatch routes are published.
+- Release verification passed liveness, readiness, approved-origin CORS, unsigned-webhook fail-closed behavior and three public route checks. Temporary build grants were removed and the build identity was disabled. Stripe live mode and real transactions remain separately approval-gated.
+- APP-012 is Done and APP-013 is promoted to Now without starting implementation.
 
 - Merged APP-011 backend PR `#13` at `28d394f`, applied migration `20260902130000_add_customer_audit_actor` through execution `signmons-calldesk-migrate-xztrh`, deployed Cloud Run revision `signmons-calldesk-staging-00024-wwn`, and published `/appointment/manage` to Firebase Hosting.
 - APP-011 live liveness, readiness, CORS and fail-closed secure-link checks passed; owner accepted the customer and dispatcher experiences before release.

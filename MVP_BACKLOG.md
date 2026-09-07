@@ -50,8 +50,20 @@
 - APP-019: Customer profiles and service history (`SCR-APP-028`, `SCR-APP-003`, `SCR-APP-005`)
 - APP-020: Professional estimates, approvals, invoices, receipts, and aging (`SCR-APP-029`, `SCR-CUST-007`, `SCR-APP-006B`)
 - APP-021: Governed service pricebook and estimate options (`SCR-APP-030`, `SCR-TECH-002`, `SCR-APP-029`)
+- APP-024: Structured system diagnostic capture, deterministic calculations, tenant-branded reports, quality review, and secure customer delivery (`SCR-APP-033`, `SCR-TECH-006`, `SCR-CUST-008`)
 - APP-022: Review requests and maintenance-plan renewal workflows (`SCR-APP-031`, `SCR-CUST-005`, `SCR-APP-022`)
 - APP-023: QuickBooks Online accounting adapter and reconciliation status (`SCR-APP-032`, `SCR-APP-006B`, `SCR-APP-029`)
+- APP-025: Memberships and recurring service agreements, including entitlements, renewals, recurring visits, member pricing, and equipment-specific maintenance schedules (screens and contracts ticket-defined)
+- APP-026: Job costing and profitability, including estimated-versus-actual labor, material, equipment, subcontractor, commission, and overhead attribution (screens and contracts ticket-defined)
+- APP-027: Inventory, purchasing, and truck stock, including parts usage, replenishment, purchase orders, returns, transfers, and approved supplier adapters (screens and contracts ticket-defined)
+- APP-028: Employee time tracking and payroll export, including job time, timesheet approval, technician attribution, and export boundaries without payroll processing (screens and contracts ticket-defined)
+- APP-029: Offline-first technician synchronization for jobs, forms, photos, signatures, estimates, and diagnostics with conflict-safe replay and duplicate prevention (screens and contracts ticket-defined)
+- APP-030: Customer financing presentation and status tracking alongside estimates without retaining sensitive financing application data (screens and contracts ticket-defined)
+- APP-031: Guided tenant onboarding, data migration, reconciliation, export, retention, and account-closure controls (screens and contracts ticket-defined)
+- APP-032: Platform reliability, backup, restore, provider-outage, retry/dead-letter, incident, and operational recovery controls (screens and contracts ticket-defined)
+- APP-033: OpenAI-powered voice intake and booking orchestration over the Twilio communications foundation, including safety, canonical confirmation, payment/booking handoff, human escalation, summaries, latency, and failure recovery (screens and contracts ticket-defined)
+
+Roadmap boundaries, outcome requirements, and sequencing constraints for APP-025 through APP-032 are defined in `TRADES_PLATFORM_COMPLETENESS.md`. These tickets remain future scope and do not displace the active `Now` ticket.
 
 ## Epic E4 - Security and Reliability
 

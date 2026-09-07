@@ -58,6 +58,7 @@
 - `SCR-APP-030` Service Pricebook and Estimate Options
 - `SCR-APP-031` Reviews and Maintenance-Plan Automation
 - `SCR-APP-032` Accounting Integration and Reconciliation
+- `SCR-APP-033` Diagnostic Templates and Report Quality Review
 
 ## Technician Portal
 
@@ -66,6 +67,7 @@
 - `SCR-TECH-003` Technician Status Updates
 - `SCR-TECH-004` Technician Availability / On-Call Toggle
 - `SCR-TECH-005` Technician Notifications
+- `SCR-TECH-006` Diagnostic Capture and Measurements
 
 ## Customer Experience
 
@@ -76,6 +78,7 @@
 - `SCR-CUST-005` Customer Review Request
 - `SCR-CUST-006` Customer Webchat Intake
 - `SCR-CUST-007` Estimate Approval, Invoice, Payment, and Receipt
+- `SCR-CUST-008` Customer Diagnostic Report
 
 ## Platform Admin
 
