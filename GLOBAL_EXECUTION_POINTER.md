@@ -16,7 +16,7 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 
 ## Current Pointer (as of 2026-09-07)
 
-- Program `Now`: `APP-013` (Twilio-backed notification center and transactional customer messaging)
+- Program `Now`: `BE-008` (Twilio communications foundation prerequisite for APP-013 and APP-033)
 - Program phase: owner-approved CallDesk-first product execution; `FE-014` is paused, not cancelled
 - Sequencing: strict (`Now` -> `Done` before starting `Next`)
 
@@ -24,9 +24,9 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 
 | Repo | Active Ticket | State |
 | --- | --- | --- |
-| Governance | APP-013 contract and communications-boundary alignment | active |
+| Governance | BE-008 transport, compliance and recovery boundary | active |
 | Frontend marketing | `FE-014` competitive comparison pages | paused |
-| Backend | `APP-013` planning next; APP-012 is accepted and released | active |
+| Backend | `BE-008` staging release complete with delivery disabled; sandbox acceptance remains; APP-013 is next | active |
 
 ## Synchronization Rules
 
