@@ -22,9 +22,12 @@ Purpose: single active queue for execution.
 
 ## Now
 
-- [ ] APP-013 Twilio-backed notification center and transactional customer messaging (`SCR-APP-021`, `SCR-APP-022`, `SCR-TECH-005`)
+- [ ] BE-008 Twilio communications foundation
+  - Backend and additive migrations released to staging at `fd6828a` / `signmons-calldesk-staging-be008release` with SMS delivery disabled; Twilio sandbox acceptance remains.
 
 ## Next
+
+- [ ] APP-013 Twilio-backed notification center and transactional customer messaging (`SCR-APP-021`, `SCR-APP-022`, `SCR-TECH-005`)
 
 ## Later
 

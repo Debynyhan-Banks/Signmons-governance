@@ -20,7 +20,8 @@ Last Updated: 2026-09-07
 
 ## Current Program Pointer
 
-- Global `Now`: `APP-013` (Twilio-backed notification center and transactional customer messaging).
+- Global `Now`: `BE-008` (Twilio communications foundation), promoted with owner approval on 2026-09-07 as the prerequisite for APP-013 and APP-033.
+- Global `Next`: `APP-013` (Twilio-backed notification center and transactional customer messaging).
 - Completed exception: `BE-003` (Eternity webchat backend production readiness).
 - Completed exceptions: `BE-007` lead-source reporting and `APP-003` audited job completion.
 - Program phase: owner-approved CallDesk-first product execution; `FE-014` is paused, not cancelled.
