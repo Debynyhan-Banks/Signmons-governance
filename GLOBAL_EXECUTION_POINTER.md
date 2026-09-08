@@ -26,7 +26,7 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 | --- | --- | --- |
 | Governance | APP-013 contract and communications-boundary alignment | active |
 | Frontend marketing | `FE-014` competitive comparison pages | paused |
-| Backend | `APP-013` scoped Prisma/mysql2 remediation is review-ready on PR #21 at `54b613f`; mysql2 findings absent, final backend full 9 high/8 moderate and omit-dev 8 high/8 moderate unaccepted, UI audits clean; new Multer/Nest findings and CREATE orchestration/recovery ownership/acceptance remain pending, no activation or deployment; BE-008 accepted | active |
+| Backend | `APP-013` scoped Nest/Multer remediation is review-ready on PR #21 at `ace10ff`; Multer/Nest findings absent, backend full/omit-dev 4 high/8 moderate unaccepted, UI audits clean; future upload limits/error mapping and CREATE orchestration/recovery ownership/acceptance remain gated, no activation or deployment; BE-008 accepted | active |
 
 ## Synchronization Rules
 

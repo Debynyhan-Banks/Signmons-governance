@@ -378,7 +378,16 @@ Audit:
 - Explicit evaluations create `routing.rule_evaluated`; assignment audits embed the exact bounded `routing-v1` trace used by `dispatch-v2`.
 - Configuration writes and their audit event commit in one transaction.
 
-## APP-013 Scoped Prisma/mysql2 Compatibility Checkpoint
+## APP-013 Scoped Nest/Multer Compatibility Checkpoint
+
+- Scoped `@nestjs/platform-express@^11.2.3 -> multer: 2.3.0` override replaces 2.2.0; only the Multer lock entry changes. No Nest/Express major upgrade, application/API/auth/payment/provider, UI/static-hosting, Prisma/schema or migration change; prior overrides remain intact.
+- Twelve native tests automatically wrapped by Jest cover Nest consumer resolution, ordinary/invalid fields, explicit index limit, async file-size limits across four upload methods, exact-limit acceptance, real disk descriptor close/unlink and Nest interceptor compatibility. Invalid sparse append is caught without iterating/serializing the array; no old-version negative reproduction or resource-exhausting load test. Disk-layer stream failure is not full network-abort acceptance.
+- Future upload activation remains gated: explicit fieldArrayIndexLimit plus field/file size/count/depth controls and 4xx mapping for new Multer errors. Nest 11's new array-index error remains a plain Error, verified by the fixture. No upload handlers were found in current application source; no new endpoint or global upload middleware is enabled. Version upgrade alone does not guarantee bounded array parsing.
+- APP-013 owns the override: re-review on any Nest change (test pins reviewed 11.2.3); remove when native resolution is patched and multipart/application/browser gates pass. Existing mysql2/PostCSS retirement conditions remain.
+- Backend 613 tests, lint/build/architecture/Prisma and disposable 15-migration/11-crash suite pass; zero real provider calls and database absence verified. UI 60 tests, lint/type/build and five desktop/mobile synthetic browser harnesses pass unchanged. Full backend audit 9 high/8 moderate -> 4 high/8 moderate; omit-dev 4 high/8 moderate; UI clean, zero critical. Multer/Nest findings absent, remaining Prisma/deepmerge-ts and Firebase/Google/uuid unaccepted.
+- Backend `ace10ff7ed892c49ee1824ebd988ee1dcf3d01f8`; readiness report and multer-audit-summary.json contain commands/evidence. Authorized CREATE orchestration/recovery ownership, external-state races, reschedule/cancel and SENDING recovery, remaining acceptance and release gates stay open. No production operation, provider configuration, real data, merge, deployment or activation.
+
+## APP-013 Scoped Prisma/mysql2 Compatibility Checkpoint (Earlier)
 
 - Scoped `prisma@^7.10.0 -> mysql2: 3.24.4` override replaces the 3.15.3 pin. Six lock entries change: mysql2/lru.min updates, sql-escaper addition, sqlstring/denque/seq-queue removal. Prisma/client/adapter 7.10.0 and PostgreSQL schema remain unchanged; no application/API/auth/payment/provider/UI/static-hosting contract or new migration.
 - Ten native Node fixtures automatically wrapped by Jest exercise resolution, default cleartext-auth refusal, explicit opt-in compatibility, prototype-plugin refusal, real packet parser sync/async inflation bounds/order/malformed input and public SQL formatting. At most 18 KB synthetic data, no sockets or real credentials. No full TLS enforcement, old-version negative reproduction, MySQL/Studio live acceptance or large-payload stress claim.
