@@ -23,7 +23,7 @@ Purpose: single active queue for execution.
 ## Now
 
 - [ ] APP-013 Twilio-backed notification center and transactional customer messaging (`SCR-APP-021`, `SCR-APP-022`, `SCR-TECH-005`)
-  - Fixed/versioned SMS lifecycle/state checks, durable initial-confirmation/technician intents, read-only visibility and owner/admin exhausted-intent retry API are review-ready on backend PR #21. Recovery UI/acceptance, reschedule/cancellation durability, calendar reconciliation, remaining events/template controls, technician notifications, email and live acceptance remain open.
+  - Fixed/versioned SMS lifecycle/state checks, durable initial-confirmation/technician intents, visibility and guarded owner/admin exhausted-intent retry API/UI are review-ready on backend PR #21. Owner/live acceptance, reschedule/cancellation durability, calendar reconciliation, remaining events/template controls, technician notifications and email remain open.
 
 ## Next
 

@@ -121,8 +121,8 @@ Last Updated: 2026-09-08
 
 ## Next Actions (Strict Order)
 
-1. Review APP-013 owner/admin exhausted-intent retry API, state/concurrency/audit safeguards and local-only proof on backend `codex/app-013-transactional-messaging` (PR #21). Owner reviewed prior initial confirmation durability and intent visibility. APP-012 and BE-008 are accepted; do not repeat completed sections.
-2. After owner review, continue one bounded APP-013 section for recovery UI/acceptance preparation, reschedule/cancellation durability, calendar reconciliation, remaining events, email, template/preferences controls or technician notification UI. Live retry use, migration, live acceptance and release remain approval-gated.
+1. Review APP-013 guarded owner/admin exhausted-intent retry UI, capability boundary, acknowledgment/duplicate-click/uncertain-outcome safeguards and synthetic browser proof on backend `codex/app-013-transactional-messaging` (PR #21). Owner reviewed the preceding retry API. APP-012 and BE-008 are accepted; do not repeat completed sections.
+2. After owner review, continue one bounded APP-013 section for acceptance preparation, reschedule/cancellation durability, calendar reconciliation, remaining events, email, template/preferences controls or technician notification UI. Live retry use, migration, live acceptance and release remain approval-gated. Dependency findings require separate release triage; current critical-only audit gates do not accept the high/moderate risks.
 3. Keep provider delivery disabled until an explicitly approved acceptance run; no external messages or release are authorized by this documentation checkpoint.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 
@@ -163,7 +163,17 @@ Historical checkpoint; the latest continuation is recorded below.
 - Evidence and reproducible QA command: backend `evidence/APP-013/readiness-report.md`; screenshots `notifications-desktop.png` and `notifications-mobile.png` alongside it. Existing 4 high/9 moderate dependency findings and stale Browserslist data remain documented; 0 critical.
 - No external message, configuration, migration, merge, deployment or customer mutation. Durable enqueue recovery and remaining events/template controls/technician UI/email/acceptance stay open. Planning estimate: APP-013 roughly 50%; APP-006 through APP-016 roughly 74%.
 
-## Latest APP-013 Owner/Admin Exhausted-Intent Retry API (2026-09-08)
+## Latest APP-013 Guarded Exhausted-Intent Retry UI (2026-09-08)
+
+- Backend implementation/evidence: `9a3d86a103df675fd0f329b15922dda2ffe8736b`, `feat(app): add guarded APP-013 intent retry review UI`, pushed and remote-verified on `codex/app-013-transactional-messaging` (PR #21).
+- Owner reviewed backend `aab434b` / governance `5f3127a` and approved continuation. Completed one bounded notification-center recovery UI section on existing focused branches; APP-013 remains sole Now, no new ticket or marketing work.
+- Authenticated tenant-bound private/no-store capability read shares the write role policy: owner/admin true, dispatcher false, other roles denied. UI fails closed on failed/non-true capability. Only supported exhausted/unlinked snapshots expose review; fixed reason and acknowledgment are mandatory, and exact listed `updatedAt` is submitted. Existing POST tenant/current-state/concurrency/atomic-audit safeguards remain authoritative.
+- One in-flight request per page, 15-second timeout, no automatic resubmission; every outcome clears the snapshot and requires manual reload before another review. Pending is not delivery. Unknown/server/network/malformed/timeout outcomes warn the server may already have accepted. Session/token/job edits invalidate late GET/POST messages without undoing accepted work.
+- Passed backend build/lint, 411 tests (3 existing skips), architecture/Prisma; UI lint/29 tests/build; synthetic desktop/390px Chrome QA with 92 mocked requests (78 GET, 14 POST), including duplicate clicks, rejection and uncertain outcomes. Four new screenshots inspected. Disposable local database proof passed all 14 existing migrations and recovery invariants with zero provider calls; fixture dropped and absence verified.
+- Audit has 0 critical; backend 5 high/10 moderate (previous report 4/9), UI 10 high/1 moderate. No dependency/lockfile changes or risk acceptance; triage required before release. Existing Browserslist/pg warnings remain. No new migration/schema, provider/configuration, merge/deploy, staging/production or real-data action. Prior intent migration remains approval-gated.
+- Evidence and exact review commands: backend `evidence/APP-013/readiness-report.md`. Remaining owner/live acceptance, reschedule/cancellation durability, calendar reconciliation, events/templates/preferences/technician notifications/email. Planning estimate APP-013 roughly 68%; governed APP-006 through APP-016 roughly 78%. Stop review-ready, not accepted or released.
+
+## Earlier APP-013 Owner/Admin Exhausted-Intent Retry API (2026-09-08)
 
 - Owner reviewed initial confirmation durability and approved continuation. Backend `aab434b3ddcd83f6ccbf91ee6c19fb8a3f1adb3b`, `feat(app): add reviewed APP-013 enqueue intent retry`, on `codex/app-013-transactional-messaging` (PR #21).
 - API-only retry requires owner/admin, explicit acknowledgment, fixed review reason and exact listed `updatedAt`. Only current exhausted FAILED/unacknowledged intents with unchanged supported job state qualify. Conditional reset and user audit are atomic; stale/repeated/concurrent requests cannot add a second reset/audit. No arbitrary payload or stale-state override. UI remains read-only.
