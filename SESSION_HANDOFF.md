@@ -121,8 +121,8 @@ Last Updated: 2026-09-08
 
 ## Next Actions (Strict Order)
 
-1. Review APP-013 read-only `/app/notifications` with fixture screenshots alongside lifecycle/state checks on backend `codex/app-013-transactional-messaging` (PR #21). APP-012 and BE-008 are accepted; do not repeat completed sections.
-2. Continue one bounded APP-013 section for durable enqueue recovery, remaining event triggers, email, template/preferences controls or technician notification UI. Live operator acceptance remains open.
+1. Review APP-013 durable technician intent capture/recovery and local migration proof alongside the history UI/lifecycle checks on backend `codex/app-013-transactional-messaging` (PR #21). APP-012 and BE-008 are accepted; do not repeat completed sections.
+2. Continue one bounded APP-013 section for appointment durable capture, operator recovery UI/policy, remaining events, email, template/preferences controls or technician notification UI. Migration, live acceptance and release remain approval-gated.
 3. Keep provider delivery disabled until an explicitly approved acceptance run; no external messages or release are authorized by this documentation checkpoint.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 
@@ -154,7 +154,7 @@ Historical checkpoint; the latest continuation is recorded below.
 - Passed backend build/lint, 323 tests (3 existing skips), architecture/Prisma and critical audit; UI lint, 17 tests and build. No rendered UI changed, no external message or configuration/release action occurred.
 - Remaining durability limit: no transactional outbox; a crash or enqueue failure can lose the notification and requires operator-reviewed recovery. Other event triggers, email, preferences, UI and acceptance remain open. APP-013 roughly 40%; APP-006 through APP-016 roughly 73%, planning estimates only. See backend APP-013 evidence for exact review commands.
 
-## Latest APP-013 Read-Only Notification Center (2026-09-08)
+## APP-013 Read-Only Notification Center (2026-09-08)
 
 - Backend checkpoint: `3330c7bfa011120fa26f10b6582ab471f2ad3728`, `feat(app): add APP-013 read-only notification center`, on `codex/app-013-transactional-messaging` (PR #21).
 - `/app/notifications` (`SCR-APP-021`) adds bounded SMS history, status/job filters, explicit UTC and sent-versus-delivered status semantics. Dispatch navigation links to it. No send, replay, template or email control exists.
@@ -162,3 +162,12 @@ Historical checkpoint; the latest continuation is recorded below.
 - Passed backend build/lint, 323 tests (3 existing skips), architecture/Prisma; UI lint, 23 tests and build (14 static pages). Local synthetic Chrome desktop/390px QA passed filters, invalid UUID, empty/403/500/loading states, late-response clearing, no credential storage, private-field omission and keyboard order. No page runtime errors. Live backend/provider acceptance is not claimed.
 - Evidence and reproducible QA command: backend `evidence/APP-013/readiness-report.md`; screenshots `notifications-desktop.png` and `notifications-mobile.png` alongside it. Existing 4 high/9 moderate dependency findings and stale Browserslist data remain documented; 0 critical.
 - No external message, configuration, migration, merge, deployment or customer mutation. Durable enqueue recovery and remaining events/template controls/technician UI/email/acceptance stay open. Planning estimate: APP-013 roughly 50%; APP-006 through APP-016 roughly 74%.
+
+## Latest APP-013 Durable Technician Enqueue Recovery (2026-09-08)
+
+- Backend checkpoint: `fab7fa6a3c590cab3adbd8293616f0cb8fccd23f`, `feat(app): persist APP-013 technician notification intents`, on `codex/app-013-transactional-messaging` (PR #21).
+- Technician departure intent is now persisted in the same transaction as job status and audit. The existing delivery-enable gate controls immediate and periodic processing; conditional leases recover crashes, canonical queue identities prevent duplicate queue insertion, stale snapshots stop, and failures back off then stop after five.
+- Read-only tenant-bound `GET /communications/sms/enqueue-intents` exposes operational status, never state hash/message/recipient data. No recovery UI or reset/replay command is included; the existing history screen remains unchanged.
+- Passed backend build/lint, 343 tests (3 existing skips), architecture/Prisma; UI lint/23 tests/build and synthetic browser regression. All 14 migrations and real transactional rollback/concurrency/ack-loss/tenant-FK checks passed in a new isolated local database, which was removed. Provider calls: zero.
+- Migration `20260908120000_add_sms_enqueue_intents` must precede any separately approved deployment. No staging/production database or provider/configuration action occurred. Existing dependency findings remain 4 high/9 moderate, 0 critical; the local PrismaPg concurrency test has a nonblocking pg deprecation warning.
+- Appointment durability, exhausted-intent recovery policy/UI, other events, templates/preferences, technician notifications, email and live acceptance remain open. Planning estimates: APP-013 roughly 55%; APP-006 through APP-016 roughly 75%. Evidence: backend `evidence/APP-013/readiness-report.md`.
