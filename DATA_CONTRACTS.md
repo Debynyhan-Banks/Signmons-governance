@@ -378,7 +378,16 @@ Audit:
 - Explicit evaluations create `routing.rule_evaluated`; assignment audits embed the exact bounded `routing-v1` trace used by `dispatch-v2`.
 - Configuration writes and their audit event commit in one transaction.
 
-## APP-013 UI Framework Compatibility Checkpoint
+## APP-013 PostCSS Compatibility Checkpoint
+
+- UI only: exact `next@15.5.25` scoped override selects PostCSS 8.5.28 instead of Next's 8.4.31 pin; no other resolved package or application-source/API/DTO/auth/payment/provider contract changes. Static hosting and Next/React remain unchanged.
+- Eight regression tests resolve PostCSS through Next's CSS build consumer, checking manifest/install/lock, source-map disclosure boundaries and normal adjacent/inline/explicit maps, plugin transformation and safe closing-style serialization. Three synthetic disclosure tests failed on the previous version and pass on the patch; no real customer/secret files or public exploit tested.
+- UI 44 tests, lint/type/build (14 pages) and all five desktop/mobile browser regressions pass. Backend 610 tests, architecture/Prisma and local 15-migration/11-crash suite pass; zero real provider calls and test database removed.
+- UI full audit 5 high/1 moderate remains unaccepted; omit-dev now zero. Backend unchanged 5 high/9 moderate, omit-dev 4 high/8 moderate. Zero critical. No implication that development/build dependencies or functional recovery risks are accepted.
+- APP-013 owns the temporary override: re-review on the next framework change; remove when the native Next dependency is reviewed/patched and tests/build/browser gates pass. Exact-version scope avoids silently applying the exception to a different framework. No broad audit-fix or future-major authorization.
+- Backend checkpoint `6c467a12eb0dabc651addb9784c7e7c9aaa0795d`; details: APP-013 readiness report and postcss-audit-summary.json. No migration outside local fixture, production action, merge, deployment, provider configuration, real data, external send or activation. Prior functional/release acceptance gates remain open.
+
+## APP-013 UI Framework Compatibility Checkpoint (Earlier)
 
 - Next/eslint-config-next 15.5.25 and React/React DOM 19.2.8 replace the prior Next 14/React 18 runtime. React 19 types are aligned; exact installed/manifest/lock agreement is tested. No backend dependency, API/DTO, auth, payment, provider or data contract changed.
 - Hosting remains static `ui/out`, without a Next-server rewrite. The web manifest explicitly exports `dynamic = "force-static"` to preserve static generation under Next 15; start_url remains `/app/technician`. Six home anchors migrate to Next Link with prefetch disabled; local browser navigation passes. Secure-link rejection, Calendar holds, retry uncertainty and payment-return copy retain prior semantics.
