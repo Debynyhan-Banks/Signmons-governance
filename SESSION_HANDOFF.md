@@ -121,8 +121,8 @@ Last Updated: 2026-09-08
 
 ## Next Actions (Strict Order)
 
-1. Review APP-013 post-Calendar cancellation intent/audit finalization, version guards, replay proof and no-reopening-after-deletion behavior on backend `codex/app-013-transactional-messaging` (PR #21). Owner reviewed the preceding guarded retry UI. APP-012 and BE-008 are accepted; do not repeat completed sections.
-2. After owner review, continue one bounded APP-013 section for reschedule durability, calendar reconciliation, acceptance preparation, remaining events, email, template/preferences controls or technician notification UI. Live retry/cancellation use, migration, live acceptance and release remain approval-gated. Dependency findings require separate release triage; critical-only audit gates do not accept the high/moderate risks.
+1. Review APP-013 post-Calendar reschedule intent/audit finalization, exact-version replay proof and no-post-acknowledgment-rollback behavior on backend `codex/app-013-transactional-messaging` (PR #21). Owner reviewed the preceding cancellation checkpoint. APP-012 and BE-008 are accepted; do not repeat completed sections.
+2. After owner review, continue one bounded APP-013 section for calendar reconciliation, acceptance preparation, remaining events, email, template/preferences controls or technician notification UI. Live reschedule/retry/cancellation use, migration, live acceptance and release remain approval-gated. Dependency findings require separate release triage; critical-only audit gates do not accept the high/moderate risks.
 3. Keep provider delivery disabled until an explicitly approved acceptance run; no external messages or release are authorized by this documentation checkpoint.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 
@@ -163,7 +163,17 @@ Historical checkpoint; the latest continuation is recorded below.
 - Evidence and reproducible QA command: backend `evidence/APP-013/readiness-report.md`; screenshots `notifications-desktop.png` and `notifications-mobile.png` alongside it. Existing 4 high/9 moderate dependency findings and stale Browserslist data remain documented; 0 critical.
 - No external message, configuration, migration, merge, deployment or customer mutation. Durable enqueue recovery and remaining events/template controls/technician UI/email/acceptance stay open. Planning estimate: APP-013 roughly 50%; APP-006 through APP-016 roughly 74%.
 
-## Latest APP-013 Post-Calendar Cancellation Intent Finalization (2026-09-08)
+## Latest APP-013 Post-Calendar Reschedule Intent Finalization (2026-09-08)
+
+- Implementation/evidence: backend `f7d5e1ecde3900768058807e6da2dce80b40e6c8`, `feat(app): finalize APP-013 reschedule notification intents`, pushed and remote-verified on `codex/app-013-transactional-messaging` (PR #21).
+- Owner reviewed backend `df97aa8` / governance `50c3db7` and said proceed. Fetched and reconciled both repositories; completed reschedule finalization only, on the current focused branches with APP-013 sole Now and original user changes preserved.
+- New local rescheduling service version-binds reservation/compensation and captures the canonical reschedule intent plus existing customer activity audit atomically after Calendar acknowledges PATCH. Audit preserves previous/new labels and adds intent ID/finalized timestamp. Claim, finalization and compensation versions advance monotonically within one millisecond; current-version audit is required for same-window replay, not just local dates.
+- Pending/legacy/changed replay snapshots require office review, including conservative invalidation after unrelated job edits. After acknowledged Calendar change, failed finalization never rolls Calendar/local window back; worker/operations/logging failures after finalization cannot undo success. SchedulingService no longer depends on the direct messaging queue/helper. All four current templates now use disabled-by-default intent processing and guarded owner/admin retry; no arbitrary send or backfill.
+- Passed backend lint/build, 43 suites/443 tests (3 existing skips), architecture/Prisma; UI lint/29 tests/build; desktop/390px synthetic QA (92 mocked requests, 14 POSTs), four inspected reschedule screenshots. Disposable local PostgreSQL proof passed 14 existing migrations, actual intent/audit rollback, concurrency, replay, tenant/version, compensation, disabled processing/retry/stale-window checks. Zero provider calls; fixture removed and absence verified. Initial test/formatting failures fixed before clean run.
+- Calendar/database atomicity, global external-operation serialization and pre-finalization/unknown-outcome reconciliation remain open; local customer view is not independent Calendar proof. No new schema/migration/dependencies/provider/configuration, live sends/real data, merge or deployment. Prior intent migration/live acceptance remain separately gated.
+- Audit unchanged: 0 critical, backend 5 high/10 moderate, UI 10 high/1 moderate; release triage required. Planning estimates APP-013 74%; governed APP-006 through APP-016 80%. Remaining calendar reconciliation, other events/templates/preferences/technician notifications/email and owner/live acceptance. Exact commands/limitations: backend APP-013 evidence. Stop review-ready.
+
+## Earlier APP-013 Post-Calendar Cancellation Intent Finalization (2026-09-08)
 
 - Implementation/evidence: backend `df97aa83b6615b94e462f91deae3492a064aa63a`, `feat(app): finalize APP-013 cancellation notification intents`, pushed and remote-verified on `codex/app-013-transactional-messaging` (PR #21).
 - Owner reviewed backend `9a3d86a` / governance `252f340` and said proceed. Fetched/reconciled both repositories; completed cancellation finalization only on the current feature branches, APP-013 sole Now. Original saved-checkout user edits preserved.
