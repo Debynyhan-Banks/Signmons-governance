@@ -378,6 +378,15 @@ Audit:
 - Explicit evaluations create `routing.rule_evaluated`; assignment audits embed the exact bounded `routing-v1` trace used by `dispatch-v2`.
 - Configuration writes and their audit event commit in one transaction.
 
+## APP-013 Job Policy Calendar Guards (Review-Ready)
+
+- Urgency overrides and payment exception APPROVE/REVOKE reject any unfinished CalendarOperation (finishedAt null), using only existence, before same-value urgency replay or financial entitlement processing. They return the existing office-review 409 without job/audit/provider side effects.
+- Urgency replaces the direct policySnapshot update with tenant/job/deletion/server-observed updatedAt/no-unfinished-operation compare-and-set. Payment exceptions retain client expectedJobUpdatedAt and add current status/no-unfinished-operation predicates. Both advance updatedAt monotonically and audit only the successful mutation in its transaction.
+- A competing urgency/payment snapshot or Calendar reservation cannot be overwritten using an older observed job version. A committed policy mutation invalidates older reservation inputs. Existing unrelated snapshot fields remain intact. This does not introduce a client-reviewed-version field to urgency requests or globally lock asynchronous payment/subscription state.
+- Existing required-payment/manual-override/advanced entitlement, exception revocation, closed-job and verified-payment rules remain unchanged. No payment status, amount, fee, Checkout, webhook, subscription or provider configuration mutation. Existing operations escalation remains available while urgency overrides are held; no escalation provider action is part of this acceptance proof.
+- Local proof: 598 backend tests, 30 UI tests; 12 journal action/status combinations, both read/write race orders, competing policy snapshot preservation, tenant/deletion isolation and actual audit rollback. Prior 11 process-crash cases still pass. Synthetic urgency conflict browser QA at 1440px/390px verifies no false success and available escalation; payment exception remains API-only proof.
+- Requires the prior journal-table migration, still approval-gated. Inactive execution remains unregistered; authorized scheduling orchestration and fresh upstream policy/payment/availability validation, reader/worker ownership/recovery/review and provider-race handling remain prerequisites. Dependencies and remaining acceptance remain open. Exact evidence/commands: backend APP-013 readiness report.
+
 ## APP-013 Lifecycle and Technician Calendar Guards (Review-Ready)
 
 - Any CalendarOperation with finishedAt null holds generic completion and all six technician status/assignment-release actions before idempotent replay, audit or departure-intent work. Uses the existing existence-only relation and office-review 409; terminal history removes this hold only, not ordinary lifecycle/authorization rules.
