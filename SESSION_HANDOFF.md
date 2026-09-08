@@ -121,8 +121,8 @@ Last Updated: 2026-09-08
 
 ## Next Actions (Strict Order)
 
-1. Review APP-013 inactive Calendar journal/reservation foundation, database constraints and six before/after-commit process-crash cases on backend `codex/app-013-transactional-messaging` (PR #21). Owner explicitly approved the robustness recommendation. APP-012 and BE-008 remain accepted; do not repeat completed sections.
-2. After owner review, continue one bounded APP-013 journal-aware scheduling/reconciliation section; dependency remediation remains a separately reviewed follow-up in the approved reliability/security direction. Do not activate the foundation alone: customer views, dispatch and notification admission must respect unfinished operations. Provider read/version controls, worker ownership, atomic journal/job/audit/intent finalization and office review remain unfinished. Migration, provider configuration, live use/acceptance and release remain separately approval-gated; existing high/moderate findings are not accepted.
+1. Review APP-013 inactive CREATE Calendar read-back reconciliation, atomic journal/job/intent/audit finalization and three new process-exit cases on backend `codex/app-013-transactional-messaging` (PR #21). Owner reviewed the preceding journal foundation; APP-012 and BE-008 remain accepted.
+2. After review, implement one bounded journal-aware pending-state guard section for customer views/actions, dispatch eligibility and notification admission/delivery. Then separately review guarded CREATE integration (saved ID/operation marker), bounded recovery worker ownership/retry and review controls. Do not activate the journal/reconciler alone. Reschedule/cancel reconciliation and dependency remediation remain open. Migration, retention/provider configuration, live use/acceptance and release remain separately approval-gated; existing high/moderate findings are not accepted.
 3. Keep provider delivery disabled until an explicitly approved acceptance run; no external messages or release are authorized by this documentation checkpoint.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 
@@ -163,7 +163,18 @@ Historical checkpoint; the latest continuation is recorded below.
 - Evidence and reproducible QA command: backend `evidence/APP-013/readiness-report.md`; screenshots `notifications-desktop.png` and `notifications-mobile.png` alongside it. Existing 4 high/9 moderate dependency findings and stale Browserslist data remain documented; 0 critical.
 - No external message, configuration, migration, merge, deployment or customer mutation. Durable enqueue recovery and remaining events/template controls/technician UI/email/acceptance stay open. Planning estimate: APP-013 roughly 50%; APP-006 through APP-016 roughly 74%.
 
-## Latest APP-013 Calendar Journal Foundation (2026-09-08)
+## Latest APP-013 CREATE Read-Back Reconciliation (2026-09-08)
+
+- Implementation/evidence: backend `f30760a180ac48d56d7a5f60e0c7ced62ffb2d81`, `feat(app): reconcile journaled CREATE calendar evidence`, pushed and remote-verified on `codex/app-013-transactional-messaging` (PR #21).
+- Owner reviewed the journal foundation and said proceed. Fetched/reconciled backend `cbdddc9` / governance `c0f47d8`; APP-013 sole Now, current focused branches only, original changes preserved.
+- Completed one inactive reconciliation section: narrow read-only Calendar adapter plus CREATE reconciler validates saved identity, tenant/job/operation markers, confirmed single blocking event, exact future window and current job version. Provider ambiguity stays pending/review; no blind recreate, rollback, unjournaled adoption or external write.
+- Matching evidence atomically finalizes journal/job/confirmation intent/system audit. ETag is hashed in audit metadata. Conditional versions protect newer review/finalized receipts and job edits; commit-acknowledgment loss recognizes completion without duplication. No queue processing or provider message.
+- Passed backend lint/build, 46 suites/510 tests (3 existing skips), architecture/Prisma; UI lint/29 tests/build and 92-request synthetic desktop/390px QA, four screenshots inspected. Disposable local proof passed 15 existing migrations, three new process exits (nine including earlier journal cases), actual post-write rollback, concurrency, late reads, ack-loss, held conflicts and newer edits. Fixture removed and absence verified; provider calls zero.
+- Initial test-double typing and stale-build fixture failures were corrected before the final clean sequence. Existing pg warning and dependency audit findings remain: backend 5 high/10 moderate, UI 10 high/1 moderate, 0 critical. No dependency/schema/migration change or risk acceptance.
+- Reader/reconciler/journal have no SchedulingModule/route/worker registration. Existing live scheduling still lacks saved operation markers and cannot use this recovery automatically. Consumer pending guards are the next bounded checkpoint; guarded writer, worker policy, reschedule/cancel recovery, retention, provider configuration/live acceptance and release remain gated. Point-in-time Calendar reads are not distributed atomicity or ongoing drift detection.
+- No staging/production, real customer/appointment, provider configuration, secrets/IAM/billing, live sends, merge or deployment action. Planning estimates APP-013 ~77%, governed APP-006 through APP-016 ~80%. Exact files/commands/limits: backend `evidence/APP-013/readiness-report.md`. Stop review-ready, no acceptance boxes checked.
+
+## Earlier APP-013 Calendar Journal Foundation (2026-09-08)
 
 - Implementation/evidence: backend `cbdddc9f3e0b661f72166b873c2f92b9d09af00d`, `feat(app): add APP-013 calendar journal foundation`, pushed and remote-verified on `codex/app-013-transactional-messaging` (PR #21).
 - Owner approved the Calendar/crash-resilience recommendation and requested robust continuation. Fetched/reconciled backend `f7d5e1e` / governance `82fc1fb`; APP-013 remains sole Now. Continued existing focused branches and preserved original saved-checkout changes.
