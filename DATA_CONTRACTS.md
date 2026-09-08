@@ -378,7 +378,15 @@ Audit:
 - Explicit evaluations create `routing.rule_evaluated`; assignment audits embed the exact bounded `routing-v1` trace used by `dispatch-v2`.
 - Configuration writes and their audit event commit in one transaction.
 
-## APP-013 PostCSS Compatibility Checkpoint
+## APP-013 UI Development-Tool Compatibility Checkpoint
+
+- Eight UI dev-only lockfile entries across ajv, brace-expansion, flatted, js-yaml, minimatch and picomatch move to compatible reviewed releases within existing majors. No manifest/new override, backend dependency, application-source/API/DTO/auth/payment/provider or static-hosting contract change. Next/React and the existing scoped PostCSS override are unchanged.
+- Sixteen new tests verify installed/locked consumer resolution, configuration/schema parsing, cyclic cache data, prototype-reference refusal and both glob-library generations. ESLint still flags deliberately invalid synthetic source; no lint suppression. No large attack payload, customer data or deployed exploitability test.
+- UI lint/type/build (14 pages), 60 tests and all five desktop/mobile browser harnesses pass. Backend 610 tests, architecture/Prisma and 15-migration/11-crash local suite pass with zero real provider calls; database removed.
+- Full and omit-dev UI audits now report zero findings. Backend remains 5 high/9 moderate, omit-dev 4 high/8 moderate, unaccepted. Audit cleanliness is scoped to current known advisories, not a security guarantee or functional acceptance. Existing support-lifecycle/deprecation warnings and PostCSS override retirement ownership remain.
+- Backend checkpoint `d12ba7c3f62ba119ddcb02a27a7d2d9293f7f6d7`; APP-013 readiness report and toolchain-audit-summary.json contain exact commands and evidence. No merge, deployment, provider configuration, external sends, real data, production migration or activation; prior recovery and release gates remain open.
+
+## APP-013 PostCSS Compatibility Checkpoint (Earlier)
 
 - UI only: exact `next@15.5.25` scoped override selects PostCSS 8.5.28 instead of Next's 8.4.31 pin; no other resolved package or application-source/API/DTO/auth/payment/provider contract changes. Static hosting and Next/React remain unchanged.
 - Eight regression tests resolve PostCSS through Next's CSS build consumer, checking manifest/install/lock, source-map disclosure boundaries and normal adjacent/inline/explicit maps, plugin transformation and safe closing-style serialization. Three synthetic disclosure tests failed on the previous version and pass on the patch; no real customer/secret files or public exploit tested.

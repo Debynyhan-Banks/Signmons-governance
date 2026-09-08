@@ -121,7 +121,7 @@ Last Updated: 2026-09-08
 
 ## Next Actions (Strict Order)
 
-1. Review APP-013 PostCSS security remediation on backend `codex/app-013-transactional-messaging` (PR #21, `6c467a1`): scoped 8.5.28 override, eight regression tests, clean UI omit-dev audit and browser compatibility. Owner requested continued risk remediation and this bounded section was explicitly selected. Full UI/backend audits remain nonzero/unaccepted; no activation. Prior policy guards remain intact; APP-012 and BE-008 remain accepted.
+1. Review APP-013 UI development-tool dependency remediation on backend `codex/app-013-transactional-messaging` (PR #21, `d12ba7c`): eight compatible lockfile updates, 16 tests, clean full/omit-dev UI audits and browser compatibility. Owner requested continued risk remediation and this bounded section was explicitly selected. Backend findings remain unaccepted; no activation. Prior policy guards remain intact; APP-012 and BE-008 remain accepted.
 2. After review, one bounded authorized CREATE scheduling-orchestration section preserving upstream tenant/auth/payment/availability checks and explicit reader/worker ownership. Do not activate executor/journal/reconciler alone. Other payment/entitlement state, post-preflight/provider races, reschedule/cancel and SENDING recovery and dependency remediation remain open; confirmed reachable security issues take priority. Prior journal migration, retention/provider configuration, live use/acceptance and release stay separately approval-gated. High/moderate findings are not accepted.
 3. Keep provider delivery disabled until an explicitly approved acceptance run; no external messages or release are authorized by this documentation checkpoint.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
@@ -163,7 +163,19 @@ Historical checkpoint; the latest continuation is recorded below.
 - Evidence and reproducible QA command: backend `evidence/APP-013/readiness-report.md`; screenshots `notifications-desktop.png` and `notifications-mobile.png` alongside it. Existing 4 high/9 moderate dependency findings and stale Browserslist data remain documented; 0 critical.
 - No external message, configuration, migration, merge, deployment or customer mutation. Durable enqueue recovery and remaining events/template controls/technician UI/email/acceptance stay open. Planning estimate: APP-013 roughly 50%; APP-006 through APP-016 roughly 74%.
 
-## Latest APP-013 PostCSS Security Remediation (2026-09-08)
+## Latest APP-013 UI Development-Tool Dependency Remediation (2026-09-08)
+
+- Backend checkpoint: `d12ba7c3f62ba119ddcb02a27a7d2d9293f7f6d7`, pushed and remote-verified on `codex/app-013-transactional-messaging` (PR #21).
+- Owner requested continued risk remediation; fetched/reconciled backend `6c467a1` / governance `ddd92e4`, APP-013 sole Now. Explicitly selected one bounded UI development-tool dependency section. Existing focused branches only; unrelated saved-checkout edits preserved.
+- Updated only eight UI lockfile entries across six dependency families within existing major versions: ajv 6.15.0, brace-expansion 1.1.18/2.1.4, flatted 3.4.4, js-yaml 4.3.2, minimatch 3.1.5/9.0.9 and picomatch 4.0.7. All eight entries are dev dependencies. Manifest, Next/React, PostCSS override, other package resolutions, backend dependencies and application source are unchanged; no forced audit fix.
+- Clean npm ci and 16 new tests verify all eight installed copies through actual toolchain consumers and lockfile agreement, Ajv validation, YAML aliases/round-trip, cyclic cache serialization, flatted prototype-reference refusal, both brace/minimatch generations, file discovery and an ESLint negative control. No dangerous large-input performance payload or real-data exploit tested.
+- UI lint/type check, 60 tests and 14-page build pass. All five desktop/390px browser harnesses pass: framework 22 route checks/12 home navigations/static manifest; customer/dispatch, technician, policy and notifications 14/14/8/92 mocked requests, zero external requests/page errors. Temporary screenshots preserve committed evidence; missing-link mobile and notification desktop visually reviewed.
+- Backend lint/build, 50 suites/610 tests (3 existing skips), architecture/Prisma and disposable 15-migration suite pass, including 11 prior actual process-crash cases. Zero real provider calls; fixture database dropped and absence independently verified.
+- UI full audit improves 5 high/1 moderate -> zero findings, exit 0; omit-dev remains zero. Backend unchanged 5 high/9 moderate, omit-dev 4 high/8 moderate; critical-only gate passes with zero critical. Backend findings remain unaccepted. A clean UI audit is current advisory-database evidence, not an overall security guarantee or deployed remediation.
+- No schema/new migration, real data, external sends, provider/secrets/IAM/billing configuration, charges, merge, deployment or activation. Calendar orchestration/recovery ownership, external-state races, reschedule/cancel and SENDING recovery, backend dependency remediation and remaining acceptance stay open. Planning estimates unchanged APP-013 ~85%; governed APP-006 through APP-016 ~81%, not release readiness.
+- Exact files, source links, warnings, tests and commands: backend `evidence/APP-013/readiness-report.md`; objective audit snapshot: `toolchain-audit-summary.json`. Prior PostCSS override retirement condition and all functional/release gates remain unchanged; ticket acceptance stays unchecked.
+
+## Earlier APP-013 PostCSS Security Remediation (2026-09-08)
 
 - Backend checkpoint: `6c467a12eb0dabc651addb9784c7e7c9aaa0795d`, pushed and remote-verified on `codex/app-013-transactional-messaging` (PR #21).
 - Owner requested continued risk remediation; fetched/reconciled backend `5ac324c` / governance `430daf6`, APP-013 sole Now. Explicitly selected one bounded PostCSS security section. Existing focused branches only; unrelated saved-checkout edits preserved.
