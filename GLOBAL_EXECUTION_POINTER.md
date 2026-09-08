@@ -14,7 +14,7 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
   - Repo: `signmons-marketing-web-feat-marketing-site`
   - Board: `EXECUTION_BOARD.md`
 
-## Current Pointer (as of 2026-09-07)
+## Current Pointer (as of 2026-09-08)
 
 - Program `Now`: `APP-013` (Twilio-backed notification center and transactional customer messaging)
 - Program phase: owner-approved CallDesk-first product execution; `FE-014` is paused, not cancelled
@@ -26,7 +26,7 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 | --- | --- | --- |
 | Governance | APP-013 contract and communications-boundary alignment | active |
 | Frontend marketing | `FE-014` competitive comparison pages | paused |
-| Backend | `APP-013` active; BE-008 is accepted with outbound delivery disabled by default | active |
+| Backend | `APP-013` template queue/history and job-state checks are review-ready on PR #21; lifecycle integration remains open; BE-008 accepted | active |
 
 ## Synchronization Rules
 

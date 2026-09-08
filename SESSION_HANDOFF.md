@@ -1,6 +1,6 @@
 # Session Handoff
 
-Last Updated: 2026-09-07
+Last Updated: 2026-09-08
 
 ## Owner-Approved Product Direction (2026-09-01)
 
@@ -21,7 +21,7 @@ Last Updated: 2026-09-07
 ## Current Program Pointer
 
 - Global `Now`: `APP-013` (Twilio-backed notification center and transactional customer messaging). BE-008 completed staging acceptance on 2026-09-07 and remains the accepted transport prerequisite for APP-013 and APP-033.
-- Global `Next`: `APP-013` (Twilio-backed notification center and transactional customer messaging).
+- Global `Next`: unassigned; finish APP-013 before selecting another ticket.
 - Completed exception: `BE-003` (Eternity webchat backend production readiness).
 - Completed exceptions: `BE-007` lead-source reporting and `APP-003` audited job completion.
 - Program phase: owner-approved CallDesk-first product execution; `FE-014` is paused, not cancelled.
@@ -121,7 +121,16 @@ Last Updated: 2026-09-07
 
 ## Next Actions (Strict Order)
 
-1. Reconcile APP-012 with the subscription-only pricing policy and the approved Stripe payment-before-booking requirement.
-2. Implement the payment gate, signed webhook processing, idempotent payment state and customer recovery flow.
-3. Continue APP-013 from `Now`; APP-012 and the BE-008 Twilio transport prerequisite are accepted and recorded in `Done`.
+1. Review APP-013 transactional templates, queue/history and job-state validation on backend `codex/app-013-transactional-messaging` (PR #21). APP-012 and BE-008 are accepted; do not repeat the completed payment release.
+2. Continue one bounded APP-013 lifecycle integration section, including event identity and revalidation of stale queued messages. Email, preferences, UI and acceptance remain open.
+3. Keep provider delivery disabled until an explicitly approved acceptance run; no external messages or release are authorized by this documentation checkpoint.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
+
+## APP-013 Queue State Review Checkpoint (2026-09-08)
+
+- Backend checkpoint: `a04f1d7129495ed687a5ac896c5f29dd022a036c` on `codex/app-013-transactional-messaging` (PR #21).
+- New checks reject cancellation copy for active jobs and on-the-way copy without an assigned EN_ROUTE technician. Deleted jobs return not found; confirmation/reschedule require a stored calendar reference and ordered window; closed-job contradictions return 409 before delivery queue access.
+- Tests use local doubles only: 16 focused tests and 302 full backend tests pass (3 existing skipped); build/lint/architecture/Prisma and critical audit pass. Existing high/moderate dependency findings remain recorded in backend evidence.
+- Unchanged UI regression gates also pass: lint, 17 tests and production build. No rendered UI changed; APP-013 screen/browser acceptance remains open.
+- Scope is queue-admission snapshot validation only; no claim of atomicity with concurrent calendar/job changes or send-time lifecycle revalidation. No migration, provider message, merge or deployment occurred.
+- APP-013 remains active at roughly 20%; APP-006 through APP-016 roughly 70%, planning estimates only. Evidence: backend `evidence/APP-013/readiness-report.md`.

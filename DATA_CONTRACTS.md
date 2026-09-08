@@ -378,6 +378,15 @@ Audit:
 - Explicit evaluations create `routing.rule_evaluated`; assignment audits embed the exact bounded `routing-v1` trace used by `dispatch-v2`.
 - Configuration writes and their audit event commit in one transaction.
 
+## APP-013 Transactional SMS Queue Contract (Review Checkpoint)
+
+- `POST /communications/sms/transactional` accepts a job UUID, one of four versioned template keys, and an idempotency key under verified owner/admin/dispatcher tenant context. Recipient and content are resolved server-side.
+- Missing, cross-tenant and soft-deleted jobs return the same not-found response before rendering or queue access.
+- Cancellation messages require stored `CANCELLED` job status. Other templates reject cancelled or completed jobs with HTTP 409.
+- Confirmation/reschedule messages require a persisted calendar event and a complete, ordered service window. Technician-on-the-way messages require a current assignee and stored `EN_ROUTE` technician status. Unsupported state returns HTTP 409 before queue creation.
+- This checks the snapshot at operator queue admission; it does not claim atomicity with concurrent scheduling changes or send-time lifecycle revalidation. Automatic lifecycle integration and reconciliation of later changes remain APP-013 work.
+- `GET /communications/sms/history` returns bounded tenant/job history without message bodies, recipient phones or provider identifiers. Existing BE-008 consent, quiet-hour, encryption, idempotency and delivery controls remain authoritative.
+
 ## GOV-008 High-Ticket Domain Contracts (High-Level)
 
 ### TenantBrandProfile
