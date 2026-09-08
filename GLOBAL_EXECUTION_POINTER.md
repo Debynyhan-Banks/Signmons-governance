@@ -26,7 +26,7 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 | --- | --- | --- |
 | Governance | APP-013 contract and communications-boundary alignment | active |
 | Frontend marketing | `FE-014` competitive comparison pages | paused |
-| Backend | `APP-013` scoped Prisma merge remediation is review-ready on PR #21 at `d05eb9a`; backend full/omit-dev 0 high/8 moderate unaccepted, UI audits clean; Firebase/Google findings, override limitations, future upload gates and CREATE orchestration/recovery ownership/acceptance remain open, no activation or deployment; BE-008 accepted | active |
+| Backend | `APP-013` scoped Google/UUID remediation is review-ready on PR #21 at `606a803`; backend/UI full/omit-dev audits pass with zero findings; override limitations, future upload gates and CREATE orchestration/recovery ownership/acceptance remain open, no activation or deployment; BE-008 accepted | active |
 
 ## Synchronization Rules
 
