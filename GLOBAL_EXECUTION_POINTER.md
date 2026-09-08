@@ -26,7 +26,7 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 | --- | --- | --- |
 | Governance | APP-013 contract and communications-boundary alignment | active |
 | Frontend marketing | `FE-014` competitive comparison pages | paused |
-| Backend | `APP-013` UI development-tool dependency remediation is review-ready on PR #21 at `d12ba7c`; full/omit-dev UI audits clean, backend 5 high/9 moderate still unaccepted; authorized CREATE orchestration/recovery ownership and acceptance remain pending, no activation or deployment; BE-008 accepted | active |
+| Backend | `APP-013` backend lint-tool dependency remediation is review-ready on PR #21 at `9eb43e5`; backend improves to 4 high/8 moderate still unaccepted, full/omit-dev UI audits clean; authorized CREATE orchestration/recovery ownership and acceptance remain pending, no activation or deployment; BE-008 accepted | active |
 
 ## Synchronization Rules
 

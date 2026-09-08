@@ -378,7 +378,15 @@ Audit:
 - Explicit evaluations create `routing.rule_evaluated`; assignment audits embed the exact bounded `routing-v1` trace used by `dispatch-v2`.
 - Configuration writes and their audit event commit in one transaction.
 
-## APP-013 UI Development-Tool Compatibility Checkpoint
+## APP-013 Backend Lint-Tool Compatibility Checkpoint
+
+- Four backend dev-only lock entries change: @humanfs/node 0.16.8, required @humanfs/core 0.19.2 and @humanfs/types 0.15.0, brace-expansion 1.1.18. No manifest, runtime application/API/DTO/auth/payment/provider, UI/static-hosting, schema or migration contract change; no override or SDK downgrade.
+- Five native Node tests automatically wrapped by Jest verify import-only humanfs resolution, lock agreement, direct file and contained file/directory symlinks remaining links, normal copying and bounded brace/minimatch behavior. Preserving links is not a sandbox; no top-level directory-link, filesystem-race or large-input performance claim. The maintainer advisory and reviewed patched-version metadata differ; installed source/fixtures support only the documented bounded behavior.
+- Backend 611 tests, lint/build/architecture/Prisma and disposable 15-migration/11-crash fixture pass; zero real provider calls, database removed and absence verified. UI 60 tests, lint/type/build and all five desktop/mobile synthetic browser harnesses pass unchanged.
+- Backend full audit improves 5 high/9 moderate -> 4 high/8 moderate; omit-dev still 4 high/8 moderate, unaccepted. UI full/omit-dev remain zero. Prisma/deepmerge-ts/mysql2 and Firebase/Google/uuid dependency work remains separately scoped; no automatic audit-suggested major downgrades. Known-audit cleanliness is not comprehensive security or acceptance.
+- Backend checkpoint `9eb43e5e8ec3eab1d6ab85c4b5a06ef3b1959165`; readiness report and backend-toolchain-audit-summary.json contain commands/evidence. Authorized CREATE orchestration with upstream guards and explicit recovery ownership remains next functional scope. No activation, external sends, real data, provider/configuration, production migration, merge or release; prior approval gates remain open.
+
+## APP-013 UI Development-Tool Compatibility Checkpoint (Earlier)
 
 - Eight UI dev-only lockfile entries across ajv, brace-expansion, flatted, js-yaml, minimatch and picomatch move to compatible reviewed releases within existing majors. No manifest/new override, backend dependency, application-source/API/DTO/auth/payment/provider or static-hosting contract change. Next/React and the existing scoped PostCSS override are unchanged.
 - Sixteen new tests verify installed/locked consumer resolution, configuration/schema parsing, cyclic cache data, prototype-reference refusal and both glob-library generations. ESLint still flags deliberately invalid synthetic source; no lint suppression. No large attack payload, customer data or deployed exploitability test.
