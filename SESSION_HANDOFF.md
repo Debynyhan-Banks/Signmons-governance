@@ -121,8 +121,8 @@ Last Updated: 2026-09-08
 
 ## Next Actions (Strict Order)
 
-1. Review APP-013 post-Calendar reschedule intent/audit finalization, exact-version replay proof and no-post-acknowledgment-rollback behavior on backend `codex/app-013-transactional-messaging` (PR #21). Owner reviewed the preceding cancellation checkpoint. APP-012 and BE-008 are accepted; do not repeat completed sections.
-2. After owner review, continue one bounded APP-013 section for calendar reconciliation, acceptance preparation, remaining events, email, template/preferences controls or technician notification UI. Live reschedule/retry/cancellation use, migration, live acceptance and release remain approval-gated. Dependency findings require separate release triage; critical-only audit gates do not accept the high/moderate risks.
+1. Review APP-013 inactive Calendar journal/reservation foundation, database constraints and six before/after-commit process-crash cases on backend `codex/app-013-transactional-messaging` (PR #21). Owner explicitly approved the robustness recommendation. APP-012 and BE-008 remain accepted; do not repeat completed sections.
+2. After owner review, continue one bounded APP-013 journal-aware scheduling/reconciliation section; dependency remediation remains a separately reviewed follow-up in the approved reliability/security direction. Do not activate the foundation alone: customer views, dispatch and notification admission must respect unfinished operations. Provider read/version controls, worker ownership, atomic journal/job/audit/intent finalization and office review remain unfinished. Migration, provider configuration, live use/acceptance and release remain separately approval-gated; existing high/moderate findings are not accepted.
 3. Keep provider delivery disabled until an explicitly approved acceptance run; no external messages or release are authorized by this documentation checkpoint.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 
@@ -163,7 +163,17 @@ Historical checkpoint; the latest continuation is recorded below.
 - Evidence and reproducible QA command: backend `evidence/APP-013/readiness-report.md`; screenshots `notifications-desktop.png` and `notifications-mobile.png` alongside it. Existing 4 high/9 moderate dependency findings and stale Browserslist data remain documented; 0 critical.
 - No external message, configuration, migration, merge, deployment or customer mutation. Durable enqueue recovery and remaining events/template controls/technician UI/email/acceptance stay open. Planning estimate: APP-013 roughly 50%; APP-006 through APP-016 roughly 74%.
 
-## Latest APP-013 Post-Calendar Reschedule Intent Finalization (2026-09-08)
+## Latest APP-013 Calendar Journal Foundation (2026-09-08)
+
+- Implementation/evidence: backend `cbdddc9f3e0b661f72166b873c2f92b9d09af00d`, `feat(app): add APP-013 calendar journal foundation`, pushed and remote-verified on `codex/app-013-transactional-messaging` (PR #21).
+- Owner approved the Calendar/crash-resilience recommendation and requested robust continuation. Fetched/reconciled backend `f7d5e1e` / governance `82fc1fb`; APP-013 remains sole Now. Continued existing focused branches and preserved original saved-checkout changes.
+- Added only the inactive journal/reservation foundation: atomic conditional local CREATE/RESCHEDULE/CANCEL claim plus PENDING record, stable create ID, retained original event/window/label, monotonically advancing job version, tenant composite FK, partial unique unfinished-job index and SQL invariants. Same-window reschedule cannot start a fresh journal; eventual replay must use finalized proof.
+- No production consumer, public API, worker, provider request, terminal transition, success audit or SMS intent is added. Hard-deletion of referenced jobs/tenants is restricted until an explicit archival policy is supplied. Existing scheduling still bypasses the journal; live Calendar ambiguity and pre-finalization risks remain open.
+- Backend lint/build, 44 suites/464 tests (3 existing skips), architecture/Prisma passed. Disposable local PostgreSQL proof applied 15 migrations and passed six real child-process exits before/after commit, atomic rollback, restart persistence, concurrency, tenant/version/SQL/deletion protections and no premature messages. Fixture removed, absence verified; provider calls zero. UI lint/29 tests/build and synthetic desktop/390px browser QA passed 92 mocked requests; four screenshots inspected.
+- One initial full-test process exited 139 during parallel validation; two subsequent full runs passed, root cause unestablished. Existing pg warning and audits remain: backend 5 high/10 moderate, UI 10 high/1 moderate, 0 critical. No dependency changes or risk acceptance.
+- New migration `20260908180000_add_calendar_operation_journal` is local-tested only. No staging/production, real data, provider configuration, secrets/IAM/billing, merge or deployment action. Planning estimates: APP-013 approximately 75%; governed APP-006 through APP-016 approximately 80%. Exact files/review commands and next integration boundaries: backend `evidence/APP-013/readiness-report.md`. Stop review-ready, not accepted/released.
+
+## Earlier APP-013 Post-Calendar Reschedule Intent Finalization (2026-09-08)
 
 - Implementation/evidence: backend `f7d5e1ecde3900768058807e6da2dce80b40e6c8`, `feat(app): finalize APP-013 reschedule notification intents`, pushed and remote-verified on `codex/app-013-transactional-messaging` (PR #21).
 - Owner reviewed backend `df97aa8` / governance `50c3db7` and said proceed. Fetched and reconciled both repositories; completed reschedule finalization only, on the current focused branches with APP-013 sole Now and original user changes preserved.
