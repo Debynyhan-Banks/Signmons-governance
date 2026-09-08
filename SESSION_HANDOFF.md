@@ -121,8 +121,8 @@ Last Updated: 2026-09-08
 
 ## Next Actions (Strict Order)
 
-1. Review APP-013 durable technician intent capture/recovery and local migration proof alongside the history UI/lifecycle checks on backend `codex/app-013-transactional-messaging` (PR #21). APP-012 and BE-008 are accepted; do not repeat completed sections.
-2. Continue one bounded APP-013 section for appointment durable capture, operator recovery UI/policy, remaining events, email, template/preferences controls or technician notification UI. Migration, live acceptance and release remain approval-gated.
+1. Review APP-013 read-only enqueue intent visibility alongside the previously reviewed durable technician capture/recovery and local migration proof on backend `codex/app-013-transactional-messaging` (PR #21). APP-012 and BE-008 are accepted; do not repeat completed sections.
+2. After owner review, continue one bounded APP-013 section for appointment durable capture, operator recovery actions/policy, remaining events, email, template/preferences controls or technician notification UI. Migration, live acceptance and release remain approval-gated.
 3. Keep provider delivery disabled until an explicitly approved acceptance run; no external messages or release are authorized by this documentation checkpoint.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 
@@ -163,7 +163,15 @@ Historical checkpoint; the latest continuation is recorded below.
 - Evidence and reproducible QA command: backend `evidence/APP-013/readiness-report.md`; screenshots `notifications-desktop.png` and `notifications-mobile.png` alongside it. Existing 4 high/9 moderate dependency findings and stale Browserslist data remain documented; 0 critical.
 - No external message, configuration, migration, merge, deployment or customer mutation. Durable enqueue recovery and remaining events/template controls/technician UI/email/acceptance stay open. Planning estimate: APP-013 roughly 50%; APP-006 through APP-016 roughly 74%.
 
-## Latest APP-013 Durable Technician Enqueue Recovery (2026-09-08)
+## Latest APP-013 Read-Only Enqueue Intent Visibility (2026-09-08)
+
+- Owner reviewed technician durability and approved continuation. Backend checkpoint: `09bdbbd83547a3ef86136a6a498b090961b9ff60`, `feat(app): show APP-013 enqueue intent status`, on `codex/app-013-transactional-messaging` (PR #21).
+- Notification center now independently reads history and enqueue intents. The new panel shows pending/stopped/queue-acknowledged states, safe failure labels, claim/backoff time, job/intent IDs and event references. Pending does not promise active retry, queue acknowledgment is not delivery, and job/status filters apply only to latest 100 tenant intents.
+- Passed backend build/lint, 343 tests (3 existing skips), architecture/Prisma; UI lint, 27 tests/build; synthetic local Chrome desktop/390px QA with 18 GET-only requests. Tests cover independent partial failures, late responses after token/job edits or session clear, all intent filters, empty/error/loading states, private-field omission and keyboard order. New screenshots and exact review/rerun steps are in backend APP-013 evidence.
+- No database, provider, configuration, merge, deployment, billing or real-data action. Prior migration still requires approved release sequencing; recovery actions/policy, appointment durability, other events/templates/preferences/technician notifications/email and live acceptance remain open. Critical audit remains 0 critical, 4 high/9 moderate; existing Browserslist warning. Acceptance boxes stay unchecked.
+- Planning estimates: APP-013 roughly 58%; APP-006 through APP-016 roughly 75%. Stop review-ready.
+
+## Earlier APP-013 Durable Technician Enqueue Recovery (2026-09-08)
 
 - Backend checkpoint: `fab7fa6a3c590cab3adbd8293616f0cb8fccd23f`, `feat(app): persist APP-013 technician notification intents`, on `codex/app-013-transactional-messaging` (PR #21).
 - Technician departure intent is now persisted in the same transaction as job status and audit. The existing delivery-enable gate controls immediate and periodic processing; conditional leases recover crashes, canonical queue identities prevent duplicate queue insertion, stale snapshots stop, and failures back off then stop after five.
