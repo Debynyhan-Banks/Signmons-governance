@@ -40,6 +40,8 @@ Purpose: single active queue for execution.
 
 ## Done
 
+- [x] BE-008 Twilio communications foundation
+  - Backend PRs `#15`, `#16`, and `#18`; staging acceptance verified signed voice/SMS, tenant isolation, STOP/START, exactly-once consented delivery, terminal status callback, simulated rejection, dead-letter visibility, acknowledgment-gated replay, restored quiet-hour policy, and disabled-by-default outbound delivery. Evidence: `signmons-calldesk-backend/evidence/BE-008/readiness-report.md`.
 - [x] APP-012 Payment gate and webhook status workflow (`SCR-APP-006A`, `SCR-APP-006B`, `SCR-APP-006C`, `SCR-APP-023`, `SCR-CUST-002`)
   - Backend PR `#14` merged at `068f4c2`; Cloud Build `dd7ca7ec-1777-45b6-8659-fba8998a9b63`; migration `signmons-calldesk-migrate-pgr84`; Cloud Run revision `signmons-calldesk-staging-app012release`; Firebase payment/dispatch routes published; automatic Stripe sandbox delivery and duplicate retry passed. Live mode remains separately approval-gated.
 - [x] APP-011 Customer booking status and confirmation flow (`SCR-CUST-001`, `SCR-CUST-003`)
