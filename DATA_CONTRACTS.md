@@ -378,7 +378,16 @@ Audit:
 - Explicit evaluations create `routing.rule_evaluated`; assignment audits embed the exact bounded `routing-v1` trace used by `dispatch-v2`.
 - Configuration writes and their audit event commit in one transaction.
 
-## APP-013 Backend Lint-Tool Compatibility Checkpoint
+## APP-013 Scoped Prisma/mysql2 Compatibility Checkpoint
+
+- Scoped `prisma@^7.10.0 -> mysql2: 3.24.4` override replaces the 3.15.3 pin. Six lock entries change: mysql2/lru.min updates, sql-escaper addition, sqlstring/denque/seq-queue removal. Prisma/client/adapter 7.10.0 and PostgreSQL schema remain unchanged; no application/API/auth/payment/provider/UI/static-hosting contract or new migration.
+- Ten native Node fixtures automatically wrapped by Jest exercise resolution, default cleartext-auth refusal, explicit opt-in compatibility, prototype-plugin refusal, real packet parser sync/async inflation bounds/order/malformed input and public SQL formatting. At most 18 KB synthetic data, no sockets or real credentials. No full TLS enforcement, old-version negative reproduction, MySQL/Studio live acceptance or large-payload stress claim.
+- APP-013 owns the temporary override. Review on any Prisma update; tests intentionally require Prisma 7.10.0. Remove when native resolution is reviewed/patched and protocol/PostgreSQL/application/browser gates pass. No cleartext option, provider setting or new connection is configured.
+- Backend 612 tests, lint/build/architecture/Prisma and disposable 15-migration/11-crash suite pass, zero real provider calls and fixture absence verified. UI 60 tests, lint/type/build and five desktop/mobile synthetic browser harnesses pass unchanged.
+- mysql2 findings absent. Fresh baseline already 9 high/8 moderate due new Multer/Nest findings. Final backend full 9 high/8 moderate, omit-dev 8 high/8 moderate; existing deepmerge risk additionally propagated to @prisma/client in final audit. UI audits clean, zero critical. Changing audit metadata/aggregation is recorded, not a net count-reduction or acceptance claim. Multer/Nest, Prisma/deepmerge-ts and Firebase/Google/uuid remain open.
+- Backend `54b613f922ffecc84652c6bee81b1952b44d24f3`; readiness report and mysql2-audit-summary.json hold exact evidence. Authorized CREATE orchestration with upstream guards and explicit recovery ownership remains next functional scope; additional dependency sections must be explicitly selected. No merge, deployment, production migration, external sends, real data or activation; release gates remain open.
+
+## APP-013 Backend Lint-Tool Compatibility Checkpoint (Earlier)
 
 - Four backend dev-only lock entries change: @humanfs/node 0.16.8, required @humanfs/core 0.19.2 and @humanfs/types 0.15.0, brace-expansion 1.1.18. No manifest, runtime application/API/DTO/auth/payment/provider, UI/static-hosting, schema or migration contract change; no override or SDK downgrade.
 - Five native Node tests automatically wrapped by Jest verify import-only humanfs resolution, lock agreement, direct file and contained file/directory symlinks remaining links, normal copying and bounded brace/minimatch behavior. Preserving links is not a sandbox; no top-level directory-link, filesystem-race or large-input performance claim. The maintainer advisory and reviewed patched-version metadata differ; installed source/fixtures support only the documented bounded behavior.
