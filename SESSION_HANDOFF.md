@@ -121,8 +121,8 @@ Last Updated: 2026-09-08
 
 ## Next Actions (Strict Order)
 
-1. Review APP-013 transactional templates, appointment and technician-on-the-way triggers, canonical event identity and send-time stale-message rejection on backend `codex/app-013-transactional-messaging` (PR #21). APP-012 and BE-008 are accepted; do not repeat completed payment or message-trigger sections.
-2. Continue one bounded APP-013 section for durable enqueue recovery, remaining assignment/other-technician/payment/dispatcher triggers, email, preferences or operator UI. Acceptance remains open.
+1. Review APP-013 read-only `/app/notifications` with fixture screenshots alongside lifecycle/state checks on backend `codex/app-013-transactional-messaging` (PR #21). APP-012 and BE-008 are accepted; do not repeat completed sections.
+2. Continue one bounded APP-013 section for durable enqueue recovery, remaining event triggers, email, template/preferences controls or technician notification UI. Live operator acceptance remains open.
 3. Keep provider delivery disabled until an explicitly approved acceptance run; no external messages or release are authorized by this documentation checkpoint.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 
@@ -146,10 +146,19 @@ Historical checkpoint; the latest continuation is recorded below.
 - Outbound delivery remained disabled. No provider message, credential/configuration change, migration, merge, deployment or real customer/job mutation occurred. A narrow post-check/pre-provider race remains non-atomic and documented.
 - APP-013 remains active at roughly 35%; APP-006 through APP-016 roughly 72%, planning estimates only. Remaining scope includes other event triggers, email, preferences, UI and acceptance. Evidence: backend `evidence/APP-013/readiness-report.md`.
 
-## Latest APP-013 Technician On-The-Way Checkpoint (2026-09-08)
+## APP-013 Technician On-The-Way Checkpoint (2026-09-08)
 
 - Backend checkpoint: `477048abfa22a15ec63642f83519c180354341ea` on `codex/app-013-transactional-messaging` (PR #21).
 - Changed on-my-way actions now queue customer SMS only after the status/audit transaction commits; no-op retries and failed writes never queue. Queue/logging failures preserve committed status and expose no raw payload in logs.
 - The digest includes the technician status timestamp: same-episode retries retain one identity while later departures differ. Obsolete departure/assignment state fails before provider access; earlier on-the-way hashes fail closed.
 - Passed backend build/lint, 323 tests (3 existing skips), architecture/Prisma and critical audit; UI lint, 17 tests and build. No rendered UI changed, no external message or configuration/release action occurred.
 - Remaining durability limit: no transactional outbox; a crash or enqueue failure can lose the notification and requires operator-reviewed recovery. Other event triggers, email, preferences, UI and acceptance remain open. APP-013 roughly 40%; APP-006 through APP-016 roughly 73%, planning estimates only. See backend APP-013 evidence for exact review commands.
+
+## Latest APP-013 Read-Only Notification Center (2026-09-08)
+
+- Backend checkpoint: `3330c7bfa011120fa26f10b6582ab471f2ad3728`, `feat(app): add APP-013 read-only notification center`, on `codex/app-013-transactional-messaging` (PR #21).
+- `/app/notifications` (`SCR-APP-021`) adds bounded SMS history, status/job filters, explicit UTC and sent-versus-delivered status semantics. Dispatch navigation links to it. No send, replay, template or email control exists.
+- Token remains in memory; token/job edits and session clearing remove results and invalidate pending reads. UI omits raw message/customer/provider payload and raw server error text; server tenant/role guards remain authoritative.
+- Passed backend build/lint, 323 tests (3 existing skips), architecture/Prisma; UI lint, 23 tests and build (14 static pages). Local synthetic Chrome desktop/390px QA passed filters, invalid UUID, empty/403/500/loading states, late-response clearing, no credential storage, private-field omission and keyboard order. No page runtime errors. Live backend/provider acceptance is not claimed.
+- Evidence and reproducible QA command: backend `evidence/APP-013/readiness-report.md`; screenshots `notifications-desktop.png` and `notifications-mobile.png` alongside it. Existing 4 high/9 moderate dependency findings and stale Browserslist data remain documented; 0 critical.
+- No external message, configuration, migration, merge, deployment or customer mutation. Durable enqueue recovery and remaining events/template controls/technician UI/email/acceptance stay open. Planning estimate: APP-013 roughly 50%; APP-006 through APP-016 roughly 74%.

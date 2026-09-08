@@ -23,6 +23,11 @@ Purpose: remove dead links and ambiguous CTA behavior.
 | Contact success | Live Demo | `/demo` | none | none | FE-008 |
 | Footer nav | Demo | `/demo` | optional | `POST /api/marketing/try-demo` | FE-008 |
 
+## CallDesk operator navigation
+
+- Dispatch board "View notification center" -> `/app/notifications` (`SCR-APP-021`, APP-013). Read-only `GET /communications/sms/history`; verified owner/admin/dispatcher tenant access required. No send, replay or template-edit action.
+- Notification center "Dispatch board" -> `/app/dispatch` (`SCR-APP-014`, APP-008).
+
 ## Rules
 
 - CTA routes must resolve in `SCREEN_ROUTE_API_MATRIX.md`.

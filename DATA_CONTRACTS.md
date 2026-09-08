@@ -391,6 +391,8 @@ Audit:
 - Transactional queue records retain the state digest. Immediately before provider access, the worker reloads the composite tenant/job record and verifies current lifecycle, recipient, tenant brand/timezone, schedule and relevant technician state against that digest. Missing, incompatible or changed state is dead-lettered before send; transactional records without verifiable state metadata fail closed.
 - Send-time validation narrows but cannot eliminate the check-to-provider race; external delivery is not atomic with a later concurrent lifecycle mutation. Remaining automatic assignment, other technician, payment and dispatcher events stay APP-013 work.
 - `GET /communications/sms/history` returns bounded tenant/job history without message bodies, recipient phones or provider identifiers. Existing BE-008 consent, quiet-hour, encryption, idempotency and delivery controls remain authoritative.
+- `/app/notifications` consumes only this read endpoint with `limit=100` and optional UUID job filter. Status filters and counts apply only to those loaded records, not tenant-wide totals. Sent is explicitly delivery-unconfirmed; failed/dead-letter entries require attention. This view cannot detect absent enqueue records or perform recovery.
+- Operator credentials stay in page memory; token/job changes and session clearing invalidate pending responses and clear records. Generic errors do not render raw server payloads. The server remains authoritative for tenant/role access; no developer-auth or provider mutation control is added to this screen.
 
 ## GOV-008 High-Ticket Domain Contracts (High-Level)
 
