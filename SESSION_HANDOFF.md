@@ -121,8 +121,8 @@ Last Updated: 2026-09-08
 
 ## Next Actions (Strict Order)
 
-1. Review APP-013 initial confirmation intent durability and its explicit Calendar/database reconciliation limit on backend `codex/app-013-transactional-messaging` (PR #21). Owner reviewed prior intent visibility and technician recovery. APP-012 and BE-008 are accepted; do not repeat completed sections.
-2. After owner review, continue one bounded APP-013 section for reschedule/cancellation durability, calendar reconciliation, operator recovery actions/policy, remaining events, email, template/preferences controls or technician notification UI. Migration, live acceptance and release remain approval-gated.
+1. Review APP-013 owner/admin exhausted-intent retry API, state/concurrency/audit safeguards and local-only proof on backend `codex/app-013-transactional-messaging` (PR #21). Owner reviewed prior initial confirmation durability and intent visibility. APP-012 and BE-008 are accepted; do not repeat completed sections.
+2. After owner review, continue one bounded APP-013 section for recovery UI/acceptance preparation, reschedule/cancellation durability, calendar reconciliation, remaining events, email, template/preferences controls or technician notification UI. Live retry use, migration, live acceptance and release remain approval-gated.
 3. Keep provider delivery disabled until an explicitly approved acceptance run; no external messages or release are authorized by this documentation checkpoint.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 
@@ -163,7 +163,16 @@ Historical checkpoint; the latest continuation is recorded below.
 - Evidence and reproducible QA command: backend `evidence/APP-013/readiness-report.md`; screenshots `notifications-desktop.png` and `notifications-mobile.png` alongside it. Existing 4 high/9 moderate dependency findings and stale Browserslist data remain documented; 0 critical.
 - No external message, configuration, migration, merge, deployment or customer mutation. Durable enqueue recovery and remaining events/template controls/technician UI/email/acceptance stay open. Planning estimate: APP-013 roughly 50%; APP-006 through APP-016 roughly 74%.
 
-## Latest APP-013 Initial Confirmation Intent Durability (2026-09-08)
+## Latest APP-013 Owner/Admin Exhausted-Intent Retry API (2026-09-08)
+
+- Owner reviewed initial confirmation durability and approved continuation. Backend `aab434b3ddcd83f6ccbf91ee6c19fb8a3f1adb3b`, `feat(app): add reviewed APP-013 enqueue intent retry`, on `codex/app-013-transactional-messaging` (PR #21).
+- API-only retry requires owner/admin, explicit acknowledgment, fixed review reason and exact listed `updatedAt`. Only current exhausted FAILED/unacknowledged intents with unchanged supported job state qualify. Conditional reset and user audit are atomic; stale/repeated/concurrent requests cannot add a second reset/audit. No arbitrary payload or stale-state override. UI remains read-only.
+- The API re-arms PENDING only and never processes/sends. Normal worker delivery enablement, consent, quiet hours, state checks, queue identity and five-failure bound remain. Once deployed/enabled it may subsequently send through that normal policy path; no live retry is authorized by this checkpoint.
+- Passed 403 backend tests (3 existing skips), build/lint/architecture/Prisma; UI lint/27 tests/build and unchanged desktop/390px browser regression (18 GETs). Real HTTP guard/validation/throttle/filter tests use synthetic Firebase verification; disposable local database proof verifies single concurrent reset/audit, no queue from retry alone, disabled processing, state rejection and audit rollback. All 14 existing migrations passed only in that fixture; database removed and absence verified. No provider calls.
+- No new schema/migration/dependency, provider/configuration, merge/deploy, staging/production or real-data action. Existing advisories 0 critical, 4 high/9 moderate; Browserslist/pg warnings retained. Prior intent migration remains separately release-gated. Evidence and exact review commands are in backend APP-013 readiness report.
+- Remaining recovery UI/acceptance, reschedule/cancellation durability, calendar reconciliation, other events/templates/preferences/technician notifications/email/live acceptance. Planning estimates APP-013 roughly 65%; APP-006 through APP-016 roughly 77%. Stop review-ready.
+
+## Earlier APP-013 Initial Confirmation Intent Durability (2026-09-08)
 
 - Owner reviewed intent visibility and approved continuation. Backend `1ea45446995bad740fbede9be51f49230f51fb6f`, `feat(app): persist APP-013 initial confirmation intents`, on `codex/app-013-transactional-messaging` (PR #21).
 - Initial confirmation finalization atomically commits the acknowledged calendar reference, fixed SMS intent and customer audit. Post-commit enqueue/operations-notification/logging failures cannot undo booking. Recovery supports initial confirmations and technician departures only, with existing disabled-delivery, digest and queue-idempotency controls.
