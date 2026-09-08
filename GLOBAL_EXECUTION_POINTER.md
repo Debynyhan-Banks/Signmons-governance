@@ -26,7 +26,7 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 | --- | --- | --- |
 | Governance | APP-013 contract and communications-boundary alignment | active |
 | Frontend marketing | `FE-014` competitive comparison pages | paused |
-| Backend | `APP-013` scoped Google/UUID remediation is review-ready on PR #21 at `606a803`; backend/UI full/omit-dev audits pass with zero findings; override limitations, future upload gates and CREATE orchestration/recovery ownership/acceptance remain open, no activation or deployment; BE-008 accepted | active |
+| Backend | `APP-013` initial CREATE uncertainty safeguard is review-ready on PR #21 at `fd68377`; unknown insert failures retain reservations and require office review; backend/UI audits clean; authorized journal orchestration/recovery ownership, legacy visibility/repair and acceptance remain open, no activation or deployment; BE-008 accepted | active |
 
 ## Synchronization Rules
 
