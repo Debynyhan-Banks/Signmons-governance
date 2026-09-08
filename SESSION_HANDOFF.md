@@ -121,8 +121,8 @@ Last Updated: 2026-09-08
 
 ## Next Actions (Strict Order)
 
-1. Review APP-013 read-only enqueue intent visibility alongside the previously reviewed durable technician capture/recovery and local migration proof on backend `codex/app-013-transactional-messaging` (PR #21). APP-012 and BE-008 are accepted; do not repeat completed sections.
-2. After owner review, continue one bounded APP-013 section for appointment durable capture, operator recovery actions/policy, remaining events, email, template/preferences controls or technician notification UI. Migration, live acceptance and release remain approval-gated.
+1. Review APP-013 initial confirmation intent durability and its explicit Calendar/database reconciliation limit on backend `codex/app-013-transactional-messaging` (PR #21). Owner reviewed prior intent visibility and technician recovery. APP-012 and BE-008 are accepted; do not repeat completed sections.
+2. After owner review, continue one bounded APP-013 section for reschedule/cancellation durability, calendar reconciliation, operator recovery actions/policy, remaining events, email, template/preferences controls or technician notification UI. Migration, live acceptance and release remain approval-gated.
 3. Keep provider delivery disabled until an explicitly approved acceptance run; no external messages or release are authorized by this documentation checkpoint.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 
@@ -163,7 +163,16 @@ Historical checkpoint; the latest continuation is recorded below.
 - Evidence and reproducible QA command: backend `evidence/APP-013/readiness-report.md`; screenshots `notifications-desktop.png` and `notifications-mobile.png` alongside it. Existing 4 high/9 moderate dependency findings and stale Browserslist data remain documented; 0 critical.
 - No external message, configuration, migration, merge, deployment or customer mutation. Durable enqueue recovery and remaining events/template controls/technician UI/email/acceptance stay open. Planning estimate: APP-013 roughly 50%; APP-006 through APP-016 roughly 74%.
 
-## Latest APP-013 Read-Only Enqueue Intent Visibility (2026-09-08)
+## Latest APP-013 Initial Confirmation Intent Durability (2026-09-08)
+
+- Owner reviewed intent visibility and approved continuation. Backend `1ea45446995bad740fbede9be51f49230f51fb6f`, `feat(app): persist APP-013 initial confirmation intents`, on `codex/app-013-transactional-messaging` (PR #21).
+- Initial confirmation finalization atomically commits the acknowledged calendar reference, fixed SMS intent and customer audit. Post-commit enqueue/operations-notification/logging failures cannot undo booking. Recovery supports initial confirmations and technician departures only, with existing disabled-delivery, digest and queue-idempotency controls.
+- Failed/ambiguous finalization after acknowledged Calendar insertion holds the reservation for office review. Unfinalized replay cannot report confirmation or insert again; finalized replay does not duplicate intent; closed/deleted requests cannot reopen. Calendar and the database remain non-atomic; pre-finalization crash reconciliation and unknown provider outcomes are not solved. Reschedule/cancellation triggers still have their post-commit gap.
+- Final validation: 362 backend tests (3 existing skips), build/lint/architecture/Prisma; UI lint/27 tests/build and desktop/390px synthetic browser QA with 18 GETs. All 14 existing migrations and real transactional scheduling/intent integration passed in a new local-only database with provider doubles; fixture removed and absence verified. No external calendar/message, staging/production database, configuration, merge, deploy, billing or real-data action.
+- Prior migration requires separate release approval. Existing audit findings remain 0 critical, 4 high/9 moderate; local pg deprecation and Browserslist warnings documented. Backend APP-013 evidence has exact review steps and new confirmation-intent screenshots.
+- Remaining: reschedule/cancellation durability, calendar reconciliation, recovery actions/policy, other events/templates/preferences/technician notifications/email/live acceptance. Planning estimates: APP-013 roughly 62%; APP-006 through APP-016 roughly 76%. Stop review-ready.
+
+## Earlier APP-013 Read-Only Enqueue Intent Visibility (2026-09-08)
 
 - Owner reviewed technician durability and approved continuation. Backend checkpoint: `09bdbbd83547a3ef86136a6a498b090961b9ff60`, `feat(app): show APP-013 enqueue intent status`, on `codex/app-013-transactional-messaging` (PR #21).
 - Notification center now independently reads history and enqueue intents. The new panel shows pending/stopped/queue-acknowledged states, safe failure labels, claim/backoff time, job/intent IDs and event references. Pending does not promise active retry, queue acknowledgment is not delivery, and job/status filters apply only to latest 100 tenant intents.
