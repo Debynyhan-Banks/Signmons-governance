@@ -23,7 +23,7 @@ Purpose: single active queue for execution.
 ## Now
 
 - [ ] APP-013 Twilio-backed notification center and transactional customer messaging (`SCR-APP-021`, `SCR-APP-022`, `SCR-TECH-005`)
-  - Fixed/versioned SMS templates, operator queue/history and stored job-state validation are review-ready on backend PR #21. Lifecycle integration, send-time revalidation, email, preferences, UI and acceptance remain open.
+  - Fixed/versioned SMS templates, operator queue/history, committed appointment triggers, canonical state identity and send-time stale-message rejection are review-ready on backend PR #21. Remaining events, email, preferences, UI and acceptance remain open.
 
 ## Next
 

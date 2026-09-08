@@ -26,7 +26,7 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 | --- | --- | --- |
 | Governance | APP-013 contract and communications-boundary alignment | active |
 | Frontend marketing | `FE-014` competitive comparison pages | paused |
-| Backend | `APP-013` template queue/history and job-state checks are review-ready on PR #21; lifecycle integration remains open; BE-008 accepted | active |
+| Backend | `APP-013` appointment lifecycle triggers, canonical event identity and send-time stale-message rejection are review-ready on PR #21; remaining events/UI/email stay open; BE-008 accepted | active |
 
 ## Synchronization Rules
 

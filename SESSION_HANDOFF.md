@@ -121,8 +121,8 @@ Last Updated: 2026-09-08
 
 ## Next Actions (Strict Order)
 
-1. Review APP-013 transactional templates, queue/history and job-state validation on backend `codex/app-013-transactional-messaging` (PR #21). APP-012 and BE-008 are accepted; do not repeat the completed payment release.
-2. Continue one bounded APP-013 lifecycle integration section, including event identity and revalidation of stale queued messages. Email, preferences, UI and acceptance remain open.
+1. Review APP-013 transactional templates, appointment lifecycle triggers, canonical event identity and send-time stale-message rejection on backend `codex/app-013-transactional-messaging` (PR #21). APP-012 and BE-008 are accepted; do not repeat the completed payment release.
+2. Continue one bounded APP-013 section for remaining assignment/technician/payment/dispatcher triggers, email, preferences or operator UI. Acceptance remains open.
 3. Keep provider delivery disabled until an explicitly approved acceptance run; no external messages or release are authorized by this documentation checkpoint.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 
@@ -134,3 +134,12 @@ Last Updated: 2026-09-08
 - Unchanged UI regression gates also pass: lint, 17 tests and production build. No rendered UI changed; APP-013 screen/browser acceptance remains open.
 - Scope is queue-admission snapshot validation only; no claim of atomicity with concurrent calendar/job changes or send-time lifecycle revalidation. No migration, provider message, merge or deployment occurred.
 - APP-013 remains active at roughly 20%; APP-006 through APP-016 roughly 70%, planning estimates only. Evidence: backend `evidence/APP-013/readiness-report.md`.
+
+## APP-013 Appointment Lifecycle Review Checkpoint (2026-09-08)
+
+- Backend PR #21 now queues fixed confirmation, reschedule and cancellation SMS after the corresponding job/calendar operation commits. Queue failure cannot roll back the appointment.
+- Automatic events derive a deterministic identity from the template and a digest of current canonical state. The same digest is recorded for manual queueing and checked again against current tenant/job data immediately before provider access.
+- Stale, contradictory, deleted or unverifiable transactional work is dead-lettered before send. Revalidation includes recipient and rendered brand/schedule/technician inputs, while raw values remain absent from history output.
+- Focused lifecycle/delivery validation passed 44 tests; full backend build/lint, 308 tests with 3 existing skips, architecture, Prisma and critical audit passed. Unchanged UI lint, 17 tests and build passed; no rendered UI changed.
+- Outbound delivery remained disabled. No provider message, credential/configuration change, migration, merge, deployment or real customer/job mutation occurred. A narrow post-check/pre-provider race remains non-atomic and documented.
+- APP-013 remains active at roughly 35%; APP-006 through APP-016 roughly 72%, planning estimates only. Remaining scope includes other event triggers, email, preferences, UI and acceptance. Evidence: backend `evidence/APP-013/readiness-report.md`.
