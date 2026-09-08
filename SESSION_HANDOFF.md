@@ -20,7 +20,7 @@ Last Updated: 2026-09-07
 
 ## Current Program Pointer
 
-- Global `Now`: `BE-008` (Twilio communications foundation), promoted with owner approval on 2026-09-07 as the prerequisite for APP-013 and APP-033.
+- Global `Now`: `APP-013` (Twilio-backed notification center and transactional customer messaging). BE-008 completed staging acceptance on 2026-09-07 and remains the accepted transport prerequisite for APP-013 and APP-033.
 - Global `Next`: `APP-013` (Twilio-backed notification center and transactional customer messaging).
 - Completed exception: `BE-003` (Eternity webchat backend production readiness).
 - Completed exceptions: `BE-007` lead-source reporting and `APP-003` audited job completion.
@@ -123,5 +123,5 @@ Last Updated: 2026-09-07
 
 1. Reconcile APP-012 with the subscription-only pricing policy and the approved Stripe payment-before-booking requirement.
 2. Implement the payment gate, signed webhook processing, idempotent payment state and customer recovery flow.
-3. Keep APP-013 in `Next`; do not start Twilio implementation until APP-012 is accepted and marked `Done`.
+3. Continue APP-013 from `Now`; APP-012 and the BE-008 Twilio transport prerequisite are accepted and recorded in `Done`.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
