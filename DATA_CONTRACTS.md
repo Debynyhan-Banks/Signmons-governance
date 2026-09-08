@@ -378,7 +378,16 @@ Audit:
 - Explicit evaluations create `routing.rule_evaluated`; assignment audits embed the exact bounded `routing-v1` trace used by `dispatch-v2`.
 - Configuration writes and their audit event commit in one transaction.
 
-## APP-013 Scoped Nest/Multer Compatibility Checkpoint
+## APP-013 Scoped Prisma Merge Compatibility Checkpoint
+
+- Exact-parent `@prisma/config@7.10.0 -> deepmerge-ts: 8.0.2` override replaces 7.1.5, with one lock entry changed. Intentional major library exception only: no Prisma/client/adapter, Nest/Express, runtime application/API/auth/payment/provider, UI/static-hosting, schema or migration contract change. Prior overrides stay intact.
+- Installed 7.1.5 baseline reproduced stack RangeError with two tiny self-referencing objects; patched cycle checks pass. Twelve native tests automatically wrapped by Jest verify consumer resolution and ordinary deepmerge use, cycles, record/array compatibility, changed Map behavior, in-place aliasing limits, real CJS/ESM Prisma config loading and invalid/missing config rejection. Synthetic files/objects; no loader DB connection or seed execution.
+- This exception is scoped to the inspected Prisma c12 merger using ordinary deepmerge. Tests pin that consumer and exclude in-place/unsafe entrypoints. v8 changes Map merging and custom types; current CallDesk config uses plain records/strings, not Maps/custom callbacks. An exploratory deepmergeInto immutability assertion failed because aliases may persist; the retained limitation test and separate ordinary-deepmerge immutability proof prevent a blanket safety claim.
+- APP-013 owns this exception. Re-review on every Prisma/config change; remove when native resolution is patched and cycle/config/PostgreSQL/application/browser gates pass. No upstream Prisma endorsement of this major override is claimed. Existing mysql2/Multer/PostCSS retirement gates remain.
+- Backend 614 tests, lint/build/architecture/Prisma and disposable 15-migration/11-crash suite pass; zero real provider calls and database absence verified. UI 60 tests, lint/type/build and five desktop/mobile synthetic browser harnesses pass unchanged. Backend full/omit-dev audits 4 high/8 moderate -> 0 high/8 moderate; UI clean. High-only gate passes, but Firebase/Google/uuid and full-audit failure remain unaccepted.
+- Backend `d05eb9a82355359a8cfa9ee48bf4cd10bb1a5c72`; readiness report and prisma-merge-audit-summary.json contain exact proof/limits. Authorized CREATE orchestration/recovery ownership, external-state races, reschedule/cancel and SENDING recovery, future upload limits/error mappings, acceptance and release gates remain open. No production operation, provider configuration, real data, merge, deployment or activation.
+
+## APP-013 Scoped Nest/Multer Compatibility Checkpoint (Earlier)
 
 - Scoped `@nestjs/platform-express@^11.2.3 -> multer: 2.3.0` override replaces 2.2.0; only the Multer lock entry changes. No Nest/Express major upgrade, application/API/auth/payment/provider, UI/static-hosting, Prisma/schema or migration change; prior overrides remain intact.
 - Twelve native tests automatically wrapped by Jest cover Nest consumer resolution, ordinary/invalid fields, explicit index limit, async file-size limits across four upload methods, exact-limit acceptance, real disk descriptor close/unlink and Nest interceptor compatibility. Invalid sparse append is caught without iterating/serializing the array; no old-version negative reproduction or resource-exhausting load test. Disk-layer stream failure is not full network-abort acceptance.

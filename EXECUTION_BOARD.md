@@ -23,7 +23,7 @@ Purpose: single active queue for execution.
 ## Now
 
 - [ ] APP-013 Twilio-backed notification center and transactional customer messaging (`SCR-APP-021`, `SCR-APP-022`, `SCR-TECH-005`)
-  - Scoped Nest/Multer remediation is review-ready on PR #21: Multer 2.3.0, one lock entry and twelve native checks integrated into Jest. Backend full/omit-dev audits now 4 high/8 moderate, unaccepted; Multer/Nest findings absent and UI audits clean. Future upload limits/error mapping, Prisma/Firebase dependencies, authorized CREATE orchestration/worker ownership, external-state races, reschedule/cancel and SENDING recovery and acceptance stay open; no activation or deployment.
+  - Scoped Prisma merge remediation is review-ready on PR #21: deepmerge-ts 8.0.2, one lock entry and twelve native checks integrated into Jest. Backend full/omit-dev audits now 0 high/8 moderate, unaccepted; UI audits clean. Firebase/Google/uuid, override/in-place-API limitations, future upload gates, authorized CREATE orchestration/worker ownership, external-state races, reschedule/cancel and SENDING recovery and acceptance stay open; no activation or deployment.
 
 ## Next
 
