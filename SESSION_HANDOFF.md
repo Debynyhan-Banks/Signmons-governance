@@ -121,12 +121,14 @@ Last Updated: 2026-09-08
 
 ## Next Actions (Strict Order)
 
-1. Review APP-013 transactional templates, appointment lifecycle triggers, canonical event identity and send-time stale-message rejection on backend `codex/app-013-transactional-messaging` (PR #21). APP-012 and BE-008 are accepted; do not repeat the completed payment release.
-2. Continue one bounded APP-013 section for remaining assignment/technician/payment/dispatcher triggers, email, preferences or operator UI. Acceptance remains open.
+1. Review APP-013 transactional templates, appointment and technician-on-the-way triggers, canonical event identity and send-time stale-message rejection on backend `codex/app-013-transactional-messaging` (PR #21). APP-012 and BE-008 are accepted; do not repeat completed payment or message-trigger sections.
+2. Continue one bounded APP-013 section for durable enqueue recovery, remaining assignment/other-technician/payment/dispatcher triggers, email, preferences or operator UI. Acceptance remains open.
 3. Keep provider delivery disabled until an explicitly approved acceptance run; no external messages or release are authorized by this documentation checkpoint.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 
 ## APP-013 Queue State Review Checkpoint (2026-09-08)
+
+Historical checkpoint; the latest continuation is recorded below.
 
 - Backend checkpoint: `a04f1d7129495ed687a5ac896c5f29dd022a036c` on `codex/app-013-transactional-messaging` (PR #21).
 - New checks reject cancellation copy for active jobs and on-the-way copy without an assigned EN_ROUTE technician. Deleted jobs return not found; confirmation/reschedule require a stored calendar reference and ordered window; closed-job contradictions return 409 before delivery queue access.
@@ -143,3 +145,11 @@ Last Updated: 2026-09-08
 - Focused lifecycle/delivery validation passed 44 tests; full backend build/lint, 308 tests with 3 existing skips, architecture, Prisma and critical audit passed. Unchanged UI lint, 17 tests and build passed; no rendered UI changed.
 - Outbound delivery remained disabled. No provider message, credential/configuration change, migration, merge, deployment or real customer/job mutation occurred. A narrow post-check/pre-provider race remains non-atomic and documented.
 - APP-013 remains active at roughly 35%; APP-006 through APP-016 roughly 72%, planning estimates only. Remaining scope includes other event triggers, email, preferences, UI and acceptance. Evidence: backend `evidence/APP-013/readiness-report.md`.
+
+## Latest APP-013 Technician On-The-Way Checkpoint (2026-09-08)
+
+- Backend checkpoint: `477048abfa22a15ec63642f83519c180354341ea` on `codex/app-013-transactional-messaging` (PR #21).
+- Changed on-my-way actions now queue customer SMS only after the status/audit transaction commits; no-op retries and failed writes never queue. Queue/logging failures preserve committed status and expose no raw payload in logs.
+- The digest includes the technician status timestamp: same-episode retries retain one identity while later departures differ. Obsolete departure/assignment state fails before provider access; earlier on-the-way hashes fail closed.
+- Passed backend build/lint, 323 tests (3 existing skips), architecture/Prisma and critical audit; UI lint, 17 tests and build. No rendered UI changed, no external message or configuration/release action occurred.
+- Remaining durability limit: no transactional outbox; a crash or enqueue failure can lose the notification and requires operator-reviewed recovery. Other event triggers, email, preferences, UI and acceptance remain open. APP-013 roughly 40%; APP-006 through APP-016 roughly 73%, planning estimates only. See backend APP-013 evidence for exact review commands.
