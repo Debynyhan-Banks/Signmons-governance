@@ -23,7 +23,7 @@ Purpose: single active queue for execution.
 ## Now
 
 - [ ] APP-013 Twilio-backed notification center and transactional customer messaging (`SCR-APP-021`, `SCR-APP-022`, `SCR-TECH-005`)
-  - Inactive CREATE Calendar read-back reconciliation and atomic journal/job/intent/audit finalization are review-ready on backend PR #21, with nine total local process-crash cases. Consumer pending-state guards, guarded CREATE integration/recovery worker, reschedule/cancel reconciliation, dependency remediation and remaining messaging/acceptance work stay open; no live activation or release.
+  - Journal-aware customer/dispatch/notification holds are review-ready on PR #21; unfinished work cannot pass these consumer checks as finalized. Guarded CREATE integration/recovery worker, other mutation-entry-point safety, reschedule/cancel reconciliation, dependency remediation and remaining messaging/acceptance work stay open; journal writers/reconciler remain inactive, no release.
 
 ## Next
 
