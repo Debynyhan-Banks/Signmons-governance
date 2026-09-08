@@ -378,7 +378,15 @@ Audit:
 - Explicit evaluations create `routing.rule_evaluated`; assignment audits embed the exact bounded `routing-v1` trace used by `dispatch-v2`.
 - Configuration writes and their audit event commit in one transaction.
 
-## APP-013 qs Dependency Compatibility Checkpoint
+## APP-013 UI Framework Compatibility Checkpoint
+
+- Next/eslint-config-next 15.5.25 and React/React DOM 19.2.8 replace the prior Next 14/React 18 runtime. React 19 types are aligned; exact installed/manifest/lock agreement is tested. No backend dependency, API/DTO, auth, payment, provider or data contract changed.
+- Hosting remains static `ui/out`, without a Next-server rewrite. The web manifest explicitly exports `dynamic = "force-static"` to preserve static generation under Next 15; start_url remains `/app/technician`. Six home anchors migrate to Next Link with prefetch disabled; local browser navigation passes. Secure-link rejection, Calendar holds, retry uncertainty and payment-return copy retain prior semantics.
+- UI 36 tests, lint/type/build (14 pages), 22 desktop/mobile route checks, 12 home navigations, static manifest and four prior synthetic workflow browser regressions pass. Backend 610 tests, architecture/Prisma and 15-migration/11-crash local fixture pass; no real provider calls.
+- Fresh audit UI 1 critical/9 high/1 moderate -> 0 critical/6 high/2 moderate. Omit-dev 1 high/1 moderate remains via PostCSS/Next; backend unchanged 5 high/9 moderate, omit-dev 4 high/8 moderate. Remaining findings unaccepted. Critical advisory's Windows-server condition does not match checked-in static hosting; no live exposure or deployed remediation claim.
+- Backend checkpoint `5ac324c0cd9b9cd108e8074ba2578feeed94d597`; evidence/commands: APP-013 readiness report and framework-audit-summary.json. No merge, deployment, provider configuration, migration outside disposable local fixture, external sends, real data or activation. Prior functional recovery gates remain open.
+
+## APP-013 qs Dependency Compatibility Checkpoint (Earlier)
 
 - Backend locked qs 6.16.0 replaces 6.15.3; no API, DTO, business policy, runtime application code, UI or provider SDK change. Loopback tests use Nest's rawBody/extended-form parser to verify exact callback bytes, ordinary nested forms and Unicode/plus handling. No real callback acceptance is claimed.
 - Twelve installed-code regression tests cover the two maintainer-reported library defects and consumer resolution. Runtime dependency presence does not establish an exploitable application route. Backend full audit is now 5 high/9 moderate (qs absent), omit-dev 4 high/8 moderate; UI 10 high/1 moderate. Remaining findings are not accepted.
