@@ -378,6 +378,12 @@ Audit:
 - Explicit evaluations create `routing.rule_evaluated`; assignment audits embed the exact bounded `routing-v1` trace used by `dispatch-v2`.
 - Configuration writes and their audit event commit in one transaction.
 
+## APP-013 qs Dependency Compatibility Checkpoint
+
+- Backend locked qs 6.16.0 replaces 6.15.3; no API, DTO, business policy, runtime application code, UI or provider SDK change. Loopback tests use Nest's rawBody/extended-form parser to verify exact callback bytes, ordinary nested forms and Unicode/plus handling. No real callback acceptance is claimed.
+- Twelve installed-code regression tests cover the two maintainer-reported library defects and consumer resolution. Runtime dependency presence does not establish an exploitable application route. Backend full audit is now 5 high/9 moderate (qs absent), omit-dev 4 high/8 moderate; UI 10 high/1 moderate. Remaining findings are not accepted.
+- Evidence and reproducible clean-install/audit/test commands: backend APP-013 readiness report and qs-audit-summary.json. No activation, merge, deployment or production action; authorized CREATE orchestration and recovery ownership remain pending.
+
 ## APP-013 Job Policy Calendar Guards (Review-Ready)
 
 - Urgency overrides and payment exception APPROVE/REVOKE reject any unfinished CalendarOperation (finishedAt null), using only existence, before same-value urgency replay or financial entitlement processing. They return the existing office-review 409 without job/audit/provider side effects.

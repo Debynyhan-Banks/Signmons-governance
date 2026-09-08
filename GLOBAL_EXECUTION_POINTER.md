@@ -26,7 +26,7 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 | --- | --- | --- |
 | Governance | APP-013 contract and communications-boundary alignment | active |
 | Frontend marketing | `FE-014` competitive comparison pages | paused |
-| Backend | `APP-013` urgency/payment-exception Calendar policy guards are review-ready on PR #21; inactive CREATE execution remains unregistered; authorized orchestration/recovery ownership, other payment/entitlement state, dependencies and acceptance stay open; BE-008 accepted | active |
+| Backend | `APP-013` narrow qs 6.16.0 dependency remediation is review-ready on PR #21; backend audit now 5 high/9 moderate, still unaccepted; authorized CREATE orchestration/recovery ownership and acceptance remain pending, no activation; BE-008 accepted | active |
 
 ## Synchronization Rules
 
