@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import { existsSync, readFileSync } from 'node:fs';
+import { executionPlacementErrors } from './execution-placement.mjs';
 
 const errors = [];
 
@@ -39,6 +40,7 @@ for (const file of requiredFiles) {
 const board = mustRead('EXECUTION_BOARD.md');
 const screensDoc = mustRead('SCREEN_INVENTORY.md');
 const pointer = mustRead('GLOBAL_EXECUTION_POINTER.md');
+errors.push(...executionPlacementErrors(pointer, mustRead('SESSION_HANDOFF.md')));
 const routeMatrix = mustRead('SCREEN_ROUTE_API_MATRIX.md');
 const ctaMap = mustRead('LINK_CTA_MAP.md');
 
