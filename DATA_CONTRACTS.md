@@ -378,7 +378,15 @@ Audit:
 - Explicit evaluations create `routing.rule_evaluated`; assignment audits embed the exact bounded `routing-v1` trace used by `dispatch-v2`.
 - Configuration writes and their audit event commit in one transaction.
 
-## APP-013 Legacy Initial CREATE Uncertainty Safeguard
+## APP-013 Legacy CREATE Customer-Management Safeguard
+
+- Signed management-token/tenant authority and existing unfinished-journal checks run first. An ACCEPTED job with either reserved window endpoint and no nonblank Calendar reference now returns fixed office-review 409 for all seven management actions, before provisional serialization/activity lookup or downstream calls. No new success-state enum or public journal/Calendar field is added.
+- Covers view, confirm, request_reschedule, continue_payment, availability, reschedule and cancel for that narrow legacy state. Unscheduled payment recovery, cancelled/completed historical viewing and finalized booking behavior remain unchanged. This is a customer management boundary guard, not a change to payment policy or automatic repair.
+- Fourteen unit cases cover actions/partial windows/blank references/compatibility. The three prior PostgreSQL CREATE failure fixtures add 21 action refusals, tenant checks, absence of journals and exact row/no-success-side-effect proof. 644 backend tests, lint/build/architecture/Prisma, disposable 15 migrations/11 prior crash cases and 60 UI tests/14 pages pass. All four audits remain zero.
+- The extended synthetic browser harness verifies legacy hold on initial load and removal of old details/actions after conflict at 1440/390 pixels; all five harnesses pass, zero external requests/page errors. Rendered UI code is unchanged; this is not live provider/backend/browser integration proof.
+- Snapshot races, dispatch/technician/message handling of unjournaled reservations, legacy repair and authorized CREATE reader/worker/review orchestration remain open. Inspection found loadAppointment lacks an explicit deletedAt predicate; soft-deleted management-link access remains a separate remediation before acceptance. No new journal activation, schema/migration, provider action, real data, merge or deployment. Backend `d1a18ff15309d4c551e05e584031d173ea8d4cfd`; readiness report and legacy-create-customer-summary.json contain exact proof/limits.
+
+## APP-013 Legacy Initial CREATE Uncertainty Safeguard (Earlier)
 
 - Existing initial confirmation retains its tenant/session/signed-slot/eligibility/availability and conditional reservation checks. After a reservation succeeds, any insert exception now keeps the reservation/newer job state, does not reset to CREATED or clear the window and does not run finalization or emit a confirmation. Existing HTTP 503 now directs office review instead of choosing another appointment. No success response field, payment policy, schema, module registration or provider adapter changes.
 - Diagnostic logging emits fixed appointment_calendar_insert_review_required plus tenant/job identity only, no raw provider/credential/body error. Logger failure cannot replace the safe response. There is no compensating Calendar call, reinsert, new journal, durable event ID, retry worker or automatic release.
