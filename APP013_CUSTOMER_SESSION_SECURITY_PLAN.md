@@ -4,6 +4,8 @@ Status: **LOCAL MODEL IMPLEMENTED; PRODUCTION ACTIVATION NOT APPROVED.** On 2026
 
 ## Implemented boundary
 
+- Latest owner-approved browser section adds unregistered origin/tenant/metadata/request-size/quota protections and private projections over the model. Nine HTTP/browser/database checks include real second-origin forgery refusal and desktop/mobile consent persistence; 53 new unit tests, 1384 backend total. This does not implement production BFF/TLS/proxy/key/logging infrastructure or a distributed limiter. Read APP013_CUSTOMER_BROWSER_TRANSPORT.md.
+
 - Latest continuation (owner: "continue", 2026-09-09) adds legacy-path isolation and unregistered CustomerConsentCaptureService. Explicit normalized address plus a valid customer credential; exact tenant/session/customer/conversation/marker recheck, one encrypted capture and privacy-safe audit in a bounded transaction. Identical replay never rewrites ciphertext/audit; replacement and malformed stored capture refuse. Expiry after persistence rolls back. No consent, verification or sending derives from capture.
 - Server-owned marker is written only on fresh bootstrap, never caller-selected historical scope. Shared lock projects session/marker/capture only, not transcripts or entire conversation JSON. Captured address is kept private, returned only by the separately authenticated prompt; capture receipts contain status/deliveryAuthorized:false only.
 
@@ -34,6 +36,6 @@ Local proof covers cryptographic validation, purpose/session isolation, explicit
 
 Latest validation adds 26 unit tests (1331 total backend), ten protected-intake database checks and desktop/mobile expiry/lost-session restart proof. Both legacy controller methods traverse AiService with actual conversation lookup, while downstream AI/job/log/scheduling collaborators are forbidden stubs; this is not a newly exposed HTTP authentication route. All production customer model/services remain unregistered.
 
-Next proposed bounded work: local same-origin bootstrap transport protections (origin/CSRF, request limits, private-response/redaction behavior), without live routes/configuration or collection. Full credential-bound AI intake is a separate remaining dependency. Review key/transport decisions before a production adapter, route or configuration. APP-013 stays Now; no merge, deploy, production migration or provider action.
+Next proposed bounded work: local credential-bound intake continuation, starting with transcript ownership/refusal tests using scripted collaborators. The inactive browser boundary is now implemented and locally tested; see APP013_CUSTOMER_BROWSER_TRANSPORT.md. Production BFF/TLS/proxy/logging, distributed abuse protection, keys and full AI/booking activation remain gated. APP-013 stays Now; no merge, deploy, production migration or provider action.
 
 References: [approved consent contract](APP013_EMAIL_CONSENT_EXPIRY_PROPOSAL.md), [data contracts](DATA_CONTRACTS.md), [session handoff](SESSION_HANDOFF.md), [MVP plan](CALLDESK_MVP_PLAN.md).

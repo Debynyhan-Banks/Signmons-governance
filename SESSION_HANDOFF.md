@@ -2,7 +2,30 @@
 
 Last Updated: 2026-09-09
 
-## Protected Customer Intake Isolation (2026-09-09, latest/review-ready)
+## Local Customer Browser Security Boundary (2026-09-09, latest/review-ready)
+
+- Backend commit 43108f1748ae2df65ee5e6d3c71ec57d22c0f024 pushed and remotely verified on PR #21; incremental 18cd9a9..43108f1.
+
+- Owner approved this bounded section with "proceed". Started from fetched/aligned backend 18cd9a9847ba1823c02c4231ef7b1f6ecd26e010 and governance c6d884ea397812a0aae9172000d49d047ff071a2. APP-013 remains sole Now; Global Next unassigned, FE-014 paused; original dirty checkouts preserved.
+- Added unregistered CustomerConsentBrowserTransport and LocalCustomerBrowserBudget. Fixed canonical origin/tenant, verified server integration context, TLS/socket identity, exact Origin/Host/Fetch Metadata and custom JSON header are required. Cookies/public integration Authorization, absent/null/same-site/cross-site metadata, navigation, query credentials and noncanonical paths refuse. These are CSRF/browser checks, not customer authentication; non-start requests also require the correctly tenant-bound customer credential.
+- Bounded raw headers, 16 KiB streamed/final bodies, fatal UTF-8 and compact exact-field JSON; duplicate keys/headers and missing/broken quota authority refuse. Local fixed 60s budget: 60 total/10 starts, 20 per peer/5 starts, four in flight. No automatic retry or quota refund. Local state resets at process restart and is not distributed production abuse protection.
+- All modeled outcomes have private/no-store/no-referrer/nosniff headers, no CORS authorization or cookies. Explicit success projections omit internal evidence/scope IDs and unexpected service fields. Fixed errors and operation/status-only diagnostics exclude request URLs, headers, bodies, mailboxes, bearer credentials and raw exceptions. Failed diagnostics cannot change committed service outcomes.
+- Real-browser QA found and corrected the initial empty-string assumption for Sec-Fetch-Dest: its wire token is empty. Client uses fixed same-origin URLs, mode:cors, credentials:omit and no-referrer. Strict server checks remain; browser bootstrap success and hostile-origin refusal are both asserted. Design/trust/compatibility details and primary references: APP013_CUSTOMER_BROWSER_TRANSPORT.md.
+- Final validation: 53 new unit tests; 1384 backend tests / 79 passing suites, prior 3 tests / 1 suite skipped. Backend lint/build/architecture/Prisma, changed-script syntax/format and diff checks pass. Unchanged UI lint/170 tests/15-page build and four fresh full/production dependency audits pass with zero findings.
+- Disposable PostgreSQL: existing 19 migrations, nine new HTTP/browser/database boundary checks, prior ten protected-intake/18 session/24 consent/19 process-crash/23 eligibility checks and local Settings/Inbox regressions pass. No new migration or process-crash test. Both failed development runs and final run removed their fixture database; cleanup query is empty.
+- New fictional browser proof at 1440/390 performs actual transport/service/database bootstrap, capture, prompt and grant/decline. Second local origin's simple POST and JSON preflight cannot reach application work. Eight successful HTTP operations, fixed refusal/error responses, no page errors/external/provider calls/cookies/web storage; mobile screenshot inspected. Five unrelated static browser scripts and email composition were not rerun.
+- No production module/controller/route/UI/config/key/schema/package changes or active collection, verification, queue/send, merge, deploy, production migration, IAM/secrets/billing or real-data action. Production BFF/TLS/proxy/access-log/parser-error review, distributed limiter and key lifecycle remain separate; full protected AI intake, mailbox verification/retention/admission/delivery and Calendar/pre-finalization/old-writer compatibility risks remain.
+- Completion stays 50% APP-013 scope coverage (1 demonstrated, 10 partial, 1 missing), 0/12 formal acceptance; not overall MVP completion or production readiness. Keep 7-12 unequal APP-013 / 20-35 pilot remaining sections, low confidence, not an ETA. These local safeguards do not finish the end-to-end customer journey.
+- Stop for review. Next proposed bounded section: local credential-bound intake continuation, starting with transcript ownership and refusal tests using scripted collaborators; no production AI/provider or booking activation. No ticket transition.
+
+### Review steps
+
+1. Review PR #21 incremental after 18cd9a9: new transport/budget source/tests, local browser fixtures/verification hook and evidence. Confirm production routes/modules/UI/configuration, schema and packages are unchanged.
+2. Run backend lint/full tests/architecture/build/Prisma; UI lint/tests/build; full and production npm audit in both roots.
+3. Follow evidence/APP-013/customer-browser-transport/README.md for the exact disposable database/browser command. Inspect summary.json, validation-summary.json and private-prompt-390.png; cleanup query must be empty.
+4. Run governance placement/consistency plus both git diff --check. Read APP013_CUSTOMER_BROWSER_TRANSPORT.md and APP013_CUSTOMER_SESSION_SECURITY_PLAN.md before any activation.
+
+## Earlier: Protected Customer Intake Isolation (2026-09-09, review-ready)
 
 - Backend commit 18cd9a9847ba1823c02c4231ef7b1f6ecd26e010 pushed and remotely verified on PR #21; incremental abd9b5a..18cd9a9.
 
@@ -338,7 +361,7 @@ Exact review commands and source/evidence: backend evidence/APP-013/readiness-re
 ## Next Actions (Strict Order)
 
 1. Review the local customer-session/prompt-response model on PR #21, incremental after a39a230, and APP013_CUSTOMER_SESSION_SECURITY_PLAN.md. Confirm new sessions cannot adopt arbitrary identifiers, explicit mailbox confirmation is required, replay/expiry/rollback evidence passes and all production routes/keys remain absent.
-2. After review, confirm one bounded local bootstrap transport section covering origin/CSRF, request limits and private-response/redaction behavior, still without live routes/configuration or collection. Full credential-bound AI intake, dedicated key/fingerprint lifecycle and verification/retention remain dependencies; no provider, credentials/queue/sending or release action. APP-013 remains sole Now; coverage 50%, acceptance 0/12 and 7-12 APP-013 / 20-35 pilot unequal sections remain low confidence.
+2. After review, confirm one bounded local credential-bound intake continuation section, starting with transcript ownership/refusal tests using scripted collaborators; no production AI/provider or booking activation. Production BFF/TLS/proxy/logging, distributed abuse limits, key/fingerprint lifecycle and verification/retention remain dependencies. No collection, queue/sending or release authority. APP-013 stays sole Now; coverage 50%, acceptance 0/12; 7-12 APP-013 / 20-35 pilot unequal sections, low confidence.
 3. Keep provider delivery disabled until an explicitly approved acceptance run; no external messages or release are authorized by this documentation checkpoint.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 
