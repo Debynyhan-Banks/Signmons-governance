@@ -523,6 +523,14 @@ Audit:
 
 ## APP-013 One-Shot CREATE Execution (Inactive)
 
+### Reader Attempt-Ownership Safeguard (2026-09-08)
+
+- An unfinished PENDING CREATE belongs to the executor. Reconciliation validates tenant/action/terminal state, then returns existing pending result without job/provider access, expiry classification, journal/job changes, audit, intent, enqueue or send. Apparently matching evidence cannot bypass the durable attempt latch. The executor retains its existing expiry/review policy; the reader does not scan or expire pending rows.
+- UNCERTAIN/APPLIED remain eligible for existing strict read-back proof, not automatic insertion. These statuses do not prove that execution has ended: active-attempt/recovery-reader coordination is still required before a worker is activated. No rearm, replacement event ID, lease, retry worker, route, module registration or live scheduling switch is introduced.
+- A stale PENDING snapshot can return pending after concurrent execution finalizes; it cannot alter the newer receipt. A fresh lookup returns historical already_finalized. Unsupported/cross-tenant/held/terminal handling and exact evidence/version transactions remain unchanged.
+- Evidence: five new unit cases (689 backend total), four replayed early-reader database scenarios followed by exactly one synthetic execution, one delayed-reader/concurrent-executor case, all 15 migrations/11 prior crashes. Read-back fixtures now traverse the real durable execution latch before synthetic reconciliation. Four clean audits, 60 UI tests/14 pages and five browser suites pass. No new crash case or provider call.
+- Backend `ab88f68bd63a746c49bb9e8fad1081d29b8518b1`; readiness-report.md and create-reader-ownership-summary.json. This is an inactive ownership-boundary fix, not legacy repair, active-request fencing, authorization integration or release.
+
 - Internal executor accepts tenant/operation identity only for an already-authorized persisted CREATE reservation; there is no route/worker/module registration or public scheduling-flow switch. Existing upstream tenant/auth/payment/signed-slot/availability protections must be preserved by eventual integration.
 - Exact PENDING journal version plus matching undeleted ACCEPTED job/claim version/window/label/no-event/unassigned/no-technician-status are claimed atomically. Job version and journal claimedUpdatedAt advance together; journal transitions UNCERTAIN before any POST. UNCERTAIN is a durable at-most-one-attempt latch, not a retry lease or proof of network dispatch. Unknown commit acknowledgment prevents insertion.
 - Concurrent calls/restarts on UNCERTAIN/APPLIED return pending without insert/read; FINALIZED reports historical completion, NEEDS_REVIEW/ABORTED stay held. No rearm/replacement ID exists. Future window and observed current journal/job versions are rechecked before the one attempt.
