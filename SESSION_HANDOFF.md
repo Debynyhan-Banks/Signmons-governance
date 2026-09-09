@@ -1,6 +1,6 @@
 # Session Handoff
 
-Last Updated: 2026-09-08
+Last Updated: 2026-09-09
 
 ## Owner-Approved Product Direction (2026-09-01)
 
@@ -121,8 +121,8 @@ Last Updated: 2026-09-08
 
 ## Next Actions (Strict Order)
 
-1. Review APP-013 CREATE reader attempt-ownership safeguard on backend `codex/app-013-transactional-messaging` (PR #21, `ab88f68bd63a746c49bb9e8fad1081d29b8518b1`): unattempted PENDING is read-only to recovery; executor owns its first attempt and expiry check. Five new unit cases, 689 tests, four early-reader database scenarios/one concurrent executor case and all prior crash checks pass. No activation or acceptance.
-2. After review, continue one bounded approved active-executor/recovery-reader coordination section before guarded CREATE integration. UNCERTAIN is not proof an executor stopped; preserve tenant/auth/payment/availability checks and explicit worker/office-review responsibility. No rearm, manual reservation clearing or standalone service activation. Legacy inventory/repair, retention, external races, reschedule/cancel and SENDING recovery, dependency override maintenance and prior journal migration/live acceptance/release remain separately governed.
+1. Review APP-013 CREATE active-attempt coordination on backend `codex/app-013-transactional-messaging` (PR #21, `738c1f62ef8f55f9891a657edd12f978fd51be41`): PENDING remains executor-owned; fresh UNCERTAIN blocks read-back during the bounded external-attempt window; APPLIED hands off immediately; expired UNCERTAIN permits read-only crash recovery without reinsertion. Three new unit cases, 692 tests, 15 migrations/11 prior crashes and all browser/audit gates pass. No activation or acceptance.
+2. After review, continue one bounded guarded CREATE integration section preserving tenant/auth/payment/availability checks and explicit executor/recovery/office-review ownership. Do not activate the executor or reconciler as a standalone route/worker, rearm UNCERTAIN, clear reservations or treat APPLIED as provider-success proof. Legacy inventory/repair, retention, external races, reschedule/cancel and SENDING recovery, dependency override maintenance and prior journal migration/live acceptance/release remain separately governed.
 3. Keep provider delivery disabled until an explicitly approved acceptance run; no external messages or release are authorized by this documentation checkpoint.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 
@@ -163,7 +163,19 @@ Historical checkpoint; the latest continuation is recorded below.
 - Evidence and reproducible QA command: backend `evidence/APP-013/readiness-report.md`; screenshots `notifications-desktop.png` and `notifications-mobile.png` alongside it. Existing 4 high/9 moderate dependency findings and stale Browserslist data remain documented; 0 critical.
 - No external message, configuration, migration, merge, deployment or customer mutation. Durable enqueue recovery and remaining events/template controls/technician UI/email/acceptance stay open. Planning estimate: APP-013 roughly 50%; APP-006 through APP-016 roughly 74%.
 
-## Latest APP-013 CREATE Reader Attempt-Ownership Safeguard (2026-09-08)
+## Latest APP-013 CREATE Active-Attempt Coordination (2026-09-09)
+
+- Automation fetched both remotes and reconciled backend `ab88f68` / governance `bdbdb52`; APP-013 remains the sole Now ticket. Both focused boards selected only the approved active-executor/recovery-reader coordination section; original saved-checkout changes remain untouched.
+- PENDING remains executor-owned. The executor commits UNCERTAIN before the provider seam; fresh UNCERTAIN now returns pending before job lookup, Calendar read or persistence while the provider attempt may be active. The only approved Google creator begins its eight-second AbortSignal before credential acquisition and checks it before fetch. The recovery-reader grace is ten seconds, so delayed auth cannot initiate a write after recovery becomes eligible.
+- Adapter exit conditionally advances UNCERTAIN to APPLIED before read-back. APPLIED means the bounded write attempt is quiescent, not successful; exact provider event/tenant/job/operation/window evidence remains required. Unknown APPLIED acknowledgment reloads current state. Process exit before handoff retains UNCERTAIN; after grace, read-only reconciliation can finalize matching evidence or hold absent/conflicting evidence. No insert retry, journal rearm or reservation release exists.
+- Focused executor/reconciler/Google-adapter suites pass 72 tests. Disposable PostgreSQL applies all 15 migrations, pauses an active executor against a zero-read competing reconciler, verifies APPLIED handoff, and proves fresh-then-expired UNCERTAIN after process exits before/after synthetic insert. All 11 prior crashes pass, provider calls remain zero, and the fixture database was removed.
+- Full gates pass: backend build/lint, 56 suites/692 tests with three existing skips, architecture/Prisma; unchanged UI lint/60 tests/14-page build and five desktop/390px synthetic browser suites; backend/UI full and omit-dev audits all zero. Existing pg, Next and intentional PostCSS fixture warnings remain nonblocking.
+- Limits: internal services remain unregistered/inactive. No schema, dependency, public API/worker, tenant/auth/payment/availability behavior, provider configuration, staging/production migration, real data, external message, charge, merge or deployment changed. The grace is specific to the reviewed adapter bound; it is not Calendar/PostgreSQL atomicity, a provider consistency guarantee, retry lease or global lock.
+- APP-013 remains roughly 85%; governed APP-006 through APP-016 roughly 81%, planning only. Guarded authorized CREATE integration is next after review. Office review/legacy repair/retention, external races, reschedule/cancel and SENDING recovery and acceptance remain open. Stop review-ready.
+
+- Backend checkpoint `738c1f62ef8f55f9891a657edd12f978fd51be41`; evidence: `evidence/APP-013/readiness-report.md` and `create-attempt-coordination-summary.json`. Acceptance remains unchecked.
+
+## Earlier APP-013 CREATE Reader Attempt-Ownership Safeguard (2026-09-08)
 
 - Owner continued remediation; fetched/reconciled backend `7026d08` and governance `159b3fe`. APP-013 remains the sole Now ticket; both focused boards selected a bounded CREATE reader-ownership safeguard before coding. Original saved worktree changes preserved.
 - CalendarCreateReconciliationService now returns pending immediately for an unfinished PENDING CREATE, after tenant/action/terminal checks and before window validation, job lookup, provider read or any write. PENDING belongs to the executor; neither absent/unavailable nor apparently matching provider evidence may consume or bypass its durable one-shot attempt latch. Expired PENDING records are also left untouched by the reader; the existing executor owns its expiry hold.

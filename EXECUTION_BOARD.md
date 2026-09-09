@@ -23,7 +23,7 @@ Purpose: single active queue for execution.
 ## Now
 
 - [ ] APP-013 Twilio-backed notification center and transactional customer messaging (`SCR-APP-021`, `SCR-APP-022`, `SCR-TECH-005`)
-  - CREATE reader attempt-ownership safeguard is review-ready on PR #21: unattempted PENDING records remain untouched by recovery reads; executor ownership and attempted read-back preserved. 689 backend tests, four replayed early-reader database scenarios/one concurrent executor case, 15 migrations/11 prior crashes, five browser suites and four clean audits pass. Active-attempt/recovery coordination, authorized CREATE integration, office review/legacy repair, external races, reschedule/cancel and SENDING recovery and acceptance remain open; no activation or deployment.
+  - CREATE active-attempt coordination is review-ready on PR #21 at `738c1f62ef8f55f9891a657edd12f978fd51be41`: PENDING remains executor-owned; fresh UNCERTAIN blocks reads during the bounded adapter window; APPLIED hands off immediately; expired UNCERTAIN permits read-only crash recovery without reinsertion. 692 backend tests, 15 migrations/11 prior crashes, five browser suites and four clean audits pass. Authorized CREATE integration, legacy repair and acceptance remain open; no activation or deployment.
 
 ## Next
 

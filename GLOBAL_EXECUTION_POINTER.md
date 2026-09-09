@@ -14,7 +14,7 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
   - Repo: `signmons-marketing-web-feat-marketing-site`
   - Board: `EXECUTION_BOARD.md`
 
-## Current Pointer (as of 2026-09-08)
+## Current Pointer (as of 2026-09-09)
 
 - Program `Now`: `APP-013` (Twilio-backed notification center and transactional customer messaging)
 - Program phase: owner-approved CallDesk-first product execution; `FE-014` is paused, not cancelled
@@ -22,11 +22,11 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 
 ### Repo Status
 
-| Repo | Active Ticket | State |
-| --- | --- | --- |
-| Governance | APP-013 contract and communications-boundary alignment | active |
-| Frontend marketing | `FE-014` competitive comparison pages | paused |
-| Backend | `APP-013` CREATE reader attempt-ownership safeguard is review-ready on PR #21 at `ab88f68bd63a746c49bb9e8fad1081d29b8518b1`; PENDING reads cannot consume the insertion latch, 689 tests and local concurrency/crash regression pass, audits clean. Active-attempt/recovery coordination, authorized integration, legacy repair and acceptance remain open; no activation or deployment; BE-008 accepted | active |
+| Repo               | Active Ticket                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | State  |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| Governance         | APP-013 contract and communications-boundary alignment                                                                                                                                                                                                                                                                                                                                                                                                                                                              | active |
+| Frontend marketing | `FE-014` competitive comparison pages                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | paused |
+| Backend            | `APP-013` CREATE active-attempt coordination is review-ready on PR #21 at `738c1f62ef8f55f9891a657edd12f978fd51be41`; fresh UNCERTAIN blocks recovery reads during the bounded adapter window, APPLIED hands off immediately, and expired UNCERTAIN retains read-only crash recovery without reinsertion. 692 tests, 15 migrations/11 prior crashes, five browser suites and four clean audits pass. Authorized integration, legacy repair and acceptance remain open; no activation or deployment; BE-008 accepted | active |
 
 ## Synchronization Rules
 
