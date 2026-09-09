@@ -550,6 +550,13 @@ Audit:
 - Requires the prior journal-table migration at runtime; no new migration or activation. Existing legacy/unrecorded crash gaps, post-check provider race and SENDING pre-release crash gap remain. Before any journal writer activation, review competing technician/job mutation entry points, guarded CREATE integration, recovery ownership/retry/review and retention. Reschedule/cancel recovery, dependencies and acceptance remain open; no release/provider/production authorization.
 - Evidence: backend APP-013 readiness report; 535 backend tests, 29 UI tests, 12 real action/status combinations in the disposable 15-migration suite, prior nine process crashes, and desktop/390px synthetic browser proof with zero provider calls.
 
+## APP-013 Subscribed Review Panel Composition (2026-09-09, inactive)
+
+- CalendarReviewSessionPanel accepts an externally owned CalendarReviewHttpSession, subscribes to every descriptor transition with useSyncExternalStore and passes its non-secret snapshot into the existing keyed panel. No token prop, default fetch/origin, storage or app-route registration. Parent must bind on every identity/tenant/token change and clear/dispose on logout.
+- Optional onClearSession callback preserves standalone reader compatibility; the composed panel clears both private client snapshots and the transport credential. Unmount cancels that panel's reads without destroying a potentially shared session. Remount starts with blank references/data; cleared/denied sessions remain denied.
+- Backend a42f0a42660cb148734e67e81985a4765cc5bfae: actual browser-to-loopback proof, 20 GETs/20 preflights/19 synthetic reads, six observed cancelled connections and no stale publication after server completion. Firebase verifier and Prisma are read-only doubles, not real identity/database acceptance. Exact-origin noncredentialed CORS and CSP are fixture-only, not deployed settings. No interception/response fulfillment; server authority, no-store/privacy bounds and snapshot/request-only meanings remain unchanged.
+- No mutation/recovery control, active module/route/worker, real-data/provider/production/release action. After review the agreed next step is APP-013 acceptance-gap assessment and user-facing workflow prioritization, not another automatic remediation section.
+
 ## APP-013 Review HTTP Adapter/Session Binding (2026-09-09, inactive)
 
 - CalendarReviewHttpSession is an inactive seam, not an app route or composed UI. Constructor requires trusted origin and injected ReviewFetch; no default URL/fetch. Only HTTPS or explicit loopback HTTP; URL credentials/query/fragment/non-root path refuse. Origins must come from approved deployment configuration, never editable user input.
