@@ -2,7 +2,29 @@
 
 Last Updated: 2026-09-09
 
-## Consent Evidence and One-Time Job Binding (2026-09-09, latest/review-ready)
+## Local Customer Consent Session and Prompt Binding (2026-09-09, latest/review-ready)
+
+- Backend commit abd9b5a2f65506b12839d4b7252b2f865c2531c0 pushed and remotely verified on PR #21; incremental a39a230..abd9b5a.
+
+- Owner answered "yes" to local implementation/testing of a short-lived server-issued customer-session credential with exact mailbox/prompt binding. Started from fetched/aligned backend a39a23037b98ef066933d6255c71766d8478cd60 and governance f2a51e4bfc178e94da8657ab08e412b04c3fddf9. APP-013 remains sole Now, Global Next unassigned and FE-014 paused; original dirty checkouts preserved.
+- Added unregistered CustomerConsentCredentials and CustomerConsentResponseService. Verified integration bootstrap creates only a fresh server-owned session/conversation; customer requests require a separate purpose-bound credential. Integration keys, caller-supplied session IDs, appointment tokens, wrong-tenant/session claims and impersonation are not substituted.
+- Local model uses an injected dedicated 32-byte HMAC signing key, strict claims/key IDs and at most two key versions. Session lifetime is 15 minutes; prompt lifetime is 5 minutes capped at original session expiry, non-sliding and exact-boundary refusing. No live key/environment loader/configuration or shared-key fallback. The local security plan records production key/transport decisions still requiring review; mailbox fingerprint adapter remains fixture-only.
+- Prompt binds exact approved text, randomized mailbox-ciphertext digest, session identity and expected initial revision. Grant requires separate boolean mailbox confirmation and explicit GRANTED choice; decline remains optional. Active tenant/undeleted scoped WEBCHAT/customer/session/mailbox are rechecked under locks. Response audit and immutable evidence commit together; expiry after storage causes rollback.
+- Concurrent identical responses return one durable receipt; changed responses, changed mailboxes, different issued prompts after completion and old credentials refuse. Completed history does not re-ask. A receipt remains deliveryAuthorized:false and is not current consent/verification/send authority. Existing finalized events stay unchanged; no event-time grant binding or positive eligibility.
+- Validation: 44 new unit tests; 1305 backend tests across 75 passing suites, with the prior 3 tests/1 suite skipped. Backend lint/build/architecture/Prisma, changed-script syntax/format and diff checks pass. Unchanged UI lint/170 tests/15-page build and four full/production dependency audits pass with zero findings. Disposable local PostgreSQL applies the existing 19 migrations; 18 new session checks plus prior 24 consent checks, 19 crash cases and 23 eligibility invariant reads pass. No new migration or session process-crash case is claimed.
+- New fictional browser proof exercises grant and decline at 1440/390 widths through the local services/database, with separate address confirmation, no external requests/cookies/web storage and sending disabled. Existing local Settings/Inbox browser/API/database regressions pass. No new production UI, actual customer deployment, secure cookie/BFF/CSRF acceptance or mailbox verification is claimed.
+- No production caller, controller/module registration, legacy triage rewrite, collection activation, verification email, appointment credential, expiry/admission/queue/sending or provider configuration. No merge/deploy/production migration/secrets/IAM/billing/customer-data action. Existing Calendar uncertainty, pre-finalization/release compatibility, retention RESTRICT ordering and dependency override maintenance remain.
+- Completion remains 50% APP-013 scope coverage, 0/12 formal acceptance; this local model adds partial evidence, not a finished delivery workflow. Retain 7-12 unequal APP-013 / 20-35 pilot sections, low confidence, not an overall MVP percentage/ETA. Customer transport/recovery, fingerprint key lifecycle and verification/retention work still need sizing.
+- Stop for review. Next proposed bounded section: protect intake/session mutations and define secure browser bootstrap plus expired/lost-session handling, still without collection activation. Review APP013_CUSTOMER_SESSION_SECURITY_PLAN.md before any production adapter, key, route or transport work; no automatic ticket transition.
+
+### Review steps
+
+1. Review PR #21 incremental after a39a230: two inactive model/service files and their unit tests, local session verification script/hook, evidence and board. No schema, package, production controller/module/UI or configuration changes.
+2. Backend: `npm run -s lint && npm test -- --runInBand && npm run -s arch:check && npm run -s build && npx prisma validate`. UI: `npm run -s lint && npm test && npm run -s build`. Both package roots: full and production-only npm audit.
+3. Use backend evidence/APP-013/customer-consent-session/README.md for exact disposable database/browser commands. Inspect database-summary.json, validation-summary.json and prompt-390.png. Confirm no matching local fixture databases remain.
+4. Governance: `node --test scripts/execution-placement.test.mjs && node scripts/docs-consistency-check.mjs`; both repositories `git diff --check`. Read the security plan's key/transport/legacy-intake and recovery limitations before activating anything.
+
+## Earlier: Consent Evidence and One-Time Job Binding (2026-09-09, review-ready)
 
 - Backend commit a39a23037b98ef066933d6255c71766d8478cd60 pushed and remotely verified on PR #21. Incremental review: 9597ef1..a39a230.
 
@@ -292,8 +314,8 @@ Exact review commands and source/evidence: backend evidence/APP-013/readiness-re
 
 ## Next Actions (Strict Order)
 
-1. Review the latest inactive consent evidence and one-time job-binding checkpoint on PR #21, incremental after 9597ef1. D1-D4 remain approved; review the missing production customer authority/fingerprint adapter, unchanged blocked eligibility and new retention RESTRICT impact.
-2. After review, confirm one bounded authenticated structured customer-response and displayed-mailbox/prompt-binding section, including a reviewed fingerprint key-lifecycle plan before any production adapter. No new key, collection activation, verification transport, credentials, queue admission, provider or release activation is authorized here. APP-013 remains sole Now; 50% scope coverage, 0/12 acceptance and 7-12 APP-013 / 20-35 pilot unequal sections remain low-confidence allowances; reassess after authority/verification/retention sizing.
+1. Review the local customer-session/prompt-response model on PR #21, incremental after a39a230, and APP013_CUSTOMER_SESSION_SECURITY_PLAN.md. Confirm new sessions cannot adopt arbitrary identifiers, explicit mailbox confirmation is required, replay/expiry/rollback evidence passes and all production routes/keys remain absent.
+2. After review, confirm one bounded section protecting intake/session mutations and defining secure browser bootstrap plus expired/lost-session handling, without collection activation. Review key-lifecycle/transport decisions before a production adapter or route; no live keys, provider, verification, credentials/queue/sending or release action is authorized. APP-013 remains sole Now; coverage 50%, acceptance 0/12 and 7-12 APP-013 / 20-35 pilot unequal sections remain low confidence.
 3. Keep provider delivery disabled until an explicitly approved acceptance run; no external messages or release are authorized by this documentation checkpoint.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 

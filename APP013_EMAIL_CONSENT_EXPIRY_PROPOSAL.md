@@ -1,6 +1,6 @@
 # APP-013 Appointment Email Consent and Expiry — Approved Contract v1
 
-Status: **APPROVED DESIGN — INACTIVE EVIDENCE FOUNDATION IMPLEMENTED.** Owner approved D1–D4 without amendment on 2026-09-09. Subsequent "great proceed" approved the bounded evidence-schema and one-time job-binding implementation. Only local synthetic proof exists; no production customer authority, collection, verification, credentials, queue or sending is enabled. See the latest APP-013 checkpoint for implementation limits.
+Status: **APPROVED DESIGN — LOCAL SESSION/CONSENT MODEL IMPLEMENTED; NOT ACTIVE.** Owner approved D1–D4, the inactive evidence foundation, and then answered "yes" to local-only implementation/testing of short-lived customer-session credentials with mailbox/prompt binding. No live key/configuration, production customer route, collection, verification, queue or sending is enabled. See APP013_CUSTOMER_SESSION_SECURITY_PLAN.md and the latest checkpoint for remaining transport/key/legacy-intake gates.
 
 Scope: the supervised CallDesk pilot and three customer appointment emails only. APP-013 remains Now; no ticket promotion, marketing work or release. These are approved product/security rules, not a statement of legal requirements or legal compliance. Jurisdiction/provider compliance and production retention remain release-review obligations.
 
@@ -100,7 +100,7 @@ These remain full acceptance obligations. The latest inactive persistence checkp
 
 Owner decision recorded: D1–D4 approved without amendment on 2026-09-09. No further approval of these same rules is needed. Retention/hold compatibility and verification challenge/transport details remain separate implementation/release gates.
 
-The schema/transaction-local evidence and one-time job-binding section is now review-ready. The latest immutable evidence revision is the versioned current-state projection; no mutable customer consent flag is introduced. Next proposed bounded section: authenticated structured customer-response and displayed-mailbox/prompt binding, with a reviewed fingerprint key-lifecycle plan before any production adapter. No collection activation, verification transport, queue admission, credentials or sending is authorized by this checkpoint.
+The inactive evidence/job-binding foundation and local customer-session/prompt-response model are review-ready. Production integration remains absent. Next proposed bounded section: protect intake/session mutations and define secure browser bootstrap/expired-session recovery without activating collection. Read APP013_CUSTOMER_SESSION_SECURITY_PLAN.md before any production key adapter, route or transport work. No verification, queue admission, appointment credentials or sending is authorized.
 
 Current completion estimate remains 50% APP-013 scope coverage and 0/12 formal acceptance. Planning allowance remains 7–12 unequal APP-013 sections and 20–35 for the supervised pilot, low confidence, not an ETA. D2 and the unresolved evidence/retention integration can increase the allowance; reassess when those implementation boundaries are sized and at demonstrated durable admission rather than treating this proposal as completed functionality.
 
