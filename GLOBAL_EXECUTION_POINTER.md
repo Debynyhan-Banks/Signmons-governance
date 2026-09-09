@@ -26,7 +26,7 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
 | --- | --- | --- |
 | Governance | APP-013 contract and communications-boundary alignment | active |
 | Frontend marketing | `FE-014` competitive comparison pages | paused |
-| Backend | `APP-013` legacy CREATE customer-management safeguard is review-ready on PR #21 at `d1a18ff`; provisional details/actions held, backend/UI audits clean; soft-delete filtering, remaining legacy consumer guards/repair, authorized journal orchestration/recovery ownership and acceptance remain open, no activation or deployment; BE-008 accepted | active |
+| Backend | `APP-013` soft-deleted customer-management safeguard is review-ready on PR #21 at `e7024c1`; deleted-at-load access denied, stale UI cleared, backend/UI audits clean; in-flight races, remaining legacy consumer guards/repair, authorized journal orchestration/recovery ownership and acceptance remain open, no activation or deployment; BE-008 accepted | active |
 
 ## Synchronization Rules
 
