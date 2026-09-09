@@ -38,7 +38,17 @@ These are launch requirements, not claims that every capability is available now
 
 These deferrals do not weaken safety, tenant isolation, payment integrity, communication consent, data ownership or basic operational recovery. They do not authorize advertising unavailable features or changing paid-plan promises.
 
-## Completion baseline and scoring
+## Current progress checkpoint (2026-09-09, after email composition)
+
+Backend checkpoint: efa9e3136fc196a2d95704ac4a26c6bc5f7e9782 on PR #21. Scope and release boundaries below remain unchanged.
+
+Fixed confirmation/reschedule/cancellation email content is now locally implemented and tested, with credential-free previews and private calendar-copy output; no runtime consumer, recipient lookup, credential issuance or delivery. Evidence: backend evidence/APP-013/email-composition/ and readiness-report.md; 55 new tests, 1075 backend/159 UI tests, browser/database regressions and four clean audits.
+
+Against the unchanged rubric below, criteria 6 and 7 move from missing end-to-end to partial because their content is composed and tested, while event admission, recipient binding, dispatch/idempotency and delivery remain absent. Current classification: **1 demonstrated, 10 partial, 1 missing; 6/12 = 50% APP-013 scope coverage**. Formal acceptance remains **0/12**. This is not overall MVP completion, engineering effort or production readiness. The original 42% table below is retained as the initial audit baseline, not current status.
+
+One of the original low-confidence 20-35 planned sections is review-ready; section size is unequal, so do not mechanically treat the remainder as an effort forecast. Re-estimate after the next implementation section as planned. The next proposed section is tenant-scoped email eligibility/recipient snapshot resolution, with local refusal/privacy proof and no credential issuance or sending; owner review required. APP-013 stays Now.
+
+## Initial audit baseline and scoring
 
 Audit baseline: backend `00337a756a177d3752204acfb082c2bf774d431f`; governance `7b72049c006f096cf9d79af334c980efb1772e56`. Both remotes were fetched and aligned during the audit. Evidence and source references below refer to that snapshot; future changes require re-scoring.
 
@@ -78,11 +88,11 @@ Total planning allowance: **20-35 bounded sections**, not equal-sized effort uni
 
 APP-013 remains the sole Now ticket. Future milestones are planning order, not permission to start other tickets; Global Next remains unassigned. After APP-013 acceptance, update pointer/board/handoff before promoting a ticket and explicitly map remaining channel/metrics/operations ownership to existing tickets rather than silently expanding APP-033 or another ticket.
 
-### Next bounded APP-013 continuation
+### Completed first bounded APP-013 continuation (review-ready, not released)
 
 Fixed customer appointment-email composition with local previews and tests, building on the retained optional email. Cover confirmation, reschedule and cancellation content from explicit canonical inputs: tenant branding, confirmed date/Eastern arrival window, reference/service type, private management action and calendar action where eligible, plus fallback and private-link warning. Cancellation must not offer an active management action.
 
-Use fictional fixtures and local-only rendering. Prove required input/state validation, escaping, timezone handling, cancellation omissions and credential-free operator previews/logs. No provider calls, recipient lookup expansion, actual credential issuance, queue/worker activation, email delivery or production action. Apply relevant implementation gates and stop at a focused review-ready commit. This docs checkpoint does not implement the section or mark delivery criteria complete.
+The completed local section uses fictional fixtures and proves input/state consistency, escaping, timezone handling, cancellation omissions and credential-free operator previews. No provider calls, recipient lookup, actual credential issuance, queue/worker activation, email delivery or production action. See the current checkpoint above; delivery criteria are not complete. Source snapshot checks do not establish live authority or freshness. The next proposed eligibility/recipient section must preserve these boundaries.
 
 ## Pilot acceptance checklist (all open)
 

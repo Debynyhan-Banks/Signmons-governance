@@ -2,7 +2,27 @@
 
 Last Updated: 2026-09-09
 
-## Latest: Approved CallDesk MVP Plan (2026-09-09, documentation-only)
+## Latest: Fixed Appointment-Email Composition (2026-09-09, inactive/review-ready)
+
+- Backend efa9e3136fc196a2d95704ac4a26c6bc5f7e9782 on existing PR #21; current focused branches retained.
+
+- Owner continued the approved MVP plan from fetched/aligned backend ce6b0b5 and governance 7c85781. APP-013 remains sole Now; FE-014 paused and original saved-checkout changes preserved.
+- Added pure, unregistered appointment-email composition for confirmation, reschedule and cancellation: fixed versioned subject/plain text/HTML, tenant brand/support phone, full job reference, service type and both Eastern arrival-window endpoints. No recipient lookup, database dependency, endpoint/module/worker registration or existing runtime consumer.
+- Runtime input checks reject unsupported kinds, mismatched status, pending Calendar operations, missing active event references, uncleared cancellation references, malformed/control-bearing text, noncanonical timestamps and unordered/sub-minute windows. These are caller-supplied snapshot consistency checks, not current database/provider truth, authorization, consent, payment or send-time eligibility proof.
+- Active messages require an already-authorized absolute HTTPS management URL at an explicit server-approved origin, exact /appointment/manage path, no query/userinfo and a bounded fragment compatible with the existing customer surface. Renderer never issues/verifies credentials. Cancellation rejects any action argument and omits all links/calendar attachments. Customer output is labeled customer-private; future transports must not log it.
+- Separate operator preview accepts no actions and explicitly projects only declared display inputs; it never reads an attached managementUrl property, renders a link or returns a calendar payload. Unknown customer/credential properties are omitted. This does not authorize arbitrary input strings containing secrets or replace caller role checks.
+- HTML escapes dynamic text/attributes and contains no external images/scripts/analytics. Errors are fixed and input-free. Plaintext headers/content need future MIME transport handling. Local browser fixtures use private/no-store, no-referrer and restrictive CSP.
+- Active messages include a minimal RFC 5545 calendar copy: UTC DTSTART/DTEND/DTSTAMP, stable tenant/job-derived hashed UID, private class, escaped text and UTF-8-aware 75-octet CRLF folding. No recipient, address, raw provider/job IDs, bearer link, organizer, alarm or METHOD. The copy is not live synchronization; replacement/import behavior is explicitly not guaranteed. Cancellation advises removing the saved copy and supplies no calendar action. Source: https://www.rfc-editor.org/rfc/rfc5545 (sections 3.1, 3.3.11, 3.6.1 and 3.8.7.2).
+- Validation: 55 new tests; 1075 passing backend tests/67 suites plus 3 prior skipped tests/1 skipped suite, backend lint/build/architecture/Prisma and script syntax/format pass. Unchanged UI passes lint, 159 tests and 15-page build. Four fresh full/omit-dev audits report zero findings.
+- Fictional actual-renderer browser proof passes 15 GETs, desktop 1440px/mobile 390px, active-only links, credential-free operator previews, keyboard focus, enlarged text/no overflow, empty storage/cookies and actual calendar download; cancelled attachment 404. Zero external/mutation/provider calls or page/console errors. Confirmation desktop/mobile, reschedule mobile, cancellation mobile and operator mobile screenshots visually inspected.
+- All five unchanged static browser regressions pass. Existing disposable PostgreSQL proof passes 16 migrations/11 prior process-crash cases plus Settings/Inbox browser and optional-email restart proofs; zero provider calls, no new schema/migration/crash case. Database removed and independently confirmed absent.
+- Not proven: email-client/MIME compatibility, calendar import/update behavior, actual recipient/tenant/credential binding, live canonical-state/consent policy or customer delivery/status/retry. Existing Calendar/retention/release and dependency-override maintenance risks remain; existing pg/Next/tooling warnings retained. No real customer/appointment/payment data, provider configuration, messages/charges, secrets/IAM/billing, merge, deployment or production migration.
+- Completion: APP-013 criteria 6 and 7 now have locally tested content composition and move from missing to partial; no dispatch/delivery proof. Index 6/12 = 50% scope coverage (1 demonstrated, 10 partial, 1 missing), not effort, overall MVP progress or production readiness; acceptance remains 0/12. One of the original low-confidence 20-35 planned sections is review-ready; do not mechanically convert that allowance into an ETA. Re-estimate after the next implementation section.
+- Stop review-ready. Next proposed bounded section after owner review: tenant-scoped email eligibility and recipient snapshot resolution using existing retained capture/job association, with local refusal/privacy proof and no credential issuance or sending. Not started here.
+
+Exact review commands and source/evidence: backend evidence/APP-013/readiness-report.md and email-composition/.
+
+## Earlier: Approved CallDesk MVP Plan (2026-09-09, documentation-only)
 
 - Owner approved the supervised CallDesk MVP boundary and completion audit in governance CALLDESK_MVP_PLAN.md: one approved business, English, online access and human supervision; required launch capabilities are not current availability claims. APP-013 remains sole Now. Next bounded continuation is fixed appointment-email composition with local previews/tests only; not implemented in this documentation checkpoint. No delivery/provider or production/release authorization.
 - Canonical pilot plan: [CALLDESK_MVP_PLAN.md](CALLDESK_MVP_PLAN.md). It includes capability/evidence mapping, deferrals, 12-criterion APP-013 audit, milestone estimates, open pilot acceptance checklist and risk stop rules. Older checkpoint estimates/next steps below are historical.
@@ -127,8 +147,8 @@ Last Updated: 2026-09-09
 
 ## Next Actions (Strict Order)
 
-1. Review the documentation-only MVP checkpoint and CALLDESK_MVP_PLAN.md. Source/evidence baseline remains backend 00337a756a177d3752204acfb082c2bf774d431f on PR #21; no application behavior changed. Confirm the distinction between required pilot capabilities, local evidence and release acceptance.
-2. After review, continue APP-013 with the identified fixed appointment-email composition section using fictional local previews/tests; no delivery, real credential issuance or provider activation. Follow the plan's bounded exit criteria and stop review-ready. APP-013 acceptance remains unchecked; future milestones require explicit pointer transitions.
+1. Review APP-013 fixed appointment-email composition on PR #21, incremental after ce6b0b5: all three notices, credential-free previews, safe canonical input checks and private calendar-copy semantics. Backend readiness-report.md has exact commands; email-composition/ has 55-test/new-browser evidence. No runtime registration, recipient resolution, credential issuance or delivery.
+2. After review by the owner, confirm the next bounded section: tenant-scoped email eligibility and recipient snapshot resolution with local refusal/privacy tests, no credential issuance or sending. Proposed, not started here. APP-013 remains sole Now; 50% scope-coverage index is not launch readiness and acceptance remains 0/12.
 3. Keep provider delivery disabled until an explicitly approved acceptance run; no external messages or release are authorized by this documentation checkpoint.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 
