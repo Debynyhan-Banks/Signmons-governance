@@ -378,7 +378,16 @@ Audit:
 - Explicit evaluations create `routing.rule_evaluated`; assignment audits embed the exact bounded `routing-v1` trace used by `dispatch-v2`.
 - Configuration writes and their audit event commit in one transaction.
 
-## APP-013 Legacy CREATE Messaging Safeguard
+## APP-013 Legacy CREATE Dispatch Safeguard
+
+- Dispatch pending policy now includes ACCEPTED jobs with either reserved window endpoint and no nonblank Calendar reference, even without an unfinished journal. Summary/detail use existing calendarSyncPending:true, ESCALATED classification and CALENDAR_SYNC_PENDING candidate reason; all candidates are ineligible and recommendation is null. The operator may inspect provisional local details but must not treat them as confirmed.
+- Assignment/reassignment/override and assignment cancellation refuse with existing office-review 409 before same-technician/unassigned no-op success. Tenant/undeleted lookup precedes the hold; missing/cross-tenant/deleted lookups retain not-found behavior. No new response fields, job status, schema or migration.
+- Both conditional mutation writes match observed status, reference, window endpoints and observed updatedAt plus submitted expectedUpdatedAt, tenant, deletedAt:null and no unfinished journal. Exact field matching rejects an intervening unconfirmed reservation even if a competing write preserves the timestamp. It does not serialize all job/provider changes or prove external Calendar state.
+- Six new unit cases (674 total) and real PostgreSQL evidence cover eighteen legacy snapshots/54 mutation refusals, tenant/deleted boundaries and two competing commits between read and write; held rows/audits remain unchanged. Existing 15 migrations/11 process-crash cases pass; no new crash case or provider call.
+- UI runtime unchanged; synthetic desktop/390px assigned/unassigned/full/partial fixtures preserve provisional banner and disabled assignment controls, while operations escalation remains available. Technician link generation, routing evaluation/audit and other screen actions are not newly guarded. Five browser suites, 60 UI tests/14 pages and four clean audits pass; no live acceptance.
+- Remaining legacy technician/lifecycle guarding, discovery/repair, authorized CREATE reader/worker/review ownership, external races, reschedule/cancel and SENDING recovery remain open. No real-data repair/deletion, provider configuration, activation, merge or deployment. Backend `8450113ebfb30a478a72ce476f9491dcda2e3114`; evidence: readiness-report.md and legacy-dispatch-summary.json.
+
+## APP-013 Legacy CREATE Messaging Safeguard (Earlier)
 
 - The shared transactional message evaluator returns CALENDAR_PENDING for an undeleted ACCEPTED job with either reserved service-window endpoint and no nonblank Calendar reference, even without an unfinished journal. Null/empty/whitespace references and partial windows are covered; missing/deleted records remain MISSING first. A terminal journal marker alone does not release an unconfirmed reservation.
 - Existing manual queue and durable capture reject pending work. Intent recovery checks pending before hash mismatch, defers 60 seconds without spending failure budget, and keeps PENDING with calendar_sync_pending. Exhausted owner retry cannot reset or audit the held intent. Pre-send delivery checks before decrypt/consent/provider, conditionally releases only its unsent claim to QUEUED, refunds the claim attempt and defers 60 seconds. No unknown/already-sent SENDING reset is added.
