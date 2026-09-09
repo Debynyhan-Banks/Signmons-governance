@@ -2,6 +2,10 @@
 
 Purpose: provide one unambiguous product definition and release bar so contributors and AI agents do not drift into a generic chatbot, generic FSM clone, or scope-sprawl SaaS.
 
+## Approved first pilot (2026-09-09)
+
+[CALLDESK_MVP_PLAN.md](CALLDESK_MVP_PLAN.md) is the owner-approved first-pilot boundary and acceptance plan. Signmons starts as a supervised AI front desk and dispatch assistant with required call/text/chat intake, booking/payment policy, customer communications, dispatcher/technician workflows and operational recovery. The seven-module vision below remains the roadmap, not current availability or a full-platform launch promise. APP-013 remains sole Now; future milestones still require explicit pointer transitions.
+
 ## Product Definition (Canonical)
 
 Signmons is an **AI front-office operating system for trades businesses**.

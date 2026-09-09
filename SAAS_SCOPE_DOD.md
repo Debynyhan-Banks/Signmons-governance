@@ -1,5 +1,9 @@
 # Signmons Scope + Definition of Done
 
+## Approved pilot scope clarification (2026-09-09)
+
+[CALLDESK_MVP_PLAN.md](CALLDESK_MVP_PLAN.md) defines the first owner-approved CallDesk pilot: one approved business, English, online access and human supervision. The broader scope below remains the platform roadmap, not a claim that all modules are in the first pilot. Pilot deferrals do not cancel future capabilities, alter paid-plan promises, waive non-negotiable rules or authorize release.
+
 ## 1) Mission
 
 Signmons is a multi-tenant AI front-office and dispatch SaaS for home-service businesses (HVAC, plumbing, electrical). It captures inbound demand, confirms critical customer/job data, schedules and dispatches work, supports the job-to-payment workflow, and delivers auditable operating records.

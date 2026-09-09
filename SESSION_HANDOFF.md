@@ -2,6 +2,12 @@
 
 Last Updated: 2026-09-09
 
+## Latest: Approved CallDesk MVP Plan (2026-09-09, documentation-only)
+
+- Owner approved the supervised CallDesk MVP boundary and completion audit in governance CALLDESK_MVP_PLAN.md: one approved business, English, online access and human supervision; required launch capabilities are not current availability claims. APP-013 remains sole Now. Next bounded continuation is fixed appointment-email composition with local previews/tests only; not implemented in this documentation checkpoint. No delivery/provider or production/release authorization.
+- Canonical pilot plan: [CALLDESK_MVP_PLAN.md](CALLDESK_MVP_PLAN.md). It includes capability/evidence mapping, deferrals, 12-criterion APP-013 audit, milestone estimates, open pilot acceptance checklist and risk stop rules. Older checkpoint estimates/next steps below are historical.
+- APP-013 scope-coverage index 42% (1 demonstrated, 8 partial, 3 missing; equal weights); not an engineering-effort or production-readiness percentage. Formal acceptance 0/12. Planning allowance 20-35 unequal bounded sections, low confidence, not a calendar ETA; re-estimate after two implementation sections. Seven APP-006 through APP-012 tickets have documented staging acceptance, not whole-MVP completion.
+
 ## Owner-Approved Product Direction (2026-09-01)
 
 - Owner approved Signmons as one AI front-office and dispatch platform with governed CallDesk, Dispatch, Money, Field, Customers, Growth, and Intelligence modules.
@@ -121,8 +127,8 @@ Last Updated: 2026-09-09
 
 ## Next Actions (Strict Order)
 
-1. Review APP-013 optional one-time customer email capture on backend `codex/app-013-transactional-messaging` (PR #21, 00337a756a177d3752204acfb082c2bf774d431f): encrypted per-conversation retention and job association; 1020 backend/159 UI tests, real database/concurrency/restart/AI-to-job proof and prior browser regressions. Exact commands: backend `evidence/APP-013/readiness-report.md` and `email-capture/summary.json`.
-2. After review by the owner, confirm the next bounded product section: fixed customer appointment email composition with local previews/tests is proposed, not started or approved here. No provider/delivery activation implied. Old percentage estimates remain retired; 12 broad APP-013 criteria remain unchecked. No automatic ticket transition or production/release actions.
+1. Review the documentation-only MVP checkpoint and CALLDESK_MVP_PLAN.md. Source/evidence baseline remains backend 00337a756a177d3752204acfb082c2bf774d431f on PR #21; no application behavior changed. Confirm the distinction between required pilot capabilities, local evidence and release acceptance.
+2. After review, continue APP-013 with the identified fixed appointment-email composition section using fictional local previews/tests; no delivery, real credential issuance or provider activation. Follow the plan's bounded exit criteria and stop review-ready. APP-013 acceptance remains unchecked; future milestones require explicit pointer transitions.
 3. Keep provider delivery disabled until an explicitly approved acceptance run; no external messages or release are authorized by this documentation checkpoint.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 

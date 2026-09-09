@@ -23,7 +23,7 @@ Purpose: single active queue for execution.
 ## Now
 
 - [ ] APP-013 Twilio-backed notification center and transactional customer messaging (`SCR-APP-021`, `SCR-APP-022`, `SCR-TECH-005`)
-  - Owner approved one-time optional customer email capture/retention during intake, encrypted on the conversation and associated to the job through the existing tenant-scoped link. No customer-master overwrite, email delivery, provider configuration or production/release action. APP-013 remains Now; prior estimates remain retired.
+  - Owner approved the supervised CallDesk MVP boundary and completion audit in governance CALLDESK_MVP_PLAN.md: one approved business, English, online access and human supervision; required launch capabilities are not current availability claims. APP-013 remains sole Now. Next bounded continuation is fixed appointment-email composition with local previews/tests only; not implemented in this documentation checkpoint. No delivery/provider or production/release authorization.
 
 ## Next
 

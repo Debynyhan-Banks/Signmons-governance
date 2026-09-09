@@ -1,5 +1,9 @@
 # MVP Backlog
 
+## Approved first-pilot boundary (2026-09-09)
+
+[CALLDESK_MVP_PLAN.md](CALLDESK_MVP_PLAN.md) defines the owner-approved supervised CallDesk pilot, required capabilities, deferred roadmap, acceptance checklist and completion baseline. This backlog also contains the wider platform roadmap; it is not the pilot completion denominator. APP-013 remains sole Now; later milestones do not authorize ticket promotion or production actions.
+
 ## Epic E1 - Governance and Delivery Discipline
 
 - GOV-001: Establish governance repo and canonical docs
