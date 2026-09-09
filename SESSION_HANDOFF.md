@@ -2,7 +2,25 @@
 
 Last Updated: 2026-09-09
 
-## Email Consent and Expiry Contract Proposal (2026-09-09, latest/review-ready)
+## Email Consent and Expiry Contract Approved (2026-09-09, latest/documentation-only)
+
+- Backend documentation commit 9597ef1fcc9fbbe1976a7ace26cab6a93b3b2fb3 pushed on PR #21; incremental abf262c..9597ef1. Runtime remains aa4c547.
+
+- Owner replied "i approve" to the explicit D1-D4 approval question. All four rules are approved without amendment; this is design approval, not customer consent, implementation activation or release authority.
+- D1: explicit one-job/one-mailbox appointment permission. D2: separate purpose-bound mailbox verification before private appointment emails. D3: expiry 24 hours after immutable event recording, capped at bound window start for confirmation/reschedule, with exact-deadline refusal and no resurrection. D4: grant ends on revocation/address replacement or 24 hours after completion/cancellation; 90-day post-close evidence retention remains subject to retention/security/legal-hold compatibility before any purge.
+- Canonical rules: governance APP013_EMAIL_CONSENT_EXPIRY_PROPOSAL.md, now APPROVED DESIGN — NOT IMPLEMENTED. Approval recorded from fetched/aligned backend abf262cb25f1870e240e15be5e5a0412b698c59a and governance f5ccbae852f19a139f33732747822ed943108b78. APP-013 remains sole Now, Global Next unassigned and FE-014 paused.
+- Documentation only. Runtime remains aa4c547 with eligible:false and deliveryAuthorized:false; no schema, collection UI, verification transport, queue, credentials, sends, purge, production migration or release changes. Historical events remain blocked. Original dirty checkouts are preserved.
+- Current validation: governance placement/consistency, four decision markers/four relative links, backend architecture, documentation-only scope and whitespace. Runtime tests, lint/build, browser QA, database/crash checks and audits are not rerun; earlier results remain historical.
+- Next proposed bounded section, not started or activated here: consent-evidence schema and transaction-local one-time job binding with synthetic tests. No collection UI, verification transport, queue admission, credentials or sending in that section. Verification challenge design and retention/hold compatibility still need their own implementation/release review.
+- Completion unchanged: 50% APP-013 scope coverage, 0/12 formal acceptance; 7-12 unequal APP-013 / 20-35 pilot sections, low confidence, not an overall MVP percentage or ETA. Verification/retention sizing may increase these allowances.
+
+### Approval checkpoint review
+
+1. Confirm the canonical contract records D1-D4 as approved design, with no new customer or delivery authority.
+2. Review the backend incremental diff after abf262c on PR #21 and governance diff after f5ccbae: Markdown plus approval-summary.json only. Preserve the earlier proposal evidence as historical.
+3. Run backend `npm run -s arch:check` and governance `node --test scripts/execution-placement.test.mjs && node scripts/docs-consistency-check.mjs`; run `git diff --check` in both. No runtime or browser validation is newly claimed.
+
+## Earlier: Email Consent and Expiry Contract Proposal (2026-09-09, review-ready)
 
 - Backend documentation commit abf262cb25f1870e240e15be5e5a0412b698c59a pushed and remotely verified on PR #21. Incremental aa4c547..abf262c; runtime unchanged from aa4c547.
 
@@ -251,8 +269,8 @@ Exact review commands and source/evidence: backend evidence/APP-013/readiness-re
 
 ## Next Actions (Strict Order)
 
-1. Review APP013_EMAIL_CONSENT_EXPIRY_PROPOSAL.md and the APP-013 documentation-only checkpoint, backend incremental after aa4c547. Explicitly accept or amend D1-D4: per-job permission, separate mailbox verification, event deadlines and grant/evidence lifecycle. The proposal is not active policy; no runtime gates are newly claimed.
-2. After review and approval of the contract rules by the owner, confirm one bounded schema/transaction-local consent-evidence and one-time job-binding implementation with synthetic tests. No customer collection UI, verification transport, credentials, queue admission, provider or release activation in that next section. If D1-D4 are changed, update the contract before coding. APP-013 remains sole Now; 50% scope coverage, 0/12 acceptance and 7-12 APP-013 / 20-35 pilot unequal sections remain low-confidence allowances; size verification/retention work and reassess at durable admission.
+1. Review the recorded D1-D4 approval in APP013_EMAIL_CONSENT_EXPIRY_PROPOSAL.md and the latest documentation-only checkpoint. The owner approved all four rules without amendment; do not ask again for the same contract approval. Approved design is not active policy or customer authority; no runtime gates are newly claimed.
+2. After review of this approval checkpoint, confirm one bounded schema/transaction-local consent-evidence and one-time job-binding implementation with synthetic tests. It is proposed, not started by the contract approval record. No collection UI, verification transport, credentials, queue admission, provider or release activation in that next section. APP-013 remains sole Now; 50% scope coverage, 0/12 acceptance and 7-12 APP-013 / 20-35 pilot unequal sections remain low-confidence allowances; size verification/retention work and reassess at durable admission.
 3. Keep provider delivery disabled until an explicitly approved acceptance run; no external messages or release are authorized by this documentation checkpoint.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 

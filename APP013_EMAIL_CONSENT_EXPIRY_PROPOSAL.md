@@ -1,19 +1,19 @@
-# APP-013 Appointment Email Consent and Expiry — Proposal v1
+# APP-013 Appointment Email Consent and Expiry — Approved Contract v1
 
-Status: **PROPOSED — awaiting owner approval of the rules below.** Prepared 2026-09-09 after approval of the inactive eligibility checkpoint. Approval to draft this document is not approval of its proposed values or authority model. No runtime, database, consent capture, verification message, credential, queue or delivery is enabled here.
+Status: **APPROVED DESIGN — NOT IMPLEMENTED.** Owner approved D1–D4 without amendment on 2026-09-09 with "i approve" in response to the explicit D1–D4 approval question. This records product/security contract approval only, not customer consent, mailbox verification, implementation activation or release. No runtime, database, consent capture, verification message, credential, queue or delivery is enabled here.
 
-Scope: the supervised CallDesk pilot and three customer appointment emails only. APP-013 remains Now; no ticket promotion, marketing work or release. These are conservative proposed product/security rules, not a statement of legal requirements or legal compliance. Jurisdiction/provider compliance and production retention remain release-review obligations.
+Scope: the supervised CallDesk pilot and three customer appointment emails only. APP-013 remains Now; no ticket promotion, marketing work or release. These are approved product/security rules, not a statement of legal requirements or legal compliance. Jurisdiction/provider compliance and production retention remain release-review obligations.
 
-## Recommended decisions for the owner
+## Approved decisions (D1–D4)
 
-| Decision              | Recommended pilot rule                                                                                                                                                                      | Consequence / tradeoff                                                                                                                             |
+| Decision              | Approved pilot rule                                                                                                                                                                         | Consequence / tradeoff                                                                                                                             |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | D1 Permission scope   | Explicit customer opt-in for confirmation, reschedule and cancellation emails for one job at one confirmed mailbox; no marketing or other-job permission                                    | More narrowly scoped than a permanent customer-level flag; new jobs need their own permission                                                      |
 | D2 Mailbox authority  | Require purpose-bound mailbox verification before any of these private appointment emails; verification is not itself consent                                                               | Adds a verification step and implementation work; fewer wrong-address disclosures, but unverified customers receive no appointment email           |
 | D3 Event deadline     | All three events expire 24 hours after their original immutable recording time; confirmation/reschedule additionally expire at the current bound arrival-window start, whichever is earlier | Late notifications are suppressed and surfaced to operations rather than sent after the useful window                                              |
-| D4 Evidence lifecycle | Consent ends on revocation/address replacement or 24 hours after job completion/cancellation, whichever comes first; proposed evidence retention is 90 days after job closure               | Bounded per-job authority and post-close evidence; retention policy/hold compatibility must be approved before any purge implementation or release |
+| D4 Evidence lifecycle | Consent ends on revocation/address replacement or 24 hours after job completion/cancellation, whichever comes first; evidence retention is 90 days after job closure                        | Bounded per-job authority and post-close evidence; retention policy/hold compatibility must be approved before any purge implementation or release |
 
-Approval should name D1–D4 (or identify changes). Approval of these product rules alone must not be recorded as customer consent, mailbox verification, provider authorization or release approval. The 24-hour and 90-day values are proposals, not configured settings or guarantees.
+D1–D4 are approved without amendment. These product rules are not customer consent, mailbox verification, provider authorization or release approval. The 24-hour and 90-day values are approved design choices, not configured settings or runtime guarantees; retention/hold compatibility remains required before purge implementation.
 
 ## 1. Facts at the starting checkpoint
 
@@ -48,7 +48,7 @@ Use immutable evidence records plus a versioned current-state projection. Sugges
 
 ## 4. Verification, revocation and recipient changes
 
-- D2 proposes verified mailbox control before sending private appointment content. A verification challenge is a separate purpose, narrowly scoped to the same tenant/intake-or-job/mailbox with a bounded lifetime, one-time consumption, anti-abuse limits and no appointment-management authority. Its precise challenge lifetime, secure token design and transport acceptance belong to its bounded implementation review; they are not silently chosen here.
+- D2 requires verified mailbox control before sending private appointment content. A verification challenge is a separate purpose, narrowly scoped to the same tenant/intake-or-job/mailbox with a bounded lifetime, one-time consumption, anti-abuse limits and no appointment-management authority. Its precise challenge lifetime, secure token design and transport acceptance belong to its bounded implementation review; they are not silently chosen here.
 - The customer must explicitly request that verification step. A verification email must contain no appointment details or management link. This document does not authorize even a verification send or provider setup. Alternative existing verified-mailbox evidence may be reused only after its exact authority, scope and freshness are reviewed; no such source is established at this checkpoint.
 - Verification and consent are separate: neither implies the other. Verification may complete after event finalization, but only an already event-bound grant can be used, the mailbox must be unchanged, and the event must still be current and unexpired. A grant obtained after the event cannot backfill it.
 - Revocation immediately makes future admission/pre-dispatch checks refuse for this job/mailbox/purpose. Suppress unsent queue items without changing the appointment. Revocation must work through a customer-authorized preference/suppression surface and an authenticated operator suppression fallback; neither may grant new permission.
@@ -58,9 +58,9 @@ Use immutable evidence records plus a versioned current-state projection. Sugges
 
 ## 5. Event expiry and supersession
 
-For proposed policy APPOINTMENT_EMAIL_EXPIRY_V1, define recordedAt as the original immutable AppointmentEmailIntent.createdAt, expressed in UTC. It is not enqueue time, reread time, grant time or retry time. Calendar finalization must already be valid; the clock does not repair unknown external outcomes.
+For approved design policy APPOINTMENT_EMAIL_EXPIRY_V1, define recordedAt as the original immutable AppointmentEmailIntent.createdAt, expressed in UTC. It is not enqueue time, reread time, grant time or retry time. Calendar finalization must already be valid; the clock does not repair unknown external outcomes.
 
-| Kind                    | Proposed effective deadline                                                                |
+| Kind                    | Approved design deadline                                                                   |
 | ----------------------- | ------------------------------------------------------------------------------------------ |
 | APPOINTMENT_CONFIRMED   | min(recordedAt + 24 hours, bound windowStart)                                              |
 | APPOINTMENT_RESCHEDULED | min(recordedAt + 24 hours, bound new windowStart)                                          |
@@ -72,12 +72,12 @@ For proposed policy APPOINTMENT_EMAIL_EXPIRY_V1, define recordedAt as the origin
 - A cancellation notice still requires its exact finalized cancellation event and prior-window snapshot. Reopening/rebooking the job invalidates that old notice; it must not cancel a new appointment in the customer's understanding.
 - Expired/suppressed work creates a privacy-safe operational outcome in the future queue workflow. It must not undo booking, invent a new event, send stale information, or automatically contact the customer through another channel. An authorized person can review the current appointment and choose an already approved fallback.
 
-Examples (proposed policy, UTC): confirmation recorded Monday 10:00 with a Tuesday 15:00 window expires Tuesday 10:00; reschedule recorded Monday 10:00 for Monday 11:00 expires Monday 11:00; cancellation recorded Monday 10:00 expires Tuesday 10:00. A newer job revision at Monday 10:05 can suppress any of them earlier. The 24-hour clock is not a promise of delivery within 24 hours.
+Examples (approved design policy, UTC): confirmation recorded Monday 10:00 with a Tuesday 15:00 window expires Tuesday 10:00; reschedule recorded Monday 10:00 for Monday 11:00 expires Monday 11:00; cancellation recorded Monday 10:00 expires Tuesday 10:00. A newer job revision at Monday 10:05 can suppress any of them earlier. The 24-hour clock is not a promise of delivery within 24 hours.
 
 ## 6. Retention and privacy boundary
 
-- D4 proposes no ongoing grant after revocation/address replacement, or later than terminal job time + 24 hours. This preserves the proposed cancellation-notice window without granting future-job permission. Reopened jobs need fresh permission; an old terminal grant is not revived.
-- Proposed grant/verification/revocation evidence retention is 90 days after job closure, subject to an approved security/legal-hold policy. This is an engineering proposal, not an assertion that 90 days satisfies a legal obligation. Before purge implementation, reconcile it with existing conversation, job, audit, Calendar-journal and tenant retention contracts.
+- D4 requires no ongoing grant after revocation/address replacement, or later than terminal job time + 24 hours. This preserves the approved cancellation-notice window without granting future-job permission. Reopened jobs need fresh permission; an old terminal grant is not revived.
+- Approved design for grant/verification/revocation evidence retention is 90 days after job closure, subject to an approved security/legal-hold policy. This is a product/security choice, not an assertion that 90 days satisfies a legal obligation. Before purge implementation, reconcile it with existing conversation, job, audit, Calendar-journal and tenant retention contracts.
 - Purging evidence never changes “missing” into “permitted.” Retained events/queue items referencing unavailable authority remain suppressed. Necessary non-sensitive suppression/idempotency tombstones must outlive all retry/retention references under the approved retention plan; do not delete them in a way that enables duplicate sends.
 - No new purge, retention migration, hold override, secrets change or evidence export is authorized. Operators get fixed statuses/reasons and approved masked identifiers, not grant proof tokens, raw emails, transcripts or private management URLs. Public errors remain tenant-safe and input-free.
 
@@ -98,10 +98,10 @@ These are future acceptance obligations, not passing tests in this documentation
 
 ## 8. Review and implementation boundaries
 
-Owner review: accept or amend D1–D4, especially mailbox verification friction and the 24-hour deadline. Retention/hold and verification transport details remain release/implementation gates; approval must not conceal those unresolved details.
+Owner decision recorded: D1–D4 approved without amendment on 2026-09-09. No further approval of these same rules is needed. Retention/hold compatibility and verification challenge/transport details remain separate implementation/release gates.
 
-Next proposed bounded implementation **only after contract approval**: schema and transaction-local consent evidence/one-time job binding with synthetic tests and no collection UI, verification transport, queue admission, credentials or sending. Review that section before connecting the customer response flow. This is an implementation sequence within APP-013, not permission to execute all remaining sections.
+Next proposed bounded implementation **not started or activated by this approval record**: schema and transaction-local consent evidence/one-time job binding with synthetic tests and no collection UI, verification transport, queue admission, credentials or sending. Review that section before connecting the customer response flow. This is an implementation sequence within APP-013, not permission to execute all remaining sections.
 
 Current completion estimate remains 50% APP-013 scope coverage and 0/12 formal acceptance. Planning allowance remains 7–12 unequal APP-013 sections and 20–35 for the supervised pilot, low confidence, not an ETA. D2 and the unresolved evidence/retention integration can increase the allowance; reassess when those implementation boundaries are sized and at demonstrated durable admission rather than treating this proposal as completed functionality.
 
-Sources of current implementation truth: [APP-013 ticket](TICKETS/APP-013.md), [data contracts](DATA_CONTRACTS.md), [MVP plan](CALLDESK_MVP_PLAN.md), [global pointer](GLOBAL_EXECUTION_POINTER.md); backend evidence/APP-013/readiness-report.md and src/communications/appointment-email-eligibility.service.ts at aa4c547. All rule choices in D1–D4 are new proposals, not findings of existing behavior.
+Sources of current implementation truth: [APP-013 ticket](TICKETS/APP-013.md), [data contracts](DATA_CONTRACTS.md), [MVP plan](CALLDESK_MVP_PLAN.md), [global pointer](GLOBAL_EXECUTION_POINTER.md); backend evidence/APP-013/readiness-report.md and src/communications/appointment-email-eligibility.service.ts at aa4c547. D1–D4 are approved design choices, not findings of existing runtime behavior.
