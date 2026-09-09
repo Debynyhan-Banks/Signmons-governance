@@ -38,15 +38,15 @@ These are launch requirements, not claims that every capability is available now
 
 These deferrals do not weaken safety, tenant isolation, payment integrity, communication consent, data ownership or basic operational recovery. They do not authorize advertising unavailable features or changing paid-plan promises.
 
-## Current progress checkpoint (2026-09-09, after email composition)
+## Current progress checkpoint (2026-09-09, after email recipient snapshot)
 
-Backend checkpoint: efa9e3136fc196a2d95704ac4a26c6bc5f7e9782 on PR #21. Scope and release boundaries below remain unchanged.
+Backend checkpoint: see GLOBAL_EXECUTION_POINTER.md for the exact current PR #21 commit. Scope and release boundaries below remain unchanged.
 
-Fixed confirmation/reschedule/cancellation email content is now locally implemented and tested, with credential-free previews and private calendar-copy output; no runtime consumer, recipient lookup, credential issuance or delivery. Evidence: backend evidence/APP-013/email-composition/ and readiness-report.md; 55 new tests, 1075 backend/159 UI tests, browser/database regressions and four clean audits.
+Fixed email composition and tenant-scoped recipient resolution are now locally implemented and tested, both inactive. Recipient resolution uses one valid origin/session with verified owner/admin context; it never authorizes delivery, verifies mailbox ownership or proves a finalized event. Evidence: backend evidence/APP-013/email-recipient/database-summary.json and readiness-report.md; 53 additional tests, 1128 backend/159 UI tests, 6 successful/26 refused real database reads, browser regressions and four clean audits. No credentials, queue/worker activation or delivery.
 
-Against the unchanged rubric below, criteria 6 and 7 move from missing end-to-end to partial because their content is composed and tested, while event admission, recipient binding, dispatch/idempotency and delivery remain absent. Current classification: **1 demonstrated, 10 partial, 1 missing; 6/12 = 50% APP-013 scope coverage**. Formal acceptance remains **0/12**. This is not overall MVP completion, engineering effort or production readiness. The original 42% table below is retained as the initial audit baseline, not current status.
+Against the unchanged rubric below, criteria 6 and 7 remain partial: composition and private recipient binding have local evidence, but consent/policy, finalized-event binding, durable admission and delivery remain incomplete. No additional criterion crosses the demonstrated boundary. Current classification: **1 demonstrated, 10 partial, 1 missing; 6/12 = 50% APP-013 scope coverage**. Formal acceptance remains **0/12**. This is not overall MVP completion, engineering effort or production readiness. The original 42% table below is retained as the initial audit baseline, not current status.
 
-One of the original low-confidence 20-35 planned sections is review-ready; section size is unequal, so do not mechanically treat the remainder as an effort forecast. Re-estimate after the next implementation section as planned. The next proposed section is tenant-scoped email eligibility/recipient snapshot resolution, with local refusal/privacy proof and no credential issuance or sending; owner review required. APP-013 stays Now.
+The planned two-section reassessment is complete (composition and recipient resolution). Retain a **20-35 section low-confidence remaining allowance**, not a mechanical subtraction or calendar ETA: APP-013 still needs independent channel/event policy, immutable finalized-event snapshots, durable admission and credential binding, transport/status, safe failure/retry controls, operator visibility, broader SMS coverage and approved integration acceptance. These are grouped into the 7-12 APP-013 allowance below; other milestones remain unvalidated. The original range was too coarse to justify tightening from two local sections alone. Reassess at the durable email admission checkpoint or sooner if scope/provider evidence changes. Next proposed after owner review: independent default-off customer-email event controls with tenant/role/version checks and no delivery. APP-013 stays Now.
 
 ## Initial audit baseline and scoring
 
@@ -84,7 +84,7 @@ The preceding audit freshly passed four backend/UI full/production-only dependen
 | AI voice and channel handoffs | APP-033 plus explicitly mapped SMS/missed-call ownership; approved calls/intake or recoverable human fallback | 6-10 |
 | Pilot operational acceptance | Minimal metrics, onboarding, access, monitoring, restore/rollback and full-journey owner acceptance | 3-6 |
 
-Total planning allowance: **20-35 bounded sections**, not equal-sized effort units or a delivery-date promise. Re-estimate after the next two implementation sections. Voice/provider integration and release acceptance are major uncertainties; uncovered work may increase the allowance. Freeze this pilot denominator; add proposed scope only through explicit owner review.
+Reassessed remaining planning allowance: **20-35 bounded sections**, not equal-sized effort units or a delivery-date promise. Two-section reassessment is recorded above; next reassessment at durable email admission, not after an arbitrary percentage increase. Voice/provider integration and release acceptance are major uncertainties; uncovered work may increase the allowance. Freeze this pilot denominator; add proposed scope only through explicit owner review.
 
 APP-013 remains the sole Now ticket. Future milestones are planning order, not permission to start other tickets; Global Next remains unassigned. After APP-013 acceptance, update pointer/board/handoff before promoting a ticket and explicitly map remaining channel/metrics/operations ownership to existing tickets rather than silently expanding APP-033 or another ticket.
 
@@ -92,7 +92,7 @@ APP-013 remains the sole Now ticket. Future milestones are planning order, not p
 
 Fixed customer appointment-email composition with local previews and tests, building on the retained optional email. Cover confirmation, reschedule and cancellation content from explicit canonical inputs: tenant branding, confirmed date/Eastern arrival window, reference/service type, private management action and calendar action where eligible, plus fallback and private-link warning. Cancellation must not offer an active management action.
 
-The completed local section uses fictional fixtures and proves input/state consistency, escaping, timezone handling, cancellation omissions and credential-free operator previews. No provider calls, recipient lookup, actual credential issuance, queue/worker activation, email delivery or production action. See the current checkpoint above; delivery criteria are not complete. Source snapshot checks do not establish live authority or freshness. The next proposed eligibility/recipient section must preserve these boundaries.
+The first section used fictional fixtures to prove input/state consistency, escaping, timezone handling, cancellation omissions and credential-free operator previews. The second now resolves a private recipient from retained capture, but does not authorize delivery or establish finalized event truth. No provider calls, actual credential issuance, queue/worker activation, email delivery or production action. See the current checkpoint above; delivery criteria remain incomplete.
 
 ## Pilot acceptance checklist (all open)
 
