@@ -2,7 +2,29 @@
 
 Last Updated: 2026-09-09
 
-## Credential-Bound Intake Continuation (2026-09-09, latest/review-ready)
+## Local Authenticated Browser Continuation (2026-09-09, latest/review-ready)
+
+- Backend commit b5a089fa45f010684d224a0b35d016459ca6e13f pushed and remotely verified on PR #21; incremental c3b4b23..b5a089f.
+
+- Owner approved the proposed bounded section with "proceed". Fetched/aligned starting commits: backend c3b4b23659592451827add72d8603d4cd371d48a and governance c0678fbd5fad79163fd9403e188f5702b9e5e441. APP-013 stays sole Now; Global Next unassigned, FE-014 paused, original dirty checkouts preserved.
+- Added inactive /customer-session/continue dispatch through the existing fixed-origin/verified-server-context/credential/body/budget boundary. Exact sessionToken/interactionId/message input, optional adapter fails closed, explicit reply/revision/deliveryAuthorized:false projection. No production module/controller/listener registration. Existing protected service owns transcript, expiry, replay and atomic audit checks unchanged.
+- New fictional customer-intake-browser HTML/JS keeps credentials, transcript and one immutable pending request in memory. Unknown network/timeout/429/503/malformed outcomes disable editing/new submits; explicit retry reuses the exact ID/message/session. Request/auth refusals and stale 409 clear private state with office/new-request guidance. No automatic application retry, adoption, renewal or appointment recovery.
+- Clear/page exit/expiry invalidates the client generation and aborts its fetch; late replies cannot populate a new session. Client abort does not retract committed server work. Fifteen-second client timeout is not a provider deadline. Strict receipt revision, textContent rendering, private/no-store/no-referrer responses and no cookies/web storage/credential URLs.
+- Validation: 14 new transport unit tests; 1425 backend tests / 80 passing suites, prior 3 tests / 1 suite skipped. Backend lint/build/architecture/Prisma, UI lint/170 tests/15-page build, changed-script syntax/format and diff checks pass. Four fresh full/production dependency audits report zero findings.
+- Nine new browser/HTTP/database checks at 1440/390 widths pass: actual bootstrap/continuation persistence, literal HTML text rendering, post-commit 503 acknowledgment loss and exact manual replay, stale/expired refusal, clear-during-in-flight isolation, local deadline/reload loss, privacy and unchanged jobs/consent/finalized intents. Six scripted reply calls, zero provider calls; mobile conversation/expiry screenshots inspected. First socket-reset fault did not reliably expose the pending state, so final proof explicitly models a gateway 503 after commit; no exactly-once network claim.
+- Full disposable regression suite also passes: existing nineteen migrations, twelve transcript checks, prior protected/consent/session/browser/Settings/Inbox, nineteen process-crash cases and eligibility checks. No new migration/process-crash case. Failed and successful runs removed their fixture databases; cleanup query returns no rows.
+- No production UI/route/key/config/package/schema change, actual AI/tool/booking, collection, verification, queue/sending, provider action, merge/deploy, production migration, IAM/secrets/billing or real data. Production transport/logging/distributed limiter/key lifecycle, integrated protected intake, retention/verification/admission/delivery and Calendar/pre-finalization/old-writer compatibility remain.
+- Completion unchanged: 50% APP-013 scope coverage (1 demonstrated, 10 partial, 1 missing), formal acceptance 0/12. Retain 7-12 unequal APP-013 / 20-35 pilot remaining sections, low confidence, not overall MVP percentage or ETA. This connects local safeguards but does not complete an end-to-end acceptance criterion.
+- Stop for review. Next proposed bounded section: an integrated local protected intake journey combining transcript and optional email/consent with a validated job draft, using scripted collaborators and no Calendar/payment/provider activation. No ticket transition or live AI/booking/sending activation.
+
+### Review steps
+
+1. Review PR #21 incremental after c3b4b23: transport/budget/tests, fictional browser assets and verification hook, evidence and board. Confirm production registrations, UI package, schema and dependencies unchanged.
+2. Run backend lint/full tests/architecture/build/Prisma; UI lint/tests/build; full and production npm audits in both roots.
+3. Follow evidence/APP-013/customer-intake-browser/README.md for exact disposable database/browser commands. Inspect summary.json, validation-summary.json and conversation-390.png / expired-390.png. Cleanup query must return no rows.
+4. Run governance placement/consistency and both git diff --check. Review APP013_CUSTOMER_BROWSER_TRANSPORT.md, session security plan and data contracts before any activation.
+
+## Earlier: Credential-Bound Intake Continuation (2026-09-09, review-ready)
 
 - Backend commit c3b4b23659592451827add72d8603d4cd371d48a pushed and remotely verified on PR #21; incremental 43108f1..c3b4b23.
 
@@ -380,8 +402,8 @@ Exact review commands and source/evidence: backend evidence/APP-013/readiness-re
 
 ## Next Actions (Strict Order)
 
-1. Review the credential-bound intake continuation on PR #21, incremental after 43108f1, and its evidence README. Confirm encrypted owned history, replay/concurrency/rollback/expiry refusal and no production registration or AI/booking activation.
-2. After review, confirm one bounded local authenticated browser continuation section with same-interaction retry and stale/expired-session UX, still scripted-only. Production AI/booking, BFF/TLS/proxy/logging, distributed limits, key/fingerprint lifecycle and verification/retention remain dependencies. No collection, queue/sending or release authority. APP-013 stays sole Now; coverage 50%, acceptance 0/12; 7-12 APP-013 / 20-35 pilot unequal sections, low confidence.
+1. Review local authenticated browser continuation on PR #21, incremental after c3b4b23; follow customer-intake-browser evidence for replay/expiry/stale/late-response proof. Confirm no production route, AI/booking, collection or sending activation.
+2. After review, confirm one bounded section: an integrated local protected intake journey combining transcript and optional email/consent with a validated job draft, using scripted collaborators and no Calendar/payment/provider activation. Production AI/booking, transport/key lifecycle, verification/retention/admission remain gated. APP-013 stays Now; 50% scope coverage, 0/12 acceptance, 7-12 APP-013 / 20-35 pilot unequal sections, low confidence.
 3. Keep provider delivery disabled until an explicitly approved acceptance run; no external messages or release are authorized by this documentation checkpoint.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 
