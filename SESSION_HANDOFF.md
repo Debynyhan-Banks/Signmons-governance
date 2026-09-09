@@ -2,7 +2,30 @@
 
 Last Updated: 2026-09-09
 
-## Local Customer Consent Session and Prompt Binding (2026-09-09, latest/review-ready)
+## Protected Customer Intake Isolation (2026-09-09, latest/review-ready)
+
+- Backend commit 18cd9a9847ba1823c02c4231ef7b1f6ecd26e010 pushed and remotely verified on PR #21; incremental abd9b5a..18cd9a9.
+
+- Owner's "continue" approves one bounded continuation of the prior local security model. Started from fetched/aligned backend abd9b5a2f65506b12839d4b7252b2f865c2531c0 and governance fe2dd496d989b7fba2a3f083af76d3bf71586abd. APP-013 stays sole Now, Global Next unassigned, FE-014 paused; original dirty checkouts preserved.
+- Fresh bootstrap now writes server-owned collectedData.customerSessionVersion:1. ConversationsService.ensureConversation and legacy email observe/requestOnce refuse every present marker (including malformed values). Both existing triage controllers converge on that service and are tested to refuse before AI, transcript, capture, job or scheduling work. Ordinary unmarked legacy intake remains unchanged; this does NOT retrofit customer authentication onto every historical session.
+- Added unregistered CustomerConsentCaptureService for explicit normalized-mailbox capture with a valid customer credential. Shared session lock revalidates exact marker, tenant/customer/conversation/session under advisory and row locks. Capture and privacy-safe audit commit together; expiry after persistence rolls back both. Concurrent identical capture creates one audit; replay preserves ciphertext/time, replacement refuses. No grant, mailbox verification, event binding or sending is created.
+- Customer prompt/response now require the same protected marker and lock boundary. Never upgrade or adopt an unmarked historical session. Marker is application-owned JSON preserved by current writers, not a database-immutable security constraint; privileged/direct SQL, retention, old-writer rollout and full protected AI orchestration still require release review.
+- Bootstrap/expiry/loss behavior is defined and locally illustrated: memory-only credential, no automatic renewal/adoption, clear mailbox/token on unavailable session, explicit new request creates a fresh scope. Lost capture acknowledgment may retry identical input with the same still-valid credential; a lost session cannot recover old appointments/consent. Office assistance for existing appointments. Production BFF/HTTPS/origin/CSRF/abuse/redaction implementation remains absent.
+- Validation: 26 new unit tests; 1331 backend tests / 77 passing suites, prior 3 tests / 1 suite skipped. Backend lint/build/architecture/Prisma, script syntax/format and whitespace pass. Unchanged UI lint, 170 tests, 15-page build; four fresh full/production dependency audits report zero findings.
+- Disposable PostgreSQL applies the existing 19 migrations. Ten new protected-intake checks pass, plus the prior 18 session/24 consent/19 process-crash/23 eligibility checks and real local Settings/Inbox browser/API/database regressions. New checks use actual controller methods/service/database with stubbed downstream collaborators, not production HTTP auth acceptance. No new process-crash test or migration is claimed.
+- New fictional browser test at 1440/390 widths: expiry clears the private form, reload loses the credential, explicit restart creates a distinct scope, successful capture remains deliveryAuthorized:false. Four GET/ten POST, six unique fresh scopes, no page errors/external requests/storage/provider calls; mobile screenshot inspected. Prior consent grant/decline browser proof passes. Five unrelated static browser scripts and email composition are not rerun.
+- No module/controller/configuration/production UI/schema/package activation, live key, provider, collection, verification, queue, send, merge, deploy, production migration, IAM/secrets/billing or real-data action. Existing Calendar/pre-finalization/release compatibility, retention ordering and dependency override maintenance remain open.
+- Completion remains 50% APP-013 scope coverage (1 demonstrated, 10 partial, 1 missing), 0/12 formal acceptance; not overall MVP completion or production readiness. Keep 7-12 unequal APP-013 / 20-35 pilot remaining sections, low confidence, not an ETA. Transport/full protected intake, fingerprint lifecycle, verification/retention and durable admission still need sizing.
+- Stop for review. Next proposed bounded section: local same-origin bootstrap transport protections (origin/CSRF, request limits and private-response/redaction behavior), still no live route/configuration or collection. Full credential-bound AI intake is a separate remaining dependency; no automatic ticket transition.
+
+### Review steps
+
+1. Review PR #21 incremental after abd9b5a: protected-session refusal helper, shared lock, inactive capture service/tests, bootstrap/prompt changes, local verification scripts/HTML fixture and evidence. Confirm existing controllers/modules/configuration, schema/packages and production UI are unchanged.
+2. Run backend lint/full tests/architecture/build/Prisma; UI lint/tests/build; full and production npm audit at both package roots.
+3. Follow evidence/APP-013/protected-customer-intake/README.md for the exact disposable database/browser command. Inspect database-summary.json, validation-summary.json and expired-390.png; cleanup query must return no fixture databases.
+4. Run governance placement and consistency gates plus both git diff --check. Review APP013_CUSTOMER_SESSION_SECURITY_PLAN.md for marker trust, legacy rollout, recovery and transport limitations before any activation.
+
+## Earlier: Local Customer Consent Session and Prompt Binding (2026-09-09, review-ready)
 
 - Backend commit abd9b5a2f65506b12839d4b7252b2f865c2531c0 pushed and remotely verified on PR #21; incremental a39a230..abd9b5a.
 
@@ -315,7 +338,7 @@ Exact review commands and source/evidence: backend evidence/APP-013/readiness-re
 ## Next Actions (Strict Order)
 
 1. Review the local customer-session/prompt-response model on PR #21, incremental after a39a230, and APP013_CUSTOMER_SESSION_SECURITY_PLAN.md. Confirm new sessions cannot adopt arbitrary identifiers, explicit mailbox confirmation is required, replay/expiry/rollback evidence passes and all production routes/keys remain absent.
-2. After review, confirm one bounded section protecting intake/session mutations and defining secure browser bootstrap plus expired/lost-session handling, without collection activation. Review key-lifecycle/transport decisions before a production adapter or route; no live keys, provider, verification, credentials/queue/sending or release action is authorized. APP-013 remains sole Now; coverage 50%, acceptance 0/12 and 7-12 APP-013 / 20-35 pilot unequal sections remain low confidence.
+2. After review, confirm one bounded local bootstrap transport section covering origin/CSRF, request limits and private-response/redaction behavior, still without live routes/configuration or collection. Full credential-bound AI intake, dedicated key/fingerprint lifecycle and verification/retention remain dependencies; no provider, credentials/queue/sending or release action. APP-013 remains sole Now; coverage 50%, acceptance 0/12 and 7-12 APP-013 / 20-35 pilot unequal sections remain low confidence.
 3. Keep provider delivery disabled until an explicitly approved acceptance run; no external messages or release are authorized by this documentation checkpoint.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 
@@ -356,7 +379,7 @@ Historical checkpoint; the latest continuation is recorded below.
 - Evidence and reproducible QA command: backend `evidence/APP-013/readiness-report.md`; screenshots `notifications-desktop.png` and `notifications-mobile.png` alongside it. Existing 4 high/9 moderate dependency findings and stale Browserslist data remain documented; 0 critical.
 - No external message, configuration, migration, merge, deployment or customer mutation. Durable enqueue recovery and remaining events/template controls/technician UI/email/acceptance stay open. Planning estimate: APP-013 roughly 50%; APP-006 through APP-016 roughly 74%.
 
-## Optional One-Time Customer Email Capture (2026-09-09, latest/review-ready)
+## Earlier: Optional One-Time Customer Email Capture (2026-09-09, review-ready)
 
 - Backend 00337a756a177d3752204acfb082c2bf774d431f on PR #21; exact review steps in backend `evidence/APP-013/readiness-report.md`, evidence `email-capture/summary.json`.
 - Owner approved optional one-time customer email capture/retention, continuing from fetched/aligned backend aa5badd and governance 71cabdf. APP-013 remains sole Now; FE-014 paused. Existing focused feature branches retained and original saved-checkout changes preserved.
