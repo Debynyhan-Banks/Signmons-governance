@@ -23,7 +23,7 @@ Purpose: single active queue for execution.
 ## Now
 
 - [ ] APP-013 Twilio-backed notification center and transactional customer messaging (`SCR-APP-021`, `SCR-APP-022`, `SCR-TECH-005`)
-  - CREATE active-attempt coordination is review-ready on PR #21 at `738c1f62ef8f55f9891a657edd12f978fd51be41`: PENDING remains executor-owned; fresh UNCERTAIN blocks reads during the bounded adapter window; APPLIED hands off immediately; expired UNCERTAIN permits read-only crash recovery without reinsertion. 692 backend tests, 15 migrations/11 prior crashes, five browser suites and four clean audits pass. Authorized CREATE integration, legacy repair and acceptance remain open; no activation or deployment.
+  - CREATE persisted-deadline safeguard is review-ready on PR #21: executor and adapter share the persisted eight-second deadline, database/auth delay cannot refresh it, expired work stays held without insertion. 703 backend tests, two clock-advanced real database delay cases, 15 migrations/11 prior crashes, five browser suites and four clean audits pass. Guarded CREATE integration, clock assumptions, provider uncertainty, legacy repair and acceptance remain open; no activation or deployment.
 
 ## Next
 
