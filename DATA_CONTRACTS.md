@@ -550,6 +550,14 @@ Audit:
 - Requires the prior journal-table migration at runtime; no new migration or activation. Existing legacy/unrecorded crash gaps, post-check provider race and SENDING pre-release crash gap remain. Before any journal writer activation, review competing technician/job mutation entry points, guarded CREATE integration, recovery ownership/retry/review and retention. Reschedule/cancel recovery, dependencies and acceptance remain open; no release/provider/production authorization.
 - Evidence: backend APP-013 readiness report; 535 backend tests, 29 UI tests, 12 real action/status combinations in the disposable 15-migration suite, prior nine process crashes, and desktop/390px synthetic browser proof with zero provider calls.
 
+## APP-013 Initial CREATE Payment Admission (2026-09-09)
+
+- Before a new reservation through the existing signed initial-confirmation entry point, SchedulingService evaluates persisted job policy and related payment using the shared payment-gate reducer. Required unpaid states return fixed office-review 409 before Calendar availability or writes. Tenant/job/session authority, unfinished-state/lifecycle/service/slot validation remain first.
+- Existing finalized same-window replay stays read-only and is not retroactively blocked or charged. NOT_REQUIRED and existing approved manual-exception semantics remain compatible; this changes enforcement location, not amounts, pricing, exception/refund policy or payment-provider behavior.
+- When SUCCEEDED is the basis for admission, reservation update requires observed payment ID/tenant/status/updatedAt plus existing job-version/unreserved/journal conditions. Committed refund/version/replacement before the statement snapshot prevents reservation. No runtime payment write occurs; later concurrent payment changes are not globally serialized.
+- Evidence: 303765149af178082146b386e30c7faa9e630b92; eight new unit cases/711 total, ten real unpaid refusals, three allowed/replay paths, three committed-payment races with exact preservation and tenant/session checks. All 15 migrations/11 prior crashes, unchanged UI/browser gates and four clean audits pass. Fixture-only payment mutations, zero real provider calls.
+- No journal integration/worker activation or checkout UI is added. Customer payment handoff acceptance, post-claim races, guarded CREATE integration and legacy recovery remain open. Evidence: readiness-report.md and initial-booking-payment-summary.json.
+
 ## APP-013 CREATE Active-Attempt Coordination (Inactive)
 
 - PENDING remains exclusively owned by the authorized executor and cannot be read, expired or held by reconciliation. The executor conditionally advances the exact journal/job claim to UNCERTAIN before the provider seam; only that winning caller may attempt the persisted CREATE ID.
