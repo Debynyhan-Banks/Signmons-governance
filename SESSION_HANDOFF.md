@@ -2,7 +2,21 @@
 
 Last Updated: 2026-09-09
 
-## Finalized Email Eligibility Binding (2026-09-09, latest/review-ready)
+## Email Consent and Expiry Contract Proposal (2026-09-09, latest/review-ready)
+
+- Backend documentation commit abf262cb25f1870e240e15be5e5a0412b698c59a pushed and remotely verified on PR #21. Incremental aa4c547..abf262c; runtime unchanged from aa4c547.
+
+- Owner's "ok proceed" approved preparing the next bounded contract proposal, not its specific proposed values or runtime activation. Started from fetched/aligned backend aa4c5470a0bdea64524cf1d2c65c0f8ee15e8cae and governance 5f4d46aa83cb9f364d3894d916f3fdd5342d53fe. APP-013 remains sole Now, Global Next unassigned, FE-014 paused; original dirty checkouts preserved.
+- Canonical proposal: governance APP013_EMAIL_CONSENT_EXPIRY_PROPOSAL.md, status PROPOSED. Four owner decisions: explicit per-job customer permission for the three appointment emails; separate mailbox verification before private appointment content; 24-hour event deadline capped at arrival-window start for confirmations/reschedules; grant closure/revocation and proposed 90-day post-close evidence retention. These are new product/security recommendations, not active settings or legal-compliance claims.
+- Specifies prompt/evidence/version/actor binding, one-time pre-job-to-job lineage, event-time grant reference, refusal of historical backfill, recipient replacement/revocation/regrant, late verification without extending event deadlines, unknown provider outcomes, suppression and retention safeguards. It does not treat the existing address-only prompt, marketing/SMS consent or project-owner approval as customer email consent.
+- No runtime, schema, collection-flow, module, UI, verification transport, queue, credential, sending or retention change. Existing diagnostic still returns eligible:false/deliveryAuthorized:false. No merge, deploy, production migration, provider/IAM/secrets/billing changes, charges, external messages or real customer/appointment action.
+- This documentation-only section validates governance placement/consistency, proposal links/decision markers, backend architecture, changed-file scope and whitespace. Runtime tests, lint/build, browser QA and dependency audits are not rerun because executable/schema/UI/package files are unchanged. Last implementation evidence at aa4c547 remains 1232 backend/170 UI tests, 18 local migrations/19 crash cases, 23 invariant-checked reads, browser proof and four clean audits; these are prior evidence, not new execution claims.
+- Completion remains 50% APP-013 scope coverage and 0/12 formal acceptance. Retain 7-12 unequal APP-013 sections / 20-35 pilot sections, low confidence, not ETA; new verification/retention obligations may increase the allowance and must be sized, not counted as completed functionality. Reassess at consent implementation sizing and demonstrated durable admission.
+- Stop for review. Smallest next decision: accept or amend D1-D4 in the proposal, including verification friction, expiry and retention values. Only after contract approval is the next bounded implementation proposed: schema plus transaction-local consent evidence/one-time job binding with synthetic tests, still no collection UI, verification transport, queue admission, credentials or sending. Challenge design and retention/legal-hold compatibility remain explicit implementation/release gates.
+
+Proposal: [APP013_EMAIL_CONSENT_EXPIRY_PROPOSAL.md](APP013_EMAIL_CONSENT_EXPIRY_PROPOSAL.md).
+
+## Earlier: Finalized Email Eligibility Binding (2026-09-09, review-ready)
 
 - Backend aa4c5470a0bdea64524cf1d2c65c0f8ee15e8cae, pushed and remotely verified on existing open PR #21. Incremental review: 949e448..aa4c547.
 
@@ -237,8 +251,8 @@ Exact review commands and source/evidence: backend evidence/APP-013/readiness-re
 
 ## Next Actions (Strict Order)
 
-1. Review APP-013 inactive finalized-email eligibility on PR #21, incremental after 949e448. Backend readiness-report.md and email-eligibility/ contain exact commands and proof. 1232 backend/170 UI tests, 23 read-only invariant checks, 18 existing local migrations/19 crash regressions and browser/audit gates pass. No positive admission, credentials or sending.
-2. After review by the owner, prepare and approve the bounded consent-evidence and event-expiry contract before implementing any positive email admission path. Decide who grants consent, mailbox/tenant/event purpose, evidence/revocation/recipient-change handling and allowed event age; do not infer authority or choose an unapproved TTL. Contract proposal only; no collection-flow change, queue, credential, provider or release activation. APP-013 stays sole Now; 50% scope coverage, 0/12 acceptance and 20-35 unequal pilot sections (low confidence, not ETA) unchanged; reassess at demonstrated durable admission.
+1. Review APP013_EMAIL_CONSENT_EXPIRY_PROPOSAL.md and the APP-013 documentation-only checkpoint, backend incremental after aa4c547. Explicitly accept or amend D1-D4: per-job permission, separate mailbox verification, event deadlines and grant/evidence lifecycle. The proposal is not active policy; no runtime gates are newly claimed.
+2. After review and approval of the contract rules by the owner, confirm one bounded schema/transaction-local consent-evidence and one-time job-binding implementation with synthetic tests. No customer collection UI, verification transport, credentials, queue admission, provider or release activation in that next section. If D1-D4 are changed, update the contract before coding. APP-013 remains sole Now; 50% scope coverage, 0/12 acceptance and 7-12 APP-013 / 20-35 pilot unequal sections remain low-confidence allowances; size verification/retention work and reassess at durable admission.
 3. Keep provider delivery disabled until an explicitly approved acceptance run; no external messages or release are authorized by this documentation checkpoint.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 
