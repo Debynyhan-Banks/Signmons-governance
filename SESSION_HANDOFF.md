@@ -2,7 +2,30 @@
 
 Last Updated: 2026-09-09
 
-## Email Consent and Expiry Contract Approved (2026-09-09, latest/documentation-only)
+## Consent Evidence and One-Time Job Binding (2026-09-09, latest/review-ready)
+
+- Backend commit a39a23037b98ef066933d6255c71766d8478cd60 pushed and remotely verified on PR #21. Incremental review: 9597ef1..a39a230.
+
+- Owner's "great proceed" resumes the approved schema/transaction-local evidence/job-binding section after local disk headroom was restored. Started from fetched/aligned backend 9597ef1fcc9fbbe1976a7ace26cab6a93b3b2fb3 and governance e26798f767c75e67360f963181402829806d9d8d. APP-013 remains sole Now; Global Next unassigned, FE-014 paused and unrelated original checkout changes preserved.
+- Added inactive AppointmentEmailConsentEvidenceStore plus three tables: immutable tenant/conversation/session scope, append-only GRANTED/DECLINED/REVOKED evidence revisions, and one-time scope/job binding. The latest immutable revision is the versioned current-state projection; no independently mutable consent flag. Database constraints enforce tenant FKs, unique interaction/audit receipts, sequential revisions and immutable updates.
+- Recording requires a WEBCHAT conversation, active tenant/undeleted customers, exact session/purpose/prompt/structured response, expected revision and a same-transaction CUSTOMER receipt. Old unrelated audits and address-only capture cannot create evidence. Receipt replay returns only its historical identity with deliveryAuthorized:false, even after revocation; it does not claim current permission.
+- This is persistence, NOT customer authentication. A future protected customer boundary must authenticate the session, bind the displayed mailbox and affirmative choice, and create that receipt atomically. No such production caller, controller, DI registration or collection UI is supplied. A fingerprint port has no production implementation/key/configuration; absent authority refuses before database access. Tests use a fictional tenant-scoped HMAC key only. Retained encrypted mailbox capture is copied privately; plaintext, fingerprint and proof are absent from returned receipts/errors.
+- Job binding locks tenant/conversation/scope/job, verifies the unique CREATED_FROM association in both directions, and preserves the intake placeholder and actual job-customer identities separately. Session mismatch, ambiguous links, different-job replay, deletion and tenant mismatch refuse. Binding and evidence roll back with their owning transaction.
+- Forward migration 20260909210000_add_appointment_email_consent_evidence was applied only in the disposable local fixture. Independent conversation/audit/job deletion is RESTRICTed while proof exists. This is not a 90-day purge implementation: retention ordering, security/legal holds, tenant deletion compatibility and suppression tombstones need review before activation. No production migration is authorized.
+- Validation: 29 new unit tests; 1261 backend tests across 73 passing suites, with the prior 3 tests/1 suite skipped. Backend lint/build/architecture/Prisma and script syntax/format pass. Unchanged UI lint, 170 tests and 15-page build pass. Four fresh dependency audits report zero findings. Disposable PostgreSQL applies 19 migrations and passes 24 new consent checks plus the existing 19 process-crash cases and 23 eligibility invariant reads. No new consent process-crash scenarios are claimed; new proof covers rollback, replay and concurrency.
+- Browser regressions: real local Settings/Inbox browser/API/database proofs and 15-GET fictional email composition pass with no external/provider calls; mobile email-settings screenshot inspected. No new consent UI, real customer authentication, mailbox verification, email-client or delivery acceptance is claimed. Five unrelated static regression scripts were not rerun for this inactive persistence-only change.
+- Existing finalized events are byte-for-byte unchanged by the new fixture operations; no event-time consent reference, positive eligibility, expiry enforcement, credentials, queue admission, verification transport, sending or backfill is connected. Existing diagnostic still refuses missing consent/expiry. Calendar uncertainty, pre-finalization/release compatibility and dependency override maintenance remain open.
+- Completion remains 50% APP-013 scope coverage, 0/12 formal acceptance. Evidence storage is partial progress, not durable delivery or completed consent acceptance. Retain 7-12 unequal APP-013 / 20-35 pilot sections, low confidence, not an overall MVP percentage/ETA; reassess after customer-authority and verification/retention sizing.
+- Stop for review. Next proposed bounded section: the authenticated structured customer-response boundary and its mailbox/prompt binding, with a reviewed fingerprint key-lifecycle plan before any production adapter. No new key, collection activation, verification message, queue, provider or release action is approved by this checkpoint.
+
+### Review steps
+
+1. Review PR #21 incremental after 9597ef1: consent evidence source/tests, Prisma models/migration, local verification script/hook and this evidence. No controller/module/UI/provider changes should appear.
+2. Backend: `npm run -s lint && npm test -- --runInBand && npm run -s arch:check && npm run -s build && npx prisma validate`. UI: `npm run -s lint && npm test && npm run -s build`. Both package roots: `npm audit --json && npm audit --omit=dev --json`.
+3. Use the exact disposable-database/browser command in backend evidence/APP-013/consent-evidence/README.md. Inspect database-summary.json and validation-summary.json; confirm the random fixture database is removed. No production connection or migration command.
+4. Governance: `node --test scripts/execution-placement.test.mjs && node scripts/docs-consistency-check.mjs`; both repositories `git diff --check`. Review RESTRICT retention impact, missing production authority/key adapter and inactive eligibility explicitly.
+
+## Earlier: Email Consent and Expiry Contract Approved (2026-09-09, documentation-only)
 
 - Backend documentation commit 9597ef1fcc9fbbe1976a7ace26cab6a93b3b2fb3 pushed on PR #21; incremental abf262c..9597ef1. Runtime remains aa4c547.
 
@@ -269,8 +292,8 @@ Exact review commands and source/evidence: backend evidence/APP-013/readiness-re
 
 ## Next Actions (Strict Order)
 
-1. Review the recorded D1-D4 approval in APP013_EMAIL_CONSENT_EXPIRY_PROPOSAL.md and the latest documentation-only checkpoint. The owner approved all four rules without amendment; do not ask again for the same contract approval. Approved design is not active policy or customer authority; no runtime gates are newly claimed.
-2. After review of this approval checkpoint, confirm one bounded schema/transaction-local consent-evidence and one-time job-binding implementation with synthetic tests. It is proposed, not started by the contract approval record. No collection UI, verification transport, credentials, queue admission, provider or release activation in that next section. APP-013 remains sole Now; 50% scope coverage, 0/12 acceptance and 7-12 APP-013 / 20-35 pilot unequal sections remain low-confidence allowances; size verification/retention work and reassess at durable admission.
+1. Review the latest inactive consent evidence and one-time job-binding checkpoint on PR #21, incremental after 9597ef1. D1-D4 remain approved; review the missing production customer authority/fingerprint adapter, unchanged blocked eligibility and new retention RESTRICT impact.
+2. After review, confirm one bounded authenticated structured customer-response and displayed-mailbox/prompt-binding section, including a reviewed fingerprint key-lifecycle plan before any production adapter. No new key, collection activation, verification transport, credentials, queue admission, provider or release activation is authorized here. APP-013 remains sole Now; 50% scope coverage, 0/12 acceptance and 7-12 APP-013 / 20-35 pilot unequal sections remain low-confidence allowances; reassess after authority/verification/retention sizing.
 3. Keep provider delivery disabled until an explicitly approved acceptance run; no external messages or release are authorized by this documentation checkpoint.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 

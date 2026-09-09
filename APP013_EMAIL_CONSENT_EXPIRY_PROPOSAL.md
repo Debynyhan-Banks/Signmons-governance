@@ -1,6 +1,6 @@
 # APP-013 Appointment Email Consent and Expiry — Approved Contract v1
 
-Status: **APPROVED DESIGN — NOT IMPLEMENTED.** Owner approved D1–D4 without amendment on 2026-09-09 with "i approve" in response to the explicit D1–D4 approval question. This records product/security contract approval only, not customer consent, mailbox verification, implementation activation or release. No runtime, database, consent capture, verification message, credential, queue or delivery is enabled here.
+Status: **APPROVED DESIGN — INACTIVE EVIDENCE FOUNDATION IMPLEMENTED.** Owner approved D1–D4 without amendment on 2026-09-09. Subsequent "great proceed" approved the bounded evidence-schema and one-time job-binding implementation. Only local synthetic proof exists; no production customer authority, collection, verification, credentials, queue or sending is enabled. See the latest APP-013 checkpoint for implementation limits.
 
 Scope: the supervised CallDesk pilot and three customer appointment emails only. APP-013 remains Now; no ticket promotion, marketing work or release. These are approved product/security rules, not a statement of legal requirements or legal compliance. Jurisdiction/provider compliance and production retention remain release-review obligations.
 
@@ -34,7 +34,7 @@ Proposed customer wording, shown only in an authorized future collection flow:
 - If captured before a Job exists, scope the evidence to the exact tenant/conversation/intake session. A separate atomic, one-time binding may attach it to the unique CREATED_FROM job. Preserve the normal placeholder-customer-to-job-customer lineage; an ambiguous association must refuse rather than guess. Do not let an intake grant attach to multiple jobs.
 - Scope is the three named customer appointment events for that job, not assignment, payments, marketing, another tenant, another address or future jobs. Independent tenant event controls can further restrict permission, never broaden it.
 
-## 3. Evidence contract (conceptual; no migration supplied)
+## 3. Evidence contract (inactive persistence foundation supplied)
 
 Use immutable evidence records plus a versioned current-state projection. Suggested fields are semantic requirements, not finalized Prisma/table/API names:
 
@@ -94,13 +94,13 @@ Examples (approved design policy, UTC): confirmation recorded Monday 10:00 with 
 9. Expired/suppressed/failure visibility and safe operator review without rolling back appointments; no automatic channel switch.
 10. Role/privacy projection, no consent-derived credential leaks, retention/deletion/hold compatibility and missing-authority refusal after purge.
 
-These are future acceptance obligations, not passing tests in this documentation checkpoint. Existing eligible:false behavior stays unchanged until reviewed implementation supplies actual authority.
+These remain full acceptance obligations. The latest inactive persistence checkpoint supplies partial unit/database evidence only; it does not satisfy customer authentication, verification, expiry, retention or delivery acceptance. Existing eligible:false behavior stays unchanged until reviewed implementation supplies actual authority.
 
 ## 8. Review and implementation boundaries
 
 Owner decision recorded: D1–D4 approved without amendment on 2026-09-09. No further approval of these same rules is needed. Retention/hold compatibility and verification challenge/transport details remain separate implementation/release gates.
 
-Next proposed bounded implementation **not started or activated by this approval record**: schema and transaction-local consent evidence/one-time job binding with synthetic tests and no collection UI, verification transport, queue admission, credentials or sending. Review that section before connecting the customer response flow. This is an implementation sequence within APP-013, not permission to execute all remaining sections.
+The schema/transaction-local evidence and one-time job-binding section is now review-ready. The latest immutable evidence revision is the versioned current-state projection; no mutable customer consent flag is introduced. Next proposed bounded section: authenticated structured customer-response and displayed-mailbox/prompt binding, with a reviewed fingerprint key-lifecycle plan before any production adapter. No collection activation, verification transport, queue admission, credentials or sending is authorized by this checkpoint.
 
 Current completion estimate remains 50% APP-013 scope coverage and 0/12 formal acceptance. Planning allowance remains 7–12 unequal APP-013 sections and 20–35 for the supervised pilot, low confidence, not an ETA. D2 and the unresolved evidence/retention integration can increase the allowance; reassess when those implementation boundaries are sized and at demonstrated durable admission rather than treating this proposal as completed functionality.
 
