@@ -378,7 +378,16 @@ Audit:
 - Explicit evaluations create `routing.rule_evaluated`; assignment audits embed the exact bounded `routing-v1` trace used by `dispatch-v2`.
 - Configuration writes and their audit event commit in one transaction.
 
-## APP-013 Legacy CREATE Dispatch Safeguard
+## APP-013 Legacy CREATE Technician/Lifecycle Safeguard
+
+- Shared job-calendar-guard now serves dispatch, technician workflow and direct completion. Dispatch behavior is unchanged by the helper rename. Existing unfinished-journal hold plus Job.status ACCEPTED/either reserved window endpoint/no nonblank Calendar reference defines this narrow legacy hold.
+- Technician list/detail use existing calendarSyncPending:true with availableActions:[]; authorized technician details remain visible and labeled provisional. All six actions and target-state no-op replays reject with existing office-review 409 before writes/audit/intent. Signed-link/active-tech/current-assignment/tenant/deletion authority remains first.
+- Direct completion selects booking reference/window and holds an unconfirmed ACCEPTED reservation before completion. Both technician and completion writes compare exact observed booking fields/status/version; technician also matches the submitted expectedUpdatedAt. Existing assignment, tenant, deleted and no-unfinished predicates remain. Version advance/audit/intent atomicity is preserved.
+- An ABORTED CREATE journal with an unconfirmed local reservation remains held. Ordinary terminal history/completion replay and unscheduled/in-progress behavior remain compatible; no blanket claim that nonblank references or terminal journal status prove provider state. Already-IN_PROGRESS or terminal Job rows are not newly reclassified without evidence.
+- Evidence: 684 backend tests including ten new cases, 45 real field snapshots/270 mutation-no-op refusals/nine direct-completion refusals/two competing-write cases, prior 15 migrations/11 actual crashes. UI runtime unchanged; 60 tests/14 pages, five synthetic browser suites and four zero-finding audits pass. No new crash case or live provider acceptance.
+- Historical inventory/repair, explicit reader/worker/office-review ownership, authorized CREATE orchestration, post-read/provider races, reschedule/cancel and SENDING recovery remain open. No migration outside disposable local fixtures, real-data action, provider configuration/activation, merge or deployment. Backend `7026d0824607938b7ea1ff1f46e3f9e81045cf53`; evidence: readiness-report.md and legacy-field-summary.json.
+
+## APP-013 Legacy CREATE Dispatch Safeguard (Earlier)
 
 - Dispatch pending policy now includes ACCEPTED jobs with either reserved window endpoint and no nonblank Calendar reference, even without an unfinished journal. Summary/detail use existing calendarSyncPending:true, ESCALATED classification and CALENDAR_SYNC_PENDING candidate reason; all candidates are ineligible and recommendation is null. The operator may inspect provisional local details but must not treat them as confirmed.
 - Assignment/reassignment/override and assignment cancellation refuse with existing office-review 409 before same-technician/unassigned no-op success. Tenant/undeleted lookup precedes the hold; missing/cross-tenant/deleted lookups retain not-found behavior. No new response fields, job status, schema or migration.
