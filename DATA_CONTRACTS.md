@@ -1,5 +1,15 @@
 # Data Contracts
 
+## Local browser submission and operator decision transport (2026-09-10)
+
+Inactive same-origin customer transport adds POST /customer-session/submit with exactly sessionToken, requestId, expectedRevision, draft, confirmed:true. Existing origin/Fetch Metadata/marker/content/body/budget and integration-scope checks apply. Optional review port must exist; validates seven-field draft, UUID/revision and rechecks credential expiry. Response projects only requestId, state:PENDING_REVIEW, original expiresAt, jobCreated:false, bookingAuthorized:false, deliveryAuthorized:false.
+
+Customer fixture enables submission only under explicit local data-review-submit composition, after read-only preview. Exact pending request is retained through uncertainty; customer sees a reference and original deadline. This is submission authority, not job creation.
+
+New unregistered CustomerIntakeReviewController exposes local POST /intake-review-request/read and /approve, delegating unchanged exact service contracts below. RequestAuthGuard and TenantGuard plus sanitized private/no-store errors; explicit fixture guard substitution in the proof is not production identity acceptance. No production module registration or shared rate-limit activation. Operator fixture holds its own bearer only in memory, loads by reference, displays draft/version/deadline and requires urgency plus acknowledgment before approval. Exact decision is locked across uncertainty and retried only by explicit action. Reload/clear loses private retry state without undoing committed work. Closed read returns refusal, not an admitted-status lookup. UI directs human history review; automatic renewal/replacement and post-expiry recovery are not implemented.
+
+Browser proof: separate customer/operator contexts, server-side lost-response injection after commit on both operations, one CREATED job, no customer credentials in operator requests, role/foreign/closed refusal, no storage, mobile fit and no page errors. No booking/delivery authority or external provider action. See backend evidence/APP-013/browser-review-admission/README.md.
+
 ## Token-free durable review admission (2026-09-10, unregistered local method)
 
 admitReview accepts exactly requestId (UUID), expectedOrganizationApprovedAt (canonical ISO), review {urgency:EMERGENCY|HIGH|STANDARD,reasonCode:OPERATOR_REVIEWED_INTAKE,acknowledgeCustomerStatements:true}. Trusted non-impersonated owner/admin/dispatcher context supplies tenant/actor. No customer token verification, issuance or reconstruction; no input draft/customer/tenant/actor override. Existing customer-submitted encrypted review is the only draft source. Legacy scripted/unbound reviews cannot enter this organization-bound path.

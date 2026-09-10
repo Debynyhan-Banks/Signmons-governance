@@ -1,5 +1,9 @@
 # Organization onboarding MVP — 2026-09-10
 
+## Local journey connection (2026-09-10)
+
+Approved profile facts now feed a demonstrated local customer submission → separate operator review/approval → one CREATED job browser path. See GLOBAL_EXECUTION_POINTER.md and backend evidence/APP-013/browser-review-admission/README.md. Production identity, live AI and provider actions are not accepted; no onboarding denominator or formal acceptance changes. Retain 3/6 = 50% locally demonstrated and 0/6 accepted. Older setup-only descriptions below are historical checkpoints.
+
 ## Organization setup slice (2026-09-10, latest review-ready)
 
 Completed the owner-approved S0 page/API slice within the explicitly amended APP-013 steel-thread dependency. Company facts, greeting/tone and sourced FAQs save to a tenant-scoped draft; exact saved-version approval preserves a separate approved snapshot; deterministic FAQ or human-contact fallback preview uses only that snapshot. Source routes are registered and the root sandbox links to /app/organization; nothing is deployed. No runtime AI, customer-journey/job connection, canonical policy changes or provider calls. Details and exact commands: backend evidence/APP-013/organization-setup/README.md; governance DATA_CONTRACTS.md.
