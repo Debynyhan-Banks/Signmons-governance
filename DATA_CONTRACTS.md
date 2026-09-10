@@ -1,5 +1,15 @@
 # Data Contracts
 
+## Approved organization-bound intake turns (2026-09-10, inactive local connection)
+
+continueOrganization accepts exact sessionToken/interactionId/message, with existing credential/message bounds and no caller-selected tenant, profile or history. Under shared tenant/session locks it loads only the active tenant's validated approved organizationProfileV1. Deterministic exact FAQ match or approved fallback is used; no collaborator/model/tool call. Tabs/newlines are normalized only for FAQ matching, not stored input. Draft-only organization edits do not affect the approved snapshot. Final encrypted turn commit rechecks the approved snapshot digest under the shared tenant lock.
+
+protected_intake_turn_v1 payload version 2 adds exact organizationApprovedAt (canonical ISO approval timestamp) and organizationDigest (SHA-256 of canonical validated approved snapshot) to existing sessionId/revision/encryptedInput/encryptedReply/type/version. Legacy version 1 remains readable only in scripted mode; all turns in organization mode must be version 2 and agree on the still-current approval. Missing/malformed/new approval, mixed history or attempted mode switch refuses. Reapproval with the same facts but a new approval identity also invalidates the old session. No automated rebase, renewal or recovery; original expiry remains.
+
+Existing review request version 1 retains transcriptDigest covering the bound turns. submitReview and readReview validate current organization-bound history; readReview adds organizationApprovedAt without exposing a customer bearer, organization facts or digest. Operator read remains nonmutating, no credential methods and no job authority. Exact turn replay is allowed only while original session/history/approval remain valid. All source profile facts stay inert and cannot override booking/payment/category/consent policy. This does not connect the live tenant runtime to the new profile.
+
+No production transport/module/UI registration in this slice. Local fixture uses existing protected browser transport with continueOrganization as its continuation port. Service-level submission/read are not browser action acceptance. Older readers refuse version-2 turns; any future deployment requires explicit version-compatibility review. Next request-to-job admission must preserve organization binding and stale-state refusal; no job/consent outcome is added here.
+
 ## Organization setup profile v1 (2026-09-10, source registered; not deployed)
 
 GET/PUT `/organization/profile` and POST `/organization/profile/approve` or `/preview` require existing RequestAuthGuard/TenantGuard plus service-verified non-impersonated owner/admin of an active tenant. Tenant/actor authority never comes from the body. Private/no-store responses and existing sanitized error filtering apply.
