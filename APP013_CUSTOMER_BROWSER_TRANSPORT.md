@@ -4,13 +4,17 @@ Owner approved the next browser-security section with "proceed" on 2026-09-09, f
 
 ## Local continuation extension (2026-09-09)
 
+Latest integrated extension adds a sixth modeled POST operation /customer-session/draft, strictly sessionToken/expectedRevision/draft, and an optional injected previewDraft adapter that refuses if absent. Same security/size/quota gates apply. The read-only service validates exact customer-stated fields and current transcript revision, then returns only a private draft, historical email choice and explicit non-authorizing flags. See DATA_CONTRACTS.md; no actual job is created or draft persisted.
+
+customer-intake-journey.html/.js combines one scripted conversation turn, optional email capture/permission, and customer-reviewed draft. GRANTED/DECLINED/NOT_RECORDED all reach preview; address capture alone does not grant consent. Pending capture/response inputs are reused on explicit retry after post-commit 503; no repeat after success. Invalid draft fields can be corrected without clearing a valid session. Preview is not saved or a complete job command; urgency is unassessed and requires human review. No production UI or route is activated.
+
 Owner's "proceed" approves connecting the inactive transcript service to this local boundary, not a production route. A fifth modeled POST path, /customer-session/continue, accepts exactly sessionToken/interactionId/message. It uses the same verified server context, origin/metadata/tenant checks, bounded body and rate/concurrency budget. An absent continuation adapter refuses. UUID interaction, bounded message and service receipt are validated; the browser receives only reply/revision/deliveryAuthorized:false. Protected service ownership, expiry, replay and atomic persistence remain authoritative.
 
 The fictional customer-intake-browser fixture keeps session and one immutable pending interaction in memory only. A successful receipt must be exactly the next revision. Unknown outcomes (network/timeout, 429, 503 or malformed success) keep the same message/ID and disable new submission; only an explicit retry resends it. No application automatic retry. A client network stack may independently replay transport requests, so server idempotency remains mandatory. Authorization/request refusals and 409 clear private state with office/new-request guidance; no silent new scope or credential renewal. A fifteen-second client abort is not server cancellation.
 
 Clearing, page exit or expiry invalidates the client generation, aborts the current fetch and clears displayed/pending private data. Late results from an old generation cannot populate a new session, even if the old turn committed. Reload cannot adopt/recover history. Replies use textContent, not HTML. Same-origin fixture URLs carry no credentials; no cookies, local/session storage or analytics. This is a local scripted demonstration, not the deployed intake UI or production recovery acceptance.
 
-Next proposed after review: an integrated local protected intake journey combining transcript and optional email/consent with a validated job draft, using scripted collaborators and no Calendar/payment/provider activation. Full AI/booking and production transport remain separate approval gates.
+Next proposed after review: local atomic intake-to-job handoff with explicit human review and session/job/consent binding, after reviewing admission/urgency requirements. Calendar/payment/provider actions, production routes and sending remain disabled.
 
 ## Original model contract
 
