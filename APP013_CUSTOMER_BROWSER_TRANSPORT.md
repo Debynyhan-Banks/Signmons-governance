@@ -4,6 +4,8 @@ Owner approved the next browser-security section with "proceed" on 2026-09-09, f
 
 ## Local continuation extension (2026-09-09)
 
+The 2026-09-10 split-review foundation is service-only: customer submitReview persists an encrypted draft/revision/digest and original expiry without storing a bearer; operator readReview takes only a request ID plus verified operator context. No public/operator dispatch or browser fields are added by this checkpoint. Operator reads do not call credential methods or reconstruct customer tokens. Request receipts are not job admission authority. The combined local admitDraft stays unregistered until a later token-free admission path is reviewed. See DATA_CONTRACTS.md for lifetime/replacement/retention limits.
+
 Latest integrated extension adds a sixth modeled POST operation /customer-session/draft, strictly sessionToken/expectedRevision/draft, and an optional injected previewDraft adapter that refuses if absent. Same security/size/quota gates apply. The read-only service validates exact customer-stated fields and current transcript revision, then returns only a private draft, historical email choice and explicit non-authorizing flags. See DATA_CONTRACTS.md; no actual job is created or draft persisted.
 
 customer-intake-journey.html/.js combines one scripted conversation turn, optional email capture/permission, and customer-reviewed draft. GRANTED/DECLINED/NOT_RECORDED all reach preview; address capture alone does not grant consent. Pending capture/response inputs are reused on explicit retry after post-commit 503; no repeat after success. Invalid draft fields can be corrected without clearing a valid session. Preview is not saved or a complete job command; urgency is unassessed and requires human review. No production UI or route is activated.
@@ -14,7 +16,7 @@ The fictional customer-intake-browser fixture keeps session and one immutable pe
 
 Clearing, page exit or expiry invalidates the client generation, aborts the current fetch and clears displayed/pending private data. Late results from an old generation cannot populate a new session, even if the old turn committed. Reload cannot adopt/recover history. Replies use textContent, not HTML. Same-origin fixture URLs carry no credentials; no cookies, local/session storage or analytics. This is a local scripted demonstration, not the deployed intake UI or production recovery acceptance.
 
-The local atomic intake-to-job handoff is now review-ready in backend `1e145d1`: verified operator context plus the exact protected session/revision atomically create and link one human-reviewed CREATED job, bind any existing consent history and close the session. It is still unregistered and is not a browser transport. Next proposed after review: a durable split customer/operator review-request boundary so the customer bearer credential is never an operator DTO. Calendar/payment/provider actions, production routes and sending remain disabled.
+The prior combined local admitDraft remains inactive and unchanged. The new split request submit/read foundation stores no customer bearer and lets an authorized operator read by request ID only; no browser dispatch is added. Next proposed: token-free operator admission from that durable request with exact review and atomic request/job/consent outcome, preserving deadline/stale/replay rules. UI/route, Calendar/payment/provider actions and sending remain disabled.
 
 ## Original model contract
 
