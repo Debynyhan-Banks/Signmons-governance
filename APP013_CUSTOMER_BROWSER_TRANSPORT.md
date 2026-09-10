@@ -14,7 +14,7 @@ The fictional customer-intake-browser fixture keeps session and one immutable pe
 
 Clearing, page exit or expiry invalidates the client generation, aborts the current fetch and clears displayed/pending private data. Late results from an old generation cannot populate a new session, even if the old turn committed. Reload cannot adopt/recover history. Replies use textContent, not HTML. Same-origin fixture URLs carry no credentials; no cookies, local/session storage or analytics. This is a local scripted demonstration, not the deployed intake UI or production recovery acceptance.
 
-Next proposed after review: local atomic intake-to-job handoff with explicit human review and session/job/consent binding, after reviewing admission/urgency requirements. Calendar/payment/provider actions, production routes and sending remain disabled.
+The local atomic intake-to-job handoff is now review-ready in backend `1e145d1`: verified operator context plus the exact protected session/revision atomically create and link one human-reviewed CREATED job, bind any existing consent history and close the session. It is still unregistered and is not a browser transport. Next proposed after review: a durable split customer/operator review-request boundary so the customer bearer credential is never an operator DTO. Calendar/payment/provider actions, production routes and sending remain disabled.
 
 ## Original model contract
 

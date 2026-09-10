@@ -15,9 +15,11 @@ Define canonical request/response/event/data shapes so frontend, backend, and go
 ## FE-007 Marketing Lead Capture Contract (Required)
 
 Endpoint:
+
 - `POST /api/marketing/lead-capture`
 
 Request body:
+
 - `email` (required, string, normalized lowercase)
 - `firstName` (optional)
 - `lastName` (optional)
@@ -32,32 +34,38 @@ Request body:
 - `referrerUrl` (optional)
 
 Success response (`202` or `201`):
+
 - `leadId` (required)
 - `status` (required: `accepted` | `queued`)
 - `createdAt` (required, ISO-8601)
 
 Validation error (`400`):
+
 - `errorCode` (required)
 - `message` (required)
 
 ## FE-008 Try-Demo Contract (Existing, Retained)
 
 Endpoints:
+
 - `POST /api/marketing/try-demo`
 - `GET /api/marketing/try-demo/:leadId`
 - `POST /api/marketing/try-demo/status`
 
 Required invariants:
+
 - `leadId` returned from submit is pollable on status endpoint.
 - Status transitions are deterministic and auditable.
 
 ## Persistence Contract
 
 `marketingLead` is canonical storage for both:
+
 - contact-capture leads,
 - try-demo leads.
 
 Required persisted fields for FE-007 minimum:
+
 - `id`, `email`, `consentToContact`, `consentTextVersion`, `createdAt`
 
 ## Business Rules Source Of Truth (Locked)
@@ -75,10 +83,12 @@ Required persisted fields for FE-007 minimum:
 ## Emergency Fee Policy Contract (Locked)
 
 Emergency fee behavior is conditional by:
+
 - trade/category,
 - time window.
 
 Required policy output shape:
+
 - `isEmergency` (boolean)
 - `emergencyFeeApplied` (boolean)
 - `emergencyFeeCents` (number)
@@ -87,6 +97,7 @@ Required policy output shape:
 ## Tenant Brand Voice Contract (Locked)
 
 Per-tenant single voice profile:
+
 - `brandTone`
 - `greetingStyle`
 - `forbiddenPhrases`
@@ -99,6 +110,7 @@ Per-tenant single voice profile:
 - Pro/Enterprise: optional auto-dispatch
 
 Decision payload must include:
+
 - `mode`
 - `recommendedAssigneeId` (nullable)
 - `reasonCodes` (string[])
@@ -120,32 +132,39 @@ Decision payload must include:
 ## BE-003 Server-to-Server Webchat Triage Contract
 
 Endpoint:
+
 - `POST /api/integrations/webchat/triage`
 
 Authentication and tenancy:
+
 - The tenant website calls its own server-side proxy; browser code never receives the Signmons credential.
 - The proxy sends `Authorization: Bearer <integration secret>` over HTTPS.
 - Signmons stores only a SHA-256 credential hash in configuration and resolves `tenantId` from the matched credential.
 - The request body cannot supply or override `tenantId`.
 
 Request body:
+
 - `sessionId` (required, 4–64 safe identifier characters)
 - `message` (required, 1–1000 characters after normalization)
 
 Reply response:
+
 - `status: "reply"`
 - `reply` (string)
 
 Life-safety response:
+
 - `status: "safety_escalation"`
 - `reply` (deterministic emergency guidance)
 - `requiresHumanHandoff: true`
 - `emergencyServicesRecommended: true`
 
 Tool response:
+
 - Existing tenant-scoped `job_created` response may be returned only after required fields validate and the configured tool budget permits it.
 
 Contract rules:
+
 - The assistant must disclose that it is automated and is not a technician.
 - It must not diagnose equipment, promise an appointment or arrival, publish a fee, or upsell unless an approved tenant policy expressly allows that behavior.
 - Gas odor, carbon monoxide, fire, smoke, sparks or immediate electrical danger must be intercepted before the AI provider is called.
@@ -155,19 +174,23 @@ Contract rules:
 ## BE-007 Tenant Lead-Source Report Contract
 
 Endpoint:
+
 - `GET /reports/lead-sources?from=<ISO-8601>&to=<ISO-8601>`
 
 Authentication and tenancy:
+
 - Firebase bearer authentication is required in production.
 - The authenticated tenant claim is authoritative; the request cannot supply or override `tenantId`.
 - Only `owner`, `admin` and `manager` roles may read the report.
 
 Date rules:
+
 - `from` is inclusive and `to` is exclusive.
 - Both values must be valid ISO-8601 timestamps with explicit timezone offsets.
 - `to` must be later than `from`; the range may not exceed 366 days.
 
 Response:
+
 - `period`: normalized UTC `from` and `to`.
 - `totals`: raw counts for `created`, `booked`, `completed`, `cancelled`, `attributed` and `unattributed`.
 - `rates`: `leadToBooking` and `bookedToCompleted`, returned with their raw denominators in `totals`.
@@ -175,6 +198,7 @@ Response:
 - `topLandingPages`: normalized site paths and job counts.
 
 Metric lineage:
+
 - Created: `Job.createdAt` falls inside the requested period.
 - Booked: accepted lineage exists (`acceptedAt`) or current status is `ACCEPTED`, `IN_PROGRESS` or `COMPLETED`.
 - Completed: completed lineage exists (`completedAt`) or current status is `COMPLETED`.
@@ -182,6 +206,7 @@ Metric lineage:
 - Attribution: bounded values from `Job.policySnapshot.leadAttribution`; missing values are grouped as `unattributed`.
 
 Privacy rules:
+
 - The report must not select or return customer names, phone numbers, addresses, free-text descriptions, conversation contents, calendar event IDs or appointment-management credentials.
 - Reporting credentials must remain server-side and must never be embedded in browser JavaScript.
 - Rate values are ratios from `0` to `1`, rounded to four decimal places.
@@ -190,26 +215,31 @@ Privacy rules:
 ## APP-003 Audited Job Completion Contract
 
 Endpoint:
+
 - `POST /jobs/:jobId/complete`
 
 Authentication and tenancy:
+
 - Firebase bearer authentication is required in production.
 - Tenant and actor identity come only from verified request context.
 - The pilot permits `owner` and `admin` roles.
 
 Transition rules:
+
 - `ACCEPTED -> COMPLETED` and `IN_PROGRESS -> COMPLETED` are allowed.
 - `COMPLETED -> COMPLETED` is an idempotent replay and does not create a second audit entry.
 - Created, offered, declined, expired and cancelled jobs cannot be completed through this endpoint.
 - Missing and cross-tenant jobs return the same not-found boundary without revealing another tenant's data.
 
 Success response:
+
 - `jobId`
 - `status: "COMPLETED"`
 - `completedAt` (ISO-8601)
 - `changed` (`true` for the first transition; `false` for idempotent replay)
 
 Audit rules:
+
 - The first transition and its `AuditLog` record commit in one database transaction.
 - Audit action: `job.completed`.
 - Metadata may contain only the prior status and completion timestamp.
@@ -218,45 +248,53 @@ Audit rules:
 ## APP-007 Urgency Classification And Escalation Review Contract
 
 Endpoints:
+
 - `GET /jobs/urgency-review`
 - `GET /jobs/urgency-review/:jobId`
 - `POST /jobs/:jobId/urgency/override`
 - `POST /jobs/:jobId/escalations`
 
 Authentication and tenancy:
+
 - Firebase bearer authentication is required in production.
 - Tenant and actor identity come only from verified request context; request payloads cannot supply or override either value.
 - `owner`, `admin` and `dispatcher` roles may review urgency, record authorized overrides and initiate an internal escalation.
 - Missing and cross-tenant jobs return the same not-found boundary.
 
 Urgency rules:
+
 - Canonical urgency values are `EMERGENCY`, `HIGH` and `STANDARD`; `HIGH` must not be collapsed into `STANDARD` during persistence.
 - The review response includes a concise operational rationale, trigger reason codes, the decision source and a confidence note. It must not expose hidden model reasoning or imply diagnostic certainty.
 - The response includes an escalation-path preview and a chronological history of urgency overrides and escalation delivery attempts.
 
 Override request:
+
 - `urgency` (required: `EMERGENCY` | `HIGH` | `STANDARD`)
 - `reason` (required, normalized string, 10-500 characters)
 
 Override rules:
+
 - The job update and `AuditLog` entry commit in one database transaction.
 - Audit action: `job.urgency_overridden`.
 - Idempotent same-value overrides do not create duplicate audit entries.
 - Audit metadata may contain only prior/new urgency, normalized reason, decision source and timestamp.
 
 Escalation request and result:
+
 - An escalation request notifies the tenant's configured internal operations recipients through configured channels; customer recipients are out of scope.
 - Every attempt is audit logged with action `job.urgency_escalated`, including privacy-safe channel, recipient group, outcome and timestamp.
 - A configured-provider failure is returned as a recorded failed outcome and must not be presented as delivered.
 - If no notification channel is configured, the request is audit logged with a `not_configured` outcome.
 
 Privacy and safety:
+
 - Review-list and audit responses must not contain customer phone numbers, email addresses, street addresses, full transcripts, calendar identifiers or appointment-management credentials.
 - Urgency classification is an operational routing aid, not a diagnosis or emergency-services determination.
 
 ## APP-008 Dispatch Board And Technician Assignment Contract
 
 Endpoints:
+
 - `GET /jobs/dispatch-board`
 - `GET /jobs/dispatch-board/:jobId`
 - `POST /jobs/:jobId/assignments`
@@ -264,6 +302,7 @@ Endpoints:
 - `POST /jobs/:jobId/escalations` (shared APP-007 operation)
 
 Authentication and tenancy:
+
 - Firebase bearer authentication is required in production.
 - Tenant and actor identity come only from verified request context; request payloads cannot supply or override either value.
 - `owner`, `admin` and `dispatcher` roles may view and operate the dispatch board.
@@ -271,12 +310,14 @@ Authentication and tenancy:
 - Candidate technicians and jobs must be selected within the verified tenant boundary. Missing and cross-tenant jobs return the same not-found boundary.
 
 Board response:
+
 - Active jobs are returned in one of `NEW_REQUEST`, `READY_TO_ASSIGN`, `ASSIGNED` or `ESCALATED`.
 - `ASSIGNED` takes precedence when a job has a current technician; an unassigned escalated job is `ESCALATED`; scheduled/accepted work is `READY_TO_ASSIGN`; remaining active intake is `NEW_REQUEST`.
 - Dispatch-inactive (`DECLINED`, `EXPIRED`, `COMPLETED`, `CANCELLED`) and soft-deleted jobs are excluded.
 - Each summary may contain only job reference, queue, service category, urgency, status, service window, current assigned technician name/role, and timestamps.
 
 Recommendation response:
+
 - Recommendation version is `dispatch-v2` after APP-010 and includes a bounded `routing-v1` policy trace.
 - Candidate ranking is deterministic and uses enabled service capability, proficiency, operator-maintained availability, overlapping availability blocks and active assignment count.
 - A recommendation is decision support only; CallDesk does not automatically dispatch the job.
@@ -284,16 +325,19 @@ Recommendation response:
 - Operators may select a non-recommended or otherwise ineligible active candidate only with a normalized 10-500 character override reason.
 
 Assignment request:
+
 - `technicianId` (required UUID)
 - `expectedUpdatedAt` (required ISO-8601 timestamp used as the optimistic concurrency token)
 - `reason` (optional for the current recommendation; required, normalized and 10-500 characters for reassignment or recommendation override)
 
 Assignment-cancellation request:
+
 - `expectedUpdatedAt` (required ISO-8601 timestamp)
 - `reason` (required, normalized string, 10-500 characters)
 - Cancellation clears only the technician assignment. It does not cancel or close the customer job.
 
 Concurrency, idempotency and audit:
+
 - Assignment writes must match both tenant and `expectedUpdatedAt`; a stale token returns conflict and creates no audit event.
 - Assigning the already assigned technician is idempotent and creates no duplicate audit event.
 - Job update and audit event commit in one database transaction.
@@ -301,18 +345,21 @@ Concurrency, idempotency and audit:
 - Audit metadata may contain only prior/new technician identifiers, recommendation version and reason codes, override flag, and normalized operator reason.
 
 Privacy and safety:
+
 - Board, detail, recommendation and assignment-history responses must not contain customer names, phone numbers, email addresses, street addresses, job descriptions, transcripts, calendar identifiers, payment credentials or appointment-management credentials.
 - Assignment history exposes actor identifiers for internal accountability but no actor contact information.
 
 ## APP-009 Technician Mobile Job Workflow Contract
 
 Endpoints:
+
 - `POST /jobs/technician-links/:technicianId`
 - `GET /technician/jobs`
 - `GET /technician/jobs/:jobId`
 - `POST /technician/jobs/:jobId/status`
 
 Link issuance and access:
+
 - Only authenticated `owner`, `admin` and `dispatcher` operators may issue a link for an active technician in the verified tenant.
 - The credential is an HMAC-signed, versioned bearer token scoped to one tenant and one technician, with an explicit issue time, expiration and nonce.
 - The token is returned only in the URL fragment so normal HTTP requests do not send it as a route or query value.
@@ -321,6 +368,7 @@ Link issuance and access:
 - Every read and write revalidates that the technician remains active with role `tech` in the signed tenant.
 
 Technician list and detail:
+
 - A technician may read only non-deleted jobs currently assigned to their tenant-scoped user identity.
 - The list groups assigned work into `today`, `upcoming` and the most recent 90 days of `completed`, using the tenant timezone.
 - List summaries include job reference, service category, service address, service window, urgency, technician status, available actions and update token.
@@ -328,6 +376,7 @@ Technician list and detail:
 - Responses use `Cache-Control: private, no-store` and never expose another technician's assignments.
 
 Status actions and transitions:
+
 - Supported actions are `accept`, `decline`, `on_my_way`, `in_progress`, `complete` and `cannot_take`.
 - `ASSIGNED` permits accept, decline or cannot-take.
 - `ACCEPTED` permits on-my-way, in-progress, decline or cannot-take.
@@ -337,6 +386,7 @@ Status actions and transitions:
 - Accept, in-progress and complete update the shared job lifecycle fields used by dispatcher workflows.
 
 Concurrency and audit:
+
 - Every mutation requires `expectedUpdatedAt`; a stale value returns conflict and creates no audit event.
 - Replaying the already-current technician status is idempotent.
 - The job write and audit event commit in one database transaction.
@@ -346,6 +396,7 @@ Concurrency and audit:
 ## APP-010 Routing Rules, Service Areas, And Availability Contract
 
 Endpoints:
+
 - `GET /jobs/routing`
 - `POST /jobs/routing/rules`
 - `POST /jobs/routing/rules/:ruleId`
@@ -355,17 +406,20 @@ Endpoints:
 - `POST /jobs/:jobId/routing/evaluate`
 
 Authentication and tenancy:
+
 - Production requires verified Firebase operator identity. Only `owner`, `admin` and `dispatcher` roles may read or change routing configuration.
 - Tenant and actor identity come only from verified request context. Rule, service-area, service-category and technician identifiers are resolved inside that tenant boundary.
 - Missing and cross-tenant resources use the same not-found or invalid-reference boundary.
 
 Routing configuration:
+
 - A routing rule has a tenant-scoped name, active state, deterministic integer priority, optional service category, optional service area, optional urgency, time scope, availability/on-call requirements and emergency escalation targets.
 - Lower numeric priority wins. Rules are evaluated deterministically by priority and stable identifier.
 - ZIP service areas contain normalized US postal codes and may be activated or deactivated without deleting their audit history.
 - Technician controls include base availability, on-call state, service capabilities and bounded availability blocks.
 
 Evaluation and enforcement:
+
 - Evaluation version is `routing-v1`; the combined dispatch recommendation is `dispatch-v2`.
 - Business hours are evaluated in the tenant timezone. Until tenant-specific hours are introduced, the baseline is Monday-Friday, 8:00 AM-6:00 PM.
 - Once applicable active rules exist, the service address must match an active configured service area. Out-of-area work is ineligible for normal recommendation.
@@ -374,6 +428,7 @@ Evaluation and enforcement:
 - The response exposes bounded reason codes and plain-language factors, not hidden model reasoning.
 
 Audit:
+
 - Configuration actions are `routing.rule_created`, `routing.rule_updated`, `routing.service_area_created`, `routing.service_area_updated` and `routing.technician_updated`.
 - Explicit evaluations create `routing.rule_evaluated`; assignment audits embed the exact bounded `routing-v1` trace used by `dispatch-v2`.
 - Configuration writes and their audit event commit in one transaction.
@@ -550,6 +605,18 @@ Audit:
 - Requires the prior journal-table migration at runtime; no new migration or activation. Existing legacy/unrecorded crash gaps, post-check provider race and SENDING pre-release crash gap remain. Before any journal writer activation, review competing technician/job mutation entry points, guarded CREATE integration, recovery ownership/retry/review and retention. Reschedule/cancel recovery, dependencies and acceptance remain open; no release/provider/production authorization.
 - Evidence: backend APP-013 readiness report; 535 backend tests, 29 UI tests, 12 real action/status combinations in the disposable 15-migration suite, prior nine process crashes, and desktop/390px synthetic browser proof with zero provider calls.
 
+## APP-013 Local Human-Reviewed Intake Admission (2026-09-10, inactive)
+
+- `CustomerIntakeContinuationService.admitDraft` remains unregistered. It accepts exactly sessionToken, expectedRevision, the existing seven-field validated customer-stated draft and review. Review is exactly urgency (`EMERGENCY` | `HIGH` | `STANDARD`), fixed reasonCode `OPERATOR_REVIEWED_INTAKE` and acknowledgeCustomerStatements:true. Caller tenant/actor/job/consent/payment/booking/delivery fields refuse.
+- Verified request context must be a non-impersonated owner/admin/dispatcher with tenant matching the protected customer-session credential. The credential remains required and is rechecked under and after persistence locks. This local combined authority is not an approved production endpoint, browser flow or dual-credential transport.
+- One database transaction uses the existing tenant/session/conversation lock, requires ONGOING protected WEBCHAT ownership, exact gap-free transcript revision and zero prior conversation job link. The issue category must already exist in that tenant catalog; admission never creates a category or guesses support.
+- Customer upsert, customer-stated unverified address, CREATED job, CREATED_FROM link, optional `AppointmentEmailConsentBinding`, `job.customer_intake_admitted` USER audit and Conversation COMPLETED/JOB_CREATED close commit together. The job has no preferred window. Pricing snapshot is empty; no payment row, Calendar operation, dispatch state, SMS/email intent, queue/provider action or notification is created.
+- Job policy records property/service intent, website-chat attribution, `OPERATOR_OVERRIDE` urgency with `HUMAN_INTAKE_REVIEW`, and intakeAdmission version/digest/revision/fixed review/unverified contact-address/email-choice facts. Audit/policy binding contain no customer name, phone or address. Ordinary customer/job/address records contain the reviewed statements for existing operator intake review.
+- Existing consent evidence, including decline/revoke, is associated through the immutable one-time scope/job binding in the same transaction; `BOUND` is not current permission or delivery authority. A session without evidence records `NOT_RECORDED` and no binding. Closing the session prevents later protected transcript/draft, capture or prompt mutations.
+- Exact same-actor/request replay with the same unexpired credential and unchanged original CREATED admission returns the same privacy-safe receipt. A one-way SHA-256 exact-request digest prevents changed draft/review adoption; it is internal and not a bearer capability. Concurrent identical requests serialize to one job/link/audit. Later lifecycle state requires ordinary job reads, not receipt replay.
+- Failures after writes are reported as unconfirmed and require exact replay; transaction rollback covers binding/close failures. Customer/contact/address remain unverified and human urgency is operational classification, not diagnosis. Production split ownership, transport/retention, preferred-window/payment/Calendar handoff, notification/email delivery/status/recovery and owner acceptance remain open.
+- Evidence: backend `1e145d1858c95453d4548b706115b1558c5e31c5`, `evidence/APP-013/customer-intake-admission/`. Nineteen new unit cases; 1471 backend/170 UI tests, nine new PostgreSQL groups, 19 migrations/19 prior process crashes, prior browser regressions and four clean audits pass. No production action or APP-013 acceptance checkbox.
+
 ## APP-013 Local Customer Session and Consent Response (2026-09-09, inactive)
 
 Latest integrated journey adds read-only /customer-session/draft model dispatch accepting exactly sessionToken/expectedRevision/draft. Draft has exactly customerName (1-120), phone (international + and 8-15 digits), address (1-200), description (1-400), issueCategory, propertyType and serviceIntent from the existing intake vocabulary. Strings must be trimmed and control-free. No urgency, email, tenant, job ID or authority overrides. It is format-validated customer-stated data, not identity/contact/address verification, model extraction, a complete CreateJobPayload or saved job.
@@ -583,7 +650,6 @@ Expired/lost session handling has no automatic renewal/adoption or historical ap
 - Local browser uses fictional mailbox/keys, memory-only credentials and no-store responses. It is not real customer authentication rollout, secure-cookie/BFF/CSRF/abuse acceptance or full credential-bound AI intake. Legacy paths now refuse protected model sessions; historical unmarked intake is not retrofitted. Production secret loading/rotation, fingerprint adapter, transport/recovery integration, suppression/regrant and retention compatibility are unfinished.
 - Key/transport plan and next boundary: [APP013_CUSTOMER_SESSION_SECURITY_PLAN.md](APP013_CUSTOMER_SESSION_SECURITY_PLAN.md). Backend customer-consent-session/ evidence: 44 unit tests, 18 database checks and grant/decline browser proof at 1440/390 widths. No production actions.
 
-
 ## APP-013 Inactive Consent Evidence Foundation (2026-09-09)
 
 - Migration 20260909210000_add_appointment_email_consent_evidence supplies AppointmentEmailConsentScope, AppointmentEmailConsentEvidence and AppointmentEmailConsentBinding. No backfill or production migration. Scope is unique by tenant/conversation and tenant/session; immutable original intake-customer identity is separate from the immutable bound job-customer snapshot.
@@ -595,7 +661,6 @@ Expired/lost session handling has no automatic renewal/adoption or historical ap
 - Independent conversation/job/audit deletions are RESTRICTed while evidence references exist; root scope deletion cascades fixture-owned children. There is no active root-delete/purge API. Before release, review tenant deletion ordering, 90-day retention, legal holds and suppression/idempotency tombstones. Rollback/exception propagation remains mandatory for future transaction callers.
 - D2 verification, D3 deadlines, D4 lifecycle/retention execution, customer suppression surfaces, event-time grant references, positive eligibility, credentials and durable admission are not implemented in this section. Old finalized events remain unchanged and ineligible. No sends or production actions.
 - Proof: backend consent-evidence/database-summary.json and validation-summary.json; 29 unit cases, 24 local database checks and unchanged production-caller/eligibility boundaries. See the latest readiness report for fresh regression evidence and exact review commands.
-
 
 ## APP-013 Finalized Email Eligibility Diagnostic (2026-09-09, inactive)
 
@@ -874,6 +939,7 @@ Approved design with inactive evidence foundation only: [APP013_EMAIL_CONSENT_EX
 ### TenantBrandProfile
 
 Required fields:
+
 - `tenantId`
 - `greeting`
 - `tonePreset`
@@ -886,6 +952,7 @@ Required fields:
 ### BusinessRuleSet
 
 Required fields:
+
 - `tenantId`
 - `version`
 - `rules` (typed object)
@@ -896,6 +963,7 @@ Required fields:
 ### DispatchPolicy
 
 Required fields:
+
 - `tenantId`
 - `dispatchMode` (`manual` | `recommended` | `auto`)
 - `serviceAreaRules`
@@ -906,6 +974,7 @@ Required fields:
 ### SchedulingWindow
 
 Required fields:
+
 - `tenantId`
 - `timezone`
 - `businessHours`
@@ -915,6 +984,7 @@ Required fields:
 ### Appointment
 
 Required fields:
+
 - `appointmentId`
 - `tenantId`
 - `jobId`
@@ -927,6 +997,7 @@ Required fields:
 ### CustomerProfile
 
 Required fields:
+
 - `customerId`
 - `tenantId`
 - `name`
@@ -938,6 +1009,7 @@ Required fields:
 ### RevenueEvent
 
 Required fields:
+
 - `eventId`
 - `tenantId`
 - `eventType`
@@ -949,6 +1021,7 @@ Required fields:
 ### NotificationPolicy
 
 Required fields:
+
 - `tenantId`
 - `eventType`
 - `recipientType` (`owner` | `dispatcher` | `technician` | `customer`)
@@ -961,6 +1034,7 @@ Required fields:
 ### PaymentPolicy
 
 Required fields:
+
 - `tenantId`
 - `serviceFeeRequired` (boolean)
 - `serviceFeeCents` (nullable)
@@ -976,6 +1050,7 @@ Required fields:
 ### PricingPlan
 
 Required fields:
+
 - `planId` (`starter` | `growth` | `pro` | `enterprise`)
 - `publicMonthlyPriceCents`
 - `publicAnnualMonthlyPriceCents` (nullable for enterprise)
@@ -990,6 +1065,7 @@ Required fields:
 ### SubscriptionEntitlement
 
 Required fields:
+
 - `tenantId`
 - `planId`
 - `billingMode` (`subscription_only` | `fixed_enterprise`)
@@ -1012,6 +1088,7 @@ Rules:
 ### UsageMetricEvent
 
 Required fields:
+
 - `usageMetricEventId`
 - `tenantId`
 - `eventType` (`ai_call_handled` | `sms_sent` | `sms_received` | `booking_confirmed` | `emergency_escalated` | `active_technician_observed` | `location_observed`)
@@ -1031,6 +1108,7 @@ Rules:
 ### SubscriptionInvoiceRule
 
 Required fields:
+
 - `tenantId`
 - `planId`
 - `invoiceCadence` (`monthly` | `custom`)
