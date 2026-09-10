@@ -1,5 +1,17 @@
 # Session Handoff
 
+## Local phone-code journey (2026-09-10, latest review-ready)
+
+Backend checkpoint fd8d08a on codex/app-013-transactional-messaging, PR #21; incremental a955393..fd8d08a. Review backend evidence/APP-013/local-phone-verification/README.md.
+
+Implemented the approved first local phone slice: request/check/resend/clear/status in the existing fictional customer browser, encrypted durable session-bound state, exact version/retry handling, atomic audits and database-backed per-destination request/attempt limits. Explicit number change revokes prior test proof without staff verification. Lost-response retry writes once. Deterministic code 123456 is a labeled fixture; FIXTURE_VERIFIED never grants phoneAccessAuthorized, bookingAuthorized or deliveryAuthorized. No job verification flag or admission authority changes.
+
+Evidence: backend evidence/APP-013/local-phone-verification/README.md, ten database proof groups, browser summary and mobile/desktop screenshots. 1616 backend tests (18 new), 170 UI tests, lint/build/architecture/Prisma, four clean audits and full local browser/database proof passed. Initial sandbox socket refusal and advisory-lock void-result issue were resolved and final gates passed; existing toolchain/pg warnings remain. Fictional database removed; original dirty checkouts preserved.
+
+Local QA policy only: 5-minute challenge, 10-minute test proof capped by session, 30-second resend cooldown, 3 requests/5 checks per session and per tenant/destination over one hour. No approved production thresholds or provider semantics inferred. Optional transport is fixture-only, with no module/controller registration, package/schema/migration changes or live sending. No provider, real data, merge/deploy, IAM/secrets/billing or charges.
+
+Stop for review. Next is the real verification provider contract/selection and activation plan, not silent activation; define actual delivery/check semantics, costs, limits and channel behavior before production evidence or admission transfer. Address/coverage and existing human-reviewed admission remain distinct unfinished connections. APP-013 sole Now, Next empty, FE-014 paused. Progress unchanged: APP-013 50% scope coverage / 0 of 12 accepted; onboarding 50% local / 0 of 6 accepted; pilot 0 of 12 accepted. No overall engineering ETA.
+
 ## Automated verification contract mapping (2026-09-10, latest)
 
 Completed the approved source audit; see AUTOMATED_VERIFICATION_CONNECTION.md. Existing Twilio transport is not customer OTP; intake address fields are placeholders, not validated locations; routing fallback is not coverage proof. Proposed first implementation is a connected local customer phone request/check/resend/correction flow with durable session-bound evidence and no live sending. Provider contracts, explicit expiry/abuse policy and the later admission proof transfer remain to be resolved. Existing operator admission is not silently removed.
