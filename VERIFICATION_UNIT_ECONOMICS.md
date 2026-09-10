@@ -2,7 +2,9 @@
 
 ## Owner direction and boundary
 
-Owner approved proceeding with the inactive Verify adapter and asked to remain competitive and profitable across differing provider prices. This document records measurement/control requirements, not a price change, billing implementation or approved target margin. No subscriptions, plan entitlements, live spend caps, provider configuration or charges changed.
+Owner approved a $50 USD monthly phone-verification ceiling per organization, internal alerts at $25 and $40, and explicitly approved increases for higher volume. Reserve sufficient potential cost for the whole flow before starting; refuse new cost-bearing work beyond available budget, never bypass verification. This is an internal MVP safeguard, not a customer charge, subscription allowance or profitability guarantee. Review actual usage, conversion and subscription revenue after the first pilot month. No live activation, provider configuration, billing change or charge is authorized.
+
+The inactive implementation is documented in backend evidence/APP-013/verification-budget/README.md. USD integer micro-units avoid floating-point money arithmetic; UTC calendar-month labeling is the current local convention. Fixture quotes deliberately use $25/$30 whole-flow estimates to prove boundaries, not actual provider pricing. All reservations remain HELD across month boundaries until a later approved reconciliation mechanism; this conservative proof cannot yet replenish a recurring monthly allowance. No scheduled alert delivery or approved-override administration is implemented.
 
 ## Separate observation, estimate and actual cost
 
@@ -27,4 +29,4 @@ Use per-organization usage attribution, retry/destination/peer limits, bounded p
 
 Compare candidate plan economics at normal and high usage, lower booking conversion, repeated codes, longer calls, different destination markets and provider price changes. Included allowances/overages must follow measured unit costs and owner-approved positioning, not an unverified competitor price or an unlimited-use promise. Competitor research and actual plan changes are separate approved work, not this adapter task.
 
-No margin target, launch pricing, usage allowance or production spend ceiling is chosen here. The next coding slice remains the durable verification operation connection; do not expand it into a billing platform.
+No margin target, launch pricing, subscription usage allowance or provider rate card is chosen here. The $50 ceiling is approved policy for implementation, not permission to incur it. Actual rate inputs must cover the supported destination/channel and entire bounded flow, including applicable fees and uncertainty; missing inputs refuse rather than default to zero. Higher ceilings still require explicit approval. No automatic overage fee or billing-platform expansion.
