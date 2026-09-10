@@ -1,5 +1,9 @@
 # CallDesk MVP - Approved Supervised Pilot
 
+## Vision clarification — no MVP expansion (2026-09-10)
+
+The owner's MBA-informed sales/business-development and comfort-advisor direction is now explicit in [the canonical product definition](WHAT_SIGNMONS_IS_AND_DOD.md#long-term-sales-and-comfort-advisor-vision-owner-clarification-2026-09-10). This is future product direction only. The proposed addition of an advisory conversation to the MVP is withdrawn at the owner's instruction. Website/document-assisted onboarding and other imported knowledge remain future reviewed work, not new pilot blockers. Existing MVP criteria, percentages, denominators, APP-013 ownership and the organization-to-job steel-thread next target are unchanged. No code or release work is authorized by this documentation clarification.
+
 ## Organization setup slice (2026-09-10, latest review-ready)
 
 Completed the owner-approved S0 page/API slice within the explicitly amended APP-013 steel-thread dependency. Company facts, greeting/tone and sourced FAQs save to a tenant-scoped draft; exact saved-version approval preserves a separate approved snapshot; deterministic FAQ or human-contact fallback preview uses only that snapshot. Source routes are registered and the root sandbox links to /app/organization; nothing is deployed. No runtime AI, customer-journey/job connection, canonical policy changes or provider calls. Details and exact commands: backend evidence/APP-013/organization-setup/README.md; governance DATA_CONTRACTS.md.

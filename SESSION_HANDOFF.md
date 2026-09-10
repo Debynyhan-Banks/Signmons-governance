@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Documentation-only vision clarification (2026-09-10)
+
+Owner clarified: do not expand MVP; document Signmons as a future MBA-informed business-development/sales and comfort-advisory assistant, not only booking/scheduling. WHAT_SIGNMONS_IS_AND_DOD.md now states that direction explicitly; prior definition contained qualification/Growth/revenue outcomes but not this explicit framing. The assistant's proposed MVP advisory conversation is withdrawn. Website/document import remains future scope, not a prerequisite. No new ticket, acceptance criterion, code, progress credit or release action. APP-013 remains Now and the next organization-to-job steel-thread connection is unchanged. This note does not supersede the implementation/evidence checkpoint below.
+
 ## Organization setup slice (2026-09-10, latest review-ready)
 
 Backend checkpoint: `d7821e1`, pushed on `codex/app-013-transactional-messaging` (PR #21), incremental `df63faa..d7821e1`.
