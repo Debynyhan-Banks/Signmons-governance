@@ -1,5 +1,13 @@
 # Data Contracts
 
+## Phone verification provider recommendation (2026-09-10, latest review-ready)
+
+Completed the bounded provider/source review. Recommend Twilio Verify v2 provider-generated SMS codes, subject to owner review; see PHONE_VERIFICATION_PROVIDER_DECISION.md for official sources, comparison, costs, recovery and activation gates. Existing SDK supports create/check; no dependency or account change needed for an inactive adapter. Critical differences from fixture: provider default 10-minute code, same-code resend, ambiguous 404 after approval/expiry/exhaustion, explicit OTP opt-in, and no Verify support in standard test credentials.
+
+Next after review: inactive injected-client Verify adapter and contract tests, with no production registration, provider calls or secrets. Durable network reservation/finalization and authenticated recovery must follow before real-recipient acceptance. No provider configuration, live sends, charges, real data, IAM, billing, merge or deployment authorized. Directory plugin was unavailable; official-document fallback used without installation.
+
+Documentation only, no new runtime/acceptance claim. APP-013 sole Now, Next empty, FE-014 paused. Progress unchanged: APP-013 50% scope coverage / 0 of 12 accepted; onboarding 50% local / 0 of 6 accepted; pilot 0 of 12 accepted. No overall engineering ETA.
+
 ## Local phone-code journey (2026-09-10, latest review-ready)
 
 Implemented the approved first local phone slice: request/check/resend/clear/status in the existing fictional customer browser, encrypted durable session-bound state, exact version/retry handling, atomic audits and database-backed per-destination request/attempt limits. Explicit number change revokes prior test proof without staff verification. Lost-response retry writes once. Deterministic code 123456 is a labeled fixture; FIXTURE_VERIFIED never grants phoneAccessAuthorized, bookingAuthorized or deliveryAuthorized. No job verification flag or admission authority changes.
