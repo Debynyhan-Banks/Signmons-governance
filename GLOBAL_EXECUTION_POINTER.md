@@ -1,6 +1,18 @@
 # Global Execution Pointer
 
-## Approved payment-policy prerequisite (2026-09-10, latest review-ready)
+## Reviewed preferred service window (2026-09-10, latest review-ready)
+
+Backend checkpoint: 86c7bd4 on codex/app-013-transactional-messaging, PR #21; incremental b61bb55..86c7bd4. Exact review steps and proof: evidence/APP-013/preferred-window-review/README.md.
+
+Owner reviewed b61bb55 and approved continuing the preferred-window section. Added local operator save/reload for a customer-stated preference, never availability or a booking. Exact job version, acknowledgment, active tenant and non-impersonated owner/admin/dispatcher required. Shared tenant/job locks and CAS atomically write preferredTimeText plus private review/audit metadata; preserve pricing, payment/intake snapshots, status and appointment fields. Refuse jobs with payment or scheduling activity. Exact same-actor retry writes once; fresh-version correction is explicit and audited.
+
+Evidence: backend evidence/APP-013/preferred-window-review/README.md, summary and focused desktop/mobile screenshots. 1598 backend tests (25 new), 170 UI tests, lint/build/architecture/Prisma, four clean audits and local browser/DB proof pass. Parent includes 12 organization/intake, eight admission and 12 browser groups, including five new preference checks: lost-ack exact retry, real audit rollback, selective blocker removal, stale/foreign/role refusal and concurrent correction once. Fictional records/database removed. Existing toolchain/pg deprecation notices remain documented.
+
+New route is unregistered in production. Plain text is not parsed to a date, timezone or reserved slot; payment/contact/address blockers remain and both booking/delivery authority stay false. No provider/payment/booking/send action, schema/package/migration, merge/deploy, real data, IAM/secrets/billing or charges.
+
+Stop for review. Next priority: inspect contact/address validation and coverage evidence and define what proof can clear those blockers, not a checkbox-only verification claim. Full S2 booking/confirmation and production rollout remain open. APP-013 sole Now, Next empty, FE-014 paused. Progress unchanged: APP-013 50% scope coverage / 0 of 12 accepted; onboarding 50% local / 0 of 6 accepted; pilot 0 of 12 accepted. No overall engineering ETA. Sales/advisor and website import remain outside MVP.
+
+## Approved payment-policy prerequisite (2026-09-10, prior checkpoint)
 
 Backend checkpoint: b61bb55 on codex/app-013-transactional-messaging, PR #21; incremental 395e86a..b61bb55. Review evidence/APP-013/organization-payment-policy/README.md for exact contracts, screenshots and reproduction commands.
 
