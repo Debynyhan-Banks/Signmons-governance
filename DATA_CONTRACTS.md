@@ -1,5 +1,17 @@
 # Data Contracts
 
+## Organization setup profile v1 (2026-09-10, source registered; not deployed)
+
+GET/PUT `/organization/profile` and POST `/organization/profile/approve` or `/preview` require existing RequestAuthGuard/TenantGuard plus service-verified non-impersonated owner/admin of an active tenant. Tenant/actor authority never comes from the body. Private/no-store responses and existing sanitized error filtering apply.
+
+PUT exact body: expectedUpdatedAt (canonical ISO timestamp), draft. Draft exact fields: companyName (120), timezone (80, valid Intl timezone), hours/services/fallback (500 each), greeting (200), tone warm|concise, faqs (1–10). FAQ exact fields: question (200), answer (1000), source (200). Text is trimmed, nonempty and excludes controls; question matching is case-insensitive exact text after trim; duplicate questions refuse. Descriptive timezone/services/hours are not changes to canonical tenant timezone, routing, scheduling, payment or cancellation policy. No automatic conflict comparison.
+
+TenantOrganization.settings.organizationProfileV1 contains version:1, draft, approved:null or {draft,actorId,approvedAt}. Existing settings are preserved. Write compares the exact tenant updatedAt and updates the JSON plus a strictly increasing updatedAt and privacy-safe USER audit in one transaction. Approve exact body is expectedUpdatedAt + acknowledged:true and copies the saved draft, not client content. Draft edits preserve approved content. Audit records action/version/timestamps/actor, not facts or FAQ text. A conflict or unknown outcome requires reload; no automatic replay/approval claim. Malformed stored profiles refuse. No new migration or immutable history archive.
+
+Preview exact body: expectedUpdatedAt + question. Reads the approved snapshot at the observed version or refuses. Returns approvedAt, mode:DETERMINISTIC_PREVIEW, matched, requiresHumanFollowup, answer, source, actionsAuthorized:false. Unmatched questions return owner-authored contact instructions; no callback/job is created. FAQ text is inert data and never a tool instruction; owner content review still required. No live AI or customer runtime wiring. Service snapshots return runtimeConnected:false. Source routes are registered but no deployment or provider activation is authorized.
+
+Current source/evidence: backend evidence/APP-013/organization-setup/README.md. Fixture identity is not production auth acceptance. Approved-version withdrawal/archive/retention and customer-journey binding are not implemented; further review required before live usage.
+
 ## Purpose
 
 Define canonical request/response/event/data shapes so frontend, backend, and governance stay aligned.
