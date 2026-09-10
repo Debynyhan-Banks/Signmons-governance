@@ -1,5 +1,11 @@
 # CallDesk steel-thread closeout audit — 2026-09-10
 
+## Organization setup and progress baseline (2026-09-10, latest planning)
+
+Owner approved organization-onboarding gap review and requested percentages. See governance `ORGANIZATION_ONBOARDING_MVP.md`: basic tenant name/instructions and separate settings exist, but no organization onboarding page or approved FAQ/voice workflow was found in the inspected feature tree. Proposed next milestone S0 is owner-approved organization facts/rules/FAQ/brand voice with local answer preview, before S1 intake-to-job. Map implementation ownership and align governance before coding; APP-013 remains sole Now, Next unassigned, FE-014 paused. This is not automatic APP-033 promotion or an APP-013 scope expansion.
+
+Progress baseline: APP-013 **50% recorded scope coverage** (1 demonstrated + 10 partial at half weight + 1 missing, divided by 12), **0/12 = 0% formal acceptance**; organization onboarding **0/6 = 0% acceptance**; full pilot **0/12 = 0% acceptance** against the existing pilot checklist. These are separate denominators, not effort, release readiness or an overall build percentage. Onboarding refines the existing business-controls requirement; do not add its six checks to the pilot denominator. No new engineering completion percentage or ETA is inferred. This documentation-only update does not rerun earlier runtime/security gates or claim new acceptance.
+
 ## Decision and evidence boundary
 
 Owner requested a fixed MVP audit before more coding: “proceed. i thought we were doing a steal thread to avoid this. lets see what need to be done for mvp”. This checkpoint documents the audit, not approval to reduce the pilot, promote tickets or release. APP-013 remains sole Now; Next remains empty; FE-014 stays paused.
