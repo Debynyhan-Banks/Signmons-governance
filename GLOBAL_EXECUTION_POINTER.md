@@ -1,6 +1,20 @@
 # Global Execution Pointer
 
-## Local address selection and coverage (2026-09-10, latest review-ready)
+## Local address draft connection (2026-09-10, latest review-ready)
+
+Backend checkpoint 8a0178a on codex/app-013-transactional-messaging, PR #21; incremental c5e4f6d..8a0178a. Exact review and reproduction: backend evidence/APP-013/address-draft/README.md.
+
+Selected fictional address and customer-stated unit now enter the existing read-only draft preview, sourced server-side and checked against the exact active session, address revision, candidate/query/unit and current catalog/service-area fingerprint before and after preview. UNKNOWN and OUT_OF_AREA remain visible snapshots, not permission. Local address mode hides/guards submission; existing admission and verification blockers are unchanged.
+
+Contract: optional addressSelection on POST /customer-session/draft contains exactly candidateId, query, revision and unit, requires explicit fixtureLoopback and injected address port. The original draft request remains unchanged without that field. Local address action review uses the existing eight-field envelope and reads without mutation/audit. Response localAddress is fixtureOnly with address/booking/delivery authority false. Joined address must satisfy the existing draft length bound. Separate read transactions provide a snapshot, not atomic admission or continuously current policy; any later consumer must revalidate. APP-013 owns replacing this fixture seam under a separately approved proof-transfer contract.
+
+Evidence: eight new transport cases; 1731 backend tests passed / three existing skips; build/lint/architecture/Prisma/syntax/diff checks and two zero-finding audits. Eleven-group address browser/database summary, desktop/mobile screenshots and parent regression passed; disposable database removed. Address fixture uses real address/session/database/transport but scripted transcript preview; parent separately covers real continuation preview. No production/live acceptance claimed.
+
+No schema/package/migration, production registration, provider configuration, real data, master address/job creation, booking/send permission, billing, charges, merge or deployment. Unit remains customer-stated; pg deprecation and real provider/cost/retention/recovery decisions remain open.
+
+Stop for review. Next proposed bounded connection: retain the explicitly non-authoritative local snapshot in the existing saved operator-review handoff with fresh revision/policy checks, without clearing verification blockers or changing job admission. This is not approval to implement the proposal or release. APP-013 sole Now; Next empty; FE-014 paused. APP-013 50% recorded scope / 0 of 12 accepted; onboarding 50% local / 0 of 6 accepted; pilot 0 of 12 accepted, not 0% built. No defensible overall engineering percentage or ETA.
+
+## Local address selection and coverage (2026-09-10, prior checkpoint)
 
 Backend checkpoint c5e4f6d on codex/app-013-transactional-messaging, PR #21; incremental 61a0446..c5e4f6d. Exact review steps: backend evidence/APP-013/address-journey/README.md.
 
