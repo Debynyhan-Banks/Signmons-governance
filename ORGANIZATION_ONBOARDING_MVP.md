@@ -1,5 +1,9 @@
 # Organization onboarding MVP — 2026-09-10
 
+## Approved local payment-policy prerequisite (2026-09-10)
+
+Explicit user approval added local owner/admin fixed-USD policy draft/approval and reviewed-job snapshot attachment, backend b61bb55. It is a separate policy source from FAQ/brand prose, preserves webhook validation and fail-closed behavior, and never charges or books. New controllers remain unregistered in production; system-wide adoption and existing-job repricing remain gates. Evidence: backend evidence/APP-013/organization-payment-policy/README.md. This supports O2 but does not establish full canonical routing/booking consistency or formal acceptance; onboarding remains 3/6 local and 0/6 accepted.
+
 ## Local journey connection (2026-09-10)
 
 Approved profile facts now feed a demonstrated local customer submission → separate operator review/approval → one CREATED job browser path. See GLOBAL_EXECUTION_POINTER.md and backend evidence/APP-013/browser-review-admission/README.md. Production identity, live AI and provider actions are not accepted; no onboarding denominator or formal acceptance changes. Retain 3/6 = 50% locally demonstrated and 0/6 accepted. Older setup-only descriptions below are historical checkpoints.
