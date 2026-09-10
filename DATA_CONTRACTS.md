@@ -1,5 +1,13 @@
 # Data Contracts
 
+## Local CREATED-job booking readiness (2026-09-10)
+
+Unregistered POST /booking-readiness/preview accepts exactly jobId UUID. Identity/tenant guards, sanitized private/no-store responses; service requires non-impersonated owner/admin/dispatcher and active tenant. In a repeatable-read PostgreSQL READ ONLY transaction, load undeleted tenant job/customer with tenant-correct address/category/payment and refuse non-CREATED states. Reuse intake snapshot assessment without transcript/history reads or audit writes and existing payment-gate evaluator; count unfinished Calendar operations. No provider/cipher/customer token dependency.
+
+Return jobId, jobUpdatedAt, CREATED status, snapshotOnly:true, assessment BLOCKED or REQUIRES_BOOKING_VALIDATION, blockers, payment state/reason, confirmation UNAVAILABLE/eligible:false/APPOINTMENT_NOT_FINALIZED with explanatory text, bookingAuthorized:false and deliveryAuthorized:false. Both depositRequired and serviceFeeRequired must be explicit booleans before payment state is known. Otherwise UNKNOWN/PAYMENT_POLICY_UNRESOLVED regardless of the legacy evaluator's missing-policy fallback. This is diagnostic conservatism, not a new booking/payment policy or verification mechanism. Missing intake facts and human review, unverified contact/address and unfinished Calendar operations block. A clean diagnostic does not establish current policy, pricing, service area, availability or booking authority.
+
+No confirmation content is fabricated for an unbooked job. Existing finalized-event/recipient/current-consent/mailbox/expiry checks remain required and are not bypassed. Operator fixture opens the newly admitted job in memory, uses readable labels and clears stale/error/identity-change state. No general history or post-reload job recovery added. Details and executable proof: backend evidence/APP-013/booking-readiness-preview/README.md. No schema/module/production activation.
+
 ## Local browser submission and operator decision transport (2026-09-10)
 
 Inactive same-origin customer transport adds POST /customer-session/submit with exactly sessionToken, requestId, expectedRevision, draft, confirmed:true. Existing origin/Fetch Metadata/marker/content/body/budget and integration-scope checks apply. Optional review port must exist; validates seven-field draft, UUID/revision and rechecks credential expiry. Response projects only requestId, state:PENDING_REVIEW, original expiresAt, jobCreated:false, bookingAuthorized:false, deliveryAuthorized:false.
