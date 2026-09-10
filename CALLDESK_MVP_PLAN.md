@@ -1,5 +1,11 @@
 # CallDesk MVP - Approved Supervised Pilot
 
+## Automated verification contract mapping (2026-09-10, latest)
+
+Completed the approved source audit; see AUTOMATED_VERIFICATION_CONNECTION.md. Existing Twilio transport is not customer OTP; intake address fields are placeholders, not validated locations; routing fallback is not coverage proof. Proposed first implementation is a connected local customer phone request/check/resend/correction flow with durable session-bound evidence and no live sending. Provider contracts, explicit expiry/abuse policy and the later admission proof transfer remain to be resolved. Existing operator admission is not silently removed.
+
+Documentation only; no runtime or acceptance change. APP-013 sole Now, Next empty, FE-014 paused. Progress remains APP-013 50% recorded scope / 0 of 12 accepted, onboarding 50% local / 0 of 6 accepted, pilot 0 of 12 accepted. No provider activation, charges, real data or release. Stop at mapping review before implementation.
+
 ## Approved automated verification MVP decision (2026-09-10, current)
 
 Owner explicitly rejected mandatory staff confirmation as friction in the normal customer journey and approved documenting automation before implementation. This supersedes the proposed operator-confirmed contact/address approach and the prior verification-audit next step. Normal verification must be self-service; human assistance is an explicit exception, not a hidden mandatory queue. Existing human-reviewed job admission is not silently removed by this decision; its separate authority boundary must be reconciled before claiming a fully automated booking journey.
