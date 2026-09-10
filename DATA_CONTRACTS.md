@@ -1,5 +1,11 @@
 # Data Contracts
 
+## Approved automated verification MVP decision (2026-09-10, current)
+
+Owner approved an automated normal verification path: phone one-time code, address autocomplete/validation, automatic configured service-area checks and existing verified-payment/availability gates. Mandatory operator contact/address confirmation is superseded; human help is for exceptions. Phone access is not identity, payment is not verification, and neither grants messaging consent. Existing human-reviewed admission is not silently removed. Current requirements, acceptance cases and approval boundaries: CALLDESK_MVP_PLAN.md, section "Approved automated verification MVP decision".
+
+Documentation only; implementation and provider acceptance remain open. Next is to inspect/reuse contracts and bound the automated connection, including expiry, retry, abuse controls and invalidation on changed details. No provider selection/configuration, live code sending, charges, production action or release authorized. APP-013 sole Now, Next empty, FE-014 paused. Percentages unchanged: APP-013 50% scope coverage / 0 of 12 accepted; onboarding 50% local / 0 of 6 accepted; pilot 0 of 12 accepted. No overall engineering ETA.
+
 ## Local reviewed preferred service window (2026-09-10)
 
 Unregistered POST /preferred-window-review/save accepts exactly jobId UUID, canonical expectedUpdatedAt, trimmed preference (1–500 plain-text characters; no control/format characters or unknown/not-provided placeholders), acknowledged:true. Verified non-impersonated owner/admin/dispatcher and active tenant supply actor/scope. Shared tenant lock then job lock; exact undeleted CREATED human-reviewed job, no payment record, Calendar history or scheduling fields. Unknown/foreign/advanced state refuses.

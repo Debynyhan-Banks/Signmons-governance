@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## Approved automated verification MVP decision (2026-09-10, current)
+
+Owner approved an automated normal verification path: phone one-time code, address autocomplete/validation, automatic configured service-area checks and existing verified-payment/availability gates. Mandatory operator contact/address confirmation is superseded; human help is for exceptions. Phone access is not identity, payment is not verification, and neither grants messaging consent. Existing human-reviewed admission is not silently removed. Current requirements, acceptance cases and approval boundaries: CALLDESK_MVP_PLAN.md, section "Approved automated verification MVP decision".
+
+Documentation only; implementation and provider acceptance remain open. Next is to inspect/reuse contracts and bound the automated connection, including expiry, retry, abuse controls and invalidation on changed details. No provider selection/configuration, live code sending, charges, production action or release authorized. APP-013 sole Now, Next empty, FE-014 paused. Percentages unchanged: APP-013 50% scope coverage / 0 of 12 accepted; onboarding 50% local / 0 of 6 accepted; pilot 0 of 12 accepted. No overall engineering ETA.
+
 ## Reviewed preferred service window (2026-09-10, latest review-ready)
 
 Owner reviewed b61bb55 and approved continuing the preferred-window section. Added local operator save/reload for a customer-stated preference, never availability or a booking. Exact job version, acknowledgment, active tenant and non-impersonated owner/admin/dispatcher required. Shared tenant/job locks and CAS atomically write preferredTimeText plus private review/audit metadata; preserve pricing, payment/intake snapshots, status and appointment fields. Refuse jobs with payment or scheduling activity. Exact same-actor retry writes once; fresh-version correction is explicit and audited.

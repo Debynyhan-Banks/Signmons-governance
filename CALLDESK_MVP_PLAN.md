@@ -1,5 +1,23 @@
 # CallDesk MVP - Approved Supervised Pilot
 
+## Approved automated verification MVP decision (2026-09-10, current)
+
+Owner explicitly rejected mandatory staff confirmation as friction in the normal customer journey and approved documenting automation before implementation. This supersedes the proposed operator-confirmed contact/address approach and the prior verification-audit next step. Normal verification must be self-service; human assistance is an explicit exception, not a hidden mandatory queue. Existing human-reviewed job admission is not silently removed by this decision; its separate authority boundary must be reconciled before claiming a fully automated booking journey.
+
+Required MVP behavior:
+
+- Phone: a one-time code demonstrates access to the exact phone number, not legal identity or truthfulness. Provide clear entry, expiry, resend and correction flows with bounded attempts, rate limits and replay prevention. Changing the number invalidates its previous proof. Never expose codes in ordinary logs or operator previews.
+- Address: autocomplete plus address validation and customer confirmation of the selected address; collect unit/access details when needed. Validation does not prove property ownership or guarantee physical access. Unsupported or ambiguous addresses offer an actionable correction path and optional explicit human help, not a false verified result.
+- Coverage: automatically evaluate the validated address against the organization's configured service area. Missing configuration or an unresolved address remains unresolved, not covered by routing fallback. Bind evidence to the address and applicable coverage-policy version; changes require reassessment.
+- Payment and booking: enforce verified payment under the approved business policy before a service visit; confirm booking only when applicable payment and availability requirements are satisfied. Payment is a separate safeguard, not identity, phone, address or consent proof. Preserve existing APP-012 ordering/contracts; no new fee or policy bypass is authorized.
+- Experience: retain safe entered details through recoverable errors, make pending/expired/failed states clear, support accessible mobile interaction, and avoid unnecessary repeated verification. A changed value, expired proof or uncertain outcome must not inherit stale authority. Messaging consent and mailbox verification remain independent.
+
+Acceptance demonstration: one fictional customer completes code verification, address selection/validation, automatic coverage decision and the existing governed payment/booking path without staff verification. Prove wrong/expired/replayed codes, resend limits, changed phone/address/policy, ambiguous/out-of-area addresses, unavailable validation, failed payment, retries and truthful pending outcomes. Define proof expiry, channel-specific code entry, provider contracts and rate limits before implementation; do not invent thresholds or claim provider delivery from stubs.
+
+Documentation only: no implementation or new acceptance credit. APP-013 remains sole Now; Next empty; FE-014 paused. Next: inspect/reuse existing verification and address contracts and propose the smallest automated connection with explicit proof and recovery boundaries. No vendor selected or provisioned. Live codes, provider configuration, secrets/IAM, charges, real data, merge/deploy and production actions require separate approval. Sales/advisor and website import remain outside MVP.
+
+Progress unchanged: APP-013 50% recorded scope coverage / 0 of 12 formally accepted; onboarding 3 of 6 (50%) locally demonstrated / 0 of 6 accepted; pilot 0 of 12 accepted, not 0% built. These are not an overall engineering completion percentage or ETA.
+
 ## Reviewed preferred service window (2026-09-10, latest review-ready)
 
 Owner reviewed b61bb55 and approved continuing the preferred-window section. Added local operator save/reload for a customer-stated preference, never availability or a booking. Exact job version, acknowledgment, active tenant and non-impersonated owner/admin/dispatcher required. Shared tenant/job locks and CAS atomically write preferredTimeText plus private review/audit metadata; preserve pricing, payment/intake snapshots, status and appointment fields. Refuse jobs with payment or scheduling activity. Exact same-actor retry writes once; fresh-version correction is explicit and audited.
