@@ -1,6 +1,18 @@
 # Global Execution Pointer
 
-## Saved local address handoff (2026-09-10, latest review-ready)
+## Combined organization/address review proof (2026-09-10, latest review-ready)
+
+Backend checkpoint 5fb4f36 on codex/app-013-transactional-messaging, PR #21; incremental 588c9f7..5fb4f36. Exact review and reproduction: backend evidence/APP-013/organization-address-thread/README.md.
+
+The existing real owner save/approval, deterministic approved company FAQ answer, same-session fictional address selection and saved encrypted review now run together. The operator response displays the exact company approval version beside historical address coverage. Unapproved company draft edits preserve review; a new approval invalidates the old review. Snapshot-bearing requests still cannot authorize job admission. Only three proof scripts, board and evidence changed; no production source/API/data-contract behavior change.
+
+Seven combined checks plus prior regression passed. Full backend 1753 passed / three existing skips, 92 passing suites; build/lint/architecture/Prisma/syntax/diff and two zero-finding audits. Desktop/mobile visually reviewed; disposable database removed. Customer answer now comes from the real approved-profile path, not a scripted reply collaborator. Operator screenshot adapter calls the real role-scoped read service; parent actual-controller proof remains separate. Zero live provider calls and no new jobs in this combined fixture.
+
+Remaining gates are explicit in the evidence: real phone access proof and rate/legal/account binding, reconciliation/recovery/shared abuse controls; real address source/validation/cost/retention semantics; exact current proof consumption before admission; and remaining owner/live pilot acceptance. Existing CONTACT_NOT_VERIFIED and ADDRESS_NOT_VERIFIED blockers remain. The $50 phone ceiling is not spend authorization and does not fund address-provider calls. Existing pg deprecation remains. No new provider/configuration, schema/package/migration, real data, IAM/secrets, billing, live sends/charges, merge or deployment.
+
+Stop for review. Next proposed bounded section: a review-only real-verification-to-admission readiness contract and approval checklist. Do not add another local fixture feature or automatically enable a provider or admission path. Separate explicit scope is required for provider selection, live testing/spending/configuration or implementation. APP-013 sole Now; Next empty; FE-014 paused. APP-013 50% recorded scope / 0 of 12 accepted; onboarding 50% local / 0 of 6 accepted; pilot 0 of 12 accepted, not 0% built. No defensible overall engineering percentage or ETA.
+
+## Saved local address handoff (2026-09-10, prior checkpoint)
 
 Backend checkpoint 588c9f7 on codex/app-013-transactional-messaging, PR #21; incremental 8a0178a..588c9f7. Exact review and reproduction: backend evidence/APP-013/address-handoff/README.md.
 
