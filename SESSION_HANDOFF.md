@@ -2,7 +2,7 @@
 
 ## VO-2 mocked execution and recovery checkpoint
 
-Local backend commit: `cbe605f` on codex/app-013-transactional-messaging, parent 10a5198. Governance parent e29ab89. Publishing is blocked by the permission reviewer pending explicit approval for this payload to the two public GitHub repositories. Read-only gh checks confirmed both existing Signmons repos are public and viewerPermission ADMIN. No alternate destination or push workaround used. Finish local review only; ask permission to publish the VO-2 code, migration, governance and fictional-test evidence to the existing two feature branches. No production or deployment authority is implied.
+Publication approved by the owner in “yes, what next”. Backend `cbe605f` and governance `34a40d6` were successfully pushed to the existing public feature branches codex/app-013-transactional-messaging and codex/app-013-message-state-evidence respectively. The prior publication blocker is resolved. This approval does not authorize merge, deployment, live providers or production actions.
 
 Owner approved test-only eight-second absolute deadline, three new attempts/session spaced thirty seconds apart within existing caps, exact-operation retry, retained uncertain costs and authorized audited recovery. Implemented durable deadline/attempt completion, mock-only execution outside database locks, and existing protected correction-page integration. Lost/late results, orphan claims and persistence faults never authorize redispatch or refund. Owner/admin recovery requires tenant/account/attempt-bound server-resolved evidence and only retains liability; no real provider reconciliation or operator UI is claimed.
 
@@ -816,7 +816,7 @@ Exact review commands and source/evidence: backend evidence/APP-013/readiness-re
 
 ## Next Actions (Strict Order)
 
-1. Review local backend cbe605f after 10a5198 and address-execution evidence. Obtain explicit approval to publish the VO-2 source, migration, governance and fictional-test evidence to public Debynyhan-Banks/signmons-calldesk-backend branch codex/app-013-transactional-messaging and public Debynyhan-Banks/Signmons-governance branch codex/app-013-message-state-evidence. Do not retry publishing before that approval.
+1. Review published backend cbe605f after 10a5198, governance 34a40d6 and address-execution evidence. Owner explicitly approved the VO-2 payload publication to both existing public feature branches; both pushes succeeded. Publication is not release or acceptance.
 2. After review and authorized publication, resolve VO-3 freshness/revocation/cleanup policy values before dependent implementation. Provider-specific financial settlement, live sources/accounts/budgets/notices and real proof-to-job remain gated. APP-013 remains Now, 50% scope index, accepted 0/12; no overall percentage/ETA.
 3. Keep live verification, county acceptance, sending and real proof-to-job connection gated; no production, billing, real data or release actions are authorized.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.

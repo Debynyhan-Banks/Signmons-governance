@@ -336,7 +336,7 @@ Purpose: single active queue for execution.
 ## Now
 
 - [ ] APP-013 Twilio-backed notification center and transactional customer messaging (`SCR-APP-021`, `SCR-APP-022`, `SCR-TECH-005`)
-  - VO-2 locally review-ready at backend cbe605f: bounded mock deadline/retry and conservative audited recovery, existing responsive customer flow, all recorded checks pass. Explicit publication approval is required by permission reviewer for this payload to the existing public GitHub feature branches; no push completed. Next after review/publication is VO-3 policy agreement for freshness/revocation/cleanup before dependent coding. Live provider/source/budget/retention/admission remain gated. Scope index 50%, acceptance 0/12; no overall percentage/ETA.
+  - VO-2 review-ready and published at backend cbe605f: bounded mock deadline/retry and conservative audited recovery, existing responsive customer flow, all recorded checks pass. Owner explicitly approved publication; backend cbe605f and governance 34a40d6 were pushed to the existing public feature branches. Next after review/publication is VO-3 policy agreement for freshness/revocation/cleanup before dependent coding. Live provider/source/budget/retention/admission remain gated. Scope index 50%, acceptance 0/12; no overall percentage/ETA.
 
 ## Next
 
