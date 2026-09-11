@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## Verification operations sizing checkpoint
+
+Approved planning continuation inspected backend 4ad7def and governance d71c6ab after fetching both remotes. VERIFICATION_OPERATIONS_PLAN.md defines three dependent boundaries: VO-1 durable address operations/shared liability reservation; VO-2 bounded execution/uncertain recovery in the existing journey; VO-3 freshness/revocation/cleanup. Existing phone holds are conservative but do not settle/replenish; the single-customer correction fixture is not a production operations layer. No new provider framework or separate UI fixture is proposed.
+
+Planning only; no runtime, schema, provider, real data, billing or release change. Next decision: approve VO-1 only, including minimal ledger migration applied solely to disposable local tests, fictional rates/caps and disabled dispatch. Later sections require review; live account/rate/address budget/county/notice/retention gates remain. Governance consistency, four placement tests and diff checks pass; application/browser gates are not applicable to documentation-only work and prior results are not rerun claims. APP-013 sole Now; Next empty; FE-014 paused. APP-013 scope index 50%, accepted 0/12; onboarding local 50%, accepted 0/6; pilot accepted 0/12. No overall percentage or ETA.
+
 ## Protected correction browser checkpoint (2026-09-11)
 
 Approved continuation connects exact correction display and confirmation to the existing protected local customer-review page. Optional fixture-only transport reuses session/origin/request-budget protections. Server-side fixture locks the current conversation and binds candidate to trusted tenant/session/expiry, conversation version and server-generated revision. Explicit acknowledgment is required; edits clear UI, tampering/replacement/closed sessions refuse, and conditional best-effort discard plus expiry bounds pending state. Confirmation remains customer-stated only: addressVerified/admissionAuthorized false, county UNKNOWN, sending disabled. No automatic draft rewrite or proof-to-job connection.
@@ -314,7 +320,7 @@ Purpose: single active queue for execution.
 ## Now
 
 - [ ] APP-013 Twilio-backed notification center and transactional customer messaging (`SCR-APP-021`, `SCR-APP-022`, `SCR-TECH-005`)
-  - Split customer/operator review-request foundation is review-ready: encrypted one-time customer submission and authorized request-ID-only operator read, no stored or reconstructed customer bearer. 1492 backend/170 UI tests, ten new PostgreSQL groups and prior browser/crash regressions pass; four audits clean. Original session deadline, stale/closed refusal and exact replay remain. No request-to-job admission or UI/route activation. Next proposed: token-free operator admission from the durable request with atomic job/consent outcome, no external actions. Coverage 50%, acceptance 0/12; 7-12 APP-013 / 20-35 pilot unequal sections, low confidence. APP-013 stays Now.
+  - Verification operations plan is review-ready; runtime remains 4ad7def. Next decision: approve VO-1 durable address operations/shared liability with local-only migration tests and no provider activation. See VERIFICATION_OPERATIONS_PLAN.md. Later recovery/freshness packages require review; real source/budget/admission remain gated. Scope index 50%, acceptance 0/12; historical section-count forecasts are superseded, with no overall percentage/ETA.
 
 ## Next
 

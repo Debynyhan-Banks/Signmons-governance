@@ -1,5 +1,11 @@
 # Session Handoff
 
+## Verification operations sizing checkpoint
+
+Approved planning continuation inspected backend 4ad7def and governance d71c6ab after fetching both remotes. VERIFICATION_OPERATIONS_PLAN.md defines three dependent boundaries: VO-1 durable address operations/shared liability reservation; VO-2 bounded execution/uncertain recovery in the existing journey; VO-3 freshness/revocation/cleanup. Existing phone holds are conservative but do not settle/replenish; the single-customer correction fixture is not a production operations layer. No new provider framework or separate UI fixture is proposed.
+
+Planning only; no runtime, schema, provider, real data, billing or release change. Next decision: approve VO-1 only, including minimal ledger migration applied solely to disposable local tests, fictional rates/caps and disabled dispatch. Later sections require review; live account/rate/address budget/county/notice/retention gates remain. Governance consistency, four placement tests and diff checks pass; application/browser gates are not applicable to documentation-only work and prior results are not rerun claims. APP-013 sole Now; Next empty; FE-014 paused. APP-013 scope index 50%, accepted 0/12; onboarding local 50%, accepted 0/6; pilot accepted 0/12. No overall percentage or ETA.
+
 ## Protected correction browser checkpoint (2026-09-11)
 
 Backend commit: `4ad7def` on `codex/app-013-transactional-messaging`; reviewed parent `cd22aff`. Governance parent `540cfd7`. Original dirty saved backend checkout was preserved.
@@ -790,8 +796,8 @@ Exact review commands and source/evidence: backend evidence/APP-013/readiness-re
 
 ## Next Actions (Strict Order)
 
-1. Review backend `4ad7def` after `cd22aff`: protected correction transport, existing customer-review fixture, exact browser confirmation/refusal and address-correction evidence. No real provider or admission authority.
-2. After review, size one verification-operations package against MVP_COMPLETION_AUDIT_2026-09-11.md: shared cost reservations, bounded attempts, uncertainty and retention cleanup. Do not enable a provider or begin a new ticket automatically. APP-013 remains Now, 50% scope index, accepted 0/12. No overall engineering percentage or section-count ETA.
+1. Review VERIFICATION_OPERATIONS_PLAN.md, especially VO-1 exit tests and the approval checklist; source baseline is backend 4ad7def. This checkpoint is planning only.
+2. Approve VO-1 only before implementation: disabled durable address-operation/shared liability boundary, with a minimal ledger migration tested solely in disposable local PostgreSQL and fictional rates/caps. VO-2 and VO-3 remain later review boundaries. APP-013 remains Now, 50% scope index, accepted 0/12; no overall percentage/ETA.
 3. Keep live verification, county acceptance, sending and real proof-to-job connection gated; no production, billing, real data or release actions are authorized.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 
