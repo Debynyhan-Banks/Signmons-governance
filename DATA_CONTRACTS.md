@@ -1,5 +1,13 @@
 # Data Contracts
 
+## Conditional real-address and county-proof receipt (planning only)
+
+The approved source/retention audit defines the future minimal contract; it is not a registered runtime schema. Google Address Validation uses direct server-side submission with `regionCode: US` and `enableUspsCass: true`; accepted premise/subpremise and USPS DPV signals still require explicit customer confirmation/correction. No Google response, verdict, coordinate, Place ID or correction flag is durable.
+
+The future durable receipt contains only `version`, Signmons `operationId`, trusted tenant/session references, `addressRevision`, `customerConfirmedAt`, `validationCheckedAt`, `coverageCheckedAt`, `expiresAt`, tenant `coveragePolicyVersion`, source name/version, keyed `sourceSnapshotDigest`, canonical county GEOID and `coverageOutcome` (`IN_AREA | OUT_OF_AREA | UNKNOWN`). It contains no address text, unit, coordinate, Google identifier or raw CEGIS record identifier. The provider-operation cache is end-user scoped, excluded from logs/analytics/backups and expires at the earlier of session expiry or 24 hours; admission must recheck unchanged current proof outside its database transaction.
+
+County source is conditional Cuyahoga CEGIS `Addressing_Sites_Streets` service item `facc7d99a6ec40a5b01f5240455b9e6d`, layers 0/1, WKID 102722/latest 3734. Positive classification requires a unique exact current physical site record with consistent US/OH/county plus a current linked road whose left/right county values agree. Every conflict, boundary road, noncurrent/validation-error or unknown record, unsupported point/capture type, missing unit/link, stale source or outage is `UNKNOWN`. Cuyahoga County is GEOID `39035`; ZIP, postal county, Google administrative label, source absence and routing fallback never establish coverage. Exact rules/matrix: GOOGLE_ADDRESS_MVP_CONTRACT.md. No runtime implementation or acceptance is recorded.
+
 ## Approved Cuyahoga County pilot boundary
 
 Owner approved all of Cuyahoga County, Ohio for Eternity's U.S.-only pilot. The planned coverage decision requires trustworthy country/state/county evidence for a validated service address: reliable inside is IN_AREA, reliable outside is OUT_OF_AREA, unresolved/conflicting/imprecise evidence is UNKNOWN with assistance. ZIP-only tests and routing fallback cannot authorize county coverage. See REAL_VERIFICATION_ADMISSION_PLAN.md for requirements and acceptance cases.

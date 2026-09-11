@@ -1,5 +1,13 @@
 # Real verification to admission — approved direction
 
+## Conditional county-source and retention checkpoint
+
+The 2026-09-11 documentation-only audit conditionally selects official Cuyahoga County CEGIS site-address plus road-centerline data for a fail-closed future resolver. Positive classification requires one exact current physical site record with consistent US/OH/county and a current linked road whose county values agree on both sides. Boundary roads, source conflicts, noncurrent/validation-error or unknown records, unsupported point/capture type, unit ambiguity, stale evidence and outages are `UNKNOWN`. Cuyahoga's canonical policy GEOID is `39035`; ZIP, postal labels, Google county text and routing fallback are never authority.
+
+Google content is limited to an end-user-scoped transient cache expiring at the earlier of session expiry or 24 hours. No raw response, coordinate or Place ID is durable; explicit confirmation/correction creates a customer-provided address, while the durable proof retains only Signmons identifiers/timestamps/revisions plus CEGIS source/policy digest and county outcome. Exact rules and field matrix are in GOOGLE_ADDRESS_MVP_CONTRACT.md.
+
+This closes the technical source/matrix drafting section, not owner acceptance, implementation or live activation. Still required: physical CEGIS point/capture allowlist, customer-data duration/deletion owner, notice review, address budget/account, legitimate test scope and explicit implementation approval. Backend runtime remains 5fb4f36; APP-013 sole Now, Next empty, FE-014 paused; progress and formal acceptance are unchanged.
+
 ## Google-first lean address planning checkpoint
 
 Owner selected Google for lean MVP address validation and approved the planning contract in GOOGLE_ADDRESS_MVP_CONTRACT.md. Direct submit-only Pro validation, no autocomplete/map, separate physical-county qualification, explicit retention rules and shared cost reservations are specified. County source and exact durable-field permissions remain unresolved; no real proof/admission implementation or activation is approved. This supersedes earlier no-address-provider-selected wording, not historical runtime evidence.
@@ -54,12 +62,12 @@ Existing approved phone policy: $50 USD per organization/month, alerts at $25/$4
 
 Before code connecting real proof to admission, specify and review:
 
-1. Exact pilot tenant/environment and approved owner/operator roles; Eternity hours, emergency fallback and support owner. Service-area scope is now settled: all of Cuyahoga County, Ohio; authoritative county-resolution implementation remains open.
+1. Exact pilot tenant/environment and approved owner/operator roles; Eternity hours, emergency fallback and support owner. Service-area scope is settled. CEGIS rules are conditionally qualified, but the physical point/capture allowlist and live operational acceptance remain open.
 2. Supported U.S. address types and destination classification, including treatment of territories, unsupported numbers, PO boxes and missing/unvalidated units.
 3. Provider capabilities and binding, challenge expiry, proof lifetime, resend cooldown, attempt/rate limits and freshness/revocation semantics. Values must be documented and tested, not inherited accidentally from session expiry or invented as universal best practice.
-4. Verification notice, terms/privacy links, retained fields, retention/deletion policy and authorized access. No legal-compliance certification is implied by this plan.
+4. Verification notice, terms/privacy links, customer-data retention/deletion duration and accountable owner. The provider-field matrix and 24-hour transient ceiling are drafted; no legal-compliance certification is implied.
 5. Real rate inputs, reconciliation/recovery procedures, address budget, alert delivery and kill-switch owner.
-6. The exact next bounded implementation section and its acceptance tests. Google is the selected address-provider direction under GOOGLE_ADDRESS_MVP_CONTRACT.md; physical-county source qualification and live activation remain open.
+6. Owner acceptance of the conditional source/matrix, then the exact bounded adapter section and acceptance tests. Google remains the address-provider direction; implementation and live activation remain open.
 
 ## Approval checklist
 
@@ -67,6 +75,7 @@ Before code connecting real proof to admission, specify and review:
 - [x] U.S.A.-only scope approved.
 - [x] Eternity Mechanical Services selected as the pilot business.
 - [x] All of Cuyahoga County, Ohio approved as the initial service area; county evidence required, not ZIP-only approximation.
+- [x] Conditional CEGIS source rules and exact Google retained-field matrix documented with noncustomer evidence; owner/live acceptance remains open.
 - [ ] Resolve and approve the implementation decisions above.
 - [ ] Approve one bounded implementation section; preserve disabled provider/admission defaults until gates pass.
 - [ ] Before live testing: explicitly approve provider/account/service configuration, named participants and destinations, duration, total spending cap, alerts, reconciliation and stop switch.
