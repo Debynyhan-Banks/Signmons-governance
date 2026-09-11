@@ -112,7 +112,7 @@ Evidence anchors: backend evidence/APP-013/address-execution/README.md, browser-
 | 1 / 1A | Accepted | None for local section; live gates unchanged | Backend 4c5030a; evidence/APP-013/verification-freshness/README.md and committed database/browser summaries | Owner “proceed”, 2026-09-11 |
 | 2 / 1B | Accepted | Production cleanup not activated | Backend 37bcb15; evidence/APP-013/verification-cleanup/README.md and committed database/browser summaries | Owner “i reviewed the evidence proceed”, 2026-09-11 |
 | 3 / 2A | Accepted | Real source/identity activation remains 2B | Backend f8e35e8; evidence/APP-013/current-proof-admission/README.md and summary | Owner “i reviewed continue”, 2026-09-11 |
-| 4 / 2B | Planned; entry review blocked | COUNTY, named participant/environment/accounts, LIVE-VERIFICATION | CONTROLLED_VERIFICATION_2B_CHECKLIST.md; no live evidence | Pending |
+| 4 / 2B | Planned; entry review blocked | Participant confirmed; COUNTY, environment/accounts and LIVE-VERIFICATION remain; Chrome extension UI blocks console inspection | CONTROLLED_VERIFICATION_2B_CHECKLIST.md; provisional unapproved test packet, no live evidence | Pending |
 | 5 / 3A | Planned | 2B, Sandbox action approval | Pending | Pending |
 | 6 / 3B | Planned | 3A, calendar and recovery scope approval | Pending | Pending |
 | 7 / 3C | Planned | 3B, SMS recipient/consent/send approval | Pending | Pending |

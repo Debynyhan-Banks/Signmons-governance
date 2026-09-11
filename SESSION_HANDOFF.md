@@ -1,5 +1,15 @@
 # Session Handoff
 
+## Section 2B — participant confirmed; console preflight interrupted
+
+Backend board-only commit 7e6b240; runtime unchanged f8e35e8. Governance checkpoint is this commit, parent be41282. Documentation consistency, four execution-placement tests and both diff checks passed. Runtime tests/build/browser QA were not rerun for Markdown-only changes; console observations are account-preflight evidence, not application QA. No account-sensitive identifiers, participant phone/address or secrets were added to the repositories.
+
+Owner confirmed participation, U.S. SMS-capable mobile phone and authorized Cuyahoga County address. Do not repeat those questions; exact personal details remain uncollected. CONTROLLED_VERIFICATION_2B_CHECKLIST.md now contains a provisional lean test packet and official reference pricing, not approved spending or account-specific rates.
+
+Google Cloud opened with Signmons selected; API/billing/quotas/permissions and nonproduction binding remain unverified. Twilio account readiness remains unverified. Chrome blocked automation because another extension UI was open. Smallest next action: user dismisses that panel, then resume read-only inspection. County searches again found no matching messages, not proof no response exists. No live call, settings/secrets/IAM/billing change, email, deployment or production data action.
+
+Current section 4/8 (2B) remains blocked at entry; accepted 3/8. Backend runtime unchanged f8e35e8. APP-013 sole Now; Next empty; FE-014 paused. Local scope index 50%, accepted 0/12; onboarding local 50%, accepted 0/6; pilot accepted 0/12. No overall effort percentage or ETA. This supersedes older participant questions, not the live gates.
+
 ## Section 2B — entry review, blocked before live actions
 
 Backend board-only commit 31ec606 (runtime unchanged f8e35e8); governance checkpoint is this commit on codex/app-013-message-state-evidence, parent c022d2e. Documentation consistency, four placement tests and both diff checks passed. No fresh runtime tests/build/browser QA claim; no runtime changes.
@@ -881,7 +891,7 @@ Exact review commands and source/evidence: backend evidence/APP-013/readiness-re
 
 ## Next Actions (Strict Order)
 
-1. Resolve CONTROLLED_VERIFICATION_2B_CHECKLIST.md: owner accepted 2A, accepted 3/8; 2B is section 4/8 blocked at entry. Confirm test participant/environment and obtain county clarification; current bounded Outlook search found no matching messages and is not proof of absence.
+1. Resume CONTROLLED_VERIFICATION_2B_CHECKLIST.md after the user dismisses Chrome's blocking extension UI. Participant prerequisites are confirmed; do not re-ask. Read-only account/environment and county qualification remain unresolved. Accepted 3/8; 2B is section 4/8 blocked at entry. The provisional $1 test packet is not spending approval.
 2. After review of named existing accounts, current rates, notices, source qualification and recovery ownership, obtain explicit approval for the exact capped controlled-verification packet. A general continue is not unspecified spending/configuration authority. Keep eight-section baseline fixed; no automatic 3A or ticket advance. APP-013 remains Now, 50% scope index, accepted 0/12; no overall percentage/ETA.
 3. Keep live verification, county acceptance, sending and real proof-to-job connection gated; no production, billing, real data or release actions are authorized.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
