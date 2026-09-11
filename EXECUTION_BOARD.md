@@ -1,5 +1,13 @@
 # Signmons Execution Board
 
+## VO-1 durable address operations checkpoint
+
+Owner approved VO-1 only. Implemented disabled AddressOperationLedger and minimal operation/request-alias migration, applied solely in disposable local PostgreSQL. Trusted integration/session and locked server-owned intent/revision/policy bind reservation; shared account, tenant and session money/request caps reserve atomically. Identical intent aliases share one operation; conflicting IDs refuse. Claim commits once, restart/replay never claims again, and cancellation releases only unclaimed liability. All prior-month holds and request counts remain; no settlement/replenishment. No provider or production registration, customer-input digest, job authority or live spending.
+
+Evidence: backend evidence/APP-013/address-operations/README.md. 95 suites/1,824 tests pass with three existing skips; build/lint/architecture/Prisma/format/diff pass. Thirteen disposable database groups plus existing parent browser regression pass; fixture cleaned up. Existing pg deprecation remains. Original dirty checkout preserved. Production binding/retention/operational rates/deadlines, county qualification and proof-to-job remain gates.
+
+Stop review-ready. Next proposed: VO-2 bounded mocked execution and uncertain recovery in the existing customer journey, after review and operational policy agreement; no automatic activation or later-ticket work. APP-013 sole Now; Next empty; FE-014 paused. APP-013 scope index 50%, accepted 0/12; onboarding local 50%, accepted 0/6; pilot accepted 0/12. No overall percentage/ETA, merge, deployment, production migration or external action.
+
 ## Verification operations sizing checkpoint
 
 Approved planning continuation inspected backend 4ad7def and governance d71c6ab after fetching both remotes. VERIFICATION_OPERATIONS_PLAN.md defines three dependent boundaries: VO-1 durable address operations/shared liability reservation; VO-2 bounded execution/uncertain recovery in the existing journey; VO-3 freshness/revocation/cleanup. Existing phone holds are conservative but do not settle/replenish; the single-customer correction fixture is not a production operations layer. No new provider framework or separate UI fixture is proposed.
@@ -320,7 +328,7 @@ Purpose: single active queue for execution.
 ## Now
 
 - [ ] APP-013 Twilio-backed notification center and transactional customer messaging (`SCR-APP-021`, `SCR-APP-022`, `SCR-TECH-005`)
-  - Verification operations plan is review-ready; runtime remains 4ad7def. Next decision: approve VO-1 durable address operations/shared liability with local-only migration tests and no provider activation. See VERIFICATION_OPERATIONS_PLAN.md. Later recovery/freshness packages require review; real source/budget/admission remain gated. Scope index 50%, acceptance 0/12; historical section-count forecasts are superseded, with no overall percentage/ETA.
+  - VO-1 review-ready at backend 10a5198: disabled durable address-operation/shared liability ledger; atomic duplicate/claim/cancel and all account/tenant/session limits proved in disposable PostgreSQL. No production migration, provider, route or admission activation. Next after review is bounded VO-2 mocked execution/uncertain recovery with operational policy agreement; freshness/cleanup and real source/budget/admission remain gated. Scope index 50%, acceptance 0/12; no overall percentage/ETA.
 
 ## Next
 

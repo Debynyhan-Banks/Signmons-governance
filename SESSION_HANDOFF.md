@@ -1,5 +1,15 @@
 # Session Handoff
 
+## VO-1 durable address operations checkpoint
+
+Backend commit `10a5198` on codex/app-013-transactional-messaging, parent `13baff1`. Governance parent `1584bbe`. Both remote branches fetched before work; original dirty saved checkout preserved. Independent cleanup query returned no calldesk_org_ databases.
+
+Owner approved VO-1 only. Implemented disabled AddressOperationLedger and minimal operation/request-alias migration, applied solely in disposable local PostgreSQL. Trusted integration/session and locked server-owned intent/revision/policy bind reservation; shared account, tenant and session money/request caps reserve atomically. Identical intent aliases share one operation; conflicting IDs refuse. Claim commits once, restart/replay never claims again, and cancellation releases only unclaimed liability. All prior-month holds and request counts remain; no settlement/replenishment. No provider or production registration, customer-input digest, job authority or live spending.
+
+Evidence: backend evidence/APP-013/address-operations/README.md. 95 suites/1,824 tests pass with three existing skips; build/lint/architecture/Prisma/format/diff pass. Thirteen disposable database groups plus existing parent browser regression pass; fixture cleaned up. Existing pg deprecation remains. Original dirty checkout preserved. Production binding/retention/operational rates/deadlines, county qualification and proof-to-job remain gates.
+
+Stop review-ready. Next proposed: VO-2 bounded mocked execution and uncertain recovery in the existing customer journey, after review and operational policy agreement; no automatic activation or later-ticket work. APP-013 sole Now; Next empty; FE-014 paused. APP-013 scope index 50%, accepted 0/12; onboarding local 50%, accepted 0/6; pilot accepted 0/12. No overall percentage/ETA, merge, deployment, production migration or external action.
+
 ## Verification operations sizing checkpoint
 
 Approved planning continuation inspected backend 4ad7def and governance d71c6ab after fetching both remotes. VERIFICATION_OPERATIONS_PLAN.md defines three dependent boundaries: VO-1 durable address operations/shared liability reservation; VO-2 bounded execution/uncertain recovery in the existing journey; VO-3 freshness/revocation/cleanup. Existing phone holds are conservative but do not settle/replenish; the single-customer correction fixture is not a production operations layer. No new provider framework or separate UI fixture is proposed.
@@ -796,8 +806,8 @@ Exact review commands and source/evidence: backend evidence/APP-013/readiness-re
 
 ## Next Actions (Strict Order)
 
-1. Review VERIFICATION_OPERATIONS_PLAN.md, especially VO-1 exit tests and the approval checklist; source baseline is backend 4ad7def. This checkpoint is planning only.
-2. After review, approve VO-1 only before implementation: disabled durable address-operation/shared liability boundary, with a minimal ledger migration tested solely in disposable local PostgreSQL and fictional rates/caps. VO-2 and VO-3 remain later review boundaries. APP-013 remains Now, 50% scope index, accepted 0/12; no overall percentage/ETA.
+1. Review backend 10a5198 after 13baff1: address-operation-ledger service/spec, minimal schema/migration, disposable verifier and address-operations evidence. Confirm provider/route/module registrations and phone accounting are unchanged; the migration is not approved for production.
+2. After review, approve the bounded VO-2 mocked execution/uncertain-recovery connection and its operational policy before coding. Retain liability, exact retry, customer progress and no live dispatch; VO-3 and real proof-to-job stay later. APP-013 remains Now, 50% scope index, accepted 0/12; no overall percentage/ETA.
 3. Keep live verification, county acceptance, sending and real proof-to-job connection gated; no production, billing, real data or release actions are authorized.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 

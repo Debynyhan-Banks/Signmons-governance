@@ -2,6 +2,8 @@
 
 ## Decision and scope
 
+VO-1 update: owner subsequently said “approve proceed,” authorizing VO-1 only. The durable ledger/local migration proof is now review-ready; see the current pointer and backend evidence/APP-013/address-operations/README.md. VO-2/VO-3 and live activation are not approved by that decision. Historical sizing text below is preserved as the original plan, not the current execution pointer.
+
 Sizing approved by “proceed” after the protected correction-browser checkpoint. Inspected backend `4ad7def` and governance `d71c6ab`; both focused remote branches fetched and aligned. This is a documentation-only plan, not approval to implement every section or activate providers. APP-013 stays sole Now; Next empty; FE-014 paused. No MVP expansion or Eternity website work.
 
 Outcome: the existing customer review journey must preserve progress and potential costs through duplicate requests, process loss, timeout, edits and expired proof. No uncertain result may authorize admission. County qualification remains independently blocked; this package cannot replace it with ZIP or customer assertion.
@@ -55,7 +57,7 @@ Exit: session/tenant isolation, changed policies, exact expiry, revocation races
 ## Approval checklist
 
 - [x] Size against existing code and fixed MVP audit; keep county UNKNOWN and live activation off.
-- [ ] Approve **VO-1 only**, including minimal ledger migration for disposable local testing, injected fictional policies and no provider activation.
+- [x] Approve **VO-1 only**, including minimal ledger migration for disposable local testing, injected fictional policies and no provider activation. Implementation is review-ready; not live acceptance.
 - [ ] Review VO-1 evidence before VO-2; approve VO-2 operational thresholds and recovery authorization model before implementation.
 - [ ] Review VO-2 evidence before VO-3; approve proof freshness and retained accounting/digest duration before implementation needing those choices.
 - [ ] Before any live test: qualified county evidence, named tenant/environment/accounts, verified rate ceilings, separate address/account caps, current notices/terms, legitimate test participants, cleanup/incident owner and explicit capped spend permission.
