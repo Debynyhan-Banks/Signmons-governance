@@ -1,5 +1,19 @@
 # Session Handoff
 
+## Section 1B — cleanup and restart, review-ready
+
+Backend implementation: 37bcb15 on codex/app-013-transactional-messaging (parent 4c5030a). Governance checkpoint: this commit on codex/app-013-message-state-evidence (parent 9a90b7e). Validation: 98 backend suites / 1,869 tests, three existing skips; 170 UI tests; backend/UI build/lint, architecture, Prisma, four zero-finding audits, twelve new database groups and full mobile/desktop parent regression pass. Governance consistency and four placement tests pass. Independent fixture database inventory returned empty. Original dirty saved backend checkout remains untouched.
+
+Owner accepted 1A with “proceed” and approved 1B plus ninety-day resolved-reference retention with “yes”. Current section 2 of 8 (1B) is locally Demonstrated, awaiting owner acceptance; accepted 1/8. Fixed eight-section denominator unchanged.
+
+Protected sessions now persist their original expiry. Closure commits before retryable physical purge; shared session checks refuse closed/expired proof even when deletion fails. A fixture-owned startup/periodic sweep needs no browser token. Per-session correction entries are isolated, capped at 64 and discarded on session closure/expiry (no later than 24 hours); reconstruction cannot revive cached candidates or redispatch an observed operation.
+
+Abandoned matching draft payloads and verification-only payloads are removed at session closure/expiry, earlier than seven days. Submitted review/job business payloads, consent and unrelated records remain. Ninety-day cleanup removes only request aliases for authoritatively cancelled, never-dispatched address operations with zero hold; core operation/accounting rows, counters, audits and all unresolved liabilities remain. No unsupported financial settlement or blanket ninety-day ledger deletion is claimed.
+
+Evidence: backend evidence/APP-013/verification-cleanup/README.md and reproducible disposable-database/browser summaries. Restore evidence is service reconstruction and an expired snapshot simulation, not a production backup/restore drill. Production scheduling, legacy-record migration and provider retention qualification remain gated. No schema change, production deletion, external provider call, job/send authority, billing, merge or deployment.
+
+Next after review/acceptance: explicitly approve 2A current-proof admission, not 2B live verification. APP-013 remains sole Now; Next empty; FE-014 paused. APP-013 scope index 50%, accepted 0/12; onboarding local 50%, accepted 0/6; pilot accepted 0/12. No defensible overall engineering percentage/ETA. Historical checkpoint text below is superseded by this section.
+
 ## Section 1A — freshness and invalidation, review-ready
 
 Backend implementation commit: 4c5030a on codex/app-013-transactional-messaging (parent 7b8a089). Review evidence/APP-013/verification-freshness/README.md and its committed summaries. Governance checkpoint is this commit on codex/app-013-message-state-evidence (parent 1d335b7). Original dirty saved checkout preserved; only focused feature branches are published.
@@ -841,8 +855,8 @@ Exact review commands and source/evidence: backend evidence/APP-013/readiness-re
 
 ## Next Actions (Strict Order)
 
-1. Review section 1A evidence in backend evidence/APP-013/verification-freshness/README.md and database/browser summaries. Current section 1 of 8 is Demonstrated; owner acceptance pending, accepted 0/8. Verify preserved original deadlines/draft/holds and no live authority.
-2. After review and owner acceptance of 1A, approve 1B cleanup/restart and its retention mapping before implementation. Ninety-day resolved-reference retention remains proposed. Keep eight-section baseline fixed; no new section or automatic ticket advance. APP-013 remains Now, 50% scope index, accepted 0/12; no overall percentage/ETA.
+1. Review section 1B evidence in backend evidence/APP-013/verification-cleanup/README.md and database/browser summaries. Current section 2 of 8 is Demonstrated; owner acceptance pending, accepted 1/8. Verify closure-before-purge, isolated sessions, preserved submitted records/holds and supported ninety-day alias mapping.
+2. After review and owner acceptance of 1B, approve 2A current-proof admission and its application boundary before implementation. Keep eight-section baseline fixed; no new section or automatic ticket advance. APP-013 remains Now, 50% scope index, accepted 0/12; no overall percentage/ETA.
 3. Keep live verification, county acceptance, sending and real proof-to-job connection gated; no production, billing, real data or release actions are authorized.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 

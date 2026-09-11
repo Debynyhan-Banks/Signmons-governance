@@ -1,5 +1,17 @@
 # Data Contracts
 
+## Section 1B fixture lifecycle and retention (inactive)
+
+New protected sessions atomically persist collectedData.verificationLifecycle: exact version 1, original signed expiresAt epoch milliseconds, closedAt/purgedAt nullable epoch milliseconds. Shared tenant/session lock checks the database clock and refuses malformed, closed or expired lifecycle. Legacy sessions without this marker are not adopted by cleanup. No migration or production scheduler is registered.
+
+Optional loopback fixture POST /customer-session/end accepts only sessionToken under existing origin, transport, tenant and request-budget protections. Returns CLOSED, cleanupPending boolean, fixtureOnly true and deliveryAuthorized false. Closure/audit commit separately before purge; failed purge cannot restore proof eligibility. Exact valid-token retry is idempotent. Busy/unconfirmed local clear and page exit do not claim acknowledged server closure; server expiry remains authoritative.
+
+VerificationCleanupService.sweep is trusted fixture-owned, explicit-tenant and cursor-bounded (default 50, maximum 100). Startup/periodic reconciliation closes due/non-ongoing sessions before retryable purge without browser credentials. Purge atomically removes verificationOperations/localPhone/localAddress payloads and only matching protected_intake_turn_v1 session/version 1 or 2 content for abandoned, unsubmitted, unlinked conversations. Submitted review/job content, consent, unrelated data and event/audit envelopes remain. Deletion occurs at the existing fifteen-minute session expiry or earlier closure, satisfying the seven-day ceiling. Unknown legacy/malformed records require review, not guessed deletion.
+
+Correction fixture owns at most 64 separate tenant/conversation/session entries, each bounded by signed expiry and 24h. Server sweeps remove closed/expired entries and fence in-flight responses; restart holds no candidate cache and observed durable operations cannot redispatch. No shared/distributed production cache or durable customer-input digest added.
+
+Ninety-day reference purge uses the latest authoritative cancellation audit timestamp, CANCELLED state, zero heldMicros and null attemptId. Only AddressVerificationRequest aliases are deleted with an atomic audit. Core AddressVerificationOperation rows, accounting/request counters, monetary holds and audits remain. Uncertain/observed/reserved/dispatched operations do not qualify; no phone settlement exists, so no phone accounting reference purge is inferred. Restoration evidence is an expired-snapshot simulation, not backup-media erasure or production restore certification.
+
 ## Section 1A fixture proof freshness (inactive)
 
 Approved ceiling is 1,800,000 milliseconds from the successful observed check, bounded by original session expiry and any earlier authoritative expiry. Existing customer sessions remain fifteen minutes. VerificationFreshnessPolicy requires explicit FIXTURE_ONLY mode, fixed lifetime, version, noticeVersion, sourceVersion and businessPolicyVersion. Proof binds tenant/session, respective revision, original checkedAt, confirmedAt and expiresAt. Exact expiry/future time, missing policy, changed scope/version or invalid timing refuses. No real authority follows from a current mock proof.
