@@ -1,5 +1,15 @@
 # Data Contracts
 
+## VO-2 mock execution and conservative recovery
+
+Approved execution-policy version VO2_FIXTURE_8S_3_ATTEMPTS_30S fixes an eight-second absolute deadline, at most three new operations/session and thirty-second spacing, within existing account/tenant/session money/request limits. Exact aliases/retries do not create a new operation. Database epoch time anchors creation/deadline; no month reset erases prior liabilities. Nullable executionDeadline is set on a new VO-2 claim to min(now+8s, policy expiry, session expiry); old VO-1 claims cannot invoke VO-2 work. Existing VO-1 policy hashes stay compatible when execution policy is absent.
+
+Internal completion requires exact attempt and current session/intent/policy. Only DISPATCH_CLAIMED can transition to OBSERVED/UNCERTAIN; late output cannot publish a candidate or overwrite prior recovery. Executor snapshots request identity, invokes an explicit fixture callback outside transactions, aborts on timeout, refuses invalid/backward local time and never redispatches an orphan/lost acknowledgment. Observation is not verified eligibility or billing settlement. No raw provider response is durable.
+
+The unregistered operator recovery method accepts exactly operationId, attemptId and evidenceId. Trusted owner/admin context, active tenant/account, elapsed deadline and server-resolved exact-attempt evidence are mandatory. Decision is RETAIN_LIABILITY only; actor/evidence/attempt audit is atomic and replay-bound. No refund, new send, proof or actual charge inference. Real evidence source and operational UI remain unimplemented.
+
+Correction fixture body is now exactly action,candidateId,confirmed,input,requestId,revision,sessionToken: propose has a UUID requestId; confirm/conditional clear use empty requestId. Protected transport remains fixture-only. Existing browser keeps the exact pending request on UNCERTAIN, retains draft and disables confirmation; successful lost-response retry can reuse only a current process-local candidate. Transient copies expire at session/24h; distributed cleanup/freshness/retention remain VO-3. Stable fictional account limits survive fixture service reconstruction; no live account binding is implied. All verification/admission/delivery/dispatch authority stays false and county UNKNOWN.
+
 ## VO-1 inactive address-operation ledger
 
 Service input is exactly action (reserve/claim/cancel), requestId UUID and sessionToken. Verified credential must match trusted webchat integration context; existing locked session must be ongoing. Account ID comes from explicit fixture construction; immutable intentId, revision and approved FIXTURE_ONLY policy come from a trusted read under that lock, never request claims. Production binding is not implemented. No address text or customer-input digest is accepted or persisted; callers must issue a new immutable intent reference/revision on edits.

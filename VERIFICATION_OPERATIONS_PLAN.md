@@ -2,6 +2,8 @@
 
 ## Decision and scope
 
+VO-2 update: owner approved the proposed test-only eight-second deadline, three attempts per session thirty seconds apart, exact retries, held uncertainty and authorized evidence-backed recovery. The bounded mocked execution/customer-journey/recovery section is review-ready; see current pointer and backend address-execution evidence. Recovery only records RETAIN_LIABILITY, not a live charge/refund decision. VO-3 freshness and accounting-reference retention choices, real reconciliation and provider/admission activation remain gated.
+
 VO-1 update: owner subsequently said “approve proceed,” authorizing VO-1 only. The durable ledger/local migration proof is now review-ready; see the current pointer and backend evidence/APP-013/address-operations/README.md. VO-2/VO-3 and live activation are not approved by that decision. Historical sizing text below is preserved as the original plan, not the current execution pointer.
 
 Sizing approved by “proceed” after the protected correction-browser checkpoint. Inspected backend `4ad7def` and governance `d71c6ab`; both focused remote branches fetched and aligned. This is a documentation-only plan, not approval to implement every section or activate providers. APP-013 stays sole Now; Next empty; FE-014 paused. No MVP expansion or Eternity website work.
@@ -58,7 +60,7 @@ Exit: session/tenant isolation, changed policies, exact expiry, revocation races
 
 - [x] Size against existing code and fixed MVP audit; keep county UNKNOWN and live activation off.
 - [x] Approve **VO-1 only**, including minimal ledger migration for disposable local testing, injected fictional policies and no provider activation. Implementation is review-ready; not live acceptance.
-- [ ] Review VO-1 evidence before VO-2; approve VO-2 operational thresholds and recovery authorization model before implementation.
+- [x] Review VO-1 evidence before VO-2; approve VO-2 operational thresholds and recovery authorization model before implementation. Owner approved the test-only defaults; bounded mock evidence is review-ready, not production acceptance.
 - [ ] Review VO-2 evidence before VO-3; approve proof freshness and retained accounting/digest duration before implementation needing those choices.
 - [ ] Before any live test: qualified county evidence, named tenant/environment/accounts, verified rate ceilings, separate address/account caps, current notices/terms, legitimate test participants, cleanup/incident owner and explicit capped spend permission.
 - [ ] Before real admission/release: current proof/policy atomic consumption evidence and explicit configuration/migration/merge/deploy approval. This document grants none.

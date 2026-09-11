@@ -1,5 +1,15 @@
 # Session Handoff
 
+## VO-2 mocked execution and recovery checkpoint
+
+Local backend commit: `cbe605f` on codex/app-013-transactional-messaging, parent 10a5198. Governance parent e29ab89. Publishing is blocked by the permission reviewer pending explicit approval for this payload to the two public GitHub repositories. Read-only gh checks confirmed both existing Signmons repos are public and viewerPermission ADMIN. No alternate destination or push workaround used. Finish local review only; ask permission to publish the VO-2 code, migration, governance and fictional-test evidence to the existing two feature branches. No production or deployment authority is implied.
+
+Owner approved test-only eight-second absolute deadline, three new attempts/session spaced thirty seconds apart within existing caps, exact-operation retry, retained uncertain costs and authorized audited recovery. Implemented durable deadline/attempt completion, mock-only execution outside database locks, and existing protected correction-page integration. Lost/late results, orphan claims and persistence faults never authorize redispatch or refund. Owner/admin recovery requires tenant/account/attempt-bound server-resolved evidence and only retains liability; no real provider reconciliation or operator UI is claimed.
+
+Evidence: backend evidence/APP-013/address-execution/README.md. 96 suites/1,835 tests, three existing skips; build/lint/architecture/Prisma/format/diff pass. Eleven new database groups plus prior VO-1 and parent responsive browser regression pass; disposable database removed. Timezone-dependent raw clock decoding was replaced with epoch reads. One Node/Jest exit 139 passed on unchanged rerun; existing pg warning remains. No production migration, provider call/configuration, real data, billing, merge or deployment.
+
+Stop review-ready. Next: VO-3 policy review for freshness/revocation/cleanup, then bounded implementation after approval of dependent freshness and retention values. County/live accounts/rates/budgets/notices, distributed intent/evidence/cleanup and current-proof-to-job remain gates. APP-013 sole Now; Next empty; FE-014 paused. APP-013 scope index 50%, accepted 0/12; onboarding local 50%, accepted 0/6; pilot accepted 0/12. No overall percentage/ETA.
+
 ## VO-1 durable address operations checkpoint
 
 Backend commit `10a5198` on codex/app-013-transactional-messaging, parent `13baff1`. Governance parent `1584bbe`. Both remote branches fetched before work; original dirty saved checkout preserved. Independent cleanup query returned no calldesk_org_ databases.
@@ -806,8 +816,8 @@ Exact review commands and source/evidence: backend evidence/APP-013/readiness-re
 
 ## Next Actions (Strict Order)
 
-1. Review backend 10a5198 after 13baff1: address-operation-ledger service/spec, minimal schema/migration, disposable verifier and address-operations evidence. Confirm provider/route/module registrations and phone accounting are unchanged; the migration is not approved for production.
-2. After review, approve the bounded VO-2 mocked execution/uncertain-recovery connection and its operational policy before coding. Retain liability, exact retry, customer progress and no live dispatch; VO-3 and real proof-to-job stay later. APP-013 remains Now, 50% scope index, accepted 0/12; no overall percentage/ETA.
+1. Review local backend cbe605f after 10a5198 and address-execution evidence. Obtain explicit approval to publish the VO-2 source, migration, governance and fictional-test evidence to public Debynyhan-Banks/signmons-calldesk-backend branch codex/app-013-transactional-messaging and public Debynyhan-Banks/Signmons-governance branch codex/app-013-message-state-evidence. Do not retry publishing before that approval.
+2. After review and authorized publication, resolve VO-3 freshness/revocation/cleanup policy values before dependent implementation. Provider-specific financial settlement, live sources/accounts/budgets/notices and real proof-to-job remain gated. APP-013 remains Now, 50% scope index, accepted 0/12; no overall percentage/ETA.
 3. Keep live verification, county acceptance, sending and real proof-to-job connection gated; no production, billing, real data or release actions are authorized.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 
