@@ -1,5 +1,12 @@
 # APP-013 Google-first address contract — review-ready proposal
 
+## County record-type qualification outcome
+
+Read-only review did not qualify a positive county allowlist. All 115,395 current US/OH/Cuyahoga records in the aggregate report validation required; physical Building/Unit plus Site Visit/Photogrammetry labels do not document accuracy. This does not prove bad data, but prevents claiming verified coverage. See CEGIS_RECORD_TYPE_REVIEW.md for 52-group aggregate evidence, candidate counts, exclusions and an unsent source-owner inquiry. County acceptance stays UNKNOWN; no provider configuration or live Google call.
+
+Next decision: approve sending the narrow county GIS inquiry, or separately approve further source research. Google semantic matching can continue as a separate bounded mocked section without bypassing county. Documentation only; runtime unchanged at abde6a9. APP-013 sole Now; Next empty; FE-014 paused. APP-013 50% scope/0 of 12 accepted; onboarding 50% local/0 of 6 accepted; pilot 0 of 12 accepted. No overall estimate, merge, deployment, billing or real data.
+
+
 ## Disabled Google adapter checkpoint
 
 Owner approved a disabled Google adapter with mocked tests and design defaults: permitted correction cache expires at session end or 24 hours; other Google fields stay in memory without explicit caching permission; abandoned drafts delete within seven days or sooner under existing session policy; Signmons automates deletion with the pilot owner accountable. Submitted business-record retention remains separately gated. These are documented defaults, not an implemented deletion job.
