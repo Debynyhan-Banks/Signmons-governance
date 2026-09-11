@@ -1,5 +1,12 @@
 # CallDesk MVP - Approved Supervised Pilot
 
+## Bounded MVP completion audit (2026-09-11)
+
+Owner-approved audit completed against backend ffb0dc9 and governance ae2366c. MVP_COMPLETION_AUDIT_2026-09-11.md is the current capability/acceptance ledger: substantial local foundations, incomplete real intake-to-job integration, greeting-only voice, consent-keyword SMS, incomplete email delivery and Calendar recovery, and open operational acceptance. No scope added or acceptance granted.
+
+Fixed order: S1 exact correction confirmation -> verification operations -> current proofs to one job -> S2 payment/booking/notifications -> S3 assignment/completion -> S4 full channels/pilot readiness. These are unequal outcome packages, not an ETA or guaranteed turn count. Next bounded proposal is exact candidate/revision confirmation only; later packages require sizing and ticket approval. County inquiry is sent; no reply check claimed. APP-013 sole Now; Next empty; FE-014 paused. APP-013 scope index 50%, acceptance 0/12; onboarding local 50%, acceptance 0/6; pilot acceptance 0/12. No defensible overall build percentage. Historical delivery matrix is labeled superseded. No runtime, provider, billing, live data or release changes.
+
+
 ## Approved Cuyahoga County pilot boundary
 
 Owner approved all of Cuyahoga County, Ohio for Eternity's U.S.-only pilot. The planned coverage decision requires trustworthy country/state/county evidence for a validated service address: reliable inside is IN_AREA, reliable outside is OUT_OF_AREA, unresolved/conflicting/imprecise evidence is UNKNOWN with assistance. ZIP-only tests and routing fallback cannot authorize county coverage. See REAL_VERIFICATION_ADMISSION_PLAN.md for requirements and acceptance cases.

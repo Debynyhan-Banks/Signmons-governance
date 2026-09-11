@@ -1,5 +1,7 @@
 # Delivery Completion Matrix
 
+> Historical snapshot only. The April 2026 phase/ticket statements below are superseded and must not direct current execution. Use GLOBAL_EXECUTION_POINTER.md and MVP_COMPLETION_AUDIT_2026-09-11.md for current CallDesk scope/progress. APP-013 is Now; marketing work remains paused.
+
 As of: 2026-04-26 (America/New_York)
 
 ## Program Phase
