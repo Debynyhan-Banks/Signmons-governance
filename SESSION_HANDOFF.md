@@ -1,5 +1,12 @@
 # Session Handoff
 
+## Google-first lean address planning checkpoint
+
+Owner selected Google for lean MVP address validation and approved the planning contract in GOOGLE_ADDRESS_MVP_CONTRACT.md. Direct submit-only Pro validation, no autocomplete/map, separate physical-county qualification, explicit retention rules and shared cost reservations are specified. County source and exact durable-field permissions remain unresolved; no real proof/admission implementation or activation is approved. This supersedes earlier no-address-provider-selected wording, not historical runtime evidence.
+
+Documentation only; runtime remains 5fb4f36. APP-013 sole Now, Next empty, FE-014 paused. APP-013 50% recorded scope / 0 of 12 accepted; onboarding 50% local / 0 of 6 accepted; pilot 0 of 12 accepted. No overall percentage/ETA. Next proposed section: qualify county evidence and finalize the retained-field matrix before implementation. No live calls, billing, provider configuration, real data, merge or deployment.
+
+
 ## Approved Cuyahoga County pilot boundary
 
 Owner approved all of Cuyahoga County, Ohio for Eternity's U.S.-only pilot. The planned coverage decision requires trustworthy country/state/county evidence for a validated service address: reliable inside is IN_AREA, reliable outside is OUT_OF_AREA, unresolved/conflicting/imprecise evidence is UNKNOWN with assistance. ZIP-only tests and routing fallback cannot authorize county coverage. See REAL_VERIFICATION_ADMISSION_PLAN.md for requirements and acceptance cases.

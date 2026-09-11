@@ -1,5 +1,12 @@
 # Real verification to admission — approved direction
 
+## Google-first lean address planning checkpoint
+
+Owner selected Google for lean MVP address validation and approved the planning contract in GOOGLE_ADDRESS_MVP_CONTRACT.md. Direct submit-only Pro validation, no autocomplete/map, separate physical-county qualification, explicit retention rules and shared cost reservations are specified. County source and exact durable-field permissions remain unresolved; no real proof/admission implementation or activation is approved. This supersedes earlier no-address-provider-selected wording, not historical runtime evidence.
+
+Documentation only; runtime remains 5fb4f36. APP-013 sole Now, Next empty, FE-014 paused. APP-013 50% recorded scope / 0 of 12 accepted; onboarding 50% local / 0 of 6 accepted; pilot 0 of 12 accepted. No overall percentage/ETA. Next proposed section: qualify county evidence and finalize the retained-field matrix before implementation. No live calls, billing, provider configuration, real data, merge or deployment.
+
+
 ## Owner approval
 
 The owner approved the proposed requirements and approval checklist, specified U.S.A.-only operation, and selected Eternity Mechanical Services as the pilot business. This approves the planning direction, not provider activation or production changes. No tenant ID, credentials or production environment is inferred from the business name.
@@ -52,7 +59,7 @@ Before code connecting real proof to admission, specify and review:
 3. Provider capabilities and binding, challenge expiry, proof lifetime, resend cooldown, attempt/rate limits and freshness/revocation semantics. Values must be documented and tested, not inherited accidentally from session expiry or invented as universal best practice.
 4. Verification notice, terms/privacy links, retained fields, retention/deletion policy and authorized access. No legal-compliance certification is implied by this plan.
 5. Real rate inputs, reconciliation/recovery procedures, address budget, alert delivery and kill-switch owner.
-6. The exact next bounded implementation section and its acceptance tests. No new provider is selected by this document.
+6. The exact next bounded implementation section and its acceptance tests. Google is the selected address-provider direction under GOOGLE_ADDRESS_MVP_CONTRACT.md; physical-county source qualification and live activation remain open.
 
 ## Approval checklist
 
