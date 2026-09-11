@@ -1,5 +1,17 @@
 # Session Handoff
 
+## Section 2B — entry review, blocked before live actions
+
+Backend board-only commit 31ec606 (runtime unchanged f8e35e8); governance checkpoint is this commit on codex/app-013-message-state-evidence, parent c022d2e. Documentation consistency, four placement tests and both diff checks passed. No fresh runtime tests/build/browser QA claim; no runtime changes.
+
+Owner accepted 2A with “i reviewed continue”. Accepted 3/8; current section 4/8 (2B) is entry-review only, not implemented or demonstrated. Backend runtime remains f8e35e8. This documentation-only checkpoint does not add a ninth section or authorize provider calls.
+
+CONTROLLED_VERIFICATION_2B_CHECKLIST.md records the missing source/participant/environment/account/rate/notice/operational approvals. County source remains unqualified; older handoff records the inquiry sent, but bounded read-only Outlook searches for the GIS sender and CEGIS found no matching messages in the connected mailbox. This is not proof that no reply exists, and no follow-up was sent. No private mailbox payload was copied into public evidence.
+
+Next decision: identify the legitimate test participant and private test environment, then resolve county evidence and produce the exact account/rate/cap/notice approval packet before any live call. No recipient or address is inferred from prior business details; no configuration, secret, billing or production change. The existing monthly phone ceiling is not a test-spend authorization.
+
+APP-013 stays sole Now; Next empty; FE-014 paused. APP-013 local scope index 50%, accepted 0/12; onboarding local 50%, accepted 0/6; pilot accepted 0/12. Accepted 3/8 is steel-thread milestone progress, not overall MVP effort completion or an ETA. Prior checkpoints below remain historical.
+
 ## Section 2A — current-proof admission, review-ready
 
 Backend implementation f8e35e8 on codex/app-013-transactional-messaging (parent 37bcb15). Governance checkpoint is this commit on codex/app-013-message-state-evidence (parent 7f76eb1). Validation: 99 backend suites / 1,887 tests, three existing skips; 170 UI tests; backend/UI build/lint, architecture, Prisma, four zero-finding audits and full disposable database/mobile/desktop regression pass. One Node test run exited 139; unchanged full rerun passed, so the intermittent toolchain risk remains. Governance consistency/four placement tests pass; disposable database inventory empty; original dirty saved checkout preserved.
@@ -869,8 +881,8 @@ Exact review commands and source/evidence: backend evidence/APP-013/readiness-re
 
 ## Next Actions (Strict Order)
 
-1. Review section 2A evidence in backend evidence/APP-013/current-proof-admission/README.md. Current section 3 of 8 is Demonstrated; owner acceptance pending, accepted 2/8. Verify current injected proofs, approved policy binding, rollback, one job/receipt after cleanup and no real verification authority.
-2. After review and owner acceptance of 2A, resolve the 2B controlled-verification entry checklist and obtain explicit bounded provider-action approval. County qualification, named participant/tenant/accounts, rates/caps and notices cannot be inferred from a general proceed. Keep eight-section baseline fixed; no automatic ticket advance. APP-013 remains Now, 50% scope index, accepted 0/12; no overall percentage/ETA.
+1. Resolve CONTROLLED_VERIFICATION_2B_CHECKLIST.md: owner accepted 2A, accepted 3/8; 2B is section 4/8 blocked at entry. Confirm test participant/environment and obtain county clarification; current bounded Outlook search found no matching messages and is not proof of absence.
+2. After review of named existing accounts, current rates, notices, source qualification and recovery ownership, obtain explicit approval for the exact capped controlled-verification packet. A general continue is not unspecified spending/configuration authority. Keep eight-section baseline fixed; no automatic 3A or ticket advance. APP-013 remains Now, 50% scope index, accepted 0/12; no overall percentage/ETA.
 3. Keep live verification, county acceptance, sending and real proof-to-job connection gated; no production, billing, real data or release actions are authorized.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 
