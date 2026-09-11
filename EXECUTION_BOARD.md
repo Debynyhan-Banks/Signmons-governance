@@ -1,5 +1,12 @@
 # Signmons Execution Board
 
+## Exact local correction confirmation checkpoint
+
+Approved S1 section now composes Google fixture validation with a single-session in-memory correction review. Candidate ID binds exact presented fields to trusted tenant/session/revision/expiry context before and after validation. Explicit true confirmation returns the stored customer-confirmed copy; changed scope, revision, expiry, candidate or payload refuses. Copies prevent mutation; replacement/clear invalidates in-flight work; timer purges pending state, and restart refuses lost candidates. Default Google validate still strips candidate fields; preview exposes only permitted correction-display fields, not raw provider content.
+
+No production auth/route/UI registration, network, database or live verification. Confirmation never grants address/county/admission authority. Evidence: backend evidence/APP-013/address-correction/README.md. 14 new tests plus existing 49 adapter tests; full backend 94 suites/1,816 tests, three existing skips; build/lint/architecture/diff pass. Browser QA not applicable to unregistered service-only change; customer-facing S1 demonstration remains open. Next: connect exact correction confirmation to existing protected local customer review and prove browser behavior; then size verification operations. APP-013 sole Now; Next empty; FE-014 paused. APP-013 scope index 50%, acceptance 0/12; onboarding local 50%, acceptance 0/6; pilot 0/12. No overall estimate or release actions.
+
+
 ## Bounded MVP completion audit (2026-09-11)
 
 Owner-approved audit completed against backend ffb0dc9 and governance ae2366c. MVP_COMPLETION_AUDIT_2026-09-11.md is the current capability/acceptance ledger: substantial local foundations, incomplete real intake-to-job integration, greeting-only voice, consent-keyword SMS, incomplete email delivery and Calendar recovery, and open operational acceptance. No scope added or acceptance granted.
