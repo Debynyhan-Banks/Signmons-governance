@@ -12,7 +12,7 @@ Use the same approved organization, customer journey and correlated request/job/
 
 - Fixed IDs: 1A, 1B, 2A, 2B, 3A, 3B, 3C, 3D. Eight acceptance sections, not eight equal effort units or eight turns.
 - State progression: Planned → Approved → Implemented → Demonstrated → Accepted. Blockers are a separate field; implementation and provider approvals are recorded separately. Accepted requires the listed evidence and explicit owner sign-off for that section.
-- Current implementation target: 1A, section 1 of 8, pending its policy/implementation approval. Accepted: 0/8. Baseline documentation is not section completion. Existing VO-1/VO-2 evidence is reused, not reset or counted as a ninth section.
+- Current section: 1A, section 1 of 8, approved by “yes i approve proceed” and locally Demonstrated; owner acceptance pending. Accepted: 0/8. Next after acceptance is 1B with its own retention/implementation approval. Existing VO-1/VO-2 evidence is reused, not reset or counted as a ninth section.
 - Every subsequent update reports current section ordinal/ID, accepted Y/8, demonstrated workflow, concrete blockers, evidence/commit and next demonstration. Report local versus controlled-provider evidence separately.
 - New section, split, removal or changed acceptance requires an owner-approved baseline change recording reason, demonstrated blocker, effect on count/dependencies and prior baseline. Log internal subtasks under the same section; do not quietly grow the denominator or hide material work as a subtask. Unrelated improvements go to the backlog.
 - These eight sections cover this walkthrough only. APP-013 scope index remains 50%, accepted 0/12; onboarding local 3/6 (50%), accepted 0/6; pilot accepted 0/12. Do not convert accepted-section fraction into effort or whole-MVP completion. No calendar ETA is supported.
@@ -98,7 +98,7 @@ Evidence anchors: backend evidence/APP-013/address-execution/README.md, browser-
 
 | Gate | Proposed/current policy | Owner and required next evidence |
 | --- | --- | --- |
-| FRESHNESS | Proposed 30 minutes from successful phone check/address validation, capped by session expiry and shorter authoritative source expiry; exact revisions/current policy. Confirmation cannot refresh old validation. This is proof lifetime, not OTP expiry. | Product owner confirms before 1A. Prior “great, but first” and approval to plan are not treated as numerical-policy approval. |
+| FRESHNESS | Owner approved 30 minutes from successful phone check/address validation, capped by session expiry and any shorter authoritative source expiry; exact revisions/current policy. Confirmation cannot refresh old validation. This is proof lifetime, not OTP expiry. Existing 15-minute session remains unchanged. | Explicit “yes i approve proceed” after the 1A approval request. Mock implementation demonstrated; no real-provider proof claim. |
 | RETENTION | Existing correction ceiling: session end or 24h. Abandoned drafts: seven days or earlier existing session policy. Proposed minimal operational references: 90 days after authoritative resolution; unresolved liability retained with review, not erased/refunded. No new durable customer-input digest; any necessary digest needs explicit purpose/key/deletion mapping. | Product owner approves 1B mapping; provider/business-record terms reviewed before real data. Ninety days is not legal/accounting advice or a production retention authorization. |
 | COUNTY | All Cuyahoga County, Ohio; qualified evidence required. Conditional CEGIS source choice is not qualification. | County inquiry previously sent; no reply checked in this planning task. Owner/source reviewer records authoritative evidence and supported record types before 2B. |
 | LIVE-VERIFICATION | U.S.-only legitimate participants, named environment/tenant/accounts, approved notices/rates/caps, test identity, privacy and recovery owner. Existing $50 phone policy is not permission to spend or an address allowance. | Product owner approves bounded integration actions; implementer records entry checklist and actual evidence in 2B. |
@@ -109,7 +109,7 @@ Evidence anchors: backend evidence/APP-013/address-execution/README.md, browser-
 
 | Ordinal / ID | Status | Blocker / dependency | Evidence and implementation commit | Owner acceptance |
 | --- | --- | --- | --- | --- |
-| 1 / 1A | Planned | FRESHNESS and section approval | None for this section; reuse VO-2 cbe605f | Pending |
+| 1 / 1A | Demonstrated | Owner review/acceptance; no implementation blocker | Backend 4c5030a; evidence/APP-013/verification-freshness/README.md and committed database/browser summaries | Pending |
 | 2 / 1B | Planned | 1A, RETENTION and section approval | Pending | Pending |
 | 3 / 2A | Planned | 1B and admission/application-boundary approval | Pending | Pending |
 | 4 / 2B | Planned | 2A, COUNTY, LIVE-VERIFICATION | Pending | Pending |
@@ -130,4 +130,4 @@ Remaining outside this walkthrough but still in approved MVP: eligible email del
 
 Plan validation results: governance consistency passed; four execution-placement tests passed; eight ordered acceptance cards and eight Planned tracker rows match; all eight governance cross-references resolve; documentation diff checks passed. An initial ad hoc progress-label assertion used the wrong capitalization and was corrected to match the existing label; no product failure was involved. Runtime tests/build/lint/browser QA were not rerun because only Markdown changed. Original saved backend checkout remains untouched, including unrelated user modifications/deletions.
 
-Change log: v1 — owner-approved planning task establishes eight-section baseline after current code inventory. No runtime changes; no sections accepted. Supersedes rolling “next section” forecasts for this target, not the frozen MVP scope or historical evidence.
+Change log: v1 — owner-approved planning task established eight-section baseline. Subsequent 1A policy/implementation approval and local demonstration update the tracker only: 97 backend suites/1,855 tests, 170 UI tests, thirteen new database groups and parent browser evidence; owner acceptance pending, accepted 0/8. No baseline section/scope change. Supersedes rolling “next section” forecasts for this target, not the frozen MVP scope or historical evidence.

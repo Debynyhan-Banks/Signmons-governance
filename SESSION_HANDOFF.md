@@ -1,5 +1,18 @@
 # Session Handoff
 
+## Section 1A — freshness and invalidation, review-ready
+
+Backend implementation commit: 4c5030a on codex/app-013-transactional-messaging (parent 7b8a089). Review evidence/APP-013/verification-freshness/README.md and its committed summaries. Governance checkpoint is this commit on codex/app-013-message-state-evidence (parent 1d335b7). Original dirty saved checkout preserved; only focused feature branches are published.
+
+Owner explicitly approved 1A and the thirty-minute phone/address proof ceiling with “yes i approve proceed”. Implemented only this mock-only section of PAYMENT_BOOKING_TEXT_STEEL_THREAD.md. Proof expires at the earlier of original successful check plus thirty minutes and session expiry; the existing fifteen-minute session limit is unchanged. Confirmation/status/exact replay never restart the clock. Current tenant/session/revision, notice/source/business-policy versions and server time are required; phone START/CHECK must share the policy version.
+
+Phone freshness/revocation uses the existing locked encrypted ledger and retains all cost holds. Revocation fences in-flight checks and cannot be undone by receipt replay. Legacy observations without proof remain not current. Address confirmation keeps its original deadline and current policy; phone changes do not invalidate an unchanged address and vice versa. Existing customer browser adds a no-provider freshness check, truthful expired state and server-acknowledged phone-change revocation while retaining draft.
+
+Evidence: backend evidence/APP-013/verification-freshness/README.md and summaries. 97 backend suites / 1,855 tests (three existing skips), 170 UI tests; backend/UI build/lint, architecture, Prisma and four zero-finding audits pass. Thirteen new real-database proof groups and existing parent mobile/desktop journey pass; disposable database cleanup verified. Existing pg/Next/toolchain warnings remain. No production registration, schema migration, source qualification, real provider calls, job admission, sending, billing, merge or deployment.
+
+Current section: 1 of 8 (1A), Demonstrated and awaiting owner acceptance; accepted 0/8. After review/acceptance, next is 1B cleanup/restart, requiring its retention mapping and implementation approval; ninety-day resolved-reference retention is still only proposed. No new section or scope added. APP-013 sole Now; Next empty; FE-014 paused. APP-013 scope index 50%, accepted 0/12; onboarding local 50%, accepted 0/6; pilot accepted 0/12; no overall engineering percentage/ETA. Earlier planning/next-action text below is historical and superseded by this checkpoint.
+
+
 
 ## Current eight-section steel-thread plan
 
@@ -828,8 +841,8 @@ Exact review commands and source/evidence: backend evidence/APP-013/readiness-re
 
 ## Next Actions (Strict Order)
 
-1. Review PAYMENT_BOOKING_TEXT_STEEL_THREAD.md baseline v1: eight source-sized acceptance sections, dependencies, gate register and tracker. Planning task completed against backend cbe605f/governance 6efb066; no runtime change. Current target 1A (1 of 8), accepted 0/8.
-2. After review, approve 1A and its proposed freshness policy before mock-only implementation; resolve 1B retention before dependent coding. Follow fixed sections 1A through 3D; any split/addition needs explicit baseline approval. APP-013 remains Now, 50% scope index, accepted 0/12; no overall percentage/ETA.
+1. Review section 1A evidence in backend evidence/APP-013/verification-freshness/README.md and database/browser summaries. Current section 1 of 8 is Demonstrated; owner acceptance pending, accepted 0/8. Verify preserved original deadlines/draft/holds and no live authority.
+2. After review and owner acceptance of 1A, approve 1B cleanup/restart and its retention mapping before implementation. Ninety-day resolved-reference retention remains proposed. Keep eight-section baseline fixed; no new section or automatic ticket advance. APP-013 remains Now, 50% scope index, accepted 0/12; no overall percentage/ETA.
 3. Keep live verification, county acceptance, sending and real proof-to-job connection gated; no production, billing, real data or release actions are authorized.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 

@@ -1,5 +1,16 @@
 # S1 verification operations — bounded implementation plan
 
+## Section 1A — freshness and invalidation, review-ready
+
+Owner explicitly approved 1A and the thirty-minute phone/address proof ceiling with “yes i approve proceed”. Implemented only this mock-only section of PAYMENT_BOOKING_TEXT_STEEL_THREAD.md. Proof expires at the earlier of original successful check plus thirty minutes and session expiry; the existing fifteen-minute session limit is unchanged. Confirmation/status/exact replay never restart the clock. Current tenant/session/revision, notice/source/business-policy versions and server time are required; phone START/CHECK must share the policy version.
+
+Phone freshness/revocation uses the existing locked encrypted ledger and retains all cost holds. Revocation fences in-flight checks and cannot be undone by receipt replay. Legacy observations without proof remain not current. Address confirmation keeps its original deadline and current policy; phone changes do not invalidate an unchanged address and vice versa. Existing customer browser adds a no-provider freshness check, truthful expired state and server-acknowledged phone-change revocation while retaining draft.
+
+Evidence: backend evidence/APP-013/verification-freshness/README.md and summaries. 97 backend suites / 1,855 tests (three existing skips), 170 UI tests; backend/UI build/lint, architecture, Prisma and four zero-finding audits pass. Thirteen new real-database proof groups and existing parent mobile/desktop journey pass; disposable database cleanup verified. Existing pg/Next/toolchain warnings remain. No production registration, schema migration, source qualification, real provider calls, job admission, sending, billing, merge or deployment.
+
+Current section: 1 of 8 (1A), Demonstrated and awaiting owner acceptance; accepted 0/8. After review/acceptance, next is 1B cleanup/restart, requiring its retention mapping and implementation approval; ninety-day resolved-reference retention is still only proposed. No new section or scope added. APP-013 sole Now; Next empty; FE-014 paused. APP-013 scope index 50%, accepted 0/12; onboarding local 50%, accepted 0/6; pilot accepted 0/12; no overall engineering percentage/ETA. Earlier planning/next-action text below is historical and superseded by this checkpoint.
+
+
 ## Current execution breakdown
 
 PAYMENT_BOOKING_TEXT_STEEL_THREAD.md baseline v1 now fixes eight acceptance sections for the owner-tested payment/booking/text walkthrough. VO-3 maps to 1A/1B, current-proof admission to 2A/2B, and the focused S2 walkthrough to 3A–3D. Current target 1A pending policy/implementation approval; accepted 0/8. This supersedes historical next-section forecasts below, not the full MVP or existing acceptance ledger. Full email, S3 and S4 remain open. Planning approval grants no provider, coding or release authority.
