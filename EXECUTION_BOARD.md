@@ -1,5 +1,12 @@
 # Signmons Execution Board
 
+## Disabled Google adapter checkpoint
+
+Owner approved a disabled Google adapter with mocked tests and design defaults: permitted correction cache expires at session end or 24 hours; other Google fields stay in memory without explicit caching permission; abandoned drafts delete within seven days or sooner under existing session policy; Signmons automates deletion with the pilot owner accountable. Submitted business-record retention remains separately gated. These are documented defaults, not an implemented deletion job.
+
+Implemented an unregistered fixture adapter only: default DISABLED, no HTTP client, credentials, cache, route, database writes or county resolver. All results keep addressVerified/admissionAuthorized false and county UNKNOWN. Evidence: backend evidence/APP-013/google-adapter/README.md. 19 focused tests and full backend 93 suites/1,772 tests pass, three existing skips; build/lint/architecture/diff pass. No UI change or browser QA applicability. Next proposed: strengthen response policy and qualify county record types, still without live activation. APP-013 sole Now; Next empty; FE-014 paused. APP-013 50% scope/0 of 12 accepted; onboarding 50% local/0 of 6 accepted; pilot 0 of 12 accepted. No overall estimate, merge, deployment, billing, live calls or real data.
+
+
 ## CEGIS county-source and Google retention qualification
 
 Completed the approved documentation-only source qualification. Official Cuyahoga County CEGIS site-address and road-centerline data is conditionally suitable for a fail-closed county resolver: a future positive result requires one exact current physical site record with consistent US/OH/county plus a current linked road whose left/right county values agree. Boundary roads, null/noncurrent/validation-error or unknown records, conflicts, unsupported point/capture types, missing units/links, source outages and stale evidence are UNKNOWN. The public aggregate audit found 115,395 current US/OH/Cuyahoga records but also 388,008 null-status records and one current US/OR/Cuyahoga inconsistency, so county name or presence alone is never authority. Cuyahoga's canonical policy GEOID is 39035.

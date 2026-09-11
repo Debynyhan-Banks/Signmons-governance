@@ -1,5 +1,12 @@
 # APP-013 Google-first address contract — review-ready proposal
 
+## Disabled Google adapter checkpoint
+
+Owner approved a disabled Google adapter with mocked tests and design defaults: permitted correction cache expires at session end or 24 hours; other Google fields stay in memory without explicit caching permission; abandoned drafts delete within seven days or sooner under existing session policy; Signmons automates deletion with the pilot owner accountable. Submitted business-record retention remains separately gated. These are documented defaults, not an implemented deletion job.
+
+Implemented an unregistered fixture adapter only: default DISABLED, no HTTP client, credentials, cache, route, database writes or county resolver. All results keep addressVerified/admissionAuthorized false and county UNKNOWN. Evidence: backend evidence/APP-013/google-adapter/README.md. 19 focused tests and full backend 93 suites/1,772 tests pass, three existing skips; build/lint/architecture/diff pass. No UI change or browser QA applicability. Next proposed: strengthen response policy and qualify county record types, still without live activation. APP-013 sole Now; Next empty; FE-014 paused. APP-013 50% scope/0 of 12 accepted; onboarding 50% local/0 of 6 accepted; pilot 0 of 12 accepted. No overall estimate, merge, deployment, billing, live calls or real data.
+
+
 Owner selected Google to minimize MVP cost and approved this planning section. This records requirements, not implementation or live-service authorization. U.S.-only Eternity pilot, all of Cuyahoga County, Ohio; no website work. Runtime remains 5fb4f36. This document supersedes earlier statements that no address-provider direction has been selected. The 2026-09-11 review below conditionally qualifies a county-source contract for owner review; it does not accept or activate it.
 
 ## 2026-09-11 source qualification outcome
