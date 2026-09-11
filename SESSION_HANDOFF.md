@@ -1,5 +1,17 @@
 # Session Handoff
 
+
+## Current eight-section steel-thread plan
+
+Publication gate: this new documentation payload is local-only. The permission reviewer rejected public publication because the owner approved planning but has not explicitly approved exporting this new eight-section plan/status payload to the two public Signmons repositories. Ask permission to publish the plan and board/governance updates to the existing feature branches in Debynyhan-Banks/signmons-calldesk-backend and Debynyhan-Banks/Signmons-governance. No workaround or push retry before approval. Prior VO-2 publication approval remains specific to its earlier payload.
+
+Owner approved the planning/sizing task. PAYMENT_BOOKING_TEXT_STEEL_THREAD.md baseline v1 is the current execution breakdown for verified request → one job → Sandbox payment → test-calendar booking → received confirmation text. Eight fixed sections: 1A freshness, 1B cleanup/restart, 2A admission, 2B controlled verification, 3A payment, 3B scheduling, 3C text, 3D changes/recovery. First happy-path demonstration at 3C; recovery acceptance at 3D. Source inventory: backend cbe605f / governance 6efb066, fetched and aligned. No runtime or external action.
+
+Current target: section 1 of 8 (1A), pending freshness-policy and implementation approval; accepted 0/8. Numerical 30-minute/90-day proposals are not silently approved by approval to plan. Review the acceptance cards, dependencies and external gates; every new/split section requires an explicit baseline change. APP-013 remains sole Now; Next empty; FE-014 paused. APP-013 scope index 50%, accepted 0/12; onboarding local 50%, accepted 0/6; pilot accepted 0/12. These are distinct measures, not effort/ETA. Full email, dispatch/technician and conversational channels remain MVP work outside this walkthrough.
+
+This section supersedes older next-action forecasts below; historical checkpoints and test results remain evidence, not current acceptance. See the plan for exact source seams, relative sizing, acceptance tests, evidence tracker and review steps. Governance consistency, four placement tests and documentation diff checks apply; no fresh runtime/build/browser claim or release authority.
+
+
 ## VO-2 mocked execution and recovery checkpoint
 
 Publication approved by the owner in “yes, what next”. Backend `cbe605f` and governance `34a40d6` were successfully pushed to the existing public feature branches codex/app-013-transactional-messaging and codex/app-013-message-state-evidence respectively. The prior publication blocker is resolved. This approval does not authorize merge, deployment, live providers or production actions.
@@ -816,8 +828,8 @@ Exact review commands and source/evidence: backend evidence/APP-013/readiness-re
 
 ## Next Actions (Strict Order)
 
-1. Review published backend cbe605f after 10a5198, governance 34a40d6 and address-execution evidence. Owner explicitly approved the VO-2 payload publication to both existing public feature branches; both pushes succeeded. Publication is not release or acceptance.
-2. After review and authorized publication, resolve VO-3 freshness/revocation/cleanup policy values before dependent implementation. Provider-specific financial settlement, live sources/accounts/budgets/notices and real proof-to-job remain gated. APP-013 remains Now, 50% scope index, accepted 0/12; no overall percentage/ETA.
+1. Review PAYMENT_BOOKING_TEXT_STEEL_THREAD.md baseline v1: eight source-sized acceptance sections, dependencies, gate register and tracker. Planning task completed against backend cbe605f/governance 6efb066; no runtime change. Current target 1A (1 of 8), accepted 0/8.
+2. After review, approve 1A and its proposed freshness policy before mock-only implementation; resolve 1B retention before dependent coding. Follow fixed sections 1A through 3D; any split/addition needs explicit baseline approval. APP-013 remains Now, 50% scope index, accepted 0/12; no overall percentage/ETA.
 3. Keep live verification, county acceptance, sending and real proof-to-job connection gated; no production, billing, real data or release actions are authorized.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 

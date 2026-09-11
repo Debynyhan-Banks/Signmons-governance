@@ -1,5 +1,9 @@
 # S1 verification operations — bounded implementation plan
 
+## Current execution breakdown
+
+PAYMENT_BOOKING_TEXT_STEEL_THREAD.md baseline v1 now fixes eight acceptance sections for the owner-tested payment/booking/text walkthrough. VO-3 maps to 1A/1B, current-proof admission to 2A/2B, and the focused S2 walkthrough to 3A–3D. Current target 1A pending policy/implementation approval; accepted 0/8. This supersedes historical next-section forecasts below, not the full MVP or existing acceptance ledger. Full email, S3 and S4 remain open. Planning approval grants no provider, coding or release authority.
+
 ## Decision and scope
 
 VO-2 update: owner approved the proposed test-only eight-second deadline, three attempts per session thirty seconds apart, exact retries, held uncertainty and authorized evidence-backed recovery. The bounded mocked execution/customer-journey/recovery section is review-ready; see current pointer and backend address-execution evidence. Recovery only records RETAIN_LIABILITY, not a live charge/refund decision. VO-3 freshness and accounting-reference retention choices, real reconciliation and provider/admission activation remain gated.

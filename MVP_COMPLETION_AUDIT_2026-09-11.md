@@ -1,5 +1,9 @@
 # CallDesk MVP completion audit — 2026-09-11
 
+## Current execution breakdown
+
+PAYMENT_BOOKING_TEXT_STEEL_THREAD.md baseline v1 now fixes eight acceptance sections for the owner-tested payment/booking/text walkthrough. VO-3 maps to 1A/1B, current-proof admission to 2A/2B, and the focused S2 walkthrough to 3A–3D. Current target 1A pending policy/implementation approval; accepted 0/8. This supersedes historical next-section forecasts below, not the full MVP or existing acceptance ledger. Full email, S3 and S4 remain open. Planning approval grants no provider, coding or release authority.
+
 ## Outcome and scope
 
 The MVP is substantially implemented in pieces, but the complete real customer-to-job-to-completion journey is not demonstrated. Verification is the immediate S1 blocker, not the only remaining MVP work. Stop expanding isolated fixtures: require each next section to remove a named blocker in the fixed steel thread below.

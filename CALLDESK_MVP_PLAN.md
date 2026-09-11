@@ -1,5 +1,9 @@
 # CallDesk MVP - Approved Supervised Pilot
 
+## Current execution breakdown
+
+PAYMENT_BOOKING_TEXT_STEEL_THREAD.md baseline v1 now fixes eight acceptance sections for the owner-tested payment/booking/text walkthrough. VO-3 maps to 1A/1B, current-proof admission to 2A/2B, and the focused S2 walkthrough to 3A–3D. Current target 1A pending policy/implementation approval; accepted 0/8. This supersedes historical next-section forecasts below, not the full MVP or existing acceptance ledger. Full email, S3 and S4 remain open. Planning approval grants no provider, coding or release authority.
+
 ## Bounded MVP completion audit (2026-09-11)
 
 Owner-approved audit completed against backend ffb0dc9 and governance ae2366c. MVP_COMPLETION_AUDIT_2026-09-11.md is the current capability/acceptance ledger: substantial local foundations, incomplete real intake-to-job integration, greeting-only voice, consent-keyword SMS, incomplete email delivery and Calendar recovery, and open operational acceptance. No scope added or acceptance granted.
