@@ -12,7 +12,7 @@ Use the same approved organization, customer journey and correlated request/job/
 
 - Fixed IDs: 1A, 1B, 2A, 2B, 3A, 3B, 3C, 3D. Eight acceptance sections, not eight equal effort units or eight turns.
 - State progression: Planned → Approved → Implemented → Demonstrated → Accepted. Blockers are a separate field; implementation and provider approvals are recorded separately. Accepted requires the listed evidence and explicit owner sign-off for that section.
-- Current section: 1B, section 2 of 8, approved by “yes” after the retention/implementation request and locally Demonstrated; owner acceptance pending. Accepted: 1/8 (1A accepted by “proceed”). Next after acceptance is 2A with its own admission/application-boundary approval. Existing VO-1/VO-2 evidence is reused, not reset or counted as a ninth section.
+- Current section: 2A, section 3 of 8, approved by “i reviewed the evidence proceed” after accepting 1B; locally Demonstrated, owner acceptance pending. Accepted: 2/8. Next after acceptance is 2B only after its county/source/account/participant/spend gates and explicit approval. Existing VO-1/VO-2 evidence is reused, not reset or counted as a ninth section.
 - Every subsequent update reports current section ordinal/ID, accepted Y/8, demonstrated workflow, concrete blockers, evidence/commit and next demonstration. Report local versus controlled-provider evidence separately.
 - New section, split, removal or changed acceptance requires an owner-approved baseline change recording reason, demonstrated blocker, effect on count/dependencies and prior baseline. Log internal subtasks under the same section; do not quietly grow the denominator or hide material work as a subtask. Unrelated improvements go to the backlog.
 - These eight sections cover this walkthrough only. APP-013 scope index remains 50%, accepted 0/12; onboarding local 3/6 (50%), accepted 0/6; pilot accepted 0/12. Do not convert accepted-section fraction into effort or whole-MVP completion. No calendar ETA is supported.
@@ -110,8 +110,8 @@ Evidence anchors: backend evidence/APP-013/address-execution/README.md, browser-
 | Ordinal / ID | Status | Blocker / dependency | Evidence and implementation commit | Owner acceptance |
 | --- | --- | --- | --- | --- |
 | 1 / 1A | Accepted | None for local section; live gates unchanged | Backend 4c5030a; evidence/APP-013/verification-freshness/README.md and committed database/browser summaries | Owner “proceed”, 2026-09-11 |
-| 2 / 1B | Demonstrated | Owner review/acceptance; production cleanup not activated | Backend 37bcb15; evidence/APP-013/verification-cleanup/README.md and committed database/browser summaries | Pending |
-| 3 / 2A | Planned | 1B and admission/application-boundary approval | Pending | Pending |
+| 2 / 1B | Accepted | Production cleanup not activated | Backend 37bcb15; evidence/APP-013/verification-cleanup/README.md and committed database/browser summaries | Owner “i reviewed the evidence proceed”, 2026-09-11 |
+| 3 / 2A | Demonstrated | Owner acceptance; real source/identity activation remains 2B | Backend f8e35e8; evidence/APP-013/current-proof-admission/README.md and summary | Pending |
 | 4 / 2B | Planned | 2A, COUNTY, LIVE-VERIFICATION | Pending | Pending |
 | 5 / 3A | Planned | 2B, Sandbox action approval | Pending | Pending |
 | 6 / 3B | Planned | 3A, calendar and recovery scope approval | Pending | Pending |

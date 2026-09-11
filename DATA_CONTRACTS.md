@@ -1,5 +1,15 @@
 # Data Contracts
 
+## Section 2A current-proof admission (inactive local composition)
+
+CurrentProofSource is a trusted FIXTURE_ONLY transaction collaborator, never an HTTP/browser payload or an external call under a database lock. It resolves request/session-bound phone, confirmed address and county evidence plus current revisions, coverage/freshness policy and approved payment version. The consumer compares exact reviewed phone/address, US eligibility, US/OH/39035 IN_AREA, current revisions and all three proof deadlines against database time. Current organization approval must match freshness policy; payment approval and complete supported terms must match the tenant's actual approved payment policy. No ZIP fallback or review-only snapshot grants authority.
+
+CustomerIntakeContinuationService optionally consumes this source inside its existing human-reviewed admission transaction. Job creation, minimal references, county/policy versions, consumption/deadline timestamps, approved payment provenance, consent association and audit commit together. No raw provider payload or additional durable customer-input digest is written. The payment provenance snapshot does not apply job charge terms or authorize payment. Existing contact/address NOT_VERIFIED and booking/delivery false remain correct for fictional evidence; currentProof.realVerificationAccepted is false.
+
+An authenticated operator may retrieve the exact existing receipt after session cleanup, under the same session lock and original unexpired review deadline, actor/decision/organization/digest checks. That path does not consume proof again. No-prior-job admission always repeats the ordinary active lifecycle check before any write. Missing, closed, expired or uncertain source evidence cannot be replaced with browser flags.
+
+Application boundary: existing customer-intake-journey page uses protected customer-session transport with server-held fictional integration context; existing operator-intake-review page uses CustomerIntakeReviewController with a fixture-only auth-guard override and separate operator context, never customer credentials. These are actual local route/controller paths, not production identity activation. fixtureAdmissionAvailable permits review of historical address snapshots only when the source is configured; approval still re-resolves proof. No new standalone form, provider or production registration. Controlled source/identity acceptance belongs to 2B.
+
 ## Section 1B fixture lifecycle and retention (inactive)
 
 New protected sessions atomically persist collectedData.verificationLifecycle: exact version 1, original signed expiresAt epoch milliseconds, closedAt/purgedAt nullable epoch milliseconds. Shared tenant/session lock checks the database clock and refuses malformed, closed or expired lifecycle. Legacy sessions without this marker are not adopted by cleanup. No migration or production scheduler is registered.

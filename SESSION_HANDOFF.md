@@ -1,5 +1,19 @@
 # Session Handoff
 
+## Section 2A — current-proof admission, review-ready
+
+Backend implementation f8e35e8 on codex/app-013-transactional-messaging (parent 37bcb15). Governance checkpoint is this commit on codex/app-013-message-state-evidence (parent 7f76eb1). Validation: 99 backend suites / 1,887 tests, three existing skips; 170 UI tests; backend/UI build/lint, architecture, Prisma, four zero-finding audits and full disposable database/mobile/desktop regression pass. One Node test run exited 139; unchanged full rerun passed, so the intermittent toolchain risk remains. Governance consistency/four placement tests pass; disposable database inventory empty; original dirty saved checkout preserved.
+
+Owner reviewed 1B evidence and said “i reviewed the evidence proceed”, accepting 1B and approving 2A only. Current section 3 of 8 (2A) is locally Demonstrated pending owner acceptance; accepted 2/8. No baseline expansion or new ticket.
+
+The existing admission transaction now optionally consumes a trusted FIXTURE_ONLY source under session/organization locks: exact phone/address values and current revisions, fresh phone/address/county evidence, U.S./Ohio/Cuyahoga 39035 coverage and current approved organization/payment policy. Missing, stale, foreign, uncertain or changed evidence refuses a new job. Minimal source references and an approved payment-policy snapshot bind atomically to the job; no raw provider payload or new durable customer-input digest. Human job review remains separate from automated verification.
+
+Existing customer and operator pages/controllers are reused with separate explicit fictional identities. Browser flags and historical address snapshots never become proof. Audit rollback, lost response and concurrent receipt replay are evidenced. A closed-session receipt-only lock path retrieves an already committed matching job after cleanup; every new admission still requires the normal active-session guard. The original review deadline remains in force.
+
+Evidence: backend evidence/APP-013/current-proof-admission/README.md and summary. This is injected-source local evidence, not a received OTP, qualified county record or real verification acceptance. Payment terms are recorded for admission provenance, not applied as charge authority. Contact/address real-verification flags and booking/sending remain disabled. No migration, provider call, billing, deployment or merge.
+
+Next after review/acceptance is 2B controlled verification, subject to qualified county source, named legitimate test participant/tenant/accounts, notices, rates, caps and explicit bounded provider-action approval. Do not silently replace missing live gates with mock completion. APP-013 sole Now; Next empty; FE-014 paused. APP-013 scope index 50%, accepted 0/12; onboarding local 50%, accepted 0/6; pilot accepted 0/12. No overall engineering percentage or calendar ETA. Older next-action text below is historical.
+
 ## Section 1B — cleanup and restart, review-ready
 
 Backend implementation: 37bcb15 on codex/app-013-transactional-messaging (parent 4c5030a). Governance checkpoint: this commit on codex/app-013-message-state-evidence (parent 9a90b7e). Validation: 98 backend suites / 1,869 tests, three existing skips; 170 UI tests; backend/UI build/lint, architecture, Prisma, four zero-finding audits, twelve new database groups and full mobile/desktop parent regression pass. Governance consistency and four placement tests pass. Independent fixture database inventory returned empty. Original dirty saved backend checkout remains untouched.
@@ -855,8 +869,8 @@ Exact review commands and source/evidence: backend evidence/APP-013/readiness-re
 
 ## Next Actions (Strict Order)
 
-1. Review section 1B evidence in backend evidence/APP-013/verification-cleanup/README.md and database/browser summaries. Current section 2 of 8 is Demonstrated; owner acceptance pending, accepted 1/8. Verify closure-before-purge, isolated sessions, preserved submitted records/holds and supported ninety-day alias mapping.
-2. After review and owner acceptance of 1B, approve 2A current-proof admission and its application boundary before implementation. Keep eight-section baseline fixed; no new section or automatic ticket advance. APP-013 remains Now, 50% scope index, accepted 0/12; no overall percentage/ETA.
+1. Review section 2A evidence in backend evidence/APP-013/current-proof-admission/README.md. Current section 3 of 8 is Demonstrated; owner acceptance pending, accepted 2/8. Verify current injected proofs, approved policy binding, rollback, one job/receipt after cleanup and no real verification authority.
+2. After review and owner acceptance of 2A, resolve the 2B controlled-verification entry checklist and obtain explicit bounded provider-action approval. County qualification, named participant/tenant/accounts, rates/caps and notices cannot be inferred from a general proceed. Keep eight-section baseline fixed; no automatic ticket advance. APP-013 remains Now, 50% scope index, accepted 0/12; no overall percentage/ETA.
 3. Keep live verification, county acceptance, sending and real proof-to-job connection gated; no production, billing, real data or release actions are authorized.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 
