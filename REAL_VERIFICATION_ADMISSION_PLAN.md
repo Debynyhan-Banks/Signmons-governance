@@ -8,6 +8,23 @@ The initial pilot remains English-language, supervised and tenant-isolated. Norm
 
 ## Required evidence
 
+### Approved pilot service area: all of Cuyahoga County, Ohio
+
+The owner explicitly approved all of Cuyahoga County as Eternity's initial pilot service area and approved using validated county evidence rather than ZIP codes alone. Greater Cleveland is a planning description, not the executable boundary. Adjacent counties are outside this pilot unless separately approved. This settles geography only; it does not provision the tenant, configure coverage or authorize live operation.
+
+Planned decision contract:
+
+- IN_AREA requires a valid confirmed U.S. service address plus trustworthy evidence that it is within Cuyahoga County, Ohio, evaluated against the current versioned tenant policy. Match country/state/county together; county name, postal city, customer assertion or ZIP alone cannot grant coverage.
+- OUT_OF_AREA requires reliable evidence that an otherwise resolved service address is outside the approved county boundary. It must not promise a booking or silently expand service coverage.
+- UNKNOWN covers unresolved address/location, missing or conflicting county evidence, insufficient geographic precision and unavailable/unsupported validation. Retain customer progress and offer assistance; do not automatically treat uncertainty as in-area or definitively outside.
+- If a selected source cannot supply trustworthy county membership, a separately approved geographic resolver/boundary source is required. Its provenance, version, precision and boundary-edge behavior must be specified before implementation. Do not guess from approximate coordinates or ZIP lists.
+- Address/unit corrections and coverage-policy changes require the affected evidence to be rechecked before admission. County eligibility never proves occupancy, address deliverability, unit validity, technician availability, payment or sending consent.
+- Required acceptance cases: validated inside address; validated adjacent-county address; ZIP crossing a county boundary; wrong state/country or misleading county name; missing/conflicting evidence; imprecise/boundary-edge result; corrected address; policy change; tenant isolation. No real customer data is needed for initial tests.
+
+The current injected fictional ZIP catalog is not a Cuyahoga County validation implementation. Existing production routing and service-area records remain untouched.
+
+### Other verification evidence
+
 - Phone access: server-confirmed code verification bound to tenant, session, normalized phone and phone revision. U.S. destination eligibility must be checked explicitly; a +1 prefix alone is insufficient. This proves access, not identity, ownership, marketing consent or payment.
 - Address: approved real validation source, structured address, explicit customer confirmation of corrections and unit handling. Limit to U.S. service addresses and Eternity's separately approved service area. A suggestion, geocode or ZIP match alone is not validated-address or occupancy proof.
 - Coverage: deterministic evaluation of the confirmed address against current approved tenant coverage configuration. Missing, malformed, unsupported or uncertain evidence refuses positive coverage; no routing fallback grants it.
@@ -30,7 +47,7 @@ Existing approved phone policy: $50 USD per organization/month, alerts at $25/$4
 
 Before code connecting real proof to admission, specify and review:
 
-1. Exact pilot tenant/environment and approved owner/operator roles; Eternity service areas, hours, emergency fallback and support owner.
+1. Exact pilot tenant/environment and approved owner/operator roles; Eternity hours, emergency fallback and support owner. Service-area scope is now settled: all of Cuyahoga County, Ohio; authoritative county-resolution implementation remains open.
 2. Supported U.S. address types and destination classification, including treatment of territories, unsupported numbers, PO boxes and missing/unvalidated units.
 3. Provider capabilities and binding, challenge expiry, proof lifetime, resend cooldown, attempt/rate limits and freshness/revocation semantics. Values must be documented and tested, not inherited accidentally from session expiry or invented as universal best practice.
 4. Verification notice, terms/privacy links, retained fields, retention/deletion policy and authorized access. No legal-compliance certification is implied by this plan.
@@ -42,6 +59,7 @@ Before code connecting real proof to admission, specify and review:
 - [x] Requirements/approval-checklist direction approved by owner.
 - [x] U.S.A.-only scope approved.
 - [x] Eternity Mechanical Services selected as the pilot business.
+- [x] All of Cuyahoga County, Ohio approved as the initial service area; county evidence required, not ZIP-only approximation.
 - [ ] Resolve and approve the implementation decisions above.
 - [ ] Approve one bounded implementation section; preserve disabled provider/admission defaults until gates pass.
 - [ ] Before live testing: explicitly approve provider/account/service configuration, named participants and destinations, duration, total spending cap, alerts, reconciliation and stop switch.
