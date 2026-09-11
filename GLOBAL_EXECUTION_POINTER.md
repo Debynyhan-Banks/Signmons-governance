@@ -1,5 +1,12 @@
 # Global Execution Pointer
 
+## Google intended-address matching checkpoint
+
+Approved mocked continuation compares returned number/route, locality, postal code, unit and postal lines with a pre-await snapshot of customer intent. Only case/whitespace normalization is automatic; changed/added values, component correction flags and abbreviations return CORRECTION_REQUIRED. Existing malformed/incomplete evidence remains UNKNOWN. REVIEW is not confirmation. No confirmation-consumption endpoint is added; every result stays fixture-only, address/admission false, county UNKNOWN. No network, registration, persistence or UI activation.
+
+49 focused tests (10 new), full backend 93 suites/1,802 tests with three existing skips, build/lint/architecture/diff pass. No UI change; browser QA not applicable. Evidence: backend evidence/APP-013/google-adapter/README.md. Owner-authorized county inquiry was sent September 11 via Outlook; no reply check is claimed here. Next proposed bounded section: explicit revision-bound correction confirmation with mocks, before operational provider controls/live connection. County, budget and admission gates remain. APP-013 sole Now; Next empty; FE-014 paused. APP-013 50% scope/0 of 12 accepted; onboarding 50% local/0 of 6 accepted; pilot 0 of 12 accepted. No overall estimate, merge, deployment, billing or real customer data.
+
+
 ## County record-type qualification outcome
 
 Read-only review did not qualify a positive county allowlist. All 115,395 current US/OH/Cuyahoga records in the aggregate report validation required; physical Building/Unit plus Site Visit/Photogrammetry labels do not document accuracy. This does not prove bad data, but prevents claiming verified coverage. See CEGIS_RECORD_TYPE_REVIEW.md for 52-group aggregate evidence, candidate counts, exclusions and an unsent source-owner inquiry. County acceptance stays UNKNOWN; no provider configuration or live Google call.
