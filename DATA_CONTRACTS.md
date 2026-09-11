@@ -1,5 +1,11 @@
 # Data Contracts
 
+## Local correction browser contract (2026-09-11, inactive fixture only)
+
+Optional protected transport operation `/customer-session/correction` accepts exactly `action,candidateId,confirmed,input,revision,sessionToken`. Verified customer credential and existing trusted integration/origin/header/budget checks precede dispatch; no production registration. Propose uses empty candidateId, revision 0, confirmed false and bounded Google input. Confirm uses the exact candidate ID, server-issued revision, explicit true and unchanged original input. Conditional clear uses the same candidate/revision, input null and confirmed false; disconnect can prevent acknowledgment, so expiry remains mandatory. Fixture replies always keep deliveryAuthorized/addressVerified/admissionAuthorized false, fixtureOnly true and county UNKNOWN. Only permitted postal-display fields are returned; no raw provider content.
+
+The single-customer fixture locks an active customer conversation and binds its current updatedAt plus trusted tenant/session/expiry. This lock surrounds only an immediate injected synthetic provider response, never a real provider request. State is memory-only; replacement, session/version mismatch, closure or expiry refuses old confirmation. The browser clears on edits/reset/pagehide and expiry, does not store candidates in browser storage, and does not rewrite the draft or create durable proof. This is not the future real-address receipt or a production concurrency/cleanup implementation.
+
 ## Conditional real-address and county-proof receipt (planning only)
 
 The approved source/retention audit defines the future minimal contract; it is not a registered runtime schema. Google Address Validation uses direct server-side submission with `regionCode: US` and `enableUspsCass: true`; accepted premise/subpremise and USPS DPV signals still require explicit customer confirmation/correction. No Google response, verdict, coordinate, Place ID or correction flag is durable.

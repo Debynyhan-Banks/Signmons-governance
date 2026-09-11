@@ -1,5 +1,15 @@
 # Session Handoff
 
+## Protected correction browser checkpoint (2026-09-11)
+
+Backend commit: `4ad7def` on `codex/app-013-transactional-messaging`; reviewed parent `cd22aff`. Governance parent `540cfd7`. Original dirty saved backend checkout was preserved.
+
+Approved continuation connects exact correction display and confirmation to the existing protected local customer-review page. Optional fixture-only transport reuses session/origin/request-budget protections. Server-side fixture locks the current conversation and binds candidate to trusted tenant/session/expiry, conversation version and server-generated revision. Explicit acknowledgment is required; edits clear UI, tampering/replacement/closed sessions refuse, and conditional best-effort discard plus expiry bounds pending state. Confirmation remains customer-stated only: addressVerified/admissionAuthorized false, county UNKNOWN, sending disabled. No automatic draft rewrite or proof-to-job connection.
+
+Evidence: backend evidence/APP-013/address-correction/README.md and reproducible correction browser verifier. Full backend 94 suites/1,818 tests, three existing skips; build/lint/architecture pass. Full disposable PostgreSQL and Playwright organization/customer/operator regression passes; actual 390px mobile and 1280px desktop inspected, no overflow/storage/page errors; fixture database cleaned up. Existing pg deprecation remains. This is a single-customer mock composition, not production session/provider registration; no network provider, real data, billing, migration, merge or deployment.
+
+Stop review-ready. Next proposed: size verification operations (shared cost reservation, bounded attempts, uncertain outcomes and retention cleanup) before provider connection; county qualification and current-proof-to-job remain gates. S1 and APP-013 are not complete. APP-013 sole Now; Next empty; FE-014 paused. APP-013 scope index 50%, accepted 0/12; onboarding local 50%, accepted 0/6; pilot accepted 0/12. No overall build percentage or ETA.
+
 ## Exact local correction confirmation checkpoint
 
 Approved S1 section now composes Google fixture validation with a single-session in-memory correction review. Candidate ID binds exact presented fields to trusted tenant/session/revision/expiry context before and after validation. Explicit true confirmation returns the stored customer-confirmed copy; changed scope, revision, expiry, candidate or payload refuses. Copies prevent mutation; replacement/clear invalidates in-flight work; timer purges pending state, and restart refuses lost candidates. Default Google validate still strips candidate fields; preview exposes only permitted correction-display fields, not raw provider content.
@@ -780,9 +790,9 @@ Exact review commands and source/evidence: backend evidence/APP-013/readiness-re
 
 ## Next Actions (Strict Order)
 
-1. Review split customer/operator requests on PR #21, incremental after 1e145d1, and customer-intake-review-request evidence. Verify no bearer storage/operator DTO, exact replay, original expiry and unchanged job/consent tables.
-2. After review, confirm one bounded token-free operator admission section from the durable request, with exact human decision and atomic request/job/consent outcome. Preserve deadline/stale/replay rules; no Calendar/payment/provider, UI/route activation or sending. APP-013 stays Now; 50% coverage, 0/12 acceptance; 7-12 APP-013 / 20-35 pilot sections, low confidence.
-3. Keep provider delivery disabled until an explicitly approved acceptance run; no external messages or release are authorized by this documentation checkpoint.
+1. Review backend `4ad7def` after `cd22aff`: protected correction transport, existing customer-review fixture, exact browser confirmation/refusal and address-correction evidence. No real provider or admission authority.
+2. After review, size one verification-operations package against MVP_COMPLETION_AUDIT_2026-09-11.md: shared cost reservations, bounded attempts, uncertainty and retention cleanup. Do not enable a provider or begin a new ticket automatically. APP-013 remains Now, 50% scope index, accepted 0/12. No overall engineering percentage or section-count ETA.
+3. Keep live verification, county acceptance, sending and real proof-to-job connection gated; no production, billing, real data or release actions are authorized.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 
 ## APP-013 Queue State Review Checkpoint (2026-09-08)
