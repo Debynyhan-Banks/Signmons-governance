@@ -797,7 +797,7 @@ Exact review commands and source/evidence: backend evidence/APP-013/readiness-re
 ## Next Actions (Strict Order)
 
 1. Review VERIFICATION_OPERATIONS_PLAN.md, especially VO-1 exit tests and the approval checklist; source baseline is backend 4ad7def. This checkpoint is planning only.
-2. Approve VO-1 only before implementation: disabled durable address-operation/shared liability boundary, with a minimal ledger migration tested solely in disposable local PostgreSQL and fictional rates/caps. VO-2 and VO-3 remain later review boundaries. APP-013 remains Now, 50% scope index, accepted 0/12; no overall percentage/ETA.
+2. After review, approve VO-1 only before implementation: disabled durable address-operation/shared liability boundary, with a minimal ledger migration tested solely in disposable local PostgreSQL and fictional rates/caps. VO-2 and VO-3 remain later review boundaries. APP-013 remains Now, 50% scope index, accepted 0/12; no overall percentage/ETA.
 3. Keep live verification, county acceptance, sending and real proof-to-job connection gated; no production, billing, real data or release actions are authorized.
 4. Keep FE-014 paused until the owner returns the pointer to marketing work.
 
