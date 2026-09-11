@@ -1,6 +1,12 @@
 # CallDesk MVP - Approved Supervised Pilot
 
-## Combined organization/address review proof (2026-09-10, latest review-ready)
+## Approved U.S.-only Eternity pilot direction
+
+Owner approved the real-verification/admission requirements and approval checklist, specified U.S.A.-only operation, and selected Eternity Mechanical Services as the pilot business. See REAL_VERIFICATION_ADMISSION_PLAN.md for the approved contract, remaining decisions and separate implementation/live-test/release gates. This is planning approval, not permission to configure providers, spend, alter real customer data or modify Eternity's website.
+
+Backend runtime remains 5fb4f36; no application change or new acceptance. Next: resolve pilot tenant/environment, supported U.S. destinations/address types, proof timing/limits, retention/notice and cost/recovery decisions into an implementation-ready contract. APP-013 sole Now, Next empty, FE-014 paused. APP-013 50% recorded scope / 0 of 12 accepted; onboarding 50% local / 0 of 6 accepted; pilot 0 of 12 accepted. No defensible overall percentage/ETA.
+
+## Combined organization/address review proof (2026-09-10, prior checkpoint)
 
 Backend checkpoint 5fb4f36 on codex/app-013-transactional-messaging, PR #21; incremental 588c9f7..5fb4f36. Exact review and reproduction: backend evidence/APP-013/organization-address-thread/README.md.
 
@@ -232,7 +238,7 @@ Approved by the owner on 2026-09-09 after the bounded completion audit and capab
 
 **Capture the request, confirm the facts, enforce the rules, coordinate the appointment and keep everyone informed.**
 
-Signmons MVP is an AI front desk and dispatch assistant for a trades business. Start with one separately approved business, English-language operation, online access and owner/dispatcher supervision. Tenant isolation remains mandatory even in a single-business pilot. The pilot tenant has not been selected or provisioned by this approval.
+Signmons MVP is an AI front desk and dispatch assistant for a trades business. The owner has selected Eternity Mechanical Services as the first pilot business and approved U.S.A.-only operation. English-language operation, online access and owner/dispatcher supervision remain required. Tenant isolation remains mandatory even in a single-business pilot. Selecting the business does not provision or identify a production tenant; exact environment/tenant binding and activation still require approval. See REAL_VERIFICATION_ADMISSION_PLAN.md.
 
 The customer journey is call/text/chat -> confirmed intake -> policy/payment checks -> confirmed booking -> customer notifications -> dispatcher assignment -> technician progress -> visible outcome or human-owned exception. Payment ordering follows the existing server-side tenant policy; this plan does not change APP-012 contracts. No assistant statement alone can establish payment, booking or dispatch authority.
 
@@ -260,7 +266,7 @@ These are launch requirements, not claims that every capability is available now
 - Full professional estimates/invoicing and broader Money workflows beyond the existing approved payment workflow.
 - Diagnostic reports, inventory/purchasing, payroll exports, memberships, accounting integrations and full customer/equipment-history expansion.
 - Offline technician synchronization, advanced analytics, broad template customization, autonomous dispatch, advanced automation and multi-location operation.
-- Marketing expansion and Eternity work. FE-014 remains paused.
+- Marketing expansion and Eternity website/marketing work. Using Eternity Mechanical Services as the Signmons pilot is approved planning scope, not authorization to modify its website or production customer records. FE-014 remains paused.
 
 These deferrals do not weaken safety, tenant isolation, payment integrity, communication consent, data ownership or basic operational recovery. They do not authorize advertising unavailable features or changing paid-plan promises.
 

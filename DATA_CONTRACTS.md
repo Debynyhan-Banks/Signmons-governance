@@ -1,6 +1,12 @@
 # Data Contracts
 
-## Combined organization/address review proof (2026-09-10, latest review-ready)
+## Approved U.S.-only Eternity pilot direction
+
+Owner approved the real-verification/admission requirements and approval checklist, specified U.S.A.-only operation, and selected Eternity Mechanical Services as the pilot business. See REAL_VERIFICATION_ADMISSION_PLAN.md for the approved contract, remaining decisions and separate implementation/live-test/release gates. This is planning approval, not permission to configure providers, spend, alter real customer data or modify Eternity's website.
+
+Backend runtime remains 5fb4f36; no application change or new acceptance. Next: resolve pilot tenant/environment, supported U.S. destinations/address types, proof timing/limits, retention/notice and cost/recovery decisions into an implementation-ready contract. APP-013 sole Now, Next empty, FE-014 paused. APP-013 50% recorded scope / 0 of 12 accepted; onboarding 50% local / 0 of 6 accepted; pilot 0 of 12 accepted. No defensible overall percentage/ETA.
+
+## Combined organization/address review proof (2026-09-10, prior checkpoint)
 
 Backend checkpoint 5fb4f36 on codex/app-013-transactional-messaging, PR #21; incremental 588c9f7..5fb4f36. Exact review and reproduction: backend evidence/APP-013/organization-address-thread/README.md.
 
