@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: disabled deployment worker-isolation blocker — 2026-09-12
+
+PHONE_ONLY_DISABLED_DEPLOYMENT_PROPOSAL.md contains exact source/target, proposed temporary build roles and cost assumptions. Two registered workers can still access/write shared staging data despite SMS_DELIVERY_ENABLED=false and SCHEDULING_ENABLED=false. No new code or deployment was performed. Smallest next decision: approve one candidate worker-disable control with focused zero-call tests, then approve the bounded build/deployment separately. Do not treat earlier no-more-code wording as an isolation guarantee. Existing identity/secret preparation is complete, not repeated; 3/8 milestones remain accepted.
+
 ## Current: dedicated phone secrets prepared — 2026-09-12
 
 Owner explicitly approved the two dedicated secret creations and runtime read grants. Backend evidence commit 16e0af8 records signmons-staging-phone-session-key/1 and signmons-staging-phone-digest-key/1, vault versions ENABLED in us-east5, independently generated and compared in memory without value disclosure. Each resource policy grants only the existing runtime roles/secretmanager.secretAccessor; no project-wide or token-signing grants. Existing secrets unchanged. No deployment, identity activation, session issuance, messages or payments.

@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: disabled deployment proposal blocked on worker isolation — 2026-09-12
+
+Read PHONE_ONLY_DISABLED_DEPLOYMENT_PROPOSAL.md. Read-only preflight found unconditional call-log cleanup and SMS enqueue recovery not disabled by the proposed scheduling/SMS switches. Zero normal traffic does not guarantee no unrelated database writes. No build/deployment/IAM change occurred. Recommend one explicitly approved worker-disable guard for the candidate before release; do not silently implement or substitute infrastructure. Proposal fixes target/source, temporary build grants and USD 2 operational allowance (not yet approved; not invoice cap). Identity and phone sending remain disabled. APP-013/2B Now, 3/8 acceptance unchanged.
+
 ## Current: dedicated phone secrets prepared — 2026-09-12
 
 Owner explicitly approved the two dedicated secret creations and runtime read grants. Backend evidence commit 16e0af8 records signmons-staging-phone-session-key/1 and signmons-staging-phone-digest-key/1, vault versions ENABLED in us-east5, independently generated and compared in memory without value disclosure. Each resource policy grants only the existing runtime roles/secretmanager.secretAccessor; no project-wide or token-signing grants. Existing secrets unchanged. No deployment, identity activation, session issuance, messages or payments.
