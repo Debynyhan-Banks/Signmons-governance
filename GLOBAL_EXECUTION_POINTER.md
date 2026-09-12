@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: default-disabled one-shot runner implemented — 2026-09-12
+
+Backend evidence/APP-013/google-address-one-shot.md records local exclusive durable claim before the existing transport, one packet/request, bounded approval window/liability, timeout/no-retry and content stripping. No CLI/route/credential/live call. This local claim does not promote the fixture database ledger or enforce distributed/account budgets. Exact credential, private input and stable protected claim directory remain qualification gates; no executable live test claimed. Next is that bounded connection/qualification, not another evaluator or waiting exclusively on support. APP-013/2B Now; 3/8 (37.5%) unchanged; no live authority.
+
 ## Current: single-address review packet prepared — 2026-09-12
 
 GOOGLE_SINGLE_ADDRESS_INSPECTION_PACKET.md and GOOGLE_CASE_75382710_ADDENDUM_DRAFT.md are prepared, not executed/sent. Proposed one legitimate privately confirmed address, one request, USD 0.10 application allowance (unapproved; actual rate not verified), no retries/persistence/downstream actions. Exact credential, current rate, private participant/window, one-shot reservation wrapper and permitted findings remain explicit gates. Next: review packet and qualify those gates read-only before exact execution approval. No new generic evaluator, county dependency or live action. APP-013/2B Now; 3/8 (37.5%) unchanged.
