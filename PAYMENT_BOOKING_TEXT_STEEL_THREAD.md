@@ -1,5 +1,25 @@
 # Payment, booking and text steel thread — baseline v1
 
+## Owner-approved remaining five-section plan — 2026-09-12
+
+Owner agreed to prioritize 2B blockers and stop presenting internal SMS implementation slices as new sections. This reaffirms the existing eight-section baseline; it does not add sections, authorize external actions or promise five turns. Accepted remains 1A, 1B, 2A: 3/8 (37.5% milestones). Current 2B is blocked at controlled-entry. No overall MVP completion percentage or ETA is inferred.
+
+| Order | Existing section | Included work | Observable finish line |
+| --- | --- | --- | --- |
+| 1 | 2B verified intake to job | Qualified county/address source, existing phone/address adapters, protected journey, account/environment and capped-test prerequisites | Owner receives code, confirms eligible address and creates exactly one reviewed job; invalid/uncertain proof refuses admission |
+| 2 | 3A Sandbox payment | Same job, existing Checkout and signed payment events, truthful pending/failed/paid state and retry | Owner completes Sandbox payment; matching verified event clears that job's gate without duplicate requests |
+| 3 | 3B test-calendar scheduling | Paid job, availability, protected booking, calendar acknowledgment and initial-booking recovery | One appointment appears in app and isolated test calendar; unpaid/conflicting/uncertain work never falsely confirms |
+| 4 | 3C received confirmation text | Remaining consent integration, provider replay protection, sender/recipient and send-release controls, actual capped test | Owner receives correct confirmation; app shows truthful delivery state and refuses stale/revoked/foreign authority |
+| 5 | 3D changes and recovery | Same job's reschedule/cancel, existing recovery surfaces and integrated failure matrix | Owner repeats full workflow and failure cases without duplicate logical payments/bookings or unintended messaging |
+
+3C's remaining engineering inventory is explicitly: (a) duplicate/delayed START versus later STOP protection; (b) approved policy-bound evidence to actual consent grant and protected intake UI/transport; (c) retention/key lifecycle and separate capture/send controls; (d) actual policy/provider/sender/recipient qualification and capped receipt demonstration. Existing registry, encrypted evidence, locks and fixture storage are reused, not rebuilt. These are material subtasks tracked within 3C, not additional acceptance milestones or automatic permission to continue SMS work while 2B is blocked.
+
+Execution rule: work the current section's blocker or acceptance path. When an external prerequisite is unavailable, report its exact missing evidence/owner and stop; alternate offline work requires a separately agreed bounded purpose and must not be counted as acceptance. Any new section, material expansion or changed finish criterion requires owner-approved baseline change with reason and impact. Nonessential improvements go to backlog. Every future update identifies section ID, completed/remaining subtasks, blocker, next observable demonstration and accepted Y/8.
+
+Approval gates are tracked separately from engineering: actual county qualification, existing account/environment readiness, notices/data handling, exact test destinations/resources, current account rates and enforceable caps, and explicit action/release approval. The old draft test budget is not approved by this plan. Account observations and prices are historical until refreshed.
+
+This walkthrough is not the full MVP. Voice, email, organization onboarding, dispatcher/technician completion and operational acceptance remain visible in MVP_COMPLETION_AUDIT_2026-09-11.md and their existing ledgers; they are not hidden inside 3D or asserted complete. This turn is documentation/read-only reconciliation, not a fresh audit of those areas.
+
 ## SMS readiness dependency reconciliation — 2026-09-12
 
 PILOT_SMS_ACTIVATION_READINESS.md maps completed local fixture capture/storage proof and the remaining tenant policy/real-consent integration plus external approvals into existing 3C. P1/P2 are internal work packages, not new acceptance sections or a promise of two remaining turns. No fixture-storage rewrite or additional planning loop is proposed. Current milestone remains 2B; acceptance remains 3/8. County/verification gates remain independent. No baseline change or controlled-action approval.

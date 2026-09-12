@@ -1,5 +1,9 @@
 # Pilot SMS: production policy and activation readiness
 
+## Priority correction approved — 2026-09-12
+
+Owner reaffirmed the five remaining acceptance sections and prioritized 2B blockers. All remaining SMS implementation and activation work stays under existing 3C; older next-P2/provider-replay statements below are no longer immediate execution instructions. Follow PAYMENT_BOOKING_TEXT_STEEL_THREAD.md and CONTROLLED_VERIFICATION_2B_CHECKLIST.md. Do not expand or rebuild local SMS fixtures as a substitute for blocked controlled verification. No new feature, provider action or spend approval.
+
 ## P2 inactive capture bridge checkpoint — 2026-09-12
 
 Backend 6c9f660 connects the registry and recipient suppression revision to separate encrypted immutable DRY_RUN evidence, with atomic audit, exact replay, shared lock order and post-write deadline/publication rechecks. Nine new capture groups plus all prior regression groups passed; no grant/queue/provider authority. The inactive bridge is complete, not P2/live readiness. Evidence: evidence/APP-013/policy-bound-sms-capture/README.md. Next proposed P2 section is authenticated provider-event replay identity/STOP-START retry protection. Production evidence mode/grant relation, actual public source, retention/key lifecycle and transport/release remain gates; no further fixture storage rewrite. Acceptance remains 3/8 milestones (37.5%), not overall MVP completion.

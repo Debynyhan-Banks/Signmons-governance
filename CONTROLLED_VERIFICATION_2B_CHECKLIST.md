@@ -1,5 +1,15 @@
 # Section 2B controlled-verification entry checklist
 
+## Current priority and bounded blocker refresh — 2026-09-12
+
+Owner reaffirmed the fixed remaining order 2B → 3A → 3B → 3C → 3D. SMS internal work is parked under 3C, not the next execution section. Backend runtime baseline is 6c9f660; no runtime changed in this reconciliation. Both focused branches fetched clean before edits.
+
+Fresh read-only Outlook searches for from:gis@cuyahogacounty.us and CEGIS each returned zero results, has_more=false. This does not prove no reply exists elsewhere and does not verify the historical sent inquiry. Smallest needed input: identify the inquiry mailbox or supply the county response. No new inquiry/follow-up was sent; no email was modified. Prior provider console/price observations below were not refreshed and are not current readiness proof; an old Chrome interruption is historical, not a newly observed blocker.
+
+County source remains BLOCKED pending exact qualification evidence. In parallel prerequisites, existing account/environment readiness, approved notices/data handling and a complete capped test packet remain UNVERIFIED/UNAPPROVED, not assumed absent. Participant willingness and U.S./Cuyahoga scope are already recorded; do not re-ask them. Do not request secrets or publish private destination details. No test calls, provisioning, deployment, publication or spend authorized. Stop rather than substituting new mock/hardening work for controlled acceptance.
+
+See PAYMENT_BOOKING_TEXT_STEEL_THREAD.md for the owner-approved finite list and finish criteria. Documentation consistency/placement and whitespace gates apply; no fresh runtime/browser validation claimed. Accepted remains 3/8, current 2B blocked at entry.
+
 Owner accepted 2A with “i reviewed continue”. Three of eight sections accepted; 2B is section four, blocked at entry, not demonstrated. This is the existing section's gate inventory, not a new implementation section. Runtime f8e35e8 is unchanged. Latest origins fetched; both focused branches were clean and aligned before documentation work.
 
 ## Recorded versus missing

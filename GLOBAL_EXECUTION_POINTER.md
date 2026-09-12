@@ -1,5 +1,16 @@
 # Global Execution Pointer
 
+## Owner-approved fixed five remaining sections; prioritize 2B — 2026-09-12
+
+Owner agreed to return to the fixed acceptance order: 2B verified intake/job → 3A Sandbox payment → 3B test-calendar scheduling → 3C received confirmation → 3D changes/recovery. PAYMENT_BOOKING_TEXT_STEEL_THREAD.md now records each scope/finish line and explicit remaining SMS subtasks under 3C. No new section or material expansion without owner-approved baseline change; no hidden final-polish scope or promise of five turns. Prior next-provider-replay wording below is parked under 3C, not current execution priority.
+
+Current 2B remains blocked at controlled-entry. Fresh bounded Outlook searches for county sender and CEGIS found zero results, no further pages; no email changed/sent. Smallest missing input: correct inquiry mailbox or supplied county response. Existing provider accounts/environment, actual notices/data handling and complete capped test approval remain unverified/unapproved; old console/pricing observations were not refreshed. Do not invent absence or approve calls from historical prices. Participant willingness is already recorded.
+
+Backend runtime remains 6c9f660. This checkpoint changes documentation only, with governance consistency/placement and whitespace checks; prior runtime tests remain historical. Next action: locate/review county clarification and perform bounded read-only account readiness checks, then prepare the exact controlled-test packet. If evidence is unavailable, report the blocker rather than create more SMS/mock tasks. No provider configuration, sends, charges, production migration, merge/deployment or Eternity website changes.
+
+APP-013 sole Now; Next empty; FE-014 paused. Accepted 3/8 = 37.5% of walkthrough milestones, unchanged, not whole-MVP engineering completion. Whole-MVP voice/email/onboarding/technician/operations acceptance remains separately visible, not included by implication.
+
+
 ## APP-013 P2 policy-bound capture bridge — review-ready, 2026-09-12
 
 Owner approved continuation after suppression checkpoint 64942c0/b90f0a6. Backend 6c9f660 implements inactive PolicyBoundSmsCapture and separate DRY_RUN-only SmsPolicyCapture provenance. Exact registry content/version/head revision, customer session/token instance, recipient identity/update, phone HMAC/key version and consent row identity/revision bind encrypted immutable evidence. Shared recipient lock precedes session/customer/policy locks. Atomic capture/audit, original receipt replay and post-write authority/deadline recheck are implemented. No fixture promotion, legacy grant/customer flag change, live route/UI switch or provider dependency.
