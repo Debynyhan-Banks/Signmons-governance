@@ -2,6 +2,12 @@
 
 2026-09-12. DRAFT — unresolved fields below prohibit activation or sending.
 
+## Identity preparation completed with owner approval
+
+Backend c2cee78/evidence/APP-013/isolated-phone-identity.md records disabled operator staging-phone-owner-20260912 and suspended tenant a1adcfd4-15be-404b-9ac3-5edb1fda20f0, created and read back in the existing Signmons staging identity/database systems. Exact application owner claim binds only that tenant; no email/password/phone on the identity, no session token, no new secret or IAM grant. Tenant phone approval disabled, zero customer/conversation/job records, charges/payouts false. Earlier missing-identity rows are superseded for preparation only. Existing staging tenant and provider configuration untouched.
+
+Next is separately approved dedicated credential/session and candidate activation/release preparation. Do not enable the user or tenant, mint a token, deploy, or send from the identity-only approval. Preserve disabled/suspended state and arrange exact-target cleanup after the test/abandonment. Fixed source runtime remains ad909c8; operation script/evidence commit c2cee78 does not represent a new deployment.
+
 ## Latest private-binding preflight
 
 Owner confirmed the US participant destination ending 3183. Full destination remains private; confirmation is not send authorization. Owner accepted keeping Stripe Checkout links for the MVP; Twilio Pay is deferred.

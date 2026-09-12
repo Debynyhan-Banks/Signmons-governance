@@ -1,5 +1,11 @@
 # Session Handoff
 
+## Current: isolated staging identity prepared — 2026-09-12
+
+Owner approved identity preparation only. Backend c2cee78 records a newly created disabled Identity Platform operator staging-phone-owner-20260912, bound exclusively to suspended tenant a1adcfd4-15be-404b-9ac3-5edb1fda20f0. Tenant phone approval disabled, charges/payouts false, zero customers/conversations/jobs verified. No passwords, session tokens or new secrets generated; no IAM grants, deployment, messages or payments. Existing staging tenant untouched. See backend evidence/APP-013/isolated-phone-identity.md for exact verification and cleanup boundaries.
+
+The missing-identity preparation blocker is resolved, not sign-in/live-test acceptance. Next requires explicit dedicated credentials/session and candidate activation/release approval; never enable or mint tokens from identity-preparation approval alone. Keep operator disabled and tenant suspended until then. Runtime implementation remains ad909c8; APP-013/2B Now, approved queue unchanged, 3/8 (37.5%) walkthrough acceptance. Stripe checkout links remain MVP; Google/county admission gates separate.
+
 ## Current: phone-only release packet draft — 2026-09-12
 
 Latest preflight: PHONE_ONLY_RELEASE_AUTHORIZATION_PACKET.md now records owner-confirmed destination ending 3183, official public Verify PAYG rates and existing staging tenant binding. A qualified current Firebase operator/session is not established; prior payment fixture operators were deleted. The old SMS-test revision has general SMS and scheduling enabled, so do not characterize it as globally disabled or blindly reuse its configuration. No changes or sends. Next requires explicit isolated staging identity/credential preparation authorization, then exact release/test approval. No new coding section; 3/8 acceptance unchanged. Older Product Plans navigation blocker below is superseded by the public pricing lookup.
