@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: private sign-in permission decision — 2026-09-12
+
+Read PHONE_ONLY_ACTIVATION_PACKET.md authentication qualification. Exact isolated operator remains disabled/passwordless; current principal lacks signBlob/signJwt on runtime SA (read-only testIamPermissions). No token/IAM/identity mutation. Propose explicit review of temporary signBlob-only grant, acknowledging it can mint identities beyond this UID; no broader role or project-wide sign-in provider change inferred. Resolve role and private exchange details before execution. SMS/Fraud Guard directly observed; US-only owner-confirmed. APP-013/2B Now, 3/8 (37.5%) unchanged; no send or new coding section.
+
 ## Current activation packet — 2026-09-12
 
 Read PHONE_ONLY_ACTIVATION_PACKET.md. Disabled deployed image/Ready reverified; existing Safari account confirmed. No activation or sending. Exact resource/window/notice/cap/closeout proposal prepared, superseding old missing-deployment rows. Remaining readiness: current Verify protections, qualified private Firebase sign-in (disabled passwordless operator alone is insufficient), isolated record/liability qualification and private participant/window. No dev-auth/signing bypass or new feature section. Next: qualify those preparation details before explicit single-SMS activation approval. APP-013/2B Now, 3/8 (37.5%) unchanged.

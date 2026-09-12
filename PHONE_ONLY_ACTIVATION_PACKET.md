@@ -1,5 +1,15 @@
 # Single-SMS activation packet — 2026-09-12
 
+## Private authentication qualification — 2026-09-12
+
+Read-only Identity Platform lookup returned exact operator staging-phone-owner-20260912 disabled=true, no email/password, with expected isolated tenant/owner/stagingOnly claims. Project sign-in configuration returned anonymous enabled and email passwordRequired=true but no email enabled=true; do not assume email/password sign-in is enabled or enable a project-wide provider for this test. Existing emulator mint script is not suitable for real staging.
+
+Current gcloud principal has project Owner, but IAM testIamPermissions on signmons-calldesk-runtime returned no signBlob/signJwt permissions. No signing attempted or credential issued. Runtime service-account resource policy has no explicit binding. Firebase supports custom-token sign-in using a signing service account: https://firebase.google.com/docs/auth/admin/create-custom-tokens . A Google OAuth access token alone is not the Firebase ID token required by this API.
+
+Recommended next decision: approve preparing an exact temporary signBlob-only IAM grant on the existing signing service account for the current administrative principal, followed by removal after supervised token issuance; do not apply it from this read-only approval. First resolve whether an existing suitable custom role exists; otherwise custom-role creation itself needs approval. Do not silently substitute broader Service Account Token Creator. Signing authority is NOT restricted to the isolated UID and can mint other Firebase identities; runtime SA already has permissions, so this is a material security grant even if short-lived. No private-key download, runtime self-signing, password through chat, or dev-auth bypass. Actual issuance still requires enabling only the isolated operator and private token exchange/API-key qualification, followed by revocation/disable closeout. This is operational setup, not a new product feature.
+
+Twilio evidence updated: service ending 04f0 SMS enabled and Fraud Guard checked were directly observed in Safari in the preceding interaction; protection level was not exposed. US-only geography is owner-confirmed, not independently reread. No setting changed or SMS sent. All activation flags remain unmodified in this run. Next permission decision is outstanding; 3/8 milestone acceptance unchanged.
+
 PREPARED FOR REVIEW, NOT SEND AUTHORIZATION. Supersedes the obsolete missing-deployment/identity/secret rows in PHONE_ONLY_RELEASE_AUTHORIZATION_PACKET.md. Runtime remains disabled. No new feature section is proposed.
 
 ## Fixed resources
