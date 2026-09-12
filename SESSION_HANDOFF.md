@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Restart stopped at private input — 2026-09-12
+
+Owner-approved 22:07–22:22 UTC restart authenticated after seven-minute wait, then private-number validation refused before any session/deployment/START. No SMS. Cleanup no binding, role disabled, operator disabled/revoked and token 401. Backend evidence/APP-013/single-sms-attempt.md records result. Do not repeat permission wait until private number normalization/confirmation is moved before access setup; no change to allowed participant. APP-013/2B Now; 3/8 unchanged.
+
 ## Current: single-SMS attempt stopped at private input — 2026-09-12
 
 Owner-approved single SMS run authenticated successfully after seven-minute grant propagation, but private phone dialog did not pass +1/suffix validation; timeout vs invalid input not distinguished. Stopped before DTO probe, session/customer creation, tenant activation, deployment or SMS. Backend evidence/APP-013/single-sms-attempt.md records exact sequence. Cleanup verified operator disabled/revoked, no grant, role disabled, token now 401. No send or automatic retry. Next requires owner-ready private input and renewed supervised window, not new feature work. APP-013/2B Now; 3/8 unchanged.
