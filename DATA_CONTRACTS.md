@@ -1,5 +1,18 @@
 # Data Contracts
 
+## Current: staging address budget policy validator — 2026-09-12
+
+Owner approved independent budget-gate implementation while Google response-ID retention remains unresolved and county qualification is pending. This supersedes the next-revalidation recommendation for current work only. No support-case submission/reply is asserted.
+
+Backend 974f18c adds a pure inactive STAGING_REVIEW_ONLY packet validator: independently approved digest, current server account/project/service/runtime/tenant/session, paid USD liability/rate version, approval window and session/rate expiry, account/tenant/session caps and inclusive usage. Missing/disabled/mismatched/stale/altered/invalid/exhausted values refuse. No default rates/caps or real approved packet; synthetic tests only. POLICY_READY grants no dispatch, admission or delivery authority.
+
+Evidence: backend evidence/APP-013/staging-address-budget/README.md. 38 new tests; 2,039 passed / three skipped across 107 passing suites, one skipped. Build/lint/architecture/Prisma and zero-finding production audit passed. Governance consistency, eight regressions and whitespace passed. No UI/schema/dependency/database changes or browser QA claim.
+
+Next bounded implementation: trusted current approval/rate/usage loading and validation under the existing atomic reservation lock, including revocation/concurrency/replay evidence. Pure validation is not an enforced live budget, and fixture records must not be promoted. Actual approved address caps/rates/test packet and provider/release approval remain gates. County UNKNOWN and Google retention clarification remain separate. No provider call, config/IAM/secret change, charge, external message, deployment, production migration or customer action.
+
+APP-013/2B remains sole Now; approved Next APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033 unchanged. Walkthrough accepted 3/8 (37.5%); no new milestone or overall MVP percentage/ETA.
+
+
 ## Inactive OAuth address transport (2026-09-12)
 
 Internal GoogleAddressOAuthTransport accepts only the existing US/OH GoogleAddressRequest, with enableUspsCass true and no session token, recipients or arbitrary endpoint. Default DISABLED acquires no credentials. Explicit test composition uses injected OAuth/fetch ports; no production registration exists. INVALID_INPUT and UNAVAILABLE expose no errors or provider content. RESPONSE carries a transient bounded JSON object for future semantic evaluation; it grants no verification, county membership, consent, spending, or admission authority. No raw response storage/logging or new database contract. Future live composition must reserve the operation budget, handle uncertain outcomes without blind retries, enforce retention, and separately qualify current county proof. OAuth uses Cloud Run ADC rather than a downloaded key; IAM and release approval remain separate.
