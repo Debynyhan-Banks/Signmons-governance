@@ -1,5 +1,17 @@
 # Single-address inspection packet — review only
 
+## Read-only preflight — 2026-09-12
+
+Verified API enabled in signmons. Service Usage returned effective validate_address_requests limits of 5/min/project and 10/day/project; these do not enforce this packet's one-request limit and remaining daily usage was not established. Active CLI principal is debynyhan@signmons.com, not the backend runtime identity.
+
+Runtime service account signmons-calldesk-runtime@signmons.iam.gserviceaccount.com has only roles/firebaseauth.viewer in the inspected direct project bindings. Inherited/group/conditional effective authorization was not resolved; do not assert all access is absent. Listed Firebase browser key API restrictions omit addressvalidation.googleapis.com; no key value retrieved or restriction changed. Backend source uses OAuth, so this key is not a substitute.
+
+Official public [pricing](https://developers.google.com/maps/billing-and-pricing/pricing) lists Address Validation Pro at USD 17/1,000 first-paid-tier events and 5,000 free monthly events. USD 0.017/request is public list pricing, not verified account-specific terms, tax or remaining free allowance. Proposed USD 0.10 remains unapproved.
+
+Google case addendum was sent with owner approval in the existing email thread; Gmail SENT message 1a097f693007a7e8, thread 1a096bbab636f717. Case portal explicitly directs replies by email. No substantive answer asserted. Earlier unsent references are historical.
+
+Next concrete gap: qualify the existing OAuth execution identity and a one-shot runner without widening permissions or bypassing existing reservation gates. This is not blocked solely on the support reply. No address sent, provider request, configuration/IAM change or charge in this preflight.
+
 Prepared 2026-09-12 under APP-013/2B. Preparation approved; execution, spending and support sending NOT approved by this packet. No county GIS dependency.
 
 ## Proposed bounded test
