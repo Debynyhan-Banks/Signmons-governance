@@ -1,6 +1,6 @@
-# Signmons Intelligence — proposed specification
+# Signmons Intelligence — owner-reviewed specification
 
-Status: reference proposal pending INTELLIGENCE_ALIGNMENT_ADOPTION.md; not current runtime instructions.
+Status: owner-reviewed dependency/pilot documentation, 2026-09-12; see INTELLIGENCE_ALIGNMENT_ADOPTION.md. This is not a runtime prompt or permission to start future tickets, deploy or train.
 
 Signmons is an AI front-office operating system for the trades. Eternity is a tenant-configured pilot, never a source of global prices, branding or customer defaults. A shared orchestrator with typed capabilities is preferred; no speculative agent microservices.
 
@@ -13,7 +13,7 @@ Signmons is an AI front-office operating system for the trades. Eternity is a te
 - Tools: typed inputs, tenant/role validation, immutable financial snapshots, timeouts, idempotency, bounded retries and recoverable side effects.
 - Evaluation: deterministic safety/financial/permission assertions plus independent rubric/human review. No hidden chain-of-thought storage or self-confidence as calibrated evidence.
 
-## Proposed Release A behavior
+## Release A pilot behavior
 
 Voice, ordinary conversational SMS and web share validated context but have independent channel acceptance. Transactional texts are not conversational SMS. Safety interrupts every state, including payment/sales, before identity or booking questions. Ambiguity, transcription mistakes, negation and new hazards require tested safe escalation; no dangerous troubleshooting or autonomous diagnosis.
 

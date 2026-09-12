@@ -1,9 +1,8 @@
 # Signmons Execution Board
 
-## Owner-requested intelligence alignment proposal (2026-09-12)
+## Owner-reviewed intelligence dependency alignment (2026-09-12)
 
-See [INTELLIGENCE_ALIGNMENT_ADOPTION.md](INTELLIGENCE_ALIGNMENT_ADOPTION.md) for the coordinated documentation review. Status: NOT ADOPTED. New intelligence documents and draft tickets are reference-only; current precedence, APP-013/2B, Next empty, fixed walkthrough evidence and earlier pilot scope remain unchanged. Expanded advisory pilot scope and the proposed seven-ticket queue require reviewed adoption before canonical activation. Newer backend 330e402 and governance 387adec progress is preserved; no implementation or external action is authorized by this proposal.
-
+The owner reviewed PRs #28/#22 and requested the coherent six-ticket dependency repair. [INTELLIGENCE_ALIGNMENT_ADOPTION.md](INTELLIGENCE_ALIGNMENT_ADOPTION.md) records this approved documentation decision; integration/merge and release remain unapproved. APP-013 stays sole Now (2B); Next is APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033. BE-001's residual consent/replay acceptance is consolidated into APP-013, not dropped or declared complete. All older dated Next-empty/proposal-only notes below are historical, superseded for sequencing and pilot definition only. Runtime/evidence and the original 3/8 walkthrough denominator are preserved. No future feature starts until Now meets full acceptance.
 
 ## 2B OAuth address transport — owner-approved bounded implementation, 2026-09-12
 
@@ -519,9 +518,16 @@ Purpose: single active queue for execution.
 ## Now
 
 - [ ] APP-013 Twilio-backed notification center and transactional customer messaging (`SCR-APP-021`, `SCR-APP-022`, `SCR-TECH-005`)
-  - Section 1A of PAYMENT_BOOKING_TEXT_STEEL_THREAD.md locally Demonstrated: approved thirty-minute proof ceiling/session cap, policy/revision invalidation, sticky phone revocation and unchanged holds; evidence/APP-013/verification-freshness. Current 1 of 8, acceptance pending 0/8. Next after acceptance is 1B with retention mapping/implementation approval. APP-013 scope index 50%, accepted 0/12; no overall ETA or release authority.
+  - Current section 2B; fixed walkthrough 3/8 accepted (37.5%), not whole-MVP engineering completion. Backend 330e402 disabled OAuth transport is review-ready. Preserve all newer evidence; BE-001 residual proof must close inside full APP-013 acceptance.
 
 ## Next
+
+- [ ] APP-017 Business rules and automation center (`SCR-APP-026`)
+- [ ] APP-018 Brand voice and AI behavior (`SCR-APP-027`)
+- [ ] APP-019 Customer profiles and service history (`SCR-APP-028`)
+- [ ] APP-015 AI quality and failure review (`SCR-APP-020`, `SCR-ADM-005`)
+- [ ] APP-016 Calendar scheduling and appointment integrity (`SCR-APP-025`)
+- [ ] APP-033 OpenAI voice intake and intelligence orchestration
 
 ## Later
 

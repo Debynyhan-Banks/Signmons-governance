@@ -1,10 +1,8 @@
 # What Signmons Is + Anti-Drift DoD
 
-## Owner-requested intelligence alignment proposal (2026-09-12)
+## Owner-reviewed intelligence dependency alignment (2026-09-12)
 
-See [INTELLIGENCE_ALIGNMENT_ADOPTION.md](INTELLIGENCE_ALIGNMENT_ADOPTION.md) for the coordinated documentation review. Status: NOT ADOPTED. New intelligence documents and draft tickets are reference-only; current precedence, APP-013/2B, Next empty, fixed walkthrough evidence and earlier pilot scope remain unchanged. Expanded advisory pilot scope and the proposed seven-ticket queue require reviewed adoption before canonical activation. Newer backend 330e402 and governance 387adec progress is preserved; no implementation or external action is authorized by this proposal.
-
-Purpose: provide one unambiguous product definition and release bar so contributors and AI agents do not drift into a generic chatbot, generic FSM clone, or scope-sprawl SaaS.
+The owner reviewed PRs #28/#22 and requested the coherent six-ticket dependency repair. [INTELLIGENCE_ALIGNMENT_ADOPTION.md](INTELLIGENCE_ALIGNMENT_ADOPTION.md) records this approved documentation decision; integration/merge and release remain unapproved. APP-013 stays sole Now (2B); Next is APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033. BE-001's residual consent/replay acceptance is consolidated into APP-013, not dropped or declared complete. All older dated Next-empty/proposal-only notes below are historical, superseded for sequencing and pilot definition only. Runtime/evidence and the original 3/8 walkthrough denominator are preserved. No future feature starts until Now meets full acceptance.
 
 ## Approved first pilot (2026-09-09)
 
@@ -27,17 +25,9 @@ It is built to:
 Primary ICP:
 - HVAC, plumbing, electrical, and adjacent home-service operators.
 
-## Long-term sales and comfort-advisor vision (owner clarification, 2026-09-10)
+## Owner-reviewed intelligence pilot clarification
 
-The owner sees Signmons as more than booking and scheduling: a dynamic, company-branded business-development, sales and comfort-advisory assistant. The owner's MBA-informed approach should shape future approved discovery, customer-value explanation and decision-support playbooks. This is a product-direction clarification, not a claim of implemented capability or approval of a particular sales methodology.
-
-Future capabilities may help understand customer needs, comfort concerns, priorities, budget and timing; explain approved options and their tradeoffs; address questions and objections respectfully; identify relevant service or maintenance opportunities; and hand a human advisor a useful summary. The objective is informed customer decisions and appropriate business growth, not pressure, generic upselling or replacing professional judgment.
-
-Company-approved facts and server-side policy remain authoritative. Brand voice and sales guidance cannot invent diagnoses, sizing, prices, savings, warranties, financing terms, availability or successful actions. Technical determinations and exceptions require the appropriate qualified human. Automation must remain disclosed. Existing policy-before-persuasion and BE-003 restrictions on default upselling remain intact; any future advisory playbook needs explicit approval and evidence before activation.
-
-Website-assisted onboarding, owner-supplied documents and other approved data sources are related future input methods. Imported facts should remain sourced drafts until reviewed; they cannot silently replace approved information or operational rules. No crawler, document-import system, connector, refresh automation or advisory implementation is authorized here.
-
-**MVP scope is unchanged.** The owner explicitly requested documentation only and declined the proposed addition of an advisory conversation to the MVP. That suggestion is withdrawn. No new acceptance criteria, ticket, dependency or percentage denominator is added. Continue the existing organization-to-job steel thread; APP-013 remains Now. Broader advisory capabilities require a separately approved post-MVP scope decision.
+The integrated Eternity pilot includes relevant comfort discovery, ethical objection handling, approved knowledge and customer context, technician briefs, outcomes and independent evaluation. This clarifies future APP-017/018/019/015/016/033 acceptance, not current APP-013 implementation. The earlier deferral is preserved in ARCHIVE/INTELLIGENCE_ADVISORY_DEFERRAL_2026-09-10.md. No autonomous diagnosis, fabricated prices/technical claims, automatic training or unreviewed imported facts. Read SIGNMONS_INTELLIGENCE_SPEC.md and MVP_ACCEPTANCE_MATRIX.md. Commercial plan gates remain intact.
 
 ## Product Family (Canonical)
 
