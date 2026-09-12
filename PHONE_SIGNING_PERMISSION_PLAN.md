@@ -1,5 +1,13 @@
 # Temporary phone-test signing permission — review only
 
+## Exchange configuration qualified read-only — 2026-09-12
+
+Existing Firebase-created Browser key resource projects/845074063310/locations/global/keys/06cfec12-0432-455f-888f-397d1a0150a6 permits identitytoolkit.googleapis.com and securetoken.googleapis.com; browserKeyRestrictions is empty (no listed referrer allowlist). Key value was neither retrieved nor printed. Other existing API targets remain unchanged; no restriction relaxation/new key is proposed. IAM Credentials and Identity Toolkit APIs are already enabled. signBlob appears in resource testable permissions with no NOT_SUPPORTED custom-role marker. These metadata checks support the proposed exchange, not proof of successful authentication.
+
+Supported endpoint: POST https://identitytoolkit.googleapis.com/v1/accounts:signInWithCustomToken with the existing key and returnSecureToken=true. Use an in-memory HTTPS client, suppress request/response logs, never put key/token in shell arguments or output, discard refresh token after closeout, and verify resulting ID token UID/tenant/role using the existing verifier. Reference: https://docs.cloud.google.com/identity-platform/docs/use-rest-api . No request to this sign-in endpoint was made during qualification.
+
+Next requested approval can be one bounded authentication rehearsal: create the exact role/conditional binding below; temporarily enable only staging-phone-owner-20260912; sign/exchange one token for that UID; prove authenticated access is still refused while the phone switch remains false; immediately remove binding, disable role, revoke refresh tokens and disable the operator. Keep tenant suspended, phone approval false, all sending disabled, and no session/customer/conversation records or deployments. No SMS or HMAC test-session issuance in this rehearsal. If any step fails, execute the approved cleanup without broadening permissions; record residual cleanup failure. This completes real sign-in qualification separately from paid activation. Role expiry is not token revocation. User review of this document is not execution authorization.
+
 2026-09-12. Owner authorized preparing this plan, not applying it. Project custom-role list returned empty. No IAM, identity, token or provider mutation occurred.
 
 ## Exact proposed change

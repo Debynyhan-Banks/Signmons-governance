@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: private exchange metadata qualified — 2026-09-12
+
+Existing Firebase API-key restrictions include Identity Toolkit/Secure Token, no listed referrer restrictions; required APIs enabled. No key value read or token exchange attempted. PHONE_SIGNING_PERMISSION_PLAN.md now specifies one proposed authentication-only rehearsal and immediate grant/identity cleanup, keeping tenant/phone test disabled and sending prohibited. Await explicit authorization for those IAM/identity/token mutations. No new code or milestone; APP-013/2B Now, 3/8 unchanged.
+
 ## Current: signing permission plan prepared — 2026-09-12
 
 PHONE_SIGNING_PERMISSION_PLAN.md fixes proposed signBlob-only custom role, administrative principal, runtime-SA-only binding, maximum 15-minute condition and exact removal/role-disable steps. Project custom-role list empty. No grant or token issued. Arbitrary signing can impersonate beyond the test UID; removing IAM does not revoke minted credentials. Qualify private token exchange before requesting combined operational authorization. APP-013/2B Now; no send, new feature or milestone; 3/8 unchanged.
