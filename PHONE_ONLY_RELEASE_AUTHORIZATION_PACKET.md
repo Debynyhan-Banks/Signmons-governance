@@ -2,6 +2,10 @@
 
 2026-09-12. DRAFT — unresolved fields below prohibit activation or sending.
 
+## Dedicated secrets completed with owner approval
+
+Backend evidence/APP-013/phone-staging-secrets.md (16e0af8) records verified versions signmons-staging-phone-session-key/1 and signmons-staging-phone-digest-key/1 and resource-scoped runtime read grants. Values never printed or committed; existing Twilio credential unchanged. These are vault resources only: no deployment, enabled operator/tenant or minted session. Earlier no-new-secrets notes below are historical. Next is the exact disabled candidate release proposal, with separate build/deployment/IAM/spending approval and pinned version references. Do not repeat secret creation or infer permission to activate the test.
+
 ## Identity preparation completed with owner approval
 
 Backend c2cee78/evidence/APP-013/isolated-phone-identity.md records disabled operator staging-phone-owner-20260912 and suspended tenant a1adcfd4-15be-404b-9ac3-5edb1fda20f0, created and read back in the existing Signmons staging identity/database systems. Exact application owner claim binds only that tenant; no email/password/phone on the identity, no session token, no new secret or IAM grant. Tenant phone approval disabled, zero customer/conversation/job records, charges/payouts false. Earlier missing-identity rows are superseded for preparation only. Existing staging tenant and provider configuration untouched.

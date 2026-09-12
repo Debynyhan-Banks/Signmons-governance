@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## Current: dedicated phone secrets prepared — 2026-09-12
+
+Owner explicitly approved the two dedicated secret creations and runtime read grants. Backend evidence commit 16e0af8 records signmons-staging-phone-session-key/1 and signmons-staging-phone-digest-key/1, vault versions ENABLED in us-east5, independently generated and compared in memory without value disclosure. Each resource policy grants only the existing runtime roles/secretmanager.secretAccessor; no project-wide or token-signing grants. Existing secrets unchanged. No deployment, identity activation, session issuance, messages or payments.
+
+Next: exact disabled zero-normal-traffic candidate release proposal, including pinned source/image and secret versions, build-account/temporary-permission requirements and spending authorization. Secret preparation does not approve build-account activation or deployment. Operator remains disabled and tenant suspended; phone sending remains off. See backend evidence/APP-013/phone-staging-secrets.md. Runtime code remains ad909c8; APP-013/2B Now, approved queue unchanged; walkthrough 3/8 (37.5%), not whole-MVP completion.
+
 ## Current: isolated staging identity prepared — 2026-09-12
 
 Owner approved identity preparation only. Backend c2cee78 records a newly created disabled Identity Platform operator staging-phone-owner-20260912, bound exclusively to suspended tenant a1adcfd4-15be-404b-9ac3-5edb1fda20f0. Tenant phone approval disabled, charges/payouts false, zero customers/conversations/jobs verified. No passwords, session tokens or new secrets generated; no IAM grants, deployment, messages or payments. Existing staging tenant untouched. See backend evidence/APP-013/isolated-phone-identity.md for exact verification and cleanup boundaries.
