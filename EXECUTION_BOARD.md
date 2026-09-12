@@ -1,5 +1,18 @@
 # Signmons Execution Board
 
+## Current checkpoint: 2B controlled address composition — 2026-09-12
+
+Owner approved continuing while county clarification is pending. Backend f9181eb adds an inactive fixture-only composition of the existing durable claim executor and injected OAuth transport, trusted intent/revision request loading and parent deadline cancellation. No default credentials, registration or live dispatch. Output remains fixture-only with addressVerified=false, county=UNKNOWN and admission/delivery refused; provider content is discarded. This does not turn fixture budget claims into real-call authorization.
+
+Evidence: backend evidence/APP-013/google-address-operation/README.md. Build/lint/architecture/Prisma passed; 2,001 tests passed, three skipped; 106 passing suites, one skipped; production audit zero. Twelve new regressions. Synthetic ledger/credential/HTTP ports only; no new database or browser integration claim. Governance consistency, four alignment regressions and whitespace checks passed.
+
+Prior owner-approved documentation PRs #28/#22 were merged into the focused governance/backend branches (2900c6c/0f687c5), not main. Older statements that those specific merges await approval are superseded. This checkpoint itself stops for review; no new merge/release authorization.
+
+APP-013 remains sole Now, current 2B; approved Next APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033 unchanged. Accepted walkthrough 3/8 (37.5%), not overall MVP engineering completion. No new milestone or future ticket started.
+
+Remaining 2B gates: authoritative county qualification (reply pending per owner), qualified live-mode policy/ledger and semantic/current proof connection, effective IAM qualification and explicit capped staging release/test approval. Next useful bounded readiness work: read-only authoritative county fallback qualification and live-mode gap assessment, not another fixture rebuild. County UNKNOWN must not be bypassed with ZIP or Google validity. No provider call, charge, external message, IAM/secret/configuration change, deployment, production migration or customer action.
+
+
 ## Owner-reviewed intelligence dependency alignment (2026-09-12)
 
 The owner reviewed PRs #28/#22 and requested the coherent six-ticket dependency repair. [INTELLIGENCE_ALIGNMENT_ADOPTION.md](INTELLIGENCE_ALIGNMENT_ADOPTION.md) records this approved documentation decision; integration/merge and release remain unapproved. APP-013 stays sole Now (2B); Next is APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033. BE-001's residual consent/replay acceptance is consolidated into APP-013, not dropped or declared complete. All older dated Next-empty/proposal-only notes below are historical, superseded for sequencing and pilot definition only. Runtime/evidence and the original 3/8 walkthrough denominator are preserved. No future feature starts until Now meets full acceptance.
