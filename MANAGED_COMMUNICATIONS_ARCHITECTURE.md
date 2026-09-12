@@ -4,7 +4,9 @@ Status: owner-approved architecture direction, 2026-09-12. Documentation only; n
 
 ## Decision and ownership
 
-Clients use Signmons for voice, SMS and application email. Signmons operates Twilio for voice/SMS/verification and Twilio SendGrid for application email. Clients are not expected to create or operate provider dashboards in the standard managed offering.
+Clients use Signmons for voice, SMS and application email. Signmons operates Twilio for voice/SMS/verification and native Twilio Email for application email. Clients are not expected to create or operate provider dashboards in the standard managed offering.
+
+Correction approved 2026-09-12: native Twilio Email is the selected direction, replacing this document's initial separate SendGrid account/subuser recommendation. Twilio Email and SendGrid use related infrastructure but are distinct products. Do not purchase a SendGrid subscription or create a separate SendGrid account for this plan.
 
 Signmons owns the platform provider accounts, operational configuration, usage accounting and provider billing. Each client retains its business identity, approved brand voice, communication permissions and customer relationships. Eternity Mechanical Services is the first pilot tenant, not the owner of Signmons infrastructure.
 
@@ -15,13 +17,13 @@ The existing Eternity Resend account and website remain separate and untouched. 
 | Component | Target structure |
 | --- | --- |
 | Twilio | Signmons parent account with one managed subaccount per client; client-specific numbers, messaging services, registration and usage attribution |
-| SendGrid | Signmons parent account with client-specific subusers and authenticated sending domains as the multi-client offering scales; qualifying plan and availability must be verified before purchase |
+| Twilio Email | Use the same Twilio parent/client subaccount structure, with client-scoped email traffic and authorized authenticated sending domains; validate actual resource isolation before live onboarding |
 | Signmons | Server-enforced organization boundaries for recipients, sender identities, policies, message history, credentials and cost attribution |
 | Environments | Isolated test/live configuration; nonproduction recipient allowlists; live sending disabled until separately approved |
 
-Twilio subaccounts and SendGrid subusers are different provider resources and must be mapped independently to the same internal organization. They do not replace application tenant authorization. Credentials must never be supplied to a client browser.
+Map each internal organization to its approved Twilio subaccount server-side. Native Twilio Email supports subaccount traffic segmentation; this does not replace application tenant authorization or prove every resource's isolation. Credentials must never be supplied to a client browser.
 
-For a one-client pilot, a dedicated Signmons SendGrid account may avoid premature purchase of multi-client features. This is a possible phased implementation, not proof of isolation readiness for additional clients. Before a second client is activated, explicitly review and approve the isolation design and required plan.
+Use Eternity as the first tenant of this structure. Before live use, test that sender domains, logs, suppressions, callbacks and credentials cannot cross tenant boundaries. Before a second client is activated, review isolation evidence and account-specific limits. Dedicated IPs and separate SendGrid plans are not MVP prerequisites established by this decision.
 
 ## Client onboarding and identity
 
@@ -29,7 +31,7 @@ Collect business identity, authorized representative, approved brand voice/templ
 
 For U.S. local-number A2P SMS, register the appropriate customer profile, brand and campaign for each client under the ISV architecture. Signmons' own registration does not automatically authorize unrelated businesses' messages. Toll-free or other number types require their applicable approval paths.
 
-Use an authenticated client sending domain where authorized. A Signmons sending subdomain with a clear “Client business via Signmons” identity is a possible pilot alternative requiring sender-policy approval; never spoof an unverified client domain. Route replies only to an approved destination. SendGrid is application email infrastructure, not a replacement for business inbox hosting.
+Use an authenticated client sending domain where authorized. A Signmons sending subdomain with a clear “Client business via Signmons” identity is a possible pilot alternative requiring sender-policy approval; never spoof an unverified client domain. Route replies only to an approved destination. Twilio Email is application email infrastructure, not a replacement for business inbox hosting.
 
 ## Reliability and cost controls
 
@@ -39,15 +41,26 @@ Signmons pays provider costs and bills clients through its own approved pricing.
 
 Twilio subaccounts share the parent balance; account segmentation is not an enforced per-client spending cap. Define application-enforced client limits, shared fraud controls and reconciliation before live scale. Parent account suspension remains a shared operational risk.
 
-SendGrid has separate email plan economics; do not assume the Twilio balance includes email. Exact plan, overage behavior, renewal costs and budget require current account verification and explicit spending approval. Marketing campaigns and advanced sales/advisor features remain outside this decision's MVP scope.
+Native Twilio Email uses consolidated Twilio billing. Public pricing checked 2026-09-12 is $0.0013 per email sent, with no monthly base fee or feature tiers: 100 emails = $0.13; 1,000 = $1.30; 10,000 = $13.00, before any applicable taxes or account-specific terms. These are reference estimates, not measured Signmons charges or spending approval. Do not apply the separate SendGrid $19.95/month starting subscription to native Twilio Email.
+
+Public documentation advertises a new-user 30-day trial with 100 emails/day; Signmons' existing paid account eligibility is unverified, so do not assume free sends. Verify account-specific rates, billing units, failed/retried-send charging and limits before a live test. Marketing campaigns and advanced sales/advisor features remain outside this decision's MVP scope.
 
 ## Approval checklist and next bounded work
 
-- Confirm whether a Signmons SendGrid account already exists and record ownership without exposing secrets.
-- Map the existing Eternity pilot resources to the proposed tenant/subaccount structure; review any migration separately.
-- Verify the required pilot plan and multi-client upgrade path, including actual charges and spending controls.
-- Prepare the exact sender/domain, DNS, credentials, consent, callback, test-recipient and rollback packet for review.
-- Obtain separate approval before provisioning, DNS/IAM/secrets changes, paid plans, number purchases/ports, migrations, live sends or deployment.
+Observed in the existing Safari Signmons LLC Twilio console on 2026-09-12: native Email is available in navigation, and Domain Authentication shows no authenticated domains. This is console visibility, not proof of delivery readiness, pricing entitlement or completed tenant setup.
+
+The following items remain pending; none are approved by documenting this checklist:
+
+- [ ] Inventory existing parent/subaccounts and Eternity pilot numbers, registrations and email resources read-only. Record tenant mapping without secrets; do not assume parent registrations cover Eternity.
+- [ ] Identify the exact nonproduction/pilot account and any required resource migration. Obtain separate migration approval; do not move existing numbers or disrupt service.
+- [ ] Verify native Email account eligibility, rates, quota, billing units, shared balance and application-enforced client/global caps. State exact maximum test spend.
+- [ ] Approve sender identity, exact sending subdomain, Reply-To, domain owner and DNS administrator. Review DNS records and rollback without altering existing website or mailbox records.
+- [ ] Define least-privilege account-scoped credentials and server-only secret storage, signed callback verification, suppression behavior and tenant routing. Test isolation without live recipients.
+- [ ] Approve the named willing test participant, exact recipient allowlist, purpose/consent, message template, send count, retry ceiling, time window and stop conditions.
+- [ ] Approve the implementation and controlled provider actions separately. Verify delivery evidence, duplicate prevention, bounce/complaint handling, billing reconciliation and rollback before acceptance.
+- [ ] Obtain explicit approval before provisioning, DNS/IAM/secrets changes, purchases, number ports, migrations, live sends or deployment.
+
+Next bounded action: read-only pilot resource inventory and an exact account/domain/cost approval packet. Do not start a separate SendGrid signup. Continue in the user's existing Safari Twilio tab; do not open another browser tab without request.
 
 APP-013 remains sole Now; Next remains empty; FE-014 remains paused. This does not add a ninth steel-thread section, accept an unfinished milestone or authorize implementation. Existing eight-section acceptance remains 3/8 (37.5% of milestones, not engineering completion); 2B live-verification gates remain unresolved. Other MVP acceptance counts and completion estimates are unchanged.
 
@@ -58,6 +71,6 @@ Reviewed in the owner discussion on 2026-09-12:
 - [Twilio ISV onboarding and preferred subaccount architecture](https://www.twilio.com/docs/messaging/compliance/a2p-10dlc/onboarding-isv)
 - [Twilio subaccounts and shared-parent risks](https://www.twilio.com/docs/iam/api/subaccounts)
 - [Twilio account and subaccount billing](https://help.twilio.com/articles/360011132374-Getting-Started-with-Twilio-Accounts-and-Subaccounts)
-- [SendGrid subusers and eligibility](https://www.twilio.com/docs/sendgrid/ui/account-and-settings/subusers)
-- [SendGrid architecture planning](https://www.twilio.com/docs/sendgrid/onboarding/email-api/evaluate-and-plan-your-strategy)
-- [SendGrid email plan pricing](https://www.twilio.com/en-us/products/email-api/pricing)
+- [Native Twilio Email GA: existing accounts, billing and subaccount segmentation](https://www.twilio.com/en-us/changelog/twilio-email-ga)
+- [Native Twilio Email documentation](https://www.twilio.com/docs/email)
+- [Native Twilio Email usage pricing and product distinction](https://www.twilio.com/en-us/products/email-api/twilio-pricing)

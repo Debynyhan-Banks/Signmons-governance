@@ -2,9 +2,9 @@
 
 ## Approved managed communications direction — 2026-09-12
 
-Owner approved documenting Signmons-managed voice/SMS/verification through Twilio and application email through Twilio SendGrid. See [MANAGED_COMMUNICATIONS_ARCHITECTURE.md](MANAGED_COMMUNICATIONS_ARCHITECTURE.md) for platform ownership, per-client subaccounts/subusers, identity/consent, cost controls and approval checklist. Eternity is a pilot tenant; its existing Resend/website remain separate and untouched.
+Owner approved the correction to Signmons-managed voice/SMS/verification and native Twilio Email using the existing Twilio account/subaccount structure. This supersedes the separate SendGrid account/subuser recommendation. See [MANAGED_COMMUNICATIONS_ARCHITECTURE.md](MANAGED_COMMUNICATIONS_ARCHITECTURE.md) for ownership, tenant isolation, reference pricing and the pending pilot setup approval checklist. Eternity remains a pilot tenant; its existing Resend/website remain untouched.
 
-Documentation only: no account creation, migration, plan purchase, DNS/IAM/secrets, live sending, code or deployment changes. APP-013 sole Now; Next empty; FE-014 paused. Eight-section baseline unchanged, accepted 3/8; 2B remains live-gated. No completion percentage increase or new MVP feature. Next bounded planning action is existing SendGrid account/plan verification and pilot resource mapping before proposing any setup. Older console-preflight observations below are historical, not a fresh account audit.
+Documentation only: no account creation, migration, purchase, DNS/IAM/secrets, live sending, code or deployment changes. APP-013 sole Now; Next empty; FE-014 paused. Eight-section baseline unchanged, accepted 3/8; 2B remains live-gated. No completion increase or new MVP feature. Next bounded action: read-only pilot resource inventory and exact account/domain/cost approval packet in the existing Safari Twilio tab, not a separate SendGrid signup. Native Email console visibility and no authenticated domains were observed on 2026-09-12; public $0.0013/email pricing is not account-specific billing or send approval. Older console observations below are historical.
 
 ## Section 2B — participant confirmed; console preflight interrupted
 
