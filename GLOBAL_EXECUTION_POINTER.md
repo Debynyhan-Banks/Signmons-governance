@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## Pilot policy package and public contact — 2026-09-12
+
+Owner approved ben@eternityhvacr.com as Eternity's public support/privacy contact. PILOT_PRIVACY_AND_TERMS_DRAFT.md expands the pilot policy text with explicit publication blockers, and PILOT_SMS_POLICY_CONFIGURATION_CONTRACT.md defines the proposed trusted tenant policy/capture boundary. Neither is an implemented contract, complete legal approval or publication authority. Private representative information remains excluded.
+
+Next bounded implementation: use injected fictional policies/local policy pages to test intake prompt/capture and tenant/version binding while live enrollment and sending remain disabled. Real public URLs remain a live-activation gate, not a reason to block fixture-only implementation. No runtime/provider/publication action in this documentation checkpoint. APP-013 sole Now; Next empty; FE-014 paused; 3/8 accepted unchanged.
+
 ## Local SMS unavailable-policy branch — review-ready, 2026-09-12
 
 User approved local intake implementation with all sending disabled. The existing customer-intake-journey fixture now displays optional SMS enrollment as unchecked/disabled because approved policy URLs and trusted tenant disclosure configuration are missing. Continuing without texts works; no new consent is recorded or transmitted. This is only the unavailable-policy branch, not complete consent capture or live readiness.
