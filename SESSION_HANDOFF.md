@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: one Google connectivity request succeeded and closed — 2026-09-12
+
+Owner-approved single request returned OBSERVED with all downstream authority false. Backend evidence/APP-013/google-address-live-result.md records window and retained mode-0600 one-request claim in mode-0700 directory. No retries; raw response/address/token discarded, no configuration or deployment. Actual billing unreconciled. This proves transport only, not county semantics or admission. Do not repeat or reset claim. Next is semantic/field qualification with permitted evidence handling, not another connectivity rehearsal. APP-013/2B Now; 3/8 (37.5%) unchanged.
+
 ## Current: supervised address connection implemented, unexecuted — 2026-09-12
 
 Backend scripts/run-google-address-inspection.mjs connects private input, exact approved login and durable one-shot runner. Fixed packet, short UTC window, one request/USD 0.10 application allowance and private SEND confirmation required. Nineteen script tests/syntax/whitespace pass. No live call, credential/IAM/config change. Evidence: backend evidence/APP-013/google-address-live-connection.md. Output establishes transport observation only, not county-field or admission acceptance. Next requires exact owner execution approval and current window; no automatic send. APP-013/2B Now; 3/8 (37.5%) unchanged.
