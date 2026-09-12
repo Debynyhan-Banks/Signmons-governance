@@ -1,5 +1,13 @@
 # Global Execution Pointer
 
+## APP-013 SMS activation-readiness reconciliation — 2026-09-12
+
+Owner approved the proposed source/activation prerequisite review with “proceed”. PILOT_SMS_ACTIVATION_READINESS.md maps verified backend c081fb0 to the exact remaining gaps: P1 trusted tenant policy registry, P2 production consent/suppression integration and external policy/provider/release gates for existing 3C. Completed fixture storage/retry proof is reused, not reopened. Fixture records never become live consent; event preference toggles and a false receipt flag are not consent or comprehensive sending controls.
+
+Review-ready planning only. No runtime changed or new runtime/browser results claimed; governance consistency/placement and whitespace checks apply. No live console/pricing/public-policy refresh, publication, provider configuration, secrets, billing, migration, merge or deployment. Historical account observations remain unverified-current. The owner checklist separates already approved pilot directions from missing policy-host/effective-date/retention and exact action approvals.
+
+Next proposed implementation is P1 only after owner approval, with additive schema/DTO mapping, existing owner/admin version/audit seams, immutable reviewed policy and no sending or publication. Do not create another generic planning loop, new dashboard, provider account or fixture-storage rewrite. P2 and actual activation remain gated by their listed exits and approvals. APP-013 sole Now; Next empty; FE-014 paused. Current 2B and fixed 3/8 accepted (37.5% milestones) unchanged; five workflow acceptances remain, not an overall MVP effort estimate.
+
 ## APP-013 durable fixture SMS evidence — review-ready, 2026-09-12
 
 Owner reviewed/accepted the prior fixture interaction and approved durable evidence/current-policy/recipient checks. Backend c081fb0 (codex/app-013-transactional-messaging) adds isolated encrypted PostgreSQL fixture state and capture records, atomic capture/audit, original receipt replay after service/client reconstruction, policy-revision fencing and current customer phone/update binding. A deadline crossing during writes rolls back evidence and audit. Existing intake uses the same protected optional SMS port; no standalone production form or live capture registration.

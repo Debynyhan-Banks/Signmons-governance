@@ -1,5 +1,9 @@
 # Data Contracts
 
+## SMS production policy/source reconciliation — 2026-09-12
+
+PILOT_SMS_ACTIVATION_READINESS.md is the owner-requested readiness map from backend c081fb0. It distinguishes completed durable fixture proof from proposed P1 tenant policy registry, P2 production consent/suppression integration and existing 3C controlled-send acceptance. No API/schema/enum or release flag is created in this planning section. The four customerSmsPreferences event booleans are not publication/consent approval; fixture evidence cannot update SmsConsentRecord. Existing live consent consumers require an explicitly reviewed bridge and shared revocation protocol before activation. P1 additive field/DTO/schema mapping remains a pre-implementation deliverable; no production data action is authorized.
+
 ## Approved durable fixture SMS evidence section — 2026-09-12
 
 Implemented locally in backend c081fb0; not released. State revision is database-incremented on every update and bound into encrypted prompts, preventing change-then-restore replay. Actual customer phone and updatedAt also bind capture, under the shared customer/session locks. Database time is rechecked after writes; expiry rolls back both audit and capture. Missing/closed lifecycle refuses even receipt replay. State/prompt ciphertext envelopes include tenant/conversation/session scope; prompts include ID, credential binding, displayed policy and original timestamps.

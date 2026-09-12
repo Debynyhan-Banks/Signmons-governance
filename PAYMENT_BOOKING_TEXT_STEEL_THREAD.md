@@ -1,5 +1,9 @@
 # Payment, booking and text steel thread — baseline v1
 
+## SMS readiness dependency reconciliation — 2026-09-12
+
+PILOT_SMS_ACTIVATION_READINESS.md maps completed local fixture capture/storage proof and the remaining tenant policy/real-consent integration plus external approvals into existing 3C. P1/P2 are internal work packages, not new acceptance sections or a promise of two remaining turns. No fixture-storage rewrite or additional planning loop is proposed. Current milestone remains 2B; acceptance remains 3/8. County/verification gates remain independent. No baseline change or controlled-action approval.
+
 ## Authority and target
 
 Owner approved planning and sizing with “i agree with recommendation proceed” after the eight-section proposal. This checkpoint establishes a fixed delivery baseline, not blanket implementation, numerical-policy, provider or release approval. APP-013 remains sole Now; Next empty; FE-014 paused. No Eternity website work.
