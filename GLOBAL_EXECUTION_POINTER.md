@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+
+## Current: worker isolation implemented, release unapproved — 2026-09-12
+
+Owner approved the bounded fix. Backend d33ecd0 on existing PR #21 adds BACKGROUND_WORKERS_ENABLED=false before both scheduled callbacks; omission preserves existing behavior. Evidence: backend evidence/APP-013/background-worker-isolation.md. 2,080 tests passed, three existing skips; lint/build/architecture/Prisma and zero-finding production audit passed. No UI/schema change, no browser/live-provider acceptance claim. No deployment, configuration, IAM, billing, identity activation or messages. Earlier worker implementation blocker is resolved in source, not deployed. Next: review corrected source and explicitly authorize disabled candidate release under PHONE_ONLY_DISABLED_DEPLOYMENT_PROPOSAL.md; no additional feature section. APP-013/2B Now, approved queue and 3/8 (37.5%) walkthrough acceptance unchanged; not whole-MVP completion.
+
+
 ## Current: disabled deployment proposal blocked on worker isolation — 2026-09-12
 
 Read PHONE_ONLY_DISABLED_DEPLOYMENT_PROPOSAL.md. Read-only preflight found unconditional call-log cleanup and SMS enqueue recovery not disabled by the proposed scheduling/SMS switches. Zero normal traffic does not guarantee no unrelated database writes. No build/deployment/IAM change occurred. Recommend one explicitly approved worker-disable guard for the candidate before release; do not silently implement or substitute infrastructure. Proposal fixes target/source, temporary build grants and USD 2 operational allowance (not yet approved; not invoice cap). Identity and phone sending remain disabled. APP-013/2B Now, 3/8 acceptance unchanged.

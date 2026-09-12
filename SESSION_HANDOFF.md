@@ -1,5 +1,11 @@
 # Session Handoff
 
+
+## Current: worker isolation implemented, release unapproved — 2026-09-12
+
+Owner approved the bounded fix. Backend d33ecd0 on existing PR #21 adds BACKGROUND_WORKERS_ENABLED=false before both scheduled callbacks; omission preserves existing behavior. Evidence: backend evidence/APP-013/background-worker-isolation.md. 2,080 tests passed, three existing skips; lint/build/architecture/Prisma and zero-finding production audit passed. No UI/schema change, no browser/live-provider acceptance claim. No deployment, configuration, IAM, billing, identity activation or messages. Earlier worker implementation blocker is resolved in source, not deployed. Next: review corrected source and explicitly authorize disabled candidate release under PHONE_ONLY_DISABLED_DEPLOYMENT_PROPOSAL.md; no additional feature section. APP-013/2B Now, approved queue and 3/8 (37.5%) walkthrough acceptance unchanged; not whole-MVP completion.
+
+
 ## Current: disabled deployment worker-isolation blocker — 2026-09-12
 
 PHONE_ONLY_DISABLED_DEPLOYMENT_PROPOSAL.md contains exact source/target, proposed temporary build roles and cost assumptions. Two registered workers can still access/write shared staging data despite SMS_DELIVERY_ENABLED=false and SCHEDULING_ENABLED=false. No new code or deployment was performed. Smallest next decision: approve one candidate worker-disable control with focused zero-call tests, then approve the bounded build/deployment separately. Do not treat earlier no-more-code wording as an isolation guarantee. Existing identity/secret preparation is complete, not repeated; 3/8 milestones remain accepted.

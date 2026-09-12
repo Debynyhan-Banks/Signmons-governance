@@ -1,6 +1,6 @@
 # Disabled phone-only deployment proposal — 2026-09-12
 
-Status: PROPOSED, NOT AUTHORIZED; a worker-isolation blocker must be resolved before execution.
+Status: PROPOSED, RELEASE NOT AUTHORIZED. Owner-approved worker correction is implemented in backend d33ecd0 (existing PR #21). This supersedes the historical source and implementation-approval recommendation below. Build the corrected commit, not 16e0af8/ad909c8, and require BACKGROUND_WORKERS_ENABLED=false on the candidate before startup. Code tests passed; deployed settings and behavior remain unverified. Build/IAM/spend/deployment approval is still required.
 
 ## Fixed target and intended operation
 
