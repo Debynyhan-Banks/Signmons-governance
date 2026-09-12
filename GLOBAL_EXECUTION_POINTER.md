@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: supervised address connection implemented, unexecuted — 2026-09-12
+
+Backend scripts/run-google-address-inspection.mjs connects private input, exact approved login and durable one-shot runner. Fixed packet, short UTC window, one request/USD 0.10 application allowance and private SEND confirmation required. Nineteen script tests/syntax/whitespace pass. No live call, credential/IAM/config change. Evidence: backend evidence/APP-013/google-address-live-connection.md. Output establishes transport observation only, not county-field or admission acceptance. Next requires exact owner execution approval and current window; no automatic send. APP-013/2B Now; 3/8 (37.5%) unchanged.
+
 ## Current: approved-login private preparation ready — 2026-09-12
 
 Owner approved debynyhan@signmons.com for local preparation only. Backend scripts/prepare-google-address.mjs checks that login, protected stable directory and private address confirmation; --prepare-only discards input and cannot send. Nine local tests/syntax/whitespace pass; real dialogs not yet exercised. See backend evidence/APP-013/google-address-preparation.md. No token/provider/runtime/permission change. Next is user-ready private preparation rehearsal; live runner connection and exact send approval remain separate. APP-013/2B Now; 3/8 (37.5%) unchanged.
