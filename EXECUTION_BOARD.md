@@ -1,5 +1,13 @@
 # Signmons Execution Board
 
+## Eternity pilot packet consolidated — 2026-09-12
+
+Owner supplied the pilot legal identity and representative details, confirmed EIN availability and owner-managed GoDaddy DNS, approved a 216-area-code preference and email sender/reply identity, and approved optional unchecked service-related SMS consent in principle. Private contact/address details are stored only in the local private setup packet, not this repository; the EIN value was not collected. Existing staging number stays in staging without transfer or reconfiguration.
+
+Read-only inventory observed no client subaccounts and no native Email authenticated domains; the existing staging number has messaging/voice configured. This is not live readiness. New pilot number selection/purchase, account creation, legal registration submission, DNS/secrets, final consent wording/policy links, implementation and controlled sending/spending remain separately gated.
+
+Next bounded action: read-only DNS and current Signmons intake/Privacy/Terms readiness review, then an exact action/cost approval packet. Do not repeat collected identity questions or infer representative details authorize test sends. No provider or runtime changes in this checkpoint. APP-013 sole Now; Next empty; FE-014 paused; accepted 3/8 steel-thread milestones unchanged, 2B remains live-gated.
+
 ## Approved managed communications direction — 2026-09-12
 
 Owner approved the correction to Signmons-managed voice/SMS/verification and native Twilio Email using the existing Twilio account/subaccount structure. This supersedes the separate SendGrid account/subuser recommendation. See [MANAGED_COMMUNICATIONS_ARCHITECTURE.md](MANAGED_COMMUNICATIONS_ARCHITECTURE.md) for ownership, tenant isolation, reference pricing and the pending pilot setup approval checklist. Eternity remains a pilot tenant; its existing Resend/website remain untouched.

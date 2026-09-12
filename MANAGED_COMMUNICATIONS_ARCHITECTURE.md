@@ -47,6 +47,14 @@ Public documentation advertises a new-user 30-day trial with 100 emails/day; Sig
 
 ## Approval checklist and next bounded work
 
+### Pilot packet update — 2026-09-12
+
+Owner-approved directions: retain the existing number for staging without reconfiguration; use a separate 216-area-code pilot number subject to price/availability/purchase approval; use the approved client email identity with owner-managed GoDaddy DNS; add optional unchecked service-related SMS consent in Signmons intake, with no marketing bundling and no service-request exclusion for declining.
+
+The consolidated private packet contains owner-provided legal/representative details and the exact approved sender identity. No EIN value is stored. Do not publish private contact/address information in repository evidence. Consent wording remains a draft pending current requirements and Privacy/Terms link verification; no implementation or compliance acceptance is claimed.
+
+Inventory review found no subaccounts and no authenticated native Email domains. Identity and consent-direction decisions are complete, but creation, number selection/purchase, registration, DNS/secrets, implementation and live-test approval are not. Next is read-only DNS and Signmons intake/policy readiness review before presenting exact setup actions and costs. The checklist below remains an execution gate, not permission to act.
+
 Observed in the existing Safari Signmons LLC Twilio console on 2026-09-12: native Email is available in navigation, and Domain Authentication shows no authenticated domains. This is console visibility, not proof of delivery readiness, pricing entitlement or completed tenant setup.
 
 The following items remain pending; none are approved by documenting this checklist:
