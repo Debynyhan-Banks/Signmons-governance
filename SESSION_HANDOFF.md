@@ -1,5 +1,11 @@
 # Session Handoff
 
+## Approved managed communications direction — 2026-09-12
+
+Owner approved documenting Signmons-managed voice/SMS/verification through Twilio and application email through Twilio SendGrid. See [MANAGED_COMMUNICATIONS_ARCHITECTURE.md](MANAGED_COMMUNICATIONS_ARCHITECTURE.md) for platform ownership, per-client subaccounts/subusers, identity/consent, cost controls and approval checklist. Eternity is a pilot tenant; its existing Resend/website remain separate and untouched.
+
+Documentation only: no account creation, migration, plan purchase, DNS/IAM/secrets, live sending, code or deployment changes. APP-013 sole Now; Next empty; FE-014 paused. Eight-section baseline unchanged, accepted 3/8; 2B remains live-gated. No completion percentage increase or new MVP feature. Next bounded planning action is existing SendGrid account/plan verification and pilot resource mapping before proposing any setup. Older console-preflight observations below are historical, not a fresh account audit.
+
 ## Section 2B — participant confirmed; console preflight interrupted
 
 Backend board-only commit 7e6b240; runtime unchanged f8e35e8. Governance checkpoint is this commit, parent be41282. Documentation consistency, four execution-placement tests and both diff checks passed. Runtime tests/build/browser QA were not rerun for Markdown-only changes; console observations are account-preflight evidence, not application QA. No account-sensitive identifiers, participant phone/address or secrets were added to the repositories.

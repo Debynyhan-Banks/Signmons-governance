@@ -1,5 +1,11 @@
 # CallDesk MVP - Approved Supervised Pilot
 
+## Approved managed communications direction — 2026-09-12
+
+Owner approved documenting Signmons-managed voice/SMS/verification through Twilio and application email through Twilio SendGrid. See [MANAGED_COMMUNICATIONS_ARCHITECTURE.md](MANAGED_COMMUNICATIONS_ARCHITECTURE.md) for platform ownership, per-client subaccounts/subusers, identity/consent, cost controls and approval checklist. Eternity is a pilot tenant; its existing Resend/website remain separate and untouched.
+
+Documentation only: no account creation, migration, plan purchase, DNS/IAM/secrets, live sending, code or deployment changes. APP-013 sole Now; Next empty; FE-014 paused. Eight-section baseline unchanged, accepted 3/8; 2B remains live-gated. No completion percentage increase or new MVP feature. Next bounded planning action is existing SendGrid account/plan verification and pilot resource mapping before proposing any setup. Older console-preflight observations below are historical, not a fresh account audit.
+
 ## Current execution breakdown
 
 PAYMENT_BOOKING_TEXT_STEEL_THREAD.md baseline v1 now fixes eight acceptance sections for the owner-tested payment/booking/text walkthrough. VO-3 maps to 1A/1B, current-proof admission to 2A/2B, and the focused S2 walkthrough to 3A–3D. Current target 1A pending policy/implementation approval; accepted 0/8. This supersedes historical next-section forecasts below, not the full MVP or existing acceptance ledger. Full email, S3 and S4 remain open. Planning approval grants no provider, coding or release authority.

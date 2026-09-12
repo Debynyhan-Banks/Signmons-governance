@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## Approved managed communications direction — 2026-09-12
+
+Owner approved documenting Signmons-managed voice/SMS/verification through Twilio and application email through Twilio SendGrid. See [MANAGED_COMMUNICATIONS_ARCHITECTURE.md](MANAGED_COMMUNICATIONS_ARCHITECTURE.md) for platform ownership, per-client subaccounts/subusers, identity/consent, cost controls and approval checklist. Eternity is a pilot tenant; its existing Resend/website remain separate and untouched.
+
+Documentation only: no account creation, migration, plan purchase, DNS/IAM/secrets, live sending, code or deployment changes. APP-013 sole Now; Next empty; FE-014 paused. Eight-section baseline unchanged, accepted 3/8; 2B remains live-gated. No completion percentage increase or new MVP feature. Next bounded planning action is existing SendGrid account/plan verification and pilot resource mapping before proposing any setup. Older console-preflight observations below are historical, not a fresh account audit.
+
 ## Section 2B — participant confirmed; console preflight interrupted
 
 Owner confirmed participation, U.S. SMS-capable mobile phone and authorized Cuyahoga County address. Do not repeat those questions; exact personal details remain uncollected. CONTROLLED_VERIFICATION_2B_CHECKLIST.md now contains a provisional lean test packet and official reference pricing, not approved spending or account-specific rates.
