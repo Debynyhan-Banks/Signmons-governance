@@ -1,5 +1,9 @@
 # Data Contracts
 
+## Inactive OAuth address transport (2026-09-12)
+
+Internal GoogleAddressOAuthTransport accepts only the existing US/OH GoogleAddressRequest, with enableUspsCass true and no session token, recipients or arbitrary endpoint. Default DISABLED acquires no credentials. Explicit test composition uses injected OAuth/fetch ports; no production registration exists. INVALID_INPUT and UNAVAILABLE expose no errors or provider content. RESPONSE carries a transient bounded JSON object for future semantic evaluation; it grants no verification, county membership, consent, spending, or admission authority. No raw response storage/logging or new database contract. Future live composition must reserve the operation budget, handle uncertain outcomes without blind retries, enforce retention, and separately qualify current county proof. OAuth uses Cloud Run ADC rather than a downloaded key; IAM and release approval remain separate.
+
 ## P2 policy-bound capture evidence — approved implementation mapping, 2026-09-12
 
 Implemented locally in backend 6c9f660, review-ready. Nine capture groups and 1,955 tests passed; evidence/APP-013/policy-bound-sms-capture/README.md maps all gates and reproduction. Source scope additionally includes consent row identity/status so deletion/recreation cannot silently match only revision in the normal application comparison; production deletion/key-rotation protocols remain unqualified. Signed session possession is not phone/identity verification. No live-mode grant relation or protected UI/transport release is implemented.
