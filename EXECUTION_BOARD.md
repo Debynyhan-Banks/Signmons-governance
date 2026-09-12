@@ -1,5 +1,16 @@
 # Signmons Execution Board
 
+## Current: atomic staging budget review — 2026-09-12
+
+Backend e791fd3 implements optional inactive stagingReview in the existing address ledger. Current TenantOrganization.settings.stagingAddressBudgetReview { enabled, packet } and database usage are read under account/tenant/session and tenant SHARE locks. Trusted runtime digest/identity/rate configuration must match the stored packet and policy. Reviewed operations have a distinct digest-bound identity; no fixture promotion. Exact replay subtracts only its own existing hold/count in the prospective check, not storage. Revoked approval blocks claim; zero authority outputs preserved.
+
+Evidence: backend evidence/APP-013/staging-address-reservation/README.md. Six new local PostgreSQL checks and 24 existing ledger/execution groups passed; 2,039 Jest tests passed, three skipped; build/lint/architecture/Prisma and zero-vulnerability production audit passed. Governance consistency, eight regressions and whitespace passed. Disposable local database created, migrated and removed; zero providers. No UI/browser QA applicability.
+
+Review-only atomic budget boundary is implemented, not live accounting/activation. Actual approved rates/caps/identities/test packet and a trusted production approval/rate-loading workflow remain absent. Aggregates represent ledger holds, not external account invoices/usage. No approval authoring route or rate source added. Next bounded action: read-only exact staging packet/configuration readiness; do not invent prices or build another generic fixture service. Google response-ID retention and county qualification remain separate blockers; no Google case submission/reply asserted.
+
+APP-013/2B Now; approved Next queue unchanged; walkthrough 3/8 (37.5%), not whole-MVP completion. No new milestone, provider/config/IAM/secret change, charge, external message, merge, deployment, production migration or customer action.
+
+
 ## Current: staging address budget policy validator — 2026-09-12
 
 Owner approved independent budget-gate implementation while Google response-ID retention remains unresolved and county qualification is pending. This supersedes the next-revalidation recommendation for current work only. No support-case submission/reply is asserted.

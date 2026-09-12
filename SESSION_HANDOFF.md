@@ -1,5 +1,16 @@
 # Session Handoff
 
+## Current: atomic staging budget review — 2026-09-12
+
+Backend e791fd3 implements optional inactive stagingReview in the existing address ledger. Current TenantOrganization.settings.stagingAddressBudgetReview { enabled, packet } and database usage are read under account/tenant/session and tenant SHARE locks. Trusted runtime digest/identity/rate configuration must match the stored packet and policy. Reviewed operations have a distinct digest-bound identity; no fixture promotion. Exact replay subtracts only its own existing hold/count in the prospective check, not storage. Revoked approval blocks claim; zero authority outputs preserved.
+
+Evidence: backend evidence/APP-013/staging-address-reservation/README.md. Six new local PostgreSQL checks and 24 existing ledger/execution groups passed; 2,039 Jest tests passed, three skipped; build/lint/architecture/Prisma and zero-vulnerability production audit passed. Governance consistency, eight regressions and whitespace passed. Disposable local database created, migrated and removed; zero providers. No UI/browser QA applicability.
+
+Review-only atomic budget boundary is implemented, not live accounting/activation. Actual approved rates/caps/identities/test packet and a trusted production approval/rate-loading workflow remain absent. Aggregates represent ledger holds, not external account invoices/usage. No approval authoring route or rate source added. Next bounded action: read-only exact staging packet/configuration readiness; do not invent prices or build another generic fixture service. Google response-ID retention and county qualification remain separate blockers; no Google case submission/reply asserted.
+
+APP-013/2B Now; approved Next queue unchanged; walkthrough 3/8 (37.5%), not whole-MVP completion. No new milestone, provider/config/IAM/secret change, charge, external message, merge, deployment, production migration or customer action.
+
+
 ## Current: staging address budget policy validator — 2026-09-12
 
 Owner approved independent budget-gate implementation while Google response-ID retention remains unresolved and county qualification is pending. This supersedes the next-revalidation recommendation for current work only. No support-case submission/reply is asserted.
@@ -1045,7 +1056,7 @@ Exact review commands and source/evidence: backend evidence/APP-013/readiness-re
 ## Next Actions (Strict Order)
 
 1. Review COUNTY_FALLBACK_LIVE_GAP_ASSESSMENT.md. Coordinated documentation PRs #28/#22 are already merged into focused branches, not main; do not repeat that merge or alter PR #21 release state.
-2. Resume APP-013/2B from runtime 974f18c: next bounded budget work is trusted current approval/rate/usage loading and validation inside atomic reservation locks. No fixture promotion or live activation. Google response-ID retention and county qualification remain separate blockers; four existing-2B packages unchanged. County inquiry owner-reported sent; Google case status not established.
+2. Resume APP-013/2B from runtime e791fd3: atomic review-budget loading/validation is evidenced. Next action is read-only exact staging approval/rate packet and trusted configuration readiness; do not invent prices or add generic fixture services. No fixture promotion or live activation. Google response-ID retention and county qualification remain separate blockers; four existing-2B packages unchanged. County inquiry owner-reported sent; Google case status not established.
 3. Complete the existing eight-milestone walkthrough and all APP-013 acceptance, including BE-001 residual keyword/telemetry/replay proof in existing communications scope. Current acceptance is 3/8, not whole-MVP percentage; sending and real provider actions remain separately approved.
 4. Only after full Now acceptance, synchronize both boards/global pointer and promote APP-017, then APP-018, APP-019, APP-015, APP-016, APP-033 as their full gates pass. Do not ask the owner to choose routine phases or skip blocked Now. Keep FE-014 paused and later training gated.
 
