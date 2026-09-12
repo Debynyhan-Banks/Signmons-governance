@@ -1,5 +1,13 @@
 # Signmons Execution Board
 
+## Pilot SMS screen and policy draft — review-ready, 2026-09-12
+
+Owner approved preparing review-only drafts after the read-only readiness review. [PILOT_SMS_CONSENT_REVIEW_DRAFT.md](PILOT_SMS_CONSENT_REVIEW_DRAFT.md) contains tenant-branded screen copy, messaging privacy/terms supplements, intended state/evidence rules and acceptance checks. These are not complete legal policies, implemented consent, published pages or registration evidence. Public URLs, support contact, effective date and policy/legal review remain pending.
+
+Public DNS review found GoDaddy nameservers and existing mail/SPF/DMARC records to preserve; the proposed sending subdomain returned NXDOMAIN. Account-level GoDaddy access was not verified. Inspected Signmons intake/UI files did not establish the approved SMS checkbox flow; existing backend consent foundations are not end-to-end proof. Public policy URLs could not be verified, not proven absent.
+
+Next: review the draft, then separately size/approve bounded intake preference/evidence implementation with sending disabled. No runtime, DNS, provider, spending, publication or release changes. APP-013 sole Now; Next empty; FE-014 paused; 3/8 milestones accepted unchanged; 2B remains live-gated.
+
 ## Eternity pilot packet consolidated — 2026-09-12
 
 Owner supplied the pilot legal identity and representative details, confirmed EIN availability and owner-managed GoDaddy DNS, approved a 216-area-code preference and email sender/reply identity, and approved optional unchecked service-related SMS consent in principle. Private contact/address details are stored only in the local private setup packet, not this repository; the EIN value was not collected. Existing staging number stays in staging without transfer or reconfiguration.
