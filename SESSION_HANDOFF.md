@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: single-SMS attempt stopped at private input — 2026-09-12
+
+Owner-approved single SMS run authenticated successfully after seven-minute grant propagation, but private phone dialog did not pass +1/suffix validation; timeout vs invalid input not distinguished. Stopped before DTO probe, session/customer creation, tenant activation, deployment or SMS. Backend evidence/APP-013/single-sms-attempt.md records exact sequence. Cleanup verified operator disabled/revoked, no grant, role disabled, token now 401. No send or automatic retry. Next requires owner-ready private input and renewed supervised window, not new feature work. APP-013/2B Now; 3/8 unchanged.
+
 ## Current: private authentication succeeded and closed — 2026-09-12
 
 Owner-approved seven-minute propagation retry succeeded signing/exchanging/verifying exact isolated operator token with unchanged limited grant. Backend evidence/APP-013/phone-auth-rehearsal.md records results. Authenticated POST {} returned 400 (required operation DTO missing), not expected 503; harness assertion failed, so disabled-service authenticated refusal is not claimed. Cleanup verified: operator disabled/refresh credentials revoked, grant removed, role disabled, same token now 401. No tenant/session creation, SMS or deployment. Authentication blocker resolved; no further standalone rehearsal proposed. Next: proper DTO refusal check within separately approved supervised single-SMS activation/closeout; no bypass or full walkthrough acceptance. APP-013/2B Now, 3/8 unchanged.
