@@ -2,6 +2,8 @@
 
 ## Current: phone-only release packet draft — 2026-09-12
 
+Latest preflight: PHONE_ONLY_RELEASE_AUTHORIZATION_PACKET.md now records owner-confirmed destination ending 3183, official public Verify PAYG rates and existing staging tenant binding. A qualified current Firebase operator/session is not established; prior payment fixture operators were deleted. The old SMS-test revision has general SMS and scheduling enabled, so do not characterize it as globally disabled or blindly reuse its configuration. No changes or sends. Next requires explicit isolated staging identity/credential preparation authorization, then exact release/test approval. No new coding section; 3/8 acceptance unchanged. Older Product Plans navigation blocker below is superseded by the public pricing lookup.
+
 PHONE_ONLY_RELEASE_AUTHORIZATION_PACKET.md records current read-only staging and Twilio findings. Backend remains ad909c8. The old latest-ready revision has no phone configuration names; reviewed image binding and private test fields remain unresolved. PAYG is verified, not Verify-specific fees. Owner asked to retry Products & Plans selection; page remained Overview. Await manual selection in existing Safari tab, then complete the rate/private readiness fields. No new implementation phase or configuration/deployment/send approval; 3/8 milestone acceptance unchanged.
 
 ## Current: default-disabled phone-only execution — 2026-09-12

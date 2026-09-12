@@ -2,6 +2,20 @@
 
 2026-09-12. DRAFT — unresolved fields below prohibit activation or sending.
 
+## Latest private-binding preflight
+
+Owner confirmed the US participant destination ending 3183. Full destination remains private; confirmation is not send authorization. Owner accepted keeping Stripe Checkout links for the MVP; Twilio Pay is deferred.
+
+Official Verify pricing was checked online in the preceding conversation: https://www.twilio.com/en-us/verify/pricing publishes USD 0.05 per successful verification plus USD 0.0083 per US SMS; https://www.twilio.com/en-us/user-authentication-identity/verify states attempts are billed regardless of delivery and PAYG has no monthly minimum. One successful one-SMS base estimate is USD 0.0583. This supplies a public PAYG reference, not account-specific tax/adjustment proof or an invoice cap. Do not continue searching Product Plans for a required Verify subscription.
+
+Current selected revision metadata binds both WEBCHAT_INTEGRATIONS_JSON and TWILIO_TENANT_IDENTITIES_JSON to tenant 059c4950-171c-4ff9-a963-20bf6b9d59a6, with Twilio environment staging. This is configuration evidence only: current tenant database state, isolation and the owner's Firebase user/role have not been qualified. No customer records, credentials or full destinations were retrieved.
+
+Important correction: on signmons-calldesk-staging-app013smstest, DEV_AUTH_ENABLED=false and STRIPE_WEBHOOK_LIVEMODE=false, but SMS_DELIVERY_ENABLED=true and SCHEDULING_ENABLED=true. The new phone-only path has no downstream invocation, but the older tagged revision as a whole is not an all-sending/all-scheduling-disabled environment. Preserve existing traffic and settings; do not enable the phone test by blindly copying this revision. A separately approved candidate configuration must explicitly isolate the test and disable unrelated delivery/scheduling paths. No settings changed in this run.
+
+Backend evidence/APP-012/release-checklist.md records deletion of previous disposable Identity Platform operators and tenants. No reusable current operator was established. Repository cloudbuild.deploy.yaml builds and pushes an image; it does not deploy it. Both focused branches were fetched clean; backend remains ad909c8. No new build, database query, secret access, IAM mutation, deployment or provider call.
+
+Smallest next authorization: prepare a dedicated nonproduction tenant/operator/session and dedicated credential setup if an existing qualified operator cannot be supplied, with phone sending and other outbound operations disabled. Enumerate any required identity/secret/IAM changes before performing them. Build/deployment and the single paid OTP still require their explicit final authorization; UTC window is selected only when ready. Do not invent IDs or resurrect deleted fixture users.
+
 ## Verified this run
 
 - Backend feature branch is clean at ad909c895a92b76b4a3b7bfbc5de2f40e3e10365; origin matches. PR #21 is open at that SHA; its returned statusCheckRollup is empty, not a new CI pass. Local validation is recorded in backend evidence/APP-013/phone-only-execution.md; not rerun for this documentation-only packet.

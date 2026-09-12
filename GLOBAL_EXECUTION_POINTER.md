@@ -2,6 +2,8 @@
 
 ## Current: phone-only release packet draft — 2026-09-12
 
+Latest preflight: PHONE_ONLY_RELEASE_AUTHORIZATION_PACKET.md now records owner-confirmed destination ending 3183, official public Verify PAYG rates and existing staging tenant binding. A qualified current Firebase operator/session is not established; prior payment fixture operators were deleted. The old SMS-test revision has general SMS and scheduling enabled, so do not characterize it as globally disabled or blindly reuse its configuration. No changes or sends. Next requires explicit isolated staging identity/credential preparation authorization, then exact release/test approval. No new coding section; 3/8 acceptance unchanged. Older Product Plans navigation blocker below is superseded by the public pricing lookup.
+
 Read PHONE_ONLY_RELEASE_AUTHORIZATION_PACKET.md. Source ad909c8 is on open PR #21; existing latest-ready September 8 image predates it and has no STAGING_PHONE_* configuration names. PAYG billing verified in Safari, account-specific Verify fees unresolved. Products & Plans selection needs the owner to click the existing tab; retry did not navigate. Exact private bindings, artifact/configuration qualification and final UTC window remain unset. No further coding section, release, secret/config change or send authorized/performed. APP-013/2B Now; queue unchanged, 3/8 (37.5%) milestone acceptance. Documentation consistency/eight regressions/whitespace passed; no fresh runtime acceptance.
 
 ## Current: default-disabled phone-only execution — 2026-09-12
