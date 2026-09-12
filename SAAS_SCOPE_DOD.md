@@ -1,5 +1,9 @@
 # Signmons Scope + Definition of Done
 
+## Owner-requested intelligence alignment proposal (2026-09-12)
+
+See [INTELLIGENCE_ALIGNMENT_ADOPTION.md](INTELLIGENCE_ALIGNMENT_ADOPTION.md) for the coordinated documentation review. Status: NOT ADOPTED. New intelligence documents and draft tickets are reference-only; current precedence, APP-013/2B, Next empty, fixed walkthrough evidence and earlier pilot scope remain unchanged. Expanded advisory pilot scope and the proposed seven-ticket queue require reviewed adoption before canonical activation. Newer backend 330e402 and governance 387adec progress is preserved; no implementation or external action is authorized by this proposal.
+
 ## Approved pilot scope clarification (2026-09-09)
 
 [CALLDESK_MVP_PLAN.md](CALLDESK_MVP_PLAN.md) defines the first owner-approved CallDesk pilot: one approved business, English, online access and human supervision. The broader scope below remains the platform roadmap, not a claim that all modules are in the first pilot. Pilot deferrals do not cancel future capabilities, alter paid-plan promises, waive non-negotiable rules or authorize release.

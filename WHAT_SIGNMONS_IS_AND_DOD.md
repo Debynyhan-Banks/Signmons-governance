@@ -1,5 +1,9 @@
 # What Signmons Is + Anti-Drift DoD
 
+## Owner-requested intelligence alignment proposal (2026-09-12)
+
+See [INTELLIGENCE_ALIGNMENT_ADOPTION.md](INTELLIGENCE_ALIGNMENT_ADOPTION.md) for the coordinated documentation review. Status: NOT ADOPTED. New intelligence documents and draft tickets are reference-only; current precedence, APP-013/2B, Next empty, fixed walkthrough evidence and earlier pilot scope remain unchanged. Expanded advisory pilot scope and the proposed seven-ticket queue require reviewed adoption before canonical activation. Newer backend 330e402 and governance 387adec progress is preserved; no implementation or external action is authorized by this proposal.
+
 Purpose: provide one unambiguous product definition and release bar so contributors and AI agents do not drift into a generic chatbot, generic FSM clone, or scope-sprawl SaaS.
 
 ## Approved first pilot (2026-09-09)
