@@ -1,5 +1,15 @@
 # Session Handoff
 
+## Current: default-disabled phone-only execution — 2026-09-12
+
+Backend commit: ad909c895a92b76b4a3b7bfbc5de2f40e3e10365, pushed to codex/app-013-transactional-messaging (PR #21); no merge or deployment.
+
+Owner reviewed PHONE_ONLY_STAGING_TEST_PACKET.md and approved implementation. Backend now registers authenticated staging-only operations/stop endpoints composing existing durable verification with exact operator/tenant/session/participant binding, database approval digest/expiry, account-serialized retained phone liabilities (USD 0.50/three starts outer ceiling; one START/five CHECKs per approved session), pre-dispatch approval locking and stop. Default disabled; no provider, config or release action. Prior fixture replay requires a qualified staging hold. All downstream authority remains false; address calls/job admission stay off.
+
+Evidence: backend evidence/APP-013/phone-only-execution.md. Build/lint/architecture/Prisma passed; 2,069 Jest tests passed, three existing skips; zero production dependency findings; local HTTP refusal/no-store tests and disposable PostgreSQL concurrency/replay/uncertainty/stop tests passed with substituted SDK, plus existing address checks. No UI change or browser acceptance claim. Local database removed.
+
+Next bounded action: read-only exact release/configuration packet (reviewed image/revision, isolated session/tenant, Firebase operator, private participant, current US-only/Fraud Guard, notice/consent, fee bounds, keys/retention handling and UTC window), then explicit configuration/deployment and capped-send approval. Do not send, deploy or enable from this implementation approval. Google case 75382710 responseId retention and county qualification remain pending for full admission. APP-013/2B stays Now; approved queue unchanged; walkthrough 3/8 (37.5%), no new milestone or whole-MVP estimate.
+
 ## Current: phone-only staging readiness — 2026-09-12
 
 See PHONE_ONLY_STAGING_TEST_PACKET.md: owner-approved preparation, not send or release approval. Existing verification component is inactive; normal staging traffic and latest-ready revision differ. Next bounded work is the default-disabled phone-only execution connection with atomic phone limits, not another generic fixture service. Exact tenant/operator/private participant binding, rate bounds and UTC window remain execution gates. Address calls and job admission stay disabled. Google case 75382710 was observed New/P4; response and county qualification remain pending. APP-013/2B stays Now, approved queue unchanged, walkthrough 3/8 (37.5%); no new milestone. Documentation-only checkpoint, no runtime or provider change.
@@ -1060,7 +1070,7 @@ Exact review commands and source/evidence: backend evidence/APP-013/readiness-re
 ## Next Actions (Strict Order)
 
 1. Review COUNTY_FALLBACK_LIVE_GAP_ASSESSMENT.md. Coordinated documentation PRs #28/#22 are already merged into focused branches, not main; do not repeat that merge or alter PR #21 release state.
-2. Resume APP-013/2B from runtime e791fd3 and PHONE_ONLY_STAGING_TEST_PACKET.md. Read-only readiness is complete: next bounded implementation is the default-disabled phone-only execution connection with exact authority binding, atomic phone limits and expiry/stop enforcement. No generic fixture rebuild, deployment or send approval. Exact private bindings, rate bounds and UTC window remain execution gates. Address calls and job admission stay disabled. Google case 75382710 observed New/P4; retention response and county qualification remain pending. Existing 2B packages and milestone denominator are unchanged.
+2. Resume APP-013/2B from the default-disabled phone-only execution checkpoint and backend evidence/APP-013/phone-only-execution.md. Implementation/local tests are complete; next is the read-only exact release/configuration packet, not another fixture implementation. Confirm reviewed image/revision, isolated tenant/session, operator/private participant, notices, conservative rate bounds, keys/retention and UTC window before requesting explicit configuration/deployment/capped-send approval. Address calls and job admission stay disabled. Google case 75382710 retention response and county qualification remain pending; milestone denominator unchanged.
 3. Complete the existing eight-milestone walkthrough and all APP-013 acceptance, including BE-001 residual keyword/telemetry/replay proof in existing communications scope. Current acceptance is 3/8, not whole-MVP percentage; sending and real provider actions remain separately approved.
 4. Only after full Now acceptance, synchronize both boards/global pointer and promote APP-017, then APP-018, APP-019, APP-015, APP-016, APP-033 as their full gates pass. Do not ask the owner to choose routine phases or skip blocked Now. Keep FE-014 paused and later training gated.
 

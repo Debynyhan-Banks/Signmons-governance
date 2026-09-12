@@ -1,5 +1,9 @@
 # Section 2B controlled-verification entry checklist
 
+## Current phone-only implementation — 2026-09-12
+
+PHONE_ONLY_STAGING_TEST_PACKET.md and backend evidence/APP-013/phone-only-execution.md supersede earlier inactive-component status for the phone-only path. The default-disabled connection is implemented and locally tested, not released or configured. Next: exact release/configuration packet and explicit capped deployment/send approval. Full 2B still requires Google/county qualification and actual acceptance. No address calls/job admission or new milestone; 3/8 accepted remains unchanged.
+
 ## Latest readiness assessment — 2026-09-12
 
 See COUNTY_FALLBACK_LIVE_GAP_ASSESSMENT.md for current source findings and the fixed remaining work packages within 2B. County inquiry is owner-reported sent, reply pending; no mailbox search this turn. Earlier unsent/dismiss-browser instructions below are historical. No immediate fallback qualified; county stays UNKNOWN. Runtime f9181eb remains inactive. The draft test packet below is still unapproved and must be refreshed before execution; this assessment authorizes no provider calls, spend, configuration or release. Walkthrough acceptance stays 3/8 (37.5%).

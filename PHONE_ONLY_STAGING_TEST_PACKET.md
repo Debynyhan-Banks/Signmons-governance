@@ -2,6 +2,12 @@
 
 Date: 2026-09-12. Status: REVIEW ONLY; NOT EXECUTABLE OR SEND AUTHORIZATION.
 
+## Reviewed implementation checkpoint
+
+Owner reviewed this packet and approved the default-disabled implementation. See backend evidence/APP-013/phone-only-execution.md: registered authenticated operations/stop endpoints, exact authority binding, atomic retained USD 0.50/three-START outer cap, one START/five CHECKs per approved session, expiry and database stop are now locally tested. The historical implementation-gap statements below are superseded; actual configuration, deployment, participant receipt and sending are still not approved or performed. No new milestone. Next is the exact release/configuration packet and explicit release/test approval, not another generic fixture section.
+
+Runtime policy and keys are supplied only through reviewed server configuration; matching enabled approval digest is read from tenant settings under locks. No enable route, token-issuance endpoint or real credentials were added. The operator submits a separately prepared, privately delivered existing session credential. +1 does not prove US geography; effective provider US-only restriction and the private allowlisted recipient must be qualified before release. A stop acknowledgement prevents new calls but cannot recall an in-flight provider request. Ledger bounds exclude unrelated account traffic; no invoice guarantee.
+
 ## Scope and finish line
 
 One supervised owner-participant phone-verification test within existing 2B. A confirmed phone result must not authorize address validation, county eligibility, job admission, payment, booking or confirmation messages. Google calls and job admission remain disabled. No new MVP milestone.
