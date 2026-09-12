@@ -1,5 +1,13 @@
 # Data Contracts
 
+## APP-013 inactive fixture SMS consent port — 2026-09-12
+
+Local-only POST /customer-session/sms accepts exactly sessionToken, action (PROMPT/CAPTURE), E.164 phone, promptId and accepted boolean. Existing protected browser transport authentication, origin, canonical body, tenant credential and budget checks apply. Port requires fixtureLoopback=true plus an injected fixture model; no production DI/controller registration is added.
+
+PROMPT requires empty promptId/accepted=false and trusted current fixture policy matching tenant/session/phone. Response binds an opaque prompt to credential identity, phone revision, version, sender, disclosure and deadline. Fixed /fixture-sms-privacy and /fixture-sms-terms are fictional local pages, never approved public URLs. CAPTURE must match the same current source and unexpired prompt; opt-out refuses. Exact successful retry retains its original recordedAt. Decline does not mutate suppression; browser skip writes nothing.
+
+Every result declares fixtureOnly=true, liveConsentRecorded=false, deliveryAuthorized=false. Model retains at most 256 in-memory prompts, expiring within five minutes or session deadline; restart loses evidence and refuses old prompts. No durable ledger, production consent type or downstream sending grant is created. This proves a fixture subset of PILOT_SMS_POLICY_CONFIGURATION_CONTRACT.md, not its production lifecycle.
+
 ## Section 2A current-proof admission (inactive local composition)
 
 CurrentProofSource is a trusted FIXTURE_ONLY transaction collaborator, never an HTTP/browser payload or an external call under a database lock. It resolves request/session-bound phone, confirmed address and county evidence plus current revisions, coverage/freshness policy and approved payment version. The consumer compares exact reviewed phone/address, US eligibility, US/OH/39035 IN_AREA, current revisions and all three proof deadlines against database time. Current organization approval must match freshness policy; payment approval and complete supported terms must match the tenant's actual approved payment policy. No ZIP fallback or review-only snapshot grants authority.

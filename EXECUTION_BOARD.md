@@ -1,5 +1,13 @@
 # Signmons Execution Board
 
+## APP-013 fixture SMS capture — review-ready, 2026-09-12
+
+Owner approved the proposed fixture-only implementation. Backend commit 852e766 on codex/app-013-transactional-messaging adds prompt/capture in the existing intake with injected fictional policy, current tenant/session/phone/revision/version binding, opt-out refusal and exact retry. Evidence: backend evidence/APP-013/fixture-sms-consent/README.md and screenshots/summary.
+
+This is temporary in-memory proof, not durable consent, production policy lifecycle or live enrollment. Five-minute/session expiry and restart refuse old prompts; all results keep liveConsentRecorded=false and deliveryAuthorized=false. Build/lint/architecture passed; 100 suites/1,906 tests passed (three skips); production audit zero; enabled and unavailable mobile/desktop browser branches passed. Browser uses real fixture model/transport with mocked intake, no database/provider.
+
+Stop for review. Next proposed bounded section: durable consent evidence/current policy and recipient checks, still no sending, after approval. Public policy approval/publication and provider release remain separate gates. No Twilio/DNS/billing/customer action, merge or deployment. APP-013 sole Now; Next empty; FE-014 paused; fixed milestone acceptance 3/8 (37.5%) unchanged, not overall MVP effort completion.
+
 ## Pilot policy package and public contact — 2026-09-12
 
 Owner approved ben@eternityhvacr.com as Eternity's public support/privacy contact. PILOT_PRIVACY_AND_TERMS_DRAFT.md expands the pilot policy text with explicit publication blockers, and PILOT_SMS_POLICY_CONFIGURATION_CONTRACT.md defines the proposed trusted tenant policy/capture boundary. Neither is an implemented contract, complete legal approval or publication authority. Private representative information remains excluded.
