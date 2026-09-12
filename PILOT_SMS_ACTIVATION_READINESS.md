@@ -1,5 +1,9 @@
 # Pilot SMS: production policy and activation readiness
 
+## P1 implementation checkpoint — 2026-09-12
+
+Owner approved P1; backend 5e771c3 implements the inactive tenant registry/reader and local six-group database proof. See evidence/APP-013/tenant-sms-policy-registry/README.md. P1 is review-ready, not live publication/capture acceptance. Next proposed implementation is P2 after review, with consent/suppression integration and capture/sending still disabled. Older “next P1” wording below describes the original plan, superseded by this checkpoint; no additional planning-only loop or storage rewrite is required.
+
 2026-09-12. APP-013 bounded reconciliation requested by the owner. Planning/checklist only; no implementation, publication, provider, spending or release approval is implied. Baseline inspected: backend c081fb0, governance 4119c4a, fetched focused branches. Account/public-site state was not refreshed this run.
 
 ## Decision summary

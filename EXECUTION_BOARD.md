@@ -1,5 +1,15 @@
 # Signmons Execution Board
 
+## APP-013 P1 tenant SMS policy registry — review-ready, 2026-09-12
+
+Owner approved P1 with “i agree proceed”. Backend 5e771c3 adds inactive immutable policy versions, a tenant-scoped revision/lifecycle pointer, owner/admin access, audit-atomic changes and trusted fixture publication checks. Reader returns exact public content plus a revalidated version/revision binding; suspension, expiry, source revocation and replacement refuse old bindings. The current intake is not switched to live registry capture. No controller/DI registration, public page, live consent/customer grant or provider change.
+
+Evidence: backend evidence/APP-013/tenant-sms-policy-registry/README.md and registry/summary.json. Build/lint/architecture passed; production audit zero; final 102 suites/1,941 tests passed (three skips). Six registry and fourteen durable-intake/browser regression groups passed in a disposable local PostgreSQL database, now removed; 390px/1280px screenshots cover the existing fixture flow, not a new policy editor. An earlier Jest exit 139 passed on unchanged and final reruns; runner interruption remains a noted risk.
+
+Stop for review. Next proposed bounded section is P2: connect the policy reader/binding to production-shaped consent and existing STOP/suppression handling, preserving atomicity, revocation precedence and disabled capture/sending; do not promote fixture records. P1 immutable history/retry work is not reopened. Real publication/source qualification, retention/key lifecycle and exact provider/release approvals remain separate gates. No merge, deployment, production migration, public publication, account configuration or spend.
+
+APP-013 sole Now; Next empty; FE-014 paused. Current workflow 2B and fixed acceptance 3/8 (37.5% milestones) unchanged; P1 is a supporting package, not a new milestone or overall MVP estimate.
+
 ## APP-013 SMS activation-readiness reconciliation — 2026-09-12
 
 Owner approved the proposed source/activation prerequisite review with “proceed”. PILOT_SMS_ACTIVATION_READINESS.md maps verified backend c081fb0 to the exact remaining gaps: P1 trusted tenant policy registry, P2 production consent/suppression integration and external policy/provider/release gates for existing 3C. Completed fixture storage/retry proof is reused, not reopened. Fixture records never become live consent; event preference toggles and a false receipt flag are not consent or comprehensive sending controls.

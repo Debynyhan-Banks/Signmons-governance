@@ -2,6 +2,8 @@
 
 ## Implementation status — 2026-09-12
 
+P1 registry/reader implemented locally in backend 5e771c3, using immutable versions, a revisioned current pointer and audit-atomic lifecycle changes. Real publication attestations are intentionally rejected in this inactive section; fixture evidence can exercise eligibility without enabling live capture. DATA_CONTRACTS.md defines the mapping. Next proposed P2 connects real-consent/suppression after review, not another registry implementation.
+
 Owner-approved fixture prompt/capture (852e766) and encrypted durable fixture evidence/current-recipient checks (c081fb0) are reviewable in the backend. DATA_CONTRACTS.md maps these inactive seams and the local database evidence. The production policy lifecycle described below remains proposed, not an implemented/approved publication or enrollment authority. This status supersedes the older next-implementation paragraph only for the completed fixture/storage proof; do not repeat that work or mistake it for live readiness.
 
 2026-09-12. Design only; no implemented API/schema or production approval. Companion: PILOT_PRIVACY_AND_TERMS_DRAFT.md. Public support/privacy email approved: ben@eternityhvacr.com for Eternity only.
@@ -36,4 +38,4 @@ Acceptance tests: missing configuration; unsafe/foreign URL; stale version; chan
 
 ## Next bounded implementation proposal
 
-The fixture interaction and durable evidence proof are complete for their local scope. PILOT_SMS_ACTIVATION_READINESS.md now defines the remaining P1 tenant policy registry and P2 production consent/suppression integration, with delivery disabled. Next proposed implementation is P1 only after owner approval. Do not repeat fixture storage work, activate providers, publish policies or promote fixture evidence into real consent. Final additive schema/transport mapping must be documented before implementation. Missing public URLs block live activation, not fictional local tests.
+The fixture interaction, durable evidence and inactive P1 registry/reader are reviewable for their stated scopes. PILOT_SMS_ACTIVATION_READINESS.md defines remaining P2 production consent/suppression integration with delivery disabled, proposed after P1 review. Do not repeat fixture storage/registry work, activate providers, publish policies or promote fixture evidence into real consent. P2 additive schema/transport mapping must be documented before implementation. Missing public URLs block live activation, not fictional local tests.
