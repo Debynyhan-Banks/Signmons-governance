@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: signing permission plan prepared — 2026-09-12
+
+PHONE_SIGNING_PERMISSION_PLAN.md fixes proposed signBlob-only custom role, administrative principal, runtime-SA-only binding, maximum 15-minute condition and exact removal/role-disable steps. Project custom-role list empty. No grant or token issued. Arbitrary signing can impersonate beyond the test UID; removing IAM does not revoke minted credentials. Qualify private token exchange before requesting combined operational authorization. APP-013/2B Now; no send, new feature or milestone; 3/8 unchanged.
+
 ## Current: private sign-in permission decision — 2026-09-12
 
 Read PHONE_ONLY_ACTIVATION_PACKET.md authentication qualification. Exact isolated operator remains disabled/passwordless; current principal lacks signBlob/signJwt on runtime SA (read-only testIamPermissions). No token/IAM/identity mutation. Propose explicit review of temporary signBlob-only grant, acknowledging it can mint identities beyond this UID; no broader role or project-wide sign-in provider change inferred. Resolve role and private exchange details before execution. SMS/Fraud Guard directly observed; US-only owner-confirmed. APP-013/2B Now, 3/8 (37.5%) unchanged; no send or new coding section.
