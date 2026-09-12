@@ -1,5 +1,16 @@
 # Global Execution Pointer
 
+## APP-013 P2 suppression write boundary — review-ready, 2026-09-12
+
+Owner approved continuation after P1. Backend 64942c0 implements one bounded P2 section: shared tenant/recipient transaction lock before customer writes, atomic START prior-opt-out check/update/audit, refusal of verbal grants over opt-out, and database-incremented SmsConsentRecord.revision. Initial legacy verbal consent remains compatible but is not policy-bound capture evidence. No registry/capture connection or fixture promotion is claimed.
+
+Evidence: backend evidence/APP-013/sms-consent-serialization/README.md and suppression/summary.json. Build/lint/architecture/whitespace passed; production audit zero; 103 suites / 1,945 tests passed, three skipped. Seven suppression groups plus 20 existing durable/registry/browser groups passed in a disposable Unix-socket database, now removed. Two fictional legacy consent rows were exercised, with zero final opt-ins, delivery events, provider calls or production writes. Existing 390px/1280px browser flow regression passed; this is not a new capture UI. Three corrected development harness failures are recorded in the evidence, not hidden.
+
+P2 remains incomplete. Stop at review. Next proposed section within P2: define the production-shaped evidence relation and connect registry/version binding, verified session and recipient suppression revision under the shared lock, keeping capture/send release disabled. Reuse existing encryption/expiry/replay proof rather than rebuild fixtures. Legacy keyword retries are not audit-deduplicated or event-time ordered; provider event identity/order, publication, retention/key lifecycle and release remain gates. No merge, deploy, production migration, public publication, provider/account configuration or spend.
+
+APP-013 sole Now; Next empty; FE-014 paused. Current workflow 2B; 3/8 accepted = 37.5% of fixed milestones, unchanged. P2 supporting sections do not add milestones or establish an overall MVP engineering percentage/ETA. This checkpoint supersedes older next-P1/next-whole-P2 wording below.
+
+
 ## APP-013 P1 tenant SMS policy registry — review-ready, 2026-09-12
 
 Owner approved P1 with “i agree proceed”. Backend 5e771c3 adds inactive immutable policy versions, a tenant-scoped revision/lifecycle pointer, owner/admin access, audit-atomic changes and trusted fixture publication checks. Reader returns exact public content plus a revalidated version/revision binding; suspension, expiry, source revocation and replacement refuse old bindings. The current intake is not switched to live registry capture. No controller/DI registration, public page, live consent/customer grant or provider change.

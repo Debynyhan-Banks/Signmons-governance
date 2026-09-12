@@ -2,6 +2,8 @@
 
 ## Implementation status — 2026-09-12
 
+P2 suppression boundary implemented locally in backend 64942c0: existing consent writers share recipient locks; START check/update/audit are atomic; verbal grants cannot override suppression; persisted revision advances on every update. Registry-to-capture evidence remains unimplemented and is the next proposed P2 section. Future capture acquires recipient lock before session/customer/policy locks and revalidates revision; no fixture promotion, capture release or send release. See DATA_CONTRACTS.md and backend evidence/APP-013/sms-consent-serialization/README.md. P2 is not complete.
+
 P1 registry/reader implemented locally in backend 5e771c3, using immutable versions, a revisioned current pointer and audit-atomic lifecycle changes. Real publication attestations are intentionally rejected in this inactive section; fixture evidence can exercise eligibility without enabling live capture. DATA_CONTRACTS.md defines the mapping. Next proposed P2 connects real-consent/suppression after review, not another registry implementation.
 
 Owner-approved fixture prompt/capture (852e766) and encrypted durable fixture evidence/current-recipient checks (c081fb0) are reviewable in the backend. DATA_CONTRACTS.md maps these inactive seams and the local database evidence. The production policy lifecycle described below remains proposed, not an implemented/approved publication or enrollment authority. This status supersedes the older next-implementation paragraph only for the completed fixture/storage proof; do not repeat that work or mistake it for live readiness.

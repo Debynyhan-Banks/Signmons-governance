@@ -1,5 +1,15 @@
 # Data Contracts
 
+## P2 suppression serialization — approved bounded implementation, 2026-09-12
+
+Implemented locally in backend 64942c0, review-ready. Seven local suppression groups and 1,945 tests passed; migration only in disposable database, removed after proof. See backend evidence/APP-013/sms-consent-serialization/README.md for validations, corrected harness failures and exact remaining P2 boundary. No production migration or activation.
+
+The owner's P2 approval is implemented first at the shared recipient-write boundary. Add SmsConsentRecord.revision (positive integer, default 1; database trigger increments on every update, including change-back). Existing rows are legacy records, not policy-bound capture evidence. No fixture promotion or live capture route is added. The production evidence/registry bridge remains the next P2 section and must define its evidence relation before implementation.
+
+Keep the existing HMAC-SHA256 key and exact tenantId:normalized-E164 input unchanged. Export a shared hash helper and transaction-scoped recipient advisory lock using tenant and hash, never plaintext phone. All existing consent writers acquire this lock before record reads, customer updates and audit writes. Future capture must acquire it before session/customer/policy locks, snapshot the persisted revision and revalidate it before capture. Missing row is revision 0; deletion/key rotation is not authorized by this section.
+
+START's prior-opt-out check moves inside the same transaction/lock as its update and audit. Legacy verbal opt-in cannot overwrite an existing opt-out (including retry); restoration remains the existing explicit START flow, not a stale verbal assertion. STOP/explicit decline still writes suppression. This preserves existing initial verbal consent compatibility without treating it as new policy-bound capture authority. Existing outbound eligibility behavior otherwise remains unchanged; no new provider calls or queue writes. No promise of provider-event chronological ordering without stable event identity; that remains a bridge/release gate.
+
 ## P1 tenant SMS policy registry — approved implementation mapping
 
 Implemented locally in backend 5e771c3, review-ready. Application read() returns current version/revision/state for owner/admin recovery after an unknown commit; it does not claim capture eligibility. readForCapture(tx, tenantId, expectedBinding?) requires same-tenant owner/admin or trusted webchat_integration context, no impersonation, and holds the policy lock through the caller's transaction. Public projection contains no actor/audit/tenant configuration details. P2 owns its connection to verified customer-session capture; P1 does not switch the existing intake or change live consent consumers.

@@ -1,5 +1,9 @@
 # Pilot SMS: production policy and activation readiness
 
+## P2 bounded suppression checkpoint — 2026-09-12
+
+Backend 64942c0 completes shared recipient serialization, atomic START and suppression precedence over verbal grants, with a database-incremented consent revision. This is one section within P2, not P2 completion. Evidence: evidence/APP-013/sms-consent-serialization/README.md. Next within P2 is production-shaped policy-bound capture evidence/registry integration under this lock and revision. Existing fixture records remain non-authoritative; capture and sending stay unactivated. Provider event replay/order, retention/key lifecycle, publication and release remain gated. Acceptance unchanged: 3/8 milestones (37.5%), not overall MVP completion.
+
 ## P1 implementation checkpoint — 2026-09-12
 
 Owner approved P1; backend 5e771c3 implements the inactive tenant registry/reader and local six-group database proof. See evidence/APP-013/tenant-sms-policy-registry/README.md. P1 is review-ready, not live publication/capture acceptance. Next proposed implementation is P2 after review, with consent/suppression integration and capture/sending still disabled. Older “next P1” wording below describes the original plan, superseded by this checkpoint; no additional planning-only loop or storage rewrite is required.
