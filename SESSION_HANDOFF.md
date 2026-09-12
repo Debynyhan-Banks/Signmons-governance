@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: approved-login private preparation ready — 2026-09-12
+
+Owner approved debynyhan@signmons.com for local preparation only. Backend scripts/prepare-google-address.mjs checks that login, protected stable directory and private address confirmation; --prepare-only discards input and cannot send. Nine local tests/syntax/whitespace pass; real dialogs not yet exercised. See backend evidence/APP-013/google-address-preparation.md. No token/provider/runtime/permission change. Next is user-ready private preparation rehearsal; live runner connection and exact send approval remain separate. APP-013/2B Now; 3/8 (37.5%) unchanged.
+
 ## Current: default-disabled one-shot runner implemented — 2026-09-12
 
 Backend evidence/APP-013/google-address-one-shot.md records local exclusive durable claim before the existing transport, one packet/request, bounded approval window/liability, timeout/no-retry and content stripping. No CLI/route/credential/live call. This local claim does not promote the fixture database ledger or enforce distributed/account budgets. Exact credential, private input and stable protected claim directory remain qualification gates; no executable live test claimed. Next is that bounded connection/qualification, not another evaluator or waiting exclusively on support. APP-013/2B Now; 3/8 (37.5%) unchanged; no live authority.
