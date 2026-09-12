@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## Current: real phone verification passed and closed — 2026-09-12
+
+Owner-ready, explicitly capped single-SMS execution succeeded: START 201/PENDING, private six-digit CHECK 201/APPROVED, STOP 201/stopped. No resend. Booking and delivery authorization remained false. Backend evidence: evidence/APP-013/real-phone-verification.md. Final readback confirms isolated tenant suspended, approval disabled, one closed session, candidate six safety flags false and temporary policy/token mapping absent. Operator disabled/revoked, signing binding removed, role disabled; issued token refused with 401. Normal traffic unchanged. Prior preparation/failure entries below are historical, superseded for this phone subcheck only.
+
+APP-013/2B remains Now: address/county/current-proof admission remains to be accepted before the downstream walkthrough. No further SMS or activation authorized by this result. Walkthrough acceptance stays 3/8 (37.5%), not an overall MVP completion estimate. Next: reconcile remaining 2B admission evidence and its existing approval gates, then the approved Sandbox payment/test-calendar/confirmation/recovery sequence. No new scope, merge or production release.
+
 ## Current: private number input fixed — 2026-09-12
 
 Owner-approved standalone runner correction accepts normal US formats, normalizes privately, requires confirmation and validates before credential/IAM access or seven-minute wait. Explicit cancel/timeout, bounded retry, unchanged destination suffix guard. Evidence: backend evidence/APP-013/private-phone-input.md; 24 local tests plus syntax/whitespace passed. No live dialog test, provider action or runtime deployment. Historical runner window remains expired; no automatic restart. Next is owner-ready supervised input and new execution window. APP-013/2B Now, 3/8 unchanged.
