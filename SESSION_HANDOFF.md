@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: phone-only release packet draft — 2026-09-12
+
+PHONE_ONLY_RELEASE_AUTHORIZATION_PACKET.md records current read-only staging and Twilio findings. Backend remains ad909c8. The old latest-ready revision has no phone configuration names; reviewed image binding and private test fields remain unresolved. PAYG is verified, not Verify-specific fees. Owner asked to retry Products & Plans selection; page remained Overview. Await manual selection in existing Safari tab, then complete the rate/private readiness fields. No new implementation phase or configuration/deployment/send approval; 3/8 milestone acceptance unchanged.
+
 ## Current: default-disabled phone-only execution — 2026-09-12
 
 Backend commit: ad909c895a92b76b4a3b7bfbc5de2f40e3e10365, pushed to codex/app-013-transactional-messaging (PR #21); no merge or deployment.

@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: phone-only release packet draft — 2026-09-12
+
+Read PHONE_ONLY_RELEASE_AUTHORIZATION_PACKET.md. Source ad909c8 is on open PR #21; existing latest-ready September 8 image predates it and has no STAGING_PHONE_* configuration names. PAYG billing verified in Safari, account-specific Verify fees unresolved. Products & Plans selection needs the owner to click the existing tab; retry did not navigate. Exact private bindings, artifact/configuration qualification and final UTC window remain unset. No further coding section, release, secret/config change or send authorized/performed. APP-013/2B Now; queue unchanged, 3/8 (37.5%) milestone acceptance. Documentation consistency/eight regressions/whitespace passed; no fresh runtime acceptance.
+
 ## Current: default-disabled phone-only execution — 2026-09-12
 
 Backend commit: ad909c895a92b76b4a3b7bfbc5de2f40e3e10365, pushed to codex/app-013-transactional-messaging (PR #21); no merge or deployment.

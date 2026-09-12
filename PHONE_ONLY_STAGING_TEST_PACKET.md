@@ -2,6 +2,8 @@
 
 Date: 2026-09-12. Status: REVIEW ONLY; NOT EXECUTABLE OR SEND AUTHORIZATION.
 
+Latest read-only release preparation: PHONE_ONLY_RELEASE_AUTHORIZATION_PACKET.md records the exact source SHA, old deployed image, absent phone configuration names, PAYG billing observation and remaining private/rate/approval fields. It is a draft, not sending or deployment approval. No further coding section is proposed.
+
 ## Reviewed implementation checkpoint
 
 Owner reviewed this packet and approved the default-disabled implementation. See backend evidence/APP-013/phone-only-execution.md: registered authenticated operations/stop endpoints, exact authority binding, atomic retained USD 0.50/three-START outer cap, one START/five CHECKs per approved session, expiry and database stop are now locally tested. The historical implementation-gap statements below are superseded; actual configuration, deployment, participant receipt and sending are still not approved or performed. No new milestone. Next is the exact release/configuration packet and explicit release/test approval, not another generic fixture section.

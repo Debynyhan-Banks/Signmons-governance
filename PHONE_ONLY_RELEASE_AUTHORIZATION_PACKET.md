@@ -1,0 +1,46 @@
+# Phone-only staging release authorization packet
+
+2026-09-12. DRAFT — unresolved fields below prohibit activation or sending.
+
+## Verified this run
+
+- Backend feature branch is clean at ad909c895a92b76b4a3b7bfbc5de2f40e3e10365; origin matches. PR #21 is open at that SHA; its returned statusCheckRollup is empty, not a new CI pass. Local validation is recorded in backend evidence/APP-013/phone-only-execution.md; not rerun for this documentation-only packet.
+- Target project signmons, Cloud Run signmons-calldesk-staging, us-east5; runtime identity signmons-calldesk-runtime@signmons.iam.gserviceaccount.com.
+- Normal traffic remains 100% signmons-calldesk-staging-app013bounds. Latest ready signmons-calldesk-staging-app013smstest was created 2026-09-08T00:04:15.004700Z and uses image digest sha256:37286933d882466b8592120f48eb69c34e14cdb5a23c1f37480e39a1e6ff933a. This predates the reviewed phone-only implementation.
+- Selected revision metadata contains zero STAGING_PHONE_* environment names. No environment values or secret contents were printed. Artifact Registry lookup for a tag containing ad909c8 returned no matching image; this does not prove there is no differently tagged image. A new reviewed source-to-image binding is still required.
+- Existing Safari Twilio account usage page shows Signmons LLC, Active, balance USD 20.00 and estimated September usage USD 26.15 (A2P fees USD 25.00 plus local number USD 1.15). No Verify line was displayed.
+- Existing billing overview confirms PAYG, USD, one linked account and auto-recharge not set up. These are observations, not changes or permission to change billing. They do not establish account-specific Verify pricing or a guaranteed invoice ceiling.
+
+## Fixed test scope
+
+Owner is the only participant. One privately allowlisted US mobile, one isolated nonproduction tenant/conversation/session, exact authenticated owner/admin user. One SMS START and at most five CHECKs; stop on success, uncertainty or expiry. No resend or voice/email fallback. USD 0.50 is the maximum proposed application liability authorization; reserve the reviewed conservative full-flow amount before dispatch. Unrelated account usage and invoice taxes are not controlled by this path.
+
+Use a short supervised window after deployment and private session preparation. The policy permits at most 30 minutes, but the existing session credential lasts at most 15 minutes; the operative deadline is the earlier expiry. Do not issue the session before a lengthy build/deployment or silently extend it. Exact UTC timestamps are intentionally unset until readiness.
+
+Address calls, county admission, job creation, payments, calendar writes and confirmation messages remain off. A provider APPROVED receipt is phone-test evidence, not downstream authority. No actual test or acceptance claimed; walkthrough remains 3/8 (37.5%), not overall MVP completion.
+
+## Remaining prerequisites — no invented defaults
+
+| Item | Current disposition | How to resolve |
+| --- | --- | --- |
+| Reviewed deployment artifact | Source SHA fixed above; executable image/revision not qualified | Build/tag/digest verification through separately approved existing release workflow; no main merge or traffic promotion assumed |
+| Isolated tenant and operator | Exact IDs not located in evidence inspected | Identify existing nonproduction tenant and authenticated Firebase owner/admin privately; do not infer production Eternity tenant or create records during this read-only run |
+| Session and data lifecycle | No current test credential prepared; local fixtures are not staging records | Approve isolated session preparation, key references and cleanup/retention handling; deliver credential privately, never chat/repository/logs |
+| Participant destination | Owner participation agreed; exact current destination not reconfirmed | Confirm privately at execution; previous test-phone assumption is not consent or current binding |
+| Verify resources and protections | Prior account/service selection exists in PHONE_ONLY_STAGING_TEST_PACKET.md | Recheck exact service, effective US-only geography and Fraud Guard in existing account; no alternate service or new number |
+| Fees | PAYG verified; Verify-specific rates and applicable extras unresolved | Inspect Products & Plans/account rate information, or obtain account-specific confirmation; public list arithmetic alone is not full fee evidence |
+| Consent notice | Required runtime noticeVersion not selected for live test | Review exact OTP-only notice and current participant request; phone ownership is not transactional or marketing consent |
+| Runtime configuration | Selected existing revision has no STAGING_PHONE_* names | Explicit approval required for new dedicated key/secret references, deployment configuration and matching database approval digest; no enable endpoint |
+| Test window | Unset | Choose exact UTC interval only after prerequisites; no schedule or automation created |
+
+Safari page reading works. Attempt to select Products & Plans through macOS accessibility was denied; no permissions were changed. Owner was asked to click that existing tab, without upgrading/changing a plan. No account-specific Verify rate inferred from the billing overview.
+
+Owner requested a retry. The command then returned without an error, but the page stayed on Overview and the automation accessibility inventory exposed only one element, not the page controls. Reading remains available; selection is not demonstrated. No permission setting was changed or bypass attempted. Manual selection of Products & Plans is the smallest immediate unblock.
+
+## Authorization sequence and acceptance
+
+1. Resolve the read-only/private prerequisites above. Approve exact nonproduction configuration, isolated test records/key handling and reviewed revision deployment. Preserve existing traffic/webhooks and keep the phone switch disabled until the final test authorization. Any required IAM or billed build action must be listed explicitly, not assumed.
+2. Once deployed and qualified, present the complete redacted packet with source/image/revision, private identity bindings, conservative amount and UTC window. Obtain explicit authorization for one Verify SMS to the confirmed participant. The present document does not grant it.
+3. Confirm effective guards, reserve once, send once, let the participant enter the OTP privately, and observe the result. Record redacted correlation/outcome/liability and no downstream writes. Stop the test and verify refusal after stop. Never auto-retry an unknown result or erase its liability.
+
+No new implementation section is proposed. If rates or private bindings remain unavailable, stop with that exact blocker; do not replace the live test with additional generic fixture work. Google responseId retention and county qualification remain separate full-2B admission blockers.
