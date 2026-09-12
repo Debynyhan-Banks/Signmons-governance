@@ -1,5 +1,16 @@
 # Session Handoff
 
+## APP-013 P2 policy-bound capture bridge — review-ready, 2026-09-12
+
+Owner approved continuation after suppression checkpoint 64942c0/b90f0a6. Backend 6c9f660 implements inactive PolicyBoundSmsCapture and separate DRY_RUN-only SmsPolicyCapture provenance. Exact registry content/version/head revision, customer session/token instance, recipient identity/update, phone HMAC/key version and consent row identity/revision bind encrypted immutable evidence. Shared recipient lock precedes session/customer/policy locks. Atomic capture/audit, original receipt replay and post-write authority/deadline recheck are implemented. No fixture promotion, legacy grant/customer flag change, live route/UI switch or provider dependency.
+
+Evidence: backend evidence/APP-013/policy-bound-sms-capture/README.md and policy-capture/summary.json. Build/lint/architecture/Prisma/whitespace passed; production audit zero; 104 suites / 1,955 tests passed, three skipped. Nine new capture groups, seven suppression groups and 20 prior regression groups passed in disposable local PostgreSQL, removed after proof. Two dry-run captures/two audits; zero final tenant opt-ins, delivery events, providers or production writes. Existing 390px/1280px fixture UI regression passed; it is not evidence of this inactive service wired into a browser. Signed session possession is not phone ownership or OTP completion.
+
+Stop for review. The inactive evidence bridge is complete; P2/live readiness is not. Next proposed bounded P2 implementation: authenticated provider-event replay identity and STOP/START retry protection, particularly duplicate START after a later STOP. Keep capture/sending disabled. Production evidence mode and grant relation, real publication, retention/key lifecycle, protected transport/UI composition and release remain gates. No registry/fixture-storage rewrite, new ticket, provider configuration or production action is implied.
+
+APP-013 sole Now; Next empty; FE-014 paused. Current workflow 2B; 3/8 accepted = 37.5% of fixed milestones, unchanged, not overall MVP engineering completion/ETA. Five workflow acceptances remain. No merge, deployment, production migration, public publication, provider/DNS/IAM/secret/billing changes or real customer actions. This supersedes older next-bridge wording below.
+
+
 ## APP-013 P2 suppression write boundary — review-ready, 2026-09-12
 
 Owner approved continuation after P1. Backend 64942c0 implements one bounded P2 section: shared tenant/recipient transaction lock before customer writes, atomic START prior-opt-out check/update/audit, refusal of verbal grants over opt-out, and database-incremented SmsConsentRecord.revision. Initial legacy verbal consent remains compatible but is not policy-bound capture evidence. No registry/capture connection or fixture promotion is claimed.

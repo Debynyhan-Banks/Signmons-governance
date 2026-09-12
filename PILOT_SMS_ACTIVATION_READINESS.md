@@ -1,5 +1,9 @@
 # Pilot SMS: production policy and activation readiness
 
+## P2 inactive capture bridge checkpoint — 2026-09-12
+
+Backend 6c9f660 connects the registry and recipient suppression revision to separate encrypted immutable DRY_RUN evidence, with atomic audit, exact replay, shared lock order and post-write deadline/publication rechecks. Nine new capture groups plus all prior regression groups passed; no grant/queue/provider authority. The inactive bridge is complete, not P2/live readiness. Evidence: evidence/APP-013/policy-bound-sms-capture/README.md. Next proposed P2 section is authenticated provider-event replay identity/STOP-START retry protection. Production evidence mode/grant relation, actual public source, retention/key lifecycle and transport/release remain gates; no further fixture storage rewrite. Acceptance remains 3/8 milestones (37.5%), not overall MVP completion.
+
 ## P2 bounded suppression checkpoint — 2026-09-12
 
 Backend 64942c0 completes shared recipient serialization, atomic START and suppression precedence over verbal grants, with a database-incremented consent revision. This is one section within P2, not P2 completion. Evidence: evidence/APP-013/sms-consent-serialization/README.md. Next within P2 is production-shaped policy-bound capture evidence/registry integration under this lock and revision. Existing fixture records remain non-authoritative; capture and sending stay unactivated. Provider event replay/order, retention/key lifecycle, publication and release remain gated. Acceptance unchanged: 3/8 milestones (37.5%), not overall MVP completion.

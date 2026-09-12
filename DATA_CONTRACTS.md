@@ -1,5 +1,17 @@
 # Data Contracts
 
+## P2 policy-bound capture evidence — approved implementation mapping, 2026-09-12
+
+Implemented locally in backend 6c9f660, review-ready. Nine capture groups and 1,955 tests passed; evidence/APP-013/policy-bound-sms-capture/README.md maps all gates and reproduction. Source scope additionally includes consent row identity/status so deletion/recreation cannot silently match only revision in the normal application comparison; production deletion/key-rotation protocols remain unqualified. Signed session possession is not phone/identity verification. No live-mode grant relation or protected UI/transport release is implemented.
+
+Owner approved the next P2 section. Add inactive SmsPolicyCapture: UUID, tenant/conversation/session scope, immutable policy version FK and head revision, legacy-compatible tenant phone HMAC and explicit hash-key version label, observed SmsConsentRecord revision (missing=0), encrypted prompt snapshot, original issue/expiry, optional captured timestamp and same-tenant audit FK. Composite FKs enforce policy/conversation/audit tenancy. Record mode is constrained to DRY_RUN in both code and database; no production mode, fixture import, SmsConsentRecord grant, customer flag update, queue or provider dependency exists. This is production-shaped provenance proof, not live consent authority.
+
+No FK to SmsConsentRecord is used because a never-consented recipient has no row. The logical relation is tenant + stable phone HMAC + observed revision, read under the existing shared recipient advisory lock. The configured key is unchanged; its opaque version label is injected explicitly and binds encrypted evidence. Key rotation, deletion/recreation of consent rows and production retention remain unqualified release gates. Existing legacy opted-in records are not promoted or treated as new policy-bound evidence.
+
+Application-only PROMPT/CAPTURE accepts exactly sessionToken, action, phone, promptId, accepted. PROMPT must be empty promptId/false; CAPTURE uses an existing UUID. No client policy, revision, tenant, URL, mode or authority field. Order: verify session credential and tenant context, lock recipient, lock active tenant/session/conversation/customer, then read current registry under policy lock. Bind current customer identity/update, token instance, full reviewed policy content/version/head revision, suppression status/row identity/revision and hash-key version into encrypted immutable snapshot. STOP refuses; skip does not revoke or grant. Prompt cap 256 per session; expiry is earliest five minutes, credential/session or policy deadline.
+
+Capture and exact receipt retry revalidate current sources under these locks. First capture and audit commit together; retry returns original receipt without another audit. Recheck database time, session credential/lifecycle and current registry attestation after writes so expiry/revocation during work rolls back. No live route/DI registration or UI switch. Production-shaped evidence remains separate from both FixtureSmsConsentPrompt and live SmsConsentRecord; release cannot be enabled by removing a response flag.
+
 ## P2 suppression serialization — approved bounded implementation, 2026-09-12
 
 Implemented locally in backend 64942c0, review-ready. Seven local suppression groups and 1,945 tests passed; migration only in disposable database, removed after proof. See backend evidence/APP-013/sms-consent-serialization/README.md for validations, corrected harness failures and exact remaining P2 boundary. No production migration or activation.
