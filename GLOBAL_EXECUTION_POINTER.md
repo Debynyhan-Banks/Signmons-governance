@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: diagnostic signing retry refused and closed — 2026-09-12
+
+Owner approved one retry with same limited role/condition. Read-only testIamPermissions reported signBlob, but IAM Credentials returned 403 PERMISSION_DENIED / IAM_PERMISSION_DENIED / iam.serviceAccounts.signBlob. Backend evidence/APP-013/phone-auth-rehearsal.md records safe diagnostics. Binding removed, role DISABLED, operator unchanged/disabled; no token or SMS. No broader role, unconditioned grant or further mutation retry. Next is read-only enforcement discrepancy diagnosis; support contact separately gated. APP-013/2B Now, 3/8 unchanged.
+
 ## Rehearsal attempted; signing refused, cleanup verified — 2026-09-12
 
 Owner-approved authentication-only run recorded in backend 832a25d, evidence/APP-013/phone-auth-rehearsal.md. Exact conditional signBlob-only role/grant created; sole signing request returned 403 before identity enabling or token exchange. No token, SMS, tenant write or deployment. Binding removed; role retained DISABLED; effective signing permissions empty; operator remains disabled. Root cause not established (propagation possible, not proven); sanitized error omitted provider reason and bounded audit query returned no entries. No automatic retry or wider permissions. Further diagnostic retry needs explicit re-enable/grant/cleanup approval and safe error capture. APP-013/2B Now; 3/8 unchanged. Earlier empty-role baseline now superseded by retained disabled role.
