@@ -1,5 +1,9 @@
 # Proposed tenant SMS policy configuration contract
 
+## Implementation status — 2026-09-12
+
+Owner-approved fixture prompt/capture (852e766) and encrypted durable fixture evidence/current-recipient checks (c081fb0) are reviewable in the backend. DATA_CONTRACTS.md maps these inactive seams and the local database evidence. The production policy lifecycle described below remains proposed, not an implemented/approved publication or enrollment authority. This status supersedes the older next-implementation paragraph only for the completed fixture/storage proof; do not repeat that work or mistake it for live readiness.
+
 2026-09-12. Design only; no implemented API/schema or production approval. Companion: PILOT_PRIVACY_AND_TERMS_DRAFT.md. Public support/privacy email approved: ben@eternityhvacr.com for Eternity only.
 
 ## Trusted source

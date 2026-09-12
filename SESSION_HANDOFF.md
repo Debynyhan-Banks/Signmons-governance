@@ -1,5 +1,15 @@
 # Session Handoff
 
+## APP-013 durable fixture SMS evidence — review-ready, 2026-09-12
+
+Owner reviewed/accepted the prior fixture interaction and approved durable evidence/current-policy/recipient checks. Backend c081fb0 (codex/app-013-transactional-messaging) adds isolated encrypted PostgreSQL fixture state and capture records, atomic capture/audit, original receipt replay after service/client reconstruction, policy-revision fencing and current customer phone/update binding. A deadline crossing during writes rolls back evidence and audit. Existing intake uses the same protected optional SMS port; no standalone production form or live capture registration.
+
+Evidence: backend evidence/APP-013/durable-fixture-sms-consent/README.md, database summary and 390px/1280px screenshots. Build/lint/architecture passed; 101 suites/1,917 tests passed, three skipped; production audit zero. Fourteen local database check groups plus durable, memory-only and unavailable browser branches passed. Five captures matched five audits; zero live consent rows/customer grants, delivery events or provider calls. The randomly named disposable local database was removed. No production migration, merge, deployment, Twilio/DNS configuration, billing or real customer action.
+
+This completes the bounded storage/recovery proof, not live SMS readiness. Policy source and suppression remain fictional; real public policy approval/source integration, key lifecycle and production retention/release qualification remain gated. Review the saved-test screenshots, equal capture/audit counts and stale/restart/rollback evidence. Next proposed bounded work: reconcile the production policy/source and activation-readiness contract against these proven seams, identifying the exact remaining pilot prerequisites without another storage rewrite or unapproved activation.
+
+APP-013 sole Now; Next empty; FE-014 paused. Fixed steel-thread acceptance stays 3/8 (37.5% milestones), not overall MVP engineering completion. Prior local fixture acceptance does not satisfy the controlled verification/payment/calendar/text milestones. Stop at this review-ready checkpoint.
+
 ## APP-013 fixture SMS capture — review-ready, 2026-09-12
 
 Owner approved the proposed fixture-only implementation. Backend commit 852e766 on codex/app-013-transactional-messaging adds prompt/capture in the existing intake with injected fictional policy, current tenant/session/phone/revision/version binding, opt-out refusal and exact retry. Evidence: backend evidence/APP-013/fixture-sms-consent/README.md and screenshots/summary.

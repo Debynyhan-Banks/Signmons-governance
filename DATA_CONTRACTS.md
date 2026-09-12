@@ -1,12 +1,24 @@
 # Data Contracts
 
+## Approved durable fixture SMS evidence section — 2026-09-12
+
+Implemented locally in backend c081fb0; not released. State revision is database-incremented on every update and bound into encrypted prompts, preventing change-then-restore replay. Actual customer phone and updatedAt also bind capture, under the shared customer/session locks. Database time is rechecked after writes; expiry rolls back both audit and capture. Missing/closed lifecycle refuses even receipt replay. State/prompt ciphertext envelopes include tenant/conversation/session scope; prompts include ID, credential binding, displayed policy and original timestamps.
+
+Five fixture captures/five audits and fourteen database check groups demonstrate concurrency, reconstruction, rollback, unconfirmed commit, deadline crossing, current source/recipient, opt-out, corrupt state and composite-FK tenant isolation. Fixture records cap at 256 per session including expired records; only disposable fixture teardown removes them in this section. No production retention duration is inferred. Shared validation preserves the separate memory-only adapter; it is not silently made durable.
+
+Owner reviewed 852e766 and approved continuation. Add inactive FixtureSmsConsentState (tenant/conversation/session-bound encrypted current fictional policy) and FixtureSmsConsentPrompt (encrypted displayed policy and credential binding, original issue/expiry, first captured timestamp and audit reference). Composite foreign keys enforce scope. These are explicitly separate from live SmsConsentRecord and Customer.consentToText and cannot authorize delivery.
+
+The existing local-only sms port may await the durable implementation. Session/organization/customer eligibility locks precede the fixture-state row lock; current policy/recipient/revision and opt-out are resolved under that transaction. Capture timestamp and audit commit atomically, exact replay keeps the original receipt, and absent/expired/closed/changed/corrupt state refuses. Captured evidence remains in the isolated fixture database across service reconstruction; no production retention schedule or policy lifecycle is activated. Migration execution is restricted to a newly created disposable local database. No public route registration or provider calls.
+
+Receipt adds storage=DURABLE_FIXTURE only for this adapter; fixtureOnly=true, liveConsentRecorded=false and deliveryAuthorized=false remain mandatory. Browser copy must distinguish persisted test evidence from the prior memory-only model. Privacy/terms remain fixed fictional local pages. Production lifecycle, public policy approval and release remain gated.
+
 ## APP-013 inactive fixture SMS consent port — 2026-09-12
 
 Local-only POST /customer-session/sms accepts exactly sessionToken, action (PROMPT/CAPTURE), E.164 phone, promptId and accepted boolean. Existing protected browser transport authentication, origin, canonical body, tenant credential and budget checks apply. Port requires fixtureLoopback=true plus an injected fixture model; no production DI/controller registration is added.
 
 PROMPT requires empty promptId/accepted=false and trusted current fixture policy matching tenant/session/phone. Response binds an opaque prompt to credential identity, phone revision, version, sender, disclosure and deadline. Fixed /fixture-sms-privacy and /fixture-sms-terms are fictional local pages, never approved public URLs. CAPTURE must match the same current source and unexpired prompt; opt-out refuses. Exact successful retry retains its original recordedAt. Decline does not mutate suppression; browser skip writes nothing.
 
-Every result declares fixtureOnly=true, liveConsentRecorded=false, deliveryAuthorized=false. Model retains at most 256 in-memory prompts, expiring within five minutes or session deadline; restart loses evidence and refuses old prompts. No durable ledger, production consent type or downstream sending grant is created. This proves a fixture subset of PILOT_SMS_POLICY_CONFIGURATION_CONTRACT.md, not its production lifecycle.
+Every result declares fixtureOnly=true, liveConsentRecorded=false, deliveryAuthorized=false. The original memory-only model retains at most 256 in-memory prompts, expiring within five minutes or session deadline; its restart loses evidence and refuses old prompts. The separately selected durable adapter is specified above. Neither creates a production consent type or downstream sending grant. These prove fixture subsets of PILOT_SMS_POLICY_CONFIGURATION_CONTRACT.md, not its production lifecycle.
 
 ## Section 2A current-proof admission (inactive local composition)
 
