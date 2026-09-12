@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: Google field qualification reviewed — 2026-09-12
+
+GOOGLE_FIELD_QUALIFICATION.md records official-source findings: county fields exist but code width is unspecified; published caching permissions do not explicitly cover USPS county fields, responseId or derived coverage outcomes. Immediate processing is not declared forbidden. Fixture assumptions remain unqualified for live use. Next: prepare one legitimate-address capped inspection packet and an unsent addendum to existing Google case for review; no paid call, send, activation or further generic fixture coding. County GIS remains removed as a dependency. APP-013/2B Now; walkthrough 3/8 (37.5%) unchanged.
+
 ## Current: disabled Google coverage evaluator implemented — 2026-09-12
 
 Backend src/communications/google-service-area.ts reuses the existing Google address adapter for fictional in-memory coverage proposals. Default disabled; explicit FIXTURE_ONLY mode, current confirmation bindings, unit/physical-address checks and consistent structured Ohio county evidence required. All downstream authority stays false. No route registration, provider I/O, persistence, schema or UI change. Evidence: backend evidence/APP-013/google-service-area.md.
