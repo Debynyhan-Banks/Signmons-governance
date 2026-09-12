@@ -1,5 +1,11 @@
 # Disabled phone-only deployment proposal — 2026-09-12
 
+
+## Current: disabled phone candidate deployed — 2026-09-12
+
+Owner reviewed and approved the referenced disabled release proposal. Source d33ecd0 built once (688616b2-30e1-4172-abd4-8c1765713348) and deployed as signmons-calldesk-staging-phone-d33ecd0 with tag phone-preflight and zero normal traffic. Existing normal traffic and eight tags unchanged. Backend evidence commit b100dbc: evidence/APP-013/disabled-phone-deployment.md contains immutable digest, exact checks and cost/observation limits. Six safety flags false; dedicated secrets pinned at version 1. Health/readiness 200, unauthenticated phone routes 401/private no-store; no authenticated test claimed. Fresh 2,080 tests plus lint/build/architecture passed. Temporary build grants removed, build account disabled again. No identity/tenant activation, session, migration, OTP, payment or appointment. Next: exact short-window activation packet and separate single-SMS capped approval; no new feature section. APP-013/2B Now, approved queue unchanged; 3/8 (37.5%) walkthrough acceptance, not overall MVP completion. Earlier release-unapproved entries are historical for this disabled deployment only.
+
+
 Status: PROPOSED, RELEASE NOT AUTHORIZED. Owner-approved worker correction is implemented in backend d33ecd0 (existing PR #21). This supersedes the historical source and implementation-approval recommendation below. Build the corrected commit, not 16e0af8/ad909c8, and require BACKGROUND_WORKERS_ENABLED=false on the candidate before startup. Code tests passed; deployed settings and behavior remain unverified. Build/IAM/spend/deployment approval is still required.
 
 ## Fixed target and intended operation
