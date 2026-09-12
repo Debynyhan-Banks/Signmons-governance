@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: private authentication succeeded and closed — 2026-09-12
+
+Owner-approved seven-minute propagation retry succeeded signing/exchanging/verifying exact isolated operator token with unchanged limited grant. Backend evidence/APP-013/phone-auth-rehearsal.md records results. Authenticated POST {} returned 400 (required operation DTO missing), not expected 503; harness assertion failed, so disabled-service authenticated refusal is not claimed. Cleanup verified: operator disabled/refresh credentials revoked, grant removed, role disabled, same token now 401. No tenant/session creation, SMS or deployment. Authentication blocker resolved; no further standalone rehearsal proposed. Next: proper DTO refusal check within separately approved supervised single-SMS activation/closeout; no bypass or full walkthrough acceptance. APP-013/2B Now, 3/8 unchanged.
+
 ## Current: diagnostic signing retry refused and closed — 2026-09-12
 
 Owner approved one retry with same limited role/condition. Read-only testIamPermissions reported signBlob, but IAM Credentials returned 403 PERMISSION_DENIED / IAM_PERMISSION_DENIED / iam.serviceAccounts.signBlob. Backend evidence/APP-013/phone-auth-rehearsal.md records safe diagnostics. Binding removed, role DISABLED, operator unchanged/disabled; no token or SMS. No broader role, unconditioned grant or further mutation retry. Next is read-only enforcement discrepancy diagnosis; support contact separately gated. APP-013/2B Now, 3/8 unchanged.

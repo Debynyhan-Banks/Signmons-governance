@@ -1,5 +1,9 @@
 # Temporary phone-test signing permission — review only
 
+## Current: private authentication succeeded and closed — 2026-09-12
+
+Owner-approved seven-minute propagation retry succeeded signing/exchanging/verifying exact isolated operator token with unchanged limited grant. Backend evidence/APP-013/phone-auth-rehearsal.md records results. Authenticated POST {} returned 400 (required operation DTO missing), not expected 503; harness assertion failed, so disabled-service authenticated refusal is not claimed. Cleanup verified: operator disabled/refresh credentials revoked, grant removed, role disabled, same token now 401. No tenant/session creation, SMS or deployment. Authentication blocker resolved; no further standalone rehearsal proposed. Next: proper DTO refusal check within separately approved supervised single-SMS activation/closeout; no bypass or full walkthrough acceptance. APP-013/2B Now, 3/8 unchanged.
+
 ## Rehearsal attempted; signing refused, cleanup verified — 2026-09-12
 
 Owner-approved authentication-only run recorded in backend 832a25d, evidence/APP-013/phone-auth-rehearsal.md. Exact conditional signBlob-only role/grant created; sole signing request returned 403 before identity enabling or token exchange. No token, SMS, tenant write or deployment. Binding removed; role retained DISABLED; effective signing permissions empty; operator remains disabled. Root cause not established (propagation possible, not proven); sanitized error omitted provider reason and bounded audit query returned no entries. No automatic retry or wider permissions. Further diagnostic retry needs explicit re-enable/grant/cleanup approval and safe error capture. APP-013/2B Now; 3/8 unchanged. Earlier empty-role baseline now superseded by retained disabled role.
