@@ -1,5 +1,11 @@
 # Session Handoff
 
+## Local SMS unavailable-policy branch — review-ready, 2026-09-12
+
+User approved local intake implementation with all sending disabled. The existing customer-intake-journey fixture now displays optional SMS enrollment as unchecked/disabled because approved policy URLs and trusted tenant disclosure configuration are missing. Continuing without texts works; no new consent is recorded or transmitted. This is only the unavailable-policy branch, not complete consent capture or live readiness.
+
+Evidence: backend evidence/APP-013/sms-intake-unavailable/README.md, mock-only browser summary and desktop/mobile screenshots. Backend build/lint/architecture passed; 99 suites and 1,887 tests passed (three existing skips); production dependency audit zero findings. No database/browser persistence proof or production action. Next: resolve approved policy/configuration contract and customer-facing support contact before enabled enrollment and durable evidence capture. APP-013 sole Now; Next empty; FE-014 paused; 3/8 accepted unchanged.
+
 ## Pilot SMS screen and policy draft — review-ready, 2026-09-12
 
 Owner approved preparing review-only drafts after the read-only readiness review. [PILOT_SMS_CONSENT_REVIEW_DRAFT.md](PILOT_SMS_CONSENT_REVIEW_DRAFT.md) contains tenant-branded screen copy, messaging privacy/terms supplements, intended state/evidence rules and acceptance checks. These are not complete legal policies, implemented consent, published pages or registration evidence. Public URLs, support contact, effective date and policy/legal review remain pending.
