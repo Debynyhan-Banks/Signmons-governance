@@ -1,5 +1,9 @@
 # Section 2B controlled-verification entry checklist
 
+## Latest readiness assessment — 2026-09-12
+
+See COUNTY_FALLBACK_LIVE_GAP_ASSESSMENT.md for current source findings and the fixed remaining work packages within 2B. County inquiry is owner-reported sent, reply pending; no mailbox search this turn. Earlier unsent/dismiss-browser instructions below are historical. No immediate fallback qualified; county stays UNKNOWN. Runtime f9181eb remains inactive. The draft test packet below is still unapproved and must be refreshed before execution; this assessment authorizes no provider calls, spend, configuration or release. Walkthrough acceptance stays 3/8 (37.5%).
+
 ## Current priority and bounded blocker refresh — 2026-09-12
 
 Owner reaffirmed the fixed remaining order 2B → 3A → 3B → 3C → 3D. SMS internal work is parked under 3C, not the next execution section. Backend runtime baseline is 6c9f660; no runtime changed in this reconciliation. Both focused branches fetched clean before edits.

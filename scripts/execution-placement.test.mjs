@@ -6,7 +6,9 @@ import { executionPlacementErrors } from "./execution-placement.mjs";
 const pointer = readFileSync("GLOBAL_EXECUTION_POINTER.md", "utf8");
 const handoff = readFileSync("SESSION_HANDOFF.md", "utf8");
 const row = pointer.match(/^\|\s*Backend\s*\|.*$/m)?.[0];
-const step = handoff.match(/^2\. After review.*$/m)?.[0];
+// Match structure in the canonical section, not historical action wording.
+const next = handoff.match(/## Next Actions \(Strict Order\)\s*\n([\s\S]*?)(?:\n## |$)/)?.[1] ?? "";
+const step = next.match(/^2\. .*$/m)?.[0];
 test("current pointer and handoff have properly placed status and ordered steps", () => {
   assert.deepEqual(executionPlacementErrors(pointer, handoff), []);
 });

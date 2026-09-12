@@ -1,5 +1,12 @@
 # APP-013 Google-first address contract — review-ready proposal
 
+## Current checkpoint: county fallback and live gap assessment — 2026-09-12
+
+See COUNTY_FALLBACK_LIVE_GAP_ASSESSMENT.md. Owner-approved read-only assessment found no qualified immediate county fallback; Census interpolation and dated Ohio downloads do not meet the existing physical-site/current-source contract. County remains UNKNOWN. Inquiry owner-reported sent, reply pending; no mailbox check or message this turn. Backend runtime stays f9181eb. Four remaining work packages are mapped inside existing 2B, not new milestones. Next bounded recommendation: trusted transient Google revalidation sequence/reference contract and tests, after confirming applicable retention terms; live sending remains disabled. No fixture rebuild, county bypass or future-ticket start.
+
+Documentation checks only: cross-repository consistency, execution-placement and intelligence-alignment regressions, whitespace. No fresh runtime/browser/account acceptance. APP-013/2B remains Now; approved Next queue unchanged; walkthrough accepted 3/8 (37.5%), not whole-MVP completion. No merge, deployment, IAM/secret/configuration, charges, live provider calls or real customer actions.
+
+
 ## County record-type qualification outcome
 
 Read-only review did not qualify a positive county allowlist. All 115,395 current US/OH/Cuyahoga records in the aggregate report validation required; physical Building/Unit plus Site Visit/Photogrammetry labels do not document accuracy. This does not prove bad data, but prevents claiming verified coverage. See CEGIS_RECORD_TYPE_REVIEW.md for 52-group aggregate evidence, candidate counts, exclusions and an unsent source-owner inquiry. County acceptance stays UNKNOWN; no provider configuration or live Google call.

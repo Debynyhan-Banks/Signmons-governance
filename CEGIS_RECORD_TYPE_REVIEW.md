@@ -1,5 +1,12 @@
 # APP-013 county record-type review — 2026-09-11
 
+## Current checkpoint: county fallback and live gap assessment — 2026-09-12
+
+See COUNTY_FALLBACK_LIVE_GAP_ASSESSMENT.md. Owner-approved read-only assessment found no qualified immediate county fallback; Census interpolation and dated Ohio downloads do not meet the existing physical-site/current-source contract. County remains UNKNOWN. Inquiry owner-reported sent, reply pending; no mailbox check or message this turn. Backend runtime stays f9181eb. Four remaining work packages are mapped inside existing 2B, not new milestones. Next bounded recommendation: trusted transient Google revalidation sequence/reference contract and tests, after confirming applicable retention terms; live sending remains disabled. No fixture rebuild, county bypass or future-ticket start.
+
+Documentation checks only: cross-repository consistency, execution-placement and intelligence-alignment regressions, whitespace. No fresh runtime/browser/account acceptance. APP-013/2B remains Now; approved Next queue unchanged; walkthrough accepted 3/8 (37.5%), not whole-MVP completion. No merge, deployment, IAM/secret/configuration, charges, live provider calls or real customer actions.
+
+
 ## Decision
 
 No positive county allowlist is qualified yet. Keep acceptance disabled. Building and Unit, Condo, Office or Suite are relevant physical-site candidates; Site Visit and Photogrammetry are candidate collection methods, not documented accuracy guarantees. This narrows the earlier conditional qualification: metadata plus matching county/road fields are insufficient for live acceptance without source-owner clarification and operational evidence.

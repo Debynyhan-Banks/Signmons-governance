@@ -1,5 +1,12 @@
 # Session Handoff
 
+## Current checkpoint: county fallback and live gap assessment — 2026-09-12
+
+See COUNTY_FALLBACK_LIVE_GAP_ASSESSMENT.md. Owner-approved read-only assessment found no qualified immediate county fallback; Census interpolation and dated Ohio downloads do not meet the existing physical-site/current-source contract. County remains UNKNOWN. Inquiry owner-reported sent, reply pending; no mailbox check or message this turn. Backend runtime stays f9181eb. Four remaining work packages are mapped inside existing 2B, not new milestones. Next bounded recommendation: trusted transient Google revalidation sequence/reference contract and tests, after confirming applicable retention terms; live sending remains disabled. No fixture rebuild, county bypass or future-ticket start.
+
+Documentation checks only: cross-repository consistency, execution-placement and intelligence-alignment regressions, whitespace. No fresh runtime/browser/account acceptance. APP-013/2B remains Now; approved Next queue unchanged; walkthrough accepted 3/8 (37.5%), not whole-MVP completion. No merge, deployment, IAM/secret/configuration, charges, live provider calls or real customer actions.
+
+
 ## Current checkpoint: 2B controlled address composition — 2026-09-12
 
 Owner approved continuing while county clarification is pending. Backend f9181eb adds an inactive fixture-only composition of the existing durable claim executor and injected OAuth transport, trusted intent/revision request loading and parent deadline cancellation. No default credentials, registration or live dispatch. Output remains fixture-only with addressVerified=false, county=UNKNOWN and admission/delivery refused; provider content is discarded. This does not turn fixture budget claims into real-call authorization.
@@ -1024,8 +1031,8 @@ Exact review commands and source/evidence: backend evidence/APP-013/readiness-re
 
 ## Next Actions (Strict Order)
 
-1. Finish review/integration of coordinated documentation PRs #28/#22 under existing merge permissions; do not alter implementation PR #21. Owner-reviewed dependency correction is recorded in INTELLIGENCE_ALIGNMENT_ADOPTION.md.
-2. Resume APP-013/2B at backend 330e402: controlled-operation/budget composition and minimum IAM review, preserving disabled OAuth transport. County source qualification and exact provider/test/release approvals remain gates; inquiry is user-reported sent. Do not repeat the stale Chrome-extension blocker.
+1. Review COUNTY_FALLBACK_LIVE_GAP_ASSESSMENT.md. Coordinated documentation PRs #28/#22 are already merged into focused branches, not main; do not repeat that merge or alter PR #21 release state.
+2. Resume APP-013/2B from runtime f9181eb: next bounded recommendation is trusted transient Google revalidation sequence/reference handling after retention qualification. Follow the four existing-2B work packages in the assessment; county source and exact provider/test/release gates remain. Inquiry is owner-reported sent. No fixture promotion or live activation.
 3. Complete the existing eight-milestone walkthrough and all APP-013 acceptance, including BE-001 residual keyword/telemetry/replay proof in existing communications scope. Current acceptance is 3/8, not whole-MVP percentage; sending and real provider actions remain separately approved.
 4. Only after full Now acceptance, synchronize both boards/global pointer and promote APP-017, then APP-018, APP-019, APP-015, APP-016, APP-033 as their full gates pass. Do not ask the owner to choose routine phases or skip blocked Now. Keep FE-014 paused and later training gated.
 
