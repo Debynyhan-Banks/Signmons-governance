@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: private number input fixed — 2026-09-12
+
+Owner-approved standalone runner correction accepts normal US formats, normalizes privately, requires confirmation and validates before credential/IAM access or seven-minute wait. Explicit cancel/timeout, bounded retry, unchanged destination suffix guard. Evidence: backend evidence/APP-013/private-phone-input.md; 24 local tests plus syntax/whitespace passed. No live dialog test, provider action or runtime deployment. Historical runner window remains expired; no automatic restart. Next is owner-ready supervised input and new execution window. APP-013/2B Now, 3/8 unchanged.
+
 ## Restart stopped at private input — 2026-09-12
 
 Owner-approved 22:07–22:22 UTC restart authenticated after seven-minute wait, then private-number validation refused before any session/deployment/START. No SMS. Cleanup no binding, role disabled, operator disabled/revoked and token 401. Backend evidence/APP-013/single-sms-attempt.md records result. Do not repeat permission wait until private number normalization/confirmation is moved before access setup; no change to allowed participant. APP-013/2B Now; 3/8 unchanged.

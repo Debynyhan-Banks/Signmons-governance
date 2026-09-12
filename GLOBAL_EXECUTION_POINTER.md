@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: private number input fixed — 2026-09-12
+
+Owner-approved standalone runner correction accepts normal US formats, normalizes privately, requires confirmation and validates before credential/IAM access or seven-minute wait. Explicit cancel/timeout, bounded retry, unchanged destination suffix guard. Evidence: backend evidence/APP-013/private-phone-input.md; 24 local tests plus syntax/whitespace passed. No live dialog test, provider action or runtime deployment. Historical runner window remains expired; no automatic restart. Next is owner-ready supervised input and new execution window. APP-013/2B Now, 3/8 unchanged.
+
 ## Current: single-SMS attempt stopped at private input — 2026-09-12
 
 Owner-approved single SMS run authenticated successfully after seven-minute grant propagation, but private phone dialog did not pass +1/suffix validation; timeout vs invalid input not distinguished. Stopped before DTO probe, session/customer creation, tenant activation, deployment or SMS. Backend evidence/APP-013/single-sms-attempt.md records exact sequence. Cleanup verified operator disabled/revoked, no grant, role disabled, token now 401. No send or automatic retry. Next requires owner-ready private input and renewed supervised window, not new feature work. APP-013/2B Now; 3/8 unchanged.
