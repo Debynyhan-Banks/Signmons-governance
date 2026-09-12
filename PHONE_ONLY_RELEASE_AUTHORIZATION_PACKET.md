@@ -1,5 +1,9 @@
 # Phone-only staging release authorization packet
 
+## Current activation packet — 2026-09-12
+
+Read PHONE_ONLY_ACTIVATION_PACKET.md. Disabled deployed image/Ready reverified; existing Safari account confirmed. No activation or sending. Exact resource/window/notice/cap/closeout proposal prepared, superseding old missing-deployment rows. Remaining readiness: current Verify protections, qualified private Firebase sign-in (disabled passwordless operator alone is insufficient), isolated record/liability qualification and private participant/window. No dev-auth/signing bypass or new feature section. Next: qualify those preparation details before explicit single-SMS activation approval. APP-013/2B Now, 3/8 (37.5%) unchanged.
+
 2026-09-12. DRAFT — unresolved fields below prohibit activation or sending.
 
 ## Dedicated secrets completed with owner approval
