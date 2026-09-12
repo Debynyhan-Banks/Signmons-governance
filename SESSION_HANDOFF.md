@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Rehearsal attempted; signing refused, cleanup verified — 2026-09-12
+
+Owner-approved authentication-only run recorded in backend 832a25d, evidence/APP-013/phone-auth-rehearsal.md. Exact conditional signBlob-only role/grant created; sole signing request returned 403 before identity enabling or token exchange. No token, SMS, tenant write or deployment. Binding removed; role retained DISABLED; effective signing permissions empty; operator remains disabled. Root cause not established (propagation possible, not proven); sanitized error omitted provider reason and bounded audit query returned no entries. No automatic retry or wider permissions. Further diagnostic retry needs explicit re-enable/grant/cleanup approval and safe error capture. APP-013/2B Now; 3/8 unchanged. Earlier empty-role baseline now superseded by retained disabled role.
+
 ## Current: private exchange metadata qualified — 2026-09-12
 
 Existing Firebase API-key restrictions include Identity Toolkit/Secure Token, no listed referrer restrictions; required APIs enabled. No key value read or token exchange attempted. PHONE_SIGNING_PERMISSION_PLAN.md now specifies one proposed authentication-only rehearsal and immediate grant/identity cleanup, keeping tenant/phone test disabled and sending prohibited. Await explicit authorization for those IAM/identity/token mutations. No new code or milestone; APP-013/2B Now, 3/8 unchanged.

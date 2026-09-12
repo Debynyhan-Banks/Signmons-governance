@@ -1,5 +1,9 @@
 # Temporary phone-test signing permission — review only
 
+## Rehearsal attempted; signing refused, cleanup verified — 2026-09-12
+
+Owner-approved authentication-only run recorded in backend 832a25d, evidence/APP-013/phone-auth-rehearsal.md. Exact conditional signBlob-only role/grant created; sole signing request returned 403 before identity enabling or token exchange. No token, SMS, tenant write or deployment. Binding removed; role retained DISABLED; effective signing permissions empty; operator remains disabled. Root cause not established (propagation possible, not proven); sanitized error omitted provider reason and bounded audit query returned no entries. No automatic retry or wider permissions. Further diagnostic retry needs explicit re-enable/grant/cleanup approval and safe error capture. APP-013/2B Now; 3/8 unchanged. Earlier empty-role baseline now superseded by retained disabled role.
+
 ## Exchange configuration qualified read-only — 2026-09-12
 
 Existing Firebase-created Browser key resource projects/845074063310/locations/global/keys/06cfec12-0432-455f-888f-397d1a0150a6 permits identitytoolkit.googleapis.com and securetoken.googleapis.com; browserKeyRestrictions is empty (no listed referrer allowlist). Key value was neither retrieved nor printed. Other existing API targets remain unchanged; no restriction relaxation/new key is proposed. IAM Credentials and Identity Toolkit APIs are already enabled. signBlob appears in resource testable permissions with no NOT_SUPPORTED custom-role marker. These metadata checks support the proposed exchange, not proof of successful authentication.
