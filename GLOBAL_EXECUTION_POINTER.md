@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: single-address review packet prepared — 2026-09-12
+
+GOOGLE_SINGLE_ADDRESS_INSPECTION_PACKET.md and GOOGLE_CASE_75382710_ADDENDUM_DRAFT.md are prepared, not executed/sent. Proposed one legitimate privately confirmed address, one request, USD 0.10 application allowance (unapproved; actual rate not verified), no retries/persistence/downstream actions. Exact credential, current rate, private participant/window, one-shot reservation wrapper and permitted findings remain explicit gates. Next: review packet and qualify those gates read-only before exact execution approval. No new generic evaluator, county dependency or live action. APP-013/2B Now; 3/8 (37.5%) unchanged.
+
 ## Current: Google field qualification reviewed — 2026-09-12
 
 GOOGLE_FIELD_QUALIFICATION.md records official-source findings: county fields exist but code width is unspecified; published caching permissions do not explicitly cover USPS county fields, responseId or derived coverage outcomes. Immediate processing is not declared forbidden. Fixture assumptions remain unqualified for live use. Next: prepare one legitimate-address capped inspection packet and an unsent addendum to existing Google case for review; no paid call, send, activation or further generic fixture coding. County GIS remains removed as a dependency. APP-013/2B Now; walkthrough 3/8 (37.5%) unchanged.
