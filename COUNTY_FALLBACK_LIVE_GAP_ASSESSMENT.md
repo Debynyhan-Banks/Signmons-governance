@@ -1,5 +1,11 @@
 # 2B county fallback and live-verification gap assessment
 
+## Current: owner-approved Google-only service-area policy — 2026-09-12
+
+GOOGLE_ONLY_SERVICE_AREA_POLICY.md is authoritative for the MVP coverage-source change. Independent CEGIS physical-site/road qualification and a county GIS reply are no longer mandatory launch gates. Earlier requirements below are superseded only on that point; historical evidence remains unchanged. Google-based business coverage is not parcel certification. Require consistent structured county/state/country evidence, valid confirmed physical address/unit and current bindings; missing/conflicting evidence stays UNKNOWN with draft preserved.
+
+No Google-derived durable-field permission is inherited from the old CEGIS receipt. Retention clarification, live budgets/notices, implementation and real admission acceptance remain open. Next bounded work is an authority-neutral, default-disabled Google service-area evaluator with fictional local negative tests and no provider calls, persistence or admission authority. APP-013/2B Now; 3/8 (37.5%) walkthrough acceptance unchanged; approved queue unchanged. Phone test remains closed. This checkpoint changes documentation only, not runtime or production configuration.
+
 Reviewed 2026-09-12 against backend f9181eb and governance 5bd8875. Owner approved this bounded readiness assessment. Documentation only; no source accepted or activated.
 
 ## Decision

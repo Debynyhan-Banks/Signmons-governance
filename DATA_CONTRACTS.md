@@ -1,5 +1,11 @@
 # Data Contracts
 
+## Current: owner-approved Google-only service-area policy — 2026-09-12
+
+GOOGLE_ONLY_SERVICE_AREA_POLICY.md is authoritative for the MVP coverage-source change. Independent CEGIS physical-site/road qualification and a county GIS reply are no longer mandatory launch gates. Earlier requirements below are superseded only on that point; historical evidence remains unchanged. Google-based business coverage is not parcel certification. Require consistent structured county/state/country evidence, valid confirmed physical address/unit and current bindings; missing/conflicting evidence stays UNKNOWN with draft preserved.
+
+No Google-derived durable-field permission is inherited from the old CEGIS receipt. Retention clarification, live budgets/notices, implementation and real admission acceptance remain open. Next bounded work is an authority-neutral, default-disabled Google service-area evaluator with fictional local negative tests and no provider calls, persistence or admission authority. APP-013/2B Now; 3/8 (37.5%) walkthrough acceptance unchanged; approved queue unchanged. Phone test remains closed. This checkpoint changes documentation only, not runtime or production configuration.
+
 ## Current: default-disabled phone-only execution — 2026-09-12
 
 Backend commit: ad909c895a92b76b4a3b7bfbc5de2f40e3e10365, pushed to codex/app-013-transactional-messaging (PR #21); no merge or deployment.

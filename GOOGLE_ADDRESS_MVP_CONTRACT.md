@@ -1,5 +1,11 @@
 # APP-013 Google-first address contract — review-ready proposal
 
+## Current: owner-approved Google-only service-area policy — 2026-09-12
+
+GOOGLE_ONLY_SERVICE_AREA_POLICY.md is authoritative for the MVP coverage-source change. Independent CEGIS physical-site/road qualification and a county GIS reply are no longer mandatory launch gates. Earlier requirements below are superseded only on that point; historical evidence remains unchanged. Google-based business coverage is not parcel certification. Require consistent structured county/state/country evidence, valid confirmed physical address/unit and current bindings; missing/conflicting evidence stays UNKNOWN with draft preserved.
+
+No Google-derived durable-field permission is inherited from the old CEGIS receipt. Retention clarification, live budgets/notices, implementation and real admission acceptance remain open. Next bounded work is an authority-neutral, default-disabled Google service-area evaluator with fictional local negative tests and no provider calls, persistence or admission authority. APP-013/2B Now; 3/8 (37.5%) walkthrough acceptance unchanged; approved queue unchanged. Phone test remains closed. This checkpoint changes documentation only, not runtime or production configuration.
+
 ## Current checkpoint: county fallback and live gap assessment — 2026-09-12
 
 See COUNTY_FALLBACK_LIVE_GAP_ASSESSMENT.md. Owner-approved read-only assessment found no qualified immediate county fallback; Census interpolation and dated Ohio downloads do not meet the existing physical-site/current-source contract. County remains UNKNOWN. Inquiry owner-reported sent, reply pending; no mailbox check or message this turn. Backend runtime stays f9181eb. Four remaining work packages are mapped inside existing 2B, not new milestones. Next bounded recommendation: trusted transient Google revalidation sequence/reference contract and tests, after confirming applicable retention terms; live sending remains disabled. No fixture rebuild, county bypass or future-ticket start.

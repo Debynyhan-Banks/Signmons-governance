@@ -1,5 +1,11 @@
 # Real verification to admission — approved direction
 
+## Current: owner-approved Google-only service-area policy — 2026-09-12
+
+GOOGLE_ONLY_SERVICE_AREA_POLICY.md is authoritative for the MVP coverage-source change. Independent CEGIS physical-site/road qualification and a county GIS reply are no longer mandatory launch gates. Earlier requirements below are superseded only on that point; historical evidence remains unchanged. Google-based business coverage is not parcel certification. Require consistent structured county/state/country evidence, valid confirmed physical address/unit and current bindings; missing/conflicting evidence stays UNKNOWN with draft preserved.
+
+No Google-derived durable-field permission is inherited from the old CEGIS receipt. Retention clarification, live budgets/notices, implementation and real admission acceptance remain open. Next bounded work is an authority-neutral, default-disabled Google service-area evaluator with fictional local negative tests and no provider calls, persistence or admission authority. APP-013/2B Now; 3/8 (37.5%) walkthrough acceptance unchanged; approved queue unchanged. Phone test remains closed. This checkpoint changes documentation only, not runtime or production configuration.
+
 ## Conditional county-source and retention checkpoint
 
 The 2026-09-11 documentation-only audit conditionally selects official Cuyahoga County CEGIS site-address plus road-centerline data for a fail-closed future resolver. Positive classification requires one exact current physical site record with consistent US/OH/county and a current linked road whose county values agree on both sides. Boundary roads, source conflicts, noncurrent/validation-error or unknown records, unsupported point/capture type, unit ambiguity, stale evidence and outages are `UNKNOWN`. Cuyahoga's canonical policy GEOID is `39035`; ZIP, postal labels, Google county text and routing fallback are never authority.
