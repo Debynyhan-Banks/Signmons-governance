@@ -1,5 +1,9 @@
 # AI Workflow Rules
 
+## Owner-reviewed intelligence dependency alignment (2026-09-12)
+
+Owner reviewed PRs #28/#22 and requested the six-ticket dependency correction. APP-013 remains sole Now (2B). Next: APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033. BE-001 residual acceptance belongs to APP-013; nothing is marked complete. Older dated Next-empty/proposal-only sections are historical, superseded for sequence and pilot scope only. See INTELLIGENCE_ALIGNMENT_ADOPTION.md. No merge, deployment, feature implementation or training is authorized by this documentation correction.
+
 ## Session Start Contract
 
 Before coding, the AI agent must read:
@@ -18,6 +22,8 @@ Before coding, the AI agent must read:
 - `SESSION_HANDOFF.md`
 
 ## Execution Rules
+
+- Owner-reviewed queue progression: complete the entire Now acceptance and required human/provider evidence, synchronize both boards/global pointer, then promote the first approved Next. Do not ask for routine phase selection; do not skip blocked Now or treat a mock as live proof. This does not grant merge/deploy/IAM/secrets, customer-contact, billing or training permission. Save a resumable checkpoint when required authority is missing.
 
 - Execute only the current `Now` ticket.
 - No scope expansion.

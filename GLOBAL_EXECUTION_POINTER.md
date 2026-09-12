@@ -1,5 +1,8 @@
 # Global Execution Pointer
 
+## Owner-reviewed intelligence dependency alignment (2026-09-12)
+
+The owner reviewed PRs #28/#22 and requested the coherent six-ticket dependency repair. [INTELLIGENCE_ALIGNMENT_ADOPTION.md](INTELLIGENCE_ALIGNMENT_ADOPTION.md) records this approved documentation decision; integration/merge and release remain unapproved. APP-013 stays sole Now (2B); Next is APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033. BE-001's residual consent/replay acceptance is consolidated into APP-013, not dropped or declared complete. All older dated Next-empty/proposal-only notes below are historical, superseded for sequencing and pilot definition only. Runtime/evidence and the original 3/8 walkthrough denominator are preserved. No future feature starts until Now meets full acceptance.
 
 ## 2B OAuth address transport — owner-approved bounded implementation, 2026-09-12
 
@@ -534,13 +537,14 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
   - Repo: `signmons-marketing-web-feat-marketing-site`
   - Board: `EXECUTION_BOARD.md`
 
-## Current Pointer (as of 2026-09-10)
+## Current Pointer (as of 2026-09-12)
 
 - Program `Now`: `APP-013` (Twilio-backed notification center and transactional customer messaging)
 - Program phase: owner-approved CallDesk-first product execution; `FE-014` is paused, not cancelled
 - Sequencing: strict (`Now` -> `Done` before starting `Next`)
+- Approved Next: `APP-017` → `APP-018` → `APP-019` → `APP-015` → `APP-016` → `APP-033`. BE-001 residual proof is an APP-013 acceptance gate.
 
-- Approved first-pilot scope and acceptance plan: [CALLDESK_MVP_PLAN.md](CALLDESK_MVP_PLAN.md). One approved business, English, online access and human supervision; full platform roadmap deferred, not cancelled. Future milestone order is planning, not automatic ticket promotion.
+- Integrated pilot: SIGNMONS_INTELLIGENCE_SPEC.md and MVP_ACCEPTANCE_MATRIX.md; CALLDESK_MVP_PLAN.md retains component evidence and the fixed walkthrough. One approved business, English, online and supervised; commercial availability remains separate. Advance within approved Next only after full Now acceptance and synchronized board/pointer updates, retaining external-action gates.
 
 ### Repo Status
 

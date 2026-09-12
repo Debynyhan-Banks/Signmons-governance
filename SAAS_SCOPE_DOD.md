@@ -1,10 +1,16 @@
 # Signmons Scope + Definition of Done
 
+## Owner-reviewed intelligence dependency alignment (2026-09-12)
+
+The owner reviewed PRs #28/#22 and requested the coherent six-ticket dependency repair. [INTELLIGENCE_ALIGNMENT_ADOPTION.md](INTELLIGENCE_ALIGNMENT_ADOPTION.md) records this approved documentation decision; integration/merge and release remain unapproved. APP-013 stays sole Now (2B); Next is APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033. BE-001's residual consent/replay acceptance is consolidated into APP-013, not dropped or declared complete. All older dated Next-empty/proposal-only notes below are historical, superseded for sequencing and pilot definition only. Runtime/evidence and the original 3/8 walkthrough denominator are preserved. No future feature starts until Now meets full acceptance.
+
 ## Approved pilot scope clarification (2026-09-09)
 
 [CALLDESK_MVP_PLAN.md](CALLDESK_MVP_PLAN.md) defines the first owner-approved CallDesk pilot: one approved business, English, online access and human supervision. The broader scope below remains the platform roadmap, not a claim that all modules are in the first pilot. Pilot deferrals do not cancel future capabilities, alter paid-plan promises, waive non-negotiable rules or authorize release.
 
 ## 1) Mission
+
+The owner-reviewed integrated Eternity intelligence pilot is defined in SIGNMONS_INTELLIGENCE_SPEC.md and MVP_ACCEPTANCE_MATRIX.md. CALLDESK_MVP_PLAN.md retains its accepted component evidence and fixed walkthrough, not a competing advisory deferral. The dependency order is APP-013 then APP-017/018/019/015/016/033. Commercial paid availability and post-pilot optimization are separate gates; no change to fees, plan promises or external-action permissions.
 
 Signmons is a multi-tenant AI front-office and dispatch SaaS for home-service businesses (HVAC, plumbing, electrical). It captures inbound demand, confirms critical customer/job data, schedules and dispatches work, supports the job-to-payment workflow, and delivers auditable operating records.
 
@@ -37,7 +43,7 @@ Signmons is a multi-tenant AI front-office and dispatch SaaS for home-service bu
 ## 3) Out of Scope (MVP)
 
 - Advanced route optimization and full fleet management
-- Advanced voice AI, transcription analytics, sentiment analysis, and automated outbound campaigns
+- Voice optimization beyond the approved APP-033 pilot, broad transcription analytics, sentiment analysis, and automated outbound campaigns (basic governed voice/intelligence intake is included in the reviewed pilot)
 - Broad ERP/CRM two-way sync beyond approved adapters
 - General-ledger accounting, payroll, bank reconciliation, tax filing, or an ERP replacement
 - Lending decisions, underwriting, custody of financing application data, or representation as a lender

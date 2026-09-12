@@ -1,5 +1,9 @@
 # CallDesk MVP - Approved Supervised Pilot
 
+## Current scope and execution authority — 2026-09-12
+
+Owner-reviewed intelligence dependency correction supersedes older advisory-deferral and Next-empty statements below. SIGNMONS_INTELLIGENCE_SPEC.md and MVP_ACCEPTANCE_MATRIX.md define the integrated Eternity pilot; commercial availability and later optimization remain separate. This document preserves historical component evidence and the fixed eight-milestone walkthrough: accepted 3/8 (37.5%), current 2B, backend 330e402 disabled OAuth transport. No accepted work is reset, no engineering percentage inferred. APP-013 stays Now; then APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033 after full acceptance. See BE001_DEPENDENCY_REVIEW.md for current communications residuals. Older dated progress/next-action notes are historical, not current authority.
+
 ## Approved managed communications direction — 2026-09-12
 
 Owner approved the correction to Signmons-managed voice/SMS/verification and native Twilio Email using the existing Twilio account/subaccount structure. This supersedes the separate SendGrid account/subuser recommendation. See [MANAGED_COMMUNICATIONS_ARCHITECTURE.md](MANAGED_COMMUNICATIONS_ARCHITECTURE.md) for ownership, tenant isolation, reference pricing and the pending pilot setup approval checklist. Eternity remains a pilot tenant; its existing Resend/website remain untouched.

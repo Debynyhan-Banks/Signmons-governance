@@ -95,3 +95,6 @@ Roadmap boundaries, outcome requirements, and sequencing constraints for APP-025
 - Acceptance criteria:
 - Test/evidence plan:
 - Risks:
+# Owner-reviewed execution dependency clarification — 2026-09-12
+
+Current APP-013 must satisfy full acceptance, including BE-001 residual consent/replay evidence. The canonical boards and global pointer queue APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033. Backlog numbering below is a capability inventory, not an alternate execution order. See INTELLIGENCE_MVP_ROADMAP.md for reuse/dependencies and MVP_ACCEPTANCE_MATRIX.md for pilot versus commercial acceptance. No future ticket is active.

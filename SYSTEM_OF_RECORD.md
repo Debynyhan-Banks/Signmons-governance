@@ -1,6 +1,8 @@
 # System Of Record
 
-Purpose: establish one unambiguous source-of-truth hierarchy so any coding agent can execute without contradiction.
+## Owner-reviewed intelligence dependency alignment (2026-09-12)
+
+The owner reviewed PRs #28/#22 and requested the coherent six-ticket dependency repair. [INTELLIGENCE_ALIGNMENT_ADOPTION.md](INTELLIGENCE_ALIGNMENT_ADOPTION.md) records this approved documentation decision; integration/merge and release remain unapproved. APP-013 stays sole Now (2B); Next is APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033. BE-001's residual consent/replay acceptance is consolidated into APP-013, not dropped or declared complete. All older dated Next-empty/proposal-only notes below are historical, superseded for sequencing and pilot definition only. Runtime/evidence and the original 3/8 walkthrough denominator are preserved. No future feature starts until Now meets full acceptance.
 
 ## Canonical Precedence
 
@@ -23,6 +25,12 @@ If docs conflict, resolve in this exact order:
 15. `QUALITY_GATES.md`
 16. `AI_WORKFLOW_RULES.md`
 17. `SESSION_HANDOFF.md`
+18. `INTELLIGENCE_ALIGNMENT_ADOPTION.md`
+19. `SIGNMONS_INTELLIGENCE_SPEC.md`
+20. `INTELLIGENCE_MVP_ROADMAP.md`
+21. `MVP_ACCEPTANCE_MATRIX.md`
+
+The owner-reviewed 2026-09-12 alignment is synchronized into higher-precedence product/board documents; it does not override safety, pricing or release rules. Original supplied proposal copies and ARCHIVE documents are historical reference only.
 
 All other docs are reference-only unless explicitly listed above.
 

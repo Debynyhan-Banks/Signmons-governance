@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Owner-reviewed intelligence dependency alignment (2026-09-12)
+
+Owner reviewed PRs #28/#22 and requested the six-ticket dependency correction. APP-013 remains sole Now (2B). Next: APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033. BE-001 residual acceptance belongs to APP-013; nothing is marked complete. Older dated Next-empty/proposal-only sections are historical, superseded for sequence and pilot scope only. See INTELLIGENCE_ALIGNMENT_ADOPTION.md. No merge, deployment, feature implementation or training is authorized by this documentation correction.
+
 
 ## 2B OAuth address transport — owner-approved bounded implementation, 2026-09-12
 
@@ -1007,10 +1011,10 @@ Exact review commands and source/evidence: backend evidence/APP-013/readiness-re
 
 ## Next Actions (Strict Order)
 
-1. Resume CONTROLLED_VERIFICATION_2B_CHECKLIST.md after the user dismisses Chrome's blocking extension UI. Participant prerequisites are confirmed; do not re-ask. Read-only account/environment and county qualification remain unresolved. Accepted 3/8; 2B is section 4/8 blocked at entry. The provisional $1 test packet is not spending approval.
-2. After review of named existing accounts, current rates, notices, source qualification and recovery ownership, obtain explicit approval for the exact capped controlled-verification packet. A general continue is not unspecified spending/configuration authority. Keep eight-section baseline fixed; no automatic 3A or ticket advance. APP-013 remains Now, 50% scope index, accepted 0/12; no overall percentage/ETA.
-3. Keep live verification, county acceptance, sending and real proof-to-job connection gated; no production, billing, real data or release actions are authorized.
-4. Keep FE-014 paused until the owner returns the pointer to marketing work.
+1. Finish review/integration of coordinated documentation PRs #28/#22 under existing merge permissions; do not alter implementation PR #21. Owner-reviewed dependency correction is recorded in INTELLIGENCE_ALIGNMENT_ADOPTION.md.
+2. Resume APP-013/2B at backend 330e402: controlled-operation/budget composition and minimum IAM review, preserving disabled OAuth transport. County source qualification and exact provider/test/release approvals remain gates; inquiry is user-reported sent. Do not repeat the stale Chrome-extension blocker.
+3. Complete the existing eight-milestone walkthrough and all APP-013 acceptance, including BE-001 residual keyword/telemetry/replay proof in existing communications scope. Current acceptance is 3/8, not whole-MVP percentage; sending and real provider actions remain separately approved.
+4. Only after full Now acceptance, synchronize both boards/global pointer and promote APP-017, then APP-018, APP-019, APP-015, APP-016, APP-033 as their full gates pass. Do not ask the owner to choose routine phases or skip blocked Now. Keep FE-014 paused and later training gated.
 
 ## APP-013 Queue State Review Checkpoint (2026-09-08)
 
