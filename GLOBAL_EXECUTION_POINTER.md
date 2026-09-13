@@ -1,6 +1,10 @@
 # Global Execution Pointer
 
-## Current: 2B activation packet proposed, not executable
+## Current: Google-only data adaptation; narrow admission lifecycle remains
+
+APP013_2B_IMPLEMENTATION_CARD.md now specifies the owner-approved Google-only direction: customer-confirmed draft separate from allowlisted short-lived candidates, attribution, deletion and recovery without proof resurrection. Alternative-provider work is not selected. The unresolved item is the exact county/validity-to-admission evidence lifecycle, not blanket permission for all Google use. Runtime identity/release gates remain; no implementation or activation claimed. Backend evidence: evidence/APP-013/2b-google-data-adaptation.md. APP-013/2B Now; accepted walkthrough 3/8 (37.5%), not whole-MVP completion. Frozen criteria and section IDs unchanged. No scope deviation.
+
+## Historical: 2B activation packet proposed, not executable
 
 APP013_2B_ACTIVATION_PACKET.md records existing service/origin/isolated identity reuse, proposed purpose-bound key names, one-session request/cost envelope and separate configuration/release/run gates. Preparation approval is not activation or spend approval. Retention, runtime authorization, implementation/tests and immutable execution references remain open. Backend evidence: evidence/APP-013/2b-activation-packet.md. Review this packet; no additional demo or acceptance section. APP-013/2B Now; 3/8 (37.5%) unchanged. No scope deviation.
 

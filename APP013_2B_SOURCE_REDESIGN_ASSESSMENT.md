@@ -22,6 +22,8 @@ Recovery still requires durable session/revision-bound proof, retained unknown c
 
 ## Decision
 
+Superseded 2026-09-13: owner chose to keep Google and adapt the existing app to its published guidelines. APP013_2B_IMPLEMENTATION_CARD.md now records that direction and its remaining narrow evidence-lifecycle question. The replacement recommendation below is historical and NOT the next action. Do not resume Smarty qualification, procurement or provider shopping under this approval.
+
 Do not implement the hybrid as an assumed fix. The lowest rework path that avoids waiting for Google is a narrowly qualified single-provider replacement with explicit Signmons usage/storage rights and a price acceptable to the owner. Smarty is a candidate because its published agreement has an express storage clause, but licensing/price remain required evidence. No contact, signup, purchase or address request was made. An owner-approved provider inquiry or review of a concrete order is needed before recommending purchase; avoid replacing one unanswered permission assumption with another.
 
 ## Primary sources checked
