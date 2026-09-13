@@ -3,8 +3,10 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { executionPlacementErrors } from './execution-placement.mjs';
 import { alignmentErrors } from './intelligence-alignment-check.mjs';
+import { checkFrozenBaseline } from './frozen-baseline-check.mjs';
 
 const errors = [];
+errors.push(...checkFrozenBaseline());
 
 const mustRead = (path) => {
   if (!existsSync(path)) {
