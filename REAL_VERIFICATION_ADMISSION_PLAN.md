@@ -1,5 +1,9 @@
 # Real verification to admission — approved direction
 
+## Current: fixed execution contract; planning before coding
+
+APP013_REMAINING_EXECUTION_CONTRACT.md is the current section-planning and status reconciliation. Preserve the five remaining IDs 2B → 3A → 3B → 3C → 3D; correction screens are internal 2B work, not new sections. Next is completing 2B's exact real-source/session/retention/patch/test contract before more implementation. County GIS is not a gate; prior phone/Google tests are closed and not current admission proof. Older blocked-entry, Next-empty and source/retention assumptions below are historical where superseded by the Google-only policy and approved intelligence queue. No standalone demo or automatic new live test. APP-013 sole Now; accepted 3/8 (37.5%) unchanged. This documentation correction grants no external/release authority.
+
 ## Current: owner-approved Google-only service-area policy — 2026-09-12
 
 GOOGLE_ONLY_SERVICE_AREA_POLICY.md is authoritative for the MVP coverage-source change. Independent CEGIS physical-site/road qualification and a county GIS reply are no longer mandatory launch gates. Earlier requirements below are superseded only on that point; historical evidence remains unchanged. Google-based business coverage is not parcel certification. Require consistent structured county/state/country evidence, valid confirmed physical address/unit and current bindings; missing/conflicting evidence stays UNKNOWN with draft preserved.

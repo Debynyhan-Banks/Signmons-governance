@@ -1,5 +1,9 @@
 # Section 2B controlled-verification entry checklist
 
+## Current: fixed execution contract; planning before coding
+
+APP013_REMAINING_EXECUTION_CONTRACT.md is the current section-planning and status reconciliation. Preserve the five remaining IDs 2B → 3A → 3B → 3C → 3D; correction screens are internal 2B work, not new sections. Next is completing 2B's exact real-source/session/retention/patch/test contract before more implementation. County GIS is not a gate; prior phone/Google tests are closed and not current admission proof. Older blocked-entry, Next-empty and source/retention assumptions below are historical where superseded by the Google-only policy and approved intelligence queue. No standalone demo or automatic new live test. APP-013 sole Now; accepted 3/8 (37.5%) unchanged. This documentation correction grants no external/release authority.
+
 ## Current phone-only implementation — 2026-09-12
 
 PHONE_ONLY_STAGING_TEST_PACKET.md and backend evidence/APP-013/phone-only-execution.md supersede earlier inactive-component status for the phone-only path. The default-disabled connection is implemented and locally tested, not released or configured. Next: exact release/configuration packet and explicit capped deployment/send approval. Full 2B still requires Google/county qualification and actual acceptance. No address calls/job admission or new milestone; 3/8 accepted remains unchanged.

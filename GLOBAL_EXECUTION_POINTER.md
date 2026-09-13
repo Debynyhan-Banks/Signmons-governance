@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: fixed execution contract; planning before coding
+
+APP013_REMAINING_EXECUTION_CONTRACT.md is the current section-planning and status reconciliation. Preserve the five remaining IDs 2B → 3A → 3B → 3C → 3D; correction screens are internal 2B work, not new sections. Next is completing 2B's exact real-source/session/retention/patch/test contract before more implementation. County GIS is not a gate; prior phone/Google tests are closed and not current admission proof. Older blocked-entry, Next-empty and source/retention assumptions below are historical where superseded by the Google-only policy and approved intelligence queue. No standalone demo or automatic new live test. APP-013 sole Now; accepted 3/8 (37.5%) unchanged. This documentation correction grants no external/release authority.
+
 ## Current: transient correction connection review-ready
 
 Backend evidence/APP-013/transient-correction-connection.md records the shared real-response parser to temporary loopback correction screen connection. Synthetic browser/script checks and backend gates pass; no new live test. Confirm/edit/cancel never revalidate, persist a selection, or authorize admission. The inspection runner discards selections. Existing spent packet and both holds remain locked. Next: current-session corrected-address/admission integration and evidence gates; new live execution needs a separately reviewed packet/window/allowance. APP-013/2B Now; walkthrough 3/8 (37.5%) unchanged, not whole-MVP completion.
