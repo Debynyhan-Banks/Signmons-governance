@@ -14,6 +14,8 @@ The same-origin customer adapter validates existing session credentials/host/ori
 
 ## Submit and transient evidence — P03
 
+Owner-approved P04 amendment (2026-09-13): APP013_P04_SOURCE_CARD.md adds version=2 and confirmedAddress={street,unit,city,postalCode} to the controlled submit input below. The unchanged seven-field draft.address must exactly equal the canonical rendering of those customer-confirmed parts. Legacy input and fixture paths are unchanged. This resolves the free-text/structured-address source gap without guessing parts or adding a package; only the validator is implemented at this checkpoint. Atomic writer and P05 UI mapping remain pending.
+
 Controlled submit port is separate from existing review-only port. Reuse strict sessionToken, requestId, expectedRevision, validated seven-field draft and confirmed=true input; forbid client proof, role, tenant, urgency and policy fields. Immutable submission binding covers session/tenant/conversation, request ID, transcript revision/digest, customer-confirmed draft and active organization/payment/policy versions. Hash only these customer/internal inputs, never Google output. Preserve legacy PENDING_REVIEW contracts; add a distinct controlled result union rather than accepting ADMITTED on the old port.
 
 Sequence:
