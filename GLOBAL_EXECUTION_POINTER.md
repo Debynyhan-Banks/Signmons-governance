@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: documented Google wire semantics corrected — 2026-09-12
+
+Backend evidence/APP-013/google-wire-semantics.md records official example support for three-digit county codes and a protobuf-default correction: omitted USPS poBoxOnlyPostalCode is accepted as false, while optional metadata.poBox remains UNKNOWN when absent. Other address/county/unit/authority guards unchanged. No second paid request or live inspection; retained connectivity claim untouched. Next is permitted transient semantic/correction handling before separately approved semantic testing, not another connectivity request. APP-013/2B Now; 3/8 (37.5%) unchanged.
+
 ## Current: one Google connectivity request succeeded and closed — 2026-09-12
 
 Owner-approved single request returned OBSERVED with all downstream authority false. Backend evidence/APP-013/google-address-live-result.md records window and retained mode-0600 one-request claim in mode-0700 directory. No retries; raw response/address/token discarded, no configuration or deployment. Actual billing unreconciled. This proves transport only, not county semantics or admission. Do not repeat or reset claim. Next is semantic/field qualification with permitted evidence handling, not another connectivity rehearsal. APP-013/2B Now; 3/8 (37.5%) unchanged.
