@@ -107,6 +107,8 @@ Commands after approved implementation: `npm run build`; `npm run lint`; `npm ru
 
 ## Decision / approval register and stop condition
 
+APP013_2B_ACTIVATION_PACKET.md supplies the requested proposed exact service/origin/tenant/operator binding, purpose-bound secret names, finite run envelope and separate implementation/configuration/release/send approvals. It is not executable: retention, runtime authorization, immutable implemented release references and a fresh approved window remain open. This proposal does not mark any gate complete.
+
 | Gate | Responsible role | Exact remaining evidence / decision |
 | --- | --- | --- |
 | Retained Google evidence | Owner with provider/authorized terms review; implementer supplies field list above | Is temporary candidate retention and the proposed minimal derived coverage/admission record permitted, and under what retention limit? No assumption that prior CEGIS exception applies. |

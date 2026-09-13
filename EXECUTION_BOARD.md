@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: 2B activation packet proposed, not executable
+
+APP013_2B_ACTIVATION_PACKET.md records existing service/origin/isolated identity reuse, proposed purpose-bound key names, one-session request/cost envelope and separate configuration/release/run gates. Preparation approval is not activation or spend approval. Retention, runtime authorization, implementation/tests and immutable execution references remain open. Backend evidence: evidence/APP-013/2b-activation-packet.md. Review this packet; no additional demo or acceptance section. APP-013/2B Now; 3/8 (37.5%) unchanged. No scope deviation.
+
 ## Current: 2B ingress/body design mapped; activation and retention remain
 
 APP013_2B_IMPLEMENTATION_CARD.md records verified Cloud Run edge TLS and locked Nest 11.2.3 parser ordering. Proposed narrow pre-parser handler preserves other routes and webhook raw bytes; it must supply its own context/error protections. No implementation or live security acceptance. Exact reviewed managed-ingress/tenant/operator/key configuration and Google retention remain entry gates before full card approval. Backend evidence: evidence/APP-013/2b-bootstrap-qualification.md. APP-013/2B Now; 3/8 (37.5%) unchanged. No scope deviation.
