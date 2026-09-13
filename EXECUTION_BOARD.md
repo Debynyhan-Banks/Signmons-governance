@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: 2B ingress/body design mapped; activation and retention remain
+
+APP013_2B_IMPLEMENTATION_CARD.md records verified Cloud Run edge TLS and locked Nest 11.2.3 parser ordering. Proposed narrow pre-parser handler preserves other routes and webhook raw bytes; it must supply its own context/error protections. No implementation or live security acceptance. Exact reviewed managed-ingress/tenant/operator/key configuration and Google retention remain entry gates before full card approval. Backend evidence: evidence/APP-013/2b-bootstrap-qualification.md. APP-013/2B Now; 3/8 (37.5%) unchanged. No scope deviation.
+
 ## Current: 2B bootstrap boundary qualified in source; configuration gates open
 
 APP013_2B_IMPLEMENTATION_CARD.md records the bearer-guard/browser-header incompatibility and proposed same-origin server binding with separate operator authentication. Trusted Cloud Run ingress, pre-parse body integration, exact activation/key mapping and Google-derived retention remain gates; no code or activation follows automatically. Backend evidence: evidence/APP-013/2b-bootstrap-qualification.md. Intelligence documentation is merged on governance main at 4e34d4b; application branch is not merged. Fresh isolated worktrees preserve prior folders after missing Git links. APP-013/2B Now; 3/8 (37.5%) unchanged. No scope deviation.

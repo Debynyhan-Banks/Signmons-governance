@@ -10,6 +10,24 @@ Section: existing **2B**, internal checklist item “Resolve the implementation 
 
 ## Verified gaps, not inferred missing features
 
+### Ingress and pre-parse design qualification — 2026-09-13
+
+Source baseline backend 99ba2ac, governance 3115803. This resolves the platform TLS and framework ordering questions in the prior bootstrap inspection, not the entire implementation gate. No runtime change or controlled request was made.
+
+Official Cloud Run contract states TLS terminates at Cloud Run and the container receives HTTP; its HTTPS invocation guide documents HTTP redirects to HTTPS. Read-only service metadata confirms current ingress `all`, container port 8080/http1, latest-ready revision signmons-calldesk-staging-00065-guw. Therefore socket.encrypted cannot be the Cloud Run external-TLS proof. Keep direct-TLS/local-fixture behavior distinct from a proposed explicitly configured Cloud Run ingress mode. Runtime environment variables or a client Forwarded/X-Forwarded-Proto header alone cannot authorize that mode. Activation must bind the reviewed managed deployment, exact candidate origin and tenant policy; no global trust-proxy=true or forwarded-host-derived origin. Header canonicalization/spoofing and local/direct access refusals require integration evidence before activation. The sources do not establish arbitrary forwarding-header overwrite guarantees, so none is assumed.
+
+Proposed request integration within existing task 3: in main.ts register a narrow customer-session handler before app.enableCors and before app.init/listen, with its own request-context wrapper. Only the exact protected route namespace is intercepted; unrelated routes call next without consuming their stream. For intercepted requests, check method/path/header/activation first, enforce a bounded streaming body with the existing readCustomerBrowserBody before JSON parsing, invoke the existing transport with its trusted server context, and finish the response without entering the default parsers. The handler must catch errors and emit the existing sanitized no-store response itself: global Nest guards/filters/pipes do not automatically protect early Express handlers. Separate operator routes retain their Nest guards and service role checks. Preserve rawBody:true and default parsers for Stripe/Twilio and all unrelated APIs. Do not disable global parsing or replace signature input with reserialized JSON.
+
+The lockfile uses Nest core 11.2.3; its tagged source registers default parsers in init before module routes, while app.use registers directly on the adapter before init. The saved checkout's installed 11.1.18 is not the locked runtime and was not used as acceptance evidence. The early-handler approach is a source-backed design, not a passing integration test. Streaming deadline/concurrency release, malformed/duplicate headers, content encoding, 16,384-byte boundary, oversized chunked bodies, aborts, no double parsing, unrelated JSON and exact webhook raw-byte preservation must be verified in the existing integration harness. Never treat a proxy peer address as authenticated customer identity; existing per-peer budgets are only one layer beside durable account/session ceilings.
+
+Sources checked 2026-09-13:
+- https://docs.cloud.google.com/run/docs/container-contract
+- https://docs.cloud.google.com/run/docs/triggering/https-request
+- https://docs.nestjs.com/faq/raw-body
+- https://raw.githubusercontent.com/nestjs/nest/v11.2.3/packages/core/nest-application.ts
+
+Remaining gates are now explicit: owner-reviewed managed-ingress/activation policy and exact tenant/operator/purpose-bound key references, Google-derived retained-proof permission, then approval of the completed implementation card. These are not new sections. No further standalone demo or platform replacement is proposed. The first checklist item remains open until those decisions close; 3/8 (37.5%) unchanged. No scope deviation.
+
 ### Bootstrap source qualification — 2026-09-13
 
 Read-only inspection at backend cc4a486; governance parent d79fa2f. Governance main has adopted intelligence documentation via PR #30 / 4e34d4b; this does not adopt the application branch. Temporary prior worktrees lost their .git links; fresh detached worktrees from the exact remote heads preserve their remaining files and both dirty saved checkouts.
