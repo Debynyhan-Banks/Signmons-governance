@@ -10,6 +10,18 @@ Section: existing **2B**, internal checklist item “Resolve the implementation 
 
 ## Verified gaps, not inferred missing features
 
+### Approved automatic-intake priority policy — 2026-09-13
+
+Owner answered “yes” to the explicit policy question: routine eligible intake creates a STANDARD-priority job, existing life-safety warnings stop normal intake and show established emergency guidance, unclear cases go to human review, and no automatic dispatch follows. This closes the product priority decision, not the entire implementation card. Source baseline backend 81e0f8b, governance e7f762a. No scope deviation.
+
+STANDARD is the operational default for an otherwise eligible job, not a technical diagnosis, proof of safety, response-time promise or statement that urgency was professionally assessed. The automated receipt must not say humanReviewed=true or OPERATOR_OVERRIDE. Proposed policy label AUTO_INTAKE_STANDARD_V1 distinguishes this default from an operator's later authorized urgency decision; it is not a new API or live configuration value.
+
+Reuse LifeSafetyService's existing escalation response, without expanding its pattern list in this slice. Inspect all trusted customer-authored turns and the submitted description at the final revision, not just the latest summary; an earlier escalation must not disappear because a later draft omits it. Do not scan assistant replies as customer assertions. An existing escalation remains exception-only; editing text cannot silently clear it. A detector non-match is not proof of safety. Missing/invalid history, unresolved warnings, inconsistent input or unqualified policy must not default into an eligible job. Exact exception-state binding belongs in the existing source/transaction patch map; no substitute demo.
+
+Required regression cases within 2B: ordinary eligible draft uses STANDARD and an unassessed/default label; life-safety warning creates no normal job and preserves established guidance; earlier warning survives later omission; malformed/unavailable history refuses; unresolved exception cannot be self-cleared; operator urgency routes retain role checks; automatic admission grants no booking/dispatch/send/payment authority. These are required tests, not newly passing evidence.
+
+Remaining implementation entry work is the exact service activation binding and permissible final verification-to-admission record lifecycle. Do not request this priority decision again or reintroduce routine operator approval. This approval does not authorize provider retention, live verification, migration or deployment.
+
 ### Automatic service and transaction mapping — 2026-09-13
 
 Source: backend b9d6045, governance 663d924; origins fetched and original-plus-amendment baseline passes. This is source-qualified design, not implemented behavior. The following replaces the old assumption that admitReview/persistAdmission can be connected directly to a customer submit. Existing operator exceptions remain guarded. No new acceptance section.
