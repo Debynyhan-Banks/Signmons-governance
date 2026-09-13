@@ -1,5 +1,9 @@
 # Data Contracts
 
+## Current: 2B source-mapped design drafted; entry decisions remain
+
+APP013_2B_IMPLEMENTATION_CARD.md maps actual fixture-only admission/freshness, phone-only composition, unregistered protected intake, address ledger and shared parser boundaries to a finite integrated patch/test plan. Retained Google-derived evidence permission and exact protected bootstrap/runtime mapping remain unresolved; design is not implementation-ready and no code follows automatically. No new demo, live call or acceptance. Main safeguards merged at governance 59b6b91/backend 8f571c3; product feature branches preserved. APP-013/2B Now, 3/8 (37.5%) unchanged. No scope deviation.
+
 ## Current: fixed execution contract; planning before coding
 
 APP013_REMAINING_EXECUTION_CONTRACT.md is the current section-planning and status reconciliation. Preserve the five remaining IDs 2B → 3A → 3B → 3C → 3D; correction screens are internal 2B work, not new sections. Next is completing 2B's exact real-source/session/retention/patch/test contract before more implementation. County GIS is not a gate; prior phone/Google tests are closed and not current admission proof. Older blocked-entry, Next-empty and source/retention assumptions below are historical where superseded by the Google-only policy and approved intelligence queue. No standalone demo or automatic new live test. APP-013 sole Now; accepted 3/8 (37.5%) unchanged. This documentation correction grants no external/release authority.

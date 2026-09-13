@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: 2B source-mapped design drafted; entry decisions remain
+
+APP013_2B_IMPLEMENTATION_CARD.md maps actual fixture-only admission/freshness, phone-only composition, unregistered protected intake, address ledger and shared parser boundaries to a finite integrated patch/test plan. Retained Google-derived evidence permission and exact protected bootstrap/runtime mapping remain unresolved; design is not implementation-ready and no code follows automatically. No new demo, live call or acceptance. Main safeguards merged at governance 59b6b91/backend 8f571c3; product feature branches preserved. APP-013/2B Now, 3/8 (37.5%) unchanged. No scope deviation.
+
 ## Current: owner-requested drift safeguards installed
 
 EXECUTION_SAFEGUARDS.md documents root AGENTS.md rules in both repositories, pinned frozen-baseline checking inside docs consistency/CI, and the backend cross-repository gate. No product scope deviation or acceptance change; 2B remains current, 3/8 (37.5%) accepted. Next product action remains the exact 2B source/session/retention/patch/test contract before coding. Safeguards do not authenticate approval or configure branch protection. Baseline changes require an explicit owner-reviewed change record, never silent rebaselining.
