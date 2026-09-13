@@ -4,7 +4,7 @@
 
 2026-09-13: owner asked why an authorized operator creates the job, stating that Signmons should create jobs. The assistant proposed automatic job creation when current verification and organization rules pass, human review for exceptions only, and separate payment/booking/dispatch gates. Owner replied “i agree proceed.” This records that actual approval of direction, not approval of text that had not yet been written.
 
-Status: exact old/new text prepared for review before frozen-baseline adoption. Current baseline anchor 57ca1cf0f12ed79075b6afd4781bf28be5e36abc is unchanged. Do not implement this proposal through an unprotected document override. Source inspected: governance 891e673, backend 8a3c737; both origins fetched. Backend PR #21 remains open; no feature merge. Saved dirty repositories are untouched.
+Status: adopted after the owner replied “proceed” to the exact-text review handoff for governance 872795c/backend ebbb9e7. The two replacements below are now the protected acceptance text. The guard retains original anchor 57ca1cf0f12ed79075b6afd4781bf28be5e36abc and applies ONLY these replacements from immutable proposal commit 872795c57d2a3a7def07f9822c67664d8cc01d60. Working-file edits cannot broaden that amendment. This is explicit baseline adoption, not a runtime release or an unprotected override. Backend PR #21 remains open; no feature merge. Saved dirty repositories are untouched.
 
 ## Demonstrated gap and selected alternative
 
@@ -14,7 +14,7 @@ Selected: a trusted, tenant-policy-bound Signmons admission path after explicit 
 
 ## Exact protected-text amendment for review
 
-Only the following replacements are proposed. All other frozen criteria, headings, IDs, ordering and accepted evidence remain unchanged. “Reviewed” in the retained 2B heading means customer-reviewed draft, not mandatory employee review.
+Only the following replacements are adopted. All other frozen criteria, headings, IDs, ordering and accepted evidence remain unchanged. “Reviewed” in the retained 2B heading means customer-reviewed draft, not mandatory employee review.
 
 File: APP013_REMAINING_EXECUTION_CONTRACT.md, section 2B, Finish paragraph.
 
@@ -54,6 +54,6 @@ Required local tests inside existing 2B: successful customer submission without 
 
 Approved scope-change direction: routine operator admission becomes automatic policy-bound admission; human review is exception-only. Five remaining sections stay 2B → 3A → 3B → 3C → 3D. APP-017 policy-management work is not pulled forward: use existing approved organization policy and identify any missing minimum activation field in the 2B card. No new routine phases. Walkthrough remains 3/8 (37.5%), not whole-MVP completion. Effort remains unsized until the revised source/identity/retention mapping is complete; no ETA claimed.
 
-Next adoption action after review of this exact text: apply these two replacements, reconcile implementation card/data contracts/activation packet and status documents, and update the pinned baseline through a dedicated auditable adoption commit. Preserve guard regression tests, adding proof that only this approved amendment is accepted and unrelated mutations still fail. Do not move the anchor merely to make a failing check green. This packet itself changes neither baseline nor runtime.
+Adoption completed: the two replacements, reconciled implementation card/data contracts/activation packet and status documents, and immutable amendment-aware baseline guard are recorded together. Regression tests cover precisely the two changed sections, unchanged notification criteria, rejection of the old operator requirement, unauthorized weakening and malformed amendment input. Next implementation-contract work is the distinct service identity and transient-evidence-to-transaction/audit mapping, not another approval of this product direction. Runtime remains unchanged and the full card remains incomplete.
 
 Configuration, deployment, live verification/spend, merge and production actions still require their separate approval. Review-ready documentation only; no live job or customer changes.

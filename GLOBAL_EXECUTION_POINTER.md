@@ -1,6 +1,10 @@
 # Global Execution Pointer
 
-## Current: automatic admission amendment ready for exact-text review
+## Current: automatic admission acceptance adopted; implementation pending
+
+Owner authorized adoption after exact-text review of APP013_2B_AUTOMATIC_ADMISSION_CHANGE.md at 872795c. The frozen contract now requires automatic Signmons job creation after explicit customer submission and trusted current verification/tenant-policy checks; human review is exception-only, never a proof bypass. Original baseline plus the immutable two-replacement amendment remains enforced. No runtime activation, merge or live job creation. Next: complete the existing 2B service-authority and transient-evidence/transaction/audit mapping; Google-only retention and release gates remain. Approved scope amendment only; no additional scope deviation. APP-013/2B Now; accepted walkthrough 3/8 (37.5%) unchanged, not whole-MVP completion. Backend evidence: evidence/APP-013/2b-automatic-admission-amendment.md.
+
+## Historical: automatic admission amendment ready for exact-text review
 
 Owner approved automatic Signmons job creation for eligible customer-submitted intake, with human review only for exceptions. APP013_2B_AUTOMATIC_ADMISSION_CHANGE.md records the demonstrated operator-only gap, exact old/new protected acceptance text, service-authority boundaries and tests. Direction approved; frozen text/baseline adoption and runtime implementation are not yet done. Review this amendment, then reconcile the existing 2B card through the guarded adoption workflow. Google-only retention/recovery and activation gates remain. Scope-change direction explicitly approved; no new section or downstream authority. APP-013/2B Now; 3/8 (37.5%) walkthrough unchanged. Backend evidence: evidence/APP-013/2b-automatic-admission-amendment.md.
 

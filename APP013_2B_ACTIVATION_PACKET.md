@@ -4,7 +4,7 @@ Status: **prepared for design review; NOT executable or approved for activation*
 
 ## One observable result
 
-One owner-participant, one new protected session, current phone verification and eligible confirmed address, one reviewed draft and exactly one authorized operator-admitted test job. No payment, appointment, dispatch, customer confirmation message or production customer record. Correction stays in that same journey. An uncertain or expired result stops admission and preserves permitted draft state.
+One owner-participant, one new protected session, current phone verification and eligible confirmed address, one customer-reviewed draft and exactly one test job automatically created by Signmons after explicit submission and current approved tenant-policy checks. Routine operator approval is not required; separately authenticated operators handle exceptions without bypassing proof. This adopts APP013_2B_AUTOMATIC_ADMISSION_CHANGE.md; it does not activate the path. No payment, appointment, dispatch, customer confirmation message or production customer record. Correction stays in that same journey. An uncertain or expired result stops admission and preserves permitted draft state.
 
 ## Exact proposed reuse bindings
 
@@ -23,7 +23,7 @@ One owner-participant, one new protected session, current phone verification and
 | Participant | Previously willing owner; privately reconfirm destination/address and current notice, never commit either value or OTP |
 | Session / conversation | Fresh server-generated identifiers after approved activation; never reuse the closed test session |
 
-Tenant/operator reuse is a proposal to expand their former phone-only role to this isolated test, not a claim that old permission covers job admission. Existing historical records and all cost holds remain intact. No changes to the Eternity website or production tenant are involved.
+Tenant/operator reuse is a proposal for this isolated test, not a claim that old permission covers job admission. The operator identity is for exception/recovery access, not the automatic service actor. Bind that service's exact internal authority and tenant automation policy in the completed card; never reuse a staff token for automatic admission. Existing historical records and all cost holds remain intact. No changes to the Eternity website or production tenant are involved.
 
 ## Proposed purpose-bound key references (not created)
 

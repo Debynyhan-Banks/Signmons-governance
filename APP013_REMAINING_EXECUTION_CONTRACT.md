@@ -38,7 +38,7 @@ Routine fixes inside a complete approved card can proceed without asking the own
 
 ## 2B — verified intake creates one reviewed job
 
-**Finish:** in one protected journey, the owner verifies phone access, confirms an eligible Cuyahoga address, submits the reviewed draft, and the authorized operator admits exactly one job. Invalid/uncertain/stale input preserves progress but cannot create the job. No payment/booking/send authority follows.
+**Finish:** in one protected journey, the customer verifies phone access, confirms an eligible Cuyahoga address and explicitly submits the customer-reviewed draft. Signmons automatically creates exactly one job when trusted current phone/address/coverage evidence, required intake fields and the approved tenant admission policy all pass; routine operator approval is not required. Invalid/uncertain/stale input preserves progress but cannot create the job. Recoverable input requests customer correction; unresolved exceptions are available to an authorized operator without bypassing mandatory verification or policy. Job creation grants no payment, booking, dispatch or send authority.
 
 **Reuse:** current-proof-admission.ts; customer-intake-continuation.service.ts/admitReview; existing protected customer/operator transport; Google shared parsers; verification freshness/cleanup/budget components. Current optional source is injected fixture evidence, not actual provider proof. The inspection CLI is not the final customer application boundary.
 

@@ -6,6 +6,23 @@ import { fileURLToPath } from 'node:url';
 // Owner-requested baseline freeze. Never move this anchor merely to pass CI.
 // A dedicated owner-approved change record and old/new review is required.
 export const baselineRef = '57ca1cf0f12ed79075b6afd4781bf28be5e36abc';
+// Owner reviewed this exact old/new record, then authorized adoption with "proceed".
+// Keep the original freeze; apply ONLY the two replacements from this immutable record.
+export const automaticAdmissionRef = '872795c57d2a3a7def07f9822c67664d8cc01d60';
+export const automaticAdmissionRecord = 'APP013_2B_AUTOMATIC_ADMISSION_CHANGE.md';
+export function applyAutomaticAdmissionAmendment(baseline, record) {
+  const blocks = [...record.matchAll(/^(Old|New):\n> (.+)$/gm)];
+  if (blocks.length !== 4 || blocks.map(m=>m[1]).join(',') !== 'Old,New,Old,New')
+    throw Error('invalid approved amendment');
+  const result = {...baseline};
+  ['APP013_REMAINING_EXECUTION_CONTRACT.md', 'PAYMENT_BOOKING_TEXT_STEEL_THREAD.md'].forEach((file,i)=>{
+    const oldText = blocks[i*2][2], newText = blocks[i*2+1][2];
+    if (typeof result[file] !== 'string' || result[file].split(oldText).length !== 2)
+      throw Error('approved amendment target missing or duplicated');
+    result[file] = result[file].replace(oldText,newText);
+  });
+  return result;
+}
 export const protectedSections = {
   'APP013_REMAINING_EXECUTION_CONTRACT.md': [
     'Authority and fixed scope', 'Mandatory section card before implementation',
@@ -54,7 +71,8 @@ export function checkFrozenBaseline(root=process.cwd()) {
       current[file]=readFileSync(resolve(root,file),'utf8');
       baseline[file]=execFileSync('git',['show',baselineRef+':'+file],{cwd:root,encoding:'utf8',stdio:['ignore','pipe','pipe']});
     }
-    return frozenBaselineErrors(current,baseline);
+    const record=execFileSync('git',['show',automaticAdmissionRef+':'+automaticAdmissionRecord],{cwd:root,encoding:'utf8',stdio:['ignore','pipe','pipe']});
+    return frozenBaselineErrors(current,applyAutomaticAdmissionAmendment(baseline,record));
   } catch {return ['[frozen-unavailable] Required files or pinned Git revision unavailable. Fetch history; do not skip or regenerate the baseline.'];}
 }
 if(process.argv[1] && resolve(process.argv[1])===fileURLToPath(import.meta.url)) {
