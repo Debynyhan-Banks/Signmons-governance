@@ -20,3 +20,6 @@ jobs:
 
       - name: Run docs consistency check
         run: node scripts/docs-consistency-check.mjs
+
+      - name: Test intelligence queue consistency
+        run: node --test scripts/intelligence-alignment-check.test.mjs

@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
 import { existsSync, readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { alignmentErrors } from './intelligence-alignment-check.mjs';
 
 const errors = [];
 
@@ -41,6 +43,10 @@ const screensDoc = mustRead('SCREEN_INVENTORY.md');
 const pointer = mustRead('GLOBAL_EXECUTION_POINTER.md');
 const routeMatrix = mustRead('SCREEN_ROUTE_API_MATRIX.md');
 const ctaMap = mustRead('LINK_CTA_MAP.md');
+const backendBoard = process.env.SIGNMONS_BACKEND_REPO
+  ? mustRead(resolve(process.env.SIGNMONS_BACKEND_REPO, 'EXECUTION_BOARD.md')) : undefined;
+errors.push(...alignmentErrors(board, pointer, backendBoard));
+for (const file of ['SIGNMONS_INTELLIGENCE_SPEC.md', 'INTELLIGENCE_ALIGNMENT_ADOPTION.md', 'INTELLIGENCE_MVP_ROADMAP.md', 'MVP_ACCEPTANCE_MATRIX.md']) mustRead(file);
 
 const screenIdRegex = /`(SCR-[A-Z]+-\d+[A-Z]?)`/g;
 const screenIds = new Set();

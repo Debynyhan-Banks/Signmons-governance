@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current intelligence documentation reconciliation
+
+Documentation-only reconciliation: APP-013/2B remains sole Now; accepted walkthrough 1A/1B/2A remains 3/8 (37.5%), not whole-MVP completion. Approved Next: APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033. See INTELLIGENCE_ALIGNMENT_ADOPTION.md for current branch/evidence provenance, unresolved 2B gates and historical-note precedence. No new implementation or external authority. No scope deviation.
+
 Purpose: single active queue for execution.
 
 ## Operating Rules
@@ -25,6 +29,13 @@ Purpose: single active queue for execution.
 - [ ] APP-013 Twilio-backed notification center and transactional customer messaging (`SCR-APP-021`, `SCR-APP-022`, `SCR-TECH-005`)
 
 ## Next
+
+- [ ] APP-017 Business rules and automation center
+- [ ] APP-018 Brand voice and AI behavior
+- [ ] APP-019 Customer profiles and service history
+- [ ] APP-015 AI quality and failure review
+- [ ] APP-016 Calendar scheduling and appointment integrity
+- [ ] APP-033 Conversational intelligence and voice orchestration
 
 ## Later
 

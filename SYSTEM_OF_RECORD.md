@@ -1,5 +1,9 @@
 # System Of Record
 
+## Current intelligence documentation reconciliation
+
+Documentation-only reconciliation: APP-013/2B remains sole Now; accepted walkthrough 1A/1B/2A remains 3/8 (37.5%), not whole-MVP completion. Approved Next: APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033. See INTELLIGENCE_ALIGNMENT_ADOPTION.md for current branch/evidence provenance, unresolved 2B gates and historical-note precedence. No new implementation or external authority. No scope deviation.
+
 Purpose: establish one unambiguous source-of-truth hierarchy so any coding agent can execute without contradiction.
 
 ## Canonical Precedence
@@ -23,6 +27,10 @@ If docs conflict, resolve in this exact order:
 15. `QUALITY_GATES.md`
 16. `AI_WORKFLOW_RULES.md`
 17. `SESSION_HANDOFF.md`
+18. `INTELLIGENCE_ALIGNMENT_ADOPTION.md`
+19. `SIGNMONS_INTELLIGENCE_SPEC.md`
+20. `INTELLIGENCE_MVP_ROADMAP.md`
+21. `MVP_ACCEPTANCE_MATRIX.md`
 
 All other docs are reference-only unless explicitly listed above.
 

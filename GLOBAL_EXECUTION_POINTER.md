@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current intelligence documentation reconciliation
+
+Documentation-only reconciliation: APP-013/2B remains sole Now; accepted walkthrough 1A/1B/2A remains 3/8 (37.5%), not whole-MVP completion. Approved Next: APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033. See INTELLIGENCE_ALIGNMENT_ADOPTION.md for current branch/evidence provenance, unresolved 2B gates and historical-note precedence. No new implementation or external authority. No scope deviation.
+
 Purpose: single cross-repo index of active work while keeping per-repo boards.
 
 ## Canonical Repo Boards
@@ -14,7 +18,9 @@ Purpose: single cross-repo index of active work while keeping per-repo boards.
   - Repo: `signmons-marketing-web-feat-marketing-site`
   - Board: `EXECUTION_BOARD.md`
 
-## Current Pointer (as of 2026-09-07)
+## Current Pointer (reconciled 2026-09-12)
+
+- Approved Next: `APP-017` → `APP-018` → `APP-019` → `APP-015` → `APP-016` → `APP-033`
 
 - Program `Now`: `APP-013` (Twilio-backed notification center and transactional customer messaging)
 - Program phase: owner-approved CallDesk-first product execution; `FE-014` is paused, not cancelled
