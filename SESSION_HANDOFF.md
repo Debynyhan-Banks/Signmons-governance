@@ -1,6 +1,10 @@
 # Session Handoff
 
-## Current: automatic-intake priority policy approved
+## Current: terms-first minimal job-record design adopted
+
+Owner approved the published-terms field review. APP013_2B_IMPLEMENTATION_CARD.md now excludes permanent Google county/verdict/responseId/coverage proof and verification assertions from the controlled job record; preserve attributable customer data and minimal internal job-action metadata. No fixture proof promotion, runtime implementation or legal clearance. Exact remaining interpretation is the minimal job-action/policy record under the derived-content restriction; service activation and request-scoped transaction/replay mapping also remain. Backend evidence/APP-013/terms-first-job-record.md. Existing 2B only; 3/8 (37.5%) unchanged. No scope deviation.
+
+## Historical: automatic-intake priority policy approved
 
 Owner approved STANDARD as the operational default for routine eligible automatic intake, existing life-safety escalation guidance and exception-only human review; no automatic dispatch or safety-assessment claim. APP013_2B_IMPLEMENTATION_CARD.md records the decision and required tests. Backend evidence/APP-013/automatic-intake-priority-policy.md. Product priority is settled; do not ask again. Exact service activation and permitted final evidence lifecycle remain before integrated implementation. No runtime change or new acceptance. Existing 2B; 3/8 (37.5%) walkthrough unchanged. No scope deviation.
 
