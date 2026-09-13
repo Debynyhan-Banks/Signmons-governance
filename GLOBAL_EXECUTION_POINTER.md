@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: 2B bootstrap boundary qualified in source; configuration gates open
+
+APP013_2B_IMPLEMENTATION_CARD.md records the bearer-guard/browser-header incompatibility and proposed same-origin server binding with separate operator authentication. Trusted Cloud Run ingress, pre-parse body integration, exact activation/key mapping and Google-derived retention remain gates; no code or activation follows automatically. Backend evidence: evidence/APP-013/2b-bootstrap-qualification.md. Intelligence documentation is merged on governance main at 4e34d4b; application branch is not merged. Fresh isolated worktrees preserve prior folders after missing Git links. APP-013/2B Now; 3/8 (37.5%) unchanged. No scope deviation.
+
 ## Current: 2B source-mapped design drafted; entry decisions remain
 
 APP013_2B_IMPLEMENTATION_CARD.md maps actual fixture-only admission/freshness, phone-only composition, unregistered protected intake, address ledger and shared parser boundaries to a finite integrated patch/test plan. Retained Google-derived evidence permission and exact protected bootstrap/runtime mapping remain unresolved; design is not implementation-ready and no code follows automatically. No new demo, live call or acceptance. Main safeguards merged at governance 59b6b91/backend 8f571c3; product feature branches preserved. APP-013/2B Now, 3/8 (37.5%) unchanged. No scope deviation.
