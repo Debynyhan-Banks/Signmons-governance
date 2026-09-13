@@ -1,8 +1,8 @@
 # Session Handoff
 
-## Current: P04 active — operator recovery validated; connection proof remains
+## Current: P04 locally review-ready — connected proof passed
 
-P04 remains active. Read-only v2 operator recovery is implemented using the existing owner/admin/dispatcher and tenant/impersonation guards, requestId lookup, receipt-only session lock and committed record re-read. No customer credentials, provider calls, current-policy revalidation or new-write authority. Backend evidence/APP-013/p04-operator-recovery.md records six new unit cases, 2,275 passing tests (3 skipped) and actual disposable database role/tenant/impersonation/record checks with unavailable customer credentials. Customer token expiry is separately tested at its exact deadline. The existing browser regressions passed; no new operator route is registered. ONE existing P04 item remains: full controlled verification-to-writer proof, then final P04 review. P05/P06 unchanged. No new package, acceptance or completed timing sample; walkthrough 3/8 (37.5%), remaining-plan accepted 2/60. No scope deviation or live activation.
+P04 is locally review-ready (R), not owner-accepted. The final existing connection proof now uses actual durable phone verification and fixture-priced database budget admission, address ledger/transport, P03 verification, current reader and atomic writer, with synthetic SDK/fetch only. Five cases prove one eligible job, provider-free exact replay, missing-phone refusal, outside-area refusal, unknown-transport refusal and in-flight revocation refusal; job/audit exclude provider proof and held liabilities are asserted. Full disposable database/browser regressions passed; 2,275 unit tests passed (3 skipped), build/lint/architecture and both dependency audits passed. Backend evidence/APP-013/p04-connected-admission.md. No further P04 implementation item is proposed; owner review is next. P05/P06 remain unchanged and are not activated. Walkthrough 3/8 (37.5%), remaining-plan accepted 2/60 unchanged. No new completed timing sample or forecast change; no scope deviation or live activation.
 
 ## Historical: finite Release A delivery plan prepared
 
