@@ -1,8 +1,8 @@
 # Global Execution Pointer
 
-## Current: P02 controlled authority review-ready
+## Current: P03 controlled verification review-ready
 
-P02 controlled-intake-authority.ts/.spec.ts implements the P01 local authority boundary: opaque instance-owned capability, exact activation configuration, current transaction-state binding and revocation/expiry refusals. Deliberately unregistered; database reader/locks and customer/proof/job integration remain P03–P05, live authority remains P06. Backend evidence/APP-013/p02-controlled-authority.md records 47 new tests, 2,198 passing backend tests (3 skipped), build/lint/architecture and zero audit findings. Owner accepted P01 and authorized P02 with “ok great ... p1 was fast. Begin” on 2026-09-13; P01 D, P02 R awaiting review, 1/60 accepted planning packages (not overall MVP completion). Next P03 current verification integration after this review checkpoint. APP-013/2B remains Now; walkthrough 3/8 (37.5%) unchanged. No scope deviation, deployment, provider call or charge.
+P03 controlled verification connection is review-ready under APP013_P01_ENGINEERING_CONTRACT.md and APP013_P03_SOURCE_CARD.md. Distinct bound phone CHECK proof, controlled address reserve/claim/complete, two-request cap, transient Google correction/county evaluation and single-use final-transaction check are implemented but unregistered. Backend evidence/APP-013/p03-controlled-verification.md records 2,224 passing tests (3 skipped) and connected disposable PostgreSQL proof with synthetic providers; no live provider or job creation claimed. Owner accepted P02 and authorized P03 with “i reviewed, i agree with more data for timing, proceed” on 2026-09-13. P01/P02 D, P03 R awaiting review; 2/60 accepted planning packages, not whole-MVP completion. Next P04 actual atomic job writer/current-draft loader, safety/exception and exact replay; P05 customer wiring and P06 release/live gates remain. APP-013/2B Now; walkthrough 3/8 (37.5%) unchanged. No scope deviation or external action.
 
 ## Historical: finite Release A delivery plan prepared
 
