@@ -1,6 +1,10 @@
 # Global Execution Pointer
 
-## Current: terms-first minimal job-record design adopted
+## Current: finite Release A delivery plan prepared
+
+Owner-requested bounded planning audit is in MVP_DAILY_DELIVERY_PLAN.md: 60 numbered remaining work packages mapped to existing acceptance, with one-day targets, evidence/reuse, dependency gates, 24-day explicit rework allowance and separate external waits. Proposed low-confidence planning range is 60–84 productive days for the integrated owner pilot, not commercial Release B; no package/criterion accepted by planning. Walkthrough stays 3/8 (37.5%); remaining-plan starts 0/60 and is not whole-app percent. Current execution remains APP-013/2B, P01 exact engineering card, then existing sequence; do not add rolling sections or repeat settled product decisions. Backend evidence/APP-013/daily-delivery-audit.md. No scope deviation, runtime/release or provider action.
+
+## Historical: terms-first minimal job-record design adopted
 
 Owner approved the published-terms field review. APP013_2B_IMPLEMENTATION_CARD.md now excludes permanent Google county/verdict/responseId/coverage proof and verification assertions from the controlled job record; preserve attributable customer data and minimal internal job-action metadata. No fixture proof promotion, runtime implementation or legal clearance. Exact remaining interpretation is the minimal job-action/policy record under the derived-content restriction; service activation and request-scoped transaction/replay mapping also remain. Backend evidence/APP-013/terms-first-job-record.md. Existing 2B only; 3/8 (37.5%) unchanged. No scope deviation.
 
