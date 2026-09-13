@@ -1,6 +1,10 @@
 # Session Handoff
 
-## Current: automatic write path mapped; nullable-location decision needed
+## Current: nullable location implemented and locally validated
+
+Owner-approved 2B schema slice is review-ready: optional Google place ID and coordinates, both job writers use null for unknown location, no historical data rewritten. Backend evidence/APP-013/nullable-property-location.md records the migration, writer regressions, 2,151 passing tests (3 skipped), build/lint/architecture and targeted disposable PostgreSQL preservation/uniqueness checks. No staging/production migration or automatic admission activation. Service/urgency policy and permitted final evidence lifecycle remain next inside existing 2B; no new section. Approved schema amendment only; no additional scope deviation. Walkthrough remains 3/8 (37.5%), not overall MVP completion.
+
+## Historical: automatic write path mapped; nullable-location decision needed
 
 APP013_2B_IMPLEMENTATION_CARD.md maps submit response validation, distinct service authority, tenant automation policy, audit/receipt versioning and transaction/replay boundaries. Source inspection found required PropertyAddress location fields currently filled with random place ID and zero coordinates. Recommended explicit schema proposal: make googlePlaceId/latitude/longitude nullable for unknown location, preserve existing values, prepare local migration/tests only after owner approval. No schema/runtime change yet. Urgency-policy and permitted final evidence lifecycle remain open; automatic admission is not implementation-ready. Existing 2B only; proposed schema deviation disclosed before implementation; walkthrough 3/8 (37.5%) unchanged. Backend evidence: evidence/APP-013/2b-service-admission-mapping.md. Next owner decision is the narrow nullable-field proposal, not another approval of automation.
 
