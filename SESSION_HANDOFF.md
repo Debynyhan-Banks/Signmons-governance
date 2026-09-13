@@ -1,8 +1,8 @@
 # Session Handoff
 
-## Current: P01 engineering contract review-ready
+## Current: P02 controlled authority review-ready
 
-APP013_P01_ENGINEERING_CONTRACT.md specifies exact service authority/activation validation, minimal job record, transient verification consumption and committed-versus-uncommitted recovery. P01 is R in MVP_DAILY_DELIVERY_PLAN.md; no owner acceptance or runtime implementation claimed. Next P02 disabled authority implementation after review; live resources/releases/caps remain P06 gates. No blanket Google support wait for the reviewed minimal-business-record interpretation. Backend evidence/APP-013/p01-engineering-contract.md. Existing APP-013/2B; 0/60 accepted packages, 1 review-ready; walkthrough 3/8 (37.5%) unchanged. No scope deviation.
+P02 controlled-intake-authority.ts/.spec.ts implements the P01 local authority boundary: opaque instance-owned capability, exact activation configuration, current transaction-state binding and revocation/expiry refusals. Deliberately unregistered; database reader/locks and customer/proof/job integration remain P03–P05, live authority remains P06. Backend evidence/APP-013/p02-controlled-authority.md records 47 new tests, 2,198 passing backend tests (3 skipped), build/lint/architecture and zero audit findings. Owner accepted P01 and authorized P02 with “ok great ... p1 was fast. Begin” on 2026-09-13; P01 D, P02 R awaiting review, 1/60 accepted planning packages (not overall MVP completion). Next P03 current verification integration after this review checkpoint. APP-013/2B remains Now; walkthrough 3/8 (37.5%) unchanged. No scope deviation, deployment, provider call or charge.
 
 ## Historical: finite Release A delivery plan prepared
 

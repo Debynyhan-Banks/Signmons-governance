@@ -37,8 +37,8 @@ Dependency: each row follows the preceding row by default; ticket acceptance gat
 
 | ID | Owner ticket / criterion | One-day target and observable exit | Status |
 | --- | --- | --- | --- |
-| P01 | APP-013 / 2B contract | Reconcile the completed terms review into the exact serializer and service/transaction card; no unnamed identity/storage decision; implementation-ready card, not a demo | R |
-| P02 | APP-013 / 2B authority | Controlled server authority and tenant-policy binding reject forged/missing/revoked context while preserving operator exception guards | P |
+| P01 | APP-013 / 2B contract | Reconcile the completed terms review into the exact serializer and service/transaction card; no unnamed identity/storage decision; implementation-ready card, not a demo | D |
+| P02 | APP-013 / 2B authority | Controlled server authority and tenant-policy binding reject forged/missing/revoked context while preserving operator exception guards | R |
 | P03 | APP-013 / 2B proof | Current phone/address/county evaluation reaches the transaction with revision/expiry checks and no prohibited durable provider payload | P |
 | P04 | APP-013 / 2B one job | Explicit customer submit atomically creates one eligible STANDARD job; audit rollback, duplicate and changed replay tests pass | P |
 | P05 | APP-013 / 2B customer flow | Existing UI shows correction, exception, restart and truthful created/not-booked states; desktop/mobile journey passes | P |
@@ -116,10 +116,12 @@ Terms-review update: the owner's latest reviewed direction accepts the engineeri
 
 ## Daily reporting and change control
 
-P01 update 2026-09-13: review-ready APP013_P01_ENGINEERING_CONTRACT.md at backend source 920d434/governance bc740ef. Exact authority/config, transient-provider transaction, version2 allowlist, authenticated replay and P02–P06 test/file boundaries specified. One planning session; focused-day duration not measured, external blocked days none in this pass. Owner review/date pending, accepted packages remain 0/60; 1/60 review-ready is not product acceptance. Next P02, same forecast/no denominator change. Actual implementation tests and live run remain pending.
+P01 accepted 2026-09-13: owner reviewed the engineering contract (backend 8a4ef28/governance 506b9a2) and said “ok great i get to see how long each package take p1 was fast. Begin.” Design package D; elapsed/focused-day duration was not measured. This accepts the engineering card, not customer capability or live authority.
+
+P02 review checkpoint 2026-09-13: backend f1534fc, local unregistered authority and transaction-state interface implemented; 47 new tests, 2,198 backend tests passed (3 skipped), full gates recorded in backend evidence/APP-013/p02-controlled-authority.md. Start 14:01:15 UTC; measured checkpoint timing is in that evidence. No external blocked time or owner waiting during implementation; focused human effort is not inferred from agent wall time. Owner review pending. Accepted packages 1/60 (1.7% of this remaining-plan ledger), P02 review-ready; walkthrough unchanged. Database adapter/locks, proof consumption and job/UI wiring remain the already planned P03–P05 integration, not newly added packages. No forecast/denominator change; recalibrate after five measured packages, not from fast planning alone.
 
 Report once per checkpoint: active package ID, planned versus actual focused days, exact working result, validations, R/D status, blocker/owner/wait days, next ID and revised forecast delta. Three separate metrics: walkthrough 3/8 (37.5%); remaining-plan D/60 (starts 0/60, NOT 0% of existing app); pilot requirements accepted/13 matrix rows (audit did not establish new row sign-offs). Do not manufacture overall engineering completion from any of these.
 
 No additional package without demonstrated requirement, existing ticket owner, old/new scope, estimated days and explicit owner review for material scope change. A defect needed to meet a row stays charged to that row and consumes reserve; disclose forecast overrun. Deferred refinements do not block acceptance unless a named criterion requires them. No daily planning-document milestone and no repeated approval of settled product decisions.
 
-Current checkpoint is this audit only. Next execution remains APP-013/2B, P01. Detailed future cards are completed just before their ticket activates; this is not authorization to start them now. No production action, merge, training, provider configuration or purchase is authorized by this plan. No scope deviation; sizing baseline is proposed for review, frozen product criteria unchanged.
+Current checkpoint is P02 review-ready within APP-013/2B; next P03 under the approved P01 card after review. Detailed future-ticket cards are completed just before their ticket activates; this is not authorization to start them now. No production action, merge, training, provider configuration or purchase is authorized by this plan. No scope deviation; forecast remains provisional, frozen product criteria unchanged.
