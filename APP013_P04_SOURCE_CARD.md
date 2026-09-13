@@ -1,5 +1,7 @@
 # P04 — atomic controlled admission source card
 
+Owner accepted the local package by reviewing the final evidence and proceeding to P05 after the separate admin documentation discussion. P04 D in the daily plan; live 2B remains unaccepted. Earlier review-pending notes below are historical.
+
 Review reference: backend f0201ac on existing PR21 feature branch. Final connected database/browser run, 2,275 unit tests (3 skipped), build/lint/architecture, zero-vulnerability audits, full governance consistency and all 21 governance regressions passed. P04 R only; owner acceptance pending.
 
 Current result: P04 locally review-ready (R). All existing local exits now have evidence: current reader, atomic writer/rollback, exact customer replay, credential-free authorized operator recovery, and actual-service connected synthetic-provider proof. See backend evidence/APP-013/p04-connected-admission.md. Owner acceptance remains pending; P05/P06 unchanged. Earlier remaining-item notes below are historical. No new package, live authority or scope deviation.
