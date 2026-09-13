@@ -2,6 +2,8 @@
 
 ## Status and authority
 
+Current P01 specification: APP013_P01_ENGINEERING_CONTRACT.md is review-ready and supersedes unresolved design alternatives below for service identity, priority, minimal job fields and transaction/replay. No blanket Google reply is required for the reviewed minimal-business-record interpretation. P02 may implement the specified local disabled authority after review; P06 still requires explicit actual resource/release/run approval. This card's earlier “not implementation-ready” notes are historical at the design level, not permission to infer live readiness. No runtime acceptance or frozen-criterion change.
+
 Planning-only source inspection at backend 76d48e16e0154e3649364150f9e1e54f3f761690 and governance d1b1689. Both origins fetched; safeguards are now merged separately at backend 8f571c3 and governance 59b6b91. This card supplements, and does not modify, the frozen APP013_REMAINING_EXECUTION_CONTRACT.md. Product feature branches are preserved; this does not merge them or claim they already include main's newer controls.
 
 Section: existing **2B**, internal checklist item “Resolve the implementation contract.” Owner-reviewed amendment APP013_2B_AUTOMATIC_ADMISSION_CHANGE.md is adopted: Signmons automatically creates exactly one job after explicit customer submission and trusted current verification/tenant-policy checks; operators handle exceptions only and cannot bypass proof. No payment, booking, dispatch or notification authority. Accepted walkthrough remains 3/8 (37.5%). Approved scope amendment only; no additional scope deviation. Earlier bootstrap inspections below are historical source findings, not a mandatory operator step.

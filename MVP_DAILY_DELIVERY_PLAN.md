@@ -37,7 +37,7 @@ Dependency: each row follows the preceding row by default; ticket acceptance gat
 
 | ID | Owner ticket / criterion | One-day target and observable exit | Status |
 | --- | --- | --- | --- |
-| P01 | APP-013 / 2B contract | Reconcile the completed terms review into the exact serializer and service/transaction card; no unnamed identity/storage decision; implementation-ready card, not a demo | P |
+| P01 | APP-013 / 2B contract | Reconcile the completed terms review into the exact serializer and service/transaction card; no unnamed identity/storage decision; implementation-ready card, not a demo | R |
 | P02 | APP-013 / 2B authority | Controlled server authority and tenant-policy binding reject forged/missing/revoked context while preserving operator exception guards | P |
 | P03 | APP-013 / 2B proof | Current phone/address/county evaluation reaches the transaction with revision/expiry checks and no prohibited durable provider payload | P |
 | P04 | APP-013 / 2B one job | Explicit customer submit atomically creates one eligible STANDARD job; audit rollback, duplicate and changed replay tests pass | P |
@@ -115,6 +115,8 @@ Calendar delivery = productive days + unoverlapped blocked days + holidays/absen
 Terms-review update: the owner's latest reviewed direction accepts the engineering interpretation that minimal job-action metadata need not await a blanket Google reply; do not retain raw/derived provider proof or call this legal certification. P01 must reconcile this conclusion against stale earlier unresolved wording and finish the exact engineering card, not repeat the same general terms review. A new specific contradictory clause/field must be evidenced before reopening it.
 
 ## Daily reporting and change control
+
+P01 update 2026-09-13: review-ready APP013_P01_ENGINEERING_CONTRACT.md at backend source 920d434/governance bc740ef. Exact authority/config, transient-provider transaction, version2 allowlist, authenticated replay and P02–P06 test/file boundaries specified. One planning session; focused-day duration not measured, external blocked days none in this pass. Owner review/date pending, accepted packages remain 0/60; 1/60 review-ready is not product acceptance. Next P02, same forecast/no denominator change. Actual implementation tests and live run remain pending.
 
 Report once per checkpoint: active package ID, planned versus actual focused days, exact working result, validations, R/D status, blocker/owner/wait days, next ID and revised forecast delta. Three separate metrics: walkthrough 3/8 (37.5%); remaining-plan D/60 (starts 0/60, NOT 0% of existing app); pilot requirements accepted/13 matrix rows (audit did not establish new row sign-offs). Do not manufacture overall engineering completion from any of these.
 
