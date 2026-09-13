@@ -1,5 +1,7 @@
 # Intelligence MVP roadmap — owner-reviewed dependency order
 
+Owner-only platform-admin planning is recorded in PLATFORM_ADMIN_OWNER_PLAN.md. Documentation only: no Release A scope, package-count, acceptance or current execution-order change. Commercial-admin implementation remains separately mapped and sized within Release B.
+
 See INTELLIGENCE_ALIGNMENT_ADOPTION.md for the owner-reviewed correction. Existing APP-013 and its eight-milestone walkthrough are unchanged. Complete its entire required acceptance, including BE-001 residual proof, before advancing.
 
 | Approved order | Ticket | Reuse and required finish line |
