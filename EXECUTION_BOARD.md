@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: transient correction connection review-ready
+
+Backend evidence/APP-013/transient-correction-connection.md records the shared real-response parser to temporary loopback correction screen connection. Synthetic browser/script checks and backend gates pass; no new live test. Confirm/edit/cancel never revalidate, persist a selection, or authorize admission. The inspection runner discards selections. Existing spent packet and both holds remain locked. Next: current-session corrected-address/admission integration and evidence gates; new live execution needs a separately reviewed packet/window/allowance. APP-013/2B Now; walkthrough 3/8 (37.5%) unchanged, not whole-MVP completion.
+
 ## Current: disabled Google coverage evaluator implemented — 2026-09-12
 
 Backend src/communications/google-service-area.ts reuses the existing Google address adapter for fictional in-memory coverage proposals. Default disabled; explicit FIXTURE_ONLY mode, current confirmation bindings, unit/physical-address checks and consistent structured Ohio county evidence required. All downstream authority stays false. No route registration, provider I/O, persistence, schema or UI change. Evidence: backend evidence/APP-013/google-service-area.md.

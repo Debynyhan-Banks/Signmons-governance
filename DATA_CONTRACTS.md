@@ -1,5 +1,9 @@
 # Data Contracts
 
+## Current: transient correction connection review-ready
+
+Backend evidence/APP-013/transient-correction-connection.md records the shared real-response parser to temporary loopback correction screen connection. Synthetic browser/script checks and backend gates pass; no new live test. Confirm/edit/cancel never revalidate, persist a selection, or authorize admission. The inspection runner discards selections. Existing spent packet and both holds remain locked. Next: current-session corrected-address/admission integration and evidence gates; new live execution needs a separately reviewed packet/window/allowance. APP-013/2B Now; walkthrough 3/8 (37.5%) unchanged, not whole-MVP completion.
+
 ## Current: controlled semantic connection ready, unexecuted — 2026-09-12
 
 Backend evidence/APP-013/google-semantic-connection.md connects shared in-memory address/county review to a separate fixed one-shot packet. Existing connectivity claim preserved; private enum-only presentation, no provider-content retention or downstream authority. Local review bindings are not real tenant/admission proof. Next requires explicit ONE semantic request/USD 0.10 allowance/current 15-minute window approval; no automatic send or retry. APP-013/2B Now; 3/8 (37.5%) unchanged.

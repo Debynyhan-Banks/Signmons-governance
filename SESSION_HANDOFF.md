@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: transient correction connection review-ready
+
+Backend evidence/APP-013/transient-correction-connection.md records the shared real-response parser to temporary loopback correction screen connection. Synthetic browser/script checks and backend gates pass; no new live test. Confirm/edit/cancel never revalidate, persist a selection, or authorize admission. The inspection runner discards selections. Existing spent packet and both holds remain locked. Next: current-session corrected-address/admission integration and evidence gates; new live execution needs a separately reviewed packet/window/allowance. APP-013/2B Now; walkthrough 3/8 (37.5%) unchanged, not whole-MVP completion.
+
 ## Current: local correction comparison review-ready
 
 Backend evidence/APP-013/correction-comparison.md records entered/suggested address comparison with confirm, edit and cancel in the existing local fixture. Browser QA and backend gates passed. This is not connected to the real semantic response; closed-dialog contents remain unavailable. No new request or charge; both holds preserved. Next is controlled transient correction-flow connection, not another blind request. APP-013/2B Now; 3/8 (37.5%) unchanged.
