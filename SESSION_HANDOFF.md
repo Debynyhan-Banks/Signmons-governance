@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: local correction comparison review-ready
+
+Backend evidence/APP-013/correction-comparison.md records entered/suggested address comparison with confirm, edit and cancel in the existing local fixture. Browser QA and backend gates passed. This is not connected to the real semantic response; closed-dialog contents remain unavailable. No new request or charge; both holds preserved. Next is controlled transient correction-flow connection, not another blind request. APP-013/2B Now; 3/8 (37.5%) unchanged.
+
 ## Current: semantic request executed and closed
 
 Owner-approved one-request semantic command exited OBSERVED with all downstream authority false; see backend evidence/APP-013/google-semantic-live-result.md. Private semantic statuses were not retained or exposed to assistant; no IN_AREA/valid-address acceptance claim. Both original and new holds retained. Next: owner review of the two private status labels, not another request. APP-013/2B Now; 3/8 (37.5%) unchanged.
