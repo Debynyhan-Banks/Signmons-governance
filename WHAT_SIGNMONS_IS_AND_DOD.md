@@ -1,5 +1,9 @@
 # What Signmons Is + Anti-Drift DoD
 
+## Current intelligence documentation reconciliation
+
+Documentation-only reconciliation: APP-013/2B remains sole Now; accepted walkthrough 1A/1B/2A remains 3/8 (37.5%), not whole-MVP completion. Approved Next: APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033. See INTELLIGENCE_ALIGNMENT_ADOPTION.md for current branch/evidence provenance, unresolved 2B gates and historical-note precedence. No new implementation or external authority. No scope deviation.
+
 Purpose: provide one unambiguous product definition and release bar so contributors and AI agents do not drift into a generic chatbot, generic FSM clone, or scope-sprawl SaaS.
 
 ## Product Definition (Canonical)
@@ -40,7 +44,7 @@ Signmons is one platform with the following governed product modules:
 6. **Signmons Growth**
    - missed-call recovery, review requests, maintenance-plan renewal workflows, and lead-source attribution
 7. **Signmons Intelligence**
-   - booking, response-time, payment, revenue, dispatch, and AI-quality reporting
+   - shared governed reasoning, customer/HVAC context, approved knowledge retrieval, Comfort Advisor and ethical sales assistance, typed tool orchestration, evaluation and improvement infrastructure; operational reporting is one capability, not its definition
 
 Cross-module operating foundations include memberships, job costing, inventory and purchasing, employee time capture and payroll export, offline field synchronization, customer financing handoff, guided migration/onboarding, and tested operational recovery. These foundations support the seven modules; they do not create separate products or expand Signmons into payroll, general-ledger accounting, banking, or ERP.
 
@@ -98,9 +102,9 @@ Execute the product in this order unless the governance pointer explicitly appro
 3. Calendar, dispatch, technician assignment, and durable customer confirmations with secure appointment-management access
 4. Professional estimates, invoices, deposits, payments, and receipts
 5. Technician mobile workflow, pricebook, and structured diagnostic reporting
-6. Advanced voice AI and SMS automation, accounting/CRM/FSM integrations, reviews, and maintenance plans
+6. Governed conversational intelligence/voice pilot after APP-017/018/019/015/016 foundations; advanced channel optimization, accounting/CRM/FSM integrations, reviews and maintenance plans retain separately approved scope
 7. Memberships, job costing, inventory/purchasing, employee time export, customer financing, and guided data migration
-8. Advanced automation, auto-dispatch, multi-location controls, intelligence, and tested operational recovery
+8. Advanced automation, auto-dispatch, multi-location controls and intelligence optimization; baseline safety and tested recovery remain prerequisites, not deferred work
 
 Marketing work may explain a planned module only when it is labeled as planned/early access. It must not present an unshipped module as generally available.
 

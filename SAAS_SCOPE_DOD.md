@@ -1,5 +1,9 @@
 # Signmons Scope + Definition of Done
 
+## Current intelligence documentation reconciliation
+
+Documentation-only reconciliation: APP-013/2B remains sole Now; accepted walkthrough 1A/1B/2A remains 3/8 (37.5%), not whole-MVP completion. Approved Next: APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033. See INTELLIGENCE_ALIGNMENT_ADOPTION.md for current branch/evidence provenance, unresolved 2B gates and historical-note precedence. No new implementation or external authority. No scope deviation.
+
 ## 1) Mission
 
 Signmons is a multi-tenant AI front-office and dispatch SaaS for home-service businesses (HVAC, plumbing, electrical). It captures inbound demand, confirms critical customer/job data, schedules and dispatches work, supports the job-to-payment workflow, and delivers auditable operating records.
@@ -33,7 +37,7 @@ Signmons is a multi-tenant AI front-office and dispatch SaaS for home-service bu
 ## 3) Out of Scope (MVP)
 
 - Advanced route optimization and full fleet management
-- Advanced voice AI, transcription analytics, sentiment analysis, and automated outbound campaigns
+- Voice optimization beyond the approved APP-033 pilot, broad transcription analytics, sentiment analysis, and automated outbound campaigns; governed intelligence/voice foundations are included in the reviewed pilot
 - Broad ERP/CRM two-way sync beyond approved adapters
 - General-ledger accounting, payroll, bank reconciliation, tax filing, or an ERP replacement
 - Lending decisions, underwriting, custody of financing application data, or representation as a lender
