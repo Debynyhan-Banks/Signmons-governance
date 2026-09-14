@@ -1,6 +1,10 @@
 # Global Execution Pointer
 
-## Current: approved Google correction-sequence repair
+## Current: P06 entry packet reconciled — activation disabled
+
+P06 preparation authorized by owner continuation after correction repair 3667cda/7be5f00. Existing APP013_2B_ACTIVATION_PACKET.md now has a reconciled four-item checklist: entry complete; connected runtime wiring, exact disabled release approval, and capped live run/closeout remain. Read-only staging readback confirms unchanged baseline traffic and six disabled candidate flags. Code is not deployed: loader, managed-ingress qualification and non-fixture customer phone-code wiring remain. No blanket Google support-wait gate, no new package or paid/release authority. Backend evidence/APP-013/p06-entry-packet.md. Next: exact source/interface/test card for existing wiring gap, then local same-page proof. Accepted packages 5/60 (8.3%), walkthrough 3/8 (37.5%); provisional 4–8 weeks remaining at 25–30 collaborative hours/week plus external waits, low confidence; update at ten accepted packages. No scope deviation.
+
+## Historical: approved Google correction-sequence repair
 
 Owner accepted P03 and P05 locally ("i reviewed p05 and p03"): accepted remaining-plan packages are 5/60 (8.3%), not whole-app completion; walkthrough stays 3/8 (37.5%). Current work is the owner-approved bounded Google correction-sequence repair within APP-013/2B; see APP013_GOOGLE_CORRECTION_CARD.md. Google support supplied technical guidance, not legal clearance. First-response-ID chaining now uses short-lived process memory with missing/expired-state refusal; no new package, county fallback, durable provider content or live activation. Locally review-ready: 2,301 tests passed (3 skipped), build/lint/architecture, zero-vulnerability audits, full disposable database/browser journey including eight connected scenarios passed. Backend evidence/APP-013/google-correction-sequence.md; four finite card items complete, owner review of this repair next. P06 remains the next planned activation packet, separately release/resource/cap gated. The five-package timing audit supports a provisional 4–8 weeks remaining at 25–30 collaborative hours/week, low confidence and external waits separate; this is judgment-based, not a measured deadline. Re-estimate at ten accepted packages. No scope deviation.
 
