@@ -4,6 +4,8 @@ Prepared 2026-09-13 at owner request for a finite, trackable MVP plan before mor
 
 ## Goal and boundary
 
+Current reconciliation: owner explicitly reviewed P03 and P05; P01–P05 are locally accepted, 5/60 (8.3%), 55 packages remain. Walkthrough 3/8 is unchanged. Approved Google correction-sequence repair is bounded rework within 2B, not P61. See APP013_GOOGLE_CORRECTION_CARD.md. The five-package timing audit replaces the original primary forecast with a low-confidence 4–8 weeks remaining at 25–30 collaborative hours/week, plus external waits. Rough seven-hour elapsed span across initial five packages includes reused work and unclassified gaps, not focused effort; no linear guarantee. Update again at ten accepted packages. Historical counts below describe their checkpoints only.
+
 Goal: owner-operated Eternity intelligence pilot meeting MVP_ACCEPTANCE_MATRIX.md and SIGNMONS_INTELLIGENCE_SPEC.md, including web, ordinary SMS, voice, approved knowledge/rules/behavior/memory, payment/booking/notifications, technician outcome, evaluation and safe operations. This is Release A, not public commercial availability. INTELLIGENCE_MVP_ROADMAP.md separately requires commercial onboarding/admin, subscriptions/entitlements, support/security/restore/offer gates and Money/Growth work for Release B; those are NOT silently declared done or covered by the dates below. No training, marketing, new provider or Eternity website work.
 
 Frozen walkthrough stays 1A/1B/2A accepted, then 2B → 3A → 3B → 3C → 3D. After full APP-013 acceptance: APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033. Work packages below are internal scheduling units, not new acceptance sections or permission to skip Now. A later ticket remains queued until its predecessor is fully accepted.
@@ -39,9 +41,9 @@ Dependency: each row follows the preceding row by default; ticket acceptance gat
 | --- | --- | --- | --- |
 | P01 | APP-013 / 2B contract | Reconcile the completed terms review into the exact serializer and service/transaction card; no unnamed identity/storage decision; implementation-ready card, not a demo | D |
 | P02 | APP-013 / 2B authority | Controlled server authority and tenant-policy binding reject forged/missing/revoked context while preserving operator exception guards | D |
-| P03 | APP-013 / 2B proof | Current phone/address/county evaluation reaches the transaction with revision/expiry checks and no prohibited durable provider payload | R |
+| P03 | APP-013 / 2B proof | Current phone/address/county evaluation reaches the transaction with revision/expiry checks and no prohibited durable provider payload | D |
 | P04 | APP-013 / 2B one job | Explicit customer submit atomically creates one eligible STANDARD job; audit rollback, duplicate and changed replay tests pass | D |
-| P05 | APP-013 / 2B customer flow | Existing UI shows correction, exception, restart and truthful created/not-booked states; desktop/mobile journey passes | R |
+| P05 | APP-013 / 2B customer flow | Existing UI shows correction, exception, restart and truthful created/not-booked states; desktop/mobile journey passes | D |
 | P06 | APP-013 / 2B live acceptance | Separately authorized release/run packet produces one real verified test job and closes identities/caps; owner accepts 2B | P |
 | P07 | APP-013 / 3A payment wiring | Same admitted job opens Sandbox Checkout; missing policy/foreign payment/redirect-only success refuse | P |
 | P08 | APP-013 / 3A acceptance | Authorized Sandbox webhook and duplicate/late-event tests establish correct same-job payment; owner accepts 3A | P |
