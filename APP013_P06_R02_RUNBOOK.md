@@ -1,5 +1,11 @@
 # R02 one-shot command — review before live authorization
 
+## Latest live checkpoint — stopped before handoff
+
+Owner explicitly approved the live test on2026-09-15. The exact two-role/read-only-grant transaction committed in the isolated child; both roles remainNOLOGIN. SQL readback proved creation, but Console Roles still showed only inherited neondb_owner after revisiting. Required new-runner reset route could not be verified, so stopped as specified. No password/reset/LOGIN/executor/export; both-role sessions0 and encrypted image ejected. See backend p06-r02-live-handoff-stop.md. The12:22–12:42UTC window is cancelled; packet/directory must not be silently reused. Qualify the actual credential route before proposing a changed mechanism or new window. Do not rerun CREATE ROLE: the two names now exist. No automatic retry or inherited-password workaround.
+
+The implementation-only/no-live-authority wording below describes the earlier checkpoint; current authority/result is the explicit bounded test and safe stop above, not blanket future authority.
+
 The owner approved implementation only. The command now exists; the real Neon adapter, actual new-role Console reset/handoff and real restore have NOT been executed. Local same-core evidence is backend p06-r02-once-result.md. Do not run this document as a script or infer live approval from code review.
 
 ## Fixed command
