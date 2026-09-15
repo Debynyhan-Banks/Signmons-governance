@@ -1,6 +1,10 @@
 # P06-R03 — one migration approval packet
 
-## Owner-requested fresh retry preparation — 2026-09-15
+## Execution outcome — R04 verified 2026-09-15
+
+Fresh owner-requested retry completed from backend8ca8818f3e53fade2690e6036a42404b1a2e06f9, approval P06-R04-child-migration-20260915T230020Z, window23:00:20–23:10:20UTC. Result23:01:22.635UTC MIGRATION_VERIFIED,26applied; independent browser26/0unfinished/0other sessions and owner Terminal success. Exact image manually locked, baseline healthy, no release or intake activation. See backend p06-r04-verified.md. This approval is consumed; no automatic rerun. R01-R04closed4/12,R05-R12open8,added0; R04review-ready, not whole-P06 acceptance. No scope deviation.
+
+## Historical: Owner-requested fresh retry preparation — 2026-09-15
 
 Owner said "do again" after the consumed pre-Prisma refusal. Authorize one fresh attempt with unchanged child/admin/13SQL/10minute/USD1/one-attempt limits; prior morning window is expired and must not be reused. Bind a fresh absolute window only after owner readiness and fresh preflight. Preserve v1 evidence. This is the same R04 task, not another preparation subsection or new criterion.
 
