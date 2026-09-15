@@ -1,4 +1,8 @@
-# P06-R02 isolated branch proposal — not authorized for execution
+# P06-R02 isolated branch proposal — creation completed, further actions gated
+
+## Executed owner decision
+
+The owner subsequently approved creation and explicitly approved the brief default 0.25–2 CU interval because the creation dialog cannot set a cap. One standard child was created; its compute was immediately saved at fixed 0.25 CU. Five-minute idle suspension and Never expiry verified. Branch br-sparkling-sun-ay6gr5e8 / endpoint ep-jolly-flower-ayc6w9hv. See backend evidence/APP-013/p06-isolated-branch-created.md for exact readback and exclusions. This supersedes the historical direction-only status below; no authority for credential changes, migration, application connection, deletion or deployment follows. R02 remains open, 11 tasks remain, none added.
 
 ## Current owner decision
 
