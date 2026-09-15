@@ -1,10 +1,16 @@
 # R02 credential and backup proposal v1 — owner review, NOT execution-ready
 
+## Latest safety implementation checkpoint
+
+Owner-approved local safety tooling now passes per backend p06-r02-safety-result.md and APP013_P06_R02_SAFETY_CARD.md. Shared budget (up to20minutes), pre-write64MiB archive ceiling, monitored768MiB workspace, fixed diagnostics and bounded cursor comparisons are implemented and exercised in the existing26-table synthetic snapshot restore. Historical claims below that these helpers are unimplemented are superseded. Workspace monitor is stop-on-detection, not a disk quota; scans and event-loop latency permit overshoot.
+
+No real-data executor invoked. Actual ownership-enabled encrypted mount/new-role handoff and filled UTC/resource/retention/cleanup packet remain gated. Bind the helper to the remaining absolute approved window and all private run roots before real use; do not run the synthetic fixture harness against Neon. No new prerequisite or task; R02 still requires approved real recovery proof.
+
 ## Current correction: full source inventory verified; NOT execution-ready
 
 Read-only child catalog inspection2026-09-15 confirmed legacy_2025 owns three retained tables and three enums, all neondb_owner-owned with default ACLs, no RLS. Backend p06-r02-legacy-metadata.md records the full metadata evidence. The amended template now covers USAGE on both schemas and SELECT on all26tables. No live grant executed. Earlier public-only proposal superseded; never omit legacy data.
 
-Private TTY and managed-metadata synthetic tests now pass. Aggregate20minute/storage enforcement and sanitized streaming real-data comparisons remain unimplemented; ownership-enabled encrypted mount, actual new-role credential handoff and exact execution window remain gated. This is still a proposal, not authorization.
+Private TTY, managed-metadata, aggregate-limit and sanitized cursor helper tests now pass. Ownership-enabled encrypted mount, actual new-role credential handoff and exact execution-window binding remain gated. This is still a proposal, not authorization.
 
 ## Historical stop correction: public-only backup grants were incomplete
 
@@ -88,7 +94,7 @@ The corrected local fixture tested managed-role mapping, extension ownership and
 The inventory and proposed sequence are complete, but this is NOT an executable card yet:
 
 - **Secure new-role password path:** must verify that the console can set/reset only the newly SQL-created role without retaining a password in SQL history, and that owner can deliver it privately to encrypted storage. Do not assume this UI capability. Alternative direct administrator psql would require separate authority to use an inherited credential, which is not selected.
-- **Local managed-role restore mapping and enforcement:** need a concrete tested helper/command plan for the exact ACL/extension snapshot, synchronized full-row comparison, size/deadline enforcement and ownership-enabled mount. Existing synthetic script is not a real-data backup executor; never run it on Neon.
+- **Real invocation binding:** local managed-role restore, synchronized comparison and limit helpers are tested. Bind them to the qualified ownership-enabled encrypted mount, exact26-table allowlist and remaining approved UTC window with mandatory cleanup. Existing synthetic script creates and mutates fixtures: never run it on Neon.
 - **Execution-time fields:** exact approved UTC window, retention deadline and fresh limits must be bound before changes. T0 formulas here are policy proposals, not filled execution records.
 
 These are unresolved implementation details of existing R02 requirements, not new packages or claims of completed safeguards. No broad execution approval should be solicited while they remain. Do not silently build a new backup subsystem: reuse existing tooling, and stop for a material design deviation.
