@@ -1,5 +1,13 @@
 # P06-R02 isolated branch proposal — creation completed, further actions gated
 
+## Current qualification and owner decision required
+
+Read-only console inspection at 2026-09-15 05:05 EDT found exactly one child Postgres role, inherited `neondb_owner`, owning `neondb` and created/updated 18 days earlier. Neon documents that normal children copy parent roles and passwords unless the parent is protected; protected branches are not available on this Free plan. The separate empty Credentials page concerns Neon storage/AI credentials, not a Postgres migration credential. Endpoint separation therefore remains insufficient for database credential isolation.
+
+Backup & Restore exposes a moving six-hour history window sourced from `production`; at inspection its earliest selectable point was Sep 14, 2026 11:02 pm EDT. The child cannot create a snapshot because Neon limits snapshots to root branches. No Preview data, Restore, snapshot, role/password or connection action was used. See backend `evidence/APP-013/p06-r02-credential-recovery-qualification.md` for exact scope, sources and exclusions.
+
+Before R02 can close, owner/database authority must approve two exact items: (1) a child-only migration role/secret design, preferably SQL-created without automatic `neon_superuser` membership and with only the proven Prisma migration privileges; and (2) either a time-bounded destructive point-in-time restore policy tied to a recorded pre-attempt timestamp, or a separately costed root-snapshot/recreated-target policy. Approval must name the target, credential destination/lifecycle, restore owner/method, expiry, stop conditions and whether post-failure restore may be executed. No credential, snapshot, restore, migration, application connection, deletion or deployment follows from this qualification. R01 closed; R02-R12 remain open (11); no task added and no scope deviation.
+
 ## Executed owner decision
 
 The owner subsequently approved creation and explicitly approved the brief default 0.25–2 CU interval because the creation dialog cannot set a cap. One standard child was created; its compute was immediately saved at fixed 0.25 CU. Five-minute idle suspension and Never expiry verified. Branch br-sparkling-sun-ay6gr5e8 / endpoint ep-jolly-flower-ayc6w9hv. See backend evidence/APP-013/p06-isolated-branch-created.md for exact readback and exclusions. This supersedes the historical direction-only status below; no authority for credential changes, migration, application connection, deletion or deployment follows. R02 remains open, 11 tasks remain, none added.
