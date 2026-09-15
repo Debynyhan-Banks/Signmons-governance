@@ -1,6 +1,10 @@
 # Session Handoff
 
-## Current: R02 source metadata verified — external execution remains gated
+## Current: R02 execution proposal drafted — readiness gaps explicit
+
+See APP013_P06_R02_EXECUTION_PROPOSAL.md and backend p06-r02-execution-proposal.md. Proposed backup-before-ownership order, exact23-table/two-role template, limits and cleanup documented. Not execution-ready: secure new-role credential handoff and concrete managed-role restore/comparison/limit enforcement remain unqualified; UTC window unbound. No external actions. R01 closed; R02-R12 open11, added0; accepted5/60 and3/8 unchanged; ETA unvalidated. Sequence refinement proposed for review; no scope deviation implemented.
+
+## Historical: source metadata verified
 
 Owner-authorized child metadata read completed: PG18.6,11,165,696bytes,13matching successful migration records,23tables/34enums and managed ACL inventory. Known tagged/job consumers and delayed quota metrics refreshed. See backend p06-r02-source-metadata.md and APP013_P06_R02_EXTERNAL_PACKET.md. Next finalize the one credential/private-backup execution proposal; no repeat metadata approval or external mutations. R01 closed; R02-R12 open11, added0; accepted5/60 and3/8 unchanged; ETA unvalidated. No scope deviation.
 

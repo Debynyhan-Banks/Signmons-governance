@@ -1,5 +1,7 @@
 # R02 external qualification packet — NOT executable
 
+Latest: APP013_P06_R02_EXECUTION_PROPOSAL.md is the consolidated review proposal with exact read-only role allowlist, backup-before-ownership ordering, limits and explicit readiness gaps. It is not execution-ready; do not interpret the template as role/export approval. Owner-assisted secure password handoff and concrete managed-role restore qualification remain to be resolved together.
+
 ## Current: owner-authorized metadata inspection completed
 
 Owner said continue following the metadata-only request. Backend evidence/APP-013/p06-r02-source-metadata.md records actual child SQL-console results, all13 matching migration checksums, exact23-table/34-enum inventory, managed ownership/default ACLs, zero observed other sessions and current tagged-consumer/quota readback. No schema, credentials or data changed. Do not ask to approve this completed metadata inspection again.
