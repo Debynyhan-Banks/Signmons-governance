@@ -1,5 +1,7 @@
 # R02 one-shot command — review before live authorization
 
+Latest preparation: APP013_P06_R02_PRIVATE_ADMIN_PROCEDURE.md proposes the owner-requested private child-administrator alternative after Console handoff failure. Preparation only, no credential exception executed or helper implemented. Original fixed v1 command below must not be run against the cancelled packet; proposed v2 binding needs reviewed local implementation/qualification and a fresh explicit live packet. Do not infer live access from preparation approval.
+
 ## Latest live checkpoint — stopped before handoff
 
 Owner explicitly approved the live test on2026-09-15. The exact two-role/read-only-grant transaction committed in the isolated child; both roles remainNOLOGIN. SQL readback proved creation, but Console Roles still showed only inherited neondb_owner after revisiting. Required new-runner reset route could not be verified, so stopped as specified. No password/reset/LOGIN/executor/export; both-role sessions0 and encrypted image ejected. See backend p06-r02-live-handoff-stop.md. The12:22–12:42UTC window is cancelled; packet/directory must not be silently reused. Qualify the actual credential route before proposing a changed mechanism or new window. Do not rerun CREATE ROLE: the two names now exist. No automatic retry or inherited-password workaround.
