@@ -1,5 +1,11 @@
 # P06 item 3 — one staging migration change set
 
+## Current target amendment and qualification handoff — 2026-09-15
+
+R01 upgrade rehearsal and R02 target/access/consumer/recovery qualification are complete; see backend p06-r02-qualified.md. Owner approved preparing existing neondb_owner for one supervised migration of child br-sparkling-sun-ay6gr5e8 / ep-jolly-flower-ayc6w9hv.c-5.us-east-2.aws.neon.tech / neondb/public only. This supersedes the older shared-secret-version2 target below: NEVER use signmons-staging-database-url or the old Cloud Run migration job for this child migration. No parent credential reset, shared-secret replacement or new-role ownership transfer. Credential retains parent access; exact endpoint guards constrain the process, not credential power.
+
+R03 remains the exact tested executable packet/owner approval gate. R04 remains one separately authorized migration. Reuse accepted admin-v2 recovery through its documented expiry unless invalidated by drift; no repeated backup as another section. R03 must verify actual connection timeouts, manifest, current recovery, child-exclusive maintenance, cost and absolute window before asking for execution. This document is NOT an executable command and does not assert runner qualification. Preserve all existing13SQL files and failure/rollback restrictions below.
+
 ## Authority and finish
 
 Owner requested preparation after the approved read-only check. **Plan only: no staging migration, backup/branch creation, data copy, deployment, secret change or paid action authorized.** Source SQL: backend 53037fbd118cc4547061dfaf373c45b20a05962b, unchanged at cab1df4; image digest ea47a8371a04f773a5c51fc4f939250b7045eba92d3cbbeb68e49ceb0240be35. Governance entry dd05b88. Same APP-013 / 2B / P06 item 3; these are 13 existing files, not 13 new sections. No scope deviation.

@@ -1,5 +1,13 @@
 # P06-R02 consolidated closeout review
 
+## Current: R02 qualification complete — existing administrator route approved
+
+Owner explicitly approved the proposed existing-administrator preparation route. Backend evidence/APP-013/p06-r02-qualified.md is the consolidated final qualification: exact child/PG18.6/capable owner, accepted actual recovery and expiry, known consumer inventory and child-only maintenance boundary. Existing Cloud Run secret versions dateAugust28, before child creationSeptember14; unchanged references and prior parent mapping support separation without reading payloads. No other child sessions/subscriptions/replication slots at current inspection. Inherited parent credential power and future unknown writers remain explicit risks, not least-privilege claims.
+
+Both R02 acceptance areas are technically complete; owner review of this final result remains distinct from prior recovery acceptance. R01/R02 closed for qualification tracking; R03–R12open10,added0. P06 unaccepted,5/60 packages and3/8 walkthrough unchanged. R03 now owns the tested exact executable packet and its owner execution approval; do not extend R02 to absorb that row. No live migration or new password/ownership changes. Prior proposed/unapproved credential wording below is superseded only by this explicit preparation approval, never by migration execution authority.
+
+Review backend p06-r02-qualified.md target, consumer inference/limitations, archive expiry and maintenance. Next prepare existing R03 packet; actual one attempt remains R04 after explicit R03 approval. No scope deviation beyond owner-approved mechanism amendment.
+
 ## Owner acceptance and remaining decision — 2026-09-15
 
 The owner's "Great proceed" accepts the demonstrated recovery and authorizes continuation of qualification, not an administrator migration. Recovery area accepted; keep archive through its recorded expiry and do not repeat without invalidating drift/expiry. Older missing-recovery and two-unresolved-area statements below are historical.
