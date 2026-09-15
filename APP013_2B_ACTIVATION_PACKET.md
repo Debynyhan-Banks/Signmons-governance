@@ -4,6 +4,8 @@
 
 ### Current schema qualification — blocked, no migration authorized
 
+The owner-requested review of all13 existing SQL files is complete in APP013_P06_STAGING_MIGRATION_PLAN.md. The plan identifies dependency order, changes to existing SmsConsentRecord/PropertyAddress, future retention/immutability effects, bounded runner/timeouts, catalog checks and partial-failure recovery. No SQL changed or applied. Next is a synthetic old-schema upgrade rehearsal and verified staging target/recovery inputs; do not request execution approval until those gates pass. Same item3, not13 new sections; release/run remain separate.
+
 Owner approved private version2 database credential use for metadata only. Read-only Neon transaction confirmed public schema has13 of26 expected successful migration records, no checksum mismatches/extra/unfinished records,14 missing expected tables and missing SmsConsentRecord.revision. No customer/application records queried, no credential displayed, no database changes. Exact13 migration names and limitations: backend evidence/APP-013/p06-staging-schema-readonly.md. Source Prisma files unchanged from image53037fb. Presence/checksum comparison is not exhaustive schema drift certification.
 
 Next within fixed item3: review the existing13 SQL migrations as one staging-only proposal, including data effects, constraints, locks, recovery/backup and baseline compatibility. Do not execute migrations or mark them applied by inference; prior local-only approvals do not authorize staging. Schema qualification is a demonstrated blocker, not another package. Image remains built/not deployed; credential injection and final release approval also remain. Item4 and accepted5/60 /3/8 unchanged. No scope deviation.
