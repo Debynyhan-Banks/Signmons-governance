@@ -8,7 +8,7 @@ Item 2 implementation detail, owner continuation "i reviewed proceed", source ba
 
 - [x] 1. Browser-driven phone-code -> address -> job: locally completed with actual loaded services and synthetic external providers, eight HTTPS browser cases at 390/1440; see backend evidence/APP-013/p06-loaded-browser-journey.md.
 - [x] 2. Default-disabled startup/asset wiring locally completed: main awaits the startup helper before both mounts/listen; enabled invalid refuses, disabled does not read intake secrets/resources/assets. Eight real HTTPS browser cases now use this startup helper. See backend evidence/APP-013/p06-startup-wiring.md.
-- [ ] 3. Exact release packet and owner review; no deployment authority implied.
+- [ ] 3. Exact release packet and owner review; current draft/read-only qualification in APP013_2B_ACTIVATION_PACKET.md. Not executable: image/provenance, numeric bindings/schema, protected material injection and itemized costs unresolved. No deployment authority implied.
 - [ ] 4. Separately approved capped staging test and owner acceptance.
 
 Two concrete tasks remain: fixed items 3 and 4. No new acceptance section/package; P06 and walkthrough acceptance unchanged. The older references to three broad P06 items are historical, not the owner-facing task count.

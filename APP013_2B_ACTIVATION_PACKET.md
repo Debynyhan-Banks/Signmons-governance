@@ -1,6 +1,61 @@
 # APP-013 / 2B controlled activation packet
 
-## Current P06 runtime-wiring card — 2026-09-14 UTC
+## Current: P06 item 3 release packet — preparation only, NOT executable
+
+Owner continuation "proceed" after startup review authorizes this documentation/read-only preparation. Source backend **53037fbd118cc4547061dfaf373c45b20a05962b**, governance **7e54dd35bf73833ee43ec1efb0a3183281c80766**. Existing backend PR21 remains open. No image build, release, key creation/access, IAM change, paid request or acceptance is authorized. This current section supersedes every older implementation-not-started, blanket Google-wait and next-card statement below; those are historical records, not current blockers.
+
+### Fixed checklist — unchanged
+
+- [x] 1. Browser phone-code -> address -> job, locally proven with synthetic external providers.
+- [x] 2. Default-disabled startup and packaged assets, locally proven at source above.
+- [ ] 3. Exact release packet and owner review: this draft records verified bindings and explicit unresolved release inputs. **Not complete or deployment-ready.**
+- [ ] 4. Separately approved capped staging run, closeout and owner acceptance.
+
+Two fixed items remain. The work below belongs to item 3, not additional sections/packages. Prior full runtime evidence: backend evidence/APP-013/p06-startup-wiring.md, 2,359 passed / 3 skipped plus eight startup-path HTTPS browser cases. Those tests were not rerun for this documentation-only change.
+
+### Current read-only resource evidence (2026-09-14)
+
+| Binding | Verified value / status |
+| --- | --- |
+| Project / region / service | signmons / us-east5 / signmons-calldesk-staging |
+| Runtime identity | signmons-calldesk-runtime@signmons.iam.gserviceaccount.com |
+| Latest created/ready revision | signmons-calldesk-staging-00065-guw; old phone-preflight candidate |
+| Old candidate image | us-east5-docker.pkg.dev/signmons/signmons/signmons-calldesk-backend@sha256:25e194acfd96299bb670de84e63b932d9dc69528e6f421ae42699f80fc9b3d75 — **not source 53037fb** |
+| Normal traffic | 100% signmons-calldesk-staging-app013bounds; all nine existing tag mappings preserved |
+| Candidate settings | 8080, 1 vCPU, 512 MiB; service template maximum instances 1 |
+| Six candidate safety flags | DEV_AUTH_ENABLED, SCHEDULING_ENABLED, STRIPE_WEBHOOK_LIVEMODE, SMS_DELIVERY_ENABLED, BACKGROUND_WORKERS_ENABLED, STAGING_PHONE_TEST_ENABLED all literal false |
+| New startup variables | Neither CONTROLLED_INTAKE_RUNTIME_JSON nor CONTROLLED_INTAKE_SECRETS_JSON present on old candidate |
+| New customer-purpose secrets | Metadata list filtered to signmons-staging-customer returned no entries. No numeric versions established; no secret payload read |
+| Existing bindings | Several existing secret bindings use latest; Stripe webhook is version 5 and old phone-only session/digest keys version 1. None qualifies new purpose keys by substitution |
+
+The CLI selected metadata and environment names/secret references only; literal values were emitted only for the six public safety flags. This is not current database, Twilio account, Google quota/IAM or billing evidence. No real tenant or secret payload was queried.
+
+### Proposed disabled-candidate diff — owner approval still required
+
+1. Build/package exactly the source SHA above using the existing Dockerfile and registry. Bind the resulting digest and build provenance **before deployment approval**. Image does not yet exist; do not label the old image as this source or invent a digest. A charged build/push requires a separately approved cost allowance; none is assumed here.
+2. Proposed candidate revision suffix `app013p06disabled` (full name `signmons-calldesk-staging-app013p06disabled`) and proposed new tag `p06-intake-disabled`. Check both for collision immediately before any approved operation; do not overwrite a collision. Preserve normal traffic at 100% baseline and all existing tags; no `--to-latest`, no replacement of phone-preflight. New tag origin is only a proposal until provider readback.
+3. Set only new controlled envelope `CONTROLLED_INTAKE_RUNTIME_JSON={"enabled":false}` for this disabled candidate; leave controlled private material absent. Keep all six flags false. Use existing service/runtime identity/port/resources; no new service, public IAM grant, scaling change or tenant activation. The disabled path does not require provisioning new customer-purpose keys.
+4. Before final exact diff, qualify current numeric versions for inherited required secrets without reading values; do not roll or rewrite old revisions. Review which inherited versions the new candidate uses rather than silently trusting mutable latest bindings. Verify staging database schema compatibility through an approved read-only method, without logging connection values or migrating a real database.
+5. Itemize build, artifact storage, candidate startup/request/runtime and any secret-version/access costs with current account allowances. **No verified incremental cost or spending ceiling is established in this draft.** The old proposed USD0.70 verification allowance does not authorize infrastructure charges.
+6. After owner approval of the resulting exact digest/config/cost diff only: deploy disabled/no-normal-traffic candidate, read back digest/revision/tags/flags, verify intake routes return 503 and unrelated health/webhook behavior remains intact. No phone/address call or real session/job is part of disabled deployment verification.
+
+### Enabled-run bindings — remain separate from disabled release
+
+The existing startup expects a strict server envelope plus separately injected `CONTROLLED_INTAKE_SECRETS_JSON`, not automatic Secret Manager fetching. That private JSON must map the exact numeric references to actual independently provisioned material. Resource labels alone do not prove that mapping. **The delivery/provisioning mapping is not yet qualified:** do not put secret values in a release YAML, command, repository or evidence, or assume Cloud Run composes independent secrets into JSON. Review the exact protected injection method and its resource/IAM diff before provisioning or enabling. If it requires changing the reviewed implementation, disclose that bounded correction before coding; do not silently add a new subsystem.
+
+Required distinct purpose references: customer session (at most two keys), verification digest, dedicated mailbox fingerprint plus fingerprint version, and the correct Twilio token. No old phone-only, encryption or cross-purpose key reuse. Proposed session/digest names in the historical packet have not been created; fingerprint numeric reference remains unset. No project-wide secret access or service-account key download.
+
+Exact run envelope must bind the deployed service/configuration/revision/HTTPS origin, current active tenant/integration/category, reviewed organization/payment/priority policies, DB-backed controlledRuntimeApproval and controlledPhoneApproval digests, current provider ownership/restrictions/rates, participant HMAC/notice, address account/policy, finite shared request limits and fresh absolute UTC start/end. No fixture defaults or test-database identities. Preserve existing liabilities. Current tenant/operator status, schema and provider restrictions have **not** been refreshed by this metadata-only pass.
+
+Historical proposed run ceiling remains USD0.50 phone + USD0.20 address = USD0.70 verification liability, one START/up to five CHECKs, two explicit address requests, maximum 15 minutes. These are proposals, not current rate evidence or spending approval; no automatic resend, cap reset or extra correction. Phone proof is not SMS consent. Job creation is not payment/booking/dispatch/send authority. Stop/closeout must specify how pending requests settle, current approval is disabled, session is closed and unknown holds are reconciled; preserve committed job/audit records.
+
+### Approval/finish conditions and next action
+
+Implementer must first resolve **image/provenance, numeric inherited-secret bindings/schema, protected new-material injection, and current itemized costs** within this same item 3. Product owner then approves the exact external diff; no blanket approval of blanks. The minimal next decision requiring external authority is a **bounded image build/artifact action with an explicit cost allowance**, once its estimate is established; it is not deployment or a paid Verify test. Read-only qualification can continue without treating this draft as executable.
+
+Item 3 closes only when the exact packet is populated and owner-reviewed, not because this draft exists. Item 4 remains the only subsequent fixed item. No new coding section promised or invented. Accepted packages **5/60 (8.3%)**, walkthrough **3/8 (37.5%)**, provisional **4–8 weeks at 25–30 collaborative hours/week plus external waits**, low confidence, unchanged. No scope deviation.
+
+## Historical P06 runtime-wiring card — 2026-09-14 UTC
 
 P06 item 2 source/interface/test inspection is complete in `APP013_P06_RUNTIME_WIRING_CARD.md`; implementation has not started. The card confirms the customer page is test-only and absent from the runtime image, no same-origin BFF is recorded, request budget is process-local, and existing phone admission is fixture-only or bound to the closed fixed-session staging runner. It defines a default-disabled loader, server-owned Cloud Run HTTPS mapping, controlled customer phone admission, shared PostgreSQL-backed admission/budget, existing-page phone states, same-origin delivery and finite integration matrix. Smallest owner decision: approve the recommended backend-served same-origin assets and shared database-backed patch, or identify the existing BFF/load-balancer path. Item 2 implementation/local proof and items 3–4 remain. No runtime/schema/cloud/provider/customer change or scope deviation implemented. Accepted 5/60; walkthrough 3/8; estimate unchanged.
 
@@ -10,7 +65,7 @@ Owner said "proceed" after the bounded correction repair and the proposed P06 pr
 
 Read-only Cloud Run readback confirms service signmons-calldesk-staging / us-east5, runtime signmons-calldesk-runtime@signmons.iam.gserviceaccount.com, candidate phone-preflight -> signmons-calldesk-staging-00065-guw, normal traffic 100% signmons-calldesk-staging-app013bounds. Existing candidate image digest sha256:25e194acfd96299bb670de84e63b932d9dc69528e6f421ae42699f80fc9b3d75 is historical, NOT the new source. Six inspected candidate flags are false: DEV_AUTH_ENABLED, SCHEDULING_ENABLED, STRIPE_WEBHOOK_LIVEMODE, SMS_DELIVERY_ENABLED, BACKGROUND_WORKERS_ENABLED, STAGING_PHONE_TEST_ENABLED. Other tags unchanged. No secrets read or resources modified.
 
-### Finite P06 checklist, not additional packages
+### Historical P06 checklist (superseded by fixed checklist above)
 
 1. **Entry/packet reconciliation — complete locally:** record actual source, staging readback, completed local evidence and remaining wiring. Google support reply plus approved minimal-record/correction contract removes the stale blanket support-wait gate; no legal certification and no expansion of retained fields. Correction UUID stays in volatile server memory up to five minutes/session expiry, one-use; missing state refuses. P01 durable allowlist remains.
 2. **Connected runtime wiring — source card complete; owner design decision and implementation/local proof remaining:** `APP013_P06_RUNTIME_WIRING_CARD.md` maps the exact loader/config/managed-HTTPS/phone/shared-budget/page/lifecycle interfaces and negative tests. It records that main.ts has no resources, controlled composition has no loader, browser phone/end paths are fixture-only, the budget is not shared, and the same-origin page is absent from the image. Do not promote the old phone runner or fixture modes. Owner must approve backend-served same-origin assets plus PostgreSQL-backed shared admission/budget and the controlled customer admission adapter, or name the existing external BFF/load-balancer path. Then implement one default-disabled patch and prove the same page from phone START/CHECK through one local job with synthetic external ports. Preserve raw webhook bytes and every tenant/session/policy/budget guard.
@@ -78,6 +133,6 @@ Implementer stops new reservations immediately on owner stop, expiry, policy mis
 
 Closeout evidence: packet digest/window, source/image/config references without secrets, allowed request counts, actual provider result categories, current-proof/admission correlation and job count, stop/refusal result, final inactive readback, retained unknown holds and billing-reconciliation owner. Product owner accepts the user-visible result; implementer owns technical evidence/closeout. No claim of zero risk or total provider bill from application ceilings.
 
-## Current stop point
+## Historical stop point (superseded)
 
 This document prepares the requested configuration proposal. Implementation, release and run checkboxes remain open. The next decision is review of this proposed reuse/key/budget design, with provider retention resolution still required before completing the implementation card. Do not create another demo or new acceptance section while blocked.
