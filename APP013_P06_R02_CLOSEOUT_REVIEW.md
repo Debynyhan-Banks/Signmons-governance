@@ -1,5 +1,25 @@
 # P06-R02 consolidated closeout review
 
+## Owner acceptance and remaining decision — 2026-09-15
+
+The owner's "Great proceed" accepts the demonstrated recovery and authorizes continuation of qualification, not an administrator migration. Recovery area accepted; keep archive through its recorded expiry and do not repeat without invalidating drift/expiry. Older missing-recovery and two-unresolved-area statements below are historical.
+
+Live metadata-only query against child br-sparkling-sun-ay6gr5e8/neondb using neondb_owner: public CREATE=true;26/26tables and37/37enums owned; other sessions0 at observation;2migration rolesNOLOGIN. No grants/DDL/password read or change. SQL Editor left afterward. Existing backup archive remains detached. Backend evidence p06-r02-admin-v2-retry.md records recovery and current boundary observations.
+
+### Proposed credential exception — owner decision required
+
+Gap: restricted-role local rehearsal passed, but the attempted live private runner credential delivery did not establish a usable migration connection. Table privileges alone cannot authorize ALTER; that route also requires explicit ownership changes. The successful backup used an existing administrator exception limited to read-only recovery.
+
+Recommend permitting preparation of a single supervised child-targeted migration using the existing administrator, reusing the known private-input transport and existing Prisma7.10 rehearsal. Alternative: retain the restricted-role route and finish secure password delivery plus ownership setup. Neither is implemented by this proposal. The simpler route avoids new credentials/ownership transfers but accepts a materially broader credential: it can access the parent, even though the proposed executor must reject every target except the exact child. Do not label it child-only credentials or reset/revoke the shared administrator.
+
+Finite finish within existing inventory:
+
+1. Owner decides whether to allow this administrator migration mechanism. This authorizes preparation only, not execution.
+2. Complete the remaining R02 connection/consumer qualification and assemble R03's exact13migration SHA manifest, private Prisma invocation, child/database guards, current baseline/consumer checks,5second lock/60second statement limits enforced on actual connections,10minute overall stop, one attempt, explicit cost bound, valid recovery checkpoint and partial-failure stop. Reuse existing scripts; the backup runner is NOT a migration runner. An executable live migration packet is not yet qualified.
+3. Present R03 for explicit execution approval; only then perform R04's one migration. No deployment, secret replacement, parent connection, automatic retry/repair or production action.
+
+No new P06 tasks, acceptance criteria or support-email prerequisite. R02 remains open solely for migration connection/consumer boundary; package acceptance unchanged5/60 and walkthrough3/8. Proposal changes security mechanism, not adopted scope; no implementation before decision.
+
 ## Latest: real recovery area technically demonstrated — 2026-09-15
 
 Owner-approved admin-v2 backup from20a3110 restored locally with26tables/633rows/fullcatalog/13migration-history comparison passing. Encrypted archive checksum independently matched; retention through2026-09-22T14:01:19.919Z. Automatic wrapper did not report cleanup success; manual closeout verified password file absent, local server/helpers stopped, source backup sessions0, both migration rolesNOLOGIN and exact image ejected. Read backend p06-r02-admin-v2-retry.md; historical missing-recovery assertions below are superseded.
