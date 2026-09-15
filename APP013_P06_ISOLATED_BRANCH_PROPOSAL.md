@@ -2,6 +2,8 @@
 
 ## Current qualification and owner decision required
 
+Options compared2026-09-15 in APP013_P06_RECOVERY_OPTIONS.md: recommend private logical-backup qualification while retaining the child; root replacement remains alternative. This comparison grants no data export/restore/credential authority. Owner direction needed on the proposed recovery-method amendment;11 tasks remain, none added.
+
 Correction 2026-09-15: owner approved preparation under the proposed six-hour policy, not destructive execution. The specific Neon instant-restore guide says root branches only; this target is a child. The prior own-history recovery recommendation below is withdrawn, not executable. See backend evidence/APP-013/p06-r02-recovery-policy-correction.md. A recoverable-root or private logical-backup method needs separate qualification/owner direction; no replacement resource, backup, credential or migration action has been taken. R02 stays open,11 remain,added0. Do not present this packet as finalized or migration-ready.
 
 Read-only console inspection at 2026-09-15 05:05 EDT found exactly one child Postgres role, inherited `neondb_owner`, owning `neondb` and created/updated 18 days earlier. Neon documents that normal children copy parent roles and passwords unless the parent is protected; protected branches are not available on this Free plan. The separate empty Credentials page concerns Neon storage/AI credentials, not a Postgres migration credential. Endpoint separation therefore remains insufficient for database credential isolation.
