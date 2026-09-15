@@ -1,5 +1,13 @@
 # R02 external qualification packet — NOT executable
 
+## Current: owner-authorized metadata inspection completed
+
+Owner said continue following the metadata-only request. Backend evidence/APP-013/p06-r02-source-metadata.md records actual child SQL-console results, all13 matching migration checksums, exact23-table/34-enum inventory, managed ownership/default ACLs, zero observed other sessions and current tagged-consumer/quota readback. No schema, credentials or data changed. Do not ask to approve this completed metadata inspection again.
+
+Source PostgreSQL18.6/UTF8/C.UTF-8,11,165,696bytes; public functions0, extension plpgsql1.0 owned by cloud_admin. Public schema pg_database_owner with PUBLIC USAGE; inherited neondb_owner has broad Neon membership. The two cloud_admin default ACL entries granting neon_superuser rights must be accounted for in restore qualification, not silently dropped. No managed role grants to the proposed runner.
+
+Current quota display1.84/100CUh,0.04/0.5GB,0/5GBnetwork,2/10branches is delayed telemetry, not a billing guarantee. Known consumers remain shared-secret references; no payload read today. Exact secure delivery, restoration of managed ACL metadata, ownership-change order/rollback, measured run capacity, mount permissions and UTC execution/expiry are still final packet fields. These are existing requirements, not additional P06 tasks. Next finalize the consolidated execution proposal; do not execute while fields remain unresolved.
+
 Local qualification passed per backend p06-r02-local-qualification.md. This packet is the consolidated output, not permission to perform external actions. The missing source facts below prevent a truthful final credential/export approval request. No migration authority.
 
 ## Fixed target and permitted direction
