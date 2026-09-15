@@ -2,6 +2,8 @@
 
 ## Current: R02 target qualification partial — no execution authority
 
+Branch investigation complete; proposal APP013_P06_ISOLATED_BRANCH_PROPOSAL.md awaits owner direction and separate execution approval. Expected Free-tier branch cost is conditional on shared quotas; normal clone inherits data/passwords, schema-only needs different bootstrap. No branch or credential changes; R02 open,11 remain,added0.
+
 Direct Neon endpoint identified from hidden-password connection UI. Baseline b6f1d13 requires non-null location fields; new null writes cannot be assumed compatible with older shared readers. See backend p06-direct-connection-compatibility.md. Proposed isolated-branch investigation versus coordinated shared-target maintenance requires owner direction; no branch/config/data action authorized or performed. R02 open,11 remaining,added0; no acceptance or ETA change.
 
 PostgreSQL18 local qualification passed under explicit owner approval; see backend p06-pg18-rehearsal.md and APP013_P06_R02_PG18_CARD.md. Installed18.6 without changing existing16/17 services; private no-TCP cluster stopped after unchanged migration rehearsal passed. R02 still open for migration connection, consumer/write isolation and recovery checkpoint/owner. Closed R01; open R02–R12 (11), added0. Accepted5/60 and3/8 unchanged, ETA unvalidated. No staging/resource/provider action; no scope deviation.
