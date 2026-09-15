@@ -1,5 +1,17 @@
 # R02 credential and backup proposal v1 — owner review, NOT execution-ready
 
+## Update: owner-assisted password method accepted
+
+Owner answered yes to privately handling only the future new child role password. This settles the participation choice, not role creation/reset/export authority. Do not ask that choice again.
+
+Read-only qualification2026-09-15: exact child Roles page still contains only neondb_owner; its action menu exposes Reset password and Delete role. Neither selected; menu dismissed. Never test this on inherited neondb_owner. Official [Manage roles](https://neon.com/docs/manage/roles#reset-a-password) documents Console Reset generating a password and displaying it in a subsequent modal; SQL-created roles avoid automatic neon_superuser membership. This supports a proposed UI route, not proof for a nonexistent NOLOGIN SQL-created runner.
+
+Future approved handoff: verify exact new p06_migration_runner row/child, then pause all screenshots, accessibility/DOM reads, clipboard reads and terminal capture while owner handles the reset-result modal and private non-echoing input. Owner closes the password modal before automation resumes. Do not type a password into SQL Editor, persist it in query history or send it in chat. No custom password needed; use the generated value. Clipboard avoidance by private manual entry is preferred; if owner chooses copy/paste, disclose clipboard history/sync exposure and clear only that copied secret with owner authority, without inspecting clipboard contents.
+
+Private input must terminate in the exact encrypted0600 passfile through a reviewed non-echoing local helper; no password-bearing process arguments/environment dumps. That helper and synthetic secret-capture test remain part of the existing executor qualification, not implemented here. Reject until ownership-enabled mount/private directory and input disposal are tested. The generator route is documented; the full handoff is NOT yet demonstrated. If new role does not expose the action or the result would be captured, stop before mutation; do not substitute parent credentials or console-created administrator roles.
+
+Next work remains the already identified local executor qualification, including dummy-secret handoff and managed metadata restore/comparison/limits together. No new P06 tasks, no live credentials and no scope deviation.
+
 ## Authority and fixed outcome
 
 Owner requested packet preparation after verified metadata. Entry backend723d850/governance04df44d; both focused remotes fetched and clean. Documentation only. Existing R02 pass test remains isolated migration access plus usable current recovery proof. No tasks added or acceptance awarded. This proposal refines the existing credential/backup boundary; it does not authorize it.
@@ -76,4 +88,3 @@ No new product decisions, recovery-provider choice or repeat source inspection n
 ## Progress
 
 R01 closed; R02-R12 open11; added0. Accepted packages5/60 and walkthrough3/8 unchanged, P06 unaccepted, ETA unvalidated. No scope deviation implemented. Sequence refinement above proposed for review before execution.
-

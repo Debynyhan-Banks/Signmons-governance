@@ -1,6 +1,10 @@
 # Session Handoff
 
-## Current: R02 execution proposal drafted — readiness gaps explicit
+## Current: R02 private handoff method accepted — execution still gated
+
+Owner accepts privately handling the future new-role password. Console reset route documented and existing role action menu inspected without reset; no new role exists, so actual handoff is untested. See APP013_P06_R02_EXECUTION_PROPOSAL.md and backend p06-r02-execution-proposal.md. Next consolidate dummy-secret/private-input and managed restore/comparison/limit executor qualification; do not repeat willingness approval. No live credential/export actions. R01 closed; R02-R12 open11, added0; accepted5/60 and3/8 unchanged, ETA unvalidated. No scope deviation.
+
+## Historical: execution proposal drafted
 
 See APP013_P06_R02_EXECUTION_PROPOSAL.md and backend p06-r02-execution-proposal.md. Proposed backup-before-ownership order, exact23-table/two-role template, limits and cleanup documented. Not execution-ready: secure new-role credential handoff and concrete managed-role restore/comparison/limit enforcement remain unqualified; UTC window unbound. No external actions. R01 closed; R02-R12 open11, added0; accepted5/60 and3/8 unchanged; ETA unvalidated. Sequence refinement proposed for review; no scope deviation implemented.
 
