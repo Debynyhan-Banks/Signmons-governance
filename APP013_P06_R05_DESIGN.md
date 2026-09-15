@@ -1,6 +1,20 @@
 # P06-R05 — private configuration and approval design
 
-Status: source qualification complete; proposed design and U01 require owner review. Documentation only. No executable live packet, secret access, provisioning, activation, release or provider request. Source backend354811fede061da67d9ddf3b05b58339f36fe80e, governance7e5c02f3c5ad04f5f4d22ee7c6d58f32eca0cf12. Origins fetched; focused trees clean on entry; backend PR21 open. Saved backend unrelated changes preserved. R04 verified child migration is not repeated.
+## U01 implementation outcome
+
+Owner-approved local tool is complete3/3, review-ready. Backend p06-u01-operator-tool.md lists implemented interfaces, actual synthetic proof and external limitations. Original12+approvedU01=13; R01-R05/U01closed6,R06-R12open7. No further scope deviation. Live resources, privileged credential use, activation and execution remain R07/R08/R10 gated; this tool does not imply live qualification. Runtime unchanged. Current tests2359application/16Node/8groupedPG18 checks plus governance21 pass; three existing application skips. No new U01 subsection.
+
+## Owner adoption and U01 implementation card — 2026-09-15
+
+Owner said "I approve proceed" to the explicit U01 local implementation request. R05 design accepted; original12 + approved-added1 =13, R01-R05closed5, U01/R06-R12open8. Prior proposal text below is historical. Approval is local synthetic implementation only, not live secrets, activation, deployment or charges.
+
+Entry source backend3b2ba06/governance48871f6, focused trees fetched clean. Implement only scripts/p06-runtime-packet.mjs, its Node tests and a disposable PostgreSQL verifier/evidence. Reuse compiled existing validators/digests/current-policy reader via npm run build, Prisma transaction/audit schema, immutable migration manifest and fixed child target. No app runtime/schema/browser edit. Public interface: protected prepare with injected secret API ports; guarded database activate/revoke/readback; explicit fixed-child or local-synthetic connection constructor; no side effects on import or ungated CLI. An execution authorization must bind action, packet/digests, source and absolute window; caller-provided authorization is an operator record, not cryptographic proof. Live invocation assembly stays subject to exact R07/R08/R10 approval.
+
+Finite exits remain three: protected bundle/provenance, transactional operations, complete synthetic failure matrix/review interface. Test commands: npm run build; node --test scripts/p06-runtime-packet.test.mjs; local-only PostgreSQL verifier on new private Unix socket/database; npm test -- --runInBand; npm run lint; npm run arch:check; both governance checks/21tests and git diff --check. Test actual validators and current-policy reader, not fixture-only positive authority. No UI change means browser journey not rerun. Preserve old images, backup and shared parent configuration. Sanitized errors and readback only; no provider calls in test ports. Unknown commits/uploads stop for reconciliation, never auto-retry. Existing 15minute window and reserved liabilities unchanged.
+
+## Historical source qualification
+
+Status at proposal: source qualification complete; proposed design and U01 required owner review. Documentation only. Source backend354811fede061da67d9ddf3b05b58339f36fe80e, governance7e5c02f3c5ad04f5f4d22ee7c6d58f32eca0cf12. R04 verified child migration is not repeated.
 
 ## Existing acceptance and finite design checklist
 
