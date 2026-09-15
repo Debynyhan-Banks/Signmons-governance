@@ -1,6 +1,10 @@
 # P06 remaining-work reconciliation — review baseline v1
 
-## Current status — baseline v1 approved
+## Current: R02 target qualification partial — no execution authority
+
+Read-only consumer review found nine tagged revisions and an existing migration job referencing the staging database secret; baseline scheduling and old SMS-test sending flags remain enabled. No actual activity inferred. Neon UI reports PostgreSQL18 versus local rehearsal16.11 and six-hour history without snapshots. Exact evidence: backend p06-target-consumers-recovery.md. R02 stays open pending version/connection, consumer maintenance and recovery qualification; no resource changes. Closed R01, open R02–R12 (11), added0; acceptance5/60 and3/8 unchanged, ETA unvalidated. Stop for material installation/maintenance/recovery decisions. No scope deviation.
+
+## Historical: R01 completion checkpoint
 
 Owner approved with "ok great lets proceed if any questions stop to ask proceed". Original twelve IDs and deliverables below are frozen; no tasks added. R01 is locally complete per backend evidence/APP-013/p06-migration-upgrade-rehearsal.md and APP013_P06_R01_REHEARSAL_CARD.md. **Closed: R01 (1/12). Open: R02–R12 (11/12).** No acceptance increase or ETA inferred. Next R02 qualification; stop for material questions/authority. The proposal wording below is the retained reviewed baseline, not a request to approve it again.
 
