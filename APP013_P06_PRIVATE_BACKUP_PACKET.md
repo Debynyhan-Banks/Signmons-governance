@@ -1,0 +1,21 @@
+# P06-R02 private backup packet — draft, no real-data execution
+
+Owner approved synthetic testing and this packet. Synthetic archive/restore succeeded; see backend evidence/APP-013/p06-synthetic-backup-restore.md. This is not approval to export inherited data, unlock credentials, provision storage or restore a live database.
+
+## Proposed exact boundary
+
+- Source only: project soft-smoke-54063480, branch br-sparkling-sun-ay6gr5e8, endpoint ep-jolly-flower-ayc6w9hv.c-5.us-east-2.aws.neon.tech, database neondb. Never parent production or shared staging endpoint. Full database required, including migration history and liabilities; no selective omissions to reduce cost.
+- Owner/key custodian: Debynyhan. Executor: Codex during an explicitly approved window. No password/key material in repository, terminal arguments, chat, logs, environment dumps or exported database-role hashes.
+- Proposed local storage parent: /Users/debynyhanbanks/Library/Application Support/Signmons/P06. Not created or verified non-synced. Use a separately verified encrypted volume/container there for BOTH archive and any real-data local restore cluster; no plaintext spill into /tmp, swap assumptions, cloud-synced folders, Desktop, Downloads or LaCie. Format/encryption/key-entry/mount/lock procedure must pass synthetic validation before real export; filesystem permissions or FileVault alone are not substituted for this requirement.
+- Proposed lifecycle: encrypted archive plus SHA256 manifest and sanitized source/checkpoint/tool metadata. Owner holds unlocking secret outside the container; usable key access must be tested without exposing it. Archive retained seven calendar days from completion, with absolute UTC deletion deadline recorded then. On failure/unresolved evidence obligations, stop before deletion and request explicit extension; no silent reset or indefinite retention. Revocation/cleanup after reviewed closeout, not before migration outcome is verified.
+- Proposed resource ceiling for later approval: one archive attempt and one isolated restore validation; max1GiB archive and2GiB total allocated local storage,20minutes wall clock. These are proposed operational limits, not verified database sizing or a billing cap. Preflight must establish enough free disk and Neon quota for complete export/validation; reject if size/timeout prediction does not fit. Do not truncate a backup and call it usable. No paid plan/snapshot/new cloud resource.
+- Credentials: exact read credential and owner/ACL mapping still unqualified. Inherited parent password must not be silently reused. A new restricted role, if necessary, needs its own exact reviewed privilege/expiry plan; local administrator restore success does not prove that role on Neon.
+
+## Required before requesting real export approval
+
+1. Verify encrypted non-synced storage/key and no-plaintext-spill behavior using synthetic data; select actual implementation and report its resource diff. No container created by this document.
+2. Qualify source read privileges, Neon extension/role/ACL/security-definer compatibility and writer isolation with metadata-only approval. pg_dump does not include roles. Do not treat --no-owner/--no-acl as equivalent security restoration.
+3. Refresh source identity/version/schema/history, database size, free disk, quota and expected resource use; bind exact destination, retention UTC deadline and credential authority. Reject scope drift or unexpected writers.
+4. Obtain explicit owner approval for the named export and private local restore (which copies inherited data), then verify actual full restore before R02/R03 closes. No migration authority from that approval.
+
+Actual disaster recovery remains separate: preserve failed state and post-backup changes, approve exact empty restore target and any cutover, verify correctness before destruction. This is a one-migration staging safeguard, not a production backup program. R02 stays open;11 existing tasks remain, none added. Storage/real-data gates are explicit remaining work within the approved recovery qualification, not completed capabilities. No scope deviation.

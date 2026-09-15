@@ -1,0 +1,7 @@
+# P06-R02 synthetic archive/restore card
+
+Owner approved synthetic restore testing and a private-storage approval packet; no real export. Entry backend2cf7e00, governanceb0c0ec1. Reuse scripts/verify-p06-migration-upgrade.mjs, its first13 migrations, fictional tenant/customer/property/consent rows, history/checksum/catalog helpers, and private stopped PostgreSQL18 cluster. No runtime change.
+
+Finite work: add opt-in P06_BACKUP_REHEARSAL=1 requiring the validated private PG18 socket; full custom archive and empty-database restore; compare complete fixture rows/history/catalog and owner/ACL metadata; reject truncated archive with atomic empty-destination rollback; then run existing full migration rehearsal unchanged. Preserve no external environment in Postgres tools, deadline120s, stop on unexpected failure, drop only tracked generated databases and stop private cluster. No parent/provider reads. Browser QA not applicable to CLI-only fixture. Run syntax/format, rehearsal, build/lint/architecture and governance/whitespace gates. Actual Neon role/extension differences remain unproven.
+
+Storage packet must distinguish proposed encrypted non-synced local storage/key/retention and required validation from actual approval/provisioning. Finish: synthetic result and explicit remaining real-data gates, not R02 acceptance. No new task or scope deviation. No paid operation, credential, migration on Neon, or real restore authorized.
