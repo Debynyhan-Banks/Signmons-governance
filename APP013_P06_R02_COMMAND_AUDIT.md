@@ -1,5 +1,17 @@
 # R02 execution-command audit and fixed wiring proposal
 
+Implementation result: the approved three-item wiring scope is implemented; same-core local26-table proof and20 Node/4private-input tests passed. See backend p06-r02-once-result.md and APP013_P06_R02_RUNBOOK.md. Live adapter/actual handoff/export unexecuted; no acceptance increase. Historical audit below explains why this wiring was required.
+
+## Approved implementation card — before code
+
+Owner explicitly reviewed/approved and said proceed. Entry backend d4dad75/governance27c8b11; fetched/clean, frozen/full consistency passed. Implement the three finite wiring items below in scripts/p06-backup-once.mjs and scripts/p06-backup-once.test.mjs; reuse existing guard module/private-input helper and extend existing local migration rehearsal only to exercise the same new backup core. No new dependency or source migration.
+
+Interface: fixed-target CLI takes only a private approval packet path; validates packet/revision/UTC/quotas, exact mounted-image identity/ownership/private passfile before network. Shared core accepts connected clients/command callbacks for disposable local testing; CLI offers no alternate-host or fixture mode. Source SQL read-only, one exported snapshot, full26-table/history/two-schema catalog comparison, one archive/local restore. Dedicated local cluster under run directory; preserve private restore/archive together for seven-day approved retention. All diagnostics fixed codes/counts. Persistent exclusive attempt marker forbids rerun after success/failure. Live privileges/role-expiry and administrator revocation remain external approval/console actions; no inherited administrator password.
+
+Test commands: node --test scripts/p06-backup-once.test.mjs scripts/p06-backup-guards.test.mjs; python3 -B scripts/test_p06_private_input.py; existing P06_MANAGED_REHEARSAL/ROLE/BACKUP with new private PG18 socket for actual same-core dump/restore/catalog/row and refusal tests. Cover invalid packet/window/target/storage before connect, exclusive marker, synthetic success/drift/row mismatch/cleanup failures; inherited guard limits and signal cases retained. Run npm lint/build/architecture, touched-JS syntax/Prettier, full governance/frozen/21 regression and whitespace. No UI change: browser QA not applicable; no live backend/credential/backup action.
+
+Observable finish is a checked-in guarded invocation with same-core local proof plus explicit remaining live gates, not a live recovery claim. Rollback is tooling revert; no external change. Cleanup tests must not drop unowned resources. Larger design change means stop before implementation; no additional R02 task or ETA promise.
+
 2026-09-15; owner proceeded with finalizing the exact execution packet. Entry backend eaebc04/governance02e197a; remotes fetched, worktrees clean, frozen/full consistency passed. No cloud or mounted-image action. APP-013/2B and P06-R02 unchanged.
 
 ## Result: packet cannot yet be represented as executable
