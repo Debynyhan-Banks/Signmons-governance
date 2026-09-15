@@ -1,5 +1,9 @@
 # R02 existing-administrator backup exception
 
+## Fresh supervised retry approved — 2026-09-15
+
+Owner said proceed after the repaired-prompt handoff proposed a fresh supervised attempt. Entry backend67137ca/governanceebed574. Authorize ONE new attempt with the same existing-administrator exception and limits, using unused fixed /Volumes/Signmons-P06/r02-backup-admin-v2. Only change the two helper path constants from admin-v1 to admin-v2; preserve cancelled records and reject old packet paths. No altered mechanism, new role, password reset, new provider, migration or release. Run existing focused tests/governance and commit path binding before the execution packet pins its SHA. Refresh target/quota/consumer/storage metadata, bind actual <=20minute UTC window and owner-ready private entry. On failure close out, do not retry automatically. Two R02 areas/counts unchanged.
+
 ## Stalled-handoff correction card — 2026-09-15, before code
 
 Owner requested a new terminal, then said proceed to diagnosing/fixing the stalled prompt. Entry backend8da585c/governance1e0cac2. The original admin-v1 attempt was cancelled: only approval/attempt records existed, no pgpass/archive/result observed; Python/Node processes stopped and encrypted image ejected. Preserve its closeout and markers, no retry/reset/path change under this repair.

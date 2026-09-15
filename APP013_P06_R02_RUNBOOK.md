@@ -1,5 +1,9 @@
 # R02 supervised backup runbook
 
+## Newly approved retry: admin-v2
+
+Owner said proceed after the prompt repair. ONE fresh attempt is approved using /Volumes/Signmons-P06/r02-backup-admin-v2 and the repaired same --existing-admin-backup command. The two helpers now pin that unused directory and reject cancelled admin-v1. All limits, identity, private-file handling, exact clean SHA/current metadata/window requirements remain unchanged. Do not start the timed prompt until owner privately has the password and has hidden the password display. No packet/window exists until fresh verification. Preserve prior records; no reset or automatic subsequent retry. This is the existing R02 recovery test, not a new section.
+
 ## Latest closeout and correction
 
 The admin-v1 attempt P06-R02-admin-backup-20260915T133406Z is CANCELLED, not executable again. Only approval/attempt files were observed before closeout.json; no credential file, archive or result. The stalled Python/Node processes were stopped and the exact encrypted image ejected. Do not reopen the old terminal command or reuse/reset its markers. The previous window is not authority for retry.
