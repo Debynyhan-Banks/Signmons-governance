@@ -1,4 +1,22 @@
-# R02 private handoff and one-shot backup — live approval still required
+# R02 supervised backup runbook
+
+## Current approved route: existing administrator, no password assignment
+
+APP013_P06_R02_EXISTING_ADMIN_EXCEPTION.md supersedes the runner-password workflow below for ONE supervised backup. Owner approved this mechanism after reviewing inherited administrator risk. Do not call --administrator or run password/LOGIN SQL. The two existing migration roles remain untouched. No provider-log attestation is needed for password-assignment SQL because this route sends no such SQL; authentication/provider/local residual risks still exist.
+
+Use the same verified encrypted image/UUID and allowances. After owner is ready, refresh child mapping/PG18/schema13history/26tables/two schemas, absence of child consumers, quotas and encrypted storage/free space. Create a NEW private0700 /Volumes/Signmons-P06/r02-backup-admin-v1 and0600 approval.json; no v1/v2 reuse, deletion or reset. Packet retains the existing owner/approvalId/exact clean sourceRevision/project/branch/host/database/window<=20minutes/verifiedAt<=5minutes/quota/retention7days/administratorCloseoutAcknowledged/noOtherConsumersConfirmed fields, but role=neondb_owner, runDirectory is the new fixed path, existingAdministratorBackupApproved=true and inheritedCredentialRiskAcknowledged=true. Bind real timestamps and actual verified values; no live packet exists yet.
+
+Owner-only private terminal command from reviewed /private/tmp/signmons-2b-bootstrap-backend:
+
+```sh
+python3 -B scripts/p06_private_input.py --existing-admin-backup
+```
+
+Do not start its60second input timer before owner readiness. Stop all screen/DOM/clipboard capture during existing-password retrieval and input; never reset a password or put it in chat/agent PTY/argv/environment/SQL. Fixed anonymous pipe forwards input only after packet/storage/attempt preflight. Executor creates an exclusive0600 encrypted exact-host/database/neondb_owner passfile for pg_dump; no wildcard/parent endpoint. Temporary file is intentional, not memory-only. Existing administrator credentials may work on parent/siblings and do not expire with the packet.
+
+One read-only source snapshot/custom dump/localPG18 restore/full comparison,64MiBarchive/768MiBworkspace and existing20minute total budget. Both source client and pg_dump request default_transaction_read_only=on; source transaction explicitly READ ONLY. This is operational containment, not least-privilege authority. No source ALTER/GRANT/CREATE/role changes. On success/failure close owned clients/processes, stop local restore server, remove same-inode credential file and eject exact image; never revoke/terminate other administrator sessions. Preflight failures before resource ownership require operator verification. Successful output BACKUP_COMPLETE means executor/local cleanup passed; read private result.json after approved remount for retained comparison/hash/expiry. No secret retention, no retry; archive/data/records retained encrypted7days under existing policy.
+
+Current status: local tests only. No real backup demonstrated, no credential obtained or encrypted image mounted. Next is owner private readiness and the one supervised operation, not another provider email. Full R02 also requires the distinct migration-access boundary. Historical instructions below are NOT the chosen route.
 
 ## Current state
 

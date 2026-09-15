@@ -1,5 +1,9 @@
 # R02 private administrator handoff — preparation proposal
 
+## Superseded route
+
+Owner approved the existing-administrator backup exception in APP013_P06_R02_EXISTING_ADMIN_EXCEPTION.md. Do not execute this password-assignment procedure. Prior logging check refused two settings, not proof of a leak. The password-setting helper/checks remain unchanged; the new backup mode sends no password SQL and needs no support-email dependency. Historical implementation/evidence below is preserved, not the current action.
+
 ## Latest: local implementation qualified, no live authority
 
 The approved local card is implemented; backend p06-r02-private-admin-local.md records actual results and limits. Seven Python tests,28Node regressions and separate actual private PG18 role/password proof passed. Dummy fixture removed/server stopped; no encrypted-image mount or Neon/credential action. Read scripts/p06-private-role-password.mjs and updated private input/v2 executor before live review. Fixed v2 and matching handoff receipt required; former no-argument capture CLI disabled. Python capture API retains regression compatibility, never use it for administrator persistence.
