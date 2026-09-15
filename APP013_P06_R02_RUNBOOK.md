@@ -1,5 +1,11 @@
 # R02 supervised backup runbook
 
+## Latest closeout and correction
+
+The admin-v1 attempt P06-R02-admin-backup-20260915T133406Z is CANCELLED, not executable again. Only approval/attempt files were observed before closeout.json; no credential file, archive or result. The stalled Python/Node processes were stopped and the exact encrypted image ejected. Do not reopen the old terminal command or reuse/reset its markers. The previous window is not authority for retry.
+
+Local repair removes a circular module-evaluation wait before input consumption; readPipe now resides in dependency-leaf guards and READY-line input is bounded. Backend p06-r02-private-prompt-repair.md records33Node/10Python tests and limits. No new source password/backup attempt this repair. Next agree a fresh supervised retry/unused fixed path and current packet, then owner-ready private input; no provider email. Commands/path below describe the cancelled first admin attempt and must not be re-executed unchanged.
+
 ## Current approved route: existing administrator, no password assignment
 
 APP013_P06_R02_EXISTING_ADMIN_EXCEPTION.md supersedes the runner-password workflow below for ONE supervised backup. Owner approved this mechanism after reviewing inherited administrator risk. Do not call --administrator or run password/LOGIN SQL. The two existing migration roles remain untouched. No provider-log attestation is needed for password-assignment SQL because this route sends no such SQL; authentication/provider/local residual risks still exist.

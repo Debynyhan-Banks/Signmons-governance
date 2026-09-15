@@ -1,5 +1,15 @@
 # R02 existing-administrator backup exception
 
+## Stalled-handoff correction card — 2026-09-15, before code
+
+Owner requested a new terminal, then said proceed to diagnosing/fixing the stalled prompt. Entry backend8da585c/governance1e0cac2. The original admin-v1 attempt was cancelled: only approval/attempt records existed, no pgpass/archive/result observed; Python/Node processes stopped and encrypted image ejected. Preserve its closeout and markers, no retry/reset/path change under this repair.
+
+Inspected defect: CLI top-level awaits runLive; runLive dynamically imports p06-private-role-password.mjs for readPipe; that module statically imports the same still-evaluating CLI. This module-evaluation cycle prevents input consumption/normal cleanup. Earlier unit tests imported the CLI as a library and Python tests substituted a trivial child, so they missed this entry-point-specific gap.
+
+Same R02 private transport acceptance, no new subsystem: move the unchanged readPipe function into existing dependency-leaf p06_backup_guards.mjs and import it statically from both consumers (preserve old export for tests). Add a local module-graph regression that fails on the old cycle and a real PythonTTY→Node shared-reader dummy-secret test including cancellation. Also bound the entire READY line read rather than only its first-byte readiness, preventing an incomplete line from hanging before the private prompt. Exact files: three existing JS helpers, p06-backup-once.test.mjs, p06_private_input.py and its tests. Preserve every source/storage/budget/credential/acceptance boundary and cancelled attempt.
+
+Finite exit: failing regression first, same focused Node/Python suites then lint/build/architecture/syntax/format/governance frozen/full/21regressions/whitespace; reconcile evidence and focused commits. No repeated backup fixture, real credential, mount, Neon connection, new execution packet or automatic retry. A fresh supervised retry remains separately agreed; code correction is not recovery proof. No scope deviation beyond repairing the approved mechanism. R02 still two areas, accepted5/60 and3/8 unchanged.
+
 ## Approved change and bounded implementation card — 2026-09-15
 
 Owner said "ok proceed" after reviewing the existing-administrator alternative and its inherited parent-credential risk. This replaces password provisioning for ONE supervised child-only backup, not the migration-access acceptance area. No support email is required for this route. Entry source backend7658ee7189bb5d23ee05477a81a56464982b95c9/governance549468b; fetched focused worktrees clean; saved user changes preserved. Frozen/full checks pass before edits.
