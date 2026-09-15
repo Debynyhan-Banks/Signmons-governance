@@ -1,5 +1,13 @@
 # R02 supervised backup runbook
 
+## Latest: admin-v2 recovery passed; manual closeout complete
+
+Do NOT run another backup: admin-v2 attempt completed26table/633row/fullcatalog/13history comparison from20a3110. Dump2026-09-15T14:01:19.919Z;198833bytearchive; SHA2568da4d9ce76f8ed4d96f5e33622adab6a4c7cb244689ca645186535ccf26775f9. Retain encrypted through2026-09-22T14:01:19.919Z. Backend p06-r02-admin-v2-retry.md records exact source/packet/private artifacts and evidence.
+
+Wrapper returned generic refusal; result.json localCleanup=PENDING. Independent closeout found temporary password file absent/local server stopped, image unmounted but attached; read-only remount/result/hash inspection and explicit detach completed. Final source backup sessions0, migration rolesNOLOGIN, no local helper/server, image/mount absent. This is successful recovery proof with manually completed cleanup, NOT proof automatic cleanup passed. No further test/fix added as a prerequisite by inference.
+
+Review the actual result/closeout evidence and remaining migration-access/consumer boundary. R02 remains open for that separate area/owner acceptance. A future restore/migration requires its own explicit approval and current checkpoint/source validation. Historical commands below are consumed attempts, not rerunnable instructions.
+
 ## Newly approved retry: admin-v2
 
 Owner said proceed after the prompt repair. ONE fresh attempt is approved using /Volumes/Signmons-P06/r02-backup-admin-v2 and the repaired same --existing-admin-backup command. The two helpers now pin that unused directory and reject cancelled admin-v1. All limits, identity, private-file handling, exact clean SHA/current metadata/window requirements remain unchanged. Do not start the timed prompt until owner privately has the password and has hidden the password display. No packet/window exists until fresh verification. Preserve prior records; no reset or automatic subsequent retry. This is the existing R02 recovery test, not a new section.

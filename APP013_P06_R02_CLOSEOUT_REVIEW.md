@@ -1,5 +1,11 @@
 # P06-R02 consolidated closeout review
 
+## Latest: real recovery area technically demonstrated — 2026-09-15
+
+Owner-approved admin-v2 backup from20a3110 restored locally with26tables/633rows/fullcatalog/13migration-history comparison passing. Encrypted archive checksum independently matched; retention through2026-09-22T14:01:19.919Z. Automatic wrapper did not report cleanup success; manual closeout verified password file absent, local server/helpers stopped, source backup sessions0, both migration rolesNOLOGIN and exact image ejected. Read backend p06-r02-admin-v2-retry.md; historical missing-recovery assertions below are superseded.
+
+Do not repeat this backup as a new section while valid. R02's other acceptance area remains migration-capable access and consumer boundary; no migration/ownership/role change authorized or performed by the backup exception. Existing admin credential was used only for this supervised read-only backup, not silently adopted for future migration. Owner review of the recovery evidence next; R02 and package percentages do not auto-close. Two areas unchanged, no added scope.
+
 ## Update: local preparation approved and completed
 
 Owner reviewed and said "i reviewed proceed". APP013_P06_R02_LOCAL_CARD.md bounds this execution; backend p06-r02-local-qualification.md records actual passing local role/restore tests and cleanup. APP013_P06_R02_EXTERNAL_PACKET.md consolidates exact metadata queries and remaining external approval fields. No Neon change or actual backup performed. Proposal wording below is historical; do not repeat completed local qualification without evidence invalidating it.
