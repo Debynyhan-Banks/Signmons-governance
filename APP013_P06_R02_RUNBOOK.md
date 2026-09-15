@@ -1,81 +1,73 @@
-# R02 one-shot command — review before live authorization
+# R02 private handoff and one-shot backup — live approval still required
 
-Latest preparation: APP013_P06_R02_PRIVATE_ADMIN_PROCEDURE.md proposes the owner-requested private child-administrator alternative after Console handoff failure. Preparation only, no credential exception executed or helper implemented. Original fixed v1 command below must not be run against the cancelled packet; proposed v2 binding needs reviewed local implementation/qualification and a fresh explicit live packet. Do not infer live access from preparation approval.
+## Current state
 
-## Latest live checkpoint — stopped before handoff
+Local private-administrator adapter and v2 backup binding exist and are locally qualified. See APP013_P06_R02_PRIVATE_ADMIN_PROCEDURE.md and backend p06-r02-private-admin-local.md. Actual Neon logging/administrator authority, existing-password private retrieval, TLS handoff and backup/restore remain unexecuted. Local results are not live approval or recovery evidence.
 
-Owner explicitly approved the live test on2026-09-15. The exact two-role/read-only-grant transaction committed in the isolated child; both roles remainNOLOGIN. SQL readback proved creation, but Console Roles still showed only inherited neondb_owner after revisiting. Required new-runner reset route could not be verified, so stopped as specified. No password/reset/LOGIN/executor/export; both-role sessions0 and encrypted image ejected. See backend p06-r02-live-handoff-stop.md. The12:22–12:42UTC window is cancelled; packet/directory must not be silently reused. Qualify the actual credential route before proposing a changed mechanism or new window. Do not rerun CREATE ROLE: the two names now exist. No automatic retry or inherited-password workaround.
+The first window2026-09-15T12:22–12:42UTC was cancelled before credential handoff. The two roles already exist and were last verifiedNOLOGIN; do NOT rerun CREATE ROLE. Preserve encrypted v1 approval/closeout records through2026-09-22T12:22:00Z; no v1 adoption, deletion or automatic retry. v2 changes are implemented in source only; no v2 directory or live packet exists.
 
-The implementation-only/no-live-authority wording below describes the earlier checkpoint; current authority/result is the explicit bounded test and safe stop above, not blanket future authority.
+## Before asking for the next live window
 
-The owner approved implementation only. The command now exists; the real Neon adapter, actual new-role Console reset/handoff and real restore have NOT been executed. Local same-core evidence is backend p06-r02-once-result.md. Do not run this document as a script or infer live approval from code review.
+Read-only, no passwords: refresh exact child/project/endpoint, PostgreSQL18,13migration checksums,26tables/two schemas, both roles/administrator ADMIN OPTION, consumers/sessions, quota and storage evidence. Read the exact LOGGING_SQL and extension-name/version query from scripts/p06-private-role-password.mjs. Evaluate assertLogging against those values; compute loggingFingerprint over exact ordered arrays only after reviewing effective settings and provider handling. Do not call runAdmin or obtain administrator input for this metadata work.
 
-## Fixed command
+Unsafe/hidden/unknown settings, audit/utility logging or unresolved provider handling mean stop. No global/session logging modifications, added permissions, new roles, replacing Neon or repeat synthetic backup by inference. Fingerprint is a change detector; providerLoggingReviewApproved is an owner/operator attestation, not proof of absent internal logging. Document review source/scope/limitations rather than inventing an approval ID/hash.
 
-From the clean, owner-reviewed backend checkout at the packet's exact sourceRevision:
+## Fresh future packet (not filled here)
 
-```sh
-node scripts/p06-backup-once.mjs /Volumes/Signmons-P06/r02-backup-v1/approval.json
-```
+Only fixed project soft-smoke-54063480, child br-sparkling-sun-ay6gr5e8, host ep-jolly-flower-ayc6w9hv.c-5.us-east-2.aws.neon.tech, database neondb, role p06_migration_runner. Owner Debynyhan Banks; unique approvalId beginning P06-R02-; exact reviewed clean sourceRevision40hex; runDirectory /Volumes/Signmons-P06/r02-backup-v2; retentionDays7; administratorCloseoutAcknowledged true; noOtherConsumersConfirmed true.
 
-No alternate URL, parent-password argument, fixture flag or retry argument. No arguments/wrong path refuses. Never use verify-p06-migration-upgrade.mjs for real data.
+Require canonical millisecond UTC startUtc/endUtc/verifiedAtUtc, maximum20minute window, current verification<=5minutes at each entry, remainingCUh>=1 and remainingTransferBytes>=134217728 from fresh account readback. Usage telemetry may lag, not a hard billing cap. Add explicit administratorPasswordAssignmentApproved and inheritedCredentialRiskAcknowledged, plus providerLoggingReviewApproved, providerLoggingReviewId and loggingFingerprint from the actual reviewed logging qualification. Never set these true merely to get past a refusal.
 
-## Before requesting the live window
+Separate owner approval must name administrator credential use only at this child, one runner password assignment whileNOLOGIN, later LOGIN with exact expiry, one backup/restore and mandatory closeout. Administrator credential itself may work on parent/siblings; fixed destination does not make it child-scoped. No inherited password reset, source ownership transfer, grants, migration, deployment, new cloud resource or paid plan.
 
-1. Confirm owner explicitly authorizes the existing child-only two-role/read-only-grant proposal, one new-role reset/private handoff, one full private backup/restore and closeout. No ALTER OWNER, schema migration, application binding, deploy, extra cloud resource or paid plan. Owner participation already accepted; do not ask willingness again.
-2. Refresh exact child target, no other consumers/sessions,13 original migration checksums,26tables/two schemas and quota/storage. A readback is not authorization. Stop if drift. Use fixed project/branch/host/role in APP013_P06_R02_EXECUTION_PROPOSAL.md.
-3. Mount existing image, verify exact UUID/Owners Enabled/exclusion and available space. Exclusively create /Volumes/Signmons-P06/r02-backup-v1 as current owner0700; existing directory/attempt means stop and reconcile, not adopt or remove it. Create private0600 approval.json only after exact owner approval. No private input in that JSON.
+After approval, mount the existing verified image/UUID with ownership; enforce exclusion/free space, exclusively create new current-owner0700 v2 directory and private0600 approval.json. Existing directory/attempt is a stop, not permission to reuse/delete it. No password in JSON.
 
-## Approval packet fields (no live values filled here)
+## Owner-assisted private handoff
 
-Required fixed values: owner Debynyhan Banks; approvalId matching P06-R02- plus a unique reviewed label; sourceRevision exact clean backend40-character SHA; project soft-smoke-54063480; branch br-sparkling-sun-ay6gr5e8; host ep-jolly-flower-ayc6w9hv.c-5.us-east-2.aws.neon.tech; database neondb; role p06_migration_runner; runDirectory /Volumes/Signmons-P06/r02-backup-v1; retentionDays7; administratorCloseoutAcknowledged true; noOtherConsumersConfirmed true.
+Automation stops all screenshot/DOM/accessibility/clipboard capture before the owner reveals the existing child's administrator password. Owner closes the secret display before automation resumes. No reset, SQL Editor password, chat input or captured agent PTY. If existing retrieval is unavailable, stop rather than improvise. Do not launch the60second input prompt until owner is ready.
 
-Execution-bound fields: startUtc/endUtc/verifiedAtUtc canonical YYYY-MM-DDTHH:mm:ss.sssZ strings. End-start maximum20minutes; run must start within window; metadata/quota verification no older than5minutes. remainingCUh numeric >=1 and remainingTransferBytes numeric >=134217728 from fresh owner-account readback. These are operator attestations, not automated billing proof or cryptographic approval. Do not fill dummy values or silently extend an expired window. Absolute retention expiry is emitted from actual dump completion; partial-artifact retention is conservatively anchored to approved start.
-
-## Conditional credential sequence inside that approval
-
-Use only the existing reviewed exact26-table SQL allowlist/two-role template. Both roles start NOLOGIN, non-superuser, no createDB/createRole/replication/bypassRLS, no managed-role membership. Collision refuses. Keep original object ownership unchanged.
-
-Verify newly created p06_migration_runner appears in the correct child. Owner handles its Console reset privately while all screen/clipboard capture is paused. If that new role lacks the expected action, stop and close out; never reset neondb_owner or switch to an administrator credential.
-
-Owner enters only the generated new-role value into the existing non-echoing helper:
+From the clean reviewed backend checkout, in the owner's private terminal:
 
 ```sh
-python3 -B scripts/p06_private_input.py
+python3 -B scripts/p06_private_input.py --administrator
 ```
 
-The helper writes the exact scoped0600 pgpass in the run directory. No password in SQL/history/chat/arguments. Then authorize LOGIN with VALID UNTIL equal to the packet's exact endUtc, using the child administrator console; read back all restricted flags and expiry. No sample expiry SQL is executable here. Budget starts from remaining approved window, including elapsed setup/handoff time; no fresh20minute grant.
+The fixed child process validates packet/storage/exclusive handoff marker before prompting. Only anonymous-pipe input; administrator secret remains in process memory, never a file/environment/argument or backup process. <=120second handoff inside the same absolute20minute window. No elevated-role/password reset fallback.
 
-## What the command does and does not do
+Helper checks logging/authority/identity, writes generated runner-only0600 scoped passfile and makes one runner password/expiry assignment preservingNOLOGIN. Administrator closes before handoff.json records ASSIGNED_NOLOGIN. Success intentionally retains mounted runner passfile for the immediately following approved backup stage; it is not full closeout. Failure may be indeterminate; no automatic resubmission. handoff-attempt.json persists.
 
-Exclusive attempt.json prevents automatic second execution. Fixed TLS source connection, role-expiry/session checks, remaining-window budget, one snapshot/custom dump, local private PG18 cluster, NOLOGIN metadata stand-ins/extension-owner mapping, one transactional restore,13-history and complete two-schema catalog/row comparison. No source business-data writes; no fixture generation or migration in this command. Node TLS verifies certificates; libpq uses verify-full/system roots. Actual Neon certificate/role access remains to be demonstrated in the approved run.
+## One backup, only after handoff and LOGIN readback
 
-Output is counts/status/hash/retention only. All archive, local restored data, local logs and packet remain in encrypted private run storage, subject to the same approved retention. Source values only exist in comparison memory and private database/archive. Workspace guard is scan-based, not a hard quota; standard PostgreSQL error/statement logging is suppressed. No forensic memory erasure or administrator isolation guarantee.
+Using existing authorized child administrator Console, enable runner LOGIN with VALID UNTIL exactly the approved endUtc and read back restricted flags/expiry. Do not renew the20minute window or use expired metadata. The non-secret LOGIN statement is separate from password handling.
 
-After an attempt, close clients, stop only this run's local server, remove only the same inode passfile and eject verified exact image. Cleanup has its own bounded shutdown allowance after work deadline. A cleanup failure returns CLEANUP_FAILED; do not label it closed or force-eject a running server. result.json records data comparison before ejection with localCleanup PENDING; only successful returned localCleanup PASSED establishes local closeout. Preserve evidence of failed/partial attempts; never reset attempt.json to retry.
+```sh
+node scripts/p06-backup-once.mjs /Volumes/Signmons-P06/r02-backup-v2/approval.json
+```
 
-## Mandatory administrator closeout, success OR failure
+No alternate host/path/admin password/retry flag. Backup requires matched handoff receipt, then uses runner credential only: fixed TLS source, remaining budget, one snapshot/custom dump, one local private PG18 restore, exact13history and26table/two-schema catalog/row comparisons. No source business write or migration. Existing limits64MiBarchive/768MiBmonitoredworkspace retained; scan guard is not a disk quota.
 
-The script has no administrator password and explicitly reports administratorRevocation REQUIRED. After confirming the exact child and newly created role, execute as its authorized administrator:
+## Mandatory whole-window closeout on success, failure or owner abort
+
+The administrator stage never grants LOGIN. After any later LOGIN, independently commit this non-secret statement in the exact child Console:
 
 ```sql
 ALTER ROLE p06_migration_runner NOLOGIN;
 ```
 
-Commit that statement independently before attempting session termination, so a termination-permission error cannot roll back NOLOGIN. Then:
+Then terminate only this runner's sessions and verifyNOLOGIN/zero; never touch other users:
 
 ```sql
 SELECT pg_terminate_backend(pid)
 FROM pg_stat_activity
-WHERE usename='p06_migration_runner'
-  AND datname='neondb'
-  AND pid<>pg_backend_pid();
-SELECT rolname,rolcanlogin,rolvaliduntil
-FROM pg_roles WHERE rolname='p06_migration_runner';
-SELECT count(*) FROM pg_stat_activity
-WHERE usename='p06_migration_runner' AND datname='neondb';
+WHERE usename='p06_migration_runner' AND datname='neondb' AND pid<>pg_backend_pid();
+SELECT rolname,rolcanlogin,rolvaliduntil FROM pg_roles WHERE rolname='p06_migration_runner';
+SELECT count(*) FROM pg_stat_activity WHERE usename='p06_migration_runner' AND datname='neondb';
 ```
 
-Require NOLOGIN and zero runner sessions, plus local server stopped/passfile absent/image ejected. If privileges fail, report the exact administrator action needed; do not terminate other users or borrow parent credentials. Password expiry alone does not terminate existing sessions. Preflight refusal before taking ownership of the passfile does not remove it: operator must close out the private helper file/image and any role provisioned earlier.
+Verify owned local PG server stopped, scoped passfile removed and exact image ejected/mount absent. Backend backup cleanup performs these local actions after an owned attempt; returned localCleanup PASSED does not establish administrator revocation. result.json has localCleanup PENDING before ejection. Handoff failure attempts its own connection/file/image cleanup but can fail; a preflight refusal before ownership, or owner abort after successful handoff and before backup, requires explicit operator cleanup. Do not label these closed merely from expiry or a generic refusal. Retain non-secret failure/attempt evidence; never reset markers to retry. No forensic-memory/host-compromise/provider-log guarantees.
 
-Retain encrypted run contents for the recorded seven-day expiry; separate owner authority is needed for destructive removal/extension. Do not claim R02 accepted from helper tests. After actual recovery proof and closeout, review the existing R02 access/consumer/recovery criterion; R03/R04 migration approval/execution remain separate.
+Seven-day retention applies to encrypted archive/local restored data/logs and non-secret run records, from dump completion or approved start for partial records. Administrator secret has no intentional persistence; runner file removed at closeout, not retained7days. Destructive deletion/extension needs separate owner approval; no automation created.
+
+## Acceptance and review
+
+Review private input/adapter/v2 receipt diff and local evidence. Next is read-only live metadata/logging qualification, then fresh specifically approved execution if requirements pass. Actual recovery plus remaining migration-access boundary must pass before R02 acceptance; R03/R04 remain separate. R02 still has two acceptance areas; R01closed,R02-R12open11,added0; accepted5/60 and3/8 unchanged; ETAunvalidated. Approved mechanism amendment implemented locally only; no additional scope deviation.

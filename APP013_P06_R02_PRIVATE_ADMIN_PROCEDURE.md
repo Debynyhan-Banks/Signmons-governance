@@ -1,5 +1,19 @@
 # R02 private administrator handoff — preparation proposal
 
+## Latest: local implementation qualified, no live authority
+
+The approved local card is implemented; backend p06-r02-private-admin-local.md records actual results and limits. Seven Python tests,28Node regressions and separate actual private PG18 role/password proof passed. Dummy fixture removed/server stopped; no encrypted-image mount or Neon/credential action. Read scripts/p06-private-role-password.mjs and updated private input/v2 executor before live review. Fixed v2 and matching handoff receipt required; former no-argument capture CLI disabled. Python capture API retains regression compatibility, never use it for administrator persistence.
+
+Logging gate makes no server/session configuration changes: requires known safe effective settings plus owner-reviewed provider evidence fingerprint. Actual Neon logging/authority values remain unqualified; next read-only metadata/provider review, then fresh specific live approval. Success handoff deliberately retains mounted runner-only passfile for the next already-approved step, with administrator closed and runnerNOLOGIN; only the later backup/abort closeout removes it/ejects. This clarifies the whole-window cleanup wording below, not an indefinite credential-retention permission. No extra R02 area or acceptance awarded.
+
+## Approved local implementation card — 2026-09-15
+
+Owner said proceed after preparation handoff explicitly requested local implementation/testing, not live execution. Entry backend7323a7b/governance126978f, fetched clean. Implement only the four finite qualification items below. Exact files: scripts/p06_private_input.py and scripts/test_p06_private_input.py; new scripts/p06-private-role-password.mjs and scripts/p06-private-role-password.test.mjs; existing scripts/p06-backup-once.mjs and scripts/p06-backup-once.test.mjs for v2/receipt binding. Local integration included in new Node test file with explicitly opted-in existing private PG18 socket; no external URL accepted. No app route/schema/dependency changes.
+
+Commands before handoff: python3 -B scripts/test_p06_private_input.py; node --test scripts/p06-private-role-password.test.mjs scripts/p06-backup-once.test.mjs scripts/p06-backup-guards.test.mjs; P06_PRIVATE_LOCAL_PROOF=1 node --test scripts/p06-private-role-password.test.mjs (fixed existing private no-TCP PG18 fixture only); node --check on modified JS; local Prettier check; npm run lint; npm run build; npm run arch:check; backend check-governance-baseline and governance frozen/full consistency/21regressions; git diff --check both repos. Final actual commands/counts supersede no tests silently. No UI changes: real TTY dummy input tests replace application browser QA for this helper, not live credential proof.
+
+Logging gate implementation is fail-closed: no global/session logging changes or permission grants, require safe effective settings plus explicit reviewed provider-log evidence in future packet. Unknown/unsafe settings refuse before password SQL. New provider attestation is an operator approval record, not proof that no provider logs exist. Any live qualification gap remains explicitly unaccepted. Expected finite output: locally qualified transport/one-role adapter, v2 binding, failures/cleanup evidence and review checkpoint. Small targeted change, effort not estimated as days; no promise this closes R02. Earlier preparation-only text below is historical; live authority still absent.
+
 ## Authority, scope and finish
 
 Owner answered "yes i approve" to PREPARING the private child-only password-setting procedure. This approves this document, not administrator credential retrieval, password assignment, LOGIN, another backup attempt or implementation. Prior live window is cancelled. Source inspected: backend42f0af97e920d29841f911f17b164248e825e0fc, governance25538b0. Existing focused worktrees clean/fetched; saved unrelated work preserved.
