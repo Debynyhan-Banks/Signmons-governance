@@ -1,6 +1,10 @@
 # P06 remaining-work reconciliation — review baseline v1
 
-## Authority and status
+## Current status — baseline v1 approved
+
+Owner approved with "ok great lets proceed if any questions stop to ask proceed". Original twelve IDs and deliverables below are frozen; no tasks added. R01 is locally complete per backend evidence/APP-013/p06-migration-upgrade-rehearsal.md and APP013_P06_R01_REHEARSAL_CARD.md. **Closed: R01 (1/12). Open: R02–R12 (11/12).** No acceptance increase or ETA inferred. Next R02 qualification; stop for material questions/authority. The proposal wording below is the retained reviewed baseline, not a request to approve it again.
+
+## Original reviewed authority and status
 
 Owner requested a finite reconciliation after repeated misleading "two sections left" reports, then said "thanks proceed". This authorizes this documentation audit only. **Proposed baseline: awaiting owner review.** No implementation, migration, provisioning, deployment or paid test is authorized here.
 
@@ -60,4 +64,3 @@ The approved 60-package denominator and 2B → 3A → 3B → 3C → 3D sequence 
 Review this twelve-task inventory and the explicit R02/R05 uncertainties. Approval freezes the reporting baseline; it does not authorize migration, secrets, deployment, charges or live customer actions. First implementation candidate after baseline review is R01, with its exact executable rehearsal card completed first.
 
 This turn: documentation correction only; no runtime or external change. **No scope deviation implemented.** Proposed reporting decomposition is awaiting review; protected acceptance text and baseline-check anchors are unchanged.
-
