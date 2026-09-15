@@ -1,5 +1,9 @@
 # R02 external qualification packet — NOT executable
 
+## Superseding checkpoint2026-09-15: legacy metadata verified
+
+Backend p06-r02-legacy-metadata.md confirms two user schemas,26tables,37enums and120indexes; non-public inventory omission resolved. APP013_P06_R02_EXECUTION_PROPOSAL.md now proposes explicit legacy_2025 USAGE and SELECT on its three tables. No live grant or export occurred. Earlier public-only statements below are historical. Real-run aggregate limits, sanitized comparisons, ownership-enabled storage and actual credential/backup proof remain gated; no new tasks.
+
 STOP: backend p06-r02-tooling-result.md demonstrates the public-only grant list cannot support a full backup: migration3 retains legacy_2025. Local corrected fixture passes26-table comparison; live non-public inventory is still missing. Do not execute prior role templates or omit legacy data. Private-input and managed restore tools now have actual local proof; real-data executor/storage/deadline/sanitization gates remain explicit. No live permission expansion authorized.
 
 Latest: APP013_P06_R02_EXECUTION_PROPOSAL.md is the consolidated review proposal with exact read-only role allowlist, backup-before-ownership ordering, limits and explicit readiness gaps. It is not execution-ready; do not interpret the template as role/export approval. Owner-assisted secure password handoff and concrete managed-role restore qualification remain to be resolved together.

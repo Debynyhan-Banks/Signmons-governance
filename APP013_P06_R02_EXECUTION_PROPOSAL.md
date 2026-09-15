@@ -1,6 +1,12 @@
 # R02 credential and backup proposal v1 — owner review, NOT execution-ready
 
-## Stop correction: public-only backup grants are incomplete
+## Current correction: full source inventory verified; NOT execution-ready
+
+Read-only child catalog inspection2026-09-15 confirmed legacy_2025 owns three retained tables and three enums, all neondb_owner-owned with default ACLs, no RLS. Backend p06-r02-legacy-metadata.md records the full metadata evidence. The amended template now covers USAGE on both schemas and SELECT on all26tables. No live grant executed. Earlier public-only proposal superseded; never omit legacy data.
+
+Private TTY and managed-metadata synthetic tests now pass. Aggregate20minute/storage enforcement and sanitized streaming real-data comparisons remain unimplemented; ownership-enabled encrypted mount, actual new-role credential handoff and exact execution window remain gated. This is still a proposal, not authorization.
+
+## Historical stop correction: public-only backup grants were incomplete
 
 Owner-approved local tooling now exists and passed its corrected tests; backend p06-r02-tooling-result.md records actual results. The initial restricted full dump failed: migration3 retains legacy_2025.Tenant/Job/CallLog, so23public tables are NOT the whole database. The template below is historical/incomplete and must not execute. No live grants changed. Verify all non-system source schemas (including legacy ownership/ACLs) before proposing the amended allowlist. Do not exclude legacy data to make pg_dump pass.
 
@@ -14,7 +20,7 @@ Read-only qualification2026-09-15: exact child Roles page still contains only ne
 
 Future approved handoff: verify exact new p06_migration_runner row/child, then pause all screenshots, accessibility/DOM reads, clipboard reads and terminal capture while owner handles the reset-result modal and private non-echoing input. Owner closes the password modal before automation resumes. Do not type a password into SQL Editor, persist it in query history or send it in chat. No custom password needed; use the generated value. Clipboard avoidance by private manual entry is preferred; if owner chooses copy/paste, disclose clipboard history/sync exposure and clear only that copied secret with owner authority, without inspecting clipboard contents.
 
-Private input must terminate in the exact encrypted0600 passfile through a reviewed non-echoing local helper; no password-bearing process arguments/environment dumps. That helper and synthetic secret-capture test remain part of the existing executor qualification, not implemented here. Reject until ownership-enabled mount/private directory and input disposal are tested. The generator route is documented; the full handoff is NOT yet demonstrated. If new role does not expose the action or the result would be captured, stop before mutation; do not substitute parent credentials or console-created administrator roles.
+Private input must terminate in the exact encrypted0600 passfile through a reviewed non-echoing local helper; no password-bearing process arguments/environment dumps. The helper and synthetic secret-capture tests now pass per backend p06-r02-tooling-result.md; actual encrypted live handoff remains untested. Reject until ownership-enabled mount/private directory and input disposal are tested. The generator route is documented; the full handoff is NOT yet demonstrated. If new role does not expose the action or the result would be captured, stop before mutation; do not substitute parent credentials or console-created administrator roles.
 
 Next work remains the already identified local executor qualification, including dummy-secret handoff and managed metadata restore/comparison/limits together. No new P06 tasks, no live credentials and no scope deviation.
 
@@ -36,11 +42,11 @@ Reuse backend p06-r02-source-metadata.md, p06-r02-local-qualification.md and scr
 
 1. Before mutation, bind approved start/end as absolute UTC and read back unchanged target,13checksums, ownership and consumers. Record T0;20minute total active execution deadline, no automatic retry. Establish at least1GiB free inside the verified image and2GiB host free, source no larger than32MiB, at least1CUh and128MiB transfer allowance remaining. These are conservative admission limits, not predicted usage or enforced billing caps. Abort for stale/unknown quota. Fixed0.25CU and existing5minute scale-to-zero unchanged.
 2. Unlock privately; mount with ownership enabled, verify0700 run directory and current-user ownership, private socket, no TCP. Do not claim Owners Disabled plus chmod proves multiuser protection. Confirm actual run mount options; refusal means stop, not broad sudo/global disk changes.
-3. Create only the two named restricted roles in one child-console transaction, with no password literal, no managed-role membership and no ownership transfer. Grant runner CONNECT on neondb, USAGE public and SELECT on exactly the23 inventoried tables. No CREATE/schema ownership/write grants at this stage. Capture resulting ACL metadata and original metadata separately.
+3. Create only the two named restricted roles in one child-console transaction, with no password literal, no managed-role membership and no ownership transfer. Grant runner CONNECT on neondb, USAGE public and legacy_2025 and SELECT on exactly the26 inventoried tables. No CREATE/schema ownership/write grants at this stage. Capture resulting ACL metadata and original metadata separately.
 4. Set a unique password through a verified owner-assisted secure credential handoff; enable LOGIN with expiry T0+20minutes only after that handoff is qualified. Explicit issue below prevents executing this step today. Store any necessary PG passfile only within encrypted0700 directory,0600 file, scoped exact host/5432/neondb/runner, never wildcard; sslmode=verify-full. No parent credential or plaintext URL payload access.
 5. One full custom pg_dump using PG18.6 through exact direct child, no-owner/ACL stripping prohibited. Before backup, require no other authorized child writers; capture consistent snapshot/checkpoint metadata. Archive path run/source.dump; logs/temp run-local. Statement/lock/process deadlines bound by remaining overall window. Stop if archive exceeds64MiB or run workspace exceeds768MiB; retain partial evidence, never truncate and call it a backup. One dump only.
 6. Restore once into a new private no-TCP local cluster/database using UTF8/C.UTF-8, preserve archive ownership/ACL statements and compare actual source/restore privately. Matching locale names across macOS/Linux alone do not prove equal sort semantics: validate collation-sensitive index creation and ordering needed by schema; any mismatch fails qualification. Do not substitute C/SQL_ASCII silently.
-7. Require exact13 successful history records/checksums,23table/34enum catalog inventory, full row comparison for all tables, constraints/index definitions and explicit security metadata comparison. No customer values in repository/log output; emit counts/pass/fail/checksums only. Consistent source comparison must use the backup snapshot or proven stable source; a later moving source comparison is not adequate.
+7. Require exact13 successful history records/checksums,26table/37enum/two-schema catalog inventory, full row comparison for all tables, constraints/index definitions and explicit security metadata comparison. No customer values in repository/log output; emit counts/pass/fail/checksums only. Consistent source comparison must use the backup snapshot or proven stable source; a later moving source comparison is not adequate.
 8. Only after backup passes may the reviewed ownership manifest become eligible for a separately bound child transaction. No broad REASSIGN OWNED. This transaction is NOT authorized by this document. Preserve neondb_owner's prior object access explicitly if ownership changes; rollback map restores original owners and exact ACLs. Runner stays disconnected until migration R03/R04 approval; revocation must account for new objects later created by runner.
 9. On every outcome stop local server, revoke LOGIN and terminate only this newly created runner's sessions, remove private credential file, eject image and verify inaccessible. Do not terminate other sessions or drop roles with unexpected dependencies. Retain archive/evidence encrypted seven days from dump completion, record absolute UTC expiry; request extension before expiry if recovery/acceptance unresolved. No silent retention reset, historical Time Machine deletion or destructive live restore.
 
@@ -55,7 +61,7 @@ SET LOCAL statement_timeout='10s';
 CREATE ROLE p06_migration_owner NOLOGIN NOSUPERUSER NOCREATEDB NOCREATEROLE NOREPLICATION NOBYPASSRLS;
 CREATE ROLE p06_migration_runner NOLOGIN NOSUPERUSER NOCREATEDB NOCREATEROLE NOREPLICATION NOBYPASSRLS;
 GRANT CONNECT ON DATABASE neondb TO p06_migration_runner;
-GRANT USAGE ON SCHEMA public TO p06_migration_runner;
+GRANT USAGE ON SCHEMA public,legacy_2025 TO p06_migration_runner;
 GRANT SELECT ON TABLE public."AuditLog",public."CommunicationContent",
 public."CommunicationEvent",public."Conversation",public."ConversationJobLink",
 public."Customer",public."CustomerCoverageCheck",public."Job",public."JobOffer",
@@ -63,7 +69,9 @@ public."LedgerEntry",public."Payment",public."PropertyAddress",public."RoutingRu
 public."ServiceArea",public."ServiceCategory",public."SmsConsentRecord",
 public."StripeEvent",public."TenantOrganization",public."TenantSubscription",
 public."User",public."UserAvailabilityBlock",public."UserServiceCapability",
-public."_prisma_migrations" TO p06_migration_runner;
+public."_prisma_migrations",
+legacy_2025."Tenant",legacy_2025."Job",legacy_2025."CallLog"
+TO p06_migration_runner;
 COMMIT;
 ```
 
@@ -73,7 +81,7 @@ This is a proposed staging order change from immediate owner-capable access: get
 
 The real source has cloud_admin-owned plpgsql and two cloud_admin/public default ACLs granting neon_superuser rights. pg_dump does not include roles. Never recreate a real provider administrator as a login or grant it host/cloud powers. An isolated local restore may need NOLOGIN metadata stand-ins for neondb_owner/cloud_admin/neon_superuser plus exact applicable memberships and ACLs. The purpose is to preserve and inspect database metadata, not emulate Neon's platform security.
 
-The local successful fixture did NOT test this managed-role mapping, extension ownership, new read-only dump role or cross-OS collation. Preserve original catalog evidence and compare the restored database to the intended mapping; explicitly distinguish exact object/ACL preservation from provider-environment parity. If pg_restore does not restore extension owner, report the difference and qualify an explicit local-only correction before claiming success. No --no-owner/--no-acl shortcut. Actual recovery/cutover on Neon remains separately approved and cannot be inferred from a local restore.
+The corrected local fixture tested managed-role mapping, extension ownership and a restricted read-only dump role across26fictional tables. It does not prove live provider parity or all cross-OS collation semantics. Preserve original catalog evidence and compare the restored database to the intended mapping; explicitly distinguish exact object/ACL preservation from provider-environment parity. If pg_restore does not restore extension owner, report the difference and qualify an explicit local-only correction before claiming success. No --no-owner/--no-acl shortcut. Actual recovery/cutover on Neon remains separately approved and cannot be inferred from a local restore.
 
 ## Readiness gaps — no blanket action approval requested
 
