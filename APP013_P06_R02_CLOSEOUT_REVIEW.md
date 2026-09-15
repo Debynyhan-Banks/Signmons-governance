@@ -1,5 +1,9 @@
 # P06-R02 consolidated closeout review
 
+## Update: local preparation approved and completed
+
+Owner reviewed and said "i reviewed proceed". APP013_P06_R02_LOCAL_CARD.md bounds this execution; backend p06-r02-local-qualification.md records actual passing local role/restore tests and cleanup. APP013_P06_R02_EXTERNAL_PACKET.md consolidates exact metadata queries and remaining external approval fields. No Neon change or actual backup performed. Proposal wording below is historical; do not repeat completed local qualification without evidence invalidating it.
+
 ## Authority and outcome — 2026-09-15
 
 Owner approved a consolidated review after R02 took too long. This is documentation only, not approval for credentials, export, migration or deployment. Entry backend43fce7f/governance301779a; focused remotes fetched, worktrees clean. Existing runtime source53037fb remains unchanged. No scope deviation; frozen twelve-task inventory unchanged.
@@ -60,4 +64,3 @@ This leads to original R03 migration approval, then R04 one authorized migration
 Review this card against unchanged R02/R03 rows and private backup packet. Accept or amend the consolidated local preparation boundary; real export remains a separate exact approval, followed by existing R03. No repeated micro-approvals for routine commands inside an approved card.
 
 R01 closed; R02-R12 open11; added0. Packages accepted5/60 (8.3% of tracked plan), walkthrough3/8 (37.5%); neither is total MVP completion. No validated ETA or promise that two acceptance areas mean two sections/days.
-

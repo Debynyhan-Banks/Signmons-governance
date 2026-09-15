@@ -1,6 +1,10 @@
 # Signmons Execution Board
 
-## Current: R02 consolidated closeout review — two unresolved acceptance areas
+## Current: R02 consolidated local qualification passed — source metadata gated
+
+Owner reviewed and approved local preparation. Restricted-role migration/no-op, table-grant refusal and encrypted synthetic archive/restore passed; five fixture databases and two roles removed, PG stopped and image locked. See backend p06-r02-local-qualification.md, APP013_P06_R02_LOCAL_CARD.md and APP013_P06_R02_EXTERNAL_PACKET.md. Exact external packet remains non-executable pending authorized child metadata/consumer/quota inspection, actual role mapping and resource bounds. No real export, credential/provider change or migration. R01 closed; R02-R12 open11, added0; accepted5/60 and3/8 unchanged; ETA unvalidated. No scope deviation.
+
+## Historical: consolidated closeout review
 
 See APP013_P06_R02_CLOSEOUT_REVIEW.md for the finite credential/consumer and usable-backup requirements, grouped preparation proposal, exact approval boundaries and R02 pass test. Completed synthetic/storage work is retained; no new recovery-method choice or container creation requested. Documentation audit only; no external actions authorized or performed. R01 closed, R02-R12 open11, added0; accepted5/60 and3/8 unchanged, ETA unvalidated. No scope deviation.
 

@@ -1,5 +1,7 @@
 # P06-R02 private backup packet — draft, no real-data execution
 
+Latest: consolidated local role and encrypted database-workspace test passed; see backend p06-r02-local-qualification.md and APP013_P06_R02_EXTERNAL_PACKET.md. Historical statements below saying encrypted synthetic database restore remains untested are superseded. Actual source-role/ACL/encoding/sizing and mounted private-access qualification remain before real-data approval; no real export occurred.
+
 ## Current: consolidated review supersedes stale storage proposals below
 
 APP013_P06_R02_CLOSEOUT_REVIEW.md controls current preparation and pass/fail requirements. Container exists, owner reopen/checksum passed, and future Time Machine exclusion is verified. Statements below saying not created, currently included, or requiring a new exclusion approval are retained historical proposals, not outstanding instructions. No real export has occurred. Actual capacity is1,999,982,592bytes, not2GiB; archive plus expanded restore/logs/headroom must be measured and fit. No capacity increase authorized. Credential qualification, encrypted database-workspace proof and exact real-data approval remain. This audit does not authorize them.
