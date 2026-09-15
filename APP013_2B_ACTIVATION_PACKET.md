@@ -2,6 +2,12 @@
 
 ## Current: P06 item 3 release packet — preparation only, NOT executable
 
+### Current schema qualification — blocked, no migration authorized
+
+Owner approved private version2 database credential use for metadata only. Read-only Neon transaction confirmed public schema has13 of26 expected successful migration records, no checksum mismatches/extra/unfinished records,14 missing expected tables and missing SmsConsentRecord.revision. No customer/application records queried, no credential displayed, no database changes. Exact13 migration names and limitations: backend evidence/APP-013/p06-staging-schema-readonly.md. Source Prisma files unchanged from image53037fb. Presence/checksum comparison is not exhaustive schema drift certification.
+
+Next within fixed item3: review the existing13 SQL migrations as one staging-only proposal, including data effects, constraints, locks, recovery/backup and baseline compatibility. Do not execute migrations or mark them applied by inference; prior local-only approvals do not authorize staging. Schema qualification is a demonstrated blocker, not another package. Image remains built/not deployed; credential injection and final release approval also remain. Item4 and accepted5/60 /3/8 unchanged. No scope deviation.
+
 ### Current build result — successful, not deployed
 
 Owner explicitly approved the three scoped build permissions and one new1200s/USD1 attempt. Added only storage.objectViewer on signmons_cloudbuild, artifactregistry.writer on us-east5/signmons, and logging.logWriter on project signmons for the existing signmons-build account. Bucket uniform access was false, so no bucket configuration change was made; the three grants were removed immediately after completion and readback confirmed their absence. Account remains enabled under the preceding owner approval. No Owner/Editor, secret, runtime, deploy or provider grant.
