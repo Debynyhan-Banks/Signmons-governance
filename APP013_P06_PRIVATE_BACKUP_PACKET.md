@@ -1,5 +1,11 @@
 # P06-R02 private backup packet — draft, no real-data execution
 
+## Current: future Time Machine exclusion approved and verified
+
+Owner explicitly approved excluding only /Users/debynyhanbanks/Library/Application Support/Signmons/P06/signmons-p06.dmg.sparsebundle from future Time Machine backups. tmutil addexclusion succeeded; fresh isexcluded changed Included to Excluded on2026-09-15. Existing backup copies were not searched/deleted; no LaCie/global backup setting changed. Exclusion does not prove absence of historical or third-party copies. No real data exported. R02 remains open for encrypted database-workspace/credential qualification and exact export approval;11 remain,added0,accepted5/60 and3/8 unchanged,ETA unvalidated. No scope deviation.
+
+## Prior packet and historical observations
+
 Owner approved synthetic testing and this packet. Synthetic archive/restore succeeded; see backend evidence/APP-013/p06-synthetic-backup-restore.md. This is not approval to export inherited data, unlock credentials, provision storage or restore a live database.
 
 ## Proposed exact boundary
