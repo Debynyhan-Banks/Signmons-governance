@@ -2,6 +2,12 @@
 
 ## Current: P06 item 3 release packet — preparation only, NOT executable
 
+### Approved build attempt stopped — disabled build identity
+
+Owner answered "yes" to the one-attempt, 20-minute, USD1 operational allowance request. This supersedes the older build-not-authorized statement below **only for that attempt**, not for IAM, retry, deployment or paid verification. At 2026-09-15 00:29 UTC (2026-09-14 local), submission uploaded a clean 520-file / 3.7MiB tracked source export from 53037fbd118cc4547061dfaf373c45b20a05962b, then Google rejected CreateBuild: `Provided service account ... signmons-build@signmons.iam.gserviceaccount.com ... is disabled`. Readback confirms disabled=true; latest build remains September12 build688616b2. No new build ID, build compute, image or digest was produced. No retry or identity substitution performed.
+
+Uploaded source object remains `gs://signmons_cloudbuild/source/1789432140.891187-431a2066d4ef4ac3a5304a6d495f897b.tgz`, generation1789432141830104, 882435 bytes. Upload/storage may incur small charges; no invoice claim or zero-total-cost claim. No real credentials, .env, git history or untracked files included. Existing artifacts were not deleted. Current blocker is **disabled build service account**, owned by the project/IAM owner. Re-enabling it or selecting another identity requires explicit approval; a fresh build retry also requires authorization under the no-retry condition. Do not create a new build account or grant permissions by inference. Item3 remains open, item4 unchanged; no new section. No scope deviation.
+
 Owner continuation "proceed" after startup review authorizes this documentation/read-only preparation. Source backend **53037fbd118cc4547061dfaf373c45b20a05962b**, governance **7e54dd35bf73833ee43ec1efb0a3183281c80766**. Existing backend PR21 remains open. No image build, release, key creation/access, IAM change, paid request or acceptance is authorized. This current section supersedes every older implementation-not-started, blanket Google-wait and next-card statement below; those are historical records, not current blockers.
 
 ### Item 3 qualification update — build-only approval request
