@@ -1,5 +1,7 @@
 # R02 credential and backup proposal v1 — owner review, NOT execution-ready
 
+Latest mounted qualification: owner-approved ownership enforcement succeeded; four existing private-input tests passed using dummy values inside the verified encrypted image, then cleanup/ejection passed. See backend p06-r02-mounted-input.md. Earlier unqualified-mounted-input wording is superseded; recheck actual mount/run-directory at execution, not repeat dummy tests without drift. Actual new-role handoff and exact real invocation/window/cleanup binding remain open. No role or export authority.
+
 ## Latest safety implementation checkpoint
 
 Owner-approved local safety tooling now passes per backend p06-r02-safety-result.md and APP013_P06_R02_SAFETY_CARD.md. Shared budget (up to20minutes), pre-write64MiB archive ceiling, monitored768MiB workspace, fixed diagnostics and bounded cursor comparisons are implemented and exercised in the existing26-table synthetic snapshot restore. Historical claims below that these helpers are unimplemented are superseded. Workspace monitor is stop-on-detection, not a disk quota; scans and event-loop latency permit overshoot.

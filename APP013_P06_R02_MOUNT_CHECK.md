@@ -1,0 +1,9 @@
+# R02 ownership-enabled private-input qualification
+
+Result:4mounted-volume tests passed, all test directories removed, original entries unchanged, exact image ejected and mount absent. See backend p06-r02-mounted-input.md. Actual new-role handoff/export remain unperformed.
+
+Owner approved administrator prompt for only volume UUID A0020084-32EC-412A-B96B-1AA68A2CE61F, completed it, then said proceed. diskutil enableOwnership succeeded; fresh readback showed Owners Enabled. No provider authority inferred.
+
+Pre-test card: backend e097f5a/governance9f84205, focused remotes fetched/clean. Existing R02 recovery/access requirement; reuse scripts/test_p06_private_input.py and p06_private_input.py unchanged. Check exact image/UUID/mount/ownership and Time Machine exclusion, then run its four existing pseudo-terminal tests with disposable private directories located inside this exact mounted image instead of tmp. Verify directory UID0700, dummy passfile0600/no echo/escaping, cancellation/timeout/removal and overwrite/symlink/nonterminal refusals. Test cleanup removes only test-created directories; existing qualification artifacts untouched. No real password or backup.
+
+Finish: actual mounted-volume test outcome and cleanup, then eject exact image and confirm mount absent. No remount/password prompt needed for this check. Outer encryption and current enforced POSIX metadata are evidence; do not claim independent key custody, another-user penetration testing or protection against administrators. Actual new Neon role handoff and real executor invocation/UTC packet remain gated. Runtime untouched; browser/lint/build not applicable to unchanged code, run documentation/architecture/baseline/21 governance tests and whitespace checks. No new task, scope deviation or acceptance increase.
