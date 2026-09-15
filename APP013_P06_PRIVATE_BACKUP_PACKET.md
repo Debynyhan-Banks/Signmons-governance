@@ -1,6 +1,10 @@
 # P06-R02 private backup packet — draft, no real-data execution
 
-## Current: future Time Machine exclusion approved and verified
+## Current: consolidated review supersedes stale storage proposals below
+
+APP013_P06_R02_CLOSEOUT_REVIEW.md controls current preparation and pass/fail requirements. Container exists, owner reopen/checksum passed, and future Time Machine exclusion is verified. Statements below saying not created, currently included, or requiring a new exclusion approval are retained historical proposals, not outstanding instructions. No real export has occurred. Actual capacity is1,999,982,592bytes, not2GiB; archive plus expanded restore/logs/headroom must be measured and fit. No capacity increase authorized. Credential qualification, encrypted database-workspace proof and exact real-data approval remain. This audit does not authorize them.
+
+## Historical: future Time Machine exclusion approved and verified
 
 Owner explicitly approved excluding only /Users/debynyhanbanks/Library/Application Support/Signmons/P06/signmons-p06.dmg.sparsebundle from future Time Machine backups. tmutil addexclusion succeeded; fresh isexcluded changed Included to Excluded on2026-09-15. Existing backup copies were not searched/deleted; no LaCie/global backup setting changed. Exclusion does not prove absence of historical or third-party copies. No real data exported. R02 remains open for encrypted database-workspace/credential qualification and exact export approval;11 remain,added0,accepted5/60 and3/8 unchanged,ETA unvalidated. No scope deviation.
 

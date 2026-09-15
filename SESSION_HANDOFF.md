@@ -1,6 +1,10 @@
 # Session Handoff
 
-## Current: R02 container Time Machine exclusion verified — real export gated
+## Current: R02 consolidated closeout review — two unresolved acceptance areas
+
+See APP013_P06_R02_CLOSEOUT_REVIEW.md for the finite credential/consumer and usable-backup requirements, grouped preparation proposal, exact approval boundaries and R02 pass test. Completed synthetic/storage work is retained; no new recovery-method choice or container creation requested. Documentation audit only; no external actions authorized or performed. R01 closed, R02-R12 open11, added0; accepted5/60 and3/8 unchanged, ETA unvalidated. No scope deviation.
+
+## Historical: R02 container Time Machine exclusion verified — real export gated
 
 Owner explicitly approved excluding only /Users/debynyhanbanks/Library/Application Support/Signmons/P06/signmons-p06.dmg.sparsebundle from future Time Machine backups. tmutil addexclusion succeeded; fresh isexcluded changed Included to Excluded on2026-09-15. Existing backup copies were not searched/deleted; no LaCie/global backup setting changed. Exclusion does not prove absence of historical or third-party copies. No real data exported. R02 remains open for encrypted database-workspace/credential qualification and exact export approval;11 remain,added0,accepted5/60 and3/8 unchanged,ETA unvalidated. No scope deviation.
 
