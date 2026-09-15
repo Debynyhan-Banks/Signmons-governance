@@ -1,5 +1,11 @@
 # Signmons Release A pilot — daily delivery plan v1
 
+## Current: P06 remaining-task reconciliation — owner review required
+
+APP013_P06_REMAINING_TASK_BASELINE.md is the proposed authoritative remaining-work inventory: 12 open internal tasks with dependencies, pass/fail exits and explicit approval gates. It supersedes all historical "two items/sections remain" task counts and stale next actions below. Existing implementation/build evidence is preserved; no acceptance increase. R02 recovery/target and R05 protected injection/activation design are unresolved, not hidden coding authority. Review the baseline before execution; no migration, provisioning, deployment or paid test authorized. Accepted 5/60 (8.3%), walkthrough 3/8 (37.5%). Prior 4–8 week forecast is unvalidated and withdrawn pending sizing. No scope deviation implemented.
+
+## Historical status below — superseded where inconsistent with the reconciliation
+
 Prepared 2026-09-13 at owner request for a finite, trackable MVP plan before more coding. Planning baseline for review, not a promise of one-day completion or authority to activate later tickets. Source snapshots: backend 6b21839, governance 0977467; both fetched, focused worktrees clean at entry; backend PR21 remains open. No code or acceptance changed by this audit.
 
 ## Goal and boundary

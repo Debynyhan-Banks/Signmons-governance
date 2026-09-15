@@ -1,5 +1,11 @@
 # APP-013 P06 runtime-wiring source card
 
+## Current: P06 remaining-task reconciliation — owner review required
+
+APP013_P06_REMAINING_TASK_BASELINE.md is the proposed authoritative remaining-work inventory: 12 open internal tasks with dependencies, pass/fail exits and explicit approval gates. It supersedes all historical "two items/sections remain" task counts and stale next actions below. Existing implementation/build evidence is preserved; no acceptance increase. R02 recovery/target and R05 protected injection/activation design are unresolved, not hidden coding authority. Review the baseline before execution; no migration, provisioning, deployment or paid test authorized. Accepted 5/60 (8.3%), walkthrough 3/8 (37.5%). Prior 4–8 week forecast is unvalidated and withdrawn pending sizing. No scope deviation implemented.
+
+## Historical status below — superseded where inconsistent with the reconciliation
+
 ## Status and authority
 
 ### Fixed owner-facing remaining checklist (implementation is not owner acceptance)
