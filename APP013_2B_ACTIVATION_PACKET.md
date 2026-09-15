@@ -1,6 +1,14 @@
 # APP-013 / 2B controlled activation packet
 
-## Current: P06 baseline v1 approved — R01 locally complete
+## Current: R05 design review — U01 proposed, not approved
+
+Owner proceeded after R04 evidence. R05 source qualification and three design checklist items are documented in APP013_P06_R05_DESIGN.md: exact startup JSON/numeric provenance, runtime revision/origin/window and two durable approval digests. Recommend preserving runtime via a separately versioned private delivery bundle. Existing approval writers are synthetic fixtures only; do not use them live.
+
+U01 proposes one bounded staging operator tool for protected bundle preparation and transactional activation/revocation/readback. No implementation, secret access, provider/cloud/database mutation or release this turn. Owner must approve design and the explicit added task before coding.74existing focused Jest tests pass; documentation gates recorded in backend p06-r05-design-review.md. Scope deviation proposed, not implemented.
+
+Ledger remains R01-R04closed4/12,R05-R12open8; R05design3/3 documented but review pending. Approved-added0,proposed-added1. If owner accepts R05 and U01: original12+added1=13,closed5,remaining8 (U01 plus R06-R12). Packages5/60(8.3%),walkthrough3/8(37.5%),P06unaccepted,ETAunvalidated. Smallest decision: approve U01 for local synthetic implementation only; external execution still separately gated.
+
+## Historical: P06 baseline v1 approved — R01 locally complete
 
 Owner approved P06 baseline v1 (12 fixed tasks). R01 local synthetic migration rehearsal is complete: real Prisma7.10 old13→all26 upgrade, preserved fictional rows, catalog parity, no-op replay, constraints/immutability and deliberate lock-timeout stop/cleanup passed. See backend evidence/APP-013/p06-migration-upgrade-rehearsal.md. Closed R01; open R02–R12 (11 tasks), no added tasks. Next R02 is target/consumer/recovery qualification, not migration execution. R05 secure injection remains an explicit unresolved design. Accepted 5/60 (8.3%), walkthrough 3/8 (37.5%), P06 unaccepted; ETA unvalidated. No staging/cloud/provider action or scope deviation.
 
