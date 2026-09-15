@@ -2,6 +2,18 @@
 
 ## Current: P06 item 3 release packet — preparation only, NOT executable
 
+### Current build result — successful, not deployed
+
+Owner explicitly approved the three scoped build permissions and one new1200s/USD1 attempt. Added only storage.objectViewer on signmons_cloudbuild, artifactregistry.writer on us-east5/signmons, and logging.logWriter on project signmons for the existing signmons-build account. Bucket uniform access was false, so no bucket configuration change was made; the three grants were removed immediately after completion and readback confirmed their absence. Account remains enabled under the preceding owner approval. No Owner/Editor, secret, runtime, deploy or provider grant.
+
+Build **7298b5b6-c407-4f1b-b252-20a0d22c99d3 SUCCESS**, 2026-09-15 **00:38:49.596–00:41:16.461 UTC**, about146.87 seconds. Existing E2_HIGHCPU_8/default pool,1200s timeout, existing identity/bucket/registry, one attempt. Source remains **53037fbd118cc4547061dfaf373c45b20a05962b**, clean tracked export; source generation in build record **1789432676638438**, object `source/1789432676.251561-17623d211ff4421f8e82efac59377a92.tgz`. Build compiled/pruned and pushed the image; no runtime tests or app execution implied.
+
+Verified registry digest: **us-east5-docker.pkg.dev/signmons/signmons/signmons-calldesk-backend@sha256:ea47a8371a04f773a5c51fc4f939250b7045eba92d3cbbeb68e49ceb0240be35**, tag `p06-53037fbd118c`. Build result and registry describe agree. Registry reports SLSA build level unknown; this record is source/build/image correlation, not a signed-attestation certification. Image input tag references are not a bit-for-bit future reproducibility guarantee.
+
+Estimated compute from the previously verified USD0.0156/minute rate: **USD0.0382**, not an invoice. Storage/logging/transfer/tax remain separate; uploaded source and image retained, no cleanup of old artifacts or zero-total-cost claim. No extra retry. Cloud Run readback remains latest revision00065-guw and normal traffic100% app013bounds; all nine tags unchanged. No deployment, customer/provider call or activation.
+
+This resolves the image-build/digest dependency and supersedes older failed-attempt/current-permission-blocker text below. **Item3 remains open** for schema qualification, exact disabled deployment/config/cost review and enabled-material injection qualification; item4 remains separately approved capped run/acceptance. Do not re-run a build merely to update documentation SHAs. Accepted5/60 (8.3%), walkthrough3/8 (37.5%), provisional4–8 weeks plus external waits unchanged, low confidence. No scope deviation.
+
 ### Approved build attempt stopped — disabled build identity
 
 Latest owner-authorized continuation: owner approved re-enabling **only** signmons-build, adding no permissions, and one fresh1200s/USD1 build attempt. Enable succeeded; no policy bindings changed. The single fresh submission then failed source resolution with403: storage.objects.get denied to that account. No build ID/image; latest build still688616b2 fromSeptember12. CLI created/copied a source object at `gs://signmons_cloudbuild/source/1789432373.691388-6139e17ba72843969cac98533e22ed41.tgz`; storage may accrue. No further attempt made. Account remains enabled as authorized, not reset silently.
