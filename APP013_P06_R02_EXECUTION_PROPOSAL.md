@@ -1,5 +1,7 @@
 # R02 credential and backup proposal v1 — owner review, NOT execution-ready
 
+Command audit: APP013_P06_R02_COMMAND_AUDIT.md identifies the remaining real-invocation implementation explicitly. The only existing caller is a fixture-creating/mutating rehearsal; no live command exists yet. Tested primitives and mounted-input proof do not complete that wiring. Do not fill a pretend current UTC window or request live access before same-core preflight/backup/restore/cleanup tests pass. No new task or actual credential action.
+
 Latest mounted qualification: owner-approved ownership enforcement succeeded; four existing private-input tests passed using dummy values inside the verified encrypted image, then cleanup/ejection passed. See backend p06-r02-mounted-input.md. Earlier unqualified-mounted-input wording is superseded; recheck actual mount/run-directory at execution, not repeat dummy tests without drift. Actual new-role handoff and exact real invocation/window/cleanup binding remain open. No role or export authority.
 
 ## Latest safety implementation checkpoint
