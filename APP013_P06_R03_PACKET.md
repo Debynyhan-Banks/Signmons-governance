@@ -1,5 +1,9 @@
 # P06-R03 — one migration approval packet
 
+## Approved, one attempt consumed — 2026-09-15
+
+Owner approved the exact packet below and confirmed private password readiness. One invocation fromeb1dd06 reserved14:40:53UTC and ended14:41:53.745UTC with REFUSED_OR_PARTIAL; migration inputs absent proves no Prisma invocation/DDL. Cause not yet confirmed by owner Terminal status. Exact encrypted image detached, baseline livenessok; see backend p06-r04-first-attempt.md. No retry allowed under this consumed approval. R03gate closed; R04open,9fixed tasks remain. Prior proposed/approval-pending text below is historical. No code or window extension silently authorized.
+
 ## Review-ready result — three preparation items complete
 
 Backend source revision: eb1dd06cae765d293d056b18268a0998fee392cc. Runtime application/image source53037fb is unchanged; this commit adds local operational tooling only. Evidence: backend evidence/APP-013/p06-r03-review.md; exact SQL manifest and old/new structural catalog fingerprints: evidence/APP-013/p06-r03-proof.json, SHA25646f3ad11cd88cae0829c95d5743928f2b572227f62aaa98ef0b59fc471a07d5f. All26SQL files unchanged; only last13 pending entries are eligible. No synthetic settings/sleep migrations exported. Do not use the older Cloud Run migration job or shared database secret.
