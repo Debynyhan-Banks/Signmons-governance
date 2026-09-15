@@ -1,5 +1,11 @@
 # P06-R03 — one migration approval packet
 
+## Owner-requested fresh retry preparation — 2026-09-15
+
+Owner said "do again" after the consumed pre-Prisma refusal. Authorize one fresh attempt with unchanged child/admin/13SQL/10minute/USD1/one-attempt limits; prior morning window is expired and must not be reused. Bind a fresh absolute window only after owner readiness and fresh preflight. Preserve v1 evidence. This is the same R04 task, not another preparation subsection or new criterion.
+
+Before code: entry backendd676619/governanceb6575bc, fetched clean. Only change fixed run directory from r04-migration-v1 to r04-migration-v2 in the existing node/Python dispatch and explicitly test rejection of consumed v1. Reuse8Node and11Python tests plus governance/architecture/whitespace; no SQL, runtime, safety-limit or password-protocol change, so prior full app/PG18 proof remains applicable. Wait for owner Ready before launching timed input; stop after one outcome, verify closeout, no further automatic retry. Fresh provider metadata/recovery/storage guards and clean pushed revision required. No scope deviation.
+
 ## Approved, one attempt consumed — 2026-09-15
 
 Owner approved the exact packet below and confirmed private password readiness. One invocation fromeb1dd06 reserved14:40:53UTC and ended14:41:53.745UTC with REFUSED_OR_PARTIAL; migration inputs absent proves no Prisma invocation/DDL. Cause not yet confirmed by owner Terminal status. Exact encrypted image detached, baseline livenessok; see backend p06-r04-first-attempt.md. No retry allowed under this consumed approval. R03gate closed; R04open,9fixed tasks remain. Prior proposed/approval-pending text below is historical. No code or window extension silently authorized.
