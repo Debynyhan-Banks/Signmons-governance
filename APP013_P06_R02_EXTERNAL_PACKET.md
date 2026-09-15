@@ -1,5 +1,7 @@
 # R02 external qualification packet — NOT executable
 
+STOP: backend p06-r02-tooling-result.md demonstrates the public-only grant list cannot support a full backup: migration3 retains legacy_2025. Local corrected fixture passes26-table comparison; live non-public inventory is still missing. Do not execute prior role templates or omit legacy data. Private-input and managed restore tools now have actual local proof; real-data executor/storage/deadline/sanitization gates remain explicit. No live permission expansion authorized.
+
 Latest: APP013_P06_R02_EXECUTION_PROPOSAL.md is the consolidated review proposal with exact read-only role allowlist, backup-before-ownership ordering, limits and explicit readiness gaps. It is not execution-ready; do not interpret the template as role/export approval. Owner-assisted secure password handoff and concrete managed-role restore qualification remain to be resolved together.
 
 ## Current: owner-authorized metadata inspection completed

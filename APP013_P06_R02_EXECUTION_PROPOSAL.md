@@ -1,5 +1,11 @@
 # R02 credential and backup proposal v1 — owner review, NOT execution-ready
 
+## Stop correction: public-only backup grants are incomplete
+
+Owner-approved local tooling now exists and passed its corrected tests; backend p06-r02-tooling-result.md records actual results. The initial restricted full dump failed: migration3 retains legacy_2025.Tenant/Job/CallLog, so23public tables are NOT the whole database. The template below is historical/incomplete and must not execute. No live grants changed. Verify all non-system source schemas (including legacy ownership/ACLs) before proposing the amended allowlist. Do not exclude legacy data to make pg_dump pass.
+
+Private TTY helper and actual pseudo-terminal tests passed; managed metadata/26fictional-table snapshot restore passed, including extension-owner/default ACL preservation. The synthetic harness is not a real-data executor: aggregate storage/time enforcement and sanitized streaming comparisons remain unimplemented, and encrypted mount/live password handoff remain separate gates. No acceptance uplift. This exposes a missed prerequisite within R02, adds0tasks, and preserves the requirement for a full backup.
+
 ## Update: owner-assisted password method accepted
 
 Owner answered yes to privately handling only the future new child role password. This settles the participation choice, not role creation/reset/export authority. Do not ask that choice again.

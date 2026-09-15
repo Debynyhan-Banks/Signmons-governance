@@ -1,6 +1,10 @@
 # Global Execution Pointer
 
-## Current: R02 private handoff method accepted — execution still gated
+## Current: R02 local tooling works — legacy-schema omission found
+
+Owner-approved private input helper/PTTY tests and managed metadata full synthetic restore implemented. Initial restricted dump exposed omitted legacy_2025 privileges; corrected local proof compares26tables and passes. See backend p06-r02-tooling-result.md and APP013_P06_R02_TOOLING_CARD.md. Public-only live grant proposal blocked pending non-public schema inventory; no live grants/export. Synthetic harness is not real-data executor. R01 closed; R02-R12 open11, added0; accepted5/60 and3/8 unchanged; ETA unvalidated. Missed prerequisite disclosed within R02; no scope deviation implemented.
+
+## Historical: handoff method accepted
 
 Owner accepts privately handling the future new-role password. Console reset route documented and existing role action menu inspected without reset; no new role exists, so actual handoff is untested. See APP013_P06_R02_EXECUTION_PROPOSAL.md and backend p06-r02-execution-proposal.md. Next consolidate dummy-secret/private-input and managed restore/comparison/limit executor qualification; do not repeat willingness approval. No live credential/export actions. R01 closed; R02-R12 open11, added0; accepted5/60 and3/8 unchanged, ETA unvalidated. No scope deviation.
 
