@@ -1,5 +1,11 @@
 # P06-R02 isolated branch proposal — not authorized for execution
 
+## Current owner decision
+
+Owner answered "yes" to the standard-branch approach including private inheritance of existing staging data, explicitly presented as direction only. That direction is approved. No resource exists from this decision; creation, credential changes and migration remain unauthorized. Historical proposal wording below is superseded only for the direction/data-inheritance choice.
+
+Next creation-only approval request: permit one standard current-data branch p06-isolated-staging-v1 in project soft-smoke-54063480 from br-young-term-ayfi7ist, only after fresh read-only preflight confirms Free plan/quota headroom, no name collision, enforceable0.25CU cap/five-minute suspension and no unexpected inherited services. No paid upgrade/charge accepted; stop if the console requires any. No auto-delete; review retained storage at closeout. Record endpoint/ID without revealing credentials. No app connection, credential change, migration, snapshot, restore or deployment included. If approved, one successful creation only; ambiguous result requires inventory readback before any retry. Preserve parent and all existing resources.
+
 Owner approved investigation of costs/setup after old-reader incompatibility was demonstrated. This document is the proposed change record, not authority to create resources, copy data, reset passwords, migrate or deploy. Existing v1 remains12 tasks; R01 closed, R02 open. No scope deviation implemented.
 
 ## Verified pricing and account evidence
