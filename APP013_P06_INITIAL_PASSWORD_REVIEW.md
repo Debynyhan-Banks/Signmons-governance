@@ -1,4 +1,8 @@
-# R08 initial-password method correction — review only
+# R08 initial-password method correction — locally qualified, live execution gated
+
+## Local implementation approval
+
+Owner said "proceed" to the explicit offer to implement and locally test this bounded adaptation, not run it against Neon. Entry backendc053a2c/governance4f49c6d. The three local exits and expected existing files below are the approved implementation card; historical proposed/unapproved text describes the earlier review checkpoint. Required commands: existing Node password tests, Python private-input tests, synthetic private PG18 proof, full Jest, build, lint, architecture, cross-repository/frozen/governance tests and whitespace. No browser UI changed; no live browser/password acceptance claimed. Live assignment still requires exact fresh packet/logging/private-storage review and separate approval. No scope deviation.
 
 Owner approved preparing an exact procedure after the Console returned `cannot update password for role without password`. This does not authorize another credential attempt. Entry backend a8421727673e3c56481226cf01daff68b1f12488 / governance40f0ea60e8559682fe6679034a6ce6813e79dc2a; focused remotes fetched. Existing R08 task, no U03 or denominator change. Source-mapped adaptation below is proposed, not implemented.
 
@@ -32,4 +36,6 @@ After successful assignment only: owner privately saves the generated runtime cr
 
 ## Review boundary and status
 
-Preparation complete; proposed code adaptation and live assignment remain unapproved. Smallest next approval is the three-exit local adaptation above, not another live password attempt. No need to ask the owner to select each routine function/test within that accepted patch. No feature/task added: original12+approvedU01+approvedU02=14; R08-R12five remain; packages5/60(8.3%),walkthrough3/8(37.5%),P06unaccepted,ETAunvalidated. Credential-method correction proposed; no scope deviation implemented.
+Owner approved the local adaptation; all three finite local exits are now implemented and locally qualified in backend commit859ec4c. Existing Node password tests including both disposable private PG18 modes:15 passed; Python hidden-terminal tests:12 passed; shared backup guards25 passed. Full backend regression:2359 passed,3 skipped; build/lint/architecture passed. Cross-repository consistency/frozen baseline and21 governance tests passed. No live credential attempt occurred. Evidence: backend evidence/APP-013/p06-r08-private-input-qualification.md. Historical proposal language above records the original decision, not an outstanding implementation approval.
+
+Next review the patch, then prepare/read-only verify the exact fresh execution packet and separately authorize one live child-only assignment. Do not reuse an old window or assume safe provider logging. The private terminal command is not an invitation to run before those gates. No feature/task added: original12+approvedU01+approvedU02=14; R08-R12five remain; packages5/60(8.3%),walkthrough3/8(37.5%),P06unaccepted,ETAunvalidated. No scope deviation.
