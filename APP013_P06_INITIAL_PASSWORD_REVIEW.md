@@ -1,5 +1,11 @@
 # R08 initial-password method correction — locally qualified, live execution gated
 
+## Current support delivery status
+
+Owner authorized sending the drafted question. On2026-09-16 it was sent through the existing Neon Console AI assistant with a human-escalation request; visible conversation confirms delivery. The assistant expressly cannot escalate and returned no human case/ticket number. It did not resolve the initialization/redaction questions. This is NOT a submitted human support ticket or provider security clearance. Console Support menu did not yield a human submission form.
+
+Neon's published support policy limits Free to community support; its security page publishes security@neon.tech for security inquiries (https://neon.com/docs/introduction/support and https://neon.com/security). No upgrade or public community post. A private email fallback is ready, but connected Outlook profile is ben@eternityhvacr.com; owner asked to choose that sender versus debynyhan@signmons.com before sending. No email has been sent; do not duplicate the AI message or imply human response is pending. No password/config/database action or scope/count change. No scope deviation.
+
 ## Local implementation approval
 
 Owner said "proceed" to the explicit offer to implement and locally test this bounded adaptation, not run it against Neon. Entry backendc053a2c/governance4f49c6d. The three local exits and expected existing files below are the approved implementation card; historical proposed/unapproved text describes the earlier review checkpoint. Required commands: existing Node password tests, Python private-input tests, synthetic private PG18 proof, full Jest, build, lint, architecture, cross-repository/frozen/governance tests and whitespace. No browser UI changed; no live browser/password acceptance claimed. Live assignment still requires exact fresh packet/logging/private-storage review and separate approval. No scope deviation.
