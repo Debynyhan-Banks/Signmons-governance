@@ -1,5 +1,81 @@
 # R08 initial-password method correction — locally qualified, live execution gated
 
+## Owner-approved staging method and private handoff — 2026-09-16
+
+Owner said "i approve your recommendattion proceed" after the recommendation to use the existing limited staging role, check statistics access/retention, keep the final password private, use the dedicated Secret Manager resource, audit access and retain a bounded login/closeout window. This approves the limited staging method and custody preparation, not production use, blanket log safety, a paid verification run or a helper-guard bypass. Existing R07 scope and R10 run gate remain. No new P06 task.
+
+Entry source: backend a17aa8f362ddcce2ad2a4446d81e78279e06177e / governance 4d6d6e6c82091b44cd5e1c7f7c91f599241a1e7e. Fresh metadata at 21:47:25 UTC: child br-sparkling-sun-ay6gr5e8 / neondb / neondb_owner; runtime OID163840 still NOLOGIN/NOINHERIT/no elevation/no membership, connection limit10, expiry unset. Statistics-reading privileges are held by neondb_owner and provider roles cloud_admin/neon_service; runtime has neither effective nor membership access to pg_read_all_stats. This is the inspected catalog boundary, not proof against a compromised administrator. Console shows one organization Admin and no pending invites; Datadog/OpenTelemetry export requires a plan upgrade and is not configured on the inspected integration page. No provider-internal log inventory or API-key audit is claimed.
+
+Retention: track=top, track_utility=on, save=on, max=5000. There is no guaranteed time-based expiry for statistics; eviction/reset is not a retention SLA, and removing the extension does not erase collection. Provider-internal log retention is unknown. The owner-approved residual-risk approach must not be described as zero retention or secret-free logging. No statistics reset, extension install, logging suppression or additional canary was performed. Normal statement/duration logging is off in the inspected settings; that does not remove utility-statistics exposure.
+
+Preparation completed: created empty projects/845074063310/secrets/signmons-staging-p06-child-database-url at 21:49:34 UTC, automatic replication, zero versions. Its only explicit binding is roles/secretmanager.secretAccessor for signmons-calldesk-runtime@signmons.iam.gserviceaccount.com. The existing project Owner retains payload access; existing Editors do not have direct versions.access but can add versions and hold broader project powers. No claim of full isolation from project administrators. Pin the exact returned secret version, never latest. Existing project IAM bindings were compared and unchanged. Added only secretmanager.googleapis.com DATA_READ audit logging with no exemptions; existing _Default sink includes data-access logs, active bucket retention30days. This is audit-event retention, not Neon query-statistics retention. No credential payload was read, generated or uploaded; no runtime service/revision/traffic changed.
+
+Final read-only database check at 21:50:44 UTC: same runtimeOID163840, limit10, expiry unset, all elevation/inherit/login flagsfalse, memberships0, runtime sessions0, other application sessions0,26applied/0unfinished migrations. Public relation/column ACL drift fingerprint f3d51c1325945002d9af69e412ee1b21 (MD5 used only for change comparison, not password hashing or authorization). Provider monitor sessions are excluded, not terminated. This snapshot must be refreshed if the private handoff is delayed or state changes.
+
+### Owner-only credential handoff
+
+Browser/computer-use policy requires the owner to enter and submit every credential change. Do not paste or execute the credential-changing SQL through the agent, inspect the generated password, read the clipboard, or capture the secret-entry screen. The existing raw-SQL helper remains fail-closed and unchanged.
+
+The role was passwordless at the prior failed direct reset. The qualified sequence is a disabled, expired bootstrap followed by one owner-operated Console reset. The bootstrap marker below is intentionally public, not the final credential, and must never be used to authenticate or copied into Secret Manager. Its exposure in history/statistics is expected. Neon documents NOLOGIN as non-authenticating; this run has not independently proved proxy enforcement. The owner must not enable LOGIN or change the past expiry during this handoff.
+
+1. In the existing Neon SQL Editor, visually verify project signmons-staging, branch p06-isolated-staging-v1 (br-sparkling-sun-ay6gr5e8), database neondb. The owner copies and runs the guarded block below exactly once. It refuses a changed role/prestate, membership, application session, migration count or ACL fingerprint. It only disables the same role further (limit0, past expiry) and sets an intentionally public bootstrap; no grants, ownership, schema or app records change. It records the actual start time only when executed; no login clock runs while waiting for the owner. Finish the reset/custody handoff within15minutes of that reported start; if interrupted, leave NOLOGIN/expired/limit0 and report status before any further attempt.
+2. If the block succeeds, open Postgres database > Roles for that same branch. On p06_intake_runtime only, use Reset password once. Save the generated final password privately in the owner's password manager. If it fails or outcome is unclear, stop; do not retry, recreate the role, use an administrator password or disclose the value.
+3. Privately build the runtime connection URI below using only the final generated password (percent-encode it as a URI password). In the prepared Google Secret Manager tab, add exactly one version to signmons-staging-p06-child-database-url in project signmons. Do not change the existing shared database secret. The application uses node-postgres; a synthetic parse of this exact URI template confirmed TLS enabled without disabling certificate validation. This is not a live TLS/authentication test.
+4. Close every password/secret-value dialog, return to a metadata-only page and report only "reset and saved" plus the nonsecret version number. The agent then checks role/expiry/grants/sessions and version/IAM metadata, without reading the payload. No actual limited-role authentication or activation is claimed until the separately bounded R08 login proof. That later step restores the reviewed limit10 and a fresh approved expiry, then closes existing sessions during shutdown. R09/R10 remain existing gates.
+
+```sql
+-- OWNER ONLY: public bootstrap, never a runtime login credential.
+-- Verify the exact isolated branch in the browser before running once.
+DO $r08_guard$
+DECLARE r record; acl_fingerprint text;
+BEGIN
+  IF current_database() <> 'neondb' OR current_user <> 'neondb_owner' THEN
+    RAISE EXCEPTION 'R08 wrong database or administrator';
+  END IF;
+  SELECT * INTO r FROM pg_roles WHERE rolname='p06_intake_runtime';
+  IF NOT FOUND THEN RAISE EXCEPTION 'R08 role missing'; END IF;
+  IF r.oid<>163840 OR r.rolcanlogin OR r.rolinherit OR r.rolsuper
+    OR r.rolcreatedb OR r.rolcreaterole OR r.rolreplication OR r.rolbypassrls
+    OR r.rolconnlimit<>10 OR r.rolvaliduntil IS NOT NULL THEN
+    RAISE EXCEPTION 'R08 role prestate changed; do not retry';
+  END IF;
+  IF EXISTS(SELECT 1 FROM pg_auth_members WHERE member=r.oid)
+    OR EXISTS(SELECT 1 FROM pg_stat_activity WHERE pid<>pg_backend_pid()
+      AND backend_type='client backend' AND usename<>'cloud_admin') THEN
+    RAISE EXCEPTION 'R08 membership or application session present';
+  END IF;
+  IF (SELECT count(*) FROM public."_prisma_migrations"
+      WHERE finished_at IS NOT NULL AND rolled_back_at IS NULL)<>26
+    OR EXISTS(SELECT 1 FROM public."_prisma_migrations"
+      WHERE finished_at IS NULL AND rolled_back_at IS NULL) THEN
+    RAISE EXCEPTION 'R08 migration prestate changed';
+  END IF;
+  SELECT md5(COALESCE((SELECT string_agg(c.oid::text||':'||COALESCE(c.relacl::text,''),',' ORDER BY c.oid)
+    FROM pg_class c JOIN pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname='public'),'')
+    ||COALESCE((SELECT string_agg(a.attrelid::text||':'||a.attnum::text||':'||a.attacl::text,',' ORDER BY a.attrelid,a.attnum)
+    FROM pg_attribute a JOIN pg_class c ON c.oid=a.attrelid JOIN pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND a.attacl IS NOT NULL),'')) INTO acl_fingerprint;
+  IF acl_fingerprint<>'f3d51c1325945002d9af69e412ee1b21' THEN
+    RAISE EXCEPTION 'R08 grants changed';
+  END IF;
+  ALTER ROLE p06_intake_runtime NOLOGIN CONNECTION LIMIT 0
+    VALID UNTIL '2000-01-01 00:00:00+00'
+    PASSWORD 'P06_DISABLED_BOOTSTRAP_20260916_NEVER_FOR_LOGIN';
+END $r08_guard$;
+SELECT clock_timestamp() AS handoff_started_at,oid,rolcanlogin,rolconnlimit,rolvaliduntil
+FROM pg_roles WHERE rolname='p06_intake_runtime';
+```
+
+Private URI template (never paste the completed value into chat, source or SQL):
+
+```text
+postgresql://p06_intake_runtime:<PERCENT_ENCODED_FINAL_PASSWORD>@ep-jolly-flower-ayc6w9hv.c-5.us-east-2.aws.neon.tech:5432/neondb?schema=public&sslmode=verify-full
+```
+
+Preparation validation: frozen baseline, full cross-repository consistency,21 governance regressions, backend architecture/baseline and both whitespace checks passed. No app-runtime tests or live credential proof claimed.
+
+Remaining status: reset/secret upload/authentication are not performed by this preparation. R08-R12 remain5; P06 unaccepted; walkthrough3/8 unchanged. No new task, runtime source, provider test, production action or scope deviation. Sources: [Neon roles](https://neon.com/docs/manage/roles), [PostgreSQL statistics](https://www.postgresql.org/docs/18/pgstatstatements.html), [Google Secret Manager practices](https://docs.cloud.google.com/secret-manager/docs/best-practices).
+
 ## Approved disposable control-plane reset qualification — 2026-09-16
 
 RESULT completed08:50EDT: owner finished one disposable Console reset after mandatory private handoff. CanaryOID172125 retained NOLOGIN/NOINHERIT/no elevated flags/memberships0/limit0/expiry2000-01-01/sessions0. Exact ALTER prefix across statistics returned2rows/2calls total (expiry plus reset), password1row/1call; password field begins SCRAM-SHA-256, explicit LOGIN tokenfalse, other-passwordrows0, CREATEcontrol1row. Unlike the inspected source candidate, live reset did not add LOGIN. Verifier retention is sensitive and is not secret-free logging; no rawSQL/verifier/final plaintext exported. Actual authentication and provider-internal logs are not proved. Exact canary172125 and test extension1.12/OID172081 removed by guarded DROP/RESTRICT79ms; independent57ms readback confirms role/extension/view absent, runtime163840 disabled/no elevation/memberships0/limit10,trackingtop/on. No outstanding test cleanup. Do not repeat this completed test or apply it to runtime automatically. Review the measured bootstrap/reset path, residual verifier/provider-log risk and private credential custody before real-role approval; no new section/helper/support-email prerequisite. Counts unchanged. Full measurements in backend qualification evidence.
