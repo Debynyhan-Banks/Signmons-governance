@@ -2,6 +2,8 @@
 
 ## Authority
 
+Owner subsequently answered "yes i approve proceed" to the explicit regular-visit-only first-test recommendation. Option A below is now approved as test scope only. No code expansion, resource mutation, deployment, charge or test execution authorized by that answer. Full emergency business rules remain intact and unavailable for automatic pricing until separately implemented and qualified.
+
 Owner explicitly supplied these values in this task and clarified that USD150 replaces USD99 and applies to all after-hours emergencies including Sunday. Owner agreed emergency availability must be confirmed, with no immediate-dispatch promise. Latest proceed authorizes documentation and fit review, not charges, deployment, live configuration or an extra implementation task.
 
 ## Approved business facts
@@ -40,4 +42,23 @@ Alternatives: (A) recommended regular-only first test, keep full business rules 
 
 ## Review and next result
 
-Owner: approve regular-only first test or request emergency implementation review first. Implementer: continue existing R06 provider/liability/infrastructure qualification and include selected test restriction in exact R07 packet. No real payments, bookings, provider changes or emergency promises.
+Owner test-scope decision is complete: regular-only first test. Implementer: continue existing R06 provider/liability/infrastructure qualification and include this restriction in exact R07 packet. No repeat request for this scope approval. No real payments, bookings, provider changes or emergency promises.
+
+## Approved restricted test-policy values
+
+These are policy content, not a persisted approval record or deployable activation envelope. Never generate actorId/approvedAt or activate the tenant from this file.
+
+```json
+{
+  "currency": "usd",
+  "serviceFeeRequired": false,
+  "serviceFeeCents": null,
+  "depositRequired": true,
+  "depositPolicy": { "kind": "fixed", "amountCents": 9900 },
+  "emergencyFeePolicy": { "kind": "none" },
+  "paymentGateMode": "fail_closed",
+  "webhookValidationRequired": true
+}
+```
+
+The none emergency field describes the deliberately restricted test policy, not abolition of the USD150 business rule. Emergency scenarios are excluded from this test; do not silently price them at99. P06 has no payment execution. Existing3A later tests Sandbox payment under its own approval.
