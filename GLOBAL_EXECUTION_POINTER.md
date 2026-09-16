@@ -1,5 +1,14 @@
 # Global Execution Pointer
 
+## Current: R08 saved credential requires URI correction — 2026-09-16
+
+Owner completed separate public bootstrap assignment, separate past-expiry statement, private Console reset and Secret Manager save. Combined assignment/past-expiry failed with Neon XX000; readback showed no password, and separate statements subsequently succeeded. Do not repeat bootstrap/reset. Owner screenshot19:47EDT confirmed NOLOGIN/limit0/expiry2000-01-01/password present. Secret version1 created23:45:34UTC, ENABLED; resource-level runtime accessor confirmed. Handoff exceeded the original15minute target; no LOGIN window was opened or silently extended.
+
+After owner said "great proceed", fresh browser metadata23:49:21UTC verified child/neondb/neondb_owner/runtimeOID163840, all login/inheritance/elevated flagsfalse, memberships0, runtime sessions0, limit0, past expiry. Authorized connection preparation accessed version1 only inside a local process with captured output suppressed: URI parsing failed, PostgreSQL scheme and exact child host absent. No secret value, hash or raw exception emitted or persisted; no database authentication attempted. The earlier metadata-only checks proved a saved version, not a correct connection value. Stop before LOGIN. Owner must add one corrected version containing the complete percent-encoded limited-role child PostgreSQL URI; do not reset password or overwrite shared parent secret. Record actual returned numeric version and validate before a fresh bounded connection window. Browser policy requires action-time confirmation to enable security-sensitive login access.
+
+R08 remains open, R08-R12five; P06unaccepted, walkthrough3/8 unchanged. No scope deviation, deployment, application records or paid verification calls. This status supersedes historical handoff-pending/zero-version statements below. Next observable result: corrected URI validated without disclosure, then supervised TLS identity/privilege proof and NOLOGIN/session closeout.
+
+
 ## Current: R08 custody prepared — owner-only credential handoff pending
 
 Owner approved the recommended limited staging credential method on2026-09-16. See APP013_P06_INITIAL_PASSWORD_REVIEW.md for the exact owner-only guarded bootstrap/reset/private-custody sequence and current evidence. Live21:47/21:50UTC metadata: runtimeOID163840 remainsNOLOGIN/no elevated flags/no memberships/limit10, zero app sessions,26migrations. Statistics save=on/max5000 has no guaranteed expiry; only inspected owner/provider login roles have other-user-statistics privileges, not the runtime. Provider internal logs remain unknown; no secret-free claim.

@@ -1,5 +1,14 @@
 # R08 initial-password method correction — locally qualified, live execution gated
 
+## Current: R08 saved credential requires URI correction — 2026-09-16
+
+Owner completed separate public bootstrap assignment, separate past-expiry statement, private Console reset and Secret Manager save. Combined assignment/past-expiry failed with Neon XX000; readback showed no password, and separate statements subsequently succeeded. Do not repeat bootstrap/reset. Owner screenshot19:47EDT confirmed NOLOGIN/limit0/expiry2000-01-01/password present. Secret version1 created23:45:34UTC, ENABLED; resource-level runtime accessor confirmed. Handoff exceeded the original15minute target; no LOGIN window was opened or silently extended.
+
+After owner said "great proceed", fresh browser metadata23:49:21UTC verified child/neondb/neondb_owner/runtimeOID163840, all login/inheritance/elevated flagsfalse, memberships0, runtime sessions0, limit0, past expiry. Authorized connection preparation accessed version1 only inside a local process with captured output suppressed: URI parsing failed, PostgreSQL scheme and exact child host absent. No secret value, hash or raw exception emitted or persisted; no database authentication attempted. The earlier metadata-only checks proved a saved version, not a correct connection value. Stop before LOGIN. Owner must add one corrected version containing the complete percent-encoded limited-role child PostgreSQL URI; do not reset password or overwrite shared parent secret. Record actual returned numeric version and validate before a fresh bounded connection window. Browser policy requires action-time confirmation to enable security-sensitive login access.
+
+R08 remains open, R08-R12five; P06unaccepted, walkthrough3/8 unchanged. No scope deviation, deployment, application records or paid verification calls. This status supersedes historical handoff-pending/zero-version statements below. Next observable result: corrected URI validated without disclosure, then supervised TLS identity/privilege proof and NOLOGIN/session closeout.
+
+
 ## Owner-approved staging method and private handoff — 2026-09-16
 
 Owner said "i approve your recommendattion proceed" after the recommendation to use the existing limited staging role, check statistics access/retention, keep the final password private, use the dedicated Secret Manager resource, audit access and retain a bounded login/closeout window. This approves the limited staging method and custody preparation, not production use, blanket log safety, a paid verification run or a helper-guard bypass. Existing R07 scope and R10 run gate remain. No new P06 task.
@@ -13,6 +22,8 @@ Preparation completed: created empty projects/845074063310/secrets/signmons-stag
 Final read-only database check at 21:50:44 UTC: same runtimeOID163840, limit10, expiry unset, all elevation/inherit/login flagsfalse, memberships0, runtime sessions0, other application sessions0,26applied/0unfinished migrations. Public relation/column ACL drift fingerprint f3d51c1325945002d9af69e412ee1b21 (MD5 used only for change comparison, not password hashing or authorization). Provider monitor sessions are excluded, not terminated. This snapshot must be refreshed if the private handoff is delayed or state changes.
 
 ### Owner-only credential handoff
+
+Owner screenshot reconciliation at 19:15–19:16 EDT: database neondb, administrator neondb_owner, runtime OID163840, all login/inheritance/elevation flags false, connection limit0, expiry blank; separate pg_authid boolean confirms password_exists=false. The original limit10 guard correctly refused this changed prestate. The proposed provider-AI replacement omitted password and expiry; its execution is not confirmed. The owner-only block below now requires the observed limit0 and an absent password, retaining every membership/session/migration/ACL check. This is a correction within approved R08, not permission to bypass a failing guard. No agent credential change or successful bootstrap/reset is claimed. R08-R12 remain five; walkthrough3/8 and P06 unaccepted unchanged. No scope deviation.
 
 Browser/computer-use policy requires the owner to enter and submit every credential change. Do not paste or execute the credential-changing SQL through the agent, inspect the generated password, read the clipboard, or capture the secret-entry screen. The existing raw-SQL helper remains fail-closed and unchanged.
 
@@ -36,8 +47,11 @@ BEGIN
   IF NOT FOUND THEN RAISE EXCEPTION 'R08 role missing'; END IF;
   IF r.oid<>163840 OR r.rolcanlogin OR r.rolinherit OR r.rolsuper
     OR r.rolcreatedb OR r.rolcreaterole OR r.rolreplication OR r.rolbypassrls
-    OR r.rolconnlimit<>10 OR r.rolvaliduntil IS NOT NULL THEN
+    OR r.rolconnlimit<>0 OR r.rolvaliduntil IS NOT NULL THEN
     RAISE EXCEPTION 'R08 role prestate changed; do not retry';
+  END IF;
+  IF NOT EXISTS(SELECT 1 FROM pg_authid WHERE oid=r.oid AND rolpassword IS NULL) THEN
+    RAISE EXCEPTION 'R08 password already present or unavailable; do not retry';
   END IF;
   IF EXISTS(SELECT 1 FROM pg_auth_members WHERE member=r.oid)
     OR EXISTS(SELECT 1 FROM pg_stat_activity WHERE pid<>pg_backend_pid()
