@@ -1,5 +1,7 @@
 # R06 limited runtime-role preparation
 
+Current correction: native psql password initialization failed on Neon, and owner reports Console reset refuses a passwordless role. Do not execute step3 below or retry Console reset. APP013_P06_INITIAL_PASSWORD_REVIEW.md supersedes that credential method with a review-only proposal for a bounded adaptation of the existing private-input helper; not yet implementation or execution authority. Committed role/grants remain in place, NOLOGIN at last verified readback.
+
 Owner approved preparing exact permissions/private credential setup after R06 identified no limited application login. Source backend838468ca7bb0ce025f5c059cfa751deaf784197d / governance95fbea2ff2380ac849df779610878dd8e619c796. Preparation/local tests only, no live role/password/secret/permission changes. Existing R06/R07/R08; no U03 or new task.
 
 ## Fixed preparation card — before local test changes
