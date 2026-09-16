@@ -2,6 +2,8 @@
 
 Status: documentation review draft, NOT executable and NOT R07 authorization. Sources backendc0b19af/governancea37452b. Owner approved regular-only initial diagnosis with one USD99 deposit. No emergency case, real charge, booking, dispatch or confirmation send. The full USD150 after-hours replacement business rule remains documented, not implemented. No scope deviation or new task.
 
+Update: owner subsequently approved U02 to resolve the demonstrated bootstrap gap. See APP013_P06_U02_BOOTSTRAP.md and backend p06-u02-bootstrap.md for completed local implementation and exact exported interface. The historical draft below is not live execution authority. Bootstrap writes now have a tested atomic service/CAS/audit/readback/suspension path; final profile wording, actual prestate digest/timestamp, stable category binding, source/artifact check and fresh execution authorization must be included in R07/R08. U01's runtime activation remains separate. Original12+U01+U02=14; seven locally closed/seven original tasks open. No further addition.
+
 ## Fixed targets and verified reuse
 
 | Binding | Value |
@@ -50,7 +52,7 @@ For enabled-run closeout: revoke only matching runtime/phone digests using U01, 
 
 ## Explicit unresolved items — no approval request for unknown execution
 
-- Implementer must attach exact IAM before/after and tenant/category setup command/CAS/audit/recovery mapping; current U01 alone cannot perform that setup.
+- Implementer must attach exact IAM before/after. The owner-approved U02 bootstrap now supplies the tenant/category setup/CAS/audit/readback/suspension interface; bind the actual source, profile, category UUID, prestate and action window for review rather than using synthetic values. U01 runtime activation still cannot perform bootstrap itself.
 - Bind addressAccountId and category UUIDs as stable approved metadata, not newly generated per retry; specify aggregate hold accounting. Never reset allowance by switching account IDs.
 - Finalize policy wording review, exact public HTTPS origin/tag and disabled/enabled revision names; numeric versions become evidence after R08, final packet/window atR10.
 - Validate final infrastructure allowance against exact setup/closeout and network plan;2.00USD is a proposal, not a verified maximum.
