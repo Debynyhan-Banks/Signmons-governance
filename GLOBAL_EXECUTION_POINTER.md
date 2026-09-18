@@ -1,6 +1,14 @@
 # Global Execution Pointer
 
-## Current: R08 exact bundle packet reviewed — owner approval pending — 2026-09-18
+## Current: R08 delivery bundle verified without activation — 2026-09-18
+
+The owner explicitly approved operation `60da3dd4-5bd1-473b-a926-2d5c6affa2b1` for 7:30–7:45 PM Eastern and manually invoked the guarded U01 wrapper once inside the window. It emitted `BUNDLE_VERIFIED_NO_ACTIVATION`. The encrypted reservation was created at 7:36:02 PM Eastern before source access; the sanitized result was stored at 7:36:04 PM. Private readback matched destination `projects/signmons/secrets/signmons-staging-controlled-intake-material/versions/1` byte-for-byte to the four exact numeric source versions. Backend evidence is `evidence/APP-013/p06-r08-bundle-review.md` and `p06-r08-bundle-result.json`; the receipt contains no secret value, phone or participant binding.
+
+R08 is complete: its previously verified isolated bootstrap and the verified delivery bundle satisfy the approved provisioning boundary. P06 is 11/14 complete (R01–R09, U01 and U02); R10/R11/R12 remain open. Accepted packages 5/60 and walkthrough 3/8 remain unchanged; P06 is unaccepted and ETA unvalidated. The packet's 8:00–8:15 PM runtime envelope is validation data only and does not authorize R10, activation, deployment, LOGIN, paid verification, a verification code, Address Validation request or customer/job action.
+
+Next observable result is an exact R10 final-run review that refreshes provider state/restrictions/rates and binds the deployed revision/origin, packet digest, participant readiness, fresh absolute window and shutdown. R10 requires separate explicit owner approval; no authority is inherited from R08. Original dirty APP-010 checkout remains preserved. No scope deviation.
+
+## Historical: R08 exact bundle packet reviewed — owner approval pending — 2026-09-18
 
 Owner said `proceed` to the next bounded R08 preparation checkpoint. The 6:30 PM authorization expired unused after two pre-window invocations at 5:37 PM and 5:42 PM refused at `PREPARE_BUNDLE`; authorization validation occurs before reservation, so neither invocation could access a source-secret payload or write the destination bundle. The owner reported the missed window at 6:58 PM. Backend evidence `evidence/APP-013/p06-r08-bundle-review.md` and its sanitized JSON summary now record a fresh exact private U01 packet built from executed source `59f2dabc022e3c9d91a1233aece6d8c67fe6c3b4`, the verified tenant/bootstrap policy, four numeric source versions and the verified participant binding. Production `reviewPacket` returned packet digest `79114793da1229844942db69ce04097fe2ed69353c7752e20453b60e66da442c`; the mode-0600 packet, summary and guarded wrapper are installed in the encrypted preparation directory. Packet and repository summary contain no phone, key, token or source value. Earlier packets, the expired authorization and both fixed stop records are retained privately; no reservation, delivery bundle or result exists.
 
