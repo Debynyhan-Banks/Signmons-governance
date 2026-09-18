@@ -1,6 +1,14 @@
 # Signmons Execution Board
 
-## Current: R08 delivery bundle verified without activation — 2026-09-18
+## Current: R10 final-run preparation — current Twilio readback and fresh window pending — 2026-09-18
+
+Owner said `proceed` after R08 closed. Backend evidence `evidence/APP-013/p06-r10-final-run-preparation.md` records the complete R10 preparation card and fresh read-only state. Cloud Run normal traffic remains 100% `app013bounds`; the disabled P06 candidate is Ready on the approved image; the enabled revision/tag is absent. Bundle version 1 and child database URL version 2 are ENABLED, runtime access remains the reviewed limited set, required Google APIs are enabled and the old staging phone signer role remains DISABLED. Public Twilio and Google list rates were refreshed; they are not account-specific terms or spending authority.
+
+The prior packet's 8:00–8:15 PM envelope is unusable because R10 was not completed before it began. The existing Safari Twilio Console tab is logged out, so old account/service/Fraud Guard evidence cannot satisfy R10's current-provider requirement. Owner must privately reauthenticate that existing account and select a future attended block before a fresh packet can be constructed. No enabled deployment, LOGIN, activation, verification code, Address Validation request, secret/IAM change or customer action occurred.
+
+P06 remains 11/14 complete; R10/R11/R12 remain open. Next observable result is current Twilio account/service/restriction readback plus the owner's fresh attended-window selection, followed by one exact R10 packet and approval request. No old paid-test authority is reused. Original dirty APP-010 checkout remains preserved. No scope deviation.
+
+## Historical: R08 delivery bundle verified without activation — 2026-09-18
 
 The owner explicitly approved operation `60da3dd4-5bd1-473b-a926-2d5c6affa2b1` for 7:30–7:45 PM Eastern and manually invoked the guarded U01 wrapper once inside the window. It emitted `BUNDLE_VERIFIED_NO_ACTIVATION`. The encrypted reservation was created at 7:36:02 PM Eastern before source access; the sanitized result was stored at 7:36:04 PM. Private readback matched destination `projects/signmons/secrets/signmons-staging-controlled-intake-material/versions/1` byte-for-byte to the four exact numeric source versions. Backend evidence is `evidence/APP-013/p06-r08-bundle-review.md` and `p06-r08-bundle-result.json`; the receipt contains no secret value, phone or participant binding.
 
