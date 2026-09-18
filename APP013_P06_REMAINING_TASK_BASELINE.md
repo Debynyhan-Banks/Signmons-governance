@@ -1,5 +1,21 @@
 # P06 remaining-work reconciliation — review baseline v1
 
+## Current: R08 private participant handoff repaired — retry ready — 2026-09-18
+
+Owner directed repair and testing before a fresh participant retry, from backend `db0be03` / governance `eaf63cc`. Backend `59f2dabc022e3c9d91a1233aece6d8c67fe6c3b4` uses the existing qualified same-child READY → hidden TTY → anonymous FIFO protocol. The child completes local source/build/storage/no-existing-binding preflight before the prompt; input is bytearray-held, validated, canonicalized and overwritten; terminal state is restored on every tested path. Existing participant/bundle logic, refs and permissions are unchanged. Evidence: backend `evidence/APP-013/p06-r08-participant-handoff-repair.md`.
+
+The first owner retry produced one fixed `participant-attempt` / `INPUT_PIPE` / noSms record at2026-09-18T15:49:41.381Z before input-format validation, Google authentication or either source-secret read. Because the old parent behavior closed stdin for local refusal/cancellation/timeout, that record did not prove a correct phone reached the child. The repaired parent now sends a child-acknowledged fixed `ABORT` frame and the child has a65second cleanup bound around the unchanged60second prompt.
+
+The second owner retry stopped with no new child diagnostic, binding or bundle, proving `ABORT` was acknowledged and the stop was local. The third retry produced one exclusive mode0600 fixed record at2026-09-18T16:06:49.915Z containing only `local-input-stop` / `INPUT_FORMAT` / noSms / timestamp. No child diagnostic, binding, Google authentication or secret access followed.
+
+Local capture now removes only Terminal's exact bracketed-paste wrapper plus ASCII spaces, parentheses, hyphens and periods in memory, overwrites the raw presentation buffer, then requires canonical `+1` plus ten digits with a valid NANP leading digit before FIFO forwarding. Every other character and country shape still refuses locally; format/timeout/cancellation records never contain phone, length, bytes, exception or terminal content.
+
+Ten participant process tests using typed, pasted and formatted input plus exact production `readPipe`, and 12 existing private-input tests pass. The prior 35 focused Node operator tests pass with two existing local-PG skips. Build, lint, architecture, formatting, frozen baseline, complete consistency, backend bridge, 21 governance regressions and whitespace checks pass. Installed encrypted-volume copies are mode0600 and byte-identical to tracked sources; all713 compiled hashes match the bound clean commit. The actual read-only prepared `--check` returned `LOCAL_CHECK_PASSED_NO_ACCESS`.
+
+No participant binding or delivery bundle exists. The September18 09:25–09:40 Eastern plan expired and was not extended. Remaining R08: the owner privately retries the prepared participant-binding command; on any stop the fixed local or child stage is durable. After successful binding, review/authorize a new <=15-minute prepare window and one bundle operation. No automatic retry/upload. R10 activation/paid verification remains separate.
+
+P06 remains10/14closed (R01–R07,R09,U01,U02); R08/R10/R11/R12 remain open. No bootstrap, credential, provisioning or R09 repetition; no intake activation, code send, secret payload access/upload, deployment, LOGIN, IAM/secrets change or customer action. Original dirty APP-010 checkout remains preserved. No scope deviation.
+
 ## Current: R08 isolated business bootstrap verified — 2026-09-18
 
 Owner explicitly approved the exact isolated-tenant bootstrap and result verification. One transaction from backend e11c8c9 / governance da75db4 succeeded at2026-09-18T13:14:19.744Z; operation fdc7033e-29fe-41a7-8931-4d130da025e3. Tenant a1adcfd4-15be-404b-9ac3-5edb1fda20f0 is ACTIVE with R07-adopted profile, regular USD99 deposit policy and stable regular-diagnosis category. Readback confirms matching bootstrap audit and unchanged setup. Existing U02 implementation reused; no bootstrap replay. Exact source, packet, timestamp correction, private-handling/qualification and sanitized receipts: backend evidence/APP-013/p06-r08-bootstrap-result.md and p06-r08-bootstrap-receipts.json. This supersedes older pending-bootstrap/preparation-only headings below.
