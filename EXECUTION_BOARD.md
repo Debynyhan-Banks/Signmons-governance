@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: R10 4:05 PM plan authorized; guarded manual LOGIN pending — 2026-09-19
+
+Plan `7fdf7e8c-397b-46a2-9ecf-86e45f20a424` is owner-approved and its private helper/authorizations are installed. The final no-action check passes after correcting two stale generated timestamps before any connection or reservation. No external action occurred. Next is attended `--open-login`; no retry. P06 remains 11/14 with R10/R11/R12 open. No scope deviation.
+
 ## Current: exact R10 4:05 PM packet ready — execution approval required — 2026-09-19
 
 Plan `7fdf7e8c-397b-46a2-9ecf-86e45f20a424` passed review for database support 4:05–4:35 PM Eastern, connected runtime 4:15–4:30 and mandatory closeout by 4:35, using enabled7 and backend repair `1eff5ca`. No helper, approval, authorization, LOGIN or external action exists. P06 remains 11/14; R10/R11/R12 open. Exact approval or refusal is next; no automatic retry. No scope deviation.
