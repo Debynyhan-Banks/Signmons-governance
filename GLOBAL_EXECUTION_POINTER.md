@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## Current: R10 diagnostic handoff stopped before database; local transport repaired — 2026-09-19
+
+Approved plan `a76b6bb9-780c-4d94-984b-fae664758217` reserved once at 3:00:31 PM and stopped because the new Python wrapper omitted the newline required by the established anonymous-pipe reader. This deterministic framing failure occurred before the diagnostic imported/called its database adapter, so no connection or read occurred. The operation is consumed and was not retried.
+
+Backend `83e2d8c` replaces the faulty handoff with the established hidden-input framing and a real Node-reader pseudo-terminal regression test; 3 new transport tests, 12 existing private-input tests and 32 diagnostic/packet/controller tests pass. No new packet or authorization exists. P06 remains 11/14 with R10/R11/R12 open. Next requires a fresh future window, new operation and separate approval. Backend evidence: `evidence/APP-013/p06-r10-diagnostic-handoff-stop-repair.md`. Original dirty APP-010 checkout preserved. No scope deviation.
+
 ## Current: R10 read-only diagnostic authorized — 3:00 PM manual run pending — 2026-09-19
 
 Owner approved exact plan `a76b6bb9-780c-4d94-984b-fae664758217` for one read-only database diagnostic from 3:00–3:30 PM Eastern, excluding LOGIN changes, activation, deployment, provider requests, customer actions and retry. The exact authorization is installed and `R10_DIAGNOSTIC_CHECK_PASSED_NO_ACTION` passes. No reservation or database connection occurred. Next is the owner's single attended `--run` inside the window. P06 remains 11/14; R10/R11/R12 open. Backend `36a455a`. No scope deviation.

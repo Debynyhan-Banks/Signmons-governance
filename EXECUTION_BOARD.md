@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: R10 diagnostic handoff stopped before database; local transport repaired — 2026-09-19
+
+The one-use diagnostic reserved at 3:00:31 PM, then stopped because its Python wrapper omitted the newline required by the private-pipe reader. The failure was before the database adapter, so no connection/read or mutation occurred. Backend `83e2d8c` reuses the established framing and adds a real Node-reader regression; all 47 relevant tests pass. The operation is consumed. P06 remains 11/14 with R10/R11/R12 open. A fresh future window, operation and approval are required. No scope deviation.
+
 ## Current: R10 read-only diagnostic authorized — 3:00 PM manual run pending — 2026-09-19
 
 Exact plan `a76b6bb9-780c-4d94-984b-fae664758217` is owner-approved for one read-only database diagnostic from 3:00–3:30 PM Eastern. Authorization is installed and the no-action check passes; no reservation or connection occurred. One attended `--run` is next, with no retry. P06 remains 11/14; R10/R11/R12 open. Backend `36a455a`. No scope deviation.

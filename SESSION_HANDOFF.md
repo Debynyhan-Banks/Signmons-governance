@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current handoff: R10 diagnostic stopped before database; transport repair verified — 2026-09-19
+
+Plan `a76b6bb9-780c-4d94-984b-fae664758217` is consumed. Its wrapper omitted the newline required by `readPipe`, so it stopped after reservation but before importing/calling the database diagnostic; no database connection or read occurred. Backend `83e2d8c` repairs the handoff using the established framing, with 47 relevant tests passing. No fresh packet or authorization exists. P06 remains 11/14; R10/R11/R12 open. Next input is one future attended window. No scope deviation.
+
 ## Current handoff: R10 read-only diagnostic authorized — 3:00 PM manual run pending — 2026-09-19
 
 Plan `a76b6bb9-780c-4d94-984b-fae664758217` is authorized for one repeatable-read `READ ONLY` diagnostic from 3:00–3:30 PM Eastern. The exact authorization is installed and its no-action check passes. No reservation or database connection occurred. The owner's single attended `--run` is next; report the exact final status and do not rerun. P06 remains 11/14; R10/R11/R12 open. No scope deviation.
