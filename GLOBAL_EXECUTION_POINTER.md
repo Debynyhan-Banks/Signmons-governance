@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: R10 4:05 PM stopped at broad updatedAt guard; change decision required — 2026-09-19
+
+The approved run reserved activation once and stopped at exact stage `ACTIVATION_UPDATED_AT`, before approval comparison or any write. Mandatory containment returned `CLOSED`; no deployment reservation, provider request or customer action exists. The operation is consumed and was not retried. Change request `APP013_P06_R10_TIMESTAMP_CHANGE_REQUEST.md` proposes replacing only the broad pre-transaction row timestamp comparison with the controlled approval-pair comparison while retaining locked current-authority checks, in-transaction updatedAt CAS, audit/rollback and no-retry controls. Owner approval or refusal is required before implementation. P06 remains 11/14 with R10/R11/R12 open. Backend `45fd833`. No scope deviation implemented.
+
 ## Current: R10 4:05 PM plan authorized; guarded manual LOGIN pending — 2026-09-19
 
 Owner approved exact plan `7fdf7e8c-397b-46a2-9ecf-86e45f20a424`. Private helper and one-use authorizations are installed. An initial no-action check caught and repaired two stale generated closeout timestamps before any connection/reservation/action; the repeated check returned `R10_CHECK_PASSED_NO_ACTION`. No LOGIN or external action occurred. The owner's attended `--open-login` command is next; no retry. P06 remains 11/14 with R10/R11/R12 open. Backend `21f44bb`. Approved plan only; no other scope deviation.
