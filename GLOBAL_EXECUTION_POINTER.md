@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: fresh R10 read-only diagnostic packet ready for 3:15–3:45 PM — approval required — 2026-09-19
+
+Private plan `2785d5a2-3d58-481d-bea1-db3cecc57d8e` / operation `bf149142-7da6-4099-8302-2edca69a707d` binds the tested transport at `83e2d8c` and one repeatable-read `READ ONLY` diagnostic. Its no-action check returned `R10_DIAGNOSTIC_PREPARED_NOT_AUTHORIZED`; no authorization, reservation or database connection exists. Exact owner approval or refusal is next. P06 remains 11/14; R10/R11/R12 open. Backend `8fa1674`. No scope deviation.
+
 ## Current: R10 diagnostic handoff stopped before database; local transport repaired — 2026-09-19
 
 Approved plan `a76b6bb9-780c-4d94-984b-fae664758217` reserved once at 3:00:31 PM and stopped because the new Python wrapper omitted the newline required by the established anonymous-pipe reader. This deterministic framing failure occurred before the diagnostic imported/called its database adapter, so no connection or read occurred. The operation is consumed and was not retried.

@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current handoff: fresh R10 read-only diagnostic packet ready for 3:15–3:45 PM — approval required — 2026-09-19
+
+Plan `2785d5a2-3d58-481d-bea1-db3cecc57d8e` / operation `bf149142-7da6-4099-8302-2edca69a707d` is prepared with the tested transport. `R10_DIAGNOSTIC_PREPARED_NOT_AUTHORIZED`; no authorization, reservation or connection exists. Exact approval or refusal is next. P06 remains 11/14; R10/R11/R12 open. No scope deviation.
+
 ## Current handoff: R10 diagnostic stopped before database; transport repair verified — 2026-09-19
 
 Plan `a76b6bb9-780c-4d94-984b-fae664758217` is consumed. Its wrapper omitted the newline required by `readPipe`, so it stopped after reservation but before importing/calling the database diagnostic; no database connection or read occurred. Backend `83e2d8c` repairs the handoff using the established framing, with 47 relevant tests passing. No fresh packet or authorization exists. P06 remains 11/14; R10/R11/R12 open. Next input is one future attended window. No scope deviation.
