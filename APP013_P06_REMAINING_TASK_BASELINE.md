@@ -1,6 +1,14 @@
 # P06 remaining-work reconciliation — review baseline v1
 
-## Current: R10 owner-authorized — 9:25 PM manual start pending — 2026-09-18
+## Current: R10 first attempt stopped; safe closeout verified — sequence change decision pending — 2026-09-18
+
+Owner-authorized plan `b228f87a-ed6e-4253-a62a-b33128bb094a` opened the limited runtime LOGIN at 9:27 PM Eastern. The 9:31 PM no-traffic deployment created the exact enabled revision but stopped before readback: the container refused startup, Cloud Run recorded `HealthCheckContainerError`, and no deployment result exists. A 9:42 PM invocation refused at the elapsed-window gate and was not retried. No activation attempt, verification code, Address Validation request, customer session, reviewed submission or job occurred; normal traffic never left 100% `app013bounds`.
+
+Mandatory closeout is verified. The first closeout pass found no active approval and stopped during tag removal; bounded recovery established the enabled tag absent and restored `p06_intake_runtime` to `NOLOGIN`, connection limit0, past expiry and zero sessions at 9:53 PM. Read-only Cloud Run reconciliation found latest Ready `app013p06disabled`, no enabled target in traffic and `app013bounds` still 100%. The failed revision and private attempt records are retained.
+
+The demonstrated blocker is an order mismatch: runtime startup requires the exact approval already active, while the approved plan required healthy deployment before activation. `APP013_P06_R10_SEQUENCE_CHANGE_REQUEST.md` recommends a fresh activate-before-deploy packet with mandatory revoke on any deployment failure; the alternative is a larger runtime-code change. Neither is approved or implemented. The consumed packet/window must not be reused. P06 remains 11/14; R10/R11/R12 open. Next observable result is the owner's decision on the sequence change request, followed by local controller repair/testing only if approved. Original dirty APP-010 checkout preserved. No scope deviation implemented.
+
+## Historical: R10 owner-authorized — 9:25 PM manual start pending — 2026-09-18
 
 Owner explicitly approved plan `b228f87a-ed6e-4253-a62a-b33128bb094a`: database LOGIN 9:25–10:00 PM Eastern, one connected run 9:30–9:45 PM, exact no-traffic deployment, capped phone/address/reviewed-submit journey and mandatory closeout. Backend evidence records exact packet/digests/operation IDs and exclusions.
 
