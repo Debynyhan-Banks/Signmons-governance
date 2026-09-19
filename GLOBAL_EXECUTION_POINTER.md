@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: R10 timestamp-boundary repair locally complete — fresh packet remains gated — 2026-09-19
+
+Owner approved change-request alternative 1 for local repair/testing only. Backend `f254c4f` changes activation's pre-transaction expected input from the broad tenant `updatedAt` plus approvals to the two controlled approvals only. Locked current tenant/policy/category checks, exact digests, final database-clock authorization, in-transaction updatedAt CAS, audit, rollback, readback, concurrency and no-retry behavior remain. All 16 disposable-PG18 checks, 80 P06 Node tests plus two expected skips, 15 private-input tests, build/lint/architecture and governance gates pass. No live connection or external action occurred. P06 remains 11/14 with R10/R11/R12 open. A fresh future packet/helper/window and separate exact approval are required. Backend evidence `ba12d10`. Approved change only; no other scope deviation.
+
 ## Current: R10 4:05 PM stopped at broad updatedAt guard; change decision required — 2026-09-19
 
 The approved run reserved activation once and stopped at exact stage `ACTIVATION_UPDATED_AT`, before approval comparison or any write. Mandatory containment returned `CLOSED`; no deployment reservation, provider request or customer action exists. The operation is consumed and was not retried. Change request `APP013_P06_R10_TIMESTAMP_CHANGE_REQUEST.md` proposes replacing only the broad pre-transaction row timestamp comparison with the controlled approval-pair comparison while retaining locked current-authority checks, in-transaction updatedAt CAS, audit/rollback and no-retry controls. Owner approval or refusal is required before implementation. P06 remains 11/14 with R10/R11/R12 open. Backend `45fd833`. No scope deviation implemented.

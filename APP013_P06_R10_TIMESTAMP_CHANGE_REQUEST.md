@@ -26,4 +26,8 @@ Approve alternative 1 for local controller/operator repair and tests only. The e
 
 ## Impact
 
-R10 remains open and P06 remains 11/14. Task count, dependency order, provider caps, participant binding and connected journey are unchanged. Rollback is the single local repair commit. Owner decision: **pending**.
+R10 remains open and P06 remains 11/14. Task count, dependency order, provider caps, participant binding and connected journey are unchanged. Rollback is the single local repair commit.
+
+## Owner decision and implementation
+
+The owner approved alternative 1 for local repair and testing only, explicitly excluding packet preparation, LOGIN, activation, deployment, provider requests, verification codes and execution. Backend `f254c4f` implements the approved input shape. Disposable PostgreSQL 18 verifies unrelated timestamp drift proceeds while approval drift refuses; concurrency, CAS, audit and rollback checks pass. Backend evidence is committed at `ba12d10`. No external action occurred.

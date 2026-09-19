@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: R10 timestamp-boundary repair locally complete — fresh packet remains gated — 2026-09-19
+
+Backend `f254c4f` implements the owner-approved approval-pair precheck while preserving locked current-authority checks and transactional updatedAt CAS/audit/rollback. All relevant local and disposable-PG checks pass; no live connection or external action occurred. P06 remains 11/14 with R10/R11/R12 open. A fresh future packet/helper/window and separate approval are required. No scope deviation beyond the approved change.
+
 ## Current: R10 4:05 PM stopped at broad updatedAt guard; change decision required — 2026-09-19
 
 Activation stopped at `ACTIVATION_UPDATED_AT` before approval comparison/write; containment is `CLOSED` and no deployment/provider/customer action occurred. The consumed operation is not retryable. `APP013_P06_R10_TIMESTAMP_CHANGE_REQUEST.md` proposes approval-pair precheck while preserving locked current-authority checks and the transaction's updatedAt CAS/audit. Owner decision is required before implementation. P06 remains 11/14; R10/R11/R12 open. No scope deviation implemented.

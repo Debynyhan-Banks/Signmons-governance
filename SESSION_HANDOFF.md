@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current handoff: R10 timestamp-boundary repair locally complete — fresh packet remains gated — 2026-09-19
+
+Approved alternative 1 is implemented at backend `f254c4f`: activation snapshots only the two controlled approvals; locked current-authority checks and transactional updatedAt CAS/audit remain. Disposable PG18 and all relevant suites pass. No packet, LOGIN, activation, deployment, provider request or customer action occurred. P06 remains 11/14; R10/R11/R12 open. Next input is a future attended window for separately authorized fresh packet preparation and execution. No scope deviation beyond the approved change.
+
 ## Current handoff: R10 4:05 PM stopped at updatedAt; narrow change decision required — 2026-09-19
 
 Plan `7fdf7e8c-397b-46a2-9ecf-86e45f20a424` is consumed. Exact evidence is `ACTIVATION_UPDATED_AT`; no activation result or deployment reservation exists, and mandatory containment returned `CLOSED`. Do not rerun or issue another live command. Review `APP013_P06_R10_TIMESTAMP_CHANGE_REQUEST.md`: owner approval is required before replacing the broad pre-transaction timestamp guard with the approval-pair guard while retaining in-transaction CAS/audit. P06 remains 11/14; R10/R11/R12 open. No scope deviation implemented.
