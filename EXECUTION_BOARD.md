@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## Current: R10 7:01 AM plan authorized; guarded manual LOGIN pending — 2026-09-19
+
+Owner explicitly approved plan `38fc6f4b-ecd5-4fba-b17b-c459c17d5f36`: private guarded-helper/action installation, database LOGIN 7:01–7:31 AM Eastern, activate/readback then one zero-traffic deploy/readback, one connected run 7:06–7:21 with the verified recipient, one capped verification/address/reviewed-submit journey, and mandatory closeout by 7:31. No automatic retry.
+
+The source-bound mode-0600 helper and one-use authorization records are installed in the plan's mode-0700 encrypted directory. Its actual read-only `--check` returned `R10_CHECK_PASSED_NO_ACTION`, proving exact hashes, unused reservations, target/tag absence, `app013bounds` at 100%, required secret-version metadata and false safety flags. No database connection, LOGIN, activation, deployment, provider request or code occurred. Next observable result is the owner's attended hidden-input `--open-login` action at or after 7:01; any refusal/unconfirmed result stops without retry. P06 remains 11/14 with R10/R11/R12 open. Backend evidence: `evidence/APP-013/p06-r10-0701-authorization.md`. Original dirty APP-010 checkout preserved. No scope deviation.
+
 ## Current: R10 exact 7:01 AM packet ready — execution approval required — 2026-09-19
 
 Owner selected 7:01–7:31 AM Eastern after the verified-recipient private rebind. Private packet `67f66545-f0b9-45a7-866e-2e59233c3025` / plan `38fc6f4b-ecd5-4fba-b17b-c459c17d5f36` passed production packet review and the repaired controller validator for database support 7:01–7:31, connected runtime 7:06–7:21 and closeout through 7:31. It binds fresh revision `app013p06enabled2`, immutable source/image, current Cloud/Twilio readbacks, the consented verified-recipient HMAC, exact caps and eight new operation IDs.
