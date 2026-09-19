@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## Current: R10 reviewed-plan composition repaired locally — fresh window required — 2026-09-19
+
+After verified recovery closeout, the owner said `proceed`. The demonstrated private-helper `PLAN` failure is locally repaired in the inert controller: reviewed plans now retain exactly the approved eleven fields, and execution/closeout derive time comparisons without adding enumerable keys. Regression tests pass reviewed output directly through both successful activate-before-deploy and inactive closeout paths while preserving strict unknown-key, consumed-plan, window, ordering and at-most-once checks.
+
+Validation passed: 21 focused controller tests; all 77 P06 Node tests with two expected skips; full Jest 2,359 passed/three skipped; build, lint, architecture, Prisma and governance gates. No provider/target refresh, private binding/bundle access, packet, helper, LOGIN, activation, deployment, code or external action occurred. P06 remains 11/14 with R10/R11/R12 open. Next requires an owner-selected future attended block and explicit read-only refresh/fresh-packet authorization; execution remains separately gated. Backend evidence: `evidence/APP-013/p06-r10-reviewed-plan-repair.md`. Original dirty APP-010 checkout preserved. No scope deviation.
+
 ## Current: R10 7:01 AM attempt stopped; recovery closeout verified — 2026-09-19
 
 The owner opened the approved limited database LOGIN at 7:01 AM. The connected-run command was entered at 7:05:13, before the 7:06 start, and stopped at `CONNECTED_RUN_WINDOW` with no activation/deployment reservation or result. The consumed command was not retried. The first closeout then stopped at `PLAN` because the private helper passed the validator's enriched result back into the exact-key validator; no controller action began and that consumed closeout was not retried.
