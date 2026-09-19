@@ -1,6 +1,16 @@
 # Signmons Execution Board
 
-## Current: R10 final-run preparation — current Twilio readback and fresh window pending — 2026-09-18
+## Current: R10 exact 9:30 PM packet ready — owner execution approval pending — 2026-09-18
+
+Owner reported the existing Twilio Console signed in and selected 9:30 PM Eastern. Current read-only Console evidence confirms the Active Signmons account, single Signmons SMS Verify service, Fraud Guard enabled, United States SMS monitored, United States voice disabled and only United States remaining under the enabled-SMS filter. No provider Save or configuration action occurred.
+
+Backend evidence `evidence/APP-013/p06-r10-final-run-preparation.md` and `p06-r10-final-run-review.json` bind private packet `6516f298-75e8-430d-8865-ef7031b02ac9`, packet digest `72e8e33e684ce19a93de20503da20bdf7f9e8a64827b22cada65b182beacbe88`, exact enabled revision/tag/origin, immutable source/image, bundle version 1, child database version 2, current policies/caps, preserved private participant binding and 9:30–9:45 PM Eastern runtime. The packet passed production `reviewPacket`; repository evidence contains no phone or participant HMAC. Proposed supporting database LOGIN is 9:25–10:00 PM with immediate earlier shutdown.
+
+The exact approval request covers one preflight, bounded runtime-role LOGIN, no-traffic enabled deployment, revision/config readback, transactional activation/readback, one R11 phone -> address -> explicit reviewed submit journey, and mandatory revoke/session/tag/database closeout. Named operation IDs and limits are in the evidence. Every authorization flag remains false; no deployment, LOGIN, activation, verification code, Address Validation request, customer action, secret/IAM change or traffic shift occurred.
+
+P06 remains 11/14 complete; R10/R11/R12 remain open. Next observable result is the owner's explicit approval or refusal of this exact packet. No inherited authority or automatic retry. Original dirty APP-010 checkout remains preserved. No scope deviation.
+
+## Historical: R10 final-run preparation — current Twilio readback and fresh window pending — 2026-09-18
 
 Owner said `proceed` after R08 closed. Backend evidence `evidence/APP-013/p06-r10-final-run-preparation.md` records the complete R10 preparation card and fresh read-only state. Cloud Run normal traffic remains 100% `app013bounds`; the disabled P06 candidate is Ready on the approved image; the enabled revision/tag is absent. Bundle version 1 and child database URL version 2 are ENABLED, runtime access remains the reviewed limited set, required Google APIs are enabled and the old staging phone signer role remains DISABLED. Public Twilio and Google list rates were refreshed; they are not account-specific terms or spending authority.
 
