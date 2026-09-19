@@ -1,5 +1,13 @@
 # Signmons Execution Board
 
+## Current: R10 fresh packet stopped by verified-recipient restriction — 2026-09-19
+
+Owner authorized read-only provider/target refresh and fresh-packet preparation for a proposed 6:30–7:00 AM Eastern block, excluding LOGIN, activation, deployment, code send and execution. Private packet `f71f5540-b468-4d6b-a1f7-2f47c0504808` / plan `4228c1ff-9407-487c-8c94-87084959aba4` passed structural review for fresh revision `app013p06enabled2`; Cloud readback passed with `app013bounds`100%, target/tag absent, disabled candidate Ready, required versions/APIs/IAM intact and safety flags false.
+
+Current Twilio Console established a hard negative gate: this trial/no-approved-PCP posture can reach only verified recipients, the account has one verified recipient, and private comparison shows the bound participant is different. The private packet is retained as blocked; no helper or authorization was created. No database connection, mutation, provider Save, code, deployment or execution occurred.
+
+P06 remains 11/14; R10/R11/R12 open. Owner must separately choose recipient verification, a willing currently verified participant with a new binding, or account upgrade/approved Primary Compliance Profile. Each path has separate external consequences and is unapproved. The current packet/window must not be executed or reused. Original dirty APP-010 checkout preserved. No scope deviation.
+
 ## Current: R10 stable local packet decisions prepared — attended window and read-only refresh authorization required — 2026-09-19
 
 Owner said `proceed` after the controller repair. Backend `evidence/APP-013/p06-r10-fresh-packet-preparation.md` now fixes the next revision as `signmons-calldesk-staging-app013p06enabled2`, preserves the stable tag/origin, immutable application source/image and repaired activate-before-deploy/ordered-closeout sequence, and records the finite fresh-packet checklist. Its sanitized JSON explicitly records that no packet, window, digest, operation ID or authorization exists.

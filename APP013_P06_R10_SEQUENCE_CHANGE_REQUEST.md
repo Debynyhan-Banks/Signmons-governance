@@ -1,5 +1,11 @@
 # APP-013 / P06 / R10 sequence change request
 
+## Fresh-packet provider stop — 2026-09-19
+
+The separately authorized read-only refresh and packet preparation produced one structurally valid fresh packet for revision `app013p06enabled2`, then stopped. Current Twilio state restricts delivery to verified recipients; the one verified recipient does not match the private bound participant. No helper or authorization was created and no external mutation occurred. The blocked packet/window is retained and unusable.
+
+This is an existing R10 provider-readiness dependency, not a new acceptance section. Recipient verification, selection/consent/rebinding to the currently verified recipient, or account upgrade/approved Primary Compliance Profile each requires a separate owner decision before work. P06 remains 11/14 with R10/R11/R12 open. No additional scope deviation.
+
 ## Fresh-packet local preparation status — 2026-09-19
 
 After the verified controller repair, the owner said `proceed`. Backend evidence now records stable local decisions and the finite next preparation: fresh revision `signmons-calldesk-staging-app013p06enabled2`, unchanged tag/origin and immutable runtime source/image, repaired activate-before-deploy order, ordered closeout and explicit time-sensitive gates. No packet/window/digest/operation ID, private helper or authorization was created, and no external or private read occurred.
