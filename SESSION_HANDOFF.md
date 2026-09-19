@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current handoff: R10 read-only activation diagnostic ready — live read approval required — 2026-09-19
+
+Backend `798986c` contains the tested, inert diagnostic for the consumed 2:30 PM activation. It checks fixed database identity, migrations, inactive approval state, unused operation ID, category and approved policy bindings, returning only one bounded stage. No live database read or external action occurred. P06 remains 11/14; R10/R11/R12 remain open. Next is separate owner authorization for one hidden-input, read-only database diagnostic; no consumed operation may be retried. No scope deviation.
+
 ## Current handoff: R10 2:30 PM attempt stopped at activation; failure closeout verified — 2026-09-19
 
 Plan `a6cde0d0-ae91-4309-a200-023937ea8408` stopped at `ACTIVATE` after its one-use reservation. No activation result, deployment reservation or provider request exists. Controller closeout is `CLOSED`; Cloud independently confirms enabled5/tag absent and normal traffic 100% `app013bounds`. P06 remains 11/14 with R10/R11/R12 open. Next is bounded activation diagnosis, not another run. No scope deviation.

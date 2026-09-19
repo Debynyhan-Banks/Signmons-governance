@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: R10 read-only activation diagnostic ready — live read approval required — 2026-09-19
+
+Backend `798986c` adds the inert, fixed-target classifier for the consumed activation. It returns only a bounded prerequisite stage and its optional live adapter is constrained to one repeatable-read `READ ONLY` transaction. Focused synthetic/current suites pass 32/32; build, lint, architecture and governance gates pass. No external connection or mutation occurred. P06 remains 11/14 with R10/R11/R12 open. Next requires separate approval for one attended read-only database diagnostic. No scope deviation.
+
 ## Current: R10 2:30 PM attempt stopped at activation; failure closeout verified — 2026-09-19
 
 Activation reserved once and stopped at `ACTIVATE`; no activation result or deployment reservation exists. Mandatory failure closeout returned `CLOSED`, and independent Cloud readback confirms target/tag absent with normal traffic 100% `app013bounds`. No deployment or provider request occurred. P06 remains 11/14 with R10/R11/R12 open. Diagnose the existing activation boundary before another packet; do not retry the consumed operation. No scope deviation.

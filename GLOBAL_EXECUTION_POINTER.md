@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## Current: R10 read-only activation diagnostic ready — live read approval required — 2026-09-19
+
+Backend `798986c` adds an inert, fixed-target diagnostic for the consumed 2:30 PM packet. It checks the same activation prerequisites through a repeatable-read `READ ONLY` transaction and returns only a bounded stage; direct CLI use performs no action. Synthetic and existing packet/controller checks pass (32/32), with build, lint, architecture and governance gates passing.
+
+No database connection, LOGIN change, activation, deployment, provider request, code, address request or customer action occurred. P06 remains 11/14 with R10/R11/R12 open. Next observable result requires separate owner approval for one attended read-only database diagnostic with hidden password input; the consumed operation remains non-retryable. Backend evidence: `evidence/APP-013/p06-r10-activation-diagnostic.md`. Original dirty APP-010 checkout preserved. No scope deviation.
+
 ## Current: R10 2:30 PM attempt stopped at activation; failure closeout verified — 2026-09-19
 
 Plan `a6cde0d0-ae91-4309-a200-023937ea8408` opened bounded database LOGIN and began inside the runtime window. Activation was reserved once, then stopped at controller stage `ACTIVATE`; no activation result or deployment reservation exists. The mandatory failure path returned `closeoutStatus: CLOSED`, proving approvals inactive, enabled tag absent, runtime role NOLOGIN/limit0/sessions0 and normal traffic 100% `app013bounds`. Independent Cloud readback confirms enabled5/tag absent and disabled candidate latest Ready.
