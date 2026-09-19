@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: R10 safe operation-stage evidence locally complete — fresh packet remains gated — 2026-09-19
+
+Backend `e6e2c86` preserves generic external errors but lets a reviewed private controller retain one fixed internal activation stage. Disposable PG18 and all relevant suites pass (15 integration, 79 P06 Node plus two skips, 15 private-input). No live connection or external action occurred. P06 remains 11/14; R10/R11/R12 open. A fresh future window, packet and approval are required before any live activation. No scope deviation.
+
 ## Current: R10 read-only activation diagnostic passed — transient interface evidence remains — 2026-09-19
 
 The one approved diagnostic returned `R10_ACTIVATION_DIAGNOSTIC_PASS_ACTIVATION_PREREQUISITES_MATCHED`, ruling out the persistent database/packet/policy prerequisites it covers. It cannot reconstruct the earlier unpublished preflight snapshot or classify a transient connection/CAS stop. No mutation or external action occurred; the diagnostic is consumed. P06 remains 11/14 with R10/R11/R12 open. Next is local stage-evidence repair before another activation packet. Backend `ca72cc7`. No scope deviation.
