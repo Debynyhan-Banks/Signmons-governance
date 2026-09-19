@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: R10 3:30 PM activation snapshot stop safely closed; local repair verified — 2026-09-19
+
+The approved one-use activation stopped at `ACTIVATION_SNAPSHOT`; no activation result or deployment reservation exists. Controller containment returned `CLOSED`, and Cloud readback confirms enabled6/tag absent with normal traffic 100% `app013bounds`. Backend `1eff5ca` refreshes the snapshot immediately after reservation and safely distinguishes timestamp from approval drift. All relevant local and disposable-PG checks pass. P06 remains 11/14 with R10/R11/R12 open. The consumed operation is not retryable; a future attempt needs a fresh packet, revision, window and approval. No scope deviation.
+
 ## Current: R10 safe operation-stage evidence locally complete — fresh packet remains gated — 2026-09-19
 
 Backend `e6e2c86` preserves generic external errors but lets a reviewed private controller retain one fixed internal activation stage. Disposable PG18 and all relevant suites pass (15 integration, 79 P06 Node plus two skips, 15 private-input). No live connection or external action occurred. P06 remains 11/14; R10/R11/R12 open. A fresh future window, packet and approval are required before any live activation. No scope deviation.

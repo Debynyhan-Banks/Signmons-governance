@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## Current: R10 3:30 PM activation snapshot stop safely closed; local repair verified — 2026-09-19
+
+Owner-approved plan `9bd2c944-df82-437b-b89e-2e81cb7a53ad` opened bounded LOGIN and reserved activation once. Safe evidence fixed the stop at `ACTIVATION_SNAPSHOT`, before any activation result or deployment reservation. Mandatory containment returned `CLOSED`; independent read-only Cloud Run confirms normal traffic remains 100% `app013bounds`, the disabled candidate remains latest Ready, and enabled6/tag are absent. No deployment, provider request, verification code or customer action occurred. The consumed operation was not retried.
+
+Backend `1eff5ca` now refreshes the private comparison snapshot immediately after the one-use reservation and before activation, then distinguishes `ACTIVATION_UPDATED_AT` from `ACTIVATION_APPROVALS` without exposing state or raw errors. All 16 disposable-PG18 checks, 80 P06 Node tests plus two expected skips, 15 private-input tests, build, lint and architecture pass. Evidence is committed at backend `0a8c569`. P06 remains 11/14 with R10/R11/R12 open. A future attempt requires a fresh packet/revision/window and separate exact approval. Original dirty APP-010 checkout preserved. No scope deviation.
+
 ## Current: R10 safe operation-stage evidence locally complete — fresh packet remains gated — 2026-09-19
 
 Backend `e6e2c86` adds an opaque single-use fixed-stage collector around the existing activation transaction while preserving the public generic error. Disposable PG18 proves a real policy refusal records only `CURRENT_STATE_AUTHORITY`; all 15 integration checks pass with 26 migrations and zero live provider/secret calls. All 79 P06 Node tests pass with two expected skips, 15 private-input tests pass, and build/lint/architecture/governance gates pass.
