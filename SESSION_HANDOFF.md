@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current handoff: R10 11:00 AM run missed; correct recovery closeout verified — 2026-09-19
+
+No connected run, activation, deployment or provider request occurred. Correct `1100` recovery `4e3f9d77-e518-4c7a-bab5-c440851ef9c3` completed: approvals INACTIVE; runtime role NOLOGIN/limit0/past expiry/sessions0; Cloud target absent; normal traffic 100% `app013bounds`; disabled candidate latest Ready. P06 remains 11/14; R10/R11/R12 open. Next requires fresh provider/target readback and a new packet/revision/window under separate approval. No scope deviation beyond approved recovery.
+
 ## Current handoff: R10 11:00 AM plan authorized; guarded manual LOGIN pending — 2026-09-19
 
 Exact plan `b25130af-8e03-481b-aedc-b93f201bae59` is authorized for database LOGIN 11:00–11:30 AM Eastern, connected runtime 11:05–11:20 and mandatory closeout by 11:30. The source-bound helper and one-use authorizations are installed; static checks and `R10_CHECK_PASSED_NO_ACTION` pass. No external mutation occurred. Next is the owner's attended `--open-login` at or after 11:00; stopped actions are not retried. P06 remains 11/14 with R10/R11/R12 open. No scope deviation.

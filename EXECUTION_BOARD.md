@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: R10 11:00 AM run missed; correct recovery closeout verified — 2026-09-19
+
+The connected run did not occur. Correct recovery `4e3f9d77-e518-4c7a-bab5-c440851ef9c3` returned `R10_CLOSEOUT_RECOVERY_VERIFIED`: approvals INACTIVE, runtime role NOLOGIN/limit0/past expiry/sessions0, enabled4/tag absent and normal traffic 100% `app013bounds`. No activation, deployment or provider request occurred. P06 stays 11/14 with R10/R11/R12 open. Next requires a fresh packet/revision/window and separate approval. No scope deviation beyond approved recovery.
+
 ## Current: R10 11:00 AM plan authorized; guarded manual LOGIN pending — 2026-09-19
 
 Owner approved plan `b25130af-8e03-481b-aedc-b93f201bae59` for database LOGIN 11:00–11:30 AM Eastern, connected runtime 11:05–11:20 and mandatory closeout by 11:30. Private helper/authorizations are installed; static checks and `R10_CHECK_PASSED_NO_ACTION` pass. No database connection or external mutation occurred. The attended `--open-login` command is next at or after 11:00; no retry. P06 remains 11/14 with R10/R11/R12 open. No scope deviation.

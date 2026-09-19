@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## Current: R10 11:00 AM run missed; correct recovery closeout verified — 2026-09-19
+
+The owner opened database LOGIN at 11:02 AM but did not invoke the connected run before 11:20. No activation/deployment reservation, provider request, code or customer journey occurred. A mistakenly invoked historical `0701` recovery helper stopped at its expired window before input/action.
+
+Owner-approved correct recovery `4e3f9d77-e518-4c7a-bab5-c440851ef9c3` ran once from the `1100` directory and returned `R10_CLOSEOUT_RECOVERY_VERIFIED`: approvals INACTIVE; `p06_intake_runtime` NOLOGIN/limit0/past expiry/sessions0; enabled4/tag absent; normal traffic 100% `app013bounds`; latest Ready `app013p06disabled`. P06 remains 11/14 with R10/R11/R12 open. Any next attempt requires a fresh packet/revision/window and separate approval; consumed operations cannot be reused. Backend evidence: `evidence/APP-013/p06-r10-1100-missed-run-closeout.md`. Original dirty APP-010 checkout preserved. Approved recovery only; no other scope deviation.
+
 ## Current: R10 11:00 AM plan authorized; guarded manual LOGIN pending — 2026-09-19
 
 Owner approved exact plan `b25130af-8e03-481b-aedc-b93f201bae59` for guarded helper/action installation, database LOGIN 11:00–11:30 AM Eastern, activation/readback before one zero-traffic deploy/readback, one connected 11:05–11:20 verified-recipient journey and mandatory closeout by 11:30, with no automatic retry.
