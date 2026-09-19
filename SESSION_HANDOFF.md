@@ -1,5 +1,11 @@
 # Session Handoff
 
+## Current: R10 7:01 AM attempt stopped; recovery closeout verified — 2026-09-19
+
+The owner opened the approved limited database LOGIN at 7:01 AM. The connected-run command was entered at 7:05:13, before the 7:06 start, and stopped at `CONNECTED_RUN_WINDOW` with no activation/deployment reservation or result. The consumed command was not retried. The first closeout then stopped at `PLAN` because the private helper passed the validator's enriched result back into the exact-key validator; no controller action began and that consumed closeout was not retried.
+
+Owner separately approved recovery operation `60b81c1a-54b1-4803-b561-61e4bc4e68cf`. Its no-action check passed, and the one attended recovery returned `R10_CLOSEOUT_RECOVERY_VERIFIED`: approvals INACTIVE, runtime role NOLOGIN/limit0/sessions0, enabled target absent and normal traffic 100% `app013bounds`. No activation, deployment, provider request, code, address request, job or customer contact occurred. P06 remains 11/14 with R10/R11/R12 open. Next is local repair/test and a fresh packet with a new owner-selected future window; the consumed plan cannot be reused. Backend evidence: `evidence/APP-013/p06-r10-0701-attempt-closeout.md`. Original dirty APP-010 checkout preserved. No scope deviation.
+
 ## Current: R10 7:01 AM plan authorized; guarded manual LOGIN pending — 2026-09-19
 
 Owner explicitly approved plan `38fc6f4b-ecd5-4fba-b17b-c459c17d5f36`: private guarded-helper/action installation, database LOGIN 7:01–7:31 AM Eastern, activate/readback then one zero-traffic deploy/readback, one connected run 7:06–7:21 with the verified recipient, one capped verification/address/reviewed-submit journey, and mandatory closeout by 7:31. No automatic retry.
