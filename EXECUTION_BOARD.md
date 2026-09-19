@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: R10 read-only diagnostic authorized — 3:00 PM manual run pending — 2026-09-19
+
+Exact plan `a76b6bb9-780c-4d94-984b-fae664758217` is owner-approved for one read-only database diagnostic from 3:00–3:30 PM Eastern. Authorization is installed and the no-action check passes; no reservation or connection occurred. One attended `--run` is next, with no retry. P06 remains 11/14; R10/R11/R12 open. Backend `36a455a`. No scope deviation.
+
 ## Current: R10 read-only diagnostic packet ready — approval required — 2026-09-19
 
 Plan `a76b6bb9-780c-4d94-984b-fae664758217` is prepared for one read-only fixed child-database diagnostic from 3:00–3:30 PM Eastern. The mode-0600 helper passes its no-action check; authorization and reservation are absent. No external action occurred. P06 remains 11/14 with R10/R11/R12 open. Exact owner approval or refusal is next; no retry. Backend `ba81d79`. No scope deviation.

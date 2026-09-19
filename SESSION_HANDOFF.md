@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current handoff: R10 read-only diagnostic authorized — 3:00 PM manual run pending — 2026-09-19
+
+Plan `a76b6bb9-780c-4d94-984b-fae664758217` is authorized for one repeatable-read `READ ONLY` diagnostic from 3:00–3:30 PM Eastern. The exact authorization is installed and its no-action check passes. No reservation or database connection occurred. The owner's single attended `--run` is next; report the exact final status and do not rerun. P06 remains 11/14; R10/R11/R12 open. No scope deviation.
+
 ## Current handoff: R10 read-only diagnostic packet ready — approval required — 2026-09-19
 
 Plan `a76b6bb9-780c-4d94-984b-fae664758217` / operation `959c472c-dbc5-478f-836c-736ff5161218` binds the tested diagnostic to 3:00–3:30 PM Eastern and one repeatable-read `READ ONLY` database access. Its no-action check passes; no authorization, reservation or database connection exists. P06 remains 11/14; R10/R11/R12 remain open. Exact owner approval or refusal is next. No scope deviation.

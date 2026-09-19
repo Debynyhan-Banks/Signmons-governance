@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: R10 read-only diagnostic authorized — 3:00 PM manual run pending — 2026-09-19
+
+Owner approved exact plan `a76b6bb9-780c-4d94-984b-fae664758217` for one read-only database diagnostic from 3:00–3:30 PM Eastern, excluding LOGIN changes, activation, deployment, provider requests, customer actions and retry. The exact authorization is installed and `R10_DIAGNOSTIC_CHECK_PASSED_NO_ACTION` passes. No reservation or database connection occurred. Next is the owner's single attended `--run` inside the window. P06 remains 11/14; R10/R11/R12 open. Backend `36a455a`. No scope deviation.
+
 ## Current: R10 read-only diagnostic packet ready — approval required — 2026-09-19
 
 Private plan `a76b6bb9-780c-4d94-984b-fae664758217`, operation `959c472c-dbc5-478f-836c-736ff5161218`, is prepared for one fixed child-database read from 3:00–3:30 PM Eastern. The source-bound mode-0600 helper returned `R10_DIAGNOSTIC_PREPARED_NOT_AUTHORIZED`; no authorization or reservation exists. Backend `ba81d79` records the packet; diagnostic source remains `798986c`.
