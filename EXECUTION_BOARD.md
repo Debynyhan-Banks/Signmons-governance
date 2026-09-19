@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: R10 8:00 AM run missed; refined recovery closeout verified — 2026-09-19
+
+Database LOGIN opened, but the connected run was not invoked before its window ended. No activation, deployment, provider request or customer journey occurred. Refined recovery `beeb0f54-ca12-4d02-b6ca-563f8d392087` returned `R10_CLOSEOUT_RECOVERY_VERIFIED`: approvals INACTIVE, runtime role NOLOGIN/limit0/past expiry/sessions0, target absent and normal traffic 100% `app013bounds`. P06 stays 11/14 with R10/R11/R12 open. Next requires a wholly fresh packet/revision/window and separate approval; no consumed operation may be reused. No scope deviation beyond the approved recovery refinement.
+
 ## Current: R10 run missed; 10:00 AM closeout recovery authorized — 2026-09-19
 
 The connected run did not occur. The expired closeout stopped before hidden input or action; Cloud Run remains 100% `app013bounds` with enabled3/tag absent. Recovery `6d5e3707-a3e4-4a53-9398-99182102e8aa` is owner-approved for 10:00–10:30 AM Eastern and limited to inactive-approval verification, shutdown of only `p06_intake_runtime`, its session termination and closed-state readback. The recovery helper is installed and its no-action check passes. Next is one attended recovery command; no retry. P06 remains 11/14 with R10/R11/R12 open. No scope deviation.

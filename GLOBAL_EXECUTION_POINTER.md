@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## Current: R10 8:00 AM run missed; refined recovery closeout verified — 2026-09-19
+
+The owner opened the bounded database LOGIN at 8:07 AM but did not invoke the connected run before its 8:20 end. No activation/deployment reservation, provider request, code or customer journey occurred. The late original closeout stopped before hidden input/action. First recovery `6d5e3707-a3e4-4a53-9398-99182102e8aa` stopped at database preflight before reservation/mutation and was not retried.
+
+Owner-approved refined recovery `beeb0f54-ca12-4d02-b6ca-563f8d392087` completed once with `R10_CLOSEOUT_RECOVERY_VERIFIED`: approvals INACTIVE; `p06_intake_runtime` NOLOGIN/limit0/past expiry/sessions0; enabled3/tag absent; normal traffic 100% `app013bounds`; latest Ready `app013p06disabled`. P06 remains 11/14 with R10/R11/R12 open because no connected run occurred. Any next attempt requires a fresh packet/revision/window and separate approval; consumed operations cannot be reused. Backend evidence: `evidence/APP-013/p06-r10-0800-missed-run-closeout.md`. Original dirty APP-010 checkout preserved. Approved recovery refinement only; no other scope deviation.
+
 ## Current: R10 run missed; 10:00 AM closeout recovery authorized — 2026-09-19
 
 The connected run was not executed. The late closeout stopped at `CLOSEOUT_WINDOW` before hidden input, database connection, reservation or controller action. Read-only Cloud Run confirms normal traffic 100% `app013bounds`, enabled3/tag absent and no deployment. Owner separately approved recovery `6d5e3707-a3e4-4a53-9398-99182102e8aa` for 10:00–10:30 AM Eastern, limited to inactive-approval verification, `p06_intake_runtime` NOLOGIN/limit0/past-expiry enforcement, termination of only that role's sessions, and database/read-only Cloud closeout readback.

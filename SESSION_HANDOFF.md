@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current handoff: R10 8:00 AM run missed; refined recovery closeout verified — 2026-09-19
+
+The connected run did not occur. Refined recovery `beeb0f54-ca12-4d02-b6ca-563f8d392087` completed at 10:16 AM Eastern: controlled approvals INACTIVE; `p06_intake_runtime` NOLOGIN/limit0/past expiry/sessions0; Cloud target absent; normal traffic 100% `app013bounds`; disabled candidate latest Ready. No activation, deployment, verification request or customer action occurred. P06 remains 11/14; R10/R11/R12 open. Next is fresh provider/target readback and a new packet/revision/window under separate approval. Consumed operations are unusable. No scope deviation beyond approved recovery refinement.
+
 ## Current handoff: R10 run missed; 10:00 AM closeout recovery authorized — 2026-09-19
 
 No connected run, activation, deployment or provider request occurred. The expired closeout stopped at its window gate. Owner-approved recovery `6d5e3707-a3e4-4a53-9398-99182102e8aa` is installed for 10:00–10:30 AM Eastern, limited to inactive-approval verification, `p06_intake_runtime` shutdown/session termination and database/read-only Cloud closeout readback. `R10_RECOVERY_CHECK_PASSED_NO_ACTION` is verified. Next is the one attended recovery command; no retry. P06 remains 11/14 with R10/R11/R12 open. No scope deviation.
