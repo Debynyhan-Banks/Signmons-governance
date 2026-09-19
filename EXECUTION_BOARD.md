@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: R10 2:30 PM attempt stopped at activation; failure closeout verified — 2026-09-19
+
+Activation reserved once and stopped at `ACTIVATE`; no activation result or deployment reservation exists. Mandatory failure closeout returned `CLOSED`, and independent Cloud readback confirms target/tag absent with normal traffic 100% `app013bounds`. No deployment or provider request occurred. P06 remains 11/14 with R10/R11/R12 open. Diagnose the existing activation boundary before another packet; do not retry the consumed operation. No scope deviation.
+
 ## Current: R10 11:00 AM run missed; correct recovery closeout verified — 2026-09-19
 
 The connected run did not occur. Correct recovery `4e3f9d77-e518-4c7a-bab5-c440851ef9c3` returned `R10_CLOSEOUT_RECOVERY_VERIFIED`: approvals INACTIVE, runtime role NOLOGIN/limit0/past expiry/sessions0, enabled4/tag absent and normal traffic 100% `app013bounds`. No activation, deployment or provider request occurred. P06 stays 11/14 with R10/R11/R12 open. Next requires a fresh packet/revision/window and separate approval. No scope deviation beyond approved recovery.

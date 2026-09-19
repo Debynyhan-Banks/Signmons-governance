@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## Current: R10 2:30 PM attempt stopped at activation; failure closeout verified — 2026-09-19
+
+Plan `a6cde0d0-ae91-4309-a200-023937ea8408` opened bounded database LOGIN and began inside the runtime window. Activation was reserved once, then stopped at controller stage `ACTIVATE`; no activation result or deployment reservation exists. The mandatory failure path returned `closeoutStatus: CLOSED`, proving approvals inactive, enabled tag absent, runtime role NOLOGIN/limit0/sessions0 and normal traffic 100% `app013bounds`. Independent Cloud readback confirms enabled5/tag absent and disabled candidate latest Ready.
+
+No deployment, provider request, code or customer journey occurred. The activation operation is consumed and cannot be retried. P06 remains 11/14 with R10/R11/R12 open. Next is a bounded diagnostic of the existing activation interface/state before any new packet. Backend evidence: `evidence/APP-013/p06-r10-1430-activation-stop.md`. Original dirty APP-010 checkout preserved. No scope deviation.
+
 ## Current: R10 11:00 AM run missed; correct recovery closeout verified — 2026-09-19
 
 The owner opened database LOGIN at 11:02 AM but did not invoke the connected run before 11:20. No activation/deployment reservation, provider request, code or customer journey occurred. A mistakenly invoked historical `0701` recovery helper stopped at its expired window before input/action.

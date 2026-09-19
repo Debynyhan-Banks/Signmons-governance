@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current handoff: R10 2:30 PM attempt stopped at activation; failure closeout verified — 2026-09-19
+
+Plan `a6cde0d0-ae91-4309-a200-023937ea8408` stopped at `ACTIVATE` after its one-use reservation. No activation result, deployment reservation or provider request exists. Controller closeout is `CLOSED`; Cloud independently confirms enabled5/tag absent and normal traffic 100% `app013bounds`. P06 remains 11/14 with R10/R11/R12 open. Next is bounded activation diagnosis, not another run. No scope deviation.
+
 ## Current handoff: R10 11:00 AM run missed; correct recovery closeout verified — 2026-09-19
 
 No connected run, activation, deployment or provider request occurred. Correct `1100` recovery `4e3f9d77-e518-4c7a-bab5-c440851ef9c3` completed: approvals INACTIVE; runtime role NOLOGIN/limit0/past expiry/sessions0; Cloud target absent; normal traffic 100% `app013bounds`; disabled candidate latest Ready. P06 remains 11/14; R10/R11/R12 open. Next requires fresh provider/target readback and a new packet/revision/window under separate approval. No scope deviation beyond approved recovery.
