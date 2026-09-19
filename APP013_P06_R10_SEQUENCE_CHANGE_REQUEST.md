@@ -1,5 +1,13 @@
 # APP-013 / P06 / R10 sequence change request
 
+## Implementation result — locally complete, no execution authority
+
+The approved alternative1 local controller repair is complete at backend `158650b`. Backend `scripts/p06-r10-controller.mjs` is an inert, injected-port orchestrator: exact inactive preflight, activation reservation/mutation/readback, then one zero-traffic deployment reservation/mutation/readback. All post-activation stops reconcile approval state and perform at-most-once revoke/readback before tag removal and runtime-role shutdown; unknown/foreign state is never guessed. Strict fresh-plan/window and exclusive mode-0600 reservation guards reject the consumed first attempt.
+
+Validation: 21 focused controller tests; 37 combined controller/operator/migration Node tests; 14 disposable PG18 operator checks; full 2,359 Jest tests with three existing skips; build, lint, architecture, Prisma validation, formatting/whitespace; and the complete disposable PG18/browser harness all pass. Browser/database proof used synthetic external ports and reported zero live provider calls. Exact evidence: backend `evidence/APP-013/p06-r10-controller-repair.md`.
+
+No fresh packet/window, private helper, deployment, LOGIN, activation, provider request, verification code or execution occurred. P06 remains 11/14; R10/R11/R12 open. Next is separately authorized fresh-packet preparation/review, followed by a separate exact execution approval. Approved sequence deviation only; no other scope deviation.
+
 ## Decision status
 
 Owner approved alternative 1 for local controller repair and testing only: `I approve R10 sequence change alternative 1 for local controller repair and testing only. No deployment, LOGIN, activation, provider request, verification code, or execution until I separately approve the fresh packet and window.` This remains within existing R10; it adds no task or acceptance criterion. No external action or fresh execution packet/window is authorized.

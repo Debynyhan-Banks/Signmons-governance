@@ -1,5 +1,13 @@
 # Session Handoff
 
+## Current: R10 activate-before-deploy controller locally repaired — fresh packet preparation unapproved — 2026-09-18
+
+Owner-approved alternative1 is locally complete at backend `158650b`. The new inert controller and synthetic tests enforce exact fresh plan/window checks, consumed-plan refusal, exclusive mode-0600 reservations, activation/readback before one zero-traffic deployment, exact deployment readback and at-most-once ordered revoke/tag/runtime closeout for every failure or ambiguity. It has no CLI or live client and is not connected to application startup.
+
+Validation passed: 21 focused controller tests, 37 combined Node tests, 14 disposable PG18 operator checks, full 2,359 Jest tests with three existing skips, build/lint/architecture/Prisma/format/whitespace, and the complete disposable PG18/browser harness with zero live provider calls. Backend evidence: `evidence/APP-013/p06-r10-controller-repair.md`.
+
+No fresh packet/window, private helper, deployment, database LOGIN, activation, provider request, verification code or execution occurred. P06 remains 11/14; R10/R11/R12 open. Next observable result, only after separate owner authorization, is preparation and review of a fresh exact packet from current provider/target state; execution remains separately gated. Existing failed packet stays consumed, safe closeout remains authoritative and original dirty APP-010 checkout is preserved. Approved sequence deviation only; no other scope deviation.
+
 ## Current: R10 sequence correction approved for local implementation only — 2026-09-18
 
 Owner approved `APP013_P06_R10_SEQUENCE_CHANGE_REQUEST.md` alternative1 for local controller repair/testing only, expressly excluding deployment, database LOGIN, activation, provider requests, verification codes and execution until a fresh exact packet/window receives separate approval. The completed implementation card binds backend `08a9e8e`, governance `5aa43ad`, two new local script/test files, injected synthetic ports, activate-before-deploy ordering, at-most-once mutations and mandatory ordered failure closeout. No production runtime/image/schema change is included.
