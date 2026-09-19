@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## Current: R10 read-only diagnostic packet ready — approval required — 2026-09-19
+
+Private plan `a76b6bb9-780c-4d94-984b-fae664758217`, operation `959c472c-dbc5-478f-836c-736ff5161218`, is prepared for one fixed child-database read from 3:00–3:30 PM Eastern. The source-bound mode-0600 helper returned `R10_DIAGNOSTIC_PREPARED_NOT_AUTHORIZED`; no authorization or reservation exists. Backend `ba81d79` records the packet; diagnostic source remains `798986c`.
+
+No database connection, LOGIN change, activation, deployment, provider request or customer action occurred. P06 remains 11/14 with R10/R11/R12 open. Next is exact owner approval or refusal; approval permits only one repeatable-read `READ ONLY` diagnostic and no retry. Backend evidence: `evidence/APP-013/p06-r10-activation-diagnostic-packet.md`. Original dirty APP-010 checkout preserved. No scope deviation.
+
 ## Current: R10 read-only activation diagnostic ready — live read approval required — 2026-09-19
 
 Backend `798986c` adds an inert, fixed-target diagnostic for the consumed 2:30 PM packet. It checks the same activation prerequisites through a repeatable-read `READ ONLY` transaction and returns only a bounded stage; direct CLI use performs no action. Synthetic and existing packet/controller checks pass (32/32), with build, lint, architecture and governance gates passing.
