@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## Current: R10 verified-recipient binding complete — replacement window required — 2026-09-19
+
+Owner confirmed control/consent for the one currently verified Twilio recipient and authorized private rebinding and packet preparation only. A new HMAC-only binding is verified in a mode-0700 encrypted directory/mode-0600 file; it differs from the blocked binding, matches the existing account and contains no phone. No provider request, code, configuration change, packet, authorization or execution occurred.
+
+The prior 6:30–7:00 AM packet/window remains blocked and unusable. P06 remains 11/14 with R10/R11/R12 open. Next input is one new future 30-minute attended Eastern block; then one fresh exact packet may be prepared for separate execution approval. Original dirty APP-010 checkout preserved. No scope deviation.
+
 ## Current: R10 fresh packet stopped by verified-recipient restriction — 2026-09-19
 
 Owner authorized read-only provider/target refresh and fresh-packet preparation for a proposed 6:30–7:00 AM Eastern block, excluding LOGIN, activation, deployment, code send and execution. Private packet `f71f5540-b468-4d6b-a1f7-2f47c0504808` / plan `4228c1ff-9407-487c-8c94-87084959aba4` passed structural review for fresh revision `app013p06enabled2`; Cloud readback passed with `app013bounds`100%, target/tag absent, disabled candidate Ready, required versions/APIs/IAM intact and safety flags false.
