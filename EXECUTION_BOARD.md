@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## Current: R10 8:00 AM plan authorized; guarded manual LOGIN pending — 2026-09-19
+
+Owner approved exact plan `0a70e73f-359b-46d5-a8dd-0da7053ca5bf` for the bounded 8:00–8:30 AM sequence, connected runtime 8:05–8:20 and mandatory closeout by 8:30 with no automatic retry. The private helper/authorizations are installed and `--check` returned `R10_CHECK_PASSED_NO_ACTION`.
+
+No database connection, LOGIN, activation, deployment, provider request or code occurred. The owner must run the attended `--open-login` command at or after 8:00 AM; any stopped/unconfirmed action is not retried. P06 remains 11/14 with R10/R11/R12 open. Backend evidence: `evidence/APP-013/p06-r10-0800-authorization.md`. Original dirty APP-010 checkout preserved. No scope deviation.
+
 ## Current: R10 exact 8:00 AM packet ready — execution approval required — 2026-09-19
 
 Owner-authorized read-only Cloud/Twilio refresh and packet preparation completed for 8:00–8:30 AM Eastern. Private packet `30197b81-ff7e-4ef1-9d82-207123988d27` / plan `0a70e73f-359b-46d5-a8dd-0da7053ca5bf` passed production review for database support 8:00–8:30, connected runtime 8:05–8:20 and mandatory closeout by 8:30. It binds revision `app013p06enabled3`, current safe Cloud state, the eligible verified-recipient binding, immutable artifacts, finite caps and fresh operation IDs.

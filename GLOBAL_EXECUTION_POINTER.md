@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## Current: R10 8:00 AM plan authorized; guarded manual LOGIN pending — 2026-09-19
+
+Owner explicitly approved plan `0a70e73f-359b-46d5-a8dd-0da7053ca5bf`: guarded helper/action installation, database LOGIN 8:00–8:30 AM Eastern, activate/readback then one zero-traffic deploy/readback, one connected 8:05–8:20 verified-recipient journey and mandatory closeout by 8:30, with no automatic retry.
+
+The source-bound private helper and one-use authorizations are installed. Static checks pass and its actual read-only preflight returned `R10_CHECK_PASSED_NO_ACTION`, confirming clean bindings, unused reservations, enabled3/tag absence, `app013bounds` at 100%, required secret metadata and false safety flags. No database connection, LOGIN, activation, deployment, provider request or code occurred. Next observable result is the owner's attended hidden-input `--open-login` at or after 8:00 AM; any refusal/unconfirmed result stops without retry. P06 remains 11/14 with R10/R11/R12 open. Backend evidence: `evidence/APP-013/p06-r10-0800-authorization.md`. Original dirty APP-010 checkout preserved. No scope deviation.
+
 ## Current: R10 exact 8:00 AM packet ready — execution approval required — 2026-09-19
 
 Owner authorized read-only provider/target refresh and fresh-packet preparation for 8:00–8:30 AM Eastern only. Current Cloud Run remains safe with normal traffic 100% `app013bounds`, enabled3/tag absent, the disabled candidate Ready, required versions/APIs/IAM intact and all six safety flags false. Current signed-in Twilio readback confirms the Active account, one Signmons SMS Verify service, Fraud Guard enabled, only United States matching the monitored-SMS filter, and United States voice disabled. No provider Save occurred.

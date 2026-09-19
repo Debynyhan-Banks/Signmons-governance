@@ -1,5 +1,11 @@
 # Session Handoff
 
+## Current handoff: R10 8:00 AM plan authorized; guarded manual LOGIN pending — 2026-09-19
+
+Exact plan `0a70e73f-359b-46d5-a8dd-0da7053ca5bf` is owner-authorized for database LOGIN 8:00–8:30 AM Eastern, connected runtime 8:05–8:20 and mandatory closeout by 8:30. The source-bound private helper and one-use authorizations are installed; static checks and the actual no-action preflight pass with `R10_CHECK_PASSED_NO_ACTION`.
+
+No external mutation or provider request has occurred. Next is the owner's attended hidden-input `--open-login` at or after 8:00 AM. Do not retry any stopped/unconfirmed action. P06 remains 11/14 with R10/R11/R12 open. See backend `evidence/APP-013/p06-r10-0800-authorization.md`. Original dirty APP-010 checkout preserved. No scope deviation.
+
 ## Current handoff: R10 exact 8:00 AM packet ready — execution approval required — 2026-09-19
 
 Owner-authorized read-only refresh and preparation produced private packet `30197b81-ff7e-4ef1-9d82-207123988d27` / plan `0a70e73f-359b-46d5-a8dd-0da7053ca5bf`. Production packet and repaired controller validation pass for database support 8:00–8:30 AM Eastern, connected runtime 8:05–8:20 and mandatory closeout by 8:30, using fresh revision `app013p06enabled3` and the currently eligible verified-recipient binding.
