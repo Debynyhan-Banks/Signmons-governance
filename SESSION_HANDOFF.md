@@ -1,5 +1,11 @@
 # Session Handoff
 
+## Current: R10 stable local packet decisions prepared — attended window and read-only refresh authorization required — 2026-09-19
+
+Owner said `proceed` after the controller repair. Backend `evidence/APP-013/p06-r10-fresh-packet-preparation.md` now fixes the next revision as `signmons-calldesk-staging-app013p06enabled2`, preserves the stable tag/origin, immutable application source/image and repaired activate-before-deploy/ordered-closeout sequence, and records the finite fresh-packet checklist. Its sanitized JSON explicitly records that no packet, window, digest, operation ID or authorization exists.
+
+No provider/target read, private participant-binding access, private helper, database LOGIN, activation, deployment, verification code or execution occurred. P06 remains 11/14; R10/R11/R12 open. Next observable result requires one owner-selected future attended block and explicit authorization for current read-only provider/target refresh plus fresh-packet preparation only. Execution remains a later exact approval. The consumed first attempt remains unusable, safe closeout remains authoritative and the original dirty APP-010 checkout is preserved. Approved sequence deviation only; no other scope deviation.
+
 ## Current: R10 activate-before-deploy controller locally repaired — fresh packet preparation unapproved — 2026-09-18
 
 Owner-approved alternative1 is locally complete at backend `158650b`. The new inert controller and synthetic tests enforce exact fresh plan/window checks, consumed-plan refusal, exclusive mode-0600 reservations, activation/readback before one zero-traffic deployment, exact deployment readback and at-most-once ordered revoke/tag/runtime closeout for every failure or ambiguity. It has no CLI or live client and is not connected to application startup.

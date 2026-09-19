@@ -1,5 +1,11 @@
 # APP-013 / P06 / R10 sequence change request
 
+## Fresh-packet local preparation status — 2026-09-19
+
+After the verified controller repair, the owner said `proceed`. Backend evidence now records stable local decisions and the finite next preparation: fresh revision `signmons-calldesk-staging-app013p06enabled2`, unchanged tag/origin and immutable runtime source/image, repaired activate-before-deploy order, ordered closeout and explicit time-sensitive gates. No packet/window/digest/operation ID, private helper or authorization was created, and no external or private read occurred.
+
+P06 remains 11/14 with R10/R11/R12 open. The smallest next authorization is one future attended block plus current read-only provider/target refresh and fresh-packet preparation only. LOGIN, activation, deployment, verification code and connected execution remain separately gated. No additional scope deviation.
+
 ## Implementation result — locally complete, no execution authority
 
 The approved alternative1 local controller repair is complete at backend `158650b`. Backend `scripts/p06-r10-controller.mjs` is an inert, injected-port orchestrator: exact inactive preflight, activation reservation/mutation/readback, then one zero-traffic deployment reservation/mutation/readback. All post-activation stops reconcile approval state and perform at-most-once revoke/readback before tag removal and runtime-role shutdown; unknown/foreign state is never guessed. Strict fresh-plan/window and exclusive mode-0600 reservation guards reject the consumed first attempt.
