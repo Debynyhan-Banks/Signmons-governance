@@ -1,6 +1,14 @@
 # Global Execution Pointer
 
-## Current: R10 exact 9:30 PM packet ready — owner execution approval pending — 2026-09-18
+## Current: R10 owner-authorized — 9:25 PM manual start pending — 2026-09-18
+
+Owner explicitly approved plan `b228f87a-ed6e-4253-a62a-b33128bb094a`: database LOGIN 9:25–10:00 PM Eastern, one connected run 9:30–9:45 PM, exact no-traffic deployment, capped phone/address/reviewed-submit journey and mandatory closeout. Backend evidence records exact packet/digests/operation IDs and exclusions.
+
+Private mode-0600 operation authorizations and guarded helpers are installed on the encrypted volume. Activation is bound to 9:30–9:45 PM; mandatory revoke/readback is bound to 9:45–10:00 PM. Actual guarded `--check` returned `R10_CHECK_PASSED_NO_ACTION` after verifying clean source-relative code, built hashes, packet/authorization bindings, encrypted storage, bundle1/database2 metadata, app013bounds100%, disabled candidate latest Ready, target absence and six false safety flags. No database connection, mutation, deployment, activation, provider request or customer action occurred.
+
+Next observable result is the owner's manual hidden-input `--open-login` action at or after 9:25 PM. Then one guarded deployment and activation may occur at or after 9:30 PM, followed by the same-session R11 journey and mandatory R12 closeout. Any refusal/unconfirmed result stops with no automatic retry. R10 stays open until actual deployed revision/origin and activation readback match. P06 remains 11/14; R10/R11/R12 open. Original dirty APP-010 checkout preserved. No scope deviation.
+
+## Historical: R10 exact 9:30 PM packet ready — owner execution approval pending — 2026-09-18
 
 Owner reported the existing Twilio Console signed in and selected 9:30 PM Eastern. Current read-only Console evidence confirms the Active Signmons account, single Signmons SMS Verify service, Fraud Guard enabled, United States SMS monitored, United States voice disabled and only United States remaining under the enabled-SMS filter. No provider Save or configuration action occurred.
 
