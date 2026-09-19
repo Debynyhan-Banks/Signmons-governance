@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current handoff: R10 11:00 AM plan authorized; guarded manual LOGIN pending — 2026-09-19
+
+Exact plan `b25130af-8e03-481b-aedc-b93f201bae59` is authorized for database LOGIN 11:00–11:30 AM Eastern, connected runtime 11:05–11:20 and mandatory closeout by 11:30. The source-bound helper and one-use authorizations are installed; static checks and `R10_CHECK_PASSED_NO_ACTION` pass. No external mutation occurred. Next is the owner's attended `--open-login` at or after 11:00; stopped actions are not retried. P06 remains 11/14 with R10/R11/R12 open. No scope deviation.
+
 ## Current handoff: R10 exact 11:00 AM packet ready — execution approval required — 2026-09-19
 
 Plan `b25130af-8e03-481b-aedc-b93f201bae59` is structurally verified for database support 11:00–11:30 AM Eastern, connected runtime 11:05–11:20 and closeout by 11:30, using fresh revision `app013p06enabled4`. Cloud remains safe, Twilio restrictions are unchanged and the verified-recipient binding matches. No helper, authorization, LOGIN, activation, deployment, code or execution occurred. P06 is 11/14; R10/R11/R12 remain. Exact execution approval or refusal is next; no automatic retry. No scope deviation.

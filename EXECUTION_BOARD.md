@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: R10 11:00 AM plan authorized; guarded manual LOGIN pending — 2026-09-19
+
+Owner approved plan `b25130af-8e03-481b-aedc-b93f201bae59` for database LOGIN 11:00–11:30 AM Eastern, connected runtime 11:05–11:20 and mandatory closeout by 11:30. Private helper/authorizations are installed; static checks and `R10_CHECK_PASSED_NO_ACTION` pass. No database connection or external mutation occurred. The attended `--open-login` command is next at or after 11:00; no retry. P06 remains 11/14 with R10/R11/R12 open. No scope deviation.
+
 ## Current: R10 exact 11:00 AM packet ready — execution approval required — 2026-09-19
 
 Fresh private packet `dc9d8287-0a17-4a42-aa26-6e776cc327c3` / plan `b25130af-8e03-481b-aedc-b93f201bae59` passed production review for database support 11:00–11:30 AM Eastern, connected runtime 11:05–11:20 and mandatory closeout by 11:30. It binds enabled4, current safe Cloud/Twilio state, the verified-recipient binding, immutable artifacts, finite caps and fresh operation IDs. No helper, authorization or external action exists. P06 remains 11/14 with R10/R11/R12 open. Exact owner approval/refusal is next; no automatic retry. No scope deviation.
