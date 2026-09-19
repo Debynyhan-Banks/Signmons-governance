@@ -1,5 +1,11 @@
 # P06 remaining-work reconciliation — review baseline v1
 
+## Current: R10 sequence correction approved for local implementation only — 2026-09-18
+
+Owner approved `APP013_P06_R10_SEQUENCE_CHANGE_REQUEST.md` alternative1 for local controller repair/testing only, expressly excluding deployment, database LOGIN, activation, provider requests, verification codes and execution until a fresh exact packet/window receives separate approval. The completed implementation card binds backend `08a9e8e`, governance `5aa43ad`, two new local script/test files, injected synthetic ports, activate-before-deploy ordering, at-most-once mutations and mandatory ordered failure closeout. No production runtime/image/schema change is included.
+
+Next observable result is the locally tested controller and evidence, then a stop before fresh packet preparation. P06 remains 11/14; R10/R11/R12 open. Existing failed packet/window stays consumed, normal traffic and inactive runtime state remain unchanged, and the original dirty APP-010 checkout remains preserved. Approved sequence deviation only; no other scope deviation.
+
 ## Current: R10 first attempt stopped; safe closeout verified — sequence change decision pending — 2026-09-18
 
 Owner-authorized plan `b228f87a-ed6e-4253-a62a-b33128bb094a` opened the limited runtime LOGIN at 9:27 PM Eastern. The 9:31 PM no-traffic deployment created the exact enabled revision but stopped before readback: the container refused startup, Cloud Run recorded `HealthCheckContainerError`, and no deployment result exists. A 9:42 PM invocation refused at the elapsed-window gate and was not retried. No activation attempt, verification code, Address Validation request, customer session, reviewed submission or job occurred; normal traffic never left 100% `app013bounds`.
