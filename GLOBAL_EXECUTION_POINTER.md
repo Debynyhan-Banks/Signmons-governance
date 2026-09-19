@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## Current: R10 run missed; 10:00 AM closeout recovery authorized — 2026-09-19
+
+The connected run was not executed. The late closeout stopped at `CLOSEOUT_WINDOW` before hidden input, database connection, reservation or controller action. Read-only Cloud Run confirms normal traffic 100% `app013bounds`, enabled3/tag absent and no deployment. Owner separately approved recovery `6d5e3707-a3e4-4a53-9398-99182102e8aa` for 10:00–10:30 AM Eastern, limited to inactive-approval verification, `p06_intake_runtime` NOLOGIN/limit0/past-expiry enforcement, termination of only that role's sessions, and database/read-only Cloud closeout readback.
+
+The recovery-only helper/authorization are installed and `--check` returned `R10_RECOVERY_CHECK_PASSED_NO_ACTION`. No recovery mutation has occurred. Next observable result is the owner's one attended recovery command at or after 10:00; no retry. P06 remains 11/14 with R10/R11/R12 open. Backend evidence: `evidence/APP-013/p06-r10-0800-expired-closeout-recovery.md`. Original dirty APP-010 checkout preserved. No scope deviation.
+
 ## Current: R10 8:00 AM plan authorized; guarded manual LOGIN pending — 2026-09-19
 
 Owner explicitly approved plan `0a70e73f-359b-46d5-a8dd-0da7053ca5bf`: guarded helper/action installation, database LOGIN 8:00–8:30 AM Eastern, activate/readback then one zero-traffic deploy/readback, one connected 8:05–8:20 verified-recipient journey and mandatory closeout by 8:30, with no automatic retry.
