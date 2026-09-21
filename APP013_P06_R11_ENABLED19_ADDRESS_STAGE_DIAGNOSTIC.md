@@ -1,6 +1,8 @@
 # APP-013 / P06 R11 enabled19 address-stage diagnostic
 
-Status: owner approved the exact diagnostic and window; authorization installed and no-action check passed; owner-operated execution pending.
+Status: executed once; BEFORE_ADDRESS_RESERVATION; consumed.
+
+Verified private result at `2026-09-21T21:00:56.889Z` reports zero rows for the fixed request. No aggregate capacity query or retry occurred. See backend `evidence/APP-013/p06-r11-enabled19-address-stage-result.md` for the separate address-limit candidate and remaining uncertainty. The following preparation and authorization notes are historical.
 
 The owner approved this diagnostic and the 5:00–5:30 PM Eastern window on September 21. The exact authorization is installed. Actual preflight returned `R11_ADDRESS_STAGE_CHECK_PASSED_NO_ACTION`; no attempt, database connection or result exists. Preparation descriptions below record the pre-approval state.
 
