@@ -1,6 +1,6 @@
 # APP-013 / P06 R11 supervised browser test
 
-Status: the later 7:30 AM plan used the repaired owner-visible handoff and reached one reviewed submit, but the submit returned HTTP 409 with `Submission outcome unavailable`. Corrected read-only receipt diagnostic `1922018f-adb5-470a-b2c8-05ef4a985572` found zero committed jobs for the exact request, classifying the outcome as a truthful refusal. No retry or replacement occurred, and mandatory closeout is verified. R11 remains unaccepted; P06 remains 12/14.
+Status: the later 7:30 AM plan used the repaired owner-visible handoff and reached one reviewed submit, but the submit returned HTTP 409 with `Submission outcome unavailable`. Corrected read-only receipt diagnostic `1922018f-adb5-470a-b2c8-05ef4a985572` found zero committed jobs and the address-stage diagnostic fixed the refusal before address reservation. Owner-approved alternative 1 is now locally complete at backend `1819e84`: synthetic connected evidence proves the distinct customer enum/internal category labels. No retry, replacement or later live journey occurred. Mandatory closeout is verified. R11 remains unaccepted; P06 remains 12/14.
 
 ## Requirement traceability
 

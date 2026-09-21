@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: R11 category binding repaired locally; fresh supervised window remains gated — 2026-09-21
+
+The owner approved `APP013_P06_R11_CATEGORY_BINDING_CHANGE_REQUEST.md` alternative 1 for local repair/testing only. Backend `1819e84` now passes the activation-selected category ID through the server-owned runtime composition and uses it for exact current-category, authority and admission checks while retaining the customer-facing issue enum separately. Disposable PostgreSQL 18 and synthetic 390/1440 browser paths prove `COOLING` can bind to internal category `Regular initial visit / diagnosis`; focused 145 tests, full 2,360 tests/3 skips, build, lint and architecture pass with zero live provider calls. No packet, LOGIN, live database mutation, activation, deployment, provider request, verification code or customer action occurred. P06 remains 12/14; R11/full R12 remain open. Next requires a new owner-selected window, separately authorized read-only refresh and packet preparation, then separate exact execution approval. No scope deviation beyond approved alternative 1.
+
 ## Current: R11 deterministic category-binding defect; owner repair decision required — 2026-09-21
 
 Read-only operation `afd29a7b-b2aa-4c12-b894-76e85265dbec` returned `BEFORE_ADDRESS_RESERVATION`, proving no Google Address request occurred. Static source and accepted bootstrap evidence demonstrate the 409 cause: the browser submits a customer enum such as `HEATING` or `GENERAL`, but controlled admission incorrectly requires that enum to equal the internal category name `Regular initial visit / diagnosis`. `APP013_P06_R11_CATEGORY_BINDING_CHANGE_REQUEST.md` recommends binding the server-owned allowed category ID while keeping the customer classification separate. No repair or new live action is authorized. P06 remains 12/14 with R11/full R12 open. Owner approval/refusal of alternative 1 is next. No scope deviation implemented.

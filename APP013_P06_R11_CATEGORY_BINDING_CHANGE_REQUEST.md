@@ -1,6 +1,6 @@
 # APP-013 / P06 R11 category-binding change request
 
-Status: owner decision required before implementation.
+Status: alternative 1 owner-approved and locally complete at backend `1819e84`; live execution remains separately gated.
 
 ## Demonstrated gap
 
@@ -41,4 +41,4 @@ Expose internal category labels to the browser and make the form dynamically loa
 
 ## Owner decision
 
-Approve alternative 1 for local repair and testing only, choose another alternative, or decline. Approval does not authorize packet preparation or any live/external action. P06 remains 12/14 with R11/full R12 open. No scope deviation implemented.
+The owner approved alternative 1 for local repair and testing only. Backend `1819e84` implements the server-owned category-ID binding and records passing focused/full tests plus disposable PostgreSQL 18 and synthetic browser evidence in `evidence/APP-013/p06-r11-category-binding-repair.md`. No packet preparation or live/external action was authorized or performed. P06 remains 12/14 with R11/full R12 open. No scope deviation beyond approved alternative 1.

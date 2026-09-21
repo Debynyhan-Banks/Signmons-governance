@@ -1,5 +1,9 @@
 # P06 remaining-work reconciliation — review baseline v1
 
+## Current: 12/14 complete; R11 category repair local-only complete, R11/full R12 open — 2026-09-21
+
+Owner-approved change-request alternative 1 is complete at backend `1819e84`. Controlled admission now uses the activation-selected server-owned category ID for current-state, authority and job admission while keeping the browser issue enum separate. Disposable PostgreSQL 18 and synthetic connected-browser evidence prove the previously failing human-name/enum mismatch, replay, concurrency, correction and refusal paths without any live provider call. This local repair does not satisfy R11's live correlated-journey finish or full R12. No packet or external action occurred. Next requires a new owner-selected window, separate read-only refresh/packet authorization and separate exact execution approval. No scope deviation beyond approved alternative 1.
+
 ## Current: R11 deterministic pre-address mismatch; repair approval pending — 2026-09-21
 
 The fixed-request stage read proved failure before address reservation. Accepted bootstrap and current source then demonstrate the cause: browser issue enums and the internal human-readable service-category name are distinct, but controlled admission incorrectly requires equality. `APP013_P06_R11_CATEGORY_BINDING_CHANGE_REQUEST.md` recommends binding the existing server-owned allowed category ID while preserving the customer enum separately. No repair or live action is authorized. P06 stays 12/14 with R11/full R12 open. Owner approval/refusal of alternative 1 is next. No scope deviation implemented.

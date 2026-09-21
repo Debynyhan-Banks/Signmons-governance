@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: R11 category-binding repair locally complete — 2026-09-21
+
+Owner-approved alternative 1 is implemented at backend `1819e84`. The controlled runtime supplies its activation-selected service-category ID internally; the reader validates and checks that exact ID instead of treating the customer's `issueCategory` enum as a catalog name. Disposable PostgreSQL 18, restricted-role, synthetic provider and 390/1440 connected browser checks pass, as do focused/full tests, build, lint and architecture. Live provider calls were zero. No packet or external action was authorized or performed. P06 remains 12/14 with R11/full R12 open. Next input is a new owner-selected supervised window; read-only refresh/packet preparation and execution remain separate approvals. No scope deviation beyond approved alternative 1.
+
 ## Current: R11 category-binding repair decision required — 2026-09-21
 
 The fixed-request read returned `BEFORE_ADDRESS_RESERVATION`. The configured internal category is `Regular initial visit / diagnosis`, while the browser's valid issue classifications are enums such as `HEATING` and `GENERAL`; controlled admission incorrectly compares them as the same name and deterministically returns 409. Change request `APP013_P06_R11_CATEGORY_BINDING_CHANGE_REQUEST.md` recommends using the activation's server-owned category ID for admission and retaining the browser enum as customer classification. No implementation or live action occurred. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Owner decision is next. No scope deviation implemented.
