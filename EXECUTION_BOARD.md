@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: R11 retained ceiling reached; efficient-execution decision required — 2026-09-21
+
+The authorized read-only refresh found four valid holds totaling 2,000,000 micros; another 500,000-micro flow has no approved capacity. No packet was created. Provider/target/participant state remains safe and eligible. `APP013_P06_R11_EXECUTION_EFFICIENCY_CHANGE_REQUEST.md` recommends replacing the repeated three-command timing loop with a locally tested one-command attended coordinator and one separately gated future 2,500,000-micro packet allowance. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Owner decision is next. No scope deviation implemented.
+
 ## Current: enabled17 correction-stage journey safely closed — 2026-09-21
 
 Enabled17 activated and deployed Ready at zero normal traffic, and the owner completed the visible handoff, one browser start and one real phone verification. The first explicit submit returned `CORRECTION_REQUIRED` with `jobCreated:false`; the browser retained the fields and required explicit review of a standardized address. The connected runtime expired before correction/resubmit, with no replacement or automatic retry. Mandatory closeout is verified `CLOSED` with no failures, inactive approval, no enabled tag, disabled runtime role and baseline traffic preserved. Plan `47828c66-7fb0-4d4b-9bb0-b07e9a7e4f28` is consumed. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. A new window, fresh qualification/liability and ceiling decision, fresh packet and separate execution approval are required. Approved deviation was limited to the consumed packet's ceiling; no other scope deviation.
