@@ -1,5 +1,9 @@
 # P06 remaining-work reconciliation — review baseline v1
 
+## Current: 12/14 complete; enabled17 correction stage reached and safely closed — 2026-09-21
+
+Enabled17 reached the protected browser and one real phone verification. The first explicit submit returned `CORRECTION_REQUIRED` with `jobCreated:false` and preserved the fields for explicit standardized-address correction. The connected runtime expired before another preview/submit; no replacement or automatic retry occurred. Mandatory closeout is verified `CLOSED` with no failures and plan `47828c66-7fb0-4d4b-9bb0-b07e9a7e4f28` is consumed. R11 and full R12 remain open. A future attempt requires a new window with time for correction, fresh qualification/liability and ceiling authority, a fresh packet and separate execution approval. Approved deviation was limited to the consumed packet's ceiling; no other scope deviation.
+
 ## Current: 12/14 complete; fresh enabled17 1:45 PM packet ready — 2026-09-21
 
 Plan `47828c66-7fb0-4d4b-9bb0-b07e9a7e4f28` binds exact enabled17 deployment validation, database support 1:45–2:30 PM, one 2:00–2:15 PM connected run and closeout by 2:30 PM. Current read-only refresh confirms three retained holds totaling 1,500,000 micros and capacity for the approved 500,000-micro flow under the one-packet 2,000,000-micro ceiling. Qualification passes; no helper or execution authority exists. R11 and full R12 remain open. Exact plan approval is next. Approved deviation is limited to this packet's ceiling.

@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: enabled17 correction-stage journey safely closed — 2026-09-21
+
+Enabled17 activated and deployed Ready at zero normal traffic, and the owner completed the visible handoff, one browser start and one real phone verification. The first explicit submit returned `CORRECTION_REQUIRED` with `jobCreated:false`; the browser retained the fields and required explicit review of a standardized address. The connected runtime expired before correction/resubmit, with no replacement or automatic retry. Mandatory closeout is verified `CLOSED` with no failures, inactive approval, no enabled tag, disabled runtime role and baseline traffic preserved. Plan `47828c66-7fb0-4d4b-9bb0-b07e9a7e4f28` is consumed. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. A new window, fresh qualification/liability and ceiling decision, fresh packet and separate execution approval are required. Approved deviation was limited to the consumed packet's ceiling; no other scope deviation.
+
 ## Current: enabled17 R11 packet ready for exact execution approval — 2026-09-21
 
 Fresh plan `47828c66-7fb0-4d4b-9bb0-b07e9a7e4f28` binds 1:45–2:30 PM support, one 2:00–2:15 PM connected run, enabled17 and the approved one-packet 2,000,000-micro ceiling while preserving three holds totaling 1,500,000 micros. Current read-only Cloud/Twilio/participant/liability qualification passes. Only three private review files exist; no helper or execution authorization. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Exact plan approval or refusal is next. Approved deviation is limited to this packet's ceiling.
