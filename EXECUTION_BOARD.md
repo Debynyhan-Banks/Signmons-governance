@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: repaired enabled12 packet ready; R11 execution approval required — 2026-09-21
+
+One approved build from backend `1819e84` succeeded once and produced immutable digest `sha256:9e9039a3978108067be710532d40b4881a06842b80edd71c029d76632ef11f32`; mandatory temporary-grant removal/readback passed. Fresh plan `349fb681-ffe6-46dc-8b83-202ebf3cdf71` binds enabled12, the 9:15–9:45 AM Eastern support window, one 9:25–9:40 connected journey and closeout by 9:45. Only the three reviewed packet files exist; no helper, authorization or live action exists. APP-013/2B remains sole Now. P06 stays 12/14 with R11/full R12 open. Exact owner approval or refusal is next; no automatic retry. No scope deviation.
+
 ## Current: repair image required before fresh R11 packet — 2026-09-21
 
 Read-only target/provider refresh is safe, but the registry contains no image for repaired backend `1819e84`; reusing the old `53037fb` image would preserve the demonstrated defect. No packet was created. The exact one-attempt Cloud Build and temporary three-grant sequence is reviewable in `APP013_P06_R11_REPAIR_IMAGE_BUILD_PROPOSAL.md` and remains unapproved. P06 stays 12/14; R11/full R12 open. No external mutation occurred. No scope deviation.

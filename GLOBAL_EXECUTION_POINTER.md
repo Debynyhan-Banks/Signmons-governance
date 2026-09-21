@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: R11 repaired image and exact 9:15 AM packet ready — execution unapproved — 2026-09-21
+
+The one owner-approved repair-image build succeeded from exact backend `1819e84` as Cloud Build `91773a6b-70dd-4df4-bef6-5cba98b6f5df`; registry readback binds `p06-r11-1819e84b232b` to immutable digest `sha256:9e9039a3978108067be710532d40b4881a06842b80edd71c029d76632ef11f32`. All three temporary grants were removed and read back absent. Fresh private plan `349fb681-ffe6-46dc-8b83-202ebf3cdf71` binds enabled12, support 9:15–9:45 AM Eastern, one 9:25–9:40 supervised runtime and closeout by 9:45. Packet/controller validation and 31 focused tests pass. No helper, execution authorization, LOGIN, activation, deployment, secret access, provider request or customer action exists. P06 remains 12/14 with R11/full R12 open. Exact execution approval or refusal is next; no automatic retry. Backend evidence: `evidence/APP-013/p06-r11-0915-repair-image-packet-review.md`. No scope deviation.
+
 ## Current: R11 packet preparation blocked by missing repair image — 2026-09-21
 
 The authorized read-only 9:15 AM refresh passed Cloud/Twilio/participant eligibility, but registry history proves no immutable image contains backend repair `1819e84`; the newest image is still from source `53037fb`. Packet generation stopped before IDs, private files, helpers or authorizations. `APP013_P06_R11_REPAIR_IMAGE_BUILD_PROPOSAL.md` now presents one exact, capped build with temporary scoped grants and mandatory removal; it is not authorized. No build, IAM change, registry write, LOGIN, deployment or provider/customer action occurred. P06 remains 12/14 with R11/full R12 open. Owner approval/refusal of the build proposal is next. No scope deviation.

@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: R11 repair image and fresh packet ready — execution approval required — 2026-09-21
+
+Approved Cloud Build `91773a6b-70dd-4df4-bef6-5cba98b6f5df` succeeded once from repaired backend `1819e84`; tag `p06-r11-1819e84b232b` independently resolves to immutable digest `sha256:9e9039a3978108067be710532d40b4881a06842b80edd71c029d76632ef11f32`. The exact temporary bucket, repository and project grants were removed and read back absent. Fresh private plan `349fb681-ffe6-46dc-8b83-202ebf3cdf71` binds enabled12, support 9:15–9:45 AM Eastern, one 9:25–9:40 runtime and closeout by 9:45. Build, production packet/controller review and 31 focused tests pass; the private directory has exactly three mode-0600 preparation files and no helper or authorization. No deployment, LOGIN, activation, secret access, provider request, verification code or customer action occurred. P06 remains 12/14 with R11/full R12 open. Exact execution approval or refusal is next; no automatic retry. Backend evidence: `evidence/APP-013/p06-r11-0915-repair-image-packet-review.md`. Original dirty APP-010 checkout preserved. No scope deviation.
+
 ## Current handoff: R11 packet stopped before creation; repair-image approval required — 2026-09-21
 
 The authorized 9:15 AM read-only refresh confirms safe Cloud/Twilio/participant state, but no registry image contains backend `1819e84`. Packet preparation stopped before allocating any packet/plan/revision/operation ID or private directory. A clean local Docker-input archive is ready and unuploaded. `APP013_P06_R11_REPAIR_IMAGE_BUILD_PROPOSAL.md` binds one build attempt, exact temporary grants/removal, timeout, tag and USD1 allowance; owner approval or refusal is next. No build, IAM change, registry write, LOGIN, activation, deployment, provider request or customer action occurred. P06 remains 12/14; R11/full R12 open. Backend evidence: `evidence/APP-013/p06-r11-0915-packet-preparation-stop.md`. No scope deviation.
