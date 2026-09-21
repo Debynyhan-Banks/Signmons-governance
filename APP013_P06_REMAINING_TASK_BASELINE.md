@@ -1,5 +1,9 @@
 # P06 remaining-work reconciliation — review baseline v1
 
+## Current: 12/14 complete; R11 supervised browser test prepared, R12 remains open — 2026-09-21
+
+R10 is complete: the exact approved activation and zero-traffic deployment reached `READY_FOR_R11`, and mandatory shutdown was verified. The owner clarified that the browser page was not opened and no R11 journey occurred. R11 therefore remains the controlled phone → eligible address → explicitly reviewed submission execution below; synthetic tests and deployment probes do not satisfy it. R12 shutdown substeps passed, while retention/billing reconciliation and owner acceptance remain open. `APP013_P06_R11_SUPERVISED_BROWSER_TEST.md` is the complete current section card for a future run. It creates no packet, window or live authority. Next requires an owner-selected future window, separately authorized read-only refresh and packet preparation, review of the exact packet, and separate execution approval. No consumed operation is reusable. Original dirty APP-010 checkout preserved. No scope deviation.
+
 ## Current: R10 activate-before-deploy controller locally repaired — fresh packet preparation unapproved — 2026-09-18
 
 Owner-approved alternative1 is locally complete at backend `158650b`. The new inert controller and synthetic tests enforce exact fresh plan/window checks, consumed-plan refusal, exclusive mode-0600 reservations, activation/readback before one zero-traffic deployment, exact deployment readback and at-most-once ordered revoke/tag/runtime closeout for every failure or ambiguity. It has no CLI or live client and is not connected to application startup.

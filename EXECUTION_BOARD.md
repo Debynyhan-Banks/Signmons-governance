@@ -1,5 +1,13 @@
 # Signmons Execution Board
 
+## Current: R11 supervised browser test prepared; new window required — 2026-09-21
+
+P06 remains 12/14 after reconciliation. R10 activation/deployment and shutdown are verified; R11 was not attempted; R12 retention/billing reconciliation and owner acceptance remain. The completed R11 section card is `APP013_P06_R11_SUPERVISED_BROWSER_TEST.md`. It reuses the current controlled page, private participant binding, finite provider caps and mandatory closeout, and adds no code or live authority. Next input is an owner-selected future 30-minute Eastern window. Read-only refresh/fresh packet preparation must be authorized separately, followed by review and separate exact execution approval. Original dirty APP-010 checkout preserved. No scope deviation.
+
+## Current: R10 succeeded; shutdown verified; R11 browser journey not attempted — 2026-09-21
+
+Exact approved plan `f680291d-f4ae-4f42-8132-654f394b4a66` reached READY_FOR_R11 on enabled8. Closeout is CLOSED with no failures; revocation audit/readback and independent Cloud tag/baseline readback passed. Owner clarified that only Terminal commands were run: the R11 browser journey was not attempted. This resolves the earlier reported-completion ambiguity and is consistent with three GET probes and no POST requests in the inspected logs. P06 remains 12/14: R10 complete, R11/R12 open. Full R12 retention/billing reconciliation and owner acceptance remain pending despite verified shutdown. Next requires a future attended window, fresh packet qualification and separate exact execution approval for the browser journey; do not rerun consumed commands, reopen LOGIN or reset holds. Explicitly guide the participant from READY_FOR_R11 to the browser page before closeout. Backend evidence: `evidence/APP-013/p06-r10-20260921-result-closeout.md`. No scope deviation.
+
 ## Current: R10 timestamp-boundary repair locally complete — fresh packet remains gated — 2026-09-19
 
 Backend `f254c4f` implements the owner-approved approval-pair precheck while preserving locked current-authority checks and transactional updatedAt CAS/audit/rollback. All relevant local and disposable-PG checks pass; no live connection or external action occurred. P06 remains 11/14 with R10/R11/R12 open. A fresh future packet/helper/window and separate approval are required. No scope deviation beyond the approved change.

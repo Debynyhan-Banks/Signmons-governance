@@ -1,5 +1,13 @@
 # Session Handoff
 
+## Current: R11 supervised browser test prepared; new window required — 2026-09-21
+
+The September 21 R10 result and shutdown remain authoritative. Documentation reconciliation now records P06 at 12/14 across the pointer, board, ticket and remaining baseline, preserves the docs-only extensibility amendment, and adds `APP013_P06_R11_SUPERVISED_BROWSER_TEST.md`. R11 was not attempted and full R12 remains open. No packet, helper, authorization or external action was created. Next input is an owner-selected future 30-minute Eastern window; first authorize only read-only refresh/fresh packet preparation, then review the exact packet before any separate execution approval. Do not rerun consumed commands, reopen LOGIN, deploy or call providers under prior authority. Original dirty APP-010 checkout preserved. No scope deviation.
+
+## Current: R10 succeeded; shutdown verified; R11 browser journey not attempted — 2026-09-21
+
+Exact approved plan `f680291d-f4ae-4f42-8132-654f394b4a66` reached READY_FOR_R11 on enabled8. Closeout is CLOSED with no failures; revocation audit/readback and independent Cloud tag/baseline readback passed. Owner clarified that only Terminal commands were run: the R11 browser journey was not attempted. This resolves the earlier reported-completion ambiguity and is consistent with three GET probes and no POST requests in the inspected logs. P06 remains 12/14: R10 complete, R11/R12 open. Full R12 retention/billing reconciliation and owner acceptance remain pending despite verified shutdown. Next requires a future attended window, fresh packet qualification and separate exact execution approval for the browser journey; do not rerun consumed commands, reopen LOGIN or reset holds. Explicitly guide the participant from READY_FOR_R11 to the browser page before closeout. Backend evidence: `evidence/APP-013/p06-r10-20260921-result-closeout.md`. No scope deviation.
+
 ## Current handoff: R10 timestamp-boundary repair locally complete — fresh packet remains gated — 2026-09-19
 
 Approved alternative 1 is implemented at backend `f254c4f`: activation snapshots only the two controlled approvals; locked current-authority checks and transactional updatedAt CAS/audit remain. Disposable PG18 and all relevant suites pass. No packet, LOGIN, activation, deployment, provider request or customer action occurred. P06 remains 11/14; R10/R11/R12 open. Next input is a future attended window for separately authorized fresh packet preparation and execution. No scope deviation beyond the approved change.
