@@ -1,5 +1,9 @@
 # P06 remaining-work reconciliation — review baseline v1
 
+## Current: 12/14 complete; R11 late-start plan safely closed and consumed — 2026-09-21
+
+Plan `349fb681-ffe6-46dc-8b83-202ebf3cdf71` stopped at its `CONNECTED_RUN_WINDOW` reserve before activation/deployment and was not retried. Mandatory closeout is verified `CLOSED`; the enabled tag is absent and normal traffic remains 100% baseline. R11 and full R12 remain open. A future attempt requires a new window, fresh qualification/packet and separate approval. No scope deviation.
+
 ## Current: 12/14 complete; repaired R11 packet ready, execution separately gated — 2026-09-21
 
 The approved single repair-image build succeeded from backend `1819e84`; immutable digest `sha256:9e9039a3978108067be710532d40b4881a06842b80edd71c029d76632ef11f32` is bound to fresh enabled12 plan `349fb681-ffe6-46dc-8b83-202ebf3cdf71`. Temporary grants were removed and verified absent. The private packet covers support 9:15–9:45 AM Eastern, one 9:25–9:40 supervised runtime and closeout by 9:45, but creates no helper or authority. R11 and full R12 remain open. Exact execution approval is the next gate; no automatic retry. No scope deviation.

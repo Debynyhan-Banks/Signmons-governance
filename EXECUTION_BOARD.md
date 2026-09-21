@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: R11 late-start stop safely closed; fresh window required — 2026-09-21
+
+Approved plan `349fb681-ffe6-46dc-8b83-202ebf3cdf71` stopped at `CONNECTED_RUN_WINDOW` before activation because its safe start reserve had elapsed. No activation/deployment reservation or provider/customer action occurred. Mandatory closeout is `CLOSED` with no failures; the enabled tag is absent, enabled12 does not exist and normal traffic remains 100% baseline. The plan is consumed. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Next requires a future owner-selected window, fresh packet and separate approval. No scope deviation.
+
 ## Current: repaired enabled12 packet ready; R11 execution approval required — 2026-09-21
 
 One approved build from backend `1819e84` succeeded once and produced immutable digest `sha256:9e9039a3978108067be710532d40b4881a06842b80edd71c029d76632ef11f32`; mandatory temporary-grant removal/readback passed. Fresh plan `349fb681-ffe6-46dc-8b83-202ebf3cdf71` binds enabled12, the 9:15–9:45 AM Eastern support window, one 9:25–9:40 connected journey and closeout by 9:45. Only the three reviewed packet files exist; no helper, authorization or live action exists. APP-013/2B remains sole Now. P06 stays 12/14 with R11/full R12 open. Exact owner approval or refusal is next; no automatic retry. No scope deviation.

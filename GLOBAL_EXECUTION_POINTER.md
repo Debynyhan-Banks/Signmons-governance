@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: R11 9:15 AM plan stopped before activation; closeout verified — 2026-09-21
+
+Plan `349fb681-ffe6-46dc-8b83-202ebf3cdf71` opened limited database LOGIN at 9:35:48 AM Eastern, then the 9:36:12 run invocation correctly stopped at `CONNECTED_RUN_WINDOW` because the four-minute start reserve had elapsed. No activation or deployment reservation/result exists and no retry occurred. Owner-run closeout returned `R12_RUNTIME_CLOSEOUT_VERIFIED`; private status is `CLOSED` with no failures. Independent Cloud Run readback shows no enabled tag or enabled12 revision and normal traffic remains 100% `app013bounds`. This plan and its commands are consumed. P06 remains 12/14 with R11/full R12 open. A new future window, fresh qualification/packet and separate execution approval are required. Backend evidence: `evidence/APP-013/p06-r11-0915-late-start-closeout.md`. No scope deviation.
+
 ## Current: R11 repaired image and exact 9:15 AM packet ready — execution unapproved — 2026-09-21
 
 The one owner-approved repair-image build succeeded from exact backend `1819e84` as Cloud Build `91773a6b-70dd-4df4-bef6-5cba98b6f5df`; registry readback binds `p06-r11-1819e84b232b` to immutable digest `sha256:9e9039a3978108067be710532d40b4881a06842b80edd71c029d76632ef11f32`. All three temporary grants were removed and read back absent. Fresh private plan `349fb681-ffe6-46dc-8b83-202ebf3cdf71` binds enabled12, support 9:15–9:45 AM Eastern, one 9:25–9:40 supervised runtime and closeout by 9:45. Packet/controller validation and 31 focused tests pass. No helper, execution authorization, LOGIN, activation, deployment, secret access, provider request or customer action exists. P06 remains 12/14 with R11/full R12 open. Exact execution approval or refusal is next; no automatic retry. Backend evidence: `evidence/APP-013/p06-r11-0915-repair-image-packet-review.md`. No scope deviation.
