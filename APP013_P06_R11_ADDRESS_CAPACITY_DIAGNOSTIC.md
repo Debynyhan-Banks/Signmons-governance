@@ -1,6 +1,8 @@
 # APP-013 / P06 R11 address capacity diagnostic
 
-Status: locally prepared and tested; exact external execution approval required.
+Status: exact operation and 5:30–6:00 PM Eastern window approved; private authorization installed; owner-operated execution pending.
+
+The owner replied `yes o approve` to the exact diagnostic/window approval request. The helper returned `R11_ADDRESS_CAPACITY_CHECK_PASSED_NO_ACTION`; no attempt, connection or result exists. Preparation descriptions below are historical. No broader execution is authorized.
 
 ## Reviewable operation
 
