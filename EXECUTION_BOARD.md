@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: R11 truthful refusal confirmed; cause diagnosis next — 2026-09-21
+
+Corrected fixed-request read-only diagnostic `1922018f-adb5-470a-b2c8-05ef4a985572` found zero committed jobs. This resolves the browser receipt uncertainty as a truthful refusal. The diagnostic is consumed and no retry, replacement or mutation occurred. R11 is not accepted because exactly one correlated job is required. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. A separately reviewed privacy-safe 409 cause diagnostic must precede any new live journey. No scope or acceptance change.
+
 ## Current: corrected R11 receipt diagnostic awaiting approval — 2026-09-21
 
 The first approved diagnostic is consumed after stopping at `DATABASE_READ_ONLY` without a result and was not rerun. Its local wrapper changed the hidden-input string to a Buffer, which installed PostgreSQL SCRAM rejects. Corrected replacement `1922018f-adb5-470a-b2c8-05ef4a985572` preserves the string, adds privacy-safe stages and passed local syntax, contract and private-file-set checks. It is proposed for 8:05–8:20 AM Eastern and has no authorization, attempt, result or database connection. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Local helper repair only; no scope or acceptance change.

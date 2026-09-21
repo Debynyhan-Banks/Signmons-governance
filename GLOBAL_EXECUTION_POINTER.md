@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: R11 receipt classified as truthful refusal; no committed job — 2026-09-21
+
+Corrected read-only diagnostic `1922018f-adb5-470a-b2c8-05ef4a985572` returned `R11_RECEIPT_DIAGNOSTIC_NO_COMMITTED_JOB` at 12:11:46Z and found zero non-deleted jobs for the exact retained request. The earlier HTTP 409 is therefore a confirmed truthful refusal, not an uncertain receipt. Both diagnostic operations are consumed; no retry, replacement, write, LOGIN change, provider mutation or customer action occurred. R11 remains unaccepted because its finish condition requires one correlated journey and exactly one job. P06 remains 12/14 with R11/full R12 open. Next is a separately reviewed privacy-safe diagnosis of the refusal cause before any new live journey. No scope or acceptance change.
+
 ## Current: first R11 receipt diagnostic consumed; corrected replacement ready — 2026-09-21
 
 Operation `b14dffb7-a888-4800-b09a-93ac6061d48f` stopped at `DATABASE_READ_ONLY` with an attempt marker and no result; it was not rerun. Static evidence identified a local helper type error: `readPipe` returned a string that the wrapper converted to a Buffer, while installed PostgreSQL SCRAM requires a string. Corrected operation `1922018f-adb5-470a-b2c8-05ef4a985572`, proposed for 8:05–8:20 AM Eastern, preserves the string and adds fixed privacy-safe stages. Local syntax, input-contract and private-file-set checks pass. No replacement authorization or database connection occurred. P06 remains 12/14 with R11/full R12 open. Local helper repair only; no scope or acceptance change.

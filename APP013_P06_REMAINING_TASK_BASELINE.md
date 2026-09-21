@@ -1,5 +1,9 @@
 # P06 remaining-work reconciliation — review baseline v1
 
+## Current: R11 truthful refusal confirmed; no committed job — 2026-09-21
+
+Corrected read-only diagnostic `1922018f-adb5-470a-b2c8-05ef4a985572` found zero committed jobs for the exact request. The earlier HTTP 409 is therefore a truthful refusal rather than an uncertain receipt. No retry, replacement or mutation occurred. R11 remains unaccepted because its observable finish requires one successfully correlated protected journey and exactly one job. P06 stays 12/14 with R11/full R12 open. A separately reviewed privacy-safe diagnosis of the refusal cause must precede any new live journey. No scope or acceptance change.
+
 ## Current: first R11 receipt diagnostic consumed; corrected replacement unapproved — 2026-09-21
 
 The first approved diagnostic stopped at safe stage `DATABASE_READ_ONLY` without producing a result and was not rerun. Static evidence identified a local hidden-input type conversion that PostgreSQL SCRAM rejects. Corrected operation `1922018f-adb5-470a-b2c8-05ef4a985572`, proposed for 8:05–8:20 AM Eastern, preserves the string, adds privacy-safe stages and passes local review checks. It has no authorization, attempt, result or database connection. The fixed request remains unclassified. P06 stays 12/14 with R11/full R12 open. Local helper repair only; no scope or acceptance change.

@@ -1,6 +1,6 @@
 # APP-013 / P06 R11 supervised browser test
 
-Status: the later 7:30 AM plan used the repaired owner-visible handoff and reached one reviewed submit, but the submit returned HTTP 409 with `Submission outcome unavailable`. The exact request is preserved, no retry or replacement occurred, and mandatory closeout is verified. R11 remains unaccepted pending authoritative receipt classification. P06 remains 12/14.
+Status: the later 7:30 AM plan used the repaired owner-visible handoff and reached one reviewed submit, but the submit returned HTTP 409 with `Submission outcome unavailable`. Corrected read-only receipt diagnostic `1922018f-adb5-470a-b2c8-05ef4a985572` found zero committed jobs for the exact request, classifying the outcome as a truthful refusal. No retry or replacement occurred, and mandatory closeout is verified. R11 remains unaccepted; P06 remains 12/14.
 
 ## Requirement traceability
 

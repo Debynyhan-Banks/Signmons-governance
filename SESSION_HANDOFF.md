@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: R11 HTTP 409 classified as no committed job — 2026-09-21
+
+Owner-approved corrected read-only operation `1922018f-adb5-470a-b2c8-05ef4a985572` returned `R11_RECEIPT_DIAGNOSTIC_NO_COMMITTED_JOB`: zero matching non-deleted jobs for the exact retained request. The prior HTTP 409 is now a confirmed truthful refusal. The operation is consumed; no retry, replacement, LOGIN change, write, provider mutation or customer action occurred. R11 remains unaccepted because one correlated protected journey and exactly one job are required. P06 remains 12/14 with R11/full R12 open. Next is a separately reviewed privacy-safe diagnosis of the 409 refusal cause before any new live journey. Backend evidence: `evidence/APP-013/p06-r11-receipt-diagnostic-result.md`. No scope or acceptance change.
+
 ## Current: first R11 receipt diagnostic stopped; corrected operation ready unapproved — 2026-09-21
 
 Operation `b14dffb7-a888-4800-b09a-93ac6061d48f` is consumed after stopping at safe stage `DATABASE_READ_ONLY` with no result and was not rerun. Static comparison found a local wrapper type defect: it converted the hidden-input string to a Buffer that PostgreSQL SCRAM rejects. Corrected operation `1922018f-adb5-470a-b2c8-05ef4a985572`, proposed for 8:05–8:20 AM Eastern, preserves the string and adds fixed privacy-safe stages. Local parsing/type/file-set checks pass; its private directory has no authorization, attempt or result. Exact owner approval or refusal is required before one fixed-request read-only connection. P06 remains 12/14 with R11/full R12 open. Backend evidence: `evidence/APP-013/p06-r11-receipt-diagnostic-stop-repair.md`. Local helper repair only; no scope or acceptance change.
