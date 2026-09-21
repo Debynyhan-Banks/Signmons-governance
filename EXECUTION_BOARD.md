@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: enabled16 R11 packet ready for exact execution approval — 2026-09-21
+
+Fresh plan `ca2d2bfb-25da-44fe-98be-557bbdf10a34` binds 1:15–2:00 PM support, one 1:30–1:45 PM connected run, enabled16 and the approved one-packet 2,000,000-micro ceiling while preserving three holds totaling 1,500,000 micros. Read-only Cloud/Twilio/participant qualification passes. Only three private review files exist; no helper or execution authorization. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Exact plan approval or refusal is next. Approved deviation is limited to this packet's ceiling.
+
 ## Current: APP-013/P06 R11 enabled15 failure confirmed as expiry — 2026-09-21
 
 The exact draft preview arrived 40.183976 seconds after packet expiry and returned HTTP 503; preceding start/continue/verification calls were 200. No retry, address request, submit or job occurred, and closeout is verified. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Next is a future staged 45-minute support window with fresh separate approvals. No scope deviation.
