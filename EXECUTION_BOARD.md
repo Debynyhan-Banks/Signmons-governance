@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: enabled15 R11 packet ready for exact execution approval — 2026-09-21
+
+Fresh plan `d585d67e-69d1-46e0-bad1-7165e1fb6502` binds 11:45 AM–12:15 PM support, one 11:50 AM–12:05 PM connected run, corrected enabled15 suffix validation and the approved one-packet 1,500,000-micro phone ceiling. Only three private review files exist; no helper or execution authorization. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Exact plan approval or refusal is next. Approved deviation is limited to this packet's ceiling.
+
 ## Current: APP-013/P06 R11 local deploy-binding repair complete — 2026-09-21
 
 Backend `33d7735` derives/validates the deployment suffix from the reviewed revision and safely recognizes only an exact matching already-revoked approval during closeout. Focused suites and required checks pass; no packet or live action occurred. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. A new window, fresh read-only qualification/packet authority and fresh ceiling decision are next; live execution remains separately gated. No scope deviation beyond approved alternative 1.

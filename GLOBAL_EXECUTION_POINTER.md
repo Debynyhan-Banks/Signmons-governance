@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: fresh enabled15 R11 11:45 AM packet ready; execution approval required — 2026-09-21
+
+Owner-authorized read-only qualification and preparation produced plan `d585d67e-69d1-46e0-bad1-7165e1fb6502`: repaired enabled15, database support 11:45 AM–12:15 PM, one 11:50 AM–12:05 PM connected run and closeout by 12:15 PM. It preserves two holds totaling 1,000,000 micros and binds the newly approved one-packet 500,000-micro flow/1,500,000-micro ceiling. Cloud/Twilio/recipient state is eligible; database state remains guarded execution preflight. Production packet/controller/deploy-suffix review passes. Exactly three private review files exist; no helper, authorization or live action exists. Exact execution approval is next. P06 remains 12/14 with R11/full R12 open. Backend evidence: `evidence/APP-013/p06-r11-1145-packet-review.md`. Approved deviation is limited to this packet's ceiling.
+
 ## Current: R11 deploy-binding and closeout defects repaired locally; fresh packet remains gated — 2026-09-21
 
 Owner-approved alternative 1 is complete at backend `33d7735`. The controller now derives and validates the Cloud Run suffix from the exact reviewed revision, and closeout accepts only an exact matching already-revoked approval without reporting a false uncertainty. Focused controller/runtime-packet suites pass 33/33; the consumed enabled14 helper is rejected as a stale-suffix fixture before action. Build, lint, architecture and all governance gates pass. No packet or live action occurred. The consumed plan, commands and one-packet ceiling allowance remain unusable. P06 remains 12/14 with R11/full R12 open. Next requires a new owner-selected window and separately authorized read-only refresh/packet preparation, including a fresh ceiling decision; execution remains separately gated. Backend evidence: `evidence/APP-013/p06-r11-deploy-binding-local-repair.md`. No scope deviation beyond approved alternative 1.
