@@ -1,6 +1,6 @@
 # APP-013 / P06 R11 supervised browser test
 
-Status: prepared documentation only on 2026-09-21. No window, packet, helper, authorization, LOGIN, activation, deployment, provider request, verification code or browser execution exists under this card.
+Status: the 7:00 AM plan on 2026-09-21 is consumed and safely closed without completing R11. An implementer-controlled tab consumed the one browser start before owner visibility confirmation; the visible-tab start was refused with HTTP 429 and was not retried. No phone/code/address/provider/submit/job action occurred. P06 remains 12/14; a future attempt requires a fresh packet and must follow the owner-visible handoff below.
 
 ## Requirement traceability
 

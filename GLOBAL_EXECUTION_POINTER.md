@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: R11 browser start consumed; shutdown verified — 2026-09-21
+
+Plan `b11c7f84-937b-44de-8b49-d60bb629c396` reached the exact enabled10 zero-traffic revision, but R11 did not complete. An implementer-controlled Chrome tab consumed the one allowed browser start before owner visibility was confirmed; one fictional continuation occurred with no private participant input, provider request, address request, submission or job. The later visible-tab start returned HTTP 429 and was not retried. Owner-run closeout returned `R12_RUNTIME_CLOSEOUT_VERIFIED`; the tag is absent and baseline traffic remains 100%. The plan is consumed. P06 remains 12/14 with R11/full R12 open. Execution-procedure deviation disclosed; no scope or acceptance change.
+
 ## Current: exact R11 7:00 AM packet ready — execution unapproved — 2026-09-21
 
 Read-only qualification and a fresh private packet are complete for 7:00–7:30 AM Eastern. Plan `b11c7f84-937b-44de-8b49-d60bb629c396` binds one supervised 7:05–7:20 browser journey and closeout by 7:30 on fresh revision `app013p06enabled10`. Packet/controller review and 31 focused tests pass. Current database policy and inactive authority must still pass the guarded execution preflight. No helper, authorization or live action exists. P06 remains 12/14; R11 and full R12 are open. Exact owner execution approval or refusal is next. No scope deviation.
