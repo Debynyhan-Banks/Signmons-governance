@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: R11 attended coordinator review-ready — 2026-09-21
+
+Owner-approved alternative 1 is locally implemented at backend `26404ff`. One future approved R11 operation can now use one Terminal command for hidden input, local timing, exact controller start, owner-operated browser pause and mandatory closeout; every child mode remains at most once and the underlying zero-traffic/containment guards are unchanged. The approved one-future-packet ceiling is 2,500,000 micros for one 500,000-micro flow while preserving all four holds. No packet or live action occurred and that allowance is unused. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Next is an owner-selected window and separately authorized read-only refresh/fresh packet, then exact packet review and execution approval. Approved execution-process deviation only; no other scope deviation.
+
 ## Current: R11 retained ceiling reached; efficient-execution decision required — 2026-09-21
 
 The authorized read-only refresh found four valid holds totaling 2,000,000 micros; another 500,000-micro flow has no approved capacity. No packet was created. Provider/target/participant state remains safe and eligible. `APP013_P06_R11_EXECUTION_EFFICIENCY_CHANGE_REQUEST.md` recommends replacing the repeated three-command timing loop with a locally tested one-command attended coordinator and one separately gated future 2,500,000-micro packet allowance. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Owner decision is next. No scope deviation implemented.

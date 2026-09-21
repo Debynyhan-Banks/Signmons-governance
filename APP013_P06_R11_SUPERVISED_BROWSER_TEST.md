@@ -1,6 +1,6 @@
 # APP-013 / P06 R11 supervised browser test
 
-Status: the later 7:30 AM plan used the repaired owner-visible handoff and reached one reviewed submit, but the submit returned HTTP 409 with `Submission outcome unavailable`. Corrected read-only receipt diagnostic `1922018f-adb5-470a-b2c8-05ef4a985572` found zero committed jobs and the address-stage diagnostic fixed the refusal before address reservation. Owner-approved alternative 1 is now locally complete at backend `1819e84`: synthetic connected evidence proves the distinct customer enum/internal category labels. No retry, replacement or later live journey occurred. Mandatory closeout is verified. R11 remains unaccepted; P06 remains 12/14.
+Status: the owner-approved one-command attended coordinator is locally complete at backend `26404ff`. Four existing holds remain preserved; exactly one future packet may bind a 500,000-micro flow to a 2,500,000-micro ceiling, but no packet or live action is authorized or has occurred under that policy. Earlier live attempts remain closed and consumed. R11 remains unaccepted; P06 remains 12/14.
 
 ## Requirement traceability
 
@@ -24,24 +24,24 @@ No new application code, interface, schema, dependency, secret, IAM role, provid
 1. The owner selects one new future attended 30-minute Eastern window.
 2. The owner separately authorizes read-only provider/target/eligibility refresh and fresh packet preparation for that window. This step may not open LOGIN, activate, deploy, call a provider, issue a code or execute the journey.
 3. Review the resulting exact packet, revision, digests, current policies, participant eligibility, finite request/cost caps, run window and closeout deadline.
-4. The owner separately approves or refuses that exact plan. Only exact approval may authorize its named guarded helper installation, bounded database LOGIN, activation, zero-traffic deployment, provider requests, browser journey and closeout.
-5. A stopped, uncertain, elapsed or consumed operation is never rerun. Close out, preserve evidence and require a newly reviewed operation.
+4. The owner separately approves or refuses that exact plan. Only exact approval may authorize its named guarded helper installation, one-command attended coordinator, bounded database LOGIN, activation, zero-traffic deployment, provider requests, browser journey and closeout.
+5. After exact approval, the owner runs one reviewed coordinator command. It waits locally, prompts once, performs the exact at-most-once controller sequence, displays the URL, waits for local `DONE`/`STOP` and performs mandatory closeout. A stopped, uncertain, elapsed or consumed operation is never rerun.
 
 Selecting a window alone grants no live authority.
 
 ## Supervised R11 browser sequence
 
-After the approved controller returns `READY_FOR_R11`, the implementer must immediately give the owner the exact HTTPS `/customer-intake` URL and explicitly say to open it in an already-visible normal browser. The implementer must not create or navigate a task-controlled browser tab and must not click, type or submit in the live page. The owner reports exactly `R11_PAGE_VISIBLE_NOT_STARTED` after the untouched page is visible; only then may the owner complete this sequence without placing private values in chat:
+After the approved coordinator prints `R10_ACTIVE_READY` with the exact HTTPS `/customer-intake` URL, the owner manually opens it in an already-visible normal browser. The implementer must not create or navigate a task-controlled browser tab and must not click, type or submit in the live page. No intermediate chat marker is required; the owner completes this sequence without placing private values in chat:
 
 1. Open the exact returned URL and select **Start a new request**.
 2. Enter the service issue and continue. Skip optional email and appointment-text enrollment unless the reviewed packet expressly includes them; neither is required for P06.
 3. Enter the reviewed customer details and the privately bound phone number.
 4. Select **Review code request**, confirm the displayed number, request one verification code and enter that code once. Do not resend or restart to bypass a limit.
-5. Enter the eligible Cuyahoga service address and unit, if any. Review any displayed correction field by field. A second address request or corrected submit is allowed only when the exact packet permits it.
+5. Enter the privately retained, customer-confirmed standardized Cuyahoga service address, including its ZIP+4, from the beginning. Review any displayed correction field by field. A second address request or corrected submit is allowed only when the exact packet permits it.
 6. Complete the issue category, property type, service intent and issue summary. Check **I reviewed these details**, then select **Preview validated draft**.
 7. Read the complete preview. If correct, select **Confirm details and submit request** exactly once.
 8. Report only the final non-private status and displayed request/job references. Do not report the phone, code, address, name or issue narrative.
-9. Run mandatory closeout immediately after the terminal state or any error. Do not clear, reset or retry an uncertain operation before reconciliation.
+9. Return to Terminal and type `DONE` after a terminal browser result or `STOP` after any error. The same coordinator performs mandatory closeout. Report the final non-private browser status/references and final coordinator line once. Do not run a separate closeout, clear, reset or retry an uncertain operation before reconciliation.
 
 ## Result classification
 
