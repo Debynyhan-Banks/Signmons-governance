@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: address-capacity diagnostic prepared; external approval pending — 2026-09-21
+
+Operation `98a32610-b621-4f1c-b92c-15e08b26b9ee` is prepared for a proposed 5:30–6:00 PM Eastern read-only window. Backend `6c7a762` reads only fixed address-account/tenant aggregate counts and retained costs and compares the consumed enabled19 policy; no participant/provider content is returned. Nine reader and three existing private-input tests plus private no-action review pass. Four private preparation files exist with no authorization, attempt, result or external action. Owner approval of the exact diagnostic/window is next; no ceiling change, hold release or live retry follows automatically. See `APP013_P06_R11_ADDRESS_CAPACITY_DIAGNOSTIC.md` and backend `evidence/APP-013/p06-r11-address-capacity-preparation.md`. P06 remains 12/14 with R11/full R12 open and prior closeout verified. Original dirty APP-010 checkout untouched. No scope deviation.
+
 ## Current: enabled19 stopped before address reservation; diagnostic consumed — 2026-09-21
 
 Operation `c5270e94-b482-45c0-a44c-f9ac2d3c8b6f` returned `BEFORE_ADDRESS_RESERVATION` with zero rows at `21:00:56.889Z`. This request stopped before Google address transport and the job-write transaction. The consumed packet separately limits address account/tenant operations to two and 200,000 micros; historical ledger rows count across sessions, independently of the phone ceiling. Exhaustion is a candidate, not a verified balance: the approved fixed-request read did not include aggregates. Implementer next prepares a bounded fixed-account/tenant capacity read for separate owner approval; no retry, new live packet, limit change or hold release is authorized. P06 remains 12/14 with R11/full R12 open; prior shutdown remains verified. Evidence: `evidence/APP-013/p06-r11-enabled19-address-stage-result.md`. No scope deviation.
