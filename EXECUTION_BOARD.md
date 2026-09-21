@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: enabled16 early run refused and safely closed — 2026-09-21
+
+Plan `ca2d2bfb-25da-44fe-98be-557bbdf10a34` stopped at `CONNECTED_RUN_WINDOW` because `--run` was invoked before 1:30 PM. No activation/deployment reservation or provider/browser action occurred. Closeout is verified `CLOSED`; enabled16 and the enabled tag are absent and baseline traffic remains 100%. The plan is consumed. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. A future run requires a new window and fresh, separately approved packet and ceiling. No scope deviation.
+
 ## Current: enabled16 R11 packet ready for exact execution approval — 2026-09-21
 
 Fresh plan `ca2d2bfb-25da-44fe-98be-557bbdf10a34` binds 1:15–2:00 PM support, one 1:30–1:45 PM connected run, enabled16 and the approved one-packet 2,000,000-micro ceiling while preserving three holds totaling 1,500,000 micros. Read-only Cloud/Twilio/participant qualification passes. Only three private review files exist; no helper or execution authorization. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Exact plan approval or refusal is next. Approved deviation is limited to this packet's ceiling.

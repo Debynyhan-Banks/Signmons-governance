@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: enabled16 early start refused; mandatory closeout verified — 2026-09-21
+
+The owner opened bounded LOGIN for plan `ca2d2bfb-25da-44fe-98be-557bbdf10a34` but invoked `--run` at 1:26:48 PM, before the 1:30 PM connected window. It stopped at `CONNECTED_RUN_WINDOW`; no activation or deployment reservation exists and no provider/browser action occurred. Owner-run closeout returned `R12_RUNTIME_CLOSEOUT_VERIFIED`; private result is `CLOSED` with no failures. Cloud readback shows enabled16/tag absent, enabled15 still latest ready and 100% normal traffic on `app013bounds`. The plan and commands are consumed. P06 remains 12/14 with R11/full R12 open. Next requires a new window, fresh read-only qualification/packet preparation and ceiling authority, then separate exact execution approval. Backend evidence: `evidence/APP-013/p06-r11-1315-early-stop-closeout.md`. Original dirty APP-010 checkout preserved. No scope deviation.
+
 ## Current: fresh enabled16 1:15 PM R11 packet ready; execution unapproved — 2026-09-21
 
 Private plan `ca2d2bfb-25da-44fe-98be-557bbdf10a34` binds repaired source/image, exact enabled16 suffix, database support 1:15–2:00 PM Eastern, one 1:30–1:45 PM supervised runtime, closeout by 2:00 PM and the approved one-packet 2,000,000-micro ceiling while preserving three valid holds totaling 1,500,000 micros. Read-only Cloud/Twilio/recipient qualification passes; database authority remains a guarded execution preflight. Exactly three mode-0600 preparation files exist with no helper or execution authorization. Exact plan approval is next. P06 remains 12/14 with R11/full R12 open. Backend evidence: `evidence/APP-013/p06-r11-1315-packet-review.md`. Original dirty APP-010 checkout preserved. Approved deviation is limited to this packet's ceiling.

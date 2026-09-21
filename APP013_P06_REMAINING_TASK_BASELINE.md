@@ -1,5 +1,9 @@
 # P06 remaining-work reconciliation — review baseline v1
 
+## Current: 12/14 complete; enabled16 early start safely closed — 2026-09-21
+
+The enabled16 run stopped at `CONNECTED_RUN_WINDOW` because it was invoked before 1:30 PM. No activation/deployment reservation or provider/browser action occurred. Mandatory closeout is verified; enabled16/tag are absent and normal traffic remains 100%. The plan is consumed. R11 and full R12 remain open. A future attempt requires a new window, fresh read-only qualification/packet preparation, fresh ceiling authority and separate exact execution approval. No scope deviation.
+
 ## Current: 12/14 complete; fresh enabled16 1:15 PM packet ready — 2026-09-21
 
 Plan `ca2d2bfb-25da-44fe-98be-557bbdf10a34` binds exact enabled16 deployment validation, database support 1:15–2:00 PM, one 1:30–1:45 PM connected run and closeout by 2:00 PM. It preserves three valid retained holds totaling 1,500,000 micros and uses the approved one-packet 500,000-micro flow/2,000,000-micro ceiling. Read-only qualification passes; no helper or execution authority exists. R11 and full R12 remain open. Exact plan approval is next. Approved deviation is limited to this packet's ceiling.
