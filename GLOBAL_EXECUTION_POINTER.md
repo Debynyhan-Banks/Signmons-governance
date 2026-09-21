@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: exact repaired-image R11 10:00 AM packet ready — execution unapproved — 2026-09-21
+
+Read-only Cloud/Twilio/participant refresh remains eligible. Fresh private plan `7d8354b1-3d5b-455c-b2cc-576aac49b80b` binds repaired backend `1819e84`, immutable image digest `sha256:9e9039a3978108067be710532d40b4881a06842b80edd71c029d76632ef11f32`, enabled13, database support 10:00–10:30 AM Eastern, one 10:05–10:20 supervised runtime and closeout by 10:30. Production packet/controller review and 31 focused tests pass. Only three mode-0600 preparation files exist; no helper, execution authorization or live action exists. P06 remains 12/14 with R11/full R12 open. Exact owner execution approval or refusal is next; no automatic retry. Backend evidence: `evidence/APP-013/p06-r11-1000-packet-review.md`. No scope deviation.
+
 ## Current: R11 9:15 AM plan stopped before activation; closeout verified — 2026-09-21
 
 Plan `349fb681-ffe6-46dc-8b83-202ebf3cdf71` opened limited database LOGIN at 9:35:48 AM Eastern, then the 9:36:12 run invocation correctly stopped at `CONNECTED_RUN_WINDOW` because the four-minute start reserve had elapsed. No activation or deployment reservation/result exists and no retry occurred. Owner-run closeout returned `R12_RUNTIME_CLOSEOUT_VERIFIED`; private status is `CLOSED` with no failures. Independent Cloud Run readback shows no enabled tag or enabled12 revision and normal traffic remains 100% `app013bounds`. This plan and its commands are consumed. P06 remains 12/14 with R11/full R12 open. A new future window, fresh qualification/packet and separate execution approval are required. Backend evidence: `evidence/APP-013/p06-r11-0915-late-start-closeout.md`. No scope deviation.
