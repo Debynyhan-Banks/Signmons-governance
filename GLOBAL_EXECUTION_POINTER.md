@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: exact R11 6:30 AM packet ready — execution approval required — 2026-09-21
+
+Owner-authorized read-only refresh and fresh preparation completed. Private plan `3739c567-80ae-4615-ae0e-eeecf58f5b5a` binds database support 6:30–7:00 AM Eastern, one supervised browser runtime 6:35–6:50, closeout by 7:00 and fresh revision `app013p06enabled9`. Cloud remains at 100% baseline traffic with the enabled tag absent; signed-in Twilio evidence confirms the protected US-only verified-recipient boundary. Current database policies remain a mandatory guarded execution preflight and were not read during preparation. Packet/controller review and 31 focused tests pass. No helper, authorization, LOGIN, activation, deployment, code or customer action occurred. P06 remains 12/14 with R11/full R12 open. Exact owner approval or refusal is next; no automatic retry. Backend evidence: `evidence/APP-013/p06-r11-0630-packet-review.md`. Original dirty APP-010 checkout preserved. No scope deviation.
+
 ## Current: R11 supervised browser test prepared; new window required — 2026-09-21
 
 Documentation reconciliation preserves the verified R10 success/closeout and the full extensibility amendment. The active ticket and remaining-task baseline now agree with this pointer: P06 is 12/14, R11 was not attempted and full R12 remains open. `APP013_P06_R11_SUPERVISED_BROWSER_TEST.md` defines the exact attended browser handoff, acceptable outcomes, private-data limits and mandatory closeout. No fresh packet, authorization or external action was created. Next input is one owner-selected future 30-minute Eastern window; read-only refresh/packet preparation and exact execution remain separate approvals. No consumed command may be reused. Original dirty APP-010 checkout preserved. No scope deviation.
