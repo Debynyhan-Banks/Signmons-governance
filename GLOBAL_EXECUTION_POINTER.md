@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: enabled18 stopped locally before execution; no closeout required — 2026-09-21
+
+Plan `8f9bb16d-949a-4ca1-a8bc-6f9995293faf` received exact owner approval and its private files were installed, but local coordinator review at 3:52 PM Eastern refused `WINDOW_BINDING` because fewer than the required four minutes remained before the 3:55 PM runtime end. No coordinator command was given to the owner, no password was entered, LOGIN was not opened and no database, Cloud, provider or browser action occurred. A private stop marker prevents reuse; the plan is consumed. P06 remains 12/14 with R11/full R12 open. Next requires a future window, fresh read-only qualification/packet and separate execution approval. Backend evidence: `evidence/APP-013/p06-r11-1530-window-stop.md`. Approved deviations remain the one-command execution process and the consumed packet's ceiling; no other scope deviation.
+
 ## Current: enabled18 R11 packet ready for one-command execution approval — 2026-09-21
 
 Plan `8f9bb16d-949a-4ca1-a8bc-6f9995293faf` binds backend coordinator `26404ff`, exact enabled18 deployment, database support 3:30–4:00 PM Eastern, one 3:40–3:55 PM connected runtime and closeout by 4:00 PM. Current read-only Cloud/Twilio/recipient checks pass. Read-only operation `363fa343-c943-4fbd-87d3-6d2aadece5df` confirms four valid holds totaling 2,000,000 micros and capacity for the approved 500,000-micro flow under the one-packet 2,500,000-micro ceiling. Exactly three private review files exist; no helper, execution authorization or live action exists. Exact plan approval is next. P06 remains 12/14 with R11/full R12 open. Backend evidence: `evidence/APP-013/p06-r11-1530-packet-review.md`. Approved deviations are the one-command execution process and this packet's ceiling; no other scope deviation.
