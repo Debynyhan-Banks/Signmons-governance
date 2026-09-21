@@ -1,6 +1,6 @@
 # APP-013 / P06 R11 supervised browser test
 
-Status: the 7:00 AM plan on 2026-09-21 is consumed and safely closed without completing R11. An implementer-controlled tab consumed the one browser start before owner visibility confirmation; the visible-tab start was refused with HTTP 429 and was not retried. No phone/code/address/provider/submit/job action occurred. P06 remains 12/14; a future attempt requires a fresh packet and must follow the owner-visible handoff below.
+Status: the later 7:30 AM plan used the repaired owner-visible handoff and reached one reviewed submit, but the submit returned HTTP 409 with `Submission outcome unavailable`. The exact request is preserved, no retry or replacement occurred, and mandatory closeout is verified. R11 remains unaccepted pending authoritative receipt classification. P06 remains 12/14.
 
 ## Requirement traceability
 
