@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: final R11 capacity qualified; one packet pending approved window — 2026-09-21
+
+Alternative 1 and the 6:45–7:15 PM Eastern preparation window are owner-approved. Combined read-only operation `be1d1e7a-6ba5-4634-abee-95267fdb1398` consumed once and returned exact capacity: phone five holds / 2500000 micros under the approved 3000000 ceiling; address two operations / 200000 micros at account and tenant under approved four/400000 ceilings; invalid rows zero and approvals inactive. Current Safari Twilio readback passes the one-service/Fraud-Guard/US-SMS/Voice-disabled/single-recipient gates. Backend `b01673b` binds the attended coordinator to those exact limits and passes 13 focused tests plus governance. Next is current Cloud safe-state readback and one exact three-file packet after 6:45 PM; no execution authority follows automatically. APP-013/2B remains sole Now; P06 stays 12/14. Approved final-capacity deviation only; no other scope deviation.
+
 ## Current: R11 address capacity exhausted; combined policy decision required — 2026-09-21
 
 The fixed read proves two valid address operations / 200000 micros fill both address account and tenant limits, so enabled19 correctly stopped before reservation and Google. No retry or mutation occurred. `APP013_P06_R11_FINAL_CAPACITY_CHANGE_REQUEST.md` recommends one future packet allowance that preserves all holds, permits initial plus one correction address operation, and conditions the independent phone allowance on one combined current-liability refresh. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Owner decision is next; no packet or live authority exists. No scope deviation implemented.
