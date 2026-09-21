@@ -28,6 +28,6 @@ Positive: one matching sanitized 409 diagnostic maps to one class. Negative: zer
 
 ## Dependencies, exclusions and finish
 
-The owner approves or refuses the exact operation. The implementer runs the one read-only query with the existing authenticated `gcloud` context. No database connection, LOGIN change, activation, deployment, traffic change, provider mutation, Twilio/Google request, verification code, browser/customer action, job write, secret/IAM access change, billing change or retry is authorized.
+The owner approves or refuses the exact operation. The implementer runs the one read-only Cloud Logging query with the existing authenticated `gcloud` context. No database connection, LOGIN change, activation, deployment, traffic change, provider mutation, Twilio Verify request, Google Address API request, verification code, browser/customer action, job write, secret/IAM access change, billing change or retry is authorized.
 
 Rollback is no mutation; an uncertain read produces no result claim. Observable finish is one privacy-safe refusal class or an explicit unconfirmed result, followed by a decision on local repair versus a separately reviewed future R11 packet. R11/full R12 remain open and P06 remains 12/14. No scope or acceptance change.
