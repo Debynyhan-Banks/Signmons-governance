@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: enabled18 one-command R11 packet ready — 2026-09-21
+
+Fresh plan `8f9bb16d-949a-4ca1-a8bc-6f9995293faf` binds backend `26404ff`, database support 3:30–4:00 PM Eastern, one 3:40–3:55 PM connected run, closeout by 4:00 PM, enabled18 and the approved 500,000/2,500,000-micro policy while preserving four holds totaling 2,000,000 micros. Current read-only Cloud/Twilio/participant/liability qualification and packet/controller/suffix review pass. Only three private review files exist; no helper or execution authorization. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Exact plan approval or refusal is next. Approved deviations are the one-command execution process and this packet's ceiling; no other scope deviation.
+
 ## Current: R11 attended coordinator review-ready — 2026-09-21
 
 Owner-approved alternative 1 is locally implemented at backend `26404ff`. One future approved R11 operation can now use one Terminal command for hidden input, local timing, exact controller start, owner-operated browser pause and mandatory closeout; every child mode remains at most once and the underlying zero-traffic/containment guards are unchanged. The approved one-future-packet ceiling is 2,500,000 micros for one 500,000-micro flow while preserving all four holds. No packet or live action occurred and that allowance is unused. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Next is an owner-selected window and separately authorized read-only refresh/fresh packet, then exact packet review and execution approval. Approved execution-process deviation only; no other scope deviation.
