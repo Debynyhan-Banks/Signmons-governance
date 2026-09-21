@@ -31,7 +31,7 @@ Selecting a window alone grants no live authority.
 
 ## Supervised R11 browser sequence
 
-After the approved controller returns `READY_FOR_R11`, the implementer must immediately give the owner the exact HTTPS `/customer-intake` URL and explicitly say to open it in the attended browser. The owner then completes this sequence without placing private values in chat:
+After the approved controller returns `READY_FOR_R11`, the implementer must immediately give the owner the exact HTTPS `/customer-intake` URL and explicitly say to open it in an already-visible normal browser. The implementer must not create or navigate a task-controlled browser tab and must not click, type or submit in the live page. The owner reports exactly `R11_PAGE_VISIBLE_NOT_STARTED` after the untouched page is visible; only then may the owner complete this sequence without placing private values in chat:
 
 1. Open the exact returned URL and select **Start a new request**.
 2. Enter the service issue and continue. Skip optional email and appointment-text enrollment unless the reviewed packet expressly includes them; neither is required for P06.

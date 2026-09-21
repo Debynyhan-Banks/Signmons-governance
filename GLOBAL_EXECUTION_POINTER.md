@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: exact R11 7:30 AM packet ready; visible handoff repaired — 2026-09-21
+
+Fresh plan `85fc768c-9655-402c-90bd-7d6b3ae99b73` is prepared for 7:30–8:00 AM Eastern, one 7:35–7:50 runtime and closeout by 8:00 on enabled11. The owner now opens the returned URL manually and must report `R11_PAGE_VISIBLE_NOT_STARTED` before selecting start; the implementer performs no browser action. Read-only qualification and 31 focused tests pass. No helper, authorization or live action exists. P06 remains 12/14; exact execution approval or refusal is next. Approved procedure repair only; no scope or acceptance change.
+
 ## Current: R11 browser start consumed; shutdown verified — 2026-09-21
 
 Plan `b11c7f84-937b-44de-8b49-d60bb629c396` reached the exact enabled10 zero-traffic revision, but R11 did not complete. An implementer-controlled Chrome tab consumed the one allowed browser start before owner visibility was confirmed; one fictional continuation occurred with no private participant input, provider request, address request, submission or job. The later visible-tab start returned HTTP 429 and was not retried. Owner-run closeout returned `R12_RUNTIME_CLOSEOUT_VERIFIED`; the tag is absent and baseline traffic remains 100%. The plan is consumed. P06 remains 12/14 with R11/full R12 open. Execution-procedure deviation disclosed; no scope or acceptance change.
