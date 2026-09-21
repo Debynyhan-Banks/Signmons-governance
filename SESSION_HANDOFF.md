@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: R11 deploy-binding local repair complete; future run separately gated — 2026-09-21
+
+Owner-approved alternative 1 is implemented at backend `33d7735`: exact plan-derived Cloud Run suffix validation catches the consumed enabled14/enabled13 mismatch, and closeout accepts only exact matching already-revoked authority. Focused suites pass 33/33 and all required local/governance checks pass. No packet, LOGIN, database operation, deployment or provider/customer action occurred. The consumed plan and one-packet ceiling allowance remain unusable. P06 remains 12/14 with R11/full R12 open. Next requires a new owner-selected window, separately authorized refresh/packet preparation with a fresh ceiling decision, then separate execution approval. Backend evidence: `evidence/APP-013/p06-r11-deploy-binding-local-repair.md`. Original dirty APP-010 checkout preserved. No scope deviation beyond approved alternative 1.
+
 ## Current: enabled14 run consumed at deploy binding; closeout verified — 2026-09-21
 
 Plan `093447e7-c3cb-4db4-bdf2-53088a14729f` opened LOGIN and activated/read back the exact approval, then stopped at `DEPLOY_NO_TRAFFIC`: target revision was enabled14 but the copied command retained `--revision-suffix=app013p06enabled13`. Containment revoked approval; no browser/provider action occurred. Owner-run closeout returned `R12_RUNTIME_CLOSEOUT_VERIFIED`; independent Cloud readback confirms enabled14 and enabled tag absent with baseline traffic 100%. The plan, commands and one-packet ceiling allowance are consumed. `APP013_P06_R11_DEPLOY_BINDING_CHANGE_REQUEST.md` awaits owner decision for local repair/testing only. P06 remains 12/14 with R11/full R12 open. Backend evidence: `evidence/APP-013/p06-r11-1115-deploy-binding-stop-closeout.md`. Original dirty APP-010 checkout preserved. No scope deviation implemented.

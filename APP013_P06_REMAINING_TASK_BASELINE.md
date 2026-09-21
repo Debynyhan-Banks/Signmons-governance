@@ -1,5 +1,9 @@
 # P06 remaining-work reconciliation — review baseline v1
 
+## Current: 12/14 complete; R11 deploy-binding repair complete locally — 2026-09-21
+
+Backend `33d7735` fixes the demonstrated suffix-binding and already-revoked closeout defects; focused and required gates pass with no packet or live action. The consumed enabled14 plan and its one-packet ceiling allowance cannot be reused. R11 and full R12 remain open. Next requires a new window and separately approved read-only refresh/packet preparation, including a fresh ceiling decision. No scope deviation beyond approved alternative 1.
+
 ## Current: 12/14 complete; enabled14 run consumed before deployment — 2026-09-21
 
 Plan `093447e7-c3cb-4db4-bdf2-53088a14729f` activated then stopped because its generated deploy suffix remained enabled13 while its reviewed target was enabled14. Containment and explicit closeout verified the disabled baseline; no browser/provider action occurred. The plan and one-packet ceiling allowance are consumed. R11 and full R12 remain open. `APP013_P06_R11_DEPLOY_BINDING_CHANGE_REQUEST.md` requires an owner decision before bounded local repair/testing. No scope deviation implemented.

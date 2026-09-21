@@ -1,6 +1,10 @@
 # APP-013/P06 R11 deploy-binding change request
 
-Status: OWNER DECISION REQUIRED. Section APP-013/P06/R11 remains open; P06 remains 12/14.
+Status: ALTERNATIVE 1 APPROVED AND LOCALLY COMPLETE. Section APP-013/P06/R11 remains open; P06 remains 12/14.
+
+## Decision and implementation result
+
+The owner approved alternative 1 for local repair/testing only. Backend `33d7735` adds exact plan-derived Cloud Run suffix derivation/validation and accepts an already-revoked approval only when both controlled digests match the reviewed plan. Focused controller/runtime-packet suites pass 33/33; a read-only fixture rejects the consumed enabled14 helper's stale enabled13 suffix before action. Build, lint, architecture, formatting, backend/governance consistency, frozen baseline and all 21 governance regressions pass. No packet or live action occurred. Backend evidence: `evidence/APP-013/p06-r11-deploy-binding-local-repair.md`.
 
 ## Demonstrated gap
 
