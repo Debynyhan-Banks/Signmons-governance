@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: enabled15 preview expiry confirmed; no further defect inferred — 2026-09-21
+
+Operation `6143ce56-d167-4d09-aa2e-004a946d8219` proves enabled15 start/continue and verification returned 200, while draft preview arrived at 12:05:40 PM, 40.183976 seconds after exact runtime expiry, and returned 503 immediately. No retry, address request, submit or job occurred; closeout is CLOSED with no failures. P06 remains 12/14 with R11/full R12 open. Next should be a future 45-minute staged support window prepared ahead, with fresh ceiling/read-only packet and execution approvals. Backend evidence: `evidence/APP-013/p06-r11-preview-diagnostic-result.md`. Original dirty APP-010 checkout preserved. No scope deviation.
+
 ## Current: enabled15 preview unconfirmed; safe closeout complete — 2026-09-21
 
 Plan `d585d67e-69d1-46e0-bad1-7165e1fb6502` reached READY and one phone verification, but **Preview validated draft** displayed the generic outcome-unconfirmed message near the 12:05 PM runtime expiry. The owner did not retry or submit and ran mandatory closeout; private status is CLOSED with no failures at 12:06:52 PM. Operation `6143ce56-d167-4d09-aa2e-004a946d8219` is proposed for one narrow read-only enabled15 logging query from 12:10–12:25 PM; it is not authorized. P06 remains 12/14 with R11/full R12 open. Backend evidence: `evidence/APP-013/p06-r11-1145-preview-unconfirmed-closeout.md`. Original dirty APP-010 checkout preserved. No scope deviation.

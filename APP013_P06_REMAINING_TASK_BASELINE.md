@@ -1,5 +1,9 @@
 # P06 remaining-work reconciliation — review baseline v1
 
+## Current: 12/14 complete; enabled15 preview failure confirmed as expiry — 2026-09-21
+
+The draft preview reached enabled15 40.183976 seconds after packet expiry and returned 503; prior journey and verification calls returned 200. No retry, submit or job occurred; closeout is verified. R11 and full R12 remain open. Next requires a future staged 45-minute support window and fresh separate approvals. No scope deviation.
+
 ## Current: 12/14 complete; enabled15 preview unconfirmed and closed — 2026-09-21
 
 The enabled15 journey reached phone verification but draft preview became unconfirmed near packet expiry. No retry, submit or job result occurred; mandatory closeout is verified. A narrow read-only enabled15 logging diagnostic is proposed but unapproved. R11 and full R12 remain open. No scope deviation.

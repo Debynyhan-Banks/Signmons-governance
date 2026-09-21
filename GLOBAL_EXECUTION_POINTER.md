@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: enabled15 R11 preview confirmed expired; future staged window required — 2026-09-21
+
+Read-only operation `6143ce56-d167-4d09-aa2e-004a946d8219` confirms start/continue and both verification requests returned 200, then draft preview reached enabled15 at `16:05:40.183976Z` and returned 503 in 0.003424782 seconds, 40.183976 seconds after exact packet expiry. This is a timing failure, not another phone, address or deployment defect. No retry, address request, submit or job occurred; closeout remains verified. The operation is consumed. P06 remains 12/14 with R11/full R12 open. Next should use a future 45-minute staged support window prepared ahead: 15 minutes for LOGIN/operator readiness, one fixed 15-minute connected runtime, and 15 minutes for closeout; fresh ceiling, packet and execution approvals remain separate. Backend evidence: `evidence/APP-013/p06-r11-preview-diagnostic-result.md`. No scope deviation.
+
 ## Current: enabled15 R11 preview unconfirmed; closeout verified; diagnostic decision required — 2026-09-21
 
 Plan `d585d67e-69d1-46e0-bad1-7165e1fb6502` reached READY on enabled15 and the owner completed one phone verification, but **Preview validated draft** returned the generic outcome-unconfirmed screen. No retry, review, submit or job result occurred. The packet expired at 12:05 PM; owner closeout at 12:06:52 PM returned `R12_RUNTIME_CLOSEOUT_VERIFIED` with no failures. Static source makes expiry the leading explanation but does not prove the exact response. `APP013_P06_R11_PREVIEW_DIAGNOSTIC.md` proposes one narrow read-only enabled15 logging query, operation `6143ce56-d167-4d09-aa2e-004a946d8219`; it is unapproved. P06 remains 12/14 with R11/full R12 open. Backend evidence: `evidence/APP-013/p06-r11-1145-preview-unconfirmed-closeout.md`. No scope deviation.

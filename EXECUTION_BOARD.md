@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: APP-013/P06 R11 enabled15 failure confirmed as expiry — 2026-09-21
+
+The exact draft preview arrived 40.183976 seconds after packet expiry and returned HTTP 503; preceding start/continue/verification calls were 200. No retry, address request, submit or job occurred, and closeout is verified. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Next is a future staged 45-minute support window with fresh separate approvals. No scope deviation.
+
 ## Current: APP-013/P06 R11 preview unconfirmed; read-only diagnostic decision required — 2026-09-21
 
 Enabled15 reached phone verification, then draft preview became unconfirmed near the exact 12:05 PM packet expiry. No retry or submit occurred; closeout is verified with no failures. Proposed operation `6143ce56-d167-4d09-aa2e-004a946d8219` would read only minimal enabled15 HTTP metadata. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. No scope deviation.
