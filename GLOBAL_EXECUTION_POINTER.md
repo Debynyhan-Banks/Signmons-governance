@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: enabled19 fixed-request address diagnostic ready; read unapproved — 2026-09-21
+
+Private operation `c5270e94-b482-45c0-a44c-f9ac2d3c8b6f` is prepared for one owner-attended read-only PostgreSQL 18 lookup from 5:00–5:30 PM Eastern. It binds only the enabled19 retained request to its same-tenant `AddressVerificationRequest`/`AddressVerificationOperation` stage and returns a minimal allowlisted classification. Four private preparation files pass syntax, mode, hash, inventory and actual no-action review; no authorization, attempt, result, database connection or external action exists. Exact owner approval or refusal is next. Do not create another packet or browser run. P06 remains 12/14 with R11/full R12 open. See `APP013_P06_R11_ENABLED19_ADDRESS_STAGE_DIAGNOSTIC.md`. No scope deviation.
+
 ## Current: enabled19 reached controlled address uncertainty; closeout verified — 2026-09-21
 
 Plan `3a4a3178-a5c1-40a2-8043-bf9f30a1b284` reached READY on zero-traffic enabled19 and the owner completed the single attended browser journey through reviewed final submit. The exact request returned controlled `UNCERTAIN` with `jobCreated:false`; source places this before the final admission transaction and job write, while the exact address-operation failure stage remains unknown. The owner did not retry or create another request and entered `STOP`. The coordinator returned `R11_ATTENDED_COORDINATOR_CLOSED_BROWSER_STOP`; private revocation and closeout are `CLOSED` with no failures, and the owner received `R12_RUNTIME_CLOSEOUT_VERIFIED`. The plan and allowance are consumed. P06 remains 12/14 with R11/full R12 open. Next is one separately approved fixed-reference read-only address-stage diagnostic, not another live packet. Backend evidence: `evidence/APP-013/p06-r11-1600-outcome-unconfirmed-closeout.md`. Approved deviations were the one-command process and the consumed packet ceiling; no other scope deviation.
