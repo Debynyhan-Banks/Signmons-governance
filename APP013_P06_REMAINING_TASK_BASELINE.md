@@ -1,5 +1,9 @@
 # P06 remaining-work reconciliation — review baseline v1
 
+## Current: R11 log cause unconfirmed; durable address-stage read next — 2026-09-21
+
+The single approved Cloud Logging read returned zero matching sanitized diagnostics and is consumed. The exact request ID provides a narrower durable seam at `AddressVerificationRequest`. Proposed operation `afd29a7b-b2aa-4c12-b894-76e85265dbec`, 8:30–8:45 AM Eastern, would read only its same-tenant operation stage and return an allowlisted class. No authorization or database connection exists. P06 stays 12/14 with R11/full R12 open. Exact owner approval or refusal is next. No scope or acceptance change.
+
 ## Current: privacy-safe R11 refusal-cause diagnostic ready — 2026-09-21
 
 The no-job receipt leaves one bounded missing fact: which sanitized fail-closed boundary produced enabled11's HTTP 409. Proposed operation `045140b2-db62-4e3f-a3e5-398aaaf4b477`, 8:20–8:35 AM Eastern, performs one exact-revision, 15-second Cloud Logging read and retains only an allowlisted cause class and minimal metadata. No query, authorization or external action occurred. Exact owner approval or refusal is next. P06 stays 12/14 with R11/full R12 open. Diagnostic preparation only; no scope or acceptance change.

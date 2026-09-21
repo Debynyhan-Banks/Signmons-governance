@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: R11 log read unconfirmed; address-stage diagnostic proposed — 2026-09-21
+
+Approved Cloud Logging operation `045140b2-db62-4e3f-a3e5-398aaaf4b477` ran once and returned zero matching sanitized diagnostic records. It is unconfirmed, consumed and was not retried. Static inspection identifies the fixed request's durable address-operation alias as the next narrower seam. Proposed read-only database operation `afd29a7b-b2aa-4c12-b894-76e85265dbec`, 8:30–8:45 AM Eastern, would return only the allowlisted stage for exact request `2f284c84-c8be-42e7-a8e7-c6a7febd6392`; it is not authorized. P06 remains 12/14 with R11/full R12 open. No scope or acceptance change.
+
 ## Current: exact R11 refusal-cause diagnostic proposed — 2026-09-21
 
 After the no-job receipt, static inspection found the smallest next step: one read-only Cloud Logging query for the sanitized exception diagnostic around the exact enabled11 HTTP 409. Operation `045140b2-db62-4e3f-a3e5-398aaaf4b477`, proposed 8:20–8:35 AM Eastern, binds the project, service, revision and 15-second historical interval and retains only an allowlisted refusal class plus minimal event metadata. No query, authorization, network request or mutation occurred. Exact owner approval or refusal is next. P06 remains 12/14 with R11/full R12 open. Diagnostic preparation only; no scope or acceptance change.

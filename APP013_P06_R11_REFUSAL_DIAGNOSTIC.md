@@ -1,6 +1,6 @@
 # APP-013 / P06 R11 truthful-refusal cause diagnostic
 
-Status: review-ready read-only Cloud Logging diagnostic; not authorized or executed.
+Status: executed once; zero matching diagnostic logs; unconfirmed and consumed.
 
 ## Requirement traceability
 
@@ -13,6 +13,8 @@ Status: review-ready read-only Cloud Logging diagnostic; not authorized or execu
 ## Exact bounded action
 
 Operation `045140b2-db62-4e3f-a3e5-398aaaf4b477` is proposed for 8:20–8:35 AM Eastern on September 21, 2026. Read Cloud Logging once for project `signmons`, Cloud Run service `signmons-calldesk-staging`, exact revision `signmons-calldesk-staging-app013p06enabled11` and event interval `2026-09-21T11:49:35Z` through `2026-09-21T11:49:50Z`. Select only the sanitized exception-diagnostic log for the HTTP 409. Do not query request bodies, headers, tokens, phone, address, code, name, narrative, secret payloads or broader time ranges.
+
+The owner approved the operation exactly. Its one query returned zero matching sanitized diagnostic records. The result is `UNCONFIRMED` with reason `DIAGNOSTIC_COUNT`; no raw payload was retained. The operation is consumed and must not be rerun. The next proposed check is the fixed-request durable address-stage lookup in `APP013_P06_R11_ADDRESS_STAGE_DIAGNOSTIC.md`.
 
 Classify the result as exactly one of `CUSTOMER_INTAKE_CHANGED`, `CURRENT_VERIFICATION_UNAVAILABLE`, `LIFE_SAFETY_REFUSAL`, `OTHER_SANITIZED_409`, `NO_DIAGNOSTIC_LOG` or `AMBIGUOUS`. Persist only the class, exact revision, event timestamp/status, operation ID and query boundaries. Do not persist the raw log payload if it contains data outside that allowlist.
 

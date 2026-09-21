@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: exact R11 address-stage read proposed — 2026-09-21
+
+The one approved sanitized-log query returned zero matches and is consumed without a cause classification. Proposed operation `afd29a7b-b2aa-4c12-b894-76e85265dbec`, 8:30–8:45 AM Eastern, performs one fixed-request read-only lookup of the durable address-operation alias and returns only an allowlisted stage. No database connection or authorization exists. Exact owner approval or refusal is next. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. No scope or acceptance change.
+
 ## Current: bounded R11 refusal-cause diagnostic ready — 2026-09-21
 
 Proposed operation `045140b2-db62-4e3f-a3e5-398aaaf4b477`, 8:20–8:35 AM Eastern, reads only the sanitized Cloud Logging diagnostic for the exact enabled11 HTTP 409 and persists one allowlisted refusal class. It excludes request bodies, participant fields and broader logs. No query, authorization or external action occurred. Exact owner approval or refusal is next. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Diagnostic preparation only; no scope or acceptance change.
