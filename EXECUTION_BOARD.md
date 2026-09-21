@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: repair image required before fresh R11 packet — 2026-09-21
+
+Read-only target/provider refresh is safe, but the registry contains no image for repaired backend `1819e84`; reusing the old `53037fb` image would preserve the demonstrated defect. No packet was created. The exact one-attempt Cloud Build and temporary three-grant sequence is reviewable in `APP013_P06_R11_REPAIR_IMAGE_BUILD_PROPOSAL.md` and remains unapproved. P06 stays 12/14; R11/full R12 open. No external mutation occurred. No scope deviation.
+
 ## Current: R11 category-binding repair locally complete — 2026-09-21
 
 Owner-approved alternative 1 is implemented at backend `1819e84`. The controlled runtime supplies its activation-selected service-category ID internally; the reader validates and checks that exact ID instead of treating the customer's `issueCategory` enum as a catalog name. Disposable PostgreSQL 18, restricted-role, synthetic provider and 390/1440 connected browser checks pass, as do focused/full tests, build, lint and architecture. Live provider calls were zero. No packet or external action was authorized or performed. P06 remains 12/14 with R11/full R12 open. Next input is a new owner-selected supervised window; read-only refresh/packet preparation and execution remain separate approvals. No scope deviation beyond approved alternative 1.

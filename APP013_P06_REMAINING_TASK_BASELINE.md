@@ -1,5 +1,9 @@
 # P06 remaining-work reconciliation — review baseline v1
 
+## Current: 12/14 complete; repair image blocks fresh R11 packet — 2026-09-21
+
+The authorized read-only 9:15 AM refresh found no immutable image containing repair `1819e84`. Reusing the existing image would repeat the demonstrated category refusal, so no packet was created. One separately approved repair-image build is proposed in `APP013_P06_R11_REPAIR_IMAGE_BUILD_PROPOSAL.md`; packet and execution approvals remain later gates. R11/full R12 remain open. No external mutation or scope deviation.
+
 ## Current: 12/14 complete; R11 category repair local-only complete, R11/full R12 open — 2026-09-21
 
 Owner-approved change-request alternative 1 is complete at backend `1819e84`. Controlled admission now uses the activation-selected server-owned category ID for current-state, authority and job admission while keeping the browser issue enum separate. Disposable PostgreSQL 18 and synthetic connected-browser evidence prove the previously failing human-name/enum mismatch, replay, concurrency, correction and refusal paths without any live provider call. This local repair does not satisfy R11's live correlated-journey finish or full R12. No packet or external action occurred. Next requires a new owner-selected window, separate read-only refresh/packet authorization and separate exact execution approval. No scope deviation beyond approved alternative 1.

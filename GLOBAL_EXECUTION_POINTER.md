@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: R11 packet preparation blocked by missing repair image — 2026-09-21
+
+The authorized read-only 9:15 AM refresh passed Cloud/Twilio/participant eligibility, but registry history proves no immutable image contains backend repair `1819e84`; the newest image is still from source `53037fb`. Packet generation stopped before IDs, private files, helpers or authorizations. `APP013_P06_R11_REPAIR_IMAGE_BUILD_PROPOSAL.md` now presents one exact, capped build with temporary scoped grants and mandatory removal; it is not authorized. No build, IAM change, registry write, LOGIN, deployment or provider/customer action occurred. P06 remains 12/14 with R11/full R12 open. Owner approval/refusal of the build proposal is next. No scope deviation.
+
 ## Current: R11 category binding repaired locally; fresh supervised window remains gated — 2026-09-21
 
 The owner approved `APP013_P06_R11_CATEGORY_BINDING_CHANGE_REQUEST.md` alternative 1 for local repair/testing only. Backend `1819e84` now passes the activation-selected category ID through the server-owned runtime composition and uses it for exact current-category, authority and admission checks while retaining the customer-facing issue enum separately. Disposable PostgreSQL 18 and synthetic 390/1440 browser paths prove `COOLING` can bind to internal category `Regular initial visit / diagnosis`; focused 145 tests, full 2,360 tests/3 skips, build, lint and architecture pass with zero live provider calls. No packet, LOGIN, live database mutation, activation, deployment, provider request, verification code or customer action occurred. P06 remains 12/14; R11/full R12 remain open. Next requires a new owner-selected window, separately authorized read-only refresh and packet preparation, then separate exact execution approval. No scope deviation beyond approved alternative 1.
