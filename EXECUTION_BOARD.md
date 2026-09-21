@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: APP-013/P06 R11 preview unconfirmed; read-only diagnostic decision required — 2026-09-21
+
+Enabled15 reached phone verification, then draft preview became unconfirmed near the exact 12:05 PM packet expiry. No retry or submit occurred; closeout is verified with no failures. Proposed operation `6143ce56-d167-4d09-aa2e-004a946d8219` would read only minimal enabled15 HTTP metadata. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. No scope deviation.
+
 ## Current: enabled15 R11 packet ready for exact execution approval — 2026-09-21
 
 Fresh plan `d585d67e-69d1-46e0-bad1-7165e1fb6502` binds 11:45 AM–12:15 PM support, one 11:50 AM–12:05 PM connected run, corrected enabled15 suffix validation and the approved one-packet 1,500,000-micro phone ceiling. Only three private review files exist; no helper or execution authorization. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Exact plan approval or refusal is next. Approved deviation is limited to this packet's ceiling.

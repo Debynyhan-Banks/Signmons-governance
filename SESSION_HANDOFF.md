@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: enabled15 preview unconfirmed; safe closeout complete — 2026-09-21
+
+Plan `d585d67e-69d1-46e0-bad1-7165e1fb6502` reached READY and one phone verification, but **Preview validated draft** displayed the generic outcome-unconfirmed message near the 12:05 PM runtime expiry. The owner did not retry or submit and ran mandatory closeout; private status is CLOSED with no failures at 12:06:52 PM. Operation `6143ce56-d167-4d09-aa2e-004a946d8219` is proposed for one narrow read-only enabled15 logging query from 12:10–12:25 PM; it is not authorized. P06 remains 12/14 with R11/full R12 open. Backend evidence: `evidence/APP-013/p06-r11-1145-preview-unconfirmed-closeout.md`. Original dirty APP-010 checkout preserved. No scope deviation.
+
 ## Current: fresh enabled15 11:45 AM R11 packet ready; execution unapproved — 2026-09-21
 
 Private plan `d585d67e-69d1-46e0-bad1-7165e1fb6502` binds repaired source/image, exact enabled15 suffix, database support 11:45 AM–12:15 PM, one 11:50 AM–12:05 PM supervised runtime, closeout by 12:15 PM and the approved one-packet 1,500,000-micro ceiling while preserving two existing holds. Read-only Cloud/Twilio/recipient qualification passes; database state remains guarded execution preflight. Exactly three mode-0600 preparation files exist with no helper or execution authorization. Exact plan approval is next. P06 remains 12/14 with R11/full R12 open. Backend evidence: `evidence/APP-013/p06-r11-1145-packet-review.md`. Original dirty APP-010 checkout preserved. Approved deviation is limited to this packet's ceiling.

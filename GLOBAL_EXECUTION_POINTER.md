@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: enabled15 R11 preview unconfirmed; closeout verified; diagnostic decision required — 2026-09-21
+
+Plan `d585d67e-69d1-46e0-bad1-7165e1fb6502` reached READY on enabled15 and the owner completed one phone verification, but **Preview validated draft** returned the generic outcome-unconfirmed screen. No retry, review, submit or job result occurred. The packet expired at 12:05 PM; owner closeout at 12:06:52 PM returned `R12_RUNTIME_CLOSEOUT_VERIFIED` with no failures. Static source makes expiry the leading explanation but does not prove the exact response. `APP013_P06_R11_PREVIEW_DIAGNOSTIC.md` proposes one narrow read-only enabled15 logging query, operation `6143ce56-d167-4d09-aa2e-004a946d8219`; it is unapproved. P06 remains 12/14 with R11/full R12 open. Backend evidence: `evidence/APP-013/p06-r11-1145-preview-unconfirmed-closeout.md`. No scope deviation.
+
 ## Current: fresh enabled15 R11 11:45 AM packet ready; execution approval required — 2026-09-21
 
 Owner-authorized read-only qualification and preparation produced plan `d585d67e-69d1-46e0-bad1-7165e1fb6502`: repaired enabled15, database support 11:45 AM–12:15 PM, one 11:50 AM–12:05 PM connected run and closeout by 12:15 PM. It preserves two holds totaling 1,000,000 micros and binds the newly approved one-packet 500,000-micro flow/1,500,000-micro ceiling. Cloud/Twilio/recipient state is eligible; database state remains guarded execution preflight. Production packet/controller/deploy-suffix review passes. Exactly three private review files exist; no helper, authorization or live action exists. Exact execution approval is next. P06 remains 12/14 with R11/full R12 open. Backend evidence: `evidence/APP-013/p06-r11-1145-packet-review.md`. Approved deviation is limited to this packet's ceiling.

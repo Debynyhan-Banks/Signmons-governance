@@ -1,5 +1,9 @@
 # P06 remaining-work reconciliation — review baseline v1
 
+## Current: 12/14 complete; enabled15 preview unconfirmed and closed — 2026-09-21
+
+The enabled15 journey reached phone verification but draft preview became unconfirmed near packet expiry. No retry, submit or job result occurred; mandatory closeout is verified. A narrow read-only enabled15 logging diagnostic is proposed but unapproved. R11 and full R12 remain open. No scope deviation.
+
 ## Current: 12/14 complete; fresh enabled15 11:45 AM packet ready — 2026-09-21
 
 Plan `d585d67e-69d1-46e0-bad1-7165e1fb6502` binds corrected enabled15 deployment validation, the approved one-packet 1,500,000-micro ceiling, database support 11:45 AM–12:15 PM, one 11:50 AM–12:05 PM R11 runtime and closeout by 12:15 PM. Read-only qualification passes; no helper or execution authority exists. R11 and full R12 remain open. Exact plan approval is next. Approved deviation is limited to this packet's ceiling.
