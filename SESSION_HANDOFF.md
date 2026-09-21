@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: enabled14 run consumed at deploy binding; closeout verified — 2026-09-21
+
+Plan `093447e7-c3cb-4db4-bdf2-53088a14729f` opened LOGIN and activated/read back the exact approval, then stopped at `DEPLOY_NO_TRAFFIC`: target revision was enabled14 but the copied command retained `--revision-suffix=app013p06enabled13`. Containment revoked approval; no browser/provider action occurred. Owner-run closeout returned `R12_RUNTIME_CLOSEOUT_VERIFIED`; independent Cloud readback confirms enabled14 and enabled tag absent with baseline traffic 100%. The plan, commands and one-packet ceiling allowance are consumed. `APP013_P06_R11_DEPLOY_BINDING_CHANGE_REQUEST.md` awaits owner decision for local repair/testing only. P06 remains 12/14 with R11/full R12 open. Backend evidence: `evidence/APP-013/p06-r11-1115-deploy-binding-stop-closeout.md`. Original dirty APP-010 checkout preserved. No scope deviation implemented.
+
 ## Current: enabled14 11:15 AM R11 packet ready; execution unapproved — 2026-09-21
 
 Fresh private plan `093447e7-c3cb-4db4-bdf2-53088a14729f` binds repaired source/image, enabled14, database support 11:15–11:45 AM, one 11:20–11:35 supervised runtime, closeout by 11:45 and the approved one-packet 1,500,000-micro phone ceiling while retaining both existing holds. Read-only Cloud/Twilio/recipient qualification passes; database state remains guarded execution preflight. Packet/controller review and 31 tests pass; exactly three mode-0600 preparation files exist with no helper or execution authorization. Exact plan approval is next. P06 remains 12/14 with R11/full R12 open. Backend evidence: `evidence/APP-013/p06-r11-1115-packet-review.md`. Original dirty APP-010 checkout preserved. Approved deviation is limited to this packet's ceiling.

@@ -1,5 +1,9 @@
 # P06 remaining-work reconciliation — review baseline v1
 
+## Current: 12/14 complete; enabled14 run consumed before deployment — 2026-09-21
+
+Plan `093447e7-c3cb-4db4-bdf2-53088a14729f` activated then stopped because its generated deploy suffix remained enabled13 while its reviewed target was enabled14. Containment and explicit closeout verified the disabled baseline; no browser/provider action occurred. The plan and one-packet ceiling allowance are consumed. R11 and full R12 remain open. `APP013_P06_R11_DEPLOY_BINDING_CHANGE_REQUEST.md` requires an owner decision before bounded local repair/testing. No scope deviation implemented.
+
 ## Current: 12/14 complete; enabled14 11:15 AM packet ready — 2026-09-21
 
 Fresh plan `093447e7-c3cb-4db4-bdf2-53088a14729f` binds the approved one-packet 1,500,000-micro ceiling, database support 11:15–11:45 AM, one 11:20–11:35 R11 runtime and closeout by 11:45. Read-only qualification passes; no helper or execution authority exists. R11 and full R12 remain open. Exact plan approval is next. Approved deviation is limited to this packet's ceiling.

@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: APP-013/P06 R11 local deploy-binding repair decision required — 2026-09-21
+
+The enabled14 run activated then stopped before deployment because its generated command retained enabled13's suffix. Automatic revocation and owner closeout completed; enabled14 is absent, the enabled tag is absent and baseline traffic remains 100%. `APP013_P06_R11_DEPLOY_BINDING_CHANGE_REQUEST.md` proposes a bounded local suffix-invariant and already-revoked closeout repair. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. No new packet or live action is authorized. No scope deviation implemented.
+
 ## Current: enabled14 R11 packet ready for exact approval — 2026-09-21
 
 Fresh plan `093447e7-c3cb-4db4-bdf2-53088a14729f` passed read-only qualification and binds 11:15–11:45 AM support, one 11:20–11:35 connected run, closeout by 11:45 and the approved one-packet 1,500,000-micro phone ceiling. Only three private review files exist; no helper or execution authorization. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Exact plan approval or refusal is next. Approved deviation is limited to this packet's ceiling.
