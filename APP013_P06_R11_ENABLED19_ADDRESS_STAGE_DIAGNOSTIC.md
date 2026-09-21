@@ -1,6 +1,8 @@
 # APP-013 / P06 R11 enabled19 address-stage diagnostic
 
-Status: prepared and locally verified; external read not authorized.
+Status: owner approved the exact diagnostic and window; authorization installed and no-action check passed; owner-operated execution pending.
+
+The owner approved this diagnostic and the 5:00–5:30 PM Eastern window on September 21. The exact authorization is installed. Actual preflight returned `R11_ADDRESS_STAGE_CHECK_PASSED_NO_ACTION`; no attempt, database connection or result exists. Preparation descriptions below record the pre-approval state.
 
 ## Requirement traceability
 
