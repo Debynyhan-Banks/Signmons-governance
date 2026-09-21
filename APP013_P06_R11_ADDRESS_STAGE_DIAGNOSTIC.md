@@ -1,6 +1,6 @@
 # APP-013 / P06 R11 address-stage diagnostic
 
-Status: proposed fixed-request read-only database diagnostic; not authorized or executed.
+Status: executed once; request failed before address reservation; consumed.
 
 ## Requirement traceability
 
@@ -13,6 +13,8 @@ Status: proposed fixed-request read-only database diagnostic; not authorized or 
 ## Exact bounded action
 
 Operation `afd29a7b-b2aa-4c12-b894-76e85265dbec` is proposed for 8:30–8:45 AM Eastern on September 21, 2026. Using owner-operated hidden `neondb_owner` input, connect once to the fixed P06 child database, verify exact database/user/PostgreSQL 18 identity, begin a repeatable-read read-only transaction and look up only `AddressVerificationRequest.id = 2f284c84-c8be-42e7-a8e7-c6a7febd6392` joined to its same-tenant `AddressVerificationOperation`. Return only row count, opaque operation ID, state, created timestamp and whether an execution deadline exists; then roll back and close.
+
+The owner approved the operation exactly. It reserved once at 12:31:32Z and returned `R11_ADDRESS_STAGE_DIAGNOSTIC_BEFORE_ADDRESS_RESERVATION` at 12:31:44Z. Zero rows prove the request failed before any address reservation or provider call. The operation is consumed and must not be rerun. Static comparison then demonstrated the category-name/customer-enum mismatch recorded in `APP013_P06_R11_CATEGORY_BINDING_CHANGE_REQUEST.md`.
 
 Classify zero rows as `BEFORE_ADDRESS_RESERVATION`; one valid row as `ADDRESS_RESERVED`, `ADDRESS_DISPATCH_CLAIMED`, `ADDRESS_OBSERVED`, `ADDRESS_UNCERTAIN` or `ADDRESS_CANCELLED` from the allowlisted state. More than one row, wrong tenant, malformed state/ID/timestamp or connection ambiguity is unconfirmed. The lookup must not read phone proof, encrypted conversation data, participant fields, provider payloads, request bodies, secrets or unrelated rows.
 

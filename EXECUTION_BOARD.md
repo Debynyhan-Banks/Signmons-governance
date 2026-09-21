@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: R11 category-binding repair decision required — 2026-09-21
+
+The fixed-request read returned `BEFORE_ADDRESS_RESERVATION`. The configured internal category is `Regular initial visit / diagnosis`, while the browser's valid issue classifications are enums such as `HEATING` and `GENERAL`; controlled admission incorrectly compares them as the same name and deterministically returns 409. Change request `APP013_P06_R11_CATEGORY_BINDING_CHANGE_REQUEST.md` recommends using the activation's server-owned category ID for admission and retaining the browser enum as customer classification. No implementation or live action occurred. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Owner decision is next. No scope deviation implemented.
+
 ## Current: exact R11 address-stage read proposed — 2026-09-21
 
 The one approved sanitized-log query returned zero matches and is consumed without a cause classification. Proposed operation `afd29a7b-b2aa-4c12-b894-76e85265dbec`, 8:30–8:45 AM Eastern, performs one fixed-request read-only lookup of the durable address-operation alias and returns only an allowlisted stage. No database connection or authorization exists. Exact owner approval or refusal is next. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. No scope or acceptance change.

@@ -1,5 +1,9 @@
 # P06 remaining-work reconciliation — review baseline v1
 
+## Current: R11 deterministic pre-address mismatch; repair approval pending — 2026-09-21
+
+The fixed-request stage read proved failure before address reservation. Accepted bootstrap and current source then demonstrate the cause: browser issue enums and the internal human-readable service-category name are distinct, but controlled admission incorrectly requires equality. `APP013_P06_R11_CATEGORY_BINDING_CHANGE_REQUEST.md` recommends binding the existing server-owned allowed category ID while preserving the customer enum separately. No repair or live action is authorized. P06 stays 12/14 with R11/full R12 open. Owner approval/refusal of alternative 1 is next. No scope deviation implemented.
+
 ## Current: R11 log cause unconfirmed; durable address-stage read next — 2026-09-21
 
 The single approved Cloud Logging read returned zero matching sanitized diagnostics and is consumed. The exact request ID provides a narrower durable seam at `AddressVerificationRequest`. Proposed operation `afd29a7b-b2aa-4c12-b894-76e85265dbec`, 8:30–8:45 AM Eastern, would read only its same-tenant operation stage and return an allowlisted class. No authorization or database connection exists. P06 stays 12/14 with R11/full R12 open. Exact owner approval or refusal is next. No scope or acceptance change.

@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: R11 deterministic category-binding defect; owner repair decision required — 2026-09-21
+
+Read-only operation `afd29a7b-b2aa-4c12-b894-76e85265dbec` returned `BEFORE_ADDRESS_RESERVATION`, proving no Google Address request occurred. Static source and accepted bootstrap evidence demonstrate the 409 cause: the browser submits a customer enum such as `HEATING` or `GENERAL`, but controlled admission incorrectly requires that enum to equal the internal category name `Regular initial visit / diagnosis`. `APP013_P06_R11_CATEGORY_BINDING_CHANGE_REQUEST.md` recommends binding the server-owned allowed category ID while keeping the customer classification separate. No repair or new live action is authorized. P06 remains 12/14 with R11/full R12 open. Owner approval/refusal of alternative 1 is next. No scope deviation implemented.
+
 ## Current: R11 log read unconfirmed; address-stage diagnostic proposed — 2026-09-21
 
 Approved Cloud Logging operation `045140b2-db62-4e3f-a3e5-398aaaf4b477` ran once and returned zero matching sanitized diagnostic records. It is unconfirmed, consumed and was not retried. Static inspection identifies the fixed request's durable address-operation alias as the next narrower seam. Proposed read-only database operation `afd29a7b-b2aa-4c12-b894-76e85265dbec`, 8:30–8:45 AM Eastern, would return only the allowlisted stage for exact request `2f284c84-c8be-42e7-a8e7-c6a7febd6392`; it is not authorized. P06 remains 12/14 with R11/full R12 open. No scope or acceptance change.

@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: R11 pre-address refusal root cause demonstrated — 2026-09-21
+
+Operation `afd29a7b-b2aa-4c12-b894-76e85265dbec` returned `BEFORE_ADDRESS_RESERVATION` and is consumed. Static comparison proves the blocker: valid browser issue enums cannot equal the accepted internal category name, yet `controlledSubmissionReader` requires that exact name match before address reservation. `APP013_P06_R11_CATEGORY_BINDING_CHANGE_REQUEST.md` recommends passing the reviewed server-owned allowed category ID into the reader while preserving customer classification separately. No implementation, packet or live action occurred. Owner approval/refusal of alternative 1 is next. R11/full R12 remain open; P06 stays 12/14. Backend evidence: `evidence/APP-013/p06-r11-address-stage-result.md`. No scope deviation implemented.
+
 ## Current: R11 log diagnostic consumed; fixed address-stage read proposed — 2026-09-21
 
 Cloud Logging operation `045140b2-db62-4e3f-a3e5-398aaaf4b477` returned zero matching sanitized diagnostics and is unconfirmed, consumed and not retryable. Static inspection found the exact request ID becomes a durable `AddressVerificationRequest` alias only at address reservation. Proposed read-only database operation `afd29a7b-b2aa-4c12-b894-76e85265dbec`, 8:30–8:45 AM Eastern, would classify only that durable stage and is not authorized. Exact owner approval or refusal is next. R11/full R12 remain open; P06 stays 12/14. Backend evidence: `evidence/APP-013/p06-r11-refusal-log-diagnostic-result.md`. No scope or acceptance change.
