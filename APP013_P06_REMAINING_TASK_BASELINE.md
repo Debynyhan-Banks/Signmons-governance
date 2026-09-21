@@ -1,5 +1,9 @@
 # P06 remaining-work reconciliation — review baseline v1
 
+## Current: 12/14 complete; retained phone ceiling blocks R11 — 2026-09-21
+
+One valid staging hold and one valid controlled hold total the current 1,000,000-micro account ceiling. Enabled13's 500,000-micro phone flow therefore refused before durable reservation/Twilio. The diagnostic is consumed. Owner decision on `APP013_P06_R11_PHONE_CEILING_CHANGE_REQUEST.md` is required before a future packet can use the recommended 1,500,000-micro ceiling. R11 and full R12 remain open. No scope deviation implemented.
+
 ## Current: 12/14 complete; R11 stopped before phone reservation — 2026-09-21
 
 The consumed fixed-window diagnostic found zero durable verification reservation/observation rows for enabled13. No Twilio Verify call occurred, and the issue is now bounded to pre-reservation binding/approval/admission gates. A separately reviewed read-only fixed-policy admission-state diagnostic is next; no retry or live packet is authorized. R11 and full R12 remain open. No scope deviation.

@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: R11 phone admission ceiling exhausted — 2026-09-21
+
+The consumed read-only diagnostic proved two valid retained holds total the full 1,000,000-micro phone account ceiling, so enabled13's additional 500,000-micro flow refused before Twilio. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Owner decision on `APP013_P06_R11_PHONE_CEILING_CHANGE_REQUEST.md` is next; no ceiling change, packet or live action is authorized. No scope deviation implemented.
+
 ## Current: R11 phone request stopped before durable reservation — 2026-09-21
 
 The approved fixed-window database diagnostic found zero verification reservation/observation rows for enabled13, proving no Twilio Verify call occurred. The diagnostic is consumed with no retry or write. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. The smallest next step is a separately reviewed read-only fixed-policy admission-state diagnostic covering only the pre-reservation approval and retained-hold gates. No scope deviation.

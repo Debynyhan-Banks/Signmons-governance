@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: R11 blocked by exact retained phone ceiling — 2026-09-21
+
+Read-only operation `bd6a6f3e-6681-4c24-803b-e6ed44248511` returned `ACCOUNT_CEILING_EXCEEDED`: one valid staging and one valid controlled hold total 1,000,000 USD micros. Enabled13's new 500,000-micro bound could not fit, so no durable reservation or Twilio request occurred. Current approval is disabled with matching digest after closeout; packet reuse false; invalid rows zero. The operation is consumed and was not retried. `APP013_P06_R11_PHONE_CEILING_CHANGE_REQUEST.md` recommends preserving both holds and allowing exactly one future packet at 1,500,000 micros. No alternative is approved yet. P06 remains 12/14 with R11/full R12 open. Backend evidence: `evidence/APP-013/p06-r11-phone-admission-state-result.md`. Original dirty APP-010 checkout preserved. No scope deviation implemented.
+
 ## Current: enabled13 stopped before phone reservation; diagnostic consumed — 2026-09-21
 
 Owner-approved read-only operation `ee81f95c-698c-40fd-949c-2560d2880c72` returned `R11_VERIFICATION_OUTCOME_DIAGNOSTIC_NO_RESERVATION`: zero durable verification reservation/observation rows exist in the fixed enabled13 interval. Reservation precedes adapter invocation, so no Twilio Verify call occurred. The operation is consumed and was not retried. Static inspection limits the refusal to pre-reservation binding/consent/approval/admission gates; the controlled admission account ceiling combines historical staging and controlled holds and is the leading candidate, but remains unproven. Next requires a separately reviewed read-only fixed-policy admission-state diagnostic. P06 remains 12/14 with R11/full R12 open. Backend evidence: `evidence/APP-013/p06-r11-verification-outcome-result.md`. Original dirty APP-010 checkout preserved. No scope deviation.

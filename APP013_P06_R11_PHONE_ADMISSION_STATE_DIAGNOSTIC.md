@@ -1,6 +1,8 @@
 # APP-013 / P06 R11 phone-admission-state diagnostic
 
-Status: proposed for 10:55–11:10 AM Eastern on 2026-09-21; not authorized.
+Status: executed once; account ceiling exceeded; consumed.
+
+The owner approved the exact operation. It reserved once at 14:56:52Z and returned `R11_PHONE_ADMISSION_STATE_DIAGNOSTIC_ACCOUNT_CEILING_EXCEEDED` at 14:57:16Z. One valid staging hold and one valid controlled hold total 1,000,000 USD micros; enabled13 required another 500,000 micros under a 1,000,000-micro ceiling. Current approval is disabled with the exact digest after verified closeout, packet reuse is false and invalid-row count is zero. The operation is consumed and must not be rerun. `APP013_P06_R11_PHONE_CEILING_CHANGE_REQUEST.md` is the next owner decision.
 
 ## Requirement traceability
 
