@@ -1,5 +1,9 @@
 # P06 remaining-work reconciliation — review baseline v1
 
+## Current: 12/14 complete; address capacity root cause confirmed — 2026-09-21
+
+The enabled19 request stopped before address reservation because two valid operations / 200000 micros already fill both address account and tenant limits. Invalid rows are zero; the read-only diagnostic is consumed. A combined one-future-packet capacity decision is now required so initial validation plus one correction can fit and the independent phone liability is qualified in the same preparation pass. No packet or live action exists. R11 and full R12 remain open. See `APP013_P06_R11_FINAL_CAPACITY_CHANGE_REQUEST.md`. No scope deviation implemented.
+
 ## Current: address-capacity diagnostic approved; owner run pending — 2026-09-21
 
 The owner approved operation `98a32610-b621-4f1c-b92c-15e08b26b9ee` and the 5:30–6:00 PM Eastern window. Exact private authorization is installed; actual preflight returned `R11_ADDRESS_CAPACITY_CHECK_PASSED_NO_ACTION`. No attempt, database connection or result exists. Next: owner runs the hidden-input wrapper once inside the approved window and reports its final status. Scope is fixed address-account/tenant aggregate counts and costs, exact PostgreSQL 18 database/user identity verification, read-only transaction and rollback. No runtime LOGIN change, provider request, write, hold release, ceiling change or retry. P06 remains 12/14 with R11/full R12 open; prior runtime closeout verified. No scope deviation.

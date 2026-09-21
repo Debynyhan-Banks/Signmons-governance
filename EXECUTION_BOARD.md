@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: R11 address capacity exhausted; combined policy decision required — 2026-09-21
+
+The fixed read proves two valid address operations / 200000 micros fill both address account and tenant limits, so enabled19 correctly stopped before reservation and Google. No retry or mutation occurred. `APP013_P06_R11_FINAL_CAPACITY_CHANGE_REQUEST.md` recommends one future packet allowance that preserves all holds, permits initial plus one correction address operation, and conditions the independent phone allowance on one combined current-liability refresh. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Owner decision is next; no packet or live authority exists. No scope deviation implemented.
+
 ## Current: address-capacity diagnostic approved; owner run pending — 2026-09-21
 
 The owner approved operation `98a32610-b621-4f1c-b92c-15e08b26b9ee` and the 5:30–6:00 PM Eastern window. Exact private authorization is installed; actual preflight returned `R11_ADDRESS_CAPACITY_CHECK_PASSED_NO_ACTION`. No attempt, database connection or result exists. Next: owner runs the hidden-input wrapper once inside the approved window and reports its final status. Scope is fixed address-account/tenant aggregate counts and costs, exact PostgreSQL 18 database/user identity verification, read-only transaction and rollback. No runtime LOGIN change, provider request, write, hold release, ceiling change or retry. P06 remains 12/14 with R11/full R12 open; prior runtime closeout verified. No scope deviation.

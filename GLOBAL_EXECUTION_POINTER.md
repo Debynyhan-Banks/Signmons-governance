@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: address ceiling root cause confirmed; final capacity decision required — 2026-09-21
+
+Operation `98a32610-b621-4f1c-b92c-15e08b26b9ee` returned `ACCOUNT_AND_TENANT_LIMIT_EXCEEDED`: two valid address operations / 200000 micros exactly fill both current limits; invalid rows are zero. This proves enabled19 stopped before reservation because no third operation could fit, not because the address or Google response failed. The operation is consumed. `APP013_P06_R11_FINAL_CAPACITY_CHANGE_REQUEST.md` recommends preserving all holds and authorizing one future packet with address account/tenant four operations/400000 micros, session unchanged at two/200000, plus phone ceiling 3000000 micros only after one combined liability refresh verifies phone holds no greater than 2500000. Owner decision is next; no packet, limit change or live action exists. P06 remains 12/14 with R11/full R12 open. Backend evidence: `evidence/APP-013/p06-r11-address-capacity-result.md`. No scope deviation implemented.
+
 ## Current: address-capacity diagnostic approved; owner run pending — 2026-09-21
 
 The owner approved operation `98a32610-b621-4f1c-b92c-15e08b26b9ee` and the 5:30–6:00 PM Eastern window. Exact private authorization is installed; actual preflight returned `R11_ADDRESS_CAPACITY_CHECK_PASSED_NO_ACTION`. No attempt, database connection or result exists. Next: owner runs the hidden-input wrapper once inside the approved window and reports its final status. Scope is fixed address-account/tenant aggregate counts and costs, exact PostgreSQL 18 database/user identity verification, read-only transaction and rollback. No runtime LOGIN change, provider request, write, hold release, ceiling change or retry. P06 remains 12/14 with R11/full R12 open; prior runtime closeout verified. No scope deviation.

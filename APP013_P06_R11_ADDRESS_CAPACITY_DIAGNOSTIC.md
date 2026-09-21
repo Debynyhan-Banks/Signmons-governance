@@ -1,6 +1,8 @@
 # APP-013 / P06 R11 address capacity diagnostic
 
-Status: exact operation and 5:30–6:00 PM Eastern window approved; private authorization installed; owner-operated execution pending.
+Status: executed once; account and tenant limits exceeded; consumed.
+
+The approved operation returned `R11_ADDRESS_CAPACITY_DIAGNOSTIC_ACCOUNT_AND_TENANT_LIMIT_EXCEEDED` at `2026-09-21T21:30:20.489Z`. Account and tenant each contain two valid operations totaling 200000 micros; invalid rows are zero and both capacity booleans are false. The operation is consumed and was not retried. `APP013_P06_R11_FINAL_CAPACITY_CHANGE_REQUEST.md` records the combined one-future-packet decision needed before further preparation. Preparation and authorization descriptions below are historical.
 
 The owner replied `yes o approve` to the exact diagnostic/window approval request. The helper returned `R11_ADDRESS_CAPACITY_CHECK_PASSED_NO_ACTION`; no attempt, connection or result exists. Preparation descriptions below are historical. No broader execution is authorized.
 

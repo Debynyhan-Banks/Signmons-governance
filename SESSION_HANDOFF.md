@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: enabled19 root cause is full address capacity; decision next — 2026-09-21
+
+Read-only operation `98a32610-b621-4f1c-b92c-15e08b26b9ee` completed once at `21:30:20.489Z`: accountCount 2, accountHeldMicros 200000, tenantCount 2, tenantHeldMicros 200000, invalidCount 0, capacity false at both scopes. This exactly explains the pre-reservation enabled19 response. The operation is consumed. Review `APP013_P06_R11_FINAL_CAPACITY_CHANGE_REQUEST.md`; recommended alternative 1 preserves all holds and permits one capacity-qualified future packet with address account/tenant four/400000, session two/200000, and phone 500000 flow/3000000 ceiling only if combined refresh finds phone liability at most 2500000. No packet, policy installation, LOGIN, provider/browser action or execution exists. P06 remains 12/14 with R11/full R12 open. Original dirty APP-010 checkout preserved. No scope deviation implemented.
+
 ## Current: address-capacity diagnostic approved; owner run pending — 2026-09-21
 
 The owner approved operation `98a32610-b621-4f1c-b92c-15e08b26b9ee` and the 5:30–6:00 PM Eastern window. Exact private authorization is installed; actual preflight returned `R11_ADDRESS_CAPACITY_CHECK_PASSED_NO_ACTION`. No attempt, database connection or result exists. Next: owner runs the hidden-input wrapper once inside the approved window and reports its final status. Scope is fixed address-account/tenant aggregate counts and costs, exact PostgreSQL 18 database/user identity verification, read-only transaction and rollback. No runtime LOGIN change, provider request, write, hold release, ceiling change or retry. P06 remains 12/14 with R11/full R12 open; prior runtime closeout verified. No scope deviation.
