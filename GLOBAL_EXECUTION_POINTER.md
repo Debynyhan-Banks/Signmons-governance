@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: fresh enabled17 R11 1:45 PM packet ready; execution approval required — 2026-09-21
+
+Plan `47828c66-7fb0-4d4b-9bb0-b07e9a7e4f28` binds database support 1:45–2:30 PM Eastern, one 2:00–2:15 PM connected run, closeout by 2:30 PM and exact enabled17 deployment binding. Current read-only refresh confirms three valid holds totaling 1,500,000 micros, capacity for the approved 500,000-micro flow under the one-packet 2,000,000-micro ceiling, safe Cloud baseline, eligible Twilio policy and verified participant. Packet/controller/suffix review passes. Exactly three private preparation files exist; no helper, authorization or live action exists. Exact execution approval is next. P06 remains 12/14 with R11/full R12 open. Backend evidence: `evidence/APP-013/p06-r11-1345-packet-review.md`. Approved deviation is limited to this packet's ceiling.
+
 ## Current: enabled16 run started early and stopped before activation; closeout verified — 2026-09-21
 
 Plan `ca2d2bfb-25da-44fe-98be-557bbdf10a34` opened its bounded runtime LOGIN, then the owner invoked the run at `17:26:48Z`, before the exact 1:30 PM connected window. The controller stopped at `CONNECTED_RUN_WINDOW` before any activation or deployment reservation. No provider or browser action occurred. Mandatory closeout returned `CLOSED` with no failures; enabled16 and the enabled tag are absent, normal traffic remains 100% on `app013bounds`, and enabled15 remains the latest ready revision. The plan and commands are consumed and must not be reused. P06 remains 12/14 with R11/full R12 open. A new future window, fresh read-only refresh/packet preparation, fresh ceiling decision and separate execution approval are required. Backend evidence: `evidence/APP-013/p06-r11-1315-early-stop-closeout.md`. No scope deviation.
