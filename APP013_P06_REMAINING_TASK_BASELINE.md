@@ -1,5 +1,9 @@
 # P06 remaining-work reconciliation — review baseline v1
 
+## Current: first R11 receipt diagnostic consumed; corrected replacement unapproved — 2026-09-21
+
+The first approved diagnostic stopped at safe stage `DATABASE_READ_ONLY` without producing a result and was not rerun. Static evidence identified a local hidden-input type conversion that PostgreSQL SCRAM rejects. Corrected operation `1922018f-adb5-470a-b2c8-05ef4a985572`, proposed for 8:05–8:20 AM Eastern, preserves the string, adds privacy-safe stages and passes local review checks. It has no authorization, attempt, result or database connection. The fixed request remains unclassified. P06 stays 12/14 with R11/full R12 open. Local helper repair only; no scope or acceptance change.
+
 ## Current: R11 reviewed submit uncertain; closeout verified — 2026-09-21
 
 The corrected visible-owner journey reached one reviewed submit on enabled11. HTTP 409 and the page's `Submission outcome unavailable` status preserve the exact request without proving whether a job committed. No retry/replacement occurred; closeout is CLOSED and Cloud state is safe. A single read-only database receipt diagnostic is proposed as operation `b14dffb7-a888-4800-b09a-93ac6061d48f`, 8:00–8:15 AM Eastern, and remains unapproved. P06 stays 12/14 with R11/full R12 open. No scope or acceptance change.

@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: first R11 receipt diagnostic consumed; corrected replacement ready — 2026-09-21
+
+Operation `b14dffb7-a888-4800-b09a-93ac6061d48f` stopped at `DATABASE_READ_ONLY` with an attempt marker and no result; it was not rerun. Static evidence identified a local helper type error: `readPipe` returned a string that the wrapper converted to a Buffer, while installed PostgreSQL SCRAM requires a string. Corrected operation `1922018f-adb5-470a-b2c8-05ef4a985572`, proposed for 8:05–8:20 AM Eastern, preserves the string and adds fixed privacy-safe stages. Local syntax, input-contract and private-file-set checks pass. No replacement authorization or database connection occurred. P06 remains 12/14 with R11/full R12 open. Local helper repair only; no scope or acceptance change.
+
 ## Current: R11 submit uncertain; closeout verified; read-only receipt diagnostic proposed — 2026-09-21
 
 The owner completed the enabled11 visible journey through one reviewed submit. The submit returned HTTP 409 and the page reported `Submission outcome unavailable` for preserved request `2f284c84-c8be-42e7-a8e7-c6a7febd6392`; no retry or replacement occurred. Mandatory closeout is CLOSED, enabled tag absent and baseline traffic 100%. R11 remains unaccepted. Proposed operation `b14dffb7-a888-4800-b09a-93ac6061d48f` is a single read-only fixed-request database receipt diagnostic from 8:00–8:15 AM Eastern; it is not authorized. P06 remains 12/14 with R11/full R12 open. No scope or acceptance change.

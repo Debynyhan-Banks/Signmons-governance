@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: corrected R11 receipt diagnostic awaiting approval — 2026-09-21
+
+The first approved diagnostic is consumed after stopping at `DATABASE_READ_ONLY` without a result and was not rerun. Its local wrapper changed the hidden-input string to a Buffer, which installed PostgreSQL SCRAM rejects. Corrected replacement `1922018f-adb5-470a-b2c8-05ef4a985572` preserves the string, adds privacy-safe stages and passed local syntax, contract and private-file-set checks. It is proposed for 8:05–8:20 AM Eastern and has no authorization, attempt, result or database connection. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Local helper repair only; no scope or acceptance change.
+
 ## Current: R11 HTTP 409 preserved and closed; receipt classification pending — 2026-09-21
 
 Enabled11 start/continue, two verification calls and draft validation returned 200; the one reviewed submit returned 409 with an uncertain retained-request message. The owner did not retry. Closeout is verified, enabled tag absent and normal traffic 100% baseline. A single read-only database receipt diagnostic, operation `b14dffb7-a888-4800-b09a-93ac6061d48f`, is proposed for 8:00–8:15 AM Eastern and remains unapproved. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. No scope or acceptance change.

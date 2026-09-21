@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: first R11 receipt diagnostic stopped; corrected operation ready unapproved — 2026-09-21
+
+Operation `b14dffb7-a888-4800-b09a-93ac6061d48f` is consumed after stopping at safe stage `DATABASE_READ_ONLY` with no result and was not rerun. Static comparison found a local wrapper type defect: it converted the hidden-input string to a Buffer that PostgreSQL SCRAM rejects. Corrected operation `1922018f-adb5-470a-b2c8-05ef4a985572`, proposed for 8:05–8:20 AM Eastern, preserves the string and adds fixed privacy-safe stages. Local parsing/type/file-set checks pass; its private directory has no authorization, attempt or result. Exact owner approval or refusal is required before one fixed-request read-only connection. P06 remains 12/14 with R11/full R12 open. Backend evidence: `evidence/APP-013/p06-r11-receipt-diagnostic-stop-repair.md`. Local helper repair only; no scope or acceptance change.
+
 ## Current: R11 uncertain retained request; mandatory closeout verified — 2026-09-21
 
 Plan `85fc768c-9655-402c-90bd-7d6b3ae99b73` reached enabled11 and the owner completed the corrected visible browser handoff through one reviewed submit. Start/continue, two verification calls and draft returned 200; submit for request `2f284c84-c8be-42e7-a8e7-c6a7febd6392` returned HTTP 409. The page reported no job created but also `Submission outcome unavailable`, so R11 remains UNCERTAIN. No retry or replacement occurred. Closeout is CLOSED with no failures, enabled tag absent and baseline traffic 100%. Proposed 8:00–8:15 AM operation `b14dffb7-a888-4800-b09a-93ac6061d48f` would read only the fixed request's minimal job receipt; no helper or database connection exists and exact approval is required. P06 remains 12/14. Backend evidence: `evidence/APP-013/p06-r11-0730-uncertain-closeout.md`. No scope or acceptance change.
