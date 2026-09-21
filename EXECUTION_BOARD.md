@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: final R11 build/read-only preparation authorized; window pending — 2026-09-21
+
+Alternative 1 is owner-approved for 8:00–8:45 PM Eastern. It permits one build of exact backend `f1ee1f3`, mandatory temporary-grant cleanup, read-only target/provider/participant/policy/retained-liability qualification and one packet only when every documented capacity gate passes. Local source/archive and private-helper checks pass with no action. APP-013/2B remains sole Now; P06 stays 12/14. Live execution remains separately approval-gated. Approved bounded preparation deviation only; no other scope deviation.
+
 ## Current: enabled20 correction exposed; explicit selection repair review-ready — 2026-09-21
 
 Plan `4be1b8c1-6c55-4190-aff9-272d2bb9179f` is consumed. It reached phone verification and returned a safe standardized-address correction with no job, then closed after the owner entered `DONE` before corrected preview/submit. Runtime closeout and revocation are verified. Backend `f1ee1f3` adds an explicit customer selection control without automatic provider action or submit; 129 suites / 2,360 tests, 14 browser cases and the guarded PostgreSQL 18 connected harness pass. APP-013/2B remains sole Now and P06 stays 12/14. Next is owner review of `APP013_P06_R11_CORRECTION_SELECTION_FINAL_RUN_REQUEST.md` alternative 1, which combines one repair-image build and all read-only qualification/packet preparation while keeping live execution separately gated. No scope deviation.

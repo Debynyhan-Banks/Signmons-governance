@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: one consolidated correction-selection preparation approved — 2026-09-21
+
+The owner approved alternative 1 for 8:00–8:45 PM Eastern: build `f1ee1f3` once with capped Cloud Build and temporary grants removed/read back absent, then perform read-only Cloud/Twilio/participant/policy/database liability qualification and prepare one packet only if fixed phone/address gates pass. The exact local build source and private combined-liability helper are prepared and pass no-action review. No LOGIN, activation, deployment, provider request, verification code, browser/customer action, secret change or execution is authorized. P06 remains 12/14 with R11/full R12 open. Original dirty APP-010 checkout untouched. Approved bounded preparation deviation only; no other scope deviation.
+
 ## Current: enabled20 consumed and safely closed; correction-selection repair ready — 2026-09-21
 
 The enabled20 attended run reached real phone verification and returned `CORRECTION_REQUIRED`/`jobCreated:false` with a standardized suggestion. Because the page required manual retyping, the owner entered `DONE` before a corrected second preview/submit. Plan `4be1b8c1-6c55-4190-aff9-272d2bb9179f` is consumed; coordinator output is `R11_ATTENDED_COORDINATOR_CLOSED_BROWSER_DONE`, revocation readback is `REVOKED`, and closeout is `CLOSED` with no failures. Backend `f1ee1f3` now offers explicit **Use suggested address**, still requiring separate review, preview and submit. Full local and guarded PostgreSQL 18/browser checks pass with synthetic data and zero live calls. Review `APP013_P06_R11_CORRECTION_SELECTION_FINAL_RUN_REQUEST.md`; recommended alternative 1 reduces the next preparation to one combined build/read-only qualification/packet step and preserves separate execution approval. P06 remains 12/14; R11/full R12 open. Original dirty APP-010 checkout untouched. No scope deviation.

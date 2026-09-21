@@ -1,6 +1,6 @@
 # APP-013 / P06 R11 correction-selection final-run request
 
-Status: proposed for owner decision; no preparation or execution authority exists.
+Status: alternative 1 owner-approved for one no-retry build plus read-only qualification and conditional packet preparation from 8:00–8:45 PM Eastern on September 21. No execution authority exists.
 
 ## Demonstrated gap and completed local repair
 

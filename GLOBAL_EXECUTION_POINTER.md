@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: consolidated final R11 preparation approved for 8:00–8:45 PM — 2026-09-21
+
+The owner approved `APP013_P06_R11_CORRECTION_SELECTION_FINAL_RUN_REQUEST.md` alternative 1: one no-retry image build from backend `f1ee1f3` with temporary scoped grants and mandatory removal, then read-only target/provider/participant/policy/liability refresh and one fresh packet only if every fixed capacity gate passes. Local source/build and hidden-input helper reviews pass without external action. No LOGIN, activation, deployment, provider request, verification code, browser/customer action, secret change or execution is authorized. P06 remains 12/14. Approved bounded preparation deviation only; no other scope deviation.
+
 ## Current: enabled20 closed at explicit address correction; local selection repair ready — 2026-09-21
 
 Consumed plan `4be1b8c1-6c55-4190-aff9-272d2bb9179f` reached enabled20, real phone verification and `CORRECTION_REQUIRED` with `jobCreated:false`, but the page exposed the standardized address as text only and the owner entered `DONE` before a second preview/submit. Coordinator closeout is verified `CLOSED` with revocation readback `REVOKED`; no admitted receipt exists and the plan cannot be rerun. Backend `f1ee1f3` adds explicit **Use suggested address** selection under the existing APP-013/2B criterion. Full tests and PostgreSQL 18 connected browser evidence pass with zero live provider calls. Review `APP013_P06_R11_CORRECTION_SELECTION_FINAL_RUN_REQUEST.md` alternative 1 for one consolidated image-build/read-only qualification/packet-preparation approval; execution remains separate. P06 remains 12/14 with R11/full R12 open. No scope deviation.
