@@ -1,5 +1,9 @@
 # P06 remaining-work reconciliation — review baseline v1
 
+## Current: 12/14 complete; enabled20 correction-selection repair locally complete — 2026-09-21
+
+Enabled20 reached real phone verification and returned a standardized address correction with `jobCreated:false`; the owner entered `DONE` before corrected preview/submit, and mandatory closeout/revocation are verified. Backend `f1ee1f3` adds explicit suggestion selection and passes full/synthetic/guarded PostgreSQL 18 connected evidence without live calls. R11 and full R12 remain open because no admitted receipt exists. Review `APP013_P06_R11_CORRECTION_SELECTION_FINAL_RUN_REQUEST.md` alternative 1 for one combined repair-image/read-only qualification/packet preparation approval; execution remains separate. No scope deviation.
+
 ## Current: 12/14 complete; address capacity root cause confirmed — 2026-09-21
 
 The enabled19 request stopped before address reservation because two valid operations / 200000 micros already fill both address account and tenant limits. Invalid rows are zero; the read-only diagnostic is consumed. A combined one-future-packet capacity decision is now required so initial validation plus one correction can fit and the independent phone liability is qualified in the same preparation pass. No packet or live action exists. R11 and full R12 remain open. See `APP013_P06_R11_FINAL_CAPACITY_CHANGE_REQUEST.md`. No scope deviation implemented.

@@ -1,6 +1,6 @@
 # APP-013 / P06 R11 final controlled-acceptance capacity change request
 
-Status: alternative 1 owner-approved; exact plan `4be1b8c1-6c55-4190-aff9-272d2bb9179f` is prepared for separate execution approval in the 6:45–7:15 PM Eastern window.
+Status: alternative 1 and plan `4be1b8c1-6c55-4190-aff9-272d2bb9179f` were consumed. Enabled20 reached address correction and closed safely without an admitted receipt. This allowance and packet cannot be reused; see `APP013_P06_R11_CORRECTION_SELECTION_FINAL_RUN_REQUEST.md`.
 
 Current Cloud readback passed and the exact three-file private packet now binds enabled20, database support 6:45–7:15 PM, one 6:55–7:10 PM connected runtime, final phone 500000/3000000 micros, address account and tenant four/400000, session two/200000, and mandatory closeout by 7:15 PM. Production packet/controller/suffix, file-mode and privacy reviews pass. No helper, action authorization or live action exists. Exact plan approval is next; no automatic retry.
 

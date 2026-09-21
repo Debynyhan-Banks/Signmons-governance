@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: enabled20 closed at explicit address correction; local selection repair ready — 2026-09-21
+
+Consumed plan `4be1b8c1-6c55-4190-aff9-272d2bb9179f` reached enabled20, real phone verification and `CORRECTION_REQUIRED` with `jobCreated:false`, but the page exposed the standardized address as text only and the owner entered `DONE` before a second preview/submit. Coordinator closeout is verified `CLOSED` with revocation readback `REVOKED`; no admitted receipt exists and the plan cannot be rerun. Backend `f1ee1f3` adds explicit **Use suggested address** selection under the existing APP-013/2B criterion. Full tests and PostgreSQL 18 connected browser evidence pass with zero live provider calls. Review `APP013_P06_R11_CORRECTION_SELECTION_FINAL_RUN_REQUEST.md` alternative 1 for one consolidated image-build/read-only qualification/packet-preparation approval; execution remains separate. P06 remains 12/14 with R11/full R12 open. No scope deviation.
+
 ## Current: final R11 packet ready for exact execution approval — 2026-09-21
 
 Plan `4be1b8c1-6c55-4190-aff9-272d2bb9179f` binds backend coordinator `b01673b`, enabled20 at zero traffic, database support 6:45–7:15 PM Eastern, one connected run 6:55–7:10 PM, and closeout by 7:15 PM. Current Cloud/Twilio/participant and combined phone/address liability gates pass. Phone is bounded to 500000/3000000 micros while preserving five holds / 2500000; address account and tenant are four/400000, session two/200000, while preserving two operations / 200000 at each aggregate scope. Exactly three private review files pass production packet/controller/suffix, mode and privacy checks; no helper or execution authorization exists. Exact plan approval or refusal is next. P06 remains 12/14 with R11/full R12 open. Backend evidence: `evidence/APP-013/p06-r11-1845-final-packet-review.md`. Approved final-capacity deviation only; no other scope deviation.

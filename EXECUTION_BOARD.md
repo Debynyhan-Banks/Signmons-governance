@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: enabled20 correction exposed; explicit selection repair review-ready — 2026-09-21
+
+Plan `4be1b8c1-6c55-4190-aff9-272d2bb9179f` is consumed. It reached phone verification and returned a safe standardized-address correction with no job, then closed after the owner entered `DONE` before corrected preview/submit. Runtime closeout and revocation are verified. Backend `f1ee1f3` adds an explicit customer selection control without automatic provider action or submit; 129 suites / 2,360 tests, 14 browser cases and the guarded PostgreSQL 18 connected harness pass. APP-013/2B remains sole Now and P06 stays 12/14. Next is owner review of `APP013_P06_R11_CORRECTION_SELECTION_FINAL_RUN_REQUEST.md` alternative 1, which combines one repair-image build and all read-only qualification/packet preparation while keeping live execution separately gated. No scope deviation.
+
 ## Current: enabled20 final R11 packet ready; execution unapproved — 2026-09-21
 
 Fresh plan `4be1b8c1-6c55-4190-aff9-272d2bb9179f` binds coordinator `b01673b`, one 6:45–7:15 PM Eastern database-support window, one 6:55–7:10 PM connected browser journey, enabled20 at zero normal traffic and closeout by 7:15 PM. Current Cloud/provider/participant and combined liability checks pass. The exact approved phone 500000/3000000 and address account/tenant four/400000, session two/200000 bounds preserve all five phone and two address holds. Only three private review files exist; packet/controller/suffix, mode and privacy checks pass. No helper, execution authorization or live action exists. Exact plan approval is next. APP-013/2B remains sole Now; P06 stays 12/14. Approved final-capacity deviation only; no other scope deviation.
