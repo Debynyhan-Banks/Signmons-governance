@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: R11 enabled13 phone verification unconfirmed; closeout verified — 2026-09-21
+
+Plan `7d8354b1-3d5b-455c-b2cc-576aac49b80b` activated and deployed the repaired enabled13 revision at zero normal traffic and reached `READY_FOR_R11`. The owner completed the visible handoff and one browser start, but the first code request produced no observed code and the page entered an unconfirmed verification state. No retry or replacement occurred; address, reviewed-submit and job stages were not reached. Mandatory closeout is `CLOSED` with revocation readback, runtime access disabled, enabled tag absent and baseline traffic 100%. The plan and allowances are consumed. P06 remains 12/14 with R11/full R12 open. Next requires a separately reviewed read-only verification-outcome diagnostic; no code/retry authority exists. Backend evidence: `evidence/APP-013/p06-r11-1000-verification-unconfirmed-closeout.md`. No scope deviation.
+
 ## Current: exact repaired-image R11 10:00 AM packet ready — execution unapproved — 2026-09-21
 
 Read-only Cloud/Twilio/participant refresh remains eligible. Fresh private plan `7d8354b1-3d5b-455c-b2cc-576aac49b80b` binds repaired backend `1819e84`, immutable image digest `sha256:9e9039a3978108067be710532d40b4881a06842b80edd71c029d76632ef11f32`, enabled13, database support 10:00–10:30 AM Eastern, one 10:05–10:20 supervised runtime and closeout by 10:30. Production packet/controller review and 31 focused tests pass. Only three mode-0600 preparation files exist; no helper, execution authorization or live action exists. P06 remains 12/14 with R11/full R12 open. Exact owner execution approval or refusal is next; no automatic retry. Backend evidence: `evidence/APP-013/p06-r11-1000-packet-review.md`. No scope deviation.
