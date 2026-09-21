@@ -1,5 +1,9 @@
 # P06 remaining-work reconciliation — review baseline v1
 
+## Current: privacy-safe R11 refusal-cause diagnostic ready — 2026-09-21
+
+The no-job receipt leaves one bounded missing fact: which sanitized fail-closed boundary produced enabled11's HTTP 409. Proposed operation `045140b2-db62-4e3f-a3e5-398aaaf4b477`, 8:20–8:35 AM Eastern, performs one exact-revision, 15-second Cloud Logging read and retains only an allowlisted cause class and minimal metadata. No query, authorization or external action occurred. Exact owner approval or refusal is next. P06 stays 12/14 with R11/full R12 open. Diagnostic preparation only; no scope or acceptance change.
+
 ## Current: R11 truthful refusal confirmed; no committed job — 2026-09-21
 
 Corrected read-only diagnostic `1922018f-adb5-470a-b2c8-05ef4a985572` found zero committed jobs for the exact request. The earlier HTTP 409 is therefore a truthful refusal rather than an uncertain receipt. No retry, replacement or mutation occurred. R11 remains unaccepted because its observable finish requires one successfully correlated protected journey and exactly one job. P06 stays 12/14 with R11/full R12 open. A separately reviewed privacy-safe diagnosis of the refusal cause must precede any new live journey. No scope or acceptance change.

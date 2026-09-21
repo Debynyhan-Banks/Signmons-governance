@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: R11 refusal-cause log diagnostic prepared; approval required — 2026-09-21
+
+Static inspection identified one bounded next read: the existing sanitized HTTP exception diagnostic for enabled11's exact 409 interval. Proposed operation `045140b2-db62-4e3f-a3e5-398aaaf4b477`, 8:20–8:35 AM Eastern, binds exact project/service/revision and retains only an allowlisted class plus minimal event metadata. No query, authorization, network request or mutation occurred. Exact owner approval or refusal is next. R11/full R12 remain open and P06 stays 12/14. Backend preparation: `evidence/APP-013/p06-r11-refusal-diagnostic-preparation.md`. Diagnostic preparation only; no scope or acceptance change.
+
 ## Current: R11 HTTP 409 classified as no committed job — 2026-09-21
 
 Owner-approved corrected read-only operation `1922018f-adb5-470a-b2c8-05ef4a985572` returned `R11_RECEIPT_DIAGNOSTIC_NO_COMMITTED_JOB`: zero matching non-deleted jobs for the exact retained request. The prior HTTP 409 is now a confirmed truthful refusal. The operation is consumed; no retry, replacement, LOGIN change, write, provider mutation or customer action occurred. R11 remains unaccepted because one correlated protected journey and exactly one job are required. P06 remains 12/14 with R11/full R12 open. Next is a separately reviewed privacy-safe diagnosis of the 409 refusal cause before any new live journey. Backend evidence: `evidence/APP-013/p06-r11-receipt-diagnostic-result.md`. No scope or acceptance change.

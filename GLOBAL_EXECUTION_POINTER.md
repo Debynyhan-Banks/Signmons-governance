@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: exact R11 refusal-cause diagnostic proposed — 2026-09-21
+
+After the no-job receipt, static inspection found the smallest next step: one read-only Cloud Logging query for the sanitized exception diagnostic around the exact enabled11 HTTP 409. Operation `045140b2-db62-4e3f-a3e5-398aaaf4b477`, proposed 8:20–8:35 AM Eastern, binds the project, service, revision and 15-second historical interval and retains only an allowlisted refusal class plus minimal event metadata. No query, authorization, network request or mutation occurred. Exact owner approval or refusal is next. P06 remains 12/14 with R11/full R12 open. Diagnostic preparation only; no scope or acceptance change.
+
 ## Current: R11 receipt classified as truthful refusal; no committed job — 2026-09-21
 
 Corrected read-only diagnostic `1922018f-adb5-470a-b2c8-05ef4a985572` returned `R11_RECEIPT_DIAGNOSTIC_NO_COMMITTED_JOB` at 12:11:46Z and found zero non-deleted jobs for the exact retained request. The earlier HTTP 409 is therefore a confirmed truthful refusal, not an uncertain receipt. Both diagnostic operations are consumed; no retry, replacement, write, LOGIN change, provider mutation or customer action occurred. R11 remains unaccepted because its finish condition requires one correlated journey and exactly one job. P06 remains 12/14 with R11/full R12 open. Next is a separately reviewed privacy-safe diagnosis of the refusal cause before any new live journey. No scope or acceptance change.

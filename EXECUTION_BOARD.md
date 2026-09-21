@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: bounded R11 refusal-cause diagnostic ready — 2026-09-21
+
+Proposed operation `045140b2-db62-4e3f-a3e5-398aaaf4b477`, 8:20–8:35 AM Eastern, reads only the sanitized Cloud Logging diagnostic for the exact enabled11 HTTP 409 and persists one allowlisted refusal class. It excludes request bodies, participant fields and broader logs. No query, authorization or external action occurred. Exact owner approval or refusal is next. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Diagnostic preparation only; no scope or acceptance change.
+
 ## Current: R11 truthful refusal confirmed; cause diagnosis next — 2026-09-21
 
 Corrected fixed-request read-only diagnostic `1922018f-adb5-470a-b2c8-05ef4a985572` found zero committed jobs. This resolves the browser receipt uncertainty as a truthful refusal. The diagnostic is consumed and no retry, replacement or mutation occurred. R11 is not accepted because exactly one correlated job is required. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. A separately reviewed privacy-safe 409 cause diagnostic must precede any new live journey. No scope or acceptance change.
