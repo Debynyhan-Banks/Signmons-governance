@@ -1,5 +1,9 @@
 # P06 remaining-work reconciliation — review baseline v1
 
+## Current: 12/14 complete; R11 stopped before phone reservation — 2026-09-21
+
+The consumed fixed-window diagnostic found zero durable verification reservation/observation rows for enabled13. No Twilio Verify call occurred, and the issue is now bounded to pre-reservation binding/approval/admission gates. A separately reviewed read-only fixed-policy admission-state diagnostic is next; no retry or live packet is authorized. R11 and full R12 remain open. No scope deviation.
+
 ## Current: 12/14 complete; R11 phone-code outcome unconfirmed and safely closed — 2026-09-21
 
 Repaired enabled13 reached the supervised browser phone step, but no code was observed after the single request and the browser outcome is unconfirmed. No retry, address, submit or job stage occurred. Mandatory closeout is verified and the plan is consumed. R11 and full R12 remain open. A separately approved read-only verification-outcome diagnostic is the next bounded step. No scope deviation.

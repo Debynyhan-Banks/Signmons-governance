@@ -1,6 +1,8 @@
 # APP-013 / P06 R11 verification-outcome diagnostic
 
-Status: proposed for 10:35–10:50 AM Eastern on 2026-09-21; not authorized.
+Status: executed once; no durable reservation; consumed.
+
+The owner approved the exact operation. It reserved once at 14:35:35Z and returned `R11_VERIFICATION_OUTCOME_DIAGNOSTIC_NO_RESERVATION` at 14:35:50Z, with zero matching reservation/observation rows in the fixed enabled13 evidence interval. Because the durable service commits its reservation before adapter invocation, no Twilio Verify SDK request occurred. The operation is consumed and must not be rerun. The smallest next step is a separately reviewed read-only fixed-policy admission-state diagnostic; retained-hold exhaustion is a source-supported candidate, not yet a confirmed result.
 
 ## Requirement traceability
 

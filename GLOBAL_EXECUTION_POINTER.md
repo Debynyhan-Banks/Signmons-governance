@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: enabled13 stopped before phone reservation; diagnostic consumed — 2026-09-21
+
+Read-only operation `ee81f95c-698c-40fd-949c-2560d2880c72` returned `R11_VERIFICATION_OUTCOME_DIAGNOSTIC_NO_RESERVATION`: zero durable verification reservation/observation rows exist in the fixed enabled13 interval. Because reservation commits before adapter invocation, the browser request stopped before any Twilio Verify call and is not a provider delivery failure. The operation is consumed and was not retried. Static inspection narrows the stop to pre-reservation binding/approval/admission gates; retained staging-phone liability is the leading bounded candidate but is not yet proven. Next requires a separately reviewed read-only fixed-policy admission-state diagnostic. P06 remains 12/14 with R11/full R12 open. Backend evidence: `evidence/APP-013/p06-r11-verification-outcome-result.md`. No scope deviation.
+
 ## Current: R11 enabled13 phone verification unconfirmed; closeout verified — 2026-09-21
 
 Plan `7d8354b1-3d5b-455c-b2cc-576aac49b80b` activated and deployed the repaired enabled13 revision at zero normal traffic and reached `READY_FOR_R11`. The owner completed the visible handoff and one browser start, but the first code request produced no observed code and the page entered an unconfirmed verification state. No retry or replacement occurred; address, reviewed-submit and job stages were not reached. Mandatory closeout is `CLOSED` with revocation readback, runtime access disabled, enabled tag absent and baseline traffic 100%. The plan and allowances are consumed. P06 remains 12/14 with R11/full R12 open. Next requires a separately reviewed read-only verification-outcome diagnostic; no code/retry authority exists. Backend evidence: `evidence/APP-013/p06-r11-1000-verification-unconfirmed-closeout.md`. No scope deviation.

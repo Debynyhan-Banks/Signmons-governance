@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: enabled13 stopped before phone reservation; diagnostic consumed — 2026-09-21
+
+Owner-approved read-only operation `ee81f95c-698c-40fd-949c-2560d2880c72` returned `R11_VERIFICATION_OUTCOME_DIAGNOSTIC_NO_RESERVATION`: zero durable verification reservation/observation rows exist in the fixed enabled13 interval. Reservation precedes adapter invocation, so no Twilio Verify call occurred. The operation is consumed and was not retried. Static inspection limits the refusal to pre-reservation binding/approval/admission gates; retained staging-phone liability is the leading candidate but remains unproven. Next requires a separately reviewed read-only fixed-policy admission-state diagnostic. P06 remains 12/14 with R11/full R12 open. Backend evidence: `evidence/APP-013/p06-r11-verification-outcome-result.md`. Original dirty APP-010 checkout preserved. No scope deviation.
+
 ## Current: enabled13 R11 stopped at unconfirmed code request; shutdown verified — 2026-09-21
 
 Plan `7d8354b1-3d5b-455c-b2cc-576aac49b80b` reached the repaired enabled13 `READY_FOR_R11` state with normal traffic unchanged. The owner manually opened the page, confirmed visibility and used the single browser start. The first verification request produced no observed six-digit code; the page reported verification unavailable and retained an unconfirmed exact-request state. No retry/replacement, address request, reviewed submit or job occurred. Owner-run closeout returned `R12_RUNTIME_CLOSEOUT_VERIFIED`; revocation readback passed, runtime access is closed, enabled tag absent and baseline traffic remains 100%. The plan and allowances are consumed. P06 remains 12/14 with R11/full R12 open. Next is a separately reviewed read-only verification-outcome diagnostic. Backend evidence: `evidence/APP-013/p06-r11-1000-verification-unconfirmed-closeout.md`. Original dirty APP-010 checkout preserved. No scope deviation.
