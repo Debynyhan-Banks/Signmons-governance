@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: R11 one-packet ceiling change approved; 11:15 window proposed — 2026-09-21
+
+Alternative 1 is owner-approved: retain both phone holds and allow one future packet at a 1,500,000-micro account ceiling with a 500,000-micro flow bound. The selected 11:15–11:45 AM Eastern window is only a proposal; packet preparation and execution remain unapproved. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Approved deviation is limited to the future packet ceiling.
+
 ## Current: R11 phone admission ceiling exhausted — 2026-09-21
 
 The consumed read-only diagnostic proved two valid retained holds total the full 1,000,000-micro phone account ceiling, so enabled13's additional 500,000-micro flow refused before Twilio. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Owner decision on `APP013_P06_R11_PHONE_CEILING_CHANGE_REQUEST.md` is next; no ceiling change, packet or live action is authorized. No scope deviation implemented.

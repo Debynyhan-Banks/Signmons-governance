@@ -1,5 +1,9 @@
 # P06 remaining-work reconciliation — review baseline v1
 
+## Current: 12/14 complete; one future R11 packet may use USD 1.50 ceiling — 2026-09-21
+
+Owner-approved alternative 1 preserves both retained phone holds and permits exactly one future packet with a 500,000-micro flow bound and 1,500,000-micro account ceiling. The owner selected 11:15–11:45 AM Eastern, but read-only packet preparation and execution remain unapproved. R11 and full R12 remain open. Approved deviation is limited to the future packet ceiling.
+
 ## Current: 12/14 complete; retained phone ceiling blocks R11 — 2026-09-21
 
 One valid staging hold and one valid controlled hold total the current 1,000,000-micro account ceiling. Enabled13's 500,000-micro phone flow therefore refused before durable reservation/Twilio. The diagnostic is consumed. Owner decision on `APP013_P06_R11_PHONE_CEILING_CHANGE_REQUEST.md` is required before a future packet can use the recommended 1,500,000-micro ceiling. R11 and full R12 remain open. No scope deviation implemented.

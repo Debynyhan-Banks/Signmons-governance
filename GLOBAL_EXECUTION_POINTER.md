@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: one-packet USD 1.50 phone ceiling approved; preparation separately gated — 2026-09-21
+
+The owner approved `APP013_P06_R11_PHONE_CEILING_CHANGE_REQUEST.md` alternative 1: preserve both existing holds and permit exactly one future R11 packet with a 500,000-micro flow bound and 1,500,000-micro account ceiling. This is policy approval only; no packet preparation or live action is authorized. The owner selected 11:15–11:45 AM Eastern as the proposed window. Next requires separate read-only provider/target/policy/participant refresh and packet-preparation authorization, followed by exact execution approval. P06 remains 12/14 with R11/full R12 open. Approved deviation is limited to the future packet ceiling.
+
 ## Current: R11 blocked by retained phone ceiling; change decision required — 2026-09-21
 
 Operation `bd6a6f3e-6681-4c24-803b-e6ed44248511` returned `ACCOUNT_CEILING_EXCEEDED`: one valid staging hold plus one valid controlled hold total 1,000,000 USD micros, equal to enabled13's ceiling. Its 500,000-micro flow was therefore refused before durable reservation or Twilio. Approval is safely disabled with exact digest; packet reuse false; invalid rows zero. The consumed operation was not retried. `APP013_P06_R11_PHONE_CEILING_CHANGE_REQUEST.md` recommends retaining both holds and permitting exactly one future packet at 1,500,000 micros. Owner decision is required before any preparation uses that ceiling. P06 remains 12/14 with R11/full R12 open. Backend evidence: `evidence/APP-013/p06-r11-phone-admission-state-result.md`. No scope deviation implemented.

@@ -1,6 +1,8 @@
 # APP-013 / P06 R11 phone account-ceiling change request
 
-Status: owner decision required; no alternative implemented.
+Status: alternative 1 approved; future packet preparation remains separately gated.
+
+The owner approved alternative 1 exactly: retain both existing holds and allow exactly one future R11 packet with `flowUpperBoundMicros: 500000` and `accountCeilingMicros: 1500000`. The decision is policy approval only. It does not authorize packet preparation, LOGIN, activation, deployment, provider request, verification code, browser/customer action, database write, hold release, secret/IAM change, billing change or live execution. The owner selected 11:15–11:45 AM Eastern on 2026-09-21 as the proposed future window; selection alone grants no preparation or execution authority.
 
 ## Demonstrated gap
 
@@ -28,6 +30,6 @@ Keep the USD 1.00 ceiling and both holds unchanged. Do not prepare another live 
 
 Alternative 1 is the smallest path to the frozen R11 criterion because it preserves every prior liability and changes only the explicit future packet ceiling. It does not weaken one-use, participant, policy, traffic, provider, job or closeout guards. The owner must approve the alternative before any packet uses the higher ceiling.
 
-Approval of this change request alone authorizes only the stated policy direction and local/read-only preparation needed to reflect it. It does not authorize database LOGIN or mutation, activation, deployment, traffic change, provider request, verification code, browser/customer action, secret/IAM change, billing change or live execution.
+Approval of this change request alone authorizes only the stated policy direction. Packet preparation, database LOGIN or mutation, activation, deployment, traffic change, provider request, verification code, browser/customer action, secret/IAM change, billing change and live execution remain separately gated.
 
-R11 and full R12 remain open; P06 remains 12/14. No scope deviation implemented pending owner decision.
+R11 and full R12 remain open; P06 remains 12/14. Approved policy deviation is limited to one future packet's explicit retained-liability ceiling; no implementation or live deviation occurred.
