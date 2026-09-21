@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: enabled14 R11 packet ready for exact approval — 2026-09-21
+
+Fresh plan `093447e7-c3cb-4db4-bdf2-53088a14729f` passed read-only qualification and binds 11:15–11:45 AM support, one 11:20–11:35 connected run, closeout by 11:45 and the approved one-packet 1,500,000-micro phone ceiling. Only three private review files exist; no helper or execution authorization. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Exact plan approval or refusal is next. Approved deviation is limited to this packet's ceiling.
+
 ## Current: R11 one-packet ceiling change approved; 11:15 window proposed — 2026-09-21
 
 Alternative 1 is owner-approved: retain both phone holds and allow one future packet at a 1,500,000-micro account ceiling with a 500,000-micro flow bound. The selected 11:15–11:45 AM Eastern window is only a proposal; packet preparation and execution remain unapproved. APP-013/2B remains sole Now; P06 stays 12/14 with R11/full R12 open. Approved deviation is limited to the future packet ceiling.
