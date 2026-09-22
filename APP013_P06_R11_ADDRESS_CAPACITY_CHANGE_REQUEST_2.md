@@ -1,6 +1,6 @@
 # APP-013 / P06 R11 final correction-run capacity change request 2
 
-Status: owner decision required. Proposed preparation window: 1:00–1:45 PM Eastern on September 22, 2026. Live execution remains separately gated.
+Status: alternative 1 owner-approved for read-only qualification and one conditional packet from 1:00–1:45 PM Eastern on September 22, 2026. Live execution remains separately gated.
 
 ## Demonstrated gap
 
@@ -31,4 +31,4 @@ Retain the built `f1ee1f3` image and consumed diagnostic evidence. Create no pac
 
 Alternative 1 changes only one future packet's cumulative address account/tenant bounds from five / 500,000 to six / 600,000 so that four existing holds can be preserved while allowing the initial validation and one explicit corrected revalidation. It does not release holds, alter per-operation price, expand the session bound, authorize provider calls, or change payment, booking, dispatch, messaging, secrets, billing or IAM. The packet is inert until separately approved for execution; refusal or any mismatched gate stops without a packet.
 
-No scope deviation is implemented by this request. Owner approval or refusal of an alternative is next.
+Owner decision: alternative 1 approved exactly as written for the September 22 1:00–1:45 PM preparation window. No LOGIN, activation, deployment, provider request, verification code, browser/customer action, database write, hold release, secret/IAM change, billing change or execution is authorized. Approved one-packet address-capacity deviation only; no other scope deviation.

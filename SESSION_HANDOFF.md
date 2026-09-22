@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: September 22 final-capacity preparation approved — 2026-09-22
+
+The owner approved alternative 1 for 1:00–1:45 PM Eastern: preserve all six phone and four address holds, reuse the cleanup-verified `f1ee1f3` image, perform fresh read-only Cloud/Twilio/participant/policy/liability qualification and prepare one packet only if every fixed gate passes. Phone bounds are 500000/3500000 micros; address account/tenant are six/600000 with session two/200000. No live execution authority exists. R11/full R12 remain open; P06 stays 12/14. Original dirty APP-010 checkout untouched. Approved one-packet address-capacity deviation only; no other scope deviation.
+
 ## Current: consolidated preparation stopped before packet on fourth address hold — 2026-09-22
 
 The one approved repair-image build from `f1ee1f3` succeeded and all temporary grants were removed/read back absent. Current Cloud and Twilio checks passed without mutation. The owner-operated hidden-input read-only operation was consumed and returned `ADDRESS_STATE_MISMATCH`: six valid phone holds / 3000000 micros fit the 3500000 ceiling, but four valid address operations / 400000 micros at account and tenant exceed the approved packet prerequisite of three / 300000; approval is inactive and invalid rows are zero. No packet, helper or live authority exists. Review `APP013_P06_R11_ADDRESS_CAPACITY_CHANGE_REQUEST_2.md` alternative 1 for a 1:00–1:45 PM September 22 read-only refresh and conditional packet. R11/full R12 remain open; P06 stays 12/14. Original dirty APP-010 checkout untouched. No scope deviation implemented.

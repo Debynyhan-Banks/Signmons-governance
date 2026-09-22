@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: one final-capacity R11 preparation authorized — 2026-09-22
+
+Alternative 1 is owner-approved for 1:00–1:45 PM Eastern. Reuse the verified `f1ee1f3` image, preserve six phone and four address holds, refresh all stated gates read-only and create one packet only if phone 500000/3500000 and address account/tenant six/600000, session two/200000 remain admissible. APP-013/2B remains sole Now; P06 stays 12/14. Live execution remains separately gated. Approved one-packet address-capacity deviation only; no other scope deviation.
+
 ## Current: correction image built; next packet stopped at retained address capacity — 2026-09-22
 
 Exact backend `f1ee1f3` is built and cleanup-verified. The conditional packet was correctly withheld after read-only operation `29e2a6dd-2253-4e09-9915-4ae95b4f43c7` found six valid phone holds / 3000000 micros and four valid address operations / 400000 micros at both aggregate scopes. Phone capacity passes; the address count exceeds the approved pre-packet maximum of three. APP-013/2B remains sole Now and P06 stays 12/14. `APP013_P06_R11_ADDRESS_CAPACITY_CHANGE_REQUEST_2.md` alternative 1 proposes preserving all holds and one fresh September 22 1:00–1:45 PM read-only qualification/conditional packet with address account/tenant six/600000; live execution remains separately gated. No scope deviation implemented.
