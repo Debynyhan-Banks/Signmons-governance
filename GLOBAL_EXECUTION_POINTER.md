@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: repair image verified; four retained address operations require one final capacity decision — 2026-09-22
+
+The approved `f1ee1f3` build succeeded once at immutable digest `sha256:bf1dbfe596bb86b14e7ae3ea4240d072b7dca72d30ceb3ac8c09a7920f2594fd`; temporary grants were removed and read back absent. Cloud/provider checks passed without mutation. Consumed read-only operation `29e2a6dd-2253-4e09-9915-4ae95b4f43c7` returned `ADDRESS_STATE_MISMATCH`: phone has six valid holds / 3000000 micros and available 500000-micro capacity under 3500000, while address has four valid operations / 400000 micros at matching account and tenant scopes, above the approved packet gate; invalid rows are zero and approval is inactive. No packet was created. Review `APP013_P06_R11_ADDRESS_CAPACITY_CHANGE_REQUEST_2.md` alternative 1 for a 1:00–1:45 PM September 22 read-only refresh and conditional one-packet address bound of six/600000, with execution still separate. P06 remains 12/14. No scope deviation implemented.
+
 ## Current: consolidated final R11 preparation approved for 8:00–8:45 PM — 2026-09-21
 
 The owner approved `APP013_P06_R11_CORRECTION_SELECTION_FINAL_RUN_REQUEST.md` alternative 1: one no-retry image build from backend `f1ee1f3` with temporary scoped grants and mandatory removal, then read-only target/provider/participant/policy/liability refresh and one fresh packet only if every fixed capacity gate passes. Local source/build and hidden-input helper reviews pass without external action. No LOGIN, activation, deployment, provider request, verification code, browser/customer action, secret change or execution is authorized. P06 remains 12/14. Approved bounded preparation deviation only; no other scope deviation.
