@@ -1,5 +1,10 @@
 # Signmons Execution Board
 
+## Current: enabled21 submit was HTTP 409 before address; refusal-class approval required — 2026-09-22
+
+Consumed operation `2db28e8e-2d91-420e-8a6d-24d2413596e8` found one enabled21 submit: HTTP 409 at `2026-09-22T17:29:46.796419Z` after 2.273183664 seconds. Combined with zero jobs and zero address rows, this proves a synchronous pre-address current-state refusal, not timeout or unknown commit. Operation `8cba60f6-f4e8-40ed-b201-6d09e09eb90c` is locally prepared for one exact five-second application-log query retaining only an allowlisted refusal class, timestamp, HTTP 409 and count. Exact approval or refusal is next; no database/provider/browser action or retry. See `APP013_P06_R11_ENABLED21_REFUSAL_CLASS_DIAGNOSTIC.md` and backend `evidence/APP-013/p06-r11-enabled21-http-result.md`. P06 remains 12/14 with R11/full R12 open. No scope deviation.
+
+
 ## Current: enabled21 fixed request stopped before address reservation; HTTP diagnostic approval required — 2026-09-22
 
 Consumed operation `4e98ced9-ec0b-49c4-8232-aae4f8f293b6` returned `NO_COMMITTED_JOB_BEFORE_ADDRESS_RESERVATION`: the fixed enabled21 request has zero correlated jobs and zero address request/operation rows. No Google call or job transaction occurred. Operation `2db28e8e-2d91-420e-8a6d-24d2413596e8` is locally prepared for one read-only Cloud Run request-log query limited to enabled21 and `2026-09-22T17:23:50Z`–`17:30:20Z`, retaining only allowlisted customer-session path, HTTP status, timestamp, latency and counts. Exact approval or refusal is next; no database/provider/browser action or retry. See `APP013_P06_R11_ENABLED21_HTTP_DIAGNOSTIC.md` and backend `evidence/APP-013/p06-r11-enabled21-combined-outcome-result.md`. P06 remains 12/14 with R11/full R12 open. No scope deviation.
