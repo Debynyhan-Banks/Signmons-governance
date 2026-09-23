@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: enabled21 refusal log query returned zero; local observability decision required — 2026-09-23
+
+Consumed operation `8cba60f6-f4e8-40ed-b201-6d09e09eb90c` returned zero matching application records and was not retried. Source reconciliation proves `/customer-session/*` owns and catches its errors before the global Nest exception filter, while enabled runtime does not wire the transport's optional status-only diagnostic seam; the queried refusal record could not be emitted. The earlier HTTP 409, zero-job and zero-address-row findings remain valid, but the exact pre-address gate is unknown. Decision `4c905715-6259-446b-be7b-1e2e6240125e` recommends local-only fixed-enum stage observability and tests before any new live attempt. Exact owner approval or refusal is next. P06 remains 12/14 with R11/full R12 open. No scope deviation implemented.
+
 ## Current: enabled21 submit was HTTP 409 before address; refusal-class approval required — 2026-09-22
 
 Consumed operation `2db28e8e-2d91-420e-8a6d-24d2413596e8` found one enabled21 submit: HTTP 409 at `2026-09-22T17:29:46.796419Z` after 2.273183664 seconds. Combined with zero jobs and zero address rows, this proves a synchronous pre-address current-state refusal, not timeout or unknown commit. Operation `8cba60f6-f4e8-40ed-b201-6d09e09eb90c` is locally prepared for one exact five-second application-log query retaining only an allowlisted refusal class, timestamp, HTTP 409 and count. Exact approval or refusal is next; no database/provider/browser action or retry. See `APP013_P06_R11_ENABLED21_REFUSAL_CLASS_DIAGNOSTIC.md` and backend `evidence/APP-013/p06-r11-enabled21-http-result.md`. P06 remains 12/14 with R11/full R12 open. No scope deviation.
