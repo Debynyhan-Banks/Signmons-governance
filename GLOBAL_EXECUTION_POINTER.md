@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: observability image and final-capacity decision required — 2026-09-23
+
+The owner accepted backend `574f25a` / governance `ccbe4c8` and authorized one 6:45–7:30 AM read-only qualification. Cloud/Twilio/participant state remains safe, the candidate image is absent and the build identity has none of the temporary grants. Consumed read-only operation `759d896c-767b-467b-b223-771afb6267de` found inactive approval, closed runtime role/zero sessions, seven valid phone holds / 3500000 micros, four valid address operations / 400000 micros at both scopes and zero malformed rows. Its `PHONE_STATE_INVALID` label is a local reference-packet reuse classification defect, not malformed liability; it was not rerun. `APP013_P06_R11_OBSERVABILITY_IMAGE_CAPACITY_DECISION.md` proposes one exact no-retry image build plus one future 500000/4000000 phone policy while preserving all holds; packet and execution remain separately gated. P06 remains 12/14 with R11/full R12 open. No scope deviation implemented.
+
 ## Current: controlled-refusal observability locally complete; release decision required — 2026-09-23
 
 Decision `4c905715-6259-446b-be7b-1e2e6240125e` alternative 1 is locally complete. Controlled submit 409s now retain one non-enumerable allowlisted stage and the enabled runtime emits only a fixed `CONTROLLED_INTAKE_REFUSAL` marker with operation/status/stage; browser output remains generic and no private/identifying value is logged. Focused 275, full 2,363 with three existing skips, build/lint/architecture, packet, disposable PostgreSQL 18 and eight-scenario browser/database gates pass with zero live provider calls. Exact owner review of this repair is next; any image build, packet or live action remains separately gated. Backend evidence: `evidence/APP-013/p06-r11-controlled-refusal-observability.md`. P06 remains 12/14 with R11/full R12 open. Approved observability deviation only; no other scope deviation.

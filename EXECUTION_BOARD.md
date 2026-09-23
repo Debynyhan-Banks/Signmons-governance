@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: observability image and final-capacity decision required — 2026-09-23
+
+Current read-only qualification passed Cloud, Twilio, participant, policy, runtime-role and row-integrity gates. Seven phone holds total 3500000 micros and four address operations total 400000 micros at both aggregate scopes. The consumed helper's `PHONE_STATE_INVALID` label came from matching its intentionally historical scope packet to an existing hold; no row is malformed and no rerun occurred. Backend `574f25a` has no registry image. Review `APP013_P06_R11_OBSERVABILITY_IMAGE_CAPACITY_DECISION.md` alternative 1 for one exact no-retry build and one future 500000/4000000 phone policy; no packet or live execution authority follows. APP-013/2B remains sole Now; P06 stays 12/14. No scope deviation implemented.
+
 ## Current: controlled-refusal observability locally complete; release decision required — 2026-09-23
 
 Decision `4c905715-6259-446b-be7b-1e2e6240125e` alternative 1 is locally complete. Controlled submit 409s now retain one non-enumerable allowlisted stage and the enabled runtime emits only a fixed `CONTROLLED_INTAKE_REFUSAL` marker with operation/status/stage; browser output remains generic and no private/identifying value is logged. Focused 275, full 2,363 with three existing skips, build/lint/architecture, packet, disposable PostgreSQL 18 and eight-scenario browser/database gates pass with zero live provider calls. Exact owner review of this repair is next; any image build, packet or live action remains separately gated. Backend evidence: `evidence/APP-013/p06-r11-controlled-refusal-observability.md`. P06 remains 12/14 with R11/full R12 open. Approved observability deviation only; no other scope deviation.
