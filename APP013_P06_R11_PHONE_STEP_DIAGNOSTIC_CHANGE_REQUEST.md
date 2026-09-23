@@ -1,6 +1,6 @@
 # APP-013/P06 R11 phone-step and diagnostic correctness change request
 
-Status: proposed; owner approval required before implementation. Section: APP-013/2B, P06/R11. Existing acceptance remains one connected capped phone-verification, eligible-address and reviewed-submit journey with one authoritative admitted job, followed by full R12 closeout. No denominator, gate or dependency change.
+Status: approved alternative 1 implemented and locally tested; ready for owner review, no release or execution authorized. Section: APP-013/2B, P06/R11. Existing acceptance remains one connected capped phone-verification, eligible-address and reviewed-submit journey with one authoritative admitted job, followed by full R12 closeout. No denominator, gate or dependency change.
 
 ## Demonstrated gaps
 
@@ -23,4 +23,8 @@ Finish: local passing evidence for prerequisite enforcement and timezone-indepen
 
 Excluded: packet, build, LOGIN, activation, deployment, provider request, code, live browser test, live database/secret read or write, hold release, ceiling increase, IAM/billing changes and live retry. No scope deviation implemented; proposed bounded UX/diagnostic change only.
 
-Owner decision: pending.
+Owner decision: “yes i approve alternative 1”. No external authority added.
+
+## Local finish evidence
+
+Controlled browser prerequisite/phone binding and diagnostic scoped UTC parser plus independent START reporting are implemented. 26 mocked browser scenarios, 13 diagnostic tests and 111 focused backend tests pass; lint/build/architecture/format/syntax pass. Original consumed diagnostic files remain byte-identical. Evidence: backend `evidence/APP-013/p06-r11-phone-step-repair.md` and `evidence/APP-013/p06-r11-phone-step-ui/summary.json`. No live operation, new authorization, packet or image build. Owner reviews this local result before any later release decision. Approved alternative 1 only; no other scope deviation.
