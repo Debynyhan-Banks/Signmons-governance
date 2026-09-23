@@ -1,8 +1,8 @@
 # APP-013/P06 R11 enabled22 consolidated retained-state diagnostic
 
-Status: locally prepared and tested; external reads and private installation NOT AUTHORIZED.
+Status: owner approved and private installation verified; owner-operated execution pending. No attempt or external read yet.
 
-Plan: `790763ef-1f2a-44b7-a690-56bfee9fba9a`. Proposed execution window: September 23, 2026, **8:30–9:15 AM Eastern** (`12:30Z`–`13:15Z`). One attempt, no automatic retry.
+Plan: `790763ef-1f2a-44b7-a690-56bfee9fba9a`. Approved execution window: September 23, 2026, **8:30–9:15 AM Eastern** (`12:30Z`–`13:15Z`). One attempt, no automatic retry.
 
 ## Why this read is needed
 
@@ -31,6 +31,8 @@ No LOGIN change, activation, deployment, traffic change, verification code, prov
 
 Observable finish is a sanitized correlated retained-state result or a stage-specific stop. P06 remains 12/14; R11/full R12 and accepted 1A/1B/2A unchanged. Implementer owns analysis; owner approval gates the exact new database and secret reads. No scope deviation implemented; the new read-access boundary is proposed explicitly before external action.
 
-## Approval requested
+## Approval and installation recorded
 
 Approve plan `790763ef-1f2a-44b7-a690-56bfee9fba9a` for private helper/authorization installation and the one consolidated read-only operation above during 8:30–9:15 AM Eastern, including the single exact revision metadata read, one hidden-input PostgreSQL 18 connection with rollback, and conditional one-version encryption-key read solely for in-memory analysis. No live journey or automatic retry.
+
+Owner response: “i approve proceed”, approving this exact reviewed plan and window. Installed six files (helper, analyzer, hidden-input wrapper, plan, binding and authorization) with source/file hashes verified, directory 0700 and files 0600. Authorization binds the exact plan SHA-256. Installed `--review` returned `R11_RETAINED_STATE_PREPARED_NO_ACTION`. No attempt/result/stop file or external operation exists at installation. Owner execution is next, never before 8:30 AM; do not rerun a stopped operation. No scope deviation.
