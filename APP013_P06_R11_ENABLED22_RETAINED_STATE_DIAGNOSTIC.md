@@ -1,6 +1,6 @@
 # APP-013/P06 R11 enabled22 consolidated retained-state diagnostic
 
-Status: original operation stopped during local preflight before external action; preserved and blocked from reuse. Replacement explicitly approved and installed; owner execution pending within the unchanged window.
+Status: original operation stopped during local preflight before external action; preserved and blocked from reuse. Replacement completed once; consumed. Result and timestamp limitation recorded below.
 
 Plan: `790763ef-1f2a-44b7-a690-56bfee9fba9a`. Approved execution window: September 23, 2026, **8:30–9:15 AM Eastern** (`12:30Z`–`13:15Z`). One attempt, no automatic retry.
 
@@ -48,3 +48,7 @@ Requested decision: approve replacement `0969cc65-f1ea-4800-88ed-3542ddad16c1` f
 ## Replacement approval and installation
 
 Owner replied “i approve” to the exact replacement ID/window confirmation. Replacement `0969cc65-f1ea-4800-88ed-3542ddad16c1` is installed at `/Volumes/Signmons-P06/r11-retained-state-diagnostic-20260923-0830b` with six verified files, 0700 directory/0600 files, exact plan-hash authorization and successful installed no-action review. No attempt/result/stop file or external operation exists for the replacement at installation. Original stopped operation is unchanged. Owner command: `python3 -B "/Volumes/Signmons-P06/r11-retained-state-diagnostic-20260923-0830b/private.py" --run`, once at or after 8:30 AM Eastern and before the 9:15 AM deadline. No automatic retry; no scope deviation.
+
+## Completed replacement result
+
+Replacement completed at 12:31:28.040Z. Zero correlated jobs, no address row, no matching approved CHECK in retained ledger; owner cannot confirm seeing Code accepted. Saved POST_EVENT_CHANGE_INCONCLUSIVE is unreliable due to demonstrated host-local OID1114 timestamp parsing; preserve the original result and do not retry or silently rewrite times. Backend `evidence/APP-013/p06-r11-enabled22-retained-state-result.md` records evidence and limits. Local-only repair decision in `APP013_P06_R11_PHONE_STEP_DIAGNOSTIC_CHANGE_REQUEST.md` is pending. No further external operation authorized. No scope deviation implemented.
