@@ -42,3 +42,7 @@ At decision time, exact owner approval or refusal was required. P06 remained 12/
 The owner approved alternative 1 exactly for 6:45–7:30 AM Eastern. Cloud Build `d1b08776-bd6a-48bd-85aa-ed8628d026dc` was submitted once and returned `SUCCESS`. Registry readback binds tag `p06-r11-574f25a66952` to immutable digest `sha256:53f82468d86c49d1ddd1024e9550de27bc0ac49f6841b958f5bc393e10f9f4b9`. All three temporary grants were removed and independently read back absent.
 
 The approved future policy preserves all seven phone and four address holds and allows exactly one later packet at phone 500,000/4,000,000 micros and address account/tenant six/600,000, session two/200,000. No packet exists. A new owner-selected window and separate read-only packet-preparation authorization are required, followed by separate exact execution approval. P06 remains 12/14. Approved one-image and one-future-packet capacity deviations only; no other scope deviation.
+
+## Packet preparation result — 2026-09-23
+
+The owner selected 7:15–8:00 AM Eastern and separately authorized current read-only target/provider/participant refresh plus one packet. Plan `c8e05c7b-f2a3-4b8c-9447-92e6c471d5df` now binds the exact approved image and limits to enabled22, one 7:40–7:55 AM connected runtime and closeout by 8:00 AM. All preparation gates pass and exactly three private review files exist. No helper, execution authorization or live action exists. Exact execution approval remains required. P06 remains 12/14. Approved deviations unchanged.
