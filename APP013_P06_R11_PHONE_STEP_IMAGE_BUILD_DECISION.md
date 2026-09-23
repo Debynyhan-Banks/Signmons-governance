@@ -1,6 +1,6 @@
 # APP-013/P06 R11 phone-step repair image build decision
 
-Status: local decision/source preparation only. Owner said “proceed” after local repair evidence, authorizing this preparation, not an external build. Build window and exact build approval pending. No upload, external refresh, build, IAM change, packet or execution occurred.
+Status: local decision/source preparation only. Owner said “proceed” after local repair evidence, authorizing this preparation, not an external build. Owner-selected build window: September 23, 2026, 9:00–9:45 AM Eastern (13:00–13:45Z). Exact build approval pending. No upload, external refresh, build, IAM change, packet or execution occurred.
 
 ## Reviewed source and purpose
 
@@ -10,7 +10,7 @@ Tracked Docker inputs were archived locally to `/private/tmp/signmons-r11-phone-
 
 ## Alternative 1 — one repair-image build
 
-Within a fresh owner-selected build window, after exact approval:
+Within September 23, 2026, 9:00–9:45 AM Eastern (13:00–13:45Z), after exact approval:
 
 1. Read-only qualify the existing build identity, source bucket, repository, exact candidate tag and three relevant IAM bindings. Prior build observations are historical. Require exact source/archive contents, existing enabled `signmons-build@signmons.iam.gserviceaccount.com`, target tag absent and temporary memberships absent; otherwise stop before mutation. No database, Twilio or secret access in this build decision.
 2. Submit exactly one build from source above, existing `cloudbuild.deploy.yaml` and `Dockerfile`, existing `signmons_cloudbuild` bucket, `E2_HIGHCPU_8`, timeout 1,200 seconds and USD1 operational allowance. Allowance is not a provider-enforced hard billing cap. Require enough time in the selected window for build and mandatory cleanup; do not start near its end.
@@ -28,4 +28,4 @@ The previous one-packet capacity approval was used by enabled22. Do not infer re
 
 Exclusions: LOGIN, activation, deployment, traffic/tag routing change, database access/mutation, provider request or verification code, browser/customer action, hold release, ceiling change, secret access/change, other IAM, billing-account changes, packet preparation and live execution. Owner approval of this build decision is not permission for any of these.
 
-Owner selects window and approves/refuses alternative 1; implementer owns one-attempt build and mandatory cleanup if approved. Finish: immutable image/source provenance plus verified cleanup, or preserved stop evidence. No image success guarantees R11. Existing disabled/closed runtime state is unchanged; no fresh runtime readback claimed. P06 remains 12/14; R11/full R12 open, accepted 1A/1B/2A unchanged. No scope deviation implemented; exact bounded build approval is pending.
+Owner selected 9:00–9:45 AM Eastern today; approval/refusal of alternative 1 remains pending; implementer owns one-attempt build and mandatory cleanup if approved. Finish: immutable image/source provenance plus verified cleanup, or preserved stop evidence. No image success guarantees R11. Existing disabled/closed runtime state is unchanged; no fresh runtime readback claimed. P06 remains 12/14; R11/full R12 open, accepted 1A/1B/2A unchanged. No scope deviation implemented; exact bounded build approval is pending.
