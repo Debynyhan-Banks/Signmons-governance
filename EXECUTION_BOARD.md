@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: controlled-refusal observability locally complete; release decision required — 2026-09-23
+
+Decision `4c905715-6259-446b-be7b-1e2e6240125e` alternative 1 is locally complete. Controlled submit 409s now retain one non-enumerable allowlisted stage and the enabled runtime emits only a fixed `CONTROLLED_INTAKE_REFUSAL` marker with operation/status/stage; browser output remains generic and no private/identifying value is logged. Focused 275, full 2,363 with three existing skips, build/lint/architecture, packet, disposable PostgreSQL 18 and eight-scenario browser/database gates pass with zero live provider calls. Exact owner review of this repair is next; any image build, packet or live action remains separately gated. Backend evidence: `evidence/APP-013/p06-r11-controlled-refusal-observability.md`. P06 remains 12/14 with R11/full R12 open. Approved observability deviation only; no other scope deviation.
+
 ## Current: enabled21 refusal log query returned zero; local observability decision required — 2026-09-23
 
 Consumed operation `8cba60f6-f4e8-40ed-b201-6d09e09eb90c` returned zero matching application records and was not retried. Source reconciliation proves `/customer-session/*` owns and catches its errors before the global Nest exception filter, while enabled runtime does not wire the transport's optional status-only diagnostic seam; the queried refusal record could not be emitted. The earlier HTTP 409, zero-job and zero-address-row findings remain valid, but the exact pre-address gate is unknown. Decision `4c905715-6259-446b-be7b-1e2e6240125e` recommends local-only fixed-enum stage observability and tests before any new live attempt. Exact owner approval or refusal is next. P06 remains 12/14 with R11/full R12 open. No scope deviation implemented.
