@@ -1,6 +1,6 @@
 # APP-013/P06 R11 enabled22 consolidated retained-state diagnostic
 
-Status: owner approved and private installation verified; owner-operated execution pending. No attempt or external read yet.
+Status: original operation stopped during local preflight before external action; preserved and blocked from reuse. Replacement explicitly approved and installed; owner execution pending within the unchanged window.
 
 Plan: `790763ef-1f2a-44b7-a690-56bfee9fba9a`. Approved execution window: September 23, 2026, **8:30–9:15 AM Eastern** (`12:30Z`–`13:15Z`). One attempt, no automatic retry.
 
@@ -36,3 +36,15 @@ Observable finish is a sanitized correlated retained-state result or a stage-spe
 Approve plan `790763ef-1f2a-44b7-a690-56bfee9fba9a` for private helper/authorization installation and the one consolidated read-only operation above during 8:30–9:15 AM Eastern, including the single exact revision metadata read, one hidden-input PostgreSQL 18 connection with rollback, and conditional one-version encryption-key read solely for in-memory analysis. No live journey or automatic retry.
 
 Owner response: “i approve proceed”, approving this exact reviewed plan and window. Installed six files (helper, analyzer, hidden-input wrapper, plan, binding and authorization) with source/file hashes verified, directory 0700 and files 0600. Authorization binds the exact plan SHA-256. Installed `--review` returned `R11_RETAINED_STATE_PREPARED_NO_ACTION`. No attempt/result/stop file or external operation exists at installation. Owner execution is next, never before 8:30 AM; do not rerun a stopped operation. No scope deviation.
+
+## Early stop and exact replacement decision
+
+The owner reported an early start. Readback at 08:24 EDT found `stop.json` with `UNCONFIRMED` / `LOCAL_REVIEW` / no automatic retry, no `attempt.json` and no `result.json`. The helper checks the window before READY and external actions; this record establishes no password handoff or external operation. It does not independently distinguish the time check from every other local assertion. Original files and stop record are preserved; do not rerun the original command.
+
+Replacement plan `0969cc65-f1ea-4800-88ed-3542ddad16c1` is prepared in `/private/tmp/r11-enabled22-forensics-replacement` for installation at `/Volumes/Signmons-P06/r11-retained-state-diagnostic-20260923-0830b`. Same approved diagnostic scope and September 23, 8:30–9:15 AM Eastern window; only unique plan ID, installation path, wrapper path and hashes change. No authorization, installation or execution of the replacement has occurred. No new browser run, runtime change, provider request, retry of the stopped ID, or expansion of secret/database access is proposed.
+
+Requested decision: approve replacement `0969cc65-f1ea-4800-88ed-3542ddad16c1` for private installation and one owner-operated diagnostic during 8:30–9:15 AM Eastern, retaining all exact read-only database/revision/conditional-secret boundaries above and no automatic retry. Fresh approval is needed because the prior command is permanently blocked by its saved stop and the owner required no retry. No scope deviation.
+
+## Replacement approval and installation
+
+Owner replied “i approve” to the exact replacement ID/window confirmation. Replacement `0969cc65-f1ea-4800-88ed-3542ddad16c1` is installed at `/Volumes/Signmons-P06/r11-retained-state-diagnostic-20260923-0830b` with six verified files, 0700 directory/0600 files, exact plan-hash authorization and successful installed no-action review. No attempt/result/stop file or external operation exists for the replacement at installation. Original stopped operation is unchanged. Owner command: `python3 -B "/Volumes/Signmons-P06/r11-retained-state-diagnostic-20260923-0830b/private.py" --run`, once at or after 8:30 AM Eastern and before the 9:15 AM deadline. No automatic retry; no scope deviation.
