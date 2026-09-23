@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## Current: observability image verified; future packet window required — 2026-09-23
+
+The exact `574f25a` observability image built successfully once as Cloud Build `d1b08776-bd6a-48bd-85aa-ed8628d026dc`; immutable digest is `sha256:53f82468d86c49d1ddd1024e9550de27bc0ac49f6841b958f5bc393e10f9f4b9`, and all three temporary grants are absent after cleanup. One future packet policy is owner-approved at phone 500000/4000000 and address account/tenant six/600000, session two/200000, preserving all seven phone and four address holds. No packet or live authority exists. APP-013/2B remains sole Now; P06 is 12/14. A fresh owner-selected execution window and separate packet-preparation authorization are next. Approved one-image and one-future-packet capacity deviations only; no other scope deviation.
+
 ## Current: observability image and final-capacity decision required — 2026-09-23
 
 Current read-only qualification passed Cloud, Twilio, participant, policy, runtime-role and row-integrity gates. Seven phone holds total 3500000 micros and four address operations total 400000 micros at both aggregate scopes. The consumed helper's `PHONE_STATE_INVALID` label came from matching its intentionally historical scope packet to an existing hold; no row is malformed and no rerun occurred. Backend `574f25a` has no registry image. Review `APP013_P06_R11_OBSERVABILITY_IMAGE_CAPACITY_DECISION.md` alternative 1 for one exact no-retry build and one future 500000/4000000 phone policy; no packet or live execution authority follows. APP-013/2B remains sole Now; P06 stays 12/14. No scope deviation implemented.
