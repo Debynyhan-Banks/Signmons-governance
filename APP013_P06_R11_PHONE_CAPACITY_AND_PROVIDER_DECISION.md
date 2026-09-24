@@ -1,6 +1,6 @@
 # APP-013/P06 R11 phone capacity and provider-readiness decision
 
-Status: alternative 1 owner-approved on 2026-09-23. Capacity policy is approved; the provider gate remains closed. No packet or live execution is authorized.
+Status: alternative 1 owner-approved on 2026-09-23. Capacity policy and the Twilio provider gate are satisfied. No packet or live execution is authorized without the separately required fresh preparation window.
 
 ## Owner decision
 
@@ -10,7 +10,7 @@ The owner approved alternative 1: preserve all eight phone and four address hold
 
 ### Provider follow-up readback — 2026-09-23
 
-Within the authorized read-only window, Twilio showed Signmons LLC's Primary Compliance Profile as Business / Approved and the account as Active. The Verified Caller IDs page showed exactly one retained verified entry, consistent with the existing private rebind to the sole verified recipient; no number was copied or persisted. After a fresh reload, the Verify Services page still displayed the account-level warning requiring an account upgrade and approved Primary Compliance Profile before sending to any recipient. The approved profile therefore resolves only one stated prerequisite; the contradictory sending warning keeps the provider gate closed. No setting changed, no provider request was sent, and no packet was created.
+Within the authorized read-only window, Twilio showed Signmons LLC's Primary Compliance Profile as Business / Approved and the account as Active. The Verified Caller IDs page showed exactly one retained verified entry, consistent with the existing private rebind to the sole verified recipient; no number was copied or persisted. The Verify Services page displayed a general upgrade/compliance informational banner. The owner clarified that this banner is not an account-specific restriction. On the combined evidence, the Twilio provider gate passes. No setting changed, no provider request was sent, and no packet was created.
 
 Consumed read-only operation `65007417-c4d1-41f9-baea-6d797a41c785` completed at `2026-09-24T00:29:07.981Z` with `CAPACITY_DECISION_REQUIRED`. The fixed tenant/category and organization/payment policy match, runtime and phone approvals are inactive, `p06_intake_runtime` is closed with zero sessions, and the participant binding matches the historical controlled scope. All rows are valid.
 
@@ -24,7 +24,7 @@ Twilio is signed in. Console readback shows one Signmons Verify service, SMS cha
 
 Preserve all eight phone and four address holds. Approve exactly one future R11 packet to use phone `flowUpperBoundMicros: 500000` and `accountCeilingMicros: 4500000`, plus address account/tenant six operations/600,000 micros and session two operations/200,000 micros. This is policy approval only.
 
-No packet may be prepared until a separately authorized current provider/participant check resolves the Twilio upgrade/compliance warning and confirms the exact recipient remains eligible. If that gate passes, packet preparation still needs a fresh owner-selected window and read-only target/policy/liability refresh; execution requires separate exact approval and mandatory closeout. No automatic retry.
+The provider gate is satisfied by the approved active profile, sole verified-recipient readback and owner clarification of the general banner. Packet preparation still needs a fresh owner-selected window and read-only target/policy/liability refresh; execution requires separate exact approval and mandatory closeout. No automatic retry.
 
 ## Alternative 2 — pause without a new ceiling
 
