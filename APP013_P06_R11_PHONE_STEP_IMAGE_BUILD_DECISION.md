@@ -1,6 +1,6 @@
 # APP-013/P06 R11 phone-step repair image build decision
 
-Status: local decision/source preparation only. Owner said “proceed” after local repair evidence, authorizing this preparation, not an external build. Owner-selected build window: September 23, 2026, 8:15–9:00 PM Eastern (September 24, 00:15–01:00Z). Exact build approval pending. No upload, external refresh, build, IAM change, packet or execution occurred.
+Status: owner-approved alternative 1 completed once; immutable image verified and all three temporary grants removed/read back absent. No deployment, packet or runtime execution authorized.
 
 ## Reviewed source and purpose
 
@@ -33,3 +33,13 @@ Owner rescheduled to 8:15–9:00 PM Eastern on September 23; approval/refusal of
 ## Window rescheduled — September 23, 2026
 
 Owner could not attend the morning window and selected 8:15–9:00 PM Eastern today. This supersedes the unapproved morning window; source, tag, limits, preflight, one-attempt restriction and cleanup obligations are unchanged. Alternative 1 build approval remains pending. This window update performs no external operation.
+
+## Exact build approval recorded
+
+Owner: “I approve build decision alternative 1 for 8:15–9:00 PM Eastern today: one build from 6d8ba54, USD1 allowance, documented temporary grants with mandatory removal, no deployment or automatic retry.” This authorizes only alternative 1 in the September 23 evening window and its mandatory cleanup. Source archive and extracted tracked-input bytes rechecked unchanged before preparation. Fresh read-only cloud preflight, one-attempt reservation, build and cleanup/readback are pending. No packet or browser runtime authority follows.
+
+## Execution result — September 23, 2026
+
+Cloud Build `3cf5968b-f613-41a5-9eb1-2bb4e370c4c7` returned SUCCESS. Exact source `6d8ba541ca4cab8ef2d905defb1edcc9bacac046`; tag `p06-r11-6d8ba541ca4c` resolves to `sha256:b241574483ba8bd2ab08127d7e750b5fdd0f072101ddbf5458e48f1c2edfa9dc`. Readback matches the build result. All three temporary grants were removed and verified absent by 8:19 PM Eastern, within the approved window. No retry or deployment. Actual invoice cost unconfirmed; USD1 allowance is not a measured charge. Backend evidence: `evidence/APP-013/p06-r11-phone-step-image-build.md`.
+
+No capacity refresh or packet creation followed; those remain separately gated with all holds preserved. P06 remains 12/14. Approved one-image scope only; no other scope deviation.
