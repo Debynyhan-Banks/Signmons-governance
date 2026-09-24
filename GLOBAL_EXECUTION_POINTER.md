@@ -1,8 +1,8 @@
 # Global Execution Pointer
 
-## Current: capacity decision required; Twilio recipient gate unconfirmed — 2026-09-23
+## Current: capacity policy approved; Twilio provider gate remains closed — 2026-09-23
 
-Consumed read-only operation `65007417-c4d1-41f9-baea-6d797a41c785` passed policy/runtime safety and found eight valid phone holds / 4000000 micros plus four valid address operations / 400000 micros. One future flow would require phone 500000/4500000; address six/600000 and session two/200000 still fit. Twilio is signed in with one US SMS/Fraud-Guard Verify service and Voice disabled, but its account-level upgrade/Primary Compliance Profile warning leaves exact recipient eligibility unconfirmed. No packet was created. `APP013_P06_R11_PHONE_CAPACITY_AND_PROVIDER_DECISION.md` alternative 1 proposes the one-future-packet capacity envelope while retaining the provider gate; owner decision is next. P06 stays 12/14, R11/full R12 open, accepted 1A/1B/2A unchanged. No scope deviation.
+Consumed read-only operation `65007417-c4d1-41f9-baea-6d797a41c785` passed policy/runtime safety and found eight valid phone holds / 4000000 micros plus four valid address operations / 400000 micros. The owner approved `APP013_P06_R11_PHONE_CAPACITY_AND_PROVIDER_DECISION.md` alternative 1: preserve every hold and authorize exactly one future packet at phone 500000/4500000, address account/tenant six/600000 and session two/200000. The Twilio account-level upgrade/Primary Compliance Profile warning and unconfirmed exact-recipient eligibility keep the provider gate closed, so no packet was created. Next resolve that gate under separate authority; packet preparation still needs a fresh window after it passes. P06 stays 12/14, R11/full R12 open, accepted 1A/1B/2A unchanged. No scope deviation.
 
 ## Current: evening readiness refresh authorized; database and provider checks pending — 2026-09-23
 

@@ -1,6 +1,10 @@
 # APP-013/P06 R11 phone capacity and provider-readiness decision
 
-Status: proposed; owner decision required. No packet or live execution is authorized.
+Status: alternative 1 owner-approved on 2026-09-23. Capacity policy is approved; the provider gate remains closed. No packet or live execution is authorized.
+
+## Owner decision
+
+The owner approved alternative 1: preserve all eight phone and four address holds and authorize exactly one future R11 packet at phone `flowUpperBoundMicros: 500000` / `accountCeilingMicros: 4500000`, address account/tenant six operations/600,000 micros, and session two operations/200,000 micros. No packet may be created until the Twilio provider gate passes. This decision does not authorize provider-account changes or any live action.
 
 ## Demonstrated current state
 
