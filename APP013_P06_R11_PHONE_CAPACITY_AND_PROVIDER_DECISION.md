@@ -8,6 +8,10 @@ The owner approved alternative 1: preserve all eight phone and four address hold
 
 ## Demonstrated current state
 
+### Provider follow-up readback — 2026-09-23
+
+Within the authorized read-only window, Twilio showed Signmons LLC's Primary Compliance Profile as Business / Approved and the account as Active. The Verified Caller IDs page showed exactly one retained verified entry, consistent with the existing private rebind to the sole verified recipient; no number was copied or persisted. After a fresh reload, the Verify Services page still displayed the account-level warning requiring an account upgrade and approved Primary Compliance Profile before sending to any recipient. The approved profile therefore resolves only one stated prerequisite; the contradictory sending warning keeps the provider gate closed. No setting changed, no provider request was sent, and no packet was created.
+
 Consumed read-only operation `65007417-c4d1-41f9-baea-6d797a41c785` completed at `2026-09-24T00:29:07.981Z` with `CAPACITY_DECISION_REQUIRED`. The fixed tenant/category and organization/payment policy match, runtime and phone approvals are inactive, `p06_intake_runtime` is closed with zero sessions, and the participant binding matches the historical controlled scope. All rows are valid.
 
 Phone liability is eight retained holds—one staging and seven controlled—totaling 4,000,000 micros. One future capped 500,000-micro flow therefore needs `accountCeilingMicros: 4500000`. Address liability remains four operations/400,000 micros at both account and tenant scopes; one session of at most two operations/200,000 micros fits account/tenant six operations/600,000 micros and session two/200,000 micros. All holds remain preserved.
