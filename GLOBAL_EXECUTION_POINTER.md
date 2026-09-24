@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: 9:00 PM R11 helper expired unused — 2026-09-24
+
+At 5:03 AM Eastern, the September 23 9:00–9:45 PM window was expired. The owner-only helper directory still contains exactly the four prepared mode-0600 files and has no database authorization, attempt, result or packet. Operation `1cb93bea-3044-4063-b78e-255b4928a44f` was never activated and is not reusable. No database, LOGIN, cloud, provider, browser/customer or billing action occurred. Next requires an owner-selected fresh future window and separately authorized read-only refresh/new helper; live execution remains separately gated. P06 stays 12/14, R11/full R12 open. Card: `APP013_P06_R11_2100_HELPER_EXPIRY.md`; backend evidence: `evidence/APP-013/p06-r11-2100-helper-expired.md`. No scope deviation.
+
 ## Current: fresh R11 packet-readiness helper prepared; database authorization absent — 2026-09-23
 
 The owner reviewed the planned commands, manually completed local/governance/Cloud Run/provider checks and authorized local helper preparation only for the selected 9:00–9:45 PM Eastern window. Fresh operation `1cb93bea-3044-4063-b78e-255b4928a44f` is installed and passed syntax, synthetic-capacity, exact hash/permission and no-action review checks. It binds the approved phone 500000/4500000 and address six/600000, session two/200000 policy while preserving all holds. No authorization file, database connection, attempt, result or packet exists. Next is an exact owner decision on one read-only hidden-input database refresh before cutoff; live execution remains separate. P06 stays 12/14, R11/full R12 open. No scope deviation.
