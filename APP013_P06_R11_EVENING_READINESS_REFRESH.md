@@ -21,3 +21,9 @@ Safari tab inventory showed Twilio Login. Owner sign-in requested; current provi
 Owner runs once before 9:00 PM Eastern: `python3 -B "/Volumes/Signmons-P06/r11-readiness-refresh-20260923-2025/r11-readiness-private.py" --run`, hidden existing neondb_owner password, final fixed status line only. Do not rerun a stop. Owner completes Twilio sign-in; implementer performs only read-only console readiness inspection. Implementer then correlates sanitized capacity/policy/provider result; if capacity is insufficient, prepare a policy decision and stop before any packet. No fresh ceiling approved by this refresh.
 
 Rollback is mandatory SQL ROLLBACK plus connection close; runtime remains unchanged. Finish is a truthful qualified/not-qualified/unknown readiness result, not R11 acceptance. P06 remains 12/14; R11/full R12 open, accepted 1A/1B/2A unchanged. No scope deviation.
+
+## Completed result
+
+The operation completed once with `CAPACITY_DECISION_REQUIRED`; it is consumed and was not retried. Policy, category, organization/payment profiles, inactive approvals, closed runtime role and zero sessions pass. Eight valid phone holds total 4,000,000 micros; one more 500,000-micro flow requires a 4,500,000-micro ceiling. Four valid address operations total 400,000 micros at matching account/tenant scope, so six/600,000 and session two/200,000 remain sufficient. All holds are preserved and invalid-row counts are zero.
+
+Twilio sign-in and service/geopermission readback succeeded, but an account-level upgrade/Primary Compliance Profile warning makes recipient eligibility unconfirmed. No packet was created. See `APP013_P06_R11_PHONE_CAPACITY_AND_PROVIDER_DECISION.md`; owner decision on its alternatives is next. No scope deviation.
