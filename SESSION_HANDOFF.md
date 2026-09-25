@@ -1,5 +1,9 @@
 # Session Handoff
 
+## Current: fresh 5:45 AM R11 helper prepared; wait for read-only window — 2026-09-25
+
+The owner selected 5:45–6:30 AM Eastern and has Twilio open in Safari. Fresh operation `eeb86b2c-3c0e-4ccc-b974-f60aa2543bed` is installed and passed syntax, synthetic-capacity, exact hash/permission and no-action review checks. It binds phone 500000/4500000 and address six/600000, session two/200000 while preserving all holds. No authorization, database connection, attempt, result or packet exists. At 5:45 AM perform only the bounded read-only target/provider refresh; database and packet boundaries remain separate. P06 stays 12/14, R11/full R12 open. No scope deviation.
+
 ## Current: 9:00 PM R11 helper expired unused — 2026-09-24
 
 At 5:03 AM Eastern, the September 23 9:00–9:45 PM window was expired. The owner-only helper directory still contains exactly the four prepared mode-0600 files and has no database authorization, attempt, result or packet. Operation `1cb93bea-3044-4063-b78e-255b4928a44f` was never activated and is not reusable. No database, LOGIN, cloud, provider, browser/customer or billing action occurred. Next requires an owner-selected fresh future window and separately authorized read-only refresh/new helper; live execution remains separately gated. P06 stays 12/14, R11/full R12 open. Card: `APP013_P06_R11_2100_HELPER_EXPIRY.md`; backend evidence: `evidence/APP-013/p06-r11-2100-helper-expired.md`. No scope deviation.
