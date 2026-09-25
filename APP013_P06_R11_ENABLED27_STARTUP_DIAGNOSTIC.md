@@ -1,6 +1,6 @@
 # APP-013/P06 R11 enabled27 startup diagnostic decision
 
-Status: proposed; owner approval pending. Operation `6b086d07-9dee-422f-8c77-3492b8f63acc`. Proposed execution: once after approval, before September 25, 2026, 9:30 AM Eastern (13:30Z). No query has run and no diagnostic authorization or attempt exists.
+Status: CONSUMED / RESULT UNCONFIRMED. Owner approved with “i approve” in direct response to the exact operation/window request. Operation `6b086d07-9dee-422f-8c77-3492b8f63acc` reserved once at 13:21:40.043823Z on September 25, within the approved deadline of 13:30Z. It stopped without a result; query delivery and failure stage are unconfirmed. No retry. See backend `evidence/APP-013/p06-r11-enabled27-startup-diagnostic.md`.
 
 ## Demonstrated failure
 
@@ -50,4 +50,8 @@ Retain verified shutdown and do not query logs or attempt another live run.
 
 ## Owner decision
 
-Pending. The prior approval covered the consumed execution plan and closeout. This new log-diagnostic scope requires a separate owner decision.
+Owner replied “i approve” to the exact diagnostic request. This authorizes operation `6b086d07-9dee-422f-8c77-3492b8f63acc` once, before 9:30 AM Eastern September 25, with the filter, privacy limits and exclusions above.
+
+## Implementation clarification before execution
+
+Local Cloud SDK source inspection showed that `gcloud logging read --limit=200` limits records but can follow page tokens. To enforce the approved no-pagination/no-retry boundary, the wrapper will use the same installed, authenticated Cloud SDK client and call entries.List exactly once with pageSize200, the identical filter and ascending order. Client retries are disabled. A returned page token is classified RESULT_LIMIT_REACHED and never followed. This changes only the internal reader implementation; project, revision, event interval, log streams, retained fields, operation count and authority are unchanged. Only approved message fields are inspected in process memory; no raw response is printed or persisted. File/HTTP logging is disabled; no new credentials or IAM configuration are created.
