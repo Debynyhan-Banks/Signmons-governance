@@ -1,6 +1,6 @@
 # APP-013/P06 R11 enabled27 packet review
 
-Status: owner explicitly approved this exact plan and execution scope. Nineteen private files are installed and no-action checks pass; owner-operated coordinator execution is next. No coordinator/action attempt exists at handoff.
+Status: CONSUMED — activation succeeded, enabled27 container startup failed before browser handoff, and mandatory closeout verified. No retry. See APP013_P06_R11_ENABLED27_STARTUP_DIAGNOSTIC.md for the proposed smallest diagnostic; no new live plan.
 
 ## Exact proposed execution
 
