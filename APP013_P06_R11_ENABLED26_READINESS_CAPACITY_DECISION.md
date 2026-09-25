@@ -1,12 +1,12 @@
 # APP-013/P06 R11 enabled26 readiness and one-packet capacity decision
 
-Status: alternative1 explicitly owner-approved on September25,2026 at approximately7:41 AM Eastern. This authorizes the bounded read-only refresh, conditional one-packet capacity/preparation and local coordinator binding/tests. Live execution still requires separate exact plan approval. Five fresh private read-only helper files are installed and no-action checks pass; no database attempt or packet exists at this checkpoint.
+Status: alternative1 owner-approved and preparation complete. Read-only operation3afbb469-f8bd-46ff-a1a8-1f7a4789e831 confirmed nine valid phone holds/4500000micros and four address operations/400000micros per scope, inactive approvals, closed role/zero sessions and all policy/participant gates. Fresh Cloud/Safari provider gates pass. Coordinatorb4ca36d pins the approved exact tuple and16tests pass. Exactly one packet, planfdf9b5da-6681-4623-8529-35143bc9d892, is installed as three private files. Execution/helper authorization remains separately pending; no new image build or live action.
 
 ## Demonstrated gap and evidence
 
 Consumed enabled25 plan71afedf5-3a71-4bf9-9a2c-a1229ebe3801 achieved activation/deployment and owner-visible Code accepted. Preview refused because the owner confirmed required Customer name was blank; compiled local validator reproduces the refusal. Closeout is independently REVOKED/CLOSED with zero failures. Source/evidence: backend c913e1a, governance13d28ef, `evidence/APP-013/p06-r11-enabled25-preview-closeout.md`.
 
-The pre-run snapshot contained eight valid phone holds/4000000micros and four address operations/400000micros per account/tenant. The latest successful phone check may have added a ninth hold; post-run totals are NOT verified. The prior exactly-one-packet policy has been consumed. The current coordinator pins ceiling4500000, retained4000000/eight holds (`scripts/p06_r11_attended_coordinator.py:35–37`); creating a new5m packet without updating that binding would cause a pre-action stop. No count or capacity increase is inferred as already approved.
+The pre-run snapshot contained eight valid phone holds/4000000micros and four address operations/400000micros per account/tenant. Historical proposal evidence: the latest successful phone check might have added a ninth hold; totals were not yet verified when this decision was proposed. Fresh approved refresh now confirms nine holds/4500000micros. The prior exactly-one-packet policy has been consumed. At proposal time the coordinator pinned ceiling4500000, retained4000000/eight holds (`scripts/p06_r11_attended_coordinator.py:35–37`); creating a new5m packet without updating that binding would cause a pre-action stop. The owner subsequently approved the conditional capacity increase below; fresh counts and the implemented binding are recorded above.
 
 ## Alternative 1 — combined conditional preparation decision (recommended)
 
@@ -37,7 +37,7 @@ Do not raise capacity, refresh accounts/database, change coordinator bindings or
 
 Exclusions: no LOGIN change, database write, activation, deployment, traffic change, verification code, paid/provider mutation, browser/customer action, job creation, hold release, secret/IAM change, billing change, or live execution. No application UI repair or image build is included.
 
-P06 remains12/14; R11/fullR12 open; accepted1A/1B/2A unchanged. Approved bounded deviation: one-packet phone ceiling4500000→5000000 and matching local coordinator binding. Fresh reader uses approved conditional gates; coordinator tuple implementation waits for the actual refreshed counts. No other scope deviation. Proposed execution window does not itself authorize any action.
+P06 remains12/14; R11/fullR12 open; accepted1A/1B/2A unchanged. Approved bounded deviation: one-packet phone ceiling4500000→5000000 and matching local coordinator binding. Fresh reader enforced the approved conditional gates; coordinator now pins the actual refreshed nine-hold/4500000 tuple and5000000ceiling. No other scope deviation. Proposed execution window does not itself authorize any action.
 
 ## Owner decision
 
