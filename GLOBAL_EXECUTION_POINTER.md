@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## Current: enabled24 coordinator stopped before action; private-import repair complete — 2026-09-25
+
+Approved plan `97fc393e-bd78-4f68-89e6-4e3bfe2e830d` was invoked once and returned `R11_ATTENDED_COORDINATOR_STOPPED_BEFORE_ACTION`. Its only action marker is the private coordinator reservation at `2026-09-25T10:44:55.245Z`; LOGIN, activation, deployment, provider, browser and closeout markers are absent. Runtime stayed closed, no paid/customer action occurred, no closeout was required, and the plan must not be rerun. Root cause was local module lookup from the copied private coordinator: the hidden-input helper could not resolve after reservation and before the password prompt. Backend `0132eb7` binds module lookup to the reviewed repository scripts directory; an isolated private-copy regression and all 14 coordinator tests pass. Next requires an owner-selected future window, fresh read-only readiness/capacity refresh, one fresh packet and separate execution approval. P06 stays 12/14 with R11/full R12 open. Backend evidence: `evidence/APP-013/p06-r11-enabled24-coordinator-preaction-stop.md`. No scope deviation.
+
 ## Current: 5:45 AM R11 readiness passed; packet creation decision required — 2026-09-25
 
 Read-only target/provider checks passed, then owner-authorized operation `eeb86b2c-3c0e-4ccc-b974-f60aa2543bed` completed once with `READY_FOR_PACKET_REVIEW` and rollback. Policy/participant/inactive authority/closed role/zero sessions pass. Eight valid phone holds total 4000000 micros and four valid address operations total 400000 micros; approved phone 500000/4500000 and address six/600000, session two/200000 fit exactly. The operation is consumed. Its authorization excluded packet creation, so no packet exists. Next is an exact owner packet-creation decision; live execution remains separate. P06 stays 12/14, R11/full R12 open. No scope deviation.
