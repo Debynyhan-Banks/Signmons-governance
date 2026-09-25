@@ -1,6 +1,6 @@
 # APP-013/P06 R11 startup diagnostic visibility decision
 
-Status: bounded local helper correction under the existing diagnostic-helper preparation scope; replacement external diagnostic remains unapproved. This record creates no new execution authority. The already approved one-query operation is consumed.
+Status: replacement operation1f9ba8f2-9208-4611-87a4-61eeb584c1e7 is CONSUMED / HTTP400. Owner approved at13:34:06.160Z; the single attempt at13:36:51.067268Z was rejected. No logs, no retry. The application startup cause remains unresolved.
 
 ## Demonstrated gap
 
@@ -30,4 +30,16 @@ The local helper is tested and reviewed; the owner may now approve exactly one r
 
 ## Owner decision
 
-Replacement-query decision pending. Approval of the consumed diagnostic does not authorize a second query. The local correction does not create a packet, authorization, runnable operation or execution window.
+Owner replied “yes i approve” to the exact replacement diagnostic and 30 minutes after reply. The approval timestamp was read from this session's user-message record and bound to the exact UTC window above. This authorizes only fresh helper/binding/authorization installation and one scoped read-only query for `1f9ba8f2-9208-4611-87a4-61eeb584c1e7`, with the new privacy-safe failure metadata. No runtime, database, provider, browser or customer action is authorized. No automatic retry.
+
+## Replacement outcome and bounded local response-field correction
+
+Operation 1f9ba8f2-9208-4611-87a4-61eeb584c1e7 is now consumed. It stopped in REQUEST_SEND with HttpBadRequestError, HTTP400, one attempted Logging send and the guard installed. No retry or usable log result. This proves request rejection, not the application startup cause. Raw API error text was not retained, so the rejected parameter is unknown.
+
+The installed SDK and official entries.list/LogEntry references confirm the request body names, pageSize200, ascending order and endpoint. The response selector requested dynamic jsonPayload/message and jsonPayload/error/message paths. The SDK stores that selector as an unchecked string; its jsonPayload schema is dynamic. Nested field selection is a plausible cause, not proven by static inspection.
+
+Before any further query, a routine local-only helper correction will replace the optional response selector with entries(timestamp,severity,textPayload,jsonPayload),nextPageToken. Only the same three allowed message paths will enter the existing sanitizer. Other JSON values may be returned into transient process memory but must never be inspected for classification, printed or retained. This changes response projection only; the historical filter, event interval, record limit, identity, single-send/no-retry controls and retained application classes stay fixed. A future query using this projection needs separate owner approval; this is not authority to send it now.
+
+Source: backend ae92692/governance 9c8d428 and the SHA-bound uninstalled helper used for the consumed operation. Expected local files: a new execution-disabled helper/test/report copy under /private/tmp/r11-enabled27-response-fields-local. Reuse the 17-test suite and sanitizer. Add actual SDK serialized-field selection assertions and a payload privacy test with unrelated secret-bearing JSON. Do not modify any consumed files or create a new authorization/attempt. Finish: tested uninstalled helper, updated evidence and a concrete replacement-query review. APP-013/2B/P06-R11 remains incomplete; no application change, image, database, runtime, provider, browser or customer action. No scope deviation.
+
+Official references: https://docs.cloud.google.com/logging/docs/reference/v2/rest/v2/entries/list and https://docs.cloud.google.com/logging/docs/reference/v2/rest/v2/LogEntry .
