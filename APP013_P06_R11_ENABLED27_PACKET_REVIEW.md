@@ -1,6 +1,6 @@
 # APP-013/P06 R11 enabled27 packet review
 
-Status: REVIEW_REQUIRED_NOT_AUTHORIZED. Prepared under approved APP013_P06_R11_0845_REPLACEMENT_WINDOW_DECISION.md alternative1. No execution approval, helper or attempt exists.
+Status: owner explicitly approved this exact plan and execution scope. Nineteen private files are installed and no-action checks pass; owner-operated coordinator execution is next. No coordinator/action attempt exists at handoff.
 
 ## Exact proposed execution
 
@@ -25,10 +25,14 @@ Exactlythree same-owner0600 files are installed in0700 `/Volumes/Signmons-P06/r1
 
 ## Execution decision
 
-Pending. Only preparation is approved. The owner may approve this exact plan as follows:
+Approved. Owner explicitly stated “I approve R11 supervised plan22db1c2a-c9ab-4025-891a-91dc7118e971 as specified in the linked packet review, including helper installation, bounded LOGIN, activation, one zero-traffic enabled27 deployment, one capped browser journey and mandatory closeout. No automatic retry.” This approves the exact scope/windows/caps in this review. The full scope text presented before that decision was:
 
 “I approve R11 supervised plan22db1c2a-c9ab-4025-891a-91dc7118e971 for private guarded-helper, authorization and one-command coordinator installation; database LOGIN through9:30 AM Eastern today,September25; guarded policy, retained-capacity and authority preflight; activation/readback; one zero-traffic enabled27 deployment/readback; and one connected browser journey9:00–9:15 AM using the verified recipient. Limits:phone500000/5000000micros,address account/tenant six operations600000micros,session two200000,preserving all holds. I will fill Customer name,complete the capped phone-verification/address/reviewed-submit journey,then type DONE or STOP,with mandatory closeout by9:30 AM. No automatic retry.”
 
 No other IAM/secret/billing change, provider configuration, payment, appointment, dispatch or outbound message authority is included. Completed now: fresh qualification and one reviewed packet. Remaining: owner exact execution decision, guarded installation, owner-operated journey and correlated R11/fullR12 evidence. Owner controls approval/private input/browser; implementer controls review/install/evidence. P06 remains12/14; R11/fullR12 open; accepted1A/1B/2A unchanged. No scope deviation.
 
 Independent packet audit passed: allthree digests,eight fresh distinct operation IDs and fresh plan/packet IDs checked against all18prior localR11plans; exact source/image/coordinator/windows/capacity, fresh readiness evidence and716compiled hashes match. Post-packet baseline/documentation consistency,21governance tests,architecture and both whitespace checks passed. No execution authority or live action created.
+
+## Current: enabled27 execution approved; installed checks pass; owner command next — 2026-09-25
+
+Owner explicitly approved R11 supervised plan `22db1c2a-c9ab-4025-891a-91dc7118e971` as specified in APP013_P06_R11_ENABLED27_PACKET_REVIEW.md, including helper installation,bounded LOGIN,activation,one zero-traffic enabled27 deployment,one capped browser journey and mandatory closeout; no automatic retry. Exact authorized windows:LOGIN8:45–9:30,connected9:00–9:15,closeoutby9:30 Eastern September25. Phone500000/5000000,address account/tenant six600000,session two200000,preserving allholds. Exactly19 private files now installed at `/Volumes/Signmons-P06/r11-supervised-run-20260925-0845`; exclusive creation/fsync/byte readback,same-owner0700/0600,exact approval/windows/operations/source/image/helper hashes and716compiled-file bindings pass. Installed controller --check returned R10_CHECK_PASSED_NO_ACTION; actual private coordinator import and local directory review pass. Helpers bind backendc957aad;runtime6d8/imageb241/coordinatorb4ca36d unchanged. Prior expected latestReady remains enabled25,targetenabled27. No coordinator/action attempt,LOGIN,activation,deployment,code or browser action at handoff. Owner runs the one-command coordinator once now,enters hidden input promptly,waits until9:00 if needed,opens returnedURL,completes Customer name/allrequiredfields and Code accepted before Preview,and finishes by9:15. Type DONE afterterminalresult or STOP aftererror and leaveTerminal open forautomatic closeoutby9:30. Startbefore9:11;no source/build/helperchanges while running. Implementer inspects sanitized outcome andcloseout afterward. P06 stays12/14;R11/fullR12 open;accepted1A/1B/2A unchanged. Evidence:backend `evidence/APP-013/p06-r11-0845-readiness-preparation.md`. No scope deviation.
