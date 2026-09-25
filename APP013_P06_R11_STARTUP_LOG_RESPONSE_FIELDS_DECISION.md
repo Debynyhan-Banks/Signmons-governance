@@ -1,6 +1,6 @@
 # APP-013/P06 R11 startup-log response-fields decision
 
-Status: prepared for owner review; no execution approval, installed authorization or attempt exists.
+Status: COMPLETE / CONSUMED. Owner approved at13:43:07.884Z; operation a087c5c8-8162-4d95-96ef-4739de9e0198 reserved once at13:45:16.035706Z and completed at13:45:17.109276Z with14 records and no page continuation. No retry. Sanitized evidence is in backend `evidence/APP-013/p06-r11-enabled27-startup-classification.md`.
 
 ## Reason and local repair
 
@@ -24,10 +24,10 @@ Exclusions: no database access/write, LOGIN, activation, deployment, traffic cha
 
 ## Finish and ownership
 
-APP-013/2B P06-R11 diagnostic preparation only. Implementer installs/checks and reads once after approval; no owner Terminal/password/browser action. Observable finish is sanitized startup classes or an explicit safe failure stage. No application change is justified by HTTP400 alone. P06 remains12/14; R11/fullR12 open; accepted1A/1B/2A unchanged. No scope deviation. Owner decision pending.
+APP-013/2B P06-R11 diagnostic preparation only. Implementer installs/checks and reads once after approval; no owner Terminal/password/browser action. Observable finish is sanitized startup classes or an explicit safe failure stage. No application change is justified by HTTP400 alone. P06 remains12/14; R11/fullR12 open; accepted1A/1B/2A unchanged. No scope deviation. Owner decision: approved as recorded above.
 
 References: [entries.list](https://docs.cloud.google.com/logging/docs/reference/v2/rest/v2/entries/list), [LogEntry](https://docs.cloud.google.com/logging/docs/reference/v2/rest/v2/LogEntry).
 
 ## Local validation
 
-Completed:19 focused tests and sanitizer self-test pass; source diff is only the response selector and local directory binding. The unchanged sanitizer ignores unrelated JSON. Tests use actual SDK serialization with fictional configuration/credential stubs and a fake transport; sockets are blocked. Helper hash `214bf72861d1a6e7b92c37be035afd55b7714ed2ef73308ee9c26908a93de421`. Report: `/private/tmp/r11-enabled27-response-fields-local/TEST_REPORT.md`. No live server acceptance or startup cause is established. Owner approval is still pending.
+Completed:19 focused tests and sanitizer self-test pass; source diff is only the response selector and local directory binding. The unchanged sanitizer ignores unrelated JSON. Tests use actual SDK serialization with fictional configuration/credential stubs and a fake transport; sockets are blocked. Helper hash `214bf72861d1a6e7b92c37be035afd55b7714ed2ef73308ee9c26908a93de421`. Report: `/private/tmp/r11-enabled27-response-fields-local/TEST_REPORT.md`. No live server acceptance or startup cause is established. The fresh one-use owner approval is recorded above; it grants no runtime or provider authority.
