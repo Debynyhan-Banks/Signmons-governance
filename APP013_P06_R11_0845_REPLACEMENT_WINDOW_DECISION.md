@@ -1,6 +1,6 @@
 # APP-013/P06 R11 8:45 AM replacement-window decision
 
-Status: alternative1 preparation approved. Owner selected September25,8:45–9:30 AM Eastern and returned the requested alternative1 approval text with this decision link. Five private read-only helper/authorization files are installed and locally verified; no database attempt, external refresh, runtime packet or execution authority exists yet.
+Status: alternative1 preparation complete. Read-only operationa83a3cba-0086-41c6-b600-499469f4d01e and fresh provider/target gates pass. Exactlyone enabled27 packet, plan22db1c2a-c9ab-4025-891a-91dc7118e971, is installed as three private files. See APP013_P06_R11_ENABLED27_PACKET_REVIEW.md for the separate exact execution decision; no execution helper/authorization/attempt exists.
 
 ## Evidence and scope
 
