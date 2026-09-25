@@ -1,6 +1,6 @@
 # APP-013/P06 R11 enabled26 readiness and one-packet capacity decision
 
-Status: PROPOSED ONLY. Owner selected September25,2026,7:45–8:30 AM Eastern. Window selection does not authorize external reads, policy changes, packet creation or execution. No new helper/authorization/packet is installed and no external operation has occurred.
+Status: alternative1 explicitly owner-approved on September25,2026 at approximately7:41 AM Eastern. This authorizes the bounded read-only refresh, conditional one-packet capacity/preparation and local coordinator binding/tests. Live execution still requires separate exact plan approval. Five fresh private read-only helper files are installed and no-action checks pass; no database attempt or packet exists at this checkpoint.
 
 ## Demonstrated gap and evidence
 
@@ -37,10 +37,10 @@ Do not raise capacity, refresh accounts/database, change coordinator bindings or
 
 Exclusions: no LOGIN change, database write, activation, deployment, traffic change, verification code, paid/provider mutation, browser/customer action, job creation, hold release, secret/IAM change, billing change, or live execution. No application UI repair or image build is included.
 
-P06 remains12/14; R11/fullR12 open; accepted1A/1B/2A unchanged. Explicit deviation proposed before implementation: one-packet phone ceiling4500000→5000000 and matching local coordinator binding; no deviation implemented. Proposed execution window does not itself authorize any action.
+P06 remains12/14; R11/fullR12 open; accepted1A/1B/2A unchanged. Approved bounded deviation: one-packet phone ceiling4500000→5000000 and matching local coordinator binding. Fresh reader uses approved conditional gates; coordinator tuple implementation waits for the actual refreshed counts. No other scope deviation. Proposed execution window does not itself authorize any action.
 
 ## Owner decision
 
-Pending. No approval is inferred from the selected window. Exact approval of alternative1 covers this combined scope; any ensuing live plan still requires separate execution approval.
+Owner explicitly replied “I approve alternative1” to authorize preparation, reiterated that execution requires approval of the finished packet and that no new image build is needed. This is the actual decision on the full alternative1 above. No live execution is authorized.
 
 Local proposal checks passed: frozen baseline, backend governance baseline, full cross-repository documentation consistency,21 governance tests, architecture and both whitespace checks. No implementation, image build or live action occurred.
