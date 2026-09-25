@@ -1,6 +1,6 @@
 # APP-013/P06 R11 8:45 AM replacement-window decision
 
-Status: owner selected September 25, 2026, 8:45–9:30 AM Eastern. Preparation approval pending. This is a reviewable decision only; no new helper, database authorization, packet or execution authority exists.
+Status: alternative1 preparation approved. Owner selected September25,8:45–9:30 AM Eastern and returned the requested alternative1 approval text with this decision link. Five private read-only helper/authorization files are installed and locally verified; no database attempt, external refresh, runtime packet or execution authority exists yet.
 
 ## Evidence and scope
 
@@ -36,6 +36,6 @@ No scope deviation. Window selection alone is not preparation or execution appro
 
 ## Owner decision
 
-Pending. The owner selected the time only; no new action approval is inferred.
+Owner replied with the requested “I approve alternative1” preparation text and this decision link, explicitly retaining separate finished-packet execution approval. This authorizes only alternative1 above: fresh read-only qualification and one conditional packet in the selected window; no live execution.
 
 Local decision checks passed: backend/governance baselines, complete consistency,21 governance tests, architecture and whitespace. Independent source audit agrees with the stop-stage limits. No new application code or external action.
