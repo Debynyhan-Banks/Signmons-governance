@@ -1,5 +1,13 @@
 # Global Execution Pointer
 
+## Current: outcome reader stopped; SQL defect locally corrected; replacement decision pending — 2026-09-29
+
+Read-only operation7ad6e155-cabc-489a-bf0b-01c4ece1514a is consumed. Saved stop at12:39:21.893Z reports EXACT_REQUEST_QUERY / STOPPED_OR_UNCONFIRMED; result.json is absent. No job/address/session conclusion is available and no retry occurred. The installed reader and consumed test remain untouched.
+
+Implementer found a reader defect: the session SELECT gives parameter2 incompatible text/uuid contexts. Disposable local PostgreSQL18 reproduced SQLSTATE42883 (text=uuid); this is a proven reader defect, not proof of the exact live failing statement or any customer/provider outcome. An explicit text-to-uuid cast correction passes all seven real local PREPARE checks and actual synthetic zero/one-session, foreign-request/tenant and payload-privacy queries. Cluster removed. Twelve mock tests and replacement syntax/AST pass. Original mocks missed SQL typing; failure disclosed.
+
+Uninstalled, execution-disabled replacement9da030cd-70f1-45d6-8442-7b24e36ea829 is review-ready for the same exact request only, proposed8:45–9:00AM Eastern September29 (start before8:55). No authorization file or replacement live access. Owner decision next in APP013_P06_R11_ENABLED28_OUTCOME_RECONCILIATION.md; implementer installs/checks only after approval, owner supplies hidden password once. Same SELECT-only scope, preserved holds/closed runtime; no replay/provider/recovery write. Existing2B;P06 remains12/14,R11/fullR12open;accepted1A/1B/2A remain3/8. No scope deviation; reader SQL defect and validation gap disclosed.
+
 ## Current: exact-request reconciliation approved and installed; private input next — 2026-09-29
 
 Owner approved APP013_P06_R11_ENABLED28_OUTCOME_RECONCILIATION.md with "yes i approve proceed". Fresh read-only operation7ad6e155-cabc-489a-bf0b-01c4ece1514a is installed at /Volumes/Signmons-P06/r11-outcome-reconciliation-20260929-0835 for exact request4d5b5043-c975-48ab-b899-f8c2c29b9e8a, September29 8:35–9:00AM Eastern. Six exclusive0700/0600 files, immutable dependency hashes, fixed clean source0df9b9d and installed --check pass. Twelve synthetic outcome/privacy/one-use checks and twelve existing private-input tests pass; syntax/AST and governance/architecture checks pass. No database attempt or result existed at the last local inspection.
