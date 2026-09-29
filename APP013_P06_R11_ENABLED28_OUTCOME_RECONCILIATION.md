@@ -1,6 +1,6 @@
 # APP-013 / 2B / P06-R11 enabled28 read-only outcome reconciliation
 
-Status: proposed; no new reader or external query executed. Request reference4d5b5043-c975-48ab-b899-f8c2c29b9e8a; consumed plan8823f338-cb5b-454b-97bd-efdfce89d505. Startup succeeded and saved closeout is CLOSED/no failures. Browser submission outcome remains uncertain.
+Status: owner APPROVED reader preparation, installation and one exact read-only run; no external query executed. Request reference4d5b5043-c975-48ab-b899-f8c2c29b9e8a; consumed plan8823f338-cb5b-454b-97bd-efdfce89d505. Startup succeeded and saved closeout is CLOSED/no failures. Browser submission outcome remains uncertain.
 
 ## Exact proposed action
 
@@ -17,7 +17,7 @@ Use repeatable-read READ ONLY, fixed target identity/version, query timeouts, ro
 
 Criterion: determine truthful disposition of the existing submitted request and preserve exactly-one-job/uncertain-recovery semantics within existing2B. This is correlation evidence, not a new acceptance section. Current application source remains diagnosticfe9b066; clean execution source0df9b9d. Reuse p06_private_input.py, p06_backup_guards.mjs, fixed TARGET and existing read-only reader transport, pg client, address capacity aggregate and existing model/audit seams inspected in backend evidence/APP-013/p06-r11-enabled28-outcome-20260929.md.
 
-Expected changes after approval: one fresh private diagnostic directory, bounded reader/wrapper/binding/authorization and sanitized result; documentation handoff only. No application source or schema change. Owner approves scope/window and supplies hidden input; implementer prepares/validates the reader, then inspects result. Current blocker is fresh diagnostic authority and private input.
+Expected changes after approval: one fresh private diagnostic directory, bounded reader/wrapper/binding/authorization and sanitized result; documentation handoff only. No application source or schema change. Owner approves scope/window and supplies hidden input; implementer prepares/validates the reader, then inspects result. Owner approved with "yes i approve proceed". Remaining dependency is owner private input after installed checks.
 
 Checklist: (1) bind exact source/tenant/reference/window with reviewed parameterized SELECTs; (2) test positive zero/one/multiple matching job classifications, foreign reference refusal, malformed result, timeout/consumed attempt and secret-safe output locally; (3) install exclusive0700/0600 files and pass no-action checks; (4) owner runs once, database stays READ ONLY and rolls back; (5) report job/audit/address/session correlation without guessing a provider cause. A zero job count is only the observed snapshot, not permission to resubmit. Multiple/malformed matches stop as an inconsistency.
 
@@ -25,4 +25,8 @@ Required commands: reader node --check and synthetic self-test, wrapper Python A
 
 Observable finish: sanitized existing-request disposition and next smallest evidence-based decision, or preserved stop with no retry. READ ONLY transaction rollback and connection close are required on failure. Bounded existing-reader adaptation; outcome/cause remain unknown until data read. Do not create a substitute demonstration or new request.
 
-Owner decision PENDING. Approval would authorize exactly this reader preparation/installation and one read-only run8:35–9:00; it authorizes no recovery write or live test. P06 remains12/14;R11/fullR12open;accepted1A/1B/2A unchanged. No scope deviation.
+Owner decision APPROVED: "yes i approve proceed" authorizes exactly this reader preparation/installation and one read-only run8:35–9:00; it authorizes no recovery write or live test. P06 remains12/14;R11/fullR12open;accepted1A/1B/2A unchanged. No scope deviation.
+
+## Installed preparation result
+
+Checklist1–3 complete; operation7ad6e155-cabc-489a-bf0b-01c4ece1514a. Six private files passed exclusive installation/readback and installed no-action check. Twelve synthetic outcome/guard/privacy tests and twelve private-input tests pass; syntax/AST, architecture, frozen baseline, consistency,21governance safeguards and whitespace pass. Checklist4–5 await owner hidden input and result review; no attempt/result existed at last local inspection. Evidence: backend evidence/APP-013/p06-r11-enabled28-outcome-reader-20260929.md. No acceptance or scope change.
