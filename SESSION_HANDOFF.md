@@ -1,5 +1,17 @@
 # Session Handoff
 
+## Current: startup-stage diagnostic image built; temporary grants removed — 2026-09-29
+
+Owner-approved 6:45–7:30 AM Eastern build completed once. Cloud Build c2803a9a-829c-47f3-b47f-1c6092ac21d9 returned SUCCESS for source fe9b0661224a24969679dea5606dadbdc033c224, candidate tag p06-r11-fe9b0661224a. Registry digest matches build result: sha256:0457ff3bb38cad13bd73d79f2d140c5bcbac024915b77cf59c9de744765e6356. All three temporary build grants were removed and independently read back absent by 10:48:54.824176Z (6:48 AM Eastern). No retry. Actual invoice cost is not verified; USD1 was the operational allowance.
+
+Build checklist is complete: source/approval/window binding, synthetic guards, fresh preflight, one build, immutable digest match, cleanup and retained evidence. Backend evidence: evidence/APP-013/p06-r11-startup-stage-build-20260929.md. No deployment, packet, runtime/database/provider/customer action or hold release occurred. Prior shutdown remains the last runtime evidence; image creation is not live acceptance or identification of enabled27's original failing gate.
+
+Next: owner separately authorizes read-only target/provider/participant/policy/approval/closed-role/session/retained-liability qualification and selects a prospective window before any new packet can be proposed. Implementer owns preparing that bounded review after direction; no packet or runtime action is authorized. P06 remains 12/14; R11/full R12 open; accepted 1A/1B/2A remain 3/8. No scope deviation.
+
+## Current: startup-stage image build approved for September 29, 6:45–7:30 AM Eastern
+
+Owner approved alternative 1 of APP013_P06_R11_STARTUP_STAGE_REPAIR_IMAGE_DECISION.md and the exact window (10:45–11:30 UTC). Source fe9b066 and reviewed archive/tag remain fixed. Local controller binding and six synthetic no-action scenarios pass. Next: one window-bound preflight/build, no retry, USD1 allowance, mandatory temporary-grant removal/readback. No deployment, packet, runtime/provider/customer action. Build not yet attempted. Implementer owns execution/cleanup. P06 remains 12/14; R11/full R12 open; accepted 1A/1B/2A unchanged. No scope deviation.
+
 ## Current: startup-stage repair-image decision ready; build approval pending — 2026-09-28
 
 Backend `fe9b066` remains the locally complete fixed-stage diagnostic source. A source-bound decision in `APP013_P06_R11_STARTUP_STAGE_REPAIR_IMAGE_DECISION.md` proposes exactly one future image build or retaining the local result. The reviewed tracked build archive is 557 files / 4,343,122 bytes with SHA-256 `2d6742d399cf97aeda131988af1f28e152c8588f7ba0c8dc5b7e5f691b9856d4`; candidate tag is `p06-r11-fe9b0661224a`. One submission, USD 1 allowance, exact temporary grants with mandatory removal/readback, no retry and no deployment are proposed. Exact owner approval and a future window are absent.

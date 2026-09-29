@@ -1,6 +1,6 @@
 # APP-013/P06 R11 startup-stage repair image decision
 
-Status: review-ready decision; exact owner build approval and a future window are absent. No build, upload, cloud read, IAM change, deployment, packet or live action is authorized by this document.
+Status: alternative 1 completed once during the approved September 29 window. Immutable image/source verified; all three temporary grants removed/read back absent. No deployment, packet or runtime action authorized.
 
 ## Section and acceptance traceability
 
@@ -47,3 +47,23 @@ Rollback/disabled state: no repository runtime behavior changes in this decision
 Relative size/confidence: small, high-confidence one-build operation after fresh preflight; external state and cleanup still require current readback. Owner decides alternative 1 or 2 and, for alternative 1, supplies the exact future window. Implementer owns the bounded build and cleanup only after that approval.
 
 P06 remains 12/14; R11 and full R12 remain open; accepted 1A/1B/2A remain 3/8 (37.5%). This is not an overall MVP completion percentage. No scope deviation.
+
+## September 29 approved execution card
+
+Owner said “i approve proceed” and selected “6:45am - 7:30am eastern today.” This binds alternative 1 above, unchanged source/archive/tag, one submission/no retry, USD1 allowance, exact temporary build grants and mandatory cleanup. Source remains fe9b0661224a24969679dea5606dadbdc033c224.
+
+Reuse: existing Dockerfile/cloudbuild.deploy.yaml, reviewed archive and existing signmons-build identity. One-use local controller /private/tmp/r11-stage-build-control-20260929/build_once.py binds SHA, archive hash, approval, exact UTC window and own SHA-256 96fc8eb4293a1daa4ce8a75536dd01f47c637b61f72d4c12fa2a3dbc2374faeb. Private result root /Volumes/Signmons-P06/r11-stage-build-20260929-0645 must not exist before invocation.
+
+Finite checklist: exact source/archive recheck complete; controller binding and six synthetic success/ambiguous-grant/ambiguous-submission/cleanup-failure/early/existing-attempt tests complete; window-bound read-only preflight pending; one build pending; immutable digest readback pending; grant removal/readback pending; sanitized result/handoff pending. Implementer owns execution and cleanup. No browser or owner command is required for this build.
+
+Guards: reserve exclusive attempt before external preflight; refuse existing attempt; no mutation before identity/bucket/repository/tag/IAM qualification; record possibly applied grants before mutation; refuse build start without 25 minutes remaining; independently remove/read back all possibly applied grants in finally, including after window expiry. No database, secrets, Twilio or customer input. Source-only upload and registry/build artifacts are the only intended outputs.
+
+Observable finish: one immutable image with exact source provenance and temporary permissions verified absent, or preserved stop/cleanup evidence. No deployment or acceptance advancement. P06 remains 12/14, R11/full R12 open, 1A/1B/2A accepted. No scope deviation.
+
+## Current: startup-stage diagnostic image built; temporary grants removed — 2026-09-29
+
+Owner-approved 6:45–7:30 AM Eastern build completed once. Cloud Build c2803a9a-829c-47f3-b47f-1c6092ac21d9 returned SUCCESS for source fe9b0661224a24969679dea5606dadbdc033c224, candidate tag p06-r11-fe9b0661224a. Registry digest matches build result: sha256:0457ff3bb38cad13bd73d79f2d140c5bcbac024915b77cf59c9de744765e6356. All three temporary build grants were removed and independently read back absent by 10:48:54.824176Z (6:48 AM Eastern). No retry. Actual invoice cost is not verified; USD1 was the operational allowance.
+
+Build checklist is complete: source/approval/window binding, synthetic guards, fresh preflight, one build, immutable digest match, cleanup and retained evidence. Backend evidence: evidence/APP-013/p06-r11-startup-stage-build-20260929.md. No deployment, packet, runtime/database/provider/customer action or hold release occurred. Prior shutdown remains the last runtime evidence; image creation is not live acceptance or identification of enabled27's original failing gate.
+
+Next: owner separately authorizes read-only target/provider/participant/policy/approval/closed-role/session/retained-liability qualification and selects a prospective window before any new packet can be proposed. Implementer owns preparing that bounded review after direction; no packet or runtime action is authorized. P06 remains 12/14; R11/full R12 open; accepted 1A/1B/2A remain 3/8. No scope deviation.
