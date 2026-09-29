@@ -30,8 +30,16 @@ Approve this plan for private guarded-helper/authorization/coordinator installat
 
 Required closeout: revoke matching approvals, close/purge only existing permitted transient-session material, preserve job/audit/holds, NOLOGIN/limit0/expired validity/zero sessions, remove only enabled test tag and read back baseline100%. Closeout remains mandatory on failure or deadline; uncertain results stop, never retry. Failed startup prevents browser handoff. Reading startup-stage logs after a failure needs the bounded subsequent diagnostic decision described in the proposal; no broad log read is included.
 
-Owner execution decision: PENDING. Exact approval wording:
+Owner execution decision: APPROVED by reply "i approve" to the exact plan execution request. Exact approval wording:
 
 > I approve R11 plan8823f338-cb5b-454b-97bd-efdfce89d505 as specified here, including guarded helper installation, bounded LOGIN, activation, one zero-normal-traffic enabled28 deployment, one capped browser journey8:15–8:30AM Eastern today September29, and mandatory closeout by8:45AM. I approve the USD2.70 operational allowance and stated verification ceilings, preserving all holds. No automatic retry.
 
 Completed: finite packet-preparation checklist and local review. Remaining: owner exact execution decision, guarded installation/check, one attended journey and full correlated closeout/acceptance evidence. Implementer owns install/readback/evidence; owner owns approval/private input/browser/acceptance. Next observable result is exact owner decision. P06 remains12/14;R11/fullR12open;accepted1A/1B/2A remain3/8. No scope deviation; clean checkout is routine isolation preserving the existing strict source guard.
+
+## Current: enabled28 execution approved; installed checks pass; owner command next — 2026-09-29
+
+Owner replied "i approve" to the exact execution request for plan8823f338-cb5b-454b-97bd-efdfce89d505 in APP013_P06_R11_ENABLED28_PACKET_REVIEW.md: guarded helper installation, boundedLOGIN8:00–8:45, activation, one zero-normal-traffic enabled28 deployment, one capped browser journey8:15–8:30 Eastern September29, mandatory closeoutby8:45,2.70operational allowance, all holds preserved and no automatic retry. Exactly19private files are installed at /Volumes/Signmons-P06/r11-supervised-run-20260929-0800. Source/compiled719/image/window/operation bindings and installed controller --check / actual installed coordinator review pass. Execution checkout /private/tmp/signmons-enabled28-source-20260929 remains clean at0df9b9d. No action attempt has been made by the implementer.
+
+Initial no-action check refused an old packet digest in copied authorizations. Before any attempt, all10authorization files were corrected to the approved digest and checked for exact operation/window bindings; installed no-action checks then passed. No runtime mutation or consumed operation was retried; no guard weakened.
+
+Owner next runs the attended coordinator ONCE at8:00, enters the existing database password privately, waits until8:15 as directed, completes Customer name/allrequiredfields and Code accepted before Preview, reviews/submits once, then types DONE or STOP. Keep Terminal open for mandatory closeout; do not rerun on error. Implementer inspects sanitized result and correlated closeout afterward. Installation checklist complete; live journey/R11/fullR12remain. P06 stays12/14;accepted1A/1B/2A remain3/8. Evidence: backend evidence/APP-013/p06-r11-enabled28-packet-preparation.md. No scope deviation.
