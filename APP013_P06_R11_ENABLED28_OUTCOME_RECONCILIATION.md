@@ -1,0 +1,28 @@
+# APP-013 / 2B / P06-R11 enabled28 read-only outcome reconciliation
+
+Status: proposed; no new reader or external query executed. Request reference4d5b5043-c975-48ab-b899-f8c2c29b9e8a; consumed plan8823f338-cb5b-454b-97bd-efdfce89d505. Startup succeeded and saved closeout is CLOSED/no failures. Browser submission outcome remains uncertain.
+
+## Exact proposed action
+
+One owner-operated hidden-input PostgreSQL18 read-only snapshot during September29,2026,8:35–9:00AM Eastern (12:35–13:00UTC). Reuse existing fixed database/user/tenant binding from the consumed packet without replaying it. Read only records scoped to the fixed tenant and exact request reference:
+
+- Job count and non-sensitive state where policySnapshot.intakeAdmission.requestId equals the reference; matching controlled-submitted/admitted audit counts, with no full policy snapshot or customer fields returned.
+- AddressVerificationOperation state/count/held amount/timestamps where intentId equals the reference; related AddressVerificationRequest count. No provider body, address, phone or code output.
+- Scoped session state and retained-payload presence flags only if an exact operation/job relationship identifies that session; do not scan unrelated participant content.
+- Current approval-enabled booleans, restricted runtime role state/expiry and session count; read current retained phone/address aggregate liabilities for the same fixed scopes, preserving every hold.
+
+Use repeatable-read READ ONLY, fixed target identity/version, query timeouts, rollback before sanitized result, one fresh operation ID and exclusive attempt/no retry. Password supplied by owner through the existing READY-first hidden TTY/anonymous-pipe transport; never in chat or persisted. No runtime LOGIN, browser replay, activation, deployment, provider call, code, writes, hold release or cleanup mutation. This diagnostic is separate from the closed run and does not extend its execution window.
+
+## Finite card before implementation
+
+Criterion: determine truthful disposition of the existing submitted request and preserve exactly-one-job/uncertain-recovery semantics within existing2B. This is correlation evidence, not a new acceptance section. Current application source remains diagnosticfe9b066; clean execution source0df9b9d. Reuse p06_private_input.py, p06_backup_guards.mjs, fixed TARGET and existing read-only reader transport, pg client, address capacity aggregate and existing model/audit seams inspected in backend evidence/APP-013/p06-r11-enabled28-outcome-20260929.md.
+
+Expected changes after approval: one fresh private diagnostic directory, bounded reader/wrapper/binding/authorization and sanitized result; documentation handoff only. No application source or schema change. Owner approves scope/window and supplies hidden input; implementer prepares/validates the reader, then inspects result. Current blocker is fresh diagnostic authority and private input.
+
+Checklist: (1) bind exact source/tenant/reference/window with reviewed parameterized SELECTs; (2) test positive zero/one/multiple matching job classifications, foreign reference refusal, malformed result, timeout/consumed attempt and secret-safe output locally; (3) install exclusive0700/0600 files and pass no-action checks; (4) owner runs once, database stays READ ONLY and rolls back; (5) report job/audit/address/session correlation without guessing a provider cause. A zero job count is only the observed snapshot, not permission to resubmit. Multiple/malformed matches stop as an inconsistency.
+
+Required commands: reader node --check and synthetic self-test, wrapper Python AST/private-input tests if changed; backend/governance baseline and frozen-baseline/consistency checks,21governance safeguards,architecture and both whitespace checks. No application/browser tests claimed for this reader-only work. No browser action or log query included.
+
+Observable finish: sanitized existing-request disposition and next smallest evidence-based decision, or preserved stop with no retry. READ ONLY transaction rollback and connection close are required on failure. Bounded existing-reader adaptation; outcome/cause remain unknown until data read. Do not create a substitute demonstration or new request.
+
+Owner decision PENDING. Approval would authorize exactly this reader preparation/installation and one read-only run8:35–9:00; it authorizes no recovery write or live test. P06 remains12/14;R11/fullR12open;accepted1A/1B/2A unchanged. No scope deviation.

@@ -1,6 +1,6 @@
 # APP-013 / 2B / P06-R11 enabled28 exact packet review
 
-Status: REVIEW_REQUIRED_NOT_AUTHORIZED. Owner approved preparation only after selecting September29,2026,8:00–8:45AM Eastern. Exactly three private review files are installed; no execution authorization, runnable helper or attempt exists.
+Status: CONSUMED — enabled28 started; browser submission returned uncertain; mandatory closeout saved CLOSED/no failures. Do not rerun. Historical review follows. Owner approved preparation only after selecting September29,2026,8:00–8:45AM Eastern. Exactly three private review files are installed; no execution authorization, runnable helper or attempt exists.
 
 ## Exact plan
 
@@ -43,3 +43,11 @@ Owner replied "i approve" to the exact execution request for plan8823f338-cb5b-4
 Initial no-action check refused an old packet digest in copied authorizations. Before any attempt, all10authorization files were corrected to the approved digest and checked for exact operation/window bindings; installed no-action checks then passed. No runtime mutation or consumed operation was retried; no guard weakened.
 
 Owner next runs the attended coordinator ONCE at8:00, enters the existing database password privately, waits until8:15 as directed, completes Customer name/allrequiredfields and Code accepted before Preview, reviews/submits once, then types DONE or STOP. Keep Terminal open for mandatory closeout; do not rerun on error. Implementer inspects sanitized result and correlated closeout afterward. Installation checklist complete; live journey/R11/fullR12remain. P06 stays12/14;accepted1A/1B/2A remain3/8. Evidence: backend evidence/APP-013/p06-r11-enabled28-packet-preparation.md. No scope deviation.
+
+## Current: enabled28 started and closed; browser submission outcome uncertain — 2026-09-29
+
+Consumed plan8823f338-cb5b-454b-97bd-efdfce89d505 reached READY_FOR_R11/READY_NO_TRAFFIC on enabled28. Owner reports R11_ATTENDED_COORDINATOR_CLOSED_BROWSER_DONE and the browser's Outcome unconfirmed for request4d5b5043-c975-48ab-b899-f8c2c29b9e8a. DONE indicates owner completion, not confirmed job admission. Local saved evidence: revocationREVOKED at12:25:57.813Z, matching audit1/readbackREVOKED, closeoutCLOSED with failures[]. Installed controller closeout verifies inactive approvals, runtimeNOLOGIN/limit0/zero sessions, absent enabled tag and baseline100%. No new live query or replay was performed after this report.
+
+Source inspection maps the exact UI text to version2 submit responseUNCERTAIN/jobCreatedfalse; controlled verification emits UNCERTAIN when the address operation is not OBSERVED. This narrows the path but does not establish provider failure, retained operation state or database job absence. Do not retry the browser or rerun the consumed coordinator after closeout. Startup succeeded; the earlier startup failure is not reproduced or causally explained.
+
+Next: owner decision on the exact read-only request reconciliation in APP013_P06_R11_ENABLED28_OUTCOME_RECONCILIATION.md; implementer owns guarded reader preparation and result review after approval. No new activation/deployment/provider request/code/job write/hold release. Execution and closeout evidence reviewed; request/job/address correlation and fullR11/R12acceptance remain. P06 stays12/14;accepted1A/1B/2A remain3/8. No scope deviation.
