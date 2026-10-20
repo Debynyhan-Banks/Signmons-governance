@@ -1,5 +1,13 @@
 # Global Execution Pointer
 
+## October 20 — P07 envelope correction locally complete; new window required
+
+Owner approved Alternative 1 in `APP013_P07_RUNTIME_ENVELOPE_PREFLIGHT_CORRECTION_PROPOSAL_20261020.md`. Fresh disabled package `/private/tmp/p07-repaired-runtime-readiness-20261020-repair2`, plan `6dbc6811-86d8-4bd1-8c71-1886ccf7edf6`, packet `8d64e774-bc2f-4222-87b8-77727198e4ac` and operation `45ae622a-2cb7-4ab7-ae90-f94d30c9336a` now validate the exact preserved normal revision separately from the unchanged stricter candidate envelope. Thirty-one focused tests, syntax and no-action/refusal checks pass. No window, live approval, attempt or mutation exists.
+
+Next input: owner supplies a new attended Eastern block of at least 90 minutes with Terminal, the current CHILD administrator password and signed-in Stripe Sandbox available. Exact binding/retest and a separate external-operation decision follow. The consumed operation remains unusable; P08/payment remains unauthorized.
+
+Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved correction.**
+
 ## October 20 — P07 readiness stopped before mutation; controller correction decision pending
 
 Approved operation `f8aa3170-6ac9-4b09-96d9-cc0b688fae0c` reserved once at 7:04:26 p.m. Eastern and stopped during `CLOUD_PREFLIGHT` with `P07_STOP_RUNTIME_ENVELOPE_DRIFT`. Receipts report `possibleMutation:false`, empty mutation sets, database role absent/zero sessions and `CONTAINMENT_VERIFIED`. No role, secret, identity, binding, Stripe destination or revision/tag was attempted. The operation is consumed; do not rerun it.

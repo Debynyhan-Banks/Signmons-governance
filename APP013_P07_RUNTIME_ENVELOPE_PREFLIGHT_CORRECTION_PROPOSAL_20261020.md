@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 runtime-envelope preflight correction proposal
 
-Status: **Alternative 1 owner-approved for local correction/testing only; no external action authorized**. On October 20, 2026, Debynyhan Banks replied **“yes”** to the exact decision request below.
+Status: **Alternative 1 owner-approved, locally implemented and tested; no external action authorized**. On October 20, 2026, Debynyhan Banks replied **“yes”** to the exact decision request below. Fresh disabled package `/private/tmp/p07-repaired-runtime-readiness-20261020-repair2` passes 31 focused tests and refuses all live modes without a new window and exact approval.
 
 ## Demonstrated gap
 
@@ -30,6 +30,6 @@ No provider/database/Stripe action, role/secret/IAM change, deployment, payment,
 
 ## Decision requested
 
-**Decision recorded:** Alternative 1 approved for local correction and testing only. The observable result is a fresh disabled, tested package proposal; it is not a live command. Any new live operation still requires fresh IDs, a new attended window and separate exact external approval.
+**Decision completed:** Alternative 1 was approved for local correction and testing only. Fresh plan `6dbc6811-86d8-4bd1-8c71-1886ccf7edf6`, packet `8d64e774-bc2f-4222-87b8-77727198e4ac` and operation `45ae622a-2cb7-4ab7-ae90-f94d30c9336a` now separate exact normal-revision validation from the unchanged strict candidate validator. The package passes 31 focused tests and no-action/refusal checks. Any new live operation still requires a new attended window and separate exact external approval.
 
-Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Approved correction to unintended controller-assumption drift; local implementation/testing only.**
+Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved Alternative 1 correction.**

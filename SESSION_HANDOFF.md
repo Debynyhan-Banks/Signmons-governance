@@ -1,5 +1,17 @@
 # Session Handoff
 
+## October 20 — envelope correction locally complete in fresh disabled package
+
+**Section and status:** R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. The prior operation is consumed; fresh `repair2` has no window or live authority.
+
+**Completed/evidence:** owner-approved Alternative 1 independently validates the exact normal revision and unchanged stricter candidate envelope. Package `/private/tmp/p07-repaired-runtime-readiness-20261020-repair2`, plan `6dbc6811-86d8-4bd1-8c71-1886ccf7edf6`, packet `8d64e774-bc2f-4222-87b8-77727198e4ac` and operation `45ae622a-2cb7-4ab7-ae90-f94d30c9336a` pass 31 focused tests plus syntax/no-action/refusal checks. Backend evidence: `evidence/APP-013/p07-runtime-envelope-preflight-local-correction-20261020.md`.
+
+**Remaining/blocker/owner:** Debynyhan Banks supplies a new attended 90-minute Eastern block with Terminal, current CHILD administrator password and signed-in Stripe Sandbox. Implementer then binds/retests and presents the exact external operation. P08/payment remains separate.
+
+**Next observable result:** a bound, verified no-action package awaiting fresh external approval; no live command exists now.
+
+**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
+
 ## October 20 — repaired-runtime operation stopped before mutation
 
 **Section and status:** R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Operation `f8aa3170-6ac9-4b09-96d9-cc0b688fae0c` is consumed after one Cloud-preflight stop.
