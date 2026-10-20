@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 runtime-envelope preflight correction proposal
 
-Status: **owner decision pending; no implementation or external action authorized**.
+Status: **Alternative 1 owner-approved for local correction/testing only; no external action authorized**. On October 20, 2026, Debynyhan Banks replied **“yes”** to the exact decision request below.
 
 ## Demonstrated gap
 
@@ -30,6 +30,6 @@ No provider/database/Stripe action, role/secret/IAM change, deployment, payment,
 
 ## Decision requested
 
-Approve or refuse Alternative 1 for local correction and testing only. The observable result on approval is a fresh disabled, tested package proposal; it is not a live command.
+**Decision recorded:** Alternative 1 approved for local correction and testing only. The observable result is a fresh disabled, tested package proposal; it is not a live command. Any new live operation still requires fresh IDs, a new attended window and separate exact external approval.
 
-Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Proposed correction to unintended controller-assumption drift; implementation pending owner approval.**
+Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Approved correction to unintended controller-assumption drift; local implementation/testing only.**
