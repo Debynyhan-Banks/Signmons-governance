@@ -1,10 +1,10 @@
 # APP-013 / 3A / P07 — atomic webhook transition repair
 
-Status: **prepared for owner decision; no application repair implemented**. This is the smallest next action after the owner-approved real local payment-role proof. Existing R1-W01/3A acceptance, same-job identity, section order, queue and denominators remain fixed. No external operation or reusable window is authorized.
+Status: **owner-approved focused local repair implemented and tested locally**. Owner explicitly answered “Approve focused local repair” to the bounded webhook repair and recovery-hold probe clarification. Implementation-entry heads: backend 83b7a2cb7d959e14dc32a2e4cac9baab049c45c8; governance 16f4b881a58bc22c44712b8711f0bad32fdfb506. This is the smallest next action after the owner-approved real local payment-role proof. Existing R1-W01/3A acceptance, same-job identity, section order, queue and denominators remain fixed. No external operation or reusable window is authorized.
 
 ## Demonstrated gap and traceability
 
-Source entry backend `f5931e214a1f40dee63c311bad1837e51255f29f`, governance `1010571d84eb66e9d2b6eee256380fd225b558cd`. Application source remains `cec82163bd67fe939d88aacb6fedf2d9c126b90e`. Evidence: backend `evidence/APP-013/p07-payment-runtime-role-local-proof-20261020.md`; reproducible real-database case in `scripts/verify-p07-payment-runtime-role.mjs`.
+Source entry backend `f5931e214a1f40dee63c311bad1837e51255f29f`, governance `1010571d84eb66e9d2b6eee256380fd225b558cd`. The failing image application source was `cec82163bd67fe939d88aacb6fedf2d9c126b90e`; the locally tested repaired source is now committed at `465e12cf7ecf4874ddbd13a34bee60d85fbb02bd`. Evidence: backend `evidence/APP-013/p07-payment-runtime-role-local-proof-20261020.md`; reproducible real-database case in `scripts/verify-p07-payment-runtime-role.mjs`.
 
 Exact acceptance served: only authentic matching events clear the same job's payment gate; failed, duplicate and late/out-of-order outcomes cannot regress settled state. The current service reads Payment and computes its transition before opening the event transaction. Two distinct events can read PENDING; paid then commits SUCCEEDED, while the stale failure subsequently overwrites it to FAILED. The proof preserves actual Prisma/database responses and controls only scheduling. This is a demonstrated customer-path defect, not a new product feature.
 
@@ -16,7 +16,7 @@ Serialize transition decisions on the exact payment row inside the existing tran
 
 Reject delaying callbacks, ignoring all failures, weakening signature/resource checks or accepting a sequential-only test as the fix. A new queue, payment stack, schema, SDK, provider API or generic reconciliation subsystem is excluded.
 
-## Finite implementation card, if approved
+## Owner-approved finite implementation card
 
 Expected application files: `src/payments/stripe-webhooks.service.ts` and its existing `.spec.ts` only. Reuse and extend the existing local real-role verifier, SQL fixture and evidence. Normal section/status documents may change. No new app endpoint, UI, policy, database role grant, schema/migration or provider operation is included.
 
@@ -38,10 +38,18 @@ Observable finish: the same real-role counterexample leaves SUCCEEDED after the 
 
 The proof also probed **immediate** retry after a deliberately rejected post-Checkout audit. It observed Conflict409 because an existing PENDING reservation is protected for five minutes. The same key recovers the same mocked Checkout after that timeout. Ordinary lost-response recovery with already persisted references passes.
 
-Recommendation: retain that existing five-minute safety hold for this repair. Immediate recovery after database rollback is not an established product promise and should not silently become an additional MVP feature. If the owner approves this proposal, explicitly clarify the exploratory probe to expect truthful Conflict409 during the hold and same-key recovery after the existing timeout, preserving the original failed-run evidence. This is not permission to remove the failure test, create a second Checkout, reset a hold, change the timeout or turn the mixed-event race green by changing its assertion. Any immediate-recovery enhancement needs a separate demonstrated need and proposal.
+Recommendation: retain that existing five-minute safety hold for this repair. Immediate recovery after database rollback is not an established product promise and should not silently become an additional MVP feature. The owner approved this proposal; explicitly clarify the exploratory probe to expect truthful Conflict409 during the hold and same-key recovery after the existing timeout, preserving the original failed-run evidence. This is not permission to remove the failure test, create a second Checkout, reset a hold, change the timeout or turn the mixed-event race green by changing its assertion. Any immediate-recovery enhancement needs a separate demonstrated need and proposal.
 
 ## Authority and scope impact
 
-Owner has approved the local permission proof and isolated browser rerun, **not this application change**. The decision requested here covers the focused local atomic webhook repair and the documented recovery-hold probe clarification only. No live grants/credentials, secret access/change, cloud build, deployment, event delivery/resend, Checkout, charge/refund, booking, customer contact, merge or production action is included.
+Owner explicitly approved this focused local application repair after the local permission proof and isolated browser rerun. The approved decision covers the focused local atomic webhook repair and the documented recovery-hold probe clarification only. No live grants/credentials, secret access/change, cloud build, deployment, event delivery/resend, Checkout, charge/refund, booking, customer contact, merge or production action is included.
 
 This is an explicit defect-repair proposal before implementation, inside existing APP-013/3A/P07/R1-W01. It changes neither protected acceptance criteria nor package/section counts. Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. Original browser artifact drift and uncertain external request effects remain disclosed in the linked evidence; later owner approval does not retroactively authorize that initial run.
+
+Implementation choice within this approved card: retain initial no-write resource/money validation, discard its provisional transition, acquire the exact Payment id/tenant FOR UPDATE inside the existing transaction, revalidate current tenant/account and re-find the exact resource using that transaction, require the original payment/job binding, then compute the authoritative transition and persist event/payment/audit atomically. All callbacks use the same Payment-before-event order; duplicate processing still writes no second transition. Existing tested SELECT/column-UPDATE rights cover the lock, so no grant change is included.
+
+## Recorded result
+
+The approved local patch is complete. Local build/lint/architecture and five affected Jest suites 97/97 pass. The actual restricted-role verifier passes 22 checks with failures[], both commit orderings, processed event/audit evidence, full-refund terminal state, unchanged 49+13 permission refusals, and normal/SIGINT cleanup. Source, fixture/ACL and output hashes are indexed by backend evidence/APP-013/p07-webhook-atomicity-local-repair-20261020.md. Original failing evidence remains unchanged. No further grant/schema/app surface was added. No browser rerun was required for this backend-only change; prior synthetic evidence is explicitly historical.
+
+Remaining authority is unchanged: no cloud build, deployment, live provisioning, provider event or payment approval. Fresh repaired-source review archive preparation is complete; backend evidence/APP-013/p07-atomic-repaired-source-preparation-20261020.md records exact hashes and preservation checks. Next is a concrete fresh image-build/runtime proposal and exact operation packet for owner review. No scope deviation from the explicitly approved repair; no customer acceptance or ledger completion is awarded.

@@ -1,5 +1,19 @@
 # Session Handoff
 
+## October 20 — approved atomic webhook repair complete locally
+
+**Section/status:** R1-W01 / APP-013/3A/P07. Implemented and locally tested; not cloud-built, deployed, live-demonstrated or owner-accepted as a payment outcome. Owner explicitly approved this bounded repair and the five-minute-hold probe clarification before implementation.
+
+**Completed:** exact Payment row lock; current tenant/account/resource/payment/job revalidation; transition/audit from locked current state; atomic event/payment/audit writes and original early validation retained. Only webhook service/spec, existing verifier, evidence and normal governance records changed. Build, lint, architecture, five Jest suites 97/97 pass; real restricted-role proof 22 checks/failures[], 49+13 permission denials, both event orders, refund-terminal protection and normal/SIGINT closeout pass. Grant/ACL hashes unchanged. Evidence: backend `evidence/APP-013/p07-webhook-atomicity-local-repair-20261020.md`. Repaired backend commit: `465e12c`.
+
+**Remaining/blocker and owner:** repaired-source image and live runtime-role/credential/destination/signing readiness remain unqualified/unapproved; P08 authentic same-job payment and 3A acceptance still pending. Old image includes the prior bug. Implementer owns the fresh image-build/runtime proposal; owner approves applicable cloud/provider actions and accepts the connected result.
+
+**Source preparation completed:** The fresh deterministic 576-file source review archive is prepared with exactly the two committed webhook overlays; SHA-256 `893432c1de02c8068237711908099d452dd8e18dde6603240007bc61db5ed456`. Source evidence: backend `evidence/APP-013/p07-atomic-repaired-source-preparation-20261020.md`.
+
+**Next observable result:** a concrete fresh image-build/runtime proposal and exact operation packet for owner review. Do not run the cached artifact builder in place, edit old packages or replay consumed authority. No external action is approved by this local repair.
+
+**Progress:** **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**, unchanged. Validation: frozen-baseline/consistency, all 25 governance safeguards, backend governance/architecture, source/verifier syntax and formatting, and both whitespace checks pass. **No scope deviation from the approved local repair.** Prior browser artifact exception remains disclosed; no browser/provider action occurred in this repair.
+
 ## October 20 — real payment-role proof completed; payment atomicity repair pending
 
 **Section/status:** R1-W01 / APP-013/3A/P07. Owner-approved local investigation completed; release gate failed, no live demonstration or customer acceptance. Permission scope is locally exercised, not live-provisioned.

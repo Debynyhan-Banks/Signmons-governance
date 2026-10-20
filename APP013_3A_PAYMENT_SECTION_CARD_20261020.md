@@ -77,3 +77,9 @@ Expected implementation files are limited to the existing policy binding/service
 ## Observable finish
 
 P07 becomes review-ready only when local implementation and the full applicable matrix pass, with a concrete secret-safe Sandbox proposal. It is accepted only through the existing package ledger after owner review; preparation and tests do not change 6/60 or 4/8. P08 then owns the separately authorized authentic Sandbox event, duplicate/late-event demonstration and owner acceptance of 3A.
+
+## October 20 — additional approved atomicity repair and actual-role proof
+
+The owner approved APP013_P07_WEBHOOK_ATOMICITY_REPAIR_PROPOSAL_20261020.md after an actual restricted-role proof demonstrated stale concurrent FAILED overwriting SUCCEEDED. The existing webhook service now serializes the exact Payment row and revalidates current state before deciding a transition. Both distinct-event orderings and terminal refund state pass through real Prisma/PostgreSQL, as do 22 reported local proof checks, unchanged 49+13 negative rights, normal/SIGINT cleanup, local build/lint and 97 affected Jest cases. Existing five-minute reservation behavior is unchanged and explicitly tested. Evidence: backend evidence/APP-013/p07-webhook-atomicity-local-repair-20261020.md. No new schema, grants, endpoint, UI or provider behavior is introduced. No scope deviation from that explicitly approved repair.
+
+The old unused image lacks this patch. The fresh source review archive is prepared; see backend evidence/APP-013/p07-atomic-repaired-source-preparation-20261020.md. Fresh image build and live runtime/destination/secret readiness remain separate exact approval gates; P08 and 3A acceptance remain pending. The selected availability is not launch authority. Accepted measures remain 0/27 newly closed R1, 6/60 legacy, 4/8 walkthrough, 0/13 full-intelligence rows; no denominator or criterion changes.
