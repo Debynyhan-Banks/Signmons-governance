@@ -1,22 +1,20 @@
-# Intelligence MVP roadmap — owner-reviewed dependency order
+# Core commercial MVP and later intelligence roadmap
 
-Owner-only platform-admin planning is recorded in PLATFORM_ADMIN_OWNER_PLAN.md. Documentation only: no Release A scope, package-count, acceptance or current execution-order change. Commercial-admin implementation remains separately mapped and sized within Release B.
+The exact reviewed amendment is recorded in MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md. Earlier integrated intelligence Release A and commercial Release B labels are retained as historical evidence, not interchangeable with the new R1–R4 scope.
 
-See INTELLIGENCE_ALIGNMENT_ADOPTION.md for the owner-reviewed correction. Existing APP-013 and its eight-milestone walkthrough are unchanged. Complete its entire required acceptance, including BE-001 residual proof, before advancing.
+## Current execution and acceptance
 
-| Approved order | Ticket | Reuse and required finish line |
-| --- | --- | --- |
-| 1 | APP-017 | Reconcile current organization/payment/coverage controls; versioned tenant rules, fees, fail-closed resolution, immutable snapshots and audited changes |
-| 2 | APP-018 | Reuse approved organization facts/FAQ and policy registry; versioned brand/comfort behavior, previews, prohibited-claim and refusal tests |
-| 3 | APP-019 | Reuse customer/property/equipment/job records; authorized history, provenance, corrections and isolation |
-| 4 | APP-015 | Preserve existing dashboard/failure queue acceptance; add independent eval baseline, review, outcome/version lineage and governed export readiness |
-| 5 | APP-016 | Reuse accepted APP-011/012 and current scheduling recovery; verify full conflict-safe lifecycle, payment policy, secure links and notification-truth separation |
-| 6 | APP-033 | Reuse communications and typed tools; shared conversational web/SMS/voice, knowledge, comfort discovery, briefs, human fallback and interrupted-state recovery |
+APP-013/3A remains Now. Next remains APP-017 -> APP-018 -> APP-019 -> APP-015 -> APP-016 -> APP-033. Finish each explicitly amended R1 ticket in order; no ticket is accepted merely because optional scope moved later. BE-001 consent/replay residuals remain inside APP-013. All eight walkthrough sections, existing accepted evidence and APP-016 booking/payment integrity remain unchanged.
 
-Complete APP-017/018/019 specs are in TICKETS. APP-015/016/033 original acceptance is retained with explicit reviewed integration criteria. BE-001 is retained and consolidated into APP-013; see BE001_DEPENDENCY_REVIEW.md. No ticket is marked implemented or complete by listing it here.
+| Release | Required scope and actual dependencies |
+| --- | --- |
+| R1 Core MVP | Confirmed basic phone/bounded web/SMS intake -> finite server policy and required booking fee/deposit -> reliable booking -> manual dispatch -> completion -> approved final invoice/payment/receipt -> actual outcome/exception report. Guided setup, tenant/role safety, fixed subscriptions, support and recovery remain launch gates. QBO/FSM not required. |
+| R2 Operations | Bounded pricebook/quoting, richer history, review requests and improved communications. Integrations are optional separately justified scope, not an R1 dependency. |
+| R3 Intelligence/Growth | Rich behavior/discovery/retrieval, memberships, advanced reporting and diagnostics when Growth is offered. Governed job costing must precede acquisition-to-profit reporting. |
+| R4 Scale | Offline, inventory/purchasing, time/payroll export, broad integrations, multi-location and migration depth; financing only when justified. |
 
-Release A is the integrated owner-operated intelligence pilot in MVP_ACCEPTANCE_MATRIX.md. Release B is commercial availability: onboarding/admin, subscriptions/entitlements, support, security, monitoring, restore/recovery and approved offer gates remain mandatory. Reconcile APP-001/002/004/005, APP-014, BE and OPS gaps from evidence, not labels. Money APP-020/021 and Growth APP-024 diagnostic-report requirements are not waived; Starter completion summary is not the full diagnostic product.
+The core queue is not the complete commercial launch list. APP-020 basic estimates/invoices/payment allocations/receipts, APP-014 collections/outcome reporting, BE-006 and OPS commercial gates require finite source/evidence cards and a separately reviewed execution placement after the existing queue; no unreviewed commercial tail is authorized here. Full APP-021 pricebook and APP-024 diagnostics are not R1 prerequisites. Starter promises and Growth/Pro release gates remain as recorded in OFFER_CATALOG.md.
 
-Release C covers richer equipment sales, predictive/retention workflows, financing and later model optimization through separately scoped approvals. Full pricebook/diagnostics are not forced ahead of basic advisory intake, but priced equipment proposals and paid-plan promises retain their own gates.
+Reuse existing organization/verification/payment/calendar/customer/technician/audit components. Minimum rules, factual greeting, current-job history, critical-failure review and basic channel orchestration remain; the larger original requirements stay deferred in the scope archive and change record. No architecture rewrite, automatic training, provider action, merge or deployment is authorized by this roadmap.
 
-Six future tickets are not six equal tasks or the complete commercial MVP. Both boards and pointer follow this order; routine progression follows full ticket acceptance, WIP=1 and existing external-action permissions. Do not skip blocked Now or select Later to keep busy.
+Historical progress remains 6/60 packages, 4/8 walkthrough milestones and 0/13 full-intelligence rows, separately. R1 has no accepted percentage or launch date until its evidence inventory and finite ledger are reviewed.

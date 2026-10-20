@@ -1,4 +1,5 @@
 import { execFileSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -21,6 +22,54 @@ export function applyAutomaticAdmissionAmendment(baseline, record) {
       throw Error('approved amendment target missing or duplicated');
     result[file] = result[file].replace(oldText,newText);
   });
+  return result;
+}
+// The owner reviewed the exact proposal at this immutable revision and approved
+// adoption on October 20, 2026. This supplements, never replaces, both older pins.
+// Only six APP-013 criterion lines and the remaining-MVP paragraph are amended.
+export const coreReleaseRef = '7ed300a1d4f50a9a53500db405c3290130bd43cf';
+export const coreReleasePatch = 'MVP_CORE_RELEASE_PROPOSED_DIFF_20261020.patch';
+const coreReleasePatchSha256 = '0a221591289ae7a5a72a64f4c8ee19b1943d7c2b383d399008e44252431318be';
+const coreReleaseFrozenChanges = [
+  '[frozen-criterion] APP013_REMAINING_EXECUTION_CONTRACT.md / Reporting and remaining MVP boundary',
+  '[frozen-criterion] TICKETS/APP-013.md / Acceptance Criteria (must all pass)',
+];
+export function applyCoreReleaseAmendment(baseline, patch) {
+  if (typeof patch !== 'string' || createHash('sha256').update(patch).digest('hex') !== coreReleasePatchSha256)
+    throw Error('invalid pinned core-release proposal');
+  const result = {...baseline};
+  const changes = [];
+  for (const [file,title,count] of [
+    ['TICKETS/APP-013.md','Acceptance Criteria (must all pass)',6],
+    ['APP013_REMAINING_EXECUTION_CONTRACT.md','Reporting and remaining MVP boundary',1],
+  ]) {
+    const fileBlocks = patch.split(/(?=^--- a\/)/m).filter(block=>block.startsWith('--- a/'+file+'\n+++ b/'+file+'\n'));
+    if (fileBlocks.length !== 1) throw Error('missing or duplicated core-release file');
+    const hunks = fileBlocks[0].split(/(?=^@@ )/m).slice(1);
+    const targetHunks = hunks.filter(hunk=>file.startsWith('TICKETS/')
+      ? hunk.includes('\n ## '+title+'\n')
+      : hunk.includes('\n-After 3D, reconcile remaining APP-013\'s twelve criteria,'));
+    if (targetHunks.length !== 1) throw Error('missing or duplicated core-release hunk');
+    const removed = [...targetHunks[0].matchAll(/^-(.+)$/gm)].map(match=>match[1]);
+    const added = [...targetHunks[0].matchAll(/^\+(.+)$/gm)].map(match=>match[1]);
+    if (removed.length !== count || added.length !== count || new Set(removed).size !== count || new Set(added).size !== count)
+      throw Error('invalid core-release replacement count');
+    if (file.startsWith('TICKETS/') && [...removed,...added].some(line=>!line.startsWith('- [ ] ')))
+      throw Error('core-release replacements must preserve criterion positions');
+    removed.forEach((oldText,index)=>{
+      if (typeof result[file] !== 'string' || result[file].split(oldText).length !== 2)
+        throw Error('core-release target missing or duplicated');
+      result[file] = result[file].replace(oldText,added[index]);
+      changes.push({file,oldText,newText:added[index]});
+    });
+  }
+  const ticket = 'TICKETS/APP-013.md';
+  for (const text of [baseline[ticket],result[ticket]]) {
+    if (section(text,'Acceptance Criteria (must all pass)').split('\n').filter(line=>line.startsWith('- [ ] ')).length !== 12)
+      throw Error('core-release amendment must preserve twelve criteria');
+  }
+  if (changes.length !== 7 || JSON.stringify(frozenBaselineErrors(result,baseline)) !== JSON.stringify(coreReleaseFrozenChanges))
+    throw Error('core-release amendment changed unintended frozen requirements');
   return result;
 }
 export const protectedSections = {
@@ -72,7 +121,8 @@ export function checkFrozenBaseline(root=process.cwd()) {
       baseline[file]=execFileSync('git',['show',baselineRef+':'+file],{cwd:root,encoding:'utf8',stdio:['ignore','pipe','pipe']});
     }
     const record=execFileSync('git',['show',automaticAdmissionRef+':'+automaticAdmissionRecord],{cwd:root,encoding:'utf8',stdio:['ignore','pipe','pipe']});
-    return frozenBaselineErrors(current,applyAutomaticAdmissionAmendment(baseline,record));
+    const patch=execFileSync('git',['show',coreReleaseRef+':'+coreReleasePatch],{cwd:root,encoding:'utf8',stdio:['ignore','pipe','pipe']});
+    return frozenBaselineErrors(current,applyCoreReleaseAmendment(applyAutomaticAdmissionAmendment(baseline,record),patch));
   } catch {return ['[frozen-unavailable] Required files or pinned Git revision unavailable. Fetch history; do not skip or regenerate the baseline.'];}
 }
 if(process.argv[1] && resolve(process.argv[1])===fileURLToPath(import.meta.url)) {

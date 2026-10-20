@@ -1,0 +1,160 @@
+# Signmons Scope + Definition of Done
+
+## Owner-reviewed intelligence dependency alignment (2026-09-12)
+
+The owner reviewed PRs #28/#22 and requested the coherent six-ticket dependency repair. [INTELLIGENCE_ALIGNMENT_ADOPTION.md](INTELLIGENCE_ALIGNMENT_ADOPTION.md) records this approved documentation decision; integration/merge and release remain unapproved. APP-013 stays sole Now (2B); Next is APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033. BE-001's residual consent/replay acceptance is consolidated into APP-013, not dropped or declared complete. All older dated Next-empty/proposal-only notes below are historical, superseded for sequencing and pilot definition only. Runtime/evidence and the original 3/8 walkthrough denominator are preserved. No future feature starts until Now meets full acceptance.
+
+## Approved pilot scope clarification (2026-09-09)
+
+[CALLDESK_MVP_PLAN.md](CALLDESK_MVP_PLAN.md) defines the first owner-approved CallDesk pilot: one approved business, English, online access and human supervision. The broader scope below remains the platform roadmap, not a claim that all modules are in the first pilot. Pilot deferrals do not cancel future capabilities, alter paid-plan promises, waive non-negotiable rules or authorize release.
+
+## 1) Mission
+
+The owner-reviewed integrated Eternity intelligence pilot is defined in SIGNMONS_INTELLIGENCE_SPEC.md and MVP_ACCEPTANCE_MATRIX.md. CALLDESK_MVP_PLAN.md retains its accepted component evidence and fixed walkthrough, not a competing advisory deferral. The dependency order is APP-013 then APP-017/018/019/015/016/033. Commercial paid availability and post-pilot optimization are separate gates; no change to fees, plan promises or external-action permissions.
+
+Signmons is a multi-tenant AI front-office and dispatch SaaS for home-service businesses (HVAC, plumbing, electrical). It captures inbound demand, confirms critical customer/job data, schedules and dispatches work, supports the job-to-payment workflow, and delivers auditable operating records.
+
+## 2) In Scope
+
+- Multi-tenant backend with strict tenant isolation
+- Twilio-backed inbound call handling connected to an OpenAI-powered conversational intake workflow with deterministic safety, confirmation, escalation, booking, and payment-policy boundaries
+- Twilio-backed inbound/outbound SMS as the canonical confirmation channel for key fields
+- Missed-call text-back, transactional customer/technician/dispatcher notifications, delivery status, and communication history
+- Payment-first booking gate
+- Calendar scheduling, booking readiness, dispatch, and technician assignment
+- Customer, property, equipment, communication, and service history
+- Professional estimates, approvals, deposits, invoices, payment links, receipts, and reminders
+- Technician mobile job workflow
+- Structured technician diagnostic capture, verified calculations, branded customer reports, and secure report delivery
+- Approved accounting/CRM/FSM integration adapters
+- Review-request, missed-call recovery, and maintenance-plan renewal workflows
+- Tenant dashboards for operations and visibility
+- Marketing site and conversion funnel
+- Admin/ops controls with auditability
+- Memberships and recurring service agreements
+- Job costing and estimated-versus-actual profitability
+- Inventory, purchasing, warehouse, and truck-stock controls
+- Employee time capture, timesheet approval, and payroll export
+- Offline-capable technician workflows with conflict-safe synchronization
+- Customer financing presentation and status tracking through approved providers
+- Guided onboarding, import, reconciliation, export, retention, and account-closure controls
+- Backup, restore, retry/dead-letter, provider-outage, and incident-recovery controls
+
+### Future Signmons Growth outcome reporting boundary
+
+Signmons Growth may eventually join approved lead-source attribution to the contractor's operating and financial lifecycle through booking, completed work, collected customer payments, job profitability, and retention. APP-034 is a Later-only governed capability, not implementation approval, and cannot displace the canonical execution queue. The current BE-007 pilot primarily supports `website_chat` attribution and created/booked/completed/cancelled job counts, attributed/unattributed counts, conversion ratios, UTM source/medium/campaign, and landing-page summaries; it does not yet report collected revenue or profit. Money/payment records are required for collected-revenue reporting and APP-026 job-cost records are required before true profit attribution.
+
+Growth remains a trades-workflow capability, not a generic marketing platform. Autonomous campaigns or budget changes, generic SEO agency services, full website building, social-media management, broad unrelated marketing automation, and ad-spend control without explicit owner approval are excluded. Spend inputs, if later approved, are manual or through approved adapters; no autonomous purchase or budget manipulation is permitted. No change is made to fixed subscription pricing or billable-event policy.
+
+## 3) Out of Scope (MVP)
+
+- Advanced route optimization and full fleet management
+- Voice optimization beyond the approved APP-033 pilot, broad transcription analytics, sentiment analysis, and automated outbound campaigns (basic governed voice/intelligence intake is included in the reviewed pilot)
+- Broad ERP/CRM two-way sync beyond approved adapters
+- General-ledger accounting, payroll, bank reconciliation, tax filing, or an ERP replacement
+- Lending decisions, underwriting, custody of financing application data, or representation as a lender
+- Supplier marketplace ownership or ungoverned automated purchasing
+- Raw payment-card storage or custom payment processing outside an approved PCI-compliant provider
+- Unvalidated multilingual claims
+- Features without acceptance criteria and evidence
+
+## 4) Non-Negotiable Product Rules
+
+- Voice is persuasive intake, not canonical authority
+- SMS confirmation is canonical for required fields
+- Twilio is an MVP infrastructure dependency, but telephony and messaging must sit behind a provider abstraction so Signmons is not permanently vendor-locked
+- OpenAI-powered voice intake must sit behind a governed orchestration boundary; the model may converse and summarize, but server-side policy owns safety, required confirmations, payment eligibility, booking, and dispatch decisions
+- Voice recording and transcript capture must be disabled unless tenant policy, notice/consent, retention, access, redaction, and jurisdictional requirements are explicitly configured
+- Communication delivery must be idempotent and auditable, with consent, opt-out/STOP and HELP handling, quiet-hour policy, delivery/failure status, safe retry, and duplicate-message protection
+- Payment webhook validation is server-side and fail-closed
+- No cross-tenant data access
+- No silent assumptions for critical customer fields
+- Tenant brand voice policy must control greeting, tone, prohibited phrases, escalation language, fee language, and closeout messaging
+- Business rules must be tenant-scoped, auditable, versioned, and enforced server-side
+- Scheduling and calendar decisions must respect technician availability, service windows, urgency, and payment-gate status
+- Customer profile/history access must remain tenant-isolated with no cross-tenant exposure
+- Estimate, invoice, payment, refund, and credit transitions must be tenant-scoped, idempotent where required, and auditable
+- Contractor-to-customer job invoices and Signmons-to-tenant SaaS invoices must remain separate billing domains
+- Basic invoicing must not be marketed as bookkeeping or accounting
+- Human fallback/escalation must exist for urgent, unclear, failed, or policy-sensitive flows
+- Signmons-to-tenant pricing is a fixed monthly or annual subscription; Signmons does not charge setup, per-call overage, per-booked-job, emergency-capture, revenue-share, or basic per-invoice fees
+- Plan capacity is a suitability and fair-use boundary. Approaching or sustained excess usage triggers notification and a fixed-price plan-upgrade conversation, not an automatic metered charge
+- Normal Twilio, messaging, and AI usage is included within the subscribed plan; exceptional Enterprise volume is reflected in a negotiated fixed subscription
+- Contractor-to-customer Stripe processing costs remain separate from the Signmons subscription and must never be presented as a Signmons performance fee
+- Technician-entered or approved device-imported measurements are authoritative for diagnostic reports; AI may summarize and validate completeness but must not invent readings or independently claim a diagnosis
+- Diagnostic formulas, units, source readings, report revisions, approvals, and delivery events must be deterministic, versioned, tenant-scoped, and auditable
+- Customer diagnostic reports must exclude internal notes and hidden AI reasoning and use private access or generated documents with controlled delivery
+- Offline field writes must be tenant-scoped, encrypted where retained locally, idempotently replayed, conflict-visible, and safely recoverable
+- Inventory and job-cost changes must retain actor, source, quantity, cost basis, job attribution, and correction history
+- Time tracking may feed approved payroll exports but Signmons must not calculate statutory payroll, withholdings, or taxes in MVP
+- Customer financing must use approved providers and retain only the minimum governed application reference and status needed for the estimate workflow
+- Imports must be previewable, validated, reversible before finalization, and accompanied by reconciliation evidence; tenants must have a governed export path
+- Backup and restore claims require recurring restore evidence, not backup-job success alone
+
+## 5) Definition of Done
+
+### Ticket DoD
+
+- Ticket is in `Now` on `EXECUTION_BOARD.md`
+- Acceptance criteria complete
+- Required gates pass:
+  - Backend: `npm run -s build`, `npm test -- --runInBand`, `npm run -s arch:check`
+  - Frontend: `npm run -s build`, `npm run -s lint`, `npm test -- --runInBand` (or approved equivalent)
+- `QUALITY_GATES.md` checklist satisfied (architecture/security/contracts)
+- Evidence attached (logs/tests/screenshots/API proof)
+- `SESSION_HANDOFF.md` updated
+- One focused commit
+
+### Feature/Phase DoD
+
+- All child tickets complete
+- No critical regression in quality, security, conversion paths
+- Observability exists for key flows
+- Rollback strategy documented for risky changes
+
+### Release DoD
+
+- Security baseline checks pass
+- Core revenue flows validated end-to-end
+- KPI instrumentation active
+- On-call and incident paths documented
+
+## 6) Success Metrics (MVP)
+
+- Visitor to demo conversion
+- Demo to activated tenant conversion
+- Call to booked-job conversion
+- Payment link completion rate
+- Repeat-question rate and first-response latency
+- Missed-call recovery rate and transactional message delivery/failure rate
+- Tenant retention/churn trends
+- Estimate approval rate and invoice payment completion rate after Signmons Money is released
+- Time from completed work to paid invoice after Signmons Money is released
+- Diagnostic-report completion and customer-delivery success after Signmons Field reporting is released
+
+## 7) High-Ticket Copy Guardrails
+
+- Do not claim "zero staff required"; use "human handoff for urgent or unclear cases."
+- Do not claim "2-minute setup" for full workflow setup; use "call forwarding in minutes, full workflow setup guided."
+- Do not publish performance claims (for example, "3x bookings", "98% answer rate", "$0 no-shows") without linked evidence.
+- Pricing claims must map to implemented or explicitly scoped capabilities.
+- No high-ticket marketing claim may ship unless it maps to:
+  - one metric in Section 6 (or an approved extension), and
+  - one evidence source (dashboard panel, report extract, or ticket evidence artifact).
+
+## 8) Commercial Model Guardrails (High-Ticket)
+
+- Public plan ladder target:
+  - Starter: `$299/mo`
+  - Growth: `$799/mo`
+  - Pro: `$1,499/mo`
+  - Enterprise: fixed custom monthly/annual subscription
+- Founding Partner bridge: `$199/mo` for the first `10` approved external businesses; it is limited early access, not a replacement public tier, and has no setup fee
+- The MVP has no required setup fee, metered call overage, booked-job fee, emergency-capture fee, revenue share, or separately priced feature add-on
+- Included plan capacity is disclosed as a suitability/fair-use guide; Signmons recommends a fixed-price upgrade when a tenant consistently exceeds it
+- Normal Twilio/AI/provider operating costs are included in plan economics. Exceptional Enterprise needs are priced into the fixed custom subscription
+- Basic professional estimates/invoices/payment links/receipts are included after the Signmons Money release gate without a basic per-invoice Signmons fee.
+- Basic Stripe payment-before-booking enforcement is included in Starter and every higher paid plan after the Signmons Money release gate. Growth and higher tiers differentiate through advanced deposit, preauthorization, exception, partial-payment, and recovery controls rather than access to the core gate.
+- Stripe and other customer-payment processor fees belong to the contractor-to-customer transaction and are separate from Signmons subscription billing.
+- Starter includes a simple technician completion summary; the complete branded diagnostic-report workflow is required for Growth launch readiness; Pro adds configurable templates, quality-control review, equipment trends, and approved integrations.
+- Annual pricing discount policy must be explicit and versioned (default target: `15%-20%`).

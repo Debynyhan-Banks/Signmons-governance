@@ -1,5 +1,9 @@
 # Signmons Intelligence — owner-reviewed specification
 
+## Core commercial release amendment — October 20, 2026
+
+R1 uses basic phone/bounded web/SMS, short relevant qualification, approved curated business facts, fixed safe greeting, typed authoritative tools, confirmed facts, truthful technician brief and independent critical-failure evaluation. Rich comfort/sales discovery, persona design, broad knowledge-corpus/retrieval tooling, rich cross-channel memory and optimization are deferred under MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md. All authority, safety, privacy, provenance, handoff and verified-outcome boundaries below remain mandatory for every supported R1 path. Historical end-of-file operation directions are not renewed authority.
+
 Status: owner-reviewed dependency/pilot documentation, 2026-09-12; see INTELLIGENCE_ALIGNMENT_ADOPTION.md. This is not a runtime prompt or permission to start future tickets, deploy or train.
 
 Signmons is an AI front-office operating system for the trades. Eternity is a tenant-configured pilot, never a source of global prices, branding or customer defaults. A shared orchestrator with typed capabilities is preferred; no speculative agent microservices.

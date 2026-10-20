@@ -1,5 +1,9 @@
 # System Of Record
 
+## Core commercial release amendment — October 20, 2026
+
+The owner-approved R1 boundary is the core commercial Revenue Integrity Dispatch journey defined in MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md. It supersedes earlier intelligence-pilot breadth as an R1 launch prerequisite only; safety, pricing and external-action boundaries remain unchanged. APP-013/3A remains Now and the Next order remains APP-017 -> APP-018 -> APP-019 -> APP-015 -> APP-016 -> APP-033. Each ticket requires full acceptance of its explicitly amended R1 criteria before promotion; no partial completion is implied. Deferred original requirements remain later-release work, not delivered capability. The historical 60-package and 13-row ledgers retain their evidence and counts; neither is silently relabeled a commercial R1 denominator. The original frozen anchor remains pinned with only the exact separately reviewed amendment applied. All older full-intelligence launch-prerequisite statements are superseded for R1 only by this recorded adoption.
+
 ## Owner-reviewed intelligence dependency alignment (2026-09-12)
 
 The owner reviewed PRs #28/#22 and requested the coherent six-ticket dependency repair. [INTELLIGENCE_ALIGNMENT_ADOPTION.md](INTELLIGENCE_ALIGNMENT_ADOPTION.md) records this approved documentation decision; integration/merge and release remain unapproved. APP-013 stays sole Now (2B); Next is APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033. BE-001's residual consent/replay acceptance is consolidated into APP-013, not dropped or declared complete. All older dated Next-empty/proposal-only notes below are historical, superseded for sequencing and pilot definition only. Runtime/evidence and the original 3/8 walkthrough denominator are preserved. No future feature starts until Now meets full acceptance.

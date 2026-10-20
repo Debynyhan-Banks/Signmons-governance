@@ -1,5 +1,9 @@
 # Trades Platform Completeness Standard
 
+## Core commercial release amendment — October 20, 2026
+
+This is the broader platform roadmap. MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md defines the smaller first commercial release. Operational safety, ownership, support and tested recovery remain R1 obligations; full diagnostics, memberships, costing, inventory, time export, offline, financing, broad migration/integration and APP-034 are not R1 prerequisites. Preserve these later requirements without placing their systems in the core booking/payment path.
+
 Purpose: define the operational capabilities required for Signmons to become a comprehensive, hard-to-replace platform for trades businesses without drifting into an ERP, payroll processor, lender, or autonomous diagnostic system.
 
 ## Product Promise

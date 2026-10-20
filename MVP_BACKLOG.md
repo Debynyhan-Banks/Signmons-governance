@@ -1,5 +1,9 @@
 # MVP Backlog
 
+## Core commercial release amendment — October 20, 2026
+
+The owner-approved R1 boundary is the core commercial Revenue Integrity Dispatch journey defined in MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md. It supersedes earlier intelligence-pilot breadth as an R1 launch prerequisite only; safety, pricing and external-action boundaries remain unchanged. APP-013/3A remains Now and the Next order remains APP-017 -> APP-018 -> APP-019 -> APP-015 -> APP-016 -> APP-033. Each ticket requires full acceptance of its explicitly amended R1 criteria before promotion; no partial completion is implied. Deferred original requirements remain later-release work, not delivered capability. R1 serves small, one-location service/repair teams with guided setup, English, online field use, one calendar, manual dispatch, basic phone/bounded web/SMS, essential communications, simple approved estimates/invoices/payment/receipts and actual-outcome reporting. QBO and an existing FSM are not required. Rich sales/discovery/history/configuration, advanced diagnostics, full pricebook, memberships, costing, inventory, payroll/time export, offline, financing and APP-034 are later scope. Founding Partner/Starter availability must match activated capabilities; Growth/Pro gates and fixed subscription promises are preserved.
+
 ## Approved first-pilot boundary (2026-09-09)
 
 [CALLDESK_MVP_PLAN.md](CALLDESK_MVP_PLAN.md) defines the owner-approved supervised CallDesk pilot, required capabilities, deferred roadmap, acceptance checklist and completion baseline. This backlog also contains the wider platform roadmap; it is not the pilot completion denominator. APP-013 remains sole Now; later milestones do not authorize ticket promotion or production actions.

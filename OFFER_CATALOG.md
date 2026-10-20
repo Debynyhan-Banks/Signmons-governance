@@ -1,5 +1,9 @@
 # Offer Catalog
 
+## Core commercial release amendment — October 20, 2026
+
+First commercial availability follows MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md: limited Founding Partner activation and then Starter only when all Starter promises pass. Guided setup, online-only field use, manual dispatch and no QBO/FSM dependency define the initial cohort. Current prices, capacities and package promises below are unchanged; Growth still requires full diagnostic reporting and Pro remains separately gated. Do not imply that early-access activation establishes general availability.
+
 Purpose: canonical summary of what each plan offers and how upgrade paths are justified.
 
 ## Product Promise

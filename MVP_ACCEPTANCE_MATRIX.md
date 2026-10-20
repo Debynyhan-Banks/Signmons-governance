@@ -1,5 +1,9 @@
 # Intelligence pilot acceptance matrix
 
+## Core commercial release amendment — October 20, 2026
+
+The thirteen rows below remain the preserved full-intelligence pilot acceptance ledger (0/13 recorded fully accepted), not the narrowed commercial R1 launch denominator. MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md maps retained R1 behavior and deferred requirements. Accepted 6/60 historical packages and 4/8 walkthrough milestones are preserved separately. A source-sized R1 ledger must be reviewed before publishing a new denominator; deferral is not acceptance and cannot improve a completion percentage. Full-intelligence rows remain open until their own later evidence and owner acceptance.
+
 Owner-reviewed integrated pilot requirements, 2026-09-12; status reconciled October 19, 2026. **0/13 rows recorded fully accepted.** Partial/component evidence remains reusable. Fixed walkthrough: **4/8 accepted**, including owner-accepted 2B and closeout; next 3A. Remaining-work plan: **6/60 packages accepted (10%)**, not an engineering-effort percentage. Each row requires code, tests, environment-specific evidence, reviewer and acceptance date before accepted status. See [current measurement](MVP_COMPLETION_MEASUREMENT_2026-10-19.md) and [progress tracker](PROGRESS_TRACKER.md). This status reconciliation adds no criterion or acceptance claim.
 
 | Requirement | Current evidence/status | Owning ticket / missing acceptance |

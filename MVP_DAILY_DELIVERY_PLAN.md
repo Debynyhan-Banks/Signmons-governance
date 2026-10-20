@@ -1,5 +1,9 @@
 # Signmons Release A pilot — daily delivery plan v1
 
+## Core commercial release amendment — October 20, 2026
+
+The permanent P01–P60 IDs and recorded 6/60 acceptance are preserved as the original integrated-pilot plan. MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md provides the retained/deferred map for narrowed R1; do not simply remove rows and recalculate progress. Basic Money, collected-revenue reporting, subscriptions/admin and commercial support require explicit source/evidence sizing before the new commercial ledger or an ETA is adopted. The existing eight-milestone walkthrough remains unchanged.
+
 ## Current accepted progress on October 19
 
 **P01–P06 accepted: 6/60 packages (10% of this remaining-work baseline); 54 not yet accepted.** P06 closed when the owner accepted enabled52’s verified job and closeout with “Accept 2B and its closeout”. [Evidence](../signmons-backend-r08-recovery/evidence/APP-013/p06-r11-enabled52-live-result-20261019.md). Walkthrough 4/8 accepted; next P07/P08 within 3A. [Full measurement and scope limits](MVP_COMPLETION_MEASUREMENT_2026-10-19.md); [current tracker](PROGRESS_TRACKER.md).

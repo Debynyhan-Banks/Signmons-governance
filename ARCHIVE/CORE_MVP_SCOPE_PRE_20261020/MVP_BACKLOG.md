@@ -1,0 +1,101 @@
+# MVP Backlog
+
+## Approved first-pilot boundary (2026-09-09)
+
+[CALLDESK_MVP_PLAN.md](CALLDESK_MVP_PLAN.md) defines the owner-approved supervised CallDesk pilot, required capabilities, deferred roadmap, acceptance checklist and completion baseline. This backlog also contains the wider platform roadmap; it is not the pilot completion denominator. APP-013 remains sole Now; later milestones do not authorize ticket promotion or production actions.
+
+## Epic E1 - Governance and Delivery Discipline
+
+- GOV-001: Establish governance repo and canonical docs
+- GOV-002: Wire `DOCS_INDEX.md` into backend and frontend repos
+- GOV-003: Adopt session handoff discipline across all contributors
+- GOV-005: Enforce docs consistency CI + global pointer synchronization
+- GOV-017: Commercial offer architecture lock (pricing/fees/billable-event governance)
+
+## Epic E2 - Public Marketing Funnel (High-Ticket First)
+
+- FE-001: Home page (`SCR-PUB-001`) - shipped
+- FE-002: Trust + legal baseline (`SCR-PUB-005`, `SCR-PUB-010`) - shipped
+- FE-003: Reusable component refactor (`SCR-PUB-001`, `SCR-PUB-007`, `SCR-PUB-009`) - shipped
+- FE-004: Pricing reposition (`SCR-PUB-006`) - shipped
+- FE-005: Pricing consistency analyzer + CI (`SCR-PUB-006`) - shipped
+- FE-006: Privacy + Terms + SMS terms route/content parity (`SCR-PUB-010`)
+- FE-007: Contact capture (email-minimum) with backend persistence (`SCR-PUB-009`)
+- FE-008: Live demo flow + CTA route parity hardening (`SCR-PUB-001`, `SCR-PUB-006`, `SCR-PUB-007`, `SCR-PUB-009`)
+- FE-009: Done-for-you setup page (`SCR-PUB-011`)
+- FE-010: Business rules and custom logic page (`SCR-PUB-012`)
+- FE-011: Brand voice and AI personality page (`SCR-PUB-013`)
+- FE-012: Dispatch and scheduling page (`SCR-PUB-014`)
+- FE-013: Revenue dashboard and ROI calculator (`SCR-PUB-015`, `SCR-PUB-016`)
+- FE-014: Competitive comparison pages (`SCR-PUB-017`, `SCR-PUB-018`)
+- FE-015: Customer and technician experience page (`SCR-PUB-019`)
+- FE-016: Subscription-only pricing reconciliation (fixed tiers, capacity guidance, no setup/overage/performance/add-on fees, and contractor-payment boundary) (`SCR-PUB-006`)
+
+## Epic E3 - Tenant Product Experience (Starts After Marketing DoD)
+
+- APP-001: Tenant dashboard foundation (`SCR-APP-002`)
+- APP-002: Conversations list + detail (`SCR-APP-003`, `SCR-APP-004`)
+- APP-003: Jobs queue and lifecycle foundation (`SCR-APP-005`)
+- APP-004: Tenant settings and controls (`SCR-APP-007`, `SCR-APP-008`, `SCR-APP-010`)
+- APP-005: Audit and compliance visibility (`SCR-APP-011`)
+- APP-006: Intake review and booking readiness (`SCR-APP-012`)
+- APP-007: Urgency classification and escalation review (`SCR-APP-013`)
+- APP-008: Dispatch board and technician assignment (`SCR-APP-014`, `SCR-APP-017`)
+- APP-009: Technician mobile job workflow (`SCR-TECH-001`, `SCR-TECH-002`, `SCR-TECH-003`)
+- APP-010: Routing rules, service areas, and availability (`SCR-APP-015`, `SCR-APP-016`, `SCR-APP-024`, `SCR-TECH-004`)
+- APP-011: Customer booking status and confirmation flow (`SCR-CUST-001`, `SCR-CUST-003`)
+- APP-012: Payment gate and webhook status workflow (`SCR-APP-006A`, `SCR-APP-006B`, `SCR-APP-006C`, `SCR-APP-023`, `SCR-CUST-002`)
+- APP-013: Twilio-backed notification center and transactional customer messaging templates, including durable appointment confirmations, technician status messages, dispatcher alerts, delivery/failure status, and communication history (`SCR-APP-021`, `SCR-APP-022`, `SCR-TECH-005`)
+- APP-014: Revenue recovery and conversion analytics (`SCR-APP-018`, `SCR-APP-019`)
+- APP-015: AI quality and failure review (`SCR-APP-020`, `SCR-ADM-005`)
+- APP-016: Calendar scheduling and appointment management, including secure customer view/reschedule/cancel access (`SCR-APP-025`, `SCR-APP-015`, `SCR-APP-005`)
+- APP-017: Business rules and automation center (`SCR-APP-026`, `SCR-APP-016`, `SCR-APP-023`, `SCR-APP-022`)
+- APP-018: Brand voice and AI personality configuration (`SCR-APP-027`, `SCR-APP-007`, `SCR-APP-022`)
+- APP-019: Customer profiles and service history (`SCR-APP-028`, `SCR-APP-003`, `SCR-APP-005`)
+- APP-020: Professional estimates, approvals, invoices, receipts, and aging (`SCR-APP-029`, `SCR-CUST-007`, `SCR-APP-006B`)
+- APP-021: Governed service pricebook and estimate options (`SCR-APP-030`, `SCR-TECH-002`, `SCR-APP-029`)
+- APP-024: Structured system diagnostic capture, deterministic calculations, tenant-branded reports, quality review, and secure customer delivery (`SCR-APP-033`, `SCR-TECH-006`, `SCR-CUST-008`)
+- APP-022: Review requests and maintenance-plan renewal workflows (`SCR-APP-031`, `SCR-CUST-005`, `SCR-APP-022`)
+- APP-023: QuickBooks Online accounting adapter and reconciliation status (`SCR-APP-032`, `SCR-APP-006B`, `SCR-APP-029`)
+- APP-025: Memberships and recurring service agreements, including entitlements, renewals, recurring visits, member pricing, and equipment-specific maintenance schedules (screens and contracts ticket-defined)
+- APP-026: Job costing and profitability, including estimated-versus-actual labor, material, equipment, subcontractor, commission, and overhead attribution (screens and contracts ticket-defined)
+- APP-027: Inventory, purchasing, and truck stock, including parts usage, replenishment, purchase orders, returns, transfers, and approved supplier adapters (screens and contracts ticket-defined)
+- APP-028: Employee time tracking and payroll export, including job time, timesheet approval, technician attribution, and export boundaries without payroll processing (screens and contracts ticket-defined)
+- APP-029: Offline-first technician synchronization for jobs, forms, photos, signatures, estimates, and diagnostics with conflict-safe replay and duplicate prevention (screens and contracts ticket-defined)
+- APP-030: Customer financing presentation and status tracking alongside estimates without retaining sensitive financing application data (screens and contracts ticket-defined)
+- APP-031: Guided tenant onboarding, data migration, reconciliation, export, retention, and account-closure controls (screens and contracts ticket-defined)
+- APP-032: Platform reliability, backup, restore, provider-outage, retry/dead-letter, incident, and operational recovery controls (screens and contracts ticket-defined)
+- APP-033: OpenAI-powered voice intake and booking orchestration over the Twilio communications foundation, including safety, canonical confirmation, payment/booking handoff, human escalation, summaries, latency, and failure recovery (screens and contracts ticket-defined)
+- APP-034: Acquisition-to-Profit Attribution (`SCR-APP-034`) — Later / future governed scope only; not approved for implementation. Depends on BE-007 and the completed/accepted customer, Money/payment, job-costing, and channel foundations specified in `TICKETS/APP-034.md`; must not displace the canonical queue.
+
+Roadmap boundaries, outcome requirements, and sequencing constraints for APP-025 through APP-032 are defined in `TRADES_PLATFORM_COMPLETENESS.md`. These tickets remain future scope and do not displace the active `Now` ticket.
+
+## Epic E4 - Security and Reliability
+
+- BE-001: Keyword opt-in/out persistence and telemetry enforcement
+- BE-002: Marketing lead-capture API persistence contract
+- BE-003: Signature and auth fail-closed checks
+- BE-004: Data contract validation and backward compatibility tests
+- BE-005: Observability and audit logs for critical flows
+- BE-006: Subscription entitlements, nonfinancial usage visibility, fixed-plan upgrade signals, and SaaS invoice integrity
+- BE-007: Tenant-scoped lead-source reporting pilot. Current source inspection confirms created, booked, completed and cancelled job counts; attributed/unattributed counts; lead-to-booking and booked-to-completed ratios; `website_chat`-primarily attribution; UTM source/medium/campaign; and landing-page summaries. It is a foundation, not collected-revenue, profit, or broad-channel reporting.
+- BE-008: Twilio communications foundation: voice routing, inbound/outbound SMS, missed-call text-back, consent and STOP/HELP handling, quiet-hour policy, idempotent delivery, provider status webhooks, safe retry, and provider abstraction
+
+## Epic E5 - Launch Readiness
+
+- OPS-001: Production runbook and incident guide
+- OPS-002: KPI dashboard readiness
+- OPS-003: Trial onboarding + billing handoff checklist
+
+## Ticket Template (required)
+
+- Ticket ID:
+- Repo:
+- Scope:
+- Screen IDs:
+- Acceptance criteria:
+- Test/evidence plan:
+- Risks:
+# Owner-reviewed execution dependency clarification — 2026-09-12
+
+Current APP-013 must satisfy full acceptance, including BE-001 residual consent/replay evidence. The canonical boards and global pointer queue APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033. Backlog numbering below is a capability inventory, not an alternate execution order. See INTELLIGENCE_MVP_ROADMAP.md for reuse/dependencies and MVP_ACCEPTANCE_MATRIX.md for pilot versus commercial acceptance. No future ticket is active.

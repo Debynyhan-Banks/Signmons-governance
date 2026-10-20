@@ -1,6 +1,18 @@
 # Session Handoff
 
-## October 20 — core commercial MVP direction approved; exact amendment prepared
+## October 20 — exact core MVP amendment adopted; pricing and completion boundaries clarified
+
+**Section/status:** owner explicitly approved the exact amendment after receiving the scope record and proposed diff. This is governance adoption and read-only source inspection; APP-013/3A remains the sole active execution section. No ticket or customer capability was accepted by downsizing.
+
+**Completed:** applied the eighteen-document diff preserved at immutable `7ed300a1d4f50a9a53500db405c3290130bd43cf`; archived every prior source version under `ARCHIVE/CORE_MVP_SCOPE_PRE_20261020/`. The original frozen baseline and automatic-admission anchor remain, with a checksum-pinned core amendment restricted to six APP-013 criterion replacements and one remaining-MVP paragraph. Twelve APP-013 positions and all walkthrough section text remain; original APP-016/payment/calendar controls, current pointer and Now/Next order are untouched. The source inventory records retained features and actual Money/collections/channel/commercial gaps. Current pricing is unchanged: existing $199 Founding Partner and $299 Starter paths, subject to activation and offer gates.
+
+**Remaining/blocker and owner:** no honest overall commercial R1 percentage or date follows from the old ledgers. Implementer owns finite source-sized work/evidence cards for retained requirements, especially ordinary phone/SMS, completion documentation, basic customer Money/collections and paid activation/support/restore. The owner retains commercial release acceptance. Current P07 readiness and same-job 3A proof remain open; this approval does not renew any window/package or authorize external action.
+
+**Next observable result:** a finite reviewed R1 implementation/acceptance map, while the current execution finish remains authentic same-job Sandbox payment with replay/failure safeguards and closeout. Approved scope amendment only; no scope deviation beyond that exact amendment.
+
+**Progress:** **6/60 original packages (10%), 4/8 fixed walkthrough (50%), 0/13 full-intelligence rows**, separately unchanged. New overall R1 progress is not yet baselined. No application code or live environment change.
+
+## Historical October 20 — core commercial MVP direction approved; exact amendment prepared
 
 **Section/status:** documentation-only scope-change preparation. Owner approved all six downsizing decisions and explicitly said QuickBooks/existing FSM are not needed now. APP-013/3A remains the active execution section; no ticket is promoted, closed or accepted by this decision.
 

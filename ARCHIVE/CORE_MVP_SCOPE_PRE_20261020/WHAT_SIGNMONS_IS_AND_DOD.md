@@ -1,0 +1,198 @@
+# What Signmons Is + Anti-Drift DoD
+
+## Owner-reviewed intelligence dependency alignment (2026-09-12)
+
+The owner reviewed PRs #28/#22 and requested the coherent six-ticket dependency repair. [INTELLIGENCE_ALIGNMENT_ADOPTION.md](INTELLIGENCE_ALIGNMENT_ADOPTION.md) records this approved documentation decision; integration/merge and release remain unapproved. APP-013 stays sole Now (2B); Next is APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033. BE-001's residual consent/replay acceptance is consolidated into APP-013, not dropped or declared complete. All older dated Next-empty/proposal-only notes below are historical, superseded for sequencing and pilot definition only. Runtime/evidence and the original 3/8 walkthrough denominator are preserved. No future feature starts until Now meets full acceptance.
+
+## Approved first pilot (2026-09-09)
+
+[CALLDESK_MVP_PLAN.md](CALLDESK_MVP_PLAN.md) is the owner-approved first-pilot boundary and acceptance plan. Signmons starts as a supervised AI front desk and dispatch assistant with required call/text/chat intake, booking/payment policy, customer communications, dispatcher/technician workflows and operational recovery. The seven-module vision below remains the roadmap, not current availability or a full-platform launch promise. APP-013 remains sole Now; future milestones still require explicit pointer transitions.
+
+## Product Definition (Canonical)
+
+Signmons is an **AI front-office operating system for trades businesses**.
+
+It is built to:
+- capture inbound demand across call/text/chat,
+- classify urgency,
+- enforce payment and policy gates,
+- produce booking-ready and dispatch-ready jobs,
+- route work with controlled rules,
+- notify owner/dispatcher/technician/customer,
+- report revenue outcomes with auditability,
+- monetize through predictable fixed monthly or annual subscriptions, without setup, per-call, per-booking, emergency-capture, revenue-share, or basic per-invoice Signmons fees.
+
+Primary ICP:
+- HVAC, plumbing, electrical, and adjacent home-service operators.
+
+## Owner-reviewed intelligence pilot clarification
+
+The integrated Eternity pilot includes relevant comfort discovery, ethical objection handling, approved knowledge and customer context, technician briefs, outcomes and independent evaluation. This clarifies future APP-017/018/019/015/016/033 acceptance, not current APP-013 implementation. The earlier deferral is preserved in ARCHIVE/INTELLIGENCE_ADVISORY_DEFERRAL_2026-09-10.md. No autonomous diagnosis, fabricated prices/technical claims, automatic training or unreviewed imported facts. Read SIGNMONS_INTELLIGENCE_SPEC.md and MVP_ACCEPTANCE_MATRIX.md. Commercial plan gates remain intact.
+
+## Product Family (Canonical)
+
+Signmons is one platform with the following governed product modules:
+
+1. **Signmons CallDesk**
+   - Twilio receives and routes inbound calls into an OpenAI-powered conversational intake workflow that answers, identifies, qualifies, screens for safety and urgency, confirms critical facts, and hands off to booking, payment, dispatch, or a human
+   - AI-assisted SMS and web-chat intake
+   - Twilio-backed call routing, inbound/outbound SMS, missed-call text-back, and transactional notifications
+   - qualification, safety screening, booking, summaries, delivery tracking, communication history, and human handoff
+2. **Signmons Dispatch**
+   - calendar availability, booking readiness, dispatch board, technician assignment, service-area rules, and rescheduling
+3. **Signmons Money**
+   - professional estimates, customer approval, deposits, invoices, payment links, receipts, reminders, refunds, and payment audit history
+4. **Signmons Field**
+   - technician job workflow, customer/equipment context, notes, photos, signatures, and status updates
+   - structured trade-specific diagnostic capture, deterministic measurement calculations, branded findings reports, and secure customer delivery
+5. **Signmons Customers**
+   - tenant-isolated customer, property, equipment, service, payment, and communication history
+6. **Signmons Growth**
+   - missed-call recovery, review requests, maintenance-plan renewal workflows, and lead-source attribution
+   - future governed connection from approved acquisition sources to booking, completed work, collected revenue, job profitability, and retention; this is not a generic marketing suite
+7. **Signmons Intelligence**
+   - booking, response-time, payment, revenue, dispatch, and AI-quality reporting
+
+Cross-module operating foundations include memberships, job costing, inventory and purchasing, employee time capture and payroll export, offline field synchronization, customer financing handoff, guided migration/onboarding, and tested operational recovery. These foundations support the seven modules; they do not create separate products or expand Signmons into payroll, general-ledger accounting, banking, or ERP.
+
+These are modules of one product, not seven disconnected applications. Shared tenant identity, customer/job records, business rules, audit events, and permissions are mandatory.
+
+## Canonical Customer Workflow
+
+`call/text/chat -> identify -> qualify -> safety/policy check -> schedule -> collect required booking fee/deposit -> dispatch -> estimate/approve -> perform work -> final invoice -> collect balance -> receipt -> review/retain -> report`
+
+Signmons may integrate with an existing CRM/FSM/accounting system at any stage, but the workflow must remain explainable and recoverable inside Signmons.
+
+## What Signmons Is Not
+
+- Not a generic website chatbot.
+- Not just an AI answering service.
+- Not a full fleet optimization suite in MVP.
+- Not a replacement for all CRM/FSM systems in MVP.
+- Not general-ledger accounting, payroll, bank reconciliation, tax filing, or an ERP.
+- Not a promise that every governed module is available before its delivery ticket is complete.
+
+## Product North Star
+
+"Get paid before dispatch while maintaining high booking quality and dispatch confidence."
+
+Signmons measures business outcomes, not AI activity alone. The outcome chain is `Lead -> Booked -> Completed -> Paid -> Profitable -> Retained`. Operational AI measures remain useful diagnostics and cannot replace verified business outcomes. Revenue Integrity Dispatch remains the product moat and North Star; acquisition attribution extends the trades operating workflow rather than creating a generic CRM, marketing agency, SEO platform, ad-buying engine, or ERP.
+
+### Growth and acquisition-to-profit boundary
+
+Growth may eventually connect lead attribution across approved website/chat/form, phone/SMS where technically and legally supportable, UTM campaign metadata, referrals, property managers, repeat customers, and manually classified sources to operating and financial outcomes. APP-034 defines this future governed scope only; it is Later and not approved for implementation. The existing BE-007 pilot primarily recognizes `website_chat` and reports job lifecycle counts and ratios, attribution status, UTM source/medium/campaign, and landing pages. It does not yet establish collected revenue, job profit, or broad channel coverage. Collected revenue depends on governed Money/payment records; valid profit attribution depends on APP-026 job-cost data.
+
+Growth explicitly excludes autonomous campaign management or ad-budget changes, generic SEO agency services, full website-builder functionality, social-media management, broad marketing automation unrelated to contractor/customer lifecycle, and ad-platform spend control without explicit owner approval. Signmons does not invent unknown attribution; it remains unattributed. Fixed subscription pricing and all existing billing boundaries remain unchanged.
+
+Supporting outcome: "Move a qualified customer from first contact to documented payment without duplicate data entry or unanswered ownership."
+
+## Financial Workflow Boundary
+
+- Professional estimates and invoices are a core Signmons product capability, not a separate accounting product.
+- Basic branded estimates, invoices, payment links, and receipts belong in every paid plan once `Signmons Money` is released.
+- Basic fail-closed Stripe payment-before-booking enforcement belongs in every paid plan once `Signmons Money` is released; it is a core product promise, not an upsell.
+- Advanced deposits, progress/recurring invoicing, automated reminders, approval workflows, and accounting synchronization are tiered capabilities.
+- Growth and higher tiers may add configurable deposit/preauthorization rules, exception approvals, partial-payment policy, and payment recovery controls without removing the basic gate from Starter.
+- Signmons must not store raw card data; payment collection uses an approved PCI-compliant processor.
+- Accounting remains the system of record for general ledger, payroll, tax filing, and bank reconciliation; Signmons integrates through approved adapters.
+- There are two distinct billing domains: contractor-to-customer job invoices and Signmons-to-tenant SaaS invoices. Data, numbering, policies, and permissions must not be conflated.
+- Stripe payment-before-booking, deposits, estimates, and job invoices are money the contractor collects from its customer; they are product workflows, not additional Signmons charges.
+- Signmons-to-tenant billing is subscription-only. Plan capacity drives a fixed-price upgrade conversation rather than an automatic usage or outcome fee.
+
+## Diagnostic Reporting Boundary
+
+- System diagnostic reports are a governed Signmons Field capability, not an AI-generated substitute for an on-site licensed technician.
+- Technician-entered and device-imported readings are the source of truth. AI may organize findings, identify missing or contradictory fields, and draft plain-language explanations, but it must never invent measurements or independently assert a diagnosis.
+- Calculations such as superheat, subcooling, temperature split, electrical comparison, combustion results, and airflow-derived values must use deterministic, versioned formulas with units and source readings retained.
+- Every report is tenant-scoped, linked to the job, customer, property, and equipment record, and retains its author, timestamps, revisions, approvals, delivery status, and audit trail.
+- Customers receive only an approved, tenant-branded report through a private expiring link or generated PDF. Internal notes, hidden AI reasoning, credentials, and unrelated customer records must never be exposed.
+- Starter includes simple job notes, photos, equipment details, and a completion summary. Growth requires the full branded diagnostic report workflow. Pro adds configurable multi-trade templates, quality-control review, equipment trends, and approved integrations.
+
+## Delivery Sequence (Anti-Drift)
+
+Execute the product in this order unless the governance pointer explicitly approves an exception:
+
+1. CallDesk reliability, safety, intake integrity, booking, and the Twilio communications foundation (Twilio-to-OpenAI voice answering, voice routing, inbound/outbound SMS, missed-call recovery, transactional notifications, consent/opt-out handling, delivery status, and communication history)
+2. Tenant dashboard, customer/job history, and booking-readiness review
+3. Calendar, dispatch, technician assignment, and durable customer confirmations with secure appointment-management access
+4. Professional estimates, invoices, deposits, payments, and receipts
+5. Technician mobile workflow, pricebook, and structured diagnostic reporting
+6. Advanced voice AI and SMS automation, accounting/CRM/FSM integrations, reviews, and maintenance plans
+7. Memberships, job costing, inventory/purchasing, employee time export, customer financing, and guided data migration
+8. Advanced automation, auto-dispatch, multi-location controls, intelligence, and tested operational recovery
+
+Marketing work may explain a planned module only when it is labeled as planned/early access. It must not present an unshipped module as generally available.
+
+## Non-Negotiable Product Rules
+
+1. **Policy before persuasion**
+- AI can guide intake, but policy gates decide booking/dispatch eligibility.
+
+2. **Canonical confirmation for critical fields**
+- Required customer/job fields must be verifiable and fail-closed when ambiguous.
+
+3. **Payment integrity**
+- Payment status checks and webhook handling are server-side and fail-closed.
+
+4. **Tenant isolation**
+- No cross-tenant reads/writes/inference.
+
+5. **Explainable operations**
+- Every key system decision (urgency, routing, escalation, payment gate) must be auditable.
+
+## High-Ticket Differentiator Definition
+
+Signmons differentiates on **Revenue Integrity Dispatch**:
+- deterministic rules,
+- payment gate enforcement,
+- urgency-aware routing,
+- explainable handoff and audit trail,
+- measurable revenue recovery.
+
+## Anti-Drift DoD
+
+A feature or phase is not complete unless all are true:
+
+1. **Outcome alignment**
+- Clearly advances revenue capture, booking quality, dispatch quality, or retention.
+
+2. **Contract alignment**
+- Screen, route, CTA, and API mappings are updated in governance docs.
+
+3. **Policy alignment**
+- Business rules, escalation, and payment behavior are explicit and testable.
+
+4. **Evidence alignment**
+- Required gates pass and objective evidence exists.
+
+5. **Claim alignment**
+- Marketing claims do not exceed implemented behavior.
+
+6. **Workflow ownership**
+- Every created lead, booking, job, estimate, invoice, payment, dispatch action, and notification has a tenant-scoped owner/status and an auditable failure path.
+
+7. **Focus protection**
+- Work outside the delivery sequence requires an explicit governance decision and cannot displace the active `Now` ticket silently.
+
+## Required MVP Metric Set (Top 5)
+
+1. Lead-to-booking conversion rate
+2. Payment link completion rate
+3. Missed-call recovery rate
+4. Emergency job capture rate
+5. First-response latency (p95)
+
+## Phase Gate Rule
+
+- Marketing-first phase remains active until `MARKETING_RELEASE_DOD.md` is satisfied.
+- APP execution unlock occurs only after board + pointer explicitly move `Now` to APP scope.
+
+## Required Use
+
+- This doc must be read at session start for any repo execution.
+- If a proposal conflicts with this doc, it is blocked until governance is updated.
+- Trades-platform completeness and future capability boundaries must remain aligned with `TRADES_PLATFORM_COMPLETENESS.md`.
+- Commercial claims and pricing mechanics must align with:
+  - `PRICING_AND_FEES_POLICY.md`
+  - `OFFER_CATALOG.md`
+  - `USAGE_METRICS_SPEC.md`
