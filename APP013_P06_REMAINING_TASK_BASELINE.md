@@ -1,5 +1,13 @@
 # P06 remaining-work reconciliation — review baseline v1
 
+## October 19 — 2B and R12 owner-accepted; 3A is next
+
+Owner explicitly replied **“Accept 2B and its closeout”** after reviewing enabled52's CREATED job receipt, private-session cleanup and verified runtime closeout. Section 2B is accepted; P06-R11/R12 are closed and the fixed P06 task inventory is 14/14. Accepted walkthrough milestones are now **1A, 1B, 2A, 2B: 4/8**. This is milestone acceptance, not overall MVP completion. APP-013 remains the sole Now ticket.
+
+Evidence: backend `evidence/APP-013/p06-r11-enabled52-live-result-20261019.md`; exact plan `6516f97b-b7ee-4d78-b616-8bbfcc70eea6`, request `188ee212-4340-490c-a7c6-9f848d002004`, job `9180bef4-561d-47a0-869f-925e6a3dfd96` in CREATED state. Saved browser outcome/cleanup, REVOKED readback, CLOSED/failures[] and BROWSER_DONE/closeoutVerified receipts correlate the approved run; owner-acceptance.json records the decision. No additional database recount was performed. Source/image unchanged; no commit/push/merge. Documentation baseline/consistency/architecture/whitespace and 21 safeguard tests passed before this acceptance update and are rerun afterward.
+
+No remaining 2B acceptance item. Billing reconciliation is assigned to account owner Debynyhan Banks when charges become available, against the approved USD2.70 allowance; actual charges remain unverified and all holds retained. Runtime is closed and the package consumed. Next section is **3A, Sandbox payment on this admitted job**. Next observable preparation result is the existing 3A entry inspection and complete source/configuration/test card; Sandbox actions still require their own exact approval. Do not reopen 2B or create another verification run. Remaining walkthrough order is 3A → 3B → 3C → 3D; the original section definitions, criteria and denominator are unchanged. Stop at this accepted section boundary. **No scope deviation.**
+
 ## Current: 12/14 complete; one final repair-image/read-only preparation approved — 2026-09-21
 
 The owner approved one 8:00–8:45 PM Eastern preparation: exact `f1ee1f3` build with grant cleanup, read-only current qualification and one packet only if every fixed capacity gate passes. Execution remains separately gated. R11/full R12 stay open; no live action has occurred at this checkpoint. Approved bounded preparation deviation only; no other scope deviation.

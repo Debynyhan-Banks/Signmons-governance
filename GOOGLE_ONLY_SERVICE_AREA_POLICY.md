@@ -37,3 +37,7 @@ APP-013/2B remains Now. Real phone subcheck passed; closed phone proof must not 
 Review this policy's source substitution, uncertainty behavior and retention limits together. Existing runtime remains unchanged until separately implemented and validated; county fixtures must not be relabeled Google or real evidence. No merge or release included.
 
 Validation: cross-repository docs consistency passed; all eight execution-placement/intelligence-alignment regressions passed; both repositories passed whitespace checks. Documentation-only change: no fresh runtime test/build/lint or browser acceptance claimed. Focused feature branches retained; unrelated saved checkout changes untouched.
+
+## Approved local record-type update — October 12
+
+Owner approved Alternative1 in `APP013_P06_R11_STREET_RECORD_COMPATIBILITY_DECISION_20261012.md`: add exact USPS S street records alongside existing H building/apartment records, with every other physical-address, mailbox, unit, county, identity and expiry requirement preserved. This is locally implemented/tested, not deployed or live-accepted. All other record types remain unsupported in this bounded change. See backend `evidence/APP-013/p06-r11-street-record-repair-20261012.md`. No provider retention, coverage expansion or external execution authority is granted.
