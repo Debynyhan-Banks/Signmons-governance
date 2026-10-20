@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 repaired-digest runtime-readiness proposal
 
-Status: **Alternative 1 owner-approved for package preparation; no external action is authorized**. On October 20, 2026, Debynyhan Banks replied **“Approve Alternative 1”** to the exact dedicated-role/secret/identity and 24-hour retirement proposal. This records the material architecture decision before implementation. It does not authorize database, IAM, secret, Stripe, deployment, cost-bearing or cleanup action. This proposal replaces the expired and consumed `APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020_REPAIR3.md` and does not reuse any old plan, packet, operation, time window or allowance. The exact no-retry operation package still requires an owner-supplied attended window.
+Status: **Alternative 1 owner-approved for package preparation; startup-credential correction decision pending; no external action is authorized**. On October 20, 2026, Debynyhan Banks replied **“Approve Alternative 1”** to the exact dedicated-role/secret/identity and 24-hour retirement proposal. Source inspection during package preparation then demonstrated four additional production-startup credential requirements. The proposal itself makes another secret or broader grant a stop; `APP013_P07_STARTUP_CREDENTIAL_CORRECTION_PROPOSAL_20261020.md` now presents the bounded correction before implementation. The supplied 6:45–8:15 p.m. Eastern availability block remains unattempted and unconsumed. This records no database, IAM, secret, Stripe, deployment, cost-bearing or cleanup authority.
 
 ## Requirement traceability and customer workflow
 
@@ -46,7 +46,7 @@ The existing service identity remains unchanged for the currently serving revisi
 
 ## Finite preparation checklist after architecture approval
 
-1. Create a fresh private plan/packet/controller with new IDs, exact UTC/Eastern window, strict start cutoff, one-attempt reservation, hidden input, command deadlines, signal containment and mandatory cleanup. Old readiness packages remain immutable and unusable.
+1. After the startup-credential correction decision, create a fresh private plan/packet/controller with new IDs, exact UTC/Eastern window, strict start cutoff, one-attempt reservation, hidden input, command deadlines, signal containment and mandatory cleanup. Old readiness packages remain immutable and unusable.
 2. Bind the exact backend/governance heads, repaired image digest, source/build receipts, role fixture/verifier hashes, accepted job, proposed resources, event set, safety flags, dollar allowance and retirement deadline.
 3. Implement only the resource operations below and a cleanup-only recovery mode. The controller must refuse before provider access when approval, hashes, time, identity, target state or cost bindings differ.
 4. Add local tests for positive, refusal, partial-failure, concurrent invocation, signal interruption, command timeout, post-mutation uncertainty, cleanup-only recovery and truthful persistence failure. No mocked success can substitute for live readback.

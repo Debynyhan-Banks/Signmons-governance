@@ -1,5 +1,13 @@
 # Signmons Execution Board
 
+## October 20 — P07 startup-credential correction awaits owner decision
+
+R1-W01 / APP-013/3A/P07 remains active. Source inspection during exact package preparation demonstrated that the production image requires four credentials beyond the three secret bindings in the approved architecture: OpenAI placeholder, admin API token, conversation-encryption key and technician-link key. The proposal explicitly requires a stop for another secret or broader grant. The 6:45–8:15 p.m. Eastern availability block was not bound or attempted; no command, allowance or external action was used.
+
+`APP013_P07_STARTUP_CREDENTIAL_CORRECTION_PROPOSAL_20261020.md` recommends four independent candidate-only secret versions, exact replacement of inherited environment/secret maps, seven total resource-level bindings and removal/disable readback by the 24-hour retirement boundary. Sharing serving credentials, test-mode deployment and another application/build cycle are rejected. Owner approval or rejection of this preparation-only correction is next. A fresh tested package, new attended block and exact external-action approval would still follow.
+
+Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Scope deviation proposed, not implemented.**
+
 ## October 20 — repaired image built once; independent closeout verified
 
 R1-W01 / APP-013/3A/P07 remains active. Owner explicitly approved Alternative 1 in `APP013_P07_REPAIRED_IMAGE_BUILD_PROPOSAL_20261020.md`, including the exact five-field transformation, USD 1 allowance, three temporary build memberships and no retry. The single approved operation completed inside the 6:00–6:45 p.m. Eastern window. Build `9ee7772a-62b1-4a07-86ad-0c3b9daf3032` reached SUCCESS; exact uploaded source matches 986,100 bytes / SHA-256 `893432c1de02c8068237711908099d452dd8e18dde6603240007bc61db5ed456`.
