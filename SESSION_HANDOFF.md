@@ -1,5 +1,17 @@
 # Session Handoff
 
+## October 20 — repaired-digest runtime architecture proposal prepared
+
+**Section/status:** R1-W01 / APP-013/3A/P07 remains active. Planning is complete for the next architecture decision; no runtime/database/IAM/secret/Stripe/deployment action is authorized or implemented.
+
+**Completed:** `APP013_P07_REPAIRED_DIGEST_RUNTIME_READINESS_PROPOSAL_20261020.md` binds repaired image `sha256:36f887749947c0b01db683482c081ca663534e7ffe597560b24597f3d46be9da`, accepted job `9180bef4-561d-47a0-869f-925e6a3dfd96`, the tested grant fixture, exact disabled destination/event set, zero-traffic candidate, containment, two-version cost and retirement boundary. It rejects expanding the accepted P06 role and recommends a separate P07 database role, database secret, webhook secret and Cloud Run service identity.
+
+**Remaining/blocker and owner:** Debynyhan Banks decides the recommended credential-isolation architecture. If accepted, the implementer prepares/tests a new hash-bound no-action package for an owner-selected attended window and returns for separate external-action approval. P08 and 3A acceptance remain later gates.
+
+**Next observable result:** owner accepts or rejects Alternative 1; no executable command exists yet. Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**.
+
+**Scope:** proposed deviation disclosed before implementation: dedicated P07 identity and two dedicated P07 secrets instead of reuse of the P06 secret/shared runtime identity. Criteria, queue and denominators remain unchanged.
+
 ## October 20 — exact repaired build and permission closeout completed
 
 **Section/status:** R1-W01 / APP-013/3A/P07. One owner-approved Cloud build/source/digest/containment operation live-demonstrated and consumed. The image is unused; no deployment or customer payment acceptance.

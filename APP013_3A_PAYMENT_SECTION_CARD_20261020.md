@@ -93,3 +93,9 @@ At this local checkpoint the repaired-source review packet remained disabled. Ow
 ## October 20 — exact repaired image build completed
 
 The separately approved one-build operation completed once: build `9ee7772a-62b1-4a07-86ad-0c3b9daf3032` SUCCESS; exact uploaded archive matched; repaired image digest `sha256:36f887749947c0b01db683482c081ca663534e7ffe597560b24597f3d46be9da` agrees across build/registry. All three temporary permissions were removed/read back absent; separate live source/build/registry/IAM readback passed eight checks with failures[]. Image remains unused; operation is consumed. Backend evidence: evidence/APP-013/p07-repaired-image-build-result-20261020.md. No deployment/runtime/Stripe/payment authority follows. Next is the concrete repaired-digest readiness proposal with explicit credential-isolation/secret/destination/cost/containment decisions. P08/3A and all accepted measures stay unchanged; no scope deviation from the exact approved build.
+
+## October 20 — repaired-digest runtime architecture proposal prepared
+
+`APP013_P07_REPAIRED_DIGEST_RUNTIME_READINESS_PROPOSAL_20261020.md` now binds the repaired digest and exact accepted-job/readiness boundaries. It recommends a dedicated `p07_payment_runtime` role, separate P07 database and webhook secrets and a dedicated zero-traffic service identity; reusing or expanding the accepted P06 credential boundary is rejected. The proposal includes exact resource names, six-event disabled Sandbox destination, numeric pins, conservative two-version cost, mandatory containment and a 24-hour retirement boundary.
+
+This is an explicit material architecture proposal before implementation. Owner acceptance of Alternative 1, a fresh attended window, a tested no-action package and separate external-action approval remain required. No live role, secret, identity, IAM binding, destination, revision, database/customer row or payment changed. P08/3A and all accepted measures remain unchanged.
