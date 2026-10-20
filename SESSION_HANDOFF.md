@@ -1,5 +1,17 @@
 # Session Handoff
 
+## October 20 — third P07 stop contained; full-path repair 3 approval pending
+
+**Section and status:** APP-013/3A/P07 remains implemented, locally tested and built, but undeployed and not live-demonstrated. The 9:00, 9:30 and 9:45 one-use operations are consumed.
+
+**Completed:** operation `6af8ee55-6df7-4434-9f76-15f182638d5a` reserved at 9:53:51 a.m. Eastern, passed Cloud preflight and stopped during `DATABASE_PREFLIGHT` with `possibleMutation:false`. It reached no Stripe, secret, role-opening, exact-job or deployment action. Closeout verified the role remained closed with zero sessions and made no change. The failed predicate required runtime-role membership even though the reviewed boundary intentionally records zero memberships; the correct administrator capability is `CREATEROLE`. Repair3 applies that correction, pins the exact runtime envelope and passes 19 focused full-path/containment tests. Evidence: backend `evidence/APP-013/p07-readiness-operation-stop3-20261020.md`.
+
+**Remaining or blocked:** fresh owner approval is required for proposal `APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020_REPAIR3.md`, plan `84e0824b-71c1-491a-89b6-b25fa695d1f7`, packet `fdaf1a0b-1100-4dd8-b993-a5976144dd85` and operation `08472fce-01ec-445f-92cd-06ddbd08d860`, during 10:30–11:45 a.m. Eastern with a strict 10:45 start cutoff. P07 readiness, P08 and 3A acceptance remain open.
+
+**Next:** owner approves or refuses the fresh exact operation. On approval, the observable result is `P07_READY_DISABLED` or a named stop with verified containment.
+
+**Progress:** accepted **6/60 packages, 4/8 walkthrough milestones and 0/13 integrated pilot rows**. **No scope deviation.**
+
 ## October 20 — second P07 stop contained; repair 2 approval pending
 
 **Section and status:** APP-013/3A/P07 remains implemented, locally tested and built, but undeployed and not live-demonstrated. The 9:00 and 9:30 one-use operations are consumed.

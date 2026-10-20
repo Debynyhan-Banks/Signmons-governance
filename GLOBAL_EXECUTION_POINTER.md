@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 20 — full-path P07 repair 3 proposal is the next decision
+
+APP-013/3A remains active. The 9:00, 9:30 and 9:45 operations are consumed and contained before mutation. The third passed the complete repaired Cloud preflight, then stopped because database preflight incorrectly required membership in a runtime role whose reviewed boundary intentionally has zero memberships. Closeout verified `p06_intake_runtime` remained `NOLOGIN`, limit zero, expired and at zero sessions without change.
+
+Fresh private package `/private/tmp/p07-readiness-20261020-1030-repair3` and proposal `APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020_REPAIR3.md` bind plan `84e0824b-71c1-491a-89b6-b25fa695d1f7`, packet `fdaf1a0b-1100-4dd8-b993-a5976144dd85`, operation `08472fce-01ec-445f-92cd-06ddbd08d860` and a 10:30–11:45 a.m. Eastern window with strict 10:45 start cutoff. Repair3 checks `CREATEROLE`, pins the reviewed runtime envelope and passes 19 focused tests across the complete mocked path and containment boundaries. No fourth external attempt occurred. Exact owner approval or refusal is next. P08 remains unauthorized. Accepted progress stays **6/60 packages, 4/8 walkthrough milestones and 0/13 full pilot rows**. **No scope deviation.**
+
 ## October 20 — second P07 repair proposal is the next decision
 
 APP-013/3A remains active. The 9:00 and 9:30 operations are both consumed and contained before mutation. The 9:30 operation stopped during `CLOUD_PREFLIGHT` because its Firebase helper required unavailable Application Default Credentials; its receipt reports `possibleMutation:false`, and mandatory closeout verified `p06_intake_runtime` remained closed with zero sessions without a change. Read-only diagnosis verified the Cloud service and numeric secret metadata reads. An explicit Cloud access-token plus Identity Toolkit lookup, already used by repository tooling, returned the exact disabled/owner/tenant booleans.

@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 20 — third P07 preflight stopped; full-path repair 3 ready
+
+APP-013/3A remains sole Now. Owner-approved operation `6af8ee55-6df7-4434-9f76-15f182638d5a` reserved at 9:53:51 a.m. Eastern. It passed the repaired Cloud preflight, then stopped during `DATABASE_PREFLIGHT` with `possibleMutation:false`, no containment failures and no automatic retry. The predicate incorrectly required membership in `p06_intake_runtime`; the reviewed boundary intentionally has zero memberships, while `neondb_owner` carries `CREATEROLE`. No Stripe, secret, role-opening, exact-job or deployment action occurred, and closeout verified the role remained closed with zero sessions and no change.
+
+Repair3 uses the actual administrator capability and adds 19 focused tests covering the full mocked remaining path, exact runtime envelope, cumulative mutation classification, uncertain secret-add reconciliation and tag/traffic containment. Fresh proposal `APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020_REPAIR3.md` and private package `/private/tmp/p07-readiness-20261020-1030-repair3` target 10:30–11:45 a.m. Eastern with a strict 10:45 start cutoff. They are not authorized. Owner approval or refusal is next; P08 remains unauthorized. Progress remains **6/60, 4/8 and 0/13**. **No scope deviation.**
+
 ## October 20 — second P07 preflight stopped; repair 2 ready for decision
 
 APP-013/3A remains sole Now. Owner-approved operation `0e9d30e1-6eb3-49c0-85da-3ade3c569184` reserved at 9:30:00 a.m. Eastern and stopped during `CLOUD_PREFLIGHT` with `possibleMutation:false`, no containment failures and no automatic retry. It did not reach the database preflight, Stripe destination, secret version, child-role opening/read or deployment. Mandatory closeout verified the runtime role already closed with zero sessions and made no change.
