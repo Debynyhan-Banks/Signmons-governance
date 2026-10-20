@@ -1,5 +1,17 @@
 # Session Handoff
 
+## October 20 — exact repaired-runtime readiness operation awaiting owner approval
+
+**Section and status:** R1-W01 / APP-013/3A/P07 is implemented, locally tested and built, but not deployed or live-demonstrated. The owner selected today 7:00–8:30 p.m. Eastern with a strict 7:15 start cutoff; that availability is now bound but is not live authority.
+
+**Completed:** package `/private/tmp/p07-repaired-runtime-readiness-20261020-prep1`, plan `139a3a66-ae17-420d-b18e-7075541e457b`, packet `6afbeebc-373b-4ae4-a552-c1a1ab673730` and operation `f8aa3170-6ac9-4b09-96d9-cc0b688fae0c` pass 29 focused tests and `P07_PREPARATION_CHECK_PASSED_NO_ACTION`. Its live start refuses `P07_REFUSED_OWNER_APPROVAL_INVALID`; no attempt or mutation journal exists. Exact proposal: `APP013_P07_REPAIRED_RUNTIME_READINESS_OPERATION_PROPOSAL_20261020.md`.
+
+**Remaining/blocker/owner:** Debynyhan Banks must approve or refuse the exact no-retry external operation before 7:15. No provider/database action starts without that decision. P08/payment and 3A acceptance remain separate.
+
+**Next observable result:** after approval, `P07_REPAIRED_RUNTIME_READY_DISABLED` or a named `P07_STOP_*` with verified containment; otherwise the window expires unattempted.
+
+**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
+
 ## October 20 — corrected P07 runtime package prepared and disabled
 
 **Section/status:** R1-W01 / APP-013/3A/P07 remains active. Package preparation stopped before implementation because the production image requires four startup credentials outside the approved three-secret design. The owner-supplied 6:45–8:15 p.m. Eastern block was not bound, attempted or charged.

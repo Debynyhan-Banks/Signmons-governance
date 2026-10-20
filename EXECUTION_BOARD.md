@@ -1,5 +1,13 @@
 # Signmons Execution Board
 
+## October 20 — exact P07 operation bound; live decision pending
+
+R1-W01 / APP-013/3A/P07 remains active. The fresh repaired-runtime package is bound to 7:00–8:30 p.m. Eastern today, strict 7:15 start cutoff, with retirement by 7:00 p.m. Eastern October 21. Its 29 focused tests and no-action check pass; live start refuses because the exact owner approval record is absent. No external action, command attempt or allowance has been used.
+
+The decision record is `APP013_P07_REPAIRED_RUNTIME_READINESS_OPERATION_PROPOSAL_20261020.md`. Owner approval or refusal is next. Success is a zero-normal-traffic repaired revision, disabled zero-delivery Stripe Sandbox destination, closed dedicated database role and exact readbacks; failure is one consumed named stop with mandatory containment. P08/payment remains unauthorized.
+
+Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
+
 ## October 20 — corrected P07 runtime package locally prepared and disabled
 
 R1-W01 / APP-013/3A/P07 remains active. Source inspection during exact package preparation demonstrated that the production image requires four credentials beyond the three secret bindings in the approved architecture: OpenAI placeholder, admin API token, conversation-encryption key and technician-link key. The proposal explicitly requires a stop for another secret or broader grant. The 6:45–8:15 p.m. Eastern availability block was not bound or attempted; no command, allowance or external action was used.

@@ -1,5 +1,13 @@
 # Global Execution Pointer
 
+## October 20 — exact P07 runtime-readiness operation awaiting approval
+
+R1-W01 / APP-013/3A/P07 remains active. Owner selected 7:00–8:30 p.m. Eastern today with a strict 7:15 start cutoff, Terminal/current CHILD administrator password and signed-in Stripe Sandbox available. Fresh plan `139a3a66-ae17-420d-b18e-7075541e457b`, packet `6afbeebc-373b-4ae4-a552-c1a1ab673730` and operation `f8aa3170-6ac9-4b09-96d9-cc0b688fae0c` are bound to that window and retirement by 7:00 p.m. Eastern October 21. The package passes 29 focused tests and no-action verification; live start refuses `P07_REFUSED_OWNER_APPROVAL_INVALID` because availability is not external authority.
+
+Exact proposal: `APP013_P07_REPAIRED_RUNTIME_READINESS_OPERATION_PROPOSAL_20261020.md`. Next input is owner approval or refusal before 7:15. On approval, the next observable result is `P07_REPAIRED_RUNTIME_READY_DISABLED` or a named stop with mandatory containment. P08, Checkout, card entry, payment and 3A acceptance remain separate.
+
+Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved dedicated-runtime and startup-secret changes.**
+
 ## October 20 — corrected P07 runtime package prepared and disabled
 
 R1-W01 / APP-013/3A/P07 remains active. During exact package preparation, source inspection proved that the production image also requires OpenAI, admin API, conversation-encryption and technician-link credentials at startup. The approved runtime proposal permits only three secret bindings and explicitly makes another secret or broader grant a stop. The owner-supplied 6:45–8:15 p.m. Eastern block was therefore not bound or attempted; no command, allowance or external action was used.
