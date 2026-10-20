@@ -1,5 +1,13 @@
 # Global Execution Pointer
 
+## October 20 — P07 readiness operation prepared; owner decision pending
+
+APP-013/3A remains active. The concrete no-retry readiness proposal is `APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020.md`. It binds backend `cec8216`, governance `596b3c7`, immutable image digest `sha256:a88e64566133b9e734d245a928d0ade10b5064ff76d8e4fc712a4e3def3f0191`, retained job `9180bef4-561d-47a0-869f-925e6a3dfd96`, one zero-normal-traffic revision/tag, one disabled connected-accounts destination with the exact six-event set, one new numeric signing-secret version and one bounded exact-job read/role-close lifecycle.
+
+The proposed October 20 window is 9:00–10:45 a.m. Eastern, start strictly before 9:15, no retry, USD 1 Cloud allowance plus at most one active secret version up to USD 0.06/month above free tier. Mandatory containment closes the child role and preserves normal traffic; on success it leaves the P07 revision at 0% and the destination disabled. A tag-bound local operator build passed with no secret pattern and is not published. No external system changed and this is not execution authority.
+
+The next decision is owner approval or refusal of that exact operation. P08, Checkout, card entry, payment, event delivery and 3A acceptance remain separate. Accepted progress stays **6/60 packages, 4/8 walkthrough milestones and 0/13 full pilot rows**. **No scope deviation.**
+
 ## October 20 — P07 image built from exact source; unused and permissions closed
 
 The owner-approved APP-013/3A/P07 one-build operation completed once inside the 7:15–8:00 a.m. Eastern window. Fresh preflight passed; build `2cfff9d9-bfe1-4166-a5a2-4d8d2acdb0b8` reached `SUCCESS`. The exact uploaded 984,980-byte archive matched SHA-256 `6b499c4431a2e10d2fd032d167232bfb710209b9d6fa5056df1de236cc5b8400`; Cloud Build and Artifact Registry agree on immutable digest `sha256:a88e64566133b9e734d245a928d0ade10b5064ff76d8e4fc712a4e3def3f0191`.

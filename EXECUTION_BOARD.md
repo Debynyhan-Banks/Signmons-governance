@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 20 — P07 deployment/destination/read-path proposal ready
+
+APP-013/3A remains sole Now. `APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020.md` is the concrete next decision: exact digest at 0% traffic, one disabled Sandbox connected-accounts destination and numeric signing-secret version, one exact-job read-only transaction under a bounded child-role window, and mandatory closeout. The proposed window is 9:00–10:45 a.m. Eastern with a strict 9:15 start cutoff and no retry. It requests USD 1 Cloud allowance plus at most one active secret version up to USD 0.06/month above free tier.
+
+Local-only preparation produced a candidate-URL-bound 61-file operator build, archive SHA-256 `f0fe3458de5aa94885e973c86df8985971d9e9d2988f1e8971f2e5f3af2c7a31`; it is not published and contains no detected Stripe/Google secret pattern. No deployment, destination, secret, database, IAM, identity, Checkout, event or payment action occurred. Owner approval/refusal is next; P08 remains unauthorized. Progress stays **6/60, 4/8 and 0/13**. **No scope deviation.**
+
 ## October 20 — P07 exact image built; later repair/deployment decision required
 
 APP-013/3A remains sole Now. One owner-approved, no-retry Cloud Build completed successfully from the exact reviewed P07 archive. Build `2cfff9d9-bfe1-4166-a5a2-4d8d2acdb0b8`; immutable image digest `sha256:a88e64566133b9e734d245a928d0ade10b5064ff76d8e4fc712a4e3def3f0191`. Uploaded source size/hash and build/registry digest agree. All temporary build grants were removed and independently read back absent. The operation is consumed and the image is unused.

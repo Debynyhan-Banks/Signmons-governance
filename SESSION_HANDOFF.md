@@ -1,5 +1,17 @@
 # Session Handoff
 
+## October 20 — P07 readiness proposal prepared; no external write
+
+**Section and status:** APP-013/3A/P07 is implemented, locally tested, built, pushed and still undeployed. Live demonstration and owner acceptance remain pending.
+
+**Completed:** prepared `APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020.md` with exact image/job/service/tag/destination/secret/read-path bindings, strict 9:00–10:45 a.m. Eastern window, no retry, cost allowance, stop predicates, sanitized outputs and mandatory containment. Built the exact tag-bound operator UI locally; 61-file archive SHA-256 `f0fe3458de5aa94885e973c86df8985971d9e9d2988f1e8971f2e5f3af2c7a31`, no detected secret pattern, no publication.
+
+**Remaining or blocked:** owner approval is required before the proposal's Cloud Run deployment, Stripe destination, Secret Manager version or bounded child-role/database actions. `P07_DEPLOYMENT_REQUIRED`, `DESTINATION_DISABLED`, `API_VERSION_UNCONFIRMED` and `READ_PATH_UNAVAILABLE` remain until execution succeeds. P08 is separate.
+
+**Next:** Debynyhan Banks approves or refuses the exact no-retry readiness operation. The next observable result after approval is `P07_READY_DISABLED` or a named stop with verified containment; no Checkout or payment occurs.
+
+**Progress:** accepted **6/60 packages, 4/8 walkthrough milestones and 0/13 integrated pilot rows**. **No scope deviation.**
+
 ## October 20 — P07 exact image built; unused and cleanup independently verified
 
 **Section and status:** APP-013/3A/P07 is implemented, locally tested and built as an unused immutable image. Deployment, live Sandbox proof and owner acceptance remain pending.

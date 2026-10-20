@@ -1,6 +1,6 @@
 # Signmons progress tracker
 
-Updated October 20, 2026, Eastern time. **4 of 8 walkthrough milestones accepted. P07's exact backend image is built and unused; next is the bounded deployment/destination/read-path proposal before Sandbox proof.** APP-013 remains the active ticket. Section 2B and its closeout are accepted; P06 is 14/14 complete. These counts do not measure overall MVP completion.
+Updated October 20, 2026, Eastern time. **4 of 8 walkthrough milestones accepted. P07's exact readiness operation is prepared for owner review; no deployment or Stripe change has occurred.** APP-013 remains the active ticket. Section 2B and its closeout are accepted; P06 is 14/14 complete. These counts do not measure overall MVP completion.
 
 This is the concise progress view requested by the owner. The [acceptance ledger](PAYMENT_BOOKING_TEXT_STEEL_THREAD.md#acceptance-tracker), [execution contract](APP013_REMAINING_EXECUTION_CONTRACT.md) and linked evidence retain the detailed requirements. Keep their status synchronized; preserve the fixed eight milestones and original acceptance criteria.
 
@@ -24,7 +24,7 @@ The package baseline starts from September’s remaining work and excludes earli
 | 1B | Session cleanup and retention | Accepted September 11 | [Local evidence](../signmons-backend-r08-recovery/evidence/APP-013/verification-cleanup/README.md); backend 37bcb15. Preserve accepted proof. |
 | 2A | Current-proof job admission | Accepted September 11 | [Local evidence](../signmons-backend-r08-recovery/evidence/APP-013/current-proof-admission/README.md); backend f8e35e8. Preserve accepted proof. |
 | 2B | Verified intake creates one reviewed job | Accepted October 19 | [Live result and closeout](../signmons-backend-r08-recovery/evidence/APP-013/p06-r11-enabled52-live-result-20261019.md). Owner: “Accept 2B and its closeout”. Next section: 3A. |
-| 3A | Sandbox payment on that job | Active; P07 image built and unused | Prepare and review the digest-bound zero-traffic deployment, Stripe destination/API-version/signing-secret and exact-job read-path proposal; P08 remains later. |
+| 3A | Sandbox payment on that job | Active; P07 readiness proposal prepared | Owner reviews the exact no-retry deployment/destination/read-path operation; P08 remains later. |
 | 3B | One test-calendar appointment | Planned; follows accepted 3A | After 3A acceptance, inspect scheduling/recovery seams and qualify the named isolated calendar and write approval. |
 | 3C | Receive that appointment’s confirmation text | Planned; follows accepted 3B | After 3B acceptance, qualify consent, sender/recipient, delivery path and capped send approval. |
 | 3D | Changes and recovery on the same journey | Planned; follows accepted 3C | After 3C acceptance, prepare the existing reschedule/cancel/failure matrix and bounded action approval. |
@@ -39,13 +39,15 @@ The package baseline starts from September’s remaining work and excludes earli
 
 **Completed build:** the owner-approved one-build operation produced unused image digest `sha256:a88e64566133b9e734d245a928d0ade10b5064ff76d8e4fc712a4e3def3f0191` from the exact reviewed archive. Uploaded-source provenance and build/registry digest match; all three temporary permissions were removed and independently verified absent. Evidence: backend `evidence/APP-013/p07-backend-image-build-result-20261020.md`.
 
-**Remaining work:** `P07_DEPLOYMENT_REQUIRED` now means the built digest remains undeployed. `DESTINATION_DISABLED`, `API_VERSION_UNCONFIRMED` and `READ_PATH_UNAVAILABLE` remain. Deployment, destination restoration/new signing-secret storage, bounded database access and P08 are separate gates.
+**Completed proposal preparation:** the exact no-retry deployment/destination/read-path operation is documented in `APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020.md`. The tag-bound local operator build passed and remains unpublished. The proposal includes strict timing, one operation, costs, rollback, containment and sanitized output rules.
 
-**Immediate next action — implementer:** prepare one concrete digest-bound zero-traffic deployment/destination/read-path proposal with rollback, cleanup and observable outputs. Debynyhan Banks reviews that proposal before any external write. Stripe is already signed in; do not request credentials or codes in chat.
+**Remaining work:** `P07_DEPLOYMENT_REQUIRED`, `DESTINATION_DISABLED`, `API_VERSION_UNCONFIRMED` and `READ_PATH_UNAVAILABLE` remain until the approved readiness operation succeeds. Deployment, destination creation/new signing-secret storage, bounded database access and P08 are separate gates.
+
+**Immediate next action — owner:** approve or refuse the exact 9:00–10:45 a.m. Eastern readiness operation. Stripe is already signed in; any CHILD password or signing secret stays in private input and never enters chat.
 
 **Dependencies and owners:** implementer owns exact source isolation, one-use build execution/cleanup if approved, later repair proposals and evidence. Debynyhan Banks owns the build decision, later external-write approvals and final acceptance. Stripe Sandbox mode and the single enabled connected account passed; Cloud Stripe secret references, explicit test mode and return URL passed. The missing destination, undeployed P07 patch and unavailable non-mutating database path are diagnosed blockers.
 
-**Next observable result:** a reviewable exact proposal; after later approval, an isolated zero-traffic runtime with repaired test destination and exact-job read readiness, or a named stop with rollback/cleanup. Only after those repairs are applied and requalified can P08 propose one Checkout and its exact event proof.
+**Next observable result:** after approval, `P07_READY_DISABLED`—an isolated zero-traffic runtime with a disabled repaired test destination and exact-job read readiness—or a named stop with verified rollback/cleanup. Only after that can P08 propose one Checkout and its exact event proof.
 
 ## Follow-up outside the acceptance count
 
@@ -73,6 +75,8 @@ Keep updates brief and tied to meaningful changes. Do not repeatedly run checks 
 
 | Date, Eastern | Change | Evidence | Next |
 | --- | --- | --- | --- |
+| October 20, 2026 | Prepared the exact P07 no-retry deployment/destination/read-path operation and built its tag-bound local operator preview; no external write or UI publication | [Readiness proposal](APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020.md); preview archive SHA-256 `f0fe3458de5aa94885e973c86df8985971d9e9d2988f1e8971f2e5f3af2c7a31` | Owner approves or refuses the exact 9:00–10:45 a.m. Eastern operation; P08 remains separate |
+| October 20, 2026 | Published the four reviewed P06-closeout/P07 commits; remote heads independently match backend `cec8216` and governance `596b3c7`; both worktrees clean | GitHub branches `codex/p06-r08-recovery-20260918` in both repositories | Prepare the exact P07 deployment/destination/read-path proposal |
 | October 20, 2026 | Separated accumulated local work into reviewable P06 closeout and P07 payment commits; excluded cache, temporary and private-receipt material. P07 focused tests passed 60/60, production UI build passed, and desktop/mobile synthetic recovery QA passed. The broad UI suite remains 169/170 only because of its documented unrelated `%20` workspace-path scan failure | Backend `bc84009` and `cec8216`; governance P06 `dc97fdf`; required governance checks below | Finish the P07 governance synchronization commit, run final cross-repository checks, then obtain owner approval for the exact four-commit push |
 | October 20, 2026 | Published the seven previously committed September 29 recovery checkpoints in both repositories; remote heads independently match backend `3cf8a9d` and governance `8d7c644`; current uncommitted P06/P07 work remains untouched | GitHub branches `codex/p06-r08-recovery-20260918` in both repositories | Audit and divide the accumulated local work into reviewable P06-closeout and P07 commit sets before another push |
 | October 20, 2026 | Owner-approved exact P07 archive built once; uploaded source and build/registry digest verified; all temporary grants independently confirmed absent; image unused | [Build result](../signmons-backend-r08-recovery/evidence/APP-013/p07-backend-image-build-result-20261020.md); [governing proposal](APP013_P07_BACKEND_IMAGE_BUILD_PROPOSAL_20261020.md) | Prepare digest-bound deployment/destination/read-path proposal; no P08 action yet |
@@ -87,4 +91,4 @@ Keep updates brief and tied to meaningful changes. Do not repeatedly run checks 
 | October 19, 2026 | Owner requested progress tracking and a next step after each one; this tracker and handoff update rule added | User instruction; linked current acceptance ledger and execution contract | Update this same tracker at the next 3A work checkpoint |
 | October 19, 2026 | MVP measurement reconciled P06 acceptance: 6/60 packages, 4/8 milestones, 0/13 full pilot rows; no total-build percentage inferred | [Measurement](MVP_COMPLETION_MEASUREMENT_2026-10-19.md) | P07 within 3A; inspect existing payment flow |
 
-Documentation-only tracking update. Source anchors: backend `3cf8a9dc53d0282a35e6263a36d749c5b32f8e2e`; governance `8d7c644ecc8e65ec139bcfcc3fef055ad5d423cd`, both with existing uncommitted work preserved. No application change or external action. **No scope deviation.**
+Current tracking update is documentation/local-build preparation only. Source anchors: backend `cec82163bd67fe939d88aacb6fedf2d9c126b90e`; governance `596b3c7fbbb0a6d12b3cdf7da8fbdd3367591605`. No application source, deployment, provider, database, secret or payment action occurred. **No scope deviation.**

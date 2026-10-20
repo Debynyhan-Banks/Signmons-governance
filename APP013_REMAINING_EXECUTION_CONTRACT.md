@@ -1,6 +1,6 @@
 # APP-013 remaining execution contract
 
-**Current acceptance — October 19, 2026:** owner accepted 2B and its closeout after enabled52 produced correlated request/job CREATED evidence and verified session/runtime closure. P06 14/14; accepted 1A/1B/2A/2B 4/8. Next is 3A on job `9180bef4-561d-47a0-869f-925e6a3dfd96`, pending its entry card and separately approved Sandbox actions. See backend `evidence/APP-013/p06-r11-enabled52-live-result-20261019.md`. Historical planning-status prose below is retained under the frozen baseline; it does not override this acceptance. No criterion, section order or denominator changed. No scope deviation.
+**Current acceptance — October 20, 2026:** owner accepted 2B and its closeout after enabled52 produced correlated request/job CREATED evidence and verified session/runtime closure. P06 14/14; accepted 1A/1B/2A/2B 4/8. Section 3A is active on job `9180bef4-561d-47a0-869f-925e6a3dfd96`; P07 code is implemented/tested/built/pushed, and its exact deployment/destination/read-path operation is prepared for separate owner approval. P08 and 3A acceptance remain pending. See `APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020.md`. Historical planning-status prose below is retained under the frozen baseline; it does not override this acceptance. No criterion, section order or denominator changed. No scope deviation.
 
 ## Authority and fixed scope
 
