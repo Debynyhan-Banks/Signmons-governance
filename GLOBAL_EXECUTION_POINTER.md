@@ -1,10 +1,12 @@
 # Global Execution Pointer
 
-## October 20 — full-path P07 repair 3 proposal is the next decision
+## October 20 — P07 local correction complete; payment-role prerequisite proposed
 
-APP-013/3A remains active. The 9:00, 9:30 and 9:45 operations are consumed and contained before mutation. The third passed the complete repaired Cloud preflight, then stopped because database preflight incorrectly required membership in a runtime role whose reviewed boundary intentionally has zero memberships. Closeout verified `p06_intake_runtime` remained `NOLOGIN`, limit zero, expired and at zero sessions without change.
+APP-013/3A / R1-W01 remains active. The owner selected 4:00–5:15 p.m. Eastern availability and approved only a narrow local split-read correction. It uses the existing restricted CHILD connection for exact Job/Tenant reads and administrator read-only exact-job Payment/CalendarOperation absence checks, without grants or memberships. All 25 focused mocks pass; the distinct local copy refuses CLI execution. Evidence: backend `evidence/APP-013/p07-read-path-correction-20261020.md`; card `APP013_P07_READ_PATH_CORRECTION_CARD_20261020.md`.
 
-Fresh private package `/private/tmp/p07-readiness-20261020-1030-repair3` and proposal `APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020_REPAIR3.md` bind plan `84e0824b-71c1-491a-89b6-b25fa695d1f7`, packet `fdaf1a0b-1100-4dd8-b993-a5976144dd85`, operation `08472fce-01ec-445f-92cd-06ddbd08d860` and a 10:30–11:45 a.m. Eastern window with strict 10:45 start cutoff. Repair3 checks `CREATEROLE`, pins the reviewed runtime envelope and passes 19 focused tests across the complete mocked path and containment boundaries. No fourth external attempt occurred. Exact owner approval or refusal is next. P08 remains unauthorized. Accepted progress stays **6/60 packages, 4/8 walkthrough milestones and 0/13 full pilot rows**. **No scope deviation.**
+Source inspection also established a material prerequisite the old readiness plan missed: the intake-only role cannot perform current payment-policy updates, Payment persistence or StripeEvent processing. No live ACLs were inspected. `APP013_P07_PAYMENT_RUNTIME_ACCESS_CHANGE_PROPOSAL_20261020.md` proposes a separate payment-role boundary and actual disposable restricted-role proof before another external package. That prerequisite is not approved or implemented; the accepted P06 role is unchanged. A health 200 would not prove payment readiness.
+
+The 10:30–11:45 repair3 window expired without approval/attempt and cannot launch; all three earlier operations remain consumed/contained. No new external operation is executable. Next decision: owner approves or refuses only the finite local payment-role proof proposal; later database/secret/deployment/Stripe actions need their own exact approval. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. Scope: narrow correction explicitly approved; larger prerequisite explicitly proposed before implementation.
 
 ## October 20 — second P07 repair proposal is the next decision
 

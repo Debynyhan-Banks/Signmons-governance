@@ -1,5 +1,17 @@
 # Session Handoff
 
+## October 20 — approved P07 split-read correction complete; runtime-access proposal pending
+
+**Section/status:** APP-013/3A / R1-W01. Implemented and locally mocked-tested diagnostic correction only; no live result or payment acceptance. Owner selected 4:00–5:15 availability and approved the narrow split-read correction, not external execution.
+
+**Completed:** direct restricted CHILD connection with target/TLS and current_user/session_user checks; separate exact-job administrator read-only activity checks; 25/25 mocks; disabled CLI entry point; archived source-only diff/hashes and preserved old packages. Evidence: backend `evidence/APP-013/p07-read-path-correction-20261020.md`. The repair3 window expired without approval/attempt.
+
+**Remaining/blocker and owner:** inspected intake-role grants do not support policy/pricing UPDATE, Payment or StripeEvent access required by the actual payment app. The proposed dedicated payment-role prerequisite is neither approved nor implemented. Implementer owns source/grant mapping and the finite real local-role proof if approved; owner owns that scope decision, later exact external authority and 3A acceptance.
+
+**Next observable result:** owner decision on `APP013_P07_PAYMENT_RUNTIME_ACCESS_CHANGE_PROPOSAL_20261020.md`, covering only a review fixture and actual disposable restricted-role/service proof with synthetic data and mocked providers. No launch command is ready. No grant, secret payload read, provider, deployment, payment or customer action occurred. Scope: narrow access-plan correction explicitly approved; material runtime prerequisite disclosed as an unapproved deviation proposal before implementation.
+
+**Progress:** **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. Criteria, queue and denominators unchanged. Validation: frozen baseline/consistency, all 25 governance safeguards, backend governance/architecture and both whitespace checks pass. The three certificate-validated Node transport mocks also pass; no earlier full runtime suite is claimed as newly run.
+
 ## October 20 — finite R1 remaining-work ledger v1 complete
 
 **Section/status:** owner-requested planning only. `MVP_R1_FINITE_WORK_LEDGER_20261020.md` fixes 27 remaining outcome packages with source/evidence, existing ticket and legacy-package mapping, dependency/readiness, observable acceptance, relative size/confidence, test profiles and acceptance-record fields. No new capability, ticket criterion, walkthrough section or executable queue is introduced.
