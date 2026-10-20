@@ -1,12 +1,12 @@
 # Signmons Execution Board
 
-## October 20 — P07 startup-credential correction awaits owner decision
+## October 20 — P07 startup-credential correction approved for local preparation
 
 R1-W01 / APP-013/3A/P07 remains active. Source inspection during exact package preparation demonstrated that the production image requires four credentials beyond the three secret bindings in the approved architecture: OpenAI placeholder, admin API token, conversation-encryption key and technician-link key. The proposal explicitly requires a stop for another secret or broader grant. The 6:45–8:15 p.m. Eastern availability block was not bound or attempted; no command, allowance or external action was used.
 
-`APP013_P07_STARTUP_CREDENTIAL_CORRECTION_PROPOSAL_20261020.md` recommends four independent candidate-only secret versions, exact replacement of inherited environment/secret maps, seven total resource-level bindings and removal/disable readback by the 24-hour retirement boundary. Sharing serving credentials, test-mode deployment and another application/build cycle are rejected. Owner approval or rejection of this preparation-only correction is next. A fresh tested package, new attended block and exact external-action approval would still follow.
+Owner replied “yes i approve” to `APP013_P07_STARTUP_CREDENTIAL_CORRECTION_PROPOSAL_20261020.md`: four independent candidate-only secret versions, exact replacement of inherited environment/secret maps, seven total resource-level bindings and removal/disable readback by the 24-hour retirement boundary. Sharing serving credentials, test-mode deployment and another application/build cycle remain rejected. Fresh disabled package preparation/testing is active. A new attended block and exact external-action approval still follow.
 
-Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Scope deviation proposed, not implemented.**
+Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Approved scope deviation before implementation; no external implementation.**
 
 ## October 20 — repaired image built once; independent closeout verified
 

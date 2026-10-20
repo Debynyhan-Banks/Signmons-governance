@@ -1,12 +1,12 @@
 # Global Execution Pointer
 
-## October 20 — P07 startup dependency requires owner decision before package work
+## October 20 — P07 startup correction approved; disabled package preparation active
 
 R1-W01 / APP-013/3A/P07 remains active. During exact package preparation, source inspection proved that the production image also requires OpenAI, admin API, conversation-encryption and technician-link credentials at startup. The approved runtime proposal permits only three secret bindings and explicitly makes another secret or broader grant a stop. The owner-supplied 6:45–8:15 p.m. Eastern block was therefore not bound or attempted; no command, allowance or external action was used.
 
-`APP013_P07_STARTUP_CREDENTIAL_CORRECTION_PROPOSAL_20261020.md` recommends four independent, candidate-only, short-lived startup secrets with resource-level access and exact environment replacement. It rejects sharing serving-runtime credentials, test-mode deployment and a new application/runtime build. Owner decision on that correction is next. If approved, the implementer prepares/tests a fresh no-action package, the owner supplies a new attended 90-minute block, and the finished live operation is separately approval-gated.
+Owner replied “yes i approve” to `APP013_P07_STARTUP_CREDENTIAL_CORRECTION_PROPOSAL_20261020.md`: four independent, candidate-only, short-lived startup secrets with resource-level access and exact environment replacement. Sharing serving-runtime credentials, test-mode deployment and a new application/runtime build remain rejected. The implementer now prepares/tests a fresh disabled package. The owner then supplies a new attended 90-minute block, and the finished live operation remains separately approval-gated.
 
-Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Scope deviation proposed, not implemented:** four short-lived candidate-only startup secrets and their exact bindings.
+Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Approved scope deviation before implementation:** four short-lived candidate-only startup secrets and their exact bindings; no external implementation yet.
 
 ## October 20 — repaired image built once; independent closeout verified
 

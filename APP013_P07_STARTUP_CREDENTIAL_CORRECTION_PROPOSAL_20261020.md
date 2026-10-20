@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 startup-credential correction proposal
 
-Status: **owner decision required; no implementation or external action is authorized**. During preparation of the owner-approved dedicated-identity runtime package on October 20, 2026, source inspection demonstrated four production-startup credential requirements that were not enumerated in `APP013_P07_REPAIRED_DIGEST_RUNTIME_READINESS_PROPOSAL_20261020.md`. That proposal explicitly makes another secret or broader grant a stop requiring owner review. The supplied 6:45–8:15 p.m. Eastern availability block therefore remains unattempted and unconsumed; no executable command was issued and its proposed allowance was not used.
+Status: **Alternative 1 owner-approved for package preparation and local testing; no external action is authorized**. On October 20, 2026, Debynyhan Banks replied **“yes i approve”** to the exact four-secret correction presented after source inspection demonstrated production-startup requirements not enumerated in `APP013_P07_REPAIRED_DIGEST_RUNTIME_READINESS_PROPOSAL_20261020.md`. The supplied 6:45–8:15 p.m. Eastern availability block remains unattempted and unconsumed; no executable command was issued and its proposed allowance was not used.
 
 ## Requirement traceability and demonstrated gap
 
@@ -49,6 +49,6 @@ The correction does not change the fixed P07 result: `P07_REPAIRED_RUNTIME_READY
 
 ## Decision required
 
-Approve or reject Alternative 1. Approval authorizes only preparation and local testing of a fresh exact package with the four added dedicated startup secrets, seven total resource-level secret bindings and corrected cleanup/cost bindings. It does not authorize any database, IAM, secret, Stripe, deployment, cost-bearing or cleanup action. After approval, the implementer prepares and tests the fresh no-action package; because the 6:45 start block was not safely bindable, the owner then supplies a new attended block of at least 90 minutes. The finished operation is presented separately for exact live approval.
+**Owner decision recorded:** Alternative 1 is approved. This authorizes only preparation and local testing of a fresh exact package with the four added dedicated startup secrets, seven total resource-level secret bindings and corrected cleanup/cost bindings. It does not authorize any database, IAM, secret, Stripe, deployment, cost-bearing or cleanup action. The implementer now prepares and tests the fresh no-action package; because the 6:45 start block was not safely bindable, the owner then supplies a new attended block of at least 90 minutes. The finished operation is presented separately for exact live approval.
 
-**Scope deviation proposal:** add four short-lived candidate-only startup secrets and their resource-level bindings because the already built application cannot start in production without them. No deviation has been implemented.
+**Approved scope deviation before implementation:** add four short-lived candidate-only startup secrets and their resource-level bindings because the already built application cannot start in production without them. No external implementation has occurred.

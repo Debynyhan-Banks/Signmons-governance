@@ -1,16 +1,16 @@
 # Session Handoff
 
-## October 20 — P07 startup-credential correction decision pending
+## October 20 — P07 startup-credential correction approved; package preparation active
 
 **Section/status:** R1-W01 / APP-013/3A/P07 remains active. Package preparation stopped before implementation because the production image requires four startup credentials outside the approved three-secret design. The owner-supplied 6:45–8:15 p.m. Eastern block was not bound, attempted or charged.
 
 **Completed:** inspected the exact repaired source and documented the demonstrated `OPENAI_API_KEY`, `ADMIN_API_TOKEN`, `CONVERSATION_DATA_ENCRYPTION_KEY` and `TECHNICIAN_LINK_SECRET` startup requirements. `APP013_P07_STARTUP_CREDENTIAL_CORRECTION_PROPOSAL_20261020.md` compares four alternatives and recommends independent candidate-only secrets, exact environment/secret replacement, numeric pins and 24-hour retirement. No app code, private package, role, secret, IAM, Stripe, deployment or payment state changed.
 
-**Remaining/blocker and owner:** Debynyhan Banks approves or rejects the four short-lived startup secrets and their four resource-level bindings. If approved, the implementer prepares/tests a fresh no-action package. A new attended 90-minute block and separate exact live approval remain required; P08 and 3A acceptance remain later gates.
+**Remaining/blocker and owner:** Debynyhan Banks approved the four short-lived startup secrets and their four resource-level bindings. The implementer now prepares/tests a fresh no-action package. A new attended 90-minute block and separate exact live approval remain required; P08 and 3A acceptance remain later gates.
 
-**Next observable result:** owner decision on the correction, followed only on approval by a locally tested disabled package. No executable command exists.
+**Next observable result:** a locally tested disabled package with no live binding, followed by an owner-selected new window and separate exact live review. No executable command exists yet.
 
-**Progress:** **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**, unchanged. **Scope deviation proposed, not implemented:** four candidate-only startup secrets and exact cleanup bindings.
+**Progress:** **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**, unchanged. **Approved scope deviation before implementation:** four candidate-only startup secrets and exact cleanup bindings; no external implementation.
 
 ## October 20 — repaired-digest runtime architecture proposal prepared
 
