@@ -1,5 +1,17 @@
 # Session Handoff
 
+## October 20 — corrected P07 replacement package ready; new approval pending
+
+**Section and status:** APP-013/3A/P07 remains implemented, locally tested and built, but undeployed and not live-demonstrated. The contained 9:00 operation remains consumed; this is a new plan/package.
+
+**Completed:** corrected private package `/private/tmp/p07-readiness-20261020-0930-repair1` preserves the authenticated environment, separates Cloud and database preflight stages, uses the proven Node/PostgreSQL closeout path and passes seven focused tests for environment inheritance, refusal, window, one-use, secret-free and closeout behavior. New proposal `APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020_REPAIR1.md` binds plan `8384acb8-5172-42d1-904f-2740ceee7e27`, packet `2427a7e4-5129-4a70-abe1-8fd74af40d2a`, operation `0e9d30e1-6eb3-49c0-85da-3ade3c569184` and a 9:30–10:45 a.m. Eastern window. No second external attempt occurred.
+
+**Remaining or blocked:** exact owner approval is required before the strict 9:45 a.m. start cutoff. P07 readiness, P08 and 3A acceptance remain open.
+
+**Next:** owner approves or refuses the corrected exact operation. On approval, the observable result is `P07_READY_DISABLED` or a named stop with verified containment.
+
+**Progress:** accepted **6/60 packages, 4/8 walkthrough milestones and 0/13 integrated pilot rows**. **No scope deviation.**
+
 ## October 20 — P07 preflight stopped before mutation; containment verified
 
 **Section and status:** APP-013/3A/P07 remains implemented, locally tested and built, but undeployed and not live-demonstrated. The owner-approved readiness operation is consumed.

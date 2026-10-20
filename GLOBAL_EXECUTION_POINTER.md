@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 20 — corrected P07 replacement proposal is the next decision
+
+APP-013/3A remains active. The contained 9:00 operation is consumed. Corrected private package `/private/tmp/p07-readiness-20261020-0930-repair1` preserves the authenticated Cloud environment, separates Cloud/database preflight stages and uses the proven Node/PostgreSQL closeout method; seven focused local tests pass. New proposal `APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020_REPAIR1.md` binds fresh plan `8384acb8-5172-42d1-904f-2740ceee7e27`, packet `2427a7e4-5129-4a70-abe1-8fd74af40d2a`, operation `0e9d30e1-6eb3-49c0-85da-3ade3c569184` and a 9:30–10:45 a.m. Eastern window with strict 9:45 start cutoff. No second external attempt occurred.
+
+The next decision is exact owner approval or refusal. On approval the observable result is `P07_READY_DISABLED` or a named contained stop. P08 remains unauthorized. Accepted progress stays **6/60 packages, 4/8 walkthrough milestones and 0/13 full pilot rows**. **No scope deviation.**
+
 ## October 20 — P07 readiness preflight stopped and contained
 
 APP-013/3A remains active. Owner-approved operation `97924cc2-e6b8-4ced-bb97-60ba24ea3d88` reserved at 9:00:00 a.m. Eastern and stopped during initial preflight with `possibleMutation:false`. It did not reach Stripe destination creation, a new secret version, child-role opening/read or Cloud Run deployment. Independent Cloud readback verified normal traffic remains 100% on `app013dbrot2`, the target revision/tag are absent and prior numeric secret versions are unchanged. Hidden-input database closeout readback verified `p06_intake_runtime` was already `NOLOGIN`, limit zero, expired and zero sessions; it made no change.

@@ -1,6 +1,6 @@
 # Signmons progress tracker
 
-Updated October 20, 2026, Eastern time. **4 of 8 walkthrough milestones accepted. The approved P07 readiness operation stopped during preflight before mutation and mandatory containment is verified.** APP-013 remains the active ticket. Section 2B and its closeout are accepted; P06 is 14/14 complete. These counts do not measure overall MVP completion.
+Updated October 20, 2026, Eastern time. **4 of 8 walkthrough milestones accepted. The first P07 readiness operation stopped before mutation and is contained; a corrected replacement package and new 9:30–10:45 a.m. proposal are ready for owner review.** APP-013 remains the active ticket. Section 2B and its closeout are accepted; P06 is 14/14 complete. These counts do not measure overall MVP completion.
 
 This is the concise progress view requested by the owner. The [acceptance ledger](PAYMENT_BOOKING_TEXT_STEEL_THREAD.md#acceptance-tracker), [execution contract](APP013_REMAINING_EXECUTION_CONTRACT.md) and linked evidence retain the detailed requirements. Keep their status synchronized; preserve the fixed eight milestones and original acceptance criteria.
 
@@ -24,7 +24,7 @@ The package baseline starts from September’s remaining work and excludes earli
 | 1B | Session cleanup and retention | Accepted September 11 | [Local evidence](../signmons-backend-r08-recovery/evidence/APP-013/verification-cleanup/README.md); backend 37bcb15. Preserve accepted proof. |
 | 2A | Current-proof job admission | Accepted September 11 | [Local evidence](../signmons-backend-r08-recovery/evidence/APP-013/current-proof-admission/README.md); backend f8e35e8. Preserve accepted proof. |
 | 2B | Verified intake creates one reviewed job | Accepted October 19 | [Live result and closeout](../signmons-backend-r08-recovery/evidence/APP-013/p06-r11-enabled52-live-result-20261019.md). Owner: “Accept 2B and its closeout”. Next section: 3A. |
-| 3A | Sandbox payment on that job | Active; P07 readiness operation stopped before mutation | Prepare a fresh reviewed P07 package only after fixing and testing the controller environment/closeout defect; P08 remains unauthorized. |
+| 3A | Sandbox payment on that job | Active; corrected P07 replacement proposal ready | Owner approves or refuses the new 9:30–10:45 readiness operation; P08 remains unauthorized. |
 | 3B | One test-calendar appointment | Planned; follows accepted 3A | After 3A acceptance, inspect scheduling/recovery seams and qualify the named isolated calendar and write approval. |
 | 3C | Receive that appointment’s confirmation text | Planned; follows accepted 3B | After 3B acceptance, qualify consent, sender/recipient, delivery path and capped send approval. |
 | 3D | Changes and recovery on the same journey | Planned; follows accepted 3C | After 3C acceptance, prepare the existing reschedule/cancel/failure matrix and bounded action approval. |
@@ -43,11 +43,13 @@ The package baseline starts from September’s remaining work and excludes earli
 
 **Remaining work:** `P07_DEPLOYMENT_REQUIRED`, `DESTINATION_DISABLED`, `API_VERSION_UNCONFIRMED` and `READ_PATH_UNAVAILABLE` remain until the approved readiness operation succeeds. Deployment, destination creation/new signing-secret storage, bounded database access and P08 are separate gates.
 
-**Immediate next action — implementer:** fix the cleared authenticated-environment defect, add categorized closeout tests and prepare a new hash-bound package/proposal. The consumed operation cannot be replayed; a later external operation needs a new window and owner approval.
+**Corrected replacement ready:** private package `/private/tmp/p07-readiness-20261020-0930-repair1` preserves the authenticated environment, separates Cloud/database preflight stages and uses the proven Node/PostgreSQL closeout path. Seven focused local tests pass. New proposal `APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020_REPAIR1.md` binds new plan/packet/operation IDs and a 9:30–10:45 a.m. window. No second external attempt has started.
+
+**Immediate next action — owner:** approve or refuse the exact corrected replacement proposal. Approval must arrive before its strict 9:45 a.m. start cutoff. The prior operation remains consumed and is not replayed.
 
 **Dependencies and owners:** implementer owns exact source isolation, one-use build execution/cleanup if approved, later repair proposals and evidence. Debynyhan Banks owns the build decision, later external-write approvals and final acceptance. Stripe Sandbox mode and the single enabled connected account passed; Cloud Stripe secret references, explicit test mode and return URL passed. The missing destination, undeployed P07 patch and unavailable non-mutating database path are diagnosed blockers.
 
-**Next observable result:** a locally validated replacement package and concrete new no-retry proposal, still without external mutation. Only a later approved operation can produce `P07_READY_DISABLED`; only after that can P08 propose one Checkout and its exact event proof.
+**Next observable result:** after approval, `P07_READY_DISABLED` or a named stop with verified containment. Only after `P07_READY_DISABLED` can P08 propose one Checkout and its exact event proof.
 
 ## Follow-up outside the acceptance count
 
@@ -73,6 +75,7 @@ Keep updates brief and tied to meaningful changes. Do not repeatedly run checks 
 
 ## Progress log
 
+| October 20, 2026 | Corrected P07 replacement package locally validated with seven focused tests; new 9:30–10:45 proposal prepared; no second external attempt | [Replacement proposal](APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020_REPAIR1.md) | Owner approves or refuses before the 9:45 start cutoff |
 | October 20, 2026 | Approved P07 readiness operation stopped during initial preflight before mutation; Cloud and database containment independently verified; operation consumed | [Stopped result](../signmons-backend-r08-recovery/evidence/APP-013/p07-readiness-operation-stop-20261020.md) | Fix/test controller environment and closeout classification; prepare a fresh package/proposal, no replay |
 
 | Date, Eastern | Change | Evidence | Next |

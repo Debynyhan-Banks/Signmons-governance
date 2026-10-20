@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 20 — corrected P07 replacement ready; owner decision pending
+
+APP-013/3A remains sole Now. A corrected private package preserves the authenticated Cloud environment, separates preflight stages and uses the independently proven database closeout method; seven focused tests pass. `APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020_REPAIR1.md` is a new plan/package for 9:30–10:45 a.m. Eastern with a strict 9:45 start cutoff. The exact image/resources, USD 1 Cloud allowance, one secret-version allowance, no-retry boundary, safety flags and containment remain unchanged. No second external attempt has started.
+
+Owner approval or refusal is next. The consumed 9:00 operation is not replayed; P08 remains unauthorized. Progress remains **6/60, 4/8 and 0/13**. **No scope deviation.**
+
 ## October 20 — P07 readiness preflight stopped; no mutation and containment verified
 
 APP-013/3A remains sole Now. Approved operation `97924cc2-e6b8-4ced-bb97-60ba24ea3d88` is consumed after `P07_STOP_COMMAND_FAILED` in initial preflight. Saved state records `possibleMutation:false`; Stripe destination, secret-version, child-role/read and deployment stages were not reached. Independent Cloud readback verified normal traffic unchanged, proposed revision/tag absent and prior secret versions unchanged. Hidden-input database closeout readback verified the runtime role already closed with zero sessions and made no change.
