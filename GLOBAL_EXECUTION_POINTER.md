@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 20 — second P07 repair proposal is the next decision
+
+APP-013/3A remains active. The 9:00 and 9:30 operations are both consumed and contained before mutation. The 9:30 operation stopped during `CLOUD_PREFLIGHT` because its Firebase helper required unavailable Application Default Credentials; its receipt reports `possibleMutation:false`, and mandatory closeout verified `p06_intake_runtime` remained closed with zero sessions without a change. Read-only diagnosis verified the Cloud service and numeric secret metadata reads. An explicit Cloud access-token plus Identity Toolkit lookup, already used by repository tooling, returned the exact disabled/owner/tenant booleans.
+
+Fresh private package `/private/tmp/p07-readiness-20261020-0945-repair2` and proposal `APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020_REPAIR2.md` bind plan `ae0500e5-87c4-43b7-98a7-a9af9435baa9`, packet `1c36384e-8349-4eed-9b87-2645228a9133`, operation `6af8ee55-6df7-4434-9f76-15f182638d5a` and a 9:45–10:45 a.m. Eastern window with strict 10:00 start cutoff. No third external attempt occurred. Exact owner approval or refusal is next. P08 remains unauthorized. Accepted progress stays **6/60 packages, 4/8 walkthrough milestones and 0/13 full pilot rows**. **No scope deviation.**
+
 ## October 20 — corrected P07 replacement proposal is the next decision
 
 APP-013/3A remains active. The contained 9:00 operation is consumed. Corrected private package `/private/tmp/p07-readiness-20261020-0930-repair1` preserves the authenticated Cloud environment, separates Cloud/database preflight stages and uses the proven Node/PostgreSQL closeout method; seven focused local tests pass. New proposal `APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020_REPAIR1.md` binds fresh plan `8384acb8-5172-42d1-904f-2740ceee7e27`, packet `2427a7e4-5129-4a70-abe1-8fd74af40d2a`, operation `0e9d30e1-6eb3-49c0-85da-3ade3c569184` and a 9:30–10:45 a.m. Eastern window with strict 9:45 start cutoff. No second external attempt occurred.

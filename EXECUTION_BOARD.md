@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 20 — second P07 preflight stopped; repair 2 ready for decision
+
+APP-013/3A remains sole Now. Owner-approved operation `0e9d30e1-6eb3-49c0-85da-3ade3c569184` reserved at 9:30:00 a.m. Eastern and stopped during `CLOUD_PREFLIGHT` with `possibleMutation:false`, no containment failures and no automatic retry. It did not reach the database preflight, Stripe destination, secret version, child-role opening/read or deployment. Mandatory closeout verified the runtime role already closed with zero sessions and made no change.
+
+Read-only diagnosis verified the Cloud service and all three required numeric secret metadata reads; only the Firebase helper failed because Application Default Credentials are unavailable. The second repair reuses the repository's explicit Cloud access-token plus Identity Toolkit lookup seam, whose bounded validation returned the exact disabled/owner/tenant booleans. Fresh proposal `APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020_REPAIR2.md` and private package `/private/tmp/p07-readiness-20261020-0945-repair2` target 9:45–10:45 a.m. Eastern with a strict 10:00 start cutoff. They are not authorized. Owner approval or refusal is next; P08 remains unauthorized. Progress remains **6/60, 4/8 and 0/13**. **No scope deviation.**
+
 ## October 20 — corrected P07 replacement ready; owner decision pending
 
 APP-013/3A remains sole Now. A corrected private package preserves the authenticated Cloud environment, separates preflight stages and uses the independently proven database closeout method; seven focused tests pass. `APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020_REPAIR1.md` is a new plan/package for 9:30–10:45 a.m. Eastern with a strict 9:45 start cutoff. The exact image/resources, USD 1 Cloud allowance, one secret-version allowance, no-retry boundary, safety flags and containment remain unchanged. No second external attempt has started.

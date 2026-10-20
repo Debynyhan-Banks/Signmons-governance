@@ -1,5 +1,17 @@
 # Session Handoff
 
+## October 20 — second P07 stop contained; repair 2 approval pending
+
+**Section and status:** APP-013/3A/P07 remains implemented, locally tested and built, but undeployed and not live-demonstrated. The 9:00 and 9:30 one-use operations are consumed.
+
+**Completed:** operation `0e9d30e1-6eb3-49c0-85da-3ade3c569184` reserved at 9:30:00 a.m. Eastern and stopped during `CLOUD_PREFLIGHT` with `possibleMutation:false`. It reached no Stripe, secret, role-opening, job-read or deployment action. Closeout verified the role remained closed with zero sessions and made no change. Read-only diagnosis isolated the failure to unavailable Firebase Application Default Credentials; the Cloud service and three numeric secret metadata reads passed. The replacement uses the repository's explicit Cloud access-token plus Identity Toolkit lookup seam, which returned the required disabled/owner/tenant booleans. Evidence: backend `evidence/APP-013/p07-readiness-operation-stop2-20261020.md`.
+
+**Remaining or blocked:** fresh owner approval is required for proposal `APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020_REPAIR2.md`, plan `ae0500e5-87c4-43b7-98a7-a9af9435baa9`, packet `1c36384e-8349-4eed-9b87-2645228a9133` and operation `6af8ee55-6df7-4434-9f76-15f182638d5a`, during 9:45–10:45 a.m. Eastern with a strict 10:00 start cutoff. P07 readiness, P08 and 3A acceptance remain open.
+
+**Next:** owner approves or refuses the fresh exact operation. On approval, the observable result is `P07_READY_DISABLED` or a named stop with verified containment.
+
+**Progress:** accepted **6/60 packages, 4/8 walkthrough milestones and 0/13 integrated pilot rows**. **No scope deviation.**
+
 ## October 20 — corrected P07 replacement package ready; new approval pending
 
 **Section and status:** APP-013/3A/P07 remains implemented, locally tested and built, but undeployed and not live-demonstrated. The contained 9:00 operation remains consumed; this is a new plan/package.
