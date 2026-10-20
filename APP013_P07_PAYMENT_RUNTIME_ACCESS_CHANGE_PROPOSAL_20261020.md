@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 — payment-runtime access prerequisite
 
-Status: **change proposal; not implemented or approved**. The owner approved only the separate local split-read correction. The selected October 20, 4:00–5:15 p.m. Eastern block is availability, not execution authority. No replacement readiness launch is ready. The expired repair3 package and all three consumed operations remain immutable.
+Status: **owner-approved local disposable proof completed; payment gate blocked by application concurrency finding**. Owner explicitly answered “Approve the local payment-role proof” to the exact bounded proposal. This approval permits synthetic local role/database creation, real permission/service tests, mocked Stripe and verified cleanup only. The selected October 20, 4:00–5:15 p.m. Eastern block is availability, not execution authority. No replacement readiness launch is ready. The expired repair3 package and all three consumed operations remain immutable.
 
 ## Demonstrated gap and workflow impact
 
@@ -57,9 +57,9 @@ StripeEvent INSERT includes the generated ID, tenantId, stripeEventId, type, bou
 
 Table/column grants do not provide single-job or tenant row isolation. Application predicates, role guards, immutable policy, signature/account/resource checks and credential custody remain essential. A writable policySnapshot JSON column cannot distinguish binding from every other JSON operation at the SQL privilege level; do not claim database ACLs enforce an endpoint-only action list. No RLS or cryptographic webhook guarantee is inferred from database permissions.
 
-## Proposed finite local implementation card — owner decision required first
+## Approved finite local implementation card — October 20
 
-Approved section, if the owner accepts this prerequisite: existing APP-013/3A/P07 within R1-W01. Acceptance criteria and the fixed walkthrough stay unchanged: the same accepted job must eventually settle through authentic matching Sandbox evidence, with replay/refusal and closeout. This local card would prove a viable runtime boundary before any new external operation is proposed.
+Approved local section: existing APP-013/3A/P07 within R1-W01. Acceptance criteria and the fixed walkthrough stay unchanged: the same accepted job must eventually settle through authentic matching Sandbox evidence, with replay/refusal and closeout. This local card would prove a viable runtime boundary before any new external operation is proposed.
 
 Expected files are limited to:
 
@@ -68,7 +68,7 @@ Expected files are limited to:
 3. `evidence/APP-013/p07-payment-runtime-role-local-proof-20261020.md`: source/grant hashes, positive/negative/concurrency/recovery/cleanup results and exact remaining live gates.
 4. This proposal/section card and normal governance status/evidence references. No application, UI, Prisma schema or production migration change is included.
 
-Reuse the isolation checks, direct current_user/session_user checks and cleanup patterns in `scripts/verify-p06-runtime-role.mjs` and `scripts/verify-staging-address-reservation.mjs`. Do not invoke an expired provider runner or accept environment DATABASE_URL/credentials as the disposable target. Use a newly named local database on an explicitly verified Unix socket, refuse existing role/database collisions, use synthetic data only and remove only resources created by that test. Preserve any pre-existing local service/data.
+Reuse the isolation checks, direct current_user/session_user checks and cleanup patterns in `scripts/verify-p06-runtime-role.mjs` and `scripts/verify-staging-address-reservation.mjs`. Do not invoke an expired provider runner or accept environment DATABASE_URL/credentials as the disposable target. Use a newly named local database on an explicitly verified Unix socket, refuse existing role/database collisions, use synthetic data only and remove only resources created by that test. The existing /tmp PostgreSQL service is unavailable; reuse scripts/verify-p06-runtime-packet.mjs to own a fresh PG18 cluster at /private/tmp/signmons-runtime-role-<random>/socket with TCP listening disabled and database calldesk_org_<12hex>. No existing cluster is started, altered or removed. Preserve any pre-existing local service/data.
 
 Finite proof checklist:
 
@@ -80,7 +80,7 @@ Finite proof checklist:
 - Deny tenant/job/actor reassignment, excluded columns/tables, all destructive writes, catalog secrets, SET ROLE escalation, memberships, schema/role/database creation and adjacent booking/dispatch/message/subscription writes. Preserve original P06 restrictions and rerun its applicable negative proof.
 - Exercise partial failure/interruption; close clients; verify test role NOLOGIN, connection limit zero, past expiry and zero sessions before removing only newly created disposable resources. An unconfirmed cleanup is a failed proof.
 
-Proposed verification commands, after approval and implementation: `npm run build`; `node scripts/verify-p07-payment-runtime-role.mjs`; `npx jest --runInBand src/jobs/job-payment-policy.service.spec.ts src/payments/payment-requests.service.spec.ts src/payments/stripe-webhooks.service.spec.ts src/jobs/dispatch-board.service.spec.ts src/jobs/routing.service.spec.ts`; `npm run lint`; `npm run arch:check`; backend governance baseline; governance frozen-baseline/consistency/25 safeguards; and both `git diff --check` checks. The unchanged synthetic browser regression is `node ui/scripts/payment-request-recovery-browser-qa.mjs`, using its existing local build/Playwright seam. It does not supply real-role permission evidence; that belongs to the new actual-login service proof. No new browser harness is proposed.
+Proposed verification commands, after approval and implementation: `npm run build`; `node scripts/verify-p07-payment-runtime-role.mjs`; `npx jest --runInBand src/tenants/organization-payment-policy.spec.ts src/payments/payment-requests.service.spec.ts src/payments/stripe-webhooks.service.spec.ts src/jobs/dispatch-board.service.spec.ts src/jobs/routing.service.spec.ts`; `npm run lint`; `npm run arch:check`; backend governance baseline; governance frozen-baseline/consistency/25 safeguards; and both `git diff --check` checks. The unchanged synthetic browser regression is `node ui/scripts/payment-request-recovery-browser-qa.mjs`, using its existing local build/Playwright seam. It does not supply real-role permission evidence; that belongs to the new actual-login service proof. No new browser harness is proposed.
 
 Observable finish: a source-hashed, actual restricted-role proof across the connected payment path, preserved P06 denials, verified local cleanup and a final exact grant boundary suitable for a separately reviewed live proposal. Mocked Prisma success, a role-creation helper or health 200 alone cannot satisfy this card.
 
@@ -92,6 +92,12 @@ This is a newly demonstrated material prerequisite, not a new customer feature o
 
 Unchanged: APP-013 sole Now; Next APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033; accepted 1A/1B/2A/2B; 3A → 3B → 3C → 3D; R1 ledger denominator 27; legacy measures 6/60, 4/8, 0/13.
 
-Actual owner decisions: selected 4:00–5:15 availability; approved narrow split-read local correction only. **This dedicated-role prerequisite, its local implementation/proof and every external action remain unapproved.** Implementer owns completing the exact local proof card and evidence if approved. Debynyhan Banks owns prerequisite approval, later exact provider/database/deployment/spend approval and final 3A acceptance.
+Actual owner decisions: selected 4:00–5:15 availability; approved narrow split-read correction; then explicitly approved this finite local payment-role proof. **Live role/credential provisioning and every external action remain unapproved.** Current implementation-entry heads: backend f5931e214a1f40dee63c311bad1837e51255f29f; governance 1010571d84eb66e9d2b6eee256380fd225b558cd. There is no standalone JobPaymentPolicyService Jest file in this source; use the real local service proof plus existing organization-policy/payment/dispatch suites, rather than claim a missing suite ran. Implementer owns completing the exact local proof card and evidence if approved. Debynyhan Banks owns prerequisite approval, later exact provider/database/deployment/spend approval and final 3A acceptance.
 
-Scope status: explicit deviation proposal before implementation. No grants, role/credential creation, secret payload access, provider operation, deployment, payment, booking, customer contact, repository merge or production change occurred.
+Scope status: this local prerequisite is explicitly owner-approved before implementation; no broader deviation is authorized. No live grants, credentials, secret access, provider operation, deployment, payment, booking, customer contact, repository merge or production change is included.
+
+## Recorded local result
+
+Owner-approved local proof completed with the tested grant fixture and real restricted application/database paths. Final verifier has18 passed checks, 49 new permission denials plus13 original P06 denials, two explicit failed probes, and verified normal/SIGINT cleanup. Its release-blocking finding is stale concurrent webhook transition SUCCEEDED→FAILED. Immediate audit-rollback retry separately observed the existing five-minute hold and stable same-key recovery after timeout; original failed probe remains recorded, not silently greened. Evidence: backend evidence/APP-013/p07-payment-runtime-role-local-proof-20261020.md.
+
+No application repair, live role/credential provisioning or external operation was approved by this result. The focused next decision is APP013_P07_WEBHOOK_ATOMICITY_REPAIR_PROPOSAL_20261020.md. Browser artifact drift and the owner-approved isolated rerun are disclosed in the evidence; no blanket zero-external-attempt claim is made.
