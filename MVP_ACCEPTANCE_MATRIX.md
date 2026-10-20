@@ -1,11 +1,11 @@
 # Intelligence pilot acceptance matrix
 
-Owner-reviewed integrated pilot requirements, 2026-09-12. No capability is accepted by this documentation decision. Existing fixed walkthrough: 3/8 accepted (37.5%), current 2B; not overall engineering completion. Each row requires code, tests, environment-specific evidence, reviewer and acceptance date before accepted status. This matrix adds no claimed engineering percentage.
+Owner-reviewed integrated pilot requirements, 2026-09-12; status reconciled October 19, 2026. **0/13 rows recorded fully accepted.** Partial/component evidence remains reusable. Fixed walkthrough: **4/8 accepted**, including owner-accepted 2B and closeout; next 3A. Remaining-work plan: **6/60 packages accepted (10%)**, not an engineering-effort percentage. Each row requires code, tests, environment-specific evidence, reviewer and acceptance date before accepted status. See [current measurement](MVP_COMPLETION_MEASUREMENT_2026-10-19.md) and [progress tracker](PROGRESS_TRACKER.md). This status reconciliation adds no criterion or acceptance claim.
 
 | Requirement | Current evidence/status | Owning ticket / missing acceptance |
 | --- | --- | --- |
-| Transactional communications and verified intake | In progress; backend PR #21, 330e402 OAuth transport disabled, 6c9f660 capture DRY_RUN | APP-013 full acceptance; county authority, real verification, IAM/release/test gates remain |
-| Payment/calendar/text walkthrough | In progress; PAYMENT_BOOKING_TEXT_STEEL_THREAD.md: 1A/1B/2A accepted, 2B current | Remaining 2B, 3A Sandbox payment, 3B test calendar, 3C received text, 3D recovery |
+| Transactional communications and verified intake | Partial integrated evidence: 2B verified job and cleanup accepted October 19; [live result](../signmons-backend-r08-recovery/evidence/APP-013/p06-r11-enabled52-live-result-20261019.md). Earlier communication components retained | APP-013 full notification/consent/retention acceptance remains; 2B is closed and its live authority consumed |
+| Payment/calendar/text walkthrough | In progress; PAYMENT_BOOKING_TEXT_STEEL_THREAD.md: 1A/1B/2A/2B accepted, 4/8 | Remaining 3A Sandbox payment, 3B test calendar, 3C received text, 3D recovery |
 | Voice and ordinary conversational SMS | Unverified for integrated pilot; transactional foundation is not channel acceptance | APP-033 actual authorized channel tests, privacy, interruption/handoff evidence |
 | Web conversation, tenant safety and discovery | Implemented portions, not accepted as intelligence pilot; existing protected-intake/organization evidence | APP-033 contextual hazard and discovery scenarios across stages |
 | Versioned rules, service fees, payment policy | Implemented portions in organization/verification/payment policies; complete acceptance unverified | APP-017 approved/missing/changed-policy and cross-tenant tests |

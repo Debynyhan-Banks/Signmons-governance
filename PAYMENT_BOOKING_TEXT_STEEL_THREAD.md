@@ -1,5 +1,15 @@
 # Payment, booking and text steel thread — baseline v1
 
+Current progress and next actions: [Signmons progress tracker](PROGRESS_TRACKER.md). Keep this acceptance ledger synchronized at each owner-accepted milestone.
+
+## October 19 — 2B and R12 owner-accepted; 3A is next
+
+Owner explicitly replied **“Accept 2B and its closeout”** after reviewing enabled52's CREATED job receipt, private-session cleanup and verified runtime closeout. Section 2B is accepted; P06-R11/R12 are closed and the fixed P06 task inventory is 14/14. Accepted walkthrough milestones are now **1A, 1B, 2A, 2B: 4/8**. This is milestone acceptance, not overall MVP completion. APP-013 remains the sole Now ticket.
+
+Evidence: backend `evidence/APP-013/p06-r11-enabled52-live-result-20261019.md`; exact plan `6516f97b-b7ee-4d78-b616-8bbfcc70eea6`, request `188ee212-4340-490c-a7c6-9f848d002004`, job `9180bef4-561d-47a0-869f-925e6a3dfd96` in CREATED state. Saved browser outcome/cleanup, REVOKED readback, CLOSED/failures[] and BROWSER_DONE/closeoutVerified receipts correlate the approved run; owner-acceptance.json records the decision. No additional database recount was performed. Source/image unchanged; no commit/push/merge. Documentation baseline/consistency/architecture/whitespace and 21 safeguard tests passed before this acceptance update and are rerun afterward.
+
+No remaining 2B acceptance item. Billing reconciliation is assigned to account owner Debynyhan Banks when charges become available, against the approved USD2.70 allowance; actual charges remain unverified and all holds retained. Runtime is closed and the package consumed. Next section is **3A, Sandbox payment on this admitted job**. Next observable preparation result is the existing 3A entry inspection and complete source/configuration/test card; Sandbox actions still require their own exact approval. Do not reopen 2B or create another verification run. Remaining walkthrough order is 3A → 3B → 3C → 3D; the original section definitions, criteria and denominator are unchanged. Stop at this accepted section boundary. **No scope deviation.**
+
 ## Current: fixed execution contract; planning before coding
 
 APP013_REMAINING_EXECUTION_CONTRACT.md is the current section-planning and status reconciliation. Preserve the five remaining IDs 2B → 3A → 3B → 3C → 3D; correction screens are internal 2B work, not new sections. Next is completing 2B's exact real-source/session/retention/patch/test contract before more implementation. County GIS is not a gate; prior phone/Google tests are closed and not current admission proof. Older blocked-entry, Next-empty and source/retention assumptions below are historical where superseded by the Google-only policy and approved intelligence queue. No standalone demo or automatic new live test. APP-013 sole Now; accepted 3/8 (37.5%) unchanged. This documentation correction grants no external/release authority.
@@ -140,8 +150,8 @@ Evidence anchors: backend evidence/APP-013/address-execution/README.md, browser-
 | 1 / 1A | Accepted | None for local section; live gates unchanged | Backend 4c5030a; evidence/APP-013/verification-freshness/README.md and committed database/browser summaries | Owner “proceed”, 2026-09-11 |
 | 2 / 1B | Accepted | Production cleanup not activated | Backend 37bcb15; evidence/APP-013/verification-cleanup/README.md and committed database/browser summaries | Owner “i reviewed the evidence proceed”, 2026-09-11 |
 | 3 / 2A | Accepted | Real source/identity activation remains 2B | Backend f8e35e8; evidence/APP-013/current-proof-admission/README.md and summary | Owner “i reviewed continue”, 2026-09-11 |
-| 4 / 2B | In progress; connected acceptance pending | Real-source/session/retention contract and connected admission remain; new controlled actions need current approval. No current Chrome or county-GIS blocker inferred. | APP013_REMAINING_EXECUTION_CONTRACT.md; closed real-phone and Google subchecks; backend c52bd2b transient screen is synthetic-tested, not admission | Pending |
-| 5 / 3A | Planned | 2B, Sandbox action approval | Pending | Pending |
+| 4 / 2B | Accepted | No remaining 2B acceptance gate; runtime closed and holds retained | Backend evidence/APP-013/p06-r11-enabled52-live-result-20261019.md; correlated CREATED job and verified closeout | Owner “Accept 2B and its closeout”, 2026-10-19 |
+| 5 / 3A | Next; entry inspection pending | 2B accepted; current entry card and exact Sandbox action approval still required | Same admitted job from enabled52; no payment action yet | Pending |
 | 6 / 3B | Planned | 3A, calendar and recovery scope approval | Pending | Pending |
 | 7 / 3C | Planned | 3B, SMS recipient/consent/send approval | Pending | Pending |
 | 8 / 3D | Planned | 3C, change/cancel/recovery test approval | Pending | Pending |

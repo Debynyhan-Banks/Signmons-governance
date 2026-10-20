@@ -1,6 +1,12 @@
 # Signmons Release A pilot — daily delivery plan v1
 
-## Current: P06 baseline v1 approved — R01 locally complete
+## Current accepted progress on October 19
+
+**P01–P06 accepted: 6/60 packages (10% of this remaining-work baseline); 54 not yet accepted.** P06 closed when the owner accepted enabled52’s verified job and closeout with “Accept 2B and its closeout”. [Evidence](../signmons-backend-r08-recovery/evidence/APP-013/p06-r11-enabled52-live-result-20261019.md). Walkthrough 4/8 accepted; next P07/P08 within 3A. [Full measurement and scope limits](MVP_COMPLETION_MEASUREMENT_2026-10-19.md); [current tracker](PROGRESS_TRACKER.md).
+
+This baseline covers remaining Release A work, including reused components, and does not measure all software already built or equal effort units. Current full-pilot matrix: 0/13 recorded fully accepted rows. No current completion date or focused-effort percentage is established. Earlier forecasts below are historical and withdrawn as current estimates. Package IDs, exits, total60 and ticket order remain unchanged. No scope deviation.
+
+## Historical P06 preparation checkpoint
 
 Owner approved P06 baseline v1 (12 fixed tasks). R01 local synthetic migration rehearsal is complete: real Prisma7.10 old13→all26 upgrade, preserved fictional rows, catalog parity, no-op replay, constraints/immutability and deliberate lock-timeout stop/cleanup passed. See backend evidence/APP-013/p06-migration-upgrade-rehearsal.md. Closed R01; open R02–R12 (11 tasks), no added tasks. Next R02 is target/consumer/recovery qualification, not migration execution. R05 secure injection remains an explicit unresolved design. Accepted 5/60 (8.3%), walkthrough 3/8 (37.5%), P06 unaccepted; ETA unvalidated. No staging/cloud/provider action or scope deviation.
 
@@ -10,7 +16,7 @@ Prepared 2026-09-13 at owner request for a finite, trackable MVP plan before mor
 
 ## Goal and boundary
 
-Current reconciliation: owner explicitly reviewed P03 and P05; P01–P05 are locally accepted, 5/60 (8.3%), 55 packages remain. Walkthrough 3/8 is unchanged. Approved Google correction-sequence repair is bounded rework within 2B, not P61. See APP013_GOOGLE_CORRECTION_CARD.md. The five-package timing audit replaces the original primary forecast with a low-confidence 4–8 weeks remaining at 25–30 collaborative hours/week, plus external waits. Rough seven-hour elapsed span across initial five packages includes reused work and unclassified gaps, not focused effort; no linear guarantee. Update again at ten accepted packages. Historical counts below describe their checkpoints only.
+Historical five-package reconciliation: owner explicitly reviewed P03 and P05; P01–P05 are locally accepted, 5/60 (8.3%), 55 packages remain. Walkthrough 3/8 is unchanged. Approved Google correction-sequence repair is bounded rework within 2B, not P61. See APP013_GOOGLE_CORRECTION_CARD.md. The five-package timing audit replaces the original primary forecast with a low-confidence 4–8 weeks remaining at 25–30 collaborative hours/week, plus external waits. Rough seven-hour elapsed span across initial five packages includes reused work and unclassified gaps, not focused effort; no linear guarantee. Update again at ten accepted packages. Historical counts below describe their checkpoints only.
 
 Goal: owner-operated Eternity intelligence pilot meeting MVP_ACCEPTANCE_MATRIX.md and SIGNMONS_INTELLIGENCE_SPEC.md, including web, ordinary SMS, voice, approved knowledge/rules/behavior/memory, payment/booking/notifications, technician outcome, evaluation and safe operations. This is Release A, not public commercial availability. INTELLIGENCE_MVP_ROADMAP.md separately requires commercial onboarding/admin, subscriptions/entitlements, support/security/restore/offer gates and Money/Growth work for Release B; those are NOT silently declared done or covered by the dates below. No training, marketing, new provider or Eternity website work.
 
@@ -37,7 +43,7 @@ Every implementation package includes the affected unit/database/security tests,
 
 Before starting a row, refresh source, record exact files/interfaces, acceptance mapping, test commands, dependencies and exclusions in its existing ticket/card. If the row cannot fit a day, report a revised effort estimate before proceeding; do not call part of it Done. Splitting requires versioned child IDs and a reviewed forecast delta, with the parent's original finish line retained. Do not invent a new package to hide an unfinished one.
 
-Status: P = planned, A = active, B = blocked, R = review-ready, D = accepted package. All 60 start P because this is a ledger of REMAINING work. Each status update records source/commit, proof, reviewer/date, actual focused days and blocked days. Reuse of existing code does not reset earlier acceptance. No package is D merely because a helper or test exists.
+Status: P = planned, A = active, B = blocked, R = review-ready, D = accepted package. At baseline creation all 60 started P because this is a ledger of REMAINING work; the current table records later acceptance. Each status update records source/commit, proof, reviewer/date, actual focused days and blocked days. Reuse of existing code does not reset earlier acceptance. No package is D merely because a helper or test exists.
 
 ## Finite remaining ledger
 
@@ -50,8 +56,8 @@ Dependency: each row follows the preceding row by default; ticket acceptance gat
 | P03 | APP-013 / 2B proof | Current phone/address/county evaluation reaches the transaction with revision/expiry checks and no prohibited durable provider payload | D |
 | P04 | APP-013 / 2B one job | Explicit customer submit atomically creates one eligible STANDARD job; audit rollback, duplicate and changed replay tests pass | D |
 | P05 | APP-013 / 2B customer flow | Existing UI shows correction, exception, restart and truthful created/not-booked states; desktop/mobile journey passes | D |
-| P06 | APP-013 / 2B live acceptance | Separately authorized release/run packet produces one real verified test job and closes identities/caps; owner accepts 2B | P |
-| P07 | APP-013 / 3A payment wiring | Same admitted job opens Sandbox Checkout; missing policy/foreign payment/redirect-only success refuse | P |
+| P06 | APP-013 / 2B live acceptance | Separately authorized release/run packet produces one real verified test job and closes identities/caps; owner accepts 2B | D |
+| P07 | APP-013 / 3A payment wiring | Same admitted job opens Sandbox Checkout; missing policy/foreign payment/redirect-only success refuse | R |
 | P08 | APP-013 / 3A acceptance | Authorized Sandbox webhook and duplicate/late-event tests establish correct same-job payment; owner accepts 3A | P |
 | P09 | APP-013 / 3B integration | Paid job and current slot connect to existing Calendar journal/finalization; race and interrupted-write tests pass | P |
 | P10 | APP-013 / 3B acceptance | Approved test calendar shows one appointment; uncertain recovery/readback demonstrated; owner accepts 3B | P |
