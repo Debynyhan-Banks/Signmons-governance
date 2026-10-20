@@ -1,5 +1,17 @@
 # Session Handoff
 
+## October 20 — finite R1 remaining-work ledger v1 complete
+
+**Section/status:** owner-requested planning only. `MVP_R1_FINITE_WORK_LEDGER_20261020.md` fixes 27 remaining outcome packages with source/evidence, existing ticket and legacy-package mapping, dependency/readiness, observable acceptance, relative size/confidence, test profiles and acceptance-record fields. No new capability, ticket criterion, walkthrough section or executable queue is introduced.
+
+**Completed:** mapped all twelve amended APP-013 criteria, the narrowed APP-017/018/019/015/033 sets, unchanged APP-016 integrity, existing dispatch/mobile reuse and missing completion documentation. Commercial gaps absent from the old pilot ledger are explicit: basic quote/invoice/allocation/receipt, actual collections, fixed subscription/admin, guided activation, privacy/export/closure, support and representative restore. Final connected completion/payment proof is separate from the 3D cancelled journey. Accepted foundations stay outside the new remaining-work numerator; no feature deferral produces acceptance credit.
+
+**Remaining/blocker and owner:** every R1-W row is Open. Current row R1-W01 remains inside APP-013/3A; implementer/account owner must resolve current readiness/qualified external-operation gates, then demonstrate authentic same-job Sandbox payment and closeout for owner acceptance. Full section cards and applicable external approvals remain required before implementation. R1-W14–R1-W27 are unsequenced release dependencies; commercial-tail placement is not approved by this ledger.
+
+**Next observable result:** accepted R1-W01 payment outcome with exact source/environment/evidence/reviewer/date, then synchronized ledger/tracker status. The new count is 0/27 newly closed remaining packages, not an overall build percentage or 27-day estimate. Existing progress is separately **6/60 original packages, 4/8 walkthrough milestones and 0/13 full-intelligence rows**, unchanged. No code, provider, deployment, charge, migration, merge or customer action occurred. **No scope deviation.**
+
+**Validation:** frozen-baseline/cross-repository consistency, 25 safeguard regressions, backend governance baseline/architecture, whitespace and 27-row/link/unchanged-source structural checks pass. These are planning checks; no earlier runtime test is presented as newly run acceptance.
+
 ## October 20 — exact core MVP amendment adopted; pricing and completion boundaries clarified
 
 **Section/status:** owner explicitly approved the exact amendment after receiving the scope record and proposed diff. This is governance adoption and read-only source inspection; APP-013/3A remains the sole active execution section. No ticket or customer capability was accepted by downsizing.

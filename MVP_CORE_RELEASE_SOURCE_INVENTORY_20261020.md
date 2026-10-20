@@ -1,5 +1,7 @@
 # Core MVP source/evidence inventory — October 20, 2026
 
+**Subsequent planning result:** the owner-requested `MVP_R1_FINITE_WORK_LEDGER_20261020.md` now establishes 27 fixed remaining outcome packages, with zero newly closed at baseline. This inventory supplies its source/evidence map; the measurement snapshot below explains why neither an overall engineering percentage nor a launch date follows from existing acceptance counts. Existing accepted foundations are preserved without recounting them as new progress.
+
 ## Boundary and method
 
 The owner approved the exact core-release amendment preserved at governance `7ed300a1d4f50a9a53500db405c3290130bd43cf`; see `MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md`. This is a bounded read-only inventory against backend `c426c319c240879dfb7c7ebf2f5aabfa5161c9d7`, using current source and saved acceptance evidence. No application implementation, new runtime tests, provider calls or release/customer acceptance occurred in this audit. Source presence, local tests, historical staging acceptance and current integrated owner acceptance are distinct.

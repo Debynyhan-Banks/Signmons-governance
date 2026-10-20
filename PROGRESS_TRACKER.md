@@ -1,6 +1,14 @@
 # Signmons progress tracker
 
-## October 20 — smaller commercial MVP amendment adopted; source inventory complete
+## October 20 — finite R1 remaining-work ledger v1 established
+
+The owner-requested [R1 work ledger](MVP_R1_FINITE_WORK_LEDGER_20261020.md) contains **27 fixed remaining outcome packages; 0 newly closed since this baseline**. Existing accepted foundations are carried forward outside that new numerator. These are unequal work packages, not days or an overall product-build percentage; deferring a feature gives no completion credit.
+
+**Current row:** R1-W01, within existing APP-013/3A: authentic Sandbox payment clears the admitted job's gate, with failure/replay proof, verified closeout and owner acceptance. P07 is locally implemented/built, while current readiness/provider/environment and 3A acceptance gates remain open. No consumed operation or window is renewed. Implementer owns preparation/evidence; account owner approves applicable external actions; Debynyhan Banks accepts the outcome.
+
+The ledger maps the unchanged core queue, all adopted ticket criteria, source gaps, reusable evidence, dependencies, relative size/confidence and test profiles. R1-W14–R1-W27 remain unsequenced commercial dependencies, not promoted tickets. Basic Money, collections, subscription activation, completion documentation and operating readiness are explicitly counted; advanced deferred features are excluded. Existing **6/60, 4/8 and 0/13** measures remain separate and unchanged. **No scope deviation.**
+
+## Prior October 20 checkpoint — smaller commercial MVP amendment adopted; source inventory complete
 
 Owner approved and the implementer adopted the exact narrow Revenue Integrity Dispatch amendment: small service/repair cohort, Founding Partner/Starter path, basic phone/bounded web/SMS, required booking fee/deposit then approved final balance, guided setup, online-only field use and manual dispatch. QuickBooks and an existing FSM are not required now. The [scope-change record](MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md), immutable approved diff and archived prior scope preserve requirement/evidence traceability. Existing original safeguards are supplemented by the narrowly pinned amendment, not reset.
 
@@ -19,7 +27,8 @@ This is the concise progress view requested by the owner. The [acceptance ledger
 | Original Release A remaining-work baseline | **6/60 packages, 10%; 54 original rows remain** | Preserve historical mapping; not commercial R1 completion |
 | Customer walkthrough | **4/8 milestones, 50%; 4 remain** | 3A Sandbox payment on the existing job |
 | Original full-intelligence pilot matrix | **0/13 rows recorded fully accepted** | Preserved broader/later-scope ledger; not R1 denominator |
-| New commercial R1 | **Not yet baselined** | Source inventory complete; size remaining work and review finite acceptance mapping |
+| R1 remaining-work ledger v1 | **0/27 newly closed packages** | R1-W01 / existing 3A; fixed remaining-work count, not total software completion |
+| Overall commercial R1 engineering completion | **No defensible effort percentage established** | Packages have unequal size; do not relabel 0/27 or 4/8 as whole-MVP build percentage |
 
 The package baseline starts from September’s remaining work and excludes earlier accepted foundations. Packages differ in size; **10% is accepted-plan progress, not the percentage of all code built or effort completed**. Existing code and component evidence are preserved. No defensible total engineering percentage or current completion date is established. Commercial Release B is separately scoped.
 
