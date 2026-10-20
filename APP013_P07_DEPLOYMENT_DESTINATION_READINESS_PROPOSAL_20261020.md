@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 deployment, destination and read-path readiness proposal
 
-Status: **prepared for owner review; not authorized for execution**. Proposed attended window: **October 20, 2026, 9:00–10:45 a.m. Eastern**, with the operation starting strictly before **9:15 a.m.**, readiness work ending by **10:15 a.m.**, mandatory containment by **10:35 a.m.** and support through **10:45 a.m.** An approval received after the start cutoff does not authorize a late run. There is no retry.
+Status: **owner-approved, consumed and stopped during initial preflight before mutation; mandatory containment verified**. The attended window was **October 20, 2026, 9:00–10:45 a.m. Eastern**. The controller reserved at 9:00:00 a.m. and returned `P07_STOP_COMMAND_FAILED` with `possibleMutation:false`. Independent Cloud and database readbacks verified no provider/runtime mutation and a closed zero-session child role. There is no retry. See backend `evidence/APP-013/p07-readiness-operation-stop-20261020.md`.
 
 Plan `934d510d-05f8-4e11-83a4-e627eba95ee3`; packet `4c8df84a-b5da-49cd-b0bc-e31d92aa062f`; proposed operation `97924cc2-e6b8-4ced-bb97-60ba24ea3d88`.
 

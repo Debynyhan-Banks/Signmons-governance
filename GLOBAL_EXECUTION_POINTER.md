@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 20 — P07 readiness preflight stopped and contained
+
+APP-013/3A remains active. Owner-approved operation `97924cc2-e6b8-4ced-bb97-60ba24ea3d88` reserved at 9:00:00 a.m. Eastern and stopped during initial preflight with `possibleMutation:false`. It did not reach Stripe destination creation, a new secret version, child-role opening/read or Cloud Run deployment. Independent Cloud readback verified normal traffic remains 100% on `app013dbrot2`, the target revision/tag are absent and prior numeric secret versions are unchanged. Hidden-input database closeout readback verified `p06_intake_runtime` was already `NOLOGIN`, limit zero, expired and zero sessions; it made no change.
+
+The consumed controller cleared the authenticated environment used by Cloud commands. Fix and test that defect and categorized closeout behavior before preparing a fresh hash-bound package/proposal; do not replay this operation. P08 remains unauthorized. Evidence: backend `evidence/APP-013/p07-readiness-operation-stop-20261020.md`. Accepted progress remains **6/60 packages, 4/8 walkthrough milestones and 0/13 full pilot rows**. **No scope deviation.**
+
 ## October 20 — P07 readiness operation prepared; owner decision pending
 
 APP-013/3A remains active. The concrete no-retry readiness proposal is `APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020.md`. It binds backend `cec8216`, governance `596b3c7`, immutable image digest `sha256:a88e64566133b9e734d245a928d0ade10b5064ff76d8e4fc712a4e3def3f0191`, retained job `9180bef4-561d-47a0-869f-925e6a3dfd96`, one zero-normal-traffic revision/tag, one disabled connected-accounts destination with the exact six-event set, one new numeric signing-secret version and one bounded exact-job read/role-close lifecycle.

@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 20 — P07 readiness preflight stopped; no mutation and containment verified
+
+APP-013/3A remains sole Now. Approved operation `97924cc2-e6b8-4ced-bb97-60ba24ea3d88` is consumed after `P07_STOP_COMMAND_FAILED` in initial preflight. Saved state records `possibleMutation:false`; Stripe destination, secret-version, child-role/read and deployment stages were not reached. Independent Cloud readback verified normal traffic unchanged, proposed revision/tag absent and prior secret versions unchanged. Hidden-input database closeout readback verified the runtime role already closed with zero sessions and made no change.
+
+The controller cleared the authenticated environment used by Cloud commands; correct and locally test that defect plus categorized closeout behavior before preparing a new hash-bound package/proposal. No replay. P08 remains unauthorized. Evidence: backend `evidence/APP-013/p07-readiness-operation-stop-20261020.md`. Progress remains **6/60, 4/8 and 0/13**. **No scope deviation.**
+
 ## October 20 — P07 deployment/destination/read-path proposal ready
 
 APP-013/3A remains sole Now. `APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020.md` is the concrete next decision: exact digest at 0% traffic, one disabled Sandbox connected-accounts destination and numeric signing-secret version, one exact-job read-only transaction under a bounded child-role window, and mandatory closeout. The proposed window is 9:00–10:45 a.m. Eastern with a strict 9:15 start cutoff and no retry. It requests USD 1 Cloud allowance plus at most one active secret version up to USD 0.06/month above free tier.
