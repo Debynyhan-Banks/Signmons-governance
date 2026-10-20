@@ -1,5 +1,17 @@
 # Session Handoff
 
+## October 20 — bounded build-controller correction completed locally
+
+**Section/status:** R1-W01 / APP-013/3A/P07. Owner explicitly approved the six local corrections before implementation. Implemented and locally tested; no Cloud build, deployment, runtime provisioning, payment demonstration or customer acceptance.
+
+**Completed:** all six corrections/eight finite card tasks in the fresh private controller/test seams; exact external approval envelope, durable exclusive attempt, clock/deadline guards, signal/finally cleanup, persistence truth and bounded cleanup-only recovery. Root independently passed 45/45 local methods, including original eight, real process race, ten child signal combinations, every-stage timeouts, provenance/permission/path/refusal and recovery. Syntax/preservation/disabled binding pass. Evidence: backend `evidence/APP-013/p07-repaired-build-preparation-review-20261020.md`; corrected controller SHA `00859bcef49739b7a891fc7cd2e993a18833e29ab79eabe6ad40f29251ba0eb0`.
+
+**Remaining/blocker and owner:** fresh build-only operation is proposed for October 20, 6:00–6:45 p.m. Eastern (submit before 6:15, cleanup through 7:00), with exact conditional hash/allowance/actions in `APP013_P07_REPAIRED_IMAGE_BUILD_PROPOSAL_20261020.md`; external decision/binding remains unapproved; later runtime needs the repaired image digest, credential isolation/role/secret/destination decisions and zero-traffic containment. Implementer prepares exact proposals; owner approves applicable external actions and accepts connected 3A. Current plan remains PENDING_OWNER_APPROVAL, preparationOnly=true, approval/window null. No operation markers or launch command. Old packages/hashes remain unchanged.
+
+**Next observable result:** owner decision on the exact prospective build-only proposal, then only under that separate authority one build with exact source/digest evidence and verified temporary-permission removal. P08 and 3A acceptance remain pending.
+
+**Progress:** **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**, unchanged. **No scope deviation from the approved local correction.** No criteria/queue/denominator changes. Current frozen baseline/consistency, all 25 safeguards, backend governance/architecture and both whitespace checks pass. Prior app/database tests are historical, not newly run for this controller change. Separate exact build approval is pending at this checkpoint.
+
 ## October 20 — repaired build review prepared; local guard correction proposed
 
 **Section/status:** R1-W01 / APP-013/3A/P07. Owner said “begin” to exact build/runtime proposal preparation. Review artifacts are prepared and disabled; no controller correction or external action is authorized by that instruction.

@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 — repaired-image preparation and local guard correction proposal
 
-Status: **proposal preparation only; local controller corrections and every external action remain unapproved**. The owner's “begin” authorizes preparing a reviewable proposal, not implementing a newly demonstrated material prerequisite. No executable window is selected. The fresh review copy is disabled; its window and owner approval are null. Do not invoke the consumed controller or turn the copy into an approved operation.
+Status: **owner-approved local correction implemented and verified; packet remains disabled**. Owner explicitly answered “Approve bounded local correction” to the six corrections in this card. Implementation-entry heads: backend `2bf3f5f91faac5538924a5f99e7a4e93279790c5`; governance `1328c2f8a5a928ad05634a1ca87bf7e17af458f3`. The earlier “begin” authorized preparation only; this later decision supplied local correction authority before implementation. Every external action remains unapproved. No executable window is selected. The fresh packet stays disabled with external approval/window null; the local-only approval record cannot authorize a build. Do not invoke the consumed controller.
 
 ## Traceability and inspected source
 
@@ -39,15 +39,15 @@ The specification/source audit inspected the original `controller.py`, `controll
 
 These gaps affect the proposed release operation's authority and containment boundaries. Correcting them is a **new material local prerequisite**, not routine artifact rebinding already approved by “begin.” AGENTS.md therefore requires the explicit local decision below before implementation. This proposal does not retroactively alter the completed old build result or claim its actual cleanup failed.
 
-Alternatives: (1) correct only these existing controller/test seams locally, then review a fresh build operation; (2) retain the repaired source and disabled packet without building until a later decision. Replaying the consumed package or approving the unchanged controller would leave demonstrated gaps in the promised safeguards and is not a recommended launch path. The proposed correction changes neither the customer feature set nor counts/dependencies outside this existing image-readiness path. It adds bounded local safety work; its effort has not yet been measured. Actual owner decision: **pending**.
+Alternatives: (1) correct only these existing controller/test seams locally, then review a fresh build operation; (2) retain the repaired source and disabled packet without building until a later decision. Replaying the consumed package or approving the unchanged controller would leave demonstrated gaps in the promised safeguards and is not a recommended launch path. The correction changes neither the customer feature set nor counts/dependencies outside this existing image-readiness path. It adds bounded local safety work; its effort has not yet been measured. Actual owner decision: **“Approve bounded local correction”**, covering Alternative 1's local work only.
 
-## Finite local correction card — owner decision required
+## Owner-approved finite local correction card
 
 Reuse the existing controller, config, eight tests and receipt/provenance seams **only inside the fresh private review root**. No replacement build service, queue or customer subsystem is proposed. Preserve all original consumed files and both original and repaired source archives.
 
 Expected local files: `controller.py`, `controller_tests.py`, `plan.json`, `README.txt` and the preparation manifest/preservation receipt in that root. The config and source archive remain byte-identical inputs. Backend evidence is limited to `evidence/APP-013/p07-repaired-build-preparation-review-20261020.md`; this proposal and normal governance status references may record actual approved work afterward. No application, UI, schema, migration, dependency or production file changes are included.
 
-Finite implementation checklist, **if approved**:
+Owner-approved finite implementation checklist, **all eight tasks now completed locally**:
 
 1. Make provider-capable execution reject `--now`/injected clocks. Keep no-action checks local and distinguish disabled preparation from executable readiness.
 2. Validate the exact plan/packet/operation, section, owner receipt, source/manifest/controller/config/test hashes, fixed resource/action set, USD allowance and flags. Require retryAllowed=false and deploymentAllowed=false. Bind approval to the final plan digest and prospective ordered UTC window; no self-generated approval or old receipt reuse.
@@ -107,8 +107,18 @@ Runtime provisioning, disabled destination/readiness and zero-normal-traffic dep
 
 ## Exact decision requested and exclusions
 
-Decision requested now: **approve or decline only the finite local controller guard corrections and mocked/isolated tests in this card**. The owner's current authorization is preparation only; no such local correction approval is recorded. A finished corrected packet, prospective window and separate explicit build decision must follow before any provider call.
+Recorded decision: **“Approve bounded local correction”**, approving only the finite local controller guard corrections and mocked/isolated tests in this card. A finished corrected packet, prospective window and separate explicit build decision must follow before any provider call. The private `local-correction-approval.json` records local-only authority and is not an external operation approval.
 
 Excluded now: Cloud/IAM/registry access or mutation, source upload/build, live database or role/credential action, secret access/change, Stripe configuration/event delivery/test/resend, Checkout/card/charge/refund, Firebase activation/token mint, deployment/normal traffic, booking/dispatch, SMS/email/customer contact, production change, UI publication, repository push/merge and paid-test retry. Preparing this file does not approve these exclusions later.
 
-Counts remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. APP-013 stays sole Now, the existing queue and 3A→3B→3C→3D order remain fixed, and no overall MVP percentage is inferred. **Explicit scope-deviation proposal before implementation:** the newly demonstrated local guard prerequisite is unapproved; no retrospective no-deviation claim or new subsystem is introduced.
+Counts remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. APP-013 stays sole Now, the existing queue and 3A→3B→3C→3D order remain fixed, and no overall MVP percentage is inferred. The material local prerequisite was proposed and explicitly approved before implementation. **No scope deviation from that approved local correction.** No new subsystem or external operation is authorized.
+
+## Actual local correction result
+
+Root independently ran the full corrected private test suite: **45/45 methods pass**, retaining the original eight and adding exact guards, two competing processes, ten actual child signal combinations/repeated signals, finite command/stage budgets, historical `.gz` source compatibility, truthful mutation/cleanup/persistence outcomes and cleanup-only recovery. Syntax, source preservation and final disabled binding checks pass. Independent source/packet review found no remaining blocker. All provider transport was mocked; no installed gcloud, Cloud/IAM, database, Stripe, browser, image build, deployment or payment action occurred. Original 97 application and 22 database checks are historical and were not rerun for this controller correction.
+
+Current corrected controller SHA-256: `00859bcef49739b7a891fc7cd2e993a18833e29ab79eabe6ad40f29251ba0eb0`; tests SHA-256: `36f5db7a51d24822213b17107bb61578725211fbc272a8890c486c222e0ab49b`. Current disabled plan SHA-256: `6d0efe7c3860f67edf786ac5a94860c9ceff1e48cac518d13748d3eac86970b4`. Source/config/manifest and all eight old consumed-package file hashes remain unchanged. The historical original-controller/plan hashes above remain provenance, not current corrected bindings.
+
+The current plan is PENDING_OWNER_APPROVAL, preparationOnly=true, allowance PROPOSED_NOT_APPROVED, with ownerDecision/approval/window null. Its no-action check returns PREPARATION_DISABLED / OWNER_APPROVAL_REQUIRED with zero subprocess calls; owner-approval.json, ATTEMPT, STOP, CONSUMED and results are absent. Backend `evidence/APP-013/p07-repaired-build-preparation-review-20261020.md` records the exact result/output/receipt hashes and finite coverage.
+
+Next: owner decision on `APP013_P07_REPAIRED_IMAGE_BUILD_PROPOSAL_20261020.md`, the exact proposed October 20 6:00–6:45 p.m. Eastern build-only operation (submit strictly before 6:15, cleanup through 7:00), followed only later by repaired-image-digest runtime readiness. That separate proposal records a conditional post-approval transformation; the current packet here remains disabled and unchanged. No build/payment launch command or external authority is supplied by this local result. Accepted counts remain unchanged; **no scope deviation from the expressly approved local correction**.
