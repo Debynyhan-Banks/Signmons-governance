@@ -1,0 +1,358 @@
+--- a/SYSTEM_OF_RECORD.md
++++ b/SYSTEM_OF_RECORD.md
+@@ -1,4 +1,8 @@
+ # System Of Record
++
++## Core commercial release amendment — October 20, 2026
++
++The owner-approved R1 boundary is the core commercial Revenue Integrity Dispatch journey defined in MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md. It supersedes earlier intelligence-pilot breadth as an R1 launch prerequisite only; safety, pricing and external-action boundaries remain unchanged. APP-013/3A remains Now and the Next order remains APP-017 -> APP-018 -> APP-019 -> APP-015 -> APP-016 -> APP-033. Each ticket requires full acceptance of its explicitly amended R1 criteria before promotion; no partial completion is implied. Deferred original requirements remain later-release work, not delivered capability. The historical 60-package and 13-row ledgers retain their evidence and counts; neither is silently relabeled a commercial R1 denominator. The original frozen anchor remains pinned with only the exact separately reviewed amendment applied. All older full-intelligence launch-prerequisite statements are superseded for R1 only by this recorded adoption.
+
+ ## Owner-reviewed intelligence dependency alignment (2026-09-12)
+
+--- a/WHAT_SIGNMONS_IS_AND_DOD.md
++++ b/WHAT_SIGNMONS_IS_AND_DOD.md
+@@ -1,4 +1,8 @@
+ # What Signmons Is + Anti-Drift DoD
++
++## Core commercial release amendment — October 20, 2026
++
++The owner-approved R1 boundary is the core commercial Revenue Integrity Dispatch journey defined in MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md. It supersedes earlier intelligence-pilot breadth as an R1 launch prerequisite only; safety, pricing and external-action boundaries remain unchanged. APP-013/3A remains Now and the Next order remains APP-017 -> APP-018 -> APP-019 -> APP-015 -> APP-016 -> APP-033. Each ticket requires full acceptance of its explicitly amended R1 criteria before promotion; no partial completion is implied. Deferred original requirements remain later-release work, not delivered capability. R1 serves small, one-location service/repair teams with guided setup, English, online field use, one calendar, manual dispatch, basic phone/bounded web/SMS, essential communications, simple approved estimates/invoices/payment/receipts and actual-outcome reporting. QBO and an existing FSM are not required. Rich sales/discovery/history/configuration, advanced diagnostics, full pricebook, memberships, costing, inventory, payroll/time export, offline, financing and APP-034 are later scope. Founding Partner/Starter availability must match activated capabilities; Growth/Pro gates and fixed subscription promises are preserved.
+
+ ## Owner-reviewed intelligence dependency alignment (2026-09-12)
+
+--- a/SAAS_SCOPE_DOD.md
++++ b/SAAS_SCOPE_DOD.md
+@@ -1,4 +1,8 @@
+ # Signmons Scope + Definition of Done
++
++## Core commercial release amendment — October 20, 2026
++
++The owner-approved R1 boundary is the core commercial Revenue Integrity Dispatch journey defined in MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md. It supersedes earlier intelligence-pilot breadth as an R1 launch prerequisite only; safety, pricing and external-action boundaries remain unchanged. APP-013/3A remains Now and the Next order remains APP-017 -> APP-018 -> APP-019 -> APP-015 -> APP-016 -> APP-033. Each ticket requires full acceptance of its explicitly amended R1 criteria before promotion; no partial completion is implied. Deferred original requirements remain later-release work, not delivered capability. R1 serves small, one-location service/repair teams with guided setup, English, online field use, one calendar, manual dispatch, basic phone/bounded web/SMS, essential communications, simple approved estimates/invoices/payment/receipts and actual-outcome reporting. QBO and an existing FSM are not required. Rich sales/discovery/history/configuration, advanced diagnostics, full pricebook, memberships, costing, inventory, payroll/time export, offline, financing and APP-034 are later scope. Founding Partner/Starter availability must match activated capabilities; Growth/Pro gates and fixed subscription promises are preserved.
+
+ ## Owner-reviewed intelligence dependency alignment (2026-09-12)
+
+--- a/MVP_BACKLOG.md
++++ b/MVP_BACKLOG.md
+@@ -1,4 +1,8 @@
+ # MVP Backlog
++
++## Core commercial release amendment — October 20, 2026
++
++The owner-approved R1 boundary is the core commercial Revenue Integrity Dispatch journey defined in MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md. It supersedes earlier intelligence-pilot breadth as an R1 launch prerequisite only; safety, pricing and external-action boundaries remain unchanged. APP-013/3A remains Now and the Next order remains APP-017 -> APP-018 -> APP-019 -> APP-015 -> APP-016 -> APP-033. Each ticket requires full acceptance of its explicitly amended R1 criteria before promotion; no partial completion is implied. Deferred original requirements remain later-release work, not delivered capability. R1 serves small, one-location service/repair teams with guided setup, English, online field use, one calendar, manual dispatch, basic phone/bounded web/SMS, essential communications, simple approved estimates/invoices/payment/receipts and actual-outcome reporting. QBO and an existing FSM are not required. Rich sales/discovery/history/configuration, advanced diagnostics, full pricebook, memberships, costing, inventory, payroll/time export, offline, financing and APP-034 are later scope. Founding Partner/Starter availability must match activated capabilities; Growth/Pro gates and fixed subscription promises are preserved.
+
+ ## Approved first-pilot boundary (2026-09-09)
+
+--- a/CALLDESK_MVP_PLAN.md
++++ b/CALLDESK_MVP_PLAN.md
+@@ -1,4 +1,8 @@
+ # CallDesk MVP - Approved Supervised Pilot
++
++## Core commercial release amendment — October 20, 2026
++
++The owner-approved R1 boundary is the core commercial Revenue Integrity Dispatch journey defined in MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md. It supersedes earlier intelligence-pilot breadth as an R1 launch prerequisite only; safety, pricing and external-action boundaries remain unchanged. APP-013/3A remains Now and the Next order remains APP-017 -> APP-018 -> APP-019 -> APP-015 -> APP-016 -> APP-033. Each ticket requires full acceptance of its explicitly amended R1 criteria before promotion; no partial completion is implied. Deferred original requirements remain later-release work, not delivered capability. R1 serves small, one-location service/repair teams with guided setup, English, online field use, one calendar, manual dispatch, basic phone/bounded web/SMS, essential communications, simple approved estimates/invoices/payment/receipts and actual-outcome reporting. QBO and an existing FSM are not required. Rich sales/discovery/history/configuration, advanced diagnostics, full pricebook, memberships, costing, inventory, payroll/time export, offline, financing and APP-034 are later scope. Founding Partner/Starter availability must match activated capabilities; Growth/Pro gates and fixed subscription promises are preserved.
+
+ ## Current scope and execution authority — 2026-09-12
+
+--- a/OFFER_CATALOG.md
++++ b/OFFER_CATALOG.md
+@@ -1,4 +1,8 @@
+ # Offer Catalog
++
++## Core commercial release amendment — October 20, 2026
++
++First commercial availability follows MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md: limited Founding Partner activation and then Starter only when all Starter promises pass. Guided setup, online-only field use, manual dispatch and no QBO/FSM dependency define the initial cohort. Current prices, capacities and package promises below are unchanged; Growth still requires full diagnostic reporting and Pro remains separately gated. Do not imply that early-access activation establishes general availability.
+
+ Purpose: canonical summary of what each plan offers and how upgrade paths are justified.
+
+--- a/TRADES_PLATFORM_COMPLETENESS.md
++++ b/TRADES_PLATFORM_COMPLETENESS.md
+@@ -1,4 +1,8 @@
+ # Trades Platform Completeness Standard
++
++## Core commercial release amendment — October 20, 2026
++
++This is the broader platform roadmap. MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md defines the smaller first commercial release. Operational safety, ownership, support and tested recovery remain R1 obligations; full diagnostics, memberships, costing, inventory, time export, offline, financing, broad migration/integration and APP-034 are not R1 prerequisites. Preserve these later requirements without placing their systems in the core booking/payment path.
+
+ Purpose: define the operational capabilities required for Signmons to become a comprehensive, hard-to-replace platform for trades businesses without drifting into an ERP, payroll processor, lender, or autonomous diagnostic system.
+
+--- a/SIGNMONS_INTELLIGENCE_SPEC.md
++++ b/SIGNMONS_INTELLIGENCE_SPEC.md
+@@ -1,4 +1,8 @@
+ # Signmons Intelligence — owner-reviewed specification
++
++## Core commercial release amendment — October 20, 2026
++
++R1 uses basic phone/bounded web/SMS, short relevant qualification, approved curated business facts, fixed safe greeting, typed authoritative tools, confirmed facts, truthful technician brief and independent critical-failure evaluation. Rich comfort/sales discovery, persona design, broad knowledge-corpus/retrieval tooling, rich cross-channel memory and optimization are deferred under MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md. All authority, safety, privacy, provenance, handoff and verified-outcome boundaries below remain mandatory for every supported R1 path. Historical end-of-file operation directions are not renewed authority.
+
+ Status: owner-reviewed dependency/pilot documentation, 2026-09-12; see INTELLIGENCE_ALIGNMENT_ADOPTION.md. This is not a runtime prompt or permission to start future tickets, deploy or train.
+
+--- a/MVP_ACCEPTANCE_MATRIX.md
++++ b/MVP_ACCEPTANCE_MATRIX.md
+@@ -1,4 +1,8 @@
+ # Intelligence pilot acceptance matrix
++
++## Core commercial release amendment — October 20, 2026
++
++The thirteen rows below remain the preserved full-intelligence pilot acceptance ledger (0/13 recorded fully accepted), not the narrowed commercial R1 launch denominator. MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md maps retained R1 behavior and deferred requirements. Accepted 6/60 historical packages and 4/8 walkthrough milestones are preserved separately. A source-sized R1 ledger must be reviewed before publishing a new denominator; deferral is not acceptance and cannot improve a completion percentage. Full-intelligence rows remain open until their own later evidence and owner acceptance.
+
+ Owner-reviewed integrated pilot requirements, 2026-09-12; status reconciled October 19, 2026. **0/13 rows recorded fully accepted.** Partial/component evidence remains reusable. Fixed walkthrough: **4/8 accepted**, including owner-accepted 2B and closeout; next 3A. Remaining-work plan: **6/60 packages accepted (10%)**, not an engineering-effort percentage. Each row requires code, tests, environment-specific evidence, reviewer and acceptance date before accepted status. See [current measurement](MVP_COMPLETION_MEASUREMENT_2026-10-19.md) and [progress tracker](PROGRESS_TRACKER.md). This status reconciliation adds no criterion or acceptance claim.
+
+--- a/MVP_DAILY_DELIVERY_PLAN.md
++++ b/MVP_DAILY_DELIVERY_PLAN.md
+@@ -1,4 +1,8 @@
+ # Signmons Release A pilot — daily delivery plan v1
++
++## Core commercial release amendment — October 20, 2026
++
++The permanent P01–P60 IDs and recorded 6/60 acceptance are preserved as the original integrated-pilot plan. MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md provides the retained/deferred map for narrowed R1; do not simply remove rows and recalculate progress. Basic Money, collected-revenue reporting, subscriptions/admin and commercial support require explicit source/evidence sizing before the new commercial ledger or an ETA is adopted. The existing eight-milestone walkthrough remains unchanged.
+
+ ## Current accepted progress on October 19
+
+--- a/INTELLIGENCE_MVP_ROADMAP.md
++++ b/INTELLIGENCE_MVP_ROADMAP.md
+@@ -1,22 +1,20 @@
+-# Intelligence MVP roadmap — owner-reviewed dependency order
++# Core commercial MVP and later intelligence roadmap
+
+-Owner-only platform-admin planning is recorded in PLATFORM_ADMIN_OWNER_PLAN.md. Documentation only: no Release A scope, package-count, acceptance or current execution-order change. Commercial-admin implementation remains separately mapped and sized within Release B.
++The exact reviewed amendment is recorded in MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md. Earlier integrated intelligence Release A and commercial Release B labels are retained as historical evidence, not interchangeable with the new R1–R4 scope.
+
+-See INTELLIGENCE_ALIGNMENT_ADOPTION.md for the owner-reviewed correction. Existing APP-013 and its eight-milestone walkthrough are unchanged. Complete its entire required acceptance, including BE-001 residual proof, before advancing.
++## Current execution and acceptance
+
+-| Approved order | Ticket | Reuse and required finish line |
+-| --- | --- | --- |
+-| 1 | APP-017 | Reconcile current organization/payment/coverage controls; versioned tenant rules, fees, fail-closed resolution, immutable snapshots and audited changes |
+-| 2 | APP-018 | Reuse approved organization facts/FAQ and policy registry; versioned brand/comfort behavior, previews, prohibited-claim and refusal tests |
+-| 3 | APP-019 | Reuse customer/property/equipment/job records; authorized history, provenance, corrections and isolation |
+-| 4 | APP-015 | Preserve existing dashboard/failure queue acceptance; add independent eval baseline, review, outcome/version lineage and governed export readiness |
+-| 5 | APP-016 | Reuse accepted APP-011/012 and current scheduling recovery; verify full conflict-safe lifecycle, payment policy, secure links and notification-truth separation |
+-| 6 | APP-033 | Reuse communications and typed tools; shared conversational web/SMS/voice, knowledge, comfort discovery, briefs, human fallback and interrupted-state recovery |
++APP-013/3A remains Now. Next remains APP-017 -> APP-018 -> APP-019 -> APP-015 -> APP-016 -> APP-033. Finish each explicitly amended R1 ticket in order; no ticket is accepted merely because optional scope moved later. BE-001 consent/replay residuals remain inside APP-013. All eight walkthrough sections, existing accepted evidence and APP-016 booking/payment integrity remain unchanged.
+
+-Complete APP-017/018/019 specs are in TICKETS. APP-015/016/033 original acceptance is retained with explicit reviewed integration criteria. BE-001 is retained and consolidated into APP-013; see BE001_DEPENDENCY_REVIEW.md. No ticket is marked implemented or complete by listing it here.
++| Release | Required scope and actual dependencies |
++| --- | --- |
++| R1 Core MVP | Confirmed basic phone/bounded web/SMS intake -> finite server policy and required booking fee/deposit -> reliable booking -> manual dispatch -> completion -> approved final invoice/payment/receipt -> actual outcome/exception report. Guided setup, tenant/role safety, fixed subscriptions, support and recovery remain launch gates. QBO/FSM not required. |
++| R2 Operations | Bounded pricebook/quoting, richer history, review requests and improved communications. Integrations are optional separately justified scope, not an R1 dependency. |
++| R3 Intelligence/Growth | Rich behavior/discovery/retrieval, memberships, advanced reporting and diagnostics when Growth is offered. Governed job costing must precede acquisition-to-profit reporting. |
++| R4 Scale | Offline, inventory/purchasing, time/payroll export, broad integrations, multi-location and migration depth; financing only when justified. |
+
+-Release A is the integrated owner-operated intelligence pilot in MVP_ACCEPTANCE_MATRIX.md. Release B is commercial availability: onboarding/admin, subscriptions/entitlements, support, security, monitoring, restore/recovery and approved offer gates remain mandatory. Reconcile APP-001/002/004/005, APP-014, BE and OPS gaps from evidence, not labels. Money APP-020/021 and Growth APP-024 diagnostic-report requirements are not waived; Starter completion summary is not the full diagnostic product.
++The core queue is not the complete commercial launch list. APP-020 basic estimates/invoices/payment allocations/receipts, APP-014 collections/outcome reporting, BE-006 and OPS commercial gates require finite source/evidence cards and a separately reviewed execution placement after the existing queue; no unreviewed commercial tail is authorized here. Full APP-021 pricebook and APP-024 diagnostics are not R1 prerequisites. Starter promises and Growth/Pro release gates remain as recorded in OFFER_CATALOG.md.
+
+-Release C covers richer equipment sales, predictive/retention workflows, financing and later model optimization through separately scoped approvals. Full pricebook/diagnostics are not forced ahead of basic advisory intake, but priced equipment proposals and paid-plan promises retain their own gates.
++Reuse existing organization/verification/payment/calendar/customer/technician/audit components. Minimum rules, factual greeting, current-job history, critical-failure review and basic channel orchestration remain; the larger original requirements stay deferred in the scope archive and change record. No architecture rewrite, automatic training, provider action, merge or deployment is authorized by this roadmap.
+
+-Six future tickets are not six equal tasks or the complete commercial MVP. Both boards and pointer follow this order; routine progression follows full ticket acceptance, WIP=1 and existing external-action permissions. Do not skip blocked Now or select Later to keep busy.
++Historical progress remains 6/60 packages, 4/8 walkthrough milestones and 0/13 full-intelligence rows, separately. R1 has no accepted percentage or launch date until its evidence inventory and finite ledger are reviewed.
+--- a/TICKETS/APP-013.md
++++ b/TICKETS/APP-013.md
+@@ -1,4 +1,8 @@
+ # APP-013 - Notification Center and Messaging Templates
++
++## Core commercial release amendment — October 20, 2026
++
++This ticket retains twelve explicitly amended R1 criterion positions and all accepted walkthrough evidence. Deferred original requirements are preserved in the scope change/archive; ticket completion means amended R1 scope only, not full communications product availability. Current 3A/3B/3C/3D protected sections and external-action boundaries are unchanged.
+
+ ## October 20 — 3A/P07 readiness operation prepared
+
+@@ -2147,27 +2151,12 @@
+
+ ## In Scope
+
+-- Notification center for owner/dispatcher and technician events.
+-- Messaging template management for customer communications.
+-- Transactional SMS and email templates for customer, technician, dispatcher, and owner communications, selected according to tenant policy, consent, event type, and delivery availability.
+-- Event categories:
+-  - intake created
+-  - urgency escalation
+-  - assignment update
+-  - payment status update
+-  - schedule confirmation/update
+-- Transactional appointment email after the calendar booking is committed:
+-  - ask for and retain the customer email once without repeating captured questions
+-  - confirmed date and Eastern Time arrival window
+-  - appointment reference and concise service type
+-  - private, absolute customer-management link
+-  - add-to-calendar attachment or standards-compliant calendar action
+-  - call/text fallback and private-link warning
+-- One updated customer email after a successful reschedule and one cancellation email after a successful cancellation.
+-- Delivery failure must not roll back a confirmed appointment; it creates an operator-visible failure with a safe retry path.
+-- Customer management credentials must not be copied into analytics, normal application logs or message-preview telemetry.
+-- Delivery status visibility (sent/failed/retry).
+-- SMS consent, STOP/HELP, quiet-hour, duplicate-prevention, provider-status, and safe-retry behavior must use the BE-008 communications foundation.
++- Essential booking confirmation, reschedule and cancellation notices through the supported transactional SMS path, plus owner alerts and existing role-safe technician/workspace events.
++- Fixed safe tenant-branded templates and finite channel/recipient configuration in guided setup; independent consent and clear unsupported/unavailable states.
++- Customer email captured once when supplied, with existing consent and privacy boundaries; basic Money receipt/document delivery remains separately required.
++- Idempotent event/intent processing, provider delivery/failure status, controlled recovery, redacted role-safe history and auditable events; failed delivery never changes booking/payment truth.
++- Private management credentials never enter analytics, ordinary logs or previews. BE-008 consent/STOP/HELP/quiet-hour/replay protections and all unchanged 3A–3D walkthrough requirements remain mandatory.
++- Broad independent event/role/brand customization, exhaustive SMS notification matrix and full appointment-email/calendar-action product remain preserved R2 requirements, not R1 acceptance.
+
+ ## Out of Scope
+
+@@ -2178,14 +2167,14 @@
+ ## Acceptance Criteria (must all pass)
+
+ - [ ] Notification center displays role-appropriate operational events.
+-- [ ] Templates can be managed per tenant policy.
+-- [ ] Transactional SMS and email are independently configurable by permitted event, recipient role, consent state, and tenant brand policy.
+-- [ ] Appointment confirmation, reschedule, cancellation, assignment, technician-status, payment-status, and dispatcher-alert SMS events are idempotent and retain provider delivery/failure status.
++- [ ] Fixed safe templates use approved tenant facts and policy configured during guided setup; a general template editor is not required for R1.
++- [ ] Essential transactional channels and recipients are governed by finite tenant policy with independent channel consent; R1 does not require a general event/role/brand configuration matrix.
++- [ ] Eligible appointment confirmation, reschedule and cancellation notices are idempotent and retain provider delivery/failure status; assignment/technician status and payment/dispatch exceptions are visible through existing role-safe workspace/inbox and required owner alerts without requiring every event as SMS.
+ - [ ] Delivery status and failures are visible.
+-- [ ] A committed eligible appointment sends exactly one branded customer confirmation email with the confirmed window, reference, private management action and calendar action.
+-- [ ] Reschedule sends exactly one updated confirmation; cancellation sends exactly one cancellation notice without an active management action.
++- [ ] A committed eligible appointment creates one logical branded customer confirmation through the approved transactional SMS path with confirmed window, reference and private management action; actual received-text acceptance remains in 3C. Full appointment email and add-to-calendar presentation are deferred to R2.
++- [ ] A successful reschedule or cancellation creates one eligible logical notice through the supported transactional channel; cancellation removes the active management action and does not imply an active booking.
+ - [ ] Customer email is requested once, retained in the conversation/job record and never repeatedly requested after capture.
+-- [ ] Customer email-delivery failure does not undo the job or calendar event and is visible to operations for retry.
++- [ ] Required-channel delivery failure does not undo the job or calendar event, remains visible to its operating owner and supports authorized safe recovery without blind resend; email receipt delivery retains its separate basic Money gate.
+ - [ ] Secure management credentials are absent from analytics, ordinary logs and operator message previews.
+ - [ ] Sensitive data is redacted per role boundaries.
+ - [ ] Notification events are auditable.
+--- a/APP013_REMAINING_EXECUTION_CONTRACT.md
++++ b/APP013_REMAINING_EXECUTION_CONTRACT.md
+@@ -101,6 +101,6 @@
+
+ Every update uses: **section ID; completed checklist items; remaining items; blocker/owner; next observable result; evidence SHA; accepted Y/8**. New tests/commits do not increase acceptance. Update a single current status; historical entries do not override it. Do not present the next internal function as a new section.
+
+-After 3D, reconcile remaining APP-013's twelve criteria, including full role/event SMS coverage, independent SMS/email policy, branded email lifecycle, email failure/retry, private credentials/redaction and audit. The walkthrough does not accept those automatically. MVP_ACCEPTANCE_MATRIX.md remains the full pilot ledger. After full APP-013 acceptance follow the approved queue APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033. Onboarding, technician/dispatcher flow, intelligence/voice, evaluation and operational acceptance remain tracked there, not invented inside 3D. Do not apply stale pre-alignment sales/voice deferrals over the reviewed intelligence scope.
++After 3D, reconcile all twelve explicitly amended R1 APP-013 criteria, including essential eligible notices/owner events, finite policy and independent consent, required-channel delivery/failure recovery, private credentials/redaction and audit. The walkthrough does not accept those automatically. Broad event/role/brand customization and full appointment-email/calendar-action breadth remain R2 requirements preserved by MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md, not accepted or waived safety. After full acceptance of the amended R1 APP-013 ticket, follow the unchanged queue APP-017 → APP-018 → APP-019 → APP-015 → APP-016 → APP-033, each against its explicitly amended R1 criteria. The historical thirteen-row full-intelligence ledger remains separate; richer sales/discovery/history/retrieval/configuration work is deferred as recorded, while basic phone, factual grounding, safety/evaluation, onboarding, dispatch/completion, basic Money and commercial operations remain R1 gates. No new walkthrough section, silent partial ticket completion, commercial-tail queue or release authority is inferred.
+
+ No merge, deployment, migration, IAM/secrets, charges, provider configuration, customer contact, production data changes or training is authorized by this planning correction.
+--- a/TICKETS/APP-017.md
++++ b/TICKETS/APP-017.md
+@@ -1,4 +1,8 @@
+ # APP-017 - Business Rules and Automation Center
++
++## Core commercial release amendment — October 20, 2026
++
++R1 scope follows MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md. Full predecessor acceptance means full acceptance of its explicitly amended R1 ticket, not completion of deferred module breadth. Original deferred requirements remain traceable later-release work. No active ticket promotion, partial Done, new endpoint, provider or release action is authorized here.
+
+ ## Ticket Summary
+ - Ticket ID: `APP-017`
+@@ -10,7 +14,8 @@
+ - Routes/endpoints: map existing screen contracts and proposed typed DTOs in SCREEN_ROUTE_API_MATRIX.md and DATA_CONTRACTS.md before implementation; no invented endpoint is authorized here.
+
+ ## In Scope
+-Tenant-scoped hours, service areas, supported services, urgency, escalation, after-hours, booking/payment requirements, approved service-call fees, dispatch and automation triggers.
++
++Finite tenant-scoped hours, coverage, supported services, urgency/escalation, approved service-call fee/deposit and payment/booking policy. Reuse guided organization setup, immutable policy versions and server enforcement; a general trigger/workflow builder or broad automation center is deferred. Essential existing actions retain prerequisites, idempotency and failure ownership.
+
+ ## Integration Points
+ Reuse existing organization profile/approved FAQ, customer/property/equipment/job, payment, scheduling, consent and audit services as applicable. Start with a requirement-to-code/evidence map; publish typed versioned reads for later intelligence orchestration. Model output is never tenant identity or authorization.
+@@ -22,7 +27,7 @@
+ - [ ] Tenant owner/admin can draft, review and publish immutable rule versions with actor/time, effective state and audit history; unauthorized and cross-tenant changes fail.
+ - [ ] Preview and runtime resolution use the same versioned server policy; absent/inactive/conflicting policy fails closed. Explicitly not-required payment is distinct from missing policy.
+ - [ ] Approved fees preserve amount, currency and policy snapshots through retries and later edits; no model-derived pricing.
+-- [ ] Automation triggers have explicit allowed actions, prerequisites, idempotency and bounded failure/owner handling; preview never executes a side effect.
++- [ ] Essential supported lifecycle actions have explicit allowed operations, prerequisites, idempotency and bounded failure/owner handling; preview never executes a side effect. A general automation-trigger editor is deferred.
+ - [ ] Existing organization/coverage/payment/dispatch services are reused, with gap-to-code mapping and no competing policy source.
+ - [ ] Required backend and affected UI gates pass; operator/customer workflows have accurate pending/error/recovery states and owner-reviewed evidence.
+ - [ ] Complete criterion-to-code/test/evidence/reviewer traceability; no partial Done.
+--- a/TICKETS/APP-018.md
++++ b/TICKETS/APP-018.md
+@@ -1,4 +1,8 @@
+ # APP-018 - Brand Voice and AI Personality
++
++## Core commercial release amendment — October 20, 2026
++
++R1 scope follows MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md. Full predecessor acceptance means full acceptance of its explicitly amended R1 ticket, not completion of deferred module breadth. Original deferred requirements remain traceable later-release work. No active ticket promotion, partial Done, new endpoint, provider or release action is authorized here.
+
+ ## Ticket Summary
+ - Ticket ID: `APP-018`
+@@ -10,7 +14,8 @@
+ - Routes/endpoints: map existing screen contracts and proposed typed DTOs in SCREEN_ROUTE_API_MATRIX.md and DATA_CONTRACTS.md before implementation; no invented endpoint is authorized here.
+
+ ## In Scope
+-Tenant-scoped greeting, tone, communication style, prohibited phrases, escalation/fee/closeout wording, channel verbosity, comfort discovery and ethical objection handling.
++
++Approved factual business greeting, safe fixed tone, prohibited claims and fee/escalation/closeout wording configured through guided setup. Reuse approved business facts and authoritative APP-017 policy. Persona design, broad style/verbosity configuration, comfort discovery and sales-objection methodology are deferred to R3.
+
+ ## Integration Points
+ Reuse existing organization profile/approved FAQ, customer/property/equipment/job, payment, scheduling, consent and audit services as applicable. Start with a requirement-to-code/evidence map; publish typed versioned reads for later intelligence orchestration. Model output is never tenant identity or authorization.
+@@ -19,11 +24,11 @@
+ Server identity/roles own access. Reject cross-tenant, missing authority, stale versions and untrusted policy overrides. Audit privileged changes atomically without private content/secrets. No customer facts pooled for training. Lifecycle/retention and failure ownership must be explicit.
+
+ ## Acceptance Criteria (all required)
+-- [ ] Owner/admin can version, preview, review and activate tenant behavior with audit/revision history; cross-tenant access and stale updates fail.
++- [ ] Owner/admin can review and approve fixed factual greeting/wording through guided setup with audit/version history; cross-tenant access and stale updates fail. A separate personality/behavior designer is deferred.
+ - [ ] All factual fee/availability/policy language resolves from APP-017 and approved sources, never behavior free text as financial authority.
+-- [ ] Approved scenarios cover respectful refusal, price/timing objections, household choice, old equipment without forced replacement and uneven temperature without invented sizing.
++- [ ] Approved basic intake scenarios respect refusal and unknown facts, never pressure equipment replacement or invent prices, diagnosis or sizing; rich comfort-discovery and sales-objection scenarios are deferred.
+ - [ ] Safety escalation interrupts discovery/sales and cannot be suppressed by a brand override; unknown diagnosis/prices/discounts/warranties/financing remain unknown.
+-- [ ] Channel previews have independent assertions for permitted facts, prohibited claims and verbosity; they cannot book, send, charge or create consent.
++- [ ] Supported-channel fixed wording previews have independent assertions for permitted facts and prohibited claims; previews cannot book, send, charge or create consent. Broad per-channel style controls are deferred.
+ - [ ] Required backend and affected UI gates pass; operator/customer workflows have accurate pending/error/recovery states and owner-reviewed evidence.
+ - [ ] Complete criterion-to-code/test/evidence/reviewer traceability; no partial Done.
+
+--- a/TICKETS/APP-019.md
++++ b/TICKETS/APP-019.md
+@@ -1,4 +1,8 @@
+ # APP-019 - Customer Profiles and Service History
++
++## Core commercial release amendment — October 20, 2026
++
++R1 scope follows MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md. Full predecessor acceptance means full acceptance of its explicitly amended R1 ticket, not completion of deferred module breadth. Original deferred requirements remain traceable later-release work. No active ticket promotion, partial Done, new endpoint, provider or release action is authorized here.
+
+ ## Ticket Summary
+ - Ticket ID: `APP-019`
+@@ -10,7 +14,8 @@
+ - Routes/endpoints: map existing screen contracts and proposed typed DTOs in SCREEN_ROUTE_API_MATRIX.md and DATA_CONTRACTS.md before implementation; no invented endpoint is authorized here.
+
+ ## In Scope
+-Tenant-scoped customer/property/equipment, known equipment age, service/communication history, previous jobs and authorized recommendations, preferences, comfort concerns, corrections and source/timestamp metadata.
++
++Minimum tenant-scoped customer/property/job identity, contact and confirmed current-job equipment facts, authorized relevant prior work and communication history. Preserve provenance, confirmed/unknown state, corrections, privacy/retention and technician access. Rich preferences/comfort memory, equipment lifecycle/trends and recommendation history UI are deferred.
+
+ ## Integration Points
+ Reuse existing organization profile/approved FAQ, customer/property/equipment/job, payment, scheduling, consent and audit services as applicable. Start with a requirement-to-code/evidence map; publish typed versioned reads for later intelligence orchestration. Model output is never tenant identity or authorization.
+--- a/TICKETS/APP-015.md
++++ b/TICKETS/APP-015.md
+@@ -1,4 +1,8 @@
+ # APP-015 - AI Quality and Failure Review
++
++## Core commercial release amendment — October 20, 2026
++
++R1 scope follows MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md. Full predecessor acceptance means full acceptance of its explicitly amended R1 ticket, not completion of deferred module breadth. Original deferred requirements remain traceable later-release work. No active ticket promotion, partial Done, new endpoint, provider or release action is authorized here.
+
+ ## Owner-reviewed intelligence integration requirements
+
+@@ -8,9 +12,9 @@
+ - [ ] Prompt/model/policy/knowledge/tool versions and actual booking/payment/technician/job outcomes are linked without treating predictions as outcomes.
+ - [ ] Scenario sets separate synthetic unreviewed examples, development evaluation and held-out tests; related conversations/paraphrases remain in the same split with rights/retention and lineage controls.
+ - [ ] Independent deterministic safety/tenant/payment/tool assertions and human/rubric review block critical failures separately from sales metrics; report sample sizes, latency, costs and uncertainty.
+-- [ ] Privacy-safe governed dataset-export readiness is reviewed; no raw conversation automatically becomes training data and no automatic retraining/promotion occurs.
++- [ ] Privacy and retention of reviewed examples and outcome evidence are verified; no raw conversation automatically becomes training data and no automatic retraining/promotion occurs. Dataset-export tooling/readiness product is deferred.
+
+-Integration: existing audit/communications/customer/job records and quality surfaces. Cross-tenant review/export and leakage tests are mandatory. Preserve original metrics and full ticket DoD; optimization requires later measured evidence and explicit authorization.
++Integration: existing audit/communications/customer/job records and quality surfaces. Cross-tenant review and leakage tests are mandatory. Any existing supported export path must enforce the same boundaries; unavailable export fails closed. These tests do not require a new R1 dataset-export feature. Preserve original metrics and full ticket DoD; optimization requires later measured evidence and explicit authorization.
+
+ ## Ticket Summary
+
+--- a/TICKETS/APP-033.md
++++ b/TICKETS/APP-033.md
+@@ -1,12 +1,16 @@
+ # APP-033 - OpenAI Voice Intake And Booking Orchestration
++
++## Core commercial release amendment — October 20, 2026
++
++R1 scope follows MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md. Full predecessor acceptance means full acceptance of its explicitly amended R1 ticket, not completion of deferred module breadth. Original deferred requirements remain traceable later-release work. No active ticket promotion, partial Done, new endpoint, provider or release action is authorized here.
+
+ ## Owner-reviewed intelligence dependency integration
+
+-Dependencies: full APP-013, APP-017, APP-018, APP-019, APP-015 and APP-016 acceptance plus accepted BE-008; BE-001 residuals must already have closed inside APP-013. Use one governed orchestrator with modular CSR/safety/HVAC/comfort/sales/knowledge/memory/scheduling/payment/handoff/evaluation capabilities, not a giant prompt or speculative micro-agents.
++Dependencies: full APP-013, APP-017, APP-018, APP-019, APP-015 and APP-016 acceptance plus accepted BE-008; BE-001 residuals must already have closed inside APP-013. Use the existing governed composition for basic intake/safety, approved curated facts, minimum authorized job context, scheduling/payment/handoff and independent evaluation. Rich comfort/sales/memory and knowledge-corpus tooling are deferred; no giant prompt or speculative micro-agents.
+
+-- [ ] Supported voice, ordinary conversational SMS and web each have tenant-correct independent acceptance; transactional notification proof does not establish conversational SMS.
+-- [ ] Retrieve only approved versioned tenant knowledge and authorized memory with source/time/applicability; stale/conflicting/missing facts and prompt injection fail safely.
+-- [ ] Relevant comfort discovery and ethical objections follow APP-018, respecting refusal; no invented prices, financing, sizing, diagnosis or availability. Safety interrupts any state.
++- [ ] Basic voice and bounded supported SMS/web intake each have tenant-correct independent acceptance; keyword handling or transactional notification proof alone does not establish intake. Rich shared conversational memory is deferred.
++- [ ] Use only approved curated/versioned business facts and minimum authorized job context with source/time/applicability; stale/conflicting/missing facts and prompt injection fail safely. Broad corpus ingestion/retrieval and deep memory are deferred.
++- [ ] Short relevant service qualification follows amended APP-018 and respects refusal; no invented prices, financing, sizing, diagnosis or availability. Safety interrupts any state. Rich comfort/sales discovery is deferred.
+ - [ ] Typed APP-017/016 tools enforce policy/payment/booking/dispatch truth; interrupted/reconnected/duplicate/delayed conversations preserve identity, state and human ownership.
+ - [ ] Technician brief distinguishes observed/unknown/verified facts; persisted structured outcome links actual tool/job events and APP-015 human review/evaluation with versions and latency/cost telemetry.
+
+End of proposed documentation diff.

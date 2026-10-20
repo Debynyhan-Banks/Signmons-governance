@@ -1,5 +1,17 @@
 # Session Handoff
 
+## October 20 — core commercial MVP direction approved; exact amendment prepared
+
+**Section/status:** documentation-only scope-change preparation. Owner approved all six downsizing decisions and explicitly said QuickBooks/existing FSM are not needed now. APP-013/3A remains the active execution section; no ticket is promoted, closed or accepted by this decision.
+
+**Completed:** `MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md` records the actual owner decision, R1–R4 boundary, retained safety/offer obligations, legacy package mapping, count/effort impact, unmeasured basic Money/reporting/admin gaps and bounded adoption procedure. `MVP_CORE_RELEASE_PROPOSED_DIFF_20261020.patch` is the exact reviewable documentation amendment, not applied changes. It narrows optional communications/intelligence/configuration breadth while retaining all eight walkthrough milestones, twelve APP-013 criterion positions and APP-016 financial/calendar integrity. The proposed amendments retain the current Now/Next order and fixed subscription/Starter/Growth/Pro promises.
+
+**Remaining/blocker and owner:** AGENTS.md requires a dedicated owner-approved change record and old/new protected-text review before rebaselining. The owner approved product direction and proposal preparation, not unseen exact replacements. Debynyhan Banks owns this exact amendment decision; the implementer owns subsequent narrowly pinned adoption, checks and source/evidence sizing. Current protected files, checks, pointer and queue are untouched. No application, runtime, external-provider or release action occurred.
+
+**Next observable result:** review/adopt or decline the linked exact diff; then create the finite source-sized R1 acceptance map without dropping or falsely accepting deferred work. Existing P07 readiness blockers remain separate; no consumed package/window gains renewed authority.
+
+**Progress:** accepted **6/60 packages, 4/8 walkthrough milestones and 0/13 full-intelligence rows**, unchanged and separate. No new commercial denominator, launch date or completion claim. Approved direction recorded; **no scope deviation implemented**.
+
 ## October 20 — APP-034 future attribution scope documented (documentation only)
 
 **Section/status:** APP-034 Acquisition-to-Profit Attribution is recorded under Later only and is not approved for implementation. APP-013 remains the sole Now ticket; the approved Next order remains APP-017 -> APP-018 -> APP-019 -> APP-015 -> APP-016 -> APP-033. WIP=1 and the global execution pointer are unchanged.

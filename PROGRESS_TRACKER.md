@@ -1,5 +1,11 @@
 # Signmons progress tracker
 
+## October 20 — smaller commercial MVP direction approved; exact adoption review next
+
+Owner approved the narrow Revenue Integrity Dispatch release: small service/repair cohort, Founding Partner/Starter path, basic phone/bounded web/SMS, required booking fee/deposit then approved final balance, guided setup, online-only field use and manual dispatch. QuickBooks and an existing FSM are not required now. The concrete [scope-change record](MVP_CORE_RELEASE_SCOPE_CHANGE_20261020.md) and [exact proposed diff](MVP_CORE_RELEASE_PROPOSED_DIFF_20261020.patch) preserve current evidence and show which intelligence/configuration requirements move later.
+
+Direction approval is recorded; exact protected acceptance adoption remains pending review under AGENTS.md. No active criteria, current pointer or queue have changed; APP-013/3A remains active. Accepted measures stay **6/60 packages, 4/8 walkthrough milestones and 0/13 full-intelligence rows**, separately. A commercial R1 denominator and ETA await source/evidence sizing, including basic Money, collections reporting and commercial administration. Owner owns exact amendment review; implementer owns adoption and subsequent gap sizing. No scope deviation implemented.
+
 Updated October 20, 2026, Eastern time. **4 of 8 walkthrough milestones accepted. Three P07 readiness operations stopped before mutation and are contained; a fully audited third repair package and fresh 10:30–11:45 a.m. proposal are ready for owner review.** APP-013 remains the active ticket. Section 2B and its closeout are accepted; P06 is 14/14 complete. These counts do not measure overall MVP completion.
 
 This is the concise progress view requested by the owner. The [acceptance ledger](PAYMENT_BOOKING_TEXT_STEEL_THREAD.md#acceptance-tracker), [execution contract](APP013_REMAINING_EXECUTION_CONTRACT.md) and linked evidence retain the detailed requirements. Keep their status synchronized; preserve the fixed eight milestones and original acceptance criteria.
