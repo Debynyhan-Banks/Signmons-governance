@@ -88,3 +88,8 @@ The old unused image lacks this patch. The fresh source review archive is prepar
 ## October 20 — fresh build preparation review
 
 The repaired-source review packet remains disabled. Owner explicitly approved the finite six-guard correction in `APP013_P07_REPAIRED_BUILD_PREPARATION_PROPOSAL_20261020.md` before implementation; the corrected private controller and 45 local methods now pass, with original artifacts preserved. All eight finite local card tasks are complete. No app fix is reset; build-only external authority/window and later repaired-digest/runtime/credential/destination approval stay separate. Preparation evidence: backend evidence/APP-013/p07-repaired-build-preparation-review-20261020.md. Counts and acceptance criteria remain unchanged.
+
+
+## October 20 — exact repaired image build completed
+
+The separately approved one-build operation completed once: build `9ee7772a-62b1-4a07-86ad-0c3b9daf3032` SUCCESS; exact uploaded archive matched; repaired image digest `sha256:36f887749947c0b01db683482c081ca663534e7ffe597560b24597f3d46be9da` agrees across build/registry. All three temporary permissions were removed/read back absent; separate live source/build/registry/IAM readback passed eight checks with failures[]. Image remains unused; operation is consumed. Backend evidence: evidence/APP-013/p07-repaired-image-build-result-20261020.md. No deployment/runtime/Stripe/payment authority follows. Next is the concrete repaired-digest readiness proposal with explicit credential-isolation/secret/destination/cost/containment decisions. P08/3A and all accepted measures stay unchanged; no scope deviation from the exact approved build.

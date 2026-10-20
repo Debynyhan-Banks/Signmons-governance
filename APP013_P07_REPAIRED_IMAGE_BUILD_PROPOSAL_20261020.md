@@ -1,6 +1,8 @@
 # APP-013 / 3A / P07 — one repaired-image build proposal
 
-Status: **prepared for owner decision; no external build authority**. The owner approved only the completed local controller corrections. “Begin,” local tests and this proposal do not approve Cloud access, spending or execution. The current private plan remains `PENDING_OWNER_APPROVAL`, with null window/approval and no external owner receipt.
+Status: **owner-approved Alternative 1 completed once; `P07_IMAGE_BUILT`; temporary permissions `VERIFIED_ABSENT`; operation consumed**. Owner explicitly answered **“Approve one exact build”** to this operation, its conditional transformation, USD 1 allowance, three temporary memberships, mandatory cleanup and no-retry boundary. Approval at October 20, 21:50:10 UTC bound plan SHA-256 `e8520021bc4f31abd3902623e82bb772b2799a354d39efa8acac64ace51d193c` and detached receipt SHA-256 `3e08516d957b69c165df676effad85d76fc3f32c94b9c2f90b5f1514110992ac`. The one build succeeded, source/image provenance matched and all three temporary memberships were removed and independently read back absent. The repaired image remains unused. No replay or renewed approval of this consumed build is requested.
+
+The reviewed proposal below is preserved as historical decision detail, including its then-prospective window/transformation wording. The actual-result section at the end supplies current execution evidence and supersedes those prospective status statements; no deployment, runtime or payment authority follows from the completed build.
 
 ## Decision and proposed window
 
@@ -79,3 +81,27 @@ Excluded: Cloud Run deployment/tag/traffic change; live database, role or creden
 Runtime remains a later digest-bound dependency: live payment-role/credential isolation choice, numeric database/signing secrets and costs, exact accepted-job readback, Sandbox destination/API bindings and isolated deployment/containment require their own concrete approval. No secret/IAM architecture is selected here. P08/payment and owner acceptance remain separate after readiness.
 
 Implementer owns this exact build/provenance/containment work if approved; Debynyhan Banks owns the build decision, later external decisions and 3A acceptance. Counts remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. Queue, criteria, section order and denominators are unchanged. **No scope deviation from proposal preparation; no external execution is approved or performed by this document.**
+
+## Actual result — October 20, 2026, build and containment complete
+
+The exact approved operation reserved once and started at **22:00:14.842394 UTC**. One submission at **22:00:29.352577 UTC** created build `9ee7772a-62b1-4a07-86ad-0c3b9daf3032`. Terminal `SUCCESS` was observed at **22:04:16.613430 UTC**; exact uploaded-source and build/registry digest verification completed at **22:04:20.182211 UTC**. All three temporary memberships were read back absent at **22:04:26.168708 UTC**; final result at **22:04:26.168857 UTC** records `P07_IMAGE_BUILT`, `VERIFIED_ABSENT`, cleanupAllAbsent=true and persistenceConfirmed=true.
+
+The repaired immutable image is:
+
+`us-east5-docker.pkg.dev/signmons/signmons/signmons-calldesk-backend@sha256:36f887749947c0b01db683482c081ca663534e7ffe597560b24597f3d46be9da`
+
+Uploaded object `source/1792533626.326269-f765af6ec7ff4edcbd652fd3a06998f7.gz` in the exact source bucket, generation `1792533627176523`, was downloaded and verified at **986,100 bytes**, SHA-256 `893432c1de02c8068237711908099d452dd8e18dde6603240007bc61db5ed456`. Build and registry agree on the full image digest above.
+
+An independent authorized readback completed at **22:05:15.902895 UTC** using six actual read commands covering Cloud Build, registry, source content and all three IAM policies. Its eight checks passed, failures=[], mutations=0. This independently confirmed successful exact build/provenance and absent temporary memberships; it was not another build or paid test.
+
+| Actual receipt | SHA-256 |
+| --- | --- |
+| Local final result | `eccd03c1bcb0fe68b286423ad56ab9bbc0ccf25af6caf5c76b35b4efbbf94355` |
+| Operation journal | `5b690e028a2a76952d428694a3154be179f8472e78f40e4b47fabd017d9c18aa` |
+| Independent readback | `91ef910ba0402db107b238389d4ac09928b0ad4432e48395292acffdfd0b67ea` |
+
+Evidence: backend `evidence/APP-013/p07-repaired-image-build-result-20261020.md`. Original eight consumed-package files and bound source/config/manifest inputs remain unchanged. The new ATTEMPT and CONSUMED markers are retained; the plan's literal `APPROVED_UNUSED` status does not override those immutable replay guards. No retry is allowed.
+
+The build ran under the approved USD1 operational allowance; actual invoiced cost remains unverified, and that allowance was not a provider-enforced billing cap. No deployment, database/role/credential action, secret access/change, Stripe/payment, UI publication, customer/booking/message action or repository push/merge occurred. The image remains unused. **No scope deviation from the exact owner-approved build and mandatory containment.**
+
+Next is preparation only of a concrete proposal bound to this digest for runtime readiness, including the unresolved credential-isolation choice, secret/destination bindings/costs and isolated zero-normal-traffic deployment/containment. That operation is not approved or ready for execution. P08 and authentic same-job payment acceptance remain separate. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**.

@@ -1,5 +1,17 @@
 # Session Handoff
 
+## October 20 — exact repaired build and permission closeout completed
+
+**Section/status:** R1-W01 / APP-013/3A/P07. One owner-approved Cloud build/source/digest/containment operation live-demonstrated and consumed. The image is unused; no deployment or customer payment acceptance.
+
+**Completed:** exact reviewed plan/actual receipt bound; one reserved start/submission; build `9ee7772a-62b1-4a07-86ad-0c3b9daf3032` SUCCESS; uploaded source matches 986,100 bytes / `893432c1…ed456`; build/registry digest `sha256:36f887749947c0b01db683482c081ca663534e7ffe597560b24597f3d46be9da`. All three temporary memberships removed/read back absent at 6:04:26 p.m. Eastern. Independent live source/build/registry/all-three IAM readback at 6:05:15 passed eight checks/failures[], zero mutations. Local receipt/preservation review also passed; all old files/bindings preserved. Evidence: backend `evidence/APP-013/p07-repaired-image-build-result-20261020.md`.
+
+**Remaining/blocker and owner:** none for this build/closeout. Runtime role/credential isolation, numeric secret/cost/destination bindings, accepted-job readiness and isolated deployment remain unapproved dependencies; P08 authentic payment and 3A acceptance remain pending. Implementer prepares the digest-bound concrete proposal; owner decides applicable external actions and accepts the connected result. Actual invoice cost remains unverified.
+
+**Next observable result:** a reviewable runtime-readiness proposal bound to this repaired digest, with exact actions/identity/retention/cost/window/containment and explicit credential-isolation choice. No executable runtime command or broader authority exists. Do not replay this consumed build or reuse its window/allowance.
+
+**Progress:** **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**, unchanged. **No scope deviation from the exact approved build.** No criteria/queue/denominator changes or customer acceptance from an image. Current frozen baseline/consistency, all 25 safeguards, backend governance/architecture and both whitespace checks pass; no earlier application/runtime tests are claimed as newly run for this build checkpoint.
+
 ## October 20 — bounded build-controller correction completed locally
 
 **Section/status:** R1-W01 / APP-013/3A/P07. Owner explicitly approved the six local corrections before implementation. Implemented and locally tested; no Cloud build, deployment, runtime provisioning, payment demonstration or customer acceptance.
