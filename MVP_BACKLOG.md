@@ -66,6 +66,7 @@
 - APP-031: Guided tenant onboarding, data migration, reconciliation, export, retention, and account-closure controls (screens and contracts ticket-defined)
 - APP-032: Platform reliability, backup, restore, provider-outage, retry/dead-letter, incident, and operational recovery controls (screens and contracts ticket-defined)
 - APP-033: OpenAI-powered voice intake and booking orchestration over the Twilio communications foundation, including safety, canonical confirmation, payment/booking handoff, human escalation, summaries, latency, and failure recovery (screens and contracts ticket-defined)
+- APP-034: Acquisition-to-Profit Attribution (`SCR-APP-034`) — Later / future governed scope only; not approved for implementation. Depends on BE-007 and the completed/accepted customer, Money/payment, job-costing, and channel foundations specified in `TICKETS/APP-034.md`; must not displace the canonical queue.
 
 Roadmap boundaries, outcome requirements, and sequencing constraints for APP-025 through APP-032 are defined in `TRADES_PLATFORM_COMPLETENESS.md`. These tickets remain future scope and do not displace the active `Now` ticket.
 
@@ -77,7 +78,7 @@ Roadmap boundaries, outcome requirements, and sequencing constraints for APP-025
 - BE-004: Data contract validation and backward compatibility tests
 - BE-005: Observability and audit logs for critical flows
 - BE-006: Subscription entitlements, nonfinancial usage visibility, fixed-plan upgrade signals, and SaaS invoice integrity
-- BE-007: Tenant lead-source reporting pilot for booked/completed attribution
+- BE-007: Tenant-scoped lead-source reporting pilot. Current source inspection confirms created, booked, completed and cancelled job counts; attributed/unattributed counts; lead-to-booking and booked-to-completed ratios; `website_chat`-primarily attribution; UTM source/medium/campaign; and landing-page summaries. It is a foundation, not collected-revenue, profit, or broad-channel reporting.
 - BE-008: Twilio communications foundation: voice routing, inbound/outbound SMS, missed-call text-back, consent and STOP/HELP handling, quiet-hour policy, idempotent delivery, provider status webhooks, safe retry, and provider abstraction
 
 ## Epic E5 - Launch Readiness

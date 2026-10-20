@@ -59,6 +59,7 @@
 - `SCR-APP-031` Reviews and Maintenance-Plan Automation
 - `SCR-APP-032` Accounting Integration and Reconciliation
 - `SCR-APP-033` Diagnostic Templates and Report Quality Review
+- `SCR-APP-034` Acquisition & Profit Attribution (future governed screen; APP-034 Later only, not implementation-approved)
 
 ## Technician Portal
 

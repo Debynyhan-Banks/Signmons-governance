@@ -2666,6 +2666,7 @@ Purpose: single active queue for execution.
 ## Later
 
 - [ ] FE-014 Competitive comparison pages (`SCR-PUB-017`, `SCR-PUB-018`) - paused by owner-approved CallDesk-first focus
+- [ ] APP-034 Acquisition-to-Profit Attribution (`SCR-APP-034`) - future governed scope only; not approved for implementation; depends on BE-007, APP-019, APP-020/APP-012, APP-026, and relevant channel foundations; cannot bypass the canonical queue or be pulled directly into Now
 - Remaining MVP epics in `MVP_BACKLOG.md`
 
 ## Blockers

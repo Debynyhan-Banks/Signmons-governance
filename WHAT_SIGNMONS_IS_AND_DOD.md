@@ -49,6 +49,7 @@ Signmons is one platform with the following governed product modules:
    - tenant-isolated customer, property, equipment, service, payment, and communication history
 6. **Signmons Growth**
    - missed-call recovery, review requests, maintenance-plan renewal workflows, and lead-source attribution
+   - future governed connection from approved acquisition sources to booking, completed work, collected revenue, job profitability, and retention; this is not a generic marketing suite
 7. **Signmons Intelligence**
    - booking, response-time, payment, revenue, dispatch, and AI-quality reporting
 
@@ -74,6 +75,14 @@ Signmons may integrate with an existing CRM/FSM/accounting system at any stage, 
 ## Product North Star
 
 "Get paid before dispatch while maintaining high booking quality and dispatch confidence."
+
+Signmons measures business outcomes, not AI activity alone. The outcome chain is `Lead -> Booked -> Completed -> Paid -> Profitable -> Retained`. Operational AI measures remain useful diagnostics and cannot replace verified business outcomes. Revenue Integrity Dispatch remains the product moat and North Star; acquisition attribution extends the trades operating workflow rather than creating a generic CRM, marketing agency, SEO platform, ad-buying engine, or ERP.
+
+### Growth and acquisition-to-profit boundary
+
+Growth may eventually connect lead attribution across approved website/chat/form, phone/SMS where technically and legally supportable, UTM campaign metadata, referrals, property managers, repeat customers, and manually classified sources to operating and financial outcomes. APP-034 defines this future governed scope only; it is Later and not approved for implementation. The existing BE-007 pilot primarily recognizes `website_chat` and reports job lifecycle counts and ratios, attribution status, UTM source/medium/campaign, and landing pages. It does not yet establish collected revenue, job profit, or broad channel coverage. Collected revenue depends on governed Money/payment records; valid profit attribution depends on APP-026 job-cost data.
+
+Growth explicitly excludes autonomous campaign management or ad-budget changes, generic SEO agency services, full website-builder functionality, social-media management, broad marketing automation unrelated to contractor/customer lifecycle, and ad-platform spend control without explicit owner approval. Signmons does not invent unknown attribution; it remains unattributed. Fixed subscription pricing and all existing billing boundaries remain unchanged.
 
 Supporting outcome: "Move a qualified customer from first contact to documented payment without duplicate data entry or unanswered ownership."
 

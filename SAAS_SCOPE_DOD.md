@@ -40,6 +40,12 @@ Signmons is a multi-tenant AI front-office and dispatch SaaS for home-service bu
 - Guided onboarding, import, reconciliation, export, retention, and account-closure controls
 - Backup, restore, retry/dead-letter, provider-outage, and incident-recovery controls
 
+### Future Signmons Growth outcome reporting boundary
+
+Signmons Growth may eventually join approved lead-source attribution to the contractor's operating and financial lifecycle through booking, completed work, collected customer payments, job profitability, and retention. APP-034 is a Later-only governed capability, not implementation approval, and cannot displace the canonical execution queue. The current BE-007 pilot primarily supports `website_chat` attribution and created/booked/completed/cancelled job counts, attributed/unattributed counts, conversion ratios, UTM source/medium/campaign, and landing-page summaries; it does not yet report collected revenue or profit. Money/payment records are required for collected-revenue reporting and APP-026 job-cost records are required before true profit attribution.
+
+Growth remains a trades-workflow capability, not a generic marketing platform. Autonomous campaigns or budget changes, generic SEO agency services, full website building, social-media management, broad unrelated marketing automation, and ad-spend control without explicit owner approval are excluded. Spend inputs, if later approved, are manual or through approved adapters; no autonomous purchase or budget manipulation is permitted. No change is made to fixed subscription pricing or billable-event policy.
+
 ## 3) Out of Scope (MVP)
 
 - Advanced route optimization and full fleet management

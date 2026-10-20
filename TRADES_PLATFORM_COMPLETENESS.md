@@ -64,6 +64,32 @@ This promise extends the Revenue Integrity Dispatch differentiator. Feature coun
 - The workflow identifies and qualifies the request, screens safety/urgency, confirms critical facts, and hands off to canonical SMS, scheduling, payment, dispatch, or a human.
 - Model/provider failure, silence, interruption, dropped calls, unsupported requests, emergencies, and transfer failures preserve recoverable state and visible ownership.
 
+### APP-034 Acquisition-to-Profit Attribution — Later only
+
+**Status:** Future governed scope; not approved for implementation. APP-034 must not displace APP-013 or the owner-approved Next sequence. It cannot be promoted until its dependencies have completed their own acceptance and the canonical pointer/board explicitly advances it.
+
+**Purpose:** Extend Signmons Growth from lead-source reporting into auditable operating and financial outcomes: `Lead -> qualified opportunity -> booking -> completed job -> collected revenue -> job profitability -> retention`. This protects Revenue Integrity Dispatch by showing which sources produce completed, paid, profitable, retained trade work; it is not a generic marketing suite.
+
+**Dependencies:** BE-007's existing tenant-scoped pilot; APP-019 customer identity and service history; APP-020 estimates, invoices, payments/receipts; APP-026 governed job costs and profitability; and relevant communication/channel foundations. No dependency may be skipped or mocked as accepted. Current BE-007 primarily recognizes `website_chat`; it counts created/booked/completed/cancelled jobs and attributed/unattributed outcomes, computes lead-to-booking and booked-to-completed ratios, and groups by UTM source/medium/campaign and landing page. It does not report collected revenue, job profit, full channel coverage, customer retention, or broad campaign performance.
+
+**Future acceptance boundary:**
+
+- Every report and attribution correction is tenant-scoped; cross-tenant access is denied, and correction actor, time, reason, before/after value, and source remain auditable.
+- A governed source model may include `website_chat`, `web_form`, `phone`, `sms`, `google_business_profile`, `referral`, `property_manager`, `repeat_customer`, `manual`, and `unattributed`. Channels are added only when technically and legally supportable; an unknown source remains unattributed and is never inferred or fabricated.
+- Preserve available `landingPage`, `sourcePage`, `referrerHost`, `utmSource`, `utmMedium`, `utmCampaign`, `utmContent`, `utmTerm`, and approved click identifiers such as `gclid`, `gbraid`, or `wbraid`. Initial acceptance does not require ad-platform integration. First-touch and latest meaningful attribution may be adopted only with explicit, versioned policy and audit semantics.
+- Demonstrate lifecycle lineage across lead/conversation, customer, booking, job, estimate, invoice, and payment using stable, tenant-owned identifiers and idempotent updates; preserve corrections and source provenance.
+- Report quoted estimate value, invoiced value, and collected revenue separately. Failed, partial, refunded, and reversed payments remain distinguishable; estimates are never labeled revenue. Collected revenue requires accepted APP-020 and relevant APP-012 payment records.
+- Report gross profit only after APP-026 provides governed actual-cost inputs and calculation semantics. Missing/incomplete costs are visibly unavailable, never treated as zero. Future calculations may include cost per lead, booking conversion, customer acquisition cost, revenue and collected revenue by source, gross profit by source, ROAS when approved spend data exists, marketing contribution, and repeat-customer rate, each with explicit denominator, time basis, and missing-data handling.
+- Approved spend is manually entered or imported through an explicitly approved adapter. No autonomous purchasing, campaign management, or budget changes; no ad-platform spend control absent explicit owner approval.
+- Analytics expose only the minimum customer information needed. No sensitive customer data appears in campaign/source summaries; retention and deletion follow governed source-record policies.
+- The future tenant screen `SCR-APP-034` is an outcome report for sources, leads, bookings, completed jobs, collected revenue, available gross profit, conversion rates, and unattributed volume. It does not become a campaign-management console, website builder, social tool, SEO agency surface, or broad marketing-automation interface.
+
+**Validation when later authorized:** tenant isolation and role tests; source normalization and unknown-source negatives; correction audit tests; lifecycle lineage, duplicate/replay, partial/refund/reversal, missing-cost and date-boundary tests; privacy output checks; adapter failure/reconciliation tests where adapters are approved; and browser review of loading, empty, error, unavailable-profit, and populated states. Acceptance requires correlated source-to-payment/cost evidence and owner review. This future validation plan grants no present implementation, deployment, billing, provider, or data-use authority.
+
+### Capacity-aware Signmons Intelligence — future recommendation boundary
+
+Future intelligence may use verified Signmons operating data to recommend that an owner or authorized manager review demand against available service capacity, excessive backlog, paid-lead volume, or whether additional technician/truck capacity may be justified. Possible measures include revenue per technician/field hour, average ticket, gross profit per technician (only after APP-026), schedule utilization, callback rate, booking and maintenance conversion, backlog, and repeat-customer rate. Recommendations remain advisory: Signmons does not autonomously hire, purchase, or change advertising budgets. This is a product boundary note, not an implementation ticket or authorization.
+
 ## Additional Trade-Critical Requirements
 
 The following requirements must be decomposed into governed tickets before the affected capability is marketed as complete:

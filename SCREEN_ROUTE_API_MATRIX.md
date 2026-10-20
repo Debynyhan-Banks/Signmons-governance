@@ -44,6 +44,7 @@ Purpose: canonical alignment between screen IDs, frontend routes, and backend AP
 | `SCR-APP-031` | `/app/growth` (planned) | backend app surface | review/maintenance automation API set (ticket-defined) | review/maintenance policy contract (ticket-defined) | APP-022 | planned |
 | `SCR-APP-032` | `/app/integrations/accounting` (planned) | backend app surface | accounting adapter/reconciliation API set (ticket-defined) | accounting adapter contract (ticket-defined) | APP-023 | planned |
 | `SCR-APP-033`, `SCR-TECH-006` | `/app/diagnostics`, `/app/technician` (planned) | backend app surface | diagnostic template, measurement, calculation, approval, version and delivery API set (ticket-defined) | diagnostic report contracts (ticket-defined) | APP-024 | planned |
+| `SCR-APP-034` | `/app/acquisition-profit` (future, planned) | backend app surface | future tenant-scoped acquisition-to-profit API set (ticket-defined; no endpoint currently approved) | APP-034 contract; BE-007, APP-019, APP-020, APP-026 and channel foundations | APP-034 | Later only; not approved for implementation |
 
 ## Customer Integration Pilot
 

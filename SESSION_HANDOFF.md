@@ -1,5 +1,15 @@
 # Session Handoff
 
+## October 20 — APP-034 future attribution scope documented (documentation only)
+
+**Section/status:** APP-034 Acquisition-to-Profit Attribution is recorded under Later only and is not approved for implementation. APP-013 remains the sole Now ticket; the approved Next order remains APP-017 -> APP-018 -> APP-019 -> APP-015 -> APP-016 -> APP-033. WIP=1 and the global execution pointer are unchanged.
+
+**Completed:** Governance docs now describe the existing BE-007 pilot accurately (tenant-scoped job lifecycle counts/ratios, attributed/unattributed counts, UTM source/medium/campaign, landing pages, primarily `website_chat`) and define future source-to-payment/profit/retention boundaries. APP-034 dependencies, future screen `SCR-APP-034`, acceptance/evidence gates, privacy, manual/approved spend, and exclusions are documented. Signmons Growth/Intelligence boundaries preserve Revenue Integrity Dispatch, fixed subscription pricing, recommendation-only capacity guidance, and multi-trade generality. No application code was changed.
+
+**Remaining/blocker:** APP-034 implementation remains blocked by its listed prerequisite tickets and a future explicit canonical promotion. No scope deviation.
+
+**Next observable result:** Completion and acceptance of the existing canonical queue, followed by a separately governed promotion decision if dependencies and owner priorities permit. This docs-only update does not change progress denominators, rerun runtime/security gates, or claim customer acceptance.
+
 ## October 20 — third P07 stop contained; full-path repair 3 approval pending
 
 **Section and status:** APP-013/3A/P07 remains implemented, locally tested and built, but undeployed and not live-demonstrated. The 9:00, 9:30 and 9:45 one-use operations are consumed.
