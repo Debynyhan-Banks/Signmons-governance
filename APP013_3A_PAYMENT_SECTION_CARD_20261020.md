@@ -85,9 +85,9 @@ The owner approved APP013_P07_WEBHOOK_ATOMICITY_REPAIR_PROPOSAL_20261020.md afte
 The old unused image lacks this patch. The fresh source review archive is prepared; see backend evidence/APP-013/p07-atomic-repaired-source-preparation-20261020.md. Fresh image build and live runtime/destination/secret readiness remain separate exact approval gates; P08 and 3A acceptance remain pending. The selected availability is not launch authority. Accepted measures remain 0/27 newly closed R1, 6/60 legacy, 4/8 walkthrough, 0/13 full-intelligence rows; no denominator or criterion changes.
 
 
-## October 20 — fresh build preparation review
+## Historical October 20 — local build preparation review before the later approved build
 
-The repaired-source review packet remains disabled. Owner explicitly approved the finite six-guard correction in `APP013_P07_REPAIRED_BUILD_PREPARATION_PROPOSAL_20261020.md` before implementation; the corrected private controller and 45 local methods now pass, with original artifacts preserved. All eight finite local card tasks are complete. No app fix is reset; build-only external authority/window and later repaired-digest/runtime/credential/destination approval stay separate. Preparation evidence: backend evidence/APP-013/p07-repaired-build-preparation-review-20261020.md. Counts and acceptance criteria remain unchanged.
+At this local checkpoint the repaired-source review packet remained disabled. Owner explicitly approved the finite six-guard correction in `APP013_P07_REPAIRED_BUILD_PREPARATION_PROPOSAL_20261020.md` before implementation; the corrected private controller and 45 local methods now pass, with original artifacts preserved. All eight finite local card tasks are complete. No app fix is reset; build-only external authority/window and later repaired-digest/runtime/credential/destination approval stay separate. Preparation evidence: backend evidence/APP-013/p07-repaired-build-preparation-review-20261020.md. Counts and acceptance criteria remain unchanged.
 
 
 ## October 20 — exact repaired image build completed
