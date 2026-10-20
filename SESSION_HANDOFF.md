@@ -1,5 +1,17 @@
 # Session Handoff
 
+## October 20 — repaired-runtime operation stopped before mutation
+
+**Section and status:** R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Operation `f8aa3170-6ac9-4b09-96d9-cc0b688fae0c` is consumed after one Cloud-preflight stop.
+
+**Completed/evidence:** `P07_STOP_RUNTIME_ENVELOPE_DRIFT`, `possibleMutation:false`, empty mutation sets, proposed role absent/zero sessions and `CONTAINMENT_VERIFIED`; backend `evidence/APP-013/p07-repaired-runtime-readiness-stop-20261020.md`. Read-only Cloud evidence confirms normal traffic preserved.
+
+**Remaining/blocker/owner:** the controller compared the existing normal envelope with the intentionally different approved candidate envelope. Debynyhan Banks decides Alternative 1 in `APP013_P07_RUNTIME_ENVELOPE_PREFLIGHT_CORRECTION_PROPOSAL_20261020.md`; implementer may then make/test only the narrow local correction. No replay or new live authority exists.
+
+**Next observable result:** on local-correction approval, a fresh disabled package that independently validates the preserved normal revision and unchanged candidate envelope; a later window/external approval remains separate.
+
+**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unintended controller-assumption drift disclosed; no external mutation.**
+
 ## October 20 — exact repaired-runtime readiness operation awaiting owner approval
 
 **Section and status:** R1-W01 / APP-013/3A/P07 is implemented, locally tested and built, but not deployed or live-demonstrated. The owner selected today 7:00–8:30 p.m. Eastern with a strict 7:15 start cutoff; that availability is now bound but is not live authority.

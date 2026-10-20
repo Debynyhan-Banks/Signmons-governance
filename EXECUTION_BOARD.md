@@ -1,5 +1,13 @@
 # Signmons Execution Board
 
+## October 20 — P07 preflight stop contained; local correction approval pending
+
+The exact readiness operation is consumed after `P07_STOP_RUNTIME_ENVELOPE_DRIFT` during Cloud preflight. `possibleMutation:false`, empty mutation journal, proposed database role absent/zero sessions and `CONTAINMENT_VERIFIED` prove no readiness resource was created or changed. Normal traffic remains on the preserved revision.
+
+The controller incorrectly compared the existing normal revision's maximum 2/implicit CPU allocation with the approved candidate's maximum 1/explicit request-based CPU envelope. The narrow Alternative 1 proposal separates those validators and retains the candidate limits unchanged. Owner approval or refusal of `APP013_P07_RUNTIME_ENVELOPE_PREFLIGHT_CORRECTION_PROPOSAL_20261020.md` is next. No retry, new package or live action is authorized.
+
+Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unintended drift disclosed.**
+
 ## October 20 — exact P07 operation bound; live decision pending
 
 R1-W01 / APP-013/3A/P07 remains active. The fresh repaired-runtime package is bound to 7:00–8:30 p.m. Eastern today, strict 7:15 start cutoff, with retirement by 7:00 p.m. Eastern October 21. Its 29 focused tests and no-action check pass; live start refuses because the exact owner approval record is absent. No external action, command attempt or allowance has been used.

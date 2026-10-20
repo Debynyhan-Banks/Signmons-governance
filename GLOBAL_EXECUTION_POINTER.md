@@ -1,5 +1,13 @@
 # Global Execution Pointer
 
+## October 20 — P07 readiness stopped before mutation; controller correction decision pending
+
+Approved operation `f8aa3170-6ac9-4b09-96d9-cc0b688fae0c` reserved once at 7:04:26 p.m. Eastern and stopped during `CLOUD_PREFLIGHT` with `P07_STOP_RUNTIME_ENVELOPE_DRIFT`. Receipts report `possibleMutation:false`, empty mutation sets, database role absent/zero sessions and `CONTAINMENT_VERIFIED`. No role, secret, identity, binding, Stripe destination or revision/tag was attempted. The operation is consumed; do not rerun it.
+
+Read-only diagnosis found the controller compared the preserved normal revision's actual maximum 2/implicit CPU allocation with the intentionally stricter approved candidate maximum 1/explicit request-based CPU envelope. `APP013_P07_RUNTIME_ENVELOPE_PREFLIGHT_CORRECTION_PROPOSAL_20261020.md` requests Alternative 1: separate exact normal-revision validation from unchanged candidate validation in a fresh disabled package. Owner decision is next; no local correction or external action is authorized yet.
+
+Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unintended controller-assumption drift disclosed; no external mutation.**
+
 ## October 20 — exact P07 runtime-readiness operation awaiting approval
 
 R1-W01 / APP-013/3A/P07 remains active. Owner selected 7:00–8:30 p.m. Eastern today with a strict 7:15 start cutoff, Terminal/current CHILD administrator password and signed-in Stripe Sandbox available. Fresh plan `139a3a66-ae17-420d-b18e-7075541e457b`, packet `6afbeebc-373b-4ae4-a552-c1a1ab673730` and operation `f8aa3170-6ac9-4b09-96d9-cc0b688fae0c` are bound to that window and retirement by 7:00 p.m. Eastern October 21. The package passes 29 focused tests and no-action verification; live start refuses `P07_REFUSED_OWNER_APPROVAL_INVALID` because availability is not external authority.
