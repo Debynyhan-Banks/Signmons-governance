@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 repaired-digest runtime-readiness proposal
 
-Status: **prepared for owner architecture review; no external action is authorized**. This proposal replaces the expired and consumed `APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020_REPAIR3.md`. It does not reuse any old plan, packet, operation, time window or allowance. An exact no-retry operation package can be prepared only after the owner accepts the recommended isolation design and supplies an attended window.
+Status: **Alternative 1 owner-approved for package preparation; no external action is authorized**. On October 20, 2026, Debynyhan Banks replied **“Approve Alternative 1”** to the exact dedicated-role/secret/identity and 24-hour retirement proposal. This records the material architecture decision before implementation. It does not authorize database, IAM, secret, Stripe, deployment, cost-bearing or cleanup action. This proposal replaces the expired and consumed `APP013_P07_DEPLOYMENT_DESTINATION_READINESS_PROPOSAL_20261020_REPAIR3.md` and does not reuse any old plan, packet, operation, time window or allowance. The exact no-retry operation package still requires an owner-supplied attended window.
 
 ## Requirement traceability and customer workflow
 
@@ -13,13 +13,13 @@ Status: **prepared for owner architecture review; no external action is authoriz
 - Demonstrated missing behavior: no live `p07_payment_runtime` role or credential exists; the repaired image is unused; the connected-accounts destination is absent; exact API/signing-secret binding is unknown; and current same-job payment/calendar absence has not been refreshed.
 - Customer-workflow advance: leave one isolated repaired revision at zero normal traffic with a dedicated least-privilege payment credential, a disabled exact Sandbox destination and verified containment. This enables a later separately approved P08 Checkout/event proof without weakening the accepted P06 intake boundary.
 
-This is a prerequisite inside the existing P07 section. It does not add a feature, acceptance section, ledger row or denominator. **Proposed deviation before implementation:** introduce a dedicated P07 runtime identity and two dedicated P07 secrets instead of reusing the shared P06 child secret and shared runtime identity. Owner approval is required before that architecture is implemented.
+This is a prerequisite inside the existing P07 section. It does not add a feature, acceptance section, ledger row or denominator. **Approved architecture deviation before implementation:** introduce a dedicated P07 runtime identity and two dedicated P07 secrets instead of reusing the shared P06 child secret and shared runtime identity. Only local package preparation follows from this decision; external implementation remains separately approval-gated.
 
 ## Credential-isolation decision
 
 | Alternative | Security and operational effect | Decision status |
 | --- | --- | --- |
-| 1. Dedicated P07 database role, dedicated database secret and dedicated Cloud Run service identity | Keeps the stronger payment credential outside the accepted P06 secret and its existing accessors; lets the candidate receive only the secret access it needs | **Recommended; owner decision pending** |
+| 1. Dedicated P07 database role, dedicated database secret and dedicated Cloud Run service identity | Keeps the stronger payment credential outside the accepted P06 secret and its existing accessors; lets the candidate receive only the secret access it needs | **Owner-approved for package preparation; live action still separate** |
 | 2. New version of the existing P06 child secret with the existing runtime identity | Fewer resources, but every accessor to that secret can reach the stronger payment credential; a numeric version pin does not isolate access | Not recommended |
 | 3. Expand `p06_intake_runtime` or use an administrator credential in the app | Breaks the accepted intake boundary or gives the app excessive authority | Rejected |
 
@@ -125,6 +125,6 @@ No external action, spend, role/credential/secret/IAM change, destination, deplo
 
 ## Decision and next step
 
-Owner decision needed: accept or reject **Alternative 1**, including the proposed dedicated role, database secret, webhook secret, service identity, exact resource-level access and 24-hour retirement boundary. If accepted, the implementer prepares a fresh hash-bound no-action package for a new attended window and presents that finished operation separately before any external action. Debynyhan Banks owns the architecture/external-action decisions and later 3A acceptance; the implementer owns exact preparation, local guard tests, sanitized evidence and mandatory containment.
+Owner decision recorded: **Alternative 1 approved** for the proposed dedicated role, database secret, webhook secret, service identity, exact resource-level access and 24-hour retirement boundary. The owner next supplies one attended Eastern window of at least 90 minutes, with Terminal, the current CHILD administrator password and signed-in Stripe Sandbox access available. Passwords and authentication codes never enter chat. The implementer then prepares a fresh hash-bound no-action package, runs its local guard tests and presents that finished exact operation separately before any external action. Debynyhan Banks owns the later external-action decision and 3A acceptance; the implementer owns exact preparation, sanitized evidence and mandatory containment.
 
-Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. No scope or denominator change is implemented by this proposal.
+Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. The approved architecture decision changes no acceptance count or denominator.
