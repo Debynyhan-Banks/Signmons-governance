@@ -1,5 +1,17 @@
 # Session Handoff
 
+## October 20 — repaired build review prepared; local guard correction proposed
+
+**Section/status:** R1-W01 / APP-013/3A/P07. Owner said “begin” to exact build/runtime proposal preparation. Review artifacts are prepared and disabled; no controller correction or external action is authorized by that instruction.
+
+**Completed:** reconciled clean focused heads; copied exact repaired archive/manifest and unchanged build controller/config/original tests into a fresh private review packet; bound new identities and hashes. No-action refusal passes with zero subprocess/provider calls and no runtime markers. All eight files of the consumed old control package remain hash-identical. Existing application repair/tests remain completed historical evidence, not rerun. Evidence: backend `evidence/APP-013/p07-repaired-build-preparation-review-20261020.md`.
+
+**Remaining/blocker and owner:** six inspected build-controller safety gaps require the bounded local correction in `APP013_P07_REPAIRED_BUILD_PREPARATION_PROPOSAL_20261020.md`. Owner decides this material prerequisite before implementation; implementer then corrects only the fresh controller/tests and binds the finished disabled build-only packet. A fresh external build approval/window and later image-digest-bound runtime/credential/destination/zero-traffic proposal remain separate. No old allowance/window is renewed.
+
+**Next observable result:** after the local decision, original eight mocked cases plus finite refusal/concurrency/termination/recovery guards pass, with truthful cleanup output and no provider action. Only then present the exact new build operation for separate approval. No payment launch command is ready.
+
+**Progress:** **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**, unchanged. **Scope deviation proposal before implementation:** newly demonstrated controller prerequisite is unapproved; no deviation has been implemented. No criteria, queue, section IDs or denominator change. Current preparation validation: frozen baseline/consistency, all 25 safeguard regressions, backend governance/architecture and both whitespace checks pass; no old runtime result is relabeled as newly run.
+
 ## October 20 — approved atomic webhook repair complete locally
 
 **Section/status:** R1-W01 / APP-013/3A/P07. Implemented and locally tested; not cloud-built, deployed, live-demonstrated or owner-accepted as a payment outcome. Owner explicitly approved this bounded repair and the five-minute-hold probe clarification before implementation.
