@@ -1,14 +1,14 @@
 # Session Handoff
 
-## October 20 — P07 startup-credential correction approved; package preparation active
+## October 20 — corrected P07 runtime package prepared and disabled
 
 **Section/status:** R1-W01 / APP-013/3A/P07 remains active. Package preparation stopped before implementation because the production image requires four startup credentials outside the approved three-secret design. The owner-supplied 6:45–8:15 p.m. Eastern block was not bound, attempted or charged.
 
-**Completed:** inspected the exact repaired source and documented the demonstrated `OPENAI_API_KEY`, `ADMIN_API_TOKEN`, `CONVERSATION_DATA_ENCRYPTION_KEY` and `TECHNICIAN_LINK_SECRET` startup requirements. `APP013_P07_STARTUP_CREDENTIAL_CORRECTION_PROPOSAL_20261020.md` compares four alternatives and recommends independent candidate-only secrets, exact environment/secret replacement, numeric pins and 24-hour retirement. No app code, private package, role, secret, IAM, Stripe, deployment or payment state changed.
+**Completed:** owner approved four independent candidate-only startup secrets, exact environment/secret replacement, numeric pins and 24-hour retirement. Fresh private plan `139a3a66-ae17-420d-b18e-7075541e457b`, packet `6afbeebc-373b-4ae4-a552-c1a1ab673730` and operation `f8aa3170-6ac9-4b09-96d9-cc0b688fae0c` pass 27 focused tests and no-action/refusal checks. The package records mutation intent before provider commands and supports cleanup-only recovery. Evidence: backend `evidence/APP-013/p07-repaired-runtime-readiness-preparation-20261020.md`; manifest `da1d1869…a0a7`. No app code, role, secret, IAM, Stripe, deployment or payment state changed.
 
-**Remaining/blocker and owner:** Debynyhan Banks approved the four short-lived startup secrets and their four resource-level bindings. The implementer now prepares/tests a fresh no-action package. A new attended 90-minute block and separate exact live approval remain required; P08 and 3A acceptance remain later gates.
+**Remaining/blocker and owner:** Debynyhan Banks supplies a new attended Eastern block of at least 90 minutes with Terminal, the current CHILD administrator password and signed-in Stripe Sandbox available. The implementer then binds/retests the exact window and presents the finished operation for separate live approval. P08 and 3A acceptance remain later gates.
 
-**Next observable result:** a locally tested disabled package with no live binding, followed by an owner-selected new window and separate exact live review. No executable command exists yet.
+**Next observable result:** owner-selected new window, then exact binding/retest and a complete live proposal. No executable live command exists yet.
 
 **Progress:** **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**, unchanged. **Approved scope deviation before implementation:** four candidate-only startup secrets and exact cleanup bindings; no external implementation.
 

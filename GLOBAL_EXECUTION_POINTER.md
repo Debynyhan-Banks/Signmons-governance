@@ -1,10 +1,12 @@
 # Global Execution Pointer
 
-## October 20 — P07 startup correction approved; disabled package preparation active
+## October 20 — corrected P07 runtime package prepared and disabled
 
 R1-W01 / APP-013/3A/P07 remains active. During exact package preparation, source inspection proved that the production image also requires OpenAI, admin API, conversation-encryption and technician-link credentials at startup. The approved runtime proposal permits only three secret bindings and explicitly makes another secret or broader grant a stop. The owner-supplied 6:45–8:15 p.m. Eastern block was therefore not bound or attempted; no command, allowance or external action was used.
 
-Owner replied “yes i approve” to `APP013_P07_STARTUP_CREDENTIAL_CORRECTION_PROPOSAL_20261020.md`: four independent, candidate-only, short-lived startup secrets with resource-level access and exact environment replacement. Sharing serving-runtime credentials, test-mode deployment and a new application/runtime build remain rejected. The implementer now prepares/tests a fresh disabled package. The owner then supplies a new attended 90-minute block, and the finished live operation remains separately approval-gated.
+Owner replied “yes i approve” to `APP013_P07_STARTUP_CREDENTIAL_CORRECTION_PROPOSAL_20261020.md`. Fresh private plan `139a3a66-ae17-420d-b18e-7075541e457b`, packet `6afbeebc-373b-4ae4-a552-c1a1ab673730` and operation `f8aa3170-6ac9-4b09-96d9-cc0b688fae0c` now bind six candidate-only secret resources, seven resource-level bindings, exact environment replacement and persistent mutation-aware cleanup. Twenty-seven focused tests and the no-action check pass; all live modes refuse without a window/approval. Manifest SHA-256 is `da1d18696aaf40127239a63f1b22ac4a89a6c7677ac81f90b7f6a0004055a0a7`.
+
+Next input: owner supplies a new attended Eastern block of at least 90 minutes with Terminal, the current CHILD administrator password and signed-in Stripe Sandbox available. The implementer then binds exact UTC/retirement times, reruns the package suite and presents the finished operation for separate live approval. No external action, command or allowance has been used.
 
 Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Approved scope deviation before implementation:** four short-lived candidate-only startup secrets and their exact bindings; no external implementation yet.
 
