@@ -1,5 +1,17 @@
 # Session Handoff
 
+## October 20 — repair 2 exact operation awaiting approval
+
+**Section/status:** R1-W01 / APP-013/3A/P07 remains active, built and locally tested, but not deployed/live-demonstrated.
+
+**Completed:** fresh `repair2`, plan `6dbc6811-86d8-4bd1-8c71-1886ccf7edf6`, packet `8d64e774-bc2f-4222-87b8-77727198e4ac` and operation `45ae622a-2cb7-4ab7-ae90-f94d30c9336a` are bound to 7:30–9:00 p.m. Eastern, strict 7:45 cutoff. Thirty-one tests/no-action pass; live start refuses without approval. No attempt/mutation exists.
+
+**Remaining/blocker/owner:** Debynyhan Banks approves or refuses `APP013_P07_REPAIRED_RUNTIME_READINESS_OPERATION_REPAIR2_20261020.md` before 7:45. P08/payment remains separate.
+
+**Next observable result:** after approval, `P07_REPAIRED_RUNTIME_READY_DISABLED` or one named stop with mandatory containment.
+
+**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
+
 ## October 20 — envelope correction locally complete in fresh disabled package
 
 **Section and status:** R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. The prior operation is consumed; fresh `repair2` has no window or live authority.

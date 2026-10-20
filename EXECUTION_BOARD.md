@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 20 — repaired P07 operation bound; decision pending
+
+Package `repair2` is bound to 7:30–9:00 p.m. Eastern with a strict 7:45 start cutoff. Its 31 focused tests/no-action check pass, and live start refuses because exact approval is absent. Proposal `APP013_P07_REPAIRED_RUNTIME_READINESS_OPERATION_REPAIR2_20261020.md` is the next owner decision. No external action, attempt or mutation occurred; P08/payment remains separate.
+
+Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
+
 ## October 20 — P07 envelope correction passes locally; disabled
 
 The owner-approved Alternative 1 correction is complete in fresh package `repair2`. Exact normal-revision validation is separated from unchanged candidate-envelope validation; 31 focused tests and all no-action/refusal checks pass. Fresh plan `6dbc6811-86d8-4bd1-8c71-1886ccf7edf6`, packet `8d64e774-bc2f-4222-87b8-77727198e4ac` and operation `45ae622a-2cb7-4ab7-ae90-f94d30c9336a` have no window or live approval. No external action occurred.

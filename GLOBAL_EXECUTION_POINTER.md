@@ -1,5 +1,13 @@
 # Global Execution Pointer
 
+## October 20 — P07 repair 2 bound to next block; exact approval pending
+
+Fresh plan `6dbc6811-86d8-4bd1-8c71-1886ccf7edf6`, packet `8d64e774-bc2f-4222-87b8-77727198e4ac` and operation `45ae622a-2cb7-4ab7-ae90-f94d30c9336a` are bound to 7:30–9:00 p.m. Eastern, strict 7:45 cutoff, retirement by 7:30 p.m. October 21. Thirty-one focused tests and no-action verification pass; live start refuses without exact approval. No attempt or mutation exists.
+
+Exact proposal: `APP013_P07_REPAIRED_RUNTIME_READINESS_OPERATION_REPAIR2_20261020.md`. Owner approval or refusal is next. The consumed operation remains unusable; P08/payment remains unauthorized.
+
+Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
+
 ## October 20 — P07 envelope correction locally complete; new window required
 
 Owner approved Alternative 1 in `APP013_P07_RUNTIME_ENVELOPE_PREFLIGHT_CORRECTION_PROPOSAL_20261020.md`. Fresh disabled package `/private/tmp/p07-repaired-runtime-readiness-20261020-repair2`, plan `6dbc6811-86d8-4bd1-8c71-1886ccf7edf6`, packet `8d64e774-bc2f-4222-87b8-77727198e4ac` and operation `45ae622a-2cb7-4ab7-ae90-f94d30c9336a` now validate the exact preserved normal revision separately from the unchanged stricter candidate envelope. Thirty-one focused tests, syntax and no-action/refusal checks pass. No window, live approval, attempt or mutation exists.
