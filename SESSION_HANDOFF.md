@@ -6,9 +6,9 @@
 
 **Completed/evidence:** owner-approved repair 3 reserved once, passed Cloud and sanitized Stripe preflight, then returned `P07_STOP_COMMAND_FAILED` at database preflight. `possibleMutation:false`, empty mutation sets, role absent/closed with zero sessions and `CONTAINMENT_VERIFIED`; backend `evidence/APP-013/p07-repaired-runtime-readiness-stop3-20261021.md`.
 
-**Remaining/blocker/owner:** the sanitized command wrapper retained no database error text, so the exact connection/authentication/query cause is unknown. The implementer owns a bounded diagnostic correction proposal; Debynyhan Banks owns any later live diagnostic or readiness approval. No retry authority exists.
+**Remaining/blocker/owner:** local evidence strongly indicates `psql` lacked explicit system-root selection under `verify-full`, but the consumed receipt cannot prove the raw error. Debynyhan Banks approves or refuses Alternative 1 in `APP013_P07_DATABASE_TLS_DIAGNOSTIC_CORRECTION_PROPOSAL_20261021.md` for local correction/testing only. Any later live diagnostic/readiness action remains separate.
 
-**Next observable result:** a reviewable proposal that captures classified, sanitized database failure evidence while preserving credential secrecy and no retry; no live command is ready.
+**Next observable result:** after local-correction approval, a fresh disabled package with `PGSSLROOTCERT=system`, retained `verify-full`, secret-safe fixed failure codes and negative tests; no live command is ready.
 
 **Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unexpected database-preflight stop disclosed; no external mutation.**
 
