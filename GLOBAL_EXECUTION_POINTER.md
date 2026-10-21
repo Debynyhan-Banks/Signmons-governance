@@ -1,6 +1,6 @@
 # Global Execution Pointer
 
-## October 21 — P07 read-only window reduction awaiting decision
+## October 21 — P07 30-minute diagnostic package locally ready and disabled
 
 R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Repair 4 and all prior readiness operations are consumed.
 
@@ -10,9 +10,9 @@ Owner-approved repair 4 reserved once at 7:01 a.m. Eastern, passed exact Cloud a
 
 Owner approved Alternative 1 in `APP013_P07_DATABASE_PREFLIGHT_PREDICATE_DIAGNOSTIC_PROPOSAL_20261021.md` for local correction and testing only. Fresh disabled repair 5, plan `2058551c-6a4f-468b-8a26-f860b754e8db`, packet `e40c598f-f918-425b-8368-c6062cec0d5d` and operation `1b1a983c-40c5-4100-98f5-9d4dd3102803`, now gives a fixed secret-safe code for each identity, role, job, payment, calendar, admission-policy and tenant-account predicate. Thirty-six focused tests, syntax, no-action and all three no-window refusal checks pass. Manifest SHA-256: `17c5fad2837ec01bb590d1607f4dbdaf88ab48ee3f8856fadf27f61279ced6fe`. Evidence: backend `evidence/APP-013/p07-database-preflight-predicate-local-correction-20261021.md`.
 
-The owner requested a narrower process because the mutation-capable 90-minute envelope is disproportionate for a read-only diagnostic. `APP013_P07_READ_ONLY_DIAGNOSTIC_WINDOW_REDUCTION_PROPOSAL_20261021.md` recommends a P07-specific 30-minute window: 10-minute start cutoff, diagnostic by minute 20, verified closeout by minute 25 and containment/support through minute 30. It requires a fresh diagnostic-only controller with no callable mutation path, hidden input, read-only repeatable-read transaction, rollback, sanitized fixed output, no automatic retry and separate live approval.
+The owner approved Alternative 1 in `APP013_P07_READ_ONLY_DIAGNOSTIC_WINDOW_REDUCTION_PROPOSAL_20261021.md` for local preparation/testing. Fresh diagnostic-only package `/private/tmp/p07-read-only-diagnostic-20261021-prep1` uses plan `55d7dc3a-4fe3-4f09-8ada-bcbd7ef3ad02`, packet `3acd1d03-07bf-4007-a399-03ff2d30a9b4` and operation `c15a9092-f421-4c5b-94bd-4e7b158c6595`. Twenty-two focused tests, syntax and no-action verification pass; run and recovery refuse without a bound window. The controller contains no mutation/provider-resource path and requires exact read-only SQL, rollback, fixed sanitized output, no retry and verified zero-session closeout. Manifest SHA-256: `1e5aced9a7aded528bbb60e0402cb65b67bf30bb4cdb5f71706832535788510b`. Evidence: backend `evidence/APP-013/p07-read-only-diagnostic-package-preparation-20261021.md`.
 
-Owner approval or refusal of Alternative 1 for local package preparation/testing is next. No 30- or 90-minute window is bound, and no browser, database, Stripe, Cloud, deployment, payment or customer action is authorized. Repair 5 remains disabled and unchanged. P08, payment and acceptance remain separate. Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Proposed P07-specific process narrowing; not implemented.**
+Next input is a fresh attended 30-minute Eastern window with Terminal, the current CHILD administrator password and signed-in Stripe Sandbox available. The implementer then binds/retests the exact package and presents a separate external diagnostic proposal. No window or browser/database action is authorized now. Repair 5 remains disabled and unchanged. P08, payment and acceptance remain separate. Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved P07-specific narrowing.**
 
 ## October 20 — P07 repair 2 bound to next block; exact approval pending
 

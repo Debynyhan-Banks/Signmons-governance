@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 read-only diagnostic window reduction proposal
 
-Status: **owner decision pending; planning only; no local implementation or external action authorized**.
+Status: **Alternative 1 owner-approved and locally completed; no external action authorized**.
 
 ## Demonstrated process gap
 
@@ -53,4 +53,14 @@ This proposal does not authorize local package implementation, browser or databa
 
 R1-W01 / APP-013/3A/P07 remains active. Repair 5 remains disabled and unchanged. P08 and the authentic same-job Sandbox payment remain separate. Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**.
 
-**Decision requested:** approve or refuse Alternative 1 for the local diagnostic-only package and testing. **Proposed process narrowing; not implemented.**
+**Owner decision:** Debynyhan Banks approved Alternative 1 for local diagnostic-only package preparation and testing. The approval did not authorize browser or database access.
+
+## Local preparation result
+
+Fresh private package `/private/tmp/p07-read-only-diagnostic-20261021-prep1`, plan `55d7dc3a-4fe3-4f09-8ada-bcbd7ef3ad02`, packet `3acd1d03-07bf-4007-a399-03ff2d30a9b4` and operation `c15a9092-f421-4c5b-94bd-4e7b158c6595`, implements the exact 30-minute envelope in a diagnostic-only controller. Its manifest SHA-256 is `1e5aced9a7aded528bbb60e0402cb65b67bf30bb4cdb5f71706832535788510b`.
+
+Twenty-two focused tests, syntax and no-action verification pass. Run and recovery refuse before hidden input because no window is bound. Tests cover timing, live-clock enforcement, exact approval, no retry, every predicate, malformed output, ordering, hidden input, TLS, timeout/interrupt, read-only SQL, rollback, absence of mutation/provider-resource functions, zero-session closeout, closeout-only recovery and private-value non-disclosure.
+
+Backend evidence: `evidence/APP-013/p07-read-only-diagnostic-package-preparation-20261021.md`. No application or external state changed. A fresh attended 30-minute window, binding/retest and separate exact external approval remain required.
+
+Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved P07-specific narrowing.**

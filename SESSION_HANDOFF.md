@@ -1,6 +1,6 @@
 # Session Handoff
 
-## October 21 — read-only diagnostic window reduction proposed
+## October 21 — 30-minute read-only diagnostic package locally ready
 
 **Section/status:** R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Repair 4 and all prior readiness operations are consumed.
 
@@ -18,13 +18,13 @@
 
 **Completed/evidence:** Debynyhan Banks approved Alternative 1 for local correction and testing only. Fresh disabled repair 5, plan `2058551c-6a4f-468b-8a26-f860b754e8db`, packet `e40c598f-f918-425b-8368-c6062cec0d5d` and operation `1b1a983c-40c5-4100-98f5-9d4dd3102803`, implements deterministic secret-safe classification for every approved predicate. Thirty-six focused tests, syntax and no-action verification pass; run, recovery and retirement each refuse `P07_REFUSED_WINDOW_NOT_BOUND`. Manifest SHA-256: `17c5fad2837ec01bb590d1607f4dbdaf88ab48ee3f8856fadf27f61279ced6fe`. Backend: `evidence/APP-013/p07-database-preflight-predicate-local-correction-20261021.md`.
 
-**Completed/planning:** Debynyhan Banks agreed to prepare a narrower read-only diagnostic-window proposal. `APP013_P07_READ_ONLY_DIAGNOSTIC_WINDOW_REDUCTION_PROPOSAL_20261021.md` recommends a P07-specific 30-minute envelope and a fresh diagnostic-only controller with no callable mutation path. It preserves hidden input, exact read-only repeatable-read SQL, rollback, fixed sanitized output, no automatic retry, verified closeout and separate live approval.
+**Completed/evidence:** Debynyhan Banks approved Alternative 1 for local preparation/testing. Fresh diagnostic-only package `/private/tmp/p07-read-only-diagnostic-20261021-prep1`, plan `55d7dc3a-4fe3-4f09-8ada-bcbd7ef3ad02`, packet `3acd1d03-07bf-4007-a399-03ff2d30a9b4` and operation `c15a9092-f421-4c5b-94bd-4e7b158c6595`, passes 22 focused tests, syntax and no-action verification. Run/recovery refuse `P07_DIAGNOSTIC_REFUSED_WINDOW_NOT_BOUND`. It contains no callable mutation/provider-resource path and enforces the exact 30-minute timing, hidden input, read-only repeatable-read SQL, rollback, fixed sanitized result, no retry and verified zero-session closeout. Manifest SHA-256: `1e5aced9a7aded528bbb60e0402cb65b67bf30bb4cdb5f71706832535788510b`. Backend: `evidence/APP-013/p07-read-only-diagnostic-package-preparation-20261021.md`.
 
-**Remaining/blocker/owner:** Debynyhan Banks approves or refuses Alternative 1 for local diagnostic-only package preparation/testing. No window, browser/database access or external action is included. Repair 5 remains disabled and unchanged; P08/payment remains separate.
+**Remaining/blocker/owner:** Debynyhan Banks supplies a fresh attended 30-minute Eastern window with Terminal, current CHILD administrator password and signed-in Stripe Sandbox. Implementer then binds/retests and presents a separate exact external diagnostic proposal. No window or browser/database action is authorized now. Repair 5 remains disabled and unchanged; P08/payment remains separate.
 
-**Next observable result:** if approved, a fresh disabled diagnostic-only package that passes local tests and refuses live use until a separately approved 30-minute window is bound.
+**Next observable result:** a bound, locally reverified diagnostic-only package awaiting separate exact external-action approval; no live command exists yet.
 
-**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Proposed P07-specific process narrowing; not implemented.**
+**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved P07-specific narrowing.**
 
 ## October 20 — repair 2 exact operation awaiting approval
 
