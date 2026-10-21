@@ -6,7 +6,9 @@ R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Owner-approved
 
 Receipts prove `possibleMutation:false`, empty mutation sets, role absent/closed with zero sessions and verified containment. No readiness resource was attempted. Operation `0ae8a2a9-530f-47c6-80da-3bcd740a821d` is consumed. Sanitization prevents identifying the exact database failure from the receipt alone.
 
-Local inspection found `verify-full` without explicit system-root selection, no default root file, and installed PostgreSQL 16 guidance requiring `sslrootcert=system`; the Node closeout succeeded with system trust. Owner decides the local-only `APP013_P07_DATABASE_TLS_DIAGNOSTIC_CORRECTION_PROPOSAL_20261021.md` next. Any new database/readiness operation requires separate fresh authority. P08/payment remains separate. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unexpected stop disclosed; no external mutation.**
+The owner-approved TLS/diagnostic correction is complete in fresh disabled repair 4. Both administrator and restricted-role `psql` paths require `verify-full` plus system roots; fixed failure classes cannot emit raw stderr. Plan `0f2daeb9-fc75-40c2-b66b-097b6c986d7d`, packet `67157149-adc5-4a5b-a5c3-93066071403e` and operation `609bca17-276b-493f-bbd8-6edf7d5ad7e9` pass 35 focused tests and all no-action/refusal checks. No window, approval, attempt or mutation exists.
+
+Owner supplies a fresh attended 90-minute Eastern block next. The implementer then binds/retests and presents a separate exact external proposal. P08/payment remains separate. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved correction.**
 
 ## October 20 — repaired P07 operation bound; decision pending
 
