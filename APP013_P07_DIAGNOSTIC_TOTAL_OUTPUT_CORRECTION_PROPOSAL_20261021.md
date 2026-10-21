@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 diagnostic total-output correction proposal
 
-Status: **owner decision pending; no implementation or external action authorized**.
+Status: **Alternative 1 owner-approved for local correction and testing only; no external action authorized**.
 
 ## Demonstrated gap
 
@@ -49,7 +49,7 @@ The local test must execute the real diagnostic SQL and parser against a disposa
 
 ## Dependencies, exclusions and finish
 
-Owner approval of Alternative 1 is required before local implementation because the live result demonstrates a material prerequisite not covered by the previous correction. Approval would cover local disposable-database preparation/testing only. It would not authorize a live database connection, Stripe action, role/grant, secret/IAM action, deployment, Checkout, payment, booking, customer contact, merge or push.
+Debynyhan Banks approved Alternative 1 for local correction and testing only. The approval covers the fresh disabled package and disposable local-database test described above. It does not authorize a live database connection, Stripe action, role/grant, secret/IAM action, deployment, Checkout, payment, booking, customer contact, merge or push.
 
 Observable local finish: a fresh disabled package passes its execution-faithful PostgreSQL contract suite, focused parser/security/refusal tests, syntax/no-action verification and required governance/architecture/whitespace checks. Only after review would a fresh attended window and separate exact external-operation approval be considered.
 
