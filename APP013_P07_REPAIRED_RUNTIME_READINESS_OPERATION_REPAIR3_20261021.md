@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 repaired-runtime readiness operation repair 3
 
-Status: **exact external-operation approval pending; no external action authorized**.
+Status: **owner-approved, attempted once and consumed after a contained pre-mutation stop**.
 
 ## Exact binding and purpose
 
@@ -42,6 +42,6 @@ The bound package passes **33/33 focused tests**, syntax and `P07_PREPARATION_CH
 - Test SHA-256: `82830263aa31bcee1d5fc6e78767626c0921560a6e9de154ad30c0d91ffc0e7c`.
 - Binding SHA-256: `03010637384f946014c0c7bc365f3934171a95d1487bbe36fef48b151b6f39b2`.
 
-**Decision requested:** approve or refuse this exact operation before the strict 6:15 a.m. Eastern cutoff. Approval covers only the enumerated readiness actions, allowance and mandatory containment/retirement.
+**Decision and result:** the owner replied **“Approve repair 3”** before the cutoff. The operation reserved once, passed Cloud and sanitized Stripe preflight, then stopped at database preflight with `P07_STOP_COMMAND_FAILED`. Receipts prove `possibleMutation:false`, empty mutation sets, role absent/closed with zero sessions and `CONTAINMENT_VERIFIED`. The operation is consumed and cannot be retried. Backend evidence: `evidence/APP-013/p07-repaired-runtime-readiness-stop3-20261021.md`.
 
-Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
+Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unexpected database-preflight stop disclosed; no external mutation.**

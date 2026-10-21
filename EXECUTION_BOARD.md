@@ -1,12 +1,12 @@
 # Signmons Execution Board
 
-## October 21 — P07 repair 3 bound; exact external decision pending
+## October 21 — P07 repair 3 contained after database command failure
 
-R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Both prior readiness operations are consumed. Fresh `repair3` is bound to October 21, 6:00–7:30 a.m. Eastern with a strict 6:15 start cutoff and retirement by October 22 at 6:00 a.m.
+R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Owner-approved repair 3 reserved once, passed Cloud/Stripe preflight and stopped at database preflight with `P07_STOP_COMMAND_FAILED`.
 
-Plan `469fc707-51d9-406a-b8df-c55b078f4eba`, packet `95e56ac2-afea-4efc-b7bc-78fb2507d576` and operation `0ae8a2a9-530f-47c6-80da-3bcd740a821d` pass 33 focused tests plus syntax/no-action checks. Run/recovery/retirement each refuse `P07_REFUSED_OWNER_APPROVAL_INVALID`; no approval, attempt or mutation exists. Exact proposal: `APP013_P07_REPAIRED_RUNTIME_READINESS_OPERATION_REPAIR3_20261021.md`.
+Receipts prove `possibleMutation:false`, empty mutation sets, role absent/closed with zero sessions and verified containment. No readiness resource was attempted. Operation `0ae8a2a9-530f-47c6-80da-3bcd740a821d` is consumed. Sanitization prevents identifying the exact database failure from the receipt alone.
 
-Owner approval or refusal is next before the strict 6:15 cutoff. Scheduling is not live authority; P08/payment remains separate. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
+Implementer prepares a bounded diagnostic correction proposal next; any new database check or readiness operation requires fresh authority. P08/payment remains separate. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unexpected stop disclosed; no external mutation.**
 
 ## October 20 — repaired P07 operation bound; decision pending
 

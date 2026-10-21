@@ -1,16 +1,16 @@
 # Session Handoff
 
-## October 21 — repair 3 bound to early window; exact approval pending
+## October 21 — repair 3 database-preflight stop contained
 
-**Section/status:** R1-W01 / APP-013/3A/P07 remains active, locally corrected, window-bound and not live-demonstrated. Both prior readiness operations are consumed.
+**Section/status:** R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Repair 3 and both prior readiness operations are consumed.
 
-**Completed/evidence:** fresh plan `469fc707-51d9-406a-b8df-c55b078f4eba`, packet `95e56ac2-afea-4efc-b7bc-78fb2507d576` and operation `0ae8a2a9-530f-47c6-80da-3bcd740a821d` are bound to October 21, 6:00–7:30 a.m. Eastern, strict 6:15 cutoff. Thirty-three focused tests, syntax and no-action pass; run/recovery/retirement each refuse `P07_REFUSED_OWNER_APPROVAL_INVALID`. Backend: `evidence/APP-013/p07-connected-account-handoff-local-correction-20261021.md`.
+**Completed/evidence:** owner-approved repair 3 reserved once, passed Cloud and sanitized Stripe preflight, then returned `P07_STOP_COMMAND_FAILED` at database preflight. `possibleMutation:false`, empty mutation sets, role absent/closed with zero sessions and `CONTAINMENT_VERIFIED`; backend `evidence/APP-013/p07-repaired-runtime-readiness-stop3-20261021.md`.
 
-**Remaining/blocker/owner:** Debynyhan Banks approves or refuses `APP013_P07_REPAIRED_RUNTIME_READINESS_OPERATION_REPAIR3_20261021.md` before 6:15 a.m. Availability did not authorize live action. P08/payment remains separate.
+**Remaining/blocker/owner:** the sanitized command wrapper retained no database error text, so the exact connection/authentication/query cause is unknown. The implementer owns a bounded diagnostic correction proposal; Debynyhan Banks owns any later live diagnostic or readiness approval. No retry authority exists.
 
-**Next observable result:** after approval, the one-use command becomes valid at 6:00 a.m. and may return only `P07_REPAIRED_RUNTIME_READY_DISABLED` or one named stop plus mandatory containment.
+**Next observable result:** a reviewable proposal that captures classified, sanitized database failure evidence while preserving credential secrecy and no retry; no live command is ready.
 
-**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
+**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unexpected database-preflight stop disclosed; no external mutation.**
 
 ## October 20 — repair 2 exact operation awaiting approval
 

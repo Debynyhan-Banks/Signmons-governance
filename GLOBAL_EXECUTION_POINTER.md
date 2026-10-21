@@ -1,12 +1,12 @@
 # Global Execution Pointer
 
-## October 21 — P07 repair 3 bound to 6:00–7:30 a.m.; exact approval pending
+## October 21 — P07 repair 3 stopped at database preflight; contained and consumed
 
-R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Both prior readiness operations are consumed. The owner selected October 21, 6:00–7:30 a.m. Eastern with a strict 6:15 start cutoff for fresh repair 3.
+R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. The owner approved fresh repair 3, which reserved once, passed Cloud and sanitized Stripe preflight, then stopped at `DATABASE_PREFLIGHT` with `P07_STOP_COMMAND_FAILED`.
 
-Package `/private/tmp/p07-repaired-runtime-readiness-20261021-repair3`, plan `469fc707-51d9-406a-b8df-c55b078f4eba`, packet `95e56ac2-afea-4efc-b7bc-78fb2507d576` and operation `0ae8a2a9-530f-47c6-80da-3bcd740a821d` are now bound to that window and retirement by October 22 at 6:00 a.m. Thirty-three focused tests, syntax and no-action pass. All live/cleanup modes refuse `P07_REFUSED_OWNER_APPROVAL_INVALID`; no approval, attempt or mutation exists. Exact proposal: `APP013_P07_REPAIRED_RUNTIME_READINESS_OPERATION_REPAIR3_20261021.md`.
+Receipts prove `possibleMutation:false`, empty mutation sets, proposed role absent/closed with zero sessions and `CONTAINMENT_VERIFIED`. No role, secret, identity, binding, Stripe destination or deployment was attempted. Operation `0ae8a2a9-530f-47c6-80da-3bcd740a821d` is consumed; do not retry it. The sanitized wrapper retained no database error text, so the exact connection/authentication/query cause remains unestablished. Evidence: backend `evidence/APP-013/p07-repaired-runtime-readiness-stop3-20261021.md`.
 
-Next input: owner approval or refusal of the exact one-use/no-retry readiness operation before 6:15 a.m. Eastern. Availability alone did not authorize external action. P08, payment and acceptance remain separate. Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
+Next: prepare a bounded diagnostic correction proposal that classifies sanitized database command failures without exposing credentials or private values. Any new database check or readiness attempt requires fresh authority. P08, payment and acceptance remain separate. Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unexpected database-preflight stop disclosed; no external mutation.**
 
 ## October 20 — P07 repair 2 bound to next block; exact approval pending
 
