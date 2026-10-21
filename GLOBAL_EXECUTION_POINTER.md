@@ -1,6 +1,6 @@
 # Global Execution Pointer
 
-## October 21 — P07 30-minute diagnostic package locally ready and disabled
+## October 21 — P07 30-minute diagnostic bound; exact decision pending
 
 R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Repair 4 and all prior readiness operations are consumed.
 
@@ -12,7 +12,9 @@ Owner approved Alternative 1 in `APP013_P07_DATABASE_PREFLIGHT_PREDICATE_DIAGNOS
 
 The owner approved Alternative 1 in `APP013_P07_READ_ONLY_DIAGNOSTIC_WINDOW_REDUCTION_PROPOSAL_20261021.md` for local preparation/testing. Fresh diagnostic-only package `/private/tmp/p07-read-only-diagnostic-20261021-prep1` uses plan `55d7dc3a-4fe3-4f09-8ada-bcbd7ef3ad02`, packet `3acd1d03-07bf-4007-a399-03ff2d30a9b4` and operation `c15a9092-f421-4c5b-94bd-4e7b158c6595`. Twenty-two focused tests, syntax and no-action verification pass; run and recovery refuse without a bound window. The controller contains no mutation/provider-resource path and requires exact read-only SQL, rollback, fixed sanitized output, no retry and verified zero-session closeout. Manifest SHA-256: `1e5aced9a7aded528bbb60e0402cb65b67bf30bb4cdb5f71706832535788510b`. Evidence: backend `evidence/APP-013/p07-read-only-diagnostic-package-preparation-20261021.md`.
 
-Next input is a fresh attended 30-minute Eastern window with Terminal, the current CHILD administrator password and signed-in Stripe Sandbox available. The implementer then binds/retests the exact package and presents a separate external diagnostic proposal. No window or browser/database action is authorized now. Repair 5 remains disabled and unchanged. P08, payment and acceptance remain separate. Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved P07-specific narrowing.**
+The owner supplied today, 1:45–2:15 p.m. Eastern. The package is bound with a strict 1:55 start cutoff, diagnostic deadline at 2:05 and closeout deadline at 2:10. Twenty-two tests and no-action verification pass; live start refuses because owner approval is absent. Exact proposal: `APP013_P07_READ_ONLY_DIAGNOSTIC_OPERATION_PROPOSAL_20261021.md`.
+
+Owner approval or refusal before 1:55 p.m. Eastern is next. No browser/database action, retry or mutation is authorized yet. Repair 5 remains disabled and unchanged. P08, payment and acceptance remain separate. Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved P07-specific narrowing.**
 
 ## October 20 — P07 repair 2 bound to next block; exact approval pending
 

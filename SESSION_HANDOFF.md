@@ -1,6 +1,6 @@
 # Session Handoff
 
-## October 21 — 30-minute read-only diagnostic package locally ready
+## October 21 — 30-minute read-only diagnostic bound; decision pending
 
 **Section/status:** R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Repair 4 and all prior readiness operations are consumed.
 
@@ -20,9 +20,11 @@
 
 **Completed/evidence:** Debynyhan Banks approved Alternative 1 for local preparation/testing. Fresh diagnostic-only package `/private/tmp/p07-read-only-diagnostic-20261021-prep1`, plan `55d7dc3a-4fe3-4f09-8ada-bcbd7ef3ad02`, packet `3acd1d03-07bf-4007-a399-03ff2d30a9b4` and operation `c15a9092-f421-4c5b-94bd-4e7b158c6595`, passes 22 focused tests, syntax and no-action verification. Run/recovery refuse `P07_DIAGNOSTIC_REFUSED_WINDOW_NOT_BOUND`. It contains no callable mutation/provider-resource path and enforces the exact 30-minute timing, hidden input, read-only repeatable-read SQL, rollback, fixed sanitized result, no retry and verified zero-session closeout. Manifest SHA-256: `1e5aced9a7aded528bbb60e0402cb65b67bf30bb4cdb5f71706832535788510b`. Backend: `evidence/APP-013/p07-read-only-diagnostic-package-preparation-20261021.md`.
 
-**Remaining/blocker/owner:** Debynyhan Banks supplies a fresh attended 30-minute Eastern window with Terminal, current CHILD administrator password and signed-in Stripe Sandbox. Implementer then binds/retests and presents a separate exact external diagnostic proposal. No window or browser/database action is authorized now. Repair 5 remains disabled and unchanged; P08/payment remains separate.
+**Completed/evidence:** owner supplied today, 1:45–2:15 p.m. Eastern. Exact package is bound with a strict 1:55 cutoff, diagnostic deadline 2:05 and closeout deadline 2:10. Twenty-two tests/no-action pass; live start refuses `P07_DIAGNOSTIC_REFUSED_OWNER_APPROVAL_INVALID`. Backend: `evidence/APP-013/p07-read-only-diagnostic-window-preparation-20261021.md`.
 
-**Next observable result:** a bound, locally reverified diagnostic-only package awaiting separate exact external-action approval; no live command exists yet.
+**Remaining/blocker/owner:** Debynyhan Banks approves or refuses `APP013_P07_READ_ONLY_DIAGNOSTIC_OPERATION_PROPOSAL_20261021.md` before 1:55 p.m. Eastern. No browser/database or mutation action is authorized yet; P08/payment remains separate.
+
+**Next observable result:** after approval, exact command handoff followed by one fixed diagnostic classification and verified closeout, or one named contained stop.
 
 **Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved P07-specific narrowing.**
 

@@ -1,6 +1,6 @@
 # Signmons Execution Board
 
-## October 21 — P07 30-minute diagnostic package ready and disabled
+## October 21 — P07 30-minute diagnostic bound; decision pending
 
 R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Repair 3 remains consumed and contained after its database-preflight stop.
 
@@ -12,7 +12,7 @@ Owner approved Alternative 1 in `APP013_P07_DATABASE_PREFLIGHT_PREDICATE_DIAGNOS
 
 The owner approved Alternative 1 in `APP013_P07_READ_ONLY_DIAGNOSTIC_WINDOW_REDUCTION_PROPOSAL_20261021.md` for local preparation/testing. Fresh diagnostic-only package `/private/tmp/p07-read-only-diagnostic-20261021-prep1`, plan `55d7dc3a-4fe3-4f09-8ada-bcbd7ef3ad02`, packet `3acd1d03-07bf-4007-a399-03ff2d30a9b4` and operation `c15a9092-f421-4c5b-94bd-4e7b158c6595`, passes 22 focused tests, syntax and no-action verification. Run/recovery refuse without a window. Backend evidence: `evidence/APP-013/p07-read-only-diagnostic-package-preparation-20261021.md`.
 
-Owner supplies a fresh attended 30-minute Eastern window next. Binding/retest and a separate exact external diagnostic approval follow. No browser/database or other external action is authorized now. Repair 5 remains disabled and unchanged; P08/payment remains separate. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved P07-specific narrowing.**
+The package is bound to today, 1:45–2:15 p.m. Eastern, strict 1:55 cutoff. Twenty-two tests/no-action pass; live start refuses without owner approval. `APP013_P07_READ_ONLY_DIAGNOSTIC_OPERATION_PROPOSAL_20261021.md` is the exact decision. No browser/database or other external action is authorized yet. Repair 5 remains disabled; P08/payment remains separate. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
 
 ## October 20 — repaired P07 operation bound; decision pending
 
