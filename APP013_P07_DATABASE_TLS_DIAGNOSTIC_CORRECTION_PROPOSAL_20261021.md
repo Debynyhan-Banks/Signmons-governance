@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 database TLS diagnostic correction proposal
 
-Status: **owner decision pending; no implementation or external action authorized**.
+Status: **Alternative 1 owner-approved for local correction and testing only; no external action authorized**.
 
 ## Demonstrated gap
 
@@ -44,6 +44,6 @@ No database connection, role/grant/secret/IAM/Stripe/deployment action, payment,
 
 ## Decision requested
 
-Approve or refuse Alternative 1 for local correction and testing only. Approval does not authorize a live database diagnostic or another readiness attempt.
+On October 21, 2026, the owner approved Alternative 1 for local correction and testing only. Approval does not authorize a live database diagnostic or another readiness attempt.
 
-Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Proposed correction to a newly demonstrated database-client diagnostic gap; implementation pending owner approval.**
+Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Approved correction to a newly demonstrated database-client diagnostic gap; local implementation may proceed.**
