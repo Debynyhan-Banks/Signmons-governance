@@ -1,12 +1,12 @@
 # Global Execution Pointer
 
-## October 20 — P07 repair 2 stopped before mutation; handoff correction decision pending
+## October 21 — P07 connected-account handoff correction locally complete; new window required
 
-Operation `45ae622a-2cb7-4ab7-ae90-f94d30c9336a` passed corrected Cloud and sanitized Stripe preflight, then stopped during database preflight with `P07_STOP_CONNECTED_ACCOUNT_FORMAT`. Receipts prove `possibleMutation:false`, empty mutation sets, proposed role absent/zero sessions and `CONTAINMENT_VERIFIED`. No readiness resource was attempted. The operation is consumed; do not rerun it.
+R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Both prior readiness operations are consumed. The owner approved Alternative 1 in `APP013_P07_CONNECTED_ACCOUNT_HANDOFF_CORRECTION_PROPOSAL_20261020.md` for local correction/testing only.
 
-The browser-scoped clipboard did not deliver a valid connected-account identifier to native Terminal. `APP013_P07_CONNECTED_ACCOUNT_HANDOFF_CORRECTION_PROPOSAL_20261020.md` proposes removing the manual raw-ID paste and dynamic SQL input: read the tenant's stored ID through the already approved bounded administrator preflight, hash it in memory against the sanitized Stripe receipt and discard it. Owner decision is next; no implementation or external action is authorized.
+Fresh disabled package `/private/tmp/p07-repaired-runtime-readiness-20261021-repair3`, plan `469fc707-51d9-406a-b8df-c55b078f4eba`, packet `95e56ac2-afea-4efc-b7bc-78fb2507d576` and operation `0ae8a2a9-530f-47c6-80da-3bcd740a821d` remove the raw-ID prompt and dynamic SQL input. The exact tenant value is read into memory, format/charges/hash validated against the sanitized Stripe receipt, cleared and never persisted. Thirty-three focused tests, syntax, no-action and no-window run/recovery/retirement refusals pass. No binding, approval, attempt or mutation exists. Evidence: backend `evidence/APP-013/p07-connected-account-handoff-local-correction-20261021.md`.
 
-Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unintended handoff drift disclosed; no external mutation.**
+Next input: the owner supplies a new attended Eastern block of at least 90 minutes with Terminal, the current CHILD administrator password and signed-in Stripe Sandbox available. Exact binding/retest and a separate external-operation decision follow; no live command exists now. Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved correction.**
 
 ## October 20 — P07 repair 2 bound to next block; exact approval pending
 

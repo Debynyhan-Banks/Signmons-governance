@@ -1,16 +1,16 @@
 # Session Handoff
 
-## October 20 — repair 2 stopped before mutation; safer identifier handoff proposed
+## October 21 — connected-account handoff correction locally complete
 
-**Section/status:** R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Both readiness operations are consumed.
+**Section/status:** R1-W01 / APP-013/3A/P07 remains active, locally corrected and not live-demonstrated. Both prior readiness operations are consumed; fresh `repair3` is disabled and unbound.
 
-**Completed/evidence:** repair 2 passed corrected Cloud and sanitized Stripe preflight, then returned `P07_STOP_CONNECTED_ACCOUNT_FORMAT` at database preflight. `possibleMutation:false`, empty mutation sets, role absent/zero sessions and `CONTAINMENT_VERIFIED`; backend `evidence/APP-013/p07-repaired-runtime-readiness-stop2-20261020.md`.
+**Completed/evidence:** owner-approved Alternative 1 removes the manual connected-account prompt and dynamic SQL input. Fresh plan `469fc707-51d9-406a-b8df-c55b078f4eba`, packet `95e56ac2-afea-4efc-b7bc-78fb2507d576` and operation `0ae8a2a9-530f-47c6-80da-3bcd740a821d` pass 33 focused tests, syntax, no-action and all no-window refusal checks. Positive/negative evidence identifies row-count, format, charges and hash problems without persisting the raw ID. Backend: `evidence/APP-013/p07-connected-account-handoff-local-correction-20261021.md`.
 
-**Remaining/blocker/owner:** browser clipboard did not transfer the private account ID into Terminal. Debynyhan Banks decides Alternative 1 in `APP013_P07_CONNECTED_ACCOUNT_HANDOFF_CORRECTION_PROPOSAL_20261020.md`; implementer may then remove the manual prompt and hash the database-stored ID in memory. No new live authority exists.
+**Remaining/blocker/owner:** Debynyhan Banks supplies a fresh attended Eastern block of at least 90 minutes with Terminal, current CHILD administrator password and signed-in Stripe Sandbox. The implementer then binds/retests and presents an exact external-operation proposal. No new live authority exists.
 
-**Next observable result:** after approval, a fresh disabled package that passes exact account match/mismatch/format/no-persistence tests; later window and external approval remain separate.
+**Next observable result:** a window-bound, fully retested package that still refuses execution until separate exact owner approval.
 
-**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unintended handoff drift disclosed; no external mutation.**
+**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved correction.**
 
 ## October 20 — repair 2 exact operation awaiting approval
 

@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 connected-account handoff correction proposal
 
-Status: **Alternative 1 owner-approved for local correction and testing only; no external action authorized**.
+Status: **Alternative 1 owner-approved and locally completed; no external action authorized**.
 
 ## Demonstrated gap
 
@@ -32,4 +32,6 @@ No provider/database mutation, role/secret/IAM change, Stripe destination, deplo
 
 On October 21, 2026, the owner replied **yes**, approving Alternative 1 for the bounded local correction and testing described above. This approval does not authorize another external attempt.
 
-Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Approved correction to unintended handoff drift; local implementation may proceed.**
+Local result: fresh disabled package `/private/tmp/p07-repaired-runtime-readiness-20261021-repair3` passes 33 focused tests, syntax, no-action and no-window refusal checks. Evidence: backend `evidence/APP-013/p07-connected-account-handoff-local-correction-20261021.md`. A fresh attended window and exact external approval remain separate.
+
+Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved correction.**

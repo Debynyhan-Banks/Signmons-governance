@@ -1,12 +1,12 @@
 # Signmons Execution Board
 
-## October 20 — P07 repair 2 contained; raw-ID handoff correction pending
+## October 21 — P07 raw-ID handoff removed locally; disabled package ready for scheduling
 
-Repair-2 passed Cloud/Stripe preflight and stopped on invalid connected-account input before database access or mutation. Mutation sets are empty, the proposed role is absent with zero sessions and containment is verified. The operation is consumed.
+R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Both prior readiness operations are consumed. The owner-approved connected-account handoff correction is complete in fresh private package `repair3`.
 
-The narrow proposal removes the failed browser-to-Terminal raw-ID paste, reads the existing tenant ID in the bounded administrator transaction, compares its in-memory hash to the sanitized Stripe receipt, and retains no raw value. Owner approval or refusal of `APP013_P07_CONNECTED_ACCOUNT_HANDOFF_CORRECTION_PROPOSAL_20261020.md` is next. No retry or live action is authorized.
+Plan `469fc707-51d9-406a-b8df-c55b078f4eba`, packet `95e56ac2-afea-4efc-b7bc-78fb2507d576` and operation `0ae8a2a9-530f-47c6-80da-3bcd740a821d` read the plan-bound tenant ID only in memory, validate format/charges/hash and persist only the match boolean. The raw ID is absent from prompts, SQL, arguments, errors and receipts. Thirty-three focused tests plus syntax/no-action/no-window refusals pass; no window, live approval, attempt or mutation exists.
 
-Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unintended drift disclosed.**
+Owner supplies a fresh attended 90-minute Eastern block next. The implementer then binds/retests and presents a separate exact external proposal. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved correction.**
 
 ## October 20 — repaired P07 operation bound; decision pending
 
