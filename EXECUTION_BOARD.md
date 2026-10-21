@@ -1,14 +1,14 @@
 # Signmons Execution Board
 
-## October 21 — P07 repair 3 contained after database command failure
+## October 21 — P07 repair 4 bound; exact operation decision pending
 
-R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Owner-approved repair 3 reserved once, passed Cloud/Stripe preflight and stopped at database preflight with `P07_STOP_COMMAND_FAILED`.
+R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Repair 3 remains consumed and contained after its database-preflight stop.
 
 Receipts prove `possibleMutation:false`, empty mutation sets, role absent/closed with zero sessions and verified containment. No readiness resource was attempted. Operation `0ae8a2a9-530f-47c6-80da-3bcd740a821d` is consumed. Sanitization prevents identifying the exact database failure from the receipt alone.
 
-The owner-approved TLS/diagnostic correction is complete in fresh disabled repair 4. Both administrator and restricted-role `psql` paths require `verify-full` plus system roots; fixed failure classes cannot emit raw stderr. Plan `0f2daeb9-fc75-40c2-b66b-097b6c986d7d`, packet `67157149-adc5-4a5b-a5c3-93066071403e` and operation `609bca17-276b-493f-bbd8-6edf7d5ad7e9` pass 35 focused tests and all no-action/refusal checks. No window, approval, attempt or mutation exists.
+Fresh repair 4 is bound to October 21, 7:00–8:30 a.m. Eastern with a strict 7:15 start cutoff and October 22, 7:00 a.m. retirement deadline. Both administrator and restricted-role `psql` paths require `verify-full` plus system roots; fixed failure classes cannot emit raw stderr. Plan `0f2daeb9-fc75-40c2-b66b-097b6c986d7d`, packet `67157149-adc5-4a5b-a5c3-93066071403e` and operation `609bca17-276b-493f-bbd8-6edf7d5ad7e9` pass 35 focused tests and all no-action/refusal checks. No approval, attempt or mutation exists.
 
-Owner supplies a fresh attended 90-minute Eastern block next. The implementer then binds/retests and presents a separate exact external proposal. P08/payment remains separate. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved correction.**
+Owner approves or refuses `APP013_P07_REPAIRED_RUNTIME_READINESS_OPERATION_REPAIR4_20261021.md` before 7:15 a.m. Eastern. P08/payment remains separate. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
 
 ## October 20 — repaired P07 operation bound; decision pending
 

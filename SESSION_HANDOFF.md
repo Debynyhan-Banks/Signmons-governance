@@ -1,6 +1,6 @@
 # Session Handoff
 
-## October 21 — repair 3 database-preflight stop contained
+## October 21 — repair 4 bound for 7:00–8:30 a.m.; approval pending
 
 **Section/status:** R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Repair 3 and both prior readiness operations are consumed.
 
@@ -8,9 +8,11 @@
 
 **Completed/evidence:** owner-approved Alternative 1 is complete in fresh disabled repair 4. Both `psql` paths require `verify-full` plus system roots; five fixed failure classes retain no raw stderr. Plan `0f2daeb9-fc75-40c2-b66b-097b6c986d7d`, packet `67157149-adc5-4a5b-a5c3-93066071403e` and operation `609bca17-276b-493f-bbd8-6edf7d5ad7e9` pass 35 focused tests, syntax, no-action and no-window refusals. Backend: `evidence/APP-013/p07-database-tls-diagnostic-local-correction-20261021.md`.
 
-**Remaining/blocker/owner:** Debynyhan Banks supplies a fresh attended Eastern block of at least 90 minutes with Terminal, current CHILD administrator password and signed-in Stripe Sandbox. The implementer then binds/retests and presents a separate exact external proposal. No new live authority exists.
+**Completed/evidence:** owner supplied October 21, 7:00–8:30 a.m. Eastern. Repair 4 is bound with a strict 7:15 start cutoff, ordinary work ending 8:00, containment through 8:20 and retirement by October 22 at 7:00. Thirty-five focused tests, syntax, no-action and owner-approval refusal checks pass. Backend: `evidence/APP-013/p07-repaired-runtime-readiness-repair4-preparation-20261021.md`.
 
-**Next observable result:** a window-bound, fully retested package that still refuses execution until separate exact owner approval; no live command exists now.
+**Remaining/blocker/owner:** Debynyhan Banks approves or refuses `APP013_P07_REPAIRED_RUNTIME_READINESS_OPERATION_REPAIR4_20261021.md` before 7:15 a.m. The exact one-use command remains disabled until approval installation. P08/payment remains separate.
+
+**Next observable result:** after exact approval, the guarded operation returns `P07_REPAIRED_RUNTIME_READY_DISABLED` or one named stop with mandatory containment.
 
 **Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved correction.**
 
