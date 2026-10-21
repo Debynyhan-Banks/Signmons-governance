@@ -1,8 +1,8 @@
 # Session Handoff
 
-## October 21 — repair 4 approved for 7:00–8:30 a.m.; start pending
+## October 21 — repair 4 database-state stop contained
 
-**Section/status:** R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Repair 3 and both prior readiness operations are consumed.
+**Section/status:** R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Repair 4 and all prior readiness operations are consumed.
 
 **Completed/evidence:** owner-approved repair 3 reserved once, passed Cloud and sanitized Stripe preflight, then returned `P07_STOP_COMMAND_FAILED` at database preflight. `possibleMutation:false`, empty mutation sets, role absent/closed with zero sessions and `CONTAINMENT_VERIFIED`; backend `evidence/APP-013/p07-repaired-runtime-readiness-stop3-20261021.md`.
 
@@ -12,11 +12,13 @@
 
 **Completed/evidence:** Debynyhan Banks replied “Approve repair 4.” Exact approval validates against immutable proposal commit `27de9cff2b8743963cb102362ce20180dc4a890e`, the fixed identifiers/window/allowances and no-retry boundary. Backend: `evidence/APP-013/p07-repaired-runtime-readiness-repair4-approval-20261021.md`.
 
-**Remaining/blocker/owner:** owner runs the one-use command at or after 7:00 and strictly before 7:15 a.m. Eastern, retains Terminal and signed-in Stripe Sandbox, enters private values only at hidden prompts and reports only fixed status lines. No retry. P08/payment remains separate.
+**Completed/evidence:** repair 4 reserved once, passed Cloud and sanitized Stripe preflight, then returned `P07_STOP_DATABASE_PREFLIGHT_DRIFT` with `possibleMutation:false`, empty mutation sets, role absent/closed with zero sessions and `CONTAINMENT_VERIFIED`. Backend: `evidence/APP-013/p07-repaired-runtime-readiness-stop4-20261021.md`.
 
-**Next observable result:** the guarded operation returns `P07_REPAIRED_RUNTIME_READY_DISABLED` or one named stop plus containment status.
+**Remaining/blocker/owner:** implementer analyzes the exact database-preflight predicates locally. A new diagnostic or correction requires a demonstrated gap and owner-approved proposal before implementation or another live action. No retry. P08/payment remains separate.
 
-**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved correction.**
+**Next observable result:** a bounded local diagnosis and, only if demonstrated, the smallest reviewable change proposal.
+
+**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unexpected database-state drift disclosed; no external mutation.**
 
 ## October 20 — repair 2 exact operation awaiting approval
 

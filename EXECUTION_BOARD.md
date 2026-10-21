@@ -1,14 +1,14 @@
 # Signmons Execution Board
 
-## October 21 — P07 repair 4 approved; one-use start pending
+## October 21 — P07 repair 4 contained after database-state drift
 
 R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Repair 3 remains consumed and contained after its database-preflight stop.
 
 Receipts prove `possibleMutation:false`, empty mutation sets, role absent/closed with zero sessions and verified containment. No readiness resource was attempted. Operation `0ae8a2a9-530f-47c6-80da-3bcd740a821d` is consumed. Sanitization prevents identifying the exact database failure from the receipt alone.
 
-Fresh repair 4 is owner-approved for October 21, 7:00–8:30 a.m. Eastern with a strict 7:15 start cutoff and October 22, 7:00 a.m. retirement deadline. Both administrator and restricted-role `psql` paths require `verify-full` plus system roots; fixed failure classes cannot emit raw stderr. Plan `0f2daeb9-fc75-40c2-b66b-097b6c986d7d`, packet `67157149-adc5-4a5b-a5c3-93066071403e` and operation `609bca17-276b-493f-bbd8-6edf7d5ad7e9` pass 35 focused tests, exact approval validation and no-action checks. No attempt or mutation exists.
+Owner-approved repair 4 reserved once, passed Cloud and sanitized Stripe preflight, then stopped at database-state evaluation with `P07_STOP_DATABASE_PREFLIGHT_DRIFT`. The corrected TLS path worked. Receipts prove `possibleMutation:false`, empty mutation sets, role absent/closed with zero sessions and verified containment. Plan `0f2daeb9-fc75-40c2-b66b-097b6c986d7d`, packet `67157149-adc5-4a5b-a5c3-93066071403e` and operation `609bca17-276b-493f-bbd8-6edf7d5ad7e9` are consumed.
 
-Owner runs the one-use command at or after 7:00 and strictly before 7:15 a.m. Eastern, then reports only fixed terminal status lines. No retry. P08/payment remains separate. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
+Implementer analyzes the exact database-preflight predicates locally and proposes the smallest evidenced next change. No live read, retry or substitute operation is authorized. P08/payment remains separate. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unexpected database-state drift disclosed; no external mutation.**
 
 ## October 20 — repaired P07 operation bound; decision pending
 

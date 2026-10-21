@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 repaired-runtime readiness operation repair 4
 
-Status: **owner-approved and installed for one operation; not yet attempted**.
+Status: **owner-approved, attempted once and consumed after a contained pre-mutation stop**.
 
 ## Exact binding and purpose
 
@@ -53,6 +53,6 @@ It may run once starting at 7:00 a.m. Eastern and must start strictly before 7:1
 
 ## Decision requested
 
-**Decision:** Debynyhan Banks replied **“Approve repair 4.”** Approval was recorded at `2026-10-21T10:31:27Z` against immutable governance commit `27de9cff2b8743963cb102362ce20180dc4a890e`, proposal SHA-256 `19735870a62057d75542182bd541a949aede5d4d8eb1ce2279188e9f7ea81cc0`. It covers this exact one-use operation, listed mutations, allowances, mandatory containment/retirement and window. It does not authorize P08, payment, booking, customer action or normal traffic.
+**Decision and result:** Debynyhan Banks replied **“Approve repair 4.”** Approval was recorded at `2026-10-21T10:31:27Z` against immutable governance commit `27de9cff2b8743963cb102362ce20180dc4a890e`, proposal SHA-256 `19735870a62057d75542182bd541a949aede5d4d8eb1ce2279188e9f7ea81cc0`. The operation reserved once, passed Cloud and sanitized Stripe preflight, then stopped at `DATABASE_PREFLIGHT` with `P07_STOP_DATABASE_PREFLIGHT_DRIFT`. Receipts prove `possibleMutation:false`, empty mutation sets, role absent/closed with zero sessions and `CONTAINMENT_VERIFIED`. Repair 4 is consumed and cannot be retried. Backend evidence: `evidence/APP-013/p07-repaired-runtime-readiness-stop4-20261021.md`.
 
-Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
+Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unexpected database-state drift disclosed; no external mutation.**
