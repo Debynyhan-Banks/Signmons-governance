@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 database-preflight predicate diagnostic proposal
 
-Status: **owner decision pending; no implementation or external action authorized**.
+Status: **Alternative 1 owner-approved and locally completed; no external action authorized**.
 
 ## Demonstrated gap
 
@@ -43,6 +43,12 @@ After local correction review, a separate owner-approved read-only diagnostic wi
 
 ## Decision requested
 
-Approve or refuse Alternative 1 for local correction and testing only. Approval would not authorize a database connection, another readiness attempt, Stripe action, deployment, payment or customer action.
+The owner approved Alternative 1 for local correction and testing only. That approval did not authorize a database connection, another readiness attempt, Stripe action, deployment, payment or customer action.
 
-Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Proposed diagnostic correction to a newly demonstrated observability gap; not yet implemented.**
+## Local implementation result
+
+Fresh disabled package `/private/tmp/p07-repaired-runtime-readiness-20261021-repair5`, plan `2058551c-6a4f-468b-8a26-f860b754e8db`, packet `e40c598f-f918-425b-8368-c6062cec0d5d` and operation `1b1a983c-40c5-4100-98f5-9d4dd3102803`, implements deterministic fixed-code classification for every listed predicate. Thirty-six focused tests cover success, every fixed negative result, malformed output, multi-failure ordering and private-value non-disclosure. Syntax and no-action checks pass; run, recovery and retirement each refuse because no window is bound. Manifest SHA-256: `17c5fad2837ec01bb590d1607f4dbdaf88ab48ee3f8856fadf27f61279ced6fe`.
+
+Backend evidence: `evidence/APP-013/p07-database-preflight-predicate-local-correction-20261021.md`. No application source or external state changed. A future database read requires a fresh attended window, exact binding, retest and separate owner approval.
+
+Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved local correction.**

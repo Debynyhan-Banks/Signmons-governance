@@ -1,6 +1,6 @@
 # Global Execution Pointer
 
-## October 21 — P07 repair 4 stopped at database-state preflight; contained and consumed
+## October 21 — P07 predicate diagnostic correction locally complete; new window required
 
 R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Repair 4 and all prior readiness operations are consumed.
 
@@ -8,7 +8,9 @@ Receipts prove `possibleMutation:false`, empty mutation sets, proposed role abse
 
 Owner-approved repair 4 reserved once at 7:01 a.m. Eastern, passed exact Cloud and sanitized Stripe Sandbox preflight, then stopped at `DATABASE_PREFLIGHT` with `P07_STOP_DATABASE_PREFLIGHT_DRIFT`. The corrected TLS path reached database-state evaluation. Receipts prove `possibleMutation:false`, empty mutation sets, role absent/closed with zero sessions and `CONTAINMENT_VERIFIED`. No role, secret, identity, binding, Stripe destination or deployment was attempted. Operation `609bca17-276b-493f-bbd8-6edf7d5ad7e9` is consumed; do not retry it. Evidence: backend `evidence/APP-013/p07-repaired-runtime-readiness-stop4-20261021.md`.
 
-Local source inspection demonstrates an observability gap: identity, role, job, payment, calendar, admission-policy and tenant-account checks all collapse to the same `DATABASE_PREFLIGHT_DRIFT` code while raw values are correctly discarded. `APP013_P07_DATABASE_PREFLIGHT_PREDICATE_DIAGNOSTIC_PROPOSAL_20261021.md` recommends a fresh disabled local-only correction with fixed per-predicate codes and secret-leak tests. Owner approval or refusal of Alternative 1 is next. No live read, retry or substitute external action is authorized. P08, payment and acceptance remain separate. Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unexpected database-state drift disclosed; proposed correction not implemented.**
+Owner approved Alternative 1 in `APP013_P07_DATABASE_PREFLIGHT_PREDICATE_DIAGNOSTIC_PROPOSAL_20261021.md` for local correction and testing only. Fresh disabled repair 5, plan `2058551c-6a4f-468b-8a26-f860b754e8db`, packet `e40c598f-f918-425b-8368-c6062cec0d5d` and operation `1b1a983c-40c5-4100-98f5-9d4dd3102803`, now gives a fixed secret-safe code for each identity, role, job, payment, calendar, admission-policy and tenant-account predicate. Thirty-six focused tests, syntax, no-action and all three no-window refusal checks pass. Manifest SHA-256: `17c5fad2837ec01bb590d1607f4dbdaf88ab48ee3f8856fadf27f61279ced6fe`. Evidence: backend `evidence/APP-013/p07-database-preflight-predicate-local-correction-20261021.md`.
+
+Next input is a fresh attended Eastern window of at least 90 minutes with Terminal and the current CHILD administrator password available. The implementer then binds and retests repair 5 and presents the exact read-only diagnostic for separate approval. No database read, retry or substitute external action is authorized now. P08, payment and acceptance remain separate. Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved local correction.**
 
 ## October 20 — P07 repair 2 bound to next block; exact approval pending
 

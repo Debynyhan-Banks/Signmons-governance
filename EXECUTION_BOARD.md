@@ -1,6 +1,6 @@
 # Signmons Execution Board
 
-## October 21 — P07 repair 4 contained after database-state drift
+## October 21 — P07 predicate diagnostic correction complete and disabled
 
 R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Repair 3 remains consumed and contained after its database-preflight stop.
 
@@ -8,7 +8,9 @@ Receipts prove `possibleMutation:false`, empty mutation sets, role absent/closed
 
 Owner-approved repair 4 reserved once, passed Cloud and sanitized Stripe preflight, then stopped at database-state evaluation with `P07_STOP_DATABASE_PREFLIGHT_DRIFT`. The corrected TLS path worked. Receipts prove `possibleMutation:false`, empty mutation sets, role absent/closed with zero sessions and verified containment. Plan `0f2daeb9-fc75-40c2-b66b-097b6c986d7d`, packet `67157149-adc5-4a5b-a5c3-93066071403e` and operation `609bca17-276b-493f-bbd8-6edf7d5ad7e9` are consumed.
 
-Source inspection confirms the controller collapses all identity, role, job, payment, calendar, admission-policy and tenant-account mismatches into one fixed code. Owner decides Alternative 1 in `APP013_P07_DATABASE_PREFLIGHT_PREDICATE_DIAGNOSTIC_PROPOSAL_20261021.md`: a fresh disabled local-only per-predicate classifier with secret-leak tests. No live read, retry or substitute operation is authorized. P08/payment remains separate. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unexpected database-state drift disclosed; proposed correction not implemented.**
+Owner approved Alternative 1 in `APP013_P07_DATABASE_PREFLIGHT_PREDICATE_DIAGNOSTIC_PROPOSAL_20261021.md`. Fresh disabled repair 5 uses new plan `2058551c-6a4f-468b-8a26-f860b754e8db`, packet `e40c598f-f918-425b-8368-c6062cec0d5d` and operation `1b1a983c-40c5-4100-98f5-9d4dd3102803`. Its fixed secret-safe per-predicate classifier passes 36 focused tests, syntax and no-action verification; run, recovery and retirement refuse without a bound window. Backend evidence: `evidence/APP-013/p07-database-preflight-predicate-local-correction-20261021.md`.
+
+Owner supplies a fresh attended Eastern block of at least 90 minutes next. Binding, retest and a separate exact read-only diagnostic approval follow. No live database read, retry or substitute operation is authorized. P08/payment remains separate. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved local correction.**
 
 ## October 20 — repaired P07 operation bound; decision pending
 
