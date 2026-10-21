@@ -14,11 +14,13 @@
 
 **Completed/evidence:** repair 4 reserved once, passed Cloud and sanitized Stripe preflight, then returned `P07_STOP_DATABASE_PREFLIGHT_DRIFT` with `possibleMutation:false`, empty mutation sets, role absent/closed with zero sessions and `CONTAINMENT_VERIFIED`. Backend: `evidence/APP-013/p07-repaired-runtime-readiness-stop4-20261021.md`.
 
-**Remaining/blocker/owner:** implementer analyzes the exact database-preflight predicates locally. A new diagnostic or correction requires a demonstrated gap and owner-approved proposal before implementation or another live action. No retry. P08/payment remains separate.
+**Completed/evidence:** source inspection confirms `db_preflight` collapses all exact identity, role, job, payment, calendar, admission-policy and tenant-account mismatches into `DATABASE_PREFLIGHT_DRIFT` while correctly discarding raw values. `APP013_P07_DATABASE_PREFLIGHT_PREDICATE_DIAGNOSTIC_PROPOSAL_20261021.md` records the demonstrated gap and alternatives.
 
-**Next observable result:** a bounded local diagnosis and, only if demonstrated, the smallest reviewable change proposal.
+**Remaining/blocker/owner:** Debynyhan Banks approves or refuses Alternative 1 for a fresh disabled local-only per-predicate classifier and tests. No database connection, retry or external action is included. P08/payment remains separate.
 
-**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unexpected database-state drift disclosed; no external mutation.**
+**Next observable result:** if approved, a fresh disabled package whose tests prove exact fixed classification without private-output retention.
+
+**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unexpected database-state drift disclosed; proposed correction not implemented.**
 
 ## October 20 — repair 2 exact operation awaiting approval
 

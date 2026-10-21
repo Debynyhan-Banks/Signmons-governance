@@ -8,7 +8,7 @@ Receipts prove `possibleMutation:false`, empty mutation sets, role absent/closed
 
 Owner-approved repair 4 reserved once, passed Cloud and sanitized Stripe preflight, then stopped at database-state evaluation with `P07_STOP_DATABASE_PREFLIGHT_DRIFT`. The corrected TLS path worked. Receipts prove `possibleMutation:false`, empty mutation sets, role absent/closed with zero sessions and verified containment. Plan `0f2daeb9-fc75-40c2-b66b-097b6c986d7d`, packet `67157149-adc5-4a5b-a5c3-93066071403e` and operation `609bca17-276b-493f-bbd8-6edf7d5ad7e9` are consumed.
 
-Implementer analyzes the exact database-preflight predicates locally and proposes the smallest evidenced next change. No live read, retry or substitute operation is authorized. P08/payment remains separate. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unexpected database-state drift disclosed; no external mutation.**
+Source inspection confirms the controller collapses all identity, role, job, payment, calendar, admission-policy and tenant-account mismatches into one fixed code. Owner decides Alternative 1 in `APP013_P07_DATABASE_PREFLIGHT_PREDICATE_DIAGNOSTIC_PROPOSAL_20261021.md`: a fresh disabled local-only per-predicate classifier with secret-leak tests. No live read, retry or substitute operation is authorized. P08/payment remains separate. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unexpected database-state drift disclosed; proposed correction not implemented.**
 
 ## October 20 — repaired P07 operation bound; decision pending
 
