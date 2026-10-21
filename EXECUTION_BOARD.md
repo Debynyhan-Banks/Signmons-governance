@@ -1,12 +1,12 @@
 # Signmons Execution Board
 
-## October 21 — P07 raw-ID handoff removed locally; disabled package ready for scheduling
+## October 21 — P07 repair 3 bound; exact external decision pending
 
-R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Both prior readiness operations are consumed. The owner-approved connected-account handoff correction is complete in fresh private package `repair3`.
+R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Both prior readiness operations are consumed. Fresh `repair3` is bound to October 21, 6:00–7:30 a.m. Eastern with a strict 6:15 start cutoff and retirement by October 22 at 6:00 a.m.
 
-Plan `469fc707-51d9-406a-b8df-c55b078f4eba`, packet `95e56ac2-afea-4efc-b7bc-78fb2507d576` and operation `0ae8a2a9-530f-47c6-80da-3bcd740a821d` read the plan-bound tenant ID only in memory, validate format/charges/hash and persist only the match boolean. The raw ID is absent from prompts, SQL, arguments, errors and receipts. Thirty-three focused tests plus syntax/no-action/no-window refusals pass; no window, live approval, attempt or mutation exists.
+Plan `469fc707-51d9-406a-b8df-c55b078f4eba`, packet `95e56ac2-afea-4efc-b7bc-78fb2507d576` and operation `0ae8a2a9-530f-47c6-80da-3bcd740a821d` pass 33 focused tests plus syntax/no-action checks. Run/recovery/retirement each refuse `P07_REFUSED_OWNER_APPROVAL_INVALID`; no approval, attempt or mutation exists. Exact proposal: `APP013_P07_REPAIRED_RUNTIME_READINESS_OPERATION_REPAIR3_20261021.md`.
 
-Owner supplies a fresh attended 90-minute Eastern block next. The implementer then binds/retests and presents a separate exact external proposal. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved correction.**
+Owner approval or refusal is next before the strict 6:15 cutoff. Scheduling is not live authority; P08/payment remains separate. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
 
 ## October 20 — repaired P07 operation bound; decision pending
 

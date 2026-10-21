@@ -1,12 +1,12 @@
 # Global Execution Pointer
 
-## October 21 — P07 connected-account handoff correction locally complete; new window required
+## October 21 — P07 repair 3 bound to 6:00–7:30 a.m.; exact approval pending
 
-R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Both prior readiness operations are consumed. The owner approved Alternative 1 in `APP013_P07_CONNECTED_ACCOUNT_HANDOFF_CORRECTION_PROPOSAL_20261020.md` for local correction/testing only.
+R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Both prior readiness operations are consumed. The owner selected October 21, 6:00–7:30 a.m. Eastern with a strict 6:15 start cutoff for fresh repair 3.
 
-Fresh disabled package `/private/tmp/p07-repaired-runtime-readiness-20261021-repair3`, plan `469fc707-51d9-406a-b8df-c55b078f4eba`, packet `95e56ac2-afea-4efc-b7bc-78fb2507d576` and operation `0ae8a2a9-530f-47c6-80da-3bcd740a821d` remove the raw-ID prompt and dynamic SQL input. The exact tenant value is read into memory, format/charges/hash validated against the sanitized Stripe receipt, cleared and never persisted. Thirty-three focused tests, syntax, no-action and no-window run/recovery/retirement refusals pass. No binding, approval, attempt or mutation exists. Evidence: backend `evidence/APP-013/p07-connected-account-handoff-local-correction-20261021.md`.
+Package `/private/tmp/p07-repaired-runtime-readiness-20261021-repair3`, plan `469fc707-51d9-406a-b8df-c55b078f4eba`, packet `95e56ac2-afea-4efc-b7bc-78fb2507d576` and operation `0ae8a2a9-530f-47c6-80da-3bcd740a821d` are now bound to that window and retirement by October 22 at 6:00 a.m. Thirty-three focused tests, syntax and no-action pass. All live/cleanup modes refuse `P07_REFUSED_OWNER_APPROVAL_INVALID`; no approval, attempt or mutation exists. Exact proposal: `APP013_P07_REPAIRED_RUNTIME_READINESS_OPERATION_REPAIR3_20261021.md`.
 
-Next input: the owner supplies a new attended Eastern block of at least 90 minutes with Terminal, the current CHILD administrator password and signed-in Stripe Sandbox available. Exact binding/retest and a separate external-operation decision follow; no live command exists now. Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved correction.**
+Next input: owner approval or refusal of the exact one-use/no-retry readiness operation before 6:15 a.m. Eastern. Availability alone did not authorize external action. P08, payment and acceptance remain separate. Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
 
 ## October 20 — P07 repair 2 bound to next block; exact approval pending
 
