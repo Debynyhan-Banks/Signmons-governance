@@ -1,5 +1,13 @@
 # Global Execution Pointer
 
+## October 20 — P07 repair 2 stopped before mutation; handoff correction decision pending
+
+Operation `45ae622a-2cb7-4ab7-ae90-f94d30c9336a` passed corrected Cloud and sanitized Stripe preflight, then stopped during database preflight with `P07_STOP_CONNECTED_ACCOUNT_FORMAT`. Receipts prove `possibleMutation:false`, empty mutation sets, proposed role absent/zero sessions and `CONTAINMENT_VERIFIED`. No readiness resource was attempted. The operation is consumed; do not rerun it.
+
+The browser-scoped clipboard did not deliver a valid connected-account identifier to native Terminal. `APP013_P07_CONNECTED_ACCOUNT_HANDOFF_CORRECTION_PROPOSAL_20261020.md` proposes removing the manual raw-ID paste and dynamic SQL input: read the tenant's stored ID through the already approved bounded administrator preflight, hash it in memory against the sanitized Stripe receipt and discard it. Owner decision is next; no implementation or external action is authorized.
+
+Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unintended handoff drift disclosed; no external mutation.**
+
 ## October 20 — P07 repair 2 bound to next block; exact approval pending
 
 Fresh plan `6dbc6811-86d8-4bd1-8c71-1886ccf7edf6`, packet `8d64e774-bc2f-4222-87b8-77727198e4ac` and operation `45ae622a-2cb7-4ab7-ae90-f94d30c9336a` are bound to 7:30–9:00 p.m. Eastern, strict 7:45 cutoff, retirement by 7:30 p.m. October 21. Thirty-one focused tests and no-action verification pass; live start refuses without exact approval. No attempt or mutation exists.

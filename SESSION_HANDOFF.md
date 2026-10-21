@@ -1,5 +1,17 @@
 # Session Handoff
 
+## October 20 — repair 2 stopped before mutation; safer identifier handoff proposed
+
+**Section/status:** R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Both readiness operations are consumed.
+
+**Completed/evidence:** repair 2 passed corrected Cloud and sanitized Stripe preflight, then returned `P07_STOP_CONNECTED_ACCOUNT_FORMAT` at database preflight. `possibleMutation:false`, empty mutation sets, role absent/zero sessions and `CONTAINMENT_VERIFIED`; backend `evidence/APP-013/p07-repaired-runtime-readiness-stop2-20261020.md`.
+
+**Remaining/blocker/owner:** browser clipboard did not transfer the private account ID into Terminal. Debynyhan Banks decides Alternative 1 in `APP013_P07_CONNECTED_ACCOUNT_HANDOFF_CORRECTION_PROPOSAL_20261020.md`; implementer may then remove the manual prompt and hash the database-stored ID in memory. No new live authority exists.
+
+**Next observable result:** after approval, a fresh disabled package that passes exact account match/mismatch/format/no-persistence tests; later window and external approval remain separate.
+
+**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unintended handoff drift disclosed; no external mutation.**
+
 ## October 20 — repair 2 exact operation awaiting approval
 
 **Section/status:** R1-W01 / APP-013/3A/P07 remains active, built and locally tested, but not deployed/live-demonstrated.

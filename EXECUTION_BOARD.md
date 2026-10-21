@@ -1,5 +1,13 @@
 # Signmons Execution Board
 
+## October 20 — P07 repair 2 contained; raw-ID handoff correction pending
+
+Repair-2 passed Cloud/Stripe preflight and stopped on invalid connected-account input before database access or mutation. Mutation sets are empty, the proposed role is absent with zero sessions and containment is verified. The operation is consumed.
+
+The narrow proposal removes the failed browser-to-Terminal raw-ID paste, reads the existing tenant ID in the bounded administrator transaction, compares its in-memory hash to the sanitized Stripe receipt, and retains no raw value. Owner approval or refusal of `APP013_P07_CONNECTED_ACCOUNT_HANDOFF_CORRECTION_PROPOSAL_20261020.md` is next. No retry or live action is authorized.
+
+Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unintended drift disclosed.**
+
 ## October 20 — repaired P07 operation bound; decision pending
 
 Package `repair2` is bound to 7:30–9:00 p.m. Eastern with a strict 7:45 start cutoff. Its 31 focused tests/no-action check pass, and live start refuses because exact approval is absent. Proposal `APP013_P07_REPAIRED_RUNTIME_READINESS_OPERATION_REPAIR2_20261020.md` is the next owner decision. No external action, attempt or mutation occurred; P08/payment remains separate.
