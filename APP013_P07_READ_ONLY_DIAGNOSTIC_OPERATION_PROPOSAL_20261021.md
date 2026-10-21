@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 exact read-only diagnostic operation proposal
 
-Status: **owner decision pending; no browser or database action authorized**.
+Status: **owner-approved, executed once, stopped safely and consumed**.
 
 ## Exact operation
 
@@ -57,6 +57,8 @@ Twenty-two focused tests, Python syntax, manifest/no-action verification and exa
 
 ## Decision requested
 
-Approve or refuse this one exact read-only operation before **1:55 p.m. Eastern**. Approval authorizes only the allowed actions above within the bound window. It does not authorize a P07 readiness mutation, Stripe configuration, deployment, payment or P08.
+Debynyhan Banks approved the exact read-only operation before **1:55 p.m. Eastern**. The operation reserved at 1:49:30 p.m., passed sanitized Stripe Sandbox preflight, then stopped `P07_DIAGNOSTIC_STOP_DATABASE_PREFLIGHT_OUTPUT_INVALID`. Closeout returned `CONTAINMENT_VERIFIED`; no mutation path or operation-scoped session remained. The operation is consumed and cannot be retried.
 
-Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved P07-specific narrowing.**
+Backend evidence: `evidence/APP-013/p07-read-only-diagnostic-stop-20261021.md`. The next decision is the local-only, execution-faithful output-contract correction proposed in `APP013_P07_DIAGNOSTIC_TOTAL_OUTPUT_CORRECTION_PROPOSAL_20261021.md`; it is not yet authorized.
+
+Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unintended controller-assumption drift disclosed; no external mutation.**

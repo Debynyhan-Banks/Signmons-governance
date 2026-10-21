@@ -1,6 +1,6 @@
 # Session Handoff
 
-## October 21 — 30-minute read-only diagnostic bound; decision pending
+## October 21 — read-only diagnostic contained; local correction decision pending
 
 **Section/status:** R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Repair 4 and all prior readiness operations are consumed.
 
@@ -22,11 +22,15 @@
 
 **Completed/evidence:** owner supplied today, 1:45–2:15 p.m. Eastern. Exact package is bound with a strict 1:55 cutoff, diagnostic deadline 2:05 and closeout deadline 2:10. Twenty-two tests/no-action pass; live start refuses `P07_DIAGNOSTIC_REFUSED_OWNER_APPROVAL_INVALID`. Backend: `evidence/APP-013/p07-read-only-diagnostic-window-preparation-20261021.md`.
 
-**Remaining/blocker/owner:** Debynyhan Banks approves or refuses `APP013_P07_READ_ONLY_DIAGNOSTIC_OPERATION_PROPOSAL_20261021.md` before 1:55 p.m. Eastern. No browser/database or mutation action is authorized yet; P08/payment remains separate.
+**Completed/evidence:** Debynyhan Banks approved the exact 1:45–2:15 p.m. operation. It reserved before cutoff, passed sanitized Stripe Sandbox preflight and stopped `P07_DIAGNOSTIC_STOP_DATABASE_PREFLIGHT_OUTPUT_INVALID`. Closeout returned `CONTAINMENT_VERIFIED`: rollback requested, diagnostic process exited, operation-scoped sessions absent and no mutation path. The operation is consumed. Backend: `evidence/APP-013/p07-read-only-diagnostic-stop-20261021.md`.
 
-**Next observable result:** after approval, exact command handoff followed by one fixed diagnostic classification and verified closeout, or one named contained stop.
+**Validation:** current governance baseline/consistency, 25 safeguard regressions, backend architecture and both whitespace checks pass. The consumed package suite is 21/22 because one preparation-only test requires all operation receipts to be absent; the immutable receipts are now correctly present. The test was preserved, and the proposed correction includes separate pre-reservation and consumed-state validation.
 
-**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved P07-specific narrowing.**
+**Remaining/blocker/owner:** the SQL/parser contract assumes three present, non-null composite rows. Role/job/tenant absence or null propagation can produce malformed output before the intended fixed code, while the local fixtures supplied normalized strings. Debynyhan Banks approves or refuses Alternative 1 in `APP013_P07_DIAGNOSTIC_TOTAL_OUTPUT_CORRECTION_PROPOSAL_20261021.md` for a fresh disabled, local-only total-output correction and disposable PostgreSQL 16 contract test. No retry or external action is authorized.
+
+**Next observable result:** after local-only approval, a fresh disabled package emits three tagged, null-safe rows across success and absence/null cases and passes the execution-faithful PostgreSQL contract suite; a new live operation remains separately gated.
+
+**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unintended controller-assumption drift disclosed; no external mutation.**
 
 ## October 20 — repair 2 exact operation awaiting approval
 
