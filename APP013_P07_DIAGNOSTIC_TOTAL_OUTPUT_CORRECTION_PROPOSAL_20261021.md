@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 diagnostic total-output correction proposal
 
-Status: **Alternative 1 owner-approved for local correction and testing only; no external action authorized**.
+Status: **Alternative 1 owner-approved and locally completed; no external action authorized**.
 
 ## Demonstrated gap
 
@@ -53,4 +53,12 @@ Debynyhan Banks approved Alternative 1 for local correction and testing only. Th
 
 Observable local finish: a fresh disabled package passes its execution-faithful PostgreSQL contract suite, focused parser/security/refusal tests, syntax/no-action verification and required governance/architecture/whitespace checks. Only after review would a fresh attended window and separate exact external-operation approval be considered.
 
-Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unintended controller-assumption drift disclosed; proposed correction only.**
+## Local implementation result
+
+Fresh disabled package `/private/tmp/p07-read-only-diagnostic-total-output-20261021-prep1`, plan `e594290a-a142-42bb-8b26-d60908e9eed9`, packet `29e40c3f-bdee-49cc-bf06-ff9d6bdc5fe9` and operation `8f71217a-d384-4a0c-87da-3d3703a4201f`, implements the approved total-output contract. It has no window, binding, live approval or receipts. Manifest SHA-256: `b9d3deac90eedea69faf5f5735068ec65240739b9b1c377db7d3f9a648f3e7ae`.
+
+Twenty-three focused controller tests and five execution-faithful PostgreSQL 16.11 cases pass. The temporary Unix-socket-only cluster covers success, absent P06 role, absent job, absent tenant and null account, then verifies rollback/session closeout and is removed. Syntax and no-action verification pass; run and recovery refuse without a window before hidden input. Backend evidence: `evidence/APP-013/p07-diagnostic-total-output-local-correction-20261021.md`.
+
+No application source or external state changed. A future live diagnostic requires a fresh attended 30-minute window, binding/retest and separate exact approval.
+
+Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved local correction.**

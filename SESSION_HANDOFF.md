@@ -1,6 +1,6 @@
 # Session Handoff
 
-## October 21 — read-only diagnostic contained; local correction decision pending
+## October 21 — total-output correction locally complete; fresh window needed
 
 **Section/status:** R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Repair 4 and all prior readiness operations are consumed.
 
@@ -26,11 +26,13 @@
 
 **Validation:** current governance baseline/consistency, 25 safeguard regressions, backend architecture and both whitespace checks pass. The consumed package suite is 21/22 because one preparation-only test requires all operation receipts to be absent; the immutable receipts are now correctly present. The test was preserved, and the proposed correction includes separate pre-reservation and consumed-state validation.
 
-**Remaining/blocker/owner:** the SQL/parser contract assumes three present, non-null composite rows. Role/job/tenant absence or null propagation can produce malformed output before the intended fixed code, while the local fixtures supplied normalized strings. Debynyhan Banks approves or refuses Alternative 1 in `APP013_P07_DIAGNOSTIC_TOTAL_OUTPUT_CORRECTION_PROPOSAL_20261021.md` for a fresh disabled, local-only total-output correction and disposable PostgreSQL 16 contract test. No retry or external action is authorized.
+**Completed/evidence:** Debynyhan Banks approved Alternative 1 for local correction/testing. Fresh disabled package `/private/tmp/p07-read-only-diagnostic-total-output-20261021-prep1`, plan `e594290a-a142-42bb-8b26-d60908e9eed9`, packet `29e40c3f-bdee-49cc-bf06-ff9d6bdc5fe9` and operation `8f71217a-d384-4a0c-87da-3d3703a4201f`, emits exactly three tagged, null-safe rows and maps absent P06 role, job, tenant and null account to fixed codes. Twenty-three controller and five real disposable PostgreSQL 16.11 cases pass; syntax/no-action pass and both live modes refuse without a window. Backend: `evidence/APP-013/p07-diagnostic-total-output-local-correction-20261021.md`; manifest `b9d3deac90eedea69faf5f5735068ec65240739b9b1c377db7d3f9a648f3e7ae`.
 
-**Next observable result:** after local-only approval, a fresh disabled package emits three tagged, null-safe rows across success and absence/null cases and passes the execution-faithful PostgreSQL contract suite; a new live operation remains separately gated.
+**Remaining/blocker/owner:** Debynyhan Banks supplies a fresh attended 30-minute Eastern block. The implementer then binds/retests the corrected package and presents a separate exact external-operation proposal. No live database, Stripe, deployment or payment authority exists.
 
-**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unintended controller-assumption drift disclosed; no external mutation.**
+**Next observable result:** a fresh 30-minute window is bound and locally verified, with the live command still refused until separate exact owner approval.
+
+**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved local correction.**
 
 ## October 20 — repair 2 exact operation awaiting approval
 

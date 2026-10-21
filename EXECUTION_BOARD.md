@@ -1,6 +1,6 @@
 # Signmons Execution Board
 
-## October 21 — P07 diagnostic consumed; total-output correction decision pending
+## October 21 — P07 total-output correction complete and disabled
 
 R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Repair 3 remains consumed and contained after its database-preflight stop.
 
@@ -14,7 +14,9 @@ The owner approved Alternative 1 in `APP013_P07_READ_ONLY_DIAGNOSTIC_WINDOW_REDU
 
 The owner approved the exact 1:45–2:15 p.m. read-only operation. It reserved before cutoff, passed sanitized Stripe Sandbox preflight and stopped `P07_DIAGNOSTIC_STOP_DATABASE_PREFLIGHT_OUTPUT_INVALID`. Closeout returned `CONTAINMENT_VERIFIED` with rollback requested, the process exited, no operation-scoped sessions and no mutation path. Operation `c15a9092-f421-4c5b-94bd-4e7b158c6595` is consumed; do not retry. Backend evidence: `evidence/APP-013/p07-read-only-diagnostic-stop-20261021.md`.
 
-The live stop demonstrates a gap between the composite SQL output and parser: role/job/tenant absence or nulls can prevent a fixed predicate code even though tests supplied normalized three-line strings. `APP013_P07_DIAGNOSTIC_TOTAL_OUTPUT_CORRECTION_PROPOSAL_20261021.md` recommends a fresh disabled local-only package with tagged, total, null-safe rows plus a disposable PostgreSQL 16 execution test. Owner approval or refusal is next. No correction, new live operation, Stripe change, deployment or payment is authorized. P08/payment remains separate. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unintended controller-assumption drift disclosed; no external mutation.**
+The owner approved Alternative 1 for local correction/testing. Fresh disabled package `/private/tmp/p07-read-only-diagnostic-total-output-20261021-prep1`, plan `e594290a-a142-42bb-8b26-d60908e9eed9`, packet `29e40c3f-bdee-49cc-bf06-ff9d6bdc5fe9` and operation `8f71217a-d384-4a0c-87da-3d3703a4201f`, now returns three tagged, total, null-safe rows and validates consumed receipts separately. Twenty-three focused and five actual disposable PostgreSQL 16.11 cases pass. Syntax/no-action pass; run and recovery refuse without a window. Backend evidence: `evidence/APP-013/p07-diagnostic-total-output-local-correction-20261021.md`; manifest `b9d3deac90eedea69faf5f5735068ec65240739b9b1c377db7d3f9a648f3e7ae`.
+
+The local correction is complete. Owner supplies a fresh attended 30-minute block next; exact binding/retest and a separate live-operation decision follow. No new live operation, Stripe change, deployment or payment is authorized. P08/payment remains separate. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved local correction.**
 
 ## October 20 — repaired P07 operation bound; decision pending
 
