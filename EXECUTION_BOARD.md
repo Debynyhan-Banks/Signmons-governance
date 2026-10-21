@@ -1,6 +1,6 @@
 # Signmons Execution Board
 
-## October 21 — P07 predicate diagnostic correction complete and disabled
+## October 21 — P07 read-only window reduction proposed
 
 R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Repair 3 remains consumed and contained after its database-preflight stop.
 
@@ -10,7 +10,9 @@ Owner-approved repair 4 reserved once, passed Cloud and sanitized Stripe preflig
 
 Owner approved Alternative 1 in `APP013_P07_DATABASE_PREFLIGHT_PREDICATE_DIAGNOSTIC_PROPOSAL_20261021.md`. Fresh disabled repair 5 uses new plan `2058551c-6a4f-468b-8a26-f860b754e8db`, packet `e40c598f-f918-425b-8368-c6062cec0d5d` and operation `1b1a983c-40c5-4100-98f5-9d4dd3102803`. Its fixed secret-safe per-predicate classifier passes 36 focused tests, syntax and no-action verification; run, recovery and retirement refuse without a bound window. Backend evidence: `evidence/APP-013/p07-database-preflight-predicate-local-correction-20261021.md`.
 
-Owner supplies a fresh attended Eastern block of at least 90 minutes next. Binding, retest and a separate exact read-only diagnostic approval follow. No live database read, retry or substitute operation is authorized. P08/payment remains separate. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved local correction.**
+The owner requested that read-only diagnostic windows be narrowed. `APP013_P07_READ_ONLY_DIAGNOSTIC_WINDOW_REDUCTION_PROPOSAL_20261021.md` recommends a P07-specific 30-minute envelope and a fresh diagnostic-only controller containing no callable mutation path. Hidden input, read-only repeatable-read SQL, rollback, fixed sanitized output, no automatic retry, mandatory closeout and separate external approval remain.
+
+Owner approval or refusal of Alternative 1 for local preparation/testing is next. No window or live action is authorized. Repair 5 remains disabled and unchanged; P08/payment remains separate. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Proposed P07-specific process narrowing; not implemented.**
 
 ## October 20 — repaired P07 operation bound; decision pending
 

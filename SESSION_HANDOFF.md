@@ -1,6 +1,6 @@
 # Session Handoff
 
-## October 21 — predicate diagnostic correction locally complete
+## October 21 — read-only diagnostic window reduction proposed
 
 **Section/status:** R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Repair 4 and all prior readiness operations are consumed.
 
@@ -18,11 +18,13 @@
 
 **Completed/evidence:** Debynyhan Banks approved Alternative 1 for local correction and testing only. Fresh disabled repair 5, plan `2058551c-6a4f-468b-8a26-f860b754e8db`, packet `e40c598f-f918-425b-8368-c6062cec0d5d` and operation `1b1a983c-40c5-4100-98f5-9d4dd3102803`, implements deterministic secret-safe classification for every approved predicate. Thirty-six focused tests, syntax and no-action verification pass; run, recovery and retirement each refuse `P07_REFUSED_WINDOW_NOT_BOUND`. Manifest SHA-256: `17c5fad2837ec01bb590d1607f4dbdaf88ab48ee3f8856fadf27f61279ced6fe`. Backend: `evidence/APP-013/p07-database-preflight-predicate-local-correction-20261021.md`.
 
-**Remaining/blocker/owner:** Debynyhan Banks supplies a fresh attended Eastern block of at least 90 minutes with Terminal and the current CHILD administrator password. Implementer then binds/retests and presents a separate exact read-only diagnostic for owner approval. No database connection, retry or external action is authorized now. P08/payment remains separate.
+**Completed/planning:** Debynyhan Banks agreed to prepare a narrower read-only diagnostic-window proposal. `APP013_P07_READ_ONLY_DIAGNOSTIC_WINDOW_REDUCTION_PROPOSAL_20261021.md` recommends a P07-specific 30-minute envelope and a fresh diagnostic-only controller with no callable mutation path. It preserves hidden input, exact read-only repeatable-read SQL, rollback, fixed sanitized output, no automatic retry, verified closeout and separate live approval.
 
-**Next observable result:** a bound, locally reverified package awaiting separate exact external-action approval; no live command exists yet.
+**Remaining/blocker/owner:** Debynyhan Banks approves or refuses Alternative 1 for local diagnostic-only package preparation/testing. No window, browser/database access or external action is included. Repair 5 remains disabled and unchanged; P08/payment remains separate.
 
-**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved local correction.**
+**Next observable result:** if approved, a fresh disabled diagnostic-only package that passes local tests and refuses live use until a separately approved 30-minute window is bound.
+
+**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Proposed P07-specific process narrowing; not implemented.**
 
 ## October 20 — repair 2 exact operation awaiting approval
 
