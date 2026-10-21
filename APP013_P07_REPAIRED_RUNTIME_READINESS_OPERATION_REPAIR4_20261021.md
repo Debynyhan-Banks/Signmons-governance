@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 repaired-runtime readiness operation repair 4
 
-Status: **exact external-operation approval pending; no external action authorized**.
+Status: **owner-approved and installed for one operation; not yet attempted**.
 
 ## Exact binding and purpose
 
@@ -35,23 +35,24 @@ Cloud allowance is USD 1.00 and is not a provider-enforced billing cap. Six temp
 
 ## Prepared package and command boundary
 
-The package passes **35/35 focused tests**, Python/Node syntax, architecture, frozen-baseline, cross-repository consistency and no-action checks. Without exact approval, `--run`, `--recover` and `--retire` each refuse `P07_REFUSED_OWNER_APPROVAL_INVALID`. No owner approval, attempt, mutation journal or provider receipt exists.
+The package passes **35/35 focused tests**, Python/Node syntax, architecture, frozen-baseline, cross-repository consistency and no-action checks. Exact approval validates against the binding. No attempt, mutation journal or provider receipt exists.
 
-- Manifest SHA-256: `d29ad5e6b0bf0aacfa2d95649740cb9cbade0ce8d0d12f1e5edbdba475706abd`.
+- Manifest SHA-256: `62a84e3fe93ba16d20e4343c37054c57f680345e980b367e78c2e238166d1903`.
 - Controller SHA-256: `b4b6c1d56333ed968eb6b122f4f613727453d5928cdc5f84b503333b8268743d`.
-- Test SHA-256: `5b7b60278eb28ce005c75fbb68ef65f88530067739680cf43a481910b1a827ae`.
+- Test SHA-256: `ceb667eac7b9d005c339da97a1eb21e9dce1870d5cbead01cd612935ef0719d4`.
 - Binding SHA-256: `3d4e7239e14f4095a2ec84ea95a4d481846c94d2b6bdeef34c93cf8321a96d63`.
+- Owner-approval SHA-256: `eb8c0a221e135bf01a07796922a1b946f6ebfac3eb65e3f90d627d22c9579f72`.
 
-After exact approval is recorded and validated, the one-use attended command will be:
+The approved one-use attended command is:
 
 ```sh
 cd '/private/tmp/p07-repaired-runtime-readiness-20261021-repair4' && /opt/homebrew/bin/python3 controller.py --run
 ```
 
-Do not run it before approval installation. After installation it may run once starting at 7:00 a.m. Eastern and must start strictly before 7:15. The owner keeps Terminal open, enters private values only at hidden prompts and reports only fixed status lines. No retry is allowed.
+It may run once starting at 7:00 a.m. Eastern and must start strictly before 7:15. The owner keeps Terminal open, enters private values only at hidden prompts and reports only fixed status lines. No retry is allowed.
 
 ## Decision requested
 
-Approve or refuse this exact one-use repair-4 readiness operation, the listed mutations, USD 1.00 Cloud allowance, up-to-USD 0.36 temporary secret-version monthly equivalent, mandatory containment and retirement, and the October 21 7:00–8:30 a.m. Eastern window with strict 7:15 start cutoff.
+**Decision:** Debynyhan Banks replied **“Approve repair 4.”** Approval was recorded at `2026-10-21T10:31:27Z` against immutable governance commit `27de9cff2b8743963cb102362ce20180dc4a890e`, proposal SHA-256 `19735870a62057d75542182bd541a949aede5d4d8eb1ce2279188e9f7ea81cc0`. It covers this exact one-use operation, listed mutations, allowances, mandatory containment/retirement and window. It does not authorize P08, payment, booking, customer action or normal traffic.
 
 Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**

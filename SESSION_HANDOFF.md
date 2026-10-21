@@ -1,6 +1,6 @@
 # Session Handoff
 
-## October 21 — repair 4 bound for 7:00–8:30 a.m.; approval pending
+## October 21 — repair 4 approved for 7:00–8:30 a.m.; start pending
 
 **Section/status:** R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Repair 3 and both prior readiness operations are consumed.
 
@@ -10,9 +10,11 @@
 
 **Completed/evidence:** owner supplied October 21, 7:00–8:30 a.m. Eastern. Repair 4 is bound with a strict 7:15 start cutoff, ordinary work ending 8:00, containment through 8:20 and retirement by October 22 at 7:00. Thirty-five focused tests, syntax, no-action and owner-approval refusal checks pass. Backend: `evidence/APP-013/p07-repaired-runtime-readiness-repair4-preparation-20261021.md`.
 
-**Remaining/blocker/owner:** Debynyhan Banks approves or refuses `APP013_P07_REPAIRED_RUNTIME_READINESS_OPERATION_REPAIR4_20261021.md` before 7:15 a.m. The exact one-use command remains disabled until approval installation. P08/payment remains separate.
+**Completed/evidence:** Debynyhan Banks replied “Approve repair 4.” Exact approval validates against immutable proposal commit `27de9cff2b8743963cb102362ce20180dc4a890e`, the fixed identifiers/window/allowances and no-retry boundary. Backend: `evidence/APP-013/p07-repaired-runtime-readiness-repair4-approval-20261021.md`.
 
-**Next observable result:** after exact approval, the guarded operation returns `P07_REPAIRED_RUNTIME_READY_DISABLED` or one named stop with mandatory containment.
+**Remaining/blocker/owner:** owner runs the one-use command at or after 7:00 and strictly before 7:15 a.m. Eastern, retains Terminal and signed-in Stripe Sandbox, enters private values only at hidden prompts and reports only fixed status lines. No retry. P08/payment remains separate.
+
+**Next observable result:** the guarded operation returns `P07_REPAIRED_RUNTIME_READY_DISABLED` or one named stop plus containment status.
 
 **Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved correction.**
 

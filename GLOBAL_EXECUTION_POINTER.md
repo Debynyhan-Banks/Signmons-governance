@@ -1,14 +1,14 @@
 # Global Execution Pointer
 
-## October 21 — P07 repair 4 bound for 7:00–8:30 a.m.; exact approval pending
+## October 21 — P07 repair 4 approved for 7:00–8:30 a.m.; start pending
 
 R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Repair 3 remains consumed and contained after its database-preflight stop.
 
 Receipts prove `possibleMutation:false`, empty mutation sets, proposed role absent/closed with zero sessions and `CONTAINMENT_VERIFIED`. No role, secret, identity, binding, Stripe destination or deployment was attempted. Operation `0ae8a2a9-530f-47c6-80da-3bcd740a821d` is consumed; do not retry it. The sanitized wrapper retained no database error text, so the exact connection/authentication/query cause remains unestablished. Evidence: backend `evidence/APP-013/p07-repaired-runtime-readiness-stop3-20261021.md`.
 
-The owner supplied October 21, 2026, 7:00–8:30 a.m. Eastern. Fresh repair 4, plan `0f2daeb9-fc75-40c2-b66b-097b6c986d7d`, packet `67157149-adc5-4a5b-a5c3-93066071403e`, operation `609bca17-276b-493f-bbd8-6edf7d5ad7e9`, is bound with a strict 7:15 start cutoff, ordinary work ending 8:00, containment through 8:20 and retirement by October 22 at 7:00. Both `psql` paths require `verify-full` with system roots and fixed secret-safe failure codes. Thirty-five focused tests, syntax and no-action checks pass; every live mode refuses without exact approval. No approval, attempt or external action exists.
+The owner approved exact repair 4 for October 21, 2026, 7:00–8:30 a.m. Eastern. Fresh plan `0f2daeb9-fc75-40c2-b66b-097b6c986d7d`, packet `67157149-adc5-4a5b-a5c3-93066071403e`, operation `609bca17-276b-493f-bbd8-6edf7d5ad7e9`, has a strict 7:15 start cutoff, ordinary work ending 8:00, containment through 8:20 and retirement by October 22 at 7:00. Both `psql` paths require `verify-full` with system roots and fixed secret-safe failure codes. Thirty-five focused tests, syntax, approval validation and no-action checks pass. No attempt or external action exists.
 
-Next input: owner approves or refuses `APP013_P07_REPAIRED_RUNTIME_READINESS_OPERATION_REPAIR4_20261021.md` before 7:15 a.m. Eastern. Approval would cover the exact enumerated readiness mutations, USD 1.00 Cloud allowance, up-to-USD 0.36 temporary secret-version monthly equivalent and mandatory containment/retirement; it would not authorize checkout, card entry, payment, booking, customer contact, message delivery or normal traffic. P08, payment and acceptance remain separate. Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
+Next: owner runs the exact one-use command at or after 7:00 and strictly before 7:15 a.m. Eastern, enters private values only at hidden prompts and reports only fixed status lines. No retry. P08, payment and acceptance remain separate. Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
 
 ## October 20 — P07 repair 2 bound to next block; exact approval pending
 
