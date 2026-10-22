@@ -1,5 +1,13 @@
 # Global Execution Pointer
 
+## October 22 — runtime review found three guard gaps; local correction decision pending
+
+R1-W01 / APP-013/3A/P07 remains active. Verified tenant binding and zero-session closeout remain complete. Existing disabled runtime package passes 36 controller tests and its no-action check; no application/runtime source differs from the repaired build. Additional synthetic local review proves provisioning can follow a preflight that crosses work end, SIGTERM remains unhandled, and cleanup lacks final tag/service-identity readback. No external command or package modification occurred.
+
+Proposal/card: `APP013_P07_RUNTIME_GUARD_COMPLETION_PROPOSAL_20261022.md`; backend evidence `evidence/APP-013/p07-runtime-readiness-resume-review-20261022.md`. **Next decision/owner:** Debynyhan Banks approves/refuses Alternative 1 for only those local guards and isolated tests; implementer may not repair or launch before that decision. Owner supplied **5:30–7:00 p.m. Eastern today** as availability, not execution authority. No window is bound; do not rush, extend or replay a package.
+
+**Next observable result:** approved local guard completion and a fresh disabled tested package, then separately bound/reviewed external readiness operation. Payment/P08/3A acceptance remain open. Accepted 1A/1B/2A/2B unchanged; **0/27 R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence**. **Proposed prerequisite correction disclosed before implementation; no product scope or acceptance change.**
+
 ## October 22 — tenant Stripe binding committed; containment verified
 
 R1-W01 / APP-013/3A/P07 remains active. The explicitly approved 5:00–5:40 p.m. operation `d618b826-72d9-412f-8d9f-08482a457088` reserved once at **5:01:44 p.m. Eastern**. Fresh Sandbox/Test administrator, one Enabled connected account, destination-absence and exact account-ID-control hash qualification passed. Owner performed the approved private ID handoff. The guarded exact-tenant update and same-transaction audit committed; sanitized readback confirms `accountHashMatches:true`, `chargesEnabled:true`, `auditPresent:true`, `commitState:COMMITTED`. Mandatory closeout confirms zero operation sessions. Owner Terminal output agrees: `P07_TENANT_STRIPE_BINDING_COMPLETE` / `CONTAINMENT_VERIFIED`. Result/closeout local filesystem times are approximately **5:06:26 p.m.**, not provider timestamps.
