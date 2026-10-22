@@ -1,6 +1,18 @@
 # Session Handoff
 
-## October 22 — closeout-only exact operation awaiting approval
+## October 22 — mandatory closeout verified
+
+**Section/status:** R1-W01 / APP-013/3A/P07 active. Mandatory closeout is live-demonstrated and verified; tenant binding/payment capability is not live-demonstrated or owner-accepted.
+
+**Completed checklist/evidence:** owner approved exact operation `0d2f9eca-c8e8-49b6-b3c5-182416164a90`; one start at **2:35:46 p.m.**, verified result **2:36:05 p.m. Eastern**. Independent receipt matches Terminal: `VERIFIED`, `SESSION_READBACK`, `operationSessionsAbsent:true`, `possibleMutation:false`, no retry. Approval/binding/attempt/result/hash/mode/time correlation verified without another database read. Evidence: backend `evidence/APP-013/p07-closeout-only-live-result-20261022.md`. Preserve original interrupted stop and all consumed packages.
+
+**Remaining/blocker/owner:** closeout blocker resolved. Correct account-ID handoff is still required before tenant binding. Owner approves/refuses Alternative 1 in `APP013_P07_OWNER_OPERATED_ACCOUNT_HANDOFF_PROPOSAL_20261022.md`: local preparation/testing with prospective owner-only clipboard use for the connected-account ID, existing hidden prompts/transaction and no new helper. External execution remains separately gated. Implementer owns preparation only after approval. Original failure cause remains unknown.
+
+**Next observable result:** after approval, one fresh disabled tenant-binding package, the existing fourteen controller/five PostgreSQL cases and integrity/refusal checks passed, followed by a separate exact external decision. No retry of either consumed operation.
+
+**Accepted milestones/progress:** 1A/1B/2A/2B remain accepted; **0/27 R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence**. **No scope deviation in completed closeout; owner-only clipboard exception proposed and unimplemented.**
+
+## Earlier October 22 — closeout-only exact operation awaiting approval
 
 **Section/status:** R1-W01 / APP-013/3A/P07 remains active, locally tested, not live-demonstrated or owner-accepted. Actual closeout of consumed operation `bfc0bb5b-1564-4991-a446-3960caa67d49` is still unconfirmed.
 

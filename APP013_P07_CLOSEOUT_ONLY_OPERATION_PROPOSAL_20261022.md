@@ -1,6 +1,6 @@
 # R1-W01 / APP-013 / 3A / P07 exact closeout-only operation
 
-Status: **owner decision pending; no external database action authorized**.
+Status: **owner-approved, executed once and consumed; mandatory closeout verified**.
 
 ## Exact package and window
 
@@ -55,3 +55,11 @@ The bound package retains the unchanged tested helper/manifest. Twenty-one helpe
 Approve or refuse this **one exact read-only closeout operation** before the strict 2:40 p.m. cutoff. The local-preparation approval and supplied availability are not external execution approval. This separate approval is required by the owner-approved recovery proposal and repository `AGENTS.md` instruction that planning/implementation approval does not imply external action approval.
 
 Actual containment remains unconfirmed until the approved read succeeds. Account binding/handoff, runtime readiness and Sandbox payment remain open. Accepted progress remains **0/27 R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence**. **No scope deviation.**
+
+## Result — October 22, 2026
+
+Debynyhan Banks approved this exact operation. It reserved once at **2:35:46 p.m. Eastern** and completed at **2:36:05 p.m. Eastern** inside all deadlines. Terminal returned `P07_MANDATORY_CLOSEOUT_VERIFIED` / `CONTAINMENT_VERIFIED`. The correlated private result records `status:VERIFIED`, `reason:VERIFIED`, `stage:SESSION_READBACK`, `operationSessionsAbsent:true`, `possibleMutation:false` and no retry. Receipt SHA-256: `78c9bc50b7eb4453763c06ffad40471c57f072e81bdd77ad5eb49bfea1d11f9a`.
+
+Mandatory session closeout for consumed target `bfc0bb5b-1564-4991-a446-3960caa67d49` is now verified by this later readback. The original interrupted stop stays immutable with its historical unconfirmed value. No tenant, account, payment or provider state changed. Both operations are consumed and must not be retried. Backend evidence: `evidence/APP-013/p07-closeout-only-live-result-20261022.md`.
+
+Account handoff/binding and the remaining P07/payment gates remain open. Accepted measures remain **0/27 R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence**. **No scope deviation.**

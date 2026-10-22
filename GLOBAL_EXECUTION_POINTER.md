@@ -1,6 +1,14 @@
 # Global Execution Pointer
 
-## October 22 — closeout-only operation bound; exact approval pending
+## October 22 — mandatory closeout verified; account handoff decision next
+
+R1-W01 / APP-013/3A/P07 remains active. Owner-approved closeout operation `0d2f9eca-c8e8-49b6-b3c5-182416164a90` reserved at **2:35:46 p.m. Eastern** and completed at **2:36:05**. The independent read-only receipt confirms `VERIFIED`, `SESSION_READBACK`, `operationSessionsAbsent:true`, `possibleMutation:false`. Owner Terminal status matches `P07_MANDATORY_CLOSEOUT_VERIFIED` / `CONTAINMENT_VERIFIED`. Mandatory session closeout for consumed target `bfc0bb5b-1564-4991-a446-3960caa67d49` is now verified. Preserve its original interrupted receipt and historical unconfirmed state; do not retry either operation. Evidence: backend `evidence/APP-013/p07-closeout-only-live-result-20261022.md`.
+
+The closeout blocker is resolved; tenant binding remains unperformed. Next decision: `APP013_P07_OWNER_OPERATED_ACCOUNT_HANDOFF_PROPOSAL_20261022.md`, Alternative 1 for local preparation/testing of one fresh package using the existing transaction and owner-operated hidden prompts, with an explicit prospective owner-only clipboard exception for the connected-account ID. No new helper or automated Terminal route. Owner approval is required before changing that prior prohibition. Later exact external authority remains separate. No further database/provider action is authorized by the consumed closeout approval.
+
+Accepted measures remain **0/27 R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence**. **No scope deviation in completed closeout. Proposed owner-only clipboard deviation remains unimplemented.**
+
+## Earlier October 22 — closeout-only operation bound; exact approval pending
 
 R1-W01 / APP-013/3A/P07 remains active. Debynyhan Banks approved Alternative 1 in `APP013_P07_MANDATORY_CLOSEOUT_RECOVERY_PROPOSAL_20261022.md` for local preparation/testing and requested sanitized failure reasons. Fresh disabled package `/private/tmp/p07-closeout-only-20261022-prep1`: plan `76a8f82d-1d34-44e9-8a5f-0234c48b8052`, packet `6504f835-2c15-4268-bc5b-16c9ee8f6bb6`, closeout operation `0d2f9eca-c8e8-49b6-b3c5-182416164a90`.
 

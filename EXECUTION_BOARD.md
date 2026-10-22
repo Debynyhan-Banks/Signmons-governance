@@ -1,6 +1,14 @@
 # Signmons Execution Board
 
-## October 22 — closeout-only exact operation awaiting approval
+## October 22 — mandatory closeout verified
+
+R1-W01 / APP-013/3A/P07 remains active. Exact owner-approved closeout operation `0d2f9eca-c8e8-49b6-b3c5-182416164a90` ran once, **2:35:46–2:36:05 p.m. Eastern**, and returned `P07_MANDATORY_CLOSEOUT_VERIFIED` / `CONTAINMENT_VERIFIED`. Receipt confirms zero target-operation sessions, `possibleMutation:false`, `reason:VERIFIED`, `stage:SESSION_READBACK`. Backend evidence: `evidence/APP-013/p07-closeout-only-live-result-20261022.md`. The earlier interrupted stop remains immutable; both operations are consumed. Closeout blocker resolved.
+
+Tenant binding/account handoff remains open. `APP013_P07_OWNER_OPERATED_ACCOUNT_HANDOFF_PROPOSAL_20261022.md` is the next decision: prepare one fresh package reusing the existing transaction and owner-operated hidden prompts, with a prospective owner-only clipboard exception for the ID. No new input helper or automated Terminal workaround. Local preparation needs owner approval; later external execution remains separate.
+
+Measures stay **0/27 R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence**. **No scope deviation in completed closeout; proposed procedural exception unimplemented.**
+
+## Earlier October 22 — closeout-only exact operation awaiting approval
 
 R1-W01 / APP-013/3A/P07 remains active; actual containment of consumed operation `bfc0bb5b-1564-4991-a446-3960caa67d49` remains unconfirmed. Owner approved local closeout preparation and sanitized failure reporting. Fresh disabled package `/private/tmp/p07-closeout-only-20261022-prep1`: plan `76a8f82d-1d34-44e9-8a5f-0234c48b8052`, packet `6504f835-2c15-4268-bc5b-16c9ee8f6bb6`, closeout operation `0d2f9eca-c8e8-49b6-b3c5-182416164a90`.
 
