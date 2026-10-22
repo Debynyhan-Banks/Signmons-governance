@@ -6,11 +6,13 @@
 
 **Completed/evidence:** Debynyhan Banks approved the exact 6:45–7:15 a.m. operation. It reserved at 6:45:26, passed sanitized Stripe Sandbox/Test mode, administrator access, exactly one enabled connected account and destination absence, then stopped `P07_DIAGNOSTIC_STOP_CONNECTED_ACCOUNT_FORMAT`. The corrected three-row query reached the tenant predicate: the exact tenant exists, but its stored account is absent or malformed. `chargesEnabled` and provider-hash equality were not reached. Mandatory closeout returned `CONTAINMENT_VERIFIED`; rollback was requested, the process exited, no operation-scoped sessions remained and no mutation path existed. Backend: `evidence/APP-013/p07-diagnostic-connected-account-format-stop-20261022.md`.
 
-**Remaining/blocker and owner:** no current product service configures the tenant's Stripe account and charge-readiness flag. Debynyhan Banks approved Alternative 1 in `APP013_P07_TENANT_STRIPE_BINDING_CORRECTION_PROPOSAL_20261022.md` for bounded local-only controller preparation/testing instead of building full Connect onboarding inside R1. The implementer owns the fresh disabled package and tests. Any future tenant mutation, Stripe destination, deployment, P08 payment and 3A acceptance remain separately gated.
+**Completed/evidence:** Debynyhan Banks approved Alternative 1 for local preparation/testing. Fresh disabled package `/private/tmp/p07-tenant-stripe-binding-correction-20261022-prep1`, plan `8ba2a1c8-d845-4111-b1f7-27e636b0fd1a`, packet `13471d52-2195-4620-b6a4-b6282e4a70c6` and operation `aff460dd-740b-40c4-8fcc-ea6dbc21057e`, implements the exact conditional update, same-transaction audit, sanitized readback and read-only uncertain-commit recovery. Fourteen focused and five real disposable PostgreSQL cases pass; syntax, private modes, manifest and no-action/refusal checks pass. Backend: `evidence/APP-013/p07-tenant-stripe-binding-local-preparation-20261022.md`; manifest `7eb4cbf4ace386273000df8e41a1784b02960cbc18eaa1c38b5a5436e74472dd`.
 
-**Next observable result:** a fresh disabled package passes the finite mocked and disposable-PostgreSQL transaction, rollback, concurrency, recovery, privacy and no-action tests. No live command or window exists at this checkpoint.
+**Remaining/blocker and owner:** Debynyhan Banks supplies an attended 45-minute Eastern block with Terminal, the current CHILD administrator password and signed-in Stripe Sandbox available. The implementer then binds/retests and presents the exact external-operation proposal. Any future tenant mutation, Stripe destination, deployment, P08 payment and 3A acceptance remain separately gated.
 
-**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Approved prerequisite correction before implementation; external action remains unapproved.**
+**Next observable result:** an exact window-bound, hash-bound proposal that still refuses live use without separate owner approval. No live command or window exists at this checkpoint.
+
+**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved prerequisite correction.**
 
 ## Earlier October 22 — corrected diagnostic bound; exact decision pending
 

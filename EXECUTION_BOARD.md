@@ -6,7 +6,9 @@ R1-W01 / APP-013/3A/P07 remains active. Owner-approved operation `8f71217a-d384-
 
 Closeout returned `CONTAINMENT_VERIFIED`: rollback requested, diagnostic process exited, no operation-scoped sessions and no mutation path. The operation is consumed and cannot be retried. Backend evidence: `evidence/APP-013/p07-diagnostic-connected-account-format-stop-20261022.md`.
 
-Debynyhan Banks approved Alternative 1 in `APP013_P07_TENANT_STRIPE_BINDING_CORRECTION_PROPOSAL_20261022.md` for local preparation/testing only. The implementer prepares one fresh disabled, exact-tenant, conditional and audited binding-repair package. Live database mutation, Stripe configuration, deployment, P08 and payment remain separately gated. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Approved prerequisite correction before implementation; external action remains unapproved.**
+Debynyhan Banks approved Alternative 1 in `APP013_P07_TENANT_STRIPE_BINDING_CORRECTION_PROPOSAL_20261022.md` for local preparation/testing only. Fresh disabled package `/private/tmp/p07-tenant-stripe-binding-correction-20261022-prep1` uses new plan `8ba2a1c8-d845-4111-b1f7-27e636b0fd1a`, packet `13471d52-2195-4620-b6a4-b6282e4a70c6` and operation `aff460dd-740b-40c4-8fcc-ea6dbc21057e`. Fourteen focused and five real disposable PostgreSQL tests pass; no-action and both no-window refusals pass. Backend evidence: `evidence/APP-013/p07-tenant-stripe-binding-local-preparation-20261022.md`; manifest `7eb4cbf4ace386273000df8e41a1784b02960cbc18eaa1c38b5a5436e74472dd`.
+
+The owner supplies an attended 45-minute Eastern block next. Exact binding/retest and a separate external-operation proposal follow. Live database mutation, Stripe configuration, deployment, P08 and payment remain separately gated. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved prerequisite correction.**
 
 ## Earlier October 22 — corrected P07 diagnostic bound; decision pending
 

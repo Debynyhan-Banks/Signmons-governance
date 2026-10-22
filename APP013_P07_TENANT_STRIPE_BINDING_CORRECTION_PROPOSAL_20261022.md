@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 tenant Stripe binding correction proposal
 
-Status: **Alternative 1 owner-approved for local preparation/testing; no external mutation authorized**.
+Status: **Alternative 1 owner-approved and locally completed; no external mutation authorized**.
 
 ## Requirement traceability and demonstrated gap
 
@@ -48,8 +48,16 @@ A later external proposal must separately bind the reviewed package hashes, fres
 
 Successful tenant binding would remove one P07 prerequisite only. The disabled webhook destination, dedicated runtime credential/identity, zero-traffic deployment, P08 authentic Sandbox payment and owner acceptance would remain open.
 
+## Local implementation result
+
+Fresh disabled package `/private/tmp/p07-tenant-stripe-binding-correction-20261022-prep1`, plan `8ba2a1c8-d845-4111-b1f7-27e636b0fd1a`, packet `13471d52-2195-4620-b6a4-b6282e4a70c6` and operation `aff460dd-740b-40c4-8fcc-ea6dbc21057e`, implements the exact guarded transaction and read-only recovery above. Fourteen focused controller tests and five real disposable PostgreSQL 16.11 cases pass. Syntax, manifest, private modes and no-action checks pass; `--run` and `--recover` refuse without a window. Manifest SHA-256: `7eb4cbf4ace386273000df8e41a1784b02960cbc18eaa1c38b5a5436e74472dd`.
+
+Backend evidence: `evidence/APP-013/p07-tenant-stripe-binding-local-preparation-20261022.md`. No application source or external state changed. A fresh attended 45-minute block, exact binding/retest and separate external-operation approval remain required.
+
 ## Decision requested
 
 Debynyhan Banks approved **Alternative 1 for local preparation and testing only**. This authorizes the fresh disabled package and finite local test matrix above. It does not authorize a live database connection, tenant mutation, Stripe change, deployment or payment.
 
-Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Approved prerequisite correction before implementation; external action remains unapproved.**
+The authorized local work is complete. The next input is an attended 45-minute Eastern block with Terminal, the current CHILD administrator password and signed-in Stripe Sandbox available. Exact binding/retest and a separate external-operation decision follow.
+
+Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved prerequisite correction.**
