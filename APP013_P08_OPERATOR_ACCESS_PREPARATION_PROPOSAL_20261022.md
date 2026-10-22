@@ -1,6 +1,6 @@
 # R1-W01 / APP-013 / 3A / P08 — operator access and bounded local preparation
 
-Status: **Alternative 1 explicitly owner-approved for bounded local preparation and isolated tests only; implementation not yet begun at decision record. No external action authorized.** This is an internal prerequisite of the existing same-job payment section, not another acceptance section or product feature.
+Status: **Alternative 1 local preparation implemented and tested; no external action approved. Fresh read-only qualification operation prepared separately.** This is an internal prerequisite of the existing same-job payment section, not another acceptance section or product feature.
 
 ## Existing authority and observable finish
 
@@ -55,10 +55,10 @@ The payment supervisor is disabled until qualification, complete binding and exa
 - [x] Inspect canonical scope, source registration, identity/audit path, UI and newest P07 receipts; pin source hashes and preserve accepted work.
 - [x] Record demonstrated access/identity gaps, alternatives, limits, proposed permissions, expected files and approval owners before coding.
 - [x] Owner approved Alternative 1 local preparation and isolated tests; decision recorded before implementation.
-- [ ] Prepare disabled read-only qualification/supervisor package; exit: no external mode can execute without exact complete binding and approval; absent actor/amount/window/permission assumptions refuse.
-- [ ] Prove actual PostgreSQL qualification/output and UUID/same-tenant actor boundary; exit: text UID/missing/foreign/inactive actor refuses **before** any mocked Checkout call; valid UUID-backed actor completes the existing policy/request/event/audit sequence.
-- [ ] Prove controller/bridge interruption, concurrency, recovery and browser boundaries below; exit: finite matrix green with verified disposable cleanup and no external requests.
-- [ ] Review hashes/source reuse and publish sanitized evidence. Then present exact read-only qualification separately; its result supplies actor/amount/access bindings for the finished payment operation. Do not jump to payment approval with unknowns.
+- [x] Prepare disabled read-only qualification/supervisor package; exit: no external mode can execute without exact complete binding and approval; absent actor/amount/window/permission assumptions refuse.
+- [x] Prove actual PostgreSQL qualification/output and UUID/same-tenant actor boundary; exit: text UID/missing/foreign/inactive actor refuses **before** any mocked Checkout call; valid UUID-backed actor completes the existing policy/request/event/audit sequence.
+- [x] Prove controller/bridge interruption, concurrency, recovery and browser boundaries below; exit: finite matrix green with verified disposable cleanup and no external requests.
+- [x] Review hashes/source reuse and publish sanitized evidence. Then present exact read-only qualification separately; its result supplies actor/amount/access bindings for the finished payment operation. Do not jump to payment approval with unknowns.
 
 **Required local tests and commands after approval.** The fresh package runs `python3 -B -m unittest -v test_controller.py test_postgres_contract.py` and `node --test operator-bridge.test.mjs`; real PostgreSQL must be a newly owned Unix-socket cluster with TCP disabled, migrations only in its disposable database, network/provider access blocked and cleanup independently verified. Reuse existing real-role proof cases rather than replaying staging. Actual guard tests are `src/auth/__tests__/request-auth.guard.spec.ts`; payment suites are `src/tenants/organization-payment-policy.spec.ts`, `src/payments/payment-requests.service.spec.ts`, `src/payments/stripe-checkout.provider.spec.ts`, `src/payments/stripe-webhooks.service.spec.ts` and `src/payments/payment-gate.policy.spec.ts`. If a scratch build is necessary, build only the exact unchanged source and report it; no new cloud build. No nonexistent standalone job-policy suite.
 
@@ -76,7 +76,7 @@ Isolated desktop/mobile browser tests must block/count every non-loopback reques
 
 ## Owner decision requested
 
-Approve/refuse **Alternative 1 for bounded local P08 preparation and isolated tests only**, including the read-only qualification mode, UUID-backed operator preflight and the prospective limited Firebase read/signing/test-identity branches above. No live lookup, identity/IAM/database/provider action, token, secret access, deployment, payment, resend, new allowance or retirement extension is authorized. The completed exact external operations will be presented separately. Decision: **pending**.
+Approve/refuse **Alternative 1 for bounded local P08 preparation and isolated tests only**, including the read-only qualification mode, UUID-backed operator preflight and the prospective limited Firebase read/signing/test-identity branches above. No live lookup, identity/IAM/database/provider action, token, secret access, deployment, payment, resend, new allowance or retirement extension is authorized. The completed exact external operations will be presented separately. Decision: **approved for local preparation and isolated tests only; see owner decision below**.
 
 `AGENTS.md` requires approval before a substantial prerequisite or access-plan change is implemented. This proposal records that decision before coding. **Explicit deviation proposal: narrow P08 operator/permission prerequisite; no implemented scope deviation.**
 
@@ -87,3 +87,9 @@ Backend inspection evidence is saved at local commit `651a27f`. Frozen baseline/
 ## Owner decision recorded before implementation
 
 Debynyhan Banks answered **“Approve Alternative 1 for local preparation and isolated tests only”** to the exact question referencing proposal commit `8893d04`. This approves the bounded local files/proofs/read-only qualification mode and prospective access-plan preparation described above. It does not authorize live lookup, identity/IAM/database/provider action, token, payment, deployment, new allowance or retirement extension. P07 remains consumed; its verified result and retirement deadline are unchanged.
+
+## Approved local preparation completion
+
+Fresh disabled `/private/tmp/p08-same-job-sandbox-20261022-prep1`, operation `fd546a8e-501b-4db2-a1e5-59303f7c6e1d`, now passes23 controller tests,8 actual SQL contract groups and14 Node/bridge groups including desktop/mobile browser. Reused real-role proof passes23 reported checks, actual guard/actor preflight, original rights/races/recovery and SIGINT cleanup. Build/lint/architecture and92 affected existing tests pass. Owned fixtures removed; two historical October17/19 directories preserved with zero matching PostgreSQL processes. Sources, modes, manifest and no-action/refusal checks are recorded in backend `evidence/APP-013/p08-local-preparation-20261022/README.md`. No application/live resource changed.
+
+Owner supplied7:15–7:45 p.m. Eastern tonight, October22, as availability only. Exact separate read-only proposal: `APP013_P08_READ_ONLY_QUALIFICATION_OPERATION_20261022.md`; strict7:25 cutoff, reads through7:40, closeout7:43. No live approval or attempt. Future payment-launch/activation/signing orchestration remains unimplemented pending actual qualification/card/exact approval; no helper is accepted as a commercial capability. P07 retirement/accepted counts unchanged. No scope deviation from approved local preparation.
