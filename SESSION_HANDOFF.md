@@ -1,16 +1,18 @@
 # Session Handoff
 
-## October 22 — mandatory closeout verified
+## October 22 — owner-operated account handoff locally ready
 
 **Section/status:** R1-W01 / APP-013/3A/P07 active. Mandatory closeout is live-demonstrated and verified; tenant binding/payment capability is not live-demonstrated or owner-accepted.
 
 **Completed checklist/evidence:** owner approved exact operation `0d2f9eca-c8e8-49b6-b3c5-182416164a90`; one start at **2:35:46 p.m.**, verified result **2:36:05 p.m. Eastern**. Independent receipt matches Terminal: `VERIFIED`, `SESSION_READBACK`, `operationSessionsAbsent:true`, `possibleMutation:false`, no retry. Approval/binding/attempt/result/hash/mode/time correlation verified without another database read. Evidence: backend `evidence/APP-013/p07-closeout-only-live-result-20261022.md`. Preserve original interrupted stop and all consumed packages.
 
-**Remaining/blocker/owner:** closeout blocker resolved. Correct account-ID handoff is still required before tenant binding. Owner approves/refuses Alternative 1 in `APP013_P07_OWNER_OPERATED_ACCOUNT_HANDOFF_PROPOSAL_20261022.md`: local preparation/testing with prospective owner-only clipboard use for the connected-account ID, existing hidden prompts/transaction and no new helper. External execution remains separately gated. Implementer owns preparation only after approval. Original failure cause remains unknown.
+**Completed local preparation:** owner approved Alternative 1 including prospective owner-only clipboard exception. Fresh disabled `/private/tmp/p07-tenant-stripe-binding-owner-handoff-20261022-prep1`, plan `e13cca1d-b51d-44f0-bcc9-dcbe0b281f8e`, packet `852a8b36-2780-4003-85ec-14ad7491eb79`, operation `f0af9aa6-f83b-4557-a0cb-cfd9900fbb42`, passes fourteen controller/five PostgreSQL cases, normalized source, syntax, private inventory/hashes/no-action and both no-window/synthetic no-approval refusals. Manifest `47249f6299936855f4338516f907a7976831dbb68cef9617653c1883d0cbaddb`; backend `evidence/APP-013/p07-owner-operated-account-handoff-local-preparation-20261022.md`. No live/browser/clipboard/provider action.
 
-**Next observable result:** after approval, one fresh disabled tenant-binding package, the existing fourteen controller/five PostgreSQL cases and integrity/refusal checks passed, followed by a separate exact external decision. No retry of either consumed operation.
+**Remaining/blocker/owner:** owner supplies fresh attended 45-minute Eastern block with Terminal/current CHILD password/Stripe Sandbox. Implementer binds/retests and presents separate exact external approval. The current connected-account detail ID control must be confirmed during that later read-only browser qualification. Correct owner-operated ID handoff and tenant binding remain open; original failure cause remains unknown. No new helper or Terminal automation.
 
-**Accepted milestones/progress:** 1A/1B/2A/2B remain accepted; **0/27 R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence**. **No scope deviation in completed closeout; owner-only clipboard exception proposed and unimplemented.**
+**Next observable result:** exact bound/retested package plus a separate external decision; then (only after approval) one verified tenant-binding transaction/readback or named contained stop. No retry of consumed operations.
+
+**Accepted milestones/progress:** 1A/1B/2A/2B remain accepted; **0/27 R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence**. **Owner-approved procedural deviation only; no additional scope deviation.**
 
 ## Earlier October 22 — closeout-only exact operation awaiting approval
 

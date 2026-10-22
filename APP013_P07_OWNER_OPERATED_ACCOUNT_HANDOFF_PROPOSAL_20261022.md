@@ -29,3 +29,11 @@ During later execution, use the unique Enabled row on **Connected accounts**, no
 Debynyhan Banks approved **Alternative 1 for local preparation/testing, including the prospective owner-only clipboard exception**. No live browser, clipboard, database, mutation, provider action, payment or retry is included now. After local qualification, present a separate exact external-operation proposal and fresh attended window before any tenant binding.
 
 No criterion, section count, acceptance denominator, SQL scope or payment amount changes. Successful tenant binding would still leave runtime readiness and authentic Sandbox payment/3A acceptance open. Progress stays **0/27 R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence**. **Owner-approved procedural deviation: owner-only account-ID clipboard transfer during a later separately approved operation.**
+
+## Local preparation result
+
+Fresh disabled package `/private/tmp/p07-tenant-stripe-binding-owner-handoff-20261022-prep1` is complete: plan `e13cca1d-b51d-44f0-bcc9-dcbe0b281f8e`, packet `852a8b36-2780-4003-85ec-14ad7491eb79`, operation `f0af9aa6-f83b-4557-a0cb-cfd9900fbb42`, audit `46971952-f8e7-455a-a48a-fb084b5e836a`. Manifest `47249f6299936855f4338516f907a7976831dbb68cef9617653c1883d0cbaddb`.
+
+Fourteen controller and five disposable PostgreSQL cases pass; normalized source comparison proves only approved identity/source/approval-action substitutions, with transaction behavior unchanged. Syntax, private inventory/hashes, no-action, both no-window refusals and both synthetic no-approval refusals pass. Current browser ID control is intentionally unqualified until the later approved read-only operation. Backend evidence: `evidence/APP-013/p07-owner-operated-account-handoff-local-preparation-20261022.md`.
+
+Next input is a fresh attended 45-minute Eastern block; exact binding/retest and separate external approval follow. No live browser, clipboard, database or provider action occurred. **Approved procedural deviation only; no additional scope deviation.**

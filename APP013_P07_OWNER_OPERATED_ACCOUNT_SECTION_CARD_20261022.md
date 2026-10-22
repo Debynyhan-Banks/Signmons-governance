@@ -1,6 +1,6 @@
 # R1-W01 / APP-013 / 3A / P07 owner-operated account handoff card
 
-Status: complete before preparation; local work only.
+Status: complete before preparation; approved local preparation/testing now complete. External execution remains gated.
 
 ## Authority, source and reuse
 
@@ -18,13 +18,13 @@ Only the owner may use/clear the clipboard for that one account identifier. Auto
 
 ## Finite checklist and verification
 
-- [ ] Fresh unused package/source/approval bindings, exact owner instructions and disabled manifest.
-- [ ] Normalized controller comparison proves only the listed identity/approval-action substitutions; SQL and existing behavior unchanged.
-- [ ] Existing `python3 -B -m unittest -v test_controller.py` fourteen cases pass.
-- [ ] Existing `python3 -B -m unittest -v test_postgres_contract.py` five disposable PostgreSQL cases pass: commit/audit, rollback, competing writers, lost response recovery, replay refusal; cluster removed.
-- [ ] Syntax/private inventory/hash checks and `python3 -B controller.py --check` pass.
-- [ ] Run/recovery refuse without a window; synthetic scratch binding proves no-approval refusal before hidden input without external access. No executable live binding is retained.
-- [ ] Frozen baseline/consistency, 25 safeguards, architecture and whitespace gates; update tracker and local evidence.
+- [x] Fresh unused package/source/approval bindings, exact owner instructions and disabled manifest.
+- [x] Normalized controller comparison proves only the listed identity/approval-action substitutions; SQL and existing behavior unchanged.
+- [x] Existing `python3 -B -m unittest -v test_controller.py` fourteen cases pass.
+- [x] Existing `python3 -B -m unittest -v test_postgres_contract.py` five disposable PostgreSQL cases pass: commit/audit, rollback, competing writers, lost response recovery, replay refusal; cluster removed.
+- [x] Syntax/private inventory/hash checks and `python3 -B controller.py --check` pass.
+- [x] Run/recovery refuse without a window; synthetic scratch binding proves no-approval refusal before hidden input without external access. No executable live binding is retained.
+- [x] Frozen baseline/consistency, 25 safeguards, architecture and whitespace gates; update tracker and local evidence.
 
 Browser QA is inapplicable during local preparation: no browser/UI action is authorized; identifying the current connected-account detail/control remains a fresh read-only qualification during the later approved operation. No product build/full test claim for this private identity/instructions-only work.
 
