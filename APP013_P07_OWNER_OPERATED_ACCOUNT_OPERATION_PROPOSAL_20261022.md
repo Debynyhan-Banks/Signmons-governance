@@ -1,6 +1,6 @@
 # R1-W01 / APP-013 / 3A / P07 owner-operated tenant-binding operation
 
-Status: **owner decision pending; no external action authorized**.
+Status: **owner-approved for 3:00–3:45 p.m.; expired unstarted and superseded by the explicitly approved 5:00–5:40 p.m. replacement**.
 
 ## Exact package and window
 
@@ -53,3 +53,7 @@ After binding: fourteen controller and five disposable PostgreSQL tests pass; sy
 Approve or refuse this **one exact attended browser/owner-clipboard/database operation** before the strict 3:10 cutoff. Availability/local-preparation approval is not external execution approval; the approved handoff proposal and repository AGENTS.md require this separate decision.
 
 Successful binding removes one P07 prerequisite only. Runtime readiness, authentic Sandbox payment and 3A owner acceptance remain open. Measures stay **0/27 R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence**. **Owner-approved procedural deviation only; no additional scope deviation.**
+
+## Replacement decision
+
+The exact approval was installed at 3:04:08 p.m. Eastern, but inspection at 4:53:53 p.m. found no attempt or execution/mutation receipt. The operation expired unstarted. Its original package and approval remain unchanged and must not be executed. Owner explicitly approved the same operation for 5:00–5:40 p.m. Eastern today; see `APP013_P07_OWNER_HANDOFF_1700_REPLACEMENT_DECISION_20261022.md`. New IDs, an exact shorter timing validator and full local validation are required in a fresh copy before handoff. No live action occurred under the expired approval.
