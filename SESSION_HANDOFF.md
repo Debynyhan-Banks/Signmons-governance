@@ -1,6 +1,18 @@
 # Session Handoff
 
-## October 22 — handoff blocked; mandatory closeout unconfirmed
+## October 22 — closeout-only local preparation complete
+
+**Section/status:** R1-W01 / APP-013/3A/P07 remains active, locally tested, not live-demonstrated or owner-accepted. Actual closeout of consumed operation `bfc0bb5b-1564-4991-a446-3960caa67d49` is still unconfirmed.
+
+**Completed checklist/evidence:** owner approved Alternative 1 and failure reason logging. Pre-code card `APP013_P07_CLOSEOUT_ONLY_SECTION_CARD_20261022.md`; fresh disabled package `/private/tmp/p07-closeout-only-20261022-prep1`, plan `76a8f82d-1d34-44e9-8a5f-0234c48b8052`, packet `6504f835-2c15-4268-bc5b-16c9ee8f6bb6`, closeout operation `0d2f9eca-c8e8-49b6-b3c5-182416164a90`. Twenty-one helper and two PostgreSQL cases pass; fixed failure reason/stage only, exact read-only SQL, private receipts, deadlines/signals, hidden input/echo refusal, concurrent exclusive reservation and no retry verified. Syntax/manifest/inventory/private modes/no-action pass; live run refuses without a window. Backend `evidence/APP-013/p07-closeout-only-local-preparation-20261022.md`; manifest `bf50b94c8039827e530944c4fa7bad664c3d8279f6627a05687b833afcb7c117`.
+
+**Remaining/blocker/owner:** Debynyhan Banks supplies a fresh attended Eastern block and later approves the exact read-only closeout; implementer binds/retests and presents it first. No real database access occurred. Original failure cause remains unknown because the original helper discarded raw errors. Original consumed operation cannot be retried. Account handoff remains a separate unresolved prerequisite.
+
+**Next observable result:** bound/retested package and separate exact approval proposal, then (only after approval) a live zero-session result or fixed failure reason/stage with truthful unconfirmed containment.
+
+**Accepted milestones/progress:** 1A/1B/2A/2B accepted; **0/27 R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence**. **No scope deviation from the approved local closeout recovery and failure reporting.**
+
+## Earlier October 22 — handoff blocked; mandatory closeout unconfirmed
 
 **Section/status:** R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Plan `8ba2a1c8-d845-4111-b1f7-27e636b0fd1a`, packet `13471d52-2195-4620-b6a4-b6282e4a70c6` and operation `aff460dd-740b-40c4-8fcc-ea6dbc21057e` are consumed after one attempt.
 

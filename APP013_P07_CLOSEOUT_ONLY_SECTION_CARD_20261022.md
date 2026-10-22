@@ -1,6 +1,6 @@
 # R1-W01 / APP-013 / 3A / P07 closeout-only local card
 
-Status: complete before coding; local preparation/testing only.
+Status: card completed before coding; local preparation/testing now complete. External use remains gated.
 
 ## Authority, source and workflow
 
@@ -20,13 +20,13 @@ Reserve one exclusive attempt only after window, integrity, explicit approval an
 
 ## Checklist and verification
 
-- [ ] Prepare one disabled package, exact manifest and no-action check.
-- [ ] Implement exclusive one-use reservation, exact approval/window checks and read-only closeout.
-- [ ] Log fixed failure stage/reason and truthful unconfirmed result on failure.
-- [ ] Unit tests: success, nonzero/malformed output, password/TTY, classification including unknown/sensitive errors, deadlines/signals, private receipt/concurrent reservation, exact approval, no-window/no-approval refusals and failed readback.
-- [ ] Disposable PostgreSQL: exact query detects a named competing session, returns zero after closure; clean up fixture even on test failure.
-- [ ] Run `python3 -B -m unittest -v test_helper.py test_postgres.py`, `python3 -B helper.py --check`, and assert `--run` refuses without a window. No browser test: no UI/application/browser changes or authorized browser action. No product build/lint: only private standard-library helper and repository evidence.
-- [ ] Run governance baseline/consistency, 25 safeguard regressions, backend architecture and both whitespace gates; publish local preparation evidence and progress handoff.
+- [x] Prepare one disabled package, exact manifest and no-action check.
+- [x] Implement exclusive one-use reservation, exact approval/window checks and read-only closeout.
+- [x] Log fixed failure stage/reason and truthful unconfirmed result on failure.
+- [x] Unit tests: success, nonzero/malformed output, password/TTY, classification including unknown/sensitive errors, deadlines/signals, private receipt/concurrent reservation, exact approval, no-window/no-approval refusals and failed readback.
+- [x] Disposable PostgreSQL: exact query detects a named competing session, returns zero after closure; clean up fixture even on test failure.
+- [x] Run `python3 -B -m unittest -v test_helper.py test_postgres.py` (21 helper cases and 2 PostgreSQL cases run separately), `python3 -B helper.py --check`, and assert `--run` refuses without a window. No browser test: no UI/application/browser changes or authorized browser action. No product build/lint: only private standard-library helper and repository evidence.
+- [x] Run governance baseline/consistency, 25 safeguard regressions, backend architecture and both whitespace gates; publish local preparation evidence and progress handoff.
 
 ## Owners, dependencies and disabled state
 

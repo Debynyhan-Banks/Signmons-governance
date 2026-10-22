@@ -39,3 +39,11 @@ No live database access, role/grant, tenant mutation, Stripe action, deployment,
 Debynyhan Banks explicitly approved **Alternative 1 for local preparation and testing only**, adding: “lets ensure we log out the reason it fails.” Implement fixed, sanitized failure classifications and stage reporting without retaining raw database errors. A later exact read-only database closeout requires separate approval. This decision does not authorize rerunning the consumed tenant-binding operation.
 
 Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unintended execution-channel drift disclosed; no scope or acceptance change.**
+
+## Local result
+
+The approved local preparation is complete in `/private/tmp/p07-closeout-only-20261022-prep1`. Plan `76a8f82d-1d34-44e9-8a5f-0234c48b8052`, packet `6504f835-2c15-4268-bc5b-16c9ee8f6bb6`, closeout operation `0d2f9eca-c8e8-49b6-b3c5-182416164a90`. Manifest SHA-256: `bf50b94c8039827e530944c4fa7bad664c3d8279f6627a05687b833afcb7c117`.
+
+Twenty-one helper tests and two disposable PostgreSQL 16.11 tests pass, including failure reason/stage privacy, hidden input and echo refusal, deadlines/signals, no retry, concurrent reservation and competing-session detection followed by zero-session readback. Syntax, inventory/private modes, manifest and no-action pass; run refuses without a window. Backend evidence: `evidence/APP-013/p07-closeout-only-local-preparation-20261022.md`.
+
+No live database read or other external action occurred. The original failure reason remains unknown and original containment remains unconfirmed. Next input is a fresh attended Eastern block; exact binding/retest and separate read-only external approval follow. **No scope deviation from the approved local closeout recovery and failure reporting.**
