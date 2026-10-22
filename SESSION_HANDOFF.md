@@ -8,9 +8,9 @@
 
 **Completed/evidence:** Debynyhan Banks approved Alternative 1 for local preparation/testing. Fresh disabled package `/private/tmp/p07-tenant-stripe-binding-correction-20261022-prep1`, plan `8ba2a1c8-d845-4111-b1f7-27e636b0fd1a`, packet `13471d52-2195-4620-b6a4-b6282e4a70c6` and operation `aff460dd-740b-40c4-8fcc-ea6dbc21057e`, implements the exact conditional update, same-transaction audit, sanitized readback and read-only uncertain-commit recovery. Fourteen focused and five real disposable PostgreSQL cases pass; syntax, private modes, manifest and no-action/refusal checks pass. Backend: `evidence/APP-013/p07-tenant-stripe-binding-local-preparation-20261022.md`; manifest `7eb4cbf4ace386273000df8e41a1784b02960cbc18eaa1c38b5a5436e74472dd`.
 
-**Remaining/blocker and owner:** Debynyhan Banks supplies an attended 45-minute Eastern block with Terminal, the current CHILD administrator password and signed-in Stripe Sandbox available. The implementer then binds/retests and presents the exact external-operation proposal. Any future tenant mutation, Stripe destination, deployment, P08 payment and 3A acceptance remain separately gated.
+**Remaining/blocker and owner:** Debynyhan Banks supplied 7:15 a.m. The exact block is 7:15–8:00 a.m. Eastern with strict 7:25 cutoff, mutation deadline 7:45 and closeout by 7:55. Fourteen focused and five real PostgreSQL cases pass after binding; live modes refuse without approval. Debynyhan Banks approves or refuses `APP013_P07_TENANT_STRIPE_BINDING_OPERATION_PROPOSAL_20261022.md` before 7:25. Stripe destination, deployment, P08 payment and 3A acceptance remain separately gated.
 
-**Next observable result:** an exact window-bound, hash-bound proposal that still refuses live use without separate owner approval. No live command or window exists at this checkpoint.
+**Next observable result:** after exact approval and one command start before 7:25, either `P07_TENANT_STRIPE_BINDING_COMPLETE` plus verified containment or one fixed contained stop. No retry.
 
 **Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved prerequisite correction.**
 
