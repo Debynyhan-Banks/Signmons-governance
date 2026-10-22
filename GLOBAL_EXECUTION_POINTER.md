@@ -1,12 +1,14 @@
 # Global Execution Pointer
 
-## October 22 — closeout-only preparation tested; actual containment unconfirmed
+## October 22 — closeout-only operation bound; exact approval pending
 
 R1-W01 / APP-013/3A/P07 remains active. Debynyhan Banks approved Alternative 1 in `APP013_P07_MANDATORY_CLOSEOUT_RECOVERY_PROPOSAL_20261022.md` for local preparation/testing and requested sanitized failure reasons. Fresh disabled package `/private/tmp/p07-closeout-only-20261022-prep1`: plan `76a8f82d-1d34-44e9-8a5f-0234c48b8052`, packet `6504f835-2c15-4268-bc5b-16c9ee8f6bb6`, closeout operation `0d2f9eca-c8e8-49b6-b3c5-182416164a90`.
 
 Twenty-one helper tests and two disposable PostgreSQL tests pass. The helper retains fixed reason/stage only, exact read-only session-count SQL, hidden password input, deadlines/signals, private one-use receipts and no retry. Syntax, inventory/private modes, manifest and no-action pass; run refuses without a window. Manifest `bf50b94c8039827e530944c4fa7bad664c3d8279f6627a05687b833afcb7c117`. Backend evidence: `evidence/APP-013/p07-closeout-only-local-preparation-20261022.md`.
 
-No live database or external action occurred. Consumed tenant-binding operation `bfc0bb5b-1564-4991-a446-3960caa67d49` remains `INTERRUPTED`, `possibleMutation:false`, `commitState:NOT_STARTED`, `closeoutVerified:false`; its original failure reason cannot be reconstructed. Do not rerun it. Owner supplies a fresh attended Eastern block; implementer binds/retests then presents a separate exact read-only closeout approval. Actual containment remains unconfirmed until live zero-session readback. Account handoff remains unresolved after closeout.
+No live database or external action occurred. Consumed tenant-binding operation `bfc0bb5b-1564-4991-a446-3960caa67d49` remains `INTERRUPTED`, `possibleMutation:false`, `commitState:NOT_STARTED`, `closeoutVerified:false`; its original failure reason cannot be reconstructed. Do not rerun it. Actual containment remains unconfirmed until live zero-session readback. Account handoff remains unresolved after closeout.
+
+The owner supplied **2:35–2:50 p.m. Eastern today**, strict start cutoff **2:40**, input/query deadline **2:48**. Binding SHA-256 `986c3d118ec37ee86c86ec56262e7c90703af6f0ce33bdc33ccefc91228a7146`. Twenty-one helper and two PostgreSQL cases pass after binding; no-action/inventory/private modes/hashes pass and run refuses without owner approval. Backend `evidence/APP-013/p07-closeout-only-window-preparation-20261022.md`. Owner approves or refuses `APP013_P07_CLOSEOUT_ONLY_OPERATION_PROPOSAL_20261022.md` before 2:40. No window or availability alone authorizes database execution.
 
 Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved local closeout recovery and failure reporting.**
 

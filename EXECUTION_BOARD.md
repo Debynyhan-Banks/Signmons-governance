@@ -1,12 +1,12 @@
 # Signmons Execution Board
 
-## October 22 — closeout-only local preparation complete
+## October 22 — closeout-only exact operation awaiting approval
 
 R1-W01 / APP-013/3A/P07 remains active; actual containment of consumed operation `bfc0bb5b-1564-4991-a446-3960caa67d49` remains unconfirmed. Owner approved local closeout preparation and sanitized failure reporting. Fresh disabled package `/private/tmp/p07-closeout-only-20261022-prep1`: plan `76a8f82d-1d34-44e9-8a5f-0234c48b8052`, packet `6504f835-2c15-4268-bc5b-16c9ee8f6bb6`, closeout operation `0d2f9eca-c8e8-49b6-b3c5-182416164a90`.
 
 Twenty-one helper and two disposable PostgreSQL tests pass, including private fixed reason/stage, hidden-input/echo refusal, timeouts/signals, concurrent reservation/no retry and detection of a competing session then zero. Exact SQL, TLS/environment, manifest/private inventory and no-action pass; run refuses without a window. Evidence: backend `evidence/APP-013/p07-closeout-only-local-preparation-20261022.md`; manifest `bf50b94c8039827e530944c4fa7bad664c3d8279f6627a05687b833afcb7c117`.
 
-Next: owner supplies fresh attended Eastern block, implementer binds/retests and presents separate exact read-only closeout approval. No live database or provider action occurred; original stop receipts remain immutable, original failure cause unknown, account handoff unresolved. Measures remain **0/27 R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence**. **No scope deviation from the approved local closeout recovery and failure reporting.**
+Owner supplied **2:35–2:50 p.m. Eastern today**, strict **2:40** start cutoff and **2:48** input/query deadline. Twenty-one helper/two PostgreSQL cases pass after binding, no-action/inventory/private modes/hashes pass; run refuses without owner approval. Binding `986c3d118ec37ee86c86ec56262e7c90703af6f0ce33bdc33ccefc91228a7146`; evidence backend `evidence/APP-013/p07-closeout-only-window-preparation-20261022.md`. Exact decision: `APP013_P07_CLOSEOUT_ONLY_OPERATION_PROPOSAL_20261022.md` before 2:40. No live database or provider action occurred; original stop receipts remain immutable, original failure cause unknown, account handoff unresolved. Measures remain **0/27 R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence**. **No scope deviation from the approved local closeout recovery and failure reporting.**
 
 ## Earlier October 22 — handoff blocked; mandatory closeout unconfirmed
 

@@ -1,14 +1,16 @@
 # Session Handoff
 
-## October 22 — closeout-only local preparation complete
+## October 22 — closeout-only exact operation awaiting approval
 
 **Section/status:** R1-W01 / APP-013/3A/P07 remains active, locally tested, not live-demonstrated or owner-accepted. Actual closeout of consumed operation `bfc0bb5b-1564-4991-a446-3960caa67d49` is still unconfirmed.
 
 **Completed checklist/evidence:** owner approved Alternative 1 and failure reason logging. Pre-code card `APP013_P07_CLOSEOUT_ONLY_SECTION_CARD_20261022.md`; fresh disabled package `/private/tmp/p07-closeout-only-20261022-prep1`, plan `76a8f82d-1d34-44e9-8a5f-0234c48b8052`, packet `6504f835-2c15-4268-bc5b-16c9ee8f6bb6`, closeout operation `0d2f9eca-c8e8-49b6-b3c5-182416164a90`. Twenty-one helper and two PostgreSQL cases pass; fixed failure reason/stage only, exact read-only SQL, private receipts, deadlines/signals, hidden input/echo refusal, concurrent exclusive reservation and no retry verified. Syntax/manifest/inventory/private modes/no-action pass; live run refuses without a window. Backend `evidence/APP-013/p07-closeout-only-local-preparation-20261022.md`; manifest `bf50b94c8039827e530944c4fa7bad664c3d8279f6627a05687b833afcb7c117`.
 
-**Remaining/blocker/owner:** Debynyhan Banks supplies a fresh attended Eastern block and later approves the exact read-only closeout; implementer binds/retests and presents it first. No real database access occurred. Original failure cause remains unknown because the original helper discarded raw errors. Original consumed operation cannot be retried. Account handoff remains a separate unresolved prerequisite.
+**Completed exact binding:** owner supplied **2:35–2:50 p.m. Eastern today**, strict **2:40** cutoff, input/query deadline **2:48**. Twenty-one helper and two PostgreSQL cases pass after binding; inventory/private modes/manifest/no-action pass; run refuses without approval. Binding `986c3d118ec37ee86c86ec56262e7c90703af6f0ce33bdc33ccefc91228a7146`; backend evidence `evidence/APP-013/p07-closeout-only-window-preparation-20261022.md`.
 
-**Next observable result:** bound/retested package and separate exact approval proposal, then (only after approval) a live zero-session result or fixed failure reason/stage with truthful unconfirmed containment.
+**Remaining/blocker/owner:** Debynyhan Banks approves or refuses the exact read-only operation in `APP013_P07_CLOSEOUT_ONLY_OPERATION_PROPOSAL_20261022.md` before 2:40. No real database access occurred. Original failure cause remains unknown because the original helper discarded raw errors. Original consumed operation cannot be retried. Account handoff remains a separate unresolved prerequisite.
+
+**Next observable result:** after exact approval and one in-window start, live zero-session result or fixed failure reason/stage with truthful unconfirmed containment. No retry.
 
 **Accepted milestones/progress:** 1A/1B/2A/2B accepted; **0/27 R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence**. **No scope deviation from the approved local closeout recovery and failure reporting.**
 
