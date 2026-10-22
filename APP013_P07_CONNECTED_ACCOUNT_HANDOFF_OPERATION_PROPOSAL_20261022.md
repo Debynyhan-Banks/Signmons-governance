@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 connected-account handoff operation proposal
 
-Status: **owner decision pending; no browser or database action authorized**.
+Status: **approved, attempted once and consumed; interrupted before database preflight with closeout unconfirmed**.
 
 ## Exact operation
 
@@ -68,3 +68,11 @@ Fourteen controller regressions, two handoff-boundary checks and five disposable
 Approve or refuse this one exact operation before **7:55 a.m. Eastern**. Approval covers only the allowed actions inside this window. It does not authorize Stripe configuration, destination/deployment work, P08 payment or 3A acceptance.
 
 Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
+
+## Result — October 22, 2026
+
+The owner approved and reserved the exact operation at 7:47:45 a.m. Eastern. Fresh Stripe qualification passed, but computer-use safety controls prohibited the approved direct macOS Terminal handoff. The volatile account value was cleared before input. The owner interrupted once; the controller returned `P07_TENANT_BINDING_STOP_INTERRUPTED` and `CONTAINMENT_UNCONFIRMED`.
+
+Receipts prove `possibleMutation:false`, `commitState:NOT_STARTED`, no mutation intent, no database preflight/transaction and no result/recovery path. Host inspection found no controller or PostgreSQL client process, but the database zero-session query did not complete. The operation is consumed and must not be rerun. Backend evidence: `evidence/APP-013/p07-handoff-interrupted-closeout-unconfirmed-20261022.md`.
+
+`APP013_P07_MANDATORY_CLOSEOUT_RECOVERY_PROPOSAL_20261022.md` is the next decision. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unintended execution-channel drift disclosed.**

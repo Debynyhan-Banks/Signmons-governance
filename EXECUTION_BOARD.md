@@ -1,6 +1,6 @@
 # Signmons Execution Board
 
-## October 22 — tenant-binding handoff repair locally ready
+## October 22 — handoff blocked; mandatory closeout unconfirmed
 
 R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Debynyhan Banks approved the exact 7:15–8:00 a.m. operation. Plan `8ba2a1c8-d845-4111-b1f7-27e636b0fd1a`, packet `13471d52-2195-4620-b6a4-b6282e4a70c6` and operation `aff460dd-740b-40c4-8fcc-ea6dbc21057e` reserved once at 7:15:18 a.m. Eastern and are consumed.
 
@@ -10,7 +10,11 @@ Receipts prove `possibleMutation:false`, `commitState:NOT_STARTED`, no mutation 
 
 The consumed command must not be rerun. Debynyhan Banks approved Alternative 1 for local preparation/testing. Fresh disabled package `/private/tmp/p07-tenant-stripe-binding-handoff-repair-20261022-prep1`, plan `0add40ae-f062-417f-8cab-aa7b7943f562`, packet `c1ba7f8c-8e93-4264-9551-02072df99f7e` and operation `bfc0bb5b-1564-4991-a446-3960caa67d49`, preserves the unchanged transaction and defines the later direct volatile-memory handoff from the exact Enabled row to both hidden prompts. Fourteen controller, two handoff and five disposable PostgreSQL cases pass; no-action and both no-window refusals pass. Backend evidence: `evidence/APP-013/p07-connected-account-handoff-repair-local-preparation-20261022.md`; manifest `0f24d31b7dcb565fceb8396fe465ca297ae0685641725c403da006a6db36a55d`.
 
-The owner supplied 7:45–8:30 a.m. Eastern. Exact binding uses a strict 7:55 cutoff, 8:15 mutation deadline and 8:25 closeout deadline. Fourteen controller, two handoff and five disposable PostgreSQL cases pass after binding; both live modes refuse without exact approval. `APP013_P07_CONNECTED_ACCOUNT_HANDOFF_OPERATION_PROPOSAL_20261022.md` is the next decision; manifest `1b9dd0a8b12966e460f8d84c8c72c405ff2b433339d64b34849c1310deb55b76`. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
+The owner approved the exact operation. It reserved at 7:47:45 a.m., passed fresh Stripe qualification, then computer-use safety controls prohibited the approved direct macOS Terminal handoff. The volatile account value was cleared before input. The owner interrupted once; the controller returned `P07_TENANT_BINDING_STOP_INTERRUPTED` and `CONTAINMENT_UNCONFIRMED`.
+
+Receipts prove `possibleMutation:false`, `commitState:NOT_STARTED`, no mutation intent or database preflight/transaction. Host process absence is verified; database zero-session absence is not. The operation is consumed and cannot be retried. Backend evidence: `evidence/APP-013/p07-handoff-interrupted-closeout-unconfirmed-20261022.md`.
+
+`APP013_P07_MANDATORY_CLOSEOUT_RECOVERY_PROPOSAL_20261022.md` is the next decision: a fresh closeout-only helper with no tenant/account/mutation/provider path, local preparation first and later read-only database approval separately. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unintended execution-channel drift disclosed; no scope or acceptance change.**
 
 ## Earlier October 22 — corrected diagnostic contained; tenant-binding correction decision pending
 
