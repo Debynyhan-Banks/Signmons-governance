@@ -6,11 +6,11 @@
 
 **Completed/evidence:** Debynyhan Banks approved the exact 6:45–7:15 a.m. operation. It reserved at 6:45:26, passed sanitized Stripe Sandbox/Test mode, administrator access, exactly one enabled connected account and destination absence, then stopped `P07_DIAGNOSTIC_STOP_CONNECTED_ACCOUNT_FORMAT`. The corrected three-row query reached the tenant predicate: the exact tenant exists, but its stored account is absent or malformed. `chargesEnabled` and provider-hash equality were not reached. Mandatory closeout returned `CONTAINMENT_VERIFIED`; rollback was requested, the process exited, no operation-scoped sessions remained and no mutation path existed. Backend: `evidence/APP-013/p07-diagnostic-connected-account-format-stop-20261022.md`.
 
-**Remaining/blocker and owner:** no current product service configures the tenant's Stripe account and charge-readiness flag. `APP013_P07_TENANT_STRIPE_BINDING_CORRECTION_PROPOSAL_20261022.md` recommends a bounded local-only controller preparation instead of building full Connect onboarding inside R1. Debynyhan Banks approves or refuses Alternative 1. Any future tenant mutation, Stripe destination, deployment, P08 payment and 3A acceptance remain separately gated.
+**Remaining/blocker and owner:** no current product service configures the tenant's Stripe account and charge-readiness flag. Debynyhan Banks approved Alternative 1 in `APP013_P07_TENANT_STRIPE_BINDING_CORRECTION_PROPOSAL_20261022.md` for bounded local-only controller preparation/testing instead of building full Connect onboarding inside R1. The implementer owns the fresh disabled package and tests. Any future tenant mutation, Stripe destination, deployment, P08 payment and 3A acceptance remain separately gated.
 
-**Next observable result:** if local preparation is approved, a fresh disabled package passes the finite mocked and disposable-PostgreSQL transaction, rollback, concurrency, recovery, privacy and no-action tests. No live command or window exists at this checkpoint.
+**Next observable result:** a fresh disabled package passes the finite mocked and disposable-PostgreSQL transaction, rollback, concurrency, recovery, privacy and no-action tests. No live command or window exists at this checkpoint.
 
-**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **External tenant-configuration drift disclosed; no scope deviation implemented.**
+**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Approved prerequisite correction before implementation; external action remains unapproved.**
 
 ## Earlier October 22 — corrected diagnostic bound; exact decision pending
 

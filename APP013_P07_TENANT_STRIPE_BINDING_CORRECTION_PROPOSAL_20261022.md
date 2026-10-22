@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 tenant Stripe binding correction proposal
 
-Status: **owner decision pending; no local implementation or external mutation authorized**.
+Status: **Alternative 1 owner-approved for local preparation/testing; no external mutation authorized**.
 
 ## Requirement traceability and demonstrated gap
 
@@ -50,6 +50,6 @@ Successful tenant binding would remove one P07 prerequisite only. The disabled w
 
 ## Decision requested
 
-Approve or refuse **Alternative 1 for local preparation and testing only**. Approval would not authorize a live database connection, tenant mutation, Stripe change, deployment or payment.
+Debynyhan Banks approved **Alternative 1 for local preparation and testing only**. This authorizes the fresh disabled package and finite local test matrix above. It does not authorize a live database connection, tenant mutation, Stripe change, deployment or payment.
 
-Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Proposed prerequisite correction; not implemented.**
+Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Approved prerequisite correction before implementation; external action remains unapproved.**
