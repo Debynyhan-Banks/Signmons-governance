@@ -1,6 +1,6 @@
 # R1-W01 / APP-013 / 3A / P07 SQL output contract reuse proposal
 
-Status: **demonstrated local SQL defects; correction not implemented; owner decision pending**.
+Status: **Alternative 1 owner-approved for local correction and real SQL tests only; implementation in progress; no external action authorized**.
 
 ## Traceability and exact demonstrated gaps
 
@@ -48,3 +48,7 @@ The already-tested total-output diagnostic in `/private/tmp/p07-read-only-diagno
 Approve/refuse **Alternative 1 for local correction and testing of these two SQL/output interfaces only**. The previous approval covered three runtime guards and the one consumed external operation; it did not authorize this newly demonstrated SQL correction. AGENTS.md requires approval before changing substantial prerequisites or materially expanding the task list. No correction has been implemented.
 
 Accepted 1A/1B/2A/2B and **0/27 newly closed R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence** remain. **Proposed bounded prerequisite correction disclosed before implementation; no product-scope/acceptance change.**
+
+## Owner decision recorded before implementation
+
+Debynyhan Banks explicitly answered **“Approve Alternative 1 for local correction and real SQL tests only”** to the question referencing immutable proposal commit `b7f45fcc53e7a977da205d56c289ae4b9e2a68b3`. This approves only the two SQL/output interfaces and retained/real-SQL tests in the finite card. Implementation starts at backend `17bd56b3f4e88f2cf879b077eb62bc7ec588dd03`, governance `b7f45fcc53e7a977da205d56c289ae4b9e2a68b3`; both focused trees clean and pre-change baseline/consistency pass. No live action, new window or allowance follows from this decision.
