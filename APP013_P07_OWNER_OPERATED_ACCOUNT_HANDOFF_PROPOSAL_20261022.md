@@ -1,6 +1,6 @@
 # R1-W01 / APP-013 / 3A / P07 owner-operated account handoff
 
-Status: **owner decision pending; planning only; no fresh package or external action authorized**.
+Status: **Alternative 1 owner-approved for local preparation/testing, including the prospective owner-only clipboard exception; no external action authorized**.
 
 ## Demonstrated gap and unchanged customer criterion
 
@@ -26,6 +26,6 @@ During later execution, use the unique Enabled row on **Connected accounts**, no
 
 ## Decision and later gate
 
-Approve or refuse **Alternative 1 for local preparation/testing, including the prospective owner-only clipboard exception**. No live browser, clipboard, database, mutation, provider action, payment or retry is included now. After local qualification, present a separate exact external-operation proposal and fresh attended window before any tenant binding.
+Debynyhan Banks approved **Alternative 1 for local preparation/testing, including the prospective owner-only clipboard exception**. No live browser, clipboard, database, mutation, provider action, payment or retry is included now. After local qualification, present a separate exact external-operation proposal and fresh attended window before any tenant binding.
 
-No criterion, section count, acceptance denominator, SQL scope or payment amount changes. Successful tenant binding would still leave runtime readiness and authentic Sandbox payment/3A acceptance open. Progress stays **0/27 R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence**. **Proposed procedural deviation: owner-only account-ID clipboard transfer; unimplemented pending approval.**
+No criterion, section count, acceptance denominator, SQL scope or payment amount changes. Successful tenant binding would still leave runtime readiness and authentic Sandbox payment/3A acceptance open. Progress stays **0/27 R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence**. **Owner-approved procedural deviation: owner-only account-ID clipboard transfer during a later separately approved operation.**
