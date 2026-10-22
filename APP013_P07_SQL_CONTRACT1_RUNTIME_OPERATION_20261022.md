@@ -1,6 +1,6 @@
 # R1-W01 / APP-013 / 3A / P07 SQL-corrected runtime-readiness exact operation
 
-Status: **locally complete and bound to owner availability; exact external approval pending**.
+Status: **exact operation explicitly owner-approved; approval installed/validated; waiting for 6:15 p.m. start; no attempt at handoff**.
 
 ## Exact authority requested
 
@@ -50,3 +50,9 @@ Progress remains **0/27 newly closed R1; 6/60 legacy; 4/8 walkthrough (1A/1B/2A/
 This fresh operation uses the corrected SQL output protocol and the exact owner-supplied 6:15–7:45 p.m. availability, not the consumed earlier command. Only binding/manifest changed after the local correction; source/tests/helpers/grants/image unchanged. All 80 cases pass again after binding; no-action and no-approval refusals verified. Existing exact source/data/identity/privacy/cost/cleanup boundaries remain mandatory. Prior holds remain; this proposal requests only the stated fresh-operation allowance, never a reset of previous holds. No raw live predicates were retained during the earlier stop, so a current read-only mismatch remains a valid stop even though the synthetic SQL passes.
 
 After full success, any retained versions/bindings/tag/identity must be retired by the fixed deadline unless separately authorized P08 work has begun. Cleanup-only authority cannot provision again. No irreversible secret destruction/role drop, retry, implicit window extension or acceptance credit is included. Availability and local test success authorize no external action; owner exact decision is still required.
+
+## Exact owner approval recorded before execution
+
+Debynyhan Banks replied **“Approve this exact SQL-corrected P07 operation”** to the exact question referencing proposal commit `a7870939ef63bf3f7fea080df4f53ed6c42984da`, proposal SHA `c029b7091ceabb3b9904a47f1b6db57a106514c4a8db2f755095d69e0c71f02c`. Approval installed and validated at `2026-10-22T22:08:51.440650Z` (6:08:51 p.m. Eastern); private approval SHA `44d25c280e5af6bb208d5e2f07121ef470b669c2cad77ef1612ce653f66bb0af`. Separate private provenance binds proposal/binding/manifest/approval hashes and exact owner answer.
+
+Plan/packet/operation/actions/exclusions/USD1 allowance/six temporary versions/seven scoped bindings/retirement/no-retry/window all match. Controller/manifest/binding unchanged; no attempt, password, mutation or provider action exists at handoff. Start state is WAIT until 6:15; owner runs once at/after 6:15 and strictly before 6:30 p.m. Eastern. No additional approval is needed for those exact actions. Source/local test success remains distinct from readiness/payment/3A acceptance. No scope deviation.
