@@ -1,6 +1,6 @@
 # R1-W01 / APP-013 / 3A / P07 guarded runtime-readiness exact operation
 
-Status: **exact external operation explicitly owner-approved; approval installed/validated; no attempt yet at command handoff**.
+Status: **attempted once; consumed after database-output stop before mutation; containment verified; do not rerun**.
 
 ## Exact authority requested
 
@@ -50,3 +50,9 @@ Progress remains **0/27 newly closed R1; 6/60 legacy; 4/8 walkthrough (1A/1B/2A/
 Debynyhan Banks answered **“Approve this exact P07 runtime-readiness operation”** to the exact operation question referencing immutable proposal commit `b6b45852c8ed542a62cdca95e3c540a0518a3221`. Original proposal SHA-256 `e200a7ad57302a2cb1d2bd603c9c3fa776059d373c57fff75a37da88c6ddbf58`. Approval installed/validated at `2026-10-22T21:36:27.799762Z`; private approval SHA-256 `643eec0ac7cd97012a4e0dc5d4b5b59e59733da979e25a05dc7db56c24daa56b`. Exact plan/packet/operation/window/cutoff/actions/exclusions/allowance/retirement/no-retry all match. Provenance separately binds proposal/binding/manifest/approval hashes. Source/manifest/binding unchanged. No command, credential, provider/database action, attempt or mutation exists at this handoff. No additional permission is required for the exact approved actions.
 
 Owner runs the one-use command above now, strictly before 5:45 p.m. Eastern; implementer handles only the approved qualified browser actions after the corresponding readiness marker. Any stop is consumed with mandatory containment; no retry. Runtime/payment/3A acceptance remain pending. No scope deviation.
+
+## Consumed live result
+
+Owner started once at `2026-10-22T21:40:09.715451+00:00`, passed Cloud and fresh sanitized Stripe preflight, then stopped `P07_STOP_DATABASE_PREFLIGHT_OUTPUT_INVALID` in `DATABASE_PREFLIGHT`. Stop receipt records `possibleMutation:false`, `containmentFailures:[]`, automatic retry false. All mutation flags/collections remain false/empty. Role closeout proves proposed role absent/zero sessions without change. No role/secret/IAM/destination/deployment/payment action occurred; unsubmitted browser wizard was cancelled and empty inventory reconfirmed. No result/provisioning/deployment receipt exists.
+
+Backend evidence: `evidence/APP-013/p07-guards1-database-output-stop-20261022.md`, including hashes and two real disposable PostgreSQL reproductions. The source query emits long boolean text but both preflight and later role-attribute parsers expect short forms. The local cause proof changed no controller or live database. Exact raw live predicate values remain intentionally unavailable. The package is consumed; source/receipts unchanged, no retry or window extension. Next decision: local-only Alternative 1 in `APP013_P07_SQL_OUTPUT_CONTRACT_REUSE_PROPOSAL_20261022.md`. This new correction is not yet approved or implemented. Progress unchanged; prerequisite defect disclosed before implementation.
