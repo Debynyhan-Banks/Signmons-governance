@@ -1,6 +1,14 @@
 # Signmons Execution Board
 
-## October 22 — owner-operated account exact operation awaiting approval
+## October 22 — 5 p.m. replacement explicitly approved
+
+R1-W01 / APP-013/3A/P07 active. Owner explicitly approved the same exact browser/owner-clipboard/database operation for **5:00–5:40 p.m. Eastern**. Earlier 3 p.m. package expired unstarted and is preserved. Decision/card `APP013_P07_OWNER_HANDOFF_1700_REPLACEMENT_DECISION_20261022.md`; exact record `APP013_P07_OWNER_HANDOFF_1700_OPERATION_20261022.md`.
+
+Fresh package `/private/tmp/p07-tenant-stripe-binding-owner-handoff-20261022-1700`, operation `d618b826-72d9-412f-8d9f-08482a457088`, plan `ccab5857-fa54-4343-adef-a0c28502da3d`, packet `69e50ac6-3db3-473b-9940-2825d9595540`. Cutoff **5:10**, transaction by **5:25**, closeout by **5:35**. Seventeen controller/timing and five PostgreSQL cases pass with private inventory/hashes/no-action/pre-approval refusals. Manifest `dcba1e35ad4f243fe0d607cdd2aa36b59c608af3650dda9d343a99be008eba2f`; backend `evidence/APP-013/p07-owner-handoff-1700-preparation-20261022.md`.
+
+Exact replacement approval installation/validation precedes owner command. Next result: one in-window account qualification/tenant-binding result or fixed stop/closeout. No live action occurred in preparation. Measures **0/27 R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence**. **Owner-approved timing/procedure change; no additional scope deviation.**
+
+## Earlier October 22 — owner-operated account exact operation awaiting approval
 
 R1-W01 / APP-013/3A/P07 remains active. Exact owner-approved closeout operation `0d2f9eca-c8e8-49b6-b3c5-182416164a90` ran once, **2:35:46–2:36:05 p.m. Eastern**, and returned `P07_MANDATORY_CLOSEOUT_VERIFIED` / `CONTAINMENT_VERIFIED`. Receipt confirms zero target-operation sessions, `possibleMutation:false`, `reason:VERIFIED`, `stage:SESSION_READBACK`. Backend evidence: `evidence/APP-013/p07-closeout-only-live-result-20261022.md`. The earlier interrupted stop remains immutable; both operations are consumed. Closeout blocker resolved.
 

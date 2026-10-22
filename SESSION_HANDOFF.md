@@ -1,6 +1,16 @@
 # Session Handoff
 
-## October 22 — owner-operated account exact operation awaiting approval
+## October 22 — 5 p.m. replacement explicitly approved
+
+**Section/status:** R1-W01 / APP-013/3A/P07 active. Mandatory earlier closeout verified; tenant binding/payment capability remains unaccepted.
+
+**Completed/evidence:** owner explicitly approved same operation for **5:00–5:40 p.m. Eastern**. Earlier 3 p.m. package expired unstarted; no attempt/mutation receipts. Fresh `/private/tmp/p07-tenant-stripe-binding-owner-handoff-20261022-1700`, plan `ccab5857-fa54-4343-adef-a0c28502da3d`, packet `69e50ac6-3db3-473b-9940-2825d9595540`, operation `d618b826-72d9-412f-8d9f-08482a457088`, audit `e833940c-4a93-439b-b0a2-001ed6c0acbe`. Seventeen controller/timing and five PostgreSQL cases pass; source comparison shows identity bindings plus owner-requested shorter timing only. Integrity/no-action/pre-approval refusals pass. Manifest `dcba1e35ad4f243fe0d607cdd2aa36b59c608af3650dda9d343a99be008eba2f`; backend `evidence/APP-013/p07-owner-handoff-1700-preparation-20261022.md`.
+
+**Remaining/owner:** implementer installs/validates exact replacement approval, owner starts once at/after **5:00** and strictly before **5:10**; transaction by **5:25**, closeout by **5:35**. Fresh Stripe/admin/one-Enabled-account/destination-absence/account-ID-control qualification must precede owner-only ID copy into both hidden prompts. No live action yet. Exact operation `APP013_P07_OWNER_HANDOFF_1700_OPERATION_20261022.md`; no retry or automatic extension.
+
+**Next observable result:** exact tenant update/audit/readback plus verified containment or consumed fixed stop. Accepted 1A/1B/2A/2B remain; **0/27 R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence**. **Owner-approved replacement timing/procedure; no additional scope deviation.**
+
+## Earlier October 22 — owner-operated account exact operation awaiting approval
 
 **Section/status:** R1-W01 / APP-013/3A/P07 active. Mandatory closeout is live-demonstrated and verified; tenant binding/payment capability is not live-demonstrated or owner-accepted.
 

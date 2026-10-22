@@ -1,6 +1,14 @@
 # Global Execution Pointer
 
-## October 22 — owner-operated handoff bound; exact approval pending
+## October 22 — owner explicitly approved 5:00–5:40 replacement
+
+R1-W01 / APP-013/3A/P07 active. The 3 p.m. operation `f0af9aa6-f83b-4557-a0cb-cfd9900fbb42` expired unstarted: original approval preserved, no attempt or execution/mutation receipt. Owner explicitly approved the same browser/owner-clipboard/database operation for **5:00–5:40 p.m. Eastern today**. Decision/card `APP013_P07_OWNER_HANDOFF_1700_REPLACEMENT_DECISION_20261022.md`; exact record `APP013_P07_OWNER_HANDOFF_1700_OPERATION_20261022.md`.
+
+Fresh `/private/tmp/p07-tenant-stripe-binding-owner-handoff-20261022-1700`: plan `ccab5857-fa54-4343-adef-a0c28502da3d`, packet `69e50ac6-3db3-473b-9940-2825d9595540`, operation `d618b826-72d9-412f-8d9f-08482a457088`, audit `e833940c-4a93-439b-b0a2-001ed6c0acbe`. Cutoff **5:10**, transaction **5:25**, closeout **5:35**; validator narrowed to the approved 40-minute block. Seventeen controller/timing and five PostgreSQL tests pass; syntax/private inventory/hashes/no-action/pre-approval refusal pass. Manifest `dcba1e35ad4f243fe0d607cdd2aa36b59c608af3650dda9d343a99be008eba2f`; backend `evidence/APP-013/p07-owner-handoff-1700-preparation-20261022.md`.
+
+Next: install/validate exact approval for the explicit replacement decision, then owner starts once in-window, fresh Stripe/account-control qualification and owner-only ID transfer, exact transaction/readback and mandatory closeout. No live action occurred in preparation. No retry/implicit extension. Prior closeout remains verified; tenant binding/runtime/payment/3A acceptance remain open. Measures **0/27 R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence**. **Owner-approved replacement timing/procedure; no additional scope deviation.**
+
+## Earlier October 22 — owner-operated handoff bound; exact approval pending
 
 R1-W01 / APP-013/3A/P07 remains active. Owner-approved closeout operation `0d2f9eca-c8e8-49b6-b3c5-182416164a90` reserved at **2:35:46 p.m. Eastern** and completed at **2:36:05**. The independent read-only receipt confirms `VERIFIED`, `SESSION_READBACK`, `operationSessionsAbsent:true`, `possibleMutation:false`. Owner Terminal status matches `P07_MANDATORY_CLOSEOUT_VERIFIED` / `CONTAINMENT_VERIFIED`. Mandatory session closeout for consumed target `bfc0bb5b-1564-4991-a446-3960caa67d49` is now verified. Preserve its original interrupted receipt and historical unconfirmed state; do not retry either operation. Evidence: backend `evidence/APP-013/p07-closeout-only-live-result-20261022.md`.
 
