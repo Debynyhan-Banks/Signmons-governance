@@ -1,6 +1,6 @@
 # R1-W01 / APP-013 / 3A / P07 guarded runtime-readiness exact operation
 
-Status: **locally complete and bound to owner availability; exact external approval pending**.
+Status: **exact external operation explicitly owner-approved; approval installed/validated; no attempt yet at command handoff**.
 
 ## Exact authority requested
 
@@ -44,3 +44,9 @@ Success: `P07_REPAIRED_RUNTIME_READY_DISABLED` with correlated deployment/destin
 Approve/refuse **one exact guarded P07 runtime-readiness operation** above, including USD1 allowance, six temporary secret versions/seven scoped bindings, disabled Sandbox destination, one zero-normal-traffic deployment, mandatory containment and retirement, no retry, and this exact 5:30–7:00 p.m. window/start cutoff. Approval must arrive and validate before 5:45; elapsed time is not approval. If cutoff expires, do not launch or silently rebind.
 
 Progress remains **0/27 newly closed R1; 6/60 legacy; 4/8 walkthrough (1A/1B/2A/2B); 0/13 intelligence**. No additional scope deviation from the approved architecture/startup/three-guard corrections.
+
+## Exact approval recorded before execution
+
+Debynyhan Banks answered **“Approve this exact P07 runtime-readiness operation”** to the exact operation question referencing immutable proposal commit `b6b45852c8ed542a62cdca95e3c540a0518a3221`. Original proposal SHA-256 `e200a7ad57302a2cb1d2bd603c9c3fa776059d373c57fff75a37da88c6ddbf58`. Approval installed/validated at `2026-10-22T21:36:27.799762Z`; private approval SHA-256 `643eec0ac7cd97012a4e0dc5d4b5b59e59733da979e25a05dc7db56c24daa56b`. Exact plan/packet/operation/window/cutoff/actions/exclusions/allowance/retirement/no-retry all match. Provenance separately binds proposal/binding/manifest/approval hashes. Source/manifest/binding unchanged. No command, credential, provider/database action, attempt or mutation exists at this handoff. No additional permission is required for the exact approved actions.
+
+Owner runs the one-use command above now, strictly before 5:45 p.m. Eastern; implementer handles only the approved qualified browser actions after the corresponding readiness marker. Any stop is consumed with mandatory containment; no retry. Runtime/payment/3A acceptance remain pending. No scope deviation.
