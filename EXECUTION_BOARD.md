@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 22 — P08 local package and isolated tests explicitly approved
+
+R1-W01 / APP-013/3A active. Owner answered “Approve Alternative 1 for local preparation and isolated tests only” against `APP013_P08_OPERATOR_ACCESS_PREPARATION_PROPOSAL_20261022.md`, proposal commit `8893d04`. Decision recorded before coding. Implementer may prepare only the fresh disabled exact-job supervisor/read-only qualification package and specified disposable PostgreSQL/mocked-provider/isolated-browser tests; prospective Firebase access/UUID-backed test-identity branches are preparation only. No app/schema change or live lookup, identity/IAM/role/secret/provider/token/payment/deployment action is authorized.
+
+Completed: source/receipt mapping, 18 hashes, complete pre-code card and owner decision. Remaining: finite local implementation/test matrix, private integrity/no-action/refusal checks and sanitized evidence. Next observable result: tested disabled package and a separately reviewable exact read-only operator/amount/access qualification. Implementer owns preparation; owner owns later external approvals and attendance. P07 readiness/closed role/disabled destination preserved; retirement still October 23 at 6:15 p.m. Eastern. Accepted 1A/1B/2A/2B and **0/27 R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence** unchanged. **Owner-approved narrow prerequisite; no further scope deviation.**
+
 ## October 22 — P08 entry inspected; narrow operator-access preparation decision pending
 
 R1-W01 / APP-013/3A remains active. Verified P07 runtime/closed-role/disabled-destination evidence and its consumed operation are preserved. Owner said “proceed,” authorizing P08 preparation, not payment or new access implementation. Backend entry `1f22f47`, governance entry `14d10f5`; clean focused worktrees and origins reconciled. Local inspection confirms registered policy/payment routes and existing recovery/atomic-event/gate reuse. Source evidence: backend local commit `651a27f`, `evidence/APP-013/p08-entry-inspection-20261022/README.md` and 18 source hashes. Frozen baseline/cross-repository consistency, all 25 safeguards, architecture and whitespace checks pass. No external lookup or P08 code was executed.

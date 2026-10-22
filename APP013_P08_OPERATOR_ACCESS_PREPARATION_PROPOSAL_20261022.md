@@ -1,6 +1,6 @@
 # R1-W01 / APP-013 / 3A / P08 — operator access and bounded local preparation
 
-Status: **source inspection and pre-code card complete; Alternative 1 awaiting owner decision. No P08 implementation or external action authorized.** This is an internal prerequisite of the existing same-job payment section, not another acceptance section or product feature.
+Status: **Alternative 1 explicitly owner-approved for bounded local preparation and isolated tests only; implementation not yet begun at decision record. No external action authorized.** This is an internal prerequisite of the existing same-job payment section, not another acceptance section or product feature.
 
 ## Existing authority and observable finish
 
@@ -54,7 +54,7 @@ The payment supervisor is disabled until qualification, complete binding and exa
 
 - [x] Inspect canonical scope, source registration, identity/audit path, UI and newest P07 receipts; pin source hashes and preserve accepted work.
 - [x] Record demonstrated access/identity gaps, alternatives, limits, proposed permissions, expected files and approval owners before coding.
-- [ ] Owner approves/refuses Alternative 1 local preparation. No implementation before decision.
+- [x] Owner approved Alternative 1 local preparation and isolated tests; decision recorded before implementation.
 - [ ] Prepare disabled read-only qualification/supervisor package; exit: no external mode can execute without exact complete binding and approval; absent actor/amount/window/permission assumptions refuse.
 - [ ] Prove actual PostgreSQL qualification/output and UUID/same-tenant actor boundary; exit: text UID/missing/foreign/inactive actor refuses **before** any mocked Checkout call; valid UUID-backed actor completes the existing policy/request/event/audit sequence.
 - [ ] Prove controller/bridge interruption, concurrency, recovery and browser boundaries below; exit: finite matrix green with verified disposable cleanup and no external requests.
@@ -83,3 +83,7 @@ Approve/refuse **Alternative 1 for bounded local P08 preparation and isolated te
 ## Preparation-document verification
 
 Backend inspection evidence is saved at local commit `651a27f`. Frozen baseline/cross-repository consistency, all 25 governance safeguards, backend architecture, both whitespace checks and 18 unchanged-source hashes pass. These are documentation/source-integrity checks, not the proposed package tests. No local P08 implementation or external action has begun.
+
+## Owner decision recorded before implementation
+
+Debynyhan Banks answered **“Approve Alternative 1 for local preparation and isolated tests only”** to the exact question referencing proposal commit `8893d04`. This approves the bounded local files/proofs/read-only qualification mode and prospective access-plan preparation described above. It does not authorize live lookup, identity/IAM/database/provider action, token, payment, deployment, new allowance or retirement extension. P07 remains consumed; its verified result and retirement deadline are unchanged.
