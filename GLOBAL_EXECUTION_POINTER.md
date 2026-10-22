@@ -1,6 +1,16 @@
 # Global Execution Pointer
 
-## October 22 — corrected diagnostic contained; tenant-binding correction decision pending
+## October 22 — tenant-binding attempt stopped before database access
+
+R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Debynyhan Banks approved the exact 7:15–8:00 a.m. tenant-binding operation. Plan `8ba2a1c8-d845-4111-b1f7-27e636b0fd1a`, packet `13471d52-2195-4620-b6a4-b6282e4a70c6` and operation `aff460dd-740b-40c4-8fcc-ea6dbc21057e` reserved once at 7:15:18 a.m. Eastern and are consumed.
+
+Fresh read-only Stripe qualification passed Sandbox/Test mode, administrator access, exactly one enabled connected account and destination absence. The two hidden account entries matched and had valid `acct_...` format, but their hash did not match that enabled connected account. The controller returned `P07_TENANT_BINDING_STOP_CONNECTED_ACCOUNT_HASH_MISMATCH` and `CONTAINMENT_VERIFIED`.
+
+Receipts prove `possibleMutation:false`, `commitState:NOT_STARTED`, no mutation intent, no database transaction, no result/recovery path and zero operation sessions. No tenant value, Stripe setting, destination, role/grant, secret/IAM, deployment, Checkout, payment, booking or message changed. Backend evidence: `evidence/APP-013/p07-tenant-stripe-binding-hash-mismatch-stop-20261022.md`.
+
+Do not rerun the consumed command. `APP013_P07_CONNECTED_ACCOUNT_HANDOFF_REPAIR_PROPOSAL_20261022.md` recommends one fresh package with the same transaction and a later attended in-memory handoff sourced from the exact enabled connected-account row. Owner approval or refusal of Alternative 1 for local preparation/testing is next; later external-operation authority remains separate. Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
+
+## Earlier October 22 — corrected diagnostic contained; tenant-binding correction decision pending
 
 R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Debynyhan Banks approved the exact corrected read-only diagnostic. Plan `e594290a-a142-42bb-8b26-d60908e9eed9`, packet `29e40c3f-bdee-49cc-bf06-ff9d6bdc5fe9` and operation `8f71217a-d384-4a0c-87da-3d3703a4201f` reserved once at 6:45:26 a.m. Eastern and are consumed.
 

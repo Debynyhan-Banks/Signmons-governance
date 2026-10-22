@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 tenant Stripe binding operation proposal
 
-Status: **owner decision pending; no live browser or database action authorized**.
+Status: **approved, attempted once and consumed; controlled stop before database access**.
 
 ## Exact operation
 
@@ -68,3 +68,11 @@ Fourteen focused controller tests and five real disposable PostgreSQL 16.11 case
 Approve or refuse this one exact operation before **7:25 a.m. Eastern**. Approval covers only the allowed actions inside this window. It does not authorize Stripe configuration, destination/deployment work, P08 payment or 3A acceptance.
 
 Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
+
+## Result — October 22, 2026
+
+Debynyhan Banks approved the exact operation. It reserved at 7:15:18 a.m. Eastern and passed fresh Stripe Sandbox/Test mode, administrator access, exactly one enabled connected account and destination absence. The two hidden Terminal entries matched and had valid `acct_...` format, but their hash did not match the verified enabled connected account. The controller stopped `P07_TENANT_BINDING_STOP_CONNECTED_ACCOUNT_HASH_MISMATCH` and returned `CONTAINMENT_VERIFIED`.
+
+Receipts prove `possibleMutation:false`, `commitState:NOT_STARTED`, no mutation intent, no database transaction, no result/recovery path and zero operation sessions. The operation is consumed and must not be rerun. Backend evidence: `evidence/APP-013/p07-tenant-stripe-binding-hash-mismatch-stop-20261022.md`.
+
+P07/3A remains active. A fresh separately identified package and explicit authority are required for another attempt. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**

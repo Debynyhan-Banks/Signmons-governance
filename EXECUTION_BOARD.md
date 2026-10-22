@@ -1,6 +1,16 @@
 # Signmons Execution Board
 
-## October 22 — corrected diagnostic contained; tenant-binding correction decision pending
+## October 22 — tenant-binding attempt contained before database access
+
+R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Debynyhan Banks approved the exact 7:15–8:00 a.m. operation. Plan `8ba2a1c8-d845-4111-b1f7-27e636b0fd1a`, packet `13471d52-2195-4620-b6a4-b6282e4a70c6` and operation `aff460dd-740b-40c4-8fcc-ea6dbc21057e` reserved once at 7:15:18 a.m. Eastern and are consumed.
+
+Fresh Stripe qualification passed Sandbox/Test mode, administrator access, exactly one enabled connected account and destination absence. The two hidden entries matched and had valid `acct_...` format, but their hash did not match the enabled account. The controller stopped `P07_TENANT_BINDING_STOP_CONNECTED_ACCOUNT_HASH_MISMATCH`; mandatory closeout returned `CONTAINMENT_VERIFIED`.
+
+Receipts prove `possibleMutation:false`, `commitState:NOT_STARTED`, no mutation intent/database transaction/result/recovery and zero operation sessions. No live tenant or provider state changed. Backend evidence: `evidence/APP-013/p07-tenant-stripe-binding-hash-mismatch-stop-20261022.md`.
+
+The consumed command must not be rerun. `APP013_P07_CONNECTED_ACCOUNT_HANDOFF_REPAIR_PROPOSAL_20261022.md` recommends one fresh package using the unchanged reviewed transaction and a later direct in-memory handoff from the exact enabled connected-account row to the hidden prompts. Owner approval or refusal of Alternative 1 for local preparation/testing is next; external execution remains separate. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
+
+## Earlier October 22 — corrected diagnostic contained; tenant-binding correction decision pending
 
 R1-W01 / APP-013/3A/P07 remains active. Owner-approved operation `8f71217a-d384-4a0c-87da-3d3703a4201f` reserved at 6:45:26 a.m. Eastern, passed sanitized Stripe Sandbox qualification and returned `P07_DIAGNOSTIC_STOP_CONNECTED_ACCOUNT_FORMAT`. The corrected database query reached the tenant predicate: the exact tenant exists, but its stored connected-account value is absent or malformed. The following `chargesEnabled` and hash-match predicates remain unknown.
 

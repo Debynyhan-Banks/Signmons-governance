@@ -1,6 +1,20 @@
 # Session Handoff
 
-## October 22 — corrected diagnostic contained; tenant-binding correction decision pending
+## October 22 — tenant-binding attempt contained before database access
+
+**Section/status:** R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Plan `8ba2a1c8-d845-4111-b1f7-27e636b0fd1a`, packet `13471d52-2195-4620-b6a4-b6282e4a70c6` and operation `aff460dd-740b-40c4-8fcc-ea6dbc21057e` are consumed after one attempt.
+
+**Completed/evidence:** Debynyhan Banks approved the exact operation. It reserved at 7:15:18 a.m. Eastern. Fresh Stripe Sandbox/Test, administrator, one-enabled-account and destination-absence checks passed. The two hidden entries matched and had valid `acct_...` format, but their hash did not match the verified account. The controller returned `P07_TENANT_BINDING_STOP_CONNECTED_ACCOUNT_HASH_MISMATCH` and `CONTAINMENT_VERIFIED`. Backend: `evidence/APP-013/p07-tenant-stripe-binding-hash-mismatch-stop-20261022.md`.
+
+**Containment:** `possibleMutation:false`, `commitState:NOT_STARTED`, no mutation intent, no database transaction, no result/recovery path and zero operation sessions. No tenant/provider/runtime state changed. Do not rerun the consumed command.
+
+**Remaining/blocker and owner:** the verified account and the valid-format hidden input differed; raw input was not retained, so evidence cannot identify what was pasted. Debynyhan Banks approves or refuses Alternative 1 in `APP013_P07_CONNECTED_ACCOUNT_HANDOFF_REPAIR_PROPOSAL_20261022.md`: local preparation/testing of a fresh package with the unchanged transaction and a later direct in-memory handoff from the exact enabled row to the hidden prompts. External execution still requires its own exact approval.
+
+**Next observable result:** a fresh disabled package that passes the existing controller/PostgreSQL suite and refuses external action without a new window and approval.
+
+**Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
+
+## Earlier October 22 — corrected diagnostic contained; tenant-binding correction decision pending
 
 **Section/status:** R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Corrected diagnostic operation `8f71217a-d384-4a0c-87da-3d3703a4201f` is consumed after one read-only attempt.
 
