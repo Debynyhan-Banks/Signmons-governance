@@ -1,6 +1,6 @@
 # R1-W01 / APP-013 / 3A / P07 runtime guard completion proposal
 
-Status: **review complete; local correction NOT implemented; owner decision pending**.
+Status: **Alternative 1 explicitly owner-approved for local correction/testing only; implementation in progress; no external action authorized**.
 
 ## Traceability and inspected gap
 
@@ -45,3 +45,7 @@ These are local controller gaps, not a new live failure or a failure of the comp
 Approve/refuse **Alternative 1 for local correction and testing only**. The current “proceed” instruction authorizes review/preparation, not this newly demonstrated controller repair. AGENTS.md requires explicit approval before substantial prerequisites or material task-list expansion, and prohibits treating a newly written plan as prior authority.
 
 Progress remains **0/27 newly closed R1; 6/60 legacy; 4/8 walkthrough (1A/1B/2A/2B accepted); 0/13 intelligence**. **Proposed bounded prerequisite correction; not implemented or retrospectively approved.**
+
+## Owner decision recorded before implementation
+
+Debynyhan Banks answered **“Approve Alternative 1 for local correction and testing only”** to the exact question bound to proposal commit `08660742253351c2f2ebe15c5292e2c9ab1cf29d`. Implementation starts from backend `2c3ad5dbdbc599a8121539ed37e8d31e53542c5b` and governance `08660742253351c2f2ebe15c5292e2c9ab1cf29d`; pre-change frozen-baseline/consistency pass. This authorizes only the three local guards, fresh disabled copy and isolated tests described above. It grants no live action or allowance. The supplied 5:30–7:00 p.m. Eastern block is availability only.
