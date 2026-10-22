@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 mandatory closeout recovery proposal
 
-Status: **owner decision pending; no helper or database action authorized**.
+Status: **Alternative 1 approved for local preparation/testing; external database action remains unauthorized**.
 
 ## Demonstrated gap
 
@@ -36,6 +36,6 @@ No live database access, role/grant, tenant mutation, Stripe action, deployment,
 
 ## Decision requested
 
-Approve or refuse **Alternative 1 for local preparation and testing only**. A later exact read-only database closeout requires separate approval. This proposal does not authorize rerunning the consumed tenant-binding operation.
+Debynyhan Banks explicitly approved **Alternative 1 for local preparation and testing only**, adding: “lets ensure we log out the reason it fails.” Implement fixed, sanitized failure classifications and stage reporting without retaining raw database errors. A later exact read-only database closeout requires separate approval. This decision does not authorize rerunning the consumed tenant-binding operation.
 
 Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **Unintended execution-channel drift disclosed; no scope or acceptance change.**
