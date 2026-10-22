@@ -1,6 +1,16 @@
 # Global Execution Pointer
 
-## October 22 — corrected P07 diagnostic bound; exact decision pending
+## October 22 — corrected diagnostic contained; tenant-binding correction decision pending
+
+R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Debynyhan Banks approved the exact corrected read-only diagnostic. Plan `e594290a-a142-42bb-8b26-d60908e9eed9`, packet `29e40c3f-bdee-49cc-bf06-ff9d6bdc5fe9` and operation `8f71217a-d384-4a0c-87da-3d3703a4201f` reserved once at 6:45:26 a.m. Eastern and are consumed.
+
+The operation passed fresh Stripe Sandbox/Test mode, administrator access, exactly one enabled connected account and destination absence. The total three-row database contract then reached its tenant predicate and stopped `P07_DIAGNOSTIC_STOP_CONNECTED_ACCOUNT_FORMAT`. The exact tenant exists, but its stored connected-account value is absent or malformed. `chargesEnabled` and provider-hash equality were not evaluated after that first failure. Mandatory closeout returned `CONTAINMENT_VERIFIED` with rollback requested, the diagnostic process exited, zero operation-scoped sessions and no mutation path. Evidence: backend `evidence/APP-013/p07-diagnostic-connected-account-format-stop-20261022.md`.
+
+The consumed operation cannot be retried. `APP013_P07_TENANT_STRIPE_BINDING_CORRECTION_PROPOSAL_20261022.md` is the next owner decision. Recommended Alternative 1 prepares and locally tests one disabled, guarded, audited exact-tenant binding correction; any live tenant mutation still requires a fresh window and separate exact approval. Full Connect-onboarding UI is deferred rather than inserted into R1. No database mutation, Stripe configuration, destination, deployment, payment or P08 is authorized.
+
+Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **External tenant-configuration drift disclosed; no scope deviation implemented.**
+
+## Earlier October 22 — corrected P07 diagnostic bound; exact decision pending
 
 R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Repair 4 and all prior readiness operations are consumed.
 

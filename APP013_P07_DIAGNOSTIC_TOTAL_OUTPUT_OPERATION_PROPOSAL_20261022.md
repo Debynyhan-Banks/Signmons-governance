@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 corrected read-only diagnostic operation proposal
 
-Status: **owner decision pending; no browser or database action authorized**.
+Status: **owner-approved, executed once and consumed; contained stop recorded**.
 
 ## Exact operation
 
@@ -56,6 +56,8 @@ Twenty-three controller tests and five real disposable PostgreSQL 16.11 cases pa
 
 ## Decision requested
 
-Approve or refuse this one exact read-only operation before **6:55 a.m. Eastern**. Approval covers only the allowed actions within this window. It does not authorize readiness mutations, Stripe configuration, deployment, payment or P08.
+Debynyhan Banks approved this exact read-only operation. It reserved at 6:45:26 a.m. Eastern, passed the sanitized Stripe Sandbox checkpoint and stopped `P07_DIAGNOSTIC_STOP_CONNECTED_ACCOUNT_FORMAT`. Mandatory closeout returned `CONTAINMENT_VERIFIED`; no mutation path existed. The operation is consumed and cannot be rerun.
+
+Backend evidence: `evidence/APP-013/p07-diagnostic-connected-account-format-stop-20261022.md`. The next owner decision is the local-only correction in `APP013_P07_TENANT_STRIPE_BINDING_CORRECTION_PROPOSAL_20261022.md`. No database mutation, Stripe configuration, deployment, payment or P08 is authorized by this result.
 
 Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**

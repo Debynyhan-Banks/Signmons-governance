@@ -1,6 +1,14 @@
 # Signmons Execution Board
 
-## October 22 — corrected P07 diagnostic bound; decision pending
+## October 22 — corrected diagnostic contained; tenant-binding correction decision pending
+
+R1-W01 / APP-013/3A/P07 remains active. Owner-approved operation `8f71217a-d384-4a0c-87da-3d3703a4201f` reserved at 6:45:26 a.m. Eastern, passed sanitized Stripe Sandbox qualification and returned `P07_DIAGNOSTIC_STOP_CONNECTED_ACCOUNT_FORMAT`. The corrected database query reached the tenant predicate: the exact tenant exists, but its stored connected-account value is absent or malformed. The following `chargesEnabled` and hash-match predicates remain unknown.
+
+Closeout returned `CONTAINMENT_VERIFIED`: rollback requested, diagnostic process exited, no operation-scoped sessions and no mutation path. The operation is consumed and cannot be retried. Backend evidence: `evidence/APP-013/p07-diagnostic-connected-account-format-stop-20261022.md`.
+
+Next decision: approve or refuse Alternative 1 in `APP013_P07_TENANT_STRIPE_BINDING_CORRECTION_PROPOSAL_20261022.md` for local preparation/testing only. It proposes a fresh disabled, exact-tenant, conditional and audited binding-repair package. Live database mutation, Stripe configuration, deployment, P08 and payment remain separately gated. Progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **External tenant-configuration drift disclosed; no scope deviation implemented.**
+
+## Earlier October 22 — corrected P07 diagnostic bound; decision pending
 
 R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Repair 3 remains consumed and contained after its database-preflight stop.
 

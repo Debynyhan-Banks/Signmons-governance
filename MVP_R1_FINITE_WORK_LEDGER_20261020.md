@@ -118,7 +118,7 @@ Keep these 27 IDs, exits and scope mappings fixed in v1. Update status/evidence/
 
 The new ledger is remaining-work planning, not an executable override of ticket order or a replacement full section card. Nothing in W14–W27 authorizes a commercial-tail ticket/card to start before proper placement; their preliminary dependency graph needs that review. No provider action, coding, merge, deployment, migration, billing activation, charge, customer contact/data change or training is authorized by this document.
 
-**Current next row:** R1-W01 within existing APP-013/3A. Finish line: authentic same-job Sandbox payment, failure/replay proof, verified closeout and owner acceptance. Current readiness blockers remain owned by implementer/account owner under fresh valid exact operation approval; no window is renewed here. Record row completion with source/evidence/reviewer and then update this ledger and the progress tracker together. **No scope deviation.**
+**Current next row:** R1-W01 within existing APP-013/3A. Finish line: authentic same-job Sandbox payment, failure/replay proof, verified closeout and owner acceptance. The October 22 diagnostic isolated an absent/malformed tenant Stripe account binding; a guarded local correction proposal is pending owner decision. Any live correction, destination/deployment work and P08 remain separately approval-gated. Record row completion with source/evidence/reviewer and then update this ledger and the progress tracker together. **No scope deviation implemented.**
 
 ## Planning validation result
 
