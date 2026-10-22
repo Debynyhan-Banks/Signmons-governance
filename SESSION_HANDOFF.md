@@ -1,6 +1,6 @@
 # Session Handoff
 
-## October 22 — tenant-binding attempt contained before database access
+## October 22 — tenant-binding handoff repair locally ready
 
 **Section/status:** R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Plan `8ba2a1c8-d845-4111-b1f7-27e636b0fd1a`, packet `13471d52-2195-4620-b6a4-b6282e4a70c6` and operation `aff460dd-740b-40c4-8fcc-ea6dbc21057e` are consumed after one attempt.
 
@@ -8,9 +8,11 @@
 
 **Containment:** `possibleMutation:false`, `commitState:NOT_STARTED`, no mutation intent, no database transaction, no result/recovery path and zero operation sessions. No tenant/provider/runtime state changed. Do not rerun the consumed command.
 
-**Remaining/blocker and owner:** the verified account and the valid-format hidden input differed; raw input was not retained, so evidence cannot identify what was pasted. Debynyhan Banks approves or refuses Alternative 1 in `APP013_P07_CONNECTED_ACCOUNT_HANDOFF_REPAIR_PROPOSAL_20261022.md`: local preparation/testing of a fresh package with the unchanged transaction and a later direct in-memory handoff from the exact enabled row to the hidden prompts. External execution still requires its own exact approval.
+**Completed/evidence:** Debynyhan Banks approved Alternative 1 for local preparation/testing. Fresh disabled package `/private/tmp/p07-tenant-stripe-binding-handoff-repair-20261022-prep1`, plan `0add40ae-f062-417f-8cab-aa7b7943f562`, packet `c1ba7f8c-8e93-4264-9551-02072df99f7e` and operation `bfc0bb5b-1564-4991-a446-3960caa67d49`, preserves the reviewed transaction and defines the later direct volatile-memory handoff from the exact Enabled row to both hidden prompts. Fourteen controller, two handoff and five disposable PostgreSQL cases pass; syntax, inventory/private modes, manifest, no-action and both no-window refusals pass. Backend: `evidence/APP-013/p07-connected-account-handoff-repair-local-preparation-20261022.md`; manifest `0f24d31b7dcb565fceb8396fe465ca297ae0685641725c403da006a6db36a55d`.
 
-**Next observable result:** a fresh disabled package that passes the existing controller/PostgreSQL suite and refuses external action without a new window and approval.
+**Remaining/blocker and owner:** Debynyhan Banks supplies an attended 45-minute Eastern block with Terminal, the current CHILD administrator password and signed-in Stripe Sandbox available. The implementer binds exact times/hashes, reruns the suite and presents a separate external-operation decision. Browser/database action remains unauthorized.
+
+**Next observable result:** after the owner supplies a block, one exact bound and retested no-action package plus a separate external-operation proposal; no browser or database action during binding.
 
 **Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
 

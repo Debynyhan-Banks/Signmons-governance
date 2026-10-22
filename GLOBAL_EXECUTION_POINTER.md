@@ -1,6 +1,6 @@
 # Global Execution Pointer
 
-## October 22 — tenant-binding attempt stopped before database access
+## October 22 — tenant-binding handoff repair locally ready
 
 R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Debynyhan Banks approved the exact 7:15–8:00 a.m. tenant-binding operation. Plan `8ba2a1c8-d845-4111-b1f7-27e636b0fd1a`, packet `13471d52-2195-4620-b6a4-b6282e4a70c6` and operation `aff460dd-740b-40c4-8fcc-ea6dbc21057e` reserved once at 7:15:18 a.m. Eastern and are consumed.
 
@@ -8,7 +8,9 @@ Fresh read-only Stripe qualification passed Sandbox/Test mode, administrator acc
 
 Receipts prove `possibleMutation:false`, `commitState:NOT_STARTED`, no mutation intent, no database transaction, no result/recovery path and zero operation sessions. No tenant value, Stripe setting, destination, role/grant, secret/IAM, deployment, Checkout, payment, booking or message changed. Backend evidence: `evidence/APP-013/p07-tenant-stripe-binding-hash-mismatch-stop-20261022.md`.
 
-Do not rerun the consumed command. `APP013_P07_CONNECTED_ACCOUNT_HANDOFF_REPAIR_PROPOSAL_20261022.md` recommends one fresh package with the same transaction and a later attended in-memory handoff sourced from the exact enabled connected-account row. Owner approval or refusal of Alternative 1 for local preparation/testing is next; later external-operation authority remains separate. Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
+Do not rerun the consumed command. Debynyhan Banks approved Alternative 1 in `APP013_P07_CONNECTED_ACCOUNT_HANDOFF_REPAIR_PROPOSAL_20261022.md` for local preparation/testing only. Fresh disabled package `/private/tmp/p07-tenant-stripe-binding-handoff-repair-20261022-prep1`, plan `0add40ae-f062-417f-8cab-aa7b7943f562`, packet `c1ba7f8c-8e93-4264-9551-02072df99f7e` and operation `bfc0bb5b-1564-4991-a446-3960caa67d49`, preserves the reviewed transaction and defines a direct volatile-memory handoff from the exact Enabled row to both hidden prompts. Fourteen controller, two handoff and five disposable PostgreSQL 16.11 cases pass; syntax, inventory/private modes, manifest, no-action and both no-window refusals pass. Evidence: backend `evidence/APP-013/p07-connected-account-handoff-repair-local-preparation-20261022.md`; manifest `0f24d31b7dcb565fceb8396fe465ca297ae0685641725c403da006a6db36a55d`.
+
+Next input: an attended 45-minute Eastern block with Terminal, the current CHILD administrator password and signed-in Stripe Sandbox available. Exact binding/retest and a separate external-operation approval follow. Browser/database action remains unauthorized. Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
 
 ## Earlier October 22 — corrected diagnostic contained; tenant-binding correction decision pending
 
