@@ -1,6 +1,6 @@
 # R1-W01 / APP-013 / 3A / P07 SQL output contract reuse proposal
 
-Status: **Alternative 1 owner-approved for local correction and real SQL tests only; implementation in progress; no external action authorized**.
+Status: **Alternative 1 owner-approved and locally completed; 80/80 controller/real PostgreSQL cases pass; no external action authorized**.
 
 ## Traceability and exact demonstrated gaps
 
@@ -52,3 +52,11 @@ Accepted 1A/1B/2A/2B and **0/27 newly closed R1; 6/60 legacy; 4/8 walkthrough; 0
 ## Owner decision recorded before implementation
 
 Debynyhan Banks explicitly answered **“Approve Alternative 1 for local correction and real SQL tests only”** to the question referencing immutable proposal commit `b7f45fcc53e7a977da205d56c289ae4b9e2a68b3`. This approves only the two SQL/output interfaces and retained/real-SQL tests in the finite card. Implementation starts at backend `17bd56b3f4e88f2cf879b077eb62bc7ec588dd03`, governance `b7f45fcc53e7a977da205d56c289ae4b9e2a68b3`; both focused trees clean and pre-change baseline/consistency pass. No live action, new window or allowance follows from this decision.
+
+## Approved local result
+
+Fresh disabled `/private/tmp/p07-repaired-runtime-readiness-20261022-sql-contract1`, plan `4bb26b9b-cd41-4bbb-a62a-5aedfd4f82bb`, packet `c9622a7d-7aa0-4a27-ab75-e9bc56f21cc0`, operation `b8d2ac94-3310-4f84-b36a-8495cc919097`, completes only the two approved SQL/output interfaces. Preflight query text/classifier AST exactly reuse the proved total-output diagnostic. Role readback uses tagged/count-checked explicit flags, preserving required predicates. Original helpers/grant fixture/application/image and consumed source/receipts unchanged.
+
+**80/80 tests pass:** all 60 prior controller acceptance cases retained with affected protocol fixtures aligned, two controller cases added, and 18 real disposable PostgreSQL cases with positive/negative subcases. Both original defects reproduce against healthy actual SQL output; corrected query → parser → sanitized receipt works. Real role flag/expiry/membership/ownership, missing/null/duplicate records, active P06 session, payment/calendar/policy/account and transport-corruption cases fail closed. Fixture server reaped/directory removed; independent process/path counts zero. AST scope comparison, syntax/private inventory/hashes/no-action and all no-window refusals pass.
+
+Manifest `72a25f79a4f0d3275016baa4e5fd715f7f5d58d9b5ded309e5f8024df75933c3`. Backend reviewable patches/plan/manifest/evidence: `evidence/APP-013/p07-sql-output-contract-20261022/README.md`. No binding, live approval, attempt, mutation or provider action. Next input is fresh attended Eastern availability >=90 minutes; bind/retest and a separately reviewed exact external operation follow. No prior window/allowance/command revived. Local success is not live readiness/payment/3A acceptance; denominators unchanged. **No scope deviation from the approved local two-interface correction.**
