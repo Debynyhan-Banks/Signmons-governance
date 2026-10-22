@@ -1,6 +1,6 @@
 # R1-W01 / APP-013 / 3A / P07 approved 5 p.m. replacement operation
 
-Status: **same exact browser/owner-clipboard/database action explicitly approved by owner for the replacement window; locally validated; approval record installation precedes owner command**.
+Status: **executed once under exact owner approval; tenant binding COMMITTED; readback and containment VERIFIED; consumed, do not rerun**.
 
 ## Authority and exact identities
 
@@ -32,7 +32,7 @@ Tenant/job, SQL/predicates/audit/readback/recovery and all privacy safeguards re
 
 No other mutation, session termination, grant, secret/IAM, Stripe configuration/destination, deployment, Checkout, charge/payment/refund, booking, customer contact, message, merge, push or retry. Passwords/raw IDs remain excluded from chat/files/arguments/logs/saved screenshots/receipts/audit metadata. Fixed failures and truthful containment remain mandatory.
 
-## Command and finish
+## Historical command and expected finish — consumed, do not rerun
 
 After the approval record validates, at/after **5:00** and strictly before **5:10 p.m. Eastern**, owner runs once:
 
@@ -43,3 +43,11 @@ cd "/private/tmp/p07-tenant-stripe-binding-owner-handoff-20261022-1700" && pytho
 Enter current CHILD administrator password only. At `P07_TENANT_BINDING_STRIPE_PREFLIGHT_READY`, report that status and leave Terminal open. Wait for account-control qualification before any account-ID copy/paste. Success: `P07_TENANT_STRIPE_BINDING_COMPLETE` and `CONTAINMENT_VERIFIED`; failure: fixed `P07_TENANT_BINDING_STOP_<CODE>` with truthful containment. Do not retry.
 
 Seventeen controller/timing and five disposable PostgreSQL tests pass; old 45-minute/extended timings refuse. Syntax, exact private inventory, hashes/no-action and pre-approval refusal pass. Evidence: backend `evidence/APP-013/p07-owner-handoff-1700-preparation-20261022.md`. No live action occurred in preparation. Readiness/closeout is not payment acceptance. Progress stays **0/27 R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence**. **Owner-approved replacement timing/procedure; no additional scope deviation.**
+
+## Verified live result and next step
+
+Exact approval was installed and validated before the one owner start at `2026-10-22T21:01:44.934578+00:00` (5:01:44 p.m. Eastern). Fresh read-only browser qualification confirmed Sandbox/Test, administrator access, one Enabled connected account and no webhook destination. The exact account detail Copy ID control hashed to the same qualified account. The owner performed both hidden entries; automation did not use Terminal or clipboard.
+
+`mutation-intent.json` and `commit-confirmed.json` record the authorized mutation; `result.json` confirms `P07_TENANT_STRIPE_BINDING_COMPLETE`, `commitState:COMMITTED`, `possibleMutation:true`, matching account hash, `chargesEnabled:true`, audit present and closeout verified. `closeout.json` independently records `operationSessionsAbsent:true`, `status:VERIFIED`. Both prohibit automatic retry. Owner Terminal statuses match. Local filesystem times place commit/result/closeout around 5:06:25–26 p.m.; these are not provider timestamps. No stop or recovery receipt exists. Evidence: backend `evidence/APP-013/p07-tenant-stripe-binding-live-result-20261022.md` contains correlated receipt hashes and limits.
+
+Tenant-binding prerequisite complete. The operation is consumed. No additional live query or provider/database action was performed during result reconciliation. Owner clipboard clearing was requested; it is not independently confirmed. Existing runtime/webhook readiness, P08 same-job Sandbox payment and 3A owner acceptance remain. Any later external operation needs its own exact authorization; this window grants no follow-on action. Accepted measures and criteria remain unchanged. **No scope deviation from the approved operation.**
