@@ -1,6 +1,6 @@
 # R1-W01 / APP-013 / 3A / P07 runtime guard completion proposal
 
-Status: **Alternative 1 explicitly owner-approved for local correction/testing only; implementation in progress; no external action authorized**.
+Status: **Alternative 1 owner-approved and locally completed; 60/60 isolated tests pass; no external action authorized**.
 
 ## Traceability and inspected gap
 
@@ -49,3 +49,9 @@ Progress remains **0/27 newly closed R1; 6/60 legacy; 4/8 walkthrough (1A/1B/2A/
 ## Owner decision recorded before implementation
 
 Debynyhan Banks answered **“Approve Alternative 1 for local correction and testing only”** to the exact question bound to proposal commit `08660742253351c2f2ebe15c5292e2c9ab1cf29d`. Implementation starts from backend `2c3ad5dbdbc599a8121539ed37e8d31e53542c5b` and governance `08660742253351c2f2ebe15c5292e2c9ab1cf29d`; pre-change frozen-baseline/consistency pass. This authorizes only the three local guards, fresh disabled copy and isolated tests described above. It grants no live action or allowance. The supplied 5:30–7:00 p.m. Eastern block is availability only.
+
+## Approved local result
+
+Fresh `/private/tmp/p07-repaired-runtime-readiness-20261022-guards1` implements only the approved deadline/signal/cleanup-readback corrections; unchanged original package and helpers retained. Plan `f3252875-1a8a-4c64-b642-254fdc30a620`; packet `6c91b550-78cf-4dd1-a93e-63d9a282e21e`; operation `abff0262-3504-4f92-b49d-5c5dea238cdb`. Sixty tests (36 existing plus 24 guard cases) pass before and after binding, including actual isolated PTY SIGINT/SIGTERM/repeated signals, terminal restoration, input/subprocess deadlines, concurrent reservation, false acknowledgments, recovery and truthful residuals. Syntax/private inventory/hashes/no-action pass; live modes refuse without exact approval. Backend evidence and reviewable source patches: `evidence/APP-013/p07-runtime-guards-20261022/README.md`.
+
+Owner's 5:30–7:00 p.m. Eastern availability is locally bound with strict 5:45 cutoff, work through 6:30, containment through 6:50 and retirement by 5:30 p.m. October 23. Bound manifest `8320b0e5cc3f1600f763cbffe4621e6af95b277e88c9ba2461fd560436cf8860`; binding `8b1bd73d9f707c237f582735a0499183fc08073346f98d4d42abbe71242c7cd5`. No approval/attempt/mutation receipt or external action exists. Next decision: exact external operation `APP013_P07_RUNTIME_READINESS_GUARDS1_OPERATION_20261022.md`. No scope deviation from the approved local correction.

@@ -1,5 +1,13 @@
 # Global Execution Pointer
 
+## October 22 — local runtime guards complete; exact readiness approval pending
+
+R1-W01 / APP-013/3A/P07 remains active. Owner approved Alternative 1 local-only; decision recorded before coding at `d88dc4e8bd138046b8ca5dca36029a266c8b27d5`. Fresh `/private/tmp/p07-repaired-runtime-readiness-20261022-guards1` completes only deadlines, catchable signal cleanup and authoritative tag/identity cleanup readback. Sixty tests pass before/after binding; real isolated signals/PTY echo restoration, deadlines, concurrent reservation/recovery and truthful failures covered. Original package/helpers/application/image unchanged. Backend evidence and reviewable patches: `evidence/APP-013/p07-runtime-guards-20261022/README.md`.
+
+Plan `f3252875-1a8a-4c64-b642-254fdc30a620`; packet `6c91b550-78cf-4dd1-a93e-63d9a282e21e`; operation `abff0262-3504-4f92-b49d-5c5dea238cdb`. Owner availability bound **5:30–7:00 p.m. Eastern**, cutoff **5:45**, work end **6:30**, containment **6:50**, retirement by **5:30 p.m. October 23**. Manifest `8320b0e5cc3f1600f763cbffe4621e6af95b277e88c9ba2461fd560436cf8860`. Syntax/integrity/private inventory/no-action pass; all live modes refuse without exact approval. No live action, password, attempt or mutation receipt exists.
+
+**Remaining/blocker/owner:** Debynyhan Banks approves/refuses `APP013_P07_RUNTIME_READINESS_GUARDS1_OPERATION_20261022.md` before 5:45. Implementer validates exact approval before command/browser/provider access; mandatory closeout/retirement and no retry remain. **Next observable result:** one correlated `P07_REPAIRED_RUNTIME_READY_DISABLED` or named contained stop; P08 payment and 3A acceptance remain separate. Tenant binding remains verified. Accepted 1A/1B/2A/2B and **0/27 R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence** unchanged. **No scope deviation from the approved local three-guard correction.**
+
 ## October 22 — runtime review found three guard gaps; local correction decision pending
 
 R1-W01 / APP-013/3A/P07 remains active. Verified tenant binding and zero-session closeout remain complete. Existing disabled runtime package passes 36 controller tests and its no-action check; no application/runtime source differs from the repaired build. Additional synthetic local review proves provisioning can follow a preflight that crosses work end, SIGTERM remains unhandled, and cleanup lacks final tag/service-identity readback. No external command or package modification occurred.
