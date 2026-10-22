@@ -10,9 +10,11 @@
 
 **Completed/evidence:** Debynyhan Banks approved Alternative 1 for local preparation/testing. Fresh disabled package `/private/tmp/p07-tenant-stripe-binding-handoff-repair-20261022-prep1`, plan `0add40ae-f062-417f-8cab-aa7b7943f562`, packet `c1ba7f8c-8e93-4264-9551-02072df99f7e` and operation `bfc0bb5b-1564-4991-a446-3960caa67d49`, preserves the reviewed transaction and defines the later direct volatile-memory handoff from the exact Enabled row to both hidden prompts. Fourteen controller, two handoff and five disposable PostgreSQL cases pass; syntax, inventory/private modes, manifest, no-action and both no-window refusals pass. Backend: `evidence/APP-013/p07-connected-account-handoff-repair-local-preparation-20261022.md`; manifest `0f24d31b7dcb565fceb8396fe465ca297ae0685641725c403da006a6db36a55d`.
 
-**Remaining/blocker and owner:** Debynyhan Banks supplies an attended 45-minute Eastern block with Terminal, the current CHILD administrator password and signed-in Stripe Sandbox available. The implementer binds exact times/hashes, reruns the suite and presents a separate external-operation decision. Browser/database action remains unauthorized.
+**Completed/evidence:** the owner supplied 7:45–8:30 a.m. Eastern. Exact binding uses a strict 7:55 cutoff, 8:15 mutation deadline and 8:25 closeout deadline. Fourteen controller, two handoff and five disposable PostgreSQL cases pass after binding; syntax/inventory/private modes/manifest pass and both live modes refuse without exact approval. Backend: `evidence/APP-013/p07-connected-account-handoff-repair-window-preparation-20261022.md`; manifest `1b9dd0a8b12966e460f8d84c8c72c405ff2b433339d64b34849c1310deb55b76`.
 
-**Next observable result:** after the owner supplies a block, one exact bound and retested no-action package plus a separate external-operation proposal; no browser or database action during binding.
+**Remaining/blocker and owner:** Debynyhan Banks approves or refuses `APP013_P07_CONNECTED_ACCOUNT_HANDOFF_OPERATION_PROPOSAL_20261022.md` before 7:55 a.m. Browser/database action remains unauthorized.
+
+**Next observable result:** after exact approval and one command start before 7:55, either `P07_TENANT_STRIPE_BINDING_COMPLETE` plus verified containment or one fixed contained stop. No retry.
 
 **Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
 
