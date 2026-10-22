@@ -1,12 +1,12 @@
 # Signmons Execution Board
 
-## October 22 — owner-operated account handoff locally ready
+## October 22 — owner-operated account exact operation awaiting approval
 
 R1-W01 / APP-013/3A/P07 remains active. Exact owner-approved closeout operation `0d2f9eca-c8e8-49b6-b3c5-182416164a90` ran once, **2:35:46–2:36:05 p.m. Eastern**, and returned `P07_MANDATORY_CLOSEOUT_VERIFIED` / `CONTAINMENT_VERIFIED`. Receipt confirms zero target-operation sessions, `possibleMutation:false`, `reason:VERIFIED`, `stage:SESSION_READBACK`. Backend evidence: `evidence/APP-013/p07-closeout-only-live-result-20261022.md`. The earlier interrupted stop remains immutable; both operations are consumed. Closeout blocker resolved.
 
 Tenant binding remains open. Owner approved local preparation and prospective owner-only clipboard use under `APP013_P07_OWNER_OPERATED_ACCOUNT_HANDOFF_PROPOSAL_20261022.md`. Fresh disabled package `/private/tmp/p07-tenant-stripe-binding-owner-handoff-20261022-prep1`, plan `e13cca1d-b51d-44f0-bcc9-dcbe0b281f8e`, packet `852a8b36-2780-4003-85ec-14ad7491eb79`, operation `f0af9aa6-f83b-4557-a0cb-cfd9900fbb42`, passes fourteen controller/five PostgreSQL cases, normalized source/inventory/private modes/hashes, no-action and both no-window/synthetic no-approval refusals. Manifest `47249f6299936855f4338516f907a7976831dbb68cef9617653c1883d0cbaddb`; backend `evidence/APP-013/p07-owner-operated-account-handoff-local-preparation-20261022.md`.
 
-Next: owner supplies a fresh attended 45-minute Eastern block; exact binding/retest and separate external approval follow. No new helper, automated Terminal or clipboard access, live database or provider action occurred. Current ID control must be confirmed during the later approved browser qualification.
+Owner confirmed **3:00–3:45 p.m. Eastern today**, strict **3:10** cutoff, **3:30** transaction and **3:40** closeout deadlines. Fourteen controller/five PostgreSQL cases pass after binding; integrity/no-action pass; both live modes refuse without approval. Bound manifest `4ccd327f942a593c3cbd7ea32c51a6c6908a9dc746a55c44828223977820d14b`; backend `evidence/APP-013/p07-owner-operated-account-window-preparation-20261022.md`. Exact next decision: `APP013_P07_OWNER_OPERATED_ACCOUNT_OPERATION_PROPOSAL_20261022.md` before 3:10. No new helper, automated Terminal or clipboard access, live database or provider action occurred. Current ID control must be confirmed during the later approved browser qualification.
 
 Measures stay **0/27 R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence**. **Approved procedural deviation only; no additional scope deviation.**
 

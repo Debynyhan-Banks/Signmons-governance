@@ -1,6 +1,6 @@
 # Session Handoff
 
-## October 22 — owner-operated account handoff locally ready
+## October 22 — owner-operated account exact operation awaiting approval
 
 **Section/status:** R1-W01 / APP-013/3A/P07 active. Mandatory closeout is live-demonstrated and verified; tenant binding/payment capability is not live-demonstrated or owner-accepted.
 
@@ -8,9 +8,11 @@
 
 **Completed local preparation:** owner approved Alternative 1 including prospective owner-only clipboard exception. Fresh disabled `/private/tmp/p07-tenant-stripe-binding-owner-handoff-20261022-prep1`, plan `e13cca1d-b51d-44f0-bcc9-dcbe0b281f8e`, packet `852a8b36-2780-4003-85ec-14ad7491eb79`, operation `f0af9aa6-f83b-4557-a0cb-cfd9900fbb42`, passes fourteen controller/five PostgreSQL cases, normalized source, syntax, private inventory/hashes/no-action and both no-window/synthetic no-approval refusals. Manifest `47249f6299936855f4338516f907a7976831dbb68cef9617653c1883d0cbaddb`; backend `evidence/APP-013/p07-owner-operated-account-handoff-local-preparation-20261022.md`. No live/browser/clipboard/provider action.
 
-**Remaining/blocker/owner:** owner supplies fresh attended 45-minute Eastern block with Terminal/current CHILD password/Stripe Sandbox. Implementer binds/retests and presents separate exact external approval. The current connected-account detail ID control must be confirmed during that later read-only browser qualification. Correct owner-operated ID handoff and tenant binding remain open; original failure cause remains unknown. No new helper or Terminal automation.
+**Completed binding:** owner confirmed **3:00–3:45 p.m. Eastern today**, strict **3:10** cutoff, transaction by **3:30**, closeout by **3:40**. Fourteen controller/five PostgreSQL cases pass after binding; syntax/private inventory/hashes/no-action pass; both live modes refuse without approval. Bound manifest `4ccd327f942a593c3cbd7ea32c51a6c6908a9dc746a55c44828223977820d14b`; backend `evidence/APP-013/p07-owner-operated-account-window-preparation-20261022.md`.
 
-**Next observable result:** exact bound/retested package plus a separate external decision; then (only after approval) one verified tenant-binding transaction/readback or named contained stop. No retry of consumed operations.
+**Remaining/blocker/owner:** owner approves/refuses `APP013_P07_OWNER_OPERATED_ACCOUNT_OPERATION_PROPOSAL_20261022.md` before 3:10. The current connected-account detail ID control must be confirmed during that later read-only browser qualification. Correct owner-operated ID handoff and tenant binding remain open; original failure cause remains unknown. No new helper or Terminal automation.
+
+**Next observable result:** after exact approval and in-window owner command, one verified tenant-binding transaction/readback or named contained stop. No retry of consumed operations.
 
 **Accepted milestones/progress:** 1A/1B/2A/2B remain accepted; **0/27 R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence**. **Owner-approved procedural deviation only; no additional scope deviation.**
 
