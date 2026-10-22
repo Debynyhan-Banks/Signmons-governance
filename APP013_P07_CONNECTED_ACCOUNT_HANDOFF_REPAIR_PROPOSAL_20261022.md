@@ -1,6 +1,6 @@
 # APP-013 / 3A / P07 connected-account handoff repair proposal
 
-Status: **owner decision pending; no fresh package or external action authorized**.
+Status: **Alternative 1 owner-approved for local preparation/testing; no external action authorized**.
 
 ## Demonstrated gap and unchanged criterion
 
@@ -42,6 +42,6 @@ This does not add an MVP feature or change a criterion, dependency, section ID o
 
 ## Decision requested
 
-Approve or refuse **Alternative 1 for local preparation and testing only**. Approval would authorize only the fresh disabled package and finite checks above. It would not authorize browser access, the in-memory handoff, a database connection or mutation, any Stripe change, deployment or payment.
+Debynyhan Banks approved **Alternative 1 for local preparation and testing only**. Approval authorizes only the fresh disabled package and finite checks above. It does not authorize browser access, the in-memory handoff, a database connection or mutation, any Stripe change, deployment or payment.
 
 Accepted progress remains **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation; proposed procedural repair only.**
