@@ -1,6 +1,6 @@
 # Global Execution Pointer
 
-## October 21 — P07 total-output correction complete; fresh window needed
+## October 22 — corrected P07 diagnostic bound; exact decision pending
 
 R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Repair 4 and all prior readiness operations are consumed.
 
@@ -16,7 +16,9 @@ The owner approved the exact 1:45–2:15 p.m. diagnostic. Operation `c15a9092-f4
 
 The owner approved Alternative 1 for local correction/testing. Fresh disabled package `/private/tmp/p07-read-only-diagnostic-total-output-20261021-prep1`, plan `e594290a-a142-42bb-8b26-d60908e9eed9`, packet `29e40c3f-bdee-49cc-bf06-ff9d6bdc5fe9` and operation `8f71217a-d384-4a0c-87da-3d3703a4201f`, now emits three tagged, total, null-safe rows and separately validates preparation versus consumed receipts. Twenty-three focused tests and five real disposable PostgreSQL 16.11 cases pass; syntax/no-action pass and both live modes refuse without a window. Manifest SHA-256: `b9d3deac90eedea69faf5f5735068ec65240739b9b1c377db7d3f9a648f3e7ae`. Evidence: backend `evidence/APP-013/p07-diagnostic-total-output-local-correction-20261021.md`.
 
-The local correction is complete. Owner availability for a fresh attended 30-minute diagnostic is next; binding/retest and a separate exact external-operation approval must follow. No live database action, retry, Stripe change, deployment or payment is authorized. P08 and acceptance remain separate. Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved local correction.**
+The owner supplied today, 6:45–7:15 a.m. Eastern. The corrected package is bound with a strict 6:55 start cutoff, diagnostic deadline 7:05 and closeout deadline 7:10. Twenty-three controller and five real disposable PostgreSQL cases pass after binding; no-action passes and live modes refuse without owner approval. Exact proposal: `APP013_P07_DIAGNOSTIC_TOTAL_OUTPUT_OPERATION_PROPOSAL_20261022.md`; manifest `850b8176a5e3de5c22c79fac4af6805cf2699d65a41f8f73cefcbbb9ce420d32`.
+
+Owner approval or refusal before 6:55 a.m. Eastern is next. No browser/database action, retry or mutation is authorized yet. P08 and acceptance remain separate. Accepted measures remain **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation.**
 
 ## October 20 — P07 repair 2 bound to next block; exact approval pending
 

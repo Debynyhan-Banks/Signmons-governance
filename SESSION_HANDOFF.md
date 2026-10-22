@@ -1,6 +1,6 @@
 # Session Handoff
 
-## October 21 — total-output correction locally complete; fresh window needed
+## October 22 — corrected diagnostic bound; exact decision pending
 
 **Section/status:** R1-W01 / APP-013/3A/P07 remains active and not live-demonstrated. Repair 4 and all prior readiness operations are consumed.
 
@@ -28,9 +28,11 @@
 
 **Completed/evidence:** Debynyhan Banks approved Alternative 1 for local correction/testing. Fresh disabled package `/private/tmp/p07-read-only-diagnostic-total-output-20261021-prep1`, plan `e594290a-a142-42bb-8b26-d60908e9eed9`, packet `29e40c3f-bdee-49cc-bf06-ff9d6bdc5fe9` and operation `8f71217a-d384-4a0c-87da-3d3703a4201f`, emits exactly three tagged, null-safe rows and maps absent P06 role, job, tenant and null account to fixed codes. Twenty-three controller and five real disposable PostgreSQL 16.11 cases pass; syntax/no-action pass and both live modes refuse without a window. Backend: `evidence/APP-013/p07-diagnostic-total-output-local-correction-20261021.md`; manifest `b9d3deac90eedea69faf5f5735068ec65240739b9b1c377db7d3f9a648f3e7ae`.
 
-**Remaining/blocker/owner:** Debynyhan Banks supplies a fresh attended 30-minute Eastern block. The implementer then binds/retests the corrected package and presents a separate exact external-operation proposal. No live database, Stripe, deployment or payment authority exists.
+**Completed/evidence:** owner supplied today, 6:45–7:15 a.m. Eastern. Exact binding uses a strict 6:55 cutoff, 7:05 diagnostic deadline and 7:10 closeout deadline. Twenty-three controller and five disposable PostgreSQL cases pass after binding; no-action passes and live modes refuse `P07_DIAGNOSTIC_REFUSED_OWNER_APPROVAL_INVALID`. Backend: `evidence/APP-013/p07-diagnostic-total-output-window-preparation-20261022.md`; manifest `850b8176a5e3de5c22c79fac4af6805cf2699d65a41f8f73cefcbbb9ce420d32`.
 
-**Next observable result:** a fresh 30-minute window is bound and locally verified, with the live command still refused until separate exact owner approval.
+**Remaining/blocker/owner:** Debynyhan Banks approves or refuses `APP013_P07_DIAGNOSTIC_TOTAL_OUTPUT_OPERATION_PROPOSAL_20261022.md` before 6:55 a.m. Eastern. No live database, Stripe, deployment or payment authority exists.
+
+**Next observable result:** after approval, one fixed diagnostic classification plus `CONTAINMENT_VERIFIED`, or one named contained stop. No retry.
 
 **Progress:** accepted **0/27 newly closed R1 packages; 6/60 legacy packages; 4/8 walkthrough milestones; 0/13 full-intelligence rows**. **No scope deviation from the approved local correction.**
 
