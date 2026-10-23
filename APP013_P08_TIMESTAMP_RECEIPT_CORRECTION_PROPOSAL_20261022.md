@@ -1,6 +1,6 @@
 # APP-013 / 3A / P08 — emitted attempt timestamp correction
 
-Status: **Alternative 1 explicitly approved for narrow local correction/testing; implementation not yet begun**. This is a controller correction inside existing R1-W01 / APP-013 / 3A / P08, not a new customer feature or acceptance section. The third read-only operation is consumed and contained; its receipts must not be modified or replayed.
+Status: **Alternative 1 implemented and locally verified; no new external operation authorized**. This is a controller correction inside existing R1-W01 / APP-013 / 3A / P08, not a new customer feature or acceptance section. The third read-only operation is consumed and contained; its receipts must not be modified or replayed.
 
 ## Demonstrated gap and existing acceptance
 
@@ -40,3 +40,7 @@ Full P07 resource retirement remains **October 23, 6:15 p.m. Eastern**. Accepted
 ## Owner decision — October 22, before implementation
 
 Owner answered **“Approve narrow local timestamp correction and tests”** to the exact Alternative1 question referencing proposal commit `173fd6a5a2ed09f4b178f9030f0b92a972aac78e`, tool call `call_e58e7abb84504c59b0f46776032553d6`. This authorizes only the fresh disabled producer correction and isolated realistic receipt tests above. No live binding/approval, external lookup, IAM/identity/role/secret/token/payment/deployment action, new allowance, retry or retirement extension. Original consumed source/receipts stay immutable.
+
+## Local completion — October22
+
+Fresh disabled `/private/tmp/p08-same-job-sandbox-20261022-timestamp1`; only producer timestamp expression changed; strict parser/SQL/access plan/other executable sources unchanged. Both new actual emitted-receipt consumer tests reproduce WINDOW_BINDING_INVALID on old source, then the full26 tests pass after correction, retaining all23 original assertions. Added actual SIGINT/SIGTERM-to-read-only-closeout path and strict consumed timestamp rejection. Initial missing scratch manifest setup error recorded separately before meaningful reproduction. No provider/database/account/IAM/token/payment action. Every consumed prep3 file hash unchanged; owned synthetic fixtures removed. Source/AST/diff/hash/mode and unbound/payment refusal checks pass. Backend evidence `evidence/APP-013/p08-timestamp-correction-local-20261022/README.md`. No binding/window/live approval/attempt; fresh attendance and exact external approval remain necessary. No acceptance/retirement change. **No scope deviation from approved narrow correction.**
