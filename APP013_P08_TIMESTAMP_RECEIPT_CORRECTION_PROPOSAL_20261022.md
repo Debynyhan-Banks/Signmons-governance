@@ -1,6 +1,6 @@
 # APP-013 / 3A / P08 — emitted attempt timestamp correction
 
-Status: **proposed; not implemented or approved**. This is a controller correction inside existing R1-W01 / APP-013 / 3A / P08, not a new customer feature or acceptance section. The third read-only operation is consumed and contained; its receipts must not be modified or replayed.
+Status: **Alternative 1 explicitly approved for narrow local correction/testing; implementation not yet begun**. This is a controller correction inside existing R1-W01 / APP-013 / 3A / P08, not a new customer feature or acceptance section. The third read-only operation is consumed and contained; its receipts must not be modified or replayed.
 
 ## Demonstrated gap and existing acceptance
 
@@ -36,3 +36,7 @@ Source entry backend `170247b1812068c0674c6a955556a1ab35218137`, governance `1ef
 Approve/refuse **Alternative 1 for this narrow local timestamp-producer correction and isolated tests only**. No live database/account/provider/identity/IAM/secret/token/payment/deployment action, new allowance, retry or resource-retirement extension is included. Decision pending; no implementation authority is inferred from this proposal.
 
 Full P07 resource retirement remains **October 23, 6:15 p.m. Eastern**. Accepted 1A/1B/2A/2B and **0/27 newly closed R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence** unchanged. **New controller defect disclosed; narrow correction proposed before implementation.**
+
+## Owner decision — October 22, before implementation
+
+Owner answered **“Approve narrow local timestamp correction and tests”** to the exact Alternative1 question referencing proposal commit `173fd6a5a2ed09f4b178f9030f0b92a972aac78e`, tool call `call_e58e7abb84504c59b0f46776032553d6`. This authorizes only the fresh disabled producer correction and isolated realistic receipt tests above. No live binding/approval, external lookup, IAM/identity/role/secret/token/payment/deployment action, new allowance, retry or retirement extension. Original consumed source/receipts stay immutable.

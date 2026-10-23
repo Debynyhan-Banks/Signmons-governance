@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 22 — narrow local P08 timestamp correction approved before code
+
+R1-W01 / APP-013/3A/P08 active. Owner explicitly approved “Approve narrow local timestamp correction and tests” against proposal173fd6a, `APP013_P08_TIMESTAMP_RECEIPT_CORRECTION_PROPOSAL_20261022.md`. Decision recorded before implementation. Only a fresh disabled copy, canonical-Z attempt writer and actual producer-to-helper/closeout regressions plus retained23 controller cases are authorized. Strict parser/SQL/access plan/application and consumed package/receipts unchanged. Prior operation contained and consumed; no retry or fresh external authority.
+
+Completed: demonstrated actual receipt mismatch, interruption cleanup/owner confirmation and exact local decision. Remaining/implementer: finite correction, prove old-source reproduction and corrected output through both unchanged consumers, all guard/source/privacy checks and evidence. Next observable result: reviewed locally tested disabled packet; owner later supplies fresh attended availability and exact read-only execution approval. No external account/database/provider/IAM/user/role/secret/token/payment action/new allowance/extension. P07 full retirement remains October23,6:15 p.m. Eastern. Accepted1A/1B/2A/2B and **0/27 R1;6/60 legacy;4/8 walkthrough;0/13 intelligence** unchanged. **Owner-approved narrow correction; no further scope deviation.**
+
 ## October 22 — P08 interrupted; containment verified; timestamp correction proposed
 
 R1-W01 / APP-013/3A/P08 active. Approved third operation started8:18:22 p.m. Eastern and reached the Stripe qualification marker after Cloud metadata. Local inspection of its actual emitted attempt demonstrated `+00:00` timestamp output incompatible with unchanged strict `Z` parser used by helper authorization and standalone closeout. No Stripe browser readback or business qualification SQL/Firebase lookup occurred. Implementer stopped further qualification and directed one owner Control-C under existing cleanup authority. Owner output and immutable stop agree: **P08_QUALIFICATION_STOP_INTERRUPTED / CONTAINMENT_VERIFIED**, stage STRIPE_READBACK, sessionsAbsent true, businessMutation false. Operation consumed; no retry/receipt edits. Normal interruption cleanup verified session absence with its authorized read-only query; not full P07 retirement.
