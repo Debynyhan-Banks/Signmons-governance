@@ -1,6 +1,6 @@
 # APP-013 / 3A / P08 — operator-selection evidence proposal
 
-Status: **Alternative1 explicitly approved for bounded local preparation/tests; implementation not yet begun. No external execution approved**. This is an internal dependency of the existing same-job payment workflow. It creates no new acceptance section or product requirement.
+Status: **Alternative1 implemented and locally verified; diagnostic external execution remains unapproved**. This is an internal dependency of the existing same-job payment workflow. It creates no new acceptance section or product requirement.
 
 ## Actual gap and requirement
 
@@ -37,3 +37,7 @@ No product-scope, section/order or acceptance-denominator change. Full P07 resou
 ## Owner decision — October22, before implementation
 
 Owner answered **“Approve bounded local operator diagnostic and tests”** to the exact Alternative1 question referencing immutable proposal `b2083f473b15dc5b385da6c61aba2f2ace637ad3`, tool call `call_3eb9e96410924a7789d8533847da25cf`. This approves the complete bounded local card and capped private diagnostic retention until October23,6:15 p.m. Eastern only. No live database/provider/Firebase read, selection/creation, IAM/role/secret/token/payment/deployment action, retry, new allowance or retirement extension.
+
+## Local completion — October22
+
+Fresh disabled `/private/tmp/p08-operator-diagnostic-20261022-prep1`; exact SQL/capped projection, separate diagnostic approval/window/governance gates, mandatory read-only closeout and explicit local private-receipt retirement implemented. Original qualification/bridge/app/access plan and26-test file unchanged; only original psql_read SQL allowlist and main new-mode routing expanded as approved. **47/47 pass**:26original +16diagnostic +5realSQL. Covers all specified classifications/privacy/caps, actual query/permissions, concurrent reservation/read, real signals/hidden PTY/deadline, actual emitted-receipt closeout, old/missing/foreign/expired/manifest/source-pin refusal and local scoped private purge. Owned fixtures/processes absent; all consumed source/receipts unchanged. No external read/action. Backend evidence `evidence/APP-013/p08-operator-diagnostic-local-20261022/README.md`. No live window/binding/approval/attempt/private candidate receipt. Candidate retirement requires explicit verified local purge by October23,6:15 p.m.; no background timer claimed. Next: fresh attended database-only diagnostic window and separate exact execution approval. No selection/payment/acceptance granted. **No scope deviation from approved preparation.**
