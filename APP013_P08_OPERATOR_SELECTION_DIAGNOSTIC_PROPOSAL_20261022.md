@@ -1,6 +1,6 @@
 # APP-013 / 3A / P08 — operator-selection evidence proposal
 
-Status: **proposed; no implementation or external execution approved**. This is an internal dependency of the existing same-job payment workflow. It creates no new acceptance section or product requirement.
+Status: **Alternative1 explicitly approved for bounded local preparation/tests; implementation not yet begun. No external execution approved**. This is an internal dependency of the existing same-job payment workflow. It creates no new acceptance section or product requirement.
 
 ## Actual gap and requirement
 
@@ -33,3 +33,7 @@ The existing3A criterion needs one explicitly authorized, active same-tenant app
 Approve/refuse **Alternative1 for local operator-diagnostic preparation and isolated tests only**, including the specified capped private receipt and retention boundary. This is not another live read approval. Excludes account/provider/Firebase lookup, identity/user creation/selection/activation, IAM/grants/role reopening, secrets/token actions, payment/booking/messages/events, deployment, extra allowance, retry or retirement extension.
 
 No product-scope, section/order or acceptance-denominator change. Full P07 resource retirement remains **October23,6:15 p.m. Eastern**. Accepted1A/1B/2A/2B and **0/27 newly closedR1;6/60 legacy;4/8 walkthrough;0/13 intelligence** unchanged. **Additional diagnostic/retention prerequisite proposed before implementation; exact completed read-only operation had no scope deviation.**
+
+## Owner decision — October22, before implementation
+
+Owner answered **“Approve bounded local operator diagnostic and tests”** to the exact Alternative1 question referencing immutable proposal `b2083f473b15dc5b385da6c61aba2f2ace637ad3`, tool call `call_3eb9e96410924a7789d8533847da25cf`. This approves the complete bounded local card and capped private diagnostic retention until October23,6:15 p.m. Eastern only. No live database/provider/Firebase read, selection/creation, IAM/role/secret/token/payment/deployment action, retry, new allowance or retirement extension.

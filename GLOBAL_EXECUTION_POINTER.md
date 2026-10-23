@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 22 — local operator diagnostic explicitly approved before code
+
+R1-W01 / APP-013/3A/P08 active. Owner answered “Approve bounded local operator diagnostic and tests” against proposalb2083f4, `APP013_P08_OPERATOR_SELECTION_DIAGNOSTIC_PROPOSAL_20261022.md`. Record before implementation. Only fresh disabled diagnostic mode, exact-tenant ACTIVE OWNER/ADMIN count/classification/up-to-two private UUID/tenant/role/status rows, retention through October23,6:15 p.m. Eastern and isolated controller/actualSQL tests are approved. Existing26 controller guards/qualification/bridge/access plan/consumed receipts unchanged. No operator selection/creation or live/external action.
+
+Completed: actual contained stop/owner confirmation, pre-code finite card and actual local decision. Remaining/implementer: finite local diagnostic/query/projection, zero/one/multiple/invalid/privacy/realSQL/concurrency/signal/deadline/closeout proof, cleanup/source integrity and evidence. Next observable result: tested disabled diagnostic; owner later supplies fresh attended window/exact read-only approval. No new allowance/retry/retirement extension; full P07 retirement still October23,6:15 p.m. Eastern. Accepted1A/1B/2A/2B and **0/27 R1;6/60 legacy;4/8 walkthrough;0/13 intelligence** unchanged. **Owner-approved diagnostic prerequisite; no additional scope deviation.**
+
 ## October 22 — corrected P08 operator-selection stop; containment owner-confirmed
 
 R1-W01 / APP-013/3A/P08 active. Exact corrected operation e7f2f7ff-2ddc-4c94-831d-1c8abf92c960 started8:47:13 p.m. Eastern with canonicalZ timestamp. Fresh Stripe Sandbox/administrator/oneEnabled account hash/exact disabled six-event destination/API version/zero-delivery checks passed; operation then stopped **P08_QUALIFICATION_STOP_OPERATOR_SELECTION_REQUIRED** at DATABASE_READ. Actual immutable stop sessionsAbsent true/businessMutation false; owner confirmed both Terminal stop and **CONTAINMENT_VERIFIED**. Normal authorized read-only session closeout succeeded; not full P07 retirement. No Firebase lookup, token, role/access/identity change, policy bind, Checkout/payment/event/booking/message. Operation consumed/no retry. Source/manifest/approval intact; no post-stop live requery.
