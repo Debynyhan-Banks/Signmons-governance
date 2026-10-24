@@ -44,3 +44,7 @@ Sources: backend evidence/APP-013/p08-account-controller-local-20261024/account-
 ## Owner decision requested
 
 Approve Alternative1 for bounded local launch-transport/approval-binding completion and mocked/disposable tests only. No real credential/provider/database/account action or execution approval is included. Alternative2 is postpone real account setup. AGENTS.md requires explicit approval before substantial prerequisite/access-plan changes; no new code is written under this proposal yet.
+
+## Actual local completion decision — before code
+
+Owner answered **“Approve bounded local launch completion and tests”** against immutable proposal20fcb2e /SHA 178624238b8c39dd5b7fc6a8138356fcabcf2a335502a468505c7bc6cf63671f, questioncallcall_52e79f0350954be5bbbd384e1c2bf2c4. Approves only the finite local transport/approval-binding completion and mocked/disposable tests. No real credential resolution/provider/database/account action, activation, IAM, payment, runtime restoration, spending or attendance extension. Actual decision committed before implementation.
