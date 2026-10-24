@@ -1,5 +1,11 @@
 # Session Handoff
 
+## October24 — isolated test-operator local preparation approved before code
+
+R1-W01 /APP-013/3A/P08. Owner answered “Approve local isolated-test-operator preparation” against immutable proposal0a1c541e6151c3cc42fc91bfe1b0684a54eaf4b3 / SHA52b8c60767cb98b512346dd1b467c8302b0883b604754ddf63163ebf3aeb47fb, questioncallcall_5c130bb0d2254776b0373f0bd02b3eca. Actual decision recorded before implementation. Only finite disabled isolated-test ADMIN/UUID-matched disabled Firebase model, existing schema/auth/audit seams, collision/activation/revocation/cleanup proof and mocked/disposable tests approved. No actual account lookup/create/change, CHILD write, Firebase/IAM/secrets/token/provider action, runtime restoration/payment/deployment/new allowance/live retention or attendance extension.
+
+Completed: actual ZERO_ELIGIBLE diagnostic/session/private absence/owner confirmation, local source inspection/proposal and actual new prerequisite decision. Remaining/implementer: finite local preparation/proof with reusable fixture/source/hash/no-live-action and cleanup checks, then a concrete future exact account/access/retention proposal for separate approval. Owner later supplies private intended metadata; none needed now. Next observable result tested disabled single-operator proposal; no real actor/payment readiness claim. Today's8:45 attendance end unchanged. Accepted1A/1B/2A/2B and **0/27 R1;6/60 legacy;4/8 walkthrough;0/13 intelligence** unchanged. **No additional scope deviation beyond approved local prerequisite; historical P07 missed deadline remains disclosed with verified cleanup.**
+
 ## October24 — owner login uncertain; isolated test-operator preparation proposed
 
 R1-W01 /APP-013/3A/P08. Owner answered “I’m not sure” about an existing Signmons app login; no account/identity change authorized. Actual prior diagnostic ZERO_ELIGIBLE/session/private absence remains complete and owner-corroborated. Local backend source inspection shows existing UUID User/tenant-email uniqueness/ADMIN-DISABLED support and Firebase revocation guard; sign-in itself does not create User records. No production user-creation handler found in inspected src search; no claim about uninspected frontend or live identities. No new live read. Evidence backend `evidence/APP-013/p08-operator-bootstrap-inspection-20261024/source-inspection.json`.
