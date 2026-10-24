@@ -57,3 +57,7 @@ Approve/refuse this finished finite card for **bounded local disabled-provisioni
 - `scripts/prepare-phone-staging-identity.mjs`: `e01e5cf4a2f1d272c30d5994adb189d3f4c543a6e290e4cf410831f80fcb4136`
 - `node_modules/firebase-admin/lib/auth/base-auth.d.ts`: `f47d0e0438edb9a5cea7de1da3b2690d13191c1aefceba68df69647879ec7993`
 - `node_modules/firebase-admin/lib/auth/auth-config.d.ts`: `7c29cccceb66ed5c934dfa7837d7ab0e7edb483589efa8d1709cd7ea4ccc5e2a`
+
+## Owner local implementation decision — October24, before code
+
+Owner answered **“Approve bounded local preparation and tests”** against immutable proposal38b1c8b, SHA be8202da46d14b9310fc941f313a4a99d5aeafc93fa0512124db95b4fdeb9b5b, questioncallcall_41c62b247d32495bbf0b9f7b8ebcbb1e. Approved only the finished finite local provisioning/independent-closeout controller card with mocked Firebase/disposable PostgreSQL, collision refusal and truthful partial-failure reporting. No actual account/database/Firebase/IAM/token/activation/runtime/payment/provider/spending/attendance action. This actual decision is committed before implementation.
