@@ -61,3 +61,7 @@ Approve/refuse this finished finite card for **bounded local disabled-provisioni
 ## Owner local implementation decision — October24, before code
 
 Owner answered **“Approve bounded local preparation and tests”** against immutable proposal38b1c8b, SHA be8202da46d14b9310fc941f313a4a99d5aeafc93fa0512124db95b4fdeb9b5b, questioncallcall_41c62b247d32495bbf0b9f7b8ebcbb1e. Approved only the finished finite local provisioning/independent-closeout controller card with mocked Firebase/disposable PostgreSQL, collision refusal and truthful partial-failure reporting. No actual account/database/Firebase/IAM/token/activation/runtime/payment/provider/spending/attendance action. This actual decision is committed before implementation.
+
+## Local approved implementation result — October24
+
+Decision900ff9a preceded new code. Finite disabled injected helper and independent closeout are implemented and locally tested:66controller,8actual socket-only current-schema PostgreSQL,13reused model tests pass; initial failures/corrections preserved. Exact application sessions absent and0owned fixture processes verified; prior sources intact. Evidence backend `evidence/APP-013/p08-account-controller-local-20261024/README.md`. Live target/access/UUID/window/private purge/external approval remain unbound; no real account/provider action or acceptance. Next exact operation needs fresh attended availability. No scope deviation beyond approved local preparation.
