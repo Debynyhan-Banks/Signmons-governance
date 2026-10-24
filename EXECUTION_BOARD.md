@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 23 — local overdue-retirement recovery explicitly approved before code
+
+R1-W01 / APP-013/3A. Owner approved “Approve local cleanup-only preparation and tests” against proposal2f2a419, `APP013_P07_OVERDUE_RETIREMENT_RECOVERY_PROPOSAL_20261023.md`; decision recorded before code. Only the finite fresh disabled supervisor, exact immutable journal/resource allowlist, existing cleanup/readback reuse and isolated tests/evidence are authorized. No live provider/database/browser action, password entry, payment, deployment, new allowance, retry or retention extension. Original retirement remains overdue, not renewed.
+
+Completed: reconciliation, finite proposal and actual local decision. Remaining/implementer: exact disabled wrapper, authority/source/resource/privacy/signal/deadline/concurrency/current-readback tests and fixture cleanup; later present finished external cleanup operation for separate owner approval. Next observable result: tested disabled cleanup-only package; not live retirement or payment acceptance. Tonight availability8:15–9:15 p.m. Eastern is not execution authority. Accepted1A/1B/2A/2B and **0/27 R1;6/60 legacy;4/8 walkthrough;0/13 intelligence** unchanged. **Missed mandatory-retirement deadline remains disclosed; no additional scope change beyond approved bounded recovery.**
+
 ## October 23 — overdue P07 retirement; cleanup-only recovery proposed
 
 R1-W01 / APP-013/3A active; P08 payment/operator qualification remains stopped. Owner supplied **tonight October 23,8:15–9:15 p.m. Eastern** as availability only and repeated yesterday's operator-selection contained stop. Original P07 full retirement deadline **October23,6:15 p.m. Eastern** has passed. Offline immutable-source/journal inspection found no retirement/recovery result; no fresh provider/database state was read. Original manifest unchanged. The old retire path enforces the elapsed deadline before hidden input/cleanup; do not run or alter the expired operation. No new approval or live action.

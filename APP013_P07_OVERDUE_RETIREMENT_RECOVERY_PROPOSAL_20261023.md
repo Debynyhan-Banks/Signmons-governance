@@ -32,3 +32,7 @@ Approved-section traceability: existing APP-013/3A P07 mandatory retirement obli
 Approve **Alternative 1 for bounded local cleanup-only preparation and isolated tests only**. This does not authorize any Cloud/IAM/secrets/database/Stripe/browser action, password entry, billing allowance increase, payment, deployment, retry or retention extension. The original retirement deadline was missed and is not renewed by this decision. The later exact external cleanup proposal must specify its actual future window and receipts before approval; if preparation cannot finish before tonight's availability ends, do not launch an incomplete operation.
 
 Progress remains accepted1A/1B/2A/2B, **0/27 newly closed R1; 6/60 legacy; 4/8 walkthrough; 0/13 intelligence**. P08 operator selection remains unresolved; 3A payment remains unaccepted. **Deviation disclosed: mandatory original retirement deadline passed without verified retirement; bounded recovery proposed before implementation.**
+
+## Owner decision — October 23, before implementation
+
+Debynyhan Banks answered **“Approve local cleanup-only preparation and tests”** to the exact Alternative1 question referencing immutable proposal commit `2f2a419`, call `call_f462cc6037764e54b900a5f96bdf7e19`. This approves the finite bounded local card only. No external read/mutation, password entry, payment, deployment, extra allowance, retry or original-retention extension is authorized. Implementation has not begun at this decision record.
