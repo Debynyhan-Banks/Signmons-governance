@@ -1,5 +1,12 @@
 # Session Handoff
 
+## October 26 — 9:15–9:45 operation approved; one-use command ready
+
+R1-W01 / APP-013 / 3A / P08. Owner answered “Approve and attend 9:15–9:45” against immutable c489534e6acbba55f7fa58d86dfa401304938892, question call_98c1cbf088064dec90d92a22b825f8ce, received at 8:25 a.m. Eastern before the block. Actual approval and fresh private plan bound to exact source/proposal/target/window; unchanged source manifest 062e0c1e13192b17b010e8e605f22eaa386c98e390465f752d5518b6367b10df. Native prestart verification returned P08_ACCOUNT_LAUNCH_REFUSED_BEFORE_START before password, credential/provider access or attempt reservation. No actual account created. Evidence: backend evidence/APP-013/p08-oct26-0915-proposal/actual-owner-approval.json and actual-binding-prestart.json.
+
+Completed: exact attendance/operation decision and real binding/prestart guard. Remaining/owner: run the new renewal2 account-launch.mjs --prepare-disabled once at/after 9:15 and strictly before 9:30 a.m. Eastern with the current CHILD administrator password hidden; keep Terminal open and report only fixed P08_/CONTAINMENT_ lines. Implementer reconciles exact journal/readbacks and verified private purge. Normal work ends 9:35; cleanup/session readbacks by 9:42; private purge before 9:45. One provisioning attempt, no retry; one included exact independent closeout-only invocation if necessary. No activation/user token/email, IAM/secrets, runtime restoration, Stripe/payment/deployment or new allowance. Next observable result: disabled account created and closed with session/private absence, not authenticated operator or payment acceptance. Accepted 1A/1B/2A/2B; 4/8 walkthrough; 0/27 R1 newly closed, 6/60 legacy and 0/13 intelligence unchanged. **No new scope deviation; prior retention misses and their verified approved cleanup remain disclosed.**
+
+
 ## October26 —8:00 approval arrived after cutoff; proposed9:15 operation awaits combined decision
 
 R1-W01 /APP-013/3A/P08. Owner answered “Approve this exact8:00–8:30 operation” against609275a, callcall_b569239c848f466b9010d42f7d71af4b. Clock at receipt8:17:39a.m. Eastern exceeded strict8:15start cutoff; no new runnable approval, attempt or account/credential/provider action. No raw mailbox plan created, so no new sensitive-data purge obligation. Evidence backend p08-oct26-0800-renewal/late-owner-reply-no-execution.json. Exact previously approved late private-plan purge remains verified8:02:32; missed historic deadlines remain disclosed.
