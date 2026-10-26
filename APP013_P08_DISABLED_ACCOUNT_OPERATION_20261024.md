@@ -1,6 +1,10 @@
 # APP-013 /3A /P08 — fresh exact disabled test-account operation, October25
 
-Status: FRESH OCTOBER25 PROPOSAL ONLY; NOT APPROVED OR STARTED. October24 authority expired unstarted. Local transport approval57969ac is not external authority. Readiness proof backend691e643, evidence/APP-013/p08-launch-completion-local-20261024/README.md. No real account/credential lookup or mutation performed in preparation.
+Status: EXPIRED UNSTARTED; DO NOT RUN OR REUSE. The later actual approval is preserved in `APP013_P08_OCT25_1015_ACTUAL_OWNER_APPROVAL.md`, but every October25 deadline passed without an attempt, journal, result, stop, closeout or purge receipt. The raw private plan remains past its purge deadline and needs a fresh exact cleanup decision. Readiness proof backend691e643; expiry evidence backendbde5e38. No real account/credential lookup or mutation is evidenced.
+
+## October26 expiry reconciliation
+
+Read-only inventory at5:03a.m. Eastern found the approved canonical plan/source bindings unchanged and no operation receipt. The exact command and approval are expired and non-reusable. The mode0600 `/private/tmp/p08-account-launch-20261025-renewal2/launch-plan.json` remains after its October25,10:45a.m. purge deadline; no raw content was opened/copied and no deletion occurred. Owner must separately approve or refuse the exact late local plan purge. Any renewed account action needs a new operation ID, proposal, private plan, attended window and separate execution approval; cleanup permission is not operation authority.
 
 
 ## Fresh10:15 operation and private metadata retention decision
