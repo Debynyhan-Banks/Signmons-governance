@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October26 —8:00 start requested; end pending and exact late-plan purge proposed
+
+R1-W01 /APP-013/3A/P08. Owner says missed prior operation and requests today8:00a.m. Eastern “until”; end-time question pending. Current read-only local inventory confirms expired October25 exact operation directory/attempt/journal/results absent, raw private plan still0600/nonsymlink. No deletion or account/provider/credential action. Prepared APP013_P08_EXACT_LATE_LOCAL_PLAN_PURGE_PROPOSAL_20261026.md for one exact hash-guarded late local unlink/absence readback, independent of any new account window. Source/evidence preserved; no raw metadata reused/copied into a fresh packet.
+
+Completed: current canonical/time/receipt reconciliation and finite reviewable cleanup proposal. Remaining/owner: approve/refuse that one local purge and supply today's8:00 end time; implementer then records actual cleanup before separately preparing a fresh account operation/private-retention binding and exact execution approval. No expired command/approval revival, provider lookup, account grant/runtime/payment/allowance or acceptance. Next observable result exact late private-plan absence, then reviewable fresh account operation. Accepted1A/1B/2A/2B;0/27 R1;6/60 legacy;4/8 walkthrough;0/13 intelligence unchanged. **Second retention miss disclosed; exact local recovery proposed before deletion, no additional scope deviation.**
+
 ## October26 —10:15 account operation expired unstarted; late private-plan purge decision required
 
 R1-W01 /APP-013/3A/P08. Read-only local inventory at5:03a.m. Eastern confirms exact operation `045270ef-535e-4572-b5ed-62557a9b5213` is outside its October25,10:15–10:45a.m. window. Its canonical plan/source/approval bindings still match, but no attempt, journal, result, stop, closeout or purge receipt exists. The private raw `launch-plan.json` remains mode0600 after the10:45 purge deadline; sanitized approval receipt remains as historical evidence. This is **expired unstarted**, not a provider failure, closeout or account outcome. No private content was opened/copied, no file deleted and no credential/database/Firebase/provider/account action occurred. Backend evidence `bde5e38`, `evidence/APP-013/p08-oct25-1015-expired-20261026/README.md`.
