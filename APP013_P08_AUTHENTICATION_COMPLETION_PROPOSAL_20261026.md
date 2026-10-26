@@ -44,3 +44,7 @@ No reset of accepted sections or growth of MVP scope. This finishes an already i
 ## Decision requested
 
 Approve Alternative 1 for the bounded local lifecycle/native-adapter/qualifier completion and isolated tests only, or defer. This does not approve any real activation, sign-in/token, database/provider read/write, IAM, runtime restoration or payment. **Explicit prerequisite-completion proposal before implementation; no implemented scope deviation.** AGENTS.md requires prior owner approval for this material operational prerequisite. The 8:30–9:15 availability remains separate and is not an executable booking.
+
+## Actual owner decision before implementation
+
+Owner answered “Approve bounded local completion and tests” against immutable 8dbf43a65017e8ddc3f1404c87b21c2c59b2e925, question call_e9d14ac50b094afdad54c04c55cee630. This approves Alternative 1's finite local native lifecycle/adapters/qualifier completion and isolated tests only. No external credential/account/database/provider/token/IAM/runtime/payment action or attendance extension. This decision is saved before code.
