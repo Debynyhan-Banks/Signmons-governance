@@ -1,5 +1,12 @@
 # Global Execution Pointer
 
+## October 26 — corrected choice approves private local comparison; command ready
+
+R1-W01 / APP-013 / 3A / P08. Owner corrected the initial private-resolution answer to select the first option, Approve private local identity comparison, against d8dd65b / question call_3480feece28542c39a882be9931aeb59. Actual correction/local purpose recorded before command preparation; no external authority. Owner also says Google Cloud is open in Chrome; that is context, not browser inspection permission under this local comparison.
+
+Completed: static/syntax/privacy review of one owner-run standard-library Terminal command, saved fingerprint binding, private TTY/no-echo fallback refusal,60second timeout/interrupt and fixed-status-only output. No real input or provider/browser/credential read. Backend evidence/APP-013/p08-private-billing-ui-comparison-20261026/owner-decision.json and command-review.json; command supplied in chat only, no reusable helper/app file. Remaining/owner: copy displayed Cloud Billing account ID privately, run once and paste it only into the hidden Terminal prompt (not a password/project ID), report fixed MATCH/DIFFERENT/refusal. Next observable result identity comparison; MATCH does not establish billing active, DIFFERENT does not authorize relinking. No scheduled provider window needed/extended; all further APIs/billing/runtime/payment actions remain separately approved. Accepted1A/1B/2A/2B,4/8 walkthrough;0/27 R1 newly closed,6/60 legacy,0/13 intelligence unchanged. **No scope deviation within the approved local comparison.**
+
+
 ## October 26 — owner confirms linked-account UI active; private identity comparison proposed
 
 R1-W01 / APP-013 / 3A / P08. Owner clarified “Signmons project’s linked Cloud Billing account” (call_c44d82d2c2cc4cb3940765599e0db226). Keep this UI report distinct from the saved8:39APIopen=false/billingEnabled=true result. No external read, billing change or account-identity comparison occurred. Backend evidence/APP-013/p08-linked-billing-ui-clarification-20261026/owner-clarification.json.

@@ -26,3 +26,11 @@ No persisted private input means no new raw-data purge deadline or remote closeo
 Alternatives: owner may decline the comparison and resolve the account/status discrepancy privately with Google Cloud billing support. Do not submit a support message for the owner without explicit instruction. No account creation/reopen/relink/payment, balances/cards/invoices, credentials/token, database/Firebase/runtime/IAM/secret/deploy/Stripe/payment/event/booking/message, spending, new product feature or acceptance change. Accepted1A/1B/2A/2B and4/8 walkthrough;0/27 newly closed R1,6/60 legacy,0/13 intelligence unchanged.
 
 **Decision requested:** approve this one private owner-run local fingerprint comparison and hidden identifier input, or decline. AGENTS.md requires a specific approved bounded purpose for new work while externally blocked; this asks before implementing/providing the command. **No implemented scope deviation; narrow local diagnostic purpose proposed before use.**
+
+## Actual owner correction and local approval
+
+Owner corrected the initial private-resolution selection: “sorry i did not mean that i meant to hit the first one,” explicitly selecting **Approve private local identity comparison** from question call_3480feece28542c39a882be9931aeb59 against immutable d8dd65b8353b9f08e25cbada2592b6f04a1053e9. This authorizes only the finite hidden-input, local fingerprint comparison above. Record precedes command preparation; no new confirmation needed. Chrome/provider inspection, further API reads, financial/resource changes and private identifier persistence remain excluded.
+
+## Command review and handoff
+
+One-shot command syntax/privacy reviewed; expected hash matches the saved8:39APIreceipt. No input executed or provider request. Only fixed status is reportable. Body SHA256 a7a9ece8c1ed1439262f20578747d404ce636ae96d8bfb4341e0a608f08be942. Command body is supplied in chat only. No scope deviation.
