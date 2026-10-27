@@ -1,5 +1,14 @@
 # Session Handoff
 
+## October 26 — owner reports local account MATCH; billing discrepancy remains
+
+R1-W01 / APP-013 / 3A / P08. Owner reports `P08_BILLING_UI_ACCOUNT_MATCH` from the approved private local comparison (proposal d8dd65b; corrected decision call_3480feece28542c39a882be9931aeb59). This correlates the displayed account with the saved API account fingerprint through the owner-run command; execution was not independently observed. Only the fixed status was received, never the identifier or computed input hash. Backend evidence: evidence/APP-013/p08-private-billing-ui-comparison-20261026/owner-result.json. Static command-review evidence remains historical and unchanged.
+
+Completed: approved local identity comparison and owner report. Billing resolution is not established: owner sees Active in the linked-account UI; the last API read at 8:39 p.m. Eastern reported project billingEnabled=true/accountLinked=true and account open=false; the 8:25 p.m. Secret Manager response reported BILLING_DISABLED. No subsequent provider read, browser inspection, billing/resource change or independent clipboard/erasure verification. Preserve both observations; cause remains unknown.
+
+Remaining/blocker/responsible role: billing owner and Google Cloud Billing support reconcile the same-account status discrepancy. Next observable result is provider/owner resolution evidence, followed only by separately approved fresh readiness qualification. No further read loop, helper, IAM grant, account relinking, runtime restoration, authentication or payment action is authorized by MATCH. Local authentication preparation is complete; live operator authentication, runtime readiness, same-job Sandbox payment/recovery and final 3A acceptance remain open. Accepted 1A/1B/2A/2B, 4/8 walkthrough; 0/27 newly closed R1, 6/60 legacy, 0/13 intelligence unchanged. **No scope deviation.**
+
+
 ## October 26 — corrected choice approves private local comparison; command ready
 
 R1-W01 / APP-013 / 3A / P08. Owner corrected the initial private-resolution answer to select the first option, Approve private local identity comparison, against d8dd65b / question call_3480feece28542c39a882be9931aeb59. Actual correction/local purpose recorded before command preparation; no external authority. Owner also says Google Cloud is open in Chrome; that is context, not browser inspection permission under this local comparison.
