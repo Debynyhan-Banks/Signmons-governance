@@ -1,5 +1,12 @@
 # Global Execution Pointer
 
+## October 26 — owner confirms linked-account UI active; private identity comparison proposed
+
+R1-W01 / APP-013 / 3A / P08. Owner clarified “Signmons project’s linked Cloud Billing account” (call_c44d82d2c2cc4cb3940765599e0db226). Keep this UI report distinct from the saved8:39APIopen=false/billingEnabled=true result. No external read, billing change or account-identity comparison occurred. Backend evidence/APP-013/p08-linked-billing-ui-clarification-20261026/owner-clarification.json.
+
+Completed: context clarification and finite APP013_P08_PRIVATE_BILLING_UI_COMPARISON_PROPOSAL_20261026.md before a new local purpose/input. Remaining/owner: approve/refuse one private owner-run hidden-ID-to-saved-hash comparison, no provider call/files/credentials. Implementer then provides only the reviewed one-shot command; owner shares fixed MATCH/DIFFERENT/refusal status, never ID. MATCH establishes account identity only, not billing resolution; DIFFERENT requires owner context correction, never automatic relinking. Next observable result account-identity comparison or owner/provider direction. No new helper/code/application implementation or substitute feature work. Later API/billing/runtime/payment action needs separate exact authority. Accepted1A/1B/2A/2B,4/8 walkthrough;0/27 newly closed R1,6/60 legacy,0/13 intelligence unchanged. **No implemented scope deviation; specific bounded local diagnostic purpose proposed before use.**
+
+
 ## October 26 — fresh check still reports linked account not open; owner-view clarification pending
 
 R1-W01 / APP-013 / 3A / P08. Owner approved combined read-only operation 60e55fda-d026-43e8-9b89-c8e2ebef1a10 against ccf1e1c, question call_0ed87489c74a4362b0e85c6697221ed5. Exactly three commands ran 8:39:01–8:39:03 p.m. Eastern: expected owner/no overrides, exact project billingEnabled=true/accountLinked=true, same linked-account hash as the prior read, exact linked account open=false. Actual P08_POST_BILLING_READINESS_STOP / LINKED_ACCOUNT_OPEN_STATUS / LINKED_ACCOUNT_NOT_OPEN. Mandatory gate stopped before all six secret-version, seven resource-policy and key metadata reads. No retry/poll, billing/resource mutation or assumed propagation resolution. All child processes ended; closeout before9:15 verified. Backend evidence/APP-013/p08-post-billing-readiness-result-20261026/.
