@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 28 — exact IAM FULL-view R03 stopped at documented lifecycle row
+
+R1-W01 / APP-013 / 3A / P08. Approved operation `02aa2053-4985-487d-b7b8-aaf67d6bfb21` ran once at 6:40 p.m. Eastern. All three CLI reads and the one HTTPS read completed, then lifecycle parsing stopped with `INACTIVE_ROLE`. Private inputs absent; raw response/bearer not retained; provider mutation impossible. Attempt consumed/no retry. Backend evidence `p08-role-inventory-r03-stop-20261028`.
+
+Next/owner: approve or defer Alternative 1 in `APP013_P08_ROLE_LIFECYCLE_FILTER_CORRECTION_PROPOSAL_20261028.md`: locally normalize documented omitted-stage ALPHA, exclude validated noneligible/deleted rows, retain malformed/unknown refusal and test all controls. No external retry/action is authorized. Counts unchanged. **No scope deviation; contained lifecycle-contract gap.**
+
 ## October 28 — exact corrected IAM FULL-view R03 approved
 
 R1-W01 / APP-013 / 3A / P08. Owner approved operation `02aa2053-4985-487d-b7b8-aaf67d6bfb21` against proposal pre-decision SHA `a55e975f7582faa32c32070af584cf14ce08758aca703038c7c7ce0311ce9f85`, backend `fed5efb`. Today 6:40–7:10 p.m. Eastern, start strictly before 6:55; exactly three CLI reads and one IAM FULL-view HTTPS read; one attempt/no retry; USD 0; no attendance/password; mandatory private-input/process closeout. No role/grant or Stage B action.
