@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 28 — exact 6:00 read-only role inventory approved
+
+R1-W01 / APP-013 / 3A / P08. Owner approved exact operation `83bdf433-98dd-45c9-8b42-fb90494219ce` against proposal `2742153` / pre-decision SHA `3c83bc2d677e251e680be074b1d68d7160c8c54622cc8d7b88c0f54003f3c4b3`. Today 6:00–6:30 p.m. Eastern, start strictly before 6:15; exactly three owner/project/custom-role metadata reads; one attempt/no retry; USD 0; no attendance/password; mandatory child/process/private-input closeout. No role/grant or Stage B action.
+
+Next/implementer: at or after 6:00 prepare the exact private plan/approval binding, run backend `c51dd78` once, reconcile the fixed result and containment, and never retry. Counts unchanged. **No scope deviation; exact read-only external action approved but not started.**
+
 ## October 28 — local role qualifier complete; exact read-only inventory proposed
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved local qualifier is complete at backend `c51dd78`: 14/14 isolated tests pass, including exact three-command native binding, owner/project refusal, one-attempt concurrency, deadlines/signals/real child cancellation, privacy filtering, private-input purge and unchanged restoration-contract compatibility. One initial assertion falsely matched read-only field `deleted` as a mutation token; corrected to exact command tokens and recorded. Native unbound path refuses. No external request or mutation.

@@ -42,3 +42,7 @@ No API/service enablement, IAM role or binding creation/change, Firebase user ac
 Approve this exact read-only operation for October 28, 6:00–6:30 p.m. Eastern, starting strictly before 6:15, or defer. Approval authorizes only the three reads and mandatory closeout above. It does not authorize later role creation, IAM binding or Stage B action.
 
 Accepted 1A/1B/2A/2B remain 4/8; 0/27 newly closed R1, 6/60 legacy and 0/13 intelligence remain unchanged. **No scope deviation.**
+
+## Owner decision
+
+Debynyhan Banks replied “I approve the exact 6:00–6:30 read-only operation.” against committed proposal `2742153`, pre-decision document SHA256 `3c83bc2d677e251e680be074b1d68d7160c8c54622cc8d7b88c0f54003f3c4b3`. Exact operation `83bdf433-98dd-45c9-8b42-fb90494219ce` is authorized only within the stated October 28 window and command/closeout limits. No later role/grant or Stage B action is authorized.
