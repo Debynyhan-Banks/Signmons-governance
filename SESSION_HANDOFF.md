@@ -1,5 +1,11 @@
 # Session Handoff
 
+## October 28 — immediate same-day Stage A renewal correction proposed
+
+R1-W01 / APP-013 / 3A / P08. Owner requested an immediate same-day operation rather than waiting more than 15 hours for the approved October 29 window. Source inspection found the deterministic builder/launcher accept only one date-named operation document, while the October 28 document is consumed and immutable. `APP013_P08_SAME_DAY_RENEWAL_FILENAME_PROPOSAL_20261028.md` proposes a disabled local-only `_R01` filename/date contract correction with exact Eastern window-date enforcement and retained approval/hash/no-retry/closeout gates. No implementation, private plan, credential resolution or external request occurred. The approved October 29 operation remains unstarted and will not be used while this proposal is pending.
+
+Next/owner: approve or defer the bounded local correction and isolated tests. After a passing result, the implementer prepares the earliest feasible same-day exact operation for separate approval; that approval must explicitly supersede/cancel the unstarted October 29 operation. Stage A facts, Stage B and 3A acceptance remain open. Accepted 1A/1B/2A/2B, 4/8; 0/27 newly closed R1, 6/60 legacy, 0/13 intelligence unchanged. **Explicit prerequisite proposal before implementation; no implemented scope deviation.**
+
 ## October 28 — corrected Stage A operation approved for October 29
 
 R1-W01 / APP-013 / 3A / P08. Owner approved exact operation `152c348`: October 29, 8:00–8:30 a.m. Eastern, start strictly before 8:15; preselected operation/decision IDs; one attempt/no retry; conditional Policy Troubleshooter enable retained as `RETAIN_IF_ENABLED`; four diagnostics; USD 0 incremental allowance; verified process closeout/private-plan purge. No attendance/password. Approval is recorded in `APP013_P08_STAGE_A_OPERATION_20261029.md`. No private plan, credential resolution or external request occurred on October 28.
