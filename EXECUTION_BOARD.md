@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 28 — local IAM FULL-view correction approved
+
+R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 against governance `5a9a8c0`: locally replace only the incomplete BASIC-view list with three bounded CLI checks/token acquisition plus one exact in-memory IAM `view=FULL` HTTPS request, and run isolated privacy/request/stage/cleanup tests. No external command/request or retry is authorized.
+
+Next/implementer: modify only the evidence-contained qualifier/tests/manifest/evidence, run the approved matrix and repository gates, then present any fresh external operation separately. Counts unchanged. **Approved local correction only; no scope deviation.**
+
 ## October 28 — corrected inventory stopped on documented BASIC-view omission
 
 R1-W01 / APP-013 / 3A / P08. Fresh operation `7212ade4-3500-421f-832b-d9738eb0b324` ran once at 6:15 p.m.; all three reads completed, then sanitized reason `PERMISSION_SHAPE`. Private inputs absent; no children; no mutation. Backend `d82a4d4`. IAM documents BASIC view omits `includedPermissions`; FULL is required. Role facts remain unknown; attempt consumed/no retry.
