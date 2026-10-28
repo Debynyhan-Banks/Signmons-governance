@@ -39,3 +39,7 @@ Observable finish is a source-locked tested three-command document-to-plan-to-la
 Excluded: provider access or mutation, credentials/cache, private plan, changing Stage A requests/retention/allowance, API Keys, IAM roles/grants, Firebase/database/runtime, Stripe/payment, deployment, merge/push or spending.
 
 Accepted 1A/1B/2A/2B, 4/8 walkthrough; 0/27 newly closed R1, 6/60 legacy, 0/13 intelligence unchanged. **Unintended native handoff gap disclosed before credentials; explicit local correction proposed before implementation.**
+
+## Owner decision
+
+Debynyhan Banks replied “i approve” to the bounded native plan-handoff correction and local tests against governance commit `eb7da758cb9af322769b73e2c8e8bb0f20487587`. This authorizes only the disabled local source/test work above. It does not authorize credentials, a private live plan, provider commands/requests, cancellation or execution of an operation.

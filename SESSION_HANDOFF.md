@@ -1,5 +1,11 @@
 # Session Handoff
 
+## October 28 — native plan handoff correction approved locally
+
+R1-W01 / APP-013 / 3A / P08. Owner approved the bounded source-locked three-command coordinator and isolated tests against governance commit `eb7da75`. No credentials, private live plan, provider command/request or external operation is authorized by this decision. Existing 5:30 and October 29 operations remain unstarted and must not run from their old source pins.
+
+Next/implementer: implement and verify the exact local card. On pass, prepare the next immediate exact operation with corrected source and explicit supersession/cancellation of both old authorities for separate owner approval. Accepted 1A/1B/2A/2B, 4/8; 0/27 newly closed R1, 6/60 legacy, 0/13 intelligence unchanged. **Approved local prerequisite only; no scope deviation.**
+
 ## October 28 — approved 5:30 operation stopped before start on native handoff gap
 
 R1-W01 / APP-013 / 3A / P08. Final source inspection before credentials found backend `d5aa8f9` native builder remains intentionally unbound and needs an already-known private project number, while the native launcher uses the approved owner/project/bearer three-command ceiling. No retained private input exists. An extra project read would exceed approval; unpinned scratch/cache scanning would violate the source contract. No private plan, credential resolution, command or external request occurred. The 5:30 operation is approved but must not start from this source.
