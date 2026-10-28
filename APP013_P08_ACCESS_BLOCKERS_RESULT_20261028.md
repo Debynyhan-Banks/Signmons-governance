@@ -1,0 +1,24 @@
+# APP-013 / 3A / P08 — current configuration passed; two access blockers
+
+## Observed result
+
+Owner approved111b3d2 via call_d954e8279d32476397e333ed9bd40850. Operation c324c781-2a06-49a9-9f7f-69502fa75806 ran once October28 10:56:38–10:56:42Eastern:8CLI/oneHTTP, stopped P08_CORRECTED_CLOUD_STOP_DIAGNOSTIC_SERVICE_DISABLED. All children closed before deadline, no retry/mutation. Backend evidence/APP-013/p08-corrected-cloud-result-20261028/.
+
+Completed: corrected19-name local expectation; current exact candidate source/image/identity/Ready, safety flags/seven version1 secret references, strict existing return URL shape; normal100/candidate0/tag absent; dedicated identity disabled. No deployed configuration correction was needed or made for the prior prepared-name error. Current environment digest is retained without raw literals/URL.
+
+## Finite blockers and ownership
+
+1. **Native exchange key compatibility — implementer proposes; owner approves any changed resource.** Exact existing key metadata has browser-referrer restrictions. Identity Toolkit target is allowed, but existing native auth/auth-adapters.mjs sends no browser referrer, so this key is not qualified for that client. No actual exchange, key-string read or rejection occurred. Preserve existing browser key/restrictions. Existing auth-authority.mjs19 accepts a specifically pinned project key resource/hash; it does not require changing application authentication to use a separately approved compatible test key. No new key is authorized by this result.
+2. **Effective access — provider/project authorized owner resolves service availability; implementer prepares exact plan.** First read-only Policy Troubleshooter diagnostic returned403/SERVICE_DISABLED, no access verdict. Four other exact diagnostics were not attempted. Empty exact direct bindings and zero referenced custom-role definitions do not prove effective denial or absence of suitable custom roles. Never grant access by default. API enabling is a provider configuration change and requires separate exact approval; it was not performed. Existing narrow firebaseauth.users.get/signBlob role branches remain unqualified/preexisting-role-only.
+
+## Alternatives before implementation
+
+Recommended direction: preserve native authentication and shared browser key; prepare one finite access-resolution card for a dedicated temporary compatible test exchange key with exact API restrictions, in-memory key-string use only during later approved authentication, collision refusal and same-block verified deletion, plus explicit permission-diagnostic service enable/retention or a bounded alternative. Identify all provider API prerequisites, exact permissions/role definitions and rollback/readbacks before approval. Reuse existing keyResource binding and auth/cleanup seams; do not build a replacement login system or add broad roles. Any new key lifecycle or API-enable controller prerequisite requires a change proposal and owner decision before implementation. No guarantee of zero cost or automatic API disable; preserve existing consumers and require exact approval for any service change.
+
+Alternative: supply an already available owner-designated compatible test key and approved effective-access evidence under a fresh exact read operation, avoiding new key creation/API configuration if those resources/evidence exist. Their existence is unknown; no listing or lookup is authorized. Defer is also valid and keeps resources disabled. Removing restrictions from the shared key or fabricating a Referer header is not proposed.
+
+This result does not authorize any of these alternatives or another offline implementation. Next observable result is a finite reviewable access-resolution proposal, not another automatic cloud retry. No new helper/source/app/IAM/key/API/database/Firebase-user action performed while reporting. Existing exact owned account/job/role qualification remains required; later same-block restoration/authentication and connected same-job Sandbox payment retain separate action/window/allowance/owner approvals.
+
+Accepted1A/1B/2A/2B,4/8 walkthrough;0/27 newly closed R1,6/60 legacy,0/13 intelligence unchanged. 3A remains open. **No scope deviation within the approved corrected read-only qualification; access blockers recorded, no corrective external action or prerequisite implementation.**
+
+References: [Google API-key application restrictions](https://docs.cloud.google.com/docs/authentication/api-keys) explain website restrictions; [Policy Troubleshooter v3](https://docs.cloud.google.com/policy-intelligence/docs/reference/policytroubleshooter/rest/v3/iam/troubleshoot) defines actual access-state responses. Actual SERVICE_DISABLED and restriction-type findings are in saved sanitized live evidence, not inferred from documentation.
