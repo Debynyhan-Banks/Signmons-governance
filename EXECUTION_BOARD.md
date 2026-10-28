@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 28 — corrected exact stable unbound role operation R02 approved
+
+R1-W01 / APP-013 / 3A / P08. Owner approved corrected operation `2f413783-9c32-4ed5-89d1-875f383e3bca` against pre-decision SHA256 `bb7530fd9f13dbdbaccce852841b0e748df111c9a0d5377ac1063b8ba5998e8f`: tonight 7:35–8:05 p.m. Eastern, start strictly before 7:50; one attempt/no retry; USD 0; create only the two fixed roles retained unbound after same-attempt qualification. Safe CLI stage/category evidence and contingent read-only closeout are included.
+
+Next/implementer: after governance checks, bind backend `0714c39`, execute once at or after 7:35 and before 7:50, save only sanitized result/containment, purge private inputs and never retry. Counts unchanged. **No scope deviation.**
+
 ## October 28 — CLI observability correction passed; corrected R02 proposed
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved local correction complete at backend `0714c39`: 22/22 fake subprocess/HTTP tests, fixed command-stage evidence, eight safe error categories and all repository gates pass. No credential, gcloud subprocess, provider call or mutation occurred.

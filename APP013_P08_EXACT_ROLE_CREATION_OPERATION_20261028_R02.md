@@ -1,6 +1,8 @@
 # APP-013 / 3A / P08 — corrected exact stable unbound role-creation operation R02
 
-Status: PROPOSED, NOT AUTHORIZED. R1-W01 / APP-013 / 3A remains unchanged.
+Status: OWNER APPROVED FOR THIS EXACT CORRECTED OPERATION. R1-W01 / APP-013 / 3A remains unchanged.
+
+Owner decision: On October 28, 2026, the owner approved operation `2f413783-9c32-4ed5-89d1-875f383e3bca` against this document's pre-decision SHA256 `bb7530fd9f13dbdbaccce852841b0e748df111c9a0d5377ac1063b8ba5998e8f`. Authority is limited to the exact resources, calls, window, cutoff, no-retry rule and contingent read-only closeout below.
 
 ## Exact operation
 
@@ -23,4 +25,4 @@ There is no update, undelete, delete, IAM binding, account/database/Firebase-use
 
 ## Decision requested
 
-Approve this exact corrected operation, or defer it. Approval authorizes only the facts and window above. It does not authorize later role bindings or Stage B authentication/runtime/payment work. Accepted counts remain unchanged. **No scope deviation; R02 external action remains pending owner approval.**
+Owner approved this exact corrected operation. It does not authorize later role bindings or Stage B authentication/runtime/payment work. Accepted counts remain unchanged. **No scope deviation; execute once only within the bound window.**
