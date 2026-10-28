@@ -1,5 +1,11 @@
 # Session Handoff
 
+## October 28 — corrected Stage A operation approved for October 29
+
+R1-W01 / APP-013 / 3A / P08. Owner approved exact operation `152c348`: October 29, 8:00–8:30 a.m. Eastern, start strictly before 8:15; preselected operation/decision IDs; one attempt/no retry; conditional Policy Troubleshooter enable retained as `RETAIN_IF_ENABLED`; four diagnostics; USD 0 incremental allowance; verified process closeout/private-plan purge. No attendance/password. Approval is recorded in `APP013_P08_STAGE_A_OPERATION_20261029.md`. No private plan, credential resolution or external request occurred on October 28.
+
+Next/implementer: on October 29 at or after 8:00 and before 8:15, use backend `4511b63` deterministic builder against the committed approved document, then run the unchanged one-use launcher. Do not precreate/retain the private plan overnight. Report exact verdict/stop and closeout; never retry. API Keys/Stage B and 3A acceptance remain blocked pending Stage A facts. Accepted 1A/1B/2A/2B, 4/8; 0/27 newly closed R1, 6/60 legacy, 0/13 intelligence unchanged. **No scope deviation; future exact external action approved but not started.**
+
 ## October 28 — operation-ID correction passed; fresh Stage A operation proposed
 
 R1-W01 / APP-013 / 3A / P08. Owner approved local correction `832407d`; backend `4511b63` now has the deterministic committed-document → private-plan builder. PASS11 builder + 16 launcher + 24 Stage A + 40 access-model + 31 restoration + 60 authentication tests, 182 total. Actual disposable-Git integration copies one preselected operation UUID unchanged through private plan and unchanged launcher validation; pending/rejected/drift/collision/signal/race/purge paths refuse. Initial six fixture/UUID errors and one prose assertion were corrected without weakening authority. No credentials/network/provider action. Synthetic plans and scratch purged.
