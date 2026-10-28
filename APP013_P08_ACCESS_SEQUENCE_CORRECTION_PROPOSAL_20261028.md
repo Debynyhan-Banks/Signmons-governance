@@ -63,3 +63,13 @@ Exclusions: production/product code, database/schema, Firebase account/user acti
 Accepted 1A/1B/2A/2B, 4/8 walkthrough; 0/27 newly closed R1, 6/60 legacy, 0/13 intelligence unchanged. **Explicit prerequisite-sequence correction proposed before implementation; no implemented scope deviation.**
 
 References: [Policy Troubleshooter prerequisites](https://docs.cloud.google.com/policy-intelligence/docs/troubleshoot-access), [Policy Intelligence billing](https://docs.cloud.google.com/policy-intelligence/docs/billing-questions), [enabled-service effects](https://docs.cloud.google.com/service-usage/docs/enabled-service), [enable/disable services](https://docs.cloud.google.com/service-usage/docs/enable-disable), [Service Usage disable contract](https://docs.cloud.google.com/service-usage/docs/reference/rest/v1/services/disable), [API Keys pricing](https://cloud.google.com/api-keys/pricing). Documentation establishes public contracts and published pricing, not current Signmons dependencies, visibility, charges or live readiness.
+
+## Approved local result
+
+Debynyhan Banks replied “i approve” to the exact request referencing this proposal at commit `258273e`. Implemented only disabled Stage A plus the Stage B refusal boundary. Backend evidence `evidence/APP-013/p08-access-sequence-local-20261028/`; source remains native-unbound and has no real client/credential resolver.
+
+Final PASS: 24 new diagnostics-stage tests, 40 unchanged access-model tests, 31 unchanged restoration tests and 60 unchanged authentication tests, 155 total. The first new run had 13 shared synthetic-clock fixture errors; reset per subcase and reran without controller/assertion weakening. The first unchanged authentication run stopped before tests because its existing `import.meta.url` pathname retained `Web%20Projects`; unchanged bytes passed 60/60 from a private no-space copy and that scratch path was removed/read back absent. No PostgreSQL/browser rerun because no SQL/UI/application change.
+
+Implemented behavior: exact Policy Troubleshooter service readiness/LRO/readback and four existing-resource diagnostic contracts; truthful unknowns; one-use/deadline/signal/concurrency/privacy/source/closeout guards; explicit retained-service model; API Keys hosts and Stage B action refused. This is local preparation, not a live permission verdict or service enablement.
+
+Remaining: a fresh exact Stage A external operation proposal and separate owner approval. Policy Troubleshooter and API Keys remain last observed DISABLED. Stage B remains blocked until actual Stage A facts and a complete separate card/approval. Accepted 1A/1B/2A/2B, 4/8; 0/27 newly closed R1, 6/60 legacy, 0/13 intelligence unchanged. **No scope deviation within approved local correction.**
