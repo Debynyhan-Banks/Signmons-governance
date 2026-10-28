@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 28 — operation-ID correction passed; fresh Stage A operation proposed
+
+R1-W01 / APP-013 / 3A / P08. Owner approved local correction `832407d`; backend `4511b63` now has the deterministic committed-document → private-plan builder. PASS11 builder + 16 launcher + 24 Stage A + 40 access-model + 31 restoration + 60 authentication tests, 182 total. Actual disposable-Git integration copies one preselected operation UUID unchanged through private plan and unchanged launcher validation; pending/rejected/drift/collision/signal/race/purge paths refuse. Initial six fixture/UUID errors and one prose assertion were corrected without weakening authority. No credentials/network/provider action. Synthetic plans and scratch purged.
+
+Next/owner: approve or defer `APP013_P08_STAGE_A_OPERATION_20261029.md`: October 29, 8:00–8:30 a.m. Eastern, start before 8:15; preselected operation/decision IDs; conditional Policy Troubleshooter enable retained; four diagnostics; USD 0 incremental allowance; one attempt/no retry; no attendance/password. October 28 consumed document remains immutable because the launcher permits one date-named document. API Keys/Stage B and 3A remain blocked. Accepted 1A/1B/2A/2B, 4/8; 0/27 newly closed R1, 6/60 legacy, 0/13 intelligence unchanged. **No scope deviation within approved local correction; separate external approval pending.**
+
 ## October 28 — Stage A attempt refused before credentials; containment verified
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved operation `571037f`/`cf0affb` started once at 1:15 p.m. Eastern and returned `P08_STAGE_A_LAUNCH_REFUSED_UNBOUND`. Sanitized diagnosis: `APPROVAL_DOCUMENT_BINDING` because the committed approved document lacked the fresh operation UUID generated afterward. Local synthetic tests had built the document from an existing plan and missed the real document-first sequence. Zero owner/Google commands, bearer/HTTPS requests, provider sessions or mutations. Private plan/directory deleted by 1:15:43; absence and child-process containment verified. Backend evidence `c2b8053`. Attempt consumed; no retry.
