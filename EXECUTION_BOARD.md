@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 28 — IAM Role lifecycle correction passed; exact R04 proposed
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved local correction complete at backend `2fea346`: documented lifecycle rows validate; omitted stage normalizes to ALPHA; deleted/EAP/DEPRECATED/DISABLED rows are privately excluded; malformed/unknown rows still refuse; 23/23 tests and repository gates pass. No external request/retry/action.
+
+Next/owner: approve or defer `APP013_P08_EXACT_ROLE_INVENTORY_OPERATION_20261028_R04.md`, operation `67b2421f-2580-4b49-b551-ce3bc805edd3`: today 7:00–7:30 p.m. Eastern, start strictly before 7:15; one attempt/no retry; USD 0; no attendance/password. No role/grant or Stage B action. Counts unchanged. **No scope deviation.**
+
 ## October 28 — local IAM Role lifecycle-filter correction approved
 
 R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 against proposal pre-decision SHA `38723343c5738eede776c13b8cc967388997e36d5217b79bc5af901bdfcd3dc1`: locally validate documented lifecycle values, normalize omitted stage to ALPHA, exclude validated deleted/EAP/DEPRECATED/DISABLED rows, save only their aggregate count, retain malformed/unknown refusal and run isolated tests/gates. No provider call, retry or new external operation is authorized.
