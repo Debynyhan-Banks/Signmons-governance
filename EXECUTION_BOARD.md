@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 28 — exact stable unbound role creation proposed
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved launch binding is locally complete at backend `7650009`: 20/20 fake subprocess/HTTP cases, exact six-CLI/seven-HTTPS contract, independent read-only closeout and required repository gates pass. No credential, provider call or mutation occurred.
+
+Next/owner: approve or defer operation `ee86cf8f-078d-42da-a4bd-04b95909e32c` in `APP013_P08_EXACT_ROLE_CREATION_OPERATION_20261028.md`: tonight 7:20–7:50 p.m. Eastern, start strictly before 7:35; one attempt/no retry; USD 0; create only two fixed stable project roles retained unbound after same-attempt qualification. No binding, runtime restoration or Stage B action. Counts unchanged. **No scope deviation.**
+
 ## October 28 — stable exact-role launch binding approved locally
 
 R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 in `APP013_P08_ROLE_PROVISIONER_LAUNCH_BINDING_PROPOSAL_20261028.md` against pre-decision SHA256 `3f7cf537c51589ba76f635e76ee7eff8ccf6628527558fc20b4cc8d89cd2c61d`: locally add exact private plan/approval/window binding, a six-CLI/seven-HTTPS adapter and deterministic fake subprocess/HTTP coverage. No credential resolution, provider request, custom-role creation, IAM change or external operation is authorized.
