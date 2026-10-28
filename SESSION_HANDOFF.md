@@ -1,5 +1,11 @@
 # Session Handoff
 
+## October 28 — Stage A launcher passed locally; exact external operation pending approval
+
+R1-W01 / APP-013 / 3A / P08. Owner approved local Alternative 1 against `e758c79`. Backend `d19df96` now contains the disabled source-locked launcher/adapter and evidence. PASS16 new launch-binding tests plus 24 Stage A, 40 access-model, 31 restoration and 60 authentication tests, 171 total. Exact approval/source/owner/project/fingerprint/request/retention/unknown-outcome/child-cleanup boundaries passed; native remains unbound. Initial fake tuple-index defect and interrupted-child tracking gap were corrected without weakening the controller/assertions. No external request, credential, API/service change, account/database/runtime/payment action or spending.
+
+Next/owner: approve or defer `APP013_P08_STAGE_A_OPERATION_20261028.md`. Proposed one attempt today 1:15–1:45 p.m. Eastern, starting strictly before 1:30; conditional Policy Troubleshooter enable retained as `RETAIN_IF_ENABLED`; four diagnostics; USD 0 incremental allowance; verified process closeout/private-plan purge. No attendance/password. API Keys/Stage B remains blocked. Accepted 1A/1B/2A/2B, 4/8; 0/27 newly closed R1, 6/60 legacy, 0/13 intelligence unchanged. **No scope deviation within approved local work; separate external authority pending.**
+
 ## October 28 — Stage A launch-binding completion proposed; approval pending
 
 R1-W01 / APP-013 / 3A / P08. The approved diagnostics-first Stage A proof is recorded at backend `2822820` and governance `74e8309`; 155 relevant tests passed. Shift-left review confirms the tested controller is intentionally native-unbound and cannot safely support an external operation yet. Prepared `APP013_P08_STAGE_A_LAUNCH_BINDING_PROPOSAL_20261028.md` for one disabled evidence-only launcher/adapter with exact owner/project/fingerprint gates, memory-only bearer, narrow Service Usage/Policy Troubleshooter request contracts, interruption/unknown-outcome/closeout handling and fake-bound isolated tests. No implementation or external action occurred.
