@@ -1,5 +1,11 @@
 # Session Handoff
 
+## October 28 — exact read-only access-prerequisite packet prepared
+
+R1-W01 / APP-013 / 3A / P08. Following local proof a47499c/c1290f3, prepared APP013_P08_READ_ONLY_ACCESS_PREREQUISITES_OPERATION_20261028.md: existing owner/current signmons project binding, six exact service states and one conditional Resource Manager caller-project permission probe. Maximum3CLI/sevenHTTPS; memory-only bearer and sanitized findings. No disabled diagnostic API retry, impersonation, service/key/permission change, provider read or credential resolution during preparation. No Terminal/password/attendance needed. Existing AGENTS.md edit preserved.
+
+Next/owner: approve/defer exact external qualification. Implementer records facts/closeout, then proposes service-enable/retention only if required; full runtime/target-resource access is not inferred from project probe. No key creation, role creation/grants, account/database action, authentication/restoration/payment or allowance follows from preparation. Accepted1A/1B/2A/2B,4/8;0/27 newly closed R1,6/60 legacy,0/13 intelligence unchanged. **No scope deviation.**
+
 ## October 28 — bounded local access-resolution proof passed; native actions remain unbound
 
 R1-W01 / APP-013 / 3A / P08. Owner approved c018f51 via call_04368a8e39d54adba5023df285bd7111 before implementation. Original source/ownership gates passed; fresh disabled local helper/test pair reuses unchanged auth/restoration snapshots. PASS40new request/output/state-machine tests,31unchanged restoration tests and60unchanged auth tests, freshly run. Exact REST operation formats, fake service/key lifecycle, five typed verdicts, signal/timeout/race/recovery/cleanup, privacy/source gates and synthetic keyResource handoff proved. Native refuses P08_ACCESS_REFUSED_UNBOUND before input; no native provider/credential transport or real private plan/approval/qualification exists. This is local preparation, not a live provisioning/authentication capability. Backend evidence/APP-013/p08-access-resolution-local-20261028/ includes reproducible source, source manifest, initial/final logs and limitations. Existing AGENTS.md edit and all application/SQL/old source pins preserved.
