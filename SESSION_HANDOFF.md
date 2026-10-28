@@ -1,5 +1,11 @@
 # Session Handoff
 
+## October 28 — same-day renewal correction passed; 5:30 operation proposed
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved local correction is complete at backend `d5aa8f9`: PASS13 builder +18 launcher +24 Stage A +40 access-model +31 restoration +60 authentication, 186 total. Exact `_R01` disposable-Git path, legacy compatibility, malformed/date/cross-midnight refusal, manifests, architecture, baseline and scratch absence passed. One initial nested fixture error was narrowed without weakening path-traversal refusal. No credentials/private plan/network/provider action.
+
+Next/owner: approve or defer `APP013_P08_STAGE_A_OPERATION_20261028_R01.md`: today 5:30–6:00 p.m. Eastern, start strictly before 5:45; one attempt/no retry; conditional Policy Troubleshooter enable retained; four diagnostics; USD 0; no attendance/password. Approval explicitly supersedes/cancels the unstarted October 29 operation. Stage A facts, Stage B and 3A acceptance remain open. Accepted 1A/1B/2A/2B, 4/8; 0/27 newly closed R1, 6/60 legacy, 0/13 intelligence unchanged. **No scope deviation within approved local correction; separate external approval pending.**
+
 ## October 28 — same-day renewal correction approved locally
 
 R1-W01 / APP-013 / 3A / P08. Owner approved the bounded local-only `_R01` filename/date correction and isolated tests against governance commit `8677975`. Authority is limited to a fresh disabled evidence directory, exact Eastern date/window validation and regression verification. No private plan, credentials, external request, same-day execution or cancellation of the unstarted October 29 operation is authorized by this decision.
