@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 28 — exact corrected IAM FULL-view R03 approved
+
+R1-W01 / APP-013 / 3A / P08. Owner approved operation `02aa2053-4985-487d-b7b8-aaf67d6bfb21` against proposal pre-decision SHA `a55e975f7582faa32c32070af584cf14ce08758aca703038c7c7ce0311ce9f85`, backend `fed5efb`. Today 6:40–7:10 p.m. Eastern, start strictly before 6:55; exactly three CLI reads and one IAM FULL-view HTTPS read; one attempt/no retry; USD 0; no attendance/password; mandatory private-input/process closeout. No role/grant or Stage B action.
+
+Next/implementer: after governance checks, bind the approved one-use private inputs at or after 6:40, execute once before 6:55, reconcile only sanitized result/containment and never retry. Counts unchanged. **No scope deviation; exact external read approved but not started.**
+
 ## October 28 — IAM Role etag correction passed; exact R03 proposed
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved local correction complete at backend `fed5efb`: optional string `etag` is validated then discarded; non-string/unknown fields still refuse; 21/21 tests and repository gates pass. No external request/retry/action.

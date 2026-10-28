@@ -1,6 +1,8 @@
 # APP-013 / 3A / P08 — IAM FULL-view exact role inventory operation R03
 
-Status: PROPOSED, NOT AUTHORIZED. R1-W01 / APP-013 / 3A remains unchanged.
+Status: OWNER APPROVED, NOT STARTED. R1-W01 / APP-013 / 3A remains unchanged.
+
+Owner decision: Debynyhan Banks approved this exact operation in the governed conversation on October 28, 2026, before the 6:55 p.m. Eastern start cutoff. The decision binds operation `02aa2053-4985-487d-b7b8-aaf67d6bfb21` to this document's pre-decision SHA256 `a55e975f7582faa32c32070af584cf14ce08758aca703038c7c7ce0311ce9f85`, backend source `fed5efb` and the window below. Approval is consumed by one attempt and does not authorize a retry, role/grant change or Stage B action.
 
 Corrected source is backend `fed5efb`, `role_qualifier.py` SHA256 `b164717be48a45e2c6be86d4c3968d636f028dded95af8d0597d580f9af8083b`. Consumed operations are not reused. Fresh operation ID: `02aa2053-4985-487d-b7b8-aaf67d6bfb21`.
 
