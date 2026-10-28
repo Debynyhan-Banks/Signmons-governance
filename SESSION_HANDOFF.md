@@ -1,5 +1,11 @@
 # Session Handoff
 
+## October 28 — same-day renewal correction approved locally
+
+R1-W01 / APP-013 / 3A / P08. Owner approved the bounded local-only `_R01` filename/date correction and isolated tests against governance commit `8677975`. Authority is limited to a fresh disabled evidence directory, exact Eastern date/window validation and regression verification. No private plan, credentials, external request, same-day execution or cancellation of the unstarted October 29 operation is authorized by this decision.
+
+Next/implementer: implement and verify the exact local card. On a passing result, prepare the earliest feasible same-day operation for separate exact approval; its approval must explicitly supersede/cancel October 29 before any attempt. Stage A facts, Stage B and 3A acceptance remain open. Accepted 1A/1B/2A/2B, 4/8; 0/27 newly closed R1, 6/60 legacy, 0/13 intelligence unchanged. **Approved local prerequisite only; no scope deviation.**
+
 ## October 28 — immediate same-day Stage A renewal correction proposed
 
 R1-W01 / APP-013 / 3A / P08. Owner requested an immediate same-day operation rather than waiting more than 15 hours for the approved October 29 window. Source inspection found the deterministic builder/launcher accept only one date-named operation document, while the October 28 document is consumed and immutable. `APP013_P08_SAME_DAY_RENEWAL_FILENAME_PROPOSAL_20261028.md` proposes a disabled local-only `_R01` filename/date contract correction with exact Eastern window-date enforcement and retained approval/hash/no-retry/closeout gates. No implementation, private plan, credential resolution or external request occurred. The approved October 29 operation remains unstarted and will not be used while this proposal is pending.
