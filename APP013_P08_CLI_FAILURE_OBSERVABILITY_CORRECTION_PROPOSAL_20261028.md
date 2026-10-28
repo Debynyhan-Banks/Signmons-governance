@@ -1,6 +1,8 @@
 # APP-013 / 3A / P08 — CLI failure observability correction proposal
 
-Status: PROPOSED, NOT AUTHORIZED. R1-W01 / APP-013 / 3A remains unchanged.
+Status: OWNER APPROVED FOR ALTERNATIVE 1 LOCAL CORRECTION ONLY. R1-W01 / APP-013 / 3A remains unchanged.
+
+Owner decision: On October 28, 2026, the owner approved Alternative 1 against this proposal's pre-decision SHA256 `d7a91259e8a2cb48c928fcd79a4253c9fc5219b1b2fd3b3d124b5ab88878d819`. This authorizes only the bounded local classifier/result correction and fake subprocess/HTTP tests below. It does not authorize gcloud, network/provider access, retry or mutation.
 
 ## Demonstrated gap
 
@@ -22,4 +24,4 @@ No credential resolution, subprocess against gcloud, network/provider read, role
 
 Keep the consumed result as `COMMAND_FAILED` and leave Stage A blocked.
 
-Owner decision requested: approve Alternative 1 for bounded local correction and fake tests only, or choose Alternative 2. Accepted counts remain unchanged. **Demonstrated observability gap disclosed; no scope deviation implemented.**
+Owner decision recorded: Alternative 1 approved for bounded local correction and fake tests only. Accepted counts remain unchanged. **Demonstrated observability gap accepted for correction; no external action is authorized.**

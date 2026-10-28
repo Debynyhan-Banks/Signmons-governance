@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 28 — CLI failure observability correction approved locally
+
+R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 in `APP013_P08_CLI_FAILURE_OBSERVABILITY_CORRECTION_PROPOSAL_20261028.md` against pre-decision SHA256 `d7a91259e8a2cb48c928fcd79a4253c9fc5219b1b2fd3b3d124b5ab88878d819`: locally add fixed failed-stage and safe enumerated error-category evidence, with fake subprocess/HTTP tests only. No gcloud, provider read, retry or mutation is authorized.
+
+Next/implementer: change only the evidence helper/tests/manifest/result, preserve the exact call contracts and all gates, then present any fresh external operation separately. Counts unchanged. **No scope deviation; approved local correction only.**
+
 ## October 28 — exact role creation stopped before mutation; observability correction proposed
 
 R1-W01 / APP-013 / 3A / P08. Approved operation `ee86cf8f-078d-42da-a4bd-04b95909e32c` ran once at 7:20 p.m. and stopped on CLI call 4 (IAM service-state read) with `COMMAND_FAILED`. Zero HTTPS and mutation requests; created0/unknown0; private inputs and processes absent; containment verified. Attempt consumed/no retry. Backend evidence `p08-exact-role-creation-stop-20261028`.
