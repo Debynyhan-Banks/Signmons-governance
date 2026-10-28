@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 28 — local IAM Role lifecycle-filter correction approved
+
+R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 against proposal pre-decision SHA `38723343c5738eede776c13b8cc967388997e36d5217b79bc5af901bdfcd3dc1`: locally validate documented lifecycle values, normalize omitted stage to ALPHA, exclude validated deleted/EAP/DEPRECATED/DISABLED rows, save only their aggregate count, retain malformed/unknown refusal and run isolated tests/gates. No provider call, retry or new external operation is authorized.
+
+Next/implementer: modify only the evidence-contained qualifier/tests/manifest/evidence, run the approved matrix and repository gates, then present any fresh read-only operation separately. Counts unchanged. **No scope deviation; approved local correction only.**
+
 ## October 28 — exact IAM FULL-view R03 stopped at documented lifecycle row
 
 R1-W01 / APP-013 / 3A / P08. Approved operation `02aa2053-4985-487d-b7b8-aaf67d6bfb21` ran once at 6:40 p.m. Eastern. All three CLI reads and the one HTTPS read completed, then lifecycle parsing stopped with `INACTIVE_ROLE`. Private inputs absent; raw response/bearer not retained; provider mutation impossible. Attempt consumed/no retry. Backend evidence `p08-role-inventory-r03-stop-20261028`.

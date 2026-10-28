@@ -1,6 +1,8 @@
 # APP-013 / 3A / P08 — IAM Role lifecycle-filter correction proposal
 
-Status: PROPOSED, NOT AUTHORIZED. R1-W01 / APP-013 / 3A remains unchanged.
+Status: ALTERNATIVE 1 OWNER APPROVED FOR LOCAL CORRECTION AND ISOLATED TESTS. R1-W01 / APP-013 / 3A remains unchanged.
+
+Owner decision: Debynyhan Banks approved Alternative 1 in the governed conversation on October 28, 2026, against this document's pre-decision SHA256 `38723343c5738eede776c13b8cc967388997e36d5217b79bc5af901bdfcd3dc1`. Approval covers only the seven local steps below. It does not authorize a provider call, retry or new external operation.
 
 ## Demonstrated gap
 
