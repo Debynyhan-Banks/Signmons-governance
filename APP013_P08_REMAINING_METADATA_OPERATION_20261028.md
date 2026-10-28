@@ -1,0 +1,30 @@
+# APP-013 / 3A / P08 — remaining retired-resource metadata qualification
+
+Status: PREPARED; exact execution approval pending. Operation `10fc8e8b-64e8-49b4-ad70-c90a95ed51a0`. Backend source f1e09af; governance source be4f5bb. No application/helper implementation or changed acceptance criteria.
+
+## Section, evidence, reuse and finite purpose
+
+R1-W01 / APP-013 / 3A / P08, unchanged same-job Sandbox payment acceptance in APP013_REMAINING_EXECUTION_CONTRACT.md section 3A. Billing/open/one retired database version now verified at 9:39 a.m. October28 (backend evidence/APP-013/p08-four-read-canonical-result-20261028). This fresh operation completes only the five version states, seven exact resource policies and exchange-key metadata not reached in APP013_P08_POST_BILLING_READINESS_OPERATION_20261026.md. Reuse its exact commands/resources, transient output reduction and closeout; preserve all consumed receipts. The accepted billing/open/database-version observations remain historical at their stated time, not re-read here.
+
+## Fourteen-command maximum and exact gates
+
+Existing host gcloud owner authorization/cache refresh only. Verify local environment and persisted credential-file/impersonation/access-token overrides absent; disable prompts/file HTTP logging. No new login, configuration, ADC, impersonation or alternate identity. Every command timeout10seconds, bounded by remaining read deadline. One exclusive attempt; stop at first mismatch/denial/timeout/invalid output. No operation or request retry, no assertion that SDK-internal retries are disabled.
+
+1. `gcloud auth list --filter=status:ACTIVE --format=value(account)`. Privately compare exact stripped output with the established Signmons owner debynyhan@signmons.com. Retain only matched boolean/response hash. No Gmail expectation, account switch, credential export or token read.
+2–6. `gcloud secrets versions describe 1 --secret=<exact name> --project=signmons --format=json(state)` for each of: signmons-staging-p07-stripe-webhook-secret; signmons-staging-p07-disabled-openai-key; signmons-staging-p07-admin-token; signmons-staging-p07-conversation-key; signmons-staging-p07-technician-link-key. Explicit DISABLED required; omitted/invalid/ENABLED/DESTROYED stops. No database-url version reread, secret payload/access/latest/list/change.
+7–13. `gcloud secrets get-iam-policy <exact name> --project=signmons --format=json` for the five names above plus signmons-staging-p07-payment-database-url and signmons-staging-stripe-secret-key. Parse structured object in memory; omitted bindings means empty direct policy, present bindings must be a valid list of objects with role string and members list of strings. Reduce only direct membership of serviceAccount:signmons-calldesk-p07-runtime@signmons.iam.gserviceaccount.com to role/condition-hash/presence. Any such remaining direct binding stops. Raw policies/other principals discarded without saving/printing. Do not infer inherited/effective permissions from direct-policy absence. No project/IAM-policy modifications or shared secret values.
+14. `gcloud services api-keys describe 06cfec12-0432-455f-888f-397d1a0150a6 --location=global --project=signmons --format=json(name,displayName,restrictions,deleteTime)`. Metadata only. Require a structured name ending /locations/global/keys/06cfec12-0432-455f-888f-397d1a0150a6; CLI project context is exact signmons and provider may render project number. Save name/displayName hashes, existence, restriction-present/deleted flags only. Explicit nonempty deleteTime stops. Missing name, malformed restrictions or provider denial stops. Restrictions omission is recorded as absent/unknown, never silently upgraded to readiness. No keyString/get-key-string/payload, key list/create/update or unrelated key.
+
+## Timing, retention, rollback and observable finish
+
+Start on exact approval today October28 strictly before11:00a.m. Eastern. Reads finish within10minutes of start, all children ended and sanitized result by15minutes after start and no later than11:15a.m. No Terminal/password/attendance needed. A late approval refuses unstarted; no implicit renewal. Record actual owner decision against immutable proposal and fresh operation before reads, plus exclusive attempt.
+
+Capture raw stdout/stderr only in process memory; save hashes/stage/exit/UTC/count and booleans/known state/safe category (BILLING_DISABLED, permission denial, auth/config, timeout/network or UNKNOWN). Never raw policy/body/error/ID/email/secret/key value/credential. Drop raw references and verify every subprocess group ended at closeout. No private real-input plan or database session is created; no invented purge/session cleanup. Read-only rollback is stopping/closing processes; no provider rollback or mutation permitted.
+
+Finite checklist: exact approval/attempt; owner/config; five disabled states; seven direct-policy absence checks; one exchange-key metadata; sanitized result/verified process closeout; governance/architecture/whitespace checks. Finish: exact remaining facts or truthful safe stop. No application code, browser behavior or concurrency state changes, so no new runtime/browser/payment tests are claimed. Required frozen-baseline/cross-repository/25 safeguards/architecture/diff checks apply to evidence/docs.
+
+## Dependencies, exclusions and next result
+
+Owner authorizes these reads; implementer evaluates facts. A pass is remaining metadata qualification only. Combine it with separately timestamped prior retirement/source/identity facts to prepare minimum exact restoration/access proposal; refresh any stale fact needed by that future action under fresh authority. No current full effective permission/source/traffic readiness assertion from these reads. No restore, activation, signing/token exchange, new principal/role/IAM grant, secret/API/billing mutation, deployment/build, Stripe/payment/event, booking/customer message, spending allowance or extension.
+
+Accepted1A/1B/2A/2B,4/8 walkthrough;0/27 newly closed R1,6/60 legacy,0/13 intelligence unchanged. 3A stays open. **No scope deviation; fresh authority for the existing outstanding metadata inventory.**

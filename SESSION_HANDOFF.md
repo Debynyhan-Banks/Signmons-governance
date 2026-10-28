@@ -1,5 +1,12 @@
 # Session Handoff
 
+## October 28 — remaining metadata operation prepared
+
+R1-W01 / APP-013 / 3A / P08. Successful9:39billing/open/database-version evidence preserved at backend f1e09af/governance be4f5bb. Prepared APP013_P08_REMAINING_METADATA_OPERATION_20261028.md (operation 10fc8e8b-64e8-49b4-ad70-c90a95ed51a0): one owner check plus five retired version states, seven exact direct policies and one exchange-key metadata,14commands maximum. Reuses existing outstanding inventory; no new helper, resource or access grant. No provider reads under this preparation.
+
+Remaining/owner: exact approval before11:00a.m. Eastern October28; reads within10minutes/closeout15minutes, one attempt/no retry; no Terminal/password/attendance. Implementer then records exact inventory pass or safe stop. Next is minimum reviewable restoration/access proposal, not automatic activation/payment. Accepted1A/1B/2A/2B,4/8;0/27 newly closed R1,6/60 legacy,0/13 intelligence unchanged;3A open. **No scope deviation.**
+
+
 ## October 28 — four-read billing/service verification passed
 
 R1-W01 / APP-013 / 3A / P08. Owner explicitly approved canonical-fingerprint renewal 3c14d9f. Operation b9953d29-5396-4b58-826c-20054131b8f2 ran once 9:39:11–9:39:12 a.m. Eastern, exactly four commands. PASS: existing Signmons CLI owner/no credential overrides; exact project billingEnabled=true/accountLinked=true; unchanged full-reference linked-account fingerprint; account open=true; version1 of retired signmons-staging-p07-payment-database-url readable as DISABLED. Actual status P08_FOUR_READ_BILLING_VERIFIED. All process groups ended; sanitized result/closeout before deadline. Backend evidence/APP-013/p08-four-read-canonical-result-20261028/. No raw IDs/payloads/policies/token/credential output saved, financial/resource mutation, operation retry or new allowance.
