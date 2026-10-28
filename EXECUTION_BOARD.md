@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 28 — CLI observability correction passed; corrected R02 proposed
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved local correction complete at backend `0714c39`: 22/22 fake subprocess/HTTP tests, fixed command-stage evidence, eight safe error categories and all repository gates pass. No credential, gcloud subprocess, provider call or mutation occurred.
+
+Next/owner: approve or defer corrected operation `2f413783-9c32-4ed5-89d1-875f383e3bca` in `APP013_P08_EXACT_ROLE_CREATION_OPERATION_20261028_R02.md`: tonight 7:35–8:05 p.m. Eastern, start strictly before 7:50; one attempt/no retry; USD 0; same two fixed roles retained unbound after same-attempt qualification. Counts unchanged. **No scope deviation.**
+
 ## October 28 — CLI failure observability correction approved locally
 
 R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 in `APP013_P08_CLI_FAILURE_OBSERVABILITY_CORRECTION_PROPOSAL_20261028.md` against pre-decision SHA256 `d7a91259e8a2cb48c928fcd79a4253c9fc5219b1b2fd3b3d124b5ab88878d819`: locally add fixed failed-stage and safe enumerated error-category evidence, with fake subprocess/HTTP tests only. No gcloud, provider read, retry or mutation is authorized.
