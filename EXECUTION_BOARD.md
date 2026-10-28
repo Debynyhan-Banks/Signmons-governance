@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 28 — IAM FULL-view correction passed; exact R02 proposed
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved local correction complete at backend `56b90a7`: 19/19 tests pass; exact three CLI plus one FULL-view HTTPS request, bearer/raw privacy, stage evidence, redirect/page/shape refusal, closeout and restoration compatibility proved. Repository gates pass. No external retry/action.
+
+Next/owner: approve or defer `APP013_P08_EXACT_ROLE_INVENTORY_OPERATION_20261028_R02.md`, fresh operation `9725da4a-51e7-439d-aa79-fe48c62229dc`: today 6:30–7:00 p.m. Eastern, start strictly before 6:45; one attempt/no retry; USD 0; no attendance/password. No role/grant or Stage B action. Counts unchanged. **No scope deviation.**
+
 ## October 28 — local IAM FULL-view correction approved
 
 R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 against governance `5a9a8c0`: locally replace only the incomplete BASIC-view list with three bounded CLI checks/token acquisition plus one exact in-memory IAM `view=FULL` HTTPS request, and run isolated privacy/request/stage/cleanup tests. No external command/request or retry is authorized.
