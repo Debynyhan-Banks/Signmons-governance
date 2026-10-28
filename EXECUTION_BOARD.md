@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 28 — corrected inventory stopped on documented BASIC-view omission
+
+R1-W01 / APP-013 / 3A / P08. Fresh operation `7212ade4-3500-421f-832b-d9738eb0b324` ran once at 6:15 p.m.; all three reads completed, then sanitized reason `PERMISSION_SHAPE`. Private inputs absent; no children; no mutation. Backend `d82a4d4`. IAM documents BASIC view omits `includedPermissions`; FULL is required. Role facts remain unknown; attempt consumed/no retry.
+
+Next/owner: approve or defer Alternative 1 in `APP013_P08_ROLE_LIST_FULL_VIEW_CORRECTION_PROPOSAL_20261028.md`: local-only owner/project/bearer plus exact IAM `view=FULL` request binding/tests. A later fresh external operation remains separately approved. Counts unchanged. **Documented output-contract gap; containment verified.**
+
 ## October 28 — corrected 6:15 role inventory approved
 
 R1-W01 / APP-013 / 3A / P08. Owner approved fresh operation `7212ade4-3500-421f-832b-d9738eb0b324` against proposal `5db303b` / pre-decision SHA `d059fdbf07daa1f5ea5a25d82bbfe3f61e3b6f175bbe3f6202a10c3a3b5a2b4c`. Today 6:15–6:45 p.m. Eastern, start strictly before 6:30; exactly three read-only commands; one attempt/no retry; USD 0; no attendance/password; sanitized stop-stage and private-input closeout required. No role/grant or Stage B action.
