@@ -1,5 +1,11 @@
 # Session Handoff
 
+## October 28 — finite two-permission access-resolution proposal ready
+
+R1-W01 / APP-013 / 3A / P08. Owner direction authorized planning only. Stage A proved exactly two access gaps: dedicated runtime lacks `firebaseauth.users.get`; owner lacks `iam.serviceAccounts.signBlob` on that identity. Existing tested restoration source already has strict conditional preexisting one-permission role branches and refuses role creation, so `APP013_P08_TWO_PERMISSION_ACCESS_RESOLUTION_PROPOSAL_20261028.md` proposes only a disabled role-candidate qualifier/parser and isolated tests before any external inventory read. Broad predefined roles and an authentication redesign are rejected for this card. No implementation or external action occurred.
+
+Next/owner: approve or defer Alternative 1 for bounded local role-candidate qualifier preparation/tests only. A passing local result would lead to a separately approved read-only exact-role inventory operation. Role creation/grants, API Keys, Firebase action, signing/token, runtime restoration and payment remain separate. Existing browser-restricted exchange-key incompatibility also remains an independent Stage B blocker. Accepted 1A/1B/2A/2B, 4/8; 0/27 newly closed R1, 6/60 legacy, 0/13 intelligence unchanged. **No scope deviation.**
+
 ## October 28 — Stage A diagnostics complete; two access gaps recorded
 
 R1-W01 / APP-013 / 3A / P08. Exact approved operation `8d724ee`/`fc79803` ran once at 5:30 p.m. using backend `03fccb4`; fixed result `P08_STAGE_A_DIAGNOSTICS_COMPLETE`. Exactly three CLI commands/eight HTTPS requests. Policy Troubleshooter was enabled and retained with readback. Dedicated runtime `firebaseauth.users.get=CANNOT_ACCESS`; owner Firebase get/update `CAN_ACCESS`; owner `iam.serviceAccounts.signBlob` on dedicated runtime `CANNOT_ACCESS`. Four-of-four false; Stage B candidate/action false. Credential/children/model scratch/private plan containment verified. Backend evidence `5536fb3`.
