@@ -1,5 +1,11 @@
 # Session Handoff
 
+## October 28 — role inventory stopped unknown; containment verified
+
+R1-W01 / APP-013 / 3A / P08. Exact approved operation `83bdf433-98dd-45c9-8b42-fb90494219ce` ran once at 6:00 p.m. and returned `P08_ROLE_QUALIFIER_STOP_OUTPUT_UNKNOWN`. Private plan/approval inputs absent; no qualifier/gcloud child remains; mutation is not representable. Backend evidence `eb8499c`. Attempt consumed; no retry. Because the controller saved no stop result/reason/command stage, exact read count and cause are unknown; no role fact or denial is inferred.
+
+Next/owner: approve or defer Alternative 1 in `APP013_P08_ROLE_INVENTORY_OBSERVABILITY_CORRECTION_PROPOSAL_20261028.md` for local sanitized stop-stage/result persistence and isolated tests only. A passing correction still requires a new exact external operation approval. Counts unchanged. **Unintended observability gap disclosed; containment verified.**
+
 ## October 28 — exact 6:00 read-only role inventory approved
 
 R1-W01 / APP-013 / 3A / P08. Owner approved exact operation `83bdf433-98dd-45c9-8b42-fb90494219ce` against proposal `2742153` / pre-decision SHA `3c83bc2d677e251e680be074b1d68d7160c8c54622cc8d7b88c0f54003f3c4b3`. Today 6:00–6:30 p.m. Eastern, start strictly before 6:15; exactly three owner/project/custom-role metadata reads; one attempt/no retry; USD 0; no attendance/password; mandatory child/process/private-input closeout. No role/grant or Stage B action.
