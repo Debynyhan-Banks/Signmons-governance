@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 28 — local role-inventory observability correction approved
+
+R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 against governance `8e2c089`: persist sanitized command-stage/reason/closeout facts for every qualifier stop and test them locally. No external retry or Google Cloud/IAM/Firebase/token/API-key/runtime/payment action is authorized.
+
+Next/implementer: modify only the evidence-contained qualifier/tests/manifest/evidence, run the approved failure-stage/privacy/write/purge/concurrency/restoration-compatibility matrix and repository gates, then present any fresh external operation separately. Counts unchanged. **Approved local correction only; no scope deviation.**
+
 ## October 28 — role inventory stopped unknown; containment verified
 
 R1-W01 / APP-013 / 3A / P08. Exact approved operation `83bdf433-98dd-45c9-8b42-fb90494219ce` ran once at 6:00 p.m. and returned `P08_ROLE_QUALIFIER_STOP_OUTPUT_UNKNOWN`. Private plan/approval inputs absent; no qualifier/gcloud child remains; mutation is not representable. Backend evidence `eb8499c`. Attempt consumed; no retry. Because the controller saved no stop result/reason/command stage, exact read count and cause are unknown; no role fact or denial is inferred.

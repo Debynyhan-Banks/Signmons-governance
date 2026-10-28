@@ -36,3 +36,7 @@ Rollback is deletion of only this fresh local correction/evidence. The consumed 
 Approve Alternative 1 for this bounded local observability correction and isolated tests only, or defer. No Google Cloud read, IAM role/grant, Firebase action, signing/token, API-key action, database/runtime action, Stripe/payment, deployment, spending or external retry is authorized.
 
 Accepted counts remain unchanged. **Explicit correction proposed after unintended observability drift; no correction implemented.**
+
+## Owner decision
+
+Debynyhan Banks replied “i approve” after reviewing governance commit `8e2c089`. Alternative 1 is approved for the bounded local observability correction and isolated tests only. No external retry, Google Cloud read, IAM role/grant, Firebase action, signing/token, API-key action, database/runtime action, Stripe/payment, deployment or spending is authorized.
