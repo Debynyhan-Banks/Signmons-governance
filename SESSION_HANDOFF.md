@@ -1,5 +1,11 @@
 # Session Handoff
 
+## October 28 — IAM Role etag correction passed; exact R03 proposed
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved local correction complete at backend `fed5efb`: optional string `etag` is validated then discarded; non-string/unknown fields still refuse; 21/21 tests and repository gates pass. No external request/retry/action.
+
+Next/owner: approve or defer `APP013_P08_EXACT_ROLE_INVENTORY_OPERATION_20261028_R03.md`, operation `02aa2053-4985-487d-b7b8-aaf67d6bfb21`: today 6:40–7:10 p.m. Eastern, start strictly before 6:55; one attempt/no retry; USD 0; no attendance/password. No role/grant or Stage B action. Counts unchanged. **No scope deviation.**
+
 ## October 28 — local IAM Role etag correction approved
 
 R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 against proposal pre-decision SHA `86329f669cad87d075513cf0178e3f297035c374a34fcd761ab09203b0d73f12`: locally accept an optional string `etag`, discard it before classification/evidence, retain unknown-field refusal and all existing controls, add positive/negative tests and run repository gates. No provider call, retry or new external operation is authorized.
