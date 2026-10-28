@@ -1,6 +1,8 @@
 # APP-013 / 3A / P08 — exact custom-role creation and lifecycle proposal
 
-Status: PROPOSED, NOT AUTHORIZED. R1-W01 / APP-013 / 3A remains unchanged.
+Status: ALTERNATIVE 1 OWNER APPROVED FOR BOUNDED LOCAL PREPARATION AND ISOLATED TESTS. R1-W01 / APP-013 / 3A remains unchanged.
+
+Owner decision: Debynyhan Banks approved Alternative 1 in the governed conversation on October 28, 2026, against this document's pre-decision SHA256 `64620f4d647c437005cb60ba77ad32b14007a1e2b0f16d38b1ef3a4c445c0694`. Approval covers only the evidence-only helper, fake-provider tests, manifest and result documentation. It does not authorize credentials, network, provider reads, role creation or bindings.
 
 ## Demonstrated gap and dependency impact
 

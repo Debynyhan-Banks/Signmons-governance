@@ -1,5 +1,11 @@
 # Session Handoff
 
+## October 28 — stable unbound exact-role local preparation approved
+
+R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 against proposal pre-decision SHA `64620f4d647c437005cb60ba77ad32b14007a1e2b0f16d38b1ef3a4c445c0694`: prepare and test one disabled evidence-only helper for two stable exact one-permission GA roles, collision refusal, exact readback, zero-binding verification, partial ownership, deadlines/signals/concurrency and truthful independent closeout. Fake providers only.
+
+Next/implementer: create only the evidence helper/tests/manifest/result, run the finite local matrix and repository gates, then present any provider role-creation operation separately. No role, binding or external action is authorized. Counts unchanged. **Approved prerequisite change for local preparation only; no scope deviation implemented.**
+
 ## October 28 — exact role inventory complete; zero eligible roles
 
 R1-W01 / APP-013 / 3A / P08. Approved R04 operation `67b2421f-2580-4b49-b551-ce3bc805edd3` completed once at 7:00 p.m. Eastern: one custom role, one lifecycle-excluded, zero exact eligible lookup/signing candidates. Private inputs absent; raw response/bearer not retained; no mutation. Backend `p08-role-inventory-r04-result-20261028`. Attempt consumed/no retry.
