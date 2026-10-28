@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 28 — observability correction passed; corrected inventory read proposed
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved local correction complete at backend `5dd0618`: 16/16 tests pass; sanitized reason/started/completed stage evidence, atomic result writing and private-input closeout are proved. Source-manifest, architecture, baseline/consistency, 25 safeguards and whitespace pass. No external retry/action.
+
+Next/owner: approve or defer `APP013_P08_EXACT_ROLE_INVENTORY_OPERATION_20261028_R01.md`, fresh operation `7212ade4-3500-421f-832b-d9738eb0b324`: today 6:15–6:45 p.m. Eastern, start strictly before 6:30; same exact three read-only commands; one attempt/no retry; USD 0; no attendance/password. No role/grant or Stage B action. Counts unchanged. **No scope deviation.**
+
 ## October 28 — local role-inventory observability correction approved
 
 R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 against governance `8e2c089`: persist sanitized command-stage/reason/closeout facts for every qualifier stop and test them locally. No external retry or Google Cloud/IAM/Firebase/token/API-key/runtime/payment action is authorized.
