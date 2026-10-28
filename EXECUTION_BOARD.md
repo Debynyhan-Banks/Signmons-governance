@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 28 — local two-permission qualifier preparation approved
+
+R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 against governance `6548f05`: prepare and test only the disabled role-candidate qualifier described in `APP013_P08_TWO_PERMISSION_ACCESS_RESOLUTION_PROPOSAL_20261028.md`. No Google Cloud read, role/grant, Firebase action, signing/token, API key action, runtime restoration, database action, payment, deployment or spending is authorized.
+
+Next/implementer: create the fresh disabled evidence copy, prove candidate classification/privacy/one-attempt/deadline/signal/concurrency/refusal and compatibility with the existing restoration role checks, then run required repository gates. On pass, present a separately approved exact read-only role-inventory operation. Accepted counts unchanged. **No scope deviation.**
+
 ## October 28 — finite two-permission access-resolution proposal ready
 
 R1-W01 / APP-013 / 3A / P08. Owner direction authorized planning only. Stage A proved exactly two access gaps: dedicated runtime lacks `firebaseauth.users.get`; owner lacks `iam.serviceAccounts.signBlob` on that identity. Existing tested restoration source already has strict conditional preexisting one-permission role branches and refuses role creation, so `APP013_P08_TWO_PERMISSION_ACCESS_RESOLUTION_PROPOSAL_20261028.md` proposes only a disabled role-candidate qualifier/parser and isolated tests before any external inventory read. Broad predefined roles and an authentication redesign are rejected for this card. No implementation or external action occurred.
