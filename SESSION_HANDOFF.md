@@ -1,5 +1,11 @@
 # Session Handoff
 
+## October 28 — exact IAM FULL-view R02 approved
+
+R1-W01 / APP-013 / 3A / P08. Owner approved operation `9725da4a-51e7-439d-aa79-fe48c62229dc` against proposal pre-decision SHA `6bd1fb0c3be882003dacffb8b8475df4da6281e8b6bd8a244b7c94225bcdbdec`, backend `56b90a7`. Today 6:30–7:00 p.m. Eastern, start strictly before 6:45; exactly three CLI reads and one IAM FULL-view HTTPS read; one attempt/no retry; USD 0; no attendance/password; mandatory private-input/process closeout. No role/grant or Stage B action.
+
+Next/implementer: after governance checks, bind the approved one-use private inputs, execute once before 6:45, reconcile only sanitized result/containment and never retry. Counts unchanged. **No scope deviation; exact external read approved but not started.**
+
 ## October 28 — IAM FULL-view correction passed; exact R02 proposed
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved local correction complete at backend `56b90a7`: 19/19 tests pass; exact three CLI plus one FULL-view HTTPS request, bearer/raw privacy, stage evidence, redirect/page/shape refusal, closeout and restoration compatibility proved. Repository gates pass. No external retry/action.
