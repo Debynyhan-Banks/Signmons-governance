@@ -29,3 +29,7 @@ SIGINT/SIGTERM cancels the child. Private plan/approval inputs purge on return. 
 Approve this corrected exact read-only operation for today 6:15–6:45 p.m. Eastern, starting strictly before 6:30, or defer. Approval covers only these three reads and mandatory closeout.
 
 Accepted counts remain unchanged. **No scope deviation.**
+
+## Owner decision
+
+Debynyhan Banks replied “i approve” against committed proposal `5db303b`, pre-decision document SHA256 `d059fdbf07daa1f5ea5a25d82bbfe3f61e3b6f175bbe3f6202a10c3a3b5a2b4c`. Fresh operation `7212ade4-3500-421f-832b-d9738eb0b324` is authorized only within the stated October 28 window, command ceiling and closeout limits. No role/grant or Stage B action is authorized.

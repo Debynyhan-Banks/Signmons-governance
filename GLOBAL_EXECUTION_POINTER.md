@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 28 — corrected 6:15 role inventory approved
+
+R1-W01 / APP-013 / 3A / P08. Owner approved fresh operation `7212ade4-3500-421f-832b-d9738eb0b324` against proposal `5db303b` / pre-decision SHA `d059fdbf07daa1f5ea5a25d82bbfe3f61e3b6f175bbe3f6202a10c3a3b5a2b4c`. Today 6:15–6:45 p.m. Eastern, start strictly before 6:30; exactly three read-only commands; one attempt/no retry; USD 0; no attendance/password; sanitized stop-stage and private-input closeout required. No role/grant or Stage B action.
+
+Next/implementer: at or after 6:15 bind backend `5dd0618`, run once, reconcile the fixed result/stage/containment and never retry. Counts unchanged. **No scope deviation; exact external read approved but not started.**
+
 ## October 28 — observability correction passed; corrected inventory read proposed
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved local correction complete at backend `5dd0618`: 16/16 tests pass; sanitized reason/started/completed stage evidence, atomic result writing and private-input closeout are proved. Source-manifest, architecture, baseline/consistency, 25 safeguards and whitespace pass. No external retry/action.
