@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 28 — exact role inventory complete; zero eligible roles
+
+R1-W01 / APP-013 / 3A / P08. Approved R04 operation `67b2421f-2580-4b49-b551-ce3bc805edd3` completed once at 7:00 p.m. Eastern: one custom role, one lifecycle-excluded, zero exact eligible lookup/signing candidates. Private inputs absent; raw response/bearer not retained; no mutation. Backend `p08-role-inventory-r04-result-20261028`. Attempt consumed/no retry.
+
+Next/owner: choose Alternative 1, 2 or 3 in `APP013_P08_EXACT_ROLE_CREATION_LIFECYCLE_PROPOSAL_20261028.md`. Recommended Alternative 1 locally prepares two stable exact one-permission GA roles retained unbound; any provider creation and later conditional binding remain separately approved. Counts unchanged. **Proposed prerequisite change disclosed; no scope deviation implemented.**
+
 ## October 28 — exact lifecycle-corrected IAM FULL-view R04 approved
 
 R1-W01 / APP-013 / 3A / P08. Owner approved operation `67b2421f-2580-4b49-b551-ce3bc805edd3` against proposal pre-decision SHA `ef6a8c479e552b64db4354c7382dac7c6339ea4e8804e4a1094539946c39f726`, backend `2fea346`. Today 7:00–7:30 p.m. Eastern, start strictly before 7:15; exactly three CLI reads and one IAM FULL-view HTTPS read; one attempt/no retry; USD 0; no attendance/password; mandatory private-input/process closeout. No role/grant or Stage B action.
