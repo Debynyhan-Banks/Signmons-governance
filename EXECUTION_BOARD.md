@@ -1,5 +1,13 @@
 # Signmons Execution Board
 
+## October 28 — prerequisite reads recorded; permission probe stopped HTTP400
+
+R1-W01 / APP-013 / 3A / P08. Owner approved4c59d72 via call_c19f00d1e124452f814e16de7ff26e11. One attempt ac8a8999-8836-46a5-83e1-c4aab8bafca4 ran12:02:52–12:02:56Eastern,3CLI/sevenHTTPS. Owner/current project binding matched. Six service states recorded: Service Usage/Resource Manager/IAM Credentials/Identity Toolkit ENABLED; API Keys/Policy Troubleshooter DISABLED. Final caller-project probe HTTP400 UNKNOWN_FAILURE: no permission verdict. P08_ACCESS_PREREQUISITES_STOP_HTTP_UNKNOWN_FAILURE; process closeout verified/on time; no retry or mutation. Backend evidence/APP-013/p08-access-prerequisites-result-20261028/.
+
+Preparation gap: payload included policytroubleshooter.iam.troubleshoot, documented as an API method, without verified IAM-permission mapping. Prior28sanity checks validated syntax/shape, not semantic permission existence. This is a plausible HTTP400 cause, not a proven provider diagnosis: raw error was discarded. No owner denial inferred. Implementer owns correction; consumed attempt remains immutable. Proposed APP013_P08_CALLER_PROBE_CORRECTION_OPERATION_20261028.md removes only that entry, validates nine names against official permission references and permits a fresh reduced exact read only after local checks and owner approval. No helper/application/access-plan mutation, API enable/key creation/IAM/account/database/authentication/restoration/payment/new allowance. Full effective-target permissions and service-retention decision remain open. No Terminal/password/attendance needed.
+
+Next observable result: nine documented caller-project permission findings or truthful stop after fresh approval; never full restoration qualification. Accepted1A/1B/2A/2B,4/8;0/27 newly closed R1,6/60 legacy,0/13 intelligence unchanged. **Preparation drift disclosed; specific correction proposed before implementation or follow-up.**
+
 ## October 28 — exact read-only access-prerequisite packet prepared
 
 R1-W01 / APP-013 / 3A / P08. Following local proof a47499c/c1290f3, prepared APP013_P08_READ_ONLY_ACCESS_PREREQUISITES_OPERATION_20261028.md: existing owner/current signmons project binding, six exact service states and one conditional Resource Manager caller-project permission probe. Maximum3CLI/sevenHTTPS; memory-only bearer and sanitized findings. No disabled diagnostic API retry, impersonation, service/key/permission change, provider read or credential resolution during preparation. No Terminal/password/attendance needed. Existing AGENTS.md edit preserved.
