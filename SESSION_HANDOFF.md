@@ -1,5 +1,11 @@
 # Session Handoff
 
+## October 28 — corrected exact 5:30 Stage A operation approved
+
+R1-W01 / APP-013 / 3A / P08. Owner approved exact corrected operation `8d724ee`: today 5:30–6:00 p.m. Eastern, start strictly before 5:45; exactly three actual CLI commands; one attempt/no retry; conditional Policy Troubleshooter enable retained; four diagnostics; USD 0; no attendance/password. Approval supersedes and cancels both older unstarted operations. No private plan, credential or external request occurred at approval time.
+
+Next/implementer: at or after 5:30 run backend `03fccb4` source-locked coordinator once against the committed approved `_R02` document. Report exact verdict/stop and containment; never retry. Stage B and 3A acceptance remain blocked pending facts. Accepted 1A/1B/2A/2B, 4/8; 0/27 newly closed R1, 6/60 legacy, 0/13 intelligence unchanged. **No scope deviation; exact external action approved but not started.**
+
 ## October 28 — native handoff passed; corrected 5:30 operation proposed
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved native handoff correction is complete at backend `03fccb4`: PASS16 builder/coordinator +18 launcher +24 Stage A +40 access-model +31 restoration +60 authentication, 189 total. Exactly three actual CLI calls, one-use cache, preflight closeout, private-plan purge, manifests, architecture, baseline and scratch absence passed. No credentials/private live plan/provider action.
