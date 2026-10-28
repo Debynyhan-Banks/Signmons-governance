@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 28 — exact IAM FULL-view R02 stopped at documented Role shape
+
+R1-W01 / APP-013 / 3A / P08. Approved operation `9725da4a-51e7-439d-aa79-fe48c62229dc` ran once at 6:30 p.m. Eastern. All three CLI reads and the one HTTPS read completed, then strict parsing stopped with `ROLE_SHAPE`. Private inputs absent; raw response/bearer not retained; provider mutation impossible. Attempt consumed/no retry. Backend evidence `p08-role-inventory-r02-stop-20261028`.
+
+Next/owner: approve or defer Alternative 1 in `APP013_P08_ROLE_ETAG_OUTPUT_CORRECTION_PROPOSAL_20261028.md`: locally accept, validate and discard documented `etag` while keeping unknown-field refusal and all controls. No external retry/action is authorized. Counts unchanged. **No scope deviation; contained output-contract gap.**
+
 ## October 28 — exact IAM FULL-view R02 approved
 
 R1-W01 / APP-013 / 3A / P08. Owner approved operation `9725da4a-51e7-439d-aa79-fe48c62229dc` against proposal pre-decision SHA `6bd1fb0c3be882003dacffb8b8475df4da6281e8b6bd8a244b7c94225bcdbdec`, backend `56b90a7`. Today 6:30–7:00 p.m. Eastern, start strictly before 6:45; exactly three CLI reads and one IAM FULL-view HTTPS read; one attempt/no retry; USD 0; no attendance/password; mandatory private-input/process closeout. No role/grant or Stage B action.
