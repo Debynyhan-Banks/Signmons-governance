@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 28 — native handoff passed; corrected 5:30 operation proposed
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved native handoff correction is complete at backend `03fccb4`: PASS16 builder/coordinator +18 launcher +24 Stage A +40 access-model +31 restoration +60 authentication, 189 total. Exactly three actual CLI calls, one-use cache, preflight closeout, private-plan purge, manifests, architecture, baseline and scratch absence passed. No credentials/private live plan/provider action.
+
+Next/owner: approve or defer `APP013_P08_STAGE_A_OPERATION_20261028_R02.md`: today 5:30–6:00 p.m. Eastern, start strictly before 5:45; exactly three CLI commands; one attempt/no retry; conditional Policy Troubleshooter enable retained; four diagnostics; USD 0; no attendance/password. Approval supersedes/cancels both old unstarted operations. Stage A facts, Stage B and 3A acceptance remain open. Accepted 1A/1B/2A/2B, 4/8; 0/27 newly closed R1, 6/60 legacy, 0/13 intelligence unchanged. **No scope deviation within approved local correction; separate external approval pending.**
+
 ## October 28 — native plan handoff correction approved locally
 
 R1-W01 / APP-013 / 3A / P08. Owner approved the bounded source-locked three-command coordinator and isolated tests against governance commit `eb7da75`. No credentials, private live plan, provider command/request or external operation is authorized by this decision. Existing 5:30 and October 29 operations remain unstarted and must not run from their old source pins.
