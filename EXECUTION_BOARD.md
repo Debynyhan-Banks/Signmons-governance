@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 28 — exact 5:30 Stage A operation approved; wait for start
+
+R1-W01 / APP-013 / 3A / P08. Owner approved exact same-day operation `c49f562`: today 5:30–6:00 p.m. Eastern, start strictly before 5:45; one attempt/no retry; conditional Policy Troubleshooter enable retained; four diagnostics; USD 0; no attendance/password. Approval supersedes and cancels unstarted October 29 operation `5b04cb0d-ecbc-44c5-a026-d3b8c814f1d5`, which must never be built or run. No private plan, credential resolution or external request occurred at approval time.
+
+Next/implementer: commit the approval record, then at or after 5:30 use backend `d5aa8f9` deterministic builder against the exact approved `_R01` document and execute the one-use launcher before 5:45. Report exact verdict/stop and closeout; never retry. Stage B and 3A acceptance remain blocked pending facts. Accepted 1A/1B/2A/2B, 4/8; 0/27 newly closed R1, 6/60 legacy, 0/13 intelligence unchanged. **No scope deviation; exact external action approved but not started.**
+
 ## October 28 — same-day renewal correction passed; 5:30 operation proposed
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved local correction is complete at backend `d5aa8f9`: PASS13 builder +18 launcher +24 Stage A +40 access-model +31 restoration +60 authentication, 186 total. Exact `_R01` disposable-Git path, legacy compatibility, malformed/date/cross-midnight refusal, manifests, architecture, baseline and scratch absence passed. One initial nested fixture error was narrowed without weakening path-traversal refusal. No credentials/private plan/network/provider action.
