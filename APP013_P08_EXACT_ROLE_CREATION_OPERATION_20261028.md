@@ -1,6 +1,8 @@
 # APP-013 / 3A / P08 — exact stable unbound role-creation operation
 
-Status: OWNER APPROVED FOR THIS EXACT OPERATION. R1-W01 / APP-013 / 3A remains unchanged.
+Status: CONSUMED; STOPPED BEFORE HTTPS OR MUTATION; CONTAINMENT VERIFIED; NO RETRY. R1-W01 / APP-013 / 3A remains unchanged.
+
+Result: The operation started once at 7:20 p.m. Eastern and stopped on CLI call 4, the IAM service-state read, with sanitized reason `COMMAND_FAILED`. Zero HTTPS and zero mutation requests occurred; created and unknown counts are both zero. Private inputs and processes are absent. See `APP013_P08_EXACT_ROLE_CREATION_STOP_RESULT_20261028.md`.
 
 Owner decision: On October 28, 2026, the owner approved operation `ee86cf8f-078d-42da-a4bd-04b95909e32c` against this document's pre-decision SHA256 `e854db8b760e000fb2c4448343923a99e83fc537e166832583600d6348da7270`. Authority is limited to the exact resources, calls, window, cutoff, no-retry rule and contingent read-only closeout below.
 
