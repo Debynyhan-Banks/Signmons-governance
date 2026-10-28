@@ -1,6 +1,8 @@
 # APP-013 / 3A / P08 — exact stable unbound role-creation operation
 
-Status: PROPOSED, NOT AUTHORIZED. R1-W01 / APP-013 / 3A remains unchanged.
+Status: OWNER APPROVED FOR THIS EXACT OPERATION. R1-W01 / APP-013 / 3A remains unchanged.
+
+Owner decision: On October 28, 2026, the owner approved operation `ee86cf8f-078d-42da-a4bd-04b95909e32c` against this document's pre-decision SHA256 `e854db8b760e000fb2c4448343923a99e83fc537e166832583600d6348da7270`. Authority is limited to the exact resources, calls, window, cutoff, no-retry rule and contingent read-only closeout below.
 
 ## Exact operation
 
@@ -25,4 +27,4 @@ If a create response is lost, partial or interrupted, the controller stops witho
 
 ## Decision requested
 
-Approve this exact operation, or defer it. Approval authorizes only the facts and window above. It does not authorize later role bindings or Stage B authentication/runtime/payment work. Accepted counts remain unchanged. **No scope deviation; external role creation remains pending owner approval.**
+Owner approved this exact operation. It does not authorize later role bindings or Stage B authentication/runtime/payment work. Accepted counts remain unchanged. **No scope deviation; execute once only within the bound window.**

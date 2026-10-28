@@ -1,5 +1,11 @@
 # Session Handoff
 
+## October 28 — exact stable unbound role creation approved
+
+R1-W01 / APP-013 / 3A / P08. Owner approved operation `ee86cf8f-078d-42da-a4bd-04b95909e32c` against pre-decision SHA256 `e854db8b760e000fb2c4448343923a99e83fc537e166832583600d6348da7270`: tonight 7:20–7:50 p.m. Eastern, start strictly before 7:35; one attempt/no retry; USD 0; create only the two fixed roles retained unbound after same-attempt qualification. Contingent read-only ownership closeout is included.
+
+Next/implementer: after governance checks, bind backend `7650009`, execute once at or after 7:20 and before 7:35, save only sanitized result/containment, purge private inputs and never retry. No binding, runtime restoration or Stage B action. Counts unchanged. **No scope deviation.**
+
 ## October 28 — exact stable unbound role creation proposed
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved launch binding is locally complete at backend `7650009`: 20/20 fake subprocess/HTTP cases, exact six-CLI/seven-HTTPS contract, independent read-only closeout and required repository gates pass. No credential, provider call or mutation occurred.
