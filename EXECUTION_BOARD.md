@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 28 — exact lifecycle-corrected IAM FULL-view R04 approved
+
+R1-W01 / APP-013 / 3A / P08. Owner approved operation `67b2421f-2580-4b49-b551-ce3bc805edd3` against proposal pre-decision SHA `ef6a8c479e552b64db4354c7382dac7c6339ea4e8804e4a1094539946c39f726`, backend `2fea346`. Today 7:00–7:30 p.m. Eastern, start strictly before 7:15; exactly three CLI reads and one IAM FULL-view HTTPS read; one attempt/no retry; USD 0; no attendance/password; mandatory private-input/process closeout. No role/grant or Stage B action.
+
+Next/implementer: after governance checks, bind the approved one-use private inputs at or after 7:00, execute once before 7:15, reconcile only sanitized result/containment and never retry. Counts unchanged. **No scope deviation; exact external read approved but not started.**
+
 ## October 28 — IAM Role lifecycle correction passed; exact R04 proposed
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved local correction complete at backend `2fea346`: documented lifecycle rows validate; omitted stage normalizes to ALPHA; deleted/EAP/DEPRECATED/DISABLED rows are privately excluded; malformed/unknown rows still refuse; 23/23 tests and repository gates pass. No external request/retry/action.
