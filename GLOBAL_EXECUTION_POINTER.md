@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 28 — Stage A diagnostics complete; two access gaps recorded
+
+R1-W01 / APP-013 / 3A / P08. Exact approved operation `8d724ee`/`fc79803` ran once at 5:30 p.m. using backend `03fccb4`; fixed result `P08_STAGE_A_DIAGNOSTICS_COMPLETE`. Exactly three CLI commands/eight HTTPS requests. Policy Troubleshooter was enabled and retained with readback. Dedicated runtime `firebaseauth.users.get=CANNOT_ACCESS`; owner Firebase get/update `CAN_ACCESS`; owner `iam.serviceAccounts.signBlob` on dedicated runtime `CANNOT_ACCESS`. Four-of-four false; Stage B candidate/action false. Credential/children/model scratch/private plan containment verified. Backend evidence `5536fb3`.
+
+Next/implementer: inspect existing roles/policies/authentication source and prepare the smallest finite access-resolution proposal for the two exact gaps, with alternatives/resource/lifecycle/cleanup. No grant, API Keys, Firebase action, signing/token, runtime or payment action follows automatically. Stage A prerequisite is complete; 3A remains open. Accepted 1A/1B/2A/2B, 4/8; 0/27 newly closed R1, 6/60 legacy, 0/13 intelligence unchanged. **No scope deviation.**
+
 ## October 28 — corrected exact 5:30 Stage A operation approved
 
 R1-W01 / APP-013 / 3A / P08. Owner approved exact corrected operation `8d724ee`: today 5:30–6:00 p.m. Eastern, start strictly before 5:45; exactly three actual CLI commands; one attempt/no retry; conditional Policy Troubleshooter enable retained; four diagnostics; USD 0; no attendance/password. Approval supersedes and cancels both older unstarted operations. No private plan, credential or external request occurred at approval time.
