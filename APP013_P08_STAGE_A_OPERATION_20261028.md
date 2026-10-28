@@ -50,3 +50,9 @@ No API Keys/API-key lifecycle, Firebase user lookup/update, signing, token excha
 The result is exactly one of: four current diagnostic verdicts plus verified process closeout; pre-credential refusal; provider-safe stop; or enable-outcome unknown plus verified local containment. Successful Stage A facts permit preparation of the separate complete Stage B card only; they do not authorize it.
 
 Accepted 1A/1B/2A/2B, 4/8 walkthrough; 0/27 newly closed R1, 6/60 legacy, 0/13 intelligence unchanged. **No scope deviation; this is the separately governed external action anticipated by the approved local launch-binding card.**
+
+## Consumed stop result
+
+The one approved attempt started at 1:15 p.m. Eastern and returned `P08_STAGE_A_LAUNCH_REFUSED_UNBOUND` before credential resolution. Sanitized diagnosis found `APPROVAL_DOCUMENT_BINDING`: this document did not contain the fresh operation UUID because the private plan generated it after approval. The local synthetic test had constructed its document from an existing plan and missed the real document-first sequence.
+
+External commands/requests: zero. Bearer requests, provider sessions and Google mutations: zero. The private plan/directory were deleted by 1:15:43 and absence verified. Backend evidence `c2b8053`. No retry; this operation is consumed. Proposed correction: `APP013_P08_OPERATION_ID_BINDING_CORRECTION_PROPOSAL_20261028.md`. **Unintended preparation drift disclosed; containment verified.**
