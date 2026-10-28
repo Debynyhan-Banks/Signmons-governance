@@ -1,5 +1,11 @@
 # Session Handoff
 
+## October 28 — local IAM Role etag correction approved
+
+R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 against proposal pre-decision SHA `86329f669cad87d075513cf0178e3f297035c374a34fcd761ab09203b0d73f12`: locally accept an optional string `etag`, discard it before classification/evidence, retain unknown-field refusal and all existing controls, add positive/negative tests and run repository gates. No provider call, retry or new external operation is authorized.
+
+Next/implementer: modify only the evidence-contained qualifier/tests/manifest/evidence, run the approved isolated matrix and required gates, then present any fresh read-only operation separately. Counts unchanged. **No scope deviation; approved local correction only.**
+
 ## October 28 — exact IAM FULL-view R02 stopped at documented Role shape
 
 R1-W01 / APP-013 / 3A / P08. Approved operation `9725da4a-51e7-439d-aa79-fe48c62229dc` ran once at 6:30 p.m. Eastern. All three CLI reads and the one HTTPS read completed, then strict parsing stopped with `ROLE_SHAPE`. Private inputs absent; raw response/bearer not retained; provider mutation impossible. Attempt consumed/no retry. Backend evidence `p08-role-inventory-r02-stop-20261028`.

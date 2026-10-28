@@ -1,6 +1,8 @@
 # APP-013 / 3A / P08 — IAM Role etag output-contract correction proposal
 
-Status: PROPOSED, NOT AUTHORIZED. R1-W01 / APP-013 / 3A remains unchanged.
+Status: ALTERNATIVE 1 OWNER APPROVED FOR LOCAL CORRECTION AND ISOLATED TESTS. R1-W01 / APP-013 / 3A remains unchanged.
+
+Owner decision: Debynyhan Banks approved Alternative 1 in the governed conversation on October 28, 2026, against this document's pre-decision SHA256 `86329f669cad87d075513cf0178e3f297035c374a34fcd761ab09203b0d73f12`. Approval covers only the five local steps below. It does not authorize a provider call, retry or new external operation.
 
 ## Demonstrated gap
 
