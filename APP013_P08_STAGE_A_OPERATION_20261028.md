@@ -1,8 +1,8 @@
 # APP-013 / 3A / P08 — exact Stage A diagnostic operation
 
-Status: PROPOSED; owner decision: PENDING. R1-W01 / APP-013 / 3A / P08. Decision ID `43bfb0a9-f37c-4cb8-8a7c-a708129016a6`. Backend source `d19df960d22b53665485cbecc3a6a414067928e8`; source-manifest SHA256 `869cc37faab44ed294e5625c75075e2cb26ee4ceaf8d7d0459a1457db9be667e`; governance preparation source `e758c79`.
+Status: APPROVED; owner decision: APPROVED. R1-W01 / APP-013 / 3A / P08. Decision ID `43bfb0a9-f37c-4cb8-8a7c-a708129016a6`. Backend source `d19df960d22b53665485cbecc3a6a414067928e8`; source-manifest SHA256 `869cc37faab44ed294e5625c75075e2cb26ee4ceaf8d7d0459a1457db9be667e`; governance preparation source `e758c79`.
 
-This is an exact external-operation proposal, not current authority. Separate owner approval must be recorded in this document and committed before the private one-use plan can bind or credentials can be resolved.
+Debynyhan Banks replied “i approve” to the exact operation request referencing governance commit `571037f`. This authorizes only the operation, window, retention decision and exclusions below. The committed approved document must bind the private one-use plan before credentials.
 
 ## Purpose and acceptance boundary
 
