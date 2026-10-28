@@ -1,6 +1,8 @@
 # APP-013 / 3A / P08 — stable exact-role provisioner launch-binding proposal
 
-Status: PROPOSED, NOT AUTHORIZED. R1-W01 / APP-013 / 3A remains unchanged.
+Status: OWNER APPROVED FOR ALTERNATIVE 1 LOCAL COMPLETION ONLY. R1-W01 / APP-013 / 3A remains unchanged.
+
+Owner decision: On October 28, 2026, the owner approved Alternative 1 against this proposal's pre-decision SHA256 `3f7cf537c51589ba76f635e76ee7eff8ccf6628527558fc20b4cc8d89cd2c61d`. This authorizes only the bounded local launch-binding implementation and fake subprocess/HTTP tests described below. It does not authorize any credential resolution, provider request, custom-role creation, IAM change or other external action.
 
 ## Demonstrated remaining gap
 
@@ -30,4 +32,4 @@ Keep the helper disabled and Stage A blocked.
 
 Expected changes remain inside `evidence/APP-013/p08-exact-role-provisioning-local-20261028/`: helper, tests, manifest and sanitized local result. No `src/`, UI, schema, migration, package, runtime, provider, role, policy, credential, database, token, Stripe/payment, deployment, spending, merge or push action is included.
 
-Owner decision requested: approve Alternative 1 for bounded local launch-binding completion and fake tests only, or choose Alternative 2. Accepted counts remain unchanged. **No scope deviation; operational binding remains unimplemented pending approval.**
+Owner decision recorded: Alternative 1 approved for bounded local launch-binding completion and fake tests only. Accepted counts remain unchanged. **No scope deviation; no external operation is authorized.**

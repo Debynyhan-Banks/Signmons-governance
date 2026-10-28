@@ -1,5 +1,11 @@
 # Session Handoff
 
+## October 28 — stable exact-role launch binding approved locally
+
+R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 in `APP013_P08_ROLE_PROVISIONER_LAUNCH_BINDING_PROPOSAL_20261028.md` against pre-decision SHA256 `3f7cf537c51589ba76f635e76ee7eff8ccf6628527558fc20b4cc8d89cd2c61d`: locally add exact private plan/approval/window binding, a six-CLI/seven-HTTPS adapter and deterministic fake subprocess/HTTP coverage. No credential resolution, provider request, custom-role creation, IAM change or external operation is authorized.
+
+Next/implementer: change only the existing evidence-contained helper/tests/manifest/result, run the approved matrix and required repository gates, then present any exact provider operation separately. Counts unchanged. **No scope deviation; approved local completion only.**
+
 ## October 28 — stable exact-role local preparation passed; launch binding proposed
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved local preparation complete at backend `81026c8`: 11/11 fake-provider tests, exact 11-call ceiling, collision/partial/lost-response/signal/deadline/concurrency/closeout coverage, no destructive lifecycle path and all repository gates pass. No credentials/network/provider action. Native execution remains refused.
