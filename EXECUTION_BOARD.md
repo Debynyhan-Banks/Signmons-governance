@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 28 — stable exact-role local preparation passed; launch binding proposed
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved local preparation complete at backend `81026c8`: 11/11 fake-provider tests, exact 11-call ceiling, collision/partial/lost-response/signal/deadline/concurrency/closeout coverage, no destructive lifecycle path and all repository gates pass. No credentials/network/provider action. Native execution remains refused.
+
+Next/owner: approve or defer Alternative 1 in `APP013_P08_ROLE_PROVISIONER_LAUNCH_BINDING_PROPOSAL_20261028.md`: locally add exact private binding, six-CLI/seven-HTTPS adapter and shift-left four-permission/absence qualification with fake tests only. Any role creation remains separately approved. Counts unchanged. **No scope deviation.**
+
 ## October 28 — stable unbound exact-role local preparation approved
 
 R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 against proposal pre-decision SHA `64620f4d647c437005cb60ba77ad32b14007a1e2b0f16d38b1ef3a4c445c0694`: prepare and test one disabled evidence-only helper for two stable exact one-permission GA roles, collision refusal, exact readback, zero-binding verification, partial ownership, deadlines/signals/concurrency and truthful independent closeout. Fake providers only.
