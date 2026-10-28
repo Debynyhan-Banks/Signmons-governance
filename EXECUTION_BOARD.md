@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 28 — Stage A launch-binding completion proposed; approval pending
+
+R1-W01 / APP-013 / 3A / P08. The approved diagnostics-first Stage A proof is recorded at backend `2822820` and governance `74e8309`; 155 relevant tests passed. Shift-left review confirms the tested controller is intentionally native-unbound and cannot safely support an external operation yet. Prepared `APP013_P08_STAGE_A_LAUNCH_BINDING_PROPOSAL_20261028.md` for one disabled evidence-only launcher/adapter with exact owner/project/fingerprint gates, memory-only bearer, narrow Service Usage/Policy Troubleshooter request contracts, interruption/unknown-outcome/closeout handling and fake-bound isolated tests. No implementation or external action occurred.
+
+Next/owner: approve or defer bounded local launch-binding completion. After a passing local result, prepare one exact Stage A external operation for separate approval, including the persistent `RETAIN_IF_ENABLED` decision. Policy Troubleshooter and API Keys remain last observed DISABLED; Stage B remains blocked. No password, attendance or allowance requested. Accepted 1A/1B/2A/2B, 4/8; 0/27 newly closed R1, 6/60 legacy, 0/13 intelligence unchanged. **Explicit execution-interface prerequisite proposed before implementation; no implemented scope deviation.**
+
 ## October 28 — split Stage A local correction passed; external action remains unbound
 
 R1-W01 / APP-013 / 3A / P08. Owner approved the bounded local correction against proposal `258273e`. Fresh disabled Stage A source separates Policy Troubleshooter readiness/four existing-resource diagnostics from all API Keys work; exact hosts/tuples/service/LRO/readback/unknowns, one-use, deadlines, signals, concurrency, privacy, closeout and native refusal are enforced. Stage B/API Keys hosts/actions refuse unqualified. Final PASS: 24 new tests, 40 unchanged access-model tests, 31 unchanged restoration tests and 60 unchanged authentication tests, 155 total. Initial shared-clock fixture errors and unchanged auth-suite path-space stop were retained/corrected without weakening source or assertions. Backend evidence `evidence/APP-013/p08-access-sequence-local-20261028/`. No real credential/provider/database/account/API/IAM/key/token/runtime/payment action.
