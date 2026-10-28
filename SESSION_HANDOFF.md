@@ -1,5 +1,14 @@
 # Session Handoff
 
+## October 28 — four-read billing/service verification passed
+
+R1-W01 / APP-013 / 3A / P08. Owner explicitly approved canonical-fingerprint renewal 3c14d9f. Operation b9953d29-5396-4b58-826c-20054131b8f2 ran once 9:39:11–9:39:12 a.m. Eastern, exactly four commands. PASS: existing Signmons CLI owner/no credential overrides; exact project billingEnabled=true/accountLinked=true; unchanged full-reference linked-account fingerprint; account open=true; version1 of retired signmons-staging-p07-payment-database-url readable as DISABLED. Actual status P08_FOUR_READ_BILLING_VERIFIED. All process groups ended; sanitized result/closeout before deadline. Backend evidence/APP-013/p08-four-read-canonical-result-20261028/. No raw IDs/payloads/policies/token/credential output saved, financial/resource mutation, operation retry or new allowance.
+
+Completed: current API billing/open and one formerly blocked Secret Manager metadata read. This clears the observed BILLING_DISABLED blocker for that exact path, not universal service or full runtime readiness. Both prior preparation-error stops remain immutable and separately diagnosed; the corrected approved operation passed without further drift. No account relink was required or performed.
+
+Remaining/implementer: assemble fresh exact authorization for the outstanding retired-resource metadata already listed in APP013_P08_POST_BILLING_READINESS_OPERATION_20261026.md (other five retired version states, seven exact resource policies and exchange-key metadata), with current entry facts and sanitized closeout; old consumed authority cannot be reused. Owner approves that bounded qualification before reads. Then review minimum access/runtime-restoration scope, followed by separately approved real operator authentication and same-job Sandbox payment/recovery evidence. No restoration/token/payment action follows from this pass. Next observable result remaining access/retirement qualification or exact safe stop. Accepted 1A/1B/2A/2B, 4/8 walkthrough; 0/27 newly closed R1, 6/60 legacy, 0/13 intelligence unchanged. **No scope deviation in the approved canonical-fingerprint operation.**
+
+
 ## October 28 — owner/project reads pass; fingerprint comparison error contained
 
 R1-W01 / APP-013 / 3A / P08. Owner explicitly approved daf923e. Operation 9d4d376e-8a4c-4e59-8566-a60060776315 ran 9:36:46–9:36:48 a.m. Eastern: known Signmons owner matched, exact project billingEnabled=true/accountLinked=true. Stop P08_FOUR_READ_BILLING_STOP / LINKED_ACCOUNT_CHANGED after two commands; linked-account-open and secret metadata not read. Process closeout verified, no mutation/retry.
