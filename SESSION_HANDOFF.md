@@ -1,5 +1,11 @@
 # Session Handoff
 
+## October 28 — local role qualifier complete; exact read-only inventory proposed
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved local qualifier is complete at backend `c51dd78`: 14/14 isolated tests pass, including exact three-command native binding, owner/project refusal, one-attempt concurrency, deadlines/signals/real child cancellation, privacy filtering, private-input purge and unchanged restoration-contract compatibility. One initial assertion falsely matched read-only field `deleted` as a mutation token; corrected to exact command tokens and recorded. Native unbound path refuses. No external request or mutation.
+
+Next/owner: approve or defer `APP013_P08_EXACT_ROLE_INVENTORY_OPERATION_20261028.md`, operation `83bdf433-98dd-45c9-8b42-fb90494219ce`: today 6:00–6:30 p.m. Eastern, start strictly before 6:15; exactly three owner/project/custom-role metadata reads; one attempt/no retry; USD 0; no attendance/password; private-input purge. No role/grant or Stage B action. Counts unchanged. **No scope deviation.**
+
 ## October 28 — local two-permission qualifier preparation approved
 
 R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 against governance `6548f05`: prepare and test only the disabled role-candidate qualifier described in `APP013_P08_TWO_PERMISSION_ACCESS_RESOLUTION_PROPOSAL_20261028.md`. No Google Cloud read, role/grant, Firebase action, signing/token, API key action, runtime restoration, database action, payment, deployment or spending is authorized.
