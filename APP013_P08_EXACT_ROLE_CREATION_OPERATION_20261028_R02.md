@@ -1,6 +1,8 @@
 # APP-013 / 3A / P08 — corrected exact stable unbound role-creation operation R02
 
-Status: OWNER APPROVED FOR THIS EXACT CORRECTED OPERATION. R1-W01 / APP-013 / 3A remains unchanged.
+Status: CONSUMED; STOPPED BEFORE HTTPS OR MUTATION; CONTAINMENT VERIFIED; NO RETRY. R1-W01 / APP-013 / 3A remains unchanged.
+
+Result: R02 started once at 7:35 p.m. Eastern and stopped on `CLI_4_IAM_SERVICE_STATE` with safe category `TRANSPORT`. Zero HTTPS and mutation requests occurred; created and unknown counts are both zero. Private inputs and processes are absent. See `APP013_P08_R02_TRANSPORT_STOP_RESULT_20261028.md`.
 
 Owner decision: On October 28, 2026, the owner approved operation `2f413783-9c32-4ed5-89d1-875f383e3bca` against this document's pre-decision SHA256 `bb7530fd9f13dbdbaccce852841b0e748df111c9a0d5377ac1063b8ba5998e8f`. Authority is limited to the exact resources, calls, window, cutoff, no-retry rule and contingent read-only closeout below.
 

@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 28 — R02 confirmed service-state transport blocker; HTTPS correction proposed
+
+R1-W01 / APP-013 / 3A / P08. Corrected operation `2f413783-9c32-4ed5-89d1-875f383e3bca` ran once at 7:35 p.m. and stopped at `CLI_4_IAM_SERVICE_STATE` with category `TRANSPORT`. Zero HTTPS/mutation requests; created0/unknown0; private inputs/processes absent; containment verified. Attempt consumed/no retry. Backend evidence `p08-exact-role-creation-r02-stop-20261028`.
+
+Next/owner: approve or defer Alternative 1 in `APP013_P08_SERVICE_STATE_HTTPS_CORRECTION_PROPOSAL_20261028.md`: locally replace only the failing gcloud service-state read with exact Resource Manager plus Service Usage HTTPS reads, bind five CLI/nine HTTPS, expand the permission probe and run fake tests. No provider read/retry/action is authorized. Counts unchanged. **Demonstrated transport-path change disclosed; no scope deviation implemented.**
+
 ## October 28 — corrected exact stable unbound role operation R02 approved
 
 R1-W01 / APP-013 / 3A / P08. Owner approved corrected operation `2f413783-9c32-4ed5-89d1-875f383e3bca` against pre-decision SHA256 `bb7530fd9f13dbdbaccce852841b0e748df111c9a0d5377ac1063b8ba5998e8f`: tonight 7:35–8:05 p.m. Eastern, start strictly before 7:50; one attempt/no retry; USD 0; create only the two fixed roles retained unbound after same-attempt qualification. Safe CLI stage/category evidence and contingent read-only closeout are included.
