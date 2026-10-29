@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — corrected P08 read-only R06 approved for 5:00–6:00 p.m.
+
+R1-W01 / APP-013 / 3A / P08. Owner approved exact operation `1a744195-a648-4b5e-b306-768bcd86b060` against immutable card `cc292f0` / SHA256 `668d3acd52118c22694b8dc539d0f608a57f4284e9a1d90390f169fcccbc4a1c`. Start strictly before 5:15, maximum 26 CLI/ten HTTPS/two read-only SQL, USD0, no retry, mandatory closeout and private purge before 6:00.
+
+Next/implementer: bind corrected backend `b38a082` and owner decision, pass final gates, then release one Terminal command at/after 5:00. No mutation, runtime or payment authority. Counts unchanged. **No scope deviation.**
+
 ## October 29 — corrected P08 read-only R06 proposed for 5:00–6:00 p.m.
 
 R1-W01 / APP-013 / 3A / P08. The owner supplied 5:00–6:00 p.m. Eastern availability. `APP013_P08_CORRECTED_CURRENT_STATE_QUALIFICATION_OPERATION_20261029_R06.md` proposes one fresh read-only attempt against backend `b38a082`, strict 5:15 start cutoff, 26 CLI/ten HTTPS/two read-only SQL ceilings, USD0, no retry and mandatory closeout/purge. Prior R05 and traffic diagnostic are consumed.

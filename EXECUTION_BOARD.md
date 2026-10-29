@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — corrected P08 R06 read-only operation approved
+
+R1-W01 / APP-013 / 3A / P08. Exact `1a744195-a648-4b5e-b306-768bcd86b060` approved for 5:00–6:00 p.m. Eastern, strict 5:15 cutoff, one read-only attempt/no retry/USD0 and mandatory closeout. Next/implementer: bind and verify before releasing one Terminal command at/after 5:00. Counts unchanged. **No scope deviation.**
+
 ## October 29 — corrected P08 R06 read-only qualification proposed
 
 R1-W01 / APP-013 / 3A / P08. Fresh 5:00–6:00 p.m. Eastern R06 card against locally verified backend `b38a082`, strict 5:15 cutoff, 26 CLI/ten HTTPS/two SQL read-only ceilings, USD0/no retry/mandatory closeout. Next/owner: decide exact provider-read operation. Counts unchanged. **No scope deviation.**
