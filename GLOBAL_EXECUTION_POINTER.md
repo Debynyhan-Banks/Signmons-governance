@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — config output-contract correction passed locally
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved correction is committed at backend `7fe401d`; result `APP013_P08_CONFIG_OUTPUT_CORRECTION_LOCAL_RESULT_20261029.md`. Only exact omitted-empty/explicit-empty auth projections qualify, unsafe shapes and ambient credential/database overrides refuse, and all focused/locked gates pass. Zero external actions.
+
+Next/owner: supply a fresh attended window for a new immutable operation/approval. R02 is consumed and not reusable. Counts unchanged. **No scope deviation.**
+
 ## October 29 — config output-contract correction approved locally
 
 R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 against proposal commit `3c69b16`: locally accept only exact omitted-empty or explicit-empty auth projections, retain all strict refusals and add focused safe-shape evidence/tests.

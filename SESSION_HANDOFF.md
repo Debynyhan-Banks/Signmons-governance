@@ -1,5 +1,9 @@
 # Session Handoff
 
+## October 29 — config output-contract correction passed locally
+
+Section: R1-W01 / APP-013 / 3A / P08. Completed: exact safe config-shape correction, explicit ambient override refusal, PostgreSQL and locked regressions, sanitized result. Remaining: fresh attended operation proposal/approval and one current read-only attempt; authentication/runtime/payment remain unauthorized. Blocker/owner: Debynyhan Banks supplies a new window. Next observable result: newly bound five-domain qualification or fixed safe stop. Evidence: backend `7fe401d`; `APP013_P08_CONFIG_OUTPUT_CORRECTION_LOCAL_RESULT_20261029.md`. Accepted milestones 4/8; counts unchanged. **No scope deviation.**
+
 ## October 29 — config output-contract correction approved locally
 
 Section: R1-W01 / APP-013 / 3A / P08. Completed: R02 safe stop/closeout and owner approval for Alternative 1. Remaining: exact local parser/tests/result, then a fresh separately approved operation; authentication/runtime/payment remain unauthorized. Blocker/role: implementer completes only the approved local card. Next observable result: exact safe-shape proof with all gates. Evidence: proposal/decision `3c69b16`; backend stop `e959370`. Accepted milestones 4/8; counts unchanged. **Approved local correction only; no external authority.**

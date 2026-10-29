@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — config output-contract correction passed locally
+
+R1-W01 / APP-013 / 3A / P08. Backend `7fe401d` completes the bounded config-shape correction with 33 focused/model, three qualification PostgreSQL and all locked regression suites green; zero external actions.
+
+Next/owner: choose a fresh attended block; new operation IDs and separate approval are required. Counts unchanged. **No scope deviation.**
+
 ## October 29 — config output-contract correction approved locally
 
 R1-W01 / APP-013 / 3A / P08. Alternative 1 in `APP013_P08_CONFIG_OUTPUT_CONTRACT_CORRECTION_PROPOSAL_20261029.md` is approved for local parser/tests only.
