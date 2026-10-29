@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — corrected current-state qualification R03 proposed for 9:15–10:15
+
+R1-W01 / APP-013 / 3A / P08. Fresh operation `43ab2bc3-7511-42e3-9a2e-81961bb1c46b` is prepared in `APP013_P08_CORRECTED_CURRENT_STATE_QUALIFICATION_OPERATION_20261029_R03.md` against corrected backend `7fe401d`: today 9:15–10:15 a.m. Eastern, start strictly before 9:25, one attempt/no retry, USD0, exact 26 CLI/10 HTTPS/two SQL read-only ceilings and mandatory closeout/purge.
+
+Next/owner: approve or refuse this exact R03 operation, thereby confirming the 10:15 end time. Availability alone is not external-read authority. Counts unchanged. **No scope deviation.**
+
 ## October 29 — config output-contract correction passed locally
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved correction is committed at backend `7fe401d`; result `APP013_P08_CONFIG_OUTPUT_CORRECTION_LOCAL_RESULT_20261029.md`. Only exact omitted-empty/explicit-empty auth projections qualify, unsafe shapes and ambient credential/database overrides refuse, and all focused/locked gates pass. Zero external actions.

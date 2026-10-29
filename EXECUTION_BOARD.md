@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — corrected current-state qualification R03 proposed for 9:15–10:15
+
+R1-W01 / APP-013 / 3A / P08. Fresh read-only operation `43ab2bc3-7511-42e3-9a2e-81961bb1c46b` is prepared against backend `7fe401d`, including strict config-shape and Firebase REST corrections.
+
+Next/owner: approve or refuse the exact 9:15–10:15 operation; strict 9:25 cutoff, one attempt/no retry, USD0. Counts unchanged. **No scope deviation.**
+
 ## October 29 — config output-contract correction passed locally
 
 R1-W01 / APP-013 / 3A / P08. Backend `7fe401d` completes the bounded config-shape correction with 33 focused/model, three qualification PostgreSQL and all locked regression suites green; zero external actions.
