@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — P08 R07 stopped safely at fixed IAM-service output; local diagnosis proposed
+
+R1-W01 / APP-013 / 3A / P08. Exact R07 started once at 5:18:38 p.m. Eastern and stopped `HTTPS_OUTPUT:service_1` after Cloud 13/13 qualified. Fixed descriptor maps to `iam.googleapis.com` Service Usage metadata; malformed-output category remains UNKNOWN. Mandatory read-only closeout qualified, residuals empty and private plan/binding absent by 5:18:53. R07 consumed/no retry; no access/database/Firebase qualification or mutation. Evidence backend `4f23b23`, governance `APP013_P08_R07_SERVICE_OUTPUT_STOP_RESULT_20261029.md`.
+
+Next/owner: decide Alternative 1 local-only safe output-category observation in `APP013_P08_SERVICE_RESPONSE_CATEGORY_PROPOSAL_20261029.md` or defer. No provider read or parser change authorized by R07. Accepted 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **Unintended output stop disclosed; no scope deviation implemented.**
+
 ## October 29 — corrected P08 R07 read-only operation approved
 
 R1-W01 / APP-013 / 3A / P08. Owner approved exact operation `d685d715-c232-4ed5-86ac-1b7ed3e04e3d` against immutable card `bbf1bdc` / SHA256 `41c035100e637ccebc47c3d1e82d6f52ff844a6864680253cb739590412ce3c9`. Window 5:15–6:00 p.m. Eastern, strict 5:30 start cutoff, 26 CLI/ten HTTPS/two read-only SQL ceilings, USD0/no retry and mandatory closeout/purge. Next/implementer: bind backend `9888e7c`, pass final gates and release one Terminal command at/after 5:15. Counts unchanged. **No scope deviation.**

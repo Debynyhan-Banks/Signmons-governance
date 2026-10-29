@@ -1,0 +1,7 @@
+# APP-013 / 3A / P08 — R07 Service Usage output safe stop
+
+R1-W01 / APP-013 / 3A / P08. Exact owner-approved read-only operation `d685d715-c232-4ed5-86ac-1b7ed3e04e3d` reserved its sole attempt at 5:18:38 p.m. Eastern October 29, before the 5:30 cutoff. Owner reported `P08_COMPOSED_QUALIFICATION_LOCAL_STOPPED`. Sanitized journal: `HTTPS_OUTPUT:service_1`, Cloud `QUALIFIED` (13 true, zero false), closeout `QUALIFIED`, empty residuals. The fixed ID maps to the Service Usage metadata check for `iam.googleapis.com`. It does not reveal whether the response was oversized, malformed JSON or invalid UTF-8. No raw response, URL, bearer or provider error was retained.
+
+Access, database and Firebase qualification did not complete. No authentication, runtime, IAM, payment or other mutation path ran. The exact private plan and binding were deleted; retirement receipt and filesystem readback confirm both absent by 5:18:53. No closeout-only invocation was needed. Backend receipt `4f23b23` / `evidence/APP-013/p08-current-state-r07-stop-20261029`. R07 is consumed, no retry. R06 remains independently consumed.
+
+P08/3A remain open. Accepted walkthrough 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. Next decision: bounded local-only safe response-category observation, or defer for provider investigation. No new external read follows from this result. **Unintended HTTPS output stop disclosed; no scope deviation implemented.**

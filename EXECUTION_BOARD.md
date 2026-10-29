@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — P08 R07 fixed IAM-service output stop
+
+R1-W01 / APP-013 / 3A / P08. One approved R07 attempt stopped `HTTPS_OUTPUT:service_1` after Cloud 13/13; response cause unknown. Closeout qualified, private inputs absent, no mutation. R07 consumed/no retry. Next/owner: decide bounded local-only safe output-category proposal; no fresh provider authority. P08/3A open, counts unchanged. **Unintended output stop disclosed; no scope deviation implemented.**
+
 ## October 29 — P08 R07 read-only operation approved
 
 R1-W01 / APP-013 / 3A / P08. Exact R07 `d685d715-c232-4ed5-86ac-1b7ed3e04e3d` approved for 5:15–6:00 p.m. Eastern, strict 5:30 cutoff, USD0/no retry/mandatory closeout. Next/implementer: bind and release one Terminal command after final gates. Counts unchanged. **No scope deviation.**
