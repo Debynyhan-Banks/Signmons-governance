@@ -1,6 +1,8 @@
 # APP-013 / 3A / P08 — root-null-corrected stable unbound role-creation operation R05
 
-Status: OWNER APPROVED FOR THIS EXACT EXTERNAL OPERATION. R1-W01 / APP-013 / 3A remains unchanged.
+Status: CREATION AND INCLUDED CLOSEOUT CONSUMED; EXACT DEFINITIONS UNCONFIRMED. R1-W01 / APP-013 / 3A remains open.
+
+Result: R05 created both requested roles and recorded unknown0, then stopped at the first HTTP-200 definition readback with `ROLE_DRIFT`/`HTTP_SHAPE`. The included read-only closeout passed both policies as unbound but stopped on the same first-role definition shape; reconciled0/absent0/residual1. See `APP013_P08_R05_DEFINITION_SHAPE_STOP_RESULT_20261029.md`.
 
 Owner decision: On October 29, 2026, the owner approved operation `bdbbbe2c-3142-4b3f-8acf-98414f3e35a9` against this document's pre-decision SHA256 `b5260cb277238c60a9c797e68e8b0371d15e128155337225b0d3eb41bedb18db`. Authority is limited to the exact resources, calls, window, cutoff, no-retry rule and contingent read-only closeout below.
 

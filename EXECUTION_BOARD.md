@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — R05 created both unbound roles; exact definitions unconfirmed
+
+R1-W01 / APP-013 / 3A / P08. R05 created both exact roles, created2/unknown0, then stopped on the first HTTP-200 role definition with `ROLE_DRIFT`/`HTTP_SHAPE`. Included read-only closeout passed both target-role policies as unbound but stopped on the same definition validation; reconciled0/absent0/residual1. All private inputs/processes absent. Creation and closeout consumed; no retry. Backend evidence `p08-exact-role-creation-r05-stop-20261029`.
+
+Next/owner: approve or defer Alternative 1 in `APP013_P08_OMITTED_FALSE_DELETED_NORMALIZATION_PROPOSAL_20261029.md`: locally default only an omitted read-only `deleted` field to false when every other definition field is exact, retain rejection of all other drift, and test read-only closeout. No provider read, creation retry or mutation is authorized. Counts unchanged. **Demonstrated definition-shape gap disclosed; no scope deviation implemented.**
+
 ## October 29 — root-null-corrected stable unbound role operation R05 approved
 
 R1-W01 / APP-013 / 3A / P08. Owner approved operation `bdbbbe2c-3142-4b3f-8acf-98414f3e35a9` against pre-decision SHA256 `b5260cb277238c60a9c797e68e8b0371d15e128155337225b0d3eb41bedb18db`: today 7:00–7:30 a.m. Eastern, start strictly before 7:15; one attempt/no retry; USD 0; exact five-CLI/nine-HTTPS gates; create only the two fixed roles retained unbound. Contingent read-only closeout is included.
