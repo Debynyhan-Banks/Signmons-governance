@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — P08 local HTTPS response categories verified
+
+R1-W01 / APP-013 / 3A / P08. Approved disabled copy classifies only three safe output categories; 41 corrected, 39 predecessor and three disposable PostgreSQL tests pass. R07 consumed/no retry. Next/implementer: fresh exact read-only operation card and separate owner approval, with no inherited provider authority. P08/3A open, counts unchanged. **No scope deviation beyond approved local correction.**
+
 ## October 29 — P08 R07 fixed IAM-service output stop
 
 R1-W01 / APP-013 / 3A / P08. One approved R07 attempt stopped `HTTPS_OUTPUT:service_1` after Cloud 13/13; response cause unknown. Closeout qualified, private inputs absent, no mutation. R07 consumed/no retry. Next/owner: decide bounded local-only safe output-category proposal; no fresh provider authority. P08/3A open, counts unchanged. **Unintended output stop disclosed; no scope deviation implemented.**

@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — P08 safe HTTPS response-category correction verified locally
+
+R1-W01 / APP-013 / 3A / P08. Owner approved bounded Alternative 1 at `0275493`; a fresh disabled backend copy records only fixed `OVERSIZE`, `INVALID_UTF8` or `INVALID_JSON` alongside an allowlisted HTTPS request ID. 41 corrected focused/controller tests, 39 unchanged predecessor and three disposable PostgreSQL cases pass; source/manifest and governance gates pass. R07 remains consumed. Evidence `APP013_P08_SERVICE_RESPONSE_CATEGORY_LOCAL_RESULT_20261029.md` and backend `evidence/APP-013/p08-https-output-category-local-20261029`.
+
+Next/implementer: prepare a fresh exact read-only current-state operation for separate owner review; no provider authority under local approval. P08/3A open; accepted 4/8, newly closed R1 0/27, legacy 6/60, intelligence 0/13. **No scope deviation beyond approved local correction.**
+
 ## October 29 — P08 R07 stopped safely at fixed IAM-service output; local diagnosis proposed
 
 R1-W01 / APP-013 / 3A / P08. Exact R07 started once at 5:18:38 p.m. Eastern and stopped `HTTPS_OUTPUT:service_1` after Cloud 13/13 qualified. Fixed descriptor maps to `iam.googleapis.com` Service Usage metadata; malformed-output category remains UNKNOWN. Mandatory read-only closeout qualified, residuals empty and private plan/binding absent by 5:18:53. R07 consumed/no retry; no access/database/Firebase qualification or mutation. Evidence backend `4f23b23`, governance `APP013_P08_R07_SERVICE_OUTPUT_STOP_RESULT_20261029.md`.

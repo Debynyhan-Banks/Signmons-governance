@@ -1,0 +1,7 @@
+# APP-013 / 3A / P08 — local response-category correction result
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved Alternative 1 was implemented in a fresh disabled copy of backend `9888e7c`, leaving the R07 receipt and predecessor source unchanged. The bounded HTTPS parser now records only `HTTPS_OUTPUT:<fixed allowlisted ID>:OVERSIZE|INVALID_UTF8|INVALID_JSON` on those three body failures. Wrong-shape JSON retains generic refusal; unknown IDs refuse before transport. No response content, URL, bearer, dynamic identifier or raw exception enters the journal. Source manifest SHA256 `c5d3f54456fc82cc6ff1910b197a56c3304d1aa043adb9a4887b18d5eaf3b31e`; launcher SHA256 `94b73ea8be71410f0f51e1d3a5d20f14eba126b1aa7370da7af537c9586a15f0`.
+
+Verification: 41 corrected focused/controller tests, 39 unchanged predecessor tests, three disposable PostgreSQL tests, locked-source/manifest and repository checks. The native entry remains unbound. No live provider/account/database request or mutation occurred. See backend commit `be0adc1` / `evidence/APP-013/p08-https-output-category-local-20261029` for exact test/result receipt.
+
+Next: if needed, prepare a fresh exact read-only current-state operation for separate owner approval. R06/R07 are consumed. This local result does not establish service state, complete P08/3A, authorize authentication/runtime/Stripe or change progress counts. Accepted 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **No scope deviation beyond the approved local correction.**
