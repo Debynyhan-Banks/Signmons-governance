@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — corrected current-state qualification proposed for 8:30–9:30
+
+R1-W01 / APP-013 / 3A / P08. Fresh operation `82ad7bf3-1bc8-455b-8c7b-0049387af3b5` is prepared in `APP013_P08_CORRECTED_CURRENT_STATE_QUALIFICATION_OPERATION_20261029.md`: today 8:30–9:30 a.m. Eastern, start strictly before 8:40, one attempt/no retry, USD0, exact 26 CLI/10 HTTPS/two SQL read-only ceilings and mandatory closeout/purge.
+
+Next/owner: approve or refuse this exact operation. Availability alone is not external-read authority; do not issue or run a command until immutable binding and exact approval are installed. Counts unchanged. **No scope deviation.**
+
 ## October 29 — qualification launch drift correction passed locally
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved correction is committed at backend `d7c40c1`; result `APP013_P08_QUALIFICATION_LAUNCH_DRIFT_CORRECTION_LOCAL_RESULT_20261029.md`. The native database reduction now proves each fact from one repeatable-read projection, derives Firebase identity only from the qualified disabled ADMIN, compares dynamic project/billing identifiers only in memory, separates future operation authority and deletes exact private inputs with absence readback. Thirty fake/model, three disposable PostgreSQL, 26 role, 37 restoration, 40 access and 60 authentication cases pass. No external action occurred.

@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — corrected current-state qualification proposed for 8:30–9:30
+
+R1-W01 / APP-013 / 3A / P08. Exact read-only operation `82ad7bf3-1bc8-455b-8c7b-0049387af3b5` is prepared with an 8:40 strict cutoff, USD0, no retry and mandatory closeout/purge.
+
+Next/owner: approve or refuse `APP013_P08_CORRECTED_CURRENT_STATE_QUALIFICATION_OPERATION_20261029.md`; no external read is yet authorized. Counts unchanged. **No scope deviation.**
+
 ## October 29 — qualification launch drift correction passed locally
 
 R1-W01 / APP-013 / 3A / P08. Backend `d7c40c1` completes the approved fail-closed correction; governance result `APP013_P08_QUALIFICATION_LAUNCH_DRIFT_CORRECTION_LOCAL_RESULT_20261029.md`. Implemented and locally tested only; current Cloud/database/Firebase state remains unknown.
