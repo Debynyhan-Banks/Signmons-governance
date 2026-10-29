@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — R03 expired unstarted and private inputs retired
+
+R1-W01 / APP-013 / 3A / P08. Operation `43ab2bc3-7511-42e3-9a2e-81961bb1c46b` passed its strict 9:25 cutoff with no attempt/journal/password prompt/external read. Exact plan/binding were purged at 9:29 with absence readback. Approval and command are nonreusable.
+
+Next/owner: supply a fresh attended 60-minute window for new IDs, immutable proposal and separate approval. Counts unchanged. **No scope deviation.**
+
 ## October 29 — corrected current-state qualification R03 approved for 9:15–10:15
 
 R1-W01 / APP-013 / 3A / P08. Owner approved exact operation `43ab2bc3-7511-42e3-9a2e-81961bb1c46b` against governance commit `084612f` and pre-decision SHA256 `dc7cfdfeb99bd9d81519c2c93b3b741ad1856b6c7f207d08b8de484cbe10195e`: today 9:15–10:15 a.m. Eastern, start strictly before 9:25, one attempt/no retry, USD0, exact 26 CLI/10 HTTPS/two SQL read ceilings and mandatory closeout/purge.

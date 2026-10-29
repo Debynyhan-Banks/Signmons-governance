@@ -1,5 +1,9 @@
 # Session Handoff
 
+## October 29 — R03 expired unstarted and private inputs retired
+
+Section: R1-W01 / APP-013 / 3A / P08. Completed: exact post-cutoff reconciliation and private-input retirement. Remaining: fresh 60-minute window, new operation/approval and one current read-only attempt; authentication/runtime/payment remain unauthorized. Blocker/owner: Debynyhan Banks supplies the next window. Next observable result: newly bound five-domain qualification or fixed safe stop. Evidence: backend `evidence/APP-013/p08-composed-qualification-r03-expired-unstarted-20261029`; operation `43ab2bc3-7511-42e3-9a2e-81961bb1c46b`. Accepted milestones 4/8; counts unchanged. **No scope deviation.**
+
 ## October 29 — corrected current-state qualification R03 approved
 
 Section: R1-W01 / APP-013 / 3A / P08. Completed: exact owner approval for operation `43ab2bc3-7511-42e3-9a2e-81961bb1c46b`. Remaining: private source/decision binding, final gates, one current read-only attempt and owner review; authentication/runtime/payment remain unauthorized. Blocker/role: implementer completes binding before the strict 9:25 cutoff. Next observable result: newly bound five-domain qualification or fixed safe stop. Evidence: proposal `084612f` / SHA256 `dc7cfdfeb99bd9d81519c2c93b3b741ad1856b6c7f207d08b8de484cbe10195e`; approval document R03. Accepted milestones 4/8; counts unchanged. **No scope deviation.**

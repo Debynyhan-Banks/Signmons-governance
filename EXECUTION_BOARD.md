@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — R03 expired unstarted and private inputs retired
+
+R1-W01 / APP-013 / 3A / P08. R03 had no attempt before its 9:25 cutoff. Private plan/binding are absent with readback; zero external actions. Old authority is nonreusable.
+
+Next/owner: choose a fresh 60-minute attended block. Counts unchanged. **No scope deviation.**
+
 ## October 29 — corrected current-state qualification R03 approved for 9:15–10:15
 
 R1-W01 / APP-013 / 3A / P08. Owner approved exact read-only operation `43ab2bc3-7511-42e3-9a2e-81961bb1c46b` against proposal commit `084612f`; strict 9:25 cutoff, one attempt/no retry, USD0.
