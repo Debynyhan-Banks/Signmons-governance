@@ -1,5 +1,9 @@
 # Session Handoff
 
+## October 29 — R05 contained Cloud traffic predicate drift
+
+Section: R1-W01 / APP-013 / 3A / P08. Completed: one exact read-only R05 attempt, twelve true Cloud facts, one false composite fact `trafficRetired`, qualified closeout, empty residuals and private-input purge. Remaining: owner decision on a bounded traffic-shape diagnostic, then independently approved qualification/correction if warranted; authentication/runtime/payment and P08/3A acceptance remain open. Blocker/owner: Debynyhan Banks decides whether to diagnose the three traffic subconditions; implementer must not infer or change live routing. Next observable result: sanitized identification of which subcondition failed, or defer. Evidence: backend `evidence/APP-013/p08-composed-qualification-r05-stop-20261029`, governance `APP013_P08_COMPOSED_QUALIFICATION_R05_RESULT_20261029.md`, source `a4c5f49`, approval `042fe98`. Accepted milestones 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **Unintended Cloud drift disclosed; no scope deviation implemented.**
+
 ## October 29 — current-state qualification R05 approved
 
 Section: R1-W01 / APP-013 / 3A / P08. Completed: exact owner approval for operation `3fb6d82c-b7e5-4851-bee0-98949081f360`. Remaining: private binding/final gates, one current read-only attempt and owner review; authentication/runtime/payment remain unauthorized. Blocker/role: implementer completes binding before strict 2:25 cutoff. Next observable result: exact false Cloud predicate, further qualified domains, or fixed safe stop. Evidence: proposal `761b48d` / SHA256 `e9bf3b531567af37a0d23b5087b97851829621adac058b78e9d144b6ff3abf5c`; approval document R05. Accepted milestones 4/8; counts unchanged. **No scope deviation.**

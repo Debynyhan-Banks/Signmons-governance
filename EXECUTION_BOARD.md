@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — R05 contained Cloud traffic predicate drift
+
+R1-W01 / APP-013 / 3A / P08. R05 consumed its single approved read-only attempt and stopped on the sole false Cloud fact `trafficRetired`; twelve Cloud facts passed. Closeout qualified, residuals empty and private inputs absent.
+
+Next/owner: decide on a narrow read-only diagnostic to distinguish the three traffic subconditions; no retry or traffic change is authorized. Counts unchanged. **Unintended drift disclosed; no correction implemented.**
+
 ## October 29 — current-state qualification R05 approved for 2:15–3:15 p.m.
 
 R1-W01 / APP-013 / 3A / P08. Owner approved exact read-only operation `3fb6d82c-b7e5-4851-bee0-98949081f360` against proposal commit `761b48d`; strict 2:25 cutoff, one attempt/no retry, USD0.

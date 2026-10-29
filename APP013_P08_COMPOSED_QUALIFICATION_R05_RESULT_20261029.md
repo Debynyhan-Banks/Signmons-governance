@@ -1,0 +1,7 @@
+# APP-013 / 3A / P08 — R05 read-only qualification result
+
+Exact owner-approved operation `3fb6d82c-b7e5-4851-bee0-98949081f360` started once at 2:16:21 p.m. Eastern on October 29, 2026, inside its 2:15–3:15 window and before the 2:25 cutoff. The source was backend `a4c5f49`; the approval is `APP013_P08_CORRECTED_CURRENT_STATE_QUALIFICATION_APPROVAL_20261029_R05.md` at governance `042fe98`.
+
+The saved sanitized journal reports `P08_COMPOSED_QUALIFICATION_LOCAL_STOPPED`, `CLOUD_DRIFT`, one false Cloud fact `trafficRetired`, twelve true Cloud facts, qualified read-only session closeout, and no residuals. Exact private plan and binding were purged with absence readback at 2:16:37. The control flow performed 26 CLI reads, zero HTTPS requests, zero qualification SQL statements and one closeout-only read-only SQL statement. No mutation, payment, account activation or runtime restoration occurred. The attempt is consumed with no retry.
+
+`trafficRetired` is a composite predicate: exact normal revision at 100%, named candidate revision at 0%, and old tag absent. The sanitized evidence does not reveal which subcondition failed. Do not infer a live routing defect, loosen the check or change traffic from this result. A separate bounded diagnostic proposal and owner decision are required before another provider read; any correction would need its own change decision. P08 and 3A remain open. Accepted 1A/1B/2A/2B are 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **Unintended Cloud drift disclosed; no scope deviation implemented.**

@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — R05 contained Cloud traffic predicate drift
+
+R1-W01 / APP-013 / 3A / P08. One approved R05 read-only attempt ran at 2:16:21 p.m. and stopped `CLOUD_DRIFT`: `trafficRetired` was the sole false Cloud fact, twelve others true; closeout qualified, residuals empty and private inputs absent. The composite predicate does not identify its failed subcondition. R05 is consumed/no retry.
+
+Next/owner: decide whether to authorize a separately bounded, sanitized traffic-shape diagnostic. Do not change traffic, weaken the predicate or repeat provider reads under R05. Counts unchanged. **Unintended Cloud drift disclosed; no scope deviation implemented.**
+
 ## October 29 — current-state qualification R05 approved for 2:15–3:15 p.m.
 
 R1-W01 / APP-013 / 3A / P08. Owner approved exact operation `3fb6d82c-b7e5-4851-bee0-98949081f360` against proposal commit `761b48d` and pre-decision SHA256 `e9bf3b531567af37a0d23b5087b97851829621adac058b78e9d144b6ff3abf5c`: today 2:15–3:15 p.m. Eastern, start strictly before 2:25, one attempt/no retry, USD0, 26 CLI/10 HTTPS/two SQL read ceilings and mandatory closeout/purge.
