@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — corrected current-state qualification R04 approved for 9:45–10:45
+
+R1-W01 / APP-013 / 3A / P08. Owner approved exact read-only operation `63964638-5f31-4e5c-ad03-7f1226b1f80b` against proposal commit `4b753f9`; strict 9:55 cutoff, one attempt/no retry, USD0.
+
+Next/implementer: install the source/decision binding and release one command only after final gates pass. Counts unchanged. **No scope deviation.**
+
 ## October 29 — corrected current-state qualification R04 proposed for 9:45–10:45
 
 R1-W01 / APP-013 / 3A / P08. Fresh read-only operation `63964638-5f31-4e5c-ad03-7f1226b1f80b` is prepared against corrected launcher `7fe401d`, with strict config-shape and Firebase REST corrections.
