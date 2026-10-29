@@ -1,6 +1,8 @@
 # APP-013 / 3A / P08 — normalized stable unbound role-creation operation R04
 
-Status: OWNER APPROVED FOR THIS EXACT EXTERNAL OPERATION. R1-W01 / APP-013 / 3A remains unchanged.
+Status: CONSUMED, CONTAINED, NO RETRY. R1-W01 / APP-013 / 3A remains open.
+
+Result: R04 started once at 9:00 p.m. Eastern and stopped at `CLI_5_IDENTITY_POLICY` with identity policy classification `INVALID` and `ROLE_DRIFT`, before any HTTPS or mutation request. Created and unknown counts are zero; private inputs and processes are absent. See `APP013_P08_R04_IDENTITY_POLICY_STOP_RESULT_20261028.md`.
 
 Owner decision: On October 28, 2026, the owner approved operation `743447a5-f14f-4a48-8dd0-f674d024a94c` against this document's pre-decision SHA256 `cb543f36e4448f2909ef02977a6cde6e196fcb0d4cd00a59907e1d545419d119`. Authority is limited to the exact resources, calls, window, cutoff, no-retry rule and contingent read-only closeout below.
 

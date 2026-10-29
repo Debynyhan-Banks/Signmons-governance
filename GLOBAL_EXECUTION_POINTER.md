@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 28 — R04 contained identity-policy stop; root-null normalization proposed
+
+R1-W01 / APP-013 / 3A / P08. Operation `743447a5-f14f-4a48-8dd0-f674d024a94c` ran once at 9:00 p.m. and stopped at `CLI_5_IDENTITY_POLICY`: project `NONEMPTY_LIST`, identity `INVALID`, reason `ROLE_DRIFT`. Five CLI reads, zero HTTPS/mutation requests, created0/unknown0; private inputs/processes absent; containment verified. Attempt consumed/no retry. Backend evidence `p08-exact-role-creation-r04-stop-20261028`.
+
+Next/owner: approve or defer Alternative 1 in `APP013_P08_ROOT_NULL_POLICY_NORMALIZATION_PROPOSAL_20261028.md`: locally accept only root JSON null as an empty projection, retain rejection of all other drift, and add the fixed `ROOT_NULL` classification with isolated tests. No provider read/retry/action is authorized. Counts unchanged. **Demonstrated parser gap disclosed; no scope deviation implemented.**
+
 ## October 28 — normalized stable unbound role operation R04 approved
 
 R1-W01 / APP-013 / 3A / P08. Owner approved operation `743447a5-f14f-4a48-8dd0-f674d024a94c` against pre-decision SHA256 `cb543f36e4448f2909ef02977a6cde6e196fcb0d4cd00a59907e1d545419d119`: tonight 9:00–9:30 p.m. Eastern, start strictly before 9:15; one attempt/no retry; USD 0; exact five-CLI/nine-HTTPS gates; create only the two fixed roles retained unbound. Contingent read-only closeout is included.
