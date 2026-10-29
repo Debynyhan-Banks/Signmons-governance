@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — composed P08 authentication preparation passed locally
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved local composition is complete at backend `514bc8c`: 17 new composed, 31 unchanged restoration, 40 unchanged access-resolution and 60 unchanged authentication cases pass. Exact parent-to-child authority, both verified roles, canonical provider key resource, acknowledged ownership before deletion, ordered authentication and reverse cleanup are proved with injected transports. Native remains `P08_COMPOSED_AUTH_REFUSED_UNBOUND`; zero external actions.
+
+Next/implementer: prepare one bounded current-state qualification card for exact Cloud service/permission/resource and owned disabled account/job/operator facts. Keep qualification read-only and separate from any later key, IAM, account, runtime, token or payment mutation. P08/3A remain open; counts unchanged. **No scope deviation.**
+
 ## October 29 — composed P08 authentication preparation approved locally
 
 R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 against governance commit `d7f0ed2` and proposal SHA256 `5009670c7a7bb3284a8c2a99c79eeebf1381fb131f874cc3271aa5564aa9c43f`: implement only the disabled local parent-authority wrapper/coordinator and isolated tests, reusing the locked key/restoration/authentication sources and pinning the two verified roles.
