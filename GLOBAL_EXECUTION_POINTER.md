@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## October 29 — P08 access and key sequence decision pending
+
+R1-W01 / APP-013 / 3A / P08. Stage A still has two effective-access failures despite the exact unbound roles and local role-output correction; therefore API Keys Stage B cannot run next. `APP013_P08_ACCESS_AND_KEY_SEQUENCE_DECISION_20261029.md` proposes one bounded local integration packet before any further live window, then one separately approved access/authentication operation and later 3A payment. Next/owner: decide local-only packet preparation or staged/owner-key alternative. No provider action or spend is authorized. Counts unchanged. **Planning sequence correction disclosed; no scope deviation implemented.**
+
 ## October 29 — P08 strict role-output contract verified locally
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved Alternative 1 passed in fresh disabled backend `9b2c569`: full two-role projection reuses R06 strict explicit/defaulted active definition check; 19 model/29 launcher/three disposable PostgreSQL and predecessor 19/26 tests pass. R10 remains consumed; no provider action. Next/implementer: prepare a finite separate API Keys service/compatible test-key decision before any further broad qualification. Evidence `APP013_P08_ROLE_CONTRACT_LOCAL_RESULT_20261029.md`. Counts unchanged. **No scope deviation beyond approved local correction.**
