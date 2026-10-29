@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — owner-Terminal traffic read approved for 3:00–3:15 p.m.
+
+R1-W01 / APP-013 / 3A / P08. Owner approved operation `edad7640-780f-4b0d-b3b2-8cb6d1e541a7` against proposal commit `b517244` and pre-decision SHA256 `5f74bde7530f4a5895ac2ea46f6b7dae8cd9808aa0ea0f2d908afd161ffeff96`. Exact 3:00–3:15 p.m. Eastern, strict 3:07 start cutoff, three CLI reads maximum, USD0, no retry and mandatory closeout.
+
+Next/implementer: bind backend `aff8294` and owner decision, run final gates, then release one Terminal command for at/after 3:00. Counts unchanged. **No scope deviation.**
+
 ## October 29 — owner-Terminal traffic read proposed for 3:00–3:15 p.m.
 
 R1-W01 / APP-013 / 3A / P08. `APP013_P08_OWNER_TERMINAL_TRAFFIC_READ_OPERATION_20261029.md` proposes one new three-CLI read-only operation `edad7640-780f-4b0d-b3b2-8cb6d1e541a7` against backend `aff8294`. It uses the owner's Terminal to match the earlier successful R05 execution context; the sandbox stop cause remains UNKNOWN. Start at/after 3:00, strictly before 3:07; closeout before 3:15; USD0 and no retry.

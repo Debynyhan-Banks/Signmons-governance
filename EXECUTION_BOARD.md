@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — owner-Terminal traffic read approved
+
+R1-W01 / APP-013 / 3A / P08. Exact operation `edad7640-780f-4b0d-b3b2-8cb6d1e541a7` is approved for owner Terminal, 3:00–3:15 p.m. Eastern, strict 3:07 cutoff, three read-only CLI commands, USD0 and no retry.
+
+Next/implementer: bind and pass final gates, then release the one-use command. Counts unchanged. **No scope deviation.**
+
 ## October 29 — owner-Terminal traffic read proposed
 
 R1-W01 / APP-013 / 3A / P08. New exact three-CLI read-only operation `edad7640-780f-4b0d-b3b2-8cb6d1e541a7` is proposed for 3:00–3:15 p.m. Eastern, strict 3:07 cutoff, using the owner's Terminal. No provider read under this card yet.
