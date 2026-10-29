@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — P08 local role-output correction complete
+
+R1-W01 / APP-013 / 3A / P08. Backend `9b2c569` locally verifies exact active roles with explicit or omitted false `deleted`, retaining strict definition and source-hash refusal. New 19/29/three PostgreSQL tests and predecessor 19/26 pass; no provider read or mutation. Next/implementer: separate API Keys service/test-key proposal; no R10 retry or full qualification until blocker resolved. Evidence `APP013_P08_ROLE_CONTRACT_LOCAL_RESULT_20261029.md`; accepted 4/8, R1 0/27. **No scope deviation beyond approved local correction.**
+
 ## October 29 — P08 access-resolution proposal for decision
 
 R1-W01 / APP-013 / 3A / P08. R10's three access observations are separated into a likely local role-output contract mismatch and the genuine disabled API Keys/native-key prerequisite. Next/owner: decide `APP013_P08_TARGETED_ACCESS_RESOLUTION_PROPOSAL_20261029.md`; Alternative 1 is local-only, with provider change separately gated. R10 consumed, P08/3A open, accepted 4/8 and R1 0/27. **No scope deviation implemented.**

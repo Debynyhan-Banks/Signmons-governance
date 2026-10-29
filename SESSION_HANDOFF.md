@@ -1,5 +1,9 @@
 # Session Handoff
 
+## October 29 — P08 local role correction verified; API Keys decision next
+
+Section R1-W01 / APP-013 / 3A / P08. Completed: owner-approved strict role-output correction in fresh disabled backend `9b2c569`, 19 model/29 launcher/three disposable PostgreSQL and predecessor 19/26 tests, manifest/locked-source and architecture gates. Remaining: finite API Keys service and compatible temporary-key proposal/owner decision; later exact provider approval, current-state qualification, authentication/runtime and same-job 3A Sandbox payment demonstration. Blocker/role: implementer prepares exact service/key options; owner decides provider configuration, IAM and cost/retention boundaries. Next observable result is the reviewable provider decision, not another broad check. Evidence `APP013_P08_ROLE_CONTRACT_LOCAL_RESULT_20261029.md` and backend evidence. Accepted 4/8; R1 0/27, legacy 6/60, intelligence 0/13. **No scope deviation beyond approved local correction.**
+
 ## October 29 — P08 targeted access-resolution proposal prepared
 
 Section R1-W01 / APP-013 / 3A / P08. Completed: R10 sanitized stop/verified closeout and source-to-R06 comparison. Remaining: owner decision on the bounded local role-contract correction or focused read; separate API Keys/test-key lifecycle decision and exact provider authority; later current-state qualification, authentication/runtime and 3A payment evidence. Blocker/owner: Debynyhan Banks decides `APP013_P08_TARGETED_ACCESS_RESOLUTION_PROPOSAL_20261029.md`. Next observable result: local strict role-shape tests only if Alternative 1 is approved, or the chosen bounded diagnostic. Evidence R10 result `2fc0cca`, R06 closeout and current launcher comparator. No new provider run or IAM change under planning approval. Accepted 4/8; R1 0/27, legacy 6/60, intelligence 0/13. **No scope deviation implemented.**

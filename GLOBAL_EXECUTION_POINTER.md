@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## October 29 — P08 strict role-output contract verified locally
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved Alternative 1 passed in fresh disabled backend `9b2c569`: full two-role projection reuses R06 strict explicit/defaulted active definition check; 19 model/29 launcher/three disposable PostgreSQL and predecessor 19/26 tests pass. R10 remains consumed; no provider action. Next/implementer: prepare a finite separate API Keys service/compatible test-key decision before any further broad qualification. Evidence `APP013_P08_ROLE_CONTRACT_LOCAL_RESULT_20261029.md`. Counts unchanged. **No scope deviation beyond approved local correction.**
+
 ## October 29 — P08 targeted access-resolution decision pending
 
 R1-W01 / APP-013 / 3A / P08. R10 is consumed with verified closeout. `APP013_P08_TARGETED_ACCESS_RESOLUTION_PROPOSAL_20261029.md` traces the likely role false mismatch to omitted `deleted` and the separately blocked native API-key path. Next/owner: decide bounded local Alternative 1, focused metadata Alternative 2 or deferral. No provider correction, new qualification or payment authority follows from this proposal. Counts unchanged. **No scope deviation implemented.**
