@@ -1,6 +1,8 @@
 # APP-013 / 3A / P08 — root-null-corrected stable unbound role-creation operation R05
 
-Status: OWNER DECISION REQUIRED FOR THIS EXACT EXTERNAL OPERATION. R1-W01 / APP-013 / 3A remains unchanged.
+Status: OWNER APPROVED FOR THIS EXACT EXTERNAL OPERATION. R1-W01 / APP-013 / 3A remains unchanged.
+
+Owner decision: On October 29, 2026, the owner approved operation `bdbbbe2c-3142-4b3f-8acf-98414f3e35a9` against this document's pre-decision SHA256 `b5260cb277238c60a9c797e68e8b0371d15e128155337225b0d3eb41bedb18db`. Authority is limited to the exact resources, calls, window, cutoff, no-retry rule and contingent read-only closeout below.
 
 ## Exact operation
 
@@ -23,4 +25,4 @@ There is no update, undelete, delete, IAM binding, account/database/Firebase-use
 
 ## Decision requested
 
-Approve or defer this exact root-null-corrected operation. Approval would authorize only the exact resources, calls, window, cutoff, no-retry rule and contingent read-only closeout above. It would not authorize later role bindings or Stage B authentication/runtime/payment work. Accepted counts remain unchanged. **No scope deviation.**
+Owner approved this exact root-null-corrected operation. It does not authorize later role bindings or Stage B authentication/runtime/payment work. Accepted counts remain unchanged. **No scope deviation; execute once only within the bound window.**

@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — root-null-corrected stable unbound role operation R05 approved
+
+R1-W01 / APP-013 / 3A / P08. Owner approved operation `bdbbbe2c-3142-4b3f-8acf-98414f3e35a9` against pre-decision SHA256 `b5260cb277238c60a9c797e68e8b0371d15e128155337225b0d3eb41bedb18db`: today 7:00–7:30 a.m. Eastern, start strictly before 7:15; one attempt/no retry; USD 0; exact five-CLI/nine-HTTPS gates; create only the two fixed roles retained unbound. Contingent read-only closeout is included.
+
+Next/implementer: after governance checks, bind backend `c165a92`, execute once at or after 7:00 and before 7:15, save only sanitized result/containment, purge private inputs and never retry. Counts unchanged. **No scope deviation.**
+
 ## October 29 — root-null normalization passed; R05 proposed
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved root-null correction is complete at backend `c165a92`: 25/25 isolated cases, all six safe policy-shape classifications, exact five-CLI/nine-HTTPS serialization and all repository gates pass. No credential, subprocess, provider call or mutation occurred.
