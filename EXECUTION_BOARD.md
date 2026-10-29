@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — root-null projected-policy normalization approved locally
+
+R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 in `APP013_P08_ROOT_NULL_POLICY_NORMALIZATION_PROPOSAL_20261028.md` against pre-decision SHA256 `0760aae7a89d1b66694ad922647c594b595bd9ca0b92ea0e5253cd445c5364b3`: locally classify and normalize only a root JSON null as an empty projection, while retaining rejection of all other malformed roots and exact target-role bindings.
+
+Next/implementer: change only the evidence-contained helper/tests/manifest/result, preserve exact external serialization and all gates, then present any fresh external operation separately. No provider read/retry/action is authorized. Counts unchanged. **No scope deviation; approved local correction only.**
+
 ## October 28 — R04 contained identity-policy stop; root-null normalization proposed
 
 R1-W01 / APP-013 / 3A / P08. Operation `743447a5-f14f-4a48-8dd0-f674d024a94c` ran once at 9:00 p.m. and stopped at `CLI_5_IDENTITY_POLICY`: project `NONEMPTY_LIST`, identity `INVALID`, reason `ROLE_DRIFT`. Five CLI reads, zero HTTPS/mutation requests, created0/unknown0; private inputs/processes absent; containment verified. Attempt consumed/no retry. Backend evidence `p08-exact-role-creation-r04-stop-20261028`.

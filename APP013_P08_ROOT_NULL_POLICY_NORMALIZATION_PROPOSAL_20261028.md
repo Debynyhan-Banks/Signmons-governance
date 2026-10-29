@@ -1,6 +1,8 @@
 # APP-013 / 3A / P08 — root-null projected-policy normalization proposal
 
-Status: OWNER DECISION REQUIRED BEFORE IMPLEMENTATION. R1-W01 / APP-013 / 3A remains unchanged.
+Status: OWNER APPROVED ALTERNATIVE 1 FOR LOCAL CORRECTION AND ISOLATED TESTS ONLY. R1-W01 / APP-013 / 3A remains unchanged.
+
+Owner decision: On October 29, 2026, the owner approved Alternative 1 against this document's pre-decision SHA256 `0760aae7a89d1b66694ad922647c594b595bd9ca0b92ea0e5253cd445c5364b3`. Authority is limited to the local root-null classification/normalization and isolated checks below. It does not authorize any provider read, retry or mutation.
 
 ## Demonstrated gap and workflow connection
 
@@ -32,4 +34,4 @@ Alternative 1 is the smallest semantic correction: null at the root and null in 
 
 ## Decision requested
 
-Approve or defer Alternative 1 for bounded local correction and isolated tests only. Approval would not authorize a provider read, retry or mutation. **Demonstrated parser prerequisite proposed before implementation; no scope deviation implemented.**
+Owner approved Alternative 1 for bounded local correction and isolated tests only. Approval does not authorize a provider read, retry or mutation. **Demonstrated parser prerequisite approved before implementation; no scope deviation.**
