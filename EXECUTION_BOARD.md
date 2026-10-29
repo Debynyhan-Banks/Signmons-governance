@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — corrected current-state qualification approved for 8:30–9:30
+
+R1-W01 / APP-013 / 3A / P08. Exact operation `82ad7bf3-1bc8-455b-8c7b-0049387af3b5` is approved against immutable proposal `7bd17c6`/`17462362…`: strict 8:40 cutoff, USD0, one attempt/no retry and mandatory closeout/purge.
+
+Next/implementer: install and verify one-use binding, then release the command at or after 8:30. Counts unchanged. **No scope deviation.**
+
 ## October 29 — corrected current-state qualification proposed for 8:30–9:30
 
 R1-W01 / APP-013 / 3A / P08. Exact read-only operation `82ad7bf3-1bc8-455b-8c7b-0049387af3b5` is prepared with an 8:40 strict cutoff, USD0, no retry and mandatory closeout/purge.
