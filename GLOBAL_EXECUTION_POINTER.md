@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## October 29 — P08 R08 exact read-only operation approved
+
+R1-W01 / APP-013 / 3A / P08. Owner approved operation `3a156c4b-cdec-43ad-b053-0ec1d191e0b3` against immutable card `4dc3626` / SHA256 `cf85eb6f4559b990a7d8700222803fa89a04746135ed29cf5f8a3d396546a3ec`. Window 5:45–6:30 p.m. Eastern, strict 6:00 start cutoff, 26 CLI/ten HTTPS/two read-only SQL ceilings, USD0/no retry and mandatory closeout/purge. Next/implementer: bind backend `be0adc1`, pass final gates and release one Terminal command before cutoff. Counts unchanged. **No scope deviation.**
+
 ## October 29 — P08 R08 read-only qualification proposed for 5:45–6:30 p.m.
 
 R1-W01 / APP-013 / 3A / P08. Owner supplied 5:45–6:30 p.m. Eastern availability and approved preparation, not execution. `APP013_P08_CURRENT_STATE_QUALIFICATION_OPERATION_20261029_R08.md` proposes one fresh current-state read-only attempt against backend `be0adc1`, strict 6:00 start cutoff, 26 CLI/ten HTTPS/two read-only SQL ceilings, USD0/no retry and mandatory closeout/purge. R07 and earlier attempts are consumed. Next/owner: separately approve or refuse exact R08 before its cutoff; no provider access under availability or local-correction approval. Counts unchanged. **No scope deviation.**
