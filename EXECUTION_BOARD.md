@@ -1,5 +1,15 @@
 # Signmons Execution Board
 
+## October 29 — local retired-traffic correction verified
+
+R1-W01 / APP-013 / 3A / P08. Backend `b38a082` holds the approved disabled predicate correction; focused/model, unchanged original, disposable PostgreSQL and governance gates pass. The prior diagnostic is consumed; P08 and 3A remain open.
+
+Next/implementer: prepare a fresh exact read-only qualification proposal, then stop for owner external-action approval. Counts unchanged. **No scope deviation beyond approved local work.**
+
+## October 29 — local traffic predicate correction approved
+
+R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 at proposal `c62d6fa` for one disabled local R05 predicate/test correction. The prior Cloud read is consumed. Next/implementer: finish and verify the local card; do not perform provider access. Counts unchanged. **No scope deviation.**
+
 ## October 29 — traffic diagnosis complete; local correction decision pending
 
 R1-W01 / APP-013 / 3A / P08. The one approved Terminal attempt completed three read-only Cloud CLI commands, normal revision 100%, old tag absent, named candidate omitted; closeout/private-input absence verified. The R05 candidate-0 requirement differs from the saved P07 untagged retirement check. Operation consumed; P08 and 3A remain open.

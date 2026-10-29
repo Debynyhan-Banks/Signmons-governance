@@ -1,5 +1,17 @@
 # Global Execution Pointer
 
+## October 29 — retired-traffic predicate correction verified locally
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved Alternative 1 is committed at backend `b38a082` in a fresh disabled copy; 37 corrected focused/model, 35 unchanged original and three disposable PostgreSQL cases pass. The normal100/old-tag-absent retirement predicate now permits the named candidate to be absent or explicitly 0%, while rejecting unsafe traffic. The prior Terminal diagnostic and R05 remain consumed. Evidence: `APP013_P08_TRAFFIC_RETIREMENT_PREDICATE_LOCAL_RESULT_20261029.md`.
+
+Next/implementer: prepare a fresh exact read-only P08 current-state qualification card against the corrected source; owner must separately approve any external read. No provider, runtime, authentication or payment authority follows. Accepted 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **No scope deviation beyond the approved local correction.**
+
+## October 29 — local traffic-retirement predicate correction approved
+
+R1-W01 / APP-013 / 3A / P08. Owner selected Alternative 1 in `APP013_P08_TRAFFIC_RETIREMENT_PREDICATE_CORRECTION_PROPOSAL_20261029.md` at `c62d6fa` for a fresh disabled local R05 copy and isolated tests only. The consumed Terminal diagnostic remains evidence, not qualification authority.
+
+Next/implementer: apply only the approved predicate/test correction, run local gates and record sanitized result. No new provider read, routing change, restoration or payment. Counts unchanged. **Approved local correction; no external authority.**
+
 ## October 29 — owner-Terminal traffic read completed; predicate correction proposed
 
 R1-W01 / APP-013 / 3A / P08. Approved operation `edad7640-780f-4b0d-b3b2-8cb6d1e541a7` reserved once at 3:00:31 p.m. Eastern, completed three read-only CLI commands by 3:00:33 and verified private-input retirement with no residuals. Normal traffic is 100% at the expected revision; old tag is absent; the named candidate has no traffic entry. This explains R05's false `trafficRetired` under its current candidate-0 requirement, but does not requalify R05 or P08. The saved P07 untagged retirement contract permits this shape. The attempt is consumed/no retry.

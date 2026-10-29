@@ -1,0 +1,9 @@
+# APP-013 / 3A / P08 — retired-traffic predicate local result
+
+R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 at proposal `c62d6fa`; the fresh disabled local correction is backend `b38a082`, evidence `evidence/APP-013/p08-traffic-retirement-correction-local-20261029`. The original R05 source/attempt and the completed owner-Terminal diagnostic remain immutable and consumed.
+
+The corrected `trafficRetired` reduction accepts an absent candidate or one explicit 0% candidate only when the expected normal revision is the sole positive route at 100% and the old tag is absent. It refuses extra positive traffic, candidate positive traffic, duplicate rows and malformed/unsafe shapes. The candidate source/Ready, billing, identity, secret, database, authorization and closeout facts remain independent and unchanged. The local source manifest and locked-source ownership checks pass.
+
+Verification: 37 corrected focused/model cases, 35 unchanged original focused/model cases, three disposable PostgreSQL qualification cases, backend architecture/governance baseline and whitespace, governance frozen baseline/consistency/25 safeguard tests and whitespace passed. The first PostgreSQL attempt could not initialize `initdb` inside the command sandbox and ran zero tests; a bounded host-execution rerun passed all three with fixture teardown. No UI/browser path changed. No credential, provider read, database/Firebase/Stripe live action, mutation, deployment, spending, merge or push occurred.
+
+This is **locally tested only**. It is not a new current-state P08 qualification, runtime restoration, Sandbox payment or 3A owner acceptance. Next: if the owner wants to continue, prepare a fresh exact read-only current-state qualification operation against backend `b38a082` and request separate external-action approval. Accepted milestones remain 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **No scope deviation beyond the approved local correction.**
