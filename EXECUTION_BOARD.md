@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — omitted-deleted normalization passed; R06 read-only closeout proposed
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved definition correction is complete at backend `feb7540`: 26/26 isolated cases, explicit/defaulted/invalid definition classifications, two-role read-only closeout and all repository gates pass. No credential, subprocess, provider call or mutation occurred.
+
+Next/owner: approve or defer read-only closeout `e9124155-47a9-4478-a8de-3e435d67459a` in `APP013_P08_EXACT_ROLE_READ_ONLY_CLOSEOUT_OPERATION_20261029_R06.md`: today 7:15–7:45 a.m. Eastern, start strictly before 7:30; five CLI/two HTTPS GETs; one attempt/no retry; USD 0; verify both exact retained roles and both policies unbound. No creation or mutation path. Counts unchanged. **No scope deviation.**
+
 ## October 29 — omitted false-valued deleted normalization approved locally
 
 R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 in `APP013_P08_OMITTED_FALSE_DELETED_NORMALIZATION_PROPOSAL_20261029.md` against pre-decision SHA256 `e5a3b794a175e65b0b46606843d105a0bad4fbe143046402d45291682ed69933`: locally default only an omitted read-only `deleted` role field to false when every other field is exact, retain rejection of explicit true and all other drift, and add safe fixed definition classifications.
