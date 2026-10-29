@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — qualification launch completion approved locally
+
+R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 against governance commit `aef3b62` and proposal SHA256 `1225d18577221bff810c6d5b4633df937a3fd9d6dd3ae91265ec4d9c6dbd247e`: add only the exact read-only launch binding/serialization and fake tests to the accepted qualification model.
+
+Next/implementer: complete the finite local checklist and gates, then stop before credential resolution or any external read/mutation. Counts unchanged. **No scope deviation; approved local prerequisite only.**
+
 ## October 29 — qualification launch gap disclosed; local completion proposed
 
 R1-W01 / APP-013 / 3A / P08. Post-result source review confirms backend `3eac627` is injected-only and cannot launch an attended read. The previous next-step wording jumped directly to an operation; no command was issued and no external action occurred.
