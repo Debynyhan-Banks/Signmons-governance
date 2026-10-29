@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — Cloud false-fact observability approved locally
+
+R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 against proposal commit `2a77601`: locally retain only sorted false names drawn from the existing thirteen Cloud predicates plus true/false counts, with no raw values or identifiers.
+
+Next/implementer: complete the finite local correction and all gates, then stop before any fresh external operation. Counts unchanged. **Approved correction only; no external authority.**
+
 ## October 29 — R04 contained Cloud drift; exact false fact unknown
 
 R1-W01 / APP-013 / 3A / P08. Exact operation `63964638-5f31-4e5c-ad03-7f1226b1f80b` ran once at 9:46:44 a.m. and stopped `CLOUD_DRIFT`: Cloud completed after 26 CLI reads, zero HTTPS, zero qualification SQL, one qualified closeout SQL, residuals empty and private inputs absent. Current journal did not retain allowlisted false-fact names. Attempt consumed/no retry.

@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — Cloud false-fact observability approved locally
+
+R1-W01 / APP-013 / 3A / P08. Alternative 1 in `APP013_P08_CLOUD_FALSE_FACT_OBSERVABILITY_PROPOSAL_20261029.md` is approved for local coordinator/tests only.
+
+Next/implementer: persist allowlisted false predicate names/counts only, prove privacy and unchanged closeout, run the finite matrix and stop before external action. Counts unchanged. **Approved local correction only.**
+
 ## October 29 — R04 contained Cloud drift; exact false fact unknown
 
 R1-W01 / APP-013 / 3A / P08. R04 consumed its one attempt and stopped after the Cloud domain returned aggregate `DRIFT`; closeout qualified, residuals are empty and private inputs are absent. The current journal cannot name the false allowlisted predicate.

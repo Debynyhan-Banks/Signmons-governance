@@ -1,6 +1,6 @@
 # APP-013 / 3A / P08 — Cloud false-fact observability proposal
 
-Status: **owner decision required before implementation**. R1-W01 / APP-013 / 3A / P08 remains active.
+Status: **Alternative 1 approved for local correction and testing only**. Debynyhan Banks replied “i approve” after review of this proposal at governance commit `2a77601`. R1-W01 / APP-013 / 3A / P08 remains active.
 
 ## Demonstrated gap
 
@@ -25,4 +25,4 @@ The Cloud classifier reduced thirteen allowlisted booleans to `DRIFT`, but the j
 - Rollback/disabled state: revert only the local evidence-source commit; native execution remains impossible without a new exact plan and separate approval.
 - Observable finish: safe false-fact evidence tests and all gates pass. This does not resolve the Cloud drift, complete P08 or accept 3A.
 
-Owner decision: approve Alternative 1 for local correction and testing only, select Alternative 2, or defer. Accepted milestones remain 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **Demonstrated observability gap disclosed; no scope deviation implemented.**
+Owner decision: Alternative 1 is approved for local correction and testing only. This decision does not authorize another external operation. Accepted milestones remain 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **Demonstrated observability gap disclosed; approved local correction only.**

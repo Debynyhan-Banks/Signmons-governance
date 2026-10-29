@@ -1,5 +1,9 @@
 # Session Handoff
 
+## October 29 — Cloud false-fact observability approved locally
+
+Section: R1-W01 / APP-013 / 3A / P08. Completed: R04 safe stop/closeout and owner approval for Alternative 1. Remaining: exact local observability/tests/result, then a fresh separately approved operation; authentication/runtime/payment remain unauthorized. Blocker/role: implementer completes only the approved local card. Next observable result: safe false-predicate journal proof with all gates. Evidence: proposal/decision `2a77601`; backend stop `03ff031`. Accepted milestones 4/8; counts unchanged. **Approved local correction only; no external authority.**
+
 ## October 29 — R04 contained Cloud drift; exact false fact unknown
 
 Section: R1-W01 / APP-013 / 3A / P08. Completed: one approved R04 attempt, qualified closeout and private-input retirement. Remaining: owner decision on safe false-fact observability, local implementation/tests if approved, then a fresh separately approved operation; authentication/runtime/payment remain unauthorized. Blocker/owner: Debynyhan Banks decides `APP013_P08_CLOUD_FALSE_FACT_OBSERVABILITY_PROPOSAL_20261029.md`. Next observable result: allowlisted false-fact local proof or defer. Evidence: backend `evidence/APP-013/p08-composed-qualification-r04-stop-20261029`; operation `63964638-5f31-4e5c-ad03-7f1226b1f80b`. Accepted milestones 4/8; counts unchanged. **Demonstrated observability gap disclosed; no correction implemented.**
