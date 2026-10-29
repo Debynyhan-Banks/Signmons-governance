@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — composed current-state qualification preparation proposed
+
+R1-W01 / APP-013 / 3A / P08. Reuse inspection found existing exact role, restoration, operator/database, Firebase and access-read seams, but they are separately pinned to consumed operations and cannot emit one current qualification for the composed parent. The old operator helper also includes unnecessary Stripe/historical selection behavior. No implementation or external action occurred.
+
+Next/owner: approve or defer Alternative 1 in `APP013_P08_COMPOSED_QUALIFICATION_PREPARATION_PROPOSAL_20261029.md`: one disabled evidence-only coordinator that reuses locked readers, composes exact Cloud/service/permission/runtime/role/database/job/disabled-account/Firebase facts, excludes Stripe and proves closeout with fakes. No credential resolution, external read, mutation, spending or window is included. Counts unchanged. **Explicit prerequisite change proposed before implementation; no scope deviation implemented.**
+
 ## October 29 — composed P08 authentication preparation passed locally
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved local composition is complete at backend `514bc8c`: 17 new composed, 31 unchanged restoration, 40 unchanged access-resolution and 60 unchanged authentication cases pass. Exact parent-to-child authority, both verified roles, canonical provider key resource, acknowledged ownership before deletion, ordered authentication and reverse cleanup are proved with injected transports. Native remains `P08_COMPOSED_AUTH_REFUSED_UNBOUND`; zero external actions.
