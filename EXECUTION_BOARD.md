@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — root-null normalization passed; R05 proposed
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved root-null correction is complete at backend `c165a92`: 25/25 isolated cases, all six safe policy-shape classifications, exact five-CLI/nine-HTTPS serialization and all repository gates pass. No credential, subprocess, provider call or mutation occurred.
+
+Next/owner: approve or defer operation `bdbbbe2c-3142-4b3f-8acf-98414f3e35a9` in `APP013_P08_EXACT_ROLE_CREATION_OPERATION_20261029_R05.md`: today 7:00–7:30 a.m. Eastern, start strictly before 7:15; one attempt/no retry; USD 0; same two fixed roles retained unbound after same-attempt qualification. Counts unchanged. **No scope deviation.**
+
 ## October 29 — root-null projected-policy normalization approved locally
 
 R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 in `APP013_P08_ROOT_NULL_POLICY_NORMALIZATION_PROPOSAL_20261028.md` against pre-decision SHA256 `0760aae7a89d1b66694ad922647c594b595bd9ca0b92ea0e5253cd445c5364b3`: locally classify and normalize only a root JSON null as an empty projection, while retaining rejection of all other malformed roots and exact target-role bindings.
