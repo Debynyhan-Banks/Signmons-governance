@@ -1,10 +1,16 @@
 # Global Execution Pointer
 
+## October 29 — qualification launch gap disclosed; local completion proposed
+
+R1-W01 / APP-013 / 3A / P08. Post-result source review confirms backend `3eac627` is injected-only and cannot launch an attended read. The previous next-step wording jumped directly to an operation; no command was issued and no external action occurred.
+
+Next/owner: approve or defer Alternative 1 in `APP013_P08_QUALIFICATION_LAUNCH_COMPLETION_PROPOSAL_20261029.md`: locally add only exact 26-CLI/10-HTTPS/two-SQL read serialization, native binding/closeout and fake tests to the accepted qualification model. No credential resolution, external read/mutation, spending or window is included. Counts unchanged. **Demonstrated launch gap disclosed before implementation; no scope deviation implemented.**
+
 ## October 29 — composed current-state qualification passed locally
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved local qualification composition is complete at backend `3eac627`: 15 new qualification, 26 role, 31 restoration, 40 access, 14 timeless operator-read and 60 authentication cases pass. Five strict read domains, fixed verdicts, zero-mutation/zero-Stripe inventory, source/ownership gates and mandatory closeout are proved. Native remains `P08_COMPOSED_QUALIFICATION_REFUSED_UNBOUND`; zero external actions.
 
-Next/implementer: prepare one exact attended <=60-minute read-only operation with finite CLI/HTTPS/SQL ceilings, owner OAuth, hidden current CHILD database password, USD0, one attempt/no retry and mandatory closeout/purge. No API enablement or mutation. P08/3A remain open; counts unchanged. **No scope deviation.**
+Next/owner: complete the separately proposed local launch binding before any attended operation. P08/3A remain open; counts unchanged. **Demonstrated launch gap disclosed before implementation.**
 
 ## October 29 — composed current-state qualification preparation approved locally
 
