@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 28 — empty-policy normalization passed; R04 proposed
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved local correction is complete at backend `334a7a3`: 25/25 isolated cases, all five safe policy-shape classifications, exact five-CLI/nine-HTTPS serialization and all repository gates pass. No credential, subprocess, provider call or mutation occurred.
+
+Next/owner: approve or defer operation `743447a5-f14f-4a48-8dd0-f674d024a94c` in `APP013_P08_EXACT_ROLE_CREATION_OPERATION_20261028_R04.md`: tonight 9:00–9:30 p.m. Eastern, start strictly before 9:15; one attempt/no retry; USD 0; same two fixed roles retained unbound after same-attempt qualification. Counts unchanged. **No scope deviation.**
+
 ## October 28 — empty projected-policy normalization approved locally
 
 R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 in `APP013_P08_EMPTY_POLICY_NORMALIZATION_PROPOSAL_20261028.md` against pre-decision SHA256 `8213221e444df5c87feabbbc376561a3532bb50918d660720bc59f9b1591c9d1`: locally normalize only absent/null/empty projected bindings, retain rejection of all other drift, and add fixed safe shape classifications with isolated tests.
