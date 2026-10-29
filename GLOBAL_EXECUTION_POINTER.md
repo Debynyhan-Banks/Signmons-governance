@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## October 29 — P08 R10 consumed; exact access facts identified
+
+R1-W01 / APP-013 / 3A / P08. R10 ran once under the separately approved narrower 6:22 p.m. read deadline. Cloud 13/13 qualified; access `UNKNOWN` stopped on disabled API Keys service, denied prospective-key absence read and nonmatching exact roles. Read-only closeout qualified; residuals empty; private inputs deleted/read back absent. R10 consumed/no retry. Next/implementer: prepare a finite access-resolution proposal; no API enablement, IAM/role change, authentication/runtime/Stripe/payment action is approved. Evidence `APP013_P08_R10_ACCESS_FACT_STOP_RESULT_20261029.md`. Counts unchanged. **Unintended deadline mismatch and access-unknown stop disclosed; no scope deviation implemented.**
+
 ## October 29 — P08 R10 exact read-only operation approved
 
 R1-W01 / APP-013 / 3A / P08. Owner approved operation `ecaba65e-4e57-4579-a1ca-7e3be86f43e1` against immutable card `eccbb00` / SHA256 `93788816b2e3d534f444d97de6f3905268a4de28a1518661ed22c68cae2aa788`. Window 6:13–6:30 p.m. Eastern, strict 6:20 start cutoff, 26 CLI/ten HTTPS/two read-only SQL ceilings, USD0/no retry and mandatory closeout/purge. Next/implementer: bind backend `3c3c7d0`, pass final gates and release one Terminal command before cutoff. Counts unchanged. **No scope deviation.**

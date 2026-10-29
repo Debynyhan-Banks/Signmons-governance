@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — P08 R10 consumed; access resolution next
+
+R1-W01 / APP-013 / 3A / P08. One R10 read-only attempt: Cloud 13/13 qualified, access `UNKNOWN` with disabled API Keys service, denied key-absence read and role-definition mismatch; database/Firebase not reached. Closeout qualified, no residuals, private inputs purged. R10 consumed/no retry. Next/implementer: finite access-resolution proposal for owner review, no provider change under this approval. Evidence `APP013_P08_R10_ACCESS_FACT_STOP_RESULT_20261029.md`; accepted 4/8, R1 0/27, legacy 6/60, intelligence 0/13. **Unintended deadline mismatch and access-unknown stop disclosed; no scope deviation implemented.**
+
 ## October 29 — P08 R10 read-only operation approved
 
 R1-W01 / APP-013 / 3A / P08. Exact R10 `ecaba65e-4e57-4579-a1ca-7e3be86f43e1` approved for 6:13–6:30 p.m. Eastern, strict 6:20 cutoff, USD0/no retry/mandatory closeout. Next/implementer: bind and release one Terminal command after final gates. Counts unchanged. **No scope deviation.**
