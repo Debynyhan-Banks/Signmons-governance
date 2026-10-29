@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 28 — normalized stable unbound role operation R04 approved
+
+R1-W01 / APP-013 / 3A / P08. Owner approved operation `743447a5-f14f-4a48-8dd0-f674d024a94c` against pre-decision SHA256 `cb543f36e4448f2909ef02977a6cde6e196fcb0d4cd00a59907e1d545419d119`: tonight 9:00–9:30 p.m. Eastern, start strictly before 9:15; one attempt/no retry; USD 0; exact five-CLI/nine-HTTPS gates; create only the two fixed roles retained unbound. Contingent read-only closeout is included.
+
+Next/implementer: after governance checks, bind backend `334a7a3`, execute once at or after 9:00 and before 9:15, save only sanitized result/containment, purge private inputs and never retry. Counts unchanged. **No scope deviation.**
+
 ## October 28 — empty-policy normalization passed; R04 proposed
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved local correction is complete at backend `334a7a3`: 25/25 isolated cases, all five safe policy-shape classifications, exact five-CLI/nine-HTTPS serialization and all repository gates pass. No credential, subprocess, provider call or mutation occurred.

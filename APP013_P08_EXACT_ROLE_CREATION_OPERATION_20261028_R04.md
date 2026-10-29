@@ -1,6 +1,8 @@
 # APP-013 / 3A / P08 — normalized stable unbound role-creation operation R04
 
-Status: OWNER DECISION REQUIRED FOR THIS EXACT EXTERNAL OPERATION. R1-W01 / APP-013 / 3A remains unchanged.
+Status: OWNER APPROVED FOR THIS EXACT EXTERNAL OPERATION. R1-W01 / APP-013 / 3A remains unchanged.
+
+Owner decision: On October 28, 2026, the owner approved operation `743447a5-f14f-4a48-8dd0-f674d024a94c` against this document's pre-decision SHA256 `cb543f36e4448f2909ef02977a6cde6e196fcb0d4cd00a59907e1d545419d119`. Authority is limited to the exact resources, calls, window, cutoff, no-retry rule and contingent read-only closeout below.
 
 ## Exact operation
 
@@ -23,4 +25,4 @@ There is no update, undelete, delete, IAM binding, account/database/Firebase-use
 
 ## Decision requested
 
-Approve or defer this exact normalized operation. Approval would authorize only the exact resources, calls, window, cutoff, no-retry rule and contingent read-only closeout above. It would not authorize later role bindings or Stage B authentication/runtime/payment work. Accepted counts remain unchanged. **No scope deviation.**
+Owner approved this exact normalized operation. It does not authorize later role bindings or Stage B authentication/runtime/payment work. Accepted counts remain unchanged. **No scope deviation; execute once only within the bound window.**
