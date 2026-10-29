@@ -1,6 +1,8 @@
 # APP-013 / 3A / P08 — exact role read-only closeout operation R06
 
-Status: OWNER DECISION REQUIRED FOR THIS EXACT READ-ONLY EXTERNAL OPERATION. R1-W01 / APP-013 / 3A remains unchanged.
+Status: OWNER APPROVED FOR THIS EXACT READ-ONLY EXTERNAL OPERATION. R1-W01 / APP-013 / 3A remains unchanged.
+
+Owner decision: On October 29, 2026, the owner approved operation `e9124155-47a9-4478-a8de-3e435d67459a` against this document's pre-decision SHA256 `9ab9bf50aafea9db5b97da53888da73eb73b015eed0b35486f399616d7ea57dd`. Authority is limited to the exact reads, window, cutoff and no-retry rule below.
 
 ## Exact operation
 
@@ -18,4 +20,4 @@ This operation has no role create/update/delete/undelete path and no IAM binding
 
 ## Decision requested
 
-Approve or defer this exact read-only closeout. Approval would authorize only the exact reads, window, cutoff and no-retry rule above. It would not authorize creation, role binding, Stage B authentication/runtime/payment work or milestone acceptance. Counts remain unchanged. **No scope deviation.**
+Owner approved this exact read-only closeout. It does not authorize creation, role binding, Stage B authentication/runtime/payment work or milestone acceptance. Counts remain unchanged. **No scope deviation; execute once only within the bound window.**

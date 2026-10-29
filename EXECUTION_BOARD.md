@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — exact role read-only closeout R06 approved
+
+R1-W01 / APP-013 / 3A / P08. Owner approved read-only closeout `e9124155-47a9-4478-a8de-3e435d67459a` against pre-decision SHA256 `9ab9bf50aafea9db5b97da53888da73eb73b015eed0b35486f399616d7ea57dd`: today 7:15–7:45 a.m. Eastern, start strictly before 7:30; five CLI reads and at most two HTTPS GETs; one attempt/no retry; USD 0; verify both exact retained roles and both policies unbound. No creation or mutation path.
+
+Next/implementer: after governance checks, bind backend `feb7540`, execute once at or after 7:15 and before 7:30, save only sanitized result/containment, purge private inputs and never retry. Counts unchanged. **No scope deviation.**
+
 ## October 29 — omitted-deleted normalization passed; R06 read-only closeout proposed
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved definition correction is complete at backend `feb7540`: 26/26 isolated cases, explicit/defaulted/invalid definition classifications, two-role read-only closeout and all repository gates pass. No credential, subprocess, provider call or mutation occurred.
