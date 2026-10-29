@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 28 — service-state HTTPS correction passed; R03 proposed
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved local correction complete at backend `a64e933`: 23/23 fake subprocess/HTTP tests, exact five-CLI/nine-HTTPS path, project-number privacy, six-permission probe and all repository gates pass. No credential, subprocess, provider call or mutation occurred.
+
+Next/owner: approve or defer operation `d45f0618-c8a9-4c85-910a-c60c9352e9cc` in `APP013_P08_EXACT_ROLE_CREATION_OPERATION_20261028_R03.md`: tonight 8:40–9:10 p.m. Eastern, start strictly before 8:55; one attempt/no retry; USD 0; same two fixed roles retained unbound after same-attempt qualification. Counts unchanged. **No scope deviation.**
+
 ## October 28 — service-state HTTPS correction approved locally
 
 R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 in `APP013_P08_SERVICE_STATE_HTTPS_CORRECTION_PROPOSAL_20261028.md` against pre-decision SHA256 `d03112fea6f1d0bb91931a967c01b26a60e820ad21e5814bb5001a13a01c7827`: locally replace the failing gcloud service-state read with exact Resource Manager and Service Usage HTTPS reads, bind five CLI/nine HTTPS, expand the permission probe and add safe HTTPS evidence using fake adapters only.
