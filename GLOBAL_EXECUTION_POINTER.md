@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## October 29 — corrected P08 R07 read-only operation approved
+
+R1-W01 / APP-013 / 3A / P08. Owner approved exact operation `d685d715-c232-4ed5-86ac-1b7ed3e04e3d` against immutable card `bbf1bdc` / SHA256 `41c035100e637ccebc47c3d1e82d6f52ff844a6864680253cb739590412ce3c9`. Window 5:15–6:00 p.m. Eastern, strict 5:30 start cutoff, 26 CLI/ten HTTPS/two read-only SQL ceilings, USD0/no retry and mandatory closeout/purge. Next/implementer: bind backend `9888e7c`, pass final gates and release one Terminal command at/after 5:15. Counts unchanged. **No scope deviation.**
+
 ## October 29 — corrected P08 R07 read-only qualification proposed
 
 R1-W01 / APP-013 / 3A / P08. `APP013_P08_CORRECTED_CURRENT_STATE_QUALIFICATION_OPERATION_20261029_R07.md` proposes one fresh 5:15–6:00 p.m. Eastern read-only attempt against backend `9888e7c`, strict 5:30 start cutoff, 26 CLI/ten HTTPS/two read-only SQL ceilings, USD0, no retry and mandatory closeout/purge. R06 is consumed; its generic HTTPS failure remains unknown. Next/owner: separately approve or refuse exact R07. No provider access under the local correction approval. Counts unchanged. **No scope deviation.**

@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — P08 R07 read-only operation approved
+
+R1-W01 / APP-013 / 3A / P08. Exact R07 `d685d715-c232-4ed5-86ac-1b7ed3e04e3d` approved for 5:15–6:00 p.m. Eastern, strict 5:30 cutoff, USD0/no retry/mandatory closeout. Next/implementer: bind and release one Terminal command after final gates. Counts unchanged. **No scope deviation.**
+
 ## October 29 — P08 R07 read-only qualification proposed
 
 R1-W01 / APP-013 / 3A / P08. New exact 5:15–6:00 p.m. Eastern R07 card uses locally tested fixed HTTPS output ID, strict 5:30 cutoff, USD0/no retry and mandatory closeout. Next/owner: decide the separate external read. Counts unchanged. **No scope deviation.**
