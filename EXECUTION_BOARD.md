@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — P08 R07 read-only qualification proposed
+
+R1-W01 / APP-013 / 3A / P08. New exact 5:15–6:00 p.m. Eastern R07 card uses locally tested fixed HTTPS output ID, strict 5:30 cutoff, USD0/no retry and mandatory closeout. Next/owner: decide the separate external read. Counts unchanged. **No scope deviation.**
+
 ## October 29 — HTTPS output fixed-ID local correction verified
 
 R1-W01 / APP-013 / 3A / P08. Backend `9888e7c` passes local safe request-ID observation tests and unchanged regression gates; R06 consumed. Next/implementer: fresh exact read-only card and separate external approval. P08/3A open; counts unchanged. **No scope deviation.**

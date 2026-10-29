@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## October 29 — corrected P08 R07 read-only qualification proposed
+
+R1-W01 / APP-013 / 3A / P08. `APP013_P08_CORRECTED_CURRENT_STATE_QUALIFICATION_OPERATION_20261029_R07.md` proposes one fresh 5:15–6:00 p.m. Eastern read-only attempt against backend `9888e7c`, strict 5:30 start cutoff, 26 CLI/ten HTTPS/two read-only SQL ceilings, USD0, no retry and mandatory closeout/purge. R06 is consumed; its generic HTTPS failure remains unknown. Next/owner: separately approve or refuse exact R07. No provider access under the local correction approval. Counts unchanged. **No scope deviation.**
+
 ## October 29 — local fixed HTTPS descriptor observation verified
 
 R1-W01 / APP-013 / 3A / P08. Backend `9888e7c` holds owner-approved disabled safe `HTTPS_OUTPUT:<fixed-id>` observation; 39 corrected focused/model, 37 unchanged and three disposable PostgreSQL cases pass. R06 is consumed, its failed request UNKNOWN. Evidence: `APP013_P08_HTTPS_OUTPUT_OBSERVABILITY_LOCAL_RESULT_20261029.md`.
