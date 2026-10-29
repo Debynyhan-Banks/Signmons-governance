@@ -1,5 +1,9 @@
 # Session Handoff
 
+## October 29 — corrected current-state qualification R04 proposed
+
+Section: R1-W01 / APP-013 / 3A / P08. Completed: fresh immutable 9:45–10:45 proposal against corrected launcher `7fe401d` / backend `2aad519`. Remaining: separate owner execution approval, private binding/final gates, one current read-only attempt and owner review; authentication/runtime/payment remain unauthorized. Blocker/owner: Debynyhan Banks decides exact operation `63964638-5f31-4e5c-ad03-7f1226b1f80b` before the 9:55 cutoff. Next observable result: newly bound five-domain qualification or fixed safe stop. Evidence: `APP013_P08_CORRECTED_CURRENT_STATE_QUALIFICATION_OPERATION_20261029_R04.md`. Accepted milestones 4/8; counts unchanged. **No scope deviation.**
+
 ## October 29 — R03 expired unstarted and private inputs retired
 
 Section: R1-W01 / APP-013 / 3A / P08. Completed: exact post-cutoff reconciliation and private-input retirement. Remaining: fresh 60-minute window, new operation/approval and one current read-only attempt; authentication/runtime/payment remain unauthorized. Blocker/owner: Debynyhan Banks supplies the next window. Next observable result: newly bound five-domain qualification or fixed safe stop. Evidence: backend `evidence/APP-013/p08-composed-qualification-r03-expired-unstarted-20261029`; operation `43ab2bc3-7511-42e3-9a2e-81961bb1c46b`. Accepted milestones 4/8; counts unchanged. **No scope deviation.**

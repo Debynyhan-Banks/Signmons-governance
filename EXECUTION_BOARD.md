@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — corrected current-state qualification R04 proposed for 9:45–10:45
+
+R1-W01 / APP-013 / 3A / P08. Fresh read-only operation `63964638-5f31-4e5c-ad03-7f1226b1f80b` is prepared against corrected launcher `7fe401d`, with strict config-shape and Firebase REST corrections.
+
+Next/owner: approve or refuse the exact 9:45–10:45 operation; strict 9:55 cutoff, one attempt/no retry, USD0. Counts unchanged. **No scope deviation.**
+
 ## October 29 — R03 expired unstarted and private inputs retired
 
 R1-W01 / APP-013 / 3A / P08. R03 had no attempt before its 9:25 cutoff. Private plan/binding are absent with readback; zero external actions. Old authority is nonreusable.
