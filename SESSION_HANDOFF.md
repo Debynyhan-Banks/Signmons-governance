@@ -1,5 +1,11 @@
 # Session Handoff
 
+## October 29 — R06 verified both exact stable roles retained unbound
+
+R1-W01 / APP-013 / 3A / P08. Read-only closeout `e9124155-47a9-4478-a8de-3e435d67459a` ran once at 7:15 a.m. and returned `P08_EXACT_ROLE_CLOSEOUT_VERIFIED`: five CLI reads/two HTTPS GETs, both exact roles `EXACT_ACTIVE_DEFAULTED`, reconciled2/absent0/residual0, both policies unbound. Private inputs/processes absent; no mutation. Backend evidence `p08-exact-role-closeout-r06-result-20261029`.
+
+Next/implementer: reconcile these verified role IDs with the existing tested conditional restoration/authentication source and the independent compatible temporary-key blocker; present the smallest finite next card before any IAM binding, account/token, runtime or payment action. Stable-role prerequisite complete; 3A remains open. Counts unchanged. **No scope deviation.**
+
 ## October 29 — exact role read-only closeout R06 approved
 
 R1-W01 / APP-013 / 3A / P08. Owner approved read-only closeout `e9124155-47a9-4478-a8de-3e435d67459a` against pre-decision SHA256 `9ab9bf50aafea9db5b97da53888da73eb73b015eed0b35486f399616d7ea57dd`: today 7:15–7:45 a.m. Eastern, start strictly before 7:30; five CLI reads and at most two HTTPS GETs; one attempt/no retry; USD 0; verify both exact retained roles and both policies unbound. No creation or mutation path.

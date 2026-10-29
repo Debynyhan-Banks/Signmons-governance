@@ -1,6 +1,8 @@
 # APP-013 / 3A / P08 — exact role read-only closeout operation R06
 
-Status: OWNER APPROVED FOR THIS EXACT READ-ONLY EXTERNAL OPERATION. R1-W01 / APP-013 / 3A remains unchanged.
+Status: VERIFIED, CONTAINED, CONSUMED. R1-W01 / APP-013 / 3A remains open.
+
+Result: R06 completed at 7:15 a.m. Eastern with `P08_EXACT_ROLE_CLOSEOUT_VERIFIED`: five CLI reads, two HTTPS GETs, both exact roles reconciled, both policies unbound, reconciled2/absent0/residual0, private inputs/processes absent. See `APP013_P08_R06_EXACT_ROLE_CLOSEOUT_RESULT_20261029.md`.
 
 Owner decision: On October 29, 2026, the owner approved operation `e9124155-47a9-4478-a8de-3e435d67459a` against this document's pre-decision SHA256 `9ab9bf50aafea9db5b97da53888da73eb73b015eed0b35486f399616d7ea57dd`. Authority is limited to the exact reads, window, cutoff and no-retry rule below.
 
