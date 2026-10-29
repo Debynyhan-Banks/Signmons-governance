@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — local HTTPS output observation approved
+
+R1-W01 / APP-013 / 3A / P08. Owner approved fixed-ID `HTTPS_OUTPUT` observability in a disabled local copy only. R06 consumed. Next/implementer: test local source, privacy and closeout guards; no external read. Counts unchanged. **No scope deviation.**
+
 ## October 29 — R06 safe HTTPS output stop
 
 R1-W01 / APP-013 / 3A / P08. R06 Cloud 13/13 qualified, then access phase stopped `HTTPS_OUTPUT` with request ID unknown. Read-only closeout qualified and private inputs absent; attempt consumed. Next/owner: decide bounded local observability proposal before any fresh read. P08/3A open; counts unchanged. **Unintended stop disclosed; no scope deviation implemented.**

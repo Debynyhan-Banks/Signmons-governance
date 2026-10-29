@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## October 29 — local HTTPS output descriptor observation approved
+
+R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 in `APP013_P08_HTTPS_OUTPUT_OBSERVABILITY_PROPOSAL_20261029.md` at `d28f110` for a fresh disabled local source/test correction only. R06 remains consumed, its failed request UNKNOWN. Next/implementer: implement and verify safe fixed descriptor observation; no provider read under this approval. Counts unchanged. **No scope deviation.**
+
 ## October 29 — R06 stopped safely on HTTPS output after Cloud qualification
 
 R1-W01 / APP-013 / 3A / P08. One approved R06 attempt started 5:02:20 p.m. Eastern and stopped `HTTPS_OUTPUT` after all thirteen Cloud facts qualified. The specific access request/cause is UNKNOWN. Mandatory read-only session closeout qualified, residuals empty and private inputs absent by 5:02:36. R06 is consumed/no retry. Evidence: `APP013_P08_R06_HTTPS_OUTPUT_STOP_RESULT_20261029.md`.
