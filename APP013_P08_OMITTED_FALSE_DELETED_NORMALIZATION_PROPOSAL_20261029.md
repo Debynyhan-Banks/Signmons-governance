@@ -1,6 +1,8 @@
 # APP-013 / 3A / P08 — omitted false-valued role-deletion normalization proposal
 
-Status: OWNER DECISION REQUIRED BEFORE IMPLEMENTATION. R1-W01 / APP-013 / 3A remains unchanged.
+Status: OWNER APPROVED ALTERNATIVE 1 FOR LOCAL CORRECTION AND ISOLATED TESTS ONLY. R1-W01 / APP-013 / 3A remains unchanged.
+
+Owner decision: On October 29, 2026, the owner approved Alternative 1 against this document's pre-decision SHA256 `e5a3b794a175e65b0b46606843d105a0bad4fbe143046402d45291682ed69933`. Authority is limited to the local omitted-false normalization, safe definition classifications and isolated checks below. It does not authorize any provider read, role creation retry or mutation.
 
 ## Demonstrated gap and workflow connection
 
@@ -32,4 +34,4 @@ Alternative 1 matches the documented boolean contract while preserving exact ver
 
 ## Decision requested
 
-Approve or defer Alternative 1 for bounded local correction and isolated tests only. Approval would not authorize a provider read, role creation retry or mutation. **Demonstrated verification prerequisite proposed before implementation; no scope deviation implemented.**
+Owner approved Alternative 1 for bounded local correction and isolated tests only. Approval does not authorize a provider read, role creation retry or mutation. **Demonstrated verification prerequisite approved before implementation; no scope deviation.**

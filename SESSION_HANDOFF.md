@@ -1,5 +1,11 @@
 # Session Handoff
 
+## October 29 — omitted false-valued deleted normalization approved locally
+
+R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 in `APP013_P08_OMITTED_FALSE_DELETED_NORMALIZATION_PROPOSAL_20261029.md` against pre-decision SHA256 `e5a3b794a175e65b0b46606843d105a0bad4fbe143046402d45291682ed69933`: locally default only an omitted read-only `deleted` role field to false when every other field is exact, retain rejection of explicit true and all other drift, and add safe fixed definition classifications.
+
+Next/implementer: change only the evidence-contained helper/tests/manifest/result, preserve creation no-retry and read-only closeout serialization, then present any external closeout separately. No provider read/retry/action is authorized. Counts unchanged. **No scope deviation; approved local correction only.**
+
 ## October 29 — R05 created both unbound roles; exact definitions unconfirmed
 
 R1-W01 / APP-013 / 3A / P08. R05 created both exact roles, created2/unknown0, then stopped on the first HTTP-200 role definition with `ROLE_DRIFT`/`HTTP_SHAPE`. Included read-only closeout passed both target-role policies as unbound but stopped on the same definition validation; reconciled0/absent0/residual1. All private inputs/processes absent. Creation and closeout consumed; no retry. Backend evidence `p08-exact-role-creation-r05-stop-20261029`.
