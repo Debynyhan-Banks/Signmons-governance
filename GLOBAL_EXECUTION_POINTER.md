@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — R06 stopped safely on HTTPS output after Cloud qualification
+
+R1-W01 / APP-013 / 3A / P08. One approved R06 attempt started 5:02:20 p.m. Eastern and stopped `HTTPS_OUTPUT` after all thirteen Cloud facts qualified. The specific access request/cause is UNKNOWN. Mandatory read-only session closeout qualified, residuals empty and private inputs absent by 5:02:36. R06 is consumed/no retry. Evidence: `APP013_P08_R06_HTTPS_OUTPUT_STOP_RESULT_20261029.md`.
+
+Next/owner: decide Alternative 1 local-only safe descriptor observability in `APP013_P08_HTTPS_OUTPUT_OBSERVABILITY_PROPOSAL_20261029.md`; no new external read or parser weakening. Counts unchanged. **Unintended output stop disclosed; no scope deviation implemented.**
+
 ## October 29 — R06 prestart binding corrected; owner directed continuation
 
 R1-W01 / APP-013 / 3A / P08. An unreleased private R06 binding initially inherited synthetic test image/environment values. It was replaced with retained verified source/digest before any command, attempt or provider read. The exact operation scope/window/limits did not change. Owner explicitly directed continuation of the same approved R06 after disclosure. See `APP013_P08_R06_PRESTART_BINDING_CORRECTION_20261029.md`.

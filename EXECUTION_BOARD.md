@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — R06 safe HTTPS output stop
+
+R1-W01 / APP-013 / 3A / P08. R06 Cloud 13/13 qualified, then access phase stopped `HTTPS_OUTPUT` with request ID unknown. Read-only closeout qualified and private inputs absent; attempt consumed. Next/owner: decide bounded local observability proposal before any fresh read. P08/3A open; counts unchanged. **Unintended stop disclosed; no scope deviation implemented.**
+
 ## October 29 — R06 prestart binding correction and direction
 
 R1-W01 / APP-013 / 3A / P08. Synthetic test values in unreleased private inputs were replaced with retained verified source/digest before any attempt/provider read; owner directed continuation under unchanged exact R06 limits. Next/implementer: final gates, one Terminal release at/after 5:00 and before 5:15. Counts unchanged. **Preparation drift disclosed and corrected.**
