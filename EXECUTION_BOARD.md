@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — Cloud false-fact observability passed locally
+
+R1-W01 / APP-013 / 3A / P08. Backend `a4c5f49` completes bounded allowlisted false-predicate observability with 35 focused/model, three qualification PostgreSQL and all locked regression suites green; zero external actions.
+
+Next/owner: choose a fresh attended 60-minute block; new operation IDs and separate approval are required. Counts unchanged. **No scope deviation.**
+
 ## October 29 — Cloud false-fact observability approved locally
 
 R1-W01 / APP-013 / 3A / P08. Alternative 1 in `APP013_P08_CLOUD_FALSE_FACT_OBSERVABILITY_PROPOSAL_20261029.md` is approved for local coordinator/tests only.

@@ -1,5 +1,9 @@
 # Session Handoff
 
+## October 29 — Cloud false-fact observability passed locally
+
+Section: R1-W01 / APP-013 / 3A / P08. Completed: safe allowlisted Cloud false-predicate names/counts, privacy/refusal tests, PostgreSQL and locked regressions, sanitized result. Remaining: fresh attended operation proposal/approval and one current read-only attempt; authentication/runtime/payment remain unauthorized. Blocker/owner: Debynyhan Banks supplies a new window. Next observable result: exact drifted Cloud predicate or further qualified domains/fixed safe stop. Evidence: backend `a4c5f49`; `APP013_P08_CLOUD_FALSE_FACT_OBSERVABILITY_LOCAL_RESULT_20261029.md`. Accepted milestones 4/8; counts unchanged. **No scope deviation.**
+
 ## October 29 — Cloud false-fact observability approved locally
 
 Section: R1-W01 / APP-013 / 3A / P08. Completed: R04 safe stop/closeout and owner approval for Alternative 1. Remaining: exact local observability/tests/result, then a fresh separately approved operation; authentication/runtime/payment remain unauthorized. Blocker/role: implementer completes only the approved local card. Next observable result: safe false-predicate journal proof with all gates. Evidence: proposal/decision `2a77601`; backend stop `03ff031`. Accepted milestones 4/8; counts unchanged. **Approved local correction only; no external authority.**

@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — Cloud false-fact observability passed locally
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved correction is committed at backend `a4c5f49`; result `APP013_P08_CLOUD_FALSE_FACT_OBSERVABILITY_LOCAL_RESULT_20261029.md`. Only sorted false names from the fixed thirteen-predicate Cloud allowlist plus counts can persist; malformed shapes and raw values refuse. All focused/locked gates pass. Zero external actions.
+
+Next/owner: supply a fresh attended 60-minute window for a new immutable operation/approval. R04 is consumed and not reusable. Counts unchanged. **No scope deviation.**
+
 ## October 29 — Cloud false-fact observability approved locally
 
 R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 against proposal commit `2a77601`: locally retain only sorted false names drawn from the existing thirteen Cloud predicates plus true/false counts, with no raw values or identifiers.
