@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — R04 contained Cloud drift; exact false fact unknown
+
+R1-W01 / APP-013 / 3A / P08. R04 consumed its one attempt and stopped after the Cloud domain returned aggregate `DRIFT`; closeout qualified, residuals are empty and private inputs are absent. The current journal cannot name the false allowlisted predicate.
+
+Next/owner: approve or defer the narrow local observability correction in `APP013_P08_CLOUD_FALSE_FACT_OBSERVABILITY_PROPOSAL_20261029.md`. Counts unchanged. **Demonstrated gap; no correction implemented.**
+
 ## October 29 — corrected current-state qualification R04 approved for 9:45–10:45
 
 R1-W01 / APP-013 / 3A / P08. Owner approved exact read-only operation `63964638-5f31-4e5c-ad03-7f1226b1f80b` against proposal commit `4b753f9`; strict 9:55 cutoff, one attempt/no retry, USD0.

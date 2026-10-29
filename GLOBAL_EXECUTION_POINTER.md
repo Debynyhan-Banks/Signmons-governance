@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — R04 contained Cloud drift; exact false fact unknown
+
+R1-W01 / APP-013 / 3A / P08. Exact operation `63964638-5f31-4e5c-ad03-7f1226b1f80b` ran once at 9:46:44 a.m. and stopped `CLOUD_DRIFT`: Cloud completed after 26 CLI reads, zero HTTPS, zero qualification SQL, one qualified closeout SQL, residuals empty and private inputs absent. Current journal did not retain allowlisted false-fact names. Attempt consumed/no retry.
+
+Next/owner: approve or defer Alternative 1 in `APP013_P08_CLOUD_FALSE_FACT_OBSERVABILITY_PROPOSAL_20261029.md` for safe local predicate-name observability/tests only. No new external action is authorized. Counts unchanged. **Demonstrated observability gap disclosed; no scope deviation implemented.**
+
 ## October 29 — corrected current-state qualification R04 approved for 9:45–10:45
 
 R1-W01 / APP-013 / 3A / P08. Owner approved exact operation `63964638-5f31-4e5c-ad03-7f1226b1f80b` against governance commit `4b753f9` and pre-decision SHA256 `ca0b6f1afc681d54dc47de52e9c7d9131516c6c6b146f76496d5ce7acc581196`: today 9:45–10:45 a.m. Eastern, start strictly before 9:55, one attempt/no retry, USD0, exact 26 CLI/10 HTTPS/two SQL read ceilings and mandatory closeout/purge.
