@@ -1,5 +1,9 @@
 # Session Handoff
 
+## October 29 — owner-Terminal traffic read proposed
+
+Section: R1-W01 / APP-013 / 3A / P08. Completed: safe-category local correction and fresh exact owner-Terminal operation card. Remaining: separate owner execution approval, private binding/final gates, one current read-only attempt and closeout; P08/3A, authentication/runtime/payment remain open. Blocker/owner: Debynyhan Banks decides operation `edad7640-780f-4b0d-b3b2-8cb6d1e541a7` before 3:07. Next observable result: current fixed CLI category or four traffic booleans. Evidence: backend `aff8294`; `APP013_P08_OWNER_TERMINAL_TRAFFIC_READ_OPERATION_20261029.md`. Accepted 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **No scope deviation.**
+
 ## October 29 — traffic CLI failure categories passed locally
 
 Section: R1-W01 / APP-013 / 3A / P08. Completed: owner-approved local-only safe-category correction, 18 focused tests, unchanged 35-case qualification suite and sanitized readiness evidence. Remaining: fresh immutable read-only operation card/approval, one current Cloud read or safe stop, then separate correction/qualification; P08/3A, authentication/runtime/payment remain open. Blocker/role: implementer prepares the card; Debynyhan Banks must approve provider access separately. Next observable result: a current fixed CLI category or traffic subcondition. Evidence: backend `evidence/APP-013/p08-traffic-cli-classification-local-20261029`; governance `APP013_P08_TRAFFIC_CLI_CLASSIFICATION_LOCAL_RESULT_20261029.md`. Accepted 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **No scope deviation.**

@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — owner-Terminal traffic read proposed for 3:00–3:15 p.m.
+
+R1-W01 / APP-013 / 3A / P08. `APP013_P08_OWNER_TERMINAL_TRAFFIC_READ_OPERATION_20261029.md` proposes one new three-CLI read-only operation `edad7640-780f-4b0d-b3b2-8cb6d1e541a7` against backend `aff8294`. It uses the owner's Terminal to match the earlier successful R05 execution context; the sandbox stop cause remains UNKNOWN. Start at/after 3:00, strictly before 3:07; closeout before 3:15; USD0 and no retry.
+
+Next/owner: approve or refuse this exact operation. No provider access under the local-correction approval. Counts unchanged. **No scope deviation.**
+
 ## October 29 — traffic CLI failure categories passed locally
 
 R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 in `APP013_P08_TRAFFIC_CLI_FAILURE_CLASSIFICATION_PROPOSAL_20261029.md` for local correction/tests only. The disabled helper now distinguishes four fixed safe CLI failure categories; 18 focused and 35 unchanged qualification tests pass. Zero new provider actions. The consumed first-command `CLI_REFUSED` cannot be retrospectively classified.
