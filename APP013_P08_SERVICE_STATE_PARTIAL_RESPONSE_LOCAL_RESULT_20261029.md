@@ -1,0 +1,7 @@
+# APP-013 / 3A / P08 — local Service Usage state projection result
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved Alternative 1 was implemented in a fresh disabled copy of backend `be0adc1`, leaving the R08 receipt and predecessor source unchanged. Only the six Service Usage GET descriptors request `?fields=state`. The existing 65,536-byte cap, exact state gate, project/service allowlist, ten HTTPS request ceiling, no-retry and closeout contracts remain unchanged. Source manifest SHA256 `ab3cd392974d7b157b8702fe9f18e8ffb20b570cf19471e4d6e0b1c23af7dbd2`; launcher SHA256 `acaa9dd0248b18a6b95ff4aecb6c71ac278772f5c399ae35a34ceb1f64294dce`.
+
+Verification: 43 corrected focused/controller tests, 41 unchanged predecessor tests, three disposable PostgreSQL tests, locked-source/manifest and repository checks. The native entry remains unbound. No live provider/account/database request or mutation occurred. Backend commit `31e25cd` / `evidence/APP-013/p08-service-state-projection-local-20261029`.
+
+Next: prepare a fresh exact read-only current-state operation for separate owner approval when an attended window is available. R08/R07 are consumed. The local result does not prove the live partial response, service state, P08/3A acceptance or authorize authentication/runtime/Stripe. Accepted 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **No scope deviation beyond the approved local correction.**

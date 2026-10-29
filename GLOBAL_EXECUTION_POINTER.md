@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — P08 Service Usage state projection verified locally
+
+R1-W01 / APP-013 / 3A / P08. Owner approved bounded Alternative 1 at `e9b1478`; a fresh disabled backend copy adds only `?fields=state` to six Service Usage GET descriptors. The 65,536-byte cap and strict state gate remain. 43 corrected focused/controller, 41 predecessor and three disposable PostgreSQL tests pass; source/manifest and governance gates pass. R08 remains consumed. Evidence `APP013_P08_SERVICE_STATE_PARTIAL_RESPONSE_LOCAL_RESULT_20261029.md` and backend `evidence/APP-013/p08-service-state-projection-local-20261029`.
+
+Next/implementer: prepare a fresh exact read-only operation when an attended window is available, for separate owner review; no provider authority under local approval. P08/3A open; accepted 4/8, newly closed R1 0/27, legacy 6/60, intelligence 0/13. **No scope deviation beyond approved local correction.**
+
 ## October 29 — P08 R08 oversized Service Usage response; bounded correction proposed
 
 R1-W01 / APP-013 / 3A / P08. R08 started once at 5:50:28 p.m. Eastern and stopped `HTTPS_OUTPUT:service_1:OVERSIZE` after Cloud 13/13 qualified. IAM Service Usage response exceeded the 65,536-byte cap; its state remains UNKNOWN. Read-only closeout qualified, residuals empty and private plan/binding absent by 5:50:44. R08 consumed/no retry; no access/database/Firebase qualification or mutation. Evidence backend `259f277`, governance `APP013_P08_R08_OVERSIZED_SERVICE_RESPONSE_RESULT_20261029.md`.

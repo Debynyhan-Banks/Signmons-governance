@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — P08 local Service Usage projection verified
+
+R1-W01 / APP-013 / 3A / P08. Approved disabled copy requests only `state` for six Service Usage reads; 43 corrected, 41 predecessor and three disposable PostgreSQL tests pass. R08 consumed/no retry. Next/implementer: fresh exact read-only operation card and separate owner approval; no inherited provider authority. P08/3A open, counts unchanged. **No scope deviation beyond approved local correction.**
+
 ## October 29 — P08 R08 oversized IAM-service response safe stop
 
 R1-W01 / APP-013 / 3A / P08. One approved R08 attempt stopped `HTTPS_OUTPUT:service_1:OVERSIZE` after Cloud 13/13; state unknown. Closeout qualified, private inputs absent, no mutation. R08 consumed/no retry. Next/owner: decide bounded local-only partial-response proposal; no fresh provider authority. P08/3A open, counts unchanged. **Unintended output stop disclosed; no scope deviation implemented.**
