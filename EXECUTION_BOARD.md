@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — P08 disabled bridge local verification complete
+
+R1-W01 / APP-013 / 3A / P08. Backend `edc5e4f` has source-locked serialized CLI/HTTPS and owned-key handoff tests (13 Python, 11 JavaScript); native entries refuse. Next/implementer: exact live launch/retirement binding card and actual-boundary readiness, before any operation is scheduled. Owner separately decides API Keys retention/cost and provider authority. R10 consumed; 3A open, accepted 4/8 and R1 0/27. **No scope deviation beyond approved local bridge.**
+
 ## October 29 — P08 native transport and key-hash decision pending
 
 R1-W01 / APP-013 / 3A / P08. The local packet is a sequencing proof only. Review `APP013_P08_NATIVE_BRIDGE_READINESS_AND_DECISION_20261029.md` for the native parser/LRO and newly created key-hash authority gaps. Next/owner: approve bounded local Alternative 1, choose staged Alternative 2, or defer; no live operation is ready or scheduled. R10 consumed, 3A open, accepted 4/8 and R1 0/27. **Explicit prerequisite proposal; no scope deviation implemented.**

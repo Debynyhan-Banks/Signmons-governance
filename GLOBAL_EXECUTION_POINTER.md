@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## October 29 — P08 disabled native-boundary bridge verified locally
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved local bridge backend `edc5e4f` passes 13 Python/11 JavaScript new cases plus unchanged helper suites; source locks and native refusal hold. It corrects canonical numeric key names and API Keys service targeting in a fresh disabled copy only. No provider or payment action. Next/implementer: prepare exact live launch/retirement binding and shift-left readiness card; owner later decides service retention/cost and separate external authority. R10 consumed; P08/3A open, accepted 4/8, R1 0/27, legacy 6/60, intelligence 0/13. Evidence `APP013_P08_NATIVE_BRIDGE_LOCAL_RESULT_20261029.md`. **No scope deviation beyond approved local bridge.**
+
 ## October 29 — P08 native bridge readiness proposal prepared
 
 R1-W01 / APP-013 / 3A / P08. Source review found the local packet is native-unbound; its fake `deleted` key field does not match the existing provider `deleteTime`/LRO contract, and the authentication plan requires a key hash before a newly created key can provide one. `APP013_P08_NATIVE_BRIDGE_READINESS_AND_DECISION_20261029.md` proposes a bounded local native bridge and an explicitly approved owned-key hash derivation rule, with actual boundary tests before any live window. Next/owner: decide the local correction; later service retention/cost and exact external operation remain separate. No provider action, authentication or payment occurred. R10 consumed; accepted 4/8, R1 0/27. **Explicit prerequisite proposal; no scope deviation implemented.**
