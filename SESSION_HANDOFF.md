@@ -1,5 +1,11 @@
 # Session Handoff
 
+## October 28 — HTTPS-corrected stable unbound role operation R03 approved
+
+R1-W01 / APP-013 / 3A / P08. Owner approved operation `d45f0618-c8a9-4c85-910a-c60c9352e9cc` against pre-decision SHA256 `bbf8346bb2a62ec09e832870d87e1eea13a02bfb955621b604615022718018ae`: tonight 8:40–9:10 p.m. Eastern, start strictly before 8:55; one attempt/no retry; USD 0; exact five-CLI/nine-HTTPS gates; create only the two fixed roles retained unbound. Contingent read-only closeout is included.
+
+Next/implementer: after governance checks, bind backend `a64e933`, execute once at or after 8:40 and before 8:55, save only sanitized result/containment, purge private inputs and never retry. Counts unchanged. **No scope deviation.**
+
 ## October 28 — service-state HTTPS correction passed; R03 proposed
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved local correction complete at backend `a64e933`: 23/23 fake subprocess/HTTP tests, exact five-CLI/nine-HTTPS path, project-number privacy, six-permission probe and all repository gates pass. No credential, subprocess, provider call or mutation occurred.
