@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — qualification launch drift correction passed locally
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved correction is committed at backend `d7c40c1`; result `APP013_P08_QUALIFICATION_LAUNCH_DRIFT_CORRECTION_LOCAL_RESULT_20261029.md`. The native database reduction now proves each fact from one repeatable-read projection, derives Firebase identity only from the qualified disabled ADMIN, compares dynamic project/billing identifiers only in memory, separates future operation authority and deletes exact private inputs with absence readback. Thirty fake/model, three disposable PostgreSQL, 26 role, 37 restoration, 40 access and 60 authentication cases pass. No external action occurred.
+
+Next/owner: provide a fresh attended window only when ready to review a separately prepared exact read-only qualification operation. A new immutable operation card and explicit execution approval are required before any password or Cloud/database/Firebase read. Counts unchanged. **No scope deviation.**
+
 ## October 29 — qualification launch drift correction approved locally
 
 R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 against proposal commit `f2c722d`: correct only native identity/database binding, dynamic identifier fingerprinting, external-operation approval separation and exact private purge; prove with disposable PostgreSQL and fake providers.
