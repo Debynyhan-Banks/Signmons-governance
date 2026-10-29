@@ -1,5 +1,9 @@
 # Session Handoff
 
+## October 29 — fixed HTTPS descriptor-ID observability verified locally
+
+Section: R1-W01 / APP-013 / 3A / P08. Completed: owner-approved fresh disabled source, fixed allowlisted HTTPS output ID, 39 corrected focused/model tests, 37 unchanged tests, three disposable PostgreSQL cases and governance gates. Remaining: fresh exact read-only current-state operation card/approval/one attempt or safe stop; access/database/Firebase qualification, authentication/runtime/payment and 3A acceptance remain open. Blocker/role: implementer prepares a bounded card; Debynyhan Banks separately approves any provider read. Next observable result: future fixed HTTPS descriptor ID or complete five-domain qualification. Evidence: backend `9888e7c` / `evidence/APP-013/p08-https-output-observability-local-20261029`; governance result. Accepted 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **No scope deviation beyond approved local correction.**
+
 ## October 29 — local HTTPS output descriptor observation approved
 
 Section: R1-W01 / APP-013 / 3A / P08. Completed: R06 safe stop/verified closeout and owner approval of Alternative 1 at `d28f110`. Remaining: fresh disabled local source/test correction, gate results, then a fresh separately approved read-only operation; P08/3A, authentication/runtime/payment remain open. Blocker/role: implementer performs only approved local work. Next observable result: safe fixed descriptor-ID output from injected tests, not a retrospective R06 diagnosis. Evidence: approval document and backend `c0644b2`. Accepted 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **No scope deviation.**

@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — local fixed HTTPS descriptor observation verified
+
+R1-W01 / APP-013 / 3A / P08. Backend `9888e7c` holds owner-approved disabled safe `HTTPS_OUTPUT:<fixed-id>` observation; 39 corrected focused/model, 37 unchanged and three disposable PostgreSQL cases pass. R06 is consumed, its failed request UNKNOWN. Evidence: `APP013_P08_HTTPS_OUTPUT_OBSERVABILITY_LOCAL_RESULT_20261029.md`.
+
+Next/implementer: prepare a fresh exact read-only current-state operation for separate owner approval; no external authority under local tests. Counts unchanged. **No scope deviation.**
+
 ## October 29 — local HTTPS output descriptor observation approved
 
 R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 in `APP013_P08_HTTPS_OUTPUT_OBSERVABILITY_PROPOSAL_20261029.md` at `d28f110` for a fresh disabled local source/test correction only. R06 remains consumed, its failed request UNKNOWN. Next/implementer: implement and verify safe fixed descriptor observation; no provider read under this approval. Counts unchanged. **No scope deviation.**

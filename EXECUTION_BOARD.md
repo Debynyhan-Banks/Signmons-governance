@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — HTTPS output fixed-ID local correction verified
+
+R1-W01 / APP-013 / 3A / P08. Backend `9888e7c` passes local safe request-ID observation tests and unchanged regression gates; R06 consumed. Next/implementer: fresh exact read-only card and separate external approval. P08/3A open; counts unchanged. **No scope deviation.**
+
 ## October 29 — local HTTPS output observation approved
 
 R1-W01 / APP-013 / 3A / P08. Owner approved fixed-ID `HTTPS_OUTPUT` observability in a disabled local copy only. R06 consumed. Next/implementer: test local source, privacy and closeout guards; no external read. Counts unchanged. **No scope deviation.**
