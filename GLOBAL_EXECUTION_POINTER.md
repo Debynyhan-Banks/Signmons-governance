@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — current-state qualification R05 proposed for 2:15–3:15 p.m.
+
+R1-W01 / APP-013 / 3A / P08. Fresh operation `3fb6d82c-b7e5-4851-bee0-98949081f360` is prepared in `APP013_P08_CORRECTED_CURRENT_STATE_QUALIFICATION_OPERATION_20261029_R05.md` against backend `a4c5f49`: today 2:15–3:15 p.m. Eastern, start strictly before 2:25, one attempt/no retry, USD0, exact 26 CLI/10 HTTPS/two SQL read-only ceilings and mandatory closeout/purge.
+
+Next/owner: approve or refuse R05. Availability alone is not external-read authority. Counts unchanged. **No scope deviation.**
+
 ## October 29 — Cloud false-fact observability passed locally
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved correction is committed at backend `a4c5f49`; result `APP013_P08_CLOUD_FALSE_FACT_OBSERVABILITY_LOCAL_RESULT_20261029.md`. Only sorted false names from the fixed thirteen-predicate Cloud allowlist plus counts can persist; malformed shapes and raw values refuse. All focused/locked gates pass. Zero external actions.

@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — current-state qualification R05 proposed for 2:15–3:15 p.m.
+
+R1-W01 / APP-013 / 3A / P08. Fresh read-only operation `3fb6d82c-b7e5-4851-bee0-98949081f360` uses corrected backend `a4c5f49` and retains only allowlisted false Cloud predicate names/counts.
+
+Next/owner: approve or refuse the exact 2:15–3:15 operation; strict 2:25 cutoff, one attempt/no retry, USD0. Counts unchanged. **No scope deviation.**
+
 ## October 29 — Cloud false-fact observability passed locally
 
 R1-W01 / APP-013 / 3A / P08. Backend `a4c5f49` completes bounded allowlisted false-predicate observability with 35 focused/model, three qualification PostgreSQL and all locked regression suites green; zero external actions.
