@@ -1,6 +1,8 @@
 # APP-013 / 3A / P08 — HTTPS-corrected stable unbound role-creation operation R03
 
-Status: OWNER APPROVED FOR THIS EXACT HTTPS-CORRECTED OPERATION. R1-W01 / APP-013 / 3A remains unchanged.
+Status: CONSUMED, CONTAINED, NO RETRY. R1-W01 / APP-013 / 3A remains open.
+
+Result: R03 started once at 8:40 p.m. Eastern and stopped at `CLI_5_IDENTITY_POLICY` with `ROLE_DRIFT` before any HTTPS or mutation request. Created and unknown counts are zero; private inputs and processes are absent. See `APP013_P08_R03_POLICY_SHAPE_STOP_RESULT_20261028.md`.
 
 Owner decision: On October 28, 2026, the owner approved operation `d45f0618-c8a9-4c85-910a-c60c9352e9cc` against this document's pre-decision SHA256 `bbf8346bb2a62ec09e832870d87e1eea13a02bfb955621b604615022718018ae`. Authority is limited to the exact resources, calls, window, cutoff, no-retry rule and contingent read-only closeout below.
 

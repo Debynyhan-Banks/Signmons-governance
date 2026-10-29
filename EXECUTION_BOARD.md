@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 28 — R03 contained policy-shape stop; narrow normalization proposed
+
+R1-W01 / APP-013 / 3A / P08. Operation `d45f0618-c8a9-4c85-910a-c60c9352e9cc` ran once at 8:40 p.m. and stopped at `CLI_5_IDENTITY_POLICY` with `ROLE_DRIFT`. Five CLI reads, zero HTTPS/mutation requests, created0/unknown0; private inputs/processes absent; containment verified. Attempt consumed/no retry. Backend evidence `p08-exact-role-creation-r03-stop-20261028`.
+
+Next/owner: approve or defer Alternative 1 in `APP013_P08_EMPTY_POLICY_NORMALIZATION_PROPOSAL_20261028.md`: locally normalize only absent/null/empty projected bindings, retain rejection of all other drift and add fixed safe shape classifications with isolated tests. No provider read/retry/action is authorized. Counts unchanged. **Demonstrated parser gap disclosed; no scope deviation implemented.**
+
 ## October 28 — HTTPS-corrected stable unbound role operation R03 approved
 
 R1-W01 / APP-013 / 3A / P08. Owner approved operation `d45f0618-c8a9-4c85-910a-c60c9352e9cc` against pre-decision SHA256 `bbf8346bb2a62ec09e832870d87e1eea13a02bfb955621b604615022718018ae`: tonight 8:40–9:10 p.m. Eastern, start strictly before 8:55; one attempt/no retry; USD 0; exact five-CLI/nine-HTTPS gates; create only the two fixed roles retained unbound. Contingent read-only closeout is included.
