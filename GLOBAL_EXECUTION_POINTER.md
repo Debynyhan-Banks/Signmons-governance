@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — composed P08 authentication prerequisite proposed
+
+R1-W01 / APP-013 / 3A / P08. Reconciliation confirms the verified stable role IDs fit the existing preexisting-role-only restoration branches. The remaining material gap is authority composition: a new temporary key's hash is unknown until creation, while existing authentication/restoration plans require that hash and the final child-plan hash before owner approval. The fake-transport key model is not integrated with restoration/authentication. No implementation or external action occurred.
+
+Next/owner: approve or defer Alternative 1 in `APP013_P08_COMPOSED_AUTHENTICATION_PREPARATION_PROPOSAL_20261029.md`: a disabled local parent-authority wrapper and coordinator that reuses locked key/restoration/authentication sources, pins the two verified roles, derives only the dynamic key fields from exact provider-owned readback, and proves same-block reverse cleanup with fakes. No provider read/change, IAM binding, API/key/account/token/runtime/Stripe/payment action, spending or window is included. Counts unchanged. **Explicit prerequisite change proposed before implementation; no scope deviation implemented.**
+
 ## October 29 — R06 verified both exact stable roles retained unbound
 
 R1-W01 / APP-013 / 3A / P08. Read-only closeout `e9124155-47a9-4478-a8de-3e435d67459a` ran once at 7:15 a.m. and returned `P08_EXACT_ROLE_CLOSEOUT_VERIFIED`: five CLI reads/two HTTPS GETs, both exact roles `EXACT_ACTIVE_DEFAULTED`, reconciled2/absent0/residual0, both policies unbound. Private inputs/processes absent; no mutation. Backend evidence `p08-exact-role-closeout-r06-result-20261029`.
