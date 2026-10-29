@@ -1,5 +1,9 @@
 # Session Handoff
 
+## October 29 — config output-contract correction approved locally
+
+Section: R1-W01 / APP-013 / 3A / P08. Completed: R02 safe stop/closeout and owner approval for Alternative 1. Remaining: exact local parser/tests/result, then a fresh separately approved operation; authentication/runtime/payment remain unauthorized. Blocker/role: implementer completes only the approved local card. Next observable result: exact safe-shape proof with all gates. Evidence: proposal/decision `3c69b16`; backend stop `e959370`. Accepted milestones 4/8; counts unchanged. **Approved local correction only; no external authority.**
+
 ## October 29 — R02 stopped safely at config output contract
 
 Section: R1-W01 / APP-013 / 3A / P08. Completed: one approved R02 attempt, qualified closeout and private-input retirement. Remaining: owner decision on narrow config-output correction, local implementation/tests if approved, then a fresh separately approved operation; authentication/runtime/payment remain unauthorized. Blocker/owner: Debynyhan Banks decides `APP013_P08_CONFIG_OUTPUT_CONTRACT_CORRECTION_PROPOSAL_20261029.md`. Next observable result: exact safe-shape local proof or defer. Evidence: backend `evidence/APP-013/p08-composed-qualification-r02-stop-20261029`; operation `56e8b2e6-58ec-46fc-9ba0-c4cbc74918ac`. Accepted milestones 4/8; counts unchanged. **Demonstrated drift disclosed; no correction implemented.**

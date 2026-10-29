@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — config output-contract correction approved locally
+
+R1-W01 / APP-013 / 3A / P08. Alternative 1 in `APP013_P08_CONFIG_OUTPUT_CONTRACT_CORRECTION_PROPOSAL_20261029.md` is approved for local parser/tests only.
+
+Next/implementer: add only the two exact safe config shapes, retain fail-closed behavior, run the finite matrix and stop before external action. Counts unchanged. **Approved local correction only.**
+
 ## October 29 — R02 stopped safely at config output contract
 
 R1-W01 / APP-013 / 3A / P08. R02 consumed its one attempt and stopped before HTTPS/qualification SQL at fixed failure `CONFIG_OUTPUT`; database-session closeout qualified, residuals are empty and private inputs are absent.

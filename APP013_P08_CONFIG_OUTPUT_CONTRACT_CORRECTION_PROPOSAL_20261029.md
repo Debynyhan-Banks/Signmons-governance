@@ -1,6 +1,6 @@
 # APP-013 / 3A / P08 — gcloud config output-contract correction proposal
 
-Status: **owner decision required before implementation**. R1-W01 / APP-013 / 3A / P08 remains active.
+Status: **Alternative 1 approved for local correction and testing only**. Debynyhan Banks replied “i approve” after review of this proposal at governance commit `3c69b16`. R1-W01 / APP-013 / 3A / P08 remains active.
 
 ## Demonstrated gap
 
@@ -26,4 +26,4 @@ The local parser currently requires the projected config object to have exactly 
 - Rollback/disabled state: revert only the local evidence-source commit; native execution remains impossible without a new exact plan and separate approval.
 - Observable finish: exact safe-shape tests and all gates pass with a sanitized local result. This does not complete P08 or 3A.
 
-Owner decision: approve Alternative 1 for local correction and testing only, select Alternative 2, or defer. Accepted milestones remain 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **Demonstrated output-contract drift disclosed; no scope deviation implemented.**
+Owner decision: Alternative 1 is approved for local correction and testing only. This decision does not authorize another external operation. Accepted milestones remain 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **Demonstrated output-contract drift disclosed; approved local correction only.**

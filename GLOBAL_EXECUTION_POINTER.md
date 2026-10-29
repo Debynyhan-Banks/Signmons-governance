@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — config output-contract correction approved locally
+
+R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 against proposal commit `3c69b16`: locally accept only exact omitted-empty or explicit-empty auth projections, retain all strict refusals and add focused safe-shape evidence/tests.
+
+Next/implementer: complete the finite local correction and all gates, then stop before any fresh external operation. Counts unchanged. **Approved correction only; no external authority.**
+
 ## October 29 — R02 stopped safely at config output contract
 
 R1-W01 / APP-013 / 3A / P08. Exact operation `56e8b2e6-58ec-46fc-9ba0-c4cbc74918ac` ran once at 8:47:57 a.m. and stopped `CONFIG_OUTPUT`: 26 CLI reads, zero HTTPS, zero qualification SQL, one qualified closeout SQL, residuals empty and private inputs absent. Attempt consumed/no retry.
