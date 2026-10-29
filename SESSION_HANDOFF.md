@@ -1,5 +1,9 @@
 # Session Handoff
 
+## October 29 — qualification launch drift correction approved locally
+
+R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 against proposal commit `f2c722d`. Implement only the bounded local correction and disposable/fake tests; do not bind an attended window, resolve credentials or read external state. Next observable result: exact local proof that each qualification fact comes from its source observation and all private files purge. Counts unchanged. **Approved correction only; no external authority.**
+
 ## October 29 — qualification launch drift stopped before operation
 
 R1-W01 / APP-013 / 3A / P08. Completed: pre-operation shift-left audit. Remaining: owner decision on `APP013_P08_QUALIFICATION_LAUNCH_DRIFT_CORRECTION_PROPOSAL_20261029.md`, then bounded local correction/tests before any new window. Blocker/implementer: launcher depends on purged raw identifiers and native SQL maps unproved disabled-operator facts to true. Next observable result: exact local SQL/identity/binding/purge proof or defer. No command/attempt/credential/external read; 8:15 availability unconsumed. Accepted 1A/1B/2A/2B remain 4/8; R1 counts remain 0/27, 6/60, 0/13. **Unintended drift disclosed; no correction implemented.**

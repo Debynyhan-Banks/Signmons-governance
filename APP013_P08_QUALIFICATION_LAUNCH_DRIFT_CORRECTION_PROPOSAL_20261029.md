@@ -46,3 +46,7 @@ Observable finish: local tests prove no fact can become `true` without its exact
 Approve Alternative 1 for bounded local correction, disposable PostgreSQL proof and isolated fake-provider tests only, or defer. Approval includes no credential resolution, external read, database/Firebase/provider action, IAM/API/key/account/runtime/token/Stripe/payment/deployment/billing/spending action, attended operation, merge or push.
 
 Accepted 1A/1B/2A/2B remain 4/8. Newly closed R1 remains 0/27, legacy 6/60, intelligence 0/13. P08 and 3A remain open. **Unintended launch drift disclosed before external execution; correction is proposed, not implemented.**
+
+## Owner decision
+
+Debynyhan Banks replied “yes i approve” after review of this proposal at governance commit `f2c722d`. Alternative 1 is approved for bounded local correction, disposable PostgreSQL proof and isolated fake-provider tests only. This decision authorizes no credential resolution, external read, database/Firebase/provider action, IAM/API/key/account/runtime/token/Stripe/payment/deployment/billing/spending action, attended operation, merge or push.

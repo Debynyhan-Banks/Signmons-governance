@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — qualification launch drift correction approved locally
+
+R1-W01 / APP-013 / 3A / P08. Owner approved the bounded local correction in `APP013_P08_QUALIFICATION_LAUNCH_DRIFT_CORRECTION_PROPOSAL_20261029.md` at proposal commit `f2c722d`.
+
+Next/implementer: correct and test locally; stop before credentials or external reads. Counts unchanged. **Approved correction only; no external authority.**
+
 ## October 29 — qualification launch drift stopped before operation
 
 R1-W01 / APP-013 / 3A / P08. Pre-operation audit found an unsafe native database reduction and missing purged private identifiers in backend `aa257f7`. No attended operation was bound or started. Proposed local correction: `APP013_P08_QUALIFICATION_LAUNCH_DRIFT_CORRECTION_PROPOSAL_20261029.md`.

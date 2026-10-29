@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — qualification launch drift correction approved locally
+
+R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 against proposal commit `f2c722d`: correct only native identity/database binding, dynamic identifier fingerprinting, external-operation approval separation and exact private purge; prove with disposable PostgreSQL and fake providers.
+
+Next/implementer: complete the finite local checklist and gates, then stop before any attended operation or external read. Counts unchanged. **Approved correction only; no external authority.**
+
 ## October 29 — qualification launch drift stopped before operation
 
 R1-W01 / APP-013 / 3A / P08. Shift-left review of backend `aa257f7` found purged-identifier dependencies and an unproved native database reduction that could report disabled-operator facts from an active-owner read. No 8:15 operation plan/command/attempt/credential or external read exists; availability is not consumed. Correction proposal: `APP013_P08_QUALIFICATION_LAUNCH_DRIFT_CORRECTION_PROPOSAL_20261029.md`.
