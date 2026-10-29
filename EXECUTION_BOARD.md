@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — P08 live-binder completion decision pending
+
+R1-W01 / APP-013 / 3A / P08. The disabled bridge passes local boundary tests but lacks exact live approval/credential/retirement binding. `APP013_P08_LIVE_BINDER_LOCAL_COMPLETION_PROPOSAL_20261029.md` offers one finite local completion, a staged alternative or deferral. Next/owner: decide before implementation; no external action or window follows. R10 consumed, 3A open, accepted 4/8 and R1 0/27. **Explicit prerequisite proposal; no scope deviation implemented.**
+
 ## October 29 — P08 disabled bridge local verification complete
 
 R1-W01 / APP-013 / 3A / P08. Backend `edc5e4f` has source-locked serialized CLI/HTTPS and owned-key handoff tests (13 Python, 11 JavaScript); native entries refuse. Next/implementer: exact live launch/retirement binding card and actual-boundary readiness, before any operation is scheduled. Owner separately decides API Keys retention/cost and provider authority. R10 consumed; 3A open, accepted 4/8 and R1 0/27. **No scope deviation beyond approved local bridge.**
