@@ -1,5 +1,9 @@
 # Session Handoff
 
+## October 29 — P08 targeted access-resolution proposal prepared
+
+Section R1-W01 / APP-013 / 3A / P08. Completed: R10 sanitized stop/verified closeout and source-to-R06 comparison. Remaining: owner decision on the bounded local role-contract correction or focused read; separate API Keys/test-key lifecycle decision and exact provider authority; later current-state qualification, authentication/runtime and 3A payment evidence. Blocker/owner: Debynyhan Banks decides `APP013_P08_TARGETED_ACCESS_RESOLUTION_PROPOSAL_20261029.md`. Next observable result: local strict role-shape tests only if Alternative 1 is approved, or the chosen bounded diagnostic. Evidence R10 result `2fc0cca`, R06 closeout and current launcher comparator. No new provider run or IAM change under planning approval. Accepted 4/8; R1 0/27, legacy 6/60, intelligence 0/13. **No scope deviation implemented.**
+
 ## October 29 — P08 R10 safe stop and verified closeout
 
 Section R1-W01 / APP-013 / 3A / P08. Completed: separate owner approval of narrowed 6:22 p.m. read deadline; one R10 read-only attempt; Cloud 13/13 qualified; bounded access `UNKNOWN` observation; qualified read-only closeout; no residuals; private plan/binding purge with absence readback. Remaining: finite access-resolution decision, any separately authorized current-state qualification, then authentication/runtime prerequisites and 3A payment demonstration. Blocker/role: implementer prepares a proposal for disabled API Keys service, denied prospective-key absence check and role-definition mismatch; owner decides any material provider access change. Next observable result: reviewable resolution choices, not a retry. Evidence `APP013_P08_R10_ACCESS_FACT_STOP_RESULT_20261029.md` and backend companion. Accepted 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **Unintended deadline mismatch and access-unknown stop disclosed; no scope deviation implemented.**

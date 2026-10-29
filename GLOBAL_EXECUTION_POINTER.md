@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## October 29 — P08 targeted access-resolution decision pending
+
+R1-W01 / APP-013 / 3A / P08. R10 is consumed with verified closeout. `APP013_P08_TARGETED_ACCESS_RESOLUTION_PROPOSAL_20261029.md` traces the likely role false mismatch to omitted `deleted` and the separately blocked native API-key path. Next/owner: decide bounded local Alternative 1, focused metadata Alternative 2 or deferral. No provider correction, new qualification or payment authority follows from this proposal. Counts unchanged. **No scope deviation implemented.**
+
 ## October 29 — P08 R10 consumed; exact access facts identified
 
 R1-W01 / APP-013 / 3A / P08. R10 ran once under the separately approved narrower 6:22 p.m. read deadline. Cloud 13/13 qualified; access `UNKNOWN` stopped on disabled API Keys service, denied prospective-key absence read and nonmatching exact roles. Read-only closeout qualified; residuals empty; private inputs deleted/read back absent. R10 consumed/no retry. Next/implementer: prepare a finite access-resolution proposal; no API enablement, IAM/role change, authentication/runtime/Stripe/payment action is approved. Evidence `APP013_P08_R10_ACCESS_FACT_STOP_RESULT_20261029.md`. Counts unchanged. **Unintended deadline mismatch and access-unknown stop disclosed; no scope deviation implemented.**
