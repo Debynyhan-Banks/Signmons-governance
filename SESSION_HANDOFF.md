@@ -1,5 +1,9 @@
 # Session Handoff
 
+## October 29 — R06 prestart binding correction; owner directed continuation
+
+Section: R1-W01 / APP-013 / 3A / P08. Completed: caught synthetic test image/environment in unreleased private binding, replaced it with retained verified source/digest, validated exact hashes/decision/window, confirmed no attempt/provider read, disclosed the error and received explicit owner direction to continue. Remaining: final gates, release one Terminal command at/after 5:00 and before 5:15, mandatory closeout/private purge, then review sanitized result. Blocker/role: implementer controls release; Debynyhan Banks runs the command and enters hidden CHILD database administrator password. Next observable result: five-domain current qualification or safe stop. Evidence: `APP013_P08_R06_PRESTART_BINDING_CORRECTION_20261029.md`, backend `b38a082`, approved operation `1a744195-a648-4b5e-b306-768bcd86b060`. Accepted 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **Prestart preparation drift disclosed and corrected; no external action yet.**
+
 ## October 29 — corrected P08 R06 read-only operation approved
 
 Section: R1-W01 / APP-013 / 3A / P08. Completed: immutable R06 operation card `cc292f0` / SHA256 `668d3acd52118c22694b8dc539d0f608a57f4284e9a1d90390f169fcccbc4a1c` and separate exact owner approval. Remaining: bind corrected backend `b38a082` and decision, final gates, one Terminal start at/after 5:00 and before 5:15, mandatory closeout/private purge and evidence review. Blocker/role: implementer prepares one command; Debynyhan Banks keeps Terminal and current CHILD database administrator password ready. Next observable result: five-domain read-only qualification or fixed safe stop. Authentication/runtime/payment remain unauthorized. Accepted 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **No scope deviation.**

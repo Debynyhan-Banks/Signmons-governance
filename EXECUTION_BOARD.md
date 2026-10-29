@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — R06 prestart binding correction and direction
+
+R1-W01 / APP-013 / 3A / P08. Synthetic test values in unreleased private inputs were replaced with retained verified source/digest before any attempt/provider read; owner directed continuation under unchanged exact R06 limits. Next/implementer: final gates, one Terminal release at/after 5:00 and before 5:15. Counts unchanged. **Preparation drift disclosed and corrected.**
+
 ## October 29 — corrected P08 R06 read-only operation approved
 
 R1-W01 / APP-013 / 3A / P08. Exact `1a744195-a648-4b5e-b306-768bcd86b060` approved for 5:00–6:00 p.m. Eastern, strict 5:15 cutoff, one read-only attempt/no retry/USD0 and mandatory closeout. Next/implementer: bind and verify before releasing one Terminal command at/after 5:00. Counts unchanged. **No scope deviation.**

@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — R06 prestart binding corrected; owner directed continuation
+
+R1-W01 / APP-013 / 3A / P08. An unreleased private R06 binding initially inherited synthetic test image/environment values. It was replaced with retained verified source/digest before any command, attempt or provider read. The exact operation scope/window/limits did not change. Owner explicitly directed continuation of the same approved R06 after disclosure. See `APP013_P08_R06_PRESTART_BINDING_CORRECTION_20261029.md`.
+
+Next/implementer: final gates and release one command at/after 5:00, never at/after 5:15. **Prestart preparation drift corrected; no external action yet.**
+
 ## October 29 — corrected P08 read-only R06 approved for 5:00–6:00 p.m.
 
 R1-W01 / APP-013 / 3A / P08. Owner approved exact operation `1a744195-a648-4b5e-b306-768bcd86b060` against immutable card `cc292f0` / SHA256 `668d3acd52118c22694b8dc539d0f608a57f4284e9a1d90390f169fcccbc4a1c`. Start strictly before 5:15, maximum 26 CLI/ten HTTPS/two read-only SQL, USD0, no retry, mandatory closeout and private purge before 6:00.
