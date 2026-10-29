@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — current-state qualification R05 approved for 2:15–3:15 p.m.
+
+R1-W01 / APP-013 / 3A / P08. Owner approved exact read-only operation `3fb6d82c-b7e5-4851-bee0-98949081f360` against proposal commit `761b48d`; strict 2:25 cutoff, one attempt/no retry, USD0.
+
+Next/implementer: install source/decision binding and release one command only after final gates pass. Counts unchanged. **No scope deviation.**
+
 ## October 29 — current-state qualification R05 proposed for 2:15–3:15 p.m.
 
 R1-W01 / APP-013 / 3A / P08. Fresh read-only operation `3fb6d82c-b7e5-4851-bee0-98949081f360` uses corrected backend `a4c5f49` and retains only allowlisted false Cloud predicate names/counts.
