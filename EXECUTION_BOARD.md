@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — exact traffic-shape read approved
+
+R1-W01 / APP-013 / 3A / P08. Owner approved operation `581346e1-445f-48f1-909c-b86137a9c1a3` against committed card `c45d9a9`, 2:45–3:00 p.m. Eastern, strict 2:55 cutoff, three CLI reads, USD0, no retry.
+
+Next/implementer: bind and run final gates, then make one read-only attempt at or after 2:45. Counts unchanged. **No scope deviation.**
+
 ## October 29 — exact traffic-shape read proposed
 
 R1-W01 / APP-013 / 3A / P08. One read-only three-CLI operation is prepared for 2:45–3:00 p.m. Eastern in `APP013_P08_TRAFFIC_SHAPE_READ_OPERATION_20261029.md`; strict 2:55 cutoff, USD0, no retry. No provider read yet.
