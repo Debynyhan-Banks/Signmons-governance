@@ -92,3 +92,7 @@ Observable local finish: all finite tests and repository gates pass; native laun
 Approve Alternative 1 for bounded local composition and isolated tests only, or defer. Approval would authorize only the new disabled snapshot, wrapper/coordinator, tests and sanitized local evidence described above. It would authorize no provider read or change, IAM binding, API enablement, key action, account activation, database action, token/signing/exchange, runtime restoration, Stripe/payment, deployment, spending, attended window, merge or push.
 
 Accepted 1A/1B/2A/2B remain 4/8. Newly closed R1 remains 0/27, legacy remains 6/60, intelligence remains 0/13. Stable-role prerequisite is complete; P08 and 3A remain open. **Explicit prerequisite change proposed before implementation; no scope deviation implemented.**
+
+## Owner decision
+
+Debynyhan Banks replied “yes i approve” after review of governance commit `d7f0ed2` and proposal SHA256 `5009670c7a7bb3284a8c2a99c79eeebf1381fb131f874cc3271aa5564aa9c43f`. Alternative 1 is approved for the bounded disabled local parent-authority wrapper, coordinator, isolated tests and sanitized evidence described above. This decision does not authorize a provider read or change, IAM binding, API enablement, key action, account activation, database action, token/signing/exchange, runtime restoration, Stripe/payment, deployment, spending, attended window, merge or push.

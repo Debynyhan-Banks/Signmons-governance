@@ -1,5 +1,11 @@
 # Session Handoff
 
+## October 29 — composed P08 authentication preparation approved locally
+
+R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 against governance commit `d7f0ed2` and proposal SHA256 `5009670c7a7bb3284a8c2a99c79eeebf1381fb131f874cc3271aa5564aa9c43f`: implement only the disabled local parent-authority wrapper/coordinator and isolated tests, reusing the locked key/restoration/authentication sources and pinning the two verified roles.
+
+Next/implementer: complete the finite local checklist and sanitized evidence, run all repository gates, and stop before any provider read/change, IAM binding, API/key/account/token/runtime/Stripe/payment action, spending or attended window. Counts unchanged. **No scope deviation; approved local prerequisite only.**
+
 ## October 29 — composed P08 authentication prerequisite proposed
 
 R1-W01 / APP-013 / 3A / P08. Reconciliation confirms the verified stable role IDs fit the existing preexisting-role-only restoration branches. The remaining material gap is authority composition: a new temporary key's hash is unknown until creation, while existing authentication/restoration plans require that hash and the final child-plan hash before owner approval. The fake-transport key model is not integrated with restoration/authentication. No implementation or external action occurred.
