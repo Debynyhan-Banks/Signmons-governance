@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — owner-Terminal traffic read completed; predicate correction proposed
+
+R1-W01 / APP-013 / 3A / P08. Approved operation `edad7640-780f-4b0d-b3b2-8cb6d1e541a7` reserved once at 3:00:31 p.m. Eastern, completed three read-only CLI commands by 3:00:33 and verified private-input retirement with no residuals. Normal traffic is 100% at the expected revision; old tag is absent; the named candidate has no traffic entry. This explains R05's false `trafficRetired` under its current candidate-0 requirement, but does not requalify R05 or P08. The saved P07 untagged retirement contract permits this shape. The attempt is consumed/no retry.
+
+Next/owner: decide Alternative 1 local-only predicate correction in `APP013_P08_TRAFFIC_RETIREMENT_PREDICATE_CORRECTION_PROPOSAL_20261029.md`. No code correction, new provider read, routing change, runtime restoration or payment is authorized. Accepted 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **Unintended qualification-predicate drift disclosed; proposed correction only.**
+
 ## October 29 — owner-Terminal traffic read approved for 3:00–3:15 p.m.
 
 R1-W01 / APP-013 / 3A / P08. Owner approved operation `edad7640-780f-4b0d-b3b2-8cb6d1e541a7` against proposal commit `b517244` and pre-decision SHA256 `5f74bde7530f4a5895ac2ea46f6b7dae8cd9808aa0ea0f2d908afd161ffeff96`. Exact 3:00–3:15 p.m. Eastern, strict 3:07 start cutoff, three CLI reads maximum, USD0, no retry and mandatory closeout.

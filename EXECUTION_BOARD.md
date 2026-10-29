@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — traffic diagnosis complete; local correction decision pending
+
+R1-W01 / APP-013 / 3A / P08. The one approved Terminal attempt completed three read-only Cloud CLI commands, normal revision 100%, old tag absent, named candidate omitted; closeout/private-input absence verified. The R05 candidate-0 requirement differs from the saved P07 untagged retirement check. Operation consumed; P08 and 3A remain open.
+
+Next/owner: approve or defer `APP013_P08_TRAFFIC_RETIREMENT_PREDICATE_CORRECTION_PROPOSAL_20261029.md` Alternative 1 for local source/tests only. No new external action. Counts unchanged. **Proposed correction; no scope deviation implemented.**
+
 ## October 29 — owner-Terminal traffic read approved
 
 R1-W01 / APP-013 / 3A / P08. Exact operation `edad7640-780f-4b0d-b3b2-8cb6d1e541a7` is approved for owner Terminal, 3:00–3:15 p.m. Eastern, strict 3:07 cutoff, three read-only CLI commands, USD0 and no retry.
