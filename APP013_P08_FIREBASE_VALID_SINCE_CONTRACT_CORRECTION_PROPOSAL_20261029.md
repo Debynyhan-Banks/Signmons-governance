@@ -28,3 +28,7 @@ Observable finish: exact REST `validSince` seconds at the retained boundary or l
 Approve Alternative 1 for this bounded local parser/test correction only, or defer. Approval includes no credential, Cloud/database/Firebase/provider read or mutation, IAM/API/key/account/runtime/token/Stripe/payment/deployment/billing/spending action, attended operation, merge or push.
 
 Accepted milestones remain 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. P08 and 3A remain open. **Unintended transport-contract drift disclosed before execution; no scope deviation implemented.**
+
+## Owner decision
+
+Debynyhan Banks replied “i approve” after review of this proposal at governance commit `fe4e9b3`. Alternative 1 is approved for the bounded local parser/test correction only. No credential resolution, external read, provider/database/Firebase action, mutation, attended operation, merge or push is authorized.

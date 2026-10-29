@@ -1,5 +1,9 @@
 # Session Handoff
 
+## October 29 — Firebase REST validSince correction approved locally
+
+Section: R1-W01 / APP-013 / 3A / P08. Completed: prestart drift stop, private purge and owner approval for narrow local correction. Remaining: implementation/tests/result, then a new external proposal. Blocker/role: implementer completes only the approved local card. Next observable result: strict `validSince` boundary proof with all gates. Evidence: proposal/decision `fe4e9b3`. Accepted milestones and counts unchanged. **No scope deviation.**
+
 ## October 29 — 8:30 qualification withdrawn prestart on Firebase REST contract drift
 
 Section: R1-W01 / APP-013 / 3A / P08. Completed: immutable operation/approval and prestart binding check; final primary-contract audit; exact private-input purge. Remaining: owner decision on narrow `validSince` parser correction, local implementation/tests, then a new external operation. Blocker/owner: Debynyhan Banks; existing operation cannot be run or rebound. Next observable result: local REST response-contract proof. Evidence: `APP013_P08_FIREBASE_VALID_SINCE_CONTRACT_CORRECTION_PROPOSAL_20261029.md`; no attempt receipt because execution never started. Accepted milestones 4/8; counts unchanged. **Unintended drift disclosed before execution; no correction implemented.**

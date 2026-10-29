@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — Firebase REST validSince correction approved locally
+
+R1-W01 / APP-013 / 3A / P08. Alternative 1 in `APP013_P08_FIREBASE_VALID_SINCE_CONTRACT_CORRECTION_PROPOSAL_20261029.md` is approved for local parser/tests only.
+
+Next/implementer: correct and verify locally; no external operation is authorized. Counts unchanged. **No scope deviation.**
+
 ## October 29 — 8:30 qualification withdrawn prestart on Firebase REST contract drift
 
 R1-W01 / APP-013 / 3A / P08. Approved operation `82ad7bf3-1bc8-455b-8c7b-0049387af3b5` was withdrawn unstarted after primary-contract review found `validSince`/`tokensValidAfterTime` drift. Zero external calls; private inputs absent.

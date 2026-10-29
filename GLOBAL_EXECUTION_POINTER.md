@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — Firebase REST validSince correction approved locally
+
+R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 at proposal commit `fe4e9b3`: locally replace the wrong Admin SDK revocation field with strict REST `validSince` seconds parsing and boundary tests only.
+
+Next/implementer: complete the finite local correction and gates, then stop before any new external operation. Counts unchanged. **Approved correction only; no external authority.**
+
 ## October 29 — 8:30 qualification withdrawn prestart on Firebase REST contract drift
 
 R1-W01 / APP-013 / 3A / P08. Final shift-left review proved the REST lookup returns `validSince` seconds, while backend `d7c40c1` expects Admin SDK `tokensValidAfterTime`. Operation `82ad7bf3-1bc8-455b-8c7b-0049387af3b5` was withdrawn before command/attempt/password/external read; exact private inputs were retired with absence readback.
