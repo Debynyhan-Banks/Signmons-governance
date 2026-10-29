@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — traffic CLI failure categories passed locally
+
+R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 in `APP013_P08_TRAFFIC_CLI_FAILURE_CLASSIFICATION_PROPOSAL_20261029.md` for local correction/tests only. The disabled helper now distinguishes four fixed safe CLI failure categories; 18 focused and 35 unchanged qualification tests pass. Zero new provider actions. The consumed first-command `CLI_REFUSED` cannot be retrospectively classified.
+
+Next/implementer: prepare a new immutable exact read-only operation proposal with fresh source/operation/window pins; stop for separate owner approval before provider access. Counts unchanged. **No scope deviation.**
+
 ## October 29 — traffic-shape read stopped on first CLI
 
 R1-W01 / APP-013 / 3A / P08. Approved operation `581346e1-445f-48f1-909c-b86137a9c1a3` ran once at 2:45:08 p.m. and stopped `CLI_REFUSED` on owner-list command one. No traffic read, no mutation, residuals empty and private inputs absent. It is consumed/no retry. The current helper merges several safe failure classes, so the cause remains UNKNOWN.

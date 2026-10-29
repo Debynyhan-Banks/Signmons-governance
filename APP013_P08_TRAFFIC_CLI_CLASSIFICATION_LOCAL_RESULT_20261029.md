@@ -1,0 +1,7 @@
+# APP-013 / 3A / P08 — local CLI failure classification result
+
+Debynyhan Banks replied “yes i approve” to Alternative 1 in `APP013_P08_TRAFFIC_CLI_FAILURE_CLASSIFICATION_PROPOSAL_20261029.md` after its immutable governance commit `61c7e5d`. The decision authorized only a bounded local source/test correction. It did not renew consumed traffic-read operation `581346e1-445f-48f1-909c-b86137a9c1a3` or authorize another Cloud read.
+
+The disabled diagnostic now separates fixed `CLI_NONZERO_EXIT`, `CLI_OUTPUT_TOO_LARGE`, `CLI_LAUNCH_ERROR` and `CLI_TIMEOUT` outcomes while discarding stderr and retaining no raw provider values. Eighteen isolated tests and the unchanged 35-case R05 qualification suite pass, along with architecture, governance and whitespace gates. Backend commit `aff8294` and evidence `evidence/APP-013/p08-traffic-cli-classification-local-20261029` record the result. No current provider, database, Firebase, Stripe, payment, traffic, IAM or deployment action occurred.
+
+The original live `CLI_REFUSED` remains **UNKNOWN**; it cannot be reclassified from the saved receipt. Next is a new immutable, exact read-only operation proposal with new source hash, operation ID, window, one attempt/no retry and separate owner execution approval. P08 and 3A remain open; accepted 4/8, newly closed R1 0/27, legacy 6/60, intelligence 0/13. **No scope deviation from approved local correction.**

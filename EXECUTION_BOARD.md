@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — traffic CLI failure categories passed locally
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved local correction distinguishes four fixed CLI stop categories; 18 focused and 35 unchanged qualification tests pass. No new Cloud read; the old failure cause remains UNKNOWN.
+
+Next/implementer: prepare a fresh exact read-only operation for separate owner review. Counts unchanged. **No scope deviation.**
+
 ## October 29 — traffic-shape read stopped on first CLI
 
 R1-W01 / APP-013 / 3A / P08. The single approved read stopped `CLI_REFUSED` on owner-list command one; no traffic facts, no mutation, empty residuals and private-input purge verified. Attempt consumed.
