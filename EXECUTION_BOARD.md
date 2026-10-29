@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — traffic-shape diagnostic passed locally
+
+R1-W01 / APP-013 / 3A / P08. Disabled diagnostic, 16 isolated cases and unchanged 35-case R05 suite pass; no external read. The failed R05 traffic subcondition remains UNKNOWN.
+
+Next/implementer: prepare a new exact three-CLI read-only operation for owner review. No provider access under local approval. Counts unchanged. **No scope deviation.**
+
 ## October 29 — R05 traffic-shape diagnostic proposed
 
 R1-W01 / APP-013 / 3A / P08. A bounded local sanitizer and later separate three-CLI read-only operation are proposed in `APP013_P08_TRAFFIC_SHAPE_DIAGNOSTIC_PROPOSAL_20261029.md`; no code or provider read is authorized yet.

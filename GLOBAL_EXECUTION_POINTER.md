@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — traffic-shape diagnostic passed locally
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved Alternative 1 local sanitizer and isolated tests are complete at backend `evidence/APP-013/p08-traffic-shape-diagnostic-local-20261029`; 16 focused and 35 unchanged qualification tests pass. No Cloud read or mutation occurred. Current traffic subcondition remains UNKNOWN; R05 is consumed.
+
+Next/implementer: prepare one fresh exact three-CLI read-only operation card with source pins, window, strict cutoff, USD0, no retry and mandatory closeout; stop for separate owner approval before credentials/provider access. Counts unchanged. **No scope deviation.**
+
 ## October 29 — R05 traffic-shape diagnostic proposed
 
 R1-W01 / APP-013 / 3A / P08. `APP013_P08_TRAFFIC_SHAPE_DIAGNOSTIC_PROPOSAL_20261029.md` offers one disabled local sanitizer/test card followed by a separately approved, three-CLI read-only operation. It distinguishes the three subconditions of R05's sole false `trafficRetired` fact. No diagnostic code or provider read is authorized by preparation; R05 remains consumed.
