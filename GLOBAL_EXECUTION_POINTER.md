@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — corrected current-state qualification R03 approved for 9:15–10:15
+
+R1-W01 / APP-013 / 3A / P08. Owner approved exact operation `43ab2bc3-7511-42e3-9a2e-81961bb1c46b` against governance commit `084612f` and pre-decision SHA256 `dc7cfdfeb99bd9d81519c2c93b3b741ad1856b6c7f207d08b8de484cbe10195e`: today 9:15–10:15 a.m. Eastern, start strictly before 9:25, one attempt/no retry, USD0, exact 26 CLI/10 HTTPS/two SQL read ceilings and mandatory closeout/purge.
+
+Next/implementer: bind corrected backend `7fe401d` and this owner decision, run final local gates, then release one command at or after 9:15. Never run before 9:15 or at/after 9:25; never retry. Counts unchanged. **No scope deviation.**
+
 ## October 29 — corrected current-state qualification R03 proposed for 9:15–10:15
 
 R1-W01 / APP-013 / 3A / P08. Fresh operation `43ab2bc3-7511-42e3-9a2e-81961bb1c46b` is prepared in `APP013_P08_CORRECTED_CURRENT_STATE_QUALIFICATION_OPERATION_20261029_R03.md` against corrected backend `7fe401d`: today 9:15–10:15 a.m. Eastern, start strictly before 9:25, one attempt/no retry, USD0, exact 26 CLI/10 HTTPS/two SQL read-only ceilings and mandatory closeout/purge.
