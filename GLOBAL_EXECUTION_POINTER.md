@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## October 29 — P08 R10 read-only qualification proposed for remaining attended block
+
+R1-W01 / APP-013 / 3A / P08. Owner's 5:45–6:30 p.m. Eastern availability covers a fresh 6:13–6:30 p.m. proposal. `APP013_P08_CURRENT_STATE_QUALIFICATION_OPERATION_20261029_R10.md` proposes one read-only attempt against backend `3c3c7d0`, strict 6:20 start cutoff, 26 CLI/ten HTTPS/two read-only SQL ceilings, USD0/no retry and mandatory closeout/purge. R09 and earlier attempts consumed. Next/owner: separately approve or refuse exact R10 before cutoff; no provider authority under local correction. Counts unchanged. **No scope deviation.**
+
 ## October 29 — P08 safe access-fact observation verified locally
 
 R1-W01 / APP-013 / 3A / P08. Owner approved bounded Alternative 1 at `0ec07ec`; a fresh disabled backend copy retains only fixed allowlisted access-fact names/enums/counts after strict shape validation. 45 corrected focused/controller, 43 predecessor and three disposable PostgreSQL tests pass; source/manifest and governance gates pass. R09 remains consumed. Evidence `APP013_P08_ACCESS_FACT_OBSERVABILITY_LOCAL_RESULT_20261029.md` and backend `evidence/APP-013/p08-access-observation-local-20261029`.
