@@ -1,0 +1,13 @@
+# APP-013 / 3A / P08 — safe CLI failure classification proposal
+
+**Status: proposed local correction only; not approved or implemented.** The exact 2:45 traffic-shape operation `581346e1-445f-48f1-909c-b86137a9c1a3` is consumed. It stopped at its first owner-list CLI command with `CLI_REFUSED`, qualified private-input purge and no traffic read or mutation. The disabled helper at backend `66e61b9`, `evidence/APP-013/p08-traffic-shape-diagnostic-local-20261029/source/traffic_diagnostic.py`, currently merges nonzero exit, oversized stdout and process-launch errors into that status. This safe but coarse output cannot guide the smallest next approved operation.
+
+**Alternative 1 — recommended:** in the existing disabled helper and focused tests only, distinguish fixed non-sensitive categories `CLI_NONZERO_EXIT`, `CLI_OUTPUT_TOO_LARGE`, `CLI_LAUNCH_ERROR` and existing `CLI_TIMEOUT`, preserving stderr suppression, output cap, child-process cleanup, one-attempt reservation and private purge. Use fake process results for each branch and one end-to-end fake native stop. Retain no raw stdout/stderr, exit number, account or project details. Run the 16-case focused suite plus added cases, unchanged 35-case R05 suite, architecture/governance/whitespace gates. Record a sanitized result. No operation ID, window or allowance is carried forward.
+
+**Alternative 2:** ask the owner to inspect their local Cloud CLI session manually. This may reveal an authorization problem but does not produce reproducible controller evidence; it would not authorize another provider read under the consumed card.
+
+**Alternative 3:** repeat the three-read operation unchanged. Reject: it is consumed and likely returns the same ambiguous status.
+
+The correction adds no subsystem, feature, section, dependency or acceptance criterion. It advances the existing 3A same-job payment gate only by making the prerequisite failure diagnosable. Expected changed files are the diagnostic Python source/test and local result evidence, with governance checkpoint afterward. No application runtime code, R05 source, provider/database/Firebase/Stripe access, credentials, traffic, IAM/secrets, deployment, payment, spending, merge or push. Rollback is the prior disabled helper; live behavior remains off without a separately approved exact operation. A later external read needs a fresh immutable operation card, time window and owner approval. Counts remain accepted 4/8, newly closed R1 0/27, legacy 6/60, intelligence 0/13. **Proposed correction; no scope deviation implemented.**
+
+**Owner decision requested:** approve Alternative 1 for local correction and isolated tests only, or defer. This does not authorize any new Cloud read.

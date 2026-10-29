@@ -1,5 +1,9 @@
 # Session Handoff
 
+## October 29 — traffic-shape read stopped on first CLI
+
+Section: R1-W01 / APP-013 / 3A / P08. Completed: exact one-use owner-approved attempt, fixed safe stop, empty residuals and private-input purge. Remaining: owner decision on local safe CLI-category correction, local tests if approved, then a fresh separately approved external read; P08/3A, authentication/runtime/payment remain open. Blocker/owner: Debynyhan Banks decides `APP013_P08_TRAFFIC_CLI_FAILURE_CLASSIFICATION_PROPOSAL_20261029.md`; implementer cannot infer a provider defect from `CLI_REFUSED`. Next observable result: safe failure category from tested local adapter, not a live traffic fact. Evidence: backend `evidence/APP-013/p08-traffic-shape-read-stop-20261029`; governance `APP013_P08_TRAFFIC_SHAPE_READ_STOP_RESULT_20261029.md`. Accepted 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **Unintended CLI stop disclosed; no scope deviation implemented.**
+
 ## October 29 — exact traffic-shape read approved
 
 Section: R1-W01 / APP-013 / 3A / P08. Completed: immutable three-read operation card and separate exact owner approval. Remaining: private source/decision binding, final gates, one current read-only attempt and sanitized closeout; P08/3A, authentication/runtime/payment remain open. Blocker/role: implementer completes binding before strict 2:55 cutoff. Next observable result: fixed traffic booleans or safe stop. Evidence: backend `66e61b9`; governance card `c45d9a9` / SHA256 `4d4abaa792da803768e780b09204466d2df555c47c00521cc9e3acc65e7ea6ee`; approval document. Accepted 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **No scope deviation.**

@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — traffic-shape read stopped on first CLI
+
+R1-W01 / APP-013 / 3A / P08. The single approved read stopped `CLI_REFUSED` on owner-list command one; no traffic facts, no mutation, empty residuals and private-input purge verified. Attempt consumed.
+
+Next/owner: decide the local-only safe failure-classification proposal before any new operation. Counts unchanged. **Unintended stop; no correction implemented.**
+
 ## October 29 — exact traffic-shape read approved
 
 R1-W01 / APP-013 / 3A / P08. Owner approved operation `581346e1-445f-48f1-909c-b86137a9c1a3` against committed card `c45d9a9`, 2:45–3:00 p.m. Eastern, strict 2:55 cutoff, three CLI reads, USD0, no retry.

@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — traffic-shape read stopped on first CLI
+
+R1-W01 / APP-013 / 3A / P08. Approved operation `581346e1-445f-48f1-909c-b86137a9c1a3` ran once at 2:45:08 p.m. and stopped `CLI_REFUSED` on owner-list command one. No traffic read, no mutation, residuals empty and private inputs absent. It is consumed/no retry. The current helper merges several safe failure classes, so the cause remains UNKNOWN.
+
+Next/owner: approve or defer Alternative 1 in `APP013_P08_TRAFFIC_CLI_FAILURE_CLASSIFICATION_PROPOSAL_20261029.md` for local safe error categories/tests only. No provider access is authorized. Counts unchanged. **Unintended CLI stop disclosed; no scope deviation implemented.**
+
 ## October 29 — exact traffic-shape read approved for 2:45–3:00 p.m.
 
 R1-W01 / APP-013 / 3A / P08. Owner approved exact operation `581346e1-445f-48f1-909c-b86137a9c1a3` against proposal commit `c45d9a9` and pre-decision SHA256 `4d4abaa792da803768e780b09204466d2df555c47c00521cc9e3acc65e7ea6ee`: start at or after 2:45 and strictly before 2:55, three Cloud CLI reads maximum, one attempt/no retry, USD0 and closeout before 3:00.
