@@ -1,0 +1,7 @@
+# APP-013 / 3A / P08 — R08 oversized Service Usage safe stop
+
+R1-W01 / APP-013 / 3A / P08. Exact owner-approved read-only operation `3a156c4b-cdec-43ad-b053-0ec1d191e0b3` reserved its sole attempt at 5:50:28 p.m. Eastern October 29, before the 6:00 cutoff. Owner reported `P08_COMPOSED_QUALIFICATION_LOCAL_STOPPED`. Sanitized journal: `HTTPS_OUTPUT:service_1:OVERSIZE`, Cloud `QUALIFIED` (13 true, zero false), closeout `QUALIFIED`, empty residuals. The fixed ID maps to `iam.googleapis.com` Service Usage metadata; the response exceeded the 65,536-byte bound. Exact size, response contents and service state are UNKNOWN. No bearer, URL, payload or provider error was retained.
+
+Access, database and Firebase qualification did not complete. No authentication, IAM, runtime, payment or other mutation path ran. The exact private plan/binding were deleted; retirement receipt and filesystem readback confirm absence by 5:50:44. No closeout-only invocation was needed. Backend receipt `259f277` / `evidence/APP-013/p08-current-state-r08-stop-20261029`. R08 is consumed/no retry; R07 remains consumed.
+
+P08/3A remain open. Accepted walkthrough 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. Next decision: a bounded local-only partial-response contract correction, or defer. No new external read follows from this result. **Unintended oversized output stop disclosed; no scope deviation implemented.**

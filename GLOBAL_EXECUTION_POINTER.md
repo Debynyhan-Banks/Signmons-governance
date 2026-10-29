@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — P08 R08 oversized Service Usage response; bounded correction proposed
+
+R1-W01 / APP-013 / 3A / P08. R08 started once at 5:50:28 p.m. Eastern and stopped `HTTPS_OUTPUT:service_1:OVERSIZE` after Cloud 13/13 qualified. IAM Service Usage response exceeded the 65,536-byte cap; its state remains UNKNOWN. Read-only closeout qualified, residuals empty and private plan/binding absent by 5:50:44. R08 consumed/no retry; no access/database/Firebase qualification or mutation. Evidence backend `259f277`, governance `APP013_P08_R08_OVERSIZED_SERVICE_RESPONSE_RESULT_20261029.md`.
+
+Next/owner: decide local-only `fields=state` projection in `APP013_P08_SERVICE_STATE_PARTIAL_RESPONSE_PROPOSAL_20261029.md` or defer. No source change or provider read under R08. Accepted 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **Unintended oversized output stop disclosed; no scope deviation implemented.**
+
 ## October 29 — P08 R08 exact read-only operation approved
 
 R1-W01 / APP-013 / 3A / P08. Owner approved operation `3a156c4b-cdec-43ad-b053-0ec1d191e0b3` against immutable card `4dc3626` / SHA256 `cf85eb6f4559b990a7d8700222803fa89a04746135ed29cf5f8a3d396546a3ec`. Window 5:45–6:30 p.m. Eastern, strict 6:00 start cutoff, 26 CLI/ten HTTPS/two read-only SQL ceilings, USD0/no retry and mandatory closeout/purge. Next/implementer: bind backend `be0adc1`, pass final gates and release one Terminal command before cutoff. Counts unchanged. **No scope deviation.**

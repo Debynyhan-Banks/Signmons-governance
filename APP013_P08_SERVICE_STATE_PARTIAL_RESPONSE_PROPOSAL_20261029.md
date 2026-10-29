@@ -1,0 +1,25 @@
+# APP-013 / 3A / P08 — bounded Service Usage partial-response proposal
+
+**Status: owner decision requested; no code change or external read authorized.** Section R1-W01 / APP-013 / 3A / P08. R08 stopped safely at `HTTPS_OUTPUT:service_1:OVERSIZE`, the `iam.googleapis.com` Service Usage state read, after Cloud 13/13 qualified; mandatory closeout and private-input purge verified. Backend receipt `259f277`. R08 and R07 are consumed/no retry. The exact response size, content and service state were deliberately not retained.
+
+The [Service Usage `services.get` reference](https://docs.cloud.google.com/service-usage/docs/reference/rest/v1/services/get) says the response is a `Service`; the [resource schema](https://docs.cloud.google.com/service-usage/docs/reference/rest/v1/services) includes both `config` and `state`. The current P08 qualification reads only `state`. Google's [Cloud API system-parameter reference](https://docs.cloud.google.com/apis/docs/system-parameters) defines `fields`/`$fields` as a response field mask. This supports a narrow proposed `?fields=state` request, but whether this exact endpoint returns the expected bounded shape must be proven in a fresh separately approved read; local tests alone cannot establish that live fact.
+
+## Alternatives
+
+1. **Recommended — local-only exact partial-response contract.** In a fresh disabled copy of backend `be0adc1`, add the fixed `fields=state` response mask to only the six existing Service Usage GET descriptors. Keep the same host, project-number/service allowlist, method, bearer handling, six request slots and ten total HTTPS ceiling. Preserve the 65,536-byte bound and the strict state check; do not accept a missing/unknown state. Prove exact URLs and bodies with fake responses, including a 400/error, full-size malicious response, missing state, disabled state and valid enabled state. No real request under local approval. A fresh operation requires separate owner approval.
+2. **Raise the raw response cap.** Defer. This would ingest unrelated configuration and increase memory/privacy exposure without improving the state criterion.
+3. **Defer for provider/account-owner investigation.** Keep P08 stopped and seek an external explanation before changing the local request contract.
+4. **Repeat R08 or treat oversize as enabled.** Reject. R08 is consumed and no service state was established.
+
+## Finite Alternative 1 card
+
+- **Source and criterion:** locked backend `be0adc1`, `evidence/APP-013/p08-https-output-category-local-20261029/source/qualification_launch.py` at `access_https_contract`, `_https`, `NativeIO.https` and `read_access`, plus focused/model/PostgreSQL tests. Existing P08 current-state acceptance requires exact enabled-service and permission facts before same-job 3A Sandbox payment. Demonstrated gap: the full `services.get` response for `service_1` exceeds the current safe body cap while only `state` is needed.
+- **Expected files/interfaces:** one fresh disabled source/test/evidence copy. Six fixed GET URLs gain only `?fields=state`; no other endpoint, count, parser, cap, output category, operation/source/approval binding or CLI/SQL contract changes. Existing disabled launcher still refuses unbound. Do not alter old snapshots, R08 receipt or application runtime.
+- **Data/identity/retention:** fake provider responses only; no real bearer, CHILD password, Firebase identity, database or provider account data. Retain no response bytes, URL with project number, status body or raw exception in public evidence. Existing closeout/purge contracts remain unchanged.
+- **Finite tests:** exact six URLs/ten-request ceiling; valid enabled and disabled states; missing/malformed/oversized/400 responses fail closed; foreign project/service/refusal; no raw data persistence; positive/negative/concurrency/recovery/signal/deadline/closeout tests; unchanged predecessor regression, disposable PostgreSQL checks, source-lock/manifest, architecture, governance baseline/consistency/tests and both whitespace gates. Browser is not applicable to a backend metadata request. Finish is locally verified bounded request projection, not live P08 qualification.
+- **Dependencies/owner/rollback:** Debynyhan Banks must approve this local correction before implementation. Implementer discards the fresh disabled copy on failure. A future provider read requires a new exact card, window and separate owner approval. No provider state exists to roll back.
+- **Exclusions:** no API enablement, IAM/secret/key/account/database business mutation, authentication/signing/token exchange, runtime restoration/deployment, Stripe/payment, booking/customer action, spending, merge or push.
+
+**Impact:** no section ID/count, acceptance criterion, dependency, call ceiling or allowance change. The partial-response behavior remains a live hypothesis until a separately approved operation proves it. **Proposed deviation only; none implemented.**
+
+**Owner decision requested:** approve Alternative 1 for bounded local correction and isolated tests only, or defer for provider investigation.

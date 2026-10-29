@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — P08 R08 oversized IAM-service response safe stop
+
+R1-W01 / APP-013 / 3A / P08. One approved R08 attempt stopped `HTTPS_OUTPUT:service_1:OVERSIZE` after Cloud 13/13; state unknown. Closeout qualified, private inputs absent, no mutation. R08 consumed/no retry. Next/owner: decide bounded local-only partial-response proposal; no fresh provider authority. P08/3A open, counts unchanged. **Unintended output stop disclosed; no scope deviation implemented.**
+
 ## October 29 — P08 R08 read-only operation approved
 
 R1-W01 / APP-013 / 3A / P08. Exact R08 `3a156c4b-cdec-43ad-b053-0ec1d191e0b3` approved for 5:45–6:30 p.m. Eastern, strict 6:00 cutoff, USD0/no retry/mandatory closeout. Next/implementer: bind and release one Terminal command after final gates. Counts unchanged. **No scope deviation.**
