@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — composed current-state qualification preparation approved locally
+
+R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 against governance commit `747eec6` and proposal SHA256 `8f28bfdeb3b924e6a9c282c9579338ae352ad1fccda93531b7bf5f908849d157`: implement only the disabled evidence-only qualification coordinator, isolated tests and sanitized result, reusing locked read seams and excluding Stripe.
+
+Next/implementer: complete the finite local checklist and repository gates, then stop before credential resolution or any external read/mutation. Counts unchanged. **No scope deviation; approved local prerequisite only.**
+
 ## October 29 — composed current-state qualification preparation proposed
 
 R1-W01 / APP-013 / 3A / P08. Reuse inspection found existing exact role, restoration, operator/database, Firebase and access-read seams, but they are separately pinned to consumed operations and cannot emit one current qualification for the composed parent. The old operator helper also includes unnecessary Stripe/historical selection behavior. No implementation or external action occurred.
