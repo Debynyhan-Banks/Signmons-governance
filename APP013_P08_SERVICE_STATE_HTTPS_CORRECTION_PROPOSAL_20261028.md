@@ -1,6 +1,8 @@
 # APP-013 / 3A / P08 — service-state HTTPS correction proposal
 
-Status: PROPOSED, NOT AUTHORIZED. R1-W01 / APP-013 / 3A remains unchanged.
+Status: OWNER APPROVED FOR ALTERNATIVE 1 LOCAL CORRECTION ONLY. R1-W01 / APP-013 / 3A remains unchanged.
+
+Owner decision: On October 28, 2026, the owner approved Alternative 1 against this proposal's pre-decision SHA256 `d03112fea6f1d0bb91931a967c01b26a60e820ad21e5814bb5001a13a01c7827`. This authorizes only the bounded local HTTPS-path implementation and fake subprocess/HTTP tests below. It does not authorize gcloud, network/provider access, retry or mutation.
 
 ## Demonstrated gap
 
@@ -32,4 +34,4 @@ Prepare a separate read-only Resource Manager and Service Usage diagnostic first
 
 Leave Stage A blocked on the gcloud transport path.
 
-Owner decision requested: approve Alternative 1 for bounded local correction and fake tests only, choose Alternative 2, or stop. Accepted counts remain unchanged. **Demonstrated transport-path change disclosed; no scope deviation implemented.**
+Owner decision recorded: Alternative 1 approved for bounded local correction and fake tests only. Accepted counts remain unchanged. **Demonstrated transport-path change accepted for correction; no external action is authorized.**

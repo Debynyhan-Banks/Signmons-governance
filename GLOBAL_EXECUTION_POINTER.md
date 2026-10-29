@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 28 — service-state HTTPS correction approved locally
+
+R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 in `APP013_P08_SERVICE_STATE_HTTPS_CORRECTION_PROPOSAL_20261028.md` against pre-decision SHA256 `d03112fea6f1d0bb91931a967c01b26a60e820ad21e5814bb5001a13a01c7827`: locally replace the failing gcloud service-state read with exact Resource Manager and Service Usage HTTPS reads, bind five CLI/nine HTTPS, expand the permission probe and add safe HTTPS evidence using fake adapters only.
+
+Next/implementer: change only the evidence helper/tests/manifest/result, preserve all mutation gates and repository safeguards, then present any fresh external operation separately. No gcloud, provider read/retry/action is authorized. Counts unchanged. **No scope deviation; approved local correction only.**
+
 ## October 28 — R02 confirmed service-state transport blocker; HTTPS correction proposed
 
 R1-W01 / APP-013 / 3A / P08. Corrected operation `2f413783-9c32-4ed5-89d1-875f383e3bca` ran once at 7:35 p.m. and stopped at `CLI_4_IAM_SERVICE_STATE` with category `TRANSPORT`. Zero HTTPS/mutation requests; created0/unknown0; private inputs/processes absent; containment verified. Attempt consumed/no retry. Backend evidence `p08-exact-role-creation-r02-stop-20261028`.
