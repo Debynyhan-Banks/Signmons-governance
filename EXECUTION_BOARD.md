@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — P08 R09 access-unknown safe stop
+
+R1-W01 / APP-013 / 3A / P08. One approved R09 attempt passed Cloud 13/13 and completed access UNKNOWN, then stopped safely. Closeout qualified, private inputs absent, no mutation. R09 consumed/no retry. Next/owner: decide local-only fixed access-fact observation; no fresh provider authority. P08/3A open, counts unchanged. **Unintended access-unknown stop disclosed; no scope deviation implemented.**
+
 ## October 29 — P08 R09 read-only operation approved
 
 R1-W01 / APP-013 / 3A / P08. Exact R09 `e31b475c-199e-4ea3-98bb-150be414a06d` approved for 5:55–6:30 p.m. Eastern, strict 6:10 cutoff, USD0/no retry/mandatory closeout. Next/implementer: bind and release one Terminal command after final gates. Counts unchanged. **No scope deviation.**

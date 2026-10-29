@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — P08 R09 access unknown; bounded observation proposed
+
+R1-W01 / APP-013 / 3A / P08. R09 started once at 6:06:39 p.m. Eastern. Cloud 13/13 qualified, access completed UNKNOWN and `ACCESS_UNKNOWN` stopped before database/Firebase. Read-only closeout qualified, residuals empty and private inputs absent by 6:07:22. R09 consumed/no retry; no mutation. Evidence backend `f52b99f`, governance `APP013_P08_R09_ACCESS_UNKNOWN_STOP_RESULT_20261029.md`.
+
+Next/owner: decide local-only fixed access-fact observation in `APP013_P08_ACCESS_FACT_OBSERVABILITY_PROPOSAL_20261029.md` or defer. No provider read/source change under R09. Accepted 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **Unintended access-unknown stop disclosed; no scope deviation implemented.**
+
 ## October 29 — P08 R09 exact read-only operation approved
 
 R1-W01 / APP-013 / 3A / P08. Owner approved operation `e31b475c-199e-4ea3-98bb-150be414a06d` against immutable card `d493582` / SHA256 `82419591baa8c1d05ebae7466eede126a90828597e64895920c215be10591a5f`. Window 5:55–6:30 p.m. Eastern, strict 6:10 start cutoff, 26 CLI/ten HTTPS/two read-only SQL ceilings, USD0/no retry and mandatory closeout/purge. Next/implementer: bind backend `31e25cd`, pass final gates and release one Terminal command before cutoff. Counts unchanged. **No scope deviation.**
