@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## October 29 — P08 R08 read-only qualification proposed for 5:45–6:30 p.m.
+
+R1-W01 / APP-013 / 3A / P08. Owner supplied 5:45–6:30 p.m. Eastern availability and approved preparation, not execution. `APP013_P08_CURRENT_STATE_QUALIFICATION_OPERATION_20261029_R08.md` proposes one fresh current-state read-only attempt against backend `be0adc1`, strict 6:00 start cutoff, 26 CLI/ten HTTPS/two read-only SQL ceilings, USD0/no retry and mandatory closeout/purge. R07 and earlier attempts are consumed. Next/owner: separately approve or refuse exact R08 before its cutoff; no provider access under availability or local-correction approval. Counts unchanged. **No scope deviation.**
+
 ## October 29 — P08 safe HTTPS response-category correction verified locally
 
 R1-W01 / APP-013 / 3A / P08. Owner approved bounded Alternative 1 at `0275493`; a fresh disabled backend copy records only fixed `OVERSIZE`, `INVALID_UTF8` or `INVALID_JSON` alongside an allowlisted HTTPS request ID. 41 corrected focused/controller tests, 39 unchanged predecessor and three disposable PostgreSQL cases pass; source/manifest and governance gates pass. R07 remains consumed. Evidence `APP013_P08_SERVICE_RESPONSE_CATEGORY_LOCAL_RESULT_20261029.md` and backend `evidence/APP-013/p08-https-output-category-local-20261029`.

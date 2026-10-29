@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — P08 R08 read-only operation proposed
+
+R1-W01 / APP-013 / 3A / P08. Fresh 5:45–6:30 p.m. Eastern R08 card uses locally tested fixed HTTPS response categories, strict 6:00 cutoff, USD0/no retry and mandatory closeout. Next/owner: decide separate exact external-read approval. P08/3A open, counts unchanged. **No scope deviation.**
+
 ## October 29 — P08 local HTTPS response categories verified
 
 R1-W01 / APP-013 / 3A / P08. Approved disabled copy classifies only three safe output categories; 41 corrected, 39 predecessor and three disposable PostgreSQL tests pass. R07 consumed/no retry. Next/implementer: fresh exact read-only operation card and separate owner approval, with no inherited provider authority. P08/3A open, counts unchanged. **No scope deviation beyond approved local correction.**
