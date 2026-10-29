@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — R02 stopped safely at config output contract
+
+R1-W01 / APP-013 / 3A / P08. R02 consumed its one attempt and stopped before HTTPS/qualification SQL at fixed failure `CONFIG_OUTPUT`; database-session closeout qualified, residuals are empty and private inputs are absent.
+
+Next/owner: approve or defer the narrow local correction in `APP013_P08_CONFIG_OUTPUT_CONTRACT_CORRECTION_PROPOSAL_20261029.md`. Counts unchanged. **Demonstrated drift; no correction implemented.**
+
 ## October 29 — corrected current-state qualification R02 approved for 8:45–9:45
 
 R1-W01 / APP-013 / 3A / P08. Owner approved exact read-only operation `56e8b2e6-58ec-46fc-9ba0-c4cbc74918ac` against proposal commit `1fda777`; strict 8:55 cutoff, one attempt/no retry, USD0.
