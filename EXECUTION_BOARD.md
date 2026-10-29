@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — P08 R10 read-only operation approved
+
+R1-W01 / APP-013 / 3A / P08. Exact R10 `ecaba65e-4e57-4579-a1ca-7e3be86f43e1` approved for 6:13–6:30 p.m. Eastern, strict 6:20 cutoff, USD0/no retry/mandatory closeout. Next/implementer: bind and release one Terminal command after final gates. Counts unchanged. **No scope deviation.**
+
 ## October 29 — P08 R10 read-only operation proposed
 
 R1-W01 / APP-013 / 3A / P08. Fresh 6:13–6:30 p.m. Eastern R10 card uses locally tested fixed access-fact observation, strict 6:20 cutoff, USD0/no retry and mandatory closeout. Next/owner: decide separate exact external-read approval. P08/3A open, counts unchanged. **No scope deviation.**
