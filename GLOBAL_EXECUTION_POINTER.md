@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## October 29 — P08 R09 read-only qualification proposed for remaining attended block
+
+R1-W01 / APP-013 / 3A / P08. Owner's 5:45–6:30 p.m. Eastern availability still covers a fresh 5:55–6:30 p.m. proposal. `APP013_P08_CURRENT_STATE_QUALIFICATION_OPERATION_20261029_R09.md` proposes one read-only attempt against backend `31e25cd`, strict 6:10 start cutoff, 26 CLI/ten HTTPS/two read-only SQL ceilings, USD0/no retry and mandatory closeout/purge. R08 and earlier attempts are consumed. Next/owner: separately approve or refuse exact R09 before cutoff; no provider authority under availability/local correction. Counts unchanged. **No scope deviation.**
+
 ## October 29 — P08 Service Usage state projection verified locally
 
 R1-W01 / APP-013 / 3A / P08. Owner approved bounded Alternative 1 at `e9b1478`; a fresh disabled backend copy adds only `?fields=state` to six Service Usage GET descriptors. The 65,536-byte cap and strict state gate remain. 43 corrected focused/controller, 41 predecessor and three disposable PostgreSQL tests pass; source/manifest and governance gates pass. R08 remains consumed. Evidence `APP013_P08_SERVICE_STATE_PARTIAL_RESPONSE_LOCAL_RESULT_20261029.md` and backend `evidence/APP-013/p08-service-state-projection-local-20261029`.

@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — P08 R09 read-only operation proposed
+
+R1-W01 / APP-013 / 3A / P08. Fresh 5:55–6:30 p.m. Eastern R09 card uses locally tested `fields=state` Service Usage reads, strict 6:10 cutoff, USD0/no retry and mandatory closeout. Next/owner: decide separate exact external-read approval. P08/3A open, counts unchanged. **No scope deviation.**
+
 ## October 29 — P08 local Service Usage projection verified
 
 R1-W01 / APP-013 / 3A / P08. Approved disabled copy requests only `state` for six Service Usage reads; 43 corrected, 41 predecessor and three disposable PostgreSQL tests pass. R08 consumed/no retry. Next/implementer: fresh exact read-only operation card and separate owner approval; no inherited provider authority. P08/3A open, counts unchanged. **No scope deviation beyond approved local correction.**
