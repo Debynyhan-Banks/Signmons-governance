@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — qualification launch drift stopped before operation
+
+R1-W01 / APP-013 / 3A / P08. Shift-left review of backend `aa257f7` found purged-identifier dependencies and an unproved native database reduction that could report disabled-operator facts from an active-owner read. No 8:15 operation plan/command/attempt/credential or external read exists; availability is not consumed. Correction proposal: `APP013_P08_QUALIFICATION_LAUNCH_DRIFT_CORRECTION_PROPOSAL_20261029.md`.
+
+Next/owner: approve Alternative 1 for local correction/testing or defer. Do not prepare or run an attended qualification until corrected local evidence passes. Counts unchanged. **Unintended drift disclosed; no correction implemented.**
+
 ## October 29 — qualification launch completion locally verified
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved local launch completion is committed at backend `aa257f7`; result `APP013_P08_QUALIFICATION_LAUNCH_COMPLETION_LOCAL_RESULT_20261029.md`. The disabled launcher now has exact 26-CLI/10-HTTPS/two-SQL read contracts, native pre-credential refusal, owner-decision binding and closeout-only isolation. No external action occurred.
