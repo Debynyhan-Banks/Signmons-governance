@@ -1,0 +1,15 @@
+# APP-013 / 3A / P08 — composed current-state qualification local result
+
+R1-W01 / APP-013 / 3A / P08. Owner approved the local prerequisite against proposal commit `747eec6`, proposal SHA256 `8f28bfdeb3b924e6a9c282c9579338ae352ad1fccda93531b7bf5f908849d157`, and approval commit `635795f`. Backend evidence is committed at `3eac627` under `evidence/APP-013/p08-composed-qualification-local-20261029/`.
+
+The disabled injected-adapter coordinator verifies five locked source hashes plus the saved disabled-account ownership receipt hash. It binds one local qualification operation and one prospective composed-operation/key ID, exact owner/project/job/tenant/runtime/roles/services/permissions, source/proposal/ownership hashes, read inventory, window, USD0 and no retry. Native entry verifies manifests and returns `P08_COMPOSED_QUALIFICATION_REFUSED_UNBOUND`; it has no credential resolver, subprocess, SQL client or network transport.
+
+Strict domains are Cloud/runtime; roles/services/permissions/key absence; database/job/operator/retired role; Firebase disabled account; and mandatory closeout. A disabled service, denied permission or present prospective key is `NOT_READY`; denial is never absence; unsupported/incomplete output stays `UNKNOWN`; exact drift stays `DRIFT`; closeout failure is `CONTAINMENT_UNCONFIRMED`. Stripe and mutation inventory are absent.
+
+Final applicable verification passed: 15 new qualification cases, 26 unchanged role cases, 31 unchanged restoration cases, 40 unchanged access cases, 14 timeless operator SQL/classifier/Firebase/closeout cases and 60 unchanged authentication cases. The full 42-case historical operator suite was attempted: 25 passed and 17 stopped on expired October23 windows or deleted private scratch fixtures. Those failures are retained; historical source was not modified to force a pass. The authentication suite ran from a private no-space copy because its unchanged URL pathname handling cannot resolve the checkout path containing spaces; all60 passed and scratch was deleted with absence readback.
+
+No credential resolution, external read, database/Firebase/provider action, IAM/API/key/account/runtime/token/Stripe/payment/deployment/billing/spending action occurred. No backend product source, UI, schema, SQL, dependency or locked evidence changed. Local success is not current readiness, P08 completion or 3A acceptance.
+
+Next/implementer: prepare the exact attended read-only qualification operation using this source contract. It must bind a fresh operation/prospective-operation ID, exact finite CLI/HTTPS/SQL ceilings, a <=60-minute Eastern block, hidden current CHILD database administrator password, owner OAuth in process memory, one attempt/no retry, USD0, closeout and private purge. No API enablement or mutation. The owner separately approves that external read.
+
+Accepted1A/1B/2A/2B remain4/8. Newly closed R1 remains0/27, legacy6/60, intelligence0/13. Stable roles, local authentication composition and local qualification composition are complete; P08/3A remain open. **No scope deviation within the approved local prerequisite.**
