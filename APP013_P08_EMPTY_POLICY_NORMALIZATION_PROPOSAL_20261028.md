@@ -1,6 +1,8 @@
 # APP-013 / 3A / P08 — empty projected-policy normalization proposal
 
-Status: OWNER DECISION REQUIRED BEFORE IMPLEMENTATION. R1-W01 / APP-013 / 3A remains unchanged.
+Status: OWNER APPROVED ALTERNATIVE 1 FOR LOCAL CORRECTION AND ISOLATED TESTS ONLY. R1-W01 / APP-013 / 3A remains unchanged.
+
+Owner decision: On October 28, 2026, the owner approved Alternative 1 against this document's pre-decision SHA256 `8213221e444df5c87feabbbc376561a3532bb50918d660720bc59f9b1591c9d1`. Authority is limited to the local files, normalization, safe classifications and isolated checks below. It does not authorize any provider read, retry or mutation.
 
 ## Demonstrated gap and workflow connection
 
@@ -32,4 +34,4 @@ Alternative 1 is smallest because null and an absent field are equivalent empty 
 
 ## Decision requested
 
-Approve or defer Alternative 1 for bounded local correction and isolated tests only. Approval would not authorize any new provider read, retry or mutation. **Demonstrated parser prerequisite proposed before implementation; no scope deviation implemented.**
+Owner approved Alternative 1 for bounded local correction and isolated tests only. Approval does not authorize any new provider read, retry or mutation. **Demonstrated parser prerequisite approved before implementation; no scope deviation.**

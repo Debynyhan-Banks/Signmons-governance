@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 28 — empty projected-policy normalization approved locally
+
+R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 in `APP013_P08_EMPTY_POLICY_NORMALIZATION_PROPOSAL_20261028.md` against pre-decision SHA256 `8213221e444df5c87feabbbc376561a3532bb50918d660720bc59f9b1591c9d1`: locally normalize only absent/null/empty projected bindings, retain rejection of all other drift, and add fixed safe shape classifications with isolated tests.
+
+Next/implementer: change only the evidence-contained helper/tests/manifest/result, preserve exact call serialization and all gates, then present any fresh external operation separately. No provider read/retry/action is authorized. Counts unchanged. **No scope deviation; approved local correction only.**
+
 ## October 28 — R03 contained policy-shape stop; narrow normalization proposed
 
 R1-W01 / APP-013 / 3A / P08. Operation `d45f0618-c8a9-4c85-910a-c60c9352e9cc` ran once at 8:40 p.m. and stopped at `CLI_5_IDENTITY_POLICY` with `ROLE_DRIFT`. Five CLI reads, zero HTTPS/mutation requests, created0/unknown0; private inputs/processes absent; containment verified. Attempt consumed/no retry. Backend evidence `p08-exact-role-creation-r03-stop-20261028`.
