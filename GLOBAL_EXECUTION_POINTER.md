@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — 8:30 qualification withdrawn prestart on Firebase REST contract drift
+
+R1-W01 / APP-013 / 3A / P08. Final shift-left review proved the REST lookup returns `validSince` seconds, while backend `d7c40c1` expects Admin SDK `tokensValidAfterTime`. Operation `82ad7bf3-1bc8-455b-8c7b-0049387af3b5` was withdrawn before command/attempt/password/external read; exact private inputs were retired with absence readback.
+
+Next/owner: approve or defer Alternative 1 in `APP013_P08_FIREBASE_VALID_SINCE_CONTRACT_CORRECTION_PROPOSAL_20261029.md`. Do not run or rebind the withdrawn operation. Counts unchanged. **Unintended drift disclosed before execution; no correction implemented.**
+
 ## October 29 — corrected current-state qualification approved for 8:30–9:30
 
 R1-W01 / APP-013 / 3A / P08. Owner approved exact operation `82ad7bf3-1bc8-455b-8c7b-0049387af3b5` against governance commit `7bd17c6` and pre-decision SHA256 `17462362f6cd3dc94c12cb6d04120961bd9c53954f82ef8492d201aa822383df`: today 8:30–9:30 a.m. Eastern, start strictly before 8:40, one attempt/no retry, USD0, exact 26 CLI/10 HTTPS/two SQL read ceilings and mandatory closeout/purge.

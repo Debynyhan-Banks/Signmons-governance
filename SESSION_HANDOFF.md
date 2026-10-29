@@ -1,5 +1,9 @@
 # Session Handoff
 
+## October 29 — 8:30 qualification withdrawn prestart on Firebase REST contract drift
+
+Section: R1-W01 / APP-013 / 3A / P08. Completed: immutable operation/approval and prestart binding check; final primary-contract audit; exact private-input purge. Remaining: owner decision on narrow `validSince` parser correction, local implementation/tests, then a new external operation. Blocker/owner: Debynyhan Banks; existing operation cannot be run or rebound. Next observable result: local REST response-contract proof. Evidence: `APP013_P08_FIREBASE_VALID_SINCE_CONTRACT_CORRECTION_PROPOSAL_20261029.md`; no attempt receipt because execution never started. Accepted milestones 4/8; counts unchanged. **Unintended drift disclosed before execution; no correction implemented.**
+
 ## October 29 — corrected current-state qualification approved for 8:30–9:30
 
 Section: R1-W01 / APP-013 / 3A / P08. Completed: immutable operation proposal and explicit owner approval. Remaining: exact private binding/local gates, one attended current read-only attempt, mandatory closeout/purge and result review. Blocker/role: implementer must release only the verified command at or after 8:30 and before the 8:40 cutoff; owner supplies the CHILD database password privately. Next observable result: sanitized qualification plus containment or fixed safe stop. Evidence: operation `7bd17c6`; approval record `APP013_P08_CORRECTED_CURRENT_STATE_QUALIFICATION_APPROVAL_20261029.md`. Accepted milestones 4/8; R1 counts unchanged. **No scope deviation.**

@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — 8:30 qualification withdrawn prestart on Firebase REST contract drift
+
+R1-W01 / APP-013 / 3A / P08. Approved operation `82ad7bf3-1bc8-455b-8c7b-0049387af3b5` was withdrawn unstarted after primary-contract review found `validSince`/`tokensValidAfterTime` drift. Zero external calls; private inputs absent.
+
+Next/owner: approve bounded local Alternative 1 or defer. A corrected external operation requires new IDs/window/approval. Counts unchanged. **Unintended drift disclosed; no correction implemented.**
+
 ## October 29 — corrected current-state qualification approved for 8:30–9:30
 
 R1-W01 / APP-013 / 3A / P08. Exact operation `82ad7bf3-1bc8-455b-8c7b-0049387af3b5` is approved against immutable proposal `7bd17c6`/`17462362…`: strict 8:40 cutoff, USD0, one attempt/no retry and mandatory closeout/purge.
