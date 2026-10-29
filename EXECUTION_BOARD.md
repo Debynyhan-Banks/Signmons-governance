@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — Firebase REST validSince correction passed locally
+
+R1-W01 / APP-013 / 3A / P08. Backend `1125d17` completes the bounded REST contract correction with all gates green and zero external actions.
+
+Next/owner: choose a fresh attended block; new operation IDs and separate approval are required. Counts unchanged. **No scope deviation.**
+
 ## October 29 — Firebase REST validSince correction approved locally
 
 R1-W01 / APP-013 / 3A / P08. Alternative 1 in `APP013_P08_FIREBASE_VALID_SINCE_CONTRACT_CORRECTION_PROPOSAL_20261029.md` is approved for local parser/tests only.

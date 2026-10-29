@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — Firebase REST validSince correction passed locally
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved correction is committed at backend `1125d17`; result `APP013_P08_FIREBASE_VALID_SINCE_CORRECTION_LOCAL_RESULT_20261029.md`. Strict decimal int64 `validSince` seconds and retained-boundary behavior now match the documented REST contract; all focused and locked regression suites pass. Zero external actions.
+
+Next/owner: supply a fresh attended window for a new immutable operation/approval. The withdrawn 8:30 operation is not reusable. Counts unchanged. **No scope deviation.**
+
 ## October 29 — Firebase REST validSince correction approved locally
 
 R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 at proposal commit `fe4e9b3`: locally replace the wrong Admin SDK revocation field with strict REST `validSince` seconds parsing and boundary tests only.

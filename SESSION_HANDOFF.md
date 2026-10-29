@@ -1,5 +1,9 @@
 # Session Handoff
 
+## October 29 — Firebase REST validSince correction passed locally
+
+Section: R1-W01 / APP-013 / 3A / P08. Completed: strict REST `validSince` correction, negative/boundary tests, PostgreSQL and locked regressions, sanitized result. Remaining: fresh attended operation proposal/approval and one current read-only attempt; authentication/runtime/payment remain unauthorized. Blocker/owner: Debynyhan Banks supplies a new window. Next observable result: newly bound five-domain qualification or fixed safe stop. Evidence: backend `1125d17`; `APP013_P08_FIREBASE_VALID_SINCE_CORRECTION_LOCAL_RESULT_20261029.md`. Accepted milestones 4/8; counts unchanged. **No scope deviation.**
+
 ## October 29 — Firebase REST validSince correction approved locally
 
 Section: R1-W01 / APP-013 / 3A / P08. Completed: prestart drift stop, private purge and owner approval for narrow local correction. Remaining: implementation/tests/result, then a new external proposal. Blocker/role: implementer completes only the approved local card. Next observable result: strict `validSince` boundary proof with all gates. Evidence: proposal/decision `fe4e9b3`. Accepted milestones and counts unchanged. **No scope deviation.**
