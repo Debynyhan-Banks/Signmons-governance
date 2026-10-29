@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — exact traffic-shape read proposed
+
+R1-W01 / APP-013 / 3A / P08. One read-only three-CLI operation is prepared for 2:45–3:00 p.m. Eastern in `APP013_P08_TRAFFIC_SHAPE_READ_OPERATION_20261029.md`; strict 2:55 cutoff, USD0, no retry. No provider read yet.
+
+Next/owner: approve or refuse this exact operation. Counts unchanged. **No scope deviation.**
+
 ## October 29 — traffic-shape diagnostic passed locally
 
 R1-W01 / APP-013 / 3A / P08. Disabled diagnostic, 16 isolated cases and unchanged 35-case R05 suite pass; no external read. The failed R05 traffic subcondition remains UNKNOWN.

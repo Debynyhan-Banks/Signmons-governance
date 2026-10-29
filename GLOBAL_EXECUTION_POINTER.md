@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — exact traffic-shape read proposed for 2:45–3:00 p.m.
+
+R1-W01 / APP-013 / 3A / P08. `APP013_P08_TRAFFIC_SHAPE_READ_OPERATION_20261029.md` proposes one three-CLI read-only operation `581346e1-445f-48f1-909c-b86137a9c1a3` against locally verified backend `66e61b9`: start at or after 2:45 and strictly before 2:55, read by 2:58, mandatory closeout by 3:00, USD0, one attempt/no retry. No Cloud read has occurred under this card.
+
+Next/owner: approve or refuse this exact operation before 2:55. Local-preparation approval does not authorize provider access. Counts unchanged. **No scope deviation.**
+
 ## October 29 — traffic-shape diagnostic passed locally
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved Alternative 1 local sanitizer and isolated tests are complete at backend `evidence/APP-013/p08-traffic-shape-diagnostic-local-20261029`; 16 focused and 35 unchanged qualification tests pass. No Cloud read or mutation occurred. Current traffic subcondition remains UNKNOWN; R05 is consumed.

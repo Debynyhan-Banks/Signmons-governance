@@ -1,5 +1,9 @@
 # Session Handoff
 
+## October 29 — exact traffic-shape read proposed
+
+Section: R1-W01 / APP-013 / 3A / P08. Completed: locally verified disabled diagnostic and fresh immutable three-CLI operation card. Remaining: separate owner execution decision, private binding/final gates, one current traffic read or safe stop, then owner-reviewed correction/qualification if warranted; P08/3A, authentication/runtime/payment remain open. Blocker/owner: Debynyhan Banks decides operation `581346e1-445f-48f1-909c-b86137a9c1a3` before 2:55. Next observable result: four sanitized traffic booleans or fixed safe stop. Evidence: backend `66e61b9`; `APP013_P08_TRAFFIC_SHAPE_READ_OPERATION_20261029.md`. Accepted 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **No scope deviation.**
+
 ## October 29 — traffic-shape diagnostic passed locally
 
 Section: R1-W01 / APP-013 / 3A / P08. Completed: owner-approved disabled sanitizer, 16 isolated tests, unchanged 35-case qualification regression and local readiness record. Remaining: fresh exact external-read card and owner approval, one current sanitized traffic read, then a separately decided correction or qualification; authentication/runtime/payment and P08/3A acceptance remain open. Blocker/owner: implementer prepares the card; Debynyhan Banks must approve the later provider read. Next observable result: exact boolean traffic subconditions or a fixed safe stop. Evidence: backend `evidence/APP-013/p08-traffic-shape-diagnostic-local-20261029`; governance `APP013_P08_TRAFFIC_SHAPE_LOCAL_RESULT_20261029.md`. Accepted 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **No scope deviation.**
