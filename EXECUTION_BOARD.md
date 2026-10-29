@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — corrected current-state qualification R02 proposed for 8:45–9:45
+
+R1-W01 / APP-013 / 3A / P08. Fresh read-only operation `56e8b2e6-58ec-46fc-9ba0-c4cbc74918ac` is prepared against backend `1125d17`, with the strict Firebase REST `validSince` correction included.
+
+Next/owner: approve or refuse the exact 8:45–9:45 operation; strict 8:55 cutoff, one attempt/no retry, USD0. Counts unchanged. **No scope deviation.**
+
 ## October 29 — Firebase REST validSince correction passed locally
 
 R1-W01 / APP-013 / 3A / P08. Backend `1125d17` completes the bounded REST contract correction with all gates green and zero external actions.
