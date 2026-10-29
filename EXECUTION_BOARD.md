@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — corrected P08 R06 read-only qualification proposed
+
+R1-W01 / APP-013 / 3A / P08. Fresh 5:00–6:00 p.m. Eastern R06 card against locally verified backend `b38a082`, strict 5:15 cutoff, 26 CLI/ten HTTPS/two SQL read-only ceilings, USD0/no retry/mandatory closeout. Next/owner: decide exact provider-read operation. Counts unchanged. **No scope deviation.**
+
 ## October 29 — local retired-traffic correction verified
 
 R1-W01 / APP-013 / 3A / P08. Backend `b38a082` holds the approved disabled predicate correction; focused/model, unchanged original, disposable PostgreSQL and governance gates pass. The prior diagnostic is consumed; P08 and 3A remain open.

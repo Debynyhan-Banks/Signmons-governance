@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — corrected P08 read-only R06 proposed for 5:00–6:00 p.m.
+
+R1-W01 / APP-013 / 3A / P08. The owner supplied 5:00–6:00 p.m. Eastern availability. `APP013_P08_CORRECTED_CURRENT_STATE_QUALIFICATION_OPERATION_20261029_R06.md` proposes one fresh read-only attempt against backend `b38a082`, strict 5:15 start cutoff, 26 CLI/ten HTTPS/two read-only SQL ceilings, USD0, no retry and mandatory closeout/purge. Prior R05 and traffic diagnostic are consumed.
+
+Next/owner: separately approve or refuse exact R06 before 5:15. No external read is authorized by availability or local correction. Counts unchanged. **No scope deviation.**
+
 ## October 29 — retired-traffic predicate correction verified locally
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved Alternative 1 is committed at backend `b38a082` in a fresh disabled copy; 37 corrected focused/model, 35 unchanged original and three disposable PostgreSQL cases pass. The normal100/old-tag-absent retirement predicate now permits the named candidate to be absent or explicitly 0%, while rejecting unsafe traffic. The prior Terminal diagnostic and R05 remain consumed. Evidence: `APP013_P08_TRAFFIC_RETIREMENT_PREDICATE_LOCAL_RESULT_20261029.md`.
