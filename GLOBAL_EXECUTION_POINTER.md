@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## October 29 — P08 native bridge readiness proposal prepared
+
+R1-W01 / APP-013 / 3A / P08. Source review found the local packet is native-unbound; its fake `deleted` key field does not match the existing provider `deleteTime`/LRO contract, and the authentication plan requires a key hash before a newly created key can provide one. `APP013_P08_NATIVE_BRIDGE_READINESS_AND_DECISION_20261029.md` proposes a bounded local native bridge and an explicitly approved owned-key hash derivation rule, with actual boundary tests before any live window. Next/owner: decide the local correction; later service retention/cost and exact external operation remain separate. No provider action, authentication or payment occurred. R10 consumed; accepted 4/8, R1 0/27. **Explicit prerequisite proposal; no scope deviation implemented.**
+
 ## October 29 — P08 local access/authentication sequence proof complete
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved local-only packet at backend `556d8bd` passed 13 synthetic cases and unchanged role/Stage A/key/restoration/authentication suites; native entry remains disabled. This proves ordering and refusal, not live access or authentication. Next/implementer: prepare one exact native operation design and cleanup contract for review; owner separately decides API Keys service retention/cost and any provider action. R10 consumed, P08/3A open; accepted 4/8, R1 0/27, legacy 6/60, intelligence 0/13. Evidence `APP013_P08_INTEGRATED_LOCAL_PACKET_RESULT_20261029.md`. **No scope deviation beyond approved local preparation.**

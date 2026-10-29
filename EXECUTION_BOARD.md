@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — P08 native transport and key-hash decision pending
+
+R1-W01 / APP-013 / 3A / P08. The local packet is a sequencing proof only. Review `APP013_P08_NATIVE_BRIDGE_READINESS_AND_DECISION_20261029.md` for the native parser/LRO and newly created key-hash authority gaps. Next/owner: approve bounded local Alternative 1, choose staged Alternative 2, or defer; no live operation is ready or scheduled. R10 consumed, 3A open, accepted 4/8 and R1 0/27. **Explicit prerequisite proposal; no scope deviation implemented.**
+
 ## October 29 — P08 integrated local sequence proof complete
 
 R1-W01 / APP-013 / 3A / P08. Backend `556d8bd` contains a disabled fake-port access/authentication sequence with 13 passing local cases and unchanged seam suites passing. Stage A live denials and the disabled API Keys service remain. Next/implementer: exact native operation/cleanup design; next/owner: decide service retention, cost and separate external authority after review. No provider action, payment or acceptance occurred. Accepted 4/8; R1 0/27. **No scope deviation beyond approved local preparation.**
