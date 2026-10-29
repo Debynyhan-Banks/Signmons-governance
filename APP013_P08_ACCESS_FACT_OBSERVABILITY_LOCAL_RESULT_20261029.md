@@ -1,0 +1,7 @@
+# APP-013 / 3A / P08 — local access-fact observation result
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved Alternative 1 was implemented in a fresh disabled copy of backend `31e25cd`, leaving R09 receipt and predecessor source unchanged. After strict access-shape validation, the sanitized journal retains only fixed allowlisted service/permission names with UNKNOWN/DISABLED/DENIED values, fixed key-absence enum, roles/bindings booleans and bounded counts. Access classification, provider reads, limits and cleanup remain unchanged. Source manifest SHA256 `4875fcde92b78054d91331d33e7a859ee1cab45a31a651956beaaecd3a0c1b4b`; model SHA256 `2c2f9603cb71957239816f4942549be8277c446cbcc5f2b7bae1f139fd552df4`.
+
+Verification: 45 corrected focused/controller tests, 43 unchanged predecessor tests, three disposable PostgreSQL tests, locked-source/manifest and repository checks. Native entry remains unbound; no live provider/account/database request or mutation occurred. Backend commit `3c3c7d0` / `evidence/APP-013/p08-access-observation-local-20261029`.
+
+Next: fresh exact read-only current-state operation for separate owner approval if an attended window is available. R09/R08/R07 are consumed. Local observability does not establish the unknown access fact, qualify P08/3A or authorize authentication/runtime/Stripe. Accepted 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **No scope deviation beyond the approved local correction.**

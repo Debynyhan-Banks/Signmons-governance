@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — P08 safe access-fact observation verified locally
+
+R1-W01 / APP-013 / 3A / P08. Owner approved bounded Alternative 1 at `0ec07ec`; a fresh disabled backend copy retains only fixed allowlisted access-fact names/enums/counts after strict shape validation. 45 corrected focused/controller, 43 predecessor and three disposable PostgreSQL tests pass; source/manifest and governance gates pass. R09 remains consumed. Evidence `APP013_P08_ACCESS_FACT_OBSERVABILITY_LOCAL_RESULT_20261029.md` and backend `evidence/APP-013/p08-access-observation-local-20261029`.
+
+Next/implementer: prepare a fresh exact read-only operation for separate owner review while an attended block is available; no provider authority under local approval. P08/3A open; accepted 4/8, newly closed R1 0/27, legacy 6/60, intelligence 0/13. **No scope deviation beyond approved local correction.**
+
 ## October 29 — P08 R09 access unknown; bounded observation proposed
 
 R1-W01 / APP-013 / 3A / P08. R09 started once at 6:06:39 p.m. Eastern. Cloud 13/13 qualified, access completed UNKNOWN and `ACCESS_UNKNOWN` stopped before database/Firebase. Read-only closeout qualified, residuals empty and private inputs absent by 6:07:22. R09 consumed/no retry; no mutation. Evidence backend `f52b99f`, governance `APP013_P08_R09_ACCESS_UNKNOWN_STOP_RESULT_20261029.md`.

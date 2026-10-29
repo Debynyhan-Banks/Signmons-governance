@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — P08 local access-fact observation verified
+
+R1-W01 / APP-013 / 3A / P08. Approved disabled copy records only fixed allowlisted access facts; 45 corrected, 43 predecessor and three disposable PostgreSQL tests pass. R09 consumed/no retry. Next/implementer: fresh exact read-only operation card and separate owner approval, with no inherited provider authority. P08/3A open, counts unchanged. **No scope deviation beyond approved local correction.**
+
 ## October 29 — P08 R09 access-unknown safe stop
 
 R1-W01 / APP-013 / 3A / P08. One approved R09 attempt passed Cloud 13/13 and completed access UNKNOWN, then stopped safely. Closeout qualified, private inputs absent, no mutation. R09 consumed/no retry. Next/owner: decide local-only fixed access-fact observation; no fresh provider authority. P08/3A open, counts unchanged. **Unintended access-unknown stop disclosed; no scope deviation implemented.**
