@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## October 29 — R05 traffic-shape diagnostic proposed
+
+R1-W01 / APP-013 / 3A / P08. `APP013_P08_TRAFFIC_SHAPE_DIAGNOSTIC_PROPOSAL_20261029.md` offers one disabled local sanitizer/test card followed by a separately approved, three-CLI read-only operation. It distinguishes the three subconditions of R05's sole false `trafficRetired` fact. No diagnostic code or provider read is authorized by preparation; R05 remains consumed.
+
+Next/owner: approve or defer Alternative 1 for local preparation/tests only, or choose manual Console inspection. Counts unchanged. **Proposed bounded diagnostic; no scope deviation implemented.**
+
 ## October 29 — R05 contained Cloud traffic predicate drift
 
 R1-W01 / APP-013 / 3A / P08. One approved R05 read-only attempt ran at 2:16:21 p.m. and stopped `CLOUD_DRIFT`: `trafficRetired` was the sole false Cloud fact, twelve others true; closeout qualified, residuals empty and private inputs absent. The composite predicate does not identify its failed subcondition. R05 is consumed/no retry.

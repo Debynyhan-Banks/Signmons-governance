@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## October 29 — R05 traffic-shape diagnostic proposed
+
+R1-W01 / APP-013 / 3A / P08. A bounded local sanitizer and later separate three-CLI read-only operation are proposed in `APP013_P08_TRAFFIC_SHAPE_DIAGNOSTIC_PROPOSAL_20261029.md`; no code or provider read is authorized yet.
+
+Next/owner: choose Alternative 1 local preparation, defer, or manual Console inspection. R05 cannot be retried. Counts unchanged. **Proposed diagnostic only.**
+
 ## October 29 — R05 contained Cloud traffic predicate drift
 
 R1-W01 / APP-013 / 3A / P08. R05 consumed its single approved read-only attempt and stopped on the sole false Cloud fact `trafficRetired`; twelve Cloud facts passed. Closeout qualified, residuals empty and private inputs absent.

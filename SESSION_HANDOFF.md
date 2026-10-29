@@ -1,5 +1,9 @@
 # Session Handoff
 
+## October 29 — R05 traffic-shape diagnostic proposed
+
+Section: R1-W01 / APP-013 / 3A / P08. Completed: R05 safe stop and a finite proposal for a local sanitizer plus a later separately approved exact three-CLI read. Remaining: owner decision, local implementation/tests if approved, fresh external operation approval/read if warranted, then separate correction or qualification; P08/3A and authentication/runtime/payment remain open. Blocker/owner: Debynyhan Banks chooses among bounded local preparation, deferral and manual Console inspection. Next observable result: tested sanitized subcondition classifier, not a provider fact. Evidence: backend R05 result `f458723`; governance `APP013_P08_TRAFFIC_SHAPE_DIAGNOSTIC_PROPOSAL_20261029.md`. Accepted 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **Proposed bounded diagnostic; no scope deviation implemented.**
+
 ## October 29 — R05 contained Cloud traffic predicate drift
 
 Section: R1-W01 / APP-013 / 3A / P08. Completed: one exact read-only R05 attempt, twelve true Cloud facts, one false composite fact `trafficRetired`, qualified closeout, empty residuals and private-input purge. Remaining: owner decision on a bounded traffic-shape diagnostic, then independently approved qualification/correction if warranted; authentication/runtime/payment and P08/3A acceptance remain open. Blocker/owner: Debynyhan Banks decides whether to diagnose the three traffic subconditions; implementer must not infer or change live routing. Next observable result: sanitized identification of which subcondition failed, or defer. Evidence: backend `evidence/APP-013/p08-composed-qualification-r05-stop-20261029`, governance `APP013_P08_COMPOSED_QUALIFICATION_R05_RESULT_20261029.md`, source `a4c5f49`, approval `042fe98`. Accepted milestones 4/8; newly closed R1 0/27, legacy 6/60, intelligence 0/13. **Unintended Cloud drift disclosed; no scope deviation implemented.**
