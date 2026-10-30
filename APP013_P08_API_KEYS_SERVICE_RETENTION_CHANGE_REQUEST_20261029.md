@@ -1,6 +1,6 @@
 # APP-013 / 3A / P08 — API Keys service cleanup change request
 
-**Decision pending. No provider action or scope change implemented.** Section R1-W01 / APP-013 / 3A remains the same-job Sandbox payment acceptance. The owner selected disable/readback of the API Keys service after deletion of the one owned test key as a local design target. Backend `9ea5306` now proves an after-cutoff independent closeout seam, but the combined binder is not launch ready.
+**Owner decision: Alternative 1 approved for local cleanup design and tests only. No provider action.** Section R1-W01 / APP-013 / 3A remains the same-job Sandbox payment acceptance. The owner first selected disable/readback of the API Keys service after deletion of the one owned test key, then approved the narrower Alternative 1 below after reviewing the provider contract and pricing. Backend `9ea5306` proves an after-cutoff independent closeout seam, but the combined binder is not launch ready.
 
 ## Demonstrated gap
 
@@ -24,4 +24,4 @@ Create a dedicated test project so the service lifecycle is isolated. This adds 
 
 ## Decision and boundaries
 
-Choose Alternative 1 to revise only the future API Keys service-retention acceptance, or keep Alternative 2/choose Alternative 3. The prior local disable preference remains the current decision until changed. Approval of this change request would authorize only the local binder design and tests, **not** provider reads/changes, keys, IAM, authentication, deployment, Stripe/payment or spending. The next implementation card must still prove one source-locked journal, actual auth/restoration adapters, independent closeout, one-use/cutoff/signal/residual rules and private purge. R10 remains consumed. Accepted walkthrough 4/8; R1 newly closed 0/27. **Explicit proposed deviation; none implemented.**
+The owner approved Alternative 1. The prior local disable preference is superseded for the future design; this decision authorizes only local binder design and tests, **not** provider reads/changes, keys, IAM, authentication, deployment, Stripe/payment or spending. The next implementation card must still prove one source-locked journal, actual auth/restoration adapters, independent closeout, one-use/cutoff/signal/residual rules and private purge. R10 remains consumed. Accepted walkthrough 4/8; R1 newly closed 0/27. **Explicit owner-approved cleanup-design deviation; no external action.**
