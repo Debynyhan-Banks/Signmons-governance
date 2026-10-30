@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## October 30 — P08 native-adapter and authoritative-closeout decision pending
+
+R1-W01 / APP-013 / 3A / P08. The approved disabled coordinator remains locally verified, but its final account/session and runtime/private-plan facts are injected callback assertions; no source currently derives the combined closeout facts under the one coordinator journal. `APP013_P08_NATIVE_ADAPTER_CLOSEOUT_CHANGE_REQUEST_20261030.md` records inspected source pins, the exact gap and three finite choices. Next/owner: approve recommended Alternative 1 for disabled local implementation/tests, choose staged Alternative 2, or defer. No provider read/mutation, credential, payment, spend or external window is authorized. R10 consumed; accepted 4/8, R1 0/27. **Explicit material prerequisite proposal; no implementation or scope deviation adopted.**
+
 ## October 29 — P08 disabled single coordinator locally verified
 
 R1-W01 / APP-013 / 3A / P08. Owner approved Alternative 1 in `APP013_P08_SINGLE_COORDINATOR_CHANGE_REQUEST_20261029.md` for local-only implementation. Backend now has one disabled coordinator journal and independent closeout; 12 new isolated cases and unchanged bridge/restoration/auth-handoff suites pass. `APP013_P08_SINGLE_COORDINATOR_LOCAL_RESULT_20261029.md` records the exact proof and remaining live-client binding gap. Next/implementer: prepare the narrow source-pinned native adapter and authoritative account/session/private-plan closeout proposal before any separately approved external operation. No provider action, payment or window follows this local result. R10 consumed; 3A open, accepted 4/8, R1 0/27. **No scope deviation beyond the approved local prerequisite.**

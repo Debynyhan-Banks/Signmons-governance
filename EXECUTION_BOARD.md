@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 30 — P08 native closeout proposal ready for owner decision
+
+R1-W01 / APP-013 / 3A / P08. Source inspection confirmed the disabled coordinator owns one journal but still trusts injected account/session and runtime/private-plan closeout objects. `APP013_P08_NATIVE_ADAPTER_CLOSEOUT_CHANGE_REQUEST_20261030.md` proposes a disabled source-pinned adapter/readback matrix, a staged alternative or deferral. Next/owner: decide Alternative 1/2/3 before any adapter implementation. No external action, live plan, credential, payment or cost authority follows. R10 consumed; accepted 4/8, R1 0/27. **Explicit material prerequisite proposal; nothing implemented.**
+
 ## October 29 — P08 disabled single coordinator local matrix passed
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved Alternative 1 produced one disabled top-level journal and cleanup owner across restoration, IAM, owned key and injected authentication. Twelve focused local cases and unchanged bridge/restoration/auth-handoff tests pass. The native/live-client adapter and authoritative account/session/private-plan readbacks remain unproved; no external action is authorized. Next/implementer: source-pin the remaining binding in a reviewable proposal; owner separately decides any external operation. Evidence `APP013_P08_SINGLE_COORDINATOR_LOCAL_RESULT_20261029.md`. R10 consumed; accepted 4/8, R1 0/27. **No scope deviation beyond the approved local prerequisite.**
