@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — API Keys cleanup decision proposed
+
+R1-W01 / APP-013 / 3A / P08. A project-wide usage-checked disable is not guaranteed after test use; `APP013_P08_API_KEYS_SERVICE_RETENTION_CHANGE_REQUEST_20261029.md` recommends deleting/readback of only the owned key and retaining the free API Keys management service. Next/owner: approve this narrow design change or choose a documented alternative. No external authority, section/count change or provider action. R10 consumed; accepted 4/8, R1 0/27. **Explicit proposed deviation; none implemented.**
+
 ## October 29 — P08 cleanup-only constructor proved
 
 R1-W01 / APP-013 / 3A / P08. A disabled source-locked seam now invokes the existing packet closeout after its start cutoff, with exact journal/one-use/privacy checks; six new tests pass. The combined native account/runtime cleanup and safe Service Usage disable remain unproved; see `APP013_P08_CLOSEOUT_ONLY_LOCAL_RESULT_20261029.md`. Next/implementer: finite revised cleanup/journal design before any live proposal. R10 consumed; accepted 4/8, R1 0/27. **No scope deviation.**

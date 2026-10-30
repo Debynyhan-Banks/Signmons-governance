@@ -1,5 +1,9 @@
 # Session Handoff
 
+## October 29 — P08 service-retention decision pending
+
+Section R1-W01 / APP-013 / 3A / P08. Completed: disabled after-cutoff independent-closeout seam/backend `9ea5306`, tests and provider-contract/pricing review. Remaining: owner decision on `APP013_P08_API_KEYS_SERVICE_RETENTION_CHANGE_REQUEST_20261029.md`, then implementer source-locked combined authentication/restoration journal, real-interface tests and a separate exact external operation card; later same-job Sandbox payment/settlement/recovery and owner acceptance. Blocker/owner: Debynyhan Banks decides whether to revise the prior service-disable preference. Next observable result: approved narrow cleanup design, then verified local binder matrix. No live read/mutation/payment/spend. R10 consumed; accepted 4/8, R1 0/27, legacy 6/60, intelligence 0/13. **Explicit proposed deviation; none implemented.**
+
 ## October 29 — P08 local closeout seam continuation
 
 Section R1-W01 / APP-013 / 3A / P08. Completed/local: exact after-cutoff independent-closeout seam in fresh disabled backend copy; six new tests, existing bridge 13/packet 13/restoration 31/owned-key 11/authentication 60, lint/build/architecture and governance gates pass. Remaining/implementer: bind real authentication/restoration readbacks under one source-locked journal; resolve Service Usage `CHECK` refusal design before a launch card. Blocker/owner: review a concrete project-wide cleanup/retention plan before changing that boundary or approving external action. Next observable result: revised finite cleanup design with truthful residual handling, not a live retry. Evidence `APP013_P08_CLOSEOUT_ONLY_LOCAL_RESULT_20261029.md`; no provider or payment action. R10 consumed, accepted 4/8, R1 0/27, legacy 6/60, intelligence 0/13. **No scope deviation; local seam only.**

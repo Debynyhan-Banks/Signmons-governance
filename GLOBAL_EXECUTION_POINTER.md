@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## October 29 — P08 service-retention change request pending
+
+R1-W01 / APP-013 / 3A / P08. `APP013_P08_API_KEYS_SERVICE_RETENTION_CHANGE_REQUEST_20261029.md` proposes retaining the free API Keys management service after exact owned-key deletion/readback, because a usage-checked project-wide disable can fail after recent use. Owner's prior disable preference remains until an explicit new decision. Next/owner: choose the narrow retention change or another documented alternative; no provider action or live window. Backend closeout seam `9ea5306`, R10 consumed, accepted 4/8, R1 0/27. **Explicit proposed deviation; none implemented.**
+
 ## October 29 — P08 after-cutoff closeout seam verified locally
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved local continuation added a disabled, source-locked independent-closeout seam after the packet's start cutoff; six new cases and unchanged bridge/packet/restoration/authentication suites pass. `APP013_P08_CLOSEOUT_ONLY_LOCAL_RESULT_20261029.md` records the proof and the remaining blocker: injected account/runtime callbacks and the Service Usage 30-day `CHECK` rule prevent a truthful combined cleanup guarantee. Next/implementer: finite revised service-cleanup and combined-journal design for review; no live operation from this approval. R10 consumed; accepted 4/8, R1 0/27. **No scope deviation; local seam only.**
