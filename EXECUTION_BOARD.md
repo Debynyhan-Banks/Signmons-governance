@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — P08 local binder stopped at cleanup proof
+
+R1-W01 / APP-013 / 3A / P08. The owner-approved local binder card reached a documented stop before executable integration: the existing packet still records a service-retention residual; authentication and runtime closeout are injected callbacks, not one authoritative operation. Owner chose disable/readback after owned-key deletion as a local design target only. See `APP013_P08_LIVE_BINDER_LOCAL_STOP_RESULT_20261029.md`. Next/implementer: bind existing authentication/restoration closeout under one source-locked journal, with fail-closed project-wide service cleanup, before proposing live action. R10 consumed; accepted 4/8, R1 0/27. **No scope deviation.**
+
 ## October 29 — P08 live-binder completion decision pending
 
 R1-W01 / APP-013 / 3A / P08. The disabled bridge passes local boundary tests but lacks exact live approval/credential/retirement binding. `APP013_P08_LIVE_BINDER_LOCAL_COMPLETION_PROPOSAL_20261029.md` offers one finite local completion, a staged alternative or deferral. Next/owner: decide before implementation; no external action or window follows. R10 consumed, 3A open, accepted 4/8 and R1 0/27. **Explicit prerequisite proposal; no scope deviation implemented.**
