@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — P08 cleanup-only constructor proved
+
+R1-W01 / APP-013 / 3A / P08. A disabled source-locked seam now invokes the existing packet closeout after its start cutoff, with exact journal/one-use/privacy checks; six new tests pass. The combined native account/runtime cleanup and safe Service Usage disable remain unproved; see `APP013_P08_CLOSEOUT_ONLY_LOCAL_RESULT_20261029.md`. Next/implementer: finite revised cleanup/journal design before any live proposal. R10 consumed; accepted 4/8, R1 0/27. **No scope deviation.**
+
 ## October 29 — P08 local binder stopped at cleanup proof
 
 R1-W01 / APP-013 / 3A / P08. The owner-approved local binder card reached a documented stop before executable integration: the existing packet still records a service-retention residual; authentication and runtime closeout are injected callbacks, not one authoritative operation. Owner chose disable/readback after owned-key deletion as a local design target only. See `APP013_P08_LIVE_BINDER_LOCAL_STOP_RESULT_20261029.md`. Next/implementer: bind existing authentication/restoration closeout under one source-locked journal, with fail-closed project-wide service cleanup, before proposing live action. R10 consumed; accepted 4/8, R1 0/27. **No scope deviation.**

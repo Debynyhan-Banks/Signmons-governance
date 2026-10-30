@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## October 29 — P08 after-cutoff closeout seam verified locally
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved local continuation added a disabled, source-locked independent-closeout seam after the packet's start cutoff; six new cases and unchanged bridge/packet/restoration/authentication suites pass. `APP013_P08_CLOSEOUT_ONLY_LOCAL_RESULT_20261029.md` records the proof and the remaining blocker: injected account/runtime callbacks and the Service Usage 30-day `CHECK` rule prevent a truthful combined cleanup guarantee. Next/implementer: finite revised service-cleanup and combined-journal design for review; no live operation from this approval. R10 consumed; accepted 4/8, R1 0/27. **No scope deviation; local seam only.**
+
 ## October 29 — P08 approved local binder stopped at independent-closeout gate
 
 R1-W01 / APP-013 / 3A / P08. Owner approved local Alternative 1 of `APP013_P08_LIVE_BINDER_LOCAL_COMPLETION_PROPOSAL_20261029.md`. Source-pinned section card and focused existing tests passed, but the packet's service-retention residual, synthetic authentication callback and unbound restoration closeout prevent a truthful combined native binder. Owner then chose disable/readback after owned-key deletion as a local design target, without provider authority. `APP013_P08_LIVE_BINDER_LOCAL_STOP_RESULT_20261029.md` records the gap. Next/implementer: source-lock combined authentication/retirement and fail-closed project-wide service cleanup; no live window until proof and separate exact external approval. R10 consumed; accepted 4/8, R1 0/27. **No scope deviation; local work stopped at its declared gate.**
