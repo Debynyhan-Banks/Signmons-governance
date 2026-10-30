@@ -21,3 +21,7 @@ Use a separately approved runtime restore operation and a later separately appro
 Do no further P08 integration until a revised product/authentication path is chosen. This preserves current retirement and accepted milestones but blocks the same-job 3A payment proof that depends on an authenticated operator.
 
 **Decision requested:** approve Alternative 1 for local coordinator implementation/testing only, choose Alternative 2 for staged design, or defer. No live Cloud/Firebase/CHILD/Stripe action, key or IAM change, deployment, payment, spending or schedule is included. R10 remains consumed; accepted walkthrough 4/8, R1 newly closed 0/27. **Explicit proposed material prerequisite; none implemented.**
+
+## Owner decision — October 29
+
+The owner approved Alternative 1 for local implementation and isolated tests only. This decision does not authorize a live operation, external read or mutation, credential resolution, payment, deployment or spending. The historical proposal above remains the record of what was offered before this decision.

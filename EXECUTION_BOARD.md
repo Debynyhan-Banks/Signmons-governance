@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 29 — P08 disabled single coordinator local matrix passed
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved Alternative 1 produced one disabled top-level journal and cleanup owner across restoration, IAM, owned key and injected authentication. Twelve focused local cases and unchanged bridge/restoration/auth-handoff tests pass. The native/live-client adapter and authoritative account/session/private-plan readbacks remain unproved; no external action is authorized. Next/implementer: source-pin the remaining binding in a reviewable proposal; owner separately decides any external operation. Evidence `APP013_P08_SINGLE_COORDINATOR_LOCAL_RESULT_20261029.md`. R10 consumed; accepted 4/8, R1 0/27. **No scope deviation beyond the approved local prerequisite.**
+
 ## October 29 — P08 local auth handoff passed; coordinator decision next
 
 R1-W01 / APP-013 / 3A / P08. A source-locked, injected-only owned-key receipt now drives the existing authentication controller, with five passing cases and no live authority. Runtime restoration and packet lifecycle still have separate mutation owners; `APP013_P08_SINGLE_COORDINATOR_CHANGE_REQUEST_20261029.md` proposes a narrow single owner before implementation. Next/owner: choose Alternative 1/2/3; no live provider/payment action. R10 consumed; accepted 4/8, R1 0/27. **Explicit material prerequisite proposal; none implemented.**
