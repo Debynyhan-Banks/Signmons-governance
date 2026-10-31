@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## October 31 — P08 single-journal handoff decision prepared
+
+R1-W01 / APP-013 / 3A / P08. The approved auth-client extraction is local and source-pinned, but the Python coordinator's synchronous auth callback has no bounded serialized handoff to the new asynchronous JavaScript sequence or exact real-client/private-root ownership. `APP013_P08_SINGLE_JOURNAL_HANDOFF_CHANGE_REQUEST_20261031.md` offers one disabled local handoff, an existing-operator assessment, or deferral. Next/owner: choose before material handoff implementation. No native command, external operation or payment follows. R10 consumed, 3A open, accepted 4/8, R1 0/27. **Explicit material prerequisite proposal; no deviation implemented.**
+
 ## October 31 — P08 coordinator authentication extraction passed locally
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved Alternative A now has a source-locked local-only capability and authentication sequence using the coordinator's existing journal; 11 focused cases, unchanged readback/coordinator/bridge/handoff suites and disposable PostgreSQL contract pass. No native or real-client binding, credentials, provider action or payment. `APP013_P08_COORDINATOR_AUTH_LOCAL_RESULT_20261031.md` records the remaining Python/JavaScript handoff, actual private roots and current-state UNKNOWNs plus one unchanged historical test-harness path failure. Next/implementer: prepare the smallest source-pinned handoff/real-client binding decision; no live command. R10 consumed, 3A open, accepted 4/8, R1 0/27. **No scope deviation beyond approved local Alternative A.**

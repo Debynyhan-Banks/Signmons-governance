@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## October 31 — P08 single-journal handoff choice
+
+R1-W01 / APP-013 / 3A / P08. Completed: 11-case disabled auth-client extraction and exact next boundary analysis. Remaining/owner: decide Alternative 1/2/3 in `APP013_P08_SINGLE_JOURNAL_HANDOFF_CHANGE_REQUEST_20261031.md`; remaining/implementer under Alternative 1: one bounded Python/JavaScript serialized handoff and independent closeout proof, then fresh external qualification and same-job payment. No handoff code or provider action under this proposal. Evidence backend `9ae1dc9`, governance `APP013_P08_COORDINATOR_AUTH_LOCAL_RESULT_20261031.md`; accepted 4/8, R1 0/27. **Explicit material prerequisite proposal; no deviation implemented.**
+
 ## October 31 — P08 local auth-client extraction verified
 
 R1-W01 / APP-013 / 3A / P08. Completed/local: exact coordinator capability, source-locked historical client extraction and same-journal activation/revocation/independent-closeout matrix. Eleven new tests and unchanged focused/SQL tests pass; no live credential or provider action. Remaining/implementer: finite cross-language coordinator handoff, actual private-root inventory and current-state qualification; remaining/owner: any material extension and later exact external approval; then same-job Sandbox Checkout/settlement/recovery and acceptance. Evidence `APP013_P08_COORDINATOR_AUTH_LOCAL_RESULT_20261031.md`; R10 consumed, accepted 4/8, R1 0/27. **No scope deviation beyond approved local Alternative A.**
