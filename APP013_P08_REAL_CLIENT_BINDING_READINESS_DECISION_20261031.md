@@ -1,0 +1,37 @@
+# APP-013 / 3A / P08 — real-client binding readiness decision
+
+## Decision boundary
+
+R1-W01 / APP-013 / 3A / P08 still has the unchanged same-admitted-job Sandbox payment exit criterion in `APP013_REMAINING_EXECUTION_CONTRACT.md`. The October 31 disabled native-closeout proof is local only. This card is a **proposal**, not authority to implement a new live binding or run a provider/database operation. R10 and earlier windows are consumed. No new acceptance section, dependency, percentage or cost allowance is proposed.
+
+## Source and demonstrated gap
+
+At backend `e19489b`, the disabled closeout adapter is SHA256 `c463671302f8d858d51063e94d7baaa6c0c72a395f505f5fa0a502674d8e532c`; coordinator `1eecc5241794cfed6d892db4385039274539e47b183f1d934899549eb5560f70`; bridge `58835555ea5d062bd84af91ace67c71762b9332a2f6fd9bf31ecec08c7a7dfce`. The adapter derives sanitized facts from injected raw readers, but `native()` is disabled and no real credential/approval boundary supplies those readers under its one journal. Its private-path allowlist models one synthetic coordinator root, not the actual historical launcher roots.
+
+The historical authentication launcher `auth-launch.mjs` (`180346d1874efa61986ea79575407af8669e940ec076639f828bbf2b65c0516a`) and adapters (`ee4906f969ae40e40b4c4a066829afc63257c62a8e9e60fcdbc1ea376b91855a`) already implement owner OAuth, hidden CHILD password, TLS PostgreSQL, Firebase lookup/update, signing/exchange and exact-job request seams. The historical Stage A binding (`da47278dcfc81e43cdba1101c21a93052333aa130aa2734de633cbad2b081fe5`) has bounded CLI/HTTPS transport. The owned-key handoff (`252e88f5659b7e5f3f8e4d0cabf5b5b06a1a90902ec66df6c230026aa992aec5`) deliberately returns `liveAuthorization:false` and `authProofReady:false`. These modules have separate plans/journals and cannot be nested to imply one authorized operation. Current provider, billing, effective-access, Firebase and CHILD facts remain UNKNOWN; older read receipts do not resolve them.
+
+## Recommended Alternative 1 — one disabled native-binding completion
+
+Approve a single bounded **local implementation and isolated-test card** for a coordinator-owned real-client binding. Reuse the existing launcher/adapters and bounded transport at their primitive interfaces; do not call their full controllers as nested operations. One exact source-locked approval/operation ID must govern every read, mutation intent, deadline, result and independent closeout. Native entry must refuse unless a future separate external approval is bound; no approval may be generated from the local owned-key receipt. Keep the already approved `RETAIN_ENABLED_AFTER_KEY_DELETE` cleanup design.
+
+Before any transport, validate the source SHA, exact project/tenant/job/operator/disabled test account, candidate digest, owned resource names, expected policies, one-use journal, input paths and a finite allowlist of **actual** operation-private roots/files. Obtain the CHILD password only at a hidden prompt after those checks. Derive account/Firebase/session and runtime/IAM/key readbacks through existing exact interfaces; record fixed sanitized facts and residuals, not raw rows, policies, bearer, password, key string, email, private content or customer data. A missing, late, ambiguous, failed or conflicting read must stop and preserve independent cleanup; no result may turn local-only handoff flags into live authority.
+
+Expected local files: a fresh disabled binder and tests beside the existing P08 coordinator, one source manifest, one section card and sanitized result. Do not edit production authentication, payment or database schema. Finite tasks: (1) bind existing client factories to coordinator ports under a single approval object; (2) reconcile historical private roots into an exact inventory and deletion/readback owner; (3) preserve one-use reservation, deadline/signal and closeout-only behavior; (4) run positive and refusal tests with fake Cloud/Firebase/Stripe and disposable PostgreSQL where SQL serialization or role/session behavior changes; (5) publish all remaining UNKNOWNs. Tests must cover source/approval/identity mismatch, partial credential resolution, duplicate/concurrent start, lost response, cleanup residual, private symlink/foreign file, clock/deadline/signals, account/session disagreement and after-cutoff independent closeout. Run unchanged coordinator/adapter/auth/restoration suites and backend lint/build/architecture plus governance baseline/consistency/safeguard/whitespace gates. Browser tests apply only if the UI changes.
+
+Rollback is removal of the fresh disabled binder copy. Observable finish is one source-pinned local result, no native command, `liveAuthorization:false`, `authProofReady:false`, and a list of exact still-UNKNOWN external facts. Estimated effort: one bounded medium integration card; no direct provider cost. No live Cloud/CHILD/Firebase/Stripe read or mutation, credential resolution, IAM/key/account/runtime action, deployment, payment, booking, customer contact, spending or attended window is included.
+
+## Alternative 2 — reduce the dependency before binding
+
+First use an already authorized, verified Signmons operator login if one can be established from **current** source and account evidence without creating a new permission or changing the payment criterion. This could remove temporary test-account/key/IAM work, but no such ready operator path is verified now; the last live diagnostic found zero eligible ACTIVE OWNER/ADMIN rows and the isolated test ADMIN was created disabled. A current read and any activation would still need their own exact external approval. Do not silently substitute Firebase Console membership for a Signmons application operator.
+
+## Alternative 3 — defer 3A
+
+Preserve the local proof and accepted milestones. Do not run another broad qualification loop while no authenticated same-job operator path is ready.
+
+## Smallest later external qualification, if Alternative 1 is locally proved
+
+Prepare a **separate** reviewable read-only card only after the binder passes: verify current exact project/billing/service/effective-access and existing disabled app/Firebase operator, admitted job/policy, runtime candidate/traffic/retired resources and private inventory facts that the bound operation actually needs. Ask for only the minimum reads that can change the go/no-go decision; one attempt, finite deadline, mandatory closeout and sanitized evidence. A failed fact ends that card; it does not trigger a corrected read loop or authorize remediation. The subsequent mutation/authentication operation, Sandbox Checkout and matching signed-settlement demonstration each require their own gate.
+
+## Owner decision and progress
+
+Choose Alternative 1 for disabled local implementation/tests, Alternative 2 for a source-backed existing-operator assessment, or Alternative 3 to defer. No option is adopted by writing this card. Completed: local readback matrix. Remaining: owner decision, selected local proof, fresh exact external qualification/approval, same-job Checkout, signed settlement/failure/replay proof and owner acceptance. Blocker/role: owner selects a material prerequisite; implementer then proves it locally. Next observable result under Alternative 1: a real-client binding that **still refuses live entry** without later exact authority. Accepted walkthrough 4/8; newly closed R1 0/27; legacy 6/60; intelligence 0/13. **Explicit material prerequisite proposal; no scope deviation implemented.**

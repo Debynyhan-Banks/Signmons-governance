@@ -1,5 +1,17 @@
 # Global Execution Pointer
 
+## October 31 — P08 coordinator authentication extraction passed locally
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved Alternative A now has a source-locked local-only capability and authentication sequence using the coordinator's existing journal; 11 focused cases, unchanged readback/coordinator/bridge/handoff suites and disposable PostgreSQL contract pass. No native or real-client binding, credentials, provider action or payment. `APP013_P08_COORDINATOR_AUTH_LOCAL_RESULT_20261031.md` records the remaining Python/JavaScript handoff, actual private roots and current-state UNKNOWNs plus one unchanged historical test-harness path failure. Next/implementer: prepare the smallest source-pinned handoff/real-client binding decision; no live command. R10 consumed, 3A open, accepted 4/8, R1 0/27. **No scope deviation beyond approved local Alternative A.**
+
+## October 31 — P08 real-client binding stopped at authentication capability gate
+
+R1-W01 / APP-013 / 3A / P08. Owner approved disabled local Alternative 1, but shift-left source review found the historical real-client factory is gated by its own authentication capability and journal; the coordinator cannot reuse it under one owner without a material extraction/approval mapping. `APP013_P08_REAL_CLIENT_BINDING_ENTRY_STOP_20261031.md` records exact source evidence and amended choices A/B/C. No binder code, live action or credentials used. Next/owner: decide the amendment before implementation. R10 consumed; accepted 4/8, R1 0/27. **Explicit deviation proposal; no deviation implemented.**
+
+## October 31 — P08 real-client binding decision prepared
+
+R1-W01 / APP-013 / 3A / P08. Source inspection after the disabled native-closeout result found that real owner OAuth/CHILD/Firebase primitives exist, but no single coordinator-owned binding reconciles their approvals, one-use journal, actual private roots and authoritative closeout. `APP013_P08_REAL_CLIENT_BINDING_READINESS_DECISION_20261031.md` offers one disabled local binding, a source-backed existing-operator assessment, or deferral. Next/owner: choose the material prerequisite; no new implementation or external qualification is authorized by this proposal. R10 consumed; 3A open, accepted 4/8, R1 0/27. **Explicit material prerequisite proposal; no scope deviation implemented.**
+
 ## October 31 — P08 disabled native-closeout matrix passed
 
 R1-W01 / APP-013 / 3A / P08. Owner directed recommended local Alternative 1 in `APP013_P08_NATIVE_ADAPTER_CLOSEOUT_CHANGE_REQUEST_20261030.md`. Backend now derives account/Firebase/session, runtime/traffic/candidate and private-path closeout facts from injected raw interfaces under the one coordinator journal; the actual owned-key authentication handoff ran with fake clients. Eight new and unchanged focused tests pass. `APP013_P08_NATIVE_CLOSEOUT_LOCAL_RESULT_20261031.md` records remaining real-client/current-state UNKNOWNs. Next/implementer: prepare one exact live-binding/readiness card and identify the smallest separately approved qualification; no live operation or command follows. R10 consumed; 3A open, accepted 4/8, R1 0/27. **No scope deviation beyond approved disabled local prerequisite.**

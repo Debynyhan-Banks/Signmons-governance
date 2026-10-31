@@ -1,5 +1,17 @@
 # Signmons Execution Board
 
+## October 31 — P08 local auth-client extraction verified
+
+R1-W01 / APP-013 / 3A / P08. Completed/local: exact coordinator capability, source-locked historical client extraction and same-journal activation/revocation/independent-closeout matrix. Eleven new tests and unchanged focused/SQL tests pass; no live credential or provider action. Remaining/implementer: finite cross-language coordinator handoff, actual private-root inventory and current-state qualification; remaining/owner: any material extension and later exact external approval; then same-job Sandbox Checkout/settlement/recovery and acceptance. Evidence `APP013_P08_COORDINATOR_AUTH_LOCAL_RESULT_20261031.md`; R10 consumed, accepted 4/8, R1 0/27. **No scope deviation beyond approved local Alternative A.**
+
+## October 31 — P08 auth capability boundary blocks approved binder
+
+R1-W01 / APP-013 / 3A / P08. Approved Alternative 1 stopped before coding: `realClients`/`adapters` require a separate historical auth capability and journal. Completed: source-level gate and one-owner mismatch; no new implementation. Remaining/owner: choose bounded extraction A, existing-operator assessment B, or deferral C in `APP013_P08_REAL_CLIENT_BINDING_ENTRY_STOP_20261031.md`. Remaining/implementer: only the chosen local proof, then fresh separate external qualification and same-job payment/settlement/recovery. R10 consumed; accepted 4/8, R1 0/27. **Explicit deviation proposal; no deviation implemented.**
+
+## October 31 — P08 real-client binding decision ready
+
+R1-W01 / APP-013 / 3A / P08. Completed: source-pinned review of the disabled closeout adapter and existing real-client/authentication primitives; `APP013_P08_REAL_CLIENT_BINDING_READINESS_DECISION_20261031.md` is reviewable. Remaining/owner: decide one disabled local binding, a verified existing-operator assessment, or deferral. Remaining/implementer: selected local proof, then only the smallest separately approved current-state qualification; later same-job Sandbox payment/settlement/recovery and acceptance. No provider/database action, payment or spending under this planning result. R10 consumed; accepted 4/8, R1 0/27. **Explicit material prerequisite proposal; no scope deviation implemented.**
+
 ## October 31 — P08 native-closeout local prerequisite verified
 
 R1-W01 / APP-013 / 3A / P08. Approved disabled adapter now binds the existing runtime NativeAdapter, bridge owned-key receipt and actual JavaScript auth handoff with fake clients; raw readbacks replace caller-supplied closeout assertions in a local matrix. Eight new adapter tests and unchanged suites pass. No live credentials, provider/database action, payment or spending. Next/implementer: exact real-client/readiness card and smallest fresh qualification, with separate owner approval before external action. Evidence `APP013_P08_NATIVE_CLOSEOUT_LOCAL_RESULT_20261031.md`; R10 consumed, accepted 4/8, R1 0/27. **No scope deviation beyond approved local prerequisite.**
