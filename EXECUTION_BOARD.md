@@ -1,5 +1,10 @@
 # Signmons Execution Board
 
+## October 31 — P08 disabled serialized handoff result
+
+R1-W01 / APP-013 / 3A / P08. Completed/local: one coordinator-owned Python-to-Node auth child, same journal and attempt, bounded result and cleanup-only path; 11 new and unchanged focused tests plus required gates pass. Remaining/implementer: source-pinned real-client binding and actual private-root/account/session readbacks, then fresh qualification; remaining/owner: separate external authority; later same-job Sandbox Checkout/signed settlement/failure/replay and acceptance. Evidence backend `evidence/APP-013/p08-serialized-handoff-local-20261031/RESULT.md`. No live authorization, payment or spending. R10 consumed, 3A open, accepted 4/8, R1 0/27. **No scope deviation beyond approved local handoff.**
+
+
 ## October 31 — P08 single-journal handoff choice
 
 R1-W01 / APP-013 / 3A / P08. Completed: 11-case disabled auth-client extraction and exact next boundary analysis. Remaining/owner: decide Alternative 1/2/3 in `APP013_P08_SINGLE_JOURNAL_HANDOFF_CHANGE_REQUEST_20261031.md`; remaining/implementer under Alternative 1: one bounded Python/JavaScript serialized handoff and independent closeout proof, then fresh external qualification and same-job payment. No handoff code or provider action under this proposal. Evidence backend `9ae1dc9`, governance `APP013_P08_COORDINATOR_AUTH_LOCAL_RESULT_20261031.md`; accepted 4/8, R1 0/27. **Explicit material prerequisite proposal; no deviation implemented.**

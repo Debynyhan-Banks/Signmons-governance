@@ -1,5 +1,10 @@
 # Global Execution Pointer
 
+## October 31 — P08 disabled serialized handoff locally verified
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved Alternative 1 now has one source-locked Python-to-Node child under the coordinator's existing attempt/journal, with bounded output, same-journal merge and independent cleanup-only path. Eleven new synthetic boundary tests and unchanged focused suites pass; backend and governance gates pass. This does not bind real clients or prove current external state. Next/implementer: prepare the exact real-client/private-root binding card; next/owner: decide that material binding and separately approve any later external operation. No provider action or payment. Evidence backend `evidence/APP-013/p08-serialized-handoff-local-20261031/RESULT.md`; R10 consumed, 3A open, accepted 4/8, R1 0/27. **No scope deviation beyond approved disabled local handoff.**
+
+
 ## October 31 — P08 single-journal handoff decision prepared
 
 R1-W01 / APP-013 / 3A / P08. The approved auth-client extraction is local and source-pinned, but the Python coordinator's synchronous auth callback has no bounded serialized handoff to the new asynchronous JavaScript sequence or exact real-client/private-root ownership. `APP013_P08_SINGLE_JOURNAL_HANDOFF_CHANGE_REQUEST_20261031.md` offers one disabled local handoff, an existing-operator assessment, or deferral. Next/owner: choose before material handoff implementation. No native command, external operation or payment follows. R10 consumed, 3A open, accepted 4/8, R1 0/27. **Explicit material prerequisite proposal; no deviation implemented.**
