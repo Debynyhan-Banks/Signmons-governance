@@ -1,5 +1,10 @@
 # Global Execution Pointer
 
+## October 31 — P08 real-client and interrupted-closeout decision ready
+
+R1-W01 / APP-013 / 3A / P08. Source review after backend `2c14876` found the historical real-client factory still requires a separate capability/journal, the coordinator capability lacks an exact private database/credential binding, and a child interrupted at `CLOSEOUT_INTENT` cannot resume verified cleanup. `APP013_P08_REAL_CLIENT_AND_CLOSEOUT_BINDING_CHANGE_REQUEST_20261031.md` proposes one disabled local binding/recovery card, an existing-operator assessment, or deferral. Next/owner: choose before material implementation. No live command, provider action or payment is authorized. R10 consumed; 3A open; accepted 4/8, R1 0/27. **Explicit material prerequisite proposal; no deviation implemented.**
+
+
 ## October 31 — P08 disabled serialized handoff locally verified
 
 R1-W01 / APP-013 / 3A / P08. Owner-approved Alternative 1 now has one source-locked Python-to-Node child under the coordinator's existing attempt/journal, with bounded output, same-journal merge and independent cleanup-only path. Eleven new synthetic boundary tests and unchanged focused suites pass; backend and governance gates pass. This does not bind real clients or prove current external state. Next/implementer: prepare the exact real-client/private-root binding card; next/owner: decide that material binding and separately approve any later external operation. No provider action or payment. Evidence backend `evidence/APP-013/p08-serialized-handoff-local-20261031/RESULT.md`; R10 consumed, 3A open, accepted 4/8, R1 0/27. **No scope deviation beyond approved disabled local handoff.**
