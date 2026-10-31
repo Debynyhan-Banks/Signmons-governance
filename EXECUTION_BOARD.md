@@ -1,5 +1,10 @@
 # Signmons Execution Board
 
+## October 31 — P08 disabled binding verification pending local PostgreSQL
+
+R1-W01 / APP-013 / 3A / P08. Completed/implemented: source-pinned, native-disabled owner/CHILD/Firebase/signing/job/session interfaces under one coordinator capability and journal, plus interrupted-closeout reconciliation. Locally tested: 11 new Python/seven Node and unchanged focused suites pass; backend/governance gates pass. Remaining/implementer: required disposable PostgreSQL suite (zero cases, `initdb` host shared-memory failure), then fresh current-state/readback plan; remaining/owner: separate external approval; remaining/product: same-job Sandbox Checkout, signed settlement/failure/replay and acceptance. No live action. Evidence backend `evidence/APP-013/p08-real-client-binding-local-20261031/RESULT.md`; R10 consumed, accepted 4/8, R1 0/27. **No scope deviation beyond approved local prerequisite.**
+
+
 ## October 31 — P08 real-client/closeout binding choice
 
 R1-W01 / APP-013 / 3A / P08. Completed: source-pinned review and `APP013_P08_REAL_CLIENT_AND_CLOSEOUT_BINDING_CHANGE_REQUEST_20261031.md`. Remaining/owner: choose disabled local binder, separately scoped existing-operator assessment, or deferral; remaining/implementer after approval: exact one-capability credential/private-root and interrupted-closeout proof, then fresh external qualification and same-job payment evidence. No new runtime code, provider access or spending. Backend `2c14876`; R10 consumed, accepted 4/8, R1 0/27. **Explicit material prerequisite proposal; no deviation implemented.**

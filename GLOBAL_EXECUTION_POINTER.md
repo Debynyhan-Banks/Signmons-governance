@@ -1,5 +1,10 @@
 # Global Execution Pointer
 
+## October 31 — P08 disabled client binding coded; PostgreSQL gate pending
+
+R1-W01 / APP-013 / 3A / P08. Owner-approved Alternative 1 now has a fresh native-disabled one-capability client binding and interrupted-`CLOSEOUT_INTENT` recovery matrix. New 11 Python/seven Node and unchanged focused suites plus backend/governance gates pass. The required disposable PostgreSQL suite ran zero cases because local `initdb` could not allocate shared memory; no host setting or database was changed. Next/implementer: rerun that exact local suite when the host permits, then reassess local qualification. No real credential, provider action or payment is authorized. Evidence backend `evidence/APP-013/p08-real-client-binding-local-20261031/RESULT.md`; R10 consumed, 3A open, accepted 4/8, R1 0/27. **No scope deviation beyond approved disabled local prerequisite.**
+
+
 ## October 31 — P08 real-client and interrupted-closeout decision ready
 
 R1-W01 / APP-013 / 3A / P08. Source review after backend `2c14876` found the historical real-client factory still requires a separate capability/journal, the coordinator capability lacks an exact private database/credential binding, and a child interrupted at `CLOSEOUT_INTENT` cannot resume verified cleanup. `APP013_P08_REAL_CLIENT_AND_CLOSEOUT_BINDING_CHANGE_REQUEST_20261031.md` proposes one disabled local binding/recovery card, an existing-operator assessment, or deferral. Next/owner: choose before material implementation. No live command, provider action or payment is authorized. R10 consumed; 3A open; accepted 4/8, R1 0/27. **Explicit material prerequisite proposal; no deviation implemented.**
