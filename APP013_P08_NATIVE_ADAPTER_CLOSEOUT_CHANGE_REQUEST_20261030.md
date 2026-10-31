@@ -35,3 +35,7 @@ Make no additional adapter or closeout implementation. Preserve the current loca
 ## Decision requested
 
 Approve Alternative 1 for disabled local implementation and isolated tests only, choose staged Alternative 2, or defer under Alternative 3. Any future qualification, provider access, IAM/key/account/runtime mutation, credential handling, payment or spending still requires a new exact operation contract, current evidence, a finite future Eastern window and separate owner approval. Accepted walkthrough remains 4/8; R1 newly closed 0/27, legacy 6/60 and intelligence 0/13. **Explicit material prerequisite proposal; nothing implemented and no scope deviation adopted.**
+
+## Owner direction — October 31
+
+The owner replied “im back proceed” to the pending recommended next step. This is recorded as approval of Alternative 1 for the **disabled local implementation and isolated tests only** described above. It does not approve a future live operation or change any release acceptance, cost or resource boundary. The historical proposal text above remains unchanged as the pre-decision record.
