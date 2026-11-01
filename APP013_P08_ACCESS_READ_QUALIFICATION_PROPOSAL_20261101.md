@@ -1,5 +1,7 @@
 # APP-013 / 3A / P08 — exact six-read access qualification
 
+**OWNER APPROVED — November 1, 2026:** owner replied “proceed” to the explicit final request for this exact November 1 10:30–10:40 a.m. EST window, strict 10:32 cutoff, one cached-token read/up to six fixed requests, zero refresh/retry/configuration changes/spending. Approval was observed at 15:11:38 UTC. The decision JSON now records APPROVE_EXACT_P08_NARROW_ACCESS_READ with unchanged operation/scope/source pins. The original pending proposal below is retained as history and superseded only by this exact approval. No operation has started; root/private plan/cache/provider access remain absent. Readiness remains qualification-only, not broader P08/payment authorization.
+
 **PENDING OWNER APPROVAL. Qualification-only; not execution-ready for P08 or payment.** The owner authorized committing the reviewed local amendment and preparing this packet. That instruction did not authorize real configuration/cache access or authenticated provider reads. No operation-private root, plan, credential read or provider request has been created/performed.
 
 ## Decision requested
