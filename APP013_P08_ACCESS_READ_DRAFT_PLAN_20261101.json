@@ -1,0 +1,33 @@
+{
+  "contractSha256": "0141eada196370aadab786cd84339e4adea5df0d94b0a2410a60e99de8e5dea9",
+  "decision": {
+    "commit": "PENDING_OWNER_APPROVAL",
+    "path": "APP013_P08_ACCESS_READ_OPERATION_20261101.json",
+    "sha256": "a3ac7eafeaed7a428519fcbe949e58dfbcd2c9eb23ff391a7171fa2a8b3e76ed"
+  },
+  "execution": "EXTERNAL",
+  "identity": "signmons-calldesk-p07-runtime@signmons.iam.gserviceaccount.com",
+  "limits": {
+    "cache": 1,
+    "cli": 0,
+    "https": 6,
+    "mutations": 0,
+    "retry": 0,
+    "sql": 0
+  },
+  "operationId": "dff9307d-e7fb-4e5a-873c-22179faf0958",
+  "ownerPrincipal": "debynyhan@signmons.com",
+  "project": "signmons",
+  "projectNumberSha256": "37d4aa0f46ca5b8f0b81b1148bda235a0f4a9a424b6b4638ec993d889563be54",
+  "section": "APP-013/3A/P08",
+  "sourceCommit": "8e35617dc178ac8ce757548fac830b0013108ad7",
+  "sourceManifestSha256": "dc687b5bc36264c57c75154122d406393d2e3711853332e5e57112c881ec9597",
+  "version": 2,
+  "window": {
+    "closeoutEnd": "2026-11-01T15:39:00Z",
+    "cutoff": "2026-11-01T15:32:00Z",
+    "purgeEnd": "2026-11-01T15:40:00Z",
+    "readEnd": "2026-11-01T15:34:00Z",
+    "start": "2026-11-01T15:30:00Z"
+  }
+}

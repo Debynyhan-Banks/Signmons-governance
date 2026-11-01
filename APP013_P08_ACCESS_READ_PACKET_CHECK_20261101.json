@@ -1,0 +1,30 @@
+{
+  "checks": {
+    "exact_cutoff_refused": true,
+    "missing_source_commit_refused": true,
+    "pending_commit_refused": true,
+    "pending_decision_refused": true,
+    "real_committed_source_with_synthetic_authority_passed": true
+  },
+  "finalPreparationChecks": {
+    "backendArchitecture": "PASS",
+    "backendBaseline": "PASS",
+    "governanceDocsConsistency": "PASS",
+    "governanceFrozenBaseline": "PASS",
+    "governanceSafeguardTests": {
+      "failed": 0,
+      "passed": 25
+    },
+    "runtimeTestsRerun": false,
+    "trackedWhitespaceBothRepos": "PASS"
+  },
+  "nativeTransportConstructed": false,
+  "providerCalls": 0,
+  "realCredentialReads": 0,
+  "realOperationRootCreated": false,
+  "recordedAt": "2026-11-01T15:04:17Z",
+  "scopeSha256": "3b9651755344bfb504e886d62a3647d176eb4396feed75ec0f1910219577b44e",
+  "sourceCommit": "8e35617dc178ac8ce757548fac830b0013108ad7",
+  "status": "LOCAL_PACKET_BINDING_PASS_NOT_EXTERNAL_AUTHORITY",
+  "syntheticRootRemoved": true
+}
