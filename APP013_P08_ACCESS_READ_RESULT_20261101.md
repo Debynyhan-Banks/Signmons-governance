@@ -1,0 +1,11 @@
+# APP-013 / 3A / P08 — consumed qualification result
+
+Owner-approved operation dff9307d-e7fb-4e5a-873c-22179faf0958 launched once at 2026-11-01 15:30:31 UTC under approval 4c125a9 and unchanged source 8e35617. Result **NARROW_ACCESS_STOPPED / CACHED_TOKEN_EXPIRED**; one cache reservation, zero CLI, zero HTTPS. Token expiry did not extend strictly past 15:40 purgeEnd. The raw token/expiry was not exported; this does not distinguish already expired from insufficient remaining lifetime. No refresh, retry, provider mutation, payment or spending.
+
+Normal closeout completed. Independent lock/inventory/hash/private-plan absence verification at 15:31:17 UTC passed before deadline, with no residuals. Private plan and temporary journal absent. Sanitized originals retained under the exact operation root; byte-identical immutable evidence and verification receipt committed in backend **af4c27f47a632d4ea5dca948c86e3cfce4df7a0d**, at `evidence/APP-013/p08-narrow-access-check-local-20261101/ACCESS_QUALIFICATION_RESULT_20261101.md` and its `operations/dff9307d-e7fb-4e5a-873c-22179faf0958/` directory. No private plan or credential material in the commit.
+
+Approval is consumed despite zero HTTPS. Do not alter/reuse the immutable approved decision, plan, operation or window. The result's externalObservation=true denotes the authorized path, not provider evidence. Provider access/roles/API/billing/runtime/payment facts remain UNKNOWN.
+
+Completed: exact approval/source/time checks, single qualification, mandatory closeout and immutable evidence. Blocker/owner credential custodian: cached-token validity; any renewal/login needs separate authority. Implementer then prepares a fresh exact qualification window/decision. No substitute implementation or automatic repeat. Next observable result: separately authorized adequate-token qualification or deferral.
+
+Baseline/docs consistency, architecture, receipt hashes/whitespace and 25 governance safeguards PASS. Earlier 49 runtime tests remain unchanged-source local evidence, not rerun or live qualification. No merge/push/deployment; unrelated AGENTS.md edit preserved. APP-013/3A open, accepted 1A/1B/2A/2B **4/8**, newly closed R1 **0/27**; old R10 also consumed. **No scope deviation.**
