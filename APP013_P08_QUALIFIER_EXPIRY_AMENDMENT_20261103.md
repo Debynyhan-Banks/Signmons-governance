@@ -1,5 +1,15 @@
 # P08 qualification binding: credential-expiry contract amendment
 
+## November 3 — approved external qualification binding locally verified
+
+R1-W01/APP-013/3A/P08. Owner approved original card4c8011e and expiry amendmentdc90069 before implementation. Backend7413bfa completes checklist1–6 locally: distinct committed read-only authority; exact source/scope/resource/window/SDK allowance; attempt reservation before hidden credentials;27CLI/20directHTTPS/4remoteSQL plus1cache inspection (2fixed SQLite SELECTs); cached token match/expiry; process-local SDK log/prompt controls; separate cleanup-only dispatch/fresh SQL factory and conservative interrupted recovery. Legacy native entry remains refused, proof API cannot select an external transport, and qualification cannot launch runtime/payment. Prior withdrawn draft remains disclosed, not rewritten.
+
+PASS56 producer/transport/authority/cache,17 composed model,7 owned PostgreSQL/TLS,21 native entry,111 narrow regression and25 governance:237 total. Actual disposable Git, synthetic SQLite, installed SDK log/prompt method bodies and owned SQL/TLS boundaries exercised. Owned server reaped, scratch absent, scoped sessions/owned children absent. Initial manifest/path/test-discovery/resource-warning and sandbox-bootstrap failures are recorded in EXTERNAL_BINDING_RESULT_20261103.md, corrected without weakening checks. Frozen baseline, cross-repository/docs consistency, architecture and whitespace PASS. Unrelated AGENTS.md preserved; no application/browser/build claim for this isolated binding.
+
+Implemented/local-tested only; providerCalls0/liveObserved=false/executionReady=false. Actual credential/configuration compatibility, provider/DB/job/rights/billing and external cleanup facts remain UNKNOWN. SDK source review is bounded; its internal requests are not counted as27, and any refresh/cache/internal retries still require the exact future exception. No live decision/window/private input/credential access/provider request, renewal/login, deployment or payment. Next implementer: prepare qualification-only packet against7413bfa with exact source/pins, explicit SDK/cache allowances and fresh work/cleanup/purge times; owner/credential/DB roles approve that exact external action. Then existing same-job Sandbox journey, negative/replay evidence and owner acceptance. Accepted1A/1B/2A/2B4/8;R1 newly closed0/27;3A open. **No scope deviation beyond the explicitly approved expiry amendment.**
+
+Owner “proceed” approved amendmentdc90069 before this implementation, together with original binding card4c8011e. Local implementation and synthetic tests only; no live operation.
+
 R1-W01 / APP-013 / 3A / P08. Owner “proceed” approved local binding card4c8011e. This record reports an implementation-preparation gap, not completion or live authority. Backend remains8b479ba9a26e797b64f63b0f3715811c3c2ebbd4; unrelated AGENTS.md preserved.
 
 ## Demonstrated gap
