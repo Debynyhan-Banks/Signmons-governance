@@ -1,5 +1,12 @@
 # Session Handoff
 
+## November 3 — R3 consumed; recovery unqualified, private purge verified
+
+Approved e29a376 / source 2a39aac operation ff5697fb-2411-4745-a145-079f8e9daac4 launched once in attended Terminal after 4:50 p.m. EST. Exact committed authority/source/SDK pins and window passed. Result BINDING_INPUT_RECOVERY_UNQUALIFIED, failure RECOVERY_READ_UNCONFIRMED, liveObserved=true, executionReady=false, candidate=null. Two CLI dispatch markers, zero SQL markers; provider-internal request count UNKNOWN. No cause more specific than the sanitized failure is established; do not assume password timeout or provider denial. No real target/project pair retained or qualification candidate produced.
+
+Resource closeout verified=false: MAIN_SESSIONS_UNCONFIRMED, INDEPENDENT_SESSIONS_UNCONFIRMED, INDEPENDENT_PROCESSES_UNCONFIRMED. Explicit closeout command returned BINDING_RECOVERY_CLOSEOUT_UNCONFIRMED/exit2 without adding reads. Private purge receipt says PRIVATE_PURGE_VERIFIED, rawFilesAbsent=true, onTime=true; exact request/recovered/qualification-input paths confirmed absent. Owned nonsecret Terminal launcher removed. Sanitized backend evidence: evidence/APP-013/P08_BINDING_RECOVERY_R3_RESULT_20261103.json. No retry/replay, rebaseline or new provider action authorized. Next smallest decision: owner report of Terminal prompt/outcome may clarify the sanitized stop; implementer can review existing evidence, but any new read requires a separately bounded proposal. DB/resource cleanup remains UNKNOWN, not inferred from zero SQL dispatch or successful file purge. Original full qualification and Sandbox journey remain. 3A OPEN, accepted 4/8, R1 newly closed 0/27. No scope deviation.
+
+
 ## November 3 — R3 owner approved for attended launch
 
 Owner “i approve” approves exact R3 packet 3d1d521: 4:50–5:45 p.m. EST, start strictly before 5:00; reads end 5:10, closeout 5:20, purge 5:45. Scope 455c51bd02a90820a20c05d4a618c171c96e98ae21aedd8ab811973f91b8589c, operation ff5697fb-2411-4745-a145-079f8e9daac4, source 2a39aac, all resource/read/SDK/retention allowances unchanged. First clock 21:49:11Z precedes start. Approval is recorded before private input or launch. Owner attends hidden SQL prompt in Terminal; implementer preflights actual source/time and performs one attempt plus closeout/purge. No further scope approval required. Live facts UNKNOWN until observed; 3A OPEN, accepted 4/8, R1 newly closed 0/27. No scope deviation.
