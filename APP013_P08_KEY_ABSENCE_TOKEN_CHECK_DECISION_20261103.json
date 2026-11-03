@@ -1,7 +1,7 @@
 {
   "closeoutEnd": "2026-11-03T14:24:00Z",
   "cutoff": "2026-11-03T14:23:00Z",
-  "decision": "PENDING_OWNER_APPROVAL",
+  "decision": "APPROVE_ONE_CACHED_TOKEN_VALIDITY_CHECK",
   "dependentOperationId": "651d475e-9344-47f1-b08c-abba317e17d9",
   "limits": {
     "cache": 1,

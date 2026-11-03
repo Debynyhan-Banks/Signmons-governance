@@ -1,5 +1,7 @@
 # APP-013 / 3A / P08 — one cached-token validity qualification for key absence
 
+**OWNER APPROVED:** “i approve”, observed November3 14:16:07 UTC, for this exact single-cache-read qualification and unchanged14:20/14:23/14:24 window. No provider-read authority. Earlier pending language is historical.
+
 **QUALIFICATION-ONLY; PENDING OWNER APPROVAL.** Exact decision APP013_P08_KEY_ABSENCE_TOKEN_CHECK_DECISION_20261103.json. This checks only the missing credential-validity prerequisite; it does not authorize the three provider reads.
 
 Reservation **112f0eed-6230-4137-8f16-d4ec1beb9675**. November3,2026 **14:20 UTC /9:20 a.m. EST** start; strictly before **14:23 /9:23** cutoff; finish and independently verify local closeout by **14:24 /9:24**. One read must establish validity strictly beyond **14:35 UTC /9:35 a.m. EST**, proposed dependent operation651d475e-9344-47f1-b08c-abba317e17d9 purge deadline. No token/expiry/value printed or copied. Missed window/failure consumes or expires authority; no retry, refresh, renewal/login, alternate credentials or provider request.
