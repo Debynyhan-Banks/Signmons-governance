@@ -1,5 +1,7 @@
 # APP-013 / 3A / P08 — fresh six-read access qualification
 
+**CONSUMED AND CLOSED — November 3, 2026:** all six reads completed at 13:15:22 UTC. SERVICE_DISABLED: both exact roles and all requested owner permissions observed; API Keys API DISABLED. Independent cleanup verified at 13:15:35 UTC, no residuals. Approval 163e9c6 cannot be reused. See APP013_P08_ACCESS_READ_RESULT_20261103.md. No service enablement or further reads authorized. Earlier pending/awaiting language below is historical. **No scope deviation.**
+
 **OWNER APPROVED — November 3, 2026:** owner said “i approve the fresh six read qualification” in response to the exact 8:15–8:25 a.m. EST packet, strict 8:17 start cutoff, one attempt/no refresh/no retry/no configuration changes/spending. Approval observed 13:07:28 UTC. The new decision JSON records APPROVE_EXACT_P08_NARROW_ACCESS_READ with unchanged operation, scope, source and time pins. Earlier pending language below is historical. No private operation plan or qualification request has been made; start awaits 13:15 UTC. This is qualification-only, not payment/runtime authority.
 
 Renewal evidence committed at backend `b2d610aa0d3dd37154bf87a2900a8226269deed5`; final packet source/binding/baseline/consistency/architecture/whitespace checks and 25 governance safeguards PASS. Exact new external decision remains PENDING.
