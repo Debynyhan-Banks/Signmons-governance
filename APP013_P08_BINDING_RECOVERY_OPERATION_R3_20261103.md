@@ -1,5 +1,10 @@
 # P08 recovery — R3 pending exact approval
 
+## November 3 — R3 owner approved for attended launch
+
+Owner “i approve” approves exact R3 packet 3d1d521: 4:50–5:45 p.m. EST, start strictly before 5:00; reads end 5:10, closeout 5:20, purge 5:45. Scope 455c51bd02a90820a20c05d4a618c171c96e98ae21aedd8ab811973f91b8589c, operation ff5697fb-2411-4745-a145-079f8e9daac4, source 2a39aac, all resource/read/SDK/retention allowances unchanged. First clock 21:49:11Z precedes start. Approval is recorded before private input or launch. Owner attends hidden SQL prompt in Terminal; implementer preflights actual source/time and performs one attempt plus closeout/purge. No further scope approval required. Live facts UNKNOWN until observed; 3A OPEN, accepted 4/8, R1 newly closed 0/27. No scope deviation.
+
+
 Owner confirms current Mac availability for the next hour. R2 expired unstarted: first check 2026-11-03T21:47:40Z was after its 21:10Z cutoff; all four exact R2 roots remain absent. R2 packet/approval are preserved in EXPIRED_R2 files and Git, including approval commit 0866ba1. R3 changes only operation IDs and times; no source, resource, limit or SDK exception changes. No private input, credentials, provider/SQL/SDK activity occurred. Source 2a39aac remains pinned. R3 is pending approval, qualification-only, not runtime-ready. Maximum actual retention is 55 minutes, within the approved 60-minute design.
 
 ## Exact decision for review

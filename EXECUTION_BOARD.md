@@ -1,5 +1,10 @@
 # Signmons Execution Board
 
+## November 3 — R3 owner approved for attended launch
+
+Owner “i approve” approves exact R3 packet 3d1d521: 4:50–5:45 p.m. EST, start strictly before 5:00; reads end 5:10, closeout 5:20, purge 5:45. Scope 455c51bd02a90820a20c05d4a618c171c96e98ae21aedd8ab811973f91b8589c, operation ff5697fb-2411-4745-a145-079f8e9daac4, source 2a39aac, all resource/read/SDK/retention allowances unchanged. First clock 21:49:11Z precedes start. Approval is recorded before private input or launch. Owner attends hidden SQL prompt in Terminal; implementer preflights actual source/time and performs one attempt plus closeout/purge. No further scope approval required. Live facts UNKNOWN until observed; 3A OPEN, accepted 4/8, R1 newly closed 0/27. No scope deviation.
+
+
 ## November 3 — R2 expired unstarted; R3 prepared for present attendance
 
 Owner confirms at Mac and available for the next hour. At 21:47:40Z R2 was beyond cutoff; exact request/recovery/qualification-input/qualification-external roots absent. R2 preserved as EXPIRED_R2 and in Git; no replay. Fresh APP013_P08_BINDING_RECOVERY_OPERATION_R3_20261103.md proposes today 4:50–5:45 p.m. EST, start strictly before 5:00, reads end 5:10, closeout 5:20, purge 5:45. Same 2 SDK CLI / 3 SQL limits, SDK refresh/cache/internal-retry exception, hidden Terminal attendance, source/fingerprints and cleanup; new IDs only. Source/35 SDK byte hashes, root absence and actual capability proof-only schema PASS. Existing 264-test runtime evidence is historical, not rerun. No live access or private input. Pending decision false. Owner/credential/DB role approves exact R3 packet; implementer then preflights/launches once and verifies cleanup. Actual identifiers/access/provider/billing facts UNKNOWN. 3A OPEN, accepted 4/8, R1 newly closed 0/27. No scope deviation.
