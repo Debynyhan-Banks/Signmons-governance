@@ -1,5 +1,7 @@
 # APP-013 / 3A / P08 — exact three-read key-absence packet
 
+**BLOCKED/DO NOT LAUNCH: prerequisite token qualification stopped CACHED_TOKEN_EXPIRED14:20:17. Current packet unapproved and unstarted. Credential remedy and fresh qualification/window require separate authority.**
+
 **QUALIFICATION-ONLY. PREPARED; BLOCKED ON CACHED-TOKEN VALIDITY. External decision PENDING; no launch requested yet.** Owner “proceed” authorized preparation from backendce36c1195acf31726e560e97b2c05432d19e79d1/governance357b97e. No runtime changes, real credential reads, provider requests or operational private root/plan. No key creation authority.
 
 ## Exact source, target and time

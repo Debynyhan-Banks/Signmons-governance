@@ -1,5 +1,7 @@
 # APP-013 / 3A / P08 — one cached-token validity qualification for key absence
 
+**CONSUMED AND CLOSED: CACHED_TOKEN_EXPIRED14:20:17; independent cleanup14:20:33 PASS. No repeat authorized.**
+
 **OWNER APPROVED:** “i approve”, observed November3 14:16:07 UTC, for this exact single-cache-read qualification and unchanged14:20/14:23/14:24 window. No provider-read authority. Earlier pending language is historical.
 
 **QUALIFICATION-ONLY; PENDING OWNER APPROVAL.** Exact decision APP013_P08_KEY_ABSENCE_TOKEN_CHECK_DECISION_20261103.json. This checks only the missing credential-validity prerequisite; it does not authorize the three provider reads.
