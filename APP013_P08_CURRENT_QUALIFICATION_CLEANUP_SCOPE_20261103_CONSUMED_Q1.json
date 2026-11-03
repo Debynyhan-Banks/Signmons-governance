@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "operationId": "471b2bea-0256-42a8-b404-7966cffba419",
+  "database": {
+    "database": "neondb",
+    "host": "ep-jolly-flower-ayc6w9hv.c-5.us-east-2.aws.neon.tech",
+    "port": 5432,
+    "user": "neondb_owner"
+  },
+  "window": {
+    "start": "2026-11-03T22:30:00Z",
+    "cutoff": "2026-11-03T22:33:00Z",
+    "readEnd": "2026-11-03T22:35:00Z",
+    "closeoutEnd": "2026-11-03T22:40:00Z",
+    "purgeEnd": "2026-11-03T22:45:00Z"
+  },
+  "sourceCommit": "18556673a986328f36de9b7f67d189f1c7f1bdfd",
+  "manifestSha256": "750a1464c8fd83fabf2875f3de6774c1f4142b62bf5102bb70b33fe637f91732",
+  "qualificationScopeSha256": "48a40ffed43c27a03afcf645b48d15fdb1bf8f618c45e96db2970faa1a92faed",
+  "nativeScopeSha256": "527a0463f5b6f073dc8938c7aa142a1e597a6c610ea6c2fc102546e42168df6d",
+  "limits": {
+    "sql": 1,
+    "totalSql": 4
+  }
+}

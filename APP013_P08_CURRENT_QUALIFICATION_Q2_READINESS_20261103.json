@@ -1,0 +1,11 @@
+{
+  "verifiedAt": "2026-11-03T23:02:31.195401+00:00",
+  "status": "PROPOSED_AUTHORITY_SCHEMA_SOURCE_CONFIG_PASS",
+  "scopeSha256": "6220e0106e1d4c872785df710d2e0f323590e5e93ae82ee2af78c99d261a4875",
+  "cleanupScopeSha256": "78ac307c2fe9ff43582833c7b0e8e3c97a3fd09d9327f16363392abaa46439f3",
+  "sourceCommit": "ef023e2f3e9f504e6c6ff7c3232a9f2b9cc3b2b2",
+  "noPrivateEnvelopeWritten": true,
+  "noProviderDispatch": true,
+  "rawBindings": "memory only from existing trusted recovery helper",
+  "rootPathsAbsent": true
+}
