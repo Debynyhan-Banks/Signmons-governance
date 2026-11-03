@@ -1,6 +1,6 @@
 # APP-013 / 3A / P08 external qualification binding proposal
 
-Status: proposed local implementation only; owner decision pending. Qualification-only, not execution-ready. Prepared 2026-11-03T16:34:16Z against backend 8b479ba9a26e797b64f63b0f3715811c3c2ebbd4 and governance e35dd8e5a1e6fb0a013455b424fb0c3f82053d89.
+Status: owner “proceed” approved exact card4c8011e for local implementation/tests only. Readiness inspection then found the omitted expiry-read allowance; see APP013_P08_QUALIFIER_EXPIRY_AMENDMENT_20261103.md. Unfinished draft withdrawn; implementation paused at this explicit contract decision. No external operation approved. Qualification-only, not execution-ready. Prepared 2026-11-03T16:34:16Z against backend 8b479ba9a26e797b64f63b0f3715811c3c2ebbd4 and governance e35dd8e5a1e6fb0a013455b424fb0c3f82053d89.
 
 ## Acceptance trace and demonstrated gap
 
