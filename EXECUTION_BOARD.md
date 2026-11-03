@@ -1,5 +1,10 @@
 # Signmons Execution Board
 
+## November 3 — current-evidence design decisions recovered
+
+R1-W01/APP-013/3A/P08. APP013_P08_CURRENT_EVIDENCE_DESIGN_DECISIONS_20261103.md recovers19-field environment expectation including dynamic return URL, recommends reusing SDK/psql under a later exact exception, and proposes explicit entry-access versus post-binding usable-access semantics. Actual coordinator restores/binds before four diagnostics; no future access is claimed from retired metadata. Completed local provenance/transport/phase trace; no code/live action. Owner: design/phase decision; implementer: finite producer card after decision, including exact requests/outputs/budgets and cleanup; live facts UNKNOWN. Next observable result complete approved-scope producer card, not a launch. Accepted4/8, R1 newly closed0/27,3A open. **No scope deviation implemented; explicit phase-contract proposal.**
+
+
 ## November 3 — approved lifecycle ACL integration locally verified
 
 R1-W01/APP-013/3A/P08. Owner “i approve proceed” approved card60082c6 before implementation, source baseline2972104745134d42062afdf259d9c9f34bc7833f. Verified backend commit d306ca3e2e6d05f1c9555849d8d511507be699c1. Checklist1–6 implemented/tested locally: shared strict full-ACL comparison and separate lifecycle expiry query; RuntimeAdapter wired into existing normal and independent-closeout entry; exact NativeIO SQL allowlist; source/test manifests and pinned pure-module dependency. Existing authority/schema, historical restore/closeout/bridge/client modules and consumed receipts unchanged. Retired classifier output remains unchanged. Full ACL equality precedes legacy digest comparison; enabled/retired state predicates remain inherited and unchanged. No cached passing ACL result.
