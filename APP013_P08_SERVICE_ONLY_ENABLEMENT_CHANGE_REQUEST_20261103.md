@@ -1,5 +1,9 @@
 # APP-013 / 3A / P08 — service-only enablement boundary decision
 
+**Approved local amendment complete:** see APP013_P08_SERVICE_ONLY_LOCAL_RESULT_20261103.md. 76 focused tests and 25 governance safeguards PASS; service-only source implemented, no live credential/provider action or operation/window. Earlier proposal/pending text below is historical.
+
+**Owner approved local implementation and isolated tests:** “i approve”, in response to this explicit service-only amendment decision. No external enablement/credential/provider action/window authorized. The completed pre-code section card records exact interfaces/parser choices and tests. Earlier pending language below is historical.
+
 **Prepared for review; local implementation decision pending. No executable operation or window.** Owner said “proceed” after the six-read result and next API-enablement step. This records intent to advance that step, not approval of a newly discovered material execution-interface expansion. No code, credential read, authenticated provider request or service change occurred in this review.
 
 ## Demonstrated gap and acceptance trace
