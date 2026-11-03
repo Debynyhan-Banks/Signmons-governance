@@ -1,5 +1,10 @@
 # APP-013 / 3A / P08 — renewal preparation stopped on evidence-manifest drift
 
+## November 3 — owner approved manifest correction before implementation
+
+Owner “i approve” authorizes APP013_P08_TEST_MANIFEST_CORRECTION_PROPOSAL_20261103.md at196485e: fix only test-manifest runtime link, add current/negative manifest regression checks in existing test module, update its file hash, validate and finish renewal proposal. Backend entryd6b729b; unchanged runtimece36c11. Proposal finite card, acceptance trace, tests, files, local-data boundaries, exclusions and rollback incorporated here. Baseline PASS before editing. No runtime/provider/credential action authorized.
+
+
 Owner “proceed” authorized preparation of a fresh credential-renewal proposal. Backend08fab473a178a586f65377a5f078038d09845c70/governance882c94e56b4931de56c496d609e77533453d0019 entered with unrelated backend AGENTS.md modification preserved. No credential read, SDK invocation, provider action or new live window.
 
 ## Demonstrated preparation error
@@ -21,3 +26,5 @@ Acceptance trace: R1-W01/APP-013/3A/P08 remains the same admitted-job Sandbox pa
 Reuse the prior consumed APP013_P08_CREDENTIAL_RENEWAL_DECISION_20261103.md procedure with fresh reservation/window only after correction: one /opt/homebrew/bin/gcloud auth print-access-token debynyhan@signmons.com --quiet --verbosity=none invocation,60-second bound, stdin/stdout/stderr null, output-control child environment after strict actual config guard; owned process closure; one existing-cache validity postcheck on clean exit. SDK internal authentication retries and normal credential/cache metadata maintenance require an explicit fresh exception; one invocation does not mean one HTTP attempt. No forced refresh/login/browser/alternate credentials/scopes, resource probes, key/IAM/API/billing actions or spending. Old renewal and token qualification are consumed. No current credential state read during this preparation. Fresh exact timing/validity deadline and owner approval remain unset; do not reuse the blocked14:25 packet.
 
 Completed: recovered prior procedure and immutable stop/cleanup; actual source/executable/21 SDK/test-file checks; identified precise missed manifest link. Remaining: owner correction decision, implementer correction/proof then final renewal proposal, separate credential-renewal authorization. Key absence and full P08 UNKNOWN. Accepted4/8, R1 newly closed0/27, 3A open. **Unintended evidence-manifest drift disclosed; explicit narrow correction proposed before implementation.**
+
+COMPLETED under owner approval: backend5be6d5772394062395f735e23c7ae32423180d14,101 focused cases PASS; runtime unchanged. See backend MANIFEST_CORRECTION_RESULT_20261103.json.
