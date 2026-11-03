@@ -1,5 +1,7 @@
 # APP-013 / 3A / P08 — fresh six-read access qualification
 
+**OWNER APPROVED — November 3, 2026:** owner said “i approve the fresh six read qualification” in response to the exact 8:15–8:25 a.m. EST packet, strict 8:17 start cutoff, one attempt/no refresh/no retry/no configuration changes/spending. Approval observed 13:07:28 UTC. The new decision JSON records APPROVE_EXACT_P08_NARROW_ACCESS_READ with unchanged operation, scope, source and time pins. Earlier pending language below is historical. No private operation plan or qualification request has been made; start awaits 13:15 UTC. This is qualification-only, not payment/runtime authority.
+
 Renewal evidence committed at backend `b2d610aa0d3dd37154bf87a2900a8226269deed5`; final packet source/binding/baseline/consistency/architecture/whitespace checks and 25 governance safeguards PASS. Exact new external decision remains PENDING.
 
 **PENDING EXACT OWNER APPROVAL. Qualification-only, not broader runtime/payment execution.** The SDK renewal finished and the cached-token prerequisite passed; that approval does not launch this new operation. No new operation-private root or plan exists.
