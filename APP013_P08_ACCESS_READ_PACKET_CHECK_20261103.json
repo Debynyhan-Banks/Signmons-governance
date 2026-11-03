@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-11-03T13:04:46.799260+00:00",
+  "checks": {
+    "exactCutoffRefused": true,
+    "missingSourceRefused": true,
+    "pendingCommitRefused": true,
+    "pendingDecisionRefused": true,
+    "realCommittedSourceSyntheticAuthorityPass": true
+  },
+  "credentialReads": 0,
+  "finalChecks": {
+    "architecture": "PASS",
+    "crossRepositoryDocsConsistency": "PASS",
+    "frozenBaseline": "PASS",
+    "governanceSafeguardTestsPassed": 25,
+    "runtimeTestsRerun": false,
+    "sourceSdkReceiptHashes": "PASS",
+    "whitespace": "PASS"
+  },
+  "nativeTransportConstructed": false,
+  "operationId": "29e9ebff-2b7c-43a5-b459-217910a1475f",
+  "providerCalls": 0,
+  "realOperationRootCreated": false,
+  "renewalEvidenceCommit": "b2d610aa0d3dd37154bf87a2900a8226269deed5",
+  "scopeSha256": "05223c525eed846f721607601639844945719f34816014ef1f595ede19cb216b",
+  "sourceCommit": "8e35617dc178ac8ce757548fac830b0013108ad7",
+  "status": "LOCAL_PACKET_BINDING_PASS_NOT_EXTERNAL_AUTHORITY",
+  "syntheticRootRemoved": true
+}

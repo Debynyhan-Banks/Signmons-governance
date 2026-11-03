@@ -1,5 +1,7 @@
 # APP-013 / 3A / P08 — one SDK credential-renewal decision
 
+**COMPLETED / CONSUMED:** one command ran 13:01:06–13:01:07 UTC, exited 0; one sanitized cache postcheck passed validity beyond 13:30 UTC. Owned leader reaped/group absent; output discarded, no private token/plan file. SDK auth request count not observed; zero qualification resource requests. Evidence backend CREDENTIAL_RENEWAL_RESULT_20261103.md and renewals/20261103-1300/ under the existing narrow-access evidence directory. This renewal approval cannot be reused; the fresh six-read packet remains pending separate approval.
+
 **OWNER APPROVED THE EXACT EXCEPTION — November 3, 2026:** owner replied “i approve” to the explicit SDK retry/cache-maintenance exception and November 3 8:00–8:05 a.m. EST window, strict 8:02 start cutoff, one command/60-second limit/hidden output/one validity postcheck. Approval observed 12:54:08 UTC. The pending language below is retained as preapproval history. The six-read qualification keeps its no-refresh/no-retry rule and remains separately gated. Renewal reservation label: renewal-20261103-1300; exclusively created sanitized receipts will be retained in backend evidence/APP-013/p08-narrow-access-check-local-20261101/renewals/20261103-1300/. No token/private plan is stored there. No renewal has started.
 
 **Owner approved beginning credential renewal on November 3 (“im back, i approve lets begin”). That approval is recorded, not requested again. A specific SDK retry/cache-maintenance exception remains PENDING. No renewal command has run.**
