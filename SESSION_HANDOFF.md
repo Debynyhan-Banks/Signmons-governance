@@ -1,5 +1,11 @@
 # Session Handoff
 
+## November 3 — exact R6 approval recorded; start at 6:00 p.m.
+
+Owner “i approve” approves d6e0d4f: operation773f6c40-34a8-4be7-ba63-b503c611a868/sourceef023e2, scope61597d9ad37a01f6cbd66256721989c233ec193a8dcccaeb52e378045fff5d47. Start6:00–before6:10p.m.EST; reads6:15, resource closeout6:35, purge6:45. Same2CLI/3SQL, SDK exception, hidden120-second capped attendance and exact retention. First clock22:49:32Z before window. Approval does not authorize full qualification. No live read/private input yet.
+
+Computer-use tool refuses Terminal access for safety; no alternate UI automation used. Implementer prepares nonsecret manual launcher invoking the existing source-bound entry and actual authority/time checks; user opens it in Terminal during the exact window. Implementer monitors sanitized receipts and mandatory closeout/purge. This changes only who opens Terminal, not commands/scope/retention. No new approval needed for the same operation. Current facts UNKNOWN;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 3 — R6 recovery prepared for confirmed 6:00 p.m. attendance
 
 Owner requested next proposal and confirmed availability today6:00–6:45p.m.EST. R6 APP013_P08_BINDING_RECOVERY_OPERATION_R6_20261103.md pins sourceef023e2, new operation773f6c40-34a8-4be7-ba63-b503c611a868, start6:00–before6:10, reads6:15, closeout6:35, purge6:45. Same2SDK CLI/3SQL, explicit SDK refresh/cache/internal-retry exception, hidden120-second capped input and existing retention/guard. Scope61597d9ad37a01f6cbd66256721989c233ec193a8dcccaeb52e378045fff5d47; decision PENDING_OWNER_APPROVAL/false. No live read or private input; prior R5 packet/decision archived byte-for-byte. Actual committed source/dependency/35SDK hashes, dynamic config/environment, actual proof-only schema and fresh roots PASS at2026-11-03T22:45:43.320728+00:00; prior158-test result retained as local evidence, not live proof. Readiness JSON adjacent.

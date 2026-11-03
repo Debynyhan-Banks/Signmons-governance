@@ -1,5 +1,11 @@
 # APP-013 / 3A / P08 — R6 exact binding recovery proposal
 
+## November 3 — exact R6 approval recorded; start at 6:00 p.m.
+
+Owner “i approve” approves d6e0d4f: operation773f6c40-34a8-4be7-ba63-b503c611a868/sourceef023e2, scope61597d9ad37a01f6cbd66256721989c233ec193a8dcccaeb52e378045fff5d47. Start6:00–before6:10p.m.EST; reads6:15, resource closeout6:35, purge6:45. Same2CLI/3SQL, SDK exception, hidden120-second capped attendance and exact retention. First clock22:49:32Z before window. Approval does not authorize full qualification. No live read/private input yet.
+
+Computer-use tool refuses Terminal access for safety; no alternate UI automation used. Implementer prepares nonsecret manual launcher invoking the existing source-bound entry and actual authority/time checks; user opens it in Terminal during the exact window. Implementer monitors sanitized receipts and mandatory closeout/purge. This changes only who opens Terminal, not commands/scope/retention. No new approval needed for the same operation. Current facts UNKNOWN;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 Status: PENDING_OWNER_APPROVAL, qualification-only. Owner requested preparation and confirmed November 3 availability from 6:00–6:45 p.m. Eastern. Availability is not external authorization. Source ef023e2f3e9f504e6c6ff7c3232a9f2b9cc3b2b2; local SDK diagnostic completion ef023e2, governance10945e7. No new code, live read, credential access or private input created. R5 scope/decision archived byte-for-byte as CONSUMED_R5; its successful resource closeout/private purge and the subsequent consumed full qualification remain immutable. Earlier R3/R4 uncertainty is unchanged.
 
 ## Exact decision
