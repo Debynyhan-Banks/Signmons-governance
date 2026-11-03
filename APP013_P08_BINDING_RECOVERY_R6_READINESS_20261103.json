@@ -1,0 +1,19 @@
+{
+  "verifiedAt": "2026-11-03T22:45:43.320728+00:00",
+  "sourceCommit": "ef023e2f3e9f504e6c6ff7c3232a9f2b9cc3b2b2",
+  "scopeSha256": "61597d9ad37a01f6cbd66256721989c233ec193a8dcccaeb52e378045fff5d47",
+  "operationId": "773f6c40-34a8-4be7-ba63-b503c611a868",
+  "qualificationId": "b4a78473-9082-44aa-8ba4-6da40c393c68",
+  "checks": {
+    "committedSourcesAndDependencies": "PASS",
+    "sdkExecutableFiles": 35,
+    "sdkHashes": "PASS",
+    "actualConfigSnapshotAndEnvironment": "PASS",
+    "proofOnlyCapabilitySchemaAtProposedStart": "PASS",
+    "freshOwnedPathsAbsent": "PASS"
+  },
+  "externalAuthorization": false,
+  "providerCalls": 0,
+  "privateInputsCreated": false,
+  "liveFacts": "UNKNOWN"
+}
