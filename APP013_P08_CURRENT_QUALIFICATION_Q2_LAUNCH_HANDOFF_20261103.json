@@ -1,0 +1,16 @@
+{
+  "approvalCommit": "0f4874b",
+  "sourceCommit": "ef023e2f3e9f504e6c6ff7c3232a9f2b9cc3b2b2",
+  "verifiedAt": "2026-11-03T23:06:12.420011+00:00",
+  "status": "APPROVED_NOT_STARTED_USER_TERMINAL_LAUNCH_REQUIRED",
+  "preflight": "Q2_COMMITTED_AUTHORITY_SOURCE_CONFIG_BINDINGS_GUARD_PASS_NO_TRANSFER_OR_LAUNCH",
+  "clock": "proposed start only for readiness constructor; actual launch enforces real clock",
+  "launchers": {
+    "/private/tmp/p08-launch-q2.py": "c1a34343c233205c1e6956009f22cd13e97f9cb27b54409cea6fe7eeeb68d3bb",
+    "/private/tmp/p08-attended-q2.command": "c50b690c5201b33589dd970883be979ad95c7916eb3054f6d19e49caa860d448"
+  },
+  "privateTransfer": false,
+  "qualificationProviderCalls": 0,
+  "recoveryPurgeDeadline": "2026-11-03T23:45:00Z",
+  "next": "User runs /private/tmp/p08-attended-q2.command at 6:15 to before 6:20 p.m. Eastern; existing trusted handoff then one qualification; implementer verifies result, cleanup and R6 purge."
+}
