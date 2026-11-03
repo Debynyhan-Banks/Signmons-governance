@@ -1,5 +1,10 @@
 # Session Handoff
 
+## November 3 — fresh R2 recovery packet prepared, approval pending
+
+Original operation remains expired unstarted (e1d35dc). Owner requested proceeding; APP013_P08_BINDING_RECOVERY_OPERATION_R2_20261103.md prepares new IDs and November 3 4:00–5:00 p.m. EST, start strictly before 4:10, reads end 4:20, closeout 4:30, purge 5:00. Same source, fingerprints, 2 CLI / 3 SQL limits, SDK refresh/cache/internal-retry exception and hidden Terminal attendance. Public packet/decision JSON now describe R2 with PENDING_OWNER_APPROVAL/false; original JSON archived as EXPIRED_R1 and retained in Git. Source/SDK hashes, root absence and actual proof-only capability validation PASS; no runtime tests newly claimed, private input, credentials or provider access. Responsible owner/credential/DB roles: approve this exact new window and attend hidden input; implementer then performs preflight and one attempt. Real identifiers/access/cleanup UNKNOWN. Original full qualification and Sandbox journey remain. 3A OPEN; accepted 4/8; R1 newly closed 0/27. No scope deviation.
+
+
 ## November 3 — approved recovery expired unstarted
 
 On owner “proceed”, first clock read was 2026-11-03T19:10:06Z (2:10:06 p.m. EST), after the strict 19:10:00Z start cutoff. Operation 979559aa-00eb-48d3-bd63-beb3989ac9a7 was not launched. At 19:10:19Z the exact request, recovery, preselected qualification-input and qualification-external roots were all absent, including symlinks. No credentials, SDK invocation, SQL or provider reads occurred this turn. Original packet and committed approval remain historical; no rolling window or replay. TypeScript repair remains complete. Responsible owner: fresh exact window/packet authority; implementer: prepare and verify that packet before any launch. Real identifiers/provider/credential facts remain UNKNOWN. 3A OPEN; accepted 4/8; R1 newly closed 0/27. No scope deviation.
