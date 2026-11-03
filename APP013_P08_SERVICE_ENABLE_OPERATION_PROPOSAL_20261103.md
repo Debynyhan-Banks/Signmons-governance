@@ -1,5 +1,7 @@
 # APP-013 / 3A / P08 — exact service-only enablement packet
 
+**PREREQUISITE PASSED: exact cached-token qualification valid beyond14:00, verified13:46:17; see APP013_P08_SERVICE_TOKEN_CHECK_RESULT_20261103.md. Packet now decision-ready, exact external enablement approval still PENDING. Earlier token-blocked language below is historical.**
+
 **PREPARED, BLOCKED ON TOKEN-VALIDITY QUALIFICATION. No live enablement approval requested yet.** Owner directed preparation with “proceed”. Backend source a7adc1fa846d889432ed9295ead5395d71cac7de; governance entry 13e0007. This packet cannot launch until the prerequisite below passes, the owner separately approves this exact operation/retained service state, and source/authority/clock comparisons pass. Preparation is not provider authority.
 
 ## Exact pins and proposed window

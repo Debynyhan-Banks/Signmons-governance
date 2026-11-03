@@ -1,5 +1,7 @@
 # APP-013 / 3A / P08 — one cached-token validity qualification
 
+**CONSUMED: VALID_THROUGH_CUTOFF at13:46:07; independent verification13:46:17 PASS. No repeat authorized.**
+
 **OWNER APPROVED:** “i approve”, observed November 3 13:45:32 UTC, for this exact one-cache-read qualification and unchanged window. No service enablement authority. Earlier pending text is historical.
 
 **Qualification-only; pending owner approval. No enablement, refresh or provider request.** This is the smallest missing prerequisite for the prepared service-only packet; it does not authorize that packet. Exact pending decision APP013_P08_SERVICE_TOKEN_CHECK_DECISION_20261103.json.
