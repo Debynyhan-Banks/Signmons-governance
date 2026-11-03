@@ -1,6 +1,13 @@
 # P08 binding-input recovery — exact pending operation
 
-**PENDING OWNER APPROVAL. Qualification-only; not execution-ready.** R1-W01 / APP-013 / 3A / P08. Local implementation approved under be2b341 and completed at backend `2a39aacbee27dc610b48539bd81741d2fed88ef9`. This packet proposes a separate external read; no live approval, private input, credential access or provider call has occurred. Prepared 2026-11-03T18:27:55.281408+00:00.
+## November 3 — exact recovery approved; requested TypeScript fix completed first
+
+Owner said “yes i do approve, but first take care of the problem” for exact packet 48db612. The rootDir repair is implemented and production build/layout verified; 46 broader test typing diagnostics are identical with and without the setting. See backend evidence/APP-013/TSCONFIG_ROOTDIR_FIX_20261103.md. No recovery execution occurred during the repair. Decision JSON now records approval of the unchanged packet scope, SDK exception, attendance and retention; source remains pinned to 2a39aac, whose recovery files are unchanged. November 3 start 2:00–before 2:10 p.m. EST, reads end 2:20, closeout 2:30, purge 3:00. No deadline extension or automatic retry. Owner must attend hidden SQL input in Terminal. Next implementer action: original preflight and one attended recovery within the approved window; real identifiers/access/cleanup UNKNOWN until observed. 3A OPEN, accepted 4/8, R1 newly closed 0/27. No scope deviation.
+
+
+## Original preparation record (pending wording below is historical)
+
+**OWNER APPROVED exact packet 48db612, after the requested TypeScript fix. Qualification-only; not runtime execution-ready.** R1-W01 / APP-013 / 3A / P08. Local implementation approved under be2b341 and completed at backend `2a39aacbee27dc610b48539bd81741d2fed88ef9`. This packet proposes a separate external read; no live approval, private input, credential access or provider call has occurred. Prepared 2026-11-03T18:27:55.281408+00:00.
 
 ## Exact decision for review
 
