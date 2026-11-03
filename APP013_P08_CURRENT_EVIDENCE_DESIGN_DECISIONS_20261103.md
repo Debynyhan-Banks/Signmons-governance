@@ -1,5 +1,9 @@
 # APP-013 / 3A / P08 — current-evidence design decisions
 
+## November 3 — owner approved current-evidence design decisions
+
+Owner “I approve” accepts all three recommendations atfc9262a: structural runtime expectations including dynamic return URL, reuse of SDK/psql subject to a later exact external exception, and entry-phase access distinguished from mandatory post-binding diagnostics/authentication. Approval authorizes completion of the finite implementation card; no code, external SDK exception, credentials, provider reads/mutations or live window authorized.
+
 Status: proposed decisions before implementation. Owner “proceed” authorized source investigation and preparation. No code, credentials, database or provider calls. This resolves local design questions from the completed lifecycle card; it does not authorize a live window or claim a completed producer card.
 
 ## Findings and recommended decisions

@@ -1,5 +1,10 @@
 # Global Execution Pointer
 
+## November 3 — design approved; producer card blocked by inspected coverage gaps
+
+R1-W01/APP-013/3A/P08. Owner approvedfc9262a three design decisions. APP013_P08_PRODUCER_READINESS_GAPS_20261103.md records actual26CLI/10HTTPS/2SQL baseline and discovered incomplete owner-permission coverage, redirect/response-close and process-tree cleanup gaps. These counts are not a new allowance. Completed approval/seam/request-order/source audit; remaining implementer-owned exact action-permission descriptors and cleanup interfaces block a complete card. No additional owner approval/credential needed for investigation; no implementation/live action. Next observable result complete finite producer card, not partial-card execution request. Current live facts UNKNOWN;accepted4/8,R1 0/27,3A open. **No scope deviation.**
+
+
 ## November 3 — current-evidence design decisions recovered
 
 R1-W01/APP-013/3A/P08. APP013_P08_CURRENT_EVIDENCE_DESIGN_DECISIONS_20261103.md recovers19-field environment expectation including dynamic return URL, recommends reusing SDK/psql under a later exact exception, and proposes explicit entry-access versus post-binding usable-access semantics. Actual coordinator restores/binds before four diagnostics; no future access is claimed from retired metadata. Completed local provenance/transport/phase trace; no code/live action. Owner: design/phase decision; implementer: finite producer card after decision, including exact requests/outputs/budgets and cleanup; live facts UNKNOWN. Next observable result complete approved-scope producer card, not a launch. Accepted4/8, R1 newly closed0/27,3A open. **No scope deviation implemented; explicit phase-contract proposal.**
