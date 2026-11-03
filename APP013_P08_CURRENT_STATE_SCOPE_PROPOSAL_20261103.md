@@ -1,5 +1,10 @@
 # APP-013 / 3A / P08 — current-state qualification scope and binding proposal
 
+## November 3 — owner approved retained-role prerequisite alignment
+
+Owner “i approve” accepts the recommendation at0434f36: qualification must require the existing safely retired p07_payment_runtime role; absent/unsafe/unknown state stops. Approval authorizes completion of the finite implementation card only, not code, DB/provider reads, creation/enablement or native launch. Historical role-closeout and original grant fixture/provisioner recovered during card preparation; current role state remains UNKNOWN.
+
+
 **Decision-ready prerequisite alignment; NOT an implementation approval or live packet.** Owner requested this proposal after post-key reconciliation. Current backend/gov source hashes and review timestamp are in backend CURRENT_STATE_SCOPE_REVIEW_20261103.json. No code, credentials, database/provider calls, password request or live window.
 
 ## Demonstrated incompatibility requiring the smallest decision
