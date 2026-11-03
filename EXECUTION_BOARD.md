@@ -1,5 +1,10 @@
 # Signmons Execution Board
 
+## November 3 — remaining 3A path consolidated
+
+R1-W01/APP-013/3A/P08. Owner requested a bounded remaining-work proposal. APP013_3A_REMAINING_PATH_PROPOSAL_20261103.md separates local current-evidence/lifecycle ACL integration, fresh qualification and attended same-job Sandbox journey, then owner acceptance. Completed source/acceptance mapping and remaining-work inventory; no implementation/live action. Next implementer: resolve listed local integration decisions into one exact finite card before coding or scheduling. Actual read budget, transport and live facts remain UNKNOWN; provider/DB/credential owners retain future scoped decisions. Existing local proof complete at2972104; accepted4/8, R1 newly closed0/27,3A open. **No scope deviation.**
+
+
 ## November 3 — approved local retained-role and complete ACL proof verified
 
 R1-W01/APP-013/3A/P08. Owner approved implementation card at48bc2a9 before coding. Verified backend commit 2972104745134d42062afdf259d9c9f34bc7833f. Implemented the fixed read-only catalog query, independently pinned expected grants including CONNECT and column ACLs, strict retired-role comparator, and injected local-only evidence boundary. Existing101 tests preserved;110 unit tests and7 actual disposable PostgreSQL tests PASS. PostgreSQL proves baseline/legacy hash compatibility, missing/extra/grant-option ACL refusal, unsafe role/effective PUBLIC privileges/session refusal, statement timeout, lock contention, interruption and cleanup. An extra column grant leaves the historical hash unchanged but is rejected by the new comparator. Owned server reaped and scratch removed. Source/test manifests updated and validated; sanitized byte hashes are in RETIRED_ROLE_ACL_LOCAL_RESULT_20261103.json.
