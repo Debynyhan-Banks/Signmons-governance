@@ -1,0 +1,21 @@
+{
+  "closeoutEnd": "2026-11-03T13:49:00Z",
+  "cutoff": "2026-11-03T13:48:00Z",
+  "decision": "PENDING_OWNER_APPROVAL",
+  "dependentOperationId": "308b0ec1-571f-4c20-8abd-85e1945560d7",
+  "limits": {
+    "cache": 1,
+    "cli": 0,
+    "https": 0,
+    "mutations": 0,
+    "refresh": 0,
+    "retry": 0
+  },
+  "operationId": "584a906c-aeae-4142-9601-26a75e8bf859",
+  "owner": "Debynyhan Banks",
+  "purpose": "ONE_CACHED_TOKEN_VALIDITY_QUALIFICATION",
+  "requiredValidBeyond": "2026-11-03T14:00:00Z",
+  "sourceCommit": "a7adc1fa846d889432ed9295ead5395d71cac7de",
+  "sourceManifestSha256": "816b1c774f46bb515b20ad9beeeaa3e4d30332884b4750faa8f6a66083974715",
+  "start": "2026-11-03T13:45:00Z"
+}

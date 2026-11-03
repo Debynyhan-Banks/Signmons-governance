@@ -1,0 +1,10 @@
+{
+  "decision": "PENDING_OWNER_APPROVAL",
+  "maxEnableAttempts": 1,
+  "operationId": "308b0ec1-571f-4c20-8abd-85e1945560d7",
+  "owner": "Debynyhan Banks",
+  "scopeSha256": "e24d3da5db1b52292db9f9c49e565ede6080148761f9e857d78bc6d80f9380c7",
+  "service": "apikeys.googleapis.com",
+  "serviceRetention": "RETAIN_ENABLED",
+  "sourceManifestSha256": "816b1c774f46bb515b20ad9beeeaa3e4d30332884b4750faa8f6a66083974715"
+}

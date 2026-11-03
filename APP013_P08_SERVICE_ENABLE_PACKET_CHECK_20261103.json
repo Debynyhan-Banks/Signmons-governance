@@ -1,0 +1,15 @@
+{
+  "actualOperationRootAbsent": true,
+  "authorityNote": "Synthetic distinct operation for local binding proof only; pending external decision remains pending.",
+  "checkedAt": "2026-11-03T13:43:38.617033+00:00",
+  "checks": {
+    "actualCommittedSourceSyntheticDifferentAuthority": true,
+    "cutoffRefused": true,
+    "pendingRefused": true,
+    "sourceDriftRefused": true,
+    "syntheticRootPurged": true
+  },
+  "credentialReads": 0,
+  "nativeIOConstructed": false,
+  "providerRequests": 0
+}
