@@ -1,0 +1,17 @@
+{
+  "approvalCommit": "47bb9a7",
+  "sourceCommit": "ef023e2f3e9f504e6c6ff7c3232a9f2b9cc3b2b2",
+  "verifiedAt": "2026-11-03T22:51:03.226511+00:00",
+  "status": "APPROVED_NOT_STARTED_USER_TERMINAL_LAUNCH_REQUIRED",
+  "preflight": "R6_COMMITTED_AUTHORITY_SOURCE_SDK_CONFIG_PASS_NO_LAUNCH",
+  "preflightClock": "proposed start used only for constructor validation; launcher uses actual clock",
+  "launchers": {
+    "/private/tmp/p08-launch-r6.py": "99b1e8ddab97b1b722edd0ab1b0716d8d11ba3e810f0a73b5e2d8cd24e0a661d",
+    "/private/tmp/p08-attended-r6.command": "68a4fdab30bc433311eb968ae06c9fdd3da4efd6fb2db762347ae1330fafc74e"
+  },
+  "terminalTool": "refused app access for safety; no alternate UI automation",
+  "privateEnvelopeCreated": false,
+  "providerCalls": 0,
+  "windowEastern": "November 3, 2026 start 6:00 to before 6:10 p.m.; reads 6:15; closeout 6:35; purge 6:45",
+  "next": "User runs /private/tmp/p08-attended-r6.command in Terminal within window and enters hidden password; implementer inspects immutable sanitized receipts and mandatory closeout/purge. No retry."
+}
