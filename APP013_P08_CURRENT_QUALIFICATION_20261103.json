@@ -2,5 +2,6 @@
   "owner": "Debynyhan Banks",
   "decision": "PENDING_OWNER_APPROVAL",
   "externalReadAuthorized": false,
-  "scopeSha256": "c320a9be0dd96a1c06116366fc5a29ad3d585a218b3f5e64c22280f29c9cbc7c"
+  "scopeSha256": "48a40ffed43c27a03afcf645b48d15fdb1bf8f618c45e96db2970faa1a92faed",
+  "cleanupScopeSha256": "68cb64f3953c62344f4224287a113380bc3d945c1650c851403a5c07a69c95ec"
 }

@@ -1,5 +1,12 @@
 # APP-013 / 3A / P08 — qualification preparation blocked at crash closeout
 
+## November 3 — restart correction verified; exact qualification pending for 5:30 p.m.
+
+Owner approved 063d5e1 before implementation. Backend1855667 completes sanitized committed cleanup scope, public root-based restart after original input deletion, persistent aggregate4SQL/single-independent reservation and two-minute capped work/cleanup prompts. PASS98producer/recovery+17model+10ownedSQL/TLS+25governance=150tests, including actual parent SIGKILL and fresh public cleanup process with owned TLS SQL. No live qualification; R3/R4 findings unchanged. Source result evidence P08_QUALIFICATION_RESTART_FIX_20261103.md/.json in backend (JSON filename P08_QUALIFICATION_RESTART_RESULT_20261103.json).
+
+APP013_P08_CURRENT_QUALIFICATION_OPERATION_20261103.md now proposes exact separate read-only qualification today5:30–5:45p.m.EST, start before5:33, reads end5:35, closeout5:40, purge5:45.27SDK CLI/20directHTTPS/4SQL/1cache(twofixedSQLiteSELECTs), explicit SDK refresh/cache/internal-retry allowance and hidden Terminal attendance. Full work and cleanup hashes bound; public decision pending/false. Actual validators accepted recovered identifiers in memory using preserved immutable R5 source, then new source1855667; no raw envelope saved/transferred and no provider request. Prior unlaunched draft archived. R5 guard retains original5:45deadline. Owner/credential/DB roles approve exact current packet; implementer then preflights, hands off via existing helper, launches once and verifies purge. Current provider/rights/billing facts UNKNOWN. Qualification-only, not runtime authority;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation beyond approved correction.
+
+
 Prepared 2026-11-03T22:16:18.641211+00:00; backend source 66a809b3cb612d8de1aa1709a9e4cdf3f65c310d, governance handoff 01a5fa5. Owner requested preparation after R5 successfully recovered the actual identifiers. No live qualification or additional credential/provider read occurred.
 
 ## Completed binding work
