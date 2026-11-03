@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## November 3 — exact Q2 qualification approved
+
+Owner “i approve” approves11525a4: operationb4a78473-9082-44aa-8ba4-6da40c393c68/sourceef023e2, work6220e0106e1d4c872785df710d2e0f323590e5e93ae82ee2af78c99d261a4875, cleanup78ac307c2fe9ff43582833c7b0e8e3c97a3fd09d9327f16363392abaa46439f3. Start6:15–before6:20p.m.EST; reads6:25, resource closeout6:35, purge6:45.27SDK CLI/20HTTPS/4SQL/1boundedcache, stated SDK exception and hidden120-second capped attendance. First clock23:04:56Z before window. Approval recorded before transfer or launch; no Q2 provider read yet.
+
+Implementer prepares source/authority/time-checked nonsecret launcher; user opens it manually because Terminal computer control is blocked. Existing trusted handoff must acknowledge R6 guard and original deadline; no arbitrary private copy. Retained R6 bindings/resource cleanup verified; final purge pending. Next observable result Q2 facts or exact stop with actual cleanup and R6 private purge. No native/payment authority;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 3 — R6 matched and resource-closed; Q2 qualification pending
 
 R6 operation773f6c40-34a8-4be7-ba63-b503c611a868, approval47bb9a7/sourceef023e2: HANDOFF_RETAINED, failure=null,residuals=[],twoCLI/threeSQL reservations,normal and independent resourceCloseout verified. Both fingerprints revalidated by trusted helper; request absent; guardPID46948 confirmed present. Private retention only until23:45Z/6:45p.m.EST; purge pending, no full qualification or native/payment action. Backend P08_BINDING_RECOVERY_R6_HANDOFF_20261103.json. Earlier consumed findings unchanged.
