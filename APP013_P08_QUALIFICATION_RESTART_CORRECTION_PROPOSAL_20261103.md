@@ -1,0 +1,43 @@
+# APP-013 / 3A / P08 — qualification preparation blocked at crash closeout
+
+Prepared 2026-11-03T22:16:18.641211+00:00; backend source 66a809b3cb612d8de1aa1709a9e4cdf3f65c310d, governance handoff 01a5fa5. Owner requested preparation after R5 successfully recovered the actual identifiers. No live qualification or additional credential/provider read occurred.
+
+## Completed binding work
+
+The existing read_recovered_bindings helper verified R5's private file ownership, hash fingerprints, resource closeout and retention before supplying values in memory. Existing QualificationCapability validated the full source/manifest/SDK/resource/identity/time contracts using an explicitly injected in-memory proposed decision. This validates shape and pins only; it is not owner authorization. Public proposal scope SHA256 c320a9be0dd96a1c06116366fc5a29ad3d585a218b3f5e64c22280f29c9cbc7c; qualification ID 471b2bea-0256-42a8-b404-7966cffba419. Public spec APP013_P08_CURRENT_QUALIFICATION_SPEC_20261103.json contains no recovered raw values. No full private envelope was written or transferred. The deterministic preparation script /private/tmp/p08-build-current-packet.py SHA256 8cce6cd35d8d8e9b904f597286f5bda909cc6a28a943aff40987e1794c000ca2 contains no raw recovered identifiers or secrets; it invokes existing validators and helper, not a provider transport.
+
+Draft times were 5:20 start, strict 5:25 cutoff, reads end 5:30, closeout 5:35, purge 5:45 p.m. EST today. They are NOT execution-ready or scheduled. Decision remains PENDING_OWNER_APPROVAL/false. Do not approve/run this draft with the unresolved prerequisite below. Prospective native scope and budgets are proposed bindings only, not native execution authority. No retrospective adoption of test budgets as prior owner approval.
+
+## Demonstrated gap and impact
+
+qualification_launch.current_main reads the exact private envelope, validates QualificationCapability, then unlinks the envelope and removes its directory before calling _produce_current. It does so for both --qualify-current and --closeout-current. QualificationCapability requires nativeScope.target.id and nativeScope.plan.projectNumber. _produce_current stores only entry.lock, attempt.json with scope/authority hashes, and later sanitized closeout/result markers. handoff_recovered_bindings removes recovered-inputs.json when it transfers the envelope. Therefore a hard interruption after envelope consumption loses the required raw input for a later closeout invocation. The current public command cannot reconstruct that exact capability from its retained sanitized attempt markers. Unit tests of direct recover_current_external(cap) with a retained in-memory capability do not demonstrate public CLI restart after input purge. Normal independent closeout remains implemented and R5 resource closeout remains verified; neither resolves this qualifier-specific crash entry gap.
+
+Full qualification also still uses a 30-second hidden prompt, unlike the recovery-only two-minute correction. Given the observed owner-entry failure, that discrepancy must be resolved or explicitly accepted before another attended qualification. We will not assume acceptance of that shorter prompt.
+
+## Bounded correction proposal — local only, pending owner approval
+
+Approved section remains R1-W01 / APP-013 / 3A / P08. Acceptance: one independent cleanup-only SQL read must be accessible after a real parent process dies after input consumption, without raw identifiers, original envelope, another work read, or a valid work window. It must require the exact committed cleanup authority, source/database/operation pins, unused immutable reservation and original closeout deadline. Never produce a qualification candidate after interrupted recovery or declare lost process history verified. Reuse existing recover_current_external, QualificationIO/NativeIO owned process/SQL boundaries, committed-decision pattern and existing exact-input/private-inventory helpers; add no module/service/provider subsystem.
+
+Proposed change to existing qualification_launch.py: split cleanup authorization from full work capability, binding a sanitized cleanup scope at preparation/approval and reserving that scope before work input retirement. Retain only noncredential operation/source/database/deadline/budget/hash metadata. Provide restart through the existing closeout CLI using the exact owned operation root; no caller-supplied arbitrary database, path or process. Validate committed approval and immutable root/scope before the hidden prompt. Cleanup-only dispatch may issue only the unused independent closeout SQL; no CLI/HTTPS/cache/work SQL, retry or candidate. Preserve total 27 CLI / 20 direct HTTPS / 4 SQL / 1 cache maximum; any needed budget/schema change beyond this proposal requires a new decision before implementation.
+
+Reuse recovery_password for full qualification and permitted interrupted closeout: up to 120 seconds capped by original read/closeout deadline, explicit timeout code, no logging or persistence. Preserve all read/retention/purge deadlines. Pure private-file purge remains independent of credential availability and remains available after expiry. No hard-crash cleanup success claim without actual readback; lost owned-process history remains explicitly unverified.
+
+Files: qualification_launch.py, test_qualification_launch.py, test_qualification_launch_postgres.py if necessary for the existing SQL fixture, source-manifest.json file hashes, and section/result/governance evidence. Native authority/lifecycle, SDK/locked dependency hashes, consumed R3/R4/R5 receipts and unrelated AGENTS.md excluded. No merge, deployment, credentials, new external reads, login, IAM/API/secret/key/database mutation, payment or spending. Rollback only these approved changes to 66a809b, retaining evidence. A later fresh exact source-bound packet remains necessary for live work.
+
+Finite checklist: (1) owner approves this bounded local correction; (2) record exact public cleanup schema/authority and required files in section card before coding, reuse existing validators; (3) add cleanup-only restart and prompt reuse; (4) prove real owned subprocess termination after input purge then fresh-process closeout using synthetic identifiers/owned PostgreSQL TLS; (5) cover forged/wrong-source/root/operation, expired/used allowance, concurrent duplicate cleanup, withheld credentials, no work dispatch, no candidate, private absence and unknown process-history cases; (6) full affected producer/recovery/SQL suites, architecture, frozen/cross-repository/docs consistency, 25 governance safeguards and whitespace; save exact outcomes and UNKNOWNs. Browser/payment/runtime gates remain downstream and are not claimed by these tests.
+
+Alternative: defer qualification and allow R5's guard to purge. Retaining raw inputs longer or bypassing independent restart is not proposed. No retention extension; R5 identifiers will disappear at 5:45 p.m. unless legitimately consumed beforehand. This proposal does not authorize another recovery afterward.
+
+## Readiness and handoff
+
+| Prerequisite | Evidence/result at preparation | Owner/next result |
+| --- | --- | --- |
+| Actual recovered identity bindings | R5 matched fingerprints; trusted helper plus actual qualifier validator PASS, no raw export | Implementer: use only before purge |
+| Source/SDK/schema | Current manifest/locked sources/35 SDK hashes and actual qualifier contracts checked | Implementer: recheck after any change |
+| Hidden-input usability | Recovery 120-second helper locally verified; qualifier still 30 seconds | Owner: local reuse correction decision |
+| Crash restart after private input retirement | Public source trace demonstrates missing retained cleanup capability | Implementer: local correction only after approval |
+| Live credentials/access/billing/API/target state | R5 only establishes its narrow observations; broader facts UNKNOWN | Qualification-only external proposal later |
+| Retention | Existing R5 guard, exact 22:45Z deadline; no new raw copy | Implementer: authoritative transfer/purge absence |
+| Customer acceptance | No full qualification or Sandbox journey | 3A OPEN, accepted 4/8, R1 newly closed 0/27 |
+
+Completed binding/schema preparation and gap diagnosis. Blocker owner: approve bounded local restart/prompt correction, or defer. Next observable result is tested crash-safe qualification closeout, not a live call. **No scope deviation implemented; bounded correction proposed before coding.**

@@ -1,5 +1,12 @@
 # Signmons Execution Board
 
+## November 3 — qualification binding prepared; crash closeout prerequisite blocks launch
+
+Owner requested preparation after R5 success. Trusted helper and actual qualifier validator accept recovered bindings/source/pins in memory; no raw export or private qualification envelope. Draft public SPEC/decision created, pending/false, NOT execution-ready. Source review found --qualify-current deletes input before credentials, while --closeout-current requires that same deleted envelope; sanitized attempt markers cannot reconstruct full raw scope after crash. Existing direct-capability tests do not prove public restart. Full qualifier also retains the 30-second prompt. APP013_P08_QUALIFICATION_RESTART_CORRECTION_PROPOSAL_20261103.md proposes one bounded local correction reusing existing cleanup/transport and 120-second prompt, with actual fresh-process crash/SQL proofs. No implementation or live qualification authorized by preparation.
+
+R5 private handoff still has fixed 5:45 p.m. EST purge deadline; no extension/copy. Resource closeout verified for R5 only; final private absence pending. Responsible owner: local correction or deferral; implementer then tests exact restart and prepares a fresh live packet only if readiness passes. Existing runtime tests remain historical; preparation is local validation only. Full provider/billing/access facts UNKNOWN; same-job Sandbox journey remains. 3A OPEN, accepted 4/8, R1 newly closed 0/27. No scope deviation implemented; correction proposed before coding.
+
+
 ## November 3 — R5 recovery successful; private handoff retained until 5:45 p.m.
 
 Operation 4b0121f4-b43f-433d-ae59-a94860b79080, approval 3242d16/source 66a809b, launched once after 5:10 p.m. EST. Result HANDOFF_RETAINED, failure=null, residuals=[], liveObserved=true, executionReady=false, candidate=null. Both actual identifiers passed pinned hashes. Two CLI/three SQL dispatches including main and independent closeout; resourceCloseout.verified=true. Provider internal request count UNKNOWN. No full qualification/native/runtime/payment launch. R3/R4 old resource uncertainty unchanged.
