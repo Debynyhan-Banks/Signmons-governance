@@ -1,5 +1,10 @@
 # P08 recovery — R4 pending exact approval
 
+## November 3 — R4 approved for attended launch
+
+Owner “i approve” approves exact packet 7256f22, scope a943458228239d3b16ab429e6eb3b62a196d4a451759a641c7c6c3105242562c, operation 577d1f76-1b6e-47d8-bceb-faea37c72db0. November 3 start 4:55–before 5:05 p.m. EST, reads end 5:15, closeout 5:25, purge 5:45. Same source 2a39aac/resources/2 CLI/3 SQL/SDK exception/hidden Terminal attendance and retention; no authority expansion. First clock 21:54:20Z before start. Approval recorded before private input. Implementer: final exact authority/source/time check, one attended launch and authoritative cleanup. R3 remains consumed with its unresolved resource findings. Live R4 facts UNKNOWN until observed; 3A OPEN, accepted 4/8, R1 newly closed 0/27. No scope deviation.
+
+
 Owner reports “i stop it by accident” and requests proceeding with a fresh packet. This is user-reported interruption context, not a more specific machine diagnosis. R3 stays consumed with RECOVERY_READ_UNCONFIRMED, two CLI/zero SQL dispatches, verified private purge and unverified resource/session closeout. Its receipts are unchanged; packet/approval preserved in CONSUMED_R3 files and Git. No R4 result may retroactively qualify R3 cleanup. No same-attempt retry or exhausted allowance is reused.
 
 R4 changes only operation IDs and times, retaining pinned source 2a39aac and resource/read/SDK contracts. No new source implementation. R4 has distinct exclusive roots and SQL application/session identity; old resource uncertainty remains disclosed. This is qualification-only, not runtime execution readiness. Fifty-minute maximum private retention ends at 5:45 p.m., within the owner's stated availability. No private input, credential, SDK/provider/SQL action performed in preparation. Owner should leave Terminal open and enter the hidden password when prompted; never send it in chat. A further interruption consumes this attempt too.

@@ -1,5 +1,10 @@
 # Session Handoff
 
+## November 3 — R4 approved for attended launch
+
+Owner “i approve” approves exact packet 7256f22, scope a943458228239d3b16ab429e6eb3b62a196d4a451759a641c7c6c3105242562c, operation 577d1f76-1b6e-47d8-bceb-faea37c72db0. November 3 start 4:55–before 5:05 p.m. EST, reads end 5:15, closeout 5:25, purge 5:45. Same source 2a39aac/resources/2 CLI/3 SQL/SDK exception/hidden Terminal attendance and retention; no authority expansion. First clock 21:54:20Z before start. Approval recorded before private input. Implementer: final exact authority/source/time check, one attended launch and authoritative cleanup. R3 remains consumed with its unresolved resource findings. Live R4 facts UNKNOWN until observed; 3A OPEN, accepted 4/8, R1 newly closed 0/27. No scope deviation.
+
+
 ## November 3 — owner reports accidental stop; R4 pending
 
 Owner reports accidentally stopping R3, then requests proceeding. Machine evidence remains RECOVERY_READ_UNCONFIRMED, two CLI/zero SQL, private purge verified, resource/session closeout unverified; do not replace that evidence with an inferred diagnosis. R3 consumed and archived, no replay. APP013_P08_BINDING_RECOVERY_OPERATION_R4_20261103.md proposes a distinct attempt today 4:55–5:45 p.m. EST; start before 5:05, reads end 5:15, closeout 5:25, purge 5:45. Only IDs/times change; same 2 CLI/3 SQL, SDK exception, source/pins and hidden Terminal attendance. Actual source/35 SDK hashes, new root absence and capability proof schema PASS. Prior 264 runtime/local tests remain historical. Decision pending/false, no private input or external action. Owner/credential/DB roles approve exact R4; implementer preflights and runs once, recording new cleanup without clearing R3 UNKNOWNs. Original full qualification/Sandbox journey remain. 3A OPEN, accepted 4/8, R1 newly closed 0/27. No scope deviation.
