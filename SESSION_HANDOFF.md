@@ -1,5 +1,10 @@
 # Session Handoff
 
+## November 3 — R5 exact owner approval recorded
+
+Owner “yes i approve” approves packet f652414, scope 20fb921b7bbdc0e0812c3f5b6412c099a0c87adb390f4c4c1fbb6f920577e3ba, operation 4b0121f4-b43f-433d-ae59-a94860b79080, corrected source 66a809b. Start today 5:10–before 5:20 p.m. EST, reads end 5:25, resource closeout 5:35, purge 5:45. Same 2 CLI/3 SQL, SDK exception, exact resources and hidden attendance; prompt up to 120 seconds within original deadlines. First clock 22:09:37Z before start. Approval recorded before private input/launch. Implementer preflights exact committed authority/source/time, launches once in attended Terminal and verifies cleanup. Earlier consumed receipts/residuals unchanged. Live R5 facts UNKNOWN until observed; 3A OPEN, accepted 4/8, R1 newly closed 0/27. No scope deviation.
+
+
 ## November 3 — corrected-source R5 packet prepared, pending approval
 
 Owner requests proceeding after prompt correction. APP013_P08_BINDING_RECOVERY_OPERATION_R5_20261103.md pins backend 66a809b and refreshed manifest, new IDs, November 3 5:10–5:45 p.m. EST; start before 5:20, reads end 5:25, closeout 5:35, purge 5:45. Hidden input up to 120 seconds capped by remaining operation time, explicit timeout code. Same 2 CLI/3 SQL, SDK exception, resources/fingerprints and independent cleanup. Fresh source/35 SDK hashes, new root absence and actual proof-only capability schema PASS; previous 87 prompt/producer and 25 governance test results retained, no new runtime tests claimed. No private input/credential/provider read. R4 packet/decision archived CONSUMED_R4; previous residuals unchanged. R5 decision pending/false; owner/credential/DB roles approve exact operation and attend; implementer then preflights once and verifies cleanup. Real identifiers/access/cleanup UNKNOWN, original qualification and Sandbox journey remain. 3A OPEN, accepted 4/8, R1 newly closed 0/27. No scope deviation beyond approved prompt correction.

@@ -1,5 +1,10 @@
 # P08 recovery — R5 pending exact approval
 
+## November 3 — R5 exact owner approval recorded
+
+Owner “yes i approve” approves packet f652414, scope 20fb921b7bbdc0e0812c3f5b6412c099a0c87adb390f4c4c1fbb6f920577e3ba, operation 4b0121f4-b43f-433d-ae59-a94860b79080, corrected source 66a809b. Start today 5:10–before 5:20 p.m. EST, reads end 5:25, resource closeout 5:35, purge 5:45. Same 2 CLI/3 SQL, SDK exception, exact resources and hidden attendance; prompt up to 120 seconds within original deadlines. First clock 22:09:37Z before start. Approval recorded before private input/launch. Implementer preflights exact committed authority/source/time, launches once in attended Terminal and verifies cleanup. Earlier consumed receipts/residuals unchanged. Live R5 facts UNKNOWN until observed; 3A OPEN, accepted 4/8, R1 newly closed 0/27. No scope deviation.
+
+
 Owner requests proceeding after the locally verified prompt correction. R5 pins source 66a809b3cb612d8de1aa1709a9e4cdf3f65c310d and its new manifest. Password prompt allows up to 120 seconds, capped by the existing read or closeout deadline, and reports RECOVERY_PASSWORD_TIMEOUT. Exact local correction evidence: backend P08_RECOVERY_PROMPT_FIX_20261103.md, 87 producer/recovery tests including actual hidden PTY submission after 31 seconds, 25 governance tests. No live usability claimed.
 
 R3/R4 remain consumed with zero SQL dispatches, private purge verified and resource/session closeout unverified. Their receipts and scope/approval snapshots are preserved. New R5 IDs/roots/session identity cannot retroactively qualify earlier cleanup. No new read or credential access during preparation. Same project/database/fingerprints/2 CLI/3 SQL/SDK exception; no mutation or runtime authorization. Retention now at most 35 minutes, ending 5:45 p.m. within the owner's previously stated availability. Exact R5 approval remains pending.
