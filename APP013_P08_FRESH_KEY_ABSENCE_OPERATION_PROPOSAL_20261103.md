@@ -1,5 +1,7 @@
 # APP-013 / 3A / P08 — fresh exact key-absence qualification
 
+**OWNER APPROVED:** “i approve”, observed November3 14:44:50 UTC, for exact operationf5f91122-d2b6-4dc2-8af2-ef59acf7351c,15:00–15:10 UTC window/strict15:02 start, one cache/three read-only GETs/zero refresh-retry-mutations and mandatory cleanup. No key creation or broader qualification. Earlier pending language is historical.
+
 **QUALIFICATION-ONLY; READY FOR EXACT OWNER DECISION, NOT AUTHORIZED.** Renewalc4ce8e9 ran once14:40:33–14:40:34, exit0, one postcheck valid strictly beyond15:10; independent owned-process/receipt cleanup14:41:04 PASS. No resource requests. Actual qualification rechecks credential/configuration drift.
 
 Fresh operationf5f91122-d2b6-4dc2-8af2-ef59acf7351c replaces unapproved/unstarted651d475e-9344-47f1-b08c-abba317e17d9; earlier14:25–14:35 packet must not be used. Date-named decision/draft JSON now contain this new operation and remain PENDING. Prior versions are preserved in Git atc4ce8e9186652774d9dbf8a08e84372a3adc19cc; commit-specific reader prevents old/new mixing. Target remains the same uncreated prospective key; no creation authorized. Preparation at2026-11-03T14:41:48Z: no operational root/private plan/new credential/provider read.
