@@ -1,5 +1,12 @@
 # Signmons Execution Board
 
+## November 3 — timeout narrowed to SDK invocation; metadata correction proposed
+
+Owner authorized diagnosis. Source plus two successful cleanup SQL reservations narrows prior PROCESS_TIMEOUT to a work SDK CLI invocation, not a password or work-SQL timeout. NativeIO's30-second command bound reserves2seconds for cleanup. Exact descriptor remains UNKNOWN because existing evidence stores only generic failure and loses in-memory counters. No billing/credential/permission cause inferred. One existing owned-process success/oversize/timeout/cleanup test PASS; no SDK/provider/credential reads or replay.
+
+APP013_P08_SDK_TIMEOUT_DIAGNOSTIC_PROPOSAL_20261103.md proposes only bounded allowlisted CLI labels/timing/status and existing final numeric counters, with no raw argv/output/credentials/exception text, no timeout/read-budget increase, and tests for interruption/privacy/cleanup. Local implementation pending owner decision; source unchanged. Existing cleanup verified; R5 inputs purged. Next owner: approve local metadata correction or defer; implementer then proves diagnostics before a separately authorized new external packet.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation implemented; bounded correction proposed before coding.
+
+
 ## November 3 — current qualification consumed at PROCESS_TIMEOUT; cleanup verified
 
 Approved d9cec75/source1855667 operation471b2bea-0256-42a8-b404-7966cffba419 launched once at22:30:16Z within exact window. Committed work/cleanup hashes, source/SDK pins and R5 private guard transfer passed. Result CURRENT_EVIDENCE_UNQUALIFIED, failure PROCESS_TIMEOUT, liveObserved=true, executionReady=false, candidate=null, residuals=[]. Normal and independent SQL/process closeout completed; two persistent SQL reservations. The result does not persist the failing subprocess descriptor or CLI/HTTPS/cache counts; exact command and provider-internal request count remain UNKNOWN. Do not infer a billing/credential/permission denial or successful full qualification. No replay or new live reads authorized.
