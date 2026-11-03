@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## November 3 — external qualification binding proposed, not launched
+
+R1-W01/APP-013/3A/P08. APP013_P08_EXTERNAL_QUALIFICATION_BINDING_CARD_20261103.md records the inspected gap at backend8b479ba: current producer is proof-only, synthetic credential binding and independent external transport remain unimplemented. Completed exact existing-file proposal, distinct committed read-only authority design, hidden credential/inventory/closeout contract, finite tests and readiness ownership. Owner decision pending for local implementation only; six checklist items remain. Actual SDK retry/cache/credential behavior and live provider/DB facts UNKNOWN; no live window or password requested. Next observable result: approved local binding proof, then a separately authorized exact qualification packet. No provider/credential/code action in proposal preparation. Accepted1A/1B/2A/2B4/8;R1 newly closed0/27;3A open. **No scope deviation implemented; external binding proposed before coding.**
+
 ## November 3 — approved current-evidence producer locally verified
 
 R1-W01/APP-013/3A/P08. Owner approved card0504f46 before implementation, baseline backendd306ca3. Verified backend commit 8b479ba9a26e797b64f63b0f3715811c3c2ebbd4. Checklist1–6 complete locally: fixed27CLI/20HTTPS/4SQL proof descriptors; entry permission coverage at project/identity/seven-secret/Run resources; strict19-field environment baseline and full retained ACL; internally collected nine-check candidate bound to exact native scope/operation/source/expiry; proof-only consumption by unchanged native authority. No caller all-true verdict promotion. Actual read-only SDK/HTTP/SQL serializers are tested with injected provider responses or owned disposable processes/databases only.

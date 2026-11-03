@@ -1,0 +1,65 @@
+# APP-013 / 3A / P08 external qualification binding proposal
+
+Status: proposed local implementation only; owner decision pending. Qualification-only, not execution-ready. Prepared 2026-11-03T16:34:16Z against backend 8b479ba9a26e797b64f63b0f3715811c3c2ebbd4 and governance e35dd8e5a1e6fb0a013455b424fb0c3f82053d89.
+
+## Acceptance trace and demonstrated gap
+
+R1-W01 / APP-013 / 3A / P08. The unchanged 3A acceptance criterion is owner-completed Sandbox Checkout for admitted job9180bef4-561d-47a0-869f-925e6a3dfd96, matching authentic signed settlement, fail-closed negative events, idempotent replay and owner acceptance. This work supplies qualification evidence needed before the existing connected journey; it does not complete that journey.
+
+Current code produces evidence through injected proof ports only. produce_native_qualification rejects NativeIO; CurrentAdapter uses SYNTHETIC_CURRENT_PROOF_ONLY as its database password; NativeIO has no independent transport factory; native(argv) refuses CURRENT_NATIVE_ENTRY_UNBOUND before credentials. Existing local candidate validation uses PROOF_ONLY native authority. Therefore the 221 passing local tests do not provide a runnable authorized live qualifier. Simply toggling proof or reusing a historical native approval would violate that boundary.
+
+Proposed change: bind the existing producer to a separate committed read-only qualification decision, with hidden credential delivery and independent cleanup. Alternative: defer and retain the current disabled state. A replacement provider client/subsystem is excluded. This is a material external-boundary change proposed BEFORE coding. Acceptance IDs/counts and payment dependencies do not change.
+
+## Exact implementation scope and interfaces
+
+Only existing files beneath evidence/APP-013/p08-https-output-category-local-20261029/source/: qualification_launch.py, composed_qualification.py, test_qualification_launch.py, test_composed_qualification.py, test_qualification_launch_postgres.py, source-manifest.json. Update corresponding section/result evidence and governance records. No native authority, lifecycle, application, migration, SDK or historical receipt edits. Preserve unrelated AGENTS.md.
+
+Add distinct --qualify-current and --closeout-current dispatch paths in qualification_launch.py. Keep legacy native(argv) refused. Reuse fixed current_cli_contract/current_https_contract/current_sql_contract, strict parsers, CurrentAdapter reduction, owned-process NativeIO, shared retained ACL classifier and structural environment checks. Refactor credential injection and shared reduction within these files; the public proof API remains incapable of external dispatch. Never authorize external work by setting io.proof or fabricating a PROOF_ONLY native decision.
+
+A separate qualification capability validates an immutable committed owner decision before credentials, SDK or SQL processes. Reuse the inspected committed-decision verification pattern, with a distinct APPROVE_EXACT_P08_CURRENT_QUALIFICATION action. It must bind exact qualifier operation ID, prospective native operation and scope hash, source commit and all manifest bytes/dependencies, exact resource/database/owner pins, executable/SDK review hashes, limits, UTC start/read/cleanup/purge deadlines, credential lifetime policy and explicit SDK exception. Reject unknown fields, unsigned/uncommitted/substituted decision bytes, incompatible source, stale timing and consumed IDs. Neither native approval nor qualification approval substitutes for the other.
+
+Local implementation accepts synthetic committed decisions in disposable repositories only. No real operation decision, private input or window is created by this card. Future read-only approval must enumerate actual resource pins from the existing verified scope; no defaults, placeholder resource or historical operation may be launched.
+
+## Data, identity, limits and retention
+
+Reuse exactly the approved current local descriptor set: maximum27 CLI invocations,20 direct HTTPS requests and4 SQL reads across normal work and independent closeout. No retry of a dispatched descriptor. Reserve cleanup before work. These are invocation limits, not a claim that SDK internal network calls are bounded to27. Installed SDK authentication, refresh, retries, logs and cache behavior must be reviewed and explicitly covered by a future SDK exception; unresolved behavior blocks external dispatch.
+
+Before transport creation, validate source hashes, exact configuration and environmental override refusals using the existing validators, including dynamically derived billing/Firebase/return-URL settings. No arbitrary host, project, resource, query or executable. Entry permission probes remain distinct from unchanged later post-binding diagnostics and authentication. Missing/null/foreign/ambiguous output produces unqualified, never inferred access.
+
+Read the SQL password once through hidden TTY only after capability validation; pass it in memory to the existing constrained SQL transport. Access the existing SDK credential path only under the later exact credential-custodian decision. Do not print secrets or put them in command arguments, approval JSON, journals or evidence. Raw provider/SQL response bodies stay memory-only. Independent closeout in the same attended process uses a separately constructed transport and fresh owned SQL process. After process loss, a separately invoked closeout requires a new hidden password prompt under the same cleanup authority; it cannot resume qualification or recover lost process ownership by guessing PIDs.
+
+Use exclusive0700 operation root and0600 immutable attempt/lock/sanitized receipts. No raw secret or provider response files. Exact allowed sanitized inventory is validated; unknown files cause unqualified/residual evidence, not broad deletion. Only sanitized scope-bound candidate/check hashes and classifications may survive purge; no token/password/UID/SQL rows or full runtime environment. If native consumption needs private values beyond this in-memory/receipt contract, STOP for a specific decision rather than invent persistent storage.
+
+Normal success requires all nine checks, local closure and independently constructed SQL/session/owned-resource readback. SIGINT/SIGTERM, cutoff, rollback, response overflow, child failure or partial work still triggers bounded cleanup. Lost ownership yields OWNED_PROCESS_HISTORY_UNKNOWN and no candidate. No guessed PID termination, automatic replay or exhausted-budget reset. Cleanup command cannot issue work/provider descriptors. Qualification expiry must cover the prospective bound native cleanup interval; it grants no permission to invoke native entry. External candidate validation must use read-only scope validation, not require an active native execution capability.
+
+## Readiness record
+
+All source inspections below are at 2026-11-03T16:34:16Z, backend8b479ba. Historical local test evidence is CURRENT_EVIDENCE_RESULT_20261103.json; it is not new live evidence.
+
+| Prerequisite | Inspected evidence and result | Responsible owner / remaining gate |
+| --- | --- | --- |
+| Provider/SQL serialization, strict parsing, nine-check reduction | Existing current contracts and221 local tests; locally verified with injected provider responses and owned PostgreSQL/TLS | Implementer: preserve coverage through new dispatch; actual provider output UNKNOWN |
+| Exact source | qualification_launch.py SHA2564e5921310578612f653ae1fd134d16b5a88252732be6eeeadb262680c25b8bee; composed_qualification.py7285ebda3f77d0e0c769e29f4f0e304f9239fd93e5c545a13c965a1d30d7cb69; manifest44b11e16ace28cc4dad9811755cae1af3b87c0dd9ce03c02257e6860d69e964d | Implementer: refresh exact pins after approved implementation |
+| Authority before credentials | Existing native committed-decision pattern inspected; current qualifier has no such external capability | Implementer: new distinct capability and negative integration tests |
+| Configuration, identity and usable entry access | Existing structural19-field environment, exact permission probes, retained ACL and ownership checks | Provider/DB owners: live facts UNKNOWN; do not replace with historical metadata |
+| SDK/credential compatibility | Existing NativeIO and historical narrow SDK review are insufficient to prove all27 invocation paths | Implementer: filesystem-only SDK path/retry/cache/log review and hashes; credential custodian: later exact exception/lifetime decision |
+| Cutoffs, no retry, concurrency, partial failure | Existing registered process groups, bounded responses, attempt lock, conservative recovery and fresh SQL proof | Implementer: exercise same interfaces from new dispatch and independent factory |
+| Privacy and authoritative closeout | Existing proof inventory and scoped cleanup; no current independent external factory | Implementer: explicit inventory, new independent factory and recovery tests; DB owner: later actual readback |
+| Actual window, resources and future native scope | No new packet or dates approved | Owner: separate exact live decision only after local readiness; all current provider facts UNKNOWN |
+
+This card approves neither provider reads nor SDK refresh/login. Its next observable result is a locally tested external binding that still refuses without a separately committed exact live decision. No enforcement is claimed until corresponding blocking tests pass.
+
+## Finite checklist, tests and finish
+
+1. Record owner decision for this exact card; verify source and governance baseline, preserve unrelated changes.
+2. Implement separate qualification capability and dispatch with committed-source/resource/time/budget validation before all credential/transport access. Exercise disposable committed decision success plus forged/uncommitted/wrong action/source/scope/window/unknown-field refusals.
+3. Refactor shared reducer and hidden credential injection; add independent transport factory. Proof callers still cannot cause external I/O; native entry stays refused. Test ordering, credential redaction, transport allowlists and dynamic configuration refusals.
+4. Add exact attempt/inventory/closeout binding and separate cleanup dispatch. Test duplicate/concurrent attempts, interruption before/after each dispatch, deadline/clock rollback, stale scope, lost process ownership, independent session mismatch and purge failure. Never emit a candidate on incomplete cleanup.
+5. Run actual owned child-process and disposable PostgreSQL/TLS integration through the new dispatcher/factory; include positive, negative, concurrency and crash recovery. Review installed SDK source read-only, recording supported behavior and unresolved exceptions without invoking SDK or credential stores.
+6. Refresh manifests/results; run full focused regression and governance gates; record all failures, cleanup evidence and UNKNOWNs. Produce the exact later qualification packet only if readiness is complete; otherwise identify the smallest remaining factual/owner gate.
+
+Commands: pinned /opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14 -B for existing test_qualification_launch.py, test_composed_qualification.py, test_qualification_launch_postgres.py; unchanged native test_entry.py and narrow test_access_check.py; existing source-manifest validator; node scripts/architecture-check.mjs; backend check-governance-baseline with resolved governance; governance frozen-baseline-check, docs-consistency-check with resolved backend, and the three required safeguard test files; git diff --check both repositories. Browser/build/payment tests are not applicable to this isolated binding; final3A still requires connected browser/payment validation and owner acceptance.
+
+Exclusions: no live credentials/SDK invocation/provider requests, renewal/login, IAM/secret/key/service/SQL mutations, runtime activation, payment, deployment, merge/push, customer contact or new subsystem. Rollback: restore only listed implementation files to backend8b479ba while retaining immutable decisions/results; default and legacy paths remain disabled. No historical operation replay.
+
+Prepared: source/gap trace, finite proposal and readiness record. Remaining: owner local implementation decision, six implementation/test items, then separately approved live qualification and Sandbox journey/acceptance. Accepted1A/1B/2A/2B4/8;R1 newly closed0/27;3A open. **No scope deviation implemented; external qualification binding proposed before implementation.**
