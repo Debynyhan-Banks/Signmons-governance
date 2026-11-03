@@ -1,5 +1,10 @@
 # Session Handoff
 
+## November 3 — owner reports accidental stop; R4 pending
+
+Owner reports accidentally stopping R3, then requests proceeding. Machine evidence remains RECOVERY_READ_UNCONFIRMED, two CLI/zero SQL, private purge verified, resource/session closeout unverified; do not replace that evidence with an inferred diagnosis. R3 consumed and archived, no replay. APP013_P08_BINDING_RECOVERY_OPERATION_R4_20261103.md proposes a distinct attempt today 4:55–5:45 p.m. EST; start before 5:05, reads end 5:15, closeout 5:25, purge 5:45. Only IDs/times change; same 2 CLI/3 SQL, SDK exception, source/pins and hidden Terminal attendance. Actual source/35 SDK hashes, new root absence and capability proof schema PASS. Prior 264 runtime/local tests remain historical. Decision pending/false, no private input or external action. Owner/credential/DB roles approve exact R4; implementer preflights and runs once, recording new cleanup without clearing R3 UNKNOWNs. Original full qualification/Sandbox journey remain. 3A OPEN, accepted 4/8, R1 newly closed 0/27. No scope deviation.
+
+
 ## November 3 — R3 consumed; recovery unqualified, private purge verified
 
 Approved e29a376 / source 2a39aac operation ff5697fb-2411-4745-a145-079f8e9daac4 launched once in attended Terminal after 4:50 p.m. EST. Exact committed authority/source/SDK pins and window passed. Result BINDING_INPUT_RECOVERY_UNQUALIFIED, failure RECOVERY_READ_UNCONFIRMED, liveObserved=true, executionReady=false, candidate=null. Two CLI dispatch markers, zero SQL markers; provider-internal request count UNKNOWN. No cause more specific than the sanitized failure is established; do not assume password timeout or provider denial. No real target/project pair retained or qualification candidate produced.
