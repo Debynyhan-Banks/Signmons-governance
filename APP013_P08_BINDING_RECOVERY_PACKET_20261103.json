@@ -1,8 +1,8 @@
 {
   "version": 1,
   "execution": "EXTERNAL_READ_ONLY",
-  "operationId": "2060bfa3-9d3a-44fe-9a8c-7d4590d270b4",
-  "qualificationId": "ec01ce42-fe4e-45ba-9d5c-935f778fdb68",
+  "operationId": "ff5697fb-2411-4745-a145-079f8e9daac4",
+  "qualificationId": "cda40472-893a-4295-8b7a-f7a56113420f",
   "project": "signmons",
   "owner": "debynyhan@signmons.com",
   "database": {
@@ -14,11 +14,11 @@
   "projectNumberSha256": "37d4aa0f46ca5b8f0b81b1148bda235a0f4a9a424b6b4638ec993d889563be54",
   "targetSha256": "23d7b71141e7cdba27558c97333e6821fc76ec872a84cdc2f2f19a980bee029c",
   "window": {
-    "start": "2026-11-03T21:00:00Z",
-    "cutoff": "2026-11-03T21:10:00Z",
-    "readEnd": "2026-11-03T21:20:00Z",
-    "closeoutEnd": "2026-11-03T21:30:00Z",
-    "purgeEnd": "2026-11-03T22:00:00Z"
+    "start": "2026-11-03T21:50:00Z",
+    "cutoff": "2026-11-03T22:00:00Z",
+    "readEnd": "2026-11-03T22:10:00Z",
+    "closeoutEnd": "2026-11-03T22:20:00Z",
+    "purgeEnd": "2026-11-03T22:45:00Z"
   },
   "limits": {
     "cli": 2,

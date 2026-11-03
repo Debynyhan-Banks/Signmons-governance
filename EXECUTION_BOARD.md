@@ -1,5 +1,10 @@
 # Signmons Execution Board
 
+## November 3 — R2 expired unstarted; R3 prepared for present attendance
+
+Owner confirms at Mac and available for the next hour. At 21:47:40Z R2 was beyond cutoff; exact request/recovery/qualification-input/qualification-external roots absent. R2 preserved as EXPIRED_R2 and in Git; no replay. Fresh APP013_P08_BINDING_RECOVERY_OPERATION_R3_20261103.md proposes today 4:50–5:45 p.m. EST, start strictly before 5:00, reads end 5:10, closeout 5:20, purge 5:45. Same 2 SDK CLI / 3 SQL limits, SDK refresh/cache/internal-retry exception, hidden Terminal attendance, source/fingerprints and cleanup; new IDs only. Source/35 SDK byte hashes, root absence and actual capability proof-only schema PASS. Existing 264-test runtime evidence is historical, not rerun. No live access or private input. Pending decision false. Owner/credential/DB role approves exact R3 packet; implementer then preflights/launches once and verifies cleanup. Actual identifiers/access/provider/billing facts UNKNOWN. 3A OPEN, accepted 4/8, R1 newly closed 0/27. No scope deviation.
+
+
 ## November 3 — R2 exact recovery approved, awaiting start time
 
 Owner “i approve” explicitly approved packet b5b53c0 after the attendance instructions. First clock check 20:40:22Z / 3:40:22 p.m. EST is before the approved start. Scope e48ef39ff6f9d2ddd61c23896893cfa3289239287544782aecd61259d8ed966d and operation 2060bfa3-9d3a-44fe-9a8c-7d4590d270b4 are unchanged. Decision records exact read authority including SDK exception, hidden Terminal attendance and retention. Start November 3 at 4:00 and strictly before 4:10 p.m. EST; reads end 4:20, resource closeout 4:30, purge 5:00. No further approval needed within that exact scope/window; attendance remains necessary. No operation/private input/credentials/provider access yet. Next implementer: recheck actual time/source/authority and launch once in attended Terminal within the approved window, then verify cleanup. No automatic scheduling claim. Real identifiers/access/cleanup UNKNOWN; 3A OPEN, accepted 4/8, R1 newly closed 0/27. No scope deviation.
