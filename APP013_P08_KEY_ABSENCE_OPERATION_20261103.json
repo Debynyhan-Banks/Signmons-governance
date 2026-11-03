@@ -1,0 +1,10 @@
+{
+  "decision": "PENDING_OWNER_APPROVAL",
+  "operationId": "651d475e-9344-47f1-b08c-abba317e17d9",
+  "owner": "Debynyhan Banks",
+  "prospectiveAuthenticationOperationId": "b3bd682f-1a85-48ab-a242-879169e93571",
+  "prospectiveKeyId": "signmons-p08-b3bd682f1a8548aba242879169e93571",
+  "readOnly": true,
+  "scopeSha256": "7dcc5b18be3727df5598ec4da97b8eaf78a4aa74d207d541faf54e55e53d6605",
+  "sourceManifestSha256": "3db5e61e6ec460a8425819c6ea0272dda8cf63606230ee9dd1fb63e1fa31528b"
+}

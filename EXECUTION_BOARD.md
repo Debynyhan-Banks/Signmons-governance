@@ -1,5 +1,10 @@
 # Signmons Execution Board
 
+## November 3 — exact key-absence packet prepared; token qualification decision pending
+
+R1-W01 / APP-013 / 3A / P08. Sourcece36c11 pinned; qualification651d475e-9344-47f1-b08c-abba317e17d9 proposed November3 14:25–14:35 UTC (9:25–9:35 a.m. EST), strict14:27 start/readEnd14:29/closeoutEnd14:34. APP013_P08_KEY_ABSENCE_OPERATION_PROPOSAL_20261103.md binds exact target, one cache/three GETs/no mutations-refresh-retry and mandatory cleanup. Preparation evidence backend d7eeca5dfc7c91b9fec5b4f3ab8a08e5facaa82d. Five actual packet-boundary checks and committed/executable/SDK source checks PASS, synthetic approval/root only; no NativeIO/real credential/provider reads. Source-pinned99 runtime cases remain prior evidence, not preparation reruns. BLOCKED on validity strictly beyond14:35 (UNKNOWN; earlier check only beyond14:00). Smallest qualification APP013_P08_KEY_ABSENCE_TOKEN_CHECK_PROPOSAL_20261103.md: reservation112f0eed-6230-4137-8f16-d4ec1beb9675,14:20 start/strict14:23 cutoff/14:24 closeout, one existing cached-token read, no refresh/HTTPS/mutations. Both decisions PENDING; no operational root/private plan or scheduled launch. Completed draft/bindings/readiness/cleanup; remaining owner: token-check decision, executor: classification/verified closeout if approved, then separate exact read approval if timely. Current target absence/full nine-gate P08 remains UNKNOWN; no key creation. Accepted4/8, R1 0/27, 3A open. **No scope deviation.**
+
+
 Tested backend evidence commit: ce36c1195acf31726e560e97b2c05432d19e79d1. Four source/test/manifest files read back byte-for-byte from that commit; PASS.
 
 ## November 3 — key-absence mode implemented and locally verified
