@@ -1,5 +1,10 @@
 # Global Execution Pointer
 
+## November 3 — current-evidence producer card completed for local decision
+
+R1-W01/APP-013/3A/P08. APP013_P08_CURRENT_EVIDENCE_IMPLEMENTATION_CARD_20261103.md resolves local coverage/cleanup design: exact project/identity/seven-secret/Run permission probes; proposed27CLI/20HTTPS/4SQL local contract; existing-file producer/reducer; process-group ownership/response/session closure; finite negative/real-child/SQL/TLS tests and rollback. Primary API references reviewed, Secret Manager documentation discrepancy explicitly reconciled against IAM catalog/audit methods. Completed card preparation, no runtime/provider action. Next owner: exact local implementation decision; implementer after approval: six checklist items and local proof. External SDK exception/window/credential/real facts remain unapproved/UNKNOWN; qualification-only, not execution-ready. Accepted4/8,R1 0/27,3A open. **No scope deviation implemented; expanded producer correction proposed.**
+
+
 ## November 3 — design approved; producer card blocked by inspected coverage gaps
 
 R1-W01/APP-013/3A/P08. Owner approvedfc9262a three design decisions. APP013_P08_PRODUCER_READINESS_GAPS_20261103.md records actual26CLI/10HTTPS/2SQL baseline and discovered incomplete owner-permission coverage, redirect/response-close and process-tree cleanup gaps. These counts are not a new allowance. Completed approval/seam/request-order/source audit; remaining implementer-owned exact action-permission descriptors and cleanup interfaces block a complete card. No additional owner approval/credential needed for investigation; no implementation/live action. Next observable result complete finite producer card, not partial-card execution request. Current live facts UNKNOWN;accepted4/8,R1 0/27,3A open. **No scope deviation.**
