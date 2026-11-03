@@ -1,5 +1,10 @@
 # Global Execution Pointer
 
+## November 3 — exact full qualification approved
+
+Owner “i approve” approves d3a6582 packet: operation471b2bea-0256-42a8-b404-7966cffba419/source1855667, full scope48a40ffed43c27a03afcf645b48d15fdb1bf8f618c45e96db2970faa1a92faed and cleanup scope68cb64f3953c62344f4224287a113380bc3d945c1650c851403a5c07a69c95ec. Start5:30–before5:33p.m.EST; reads5:35, closeout5:40, purge5:45.27SDK CLI/20directHTTPS/4SQL/1boundedcache inspection and exact SDK exception, hidden attendance/two-minute capped prompt. Approval precedes raw handoff/launch; first clock22:28:54Z before start. Implementer rechecks exact committed authority/source/time and R5 guard, transfers via existing helper, launches once, observes result and actual cleanup. No native/runtime/payment authority. Earlier consumed receipts unchanged.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
+
 ## November 3 — restart correction verified; exact qualification pending for 5:30 p.m.
 
 Owner approved 063d5e1 before implementation. Backend1855667 completes sanitized committed cleanup scope, public root-based restart after original input deletion, persistent aggregate4SQL/single-independent reservation and two-minute capped work/cleanup prompts. PASS98producer/recovery+17model+10ownedSQL/TLS+25governance=150tests, including actual parent SIGKILL and fresh public cleanup process with owned TLS SQL. No live qualification; R3/R4 findings unchanged. Source result evidence P08_QUALIFICATION_RESTART_FIX_20261103.md/.json in backend (JSON filename P08_QUALIFICATION_RESTART_RESULT_20261103.json).
