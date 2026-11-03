@@ -1,5 +1,10 @@
 # Session Handoff
 
+## November 3 — lifecycle ACL integration specified; full producer design remains incomplete
+
+R1-W01/APP-013/3A/P08. APP013_P08_LIFECYCLE_ACL_INTEGRATION_CARD_20261103.md specifies exact existing-file subclass/SQL-allowlist integration, independent closeout, phase-specific predicates, manifests and disposable SQL/TLS/negative tests. No code or live action. Completed dispatch/dependency review and bounded lifecycle card; remaining full producer cannot be called ready: approved environment provenance, actual credential/transport and effective diagnostic contract unresolved. Historical environment digest recovered, not promoted to current proof. Owner: finite lifecycle correction decision; implementer: producer design blockers; provider/DB owners: later live facts, all UNKNOWN. Next observable result is approved lifecycle proof or resolved producer design, never a launch. Accepted4/8, R1 newly closed0/27,3A open. **No scope deviation implemented; explicit integration proposal.**
+
+
 ## November 3 — remaining 3A path consolidated
 
 R1-W01/APP-013/3A/P08. Owner requested a bounded remaining-work proposal. APP013_3A_REMAINING_PATH_PROPOSAL_20261103.md separates local current-evidence/lifecycle ACL integration, fresh qualification and attended same-job Sandbox journey, then owner acceptance. Completed source/acceptance mapping and remaining-work inventory; no implementation/live action. Next implementer: resolve listed local integration decisions into one exact finite card before coding or scheduling. Actual read budget, transport and live facts remain UNKNOWN; provider/DB/credential owners retain future scoped decisions. Existing local proof complete at2972104; accepted4/8, R1 newly closed0/27,3A open. **No scope deviation.**
