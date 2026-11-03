@@ -1,6 +1,13 @@
 # APP-013 / 3A / P08 — bounded prospective-key absence qualification proposal
 
-**Decision-ready local amendment; NOT implemented or externally executable.** Owner directed proposal preparation with “proceed”. Backend entry facd84c0950028a385137d6d9ef7272fd8602dff; governance928445183a075e476fddcc7d44e9c9282dda50bf. No new code, private plan, credential read, provider request or live window. Existing AGENTS.md change preserved.
+## November 3 — owner approved local key-absence amendment before implementation
+
+Owner replied “proceed” to Option1 in proposal cde1f3a; backend entry11985f1. Approval covers only the existing four source/test/manifest files and section/result/governance records. The proposal finite card items1–5 and readiness matrix are incorporated here: exact V4 capability/entry, canonical distinct UUIDs and derived target, three GETs, strict bounded metadata classification, unchanged cache/transport/deadlines/lock/cleanup, all76 regression cases plus new boundary tests. Source base a7adc1fa846d889432ed9295ead5395d71cac7de; acceptance remains R1-W01/3A same admitted-job payment journey. Missing key metadata boundary is demonstrated in the inspected V2/V3 source; this amendment supplies only its qualification seam.
+
+Implementation decision: add prospectiveAuthenticationOperationId and prospectiveKeyId to the exact V4 plan schema; bind both in scope and external decision. Store only targetSha256/keyState in the existing journal. Native requests reuse the existing serializer and cache; independent closeout reuses the existing local-only mechanism. No new module. Existing proposal specifies parser cases, finite test commands, owners, retention, rollback to a7adc1f and observable finish. Future provider/key/config/token validity remains UNKNOWN. No live window, credentials, external calls, creation or broader launch authorized. Baseline passed before edits. **No scope deviation beyond the owner-approved key-absence amendment.**
+
+
+**Historical proposal below; Option1 now owner-approved and locally implemented. External execution remains unauthorized.** Owner directed proposal preparation with “proceed”. Backend entry facd84c0950028a385137d6d9ef7272fd8602dff; governance928445183a075e476fddcc7d44e9c9282dda50bf. No new code, private plan, credential read, provider request or live window. Existing AGENTS.md change preserved.
 
 ## Approved criterion and demonstrated gap
 
@@ -66,3 +73,5 @@ Rollback: restore only four source/test/manifest files from a7adc1f; all histori
 Completed this turn: source/contract review, fresh exact target selection, alternatives, finite local card and readiness record. Remaining: owner selects local amendment/administrator path/deferral; implementer performs only selected authorized work. Accepted1A/1B/2A/2B **4/8**, R1 newly closed **0/27**, 3A open. **Explicit narrow read-interface amendment proposed before implementation; no deviation implemented.**
 
 Preparation checks PASS: actual unchanged source validator, baseline/cross-repository/docs consistency, architecture,25 governance safeguards and both whitespace checks. Documentation-only preparation; no runtime tests rerun or new behavior claimed.
+
+Local completion: APP013_P08_KEY_ABSENCE_LOCAL_RESULT_20261103.md;99 focused tests PASS. No live packet/window approved.
