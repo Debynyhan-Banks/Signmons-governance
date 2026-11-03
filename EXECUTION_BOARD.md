@@ -1,5 +1,12 @@
 # Signmons Execution Board
 
+## November 3 — owner-requested recovery prompt correction verified locally
+
+Owner reports R4 ended before pressing Return and authorized local correction with “proceed”. Backend 66a809b3cb612d8de1aa1709a9e4cdf3f65c310d implements up to 120 seconds for recovery hidden password input, capped by original read/closeout deadline, visible available-time instruction, and explicit RECOVERY_PASSWORD_TIMEOUT mapping from the actual timer exception. No budget/deadline/identity/provider expansion; full qualification/native prompt unchanged. Existing consumed R3/R4 results remain immutable, resource/session cleanup still unverified. The earlier categorical timeout explanation is supported by user report/timing but was not a retained machine-specific diagnosis; the exception-class mismatch was independently reproduced locally.
+
+PASS 87 producer/recovery tests (6 new prompt tests), including actual owned PTY hidden input accepted after 31 seconds without echo, actual expiry/interrupt timer restoration, deadline/no-TTY refusal. PASS 25 governance tests, architecture/baseline/consistency/whitespace. First test invocation had wrong module-discovery cwd; full source-directory suite passed without weakening tests. Evidence backend evidence/APP-013/P08_RECOVERY_PROMPT_FIX_20261103.md. Local source/file hashes refreshed only; SDK pins unchanged. No live credential/SDK/SQL/provider access or new operation. Next implementer: fresh exact packet bound to new source with 120-second prompt disclosure; owner/credential/DB roles approve live scope/window and attend. Real credentials/access/target and live usability UNKNOWN. Original full qualification/Sandbox journey and acceptance remain. 3A OPEN, accepted 4/8, R1 newly closed 0/27. No scope deviation beyond owner-requested prompt correction.
+
+
 ## November 3 — R4 consumed; repeated pre-SQL stop requires prompt diagnosis
 
 R4 577d1f76-1b6e-47d8-bceb-faea37c72db0 approved acb457f/source 2a39aac launched once in owner Terminal after 4:55 p.m. EST. Exact committed authority/source/SDK/window checks passed. Result BINDING_INPUT_RECOVERY_UNQUALIFIED / RECOVERY_READ_UNCONFIRMED, liveObserved=true, executionReady=false, candidate=null. Two CLI dispatches and zero SQL dispatches; internal provider request count UNKNOWN. Same generic stop as R3; cause unproven. Owner asked which Terminal prompt/input behavior occurred; response pending. Do not arrange another attempt before diagnosing this repeated boundary.
