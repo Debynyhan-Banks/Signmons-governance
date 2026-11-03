@@ -1,5 +1,10 @@
 # P08 recovery — fresh R2 packet, pending approval
 
+## November 3 — R2 exact recovery approved, awaiting start time
+
+Owner “i approve” explicitly approved packet b5b53c0 after the attendance instructions. First clock check 20:40:22Z / 3:40:22 p.m. EST is before the approved start. Scope e48ef39ff6f9d2ddd61c23896893cfa3289239287544782aecd61259d8ed966d and operation 2060bfa3-9d3a-44fe-9a8c-7d4590d270b4 are unchanged. Decision records exact read authority including SDK exception, hidden Terminal attendance and retention. Start November 3 at 4:00 and strictly before 4:10 p.m. EST; reads end 4:20, resource closeout 4:30, purge 5:00. No further approval needed within that exact scope/window; attendance remains necessary. No operation/private input/credentials/provider access yet. Next implementer: recheck actual time/source/authority and launch once in attended Terminal within the approved window, then verify cleanup. No automatic scheduling claim. Real identifiers/access/cleanup UNKNOWN; 3A OPEN, accepted 4/8, R1 newly closed 0/27. No scope deviation.
+
+
 R1-W01 / APP-013 / 3A / P08. Owner “proceed” authorizes preparation after the original operation expired unstarted. This is a NEW pending operation, not an extension or replay. Original approved JSON is preserved in EXPIRED_R1 files and commit 9289c9b; expiry receipt e1d35dc remains authoritative. Only the two IDs and five times differ from the prior scope. The TypeScript rootDir repair does not alter pinned recovery files. No live inputs, credentials or external reads were created during preparation. Source remains 2a39aacbee27dc610b48539bd81741d2fed88ef9. Pending decision is false; fresh exact owner approval is required by repository no-replay/window safeguards.
 
 ## Exact decision for review

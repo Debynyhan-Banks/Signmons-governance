@@ -1,5 +1,10 @@
 # Signmons Execution Board
 
+## November 3 — R2 exact recovery approved, awaiting start time
+
+Owner “i approve” explicitly approved packet b5b53c0 after the attendance instructions. First clock check 20:40:22Z / 3:40:22 p.m. EST is before the approved start. Scope e48ef39ff6f9d2ddd61c23896893cfa3289239287544782aecd61259d8ed966d and operation 2060bfa3-9d3a-44fe-9a8c-7d4590d270b4 are unchanged. Decision records exact read authority including SDK exception, hidden Terminal attendance and retention. Start November 3 at 4:00 and strictly before 4:10 p.m. EST; reads end 4:20, resource closeout 4:30, purge 5:00. No further approval needed within that exact scope/window; attendance remains necessary. No operation/private input/credentials/provider access yet. Next implementer: recheck actual time/source/authority and launch once in attended Terminal within the approved window, then verify cleanup. No automatic scheduling claim. Real identifiers/access/cleanup UNKNOWN; 3A OPEN, accepted 4/8, R1 newly closed 0/27. No scope deviation.
+
+
 ## November 3 — fresh R2 recovery packet prepared, approval pending
 
 Original operation remains expired unstarted (e1d35dc). Owner requested proceeding; APP013_P08_BINDING_RECOVERY_OPERATION_R2_20261103.md prepares new IDs and November 3 4:00–5:00 p.m. EST, start strictly before 4:10, reads end 4:20, closeout 4:30, purge 5:00. Same source, fingerprints, 2 CLI / 3 SQL limits, SDK refresh/cache/internal-retry exception and hidden Terminal attendance. Public packet/decision JSON now describe R2 with PENDING_OWNER_APPROVAL/false; original JSON archived as EXPIRED_R1 and retained in Git. Source/SDK hashes, root absence and actual proof-only capability validation PASS; no runtime tests newly claimed, private input, credentials or provider access. Responsible owner/credential/DB roles: approve this exact new window and attend hidden input; implementer then performs preflight and one attempt. Real identifiers/access/cleanup UNKNOWN. Original full qualification and Sandbox journey remain. 3A OPEN; accepted 4/8; R1 newly closed 0/27. No scope deviation.
