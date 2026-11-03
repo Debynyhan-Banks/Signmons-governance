@@ -1,5 +1,7 @@
 # APP-013 / 3A / P08 — exact three-read key-absence packet
 
+**SUPERSEDED UNAPPROVED/UNSTARTED:** old14:25–14:35 packet must not launch. Date-named draft/decision now belong to the fresh operation described only in APP013_P08_FRESH_KEY_ABSENCE_OPERATION_PROPOSAL_20261103.md. Historical versions preserved atc4ce8e9.
+
 **BLOCKED/DO NOT LAUNCH: prerequisite token qualification stopped CACHED_TOKEN_EXPIRED14:20:17. Current packet unapproved and unstarted. Credential remedy and fresh qualification/window require separate authority.**
 
 **QUALIFICATION-ONLY. PREPARED; BLOCKED ON CACHED-TOKEN VALIDITY. External decision PENDING; no launch requested yet.** Owner “proceed” authorized preparation from backendce36c1195acf31726e560e97b2c05432d19e79d1/governance357b97e. No runtime changes, real credential reads, provider requests or operational private root/plan. No key creation authority.

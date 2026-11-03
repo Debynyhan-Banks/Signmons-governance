@@ -1,5 +1,7 @@
 # APP-013 / 3A / P08 — fresh bounded SDK credential renewal
 
+**COMPLETED/CONSUMED:** one invocation14:40:33–14:40:34; postcheck valid beyond15:10; independent cleanup14:41:04 PASS. No repeat. Fresh provider reads remain separately pending.
+
 **OWNER APPROVED:** “i approve”, observed November3 14:35:43 UTC, for the exact14:40–14:45 UTC window, strict14:42 start, one60-second invocation, SDK-managed authentication retries/cache maintenance, hidden output and one validity postcheck beyond15:10. No downstream qualification authority. Earlier pending text is historical.
 
 **PENDING OWNER APPROVAL.** Preparation only; no credential/configuration read, SDK invocation or provider action. Old renewal20261103-1300 and token check112f0eed-6230-4137-8f16-d4ec1beb9675 are consumed. The token check at14:20:17 showed insufficient validity beyond14:35, not necessarily already expired. Existing14:25–14:35 key packet stays blocked and must not be reused.
