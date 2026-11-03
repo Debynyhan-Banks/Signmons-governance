@@ -1,5 +1,7 @@
 # APP-013 / 3A / P08 — one cached-token validity qualification
 
+**OWNER APPROVED:** “i approve”, observed November 3 13:45:32 UTC, for this exact one-cache-read qualification and unchanged window. No service enablement authority. Earlier pending text is historical.
+
 **Qualification-only; pending owner approval. No enablement, refresh or provider request.** This is the smallest missing prerequisite for the prepared service-only packet; it does not authorize that packet. Exact pending decision APP013_P08_SERVICE_TOKEN_CHECK_DECISION_20261103.json.
 
 Reservation 584a906c-aeae-4142-9601-26a75e8bf859; November 3, 2026 start **13:45 UTC / 8:45 a.m. EST**, strict cutoff **13:48 / 8:48**, finish/verify local closeout by **13:49 / 8:49**. One existing cached-token read must demonstrate validity strictly beyond **14:00 UTC / 9:00 a.m. EST**, the proposed enablement purge deadline. No token, expiry or credential value is printed or copied. If the window is missed or check fails, stop/expire; no retry, refresh, SDK renewal, login or alternate credentials.
