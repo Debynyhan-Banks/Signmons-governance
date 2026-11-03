@@ -1,5 +1,19 @@
 # APP-013 / 3A / P08 — retained-role and ACL qualification implementation card
 
+## November 3 — approved local retained-role and complete ACL proof verified
+
+R1-W01/APP-013/3A/P08. Owner approved implementation card at48bc2a9 before coding. Verified backend commit 2972104745134d42062afdf259d9c9f34bc7833f. Implemented the fixed read-only catalog query, independently pinned expected grants including CONNECT and column ACLs, strict retired-role comparator, and injected local-only evidence boundary. Existing101 tests preserved;110 unit tests and7 actual disposable PostgreSQL tests PASS. PostgreSQL proves baseline/legacy hash compatibility, missing/extra/grant-option ACL refusal, unsafe role/effective PUBLIC privileges/session refusal, statement timeout, lock contention, interruption and cleanup. An extra column grant leaves the historical hash unchanged but is rejected by the new comparator. Owned server reaped and scratch removed. Source/test manifests updated and validated; sanitized byte hashes are in RETIRED_ROLE_ACL_LOCAL_RESULT_20261103.json.
+
+Checklist1–6 completed locally. Final source, architecture, frozen baseline, cross-repository/docs consistency,25 governance tests and whitespace checks PASS. Initial disposable bootstrap failed under sandbox; approved local execution succeeded. Initial test harness defects (fixture port-name collision and disabled connection limit preventing the session fixture) were fixed; final seven tests passed. The deadline test clock sequence was corrected to exercise post-cleanup expiry; final110 tests passed. No historical failures erased. No live database, credentials, provider action, deployment or native qualification occurred; liveObserved=false/executionReady=false. Historical locked sources and consumed receipts preserved; unrelated AGENTS.md excluded.
+
+Remaining: current real role/ACL and other live prerequisites UNKNOWN. The existing lifecycle readback still omits column ACLs; the complete nine-check producer/current-operation binding is not implemented. Implementer owns a separate finite proposal for those gaps; DB/provider owners retain later current-evidence decisions. Next observable result is that bounded proposal, not a live launch. Accepted1A/1B/2A/2B remains4/8; R1 newly closed0/27;3A open. **No scope deviation beyond the explicitly approved local proof.**
+
+
+## November 3 — owner approved bounded local retired-role/ACL proof before coding
+
+Owner “i approve proceed” authorizes APP013_P08_RETIRED_ROLE_ACL_IMPLEMENTATION_CARD_20261103.md at48bc2a9. Entry backend9cad4b6. Exact card acceptance trace, five allowed source/test/manifest files, fixture/CONNECT baseline, column-ACL comparison, injected local-only query boundary, disposable PostgreSQL negative tests, exclusions/owners/rollback and observable finish incorporated here. Baseline passed before edits. No live DB/credential/provider/native-entry action authorized.
+
+
 **LOCAL IMPLEMENTATION DECISION PENDING.** Owner approved retained-role prerequisite alignment at0434f36, authorizing this complete card. No source change or credential/provider/DB action occurred. This is the first bounded implementation portion of the current-state proposal; it does not implement the entire nine-check producer or authorize any live qualification. The bounded purpose is to close the demonstrated absent-role/retained-role and incomplete-ACL gaps through real disposable PostgreSQL, using the same fixed read-only SQL/classifier intended for later approved qualification.
 
 ## Approved criterion, inspected gap and baseline
