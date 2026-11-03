@@ -1,5 +1,7 @@
 # APP-013 / 3A / P08 — exact service-only enablement packet
 
+**CONSUMED AND CLOSED:** SERVICE_ENABLEMENT_OBSERVED13:50:28 UTC; exact final API Keys service ENABLED and retained. Independent cleanup verified13:50:41, no residuals. See APP013_P08_SERVICE_ENABLEMENT_RESULT_20261103.md. This approval cannot be reused. Earlier pending/start language is historical.
+
 **OWNER APPROVED:** “i approve”, observed13:47:45 UTC November3, for the exact13:50–14:00 UTC packet, strict13:52 start cutoff, one conditional enable, retained enabled service, no retry/spending and mandatory closeout. Token prerequisite passed13:46:07 and verified13:46:17. No private operation root or launch yet. Earlier pending language is historical.
 
 **PREREQUISITE PASSED: exact cached-token qualification valid beyond14:00, verified13:46:17; see APP013_P08_SERVICE_TOKEN_CHECK_RESULT_20261103.md. Packet now decision-ready, exact external enablement approval still PENDING. Earlier token-blocked language below is historical.**
