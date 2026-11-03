@@ -1,5 +1,11 @@
 # Session Handoff
 
+## November 3 — approved SDK diagnostics complete locally
+
+Owner “i approve” approved proposal5ea7d22 before coding. Backend ef023e2 completes bounded allowlisted SDK descriptor reservation/result records, elapsed time and sanitized failure codes, plus final numeric transport reservations explicitly distinguished from provider request counts. No raw argv/output/error/credentials or resource identifiers enter those diagnostic records. Existing command contracts, 30-second cap, budgets and cleanup authority remain unchanged. Eight new tests cover labels/privacy, actual synthetic timeout, SIGKILL/fresh public closeout, partial records and write failure; full133 qualification/recovery/model/owned PostgreSQL-TLS plus25 governance tests PASS (158 total). Architecture, manifest hashes, frozen baseline, complete consistency and whitespace PASS. Evidence: backend evidence/APP-013/P08_SDK_DIAGNOSTICS_CARD_20261103.md and P08_SDK_DIAGNOSTICS_RESULT_20261103.json.
+
+Completed: all approved local diagnostic checklist items. No live retry or provider/credential access. Historical failed SDK descriptor remains UNKNOWN; prior operation consumed, verified cleanup unchanged, R5 raw bindings purged. Remaining: fresh exact binding/qualification proposal if proceeding, separately authorized external evidence, same-job Sandbox payment and owner acceptance. Implementer owns source/readiness/packet preparation; owner/credential/DB roles own new external authority. Next observable result: reviewable fresh bounded proposal or explicit deferral, not automatic replay. 3A OPEN; accepted1A/1B/2A/2B4/8; R1 newly closed0/27. **No scope deviation beyond approved local metadata correction.**
+
 ## November 3 — timeout narrowed to SDK invocation; metadata correction proposed
 
 Owner authorized diagnosis. Source plus two successful cleanup SQL reservations narrows prior PROCESS_TIMEOUT to a work SDK CLI invocation, not a password or work-SQL timeout. NativeIO's30-second command bound reserves2seconds for cleanup. Exact descriptor remains UNKNOWN because existing evidence stores only generic failure and loses in-memory counters. No billing/credential/permission cause inferred. One existing owned-process success/oversize/timeout/cleanup test PASS; no SDK/provider/credential reads or replay.
