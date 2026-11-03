@@ -1,6 +1,15 @@
 # APP-013 / 3A / P08 — bounded binding-input recovery proposal
 
-Status: proposal for LOCAL implementation/tests only; no recovery execution approved. Owner selected “Prepare a bounded recovery proposal” after packet preparation identified unavailable retained identifiers. Source baseline7413bfae67ee1fd9a8fa590a81dfbd69b7ba4930; governance entry8ade617. Inspected2026-11-03T17:47:20Z. No new window or live operation ID has been selected.
+## November 3 — binding-input recovery locally verified; exact live packet pending
+
+R1-W01 / APP-013 / 3A / P08. Owner approved local recovery card be2b341 before coding. Backend `2a39aacbee27dc610b48539bd81741d2fed88ef9` completes the bounded recovery/guard implementation: 264 tests PASS (239 runtime/local plus 25 governance), owned PostgreSQL/TLS and interruption/purge proof; no provider or credential access. See backend BINDING_INPUT_RECOVERY_RESULT_20261103.md/.json. Distinct recovery authority does not relax the full qualification gate. No source/receipt replay; unrelated AGENTS.md preserved.
+
+Exact pending packet: APP013_P08_BINDING_RECOVERY_OPERATION_20261103.md and adjacent PACKET/OPERATION JSON. Proposed November 3, 2:00–3:00 p.m. EST; start before 2:10; reads end 2:20, resource closeout 2:30, private purge 3:00. Two SDK CLI / three SQL maximum; SDK existing-owner refresh/cache/internal retries explicitly proposed; zero direct HTTPS/cache inspection/token-print. Hidden SQL input requires owner Terminal attendance. Decision remains PENDING_OWNER_APPROVAL / externalReadAuthorized=false. No live/private input created. Real identifiers, credentials/permissions, provider/DB/billing and live cleanup UNKNOWN.
+
+Completed local checklist and concrete packet; responsible owner/credential/DB roles approve exact external read/retention; implementer then performs one bounded attempt and reports authoritative closeout/purge. Original qualification, same-job Sandbox journey, negative/replay evidence and owner acceptance remain. Accepted 1A/1B/2A/2B 4/8; R1 newly closed 0/27; 3A OPEN. **No scope deviation beyond the explicitly approved recovery/retention card.**
+
+
+Status: owner “i approve” approved exact cardbe2b341 for LOCAL implementation/tests before coding. No recovery execution approved. Owner selected “Prepare a bounded recovery proposal” after packet preparation identified unavailable retained identifiers. Source baseline7413bfae67ee1fd9a8fa590a81dfbd69b7ba4930; governance entry8ade617. Inspected2026-11-03T17:47:20Z. No new window or live operation ID has been selected.
 
 ## Acceptance trace and demonstrated gap
 
