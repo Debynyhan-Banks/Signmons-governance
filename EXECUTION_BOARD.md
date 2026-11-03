@@ -1,5 +1,10 @@
 # Signmons Execution Board
 
+## November 3 — corrected-source R5 packet prepared, pending approval
+
+Owner requests proceeding after prompt correction. APP013_P08_BINDING_RECOVERY_OPERATION_R5_20261103.md pins backend 66a809b and refreshed manifest, new IDs, November 3 5:10–5:45 p.m. EST; start before 5:20, reads end 5:25, closeout 5:35, purge 5:45. Hidden input up to 120 seconds capped by remaining operation time, explicit timeout code. Same 2 CLI/3 SQL, SDK exception, resources/fingerprints and independent cleanup. Fresh source/35 SDK hashes, new root absence and actual proof-only capability schema PASS; previous 87 prompt/producer and 25 governance test results retained, no new runtime tests claimed. No private input/credential/provider read. R4 packet/decision archived CONSUMED_R4; previous residuals unchanged. R5 decision pending/false; owner/credential/DB roles approve exact operation and attend; implementer then preflights once and verifies cleanup. Real identifiers/access/cleanup UNKNOWN, original qualification and Sandbox journey remain. 3A OPEN, accepted 4/8, R1 newly closed 0/27. No scope deviation beyond approved prompt correction.
+
+
 ## November 3 — owner-requested recovery prompt correction verified locally
 
 Owner reports R4 ended before pressing Return and authorized local correction with “proceed”. Backend 66a809b3cb612d8de1aa1709a9e4cdf3f65c310d implements up to 120 seconds for recovery hidden password input, capped by original read/closeout deadline, visible available-time instruction, and explicit RECOVERY_PASSWORD_TIMEOUT mapping from the actual timer exception. No budget/deadline/identity/provider expansion; full qualification/native prompt unchanged. Existing consumed R3/R4 results remain immutable, resource/session cleanup still unverified. The earlier categorical timeout explanation is supported by user report/timing but was not a retained machine-specific diagnosis; the exception-class mismatch was independently reproduced locally.
