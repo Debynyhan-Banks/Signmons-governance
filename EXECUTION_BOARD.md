@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## November 4 — Terminal ready; R8 expired; R9 pending
+
+User reports missed R8 window, then Terminal open and ready. At13:47:59Z/8:47:59a.m.EST exact R8 recovery/request/input paths absent; no launch evidence. Preserve R8 packet/approval EXPIRED_R8. No old command replay. R9 APP013_P08_BINDING_RECOVERY_OPERATION_R9_20261104.md proposes8:50–9:35a.m.EST, start before9:00,reads9:05,closeout9:25,purge9:35. New operation3b326ade-e030-468a-8f07-cdac925ce6bf,qualification0af7c80a-d0a6-4f47-951d-4522a7cb938c,sourceef023e2,scopeda58929f56784b4998329415f1e0d25ab2476ce46f8347a58b2c58b1c4fdcf8d. Same2CLI/3SQL/SDK exception/hidden120-second capped input/45minute retention. Decision pending/false.
+
+Actual committed source/dependency/35SDK hashes,dynamic config/env,actual proof-only schema and fresh root absence PASS at2026-11-04T13:48:35.247307+00:00. No private input/credentials/provider read. Completed fresh packet; owner/credential/DB roles approve exact R9 scope/window; implementer then preflight/manual launcher/one attempt/cleanup and purge. Full qualification requires separate authority after binding; remote facts UNKNOWN.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation; new timing proposed before execution.
+
 ## November 4 — R8 exact approval recorded within start window
 
 Owner “i approve” approves910351b, operation1a84a6ff-1139-47cd-a0b3-1f73577cf105/sourceef023e2, scoped42abecb0228d30dbbd38412f138115f8c4575f908398b7b4567a494d7c8a60a. First clock13:14:17Z/8:14:17a.m.EST within8:10–before8:20start; reads8:25,closeout8:45,purge8:55. Same2CLI/3SQL, stated SDK exception, hidden120-second capped attendance and45minute retention. Approval precedes private input or launch. No full qualification/native/payment authority.
