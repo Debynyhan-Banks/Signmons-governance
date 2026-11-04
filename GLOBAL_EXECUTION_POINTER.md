@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## November 4 — corrected-source R11 recovery prepared
+
+Owner requests continuation after approved759a130 projection fix. R11 APP013_P08_BINDING_RECOVERY_OPERATION_R11_20261104.md proposes today5:10–5:55p.m.EST,start before5:20,reads5:25,closeout5:45,purge5:55. New operation0aa1ea2c-1921-425e-8867-2c856e2426ca,qualification4cd61e45-9335-44fd-afc8-659d58de0294,source759a130,scope65df555163e4952112e4dc2ea97aa346388e6e701c8ddf971b695ba520c0291b. Same2CLI/3SQL/SDK exception/hidden120-second capped input/45minute retention. Pending false decision; R10 consumed authority preserved; no raw identifiers/private input/provider action.
+
+Actual committed source/dependency/35SDK hashes,dynamic config/env,actual proof-only schema and fresh roots PASS at2026-11-04T21:58:52.765133+00:00. November4 163-test local result reused, no fresh runtime-test claim. Completed concrete packet; next owner/credential/DB roles approve exact scope/window and attend, implementer then preflight/manual launcher/one attempt/cleanup and purge. Full qualification remains separate after binding; live projection/provider facts UNKNOWN. Q3/R10 cleanup unchanged;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 4 — approved service projection correction verified locally
 
 Owner “i approve” approved7eb83da before coding. Backend759a130 changes only eight current service GETs to fixed?fields=name,state and validates exact resource using parsed path without query. Legacy contract,64KiB cap,permission/key/Firebase descriptors,SDK/dependency pins,deadlines,budgets and cleanup unchanged. Five new transport/parser/privacy/refusal tests; full138qualification/recovery/model/ownedPostgreSQL-TLS plus25governance=163PASS. Actual Request capture and connected synthetic proof pass; malformed/foreign/missing/oversize fail without fallback/retry; owned TLS server reaped,scratch absent,providerCalls0. Manifest,architecture,frozen baseline,complete consistency and whitespace PASS. Backend evidence P08_SERVICE_PROJECTION_CARD_20261104.md and P08_SERVICE_PROJECTION_RESULT_20261104.json.
