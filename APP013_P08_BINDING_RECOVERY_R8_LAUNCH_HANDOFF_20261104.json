@@ -1,0 +1,17 @@
+{
+  "approvalCommit": "2336727",
+  "sourceCommit": "ef023e2f3e9f504e6c6ff7c3232a9f2b9cc3b2b2",
+  "verifiedAt": "2026-11-04T13:15:14.057124+00:00",
+  "status": "APPROVED_NOT_STARTED_USER_TERMINAL_LAUNCH_REQUIRED",
+  "preflight": "R8_COMMITTED_AUTHORITY_SOURCE_SDK_CONFIG_PASS_NO_LAUNCH",
+  "clock": "proposed start used only for preflight constructor; actual launch uses real time",
+  "launchers": {
+    "/private/tmp/p08-launch-r8.py": "1879da61a9632baf8c39d4f3095c1be6910715a559ebc67094a26746c060acce",
+    "/private/tmp/p08-attended-r8.command": "bfab9ed833a630eddc9d429524d589818536faaf3923bb484f1118d54c4fa53d"
+  },
+  "privateEnvelopeCreated": false,
+  "providerCalls": 0,
+  "cutoff": "2026-11-04T13:20:00Z",
+  "purgeEnd": "2026-11-04T13:55:00Z",
+  "next": "User runs /private/tmp/p08-attended-r8.command once before8:20a.m.EST; implementer verifies sanitized outcome and mandatory cleanup/purge. Terminal UI tool remains unavailable."
+}
