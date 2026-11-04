@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## November 4 — owner chooses now; R10 fresh packet pending
+
+Owner returned and selected “now” for attendance. First clock18:46:18Z/1:46:18p.m.EST. R10 APP013_P08_BINDING_RECOVERY_OPERATION_R10_20261104.md proposes1:50–2:35p.m.EST, start before2:00,reads2:05,closeout2:25,purge2:35. New operation36511ab7-a07c-4490-a5f7-14c18510c31f,qualification8d77b311-32cb-452f-82fb-f0763ffb6ab8,sourceef023e2,scoped3f74cfbc0a990decf058ae1502e3e711f7b306f4a1097771528c712c0b9c71d. Same2CLI/3SQL/SDK exception/hidden120-second capped input/45minute retention. Decision pending/false; R9 snapshot archived EXPIRED_R9, no old authority reused.
+
+Actual committed source/dependency/35SDK hashes,dynamic config/env,actual proof-only schema and fresh root absence PASS at2026-11-04T18:46:52.526967+00:00. No private input/credential/provider call. Completed reviewable packet; owner/credential/DB roles approve exact R10 scope/window; implementer then preflight/manual launcher/one attempt/cleanup and purge. Full qualification separately authorized after binding; remote facts UNKNOWN. Same-job Sandbox and acceptance remain;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 4 — R9 expired unstarted; next attendance time unresolved
 
 Owner “proceed” followed6ef30e1, but first clock15:50:32Z/10:50:32a.m.EST is after R9 9:00a.m. cutoff and9:35purge end. Exact recovery/request/qualification-input/external roots absent; no private input/provider launch. R9 EXPIRED_UNSTARTED; pending decision remains false, no backdating or window extension. Evidence APP013_P08_BINDING_RECOVERY_R9_EXPIRED_20261104.json. R6 final cleanup remains verified; prior expired attempts unchanged.

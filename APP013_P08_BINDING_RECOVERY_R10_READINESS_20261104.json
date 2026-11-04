@@ -1,0 +1,16 @@
+{
+  "verifiedAt": "2026-11-04T18:46:52.526967+00:00",
+  "sourceCommit": "ef023e2f3e9f504e6c6ff7c3232a9f2b9cc3b2b2",
+  "scopeSha256": "d3f74cfbc0a990decf058ae1502e3e711f7b306f4a1097771528c712c0b9c71d",
+  "operationId": "36511ab7-a07c-4490-a5f7-14c18510c31f",
+  "qualificationId": "8d77b311-32cb-452f-82fb-f0763ffb6ab8",
+  "checks": {
+    "committedSourcesDependenciesAnd35SDKHashes": "PASS",
+    "actualDynamicConfigAndEnvironment": "PASS",
+    "actualProofOnlyCapabilitySchemaAtProposedStart": "PASS",
+    "freshRootsAbsent": "PASS"
+  },
+  "providerCalls": 0,
+  "privateInputCreated": false,
+  "remoteFacts": "UNKNOWN"
+}
