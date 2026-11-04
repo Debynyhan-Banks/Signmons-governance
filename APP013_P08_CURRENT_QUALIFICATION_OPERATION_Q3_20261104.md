@@ -1,5 +1,13 @@
 # APP-013 / 3A / P08 — Q3 exact qualification proposal
 
+## November 4 — Q3 consumed at HTTPS_OUTPUT_OVERSIZE; final cleanup verified
+
+Approved13b8c24/sourceef023e2 operation8d77b311-32cb-452f-82fb-f0763ffb6ab8 ran once; result CURRENT_EVIDENCE_UNQUALIFIED,failure HTTPS_OUTPUT_OVERSIZE,candidate=null,executionReady=false,liveObserved=true,residuals=[]. All27SDK diagnostic completions RETURNED; reservation counters27CLI/2HTTPS/2SQL/1cache (not provider internal request counts). NativeIO.https reads at most65537bytes and rejects above65536; this is response-size refusal, not prior SDK timeout or demonstrated provider denial. Raw response/status/body were not retained; content and full size UNKNOWN. No blind retry or cap increase.
+
+Normal and independent SQL/process cleanup verified. R10 authoritative closeout returned PRIVATE_PURGE_VERIFIED,onTime=true,rawFilesAbsent=true,residuals=[] and resourceCloseout verified. Exact recovered/private-input paths absent; recorded guardPID22715 absent via signal zero. No new provider call during reconciliation. Backend evidence P08_Q3_QUALIFICATION_RESULT_20261104.json includes all27 safe CLI diagnostics, final counters and cleanup receipts. Historical failures/expired approvals unchanged.
+
+Completed Q3 bounded attempt and final cleanup. Remaining implementer: source/output-contract diagnosis of oversized HTTPS response and smallest bounded correction proposal if warranted; no source change/response refetch/provider log access authorized by closeout. Owner approves material correction or future exact live packet only after readiness. Full access/database/Firebase qualification incomplete; same-job Sandbox payment and owner acceptance remain.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 4 — exact Q3 approval recorded
 
 Owner “i approve” approvesbd4f705: operation8d77b311-32cb-452f-82fb-f0763ffb6ab8/sourceef023e2,work7d999c64c61c3e7360c7b6d7353a7fb8218f791f30b1145ce4b47258c5b1ce45,cleanup1e81b779b0ce33cee6a894a8ef32ca2adf283b36353ed828d0495fab95b60e6c. First clock18:53:59Z/1:53:59p.m.EST before2:00start; start before2:10,reads2:15,closeout2:25,purge2:35.27SDK CLI/20HTTPS/4SQL/1boundedcache,stated SDK exception,hidden120-second capped attendance. Approval precedes transfer/launch; no Q3 provider read yet.
