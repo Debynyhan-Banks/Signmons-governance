@@ -1,5 +1,13 @@
 # Signmons Execution Board
 
+## November 4 — R10 recovered and resource-closed; Q3 pending
+
+R10 approval83c515a/sourceef023e2,operation36511ab7-a07c-4490-a5f7-14c18510c31f:HANDOFF_RETAINED,failure=null,residuals=[],twoCLI/threeSQL reservations,normal/independent resourceCloseout verified. Trusted helper matched fingerprints; request absent; recorded guardPID22715 present. Private retention only until19:35Z/2:35p.m.; final purge pending. Backend P08_BINDING_RECOVERY_R10_HANDOFF_20261104.json. No full qualification/native/payment executed.
+
+Q3 APP013_P08_CURRENT_QUALIFICATION_OPERATION_Q3_20261104.md proposes preselected8d77b311-32cb-452f-82fb-f0763ffb6ab8,start2:00–before2:10,reads2:15,closeout2:25,purge2:35.27SDK CLI/20HTTPS/4SQL/1boundedcache with stated SDK exception and hidden120-second capped attendance. Work7d999c64c61c3e7360c7b6d7353a7fb8218f791f30b1145ce4b47258c5b1ce45,cleanup1e81b779b0ce33cee6a894a8ef32ca2adf283b36353ed828d0495fab95b60e6c; decision pending/false. Actual capability with simulated proposed authority,committed source/SDK/config and in-memory bindings PASS at2026-11-04T18:51:58.033674+00:00; no private transfer/provider request. November3 runtime proof remains historical; current governance checks required.
+
+Completed recovery/resource cleanup and reviewable Q3 packet. Owner/credential/DB exact Q3 approval remains; implementer then source/authority/time/guard check,manual Terminal launch,one attempt,cleanup and R10 purge. If no approval,original2:35purge still applies. Current full provider/billing/access UNKNOWN; historicalSDKfailure descriptor UNKNOWN. Same-job Sandbox/acceptance remain;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 4 — R10 exact approval recorded
 
 Owner “i approve” approves30b49f2, operation36511ab7-a07c-4490-a5f7-14c18510c31f/sourceef023e2, scoped3f74cfbc0a990decf058ae1502e3e711f7b306f4a1097771528c712c0b9c71d. First clock18:49:06Z/1:49:06p.m.EST before1:50start; start strictly before2:00, reads2:05,closeout2:25,purge2:35. Same2CLI/3SQL, SDK exception, hidden120-second capped attendance and45minute retention. Approval precedes private input or launch; no full qualification/native/payment authority.
