@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## November 4 — oversized service response diagnosis; field projection proposed
+
+Owner “proceed” authorized local diagnosis. Fixed source order plus2HTTPS reservations infers Q3 stopped at service_1, IAM Service Usage metadata; raw status/body/full size UNKNOWN. All27SDK returned. Service Usage v1 returns config plus state; current consumer needs only name/state. Official Google docs support fields response mask. Proposed APP013_P08_SERVICE_RESPONSE_PROJECTION_PROPOSAL_20261104.md narrows only eight current service GETs to?fields=name,state and fixes expected resource comparison to parsed path. Keep legacy contract,64KiB cap,limits,identity,cleanup and retention unchanged. No implementation or provider call.
+
+One existing actual NativeIO mocked-opener oversize/privacy test PASS; prior158runtime/governance result historical. R10 final resource/private cleanup remains verified. Completed diagnosis and concrete finite local correction card; next owner approves local correction or defers, implementer then proves transport/parsing/regressions before any fresh live proposal. Provider projection behavior/current full access UNKNOWN; no discarded body guessed, no raw log/refetch.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation implemented; correction proposed before coding.
+
 ## November 4 — Q3 consumed at HTTPS_OUTPUT_OVERSIZE; final cleanup verified
 
 Approved13b8c24/sourceef023e2 operation8d77b311-32cb-452f-82fb-f0763ffb6ab8 ran once; result CURRENT_EVIDENCE_UNQUALIFIED,failure HTTPS_OUTPUT_OVERSIZE,candidate=null,executionReady=false,liveObserved=true,residuals=[]. All27SDK diagnostic completions RETURNED; reservation counters27CLI/2HTTPS/2SQL/1cache (not provider internal request counts). NativeIO.https reads at most65537bytes and rejects above65536; this is response-size refusal, not prior SDK timeout or demonstrated provider denial. Raw response/status/body were not retained; content and full size UNKNOWN. No blind retry or cap increase.

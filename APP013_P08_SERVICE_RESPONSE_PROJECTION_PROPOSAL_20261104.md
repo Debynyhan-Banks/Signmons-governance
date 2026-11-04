@@ -1,0 +1,39 @@
+# APP-013 / 3A / P08 — Service Usage response projection proposal
+
+Status: local diagnosis complete under owner “proceed”; correction PENDING_OWNER_APPROVAL. Baseline implementation ef023e2f3e9f504e6c6ff7c3232a9f2b9cc3b2b2; backend evidence ddb7274; governance4149f66. No implementation, provider request, credential access or retry in this diagnosis. Official public documentation consulted only.
+
+## Demonstrated gap and evidence limit
+
+Q3 result HTTPS_OUTPUT_OVERSIZE,27CLI/2HTTPS/2SQL/1cache reservations,all27CLI RETURNED,residuals=[],candidate=null. Actual source sequence _produce_current -> read_cloud -> read_access uses current_https_contract in fixed order. No earlier HTTPS in read_cloud; first entries service_0(serviceusage.googleapis.com),service_1(iam.googleapis.com). QualificationIO increments HTTPS before NativeIO dispatch. Thus failing second reservation is inferred service_1 for IAM Service Usage metadata. It is not an independently stored HTTPS descriptor receipt. Raw status/body/full size were not retained; whether an error page or full successful config caused the size is UNKNOWN. Do not claim the provider returned a confirmed successful config or denial.
+
+NativeIO reads MAX_OUTPUT+1=65537 and refuses above65536 before parsing. current_https_contract requests all eight Service Usage service resources without projection. CurrentAdapter.read_access consumes only body.name and body.state, but compares name using d.url.split('/v1/')[1]; adding query parameters without correcting this comparison would incorrectly include the query in resource identity. This exact downstream seam must change together. Generic response cap/timeouts/reads remain unchanged.
+
+Official contracts inspected November4:
+- https://docs.cloud.google.com/service-usage/docs/reference/rest/v1/services/get — v1 GET returns Service configuration/state; body empty; serviceusage.services.get permission.
+- https://docs.cloud.google.com/service-usage/docs/reference/rest/v1/services — Service includes name,parent,config,state; config can include API definitions/documentation/quota/authentication/endpoints/monitoring. That explains a plausible large response, not proof of the discarded Q3 body.
+- https://docs.cloud.google.com/apis/docs/system-parameters — fields/$fields or X-Goog-FieldMask filters response fields; empty returns all unless otherwise specified.
+
+One existing test freshly PASS: pinned Python -B -m unittest test_qualification_launch.Tests.test_native_https_oversize_is_fixed_category_without_response_retention (source-directory cwd). It invokes actual NativeIO.https with mocked opener/response, proves fixed oversize code and no synthetic private-body leakage. No network. November3 full158test result historical. An initial contract read used backend cwd for a governance path and failed read-only; corrected by reading resolved governance file. No source changed.
+
+## Proposed bounded correction / section card
+
+Acceptance: existing full qualification requests only required name/state for all eight service-state GETs, validates exact resource identity and ENABLED, and still refuses oversized/malformed/unexpected responses without raw persistence. Advances existing provider prerequisite for same-job Sandbox3A; not customer acceptance or new subsystem.
+
+Reuse current_https_contract, CurrentAdapter.read_access, NativeIO.https exact descriptor validation, strict_json, MAX_OUTPUT and existing test fixture/owned transport boundaries. Expected files: qualification_launch.py,test_qualification_launch.py,source-manifest.json file hashes only; optional existing test_qualification_launch_postgres.py fixture adjustment only if exact URL fixture depends on old form; evidence/governance. Do not edit locked dependencies, SDK pins, legacy access_https_contract or unrelated source.
+
+Exact behavior: current_https_contract appends fixed ?fields=name,state only to its eight service GET descriptors, including the first six copied from legacy contract and last two appended. Preserve legacy contract unchanged. NativeIO receives descriptors from the same current contract; no arbitrary query/headers/mask or caller-selected field. CurrentAdapter expected resource derives from parsed URL path (not query); exact expected project/service name retained. No wider accepted identity, missing/null state or malformed success. Preserve generic64KiB cap,oversize classification,no redirects,deadlines,token/cache handling,one attempt,read counts,purge and cleanup. No additional safe-diagnostic framework in this correction.
+
+Boundary: same owner/project/service resources/method, response filtered before transfer; no resource mutation or credential/retention change. Returned identity/state remain in existing memory-only validation. Full output never retained; errors remain safe codes. HTTP projection may still be ignored/rejected by provider: fail closed and keep UNKNOWN, no automatic fallback to unfiltered GET or retries. Project/permission/key/Firebase descriptors unchanged. Rollback restores only changed source/tests/manifest toef023e2; preserve immutable receipts/approvals. Changed source invalidates prior live authority.
+
+Finite checklist after explicit approval:
+1. Record owner decision and exact source/schema card before coding.
+2. Implement only eight fixed filtered descriptors and query-independent exact resource comparison; reuse actual NativeIO descriptor allowlist.
+3. Tests: all eight exact methods/resources/mask; legacy untouched; forbidden/missing/altered mask,foreign project/service/arbitrary query rejected at current boundary; actual urllib Request capture proves mask reaches transport; filtered correct response succeeds; missing/null/wrong name/state/non200/invalidUTF8/JSON refuse; oversize still refuses with secret sentinel absent; underlying full-config synthetic fixture can exceed64KiB while projected transport fixture is bounded, explicitly not live evidence. No blind fallback/retry. Existing source/approval/concurrency/crash/partial cleanup tests retained.
+4. Full producer/recovery/model plus ownedPostgreSQL/TLS regressions (pinned Python -B -m unittest test_qualification_launch test_composed_qualification test_qualification_launch_postgres),25governance tests,architecture,frozen baseline,complete consistency,manifest and whitespace. No browser/application change or acceptance implied.
+5. Save exact results and remaining live UNKNOWNs; stop before any fresh external packet. No live qualification or binding recovery authorized by local correction approval.
+
+Dependencies/owners: owner approves this finite local source correction; implementer proves actual transport/parsing integration and cleanup; credential/provider/DB roles retain separate future live authority. R10 raw inputs already purged, guard absent; a future packet must resolve bindings separately. Readiness for local implementation is source/documented-contract evidence only; actual provider projection support/usability is UNKNOWN until separately authorized observation. Existing8milestone/27R1 denominators/dependencies unchanged. Small scope: one contract and parser seam, no cap increase; no promised live outcome/ETA.
+
+Alternatives: defer with current oversize blocker; raise cap (not proposed because unnecessary config is not consumed and increases retained buffer exposure); add raw logging/refetch (not proposed). Proposed projection minimizes fields without weakening existing refusal. No workaround runs under this proposal.
+
+Completed diagnosis/source/official-contract review and one local existing test. Remaining owner local-correction decision, then finite tests/results, then separately scoped live qualification if warranted.3A OPEN;accepted1A/1B/2A/2B4/8;R1newlyclosed0/27. **No scope deviation implemented; bounded correction proposed before coding.**
