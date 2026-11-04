@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## November 4 — R7 fresh recovery proposal ready
+
+Owner returned ready after overnight deferral. R6 final resource/private cleanup verified; Q2 expired without execution receipt; old authority unchanged. R7 APP013_P08_BINDING_RECOVERY_OPERATION_R7_20261104.md proposes today7:40–8:25a.m.EST, start before7:50, reads7:55, closeout8:15, purge8:25. Sourceef023e2; operation8f6ad4a3-c86e-404b-9370-8772d8bb1902, preselected qualification8b540353-257a-4ce2-997d-e482279bc08e; scope3187fd04d0c8ae08ace310ebab5f1394f82ea1e10305214949f5be3a2631591a. Same2SDK CLI/3SQL, explicit SDK refresh/cache/internal-retry exception, hidden120-second capped input and45minute retention guard. Decision pending/false; no private envelope/credential/provider access.
+
+Actual committed source/dependencies/35SDK hashes, dynamic SDK config/environment, actual proof-only capability schema at proposed start and fresh roots PASS at2026-11-04T12:33:06.737824+00:00. November3 158-test result remains historical local proof; current documentation gates apply. Completed: bounded fresh packet/readiness. Next owner/credential/DB roles approve exact window/scope or defer; implementer then preflight/manual Terminal launcher/one attempt/actual cleanup and purge. Full qualification remains separately authorized after bindings; remote facts UNKNOWN. Same-job Sandbox and owner acceptance remain;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 3 — Q2 expired without execution receipt; R6 fully closed
 
 At November3 9:05p.m.EST (November4 02:05Z), Q2 root and private input are absent; no execution receipt for b4a78473-9082-44aa-8ba4-6da40c393c68. Exact start cutoff6:20p.m. expired; no replay/extension or new provider read. R6 guard retained PRIVATE_PURGE_VERIFIED/onTime=true/rawFilesAbsent=true/residuals=[]; existing normal/independent resourceCloseout verified. Authoritative source-bound closeout rechecked owned absence; recorded guardPID46948 absent via signal zero. Recovery identifiers are no longer available. Backend evidence P08_Q2_EXPIRED_R6_CLOSEOUT_20261103.json. No credentials/provider request during reconciliation.
