@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## November 3 — Q2 expired without execution receipt; R6 fully closed
+
+At November3 9:05p.m.EST (November4 02:05Z), Q2 root and private input are absent; no execution receipt for b4a78473-9082-44aa-8ba4-6da40c393c68. Exact start cutoff6:20p.m. expired; no replay/extension or new provider read. R6 guard retained PRIVATE_PURGE_VERIFIED/onTime=true/rawFilesAbsent=true/residuals=[]; existing normal/independent resourceCloseout verified. Authoritative source-bound closeout rechecked owned absence; recorded guardPID46948 absent via signal zero. Recovery identifiers are no longer available. Backend evidence P08_Q2_EXPIRED_R6_CLOSEOUT_20261103.json. No credentials/provider request during reconciliation.
+
+Completed: R6 recovery, resource closeout and final private purge; Q2 preparation/approval only, no live qualification demonstrated. Remaining: fresh binding/qualification packet and exact attended window if owner elects to resume; implementer prepares it and owner/credential/DB roles approve new external scope. Current full provider/billing/access and historical failedSDKdescriptor remain UNKNOWN. Same-job Sandbox payment and owner acceptance remain;3A OPEN,accepted4/8,R1newlyclosed0/27. Next observable result is a fresh concrete proposal after attendance is established, not old-command replay. No scope deviation.
+
 ## November 3 — exact Q2 qualification approved
 
 Owner “i approve” approves11525a4: operationb4a78473-9082-44aa-8ba4-6da40c393c68/sourceef023e2, work6220e0106e1d4c872785df710d2e0f323590e5e93ae82ee2af78c99d261a4875, cleanup78ac307c2fe9ff43582833c7b0e8e3c97a3fd09d9327f16363392abaa46439f3. Start6:15–before6:20p.m.EST; reads6:25, resource closeout6:35, purge6:45.27SDK CLI/20HTTPS/4SQL/1boundedcache, stated SDK exception and hidden120-second capped attendance. First clock23:04:56Z before window. Approval recorded before transfer or launch; no Q2 provider read yet.
