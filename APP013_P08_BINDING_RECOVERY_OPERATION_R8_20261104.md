@@ -1,5 +1,11 @@
 # APP-013 / 3A / P08 — R8 exact binding recovery proposal
 
+## November 4 — R8 exact approval recorded within start window
+
+Owner “i approve” approves910351b, operation1a84a6ff-1139-47cd-a0b3-1f73577cf105/sourceef023e2, scoped42abecb0228d30dbbd38412f138115f8c4575f908398b7b4567a494d7c8a60a. First clock13:14:17Z/8:14:17a.m.EST within8:10–before8:20start; reads8:25,closeout8:45,purge8:55. Same2CLI/3SQL, stated SDK exception, hidden120-second capped attendance and45minute retention. Approval precedes private input or launch. No full qualification/native/payment authority.
+
+Implementer verifies committed authority/source/config and prepares nonsecret manual Terminal launcher because computer control blocks Terminal. User opens it before8:20; actual clock gate remains. Next observable result recovery/cleanup receipts and private purge; current remote facts UNKNOWN. Prior R6 closed,Q2/R7 expired.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 Status PENDING_OWNER_APPROVAL; qualification-only. Owner returned November 4 ready to resume after deferring overnight. This authorizes preparation, not reuse of expired live approval. R6 resource closeout and on-time private purge are verified; Q2 expired with no execution receipt. Both are preserved. No prior identifiers retained. Source ef023e2 remains unchanged; backend HEAD4569298 contains final closeout evidence; unrelated AGENTS.md preserved. No implementation or new subsystem. R7 approval arrived after its cutoff: first clock08:00:30a.m.EST. R7 remains expired/unstarted; no authority transferred. New R8 timing requires a separate owner decision. The following window is proposed for review, not scheduled execution.
 
 ## Exact decision

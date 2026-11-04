@@ -1,5 +1,11 @@
 # Session Handoff
 
+## November 4 — R8 exact approval recorded within start window
+
+Owner “i approve” approves910351b, operation1a84a6ff-1139-47cd-a0b3-1f73577cf105/sourceef023e2, scoped42abecb0228d30dbbd38412f138115f8c4575f908398b7b4567a494d7c8a60a. First clock13:14:17Z/8:14:17a.m.EST within8:10–before8:20start; reads8:25,closeout8:45,purge8:55. Same2CLI/3SQL, stated SDK exception, hidden120-second capped attendance and45minute retention. Approval precedes private input or launch. No full qualification/native/payment authority.
+
+Implementer verifies committed authority/source/config and prepares nonsecret manual Terminal launcher because computer control blocks Terminal. User opens it before8:20; actual clock gate remains. Next observable result recovery/cleanup receipts and private purge; current remote facts UNKNOWN. Prior R6 closed,Q2/R7 expired.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 4 — R7 approval after cutoff; fresh R8 pending
 
 Owner said “i approve” for e6d131e, but first clock13:00:30Z/8:00:30a.m.EST is after R7 cutoff7:50. R7 EXPIRED_UNSTARTED; all exact operation/request/input roots absent, no provider access/private input. Preserve original pending decision as EXPIRED_R7 snapshot; late approval does not grant execution. R6 cleanup remains complete.
