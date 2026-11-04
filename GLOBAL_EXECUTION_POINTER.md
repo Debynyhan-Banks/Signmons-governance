@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## November 4 — approved service projection correction verified locally
+
+Owner “i approve” approved7eb83da before coding. Backend759a130 changes only eight current service GETs to fixed?fields=name,state and validates exact resource using parsed path without query. Legacy contract,64KiB cap,permission/key/Firebase descriptors,SDK/dependency pins,deadlines,budgets and cleanup unchanged. Five new transport/parser/privacy/refusal tests; full138qualification/recovery/model/ownedPostgreSQL-TLS plus25governance=163PASS. Actual Request capture and connected synthetic proof pass; malformed/foreign/missing/oversize fail without fallback/retry; owned TLS server reaped,scratch absent,providerCalls0. Manifest,architecture,frozen baseline,complete consistency and whitespace PASS. Backend evidence P08_SERVICE_PROJECTION_CARD_20261104.md and P08_SERVICE_PROJECTION_RESULT_20261104.json.
+
+Completed all approved local correction items. No new provider/credential access or external packet/window. Actual provider projection behavior/full qualification UNKNOWN; Q3 consumed failure and R10 final purge unchanged. Remaining implementer: fresh source-bound readiness/packet if requested; owner/credential/DB roles approve external scope separately. Same-job Sandbox journey/owner acceptance remain;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation beyond approved correction.
+
 ## November 4 — oversized service response diagnosis; field projection proposed
 
 Owner “proceed” authorized local diagnosis. Fixed source order plus2HTTPS reservations infers Q3 stopped at service_1, IAM Service Usage metadata; raw status/body/full size UNKNOWN. All27SDK returned. Service Usage v1 returns config plus state; current consumer needs only name/state. Official Google docs support fields response mask. Proposed APP013_P08_SERVICE_RESPONSE_PROJECTION_PROPOSAL_20261104.md narrows only eight current service GETs to?fields=name,state and fixes expected resource comparison to parsed path. Keep legacy contract,64KiB cap,limits,identity,cleanup and retention unchanged. No implementation or provider call.

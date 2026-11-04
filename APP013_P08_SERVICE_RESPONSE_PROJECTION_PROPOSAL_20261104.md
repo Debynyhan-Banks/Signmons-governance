@@ -1,5 +1,11 @@
 # APP-013 / 3A / P08 — Service Usage response projection proposal
 
+## November 4 — approved service projection correction verified locally
+
+Owner “i approve” approved7eb83da before coding. Backend759a130 changes only eight current service GETs to fixed?fields=name,state and validates exact resource using parsed path without query. Legacy contract,64KiB cap,permission/key/Firebase descriptors,SDK/dependency pins,deadlines,budgets and cleanup unchanged. Five new transport/parser/privacy/refusal tests; full138qualification/recovery/model/ownedPostgreSQL-TLS plus25governance=163PASS. Actual Request capture and connected synthetic proof pass; malformed/foreign/missing/oversize fail without fallback/retry; owned TLS server reaped,scratch absent,providerCalls0. Manifest,architecture,frozen baseline,complete consistency and whitespace PASS. Backend evidence P08_SERVICE_PROJECTION_CARD_20261104.md and P08_SERVICE_PROJECTION_RESULT_20261104.json.
+
+Completed all approved local correction items. No new provider/credential access or external packet/window. Actual provider projection behavior/full qualification UNKNOWN; Q3 consumed failure and R10 final purge unchanged. Remaining implementer: fresh source-bound readiness/packet if requested; owner/credential/DB roles approve external scope separately. Same-job Sandbox journey/owner acceptance remain;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation beyond approved correction.
+
 Status: local diagnosis complete under owner “proceed”; correction PENDING_OWNER_APPROVAL. Baseline implementation ef023e2f3e9f504e6c6ff7c3232a9f2b9cc3b2b2; backend evidence ddb7274; governance4149f66. No implementation, provider request, credential access or retry in this diagnosis. Official public documentation consulted only.
 
 ## Demonstrated gap and evidence limit
