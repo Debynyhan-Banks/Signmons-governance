@@ -1,5 +1,11 @@
 # Session Handoff
 
+## November 4 — exact Q3 approval recorded
+
+Owner “i approve” approvesbd4f705: operation8d77b311-32cb-452f-82fb-f0763ffb6ab8/sourceef023e2,work7d999c64c61c3e7360c7b6d7353a7fb8218f791f30b1145ce4b47258c5b1ce45,cleanup1e81b779b0ce33cee6a894a8ef32ca2adf283b36353ed828d0495fab95b60e6c. First clock18:53:59Z/1:53:59p.m.EST before2:00start; start before2:10,reads2:15,closeout2:25,purge2:35.27SDK CLI/20HTTPS/4SQL/1boundedcache,stated SDK exception,hidden120-second capped attendance. Approval precedes transfer/launch; no Q3 provider read yet.
+
+Implementer prepares authority/source/config/binding/guard-checked nonsecret manual launcher. User opens it during exact window; real-clock validation and trusted guard handoff required. R10 cleanup verified,private purge pending at original2:35deadline. No native/payment authority. Next observable result Q3 facts or exact stop plus cleanup/private purge.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 4 — R10 recovered and resource-closed; Q3 pending
 
 R10 approval83c515a/sourceef023e2,operation36511ab7-a07c-4490-a5f7-14c18510c31f:HANDOFF_RETAINED,failure=null,residuals=[],twoCLI/threeSQL reservations,normal/independent resourceCloseout verified. Trusted helper matched fingerprints; request absent; recorded guardPID22715 present. Private retention only until19:35Z/2:35p.m.; final purge pending. Backend P08_BINDING_RECOVERY_R10_HANDOFF_20261104.json. No full qualification/native/payment executed.
