@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## November 4 — R10 exact approval recorded
+
+Owner “i approve” approves30b49f2, operation36511ab7-a07c-4490-a5f7-14c18510c31f/sourceef023e2, scoped3f74cfbc0a990decf058ae1502e3e711f7b306f4a1097771528c712c0b9c71d. First clock18:49:06Z/1:49:06p.m.EST before1:50start; start strictly before2:00, reads2:05,closeout2:25,purge2:35. Same2CLI/3SQL, SDK exception, hidden120-second capped attendance and45minute retention. Approval precedes private input or launch; no full qualification/native/payment authority.
+
+Implementer verifies source/config/committed authority and prepares nonsecret manual Terminal launcher. User opens it within exact window because Terminal UI control is blocked; actual clock gate remains. Next observable result recovery and actual cleanup/purge; current remote facts UNKNOWN.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 4 — owner chooses now; R10 fresh packet pending
 
 Owner returned and selected “now” for attendance. First clock18:46:18Z/1:46:18p.m.EST. R10 APP013_P08_BINDING_RECOVERY_OPERATION_R10_20261104.md proposes1:50–2:35p.m.EST, start before2:00,reads2:05,closeout2:25,purge2:35. New operation36511ab7-a07c-4490-a5f7-14c18510c31f,qualification8d77b311-32cb-452f-82fb-f0763ffb6ab8,sourceef023e2,scoped3f74cfbc0a990decf058ae1502e3e711f7b306f4a1097771528c712c0b9c71d. Same2CLI/3SQL/SDK exception/hidden120-second capped input/45minute retention. Decision pending/false; R9 snapshot archived EXPIRED_R9, no old authority reused.

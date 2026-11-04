@@ -1,5 +1,11 @@
 # APP-013 / 3A / P08 — R10 exact binding recovery proposal
 
+## November 4 — R10 exact approval recorded
+
+Owner “i approve” approves30b49f2, operation36511ab7-a07c-4490-a5f7-14c18510c31f/sourceef023e2, scoped3f74cfbc0a990decf058ae1502e3e711f7b306f4a1097771528c712c0b9c71d. First clock18:49:06Z/1:49:06p.m.EST before1:50start; start strictly before2:00, reads2:05,closeout2:25,purge2:35. Same2CLI/3SQL, SDK exception, hidden120-second capped attendance and45minute retention. Approval precedes private input or launch; no full qualification/native/payment authority.
+
+Implementer verifies source/config/committed authority and prepares nonsecret manual Terminal launcher. User opens it within exact window because Terminal UI control is blocked; actual clock gate remains. Next observable result recovery and actual cleanup/purge; current remote facts UNKNOWN.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 Status PENDING_OWNER_APPROVAL; qualification-only. Owner chooses “now” after being asked for a specific attended start. First clock1:46:18p.m.EST. This packet proposes the next few minutes for review; no lead-time requirement is silently imposed over owner preference. R9 expired unstarted; preserve its packet/decision as EXPIRED_R9. R6 final cleanup verified; prior expired approvals unchanged. Source ef023e2 unchanged, unrelated AGENTS.md preserved. No implementation expansion, private input or provider access.
 
 ## Exact decision
