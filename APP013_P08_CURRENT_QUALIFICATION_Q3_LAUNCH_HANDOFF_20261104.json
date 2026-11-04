@@ -1,0 +1,16 @@
+{
+  "approvalCommit": "13b8c24",
+  "sourceCommit": "ef023e2f3e9f504e6c6ff7c3232a9f2b9cc3b2b2",
+  "verifiedAt": "2026-11-04T18:54:57.397782+00:00",
+  "status": "APPROVED_NOT_STARTED_USER_TERMINAL_LAUNCH_REQUIRED",
+  "preflight": "Q3_COMMITTED_AUTHORITY_SOURCE_CONFIG_BINDINGS_GUARD_PASS_NO_TRANSFER_OR_LAUNCH",
+  "clock": "proposed start only for readiness constructor; real clock at launch",
+  "launchers": {
+    "/private/tmp/p08-launch-q3.py": "cfb567aba97f33756cd002faa3520f520c8aec6ed5e710549418535bafbd8006",
+    "/private/tmp/p08-attended-q3.command": "89b3e738ab24fb72da36784e8e94e1ecb3c30c52972fbd4a710076bd98ce0a9d"
+  },
+  "privateTransfer": false,
+  "qualificationProviderCalls": 0,
+  "purgeDeadline": "2026-11-04T19:35:00Z",
+  "next": "User runs /private/tmp/p08-attended-q3.command once at2:00 to before2:10p.m.EST; implementer verifies result/cleanup and R10 final private purge."
+}
