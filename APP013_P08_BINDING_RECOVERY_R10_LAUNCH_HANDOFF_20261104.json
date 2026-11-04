@@ -1,0 +1,17 @@
+{
+  "approvalCommit": "83c515a",
+  "sourceCommit": "ef023e2f3e9f504e6c6ff7c3232a9f2b9cc3b2b2",
+  "verifiedAt": "2026-11-04T18:49:56.730407+00:00",
+  "status": "APPROVED_NOT_STARTED_USER_TERMINAL_LAUNCH_REQUIRED",
+  "preflight": "R10_COMMITTED_AUTHORITY_SOURCE_SDK_CONFIG_PASS_NO_LAUNCH",
+  "clock": "proposed start only for preflight; launcher uses real clock",
+  "launchers": {
+    "/private/tmp/p08-launch-r10.py": "28ea9dffe4dfcd162fcf3a763cb8076f5a655f5dadf693dadfe40f57a5bdb65c",
+    "/private/tmp/p08-attended-r10.command": "b7ccd08457f8f25c388f29548f57693802d6d5ff57bce076405d0c086068a6d1"
+  },
+  "privateEnvelopeCreated": false,
+  "providerCalls": 0,
+  "cutoff": "2026-11-04T19:00:00Z",
+  "purgeEnd": "2026-11-04T19:35:00Z",
+  "next": "User runs /private/tmp/p08-attended-r10.command once at1:50 to before2:00p.m.EST; implementer verifies sanitized outcome and mandatory cleanup/purge."
+}
