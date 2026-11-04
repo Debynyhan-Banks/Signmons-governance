@@ -1,0 +1,13 @@
+{
+  "observedAt": "2026-11-04T15:51:06.019543+00:00",
+  "operationId": "3b326ade-e030-468a-8f07-cdac925ce6bf",
+  "status": "EXPIRED_UNSTARTED",
+  "ownerResponse": "proceed received after exact cutoff; not executable authority",
+  "pathsAbsent": {
+    "/private/tmp/p08-binding-recovery-3b326ade-e030-468a-8f07-cdac925ce6bf": true,
+    "/private/tmp/p08-binding-request-3b326ade-e030-468a-8f07-cdac925ce6bf": true,
+    "/private/tmp/p08-current-input-0af7c80a-d0a6-4f47-951d-4522a7cb938c": true,
+    "/private/tmp/p08-current-external-0af7c80a-d0a6-4f47-951d-4522a7cb938c": true
+  },
+  "newProviderCalls": 0
+}

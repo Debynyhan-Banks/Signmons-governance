@@ -1,5 +1,11 @@
 # APP-013 / 3A / P08 — R9 exact binding recovery proposal
 
+## November 4 — R9 expired unstarted; next attendance time unresolved
+
+Owner “proceed” followed6ef30e1, but first clock15:50:32Z/10:50:32a.m.EST is after R9 9:00a.m. cutoff and9:35purge end. Exact recovery/request/qualification-input/external roots absent; no private input/provider launch. R9 EXPIRED_UNSTARTED; pending decision remains false, no backdating or window extension. Evidence APP013_P08_BINDING_RECOVERY_R9_EXPIRED_20261104.json. R6 final cleanup remains verified; prior expired attempts unchanged.
+
+Completed exact state/time reconciliation. Repeated short-window misses mean no replacement window is guessed now. Smallest owner decision: specific next attended start time with preparation lead time; implementer then prepares one exact fresh packet for review. No implementation, live retry or retained data. Full binding/qualification and same-job Sandbox acceptance remain;3A OPEN,accepted4/8,R1newlyclosed0/27;remote facts UNKNOWN. No scope deviation.
+
 Status PENDING_OWNER_APPROVAL; qualification-only. User reports Terminal open and ready. First clock08:47:59a.m.EST. R8 expired without launch: exact recovery/request/input paths absent. R8 packet/approval preserved as EXPIRED_R8; no prior authority transferred. R6 final cleanup remains verified; Q2/R7 expired. Source ef023e2 unchanged, unrelated AGENTS.md preserved. No implementation expansion or provider access.
 
 ## Exact decision

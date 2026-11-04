@@ -1,5 +1,11 @@
 # Session Handoff
 
+## November 4 — R9 expired unstarted; next attendance time unresolved
+
+Owner “proceed” followed6ef30e1, but first clock15:50:32Z/10:50:32a.m.EST is after R9 9:00a.m. cutoff and9:35purge end. Exact recovery/request/qualification-input/external roots absent; no private input/provider launch. R9 EXPIRED_UNSTARTED; pending decision remains false, no backdating or window extension. Evidence APP013_P08_BINDING_RECOVERY_R9_EXPIRED_20261104.json. R6 final cleanup remains verified; prior expired attempts unchanged.
+
+Completed exact state/time reconciliation. Repeated short-window misses mean no replacement window is guessed now. Smallest owner decision: specific next attended start time with preparation lead time; implementer then prepares one exact fresh packet for review. No implementation, live retry or retained data. Full binding/qualification and same-job Sandbox acceptance remain;3A OPEN,accepted4/8,R1newlyclosed0/27;remote facts UNKNOWN. No scope deviation.
+
 ## November 4 — Terminal ready; R8 expired; R9 pending
 
 User reports missed R8 window, then Terminal open and ready. At13:47:59Z/8:47:59a.m.EST exact R8 recovery/request/input paths absent; no launch evidence. Preserve R8 packet/approval EXPIRED_R8. No old command replay. R9 APP013_P08_BINDING_RECOVERY_OPERATION_R9_20261104.md proposes8:50–9:35a.m.EST, start before9:00,reads9:05,closeout9:25,purge9:35. New operation3b326ade-e030-468a-8f07-cdac925ce6bf,qualification0af7c80a-d0a6-4f47-951d-4522a7cb938c,sourceef023e2,scopeda58929f56784b4998329415f1e0d25ab2476ce46f8347a58b2c58b1c4fdcf8d. Same2CLI/3SQL/SDK exception/hidden120-second capped input/45minute retention. Decision pending/false.
