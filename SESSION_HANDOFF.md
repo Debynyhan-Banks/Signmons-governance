@@ -1,5 +1,13 @@
 # Session Handoff
 
+## November 4 — R7 approval after cutoff; fresh R8 pending
+
+Owner said “i approve” for e6d131e, but first clock13:00:30Z/8:00:30a.m.EST is after R7 cutoff7:50. R7 EXPIRED_UNSTARTED; all exact operation/request/input roots absent, no provider access/private input. Preserve original pending decision as EXPIRED_R7 snapshot; late approval does not grant execution. R6 cleanup remains complete.
+
+R8 APP013_P08_BINDING_RECOVERY_OPERATION_R8_20261104.md proposes8:10–8:55a.m.EST, start before8:20, reads8:25, closeout8:45,purge8:55. New operation1a84a6ff-1139-47cd-a0b3-1f73577cf105, qualification6bd91ea0-929d-4026-ac99-ae6085056124, sourceef023e2, scoped42abecb0228d30dbbd38412f138115f8c4575f908398b7b4567a494d7c8a60a. Same2CLI/3SQL/SDK exception/hidden120-second capped input/45minute retention. Actual committed source/dependency/35SDK hashes, dynamic config/env, actual proof-only schema and fresh root absence PASS at2026-11-04T13:01:10.731603+00:00. Decision pending/false; no launch or private input.
+
+Completed local packet and expired-authority reconciliation; remaining owner/credential/DB exact R8 decision, then implementer preflight/manual launch/one attempt/authoritative cleanup and purge. Full qualification separately authorized after bindings; current remote facts UNKNOWN. No source change or acceptance;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation; changed timing proposed before execution.
+
 ## November 4 — R7 fresh recovery proposal ready
 
 Owner returned ready after overnight deferral. R6 final resource/private cleanup verified; Q2 expired without execution receipt; old authority unchanged. R7 APP013_P08_BINDING_RECOVERY_OPERATION_R7_20261104.md proposes today7:40–8:25a.m.EST, start before7:50, reads7:55, closeout8:15, purge8:25. Sourceef023e2; operation8f6ad4a3-c86e-404b-9370-8772d8bb1902, preselected qualification8b540353-257a-4ce2-997d-e482279bc08e; scope3187fd04d0c8ae08ace310ebab5f1394f82ea1e10305214949f5be3a2631591a. Same2SDK CLI/3SQL, explicit SDK refresh/cache/internal-retry exception, hidden120-second capped input and45minute retention guard. Decision pending/false; no private envelope/credential/provider access.
