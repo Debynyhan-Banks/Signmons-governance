@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## November 9 — Q6 exact approval recorded; manual launch pending
+
+Owner “i approve” approves2c1cb56 Q6 workc23b6a4b6c67c7f8728b4dd3e5df2830051d47b50c7588c7dbcb3d0d3a9b926b and cleanupb1f29c2120a4ac19f1009544b915a918b886ab15eedcc4b70a262b9e6022d2c3. Operation9105a995-cbc1-4737-84b7-c6bd884550b5,source74eae71. Start12:05–before12:15EST,reads12:20,closeout12:30,purge12:40;27SDK/20HTTPS/4SQL/1cache,SDK exception and hidden Terminal attendance approved. Actual clock17:09:31Z within start window. No launch/private transfer yet. Implementer verifies actual committed authority/source/config/guard and prepares one-use manual launcher. Owner enters hidden SQL password. Independent cleanup and authoritative purge remain mandatory;no retry/native/payment.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 9 — R14 retained and verified; Q6 exact qualification proposed
 
 R14 HANDOFF_RETAINED,failure null,residuals empty; resource-closeout verified. Fingerprints revalidated using hash-verified existing helper in memory; guard29659 present by signal zero. Raw identifiers remain under12:40p.m.EST purge deadline; no private qualification envelope transferred. Backend P08_BINDING_RECOVERY_R14_HANDOFF_20261109.json. Initial sandbox guard signal-zero check refused; escalated check passed. Public card-generation heading mismatch corrected without external calls or private output.
