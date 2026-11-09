@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## November 9 — R12 handoff verified; Q4 proposed, not authorized
+
+R12 returned HANDOFF_RETAINED, failure null, residuals empty;2CLI/3SQL reservations, resourceCloseout verified. Actual recovered fingerprints revalidated in memory; guardPID43816 present; private purge remains fixed09:50EST. Backend P08_BINDING_RECOVERY_R12_HANDOFF_20261109.json. Q4 APP013_P08_CURRENT_QUALIFICATION_OPERATION_Q4_20261109.md proposes09:15–09:50EST,start before09:25,reads09:30,closeout09:40,purge09:50. Exact existing27CLI/20HTTPS/4SQL/1cache plus SDK exception. Pending false decision; no private transfer or qualification call. Actual existing capability/source/SDK/config/helper checks PASS, proposed authority only. Remote full facts UNKNOWN.
+
+Completed recovery/resource cleanup and fresh concrete qualification packet. Owner/credential/DB roles approve exact Q4 work/cleanup scopes; implementer then actual-clock preflight/manual launcher, one attempt, independent cleanup and final private purge. If no approval, original guard purge still applies; no recovery replay. Same-job Sandbox payment and owner acceptance remain.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 9 — R12 approved; awaiting attended launch
 
 Owner approved exact R12 scope/window/SDK exception. Decision APP013_P08_BINDING_RECOVERY_OPERATION_20261109.json now true; operation36949e08-5de6-4e7d-8c9c-eccc0ef441ec, source759a130. Start09:05–before09:15EST; reads09:20, closeout09:40, purge09:50. No launch or private envelope yet. Implementer prepares source-bound manual launcher and verifies actual authority/time before one attempt; credentials entered only by owner in hidden Terminal. Separate full qualification remains unauthorized. 3A OPEN; accepted4/8; no scope deviation.

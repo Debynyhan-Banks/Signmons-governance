@@ -1,0 +1,16 @@
+{
+  "verifiedAt": "2026-11-09T14:07:39.120152+00:00",
+  "sourceCommit": "759a130164ae86237b5ee8a5fe540e935cc5d4d9",
+  "scopeSha256": "8f35aab382ce5c4f92876d3937bc6615cba475c8085a2bc5bdb78469969a76af",
+  "cleanupScopeSha256": "97d90430958983d346db48985182c66be4a9a21f164fc72df72f43556cd19d55",
+  "checks": {
+    "recoveredBindingsActualHelper": "PASS",
+    "actualCapabilityProposedAuthorityOnly": "PASS",
+    "committedSourcesDependenciesSDK": "PASS",
+    "dynamicEnvironmentConfig": "PASS",
+    "freshQualificationRootsAbsent": "PASS"
+  },
+  "providerCallsDuringPreparation": 0,
+  "privateEnvelopeWritten": false,
+  "remoteQualificationFacts": "UNKNOWN"
+}
