@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## November 9 — cache error translation gap identified; local proposal pending
+
+Source0625fbb review: QualificationIO cache helper raises acl.Stop but full-result handler recognizes model.Stop only; specific helper failures collapse to CURRENT_READ_UNCONFIRMED. Existing ProjectPermissionIO safely translates CACHED_TOKEN_EXPIRED/CONFIG_CHANGED and otherwise CACHE_UNCONFIRMED. Q7 cause remains UNKNOWN;no credential/cache/provider read. APP013_P08_CACHE_ERROR_TRANSLATION_PROPOSAL_20261109.md proposes the same narrow translation at full qualifier,actual boundary/full-result tests and unchanged expiry-after-purge/no-retry/privacy/cleanup.
+
+Completed source review and finite correction card;next owner local approval,then implementer validation before any separately approved external work. No implementation/live packet. Q7/R15 remain consumed/purged. Full qualification/Sandbox/owner acceptance remain;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation implemented;bounded reporting correction proposed before coding.
+
 ## November 9 — Q7 unconfirmed read before HTTPS; purge verified
 
 Approved4e12461/source0625fbb Q7 operation3943619c-f73a-4af9-b35d-4a2db4016be0 ran once: CURRENT_EVIDENCE_UNQUALIFIED,CURRENT_READ_UNCONFIRMED,candidate null,executionReady false,residuals empty.26CLI returned through token;26CLI/0HTTPS/2SQL/1cache reservations,not provider-internal totals. No permission diagnostics. Token/cache boundary implicated by sequence only;underlying exception/cache/token cause UNKNOWN. Corrected key-absence predicate not reached;no claim it failed.
