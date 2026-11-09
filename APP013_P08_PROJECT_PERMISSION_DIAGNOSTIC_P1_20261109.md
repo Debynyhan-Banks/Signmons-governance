@@ -1,5 +1,9 @@
 # APP-013 / 3A / P08 — P1 exact project-permission diagnostic
 
+## November 9 — P1 exact approval recorded; launch pending
+
+Owner “i approve” approves8b02aa3 exact P1 scopefd1b0cac4626b03b07cd28c2fe235b0bd70e6550550477bee3dc13a22dff7661,operationc5a6f1fa-d5d5-4eff-b71c-eafc178407b9,source4f7c377. Start11:15–before11:20EST,reads11:23,closeout11:25.3SDK owner/project/private token,1boundedcache(twoSELECTs),1project-permissionsHTTPS,0SQL/password. Stated SDK exception/hard-crash UNKNOWN accepted. No launch yet. Implementer actual-clock/source/authority/config check then one attempt and independent local closeout. No automatic IAM grant/full qualification/payment.3A OPEN,accepted4/8. No scope deviation.
+
 PENDING_OWNER_APPROVAL, qualification-only. Owner requested preparation after approved local implementation4f7c377bc6fe2e78cdb829471fc0b11ba0cef163. No external call, credential-cache read, private input or execution entry used during preparation.
 
 ## Exact approval requested

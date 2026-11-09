@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## November 9 — P1 exact approval recorded; launch pending
+
+Owner “i approve” approves8b02aa3 exact P1 scopefd1b0cac4626b03b07cd28c2fe235b0bd70e6550550477bee3dc13a22dff7661,operationc5a6f1fa-d5d5-4eff-b71c-eafc178407b9,source4f7c377. Start11:15–before11:20EST,reads11:23,closeout11:25.3SDK owner/project/private token,1boundedcache(twoSELECTs),1project-permissionsHTTPS,0SQL/password. Stated SDK exception/hard-crash UNKNOWN accepted. No launch yet. Implementer actual-clock/source/authority/config check then one attempt and independent local closeout. No automatic IAM grant/full qualification/payment.3A OPEN,accepted4/8. No scope deviation.
+
 ## November 9 — P1 exact project-permission live proposal prepared
 
 APP013_P08_PROJECT_PERMISSION_DIAGNOSTIC_P1_20261109.md proposes agent-run11:15–11:25EST,start before11:20,reads11:23,closeout11:25. Operationc5a6f1fa-d5d5-4eff-b71c-eafc178407b9,source4f7c377,scopefd1b0cac4626b03b07cd28c2fe235b0bd70e6550550477bee3dc13a22dff7661. Exact3SDK owner/project/private token,1boundedcache(twoSELECTs),1current15-permissionHTTPS,0SQL/password; explicit SDK exception,original limits,hard-crash UNKNOWN stated. Pending false; no external call/cache inspection/entry executed.
