@@ -1,5 +1,9 @@
 # APP-013 / 3A / P08 — R18 qualification-only binding recovery
 
+## November9 — R18 exact approval recorded; manual launch pending
+
+Owner "i approve" approves1351d0a R18 scope5c9abe0c2ab5b6ec55d6afd4d2729715d93c5924771f26142bf9a05904bb4720,operationd0c717e9-0048-45e0-af3d-5da44238f5d6,sourcef939224. November9 6:25–7:10p.m.EST,start before6:35,reads6:40,resource closeout7:00,purge7:10.2SDK/3SQL,SDK exception,hidden password/45minute retention approved. Clock23:16:08Z before start,no launch/private input. Implementer prepares existing manual launcher with committed authority/source/config checks;actual-clock entry enforced. Owner runs once within window;independent closeout/authoritative purge mandatory. Full qualification separately approved.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 PENDING_EXACT_OWNER_APPROVAL; externalReadAuthorized=false. Owner confirmed availability after preparation. Correction f939224 accepted; no new implementation. This exact operation is proposed to resolve private binding UNKNOWNs only, not execution-ready and not 3A acceptance. Prior Q9/R17 consumed/purged; no reuse or automatic retry.
 
 ## Exact scope for review

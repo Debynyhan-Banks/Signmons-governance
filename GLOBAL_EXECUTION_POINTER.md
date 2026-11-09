@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## November9 — R18 exact approval recorded; manual launch pending
+
+Owner "i approve" approves1351d0a R18 scope5c9abe0c2ab5b6ec55d6afd4d2729715d93c5924771f26142bf9a05904bb4720,operationd0c717e9-0048-45e0-af3d-5da44238f5d6,sourcef939224. November9 6:25–7:10p.m.EST,start before6:35,reads6:40,resource closeout7:00,purge7:10.2SDK/3SQL,SDK exception,hidden password/45minute retention approved. Clock23:16:08Z before start,no launch/private input. Implementer prepares existing manual launcher with committed authority/source/config checks;actual-clock entry enforced. Owner runs once within window;independent closeout/authoritative purge mandatory. Full qualification separately approved.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November9 — R18 prepared for continuous attended session
 
 Owner confirms continuous45minute attendance after preparation. R18 proposes6:25–7:10p.m.EST,start before6:35,reads6:40,resource closeout7:00,purge7:10. Sourcef939224,operationd0c717e9-0048-45e0-af3d-5da44238f5d6,qualification41069a54-f310-403a-9e68-21ad3936a8f8,scope5c9abe0c2ab5b6ec55d6afd4d2729715d93c5924771f26142bf9a05904bb4720. Existing2SDK/3SQL,disclosed SDK exception,hidden password and45minute custody. Actual source/dependencies/SDK/config and capability PASS at2026-11-09T23:12:43.240517+00:00 using proposed authority/start only. Fresh roots absent;R17/Q9 raw inputs verified absent. R17 archived unchanged;pending decision false. No launch/provider action or new code.
