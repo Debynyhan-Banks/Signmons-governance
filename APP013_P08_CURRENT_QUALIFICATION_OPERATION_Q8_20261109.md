@@ -1,5 +1,9 @@
 # APP-013 / 3A / P08 — Q8 exact qualification proposal
 
+## November 9 — Q8 exact approval recorded; manual launch pending
+
+Owner “i approve” approves16feeb1 Q8 workb7f36f834ad6cab51372f56ad0d3051a2fd6998e9a80eb52ecf662a34d9eafd3 and cleanup3e368ade6b826183388545c5371ae9fd20f25f0ac84a9fdb0216c00e63735c9c. Operation19eb6efa-32f2-41af-b029-48cbca722b77,source99a4ef3. Start1:35–before1:45p.m.EST,reads1:50,closeout2:00,purge2:10;27SDK/20HTTPS/4SQL/1cache,SDK exception/hidden Terminal attendance approved. Clock18:28:31Z before start. No private transfer/launch. Implementer verifies committed authority/source/config/fingerprints/guard using proposed-start schema;manual launcher enforces actual clock. Owner runs once in window;independent cleanup/authoritative purge mandatory. No retry/native/payment.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 PENDING_OWNER_APPROVAL; qualification-only. R16 retained/fingerprint/resource-closeout/guard verified. Source99a4ef3 includes approved cache translation;173runtime+25governance PASS are prior local proof,not live evidence. Q7 consumed/purged and archived byte-for-byte. No private transfer or qualification launch.
 
 ## Exact approval requested
