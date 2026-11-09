@@ -1,5 +1,13 @@
 # APP-013 / 3A / P08 — Q6 exact qualification proposal
 
+## November 9 — Q6 stopped at key absence; private purge verified
+
+Approvedb974470/source74eae71 Q6 operation9105a995-cbc1-4737-84b7-c6bd884550b5 ran once: CURRENT_EVIDENCE_UNQUALIFIED,KEY_ABSENCE_UNKNOWN,candidate null,executionReady false,residuals empty.27CLI/9HTTPS/2SQL/1cache reservations;not provider-internal totals. Project and identity permission receipts bothHTTP200 COMPLETE,missing empty. Fixed source order identifies ninth HTTPS key_absence; status/body not retained. Key existence/access/parser cause UNKNOWN;no claim missing permissions.
+
+Normal/independent qualification closeout completed; R14 final closeout PRIVATE_PURGE_VERIFIED,onTime true,rawFilesAbsent true,resourceCloseout verified,residuals empty. Both raw private slots absent and guard29659 absent. Backend P08_Q6_QUALIFICATION_RESULT_20261109.json. No retry/provider/log retrieval. Consumed Q6/R14 cannot replay.
+
+Completed authorized attempt and mandatory cleanup/purge. Next implementer if requested: local exact key-absence request/response-contract review using existing source and public documentation, preserving discarded-response boundary; propose only demonstrated correction or smallest evidence gap. Owner separately approves implementation/external scope as applicable. Remaining full qualification and same-job Sandbox payment/negative/replay/owner acceptance;3A OPEN,accepted1A/1B/2A/2B4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 9 — Q6 exact approval recorded; manual launch pending
 
 Owner “i approve” approves2c1cb56 Q6 workc23b6a4b6c67c7f8728b4dd3e5df2830051d47b50c7588c7dbcb3d0d3a9b926b and cleanupb1f29c2120a4ac19f1009544b915a918b886ab15eedcc4b70a262b9e6022d2c3. Operation9105a995-cbc1-4737-84b7-c6bd884550b5,source74eae71. Start12:05–before12:15EST,reads12:20,closeout12:30,purge12:40;27SDK/20HTTPS/4SQL/1cache,SDK exception and hidden Terminal attendance approved. Actual clock17:09:31Z within start window. No launch/private transfer yet. Implementer verifies actual committed authority/source/config/guard and prepares one-use manual launcher. Owner enters hidden SQL password. Independent cleanup and authoritative purge remain mandatory;no retry/native/payment.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
