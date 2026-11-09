@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## November 9 — R13 recovery verified; Q5 qualification proposed
+
+R13 HANDOFF_RETAINED,failure null,residuals empty,2CLI/3SQL reservations;resourceCloseout verified. Fingerprints revalidated in memory;guard68539 present;purge fixed10:45EST. Backend P08_BINDING_RECOVERY_R13_HANDOFF_20261109.json. Q5 APP013_P08_CURRENT_QUALIFICATION_OPERATION_Q5_20261109.md proposes10:10–10:45EST,start before10:20,reads10:25,closeout10:35,purge10:45. Source710e774,operation1506217a-894e-4a98-93e3-b80e5282eef6,workd545c5239b1f57336cd861ba8f627785ade2d098d688a9b51d57f20138f32cf9,cleanup6ff798e435cc12d162371db8cede5281ba0abe12ee3092c9dbbdf15037584813. Same27CLI/20HTTPS/4SQL/1cache and SDK exception. Pending false; no handoff or qualification call. Q4 consumed artifacts archived unchanged.
+
+Actual source/SDK/config/bindings/schema checks PASS at2026-11-09T15:03:25.668248+00:00; local simulated proposed authority only. Completed recovery/resource cleanup and concrete Q5 packet; owner/credential/DB roles approve exact operation, implementer then actual-clock preflight/manual launch and cleanup/purge. Full remote permission facts UNKNOWN. No automatic replay/native/payment. Same-job Sandbox journey and owner acceptance remain;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 9 — exact R13 approval recorded; launch pending
 
 Owner confirmed10:00–10:45EST attendance and explicitly “i approve r13” after concrete63f8637 proposal. Decision APPROVE_EXACT_P08_BINDING_INPUT_RECOVERY,true,scope524a8261b8e43882aa4a414df3de029b5e7d84a67417d5850c60cdffd9d8620f. Source710e774,operationb9410013-c4c8-4bb0-a37b-d00b9ee2f041,qualification1506217a-894e-4a98-93e3-b80e5282eef6. Start10:00–before10:10,reads10:15,closeout10:35,purge10:45EST. Same2CLI/3SQL/SDK exception; no full qualification/native/payment authority. No launch or private input yet. Implementer prepares actual-clock/source/committed-authority-checked manual launcher; owner enters hidden password. Next observable result one recovery and independent cleanup/purge;3A OPEN,accepted4/8. No scope deviation.
