@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## November 9 — R16 corrected-source draft prepared; attendance pending
+
+Requested continuation after cache translation99a4ef3. Existing recovery reused;prior Q7/R15 raw inputs absent. APP013_P08_BINDING_RECOVERY_OPERATION_R16_20261109.md proposes1:25–2:10p.m.EST,start before1:35,reads1:40,resource closeout2:00,purge2:10.2SDK/3SQL,SDK exception,hidden Terminal password/45minute retention. Operation584e97b9-c9be-4e65-a2cc-2cce8f66f56f,qualification19eb6efa-32f2-41af-b029-48cbca722b77,scope2d47ba36f76fb6e9f89941a5b6137da47c48766164e2492e13cbba457d8ead1c. Separate draft packet/false decision;consumed canonical R15 unchanged.
+
+Readiness2026-11-09T18:11:44.704611+00:00:actual committed source/dependencies/SDK/config and proposed-authority/start capability PASS;fresh roots/prior inputs absent. Prior173runtime+25governance evidence reused;no provider/cache/private input. Completed draft/readiness;next owner attendance reply before final exact execution approval. Implementer must not infer new window authority from generic proceed. Live facts UNKNOWN;full qualification/Sandbox/owner acceptance remain.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 9 — approved cache-error translation complete locally
 
 Owner approveddd9d7fa before coding. QualificationIO now translates cache helper CACHED_TOKEN_EXPIRED/CONFIG_CHANGED to model.Stop and other helper exceptions to CACHE_UNCONFIRMED;TOKEN_CACHE_MISMATCH remains distinct. Expiry strictly after purgeEnd,no-retry/request/identity/config/retention/cleanup boundaries unchanged. Actual transport/cache-to-full-result regression covers syntheticSQLite success/insufficient lifetime/sidecar plus injected config/busy/schema/missing/timeout/unexpected errors,one cache call,reservation,no later work,normal/independent cleanup and secret canary absence. Backend P08_CACHE_ERROR_TRANSLATION_20261109.md records pre-code card and validation.
