@@ -1,5 +1,13 @@
 # Session Handoff
 
+## November 9 — P2 complete: all14 permissions observed; cleanup verified
+
+Approved0cf008a/source74eae71 P2 operation4f2b0b16-3bc7-4856-a463-18ff4b7564aa ran once within11:40–11:50EST. PROJECT_PERMISSIONS_OBSERVED;HTTP200,COMPLETE,missingPermissions empty. Exact owner/project matched;SDK/cache token equality and expiry valid.3CLI/1cache/1HTTPS reservations,0SQL;not provider-internal request totals. All14 requested current project permissions observed. This does not reconstruct P1 discarded HTTP400body or prove downstream resource access.
+
+Normal cleanup verified;independent PROJECT_PERMISSIONS_CLOSED,processCleanupVerified true,residuals empty,candidate null,executionReady false. Sanitized backend evidence P08_PROJECT_PERMISSION_P2_RESULT_20261109.json;no raw token/project number/cache/response persisted. SDK-managed cache exception remains,not claimed purged. P2 consumed;no retry or extra provider action.
+
+Completed P2 permission qualification and independent closeout. Remaining: full current target/resource/account/job/role/key compatibility qualification, then separately authorized same-job Sandbox payment/negative/replay/owner acceptance. Next implementer: reconcile remaining full-qualification prerequisites against this observed subset and existing source; propose smallest exact required step, no automatic recovery/read/IAM change. Owner/credential/DB roles retain applicable future approval boundaries. Other live prerequisites UNKNOWN.3A OPEN;accepted1A/1B/2A/2B4/8;R1newlyclosed0/27. No scope deviation.
+
 ## November 9 — P2 exact approval recorded
 
 Owner “yes i approve” approves912b7a4 exact P2 scope9c290a2ae77bf65894a0fd0c630ee251c84a2577fe182dc339b7e8471fd1ebbc,operation4f2b0b16-3bc7-4856-a463-18ff4b7564aa,source74eae71. Start11:40–before11:45EST,reads11:48,closeout11:50.3SDK/1cache/1HTTPS corrected14 permissions/0SQL; SDK exception and hard-crash limitation accepted. Actual clock16:29:45Z is before start. No launch yet. Implementer must wait for approved start, recheck actual authority/source/config/time, then one attempt and independent local closeout. No further approval required within exact scope/window. Permissions UNKNOWN;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
