@@ -1,5 +1,13 @@
 # Session Handoff
 
+## November9 — R17 retained and verified; Q9 proposed
+
+R17 HANDOFF_RETAINED,failure null,residuals empty,resource closeout verified. Fingerprints revalidated in memory;guard98717 present via signal zero;no qualification envelope transferred. Backend P08_BINDING_RECOVERY_R17_HANDOFF_20261109.json;purge4:00p.m.EST regardless of approval.
+
+Q9 APP013_P08_CURRENT_QUALIFICATION_OPERATION_Q9_20261109.md proposes3:25–4:00p.m.EST,start before3:35,reads3:40,resource closeout3:50,purge4:00. Sourcef939224,operation2b76a506-0d7a-41d0-98af-3ae63f3b38b9,work8f53db0471cbb497d530981f63e509a101906e75b3d0993b90ee91a7054491c0,cleanup2dc9c13bcb59ac2b99638657cab69a1c8783588187ed62c83d096a8bb4bef34f.27SDK/20HTTPS/4SQL/1cache,SDK exception,hidden password. Actual source/SDK/config/fingerprint/capability readiness PASS at2026-11-09T20:17:01.620715+00:00 using proposed authority/start only. Pending false,Q8 archived unchanged. Prior206local checks not live facts.
+
+Completed recovery verification/exact qualification packet;next owner/credential/DB exact approval,then actual-clock manual launch and mandatory independent cleanup/purge. No automatic retry/native/payment. Full remote facts UNKNOWN;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 9 — R17 exact approval recorded; manual launch pending
 
 Owner "i approve" approves813e6ab R17 scopea34a086d46f756a383f991fed1d2484e654cb2d3d25238eb5daeca18286e7460,operation8f26afaf-7107-471f-8316-7c55b3fd84a6,sourcef939224. November9 3:15–4:00p.m.EST,start strictly before3:25,reads3:30,resource closeout3:50,purge4:00.2SDK/3SQL,disclosed SDK exception,hidden password and45minute retention approved. Clock20:00:35Z before start;no launch/private input. Implementer prepares existing manual launcher with committed authority/source/config checks;actual clock enforced at entry. Owner runs once within window. Independent closeout/authoritative purge mandatory;full qualification separately approved.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
