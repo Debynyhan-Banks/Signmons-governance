@@ -1,5 +1,15 @@
 # Global Execution Pointer
 
+## November9 — Q10 ROLE_NOT_READY; stop repeat qualification cycle
+
+Owner reports repeated failure and requests an end to inefficiency. Q10 approved8314332/sourcef939224,operation41069a54-f310-403a-9e68-21ad3936a8f8 returned CURRENT_EVIDENCE_UNQUALIFIED,ROLE_NOT_READY,failureStage database,candidate null,executionReady false,residuals empty.27CLI/19HTTPS/4SQL/1cache reservations,not provider-internal request totals. Normal and fresh independent SQL cleanup completed;Firebase not reached. Consolidated error translation now exposes the role-readiness category;this does NOT identify the individual failed predicate or prove that Q8 had the same cause.
+
+R18 closeout PRIVATE_PURGE_VERIFIED,onTime true,rawFilesAbsent true,resourceCloseout verified,residuals empty. Both private slots absent,guard9375 absent by signal zero. No SQL replay or credential reread. Backend P08_Q10_QUALIFICATION_RESULT_20261109.json. Q10/R18 consumed/purged.
+
+Source inspected: ROLE_NOT_READY can arise from required role count or retired-role conditions(login disabled,zero connection limit,finite expired validity,no elevated attributes/memberships/owned objects/sessions/schema-create/database-temp). Exact offending condition UNKNOWN because only aggregate category was retained. Do not infer ACL drift,grant permissions,alter roles,or rerun full qualification. No new recovery/window/password proposal as default. Next responsible action is a narrowly scoped database-role diagnosis/reconciliation,using existing role query/classifier and retained nonprivate history first;any new external read or role change needs concrete bounded review before execution. Implementer owns actionable diagnosis;DB owner owns any eventual state correction. No new code or live read now.
+
+Completed attempt/cleanup/purge and specific blocker recorded. Remaining3A full qualification and same-job Sandbox signed-event payment/negative/duplicate/replay/owner acceptance. Accepted1A/1B/2A/2B4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November9 — Q10 exact approval recorded; manual launch pending
 
 Owner "i approve" approves8e1d307 Q10 work43f92bb0ff8476db8b3e845fe340f8f9afbc578661404f94acc859d247aa3845 and cleanup8c9f15888dd58d2b7ecde20518ae3307bf10a962472ad9d25672fb4f7f2568fa. Operation41069a54-f310-403a-9e68-21ad3936a8f8,sourcef939224. Start6:40–before6:50p.m.EST,reads6:55,resource closeout7:00,purge7:10;27SDK/20HTTPS/4SQL/1cache,SDK exception/hidden Terminal password approved. Clock23:32:27Z before start;R18guard9375 present. No qualification transfer/launch. Implementer verifies committed authority/source/config/fingerprints using proposed-start schema;manual launcher enforces actual clock before handoff. Owner runs once;independent cleanup/authoritative purge mandatory. No retry/native/payment.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
