@@ -1,8 +1,8 @@
 {
   "version": 1,
   "execution": "EXTERNAL_READ_ONLY",
-  "operationId": "b61baf5a-c14c-40c0-9801-e37b0ee83a0a",
-  "qualificationId": "9105a995-cbc1-4737-84b7-c6bd884550b5",
+  "operationId": "473bb707-3375-4a3a-860b-a27474448017",
+  "qualificationId": "3943619c-f73a-4af9-b35d-4a2db4016be0",
   "project": "signmons",
   "owner": "debynyhan@signmons.com",
   "database": {
@@ -14,11 +14,11 @@
   "projectNumberSha256": "37d4aa0f46ca5b8f0b81b1148bda235a0f4a9a424b6b4638ec993d889563be54",
   "targetSha256": "23d7b71141e7cdba27558c97333e6821fc76ec872a84cdc2f2f19a980bee029c",
   "window": {
-    "start": "2026-11-09T16:55:00Z",
-    "cutoff": "2026-11-09T17:05:00Z",
-    "readEnd": "2026-11-09T17:10:00Z",
-    "closeoutEnd": "2026-11-09T17:30:00Z",
-    "purgeEnd": "2026-11-09T17:40:00Z"
+    "start": "2026-11-09T17:35:00Z",
+    "cutoff": "2026-11-09T17:45:00Z",
+    "readEnd": "2026-11-09T17:50:00Z",
+    "closeoutEnd": "2026-11-09T18:10:00Z",
+    "purgeEnd": "2026-11-09T18:20:00Z"
   },
   "limits": {
     "cli": 2,
@@ -28,6 +28,6 @@
   },
   "sdkException": "SDK_EXISTING_OWNER_REFRESH_CACHE_INTERNAL_RETRIES_NO_TOKEN_EXPORT",
   "sdkFilesSha256": "6ffa3de34fe1f602cdd26a1e8e6f64ec2e5a9048b1bed5e3ae5d1ff325e43a6a",
-  "manifestSha256": "c4517fbdd7b8bcfcc16f67ea72da214d8f456bef241373e2d426762d442450aa",
-  "sourceCommit": "74eae7123565fa71419f76b2a4a194c3cd8101b8"
+  "manifestSha256": "0d11b827594c8161fc9480023f206d73f53f7245f06554a0748a293bd78d0050",
+  "sourceCommit": "0625fbb6608704d408274baaa3c625434db841f2"
 }

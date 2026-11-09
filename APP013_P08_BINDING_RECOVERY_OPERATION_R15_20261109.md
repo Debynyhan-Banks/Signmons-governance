@@ -1,12 +1,12 @@
-# APP-013 / 3A / P08 — R15 corrected-source recovery draft
+# APP-013 / 3A / P08 — R15 corrected-source recovery proposal
 
-PENDING_AVAILABILITY_AND_EXACT_OWNER_APPROVAL. User requested next preparation; no external authority inferred. Prior Q6/R14 consumed/purged. Source0625fbb includes approved key-absence parser correction;172runtime+25governance PASS are prior same-source proof. Existing recovery remains unchanged; no new subsystem. P2/Q6 project/identity permission observations do not prove remaining key/resource/database/Firebase readiness. Raw bindings absent, so full qualification requires fresh recovery before its separate exact approval. No private input/provider access during preparation.
+PENDING_EXACT_OWNER_APPROVAL. User requested next preparation; no external authority inferred. Prior Q6/R14 consumed/purged. Source0625fbb includes approved key-absence parser correction;172runtime+25governance PASS are prior same-source proof. Existing recovery remains unchanged; no new subsystem. P2/Q6 project/identity permission observations do not prove remaining key/resource/database/Firebase readiness. Raw bindings absent, so full qualification requires fresh recovery before its separate exact approval. No private input/provider access during preparation.
 
 ## Exact decision
 
 Approve one attended read-only binding recovery today **November 9, 2026, 12:35–1:20 p.m. EST**. Start at or after12:35 and strictly before12:45; work reads end12:50; resource closeout ends1:10; private data must be absent by1:20. No retry, rolling window or deadline extension. The requested scope is only two missing identifiers needed to bind the existing qualification; it does not repeat full qualification or authorize runtime/payment actions.
 
-Operation `473bb707-3375-4a3a-860b-a27474448017`; preselected later qualification `3943619c-f73a-4af9-b35d-4a2db4016be0` (no qualification authority). Scope APP013_P08_BINDING_RECOVERY_PACKET_20261109.json; canonical scope SHA256 `6d3e451534c51e146f74ec9ed74207b2c8cc93b4ace57736dbb172f72138a972`. Decision APP013_P08_BINDING_RECOVERY_OPERATION_20261109.json remains PENDING_OWNER_APPROVAL / externalReadAuthorized=false.
+Operation `473bb707-3375-4a3a-860b-a27474448017`; preselected later qualification `3943619c-f73a-4af9-b35d-4a2db4016be0` (no qualification authority). Scope APP013_P08_BINDING_RECOVERY_PACKET_20261109.json; canonical scope SHA256 `1108f2f0b1648be3f088c071eda294259876bb06d8956cc8e2827a7918cb5b73`. Decision APP013_P08_BINDING_RECOVERY_OPERATION_20261109.json remains PENDING_OWNER_APPROVAL / externalReadAuthorized=false.
 
 Maximum **2 SDK CLI invocations and 3 remote SQL reads**, including normal and independent closeout. Zero direct HTTPS, explicit credential-cache inspection or token-print commands. Explicit SDK exception: existing-owner credential refresh, SDK cache maintenance and SDK-internal retries within the two commands and fixed deadlines; two commands are not a two-provider-request guarantee. No login/alternate identity or IAM/API/key/secret/billing/runtime configuration, payment, deployment, spending or customer contact is authorized.
 
@@ -48,4 +48,4 @@ Observable success initially HANDOFF_RETAINED with matching fingerprints and ver
 
 
 
-Draft packet APP013_P08_BINDING_RECOVERY_PACKET_R15_20261109.json; pending decision APP013_P08_BINDING_RECOVERY_DECISION_R15_PENDING_20261109.json. Canonical consumed R14 packet/decision remain unchanged until availability is confirmed. Actual capability tested with proposed decision/start only. No scope deviation.
+Draft packet APP013_P08_BINDING_RECOVERY_PACKET_R15_20261109.json; pending decision APP013_P08_BINDING_RECOVERY_DECISION_R15_PENDING_20261109.json. Consumed R14 packet/decision archived byte-for-byte; canonical files now contain pending R15. Owner confirmed12:35–1:20p.m.EST availability only. Actual capability tested with proposed decision/start only. No scope deviation.
