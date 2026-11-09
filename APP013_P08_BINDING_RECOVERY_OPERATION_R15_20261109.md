@@ -1,5 +1,9 @@
 # APP-013 / 3A / P08 — R15 corrected-source recovery proposal
 
+## November 9 — R15 exact approval recorded; manual launch pending
+
+Owner “i approve” approvesc9b29cb R15 scope1108f2f0b1648be3f088c071eda294259876bb06d8956cc8e2827a7918cb5b73,operation473bb707-3375-4a3a-860b-a27474448017,qualification3943619c-f73a-4af9-b35d-4a2db4016be0,source0625fbb. Start12:35–before12:45p.m.EST,reads12:50,resource closeout1:10,purge1:20.2SDK/3SQL,SDK exception,hidden password and45minute retention approved. Clock17:29:59Z before start. No launch/private input yet. Implementer prepares existing manual launcher with committed authority/source/config and actual-time entry check; owner runs once during window. Independent cleanup/purge mandatory. No further approval for this exact recovery;full qualification separate.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 PENDING_EXACT_OWNER_APPROVAL. User requested next preparation; no external authority inferred. Prior Q6/R14 consumed/purged. Source0625fbb includes approved key-absence parser correction;172runtime+25governance PASS are prior same-source proof. Existing recovery remains unchanged; no new subsystem. P2/Q6 project/identity permission observations do not prove remaining key/resource/database/Firebase readiness. Raw bindings absent, so full qualification requires fresh recovery before its separate exact approval. No private input/provider access during preparation.
 
 ## Exact decision
