@@ -1,5 +1,9 @@
 # Session Handoff
 
+## November 9 — exact D1 approval recorded; launch pending
+
+Owner “i approve” approvesaa44aa3 exact D1 scope79fd24626d75609e9b2decac9e233ca5d34acc9904c3d8565c900168cf8d1305,operationaa005972-1b7f-4c19-933d-4cc63ad601a7,sourcec21dfde. Start10:50–before10:55EST,reads10:58,closeout11:00. Two SDK owner/project commands only,explicit SDK refresh/cache/internal-retries exception;0SQL/directHTTPS/cache/token-print,password not needed. Hard-crash process history UNKNOWN limitation accepted with exact proposal. No launch yet. Implementer rechecks actual source/config/authority/time, runs once, then local independent closeout. No automatic later qualification.3A OPEN,accepted4/8. No scope deviation.
+
 ## November 9 — D1 owner/project-only live proposal prepared
 
 APP013_P08_OWNER_PROJECT_DIAGNOSTIC_D1_20261109.md proposes one agent-run no-password diagnostic10:50–11:00EST,start before10:55,reads10:58,closeout11:00. Operationaa005972-1b7f-4c19-933d-4cc63ad601a7,sourcec21dfde,scope79fd24626d75609e9b2decac9e233ca5d34acc9904c3d8565c900168cf8d1305. Exact2SDK owner/project,0SQL/directHTTPS/cache/token-print,explicit SDK refresh/cache/internal-retries exception;30second cap unchanged. Hard-crash process ownership UNKNOWN limitation stated. Pending false decision; no provider call or actual entry execution.

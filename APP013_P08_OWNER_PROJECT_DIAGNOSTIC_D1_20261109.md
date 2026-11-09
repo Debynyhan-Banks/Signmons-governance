@@ -1,5 +1,9 @@
 # APP-013 / 3A / P08 — D1 exact owner/project diagnostic
 
+## November 9 — exact D1 approval recorded; launch pending
+
+Owner “i approve” approvesaa44aa3 exact D1 scope79fd24626d75609e9b2decac9e233ca5d34acc9904c3d8565c900168cf8d1305,operationaa005972-1b7f-4c19-933d-4cc63ad601a7,sourcec21dfde. Start10:50–before10:55EST,reads10:58,closeout11:00. Two SDK owner/project commands only,explicit SDK refresh/cache/internal-retries exception;0SQL/directHTTPS/cache/token-print,password not needed. Hard-crash process history UNKNOWN limitation accepted with exact proposal. No launch yet. Implementer rechecks actual source/config/authority/time, runs once, then local independent closeout. No automatic later qualification.3A OPEN,accepted4/8. No scope deviation.
+
 PENDING_OWNER_APPROVAL / qualification-only. This proposal uses the completed c21dfdee932185d9a60322f421522aecb562fe6b diagnostic; it does not repeat Q5 or recover private bindings. Owner “proceed” requested preparation, not exact live authorization. No live command executed or scheduled automatically.
 
 ## Exact decision
