@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## November9 — concrete SQL-only diagnostic interface proposal prepared
+
+Owner approves proceeding toward focused database check. Inspection confirms retired_role_evidence is local-only,full qualifier requires broad flow,and project diagnostics forbid SQL. APP013_P08_SQL_ONLY_ROLE_DIAGNOSTIC_PROPOSAL_20261109.md proposes two commands in existing module,reusing unchanged role/cleanup queries,NativeIO and authority/cleanup seams:one role read plus normal/independent cleanup,total3SQL,zeroSDK/HTTPS/cache/private-target recovery. Fixed per-predicate PASS/FAIL/UNKNOWN and authoritative classifier,no raw metadata/candidate. Exact files,finite tests,crash/cleanup/privacy/owners/exclusions recorded before implementation.
+
+Local implementation approval pending for concrete new interface;no code/live action/window/password. Full qualification hold remains;actual failed predicate UNKNOWN. Next observable result after approval is tested SQL-only diagnostic capability,then separate exact external packet. No role/PUBLIC policy change inferred.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation implemented;bounded extension proposed.
+
 ## November9 — Q10 local role diagnosis complete; focused DB decision remains
 
 APP013_P08_Q10_ROLE_DIAGNOSIS_20261109.md traces semantic ROLE_NOT_READY and compares local fixtures with historical provisioning/closeout. Disposable tests explicitly revoke database PUBLIC privileges/schema CREATE;inspected historical provisioning/retirement does not perform that step. Existing actual-PostgreSQL test proves PUBLIC CREATE/TEMP can fail readiness without direct ACL drift. Plausible cause only;Q10 exact predicate remains UNKNOWN. Historical CLOSED receipts cover only login/limit/expiry/sessions. No raw observation available,no provider read/code change.

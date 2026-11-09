@@ -1,0 +1,43 @@
+# APP-013 / 3A / P08 — SQL-only role diagnostic change request and section card
+
+PENDING_OWNER_LOCAL_IMPLEMENTATION_APPROVAL. Owner approves proceeding toward a focused database check; this card makes the newly discovered execution-interface gap concrete before implementation. No live authority, window, password or new recovery. Starting backend2698ce0;runtimef939224;governance386dd71. No code changed.
+
+## Demonstrated gap and alternatives
+
+Q10 failed ROLE_NOT_READY/database with no per-predicate observation. Existing retired_role_query/classify_retired_role provide the exact query and authoritative comparator. However retired_role_evidence explicitly requires proof=True and has no native credential/CLI boundary. Existing full QualificationCapability requires the entire cloud/access/database/Firebase flow;ProjectDiagnosticIO/ProjectPermissionIO explicitly forbid SQL. NativeIO.sql already supports the exact retired_role descriptor and closeout descriptor,owned processes,verify-full TLS and time bounds. Calling it ad hoc would bypass operation authorization/reservation/cleanup controls.
+
+Alternatives: repeating full qualification repeats unrelated reads and still produces aggregate failure;weakening readiness or blindly revoking PUBLIC privileges is unsupported;manual SQL without a bounded result/closeout leaves the same observability and recovery problems. Recommended bounded change: add SQL-only mode to existing qualification_launch.py using its current authority/reservation/transport/cleanup seams. No new service,subsystem,role/query redesign or acceptance section. Impact:one local diagnostic extension and its tests,then a separately reviewed external operation;no added downstream feature dependency or denominator. Effort is one finite local implementation/test package,not a promised completion time.
+
+## Acceptance and connected workflow
+
+Existing3A prerequisite:current retired-role readiness before same-job Sandbox payment. Diagnostic must identify every safely observed failed readiness predicate in one read,while retaining aggregate authoritative classifier verdict and separately verified cleanup. It must never emit a native-entry candidate,grant execution readiness,change a role or count as3A acceptance.
+
+Source/interface reuse: current_sql_contract()[2] unchanged role query; sql_contract()[1] unchanged cleanup query; NativeIO owned process/TLS; strict_json; acl.expected_retired_acl/classify_retired_role/classify_role_acl; existing source/decision binding and exclusive reservation/private-file checks; hidden password and independent fresh-client closeout. Historical locked access_check.py stays unchanged.
+
+Expected files limited to existing evidence/APP-013/p08-https-output-category-local-20261029/source/qualification_launch.py,test_qualification_launch.py,test_qualification_launch_postgres.py,source-manifest.json plus bounded evidence/handoffs. If those seams cannot implement the contract without broader changes,stop and disclose the gap.
+
+Proposed public commands --diagnose-database-role and --closeout-database-role in the existing module. Separate source-bound owner decision,operation UUID,exact CHILD DB/role,query hashes,read/closeout/cutoff bounds,aggregate3SQL limit,source/psql/Python/CA pins. No Google SDK command/cache/config read,HTTPS,private project/target identifiers,customer/job projection or qualification handoff. Environment override rejection for SQL credentials/TLS remains enforced;do not reuse an unfiltered environment by introducing a new NativeIO subclass.
+
+## Output and data boundaries
+
+Exactly one unchanged role query returns fixed-role metadata and complete ACL rows in memory. Preserve identity/type validation before interpreting any value. Persist only fixed condition names with PASS/FAIL/UNKNOWN plus fixed aggregate category: roleExistsExactlyOne,loginDisabled,connectionLimitZero,expiryFinite,expiryPast,noUnsafeAttributes,noMemberships,noOwnedObjects,noSessions,noSchemaCreate,noDatabaseTemp,aclExact. Missing/null/wrong-type fields stay UNKNOWN,never false-as-pass;do not suppress other safely interpretable fields just because one failed. No arbitrary row values,names,counts,grants,expiry timestamps,passwords,raw SQL output or exception text persisted. Distinguish effective CREATE/TEMP from direct ACL comparison;do not infer the source of an effective privilege from a boolean.
+
+Keep acl.classify_retired_role authoritative. The diagnostic vector explains observations;it does not replace,relax or manufacture a qualified verdict. Explicit allowlisted helper categories;unknown exceptions generic and stage-labeled. Data provenance:actual SQL output through NativeIO;fixture results never live proof. SQL password transient hidden input only and released on all exits;no raw binding files or45minute identity custody needed.
+
+## Finite checklist and readiness gates
+
+1. Add separate fail-closed SQL-only capability and dispatch,committed exact decision/source/query/resource pins;no reuse of consumed qualification authority. Exclusive operation root/lock,reservations before dispatch,total3SQL/no retry.
+2. Add safe per-predicate classification and full authoritative comparator,including malformed/missing/null and mixed failures;fixed diagnostic receipt cannot emit candidate/executionReady.
+3. Wire unchanged role read,normal cleanup and independent fresh-client cleanup. Reserve each exactly once. Interruption/partial failure retains cleanup;public closeout can only spend an unused independent reservation and must never repeat work. Hard crash/lost process ownership remains UNKNOWN;no blind PID kill. Existing role-session query and explicit fresh cleanup behavior verified against the actual descriptors.
+4. Test positive and every failed condition;PUBLIC CREATE/TEMP with unchanged direct ACL;missing/extra/column/grant-option ACL;null/missing/wrong types/duplicate JSON;foreign DB/user;secret canary;transport timeout/oversize;receipt-write failure;source/authority/resource/time mismatch;concurrent launch and repeated closeout;SIGTERM/SIGKILL and fresh-process cleanup. Assert exact safe vector/category,zero later work,3SQL maximum,no SDK/HTTPS/cache calls,credential absence and no candidate. Use actual existing NativeIO bytes and disposable PostgreSQL/TLS,not only fixtures.
+5. Refresh manifest and complete full qualification regression,governance/architecture/whitespace checks. Record source SHA,timestamp,test commands/results,remaining UNKNOWNs before any external scheduling. No timed live attempt as substitute for local coverage.
+
+Commands: pinned Python3.14 -B -m unittest test_qualification_launch test_composed_qualification test_qualification_launch_postgres in existing source directory;backend SIGNMONS_GOVERNANCE_REPO=<resolved> node scripts/check-governance-baseline.mjs and npm run arch:check;governance frozen-baseline-check,docs-consistency-check with backend path,and three required governance test modules;git diff --check both. No application/browser flow changes;3A browser acceptance remains later. Prior206tests are historical baseline,not new proof of this proposed mode.
+
+Deadline/resource/purge readiness:one bounded read plus two cleanup reads;clock/cutoff/source/resource/authority checked before launch;all calls deadline capped;no automatic renewals,retries or extensions. Credential timeout/cleanup credential absence explicitly reported. Only sanitized receipts retained;no private output to purge. Owned child/server cleanup and process-history uncertainty must be tested rather than assumed.
+
+## Owners, exclusions and finish
+
+Owner approves this local interface addition before coding under AGENTS change control. Implementer owns complete local proof and exact later packet. DB/credential owner separately approves future SQL-only read/hidden-password/cleanup allowance;no attendance requested now. Current specific failure remains UNKNOWN. Any actual PUBLIC policy correction requires affected-role impact review and separate change approval;no REVOKE/ALTER/termination/provider configuration/payment action here.
+
+Disabled/rollback:without exact decision mode refuses;failed local gates keep live hold. Existing full qualification remains held;no source rebaseline or scope/section/count changes. Observable local finish:one tested SQL-only path produces actionable fixed failed-condition evidence and independently verified cleanup without Google/identity recovery. Observable later live finish:actual predicate vector or truthful bounded refusal,not3A acceptance. Accepted1A/1B/2A/2B4/8,R1newlyclosed0/27;3A OPEN. No scope deviation implemented;bounded diagnostic interface change proposed before coding.
