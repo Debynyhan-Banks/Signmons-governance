@@ -49,3 +49,7 @@ Observable success initially HANDOFF_RETAINED with matching fingerprints and ver
 ## Current documentation validation
 
 November9 preparation: frozen baseline, cross-repository complete consistency, all25 governance tests, backend architecture and whitespace checks in both repositories PASS. No runtime tests rerun and no provider calls. Backend AGENTS.md user change preserved.
+
+## Owner decision — November 9
+
+Owner replied “yes i approve” to the exact R12 operation request at approximately08:55a.m.EST. APPROVE_EXACT_P08_BINDING_INPUT_RECOVERY / externalReadAuthorized=true, unchanged scope b9a80824368d7fbaaec6abf28483d69093f34f01f62ea1edee7cce289f66d38a and fixed window. Approval is not execution. Manual launch must refuse before09:05 or at/after09:15. All cleanup and retention obligations remain.

@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## November 9 — R12 approved; awaiting attended launch
+
+Owner approved exact R12 scope/window/SDK exception. Decision APP013_P08_BINDING_RECOVERY_OPERATION_20261109.json now true; operation36949e08-5de6-4e7d-8c9c-eccc0ef441ec, source759a130. Start09:05–before09:15EST; reads09:20, closeout09:40, purge09:50. No launch or private envelope yet. Implementer prepares source-bound manual launcher and verifies actual authority/time before one attempt; credentials entered only by owner in hidden Terminal. Separate full qualification remains unauthorized. 3A OPEN; accepted4/8; no scope deviation.
+
 ## November 9 — attended R12 recovery prepared; R11 expired unapproved
 
 Owner confirmed Terminal availability. Fresh R12 proposal APP013_P08_BINDING_RECOVERY_OPERATION_R12_20261109.md is qualification-only, pending approval, externalReadAuthorized=false. November9 9:05–9:50a.m.EST; start before9:15, work reads end9:20, closeout9:40, purge9:50. Operation 36949e08-5de6-4e7d-8c9c-eccc0ef441ec; prospective qualification 1383bfb5-f443-45e9-92b6-8bbf381a4996; source759a130; scope b9a80824368d7fbaaec6abf28483d69093f34f01f62ea1edee7cce289f66d38a. Same2CLI/3SQL/SDK exception and bounded hidden input; no provider action or private input created. R11 expired pending false; its four owned roots absent at 2026-11-09T13:52:29.182596+00:00.
