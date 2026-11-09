@@ -1,0 +1,18 @@
+{
+  "verifiedAt": "2026-11-09T18:26:25.749879+00:00",
+  "sourceCommit": "99a4ef3aa340f5a4272787300dc3c499ea88a0aa",
+  "scopeSha256": "b7f36f834ad6cab51372f56ad0d3051a2fd6998e9a80eb52ecf662a34d9eafd3",
+  "cleanupScopeSha256": "3e368ade6b826183388545c5371ae9fd20f25f0ac84a9fdb0216c00e63735c9c",
+  "operationId": "19eb6efa-32f2-41af-b029-48cbca722b77",
+  "checks": {
+    "actualCommittedSourcesDependenciesSDK": "PASS",
+    "actualDynamicConfiguration": "PASS",
+    "actualCapabilityProposedAuthorityStart": "PASS",
+    "bindingFingerprints": "PASS",
+    "freshRootAbsent": "PASS",
+    "recoveryGuardPresent": true
+  },
+  "providerCalls": 0,
+  "privateEnvelopeWritten": false,
+  "livePrerequisites": "UNKNOWN"
+}
