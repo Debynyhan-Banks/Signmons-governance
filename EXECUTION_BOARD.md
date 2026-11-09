@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## November 9 — owner/project-only diagnostic proposal complete
+
+Owner agreed to prepare smaller diagnostic after5f85c56 review. APP013_P08_OWNER_PROJECT_DIAGNOSTIC_PROPOSAL_20261109.md defines one existing-module local capability/entry, two unchanged SDK descriptors(owner then project),0SQL/HTTPS/cache/token-print, no password, existing30second/2second cleanup cap and explicit future SDK refresh/cache/internal-retry exception. Strict committed source/scope/window authority and durable sanitized receipts; no raw project/target/credential persistence. Hard-crash process ownership stays UNKNOWN; no unsafe kill/replay. Proposed, NOT IMPLEMENTED or scheduled; no external authority.
+
+Completed concrete finite contract/alternatives/test/privacy/recovery/readiness/rollback card. Owner local implementation approval is next; implementer then verifies actual new boundary before any separately approved live packet. Success would establish only bounded owner/project responsiveness, not explain Q5 or qualify permissions/customer payment. Prior cleanup remains verified.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation implemented; bounded change proposed before coding.
+
 ## November 9 — Q5 local timeout review complete; no code fix established
 
 APP013_P08_Q5_TIMEOUT_REVIEW_20261109.md and backend P08_Q5_TIMEOUT_REVIEW_20261109.json confirm actual30second per-command deadline with2second cleanup reserve. Project reserved15:16:40.238Z with499.762seconds remaining read budget;28013ms timeout matches expected28second work cap. Two owned local timeout/cleanup tests PASS; no SDK/provider/cache/log access or implementation. Actual stall cause remains UNKNOWN; Q4 permission check not reached. No timeout increase or replay justified.
