@@ -1,5 +1,9 @@
 # APP-013 / 3A / P08 — Q4 exact qualification proposal
 
+## November 9 — exact Q4 approval recorded; launch pending
+
+Owner “i approve” approves efca776 Q4 work8f35aab382ce5c4f92876d3937bc6615cba475c8085a2bc5bdb78469969a76af and cleanup97d90430958983d346db48985182c66be4a9a21f164fc72df72f43556cd19d55. Operation1383bfb5-f443-45e9-92b6-8bbf381a4996, source759a130. Same27CLI/20HTTPS/4SQL/1cache and stated SDK exception;09:15 start,before09:25 cutoff,reads09:30,closeout09:40,purge09:50EST. Approval is not execution. R12 guard remains original deadline; no extension. Implementer prepares actual-clock/source/authority-checked manual launcher and trusted handoff; owner enters hidden password. No native/payment authority. Next result exact qualification status plus independent cleanup/private purge;3A OPEN,accepted4/8. No scope deviation.
+
 Status PENDING_OWNER_APPROVAL; qualification-only, not runtime execution-ready. R12 operation36949e08-5de6-4e7d-8c9c-eccc0ef441ec succeeded: HANDOFF_RETAINED,failure=null,residuals=[],twoCLI/threeSQL reservations,normal and independent resource closeout verified. Fingerprints revalidated with trusted helper; request absent; guardPID43816 present via signal zero. Private identifiers remain solely under original9:50p.m. purge deadline; no raw display/public copy. Backend P08_BINDING_RECOVERY_R12_HANDOFF_20261109.json. Earlier consumed/expired evidence unchanged. Source759a130 and November4 163-test local result reused; no source change or fresh runtime-test claim.
 
 ## Exact approval requested
