@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## November 9 — attended R12 recovery prepared; R11 expired unapproved
+
+Owner confirmed Terminal availability. Fresh R12 proposal APP013_P08_BINDING_RECOVERY_OPERATION_R12_20261109.md is qualification-only, pending approval, externalReadAuthorized=false. November9 9:05–9:50a.m.EST; start before9:15, work reads end9:20, closeout9:40, purge9:50. Operation 36949e08-5de6-4e7d-8c9c-eccc0ef441ec; prospective qualification 1383bfb5-f443-45e9-92b6-8bbf381a4996; source759a130; scope b9a80824368d7fbaaec6abf28483d69093f34f01f62ea1edee7cce289f66d38a. Same2CLI/3SQL/SDK exception and bounded hidden input; no provider action or private input created. R11 expired pending false; its four owned roots absent at 2026-11-09T13:52:29.182596+00:00.
+
+Actual committed sources/dependencies/35SDK hashes, dynamic config/environment, proof-only capability and fresh roots PASS; readiness APP013_P08_BINDING_RECOVERY_R12_READINESS_20261109.json. November4 runtime proof remains historical. Completed packet/readiness; owner/credential/DB roles must approve exact operation; implementer then checks actual command/source/authority/time before one manual Terminal attempt and independent cleanup/purge. Live identifiers/permissions/client usability UNKNOWN. Separate qualification and connected Sandbox payment/owner acceptance remain. 3A OPEN; accepted1A/1B/2A/2B4/8; R1newlyclosed0/27. No scope deviation.
+
 ## November 4 — corrected-source R11 recovery prepared
 
 Owner requests continuation after approved759a130 projection fix. R11 APP013_P08_BINDING_RECOVERY_OPERATION_R11_20261104.md proposes today5:10–5:55p.m.EST,start before5:20,reads5:25,closeout5:45,purge5:55. New operation0aa1ea2c-1921-425e-8867-2c856e2426ca,qualification4cd61e45-9335-44fd-afc8-659d58de0294,source759a130,scope65df555163e4952112e4dc2ea97aa346388e6e701c8ddf971b695ba520c0291b. Same2CLI/3SQL/SDK exception/hidden120-second capped input/45minute retention. Pending false decision; R10 consumed authority preserved; no raw identifiers/private input/provider action.
