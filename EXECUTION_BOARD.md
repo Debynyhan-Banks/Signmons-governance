@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## November 9 — D1 owner/project observed; independent closeout verified
+
+Approvedb2d9a0d/sourcec21dfde D1 operationaa005972-1b7f-4c19-933d-4cc63ad601a7 executed once inside approved window. OWNER_PROJECT_OBSERVED,failure null,ownerMatched/projectMatched true;owner395ms,project611ms.2CLI reservations,0SQL/directHTTPS/explicitcache/token-print. Normal process cleanup true;independent local closeout OWNER_PROJECT_CLOSED,residuals empty. No raw response/project number/credential persisted; only nonsecret authority/receipts retained. SDK internal refresh/cache/retries governed by approved exception; counts not provider-internal request totals. Backend P08_OWNER_PROJECT_D1_RESULT_20261109.json.
+
+Completed all D1 launch/read/closeout items. The current SDK path responded within its original bounds; this does not prove why Q5 timed out or resolve Q4 permission failure. No candidate/full qualification/native/payment action authorized. Q5/R13 old private cleanup unchanged. Next implementer: if continuation requested, assess smallest source-bound evidence proposal for the remaining permission check; do not automatically repeat full recovery/qualification or extend D1. Owner/credential role approves any new external scope separately. Same-job Sandbox payment and owner acceptance remain;3A OPEN,accepted1A/1B/2A/2B4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 9 — exact D1 approval recorded; launch pending
 
 Owner “i approve” approvesaa44aa3 exact D1 scope79fd24626d75609e9b2decac9e233ca5d34acc9904c3d8565c900168cf8d1305,operationaa005972-1b7f-4c19-933d-4cc63ad601a7,sourcec21dfde. Start10:50–before10:55EST,reads10:58,closeout11:00. Two SDK owner/project commands only,explicit SDK refresh/cache/internal-retries exception;0SQL/directHTTPS/cache/token-print,password not needed. Hard-crash process history UNKNOWN limitation accepted with exact proposal. No launch yet. Implementer rechecks actual source/config/authority/time, runs once, then local independent closeout. No automatic later qualification.3A OPEN,accepted4/8. No scope deviation.
