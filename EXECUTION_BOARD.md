@@ -1,5 +1,13 @@
 # Signmons Execution Board
 
+## November 9 — P1 HTTP400 observed; permission set unknown; cleanup verified
+
+Approved4dde500/source4f7c377 P1 operationc5a6f1fa-d5d5-4eff-b71c-eafc178407b9 ran once in exact window. PROJECT_PERMISSIONS_UNQUALIFIED,OWNER_PERMISSION_NOT_READY;diagnostic HTTP_REFUSED,httpStatus400,missingPermissions null. Owner/project matched;SDK/cache token matched and expiry valid.3CLI/1cache/1HTTPS reservations,0SQL;not provider-internal request totals. Exact provider error body was intentionally not retained; missing permissions and reason for400 UNKNOWN. Do not infer a missing role or grant IAM from this result.
+
+Normal process cleanup verified;independent local PROJECT_PERMISSIONS_CLOSED,residuals empty,candidate null,executionReady false. No raw token/project number/response persisted;only nonsecret authority/receipts retained. Backend P08_PROJECT_PERMISSION_P1_RESULT_20261109.json. No retry,additional provider read,configuration or permission change. Consumed P1 cannot replay.
+
+Completed all P1 work and independent closeout. Next implementer, if continuation requested: local exact request/permission-list/API-contract review to identify demonstrated invalid-request cause or propose smallest safe evidence gap; no raw log retrieval or request retry. Owner separately approves any correction/new external scope. Actual project permissions remain UNKNOWN;full qualification and same-job Sandbox payment/owner acceptance remain.3A OPEN,accepted1A/1B/2A/2B4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 9 — P1 exact approval recorded; launch pending
 
 Owner “i approve” approves8b02aa3 exact P1 scopefd1b0cac4626b03b07cd28c2fe235b0bd70e6550550477bee3dc13a22dff7661,operationc5a6f1fa-d5d5-4eff-b71c-eafc178407b9,source4f7c377. Start11:15–before11:20EST,reads11:23,closeout11:25.3SDK owner/project/private token,1boundedcache(twoSELECTs),1project-permissionsHTTPS,0SQL/password. Stated SDK exception/hard-crash UNKNOWN accepted. No launch yet. Implementer actual-clock/source/authority/config check then one attempt and independent local closeout. No automatic IAM grant/full qualification/payment.3A OPEN,accepted4/8. No scope deviation.
