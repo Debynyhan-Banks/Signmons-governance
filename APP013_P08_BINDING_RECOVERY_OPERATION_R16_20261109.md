@@ -1,6 +1,6 @@
-# APP-013 / 3A / P08 — R16 recovery draft
+# APP-013 / 3A / P08 — R16 recovery proposal
 
-PENDING_AVAILABILITY_AND_EXACT_OWNER_APPROVAL. User requested preparation after cache error translation99a4ef3. No new external authority inferred. Prior Q7/R15 consumed/purged. Existing recovery unchanged;full qualification needs fingerprint-bound identifiers again. No implementation expansion or new helper.
+PENDING_EXACT_OWNER_APPROVAL. User requested preparation after cache error translation99a4ef3. No new external authority inferred. Prior Q7/R15 consumed/purged. Existing recovery unchanged;full qualification needs fingerprint-bound identifiers again. No implementation expansion or new helper.
 
 ## Exact proposed scope
 
@@ -21,3 +21,5 @@ Verified2026-11-09T18:11:44.704611+00:00: actual committed source/dependencies/3
 Checklist: confirm attendance;owner/credential/DB exact approval;archive consumedR15 and bind committed fresh decision;implementer actual clock/source/config/authority preflight;manual one-attempt launch;verify HANDOFF_RETAINED or precise stop and normal/independent resource cleanup;separately approve full qualification if exact binding succeeds;verify raw purge/guard exit by2:10 regardless. No new source files/tests required. Documentation baseline/consistency/governance/architecture/whitespace checks required before finalization. Preserve unrelated AGENTS.md.
 
 Observable finish: truthful recovery result plus verified resource cleanup and private absence. HANDOFF_RETAINED alone is not final cleanup. Rollback/disabled:pending false refuses entry;after start only existing cleanup/purge,never replay. Owner/credential/DB roles own live allowance;implementer owns preflight/evidence/cleanup. Full qualification and same-job Sandbox/negative/replay/owner acceptance remain;3A OPEN,accepted1A/1B/2A/2B4/8,R1newlyclosed0/27. No scope deviation.
+
+Owner confirmed November9 1:25–2:10p.m.EST attendance only. Consumed R15 packet/decision archived byte-for-byte; canonical packet and false decision now identify R16. Exact approval remains pending.
