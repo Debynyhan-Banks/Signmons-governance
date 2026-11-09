@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## November 9 — Q4 permission diagnostic gap inspected; local correction proposed
+
+Q4 current parser collapses HTTP status, malformed permissions and permission mismatch into OWNER_PERMISSION_NOT_READY; exact cause remains UNKNOWN. Official Google response contract returns a subset. Existing synthetic missing-permission refusal/cleanup test PASS today; no provider read or code change. APP013_P08_PERMISSION_DIAGNOSTICS_PROPOSAL_20261109.md offers bounded allowlisted permission outcomes through existing seams, preserving predicates, budgets, privacy and cleanup. Pending owner local implementation approval; no future live authority. Q4/R12 fully closed/purged. Completed diagnosis and finite card; next owner approves local correction or defers, implementer then tests before any live proposal.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation implemented; bounded correction proposed before coding.
+
 ## November 9 — Q4 consumed at OWNER_PERMISSION_NOT_READY; cleanup complete
 
 Approved3ce6b64/source759a130 Q4 operation1383bfb5-f443-45e9-92b6-8bbf381a4996 ran once: CURRENT_EVIDENCE_UNQUALIFIED, OWNER_PERMISSION_NOT_READY, candidate null, executionReady false, liveObserved true, residuals empty. Reservations27CLI/7HTTPS/2SQL/1cache, not provider-internal request counts. Fixed source order infers project_permissions failed after the first six service checks passed. Exact HTTP status/body/missing permissions UNKNOWN: the predicate also rejects response shape/duplicates/non200, so no specific missing permission or IAM change is established. Remaining two service checks and later qualification groups not established. No retry/refetch/provider logs or configuration change.
