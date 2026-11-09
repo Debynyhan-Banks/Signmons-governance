@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "operationId": "9105a995-cbc1-4737-84b7-c6bd884550b5",
+  "operationId": "3943619c-f73a-4af9-b35d-4a2db4016be0",
   "database": {
     "database": "neondb",
     "host": "ep-jolly-flower-ayc6w9hv.c-5.us-east-2.aws.neon.tech",
@@ -8,16 +8,16 @@
     "user": "neondb_owner"
   },
   "window": {
-    "start": "2026-11-09T17:05:00Z",
-    "cutoff": "2026-11-09T17:15:00Z",
-    "readEnd": "2026-11-09T17:20:00Z",
-    "closeoutEnd": "2026-11-09T17:30:00Z",
-    "purgeEnd": "2026-11-09T17:40:00Z"
+    "start": "2026-11-09T17:45:00Z",
+    "cutoff": "2026-11-09T17:55:00Z",
+    "readEnd": "2026-11-09T18:00:00Z",
+    "closeoutEnd": "2026-11-09T18:10:00Z",
+    "purgeEnd": "2026-11-09T18:20:00Z"
   },
-  "sourceCommit": "74eae7123565fa71419f76b2a4a194c3cd8101b8",
-  "manifestSha256": "c4517fbdd7b8bcfcc16f67ea72da214d8f456bef241373e2d426762d442450aa",
-  "qualificationScopeSha256": "c23b6a4b6c67c7f8728b4dd3e5df2830051d47b50c7588c7dbcb3d0d3a9b926b",
-  "nativeScopeSha256": "048ac213d68f1070d70f81a70c3bef1964545a1453137ce806d9637c7fbed5e5",
+  "sourceCommit": "0625fbb6608704d408274baaa3c625434db841f2",
+  "manifestSha256": "0d11b827594c8161fc9480023f206d73f53f7245f06554a0748a293bd78d0050",
+  "qualificationScopeSha256": "f480193a83ac4eb57dd5a25278897a20d9ee3432e7fdff956f6bd0523d74e103",
+  "nativeScopeSha256": "0c6fe636971a2f26dc2ae20bc3ac3eb93f312bb8401644bd5e4a8331e6677acc",
   "limits": {
     "sql": 1,
     "totalSql": 4

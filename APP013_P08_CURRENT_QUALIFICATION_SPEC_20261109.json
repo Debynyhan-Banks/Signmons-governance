@@ -1,22 +1,22 @@
 {
-  "recoveryId": "b61baf5a-c14c-40c0-9801-e37b0ee83a0a",
-  "qualificationId": "9105a995-cbc1-4737-84b7-c6bd884550b5",
-  "prospectiveOperationId": "b536b02c-6656-4700-a259-4a303840de4b",
-  "sourceCommit": "74eae7123565fa71419f76b2a4a194c3cd8101b8",
-  "manifestSha256": "c4517fbdd7b8bcfcc16f67ea72da214d8f456bef241373e2d426762d442450aa",
+  "recoveryId": "473bb707-3375-4a3a-860b-a27474448017",
+  "qualificationId": "3943619c-f73a-4af9-b35d-4a2db4016be0",
+  "prospectiveOperationId": "3c32f1fb-45d5-498c-99aa-fcc51b5523cf",
+  "sourceCommit": "0625fbb6608704d408274baaa3c625434db841f2",
+  "manifestSha256": "0d11b827594c8161fc9480023f206d73f53f7245f06554a0748a293bd78d0050",
   "window": {
-    "start": "2026-11-09T17:05:00Z",
-    "cutoff": "2026-11-09T17:15:00Z",
-    "readEnd": "2026-11-09T17:20:00Z",
-    "closeoutEnd": "2026-11-09T17:30:00Z",
-    "purgeEnd": "2026-11-09T17:40:00Z"
+    "start": "2026-11-09T17:45:00Z",
+    "cutoff": "2026-11-09T17:55:00Z",
+    "readEnd": "2026-11-09T18:00:00Z",
+    "closeoutEnd": "2026-11-09T18:10:00Z",
+    "purgeEnd": "2026-11-09T18:20:00Z"
   },
   "prospectiveWindow": {
-    "start": "2026-11-09T17:20:00Z",
-    "cutoff": "2026-11-09T17:21:00Z",
-    "workEnd": "2026-11-09T17:22:00Z",
-    "cleanupEnd": "2026-11-09T17:37:00Z",
-    "purgeEnd": "2026-11-09T17:40:00Z"
+    "start": "2026-11-09T18:00:00Z",
+    "cutoff": "2026-11-09T18:01:00Z",
+    "workEnd": "2026-11-09T18:02:00Z",
+    "cleanupEnd": "2026-11-09T18:17:00Z",
+    "purgeEnd": "2026-11-09T18:20:00Z"
   },
   "prospectiveLimits": {
     "cli": 180,
