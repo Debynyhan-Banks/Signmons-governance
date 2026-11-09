@@ -1,5 +1,13 @@
 # APP-013 / 3A / P08 — Q4 exact qualification proposal
 
+## November 9 — Q4 consumed at OWNER_PERMISSION_NOT_READY; cleanup complete
+
+Approved3ce6b64/source759a130 Q4 operation1383bfb5-f443-45e9-92b6-8bbf381a4996 ran once: CURRENT_EVIDENCE_UNQUALIFIED, OWNER_PERMISSION_NOT_READY, candidate null, executionReady false, liveObserved true, residuals empty. Reservations27CLI/7HTTPS/2SQL/1cache, not provider-internal request counts. Fixed source order infers project_permissions failed after the first six service checks passed. Exact HTTP status/body/missing permissions UNKNOWN: the predicate also rejects response shape/duplicates/non200, so no specific missing permission or IAM change is established. Remaining two service checks and later qualification groups not established. No retry/refetch/provider logs or configuration change.
+
+Normal and independent cleanup completed; R12 final authoritative closeout PRIVATE_PURGE_VERIFIED,onTime true,rawFilesAbsent true,residuals empty,resourceCloseout verified. Both owned private slots absent; guardPID43816 absent via signal zero. Backend evidence P08_Q4_QUALIFICATION_RESULT_20261109.json retains sanitized result,27CLI diagnostics and cleanup. No provider calls during reconciliation; old packets consumed and cannot replay.
+
+Completed Q4 attempt and final cleanup. Next implementer: inspect the existing project-permission request/response contract and propose the smallest diagnostic or correction only if the inspected gap warrants it. Actual missing permission remains UNKNOWN; owner/admin role must approve any fresh external diagnostic or IAM change separately. No authority to grant broad roles or rerun. Same-job Sandbox payment/negative/replay evidence and owner acceptance remain;3A OPEN,accepted1A/1B/2A/2B4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 9 — exact Q4 approval recorded; launch pending
 
 Owner “i approve” approves efca776 Q4 work8f35aab382ce5c4f92876d3937bc6615cba475c8085a2bc5bdb78469969a76af and cleanup97d90430958983d346db48985182c66be4a9a21f164fc72df72f43556cd19d55. Operation1383bfb5-f443-45e9-92b6-8bbf381a4996, source759a130. Same27CLI/20HTTPS/4SQL/1cache and stated SDK exception;09:15 start,before09:25 cutoff,reads09:30,closeout09:40,purge09:50EST. Approval is not execution. R12 guard remains original deadline; no extension. Implementer prepares actual-clock/source/authority-checked manual launcher and trusted handoff; owner enters hidden password. No native/payment authority. Next result exact qualification status plus independent cleanup/private purge;3A OPEN,accepted4/8. No scope deviation.
