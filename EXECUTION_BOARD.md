@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## November 9 — R15 draft prepared; attendance pending
+
+User requested continuation after approved key-absence correction0625fbb. Prior R14/Q6 private inputs confirmed absent; no retained authority can replay. Draft APP013_P08_BINDING_RECOVERY_OPERATION_R15_20261109.md proposes12:35–1:20p.m.EST,start before12:45,reads12:50,resource closeout1:10,purge1:20. Exact2SDK/3SQL,SDK exception,hidden Terminal password and45minute retention;full qualification separate. Operation473bb707-3375-4a3a-860b-a27474448017,qualification3943619c-f73a-4af9-b35d-4a2db4016be0,scope1108f2f0b1648be3f088c071eda294259876bb06d8956cc8e2827a7918cb5b73. Separate draft packet/false decision;consumed canonical R14 unchanged.
+
+Readiness17:27:59Z: actual committed sources/dependencies/SDK/config/capability with proposed authority/start PASS;new roots/prior private inputs absent. Prior172runtime+25governance proof reused,not rerun/live evidence. No provider/cache/private input. Completed draft/readiness;waiting owner availability reply for proposed45minute window before final exact approval request. Implementer must not launch under generic preparation approval. Other live facts UNKNOWN;full qualification/Sandbox/owner acceptance remain.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 9 — approved key-absence correction complete locally
 
 Owner “i approve” authorizedbd69a87 before coding. CurrentAdapter now strictly requires pinned key_absence,integer HTTP404/code404,NOT_FOUND and recognized typed error fields; documented optional message/details accepted without persistence. Existing minimal shape retained;malformed/foreign/conflicting/denied/present responses refuse. Two new actualNativeIO HTTPError-to-adapter tests cover four positive variants plus negative types/status/JSON/oversize,request count/closure,stop ordering,privacy and independent cleanup. Backend P08_KEY_ABSENCE_CORRECTION_20261109.md records card/approval/source/tests. Unrelated AGENTS.md preserved.
