@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## November 9 — correction accepted; local preparation checks pass
+
+Owner "i approve proceed" accepts f939224 local correction. APP013_P08_CONSOLIDATED_BOUNDARY_AUDIT_20261109.md records fresh actual committed source/dependency/SDK hash and config/environment PASS; no provider/cache/credential access. No further local code proposed. Prior206test results remain local evidence. Current remote facts UNKNOWN. Q8/R16 consumed/purged; live hold remains pending exact new authority. Next: attendance with preparation lead time,then concrete existing bounded recovery packet for review; no window/password request or execution yet. Full qualification/Sandbox payment acceptance remain;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 9 — approved consolidated boundary correction complete locally
 
 Owner approved the consolidated audit proposal before implementation. Backend f939224 (manifest9b0dd95a2549d0af4a42f90c6d28a1b56da4b99d8c9fb9a288830ef078fd675c) P08_CONSOLIDATED_BOUNDARY_CORRECTION_20261109.md records strict Firebase claims/duplicate-key/type rejection, nested database checks, fixed retired-role exception translation and failureStage in existing result. Finalization failures clear candidates; unsafe inventory/deadline still refuse publication. Pins, descriptors, limits, no-retry and independent cleanup unchanged. Eight new test methods plus strengthened actual PostgreSQL ACL test; full179tests PASS82.136s,then2new focused byte-boundary/preparation tests PASS(runtime unchanged),181distinct local tests plus25governance=206PASS. TLS server reaped/scratch absent/providerCalls0. No fixture promoted to live evidence; Q8 exact cause UNKNOWN.
