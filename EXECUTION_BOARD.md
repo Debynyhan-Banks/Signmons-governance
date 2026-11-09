@@ -1,5 +1,13 @@
 # Signmons Execution Board
 
+## November 9 — Q5 consumed at project SDK timeout; final cleanup complete
+
+Approvedae8b453/source710e774 Q5 operation1506217a-894e-4a98-93e3-b80e5282eef6 ran once: CURRENT_EVIDENCE_UNQUALIFIED,PROCESS_TIMEOUT,candidate null,executionReady false,liveObserved true,residuals empty. Exact CLI diagnostics:owner RETURNED361ms,config RETURNED213ms,project FAILED28013ms/PROCESS_TIMEOUT. Reservations3CLI/0HTTPS/2SQL/0cache, not provider-internal request counts. Permission boundary not reached; no permission diagnostics. Underlying SDK/network/provider timeout cause UNKNOWN; Q4 permission cause remains UNKNOWN. No retry or timeout increase.
+
+Normal and independent cleanup completed. R13 authoritative final closeout PRIVATE_PURGE_VERIFIED,onTime true,rawFilesAbsent true,residuals empty,resourceCloseout verified. Both private slots absent;guard68539 absent via signal zero. Backend evidence P08_Q5_QUALIFICATION_RESULT_20261109.json. No extra provider read during reconciliation. Consumed authority cannot replay and no retained raw identifier remains.
+
+Completed authorized attempt and closeout. Next implementer: local source/deadline/SDK timeout-contract review using exact descriptor evidence, if continuation requested; do not infer missing permission, authentication failure or network cause. Any new live diagnostic, changed timeout/budget or correction requires a bounded proposal and applicable owner/credential/provider approval. No automatic recovery. Same-job Sandbox payment/negative/replay and owner acceptance remain;3A OPEN,accepted1A/1B/2A/2B4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 9 — Q5 exact approval recorded; launch pending
 
 Owner “i approve” approves736547a exact Q5 workd545c5239b1f57336cd861ba8f627785ade2d098d688a9b51d57f20138f32cf9 and cleanup6ff798e435cc12d162371db8cede5281ba0abe12ee3092c9dbbdf15037584813. Operation1506217a-894e-4a98-93e3-b80e5282eef6,source710e774. Start10:10–before10:20EST,reads10:25,closeout10:35,purge10:45;27CLI/20HTTPS/4SQL/1cache and stated SDK exception. R13 guard68539 present. No qualification launch or private transfer yet. Implementer prepares actual-clock/source/committed-authority-checked launcher; owner enters hidden password. Only one attempt then independent cleanup and authoritative purge. No native/payment/IAM authority.3A OPEN,accepted4/8. No scope deviation.
