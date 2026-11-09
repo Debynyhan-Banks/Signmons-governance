@@ -1,5 +1,13 @@
 # Signmons Execution Board
 
+## November 9 — approved project-permission diagnostic complete locally
+
+Owner approved58ddf03 before coding. Backend4f7c377 adds distinct --diagnose-project-permissions/--closeout-project-permissions inside existing module. Exact3CLI owner/project/token,1boundedcache(twoSELECTs),1current15-permission HTTPS,0SQL/password; distinct committed approval/limits/root keep D1 unchanged. SDK/cache token equality+expiry gate before HTTP; safe source-requested-only missing list/status/fixed outcome, no raw credentials/project number/body persisted. Shared sanitizer preserves full qualifier semantics. Exclusive reservations/config/source/deadline gates; independent local closeout/hard-crash UNKNOWN preserved. No IAM/payment/native candidate.
+
+Twelve new tests PASS; final170runtime/local+25governance=195PASS. Actual owned subprocess+synthetic SQLite+mocked HTTP, cache expiry/sidecar/token mismatch, malformed/foreign/non200/oversize, source/authority separation, write failure/config/time, public SIGKILL/fresh closeout covered alongside existing D1/full qualifier regressions. OwnedTLS server reaped,scratch absent;providerCalls0. Architecture,manifest,frozen baseline,complete consistency,whitespace PASS. Backend P08_PROJECT_PERMISSION_DIAGNOSTIC_CARD_20261109.md and P08_PROJECT_PERMISSION_DIAGNOSTIC_RESULT_20261109.json.
+
+All approved local checklist items complete. No live packet/window/authority/provider action created. Next implementer, if requested: source-bound exact no-password project-permission packet with3CLI/1HTTPS/1cache/0SQL, SDK exception and hard-crash limitation; owner/credential role approves separately. Actual permissions and Q5 stall cause UNKNOWN; earlier D1/Q5/R13 closeout unchanged. Same-job Sandbox journey/owner acceptance remain;3A OPEN,accepted1A/1B/2A/2B4/8,R1newlyclosed0/27. No scope deviation beyond approved extension.
+
 ## November 9 — exact project-permission diagnostic extension proposed
 
 After successful D1, owner requested next proposal. Existing legacy --read uses older10-permission list and6HTTPS; full qualifier exact15-permission path requires unrelated recovery/SQL. APP013_P08_PROJECT_PERMISSION_DIAGNOSTIC_PROPOSAL_20261109.md proposes distinct existing-module mode reusing D1 authority/lifecycle, SDK token/cache equality+expiry, current project descriptor and bounded permission sanitizer:3CLI(owner/project/token),1HTTPS,1cache(two fixed SELECTs),0SQL/password. D1 limits/approval unchanged; new exact decision required. No implementation, live packet or provider call.
