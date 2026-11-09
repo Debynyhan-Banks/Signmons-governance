@@ -1,0 +1,18 @@
+{
+  "verifiedAt": "2026-11-09T16:47:30.244217+00:00",
+  "sourceCommit": "74eae7123565fa71419f76b2a4a194c3cd8101b8",
+  "scopeSha256": "6d3e451534c51e146f74ec9ed74207b2c8cc93b4ace57736dbb144f72138a972",
+  "operationId": "b61baf5a-c14c-40c0-9801-e37b0ee83a0a",
+  "qualificationId": "9105a995-cbc1-4737-84b7-c6bd884550b5",
+  "checks": {
+    "actualCommittedSourceDependenciesSDK": "PASS",
+    "actualDynamicConfigEnvironment": "PASS",
+    "actualExternalCapabilityProposedAuthorityAndStartOnly": "PASS",
+    "freshRootsAbsent": "PASS",
+    "priorPrivateInputsAbsent": "PASS"
+  },
+  "providerCalls": 0,
+  "privateInputCreated": false,
+  "remoteFacts": "UNKNOWN",
+  "attendance": "OWNER_CONFIRMED_AVAILABLE_NOW_45_MINUTES_WITH_PREPARATION"
+}
