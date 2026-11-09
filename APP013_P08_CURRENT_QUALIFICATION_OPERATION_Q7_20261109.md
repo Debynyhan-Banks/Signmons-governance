@@ -1,5 +1,9 @@
 # APP-013 / 3A / P08 — Q7 corrected-source qualification proposal
 
+## November 9 — Q7 exact approval recorded; manual launch pending
+
+Owner “i approve” approves8f259a8 Q7 workf480193a83ac4eb57dd5a25278897a20d9ee3432e7fdff956f6bd0523d74e103 and cleanup75abb7a1fa67ac8638d876320ba6d7d3d6f70706549b9a1b983df1c04d2282bc. Operation3943619c-f73a-4af9-b35d-4a2db4016be0,source0625fbb. Start12:45–before12:55p.m.EST,reads1:00,closeout1:10,purge1:20;27SDK/20HTTPS/4SQL/1cache,SDK exception and hidden Terminal attendance approved. Clock17:40:02Z before start. No private transfer/launch. Implementer verifies committed authority/source/config/fingerprints/guard now,with proposed-start schema only;manual launcher enforces actual clock at entry. Owner runs once in window. Independent cleanup/authoritative purge mandatory;no retry/native/payment.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 PENDING_OWNER_APPROVAL; qualification-only. R15 retained handoff/fingerprints/resource cleanup/guard verified. Source0625fbb includes approved key-absence parser correction;172runtime+25governance PASS are prior same-source proof,not new live facts. Q6 consumed/purged and archived unchanged. No private envelope transfer or qualification launch.
 
 ## Exact approval requested

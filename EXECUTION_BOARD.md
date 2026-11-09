@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## November 9 — Q7 exact approval recorded; manual launch pending
+
+Owner “i approve” approves8f259a8 Q7 workf480193a83ac4eb57dd5a25278897a20d9ee3432e7fdff956f6bd0523d74e103 and cleanup75abb7a1fa67ac8638d876320ba6d7d3d6f70706549b9a1b983df1c04d2282bc. Operation3943619c-f73a-4af9-b35d-4a2db4016be0,source0625fbb. Start12:45–before12:55p.m.EST,reads1:00,closeout1:10,purge1:20;27SDK/20HTTPS/4SQL/1cache,SDK exception and hidden Terminal attendance approved. Clock17:40:02Z before start. No private transfer/launch. Implementer verifies committed authority/source/config/fingerprints/guard now,with proposed-start schema only;manual launcher enforces actual clock at entry. Owner runs once in window. Independent cleanup/authoritative purge mandatory;no retry/native/payment.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 9 — R15 retained/verified; Q7 qualification proposed
 
 R15 HANDOFF_RETAINED,failure null,residuals empty;resource-closeout verified. Existing hash-verified helper revalidated private bindings in memory;guard50121 present via signal zero. No private qualification envelope transferred. Backend P08_BINDING_RECOVERY_R15_HANDOFF_20261109.json;retention ends1:20p.m.EST even if no approval follows.
