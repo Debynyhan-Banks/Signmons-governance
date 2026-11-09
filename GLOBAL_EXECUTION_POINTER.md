@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## November 9 — R17 exact recovery packet prepared; approval pending
+
+Owner available after preparation. R17 proposes November9 3:15–4:00p.m.EST,start before3:25,reads3:30,resource closeout3:50,purge4:00. Source f939224,operation8f26afaf-7107-471f-8316-7c55b3fd84a6,qualification2b76a506-0d7a-41d0-98af-3ae63f3b38b9,scopea34a086d46f756a383f991fed1d2484e654cb2d3d25238eb5daeca18286e7460. Existing2SDK/3SQL,SDK exception,hidden Terminal password,45minute private retention;no directHTTPS/cache/token-print. APP013_P08_BINDING_RECOVERY_OPERATION_R17_20261109.md and readiness JSON record actual committed source/SDK/config/capability PASS using proposed decision/start only;fresh roots/prior inputs absent. Canonical approval false;R16 archived unchanged. No live action.
+
+Completed exact packet/readiness;next owner/credential/DB exact approval,then actual-clock preflight/manual one attempt/independent cleanup/authoritative purge. Full qualification separate;no automatic retry. Remote facts UNKNOWN.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 9 — correction accepted; local preparation checks pass
 
 Owner "i approve proceed" accepts f939224 local correction. APP013_P08_CONSOLIDATED_BOUNDARY_AUDIT_20261109.md records fresh actual committed source/dependency/SDK hash and config/environment PASS; no provider/cache/credential access. No further local code proposed. Prior206test results remain local evidence. Current remote facts UNKNOWN. Q8/R16 consumed/purged; live hold remains pending exact new authority. Next: attendance with preparation lead time,then concrete existing bounded recovery packet for review; no window/password request or execution yet. Full qualification/Sandbox payment acceptance remain;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
