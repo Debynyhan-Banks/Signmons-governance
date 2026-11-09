@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## November9 — Q10 local role diagnosis complete; focused DB decision remains
+
+APP013_P08_Q10_ROLE_DIAGNOSIS_20261109.md traces semantic ROLE_NOT_READY and compares local fixtures with historical provisioning/closeout. Disposable tests explicitly revoke database PUBLIC privileges/schema CREATE;inspected historical provisioning/retirement does not perform that step. Existing actual-PostgreSQL test proves PUBLIC CREATE/TEMP can fail readiness without direct ACL drift. Plausible cause only;Q10 exact predicate remains UNKNOWN. Historical CLOSED receipts cover only login/limit/expiry/sessions. No raw observation available,no provider read/code change.
+
+Keep full qualification/recovery on hold. Next bounded responsible decision is SQL-only fixed-role observation with per-predicate safe output,not Google/cache/private-target recovery or another full run. Current full qualifier cannot silently authorize a SQL-only operation;concrete execution/cleanup method must be reviewed before new external action or helper implementation. No blanket PUBLIC revoke or requirement weakening. DB owner owns state correction;implementer owns actionable diagnosis.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November9 — Q10 ROLE_NOT_READY; stop repeat qualification cycle
 
 Owner reports repeated failure and requests an end to inefficiency. Q10 approved8314332/sourcef939224,operation41069a54-f310-403a-9e68-21ad3936a8f8 returned CURRENT_EVIDENCE_UNQUALIFIED,ROLE_NOT_READY,failureStage database,candidate null,executionReady false,residuals empty.27CLI/19HTTPS/4SQL/1cache reservations,not provider-internal request totals. Normal and fresh independent SQL cleanup completed;Firebase not reached. Consolidated error translation now exposes the role-readiness category;this does NOT identify the individual failed predicate or prove that Q8 had the same cause.
