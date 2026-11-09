@@ -1,6 +1,6 @@
 {
   "owner": "Debynyhan Banks",
   "decision": "APPROVE_EXACT_P08_PROJECT_PERMISSION_DIAGNOSTIC",
-  "externalReadAuthorized": true,
-  "scopeSha256": "fd1b0cac4626b03b07cd28c2fe235b0bd70e6550550477bee3dc13a22dff7661"
+  "externalReadAuthorized": false,
+  "scopeSha256": "9c290a2ae77bf65894a0fd0c630ee251c84a2577fe182dc339b7e8471fd1ebbc"
 }

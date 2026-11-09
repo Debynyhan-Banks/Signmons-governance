@@ -1,5 +1,11 @@
 # Session Handoff
 
+## November 9 — P2 corrected permission qualification prepared
+
+APP013_P08_PROJECT_PERMISSION_DIAGNOSTIC_P2_20261109.md proposes one agent-run diagnostic11:40–11:50a.m.EST today;start before11:45,reads end11:48,closeout11:50. Source74eae71,operation4f2b0b16-3bc7-4856-a463-18ff4b7564aa,scope9c290a2ae77bf65894a0fd0c630ee251c84a2577fe182dc339b7e8471fd1ebbc. Exactly3SDK owner/project/private-token commands,1boundedcache(twoSELECTs),1HTTPS corrected14-permission request,0SQL/password; explicit SDK refresh/cache/internal-retry exception and hard-crash UNKNOWN retained. Pending decision false. Consumed P1 decision archived byte-for-byte; no retry under its authority.
+
+Readiness at2026-11-09T16:28:30.662694+00:00: actual source/dependency/35SDK/config/environment checks PASS; real capability checked with explicitly simulated proposed authority/start only; new root absent. Prior170local+25governance PASS are same-source evidence, not rerun/live facts. No external call/cache read/entry. Completed packet/card/readiness; next owner/credential role exact approval, then implementer real-clock/source/authority/config preflight and single attempt/independent local closeout. Current permissions/token usability and prior HTTP400cause UNKNOWN. Full qualification/same-job Sandbox/owner acceptance remain.3A OPEN;accepted1A/1B/2A/2B4/8;R1newlyclosed0/27. No scope deviation.
+
 ## November 9 — approved local permission-name correction
 
 Owner “proceed” approved removal of unsupported apikeys.operations.get and local testing. Backend evidence/APP-013/P08_PERMISSION_NAME_CORRECTION_20261109.md records pre-code card, baseline4f7c377/evidencee50c6e2 and official Google API Keys mapping: operations.get requires serviceusage.operations.get, already present. Current request now has14 names; existing actual NativeIO mocked-HTTP test independently pins all14. Historical15-name packets/receipts and locked dependencies preserved. No live attempt or new external authority.
