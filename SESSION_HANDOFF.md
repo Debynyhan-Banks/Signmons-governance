@@ -1,5 +1,11 @@
 # Session Handoff
 
+## November 9 — exact project-permission diagnostic extension proposed
+
+After successful D1, owner requested next proposal. Existing legacy --read uses older10-permission list and6HTTPS; full qualifier exact15-permission path requires unrelated recovery/SQL. APP013_P08_PROJECT_PERMISSION_DIAGNOSTIC_PROPOSAL_20261109.md proposes distinct existing-module mode reusing D1 authority/lifecycle, SDK token/cache equality+expiry, current project descriptor and bounded permission sanitizer:3CLI(owner/project/token),1HTTPS,1cache(two fixed SELECTs),0SQL/password. D1 limits/approval unchanged; new exact decision required. No implementation, live packet or provider call.
+
+Completed inspected-source/alternatives/finite scope/privacy/cache/interruption/test/rollback card. Next owner local implementation approval; implementer then actual-boundary tests/full regressions before separate live request. Missing permissions remain UNKNOWN; successful diagnostic would not grant IAM or accept full qualification/3A. D1/Q5/R13 closeout unchanged.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation implemented; bounded extension proposed before coding.
+
 ## November 9 — D1 owner/project observed; independent closeout verified
 
 Approvedb2d9a0d/sourcec21dfde D1 operationaa005972-1b7f-4c19-933d-4cc63ad601a7 executed once inside approved window. OWNER_PROJECT_OBSERVED,failure null,ownerMatched/projectMatched true;owner395ms,project611ms.2CLI reservations,0SQL/directHTTPS/explicitcache/token-print. Normal process cleanup true;independent local closeout OWNER_PROJECT_CLOSED,residuals empty. No raw response/project number/credential persisted; only nonsecret authority/receipts retained. SDK internal refresh/cache/retries governed by approved exception; counts not provider-internal request totals. Backend P08_OWNER_PROJECT_D1_RESULT_20261109.json.
