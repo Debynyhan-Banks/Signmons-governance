@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## November 9 — key-absence parser defect identified; correction proposed
+
+Local source/public-documentation review found CurrentAdapter exact whole-response equality rejects documented404/NOT_FOUND errors containing message/details; current fixture reproduces only minimal shape. API Keys GET URL/body match documented contract. Q6 discarded status/body means its exact cause remains UNKNOWN;no provider retry/log retrieval. APP013_P08_KEY_ABSENCE_CORRECTION_PROPOSAL_20261109.md defines narrow typed predicate,actual transport/adapter positive and negative/privacy regressions,unchanged pins/limits/recovery,source74eae71 and finite files/checklist. No implementation or live packet.
+
+Completed local contract/fixture review and concrete correction card. Next owner local implementation approval; implementer then local tests before separate live qualification proposal. Q6/R14 cleanup/purge remain complete. Current key absence and remaining full facts UNKNOWN;same-job Sandbox/owner acceptance remain.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation implemented; bounded correction proposed before coding.
+
 ## November 9 — Q6 stopped at key absence; private purge verified
 
 Approvedb974470/source74eae71 Q6 operation9105a995-cbc1-4737-84b7-c6bd884550b5 ran once: CURRENT_EVIDENCE_UNQUALIFIED,KEY_ABSENCE_UNKNOWN,candidate null,executionReady false,residuals empty.27CLI/9HTTPS/2SQL/1cache reservations;not provider-internal totals. Project and identity permission receipts bothHTTP200 COMPLETE,missing empty. Fixed source order identifies ninth HTTPS key_absence; status/body not retained. Key existence/access/parser cause UNKNOWN;no claim missing permissions.

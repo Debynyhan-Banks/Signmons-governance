@@ -1,0 +1,23 @@
+# APP-013 / 3A / P08 — key-absence response correction proposal
+
+PENDING_OWNER_IMPLEMENTATION_APPROVAL. Local/public documentation review only; no implementation, provider read, response/log retrieval or new live authority. Source74eae7123565fa71419f76b2a4a194c3cd8101b8; backend Q6 evidence77e1eb7, governance closeouteb2bf07. Q6/R14 consumed/purged.
+
+## Demonstrated gap and acceptance
+
+qualification_launch.py CurrentAdapter.read_access line791 compares the complete decoded response to exactly HTTP404 with error.code404 and error.statusNOT_FOUND. test_qualification_launch.py CurrentIO fixture line308 supplies precisely that minimal object. Consequently documented optional message/details cause refusal despite the required absence signals. This is a static confirmed contract defect, not proof of Q6 root cause; its status/body were discarded.
+
+Google API Keys GET contract https://docs.cloud.google.com/api-keys/docs/reference/rest/v2/projects.locations.keys/get matches the existing project/global/key path and empty body. Google HTTP JSON error schema https://google.aip.dev/193 defines code/message/status/details and explains HTTP404 plus NOT_FOUND. It also notes a missing resource or parent can return404; preserve the preceding verified exact project and request resource pins. Permission denial must never count as absence.
+
+Proposed acceptance: only exact pinned key_absence descriptor can classify absence when transport status is integer404, body is an object with error object, error.code integer404 and error.status exact NOT_FOUND. Permit documented optional message string and details array of objects without using their contents as evidence or persisting them. Missing/null/wrong types, conflicting status/code, extra unrecognized structural fields,200,401,403,429,5xx and malformed/duplicate JSON remain unqualified. Maintain existing64KiB bound and duplicate-field rejection. Keep the existing minimal fixture supported alongside representative documented message/details fixtures. No widening to any404 or text matching.
+
+## Bounded implementation card for approval
+
+Reuse CurrentAdapter._https/read_access, NativeIO.https, strict_json, current exact descriptor and existing CurrentProducer/NativeIO test seams. Expected files: qualification_launch.py,test_qualification_launch.py,source-manifest.json and evidence/handoffs. No legacy locked dependency or historical receipt edit. Source SHA above; no application/browser interface change. This repairs an existing full-qualification prerequisite for the admitted-job Sandbox journey; acceptance criteria and denominator unchanged.
+
+Finite checklist: owner approves local correction; implement narrow predicate; exercise documented minimal/message/details success through actual NativeIO mocked HTTPError boundary and CurrentAdapter; exercise all negative cases and private canaries; ensure failure stops subsequent requests; refresh hashes; run existing three-module runtime suite, frozen baseline/complete consistency/25governance tests,architecture,whitespace; save evidence. No live operation in this scope. No new diagnostics subsystem or raw error retention.
+
+Identity/state/retention: retain exact project/key URL, source/SDK/config/authority pins, token/cache equality/expiry, request limits/timeouts, one-attempt/concurrency/interruption and independent cleanup mechanisms. Existing full regressions cover those boundaries. Raw message/details remain memory-only and cleared with adapter state; no secure-memory-erasure claim. No extra read or response refetch. Rollback only approved source/test/manifest changes; preserve receipts and unrelated AGENTS.md. Existing source-bound approvals cannot authorize changed source.
+
+Readiness: source and fixture inspected November9; public error schema confirms optional fields. Corrected behavior NOT IMPLEMENTED/NOT TESTED. Current key absence and Q6 exact cause UNKNOWN. Implementer owns local validation; owner owns local decision and later exact external approval. Browser/payment checks are downstream, not satisfied here. Alternative is defer; a blind retry cannot resolve the demonstrated parser flaw. No source correction or new diagnostic has been silently authorized by this proposal.
+
+Observable finish after approval: representative documented404 errors accepted locally, malformed/denied/present responses refused, bounded transport/privacy/recovery regressions pass. Then separately prepared qualification-only packet if requested. Full qualification, same-job Sandbox payment/negative/replay/owner acceptance remain;3A OPEN;accepted1A/1B/2A/2B4/8;R1newlyclosed0/27. No scope deviation implemented; explicit bounded correction proposed before coding.
