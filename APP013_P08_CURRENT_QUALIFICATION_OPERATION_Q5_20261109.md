@@ -1,5 +1,9 @@
 # APP-013 / 3A / P08 — Q5 exact qualification proposal
 
+## November 9 — Q5 exact approval recorded; launch pending
+
+Owner “i approve” approves736547a exact Q5 workd545c5239b1f57336cd861ba8f627785ade2d098d688a9b51d57f20138f32cf9 and cleanup6ff798e435cc12d162371db8cede5281ba0abe12ee3092c9dbbdf15037584813. Operation1506217a-894e-4a98-93e3-b80e5282eef6,source710e774. Start10:10–before10:20EST,reads10:25,closeout10:35,purge10:45;27CLI/20HTTPS/4SQL/1cache and stated SDK exception. R13 guard68539 present. No qualification launch or private transfer yet. Implementer prepares actual-clock/source/committed-authority-checked launcher; owner enters hidden password. Only one attempt then independent cleanup and authoritative purge. No native/payment/IAM authority.3A OPEN,accepted4/8. No scope deviation.
+
 Status PENDING_OWNER_APPROVAL; qualification-only, not runtime execution-ready. R13 operationb9410013-c4c8-4bb0-a37b-d00b9ee2f041 succeeded: HANDOFF_RETAINED,failure=null,residuals=[],twoCLI/threeSQL reservations,normal and independent resource closeout verified. Fingerprints revalidated with trusted helper; request absent; guardPID68539 present via signal zero. Private identifiers remain solely under original10:45p.m. purge deadline; no raw display/public copy. Backend P08_BINDING_RECOVERY_R13_HANDOFF_20261109.json. Earlier consumed/expired evidence unchanged. Source710e774 and November9 169-test local result reused; no source change or fresh runtime-test claim.
 
 ## Exact approval requested
