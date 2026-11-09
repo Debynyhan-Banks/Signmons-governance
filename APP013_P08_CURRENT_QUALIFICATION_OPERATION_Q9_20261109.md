@@ -1,5 +1,11 @@
 # APP-013 / 3A / P08 — Q9 exact qualification-only proposal
 
+## November9 — Q9 expired without execution; R17 purge verified
+
+Owner returned approving at23:11:26Z (6:11p.m.EST),after Q9 3:35cutoff/4:00purge. No retroactive approval or launch;canonical externalReadAuthorized remains false. Q9 root absent. R17 PRIVATE_PURGE_VERIFIED,onTime true,rawFilesAbsent true,residuals empty;resource closeout verified,both raw slots absent,guard98717 absent by signal zero. Backend P08_Q9_EXPIRY_R17_CLOSEOUT_20261109.json. No cleanup SQL replay or private reread. Corrected sourcef939224 remains intact;this is timing expiry,not another qualification failure.
+
+Owner now confirms continuous45minute attendance after preparation. Next prepare fresh existing recovery packet with lead time;exact live approval still required. Full qualification requires new fingerprint-bound handoff and separate authority. No new code or automatic retry.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 PENDING_EXACT_OWNER_APPROVAL; canonical decision false. R17 retained bindings verified, resource closeout verified,guard98717 present by signal zero. Full remote qualification facts UNKNOWN. No private qualification envelope written. Existing helper hash8cce6cd35d8d8e9b904f597286f5bda909cc6a28a943aff40987e1794c000ca2 constructs only in memory. Q8 consumed evidence archived unchanged.
 
 ## Exact operation and limits

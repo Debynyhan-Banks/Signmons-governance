@@ -1,5 +1,17 @@
 # Session Handoff
 
+## November9 — R18 prepared for continuous attended session
+
+Owner confirms continuous45minute attendance after preparation. R18 proposes6:25–7:10p.m.EST,start before6:35,reads6:40,resource closeout7:00,purge7:10. Sourcef939224,operationd0c717e9-0048-45e0-af3d-5da44238f5d6,qualification41069a54-f310-403a-9e68-21ad3936a8f8,scope5c9abe0c2ab5b6ec55d6afd4d2729715d93c5924771f26142bf9a05904bb4720. Existing2SDK/3SQL,disclosed SDK exception,hidden password and45minute custody. Actual source/dependencies/SDK/config and capability PASS at2026-11-09T23:12:43.240517+00:00 using proposed authority/start only. Fresh roots absent;R17/Q9 raw inputs verified absent. R17 archived unchanged;pending decision false. No launch/provider action or new code.
+
+APP013_P08_BINDING_RECOVERY_OPERATION_R18_20261109.md is exact review packet. Next owner/credential/DB exact approval,then actual-clock manual one attempt and mandatory independent cleanup/purge;full qualification separate. No retry or expired authority reuse. Current remote facts UNKNOWN.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
+## November9 — Q9 expired without execution; R17 purge verified
+
+Owner returned approving at23:11:26Z (6:11p.m.EST),after Q9 3:35cutoff/4:00purge. No retroactive approval or launch;canonical externalReadAuthorized remains false. Q9 root absent. R17 PRIVATE_PURGE_VERIFIED,onTime true,rawFilesAbsent true,residuals empty;resource closeout verified,both raw slots absent,guard98717 absent by signal zero. Backend P08_Q9_EXPIRY_R17_CLOSEOUT_20261109.json. No cleanup SQL replay or private reread. Corrected sourcef939224 remains intact;this is timing expiry,not another qualification failure.
+
+Owner now confirms continuous45minute attendance after preparation. Next prepare fresh existing recovery packet with lead time;exact live approval still required. Full qualification requires new fingerprint-bound handoff and separate authority. No new code or automatic retry.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November9 — R17 retained and verified; Q9 proposed
 
 R17 HANDOFF_RETAINED,failure null,residuals empty,resource closeout verified. Fingerprints revalidated in memory;guard98717 present via signal zero;no qualification envelope transferred. Backend P08_BINDING_RECOVERY_R17_HANDOFF_20261109.json;purge4:00p.m.EST regardless of approval.

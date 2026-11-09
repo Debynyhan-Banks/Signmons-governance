@@ -1,0 +1,15 @@
+{
+  "verifiedAt": "2026-11-09T23:12:43.240517+00:00",
+  "sourceCommit": "f939224202a39b6301ecb2f4862dd6110b2ed85e",
+  "manifestSha256": "9b0dd95a2549d0af4a42f90c6d28a1b56da4b99d8c9fb9a288830ef078fd675c",
+  "scopeSha256": "5c9abe0c2ab5b6ec55d6afd4d2729715d93c5924771f26142bf9a05904bb4720",
+  "operationId": "d0c717e9-0048-45e0-af3d-5da44238f5d6",
+  "qualificationId": "41069a54-f310-403a-9e68-21ad3936a8f8",
+  "sourceSdkConfigAndActualCapability": "PASS",
+  "authorityAndClock": "SIMULATED_PROPOSED_ONLY_NOT_EXECUTION_AUTHORITY",
+  "freshRootsAbsent": true,
+  "priorPrivateInputsAbsent": true,
+  "providerCalls": 0,
+  "credentialsRead": false,
+  "currentRemoteFacts": "UNKNOWN"
+}
