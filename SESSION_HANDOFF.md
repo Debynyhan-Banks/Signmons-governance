@@ -1,5 +1,15 @@
 # Session Handoff
 
+## November 9 — approved consolidated boundary correction complete locally
+
+Owner approved the consolidated audit proposal before implementation. Backend f939224 (manifest9b0dd95a2549d0af4a42f90c6d28a1b56da4b99d8c9fb9a288830ef078fd675c) P08_CONSOLIDATED_BOUNDARY_CORRECTION_20261109.md records strict Firebase claims/duplicate-key/type rejection, nested database checks, fixed retired-role exception translation and failureStage in existing result. Finalization failures clear candidates; unsafe inventory/deadline still refuse publication. Pins, descriptors, limits, no-retry and independent cleanup unchanged. Eight new test methods plus strengthened actual PostgreSQL ACL test; full179tests PASS82.136s,then2new focused byte-boundary/preparation tests PASS(runtime unchanged),181distinct local tests plus25governance=206PASS. TLS server reaped/scratch absent/providerCalls0. No fixture promoted to live evidence; Q8 exact cause UNKNOWN.
+
+All five approved local checklist items complete. Live-attempt hold retained; no new window/password/recovery/provider operation. Next observable result: owner review of consolidated local evidence; any later qualification must separately resolve current external UNKNOWNs under exact authority. Remaining full qualification and same-job Sandbox signed-event payment/negative/duplicate/replay/owner acceptance. 3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
+## November 9 — consolidated boundary audit complete; live hold retained
+
+APP013_P08_CONSOLIDATED_BOUNDARY_AUDIT_20261109.md records source99a4ef3 review and eight synthetic full-reducer runs. Three retired-role errors, null Firebase user and null intakeAdmission reject but lose category; duplicate Firebase claim keys and numeric testOnly=1 incorrectly produce local candidates. Positive control passes; all residuals empty. No live data claim; Q8 exact cause UNKNOWN. Existing actual-SQL ACL test checks rejection/cleanup but not reason. One finite strict parsing/helper translation/fixed-stage diagnostic/test proposal prepared; NOT implemented or approved by review-only proceed. Owner decision on consolidated local correction next; no new live window/recovery/password. Preserve pins/caps/no-retry/independent cleanup. 3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation implemented; proposal before coding.
+
 ## November 9 — Q8 closed; owner stops inefficient repeat-attempt cycle
 
 Owner explicitly says stop this inefficiency. Do not propose another recovery/window/password/live attempt as the default next step. Q8 approvedae79bd3/source99a4ef3 operation19eb6efa-32f2-41af-b029-48cbca722b77 returned CURRENT_EVIDENCE_UNQUALIFIED,CURRENT_READ_UNCONFIRMED,candidate null,executionReady false,residuals empty.27CLI/19HTTPS/4SQL/1cache reservations. All10recorded permission checks HTTP200 COMPLETE,none missing. Source order places progress past cloud/access into database/retired-role stage;exact exception/live database-role condition UNKNOWN. Firebase HTTPS not reached. No failed key-absence claim.
