@@ -1,5 +1,11 @@
 # Session Handoff
 
+## November 9 — approved cache-error translation complete locally
+
+Owner approveddd9d7fa before coding. QualificationIO now translates cache helper CACHED_TOKEN_EXPIRED/CONFIG_CHANGED to model.Stop and other helper exceptions to CACHE_UNCONFIRMED;TOKEN_CACHE_MISMATCH remains distinct. Expiry strictly after purgeEnd,no-retry/request/identity/config/retention/cleanup boundaries unchanged. Actual transport/cache-to-full-result regression covers syntheticSQLite success/insufficient lifetime/sidecar plus injected config/busy/schema/missing/timeout/unexpected errors,one cache call,reservation,no later work,normal/independent cleanup and secret canary absence. Backend P08_CACHE_ERROR_TRANSLATION_20261109.md records pre-code card and validation.
+
+Full173runtime/local PASS in82.194s plus25governance=198PASS;ownedTLS server reaped/scratch absent,providerCalls0. Baseline/consistency/architecture/whitespace PASS. All local checklist items complete. No live packet/window/action;Q7cause remains UNKNOWN,Q7/R15 consumed/purged. Next implementer if requested: reconcile source-bound qualification prerequisites and prepare smallest exact operation;owner/credential/DB roles separately approve live scope. Full qualification/Sandbox/negative/replay/owner acceptance remain;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 9 — cache error translation gap identified; local proposal pending
 
 Source0625fbb review: QualificationIO cache helper raises acl.Stop but full-result handler recognizes model.Stop only; specific helper failures collapse to CURRENT_READ_UNCONFIRMED. Existing ProjectPermissionIO safely translates CACHED_TOKEN_EXPIRED/CONFIG_CHANGED and otherwise CACHE_UNCONFIRMED. Q7 cause remains UNKNOWN;no credential/cache/provider read. APP013_P08_CACHE_ERROR_TRANSLATION_PROPOSAL_20261109.md proposes the same narrow translation at full qualifier,actual boundary/full-result tests and unchanged expiry-after-purge/no-retry/privacy/cleanup.
