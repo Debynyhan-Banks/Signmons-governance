@@ -1,5 +1,11 @@
 # Session Handoff
 
+## November 9 — approved key-absence correction complete locally
+
+Owner “i approve” authorizedbd69a87 before coding. CurrentAdapter now strictly requires pinned key_absence,integer HTTP404/code404,NOT_FOUND and recognized typed error fields; documented optional message/details accepted without persistence. Existing minimal shape retained;malformed/foreign/conflicting/denied/present responses refuse. Two new actualNativeIO HTTPError-to-adapter tests cover four positive variants plus negative types/status/JSON/oversize,request count/closure,stop ordering,privacy and independent cleanup. Backend P08_KEY_ABSENCE_CORRECTION_20261109.md records card/approval/source/tests. Unrelated AGENTS.md preserved.
+
+Full172runtime/local PASS in82.334seconds plus25governance=197PASS;ownedTLS server reaped/scratch absent,providerCalls0. Initial wrong-cwd test import corrected;no test weakening. Baseline/consistency/architecture/whitespace PASS. All local checklist items complete;no external action or new packet/window. Q6cause/current key absence remain UNKNOWN;Q6/R14 consumed/purged. Next implementer if requested: reconcile fresh source-bound qualification prerequisites and prepare exact packet;owner/credential/DB roles separately approve any recovery/live scope. Same-job Sandbox/negative/replay/owner acceptance remain;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation within approved correction.
+
 ## November 9 — key-absence parser defect identified; correction proposed
 
 Local source/public-documentation review found CurrentAdapter exact whole-response equality rejects documented404/NOT_FOUND errors containing message/details; current fixture reproduces only minimal shape. API Keys GET URL/body match documented contract. Q6 discarded status/body means its exact cause remains UNKNOWN;no provider retry/log retrieval. APP013_P08_KEY_ABSENCE_CORRECTION_PROPOSAL_20261109.md defines narrow typed predicate,actual transport/adapter positive and negative/privacy regressions,unchanged pins/limits/recovery,source74eae71 and finite files/checklist. No implementation or live packet.

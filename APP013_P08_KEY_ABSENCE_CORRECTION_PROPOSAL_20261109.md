@@ -1,5 +1,11 @@
 # APP-013 / 3A / P08 — key-absence response correction proposal
 
+## November 9 — approved key-absence correction complete locally
+
+Owner “i approve” authorizedbd69a87 before coding. CurrentAdapter now strictly requires pinned key_absence,integer HTTP404/code404,NOT_FOUND and recognized typed error fields; documented optional message/details accepted without persistence. Existing minimal shape retained;malformed/foreign/conflicting/denied/present responses refuse. Two new actualNativeIO HTTPError-to-adapter tests cover four positive variants plus negative types/status/JSON/oversize,request count/closure,stop ordering,privacy and independent cleanup. Backend P08_KEY_ABSENCE_CORRECTION_20261109.md records card/approval/source/tests. Unrelated AGENTS.md preserved.
+
+Full172runtime/local PASS in82.334seconds plus25governance=197PASS;ownedTLS server reaped/scratch absent,providerCalls0. Initial wrong-cwd test import corrected;no test weakening. Baseline/consistency/architecture/whitespace PASS. All local checklist items complete;no external action or new packet/window. Q6cause/current key absence remain UNKNOWN;Q6/R14 consumed/purged. Next implementer if requested: reconcile fresh source-bound qualification prerequisites and prepare exact packet;owner/credential/DB roles separately approve any recovery/live scope. Same-job Sandbox/negative/replay/owner acceptance remain;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation within approved correction.
+
 PENDING_OWNER_IMPLEMENTATION_APPROVAL. Local/public documentation review only; no implementation, provider read, response/log retrieval or new live authority. Source74eae7123565fa71419f76b2a4a194c3cd8101b8; backend Q6 evidence77e1eb7, governance closeouteb2bf07. Q6/R14 consumed/purged.
 
 ## Demonstrated gap and acceptance
