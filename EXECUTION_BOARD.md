@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## November 9 — P1 exact project-permission live proposal prepared
+
+APP013_P08_PROJECT_PERMISSION_DIAGNOSTIC_P1_20261109.md proposes agent-run11:15–11:25EST,start before11:20,reads11:23,closeout11:25. Operationc5a6f1fa-d5d5-4eff-b71c-eafc178407b9,source4f7c377,scopefd1b0cac4626b03b07cd28c2fe235b0bd70e6550550477bee3dc13a22dff7661. Exact3SDK owner/project/private token,1boundedcache(twoSELECTs),1current15-permissionHTTPS,0SQL/password; explicit SDK exception,original limits,hard-crash UNKNOWN stated. Pending false; no external call/cache inspection/entry executed.
+
+Actual source/dependencies/35SDK/config/environment/capability proposed-authority/start schema PASS at16:05:30Z;fresh root absent. Prior195local checks are not current live facts. Completed exact packet/readiness; owner/credential exact approval next, implementer then real-clock authority/source check and one attempt/local independent closeout. No automatic IAM grant/recovery/full qualification/payment. Current token/permissions UNKNOWN;prior closeout verified.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 9 — approved project-permission diagnostic complete locally
 
 Owner approved58ddf03 before coding. Backend4f7c377 adds distinct --diagnose-project-permissions/--closeout-project-permissions inside existing module. Exact3CLI owner/project/token,1boundedcache(twoSELECTs),1current15-permission HTTPS,0SQL/password; distinct committed approval/limits/root keep D1 unchanged. SDK/cache token equality+expiry gate before HTTP; safe source-requested-only missing list/status/fixed outcome, no raw credentials/project number/body persisted. Shared sanitizer preserves full qualifier semantics. Exclusive reservations/config/source/deadline gates; independent local closeout/hard-crash UNKNOWN preserved. No IAM/payment/native candidate.

@@ -1,0 +1,16 @@
+{
+  "verifiedAt": "2026-11-09T16:05:30.073816+00:00",
+  "sourceCommit": "4f7c377bc6fe2e78cdb829471fc0b11ba0cef163",
+  "scopeSha256": "fd1b0cac4626b03b07cd28c2fe235b0bd70e6550550477bee3dc13a22dff7661",
+  "operationId": "c5a6f1fa-d5d5-4eff-b71c-eafc178407b9",
+  "checks": {
+    "actualCommittedSourcesDependenciesSDK": "PASS",
+    "actualDynamicConfigEnvironment": "PASS",
+    "actualCapabilityProposedAuthorityAndStartOnly": "PASS",
+    "freshOwnedRootAbsent": "PASS"
+  },
+  "providerCalls": 0,
+  "credentialCacheRead": false,
+  "entryExecuted": false,
+  "currentTokenUsabilityAndPermissions": "UNKNOWN"
+}
