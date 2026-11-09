@@ -1,5 +1,13 @@
 # Signmons Execution Board
 
+## November 9 — approved owner/project diagnostic complete locally
+
+Owner approved6496882 before implementation. Backendc21dfde adds only source-bound --diagnose-owner-project and local --closeout-owner-project in existing module: two unchanged SDK owner/project descriptors,0SQL/directHTTPS/cache/token-print,no password,original30second/2second cleanup limit. Exact committed approval/source/SDK/window/config gates, exclusive root/lock/reservations, bounded sanitized match/timing/failure receipts; no raw project/target/credential persistence or qualification candidate. Public hard-crash closeout reports PROCESS_HISTORY_UNKNOWN without unsafe PID kill or replay; normal/signalled cleanup verified in local tests. Live SDK refresh/cache/internal retries still require exact separate allowance.
+
+Fourteen new focused tests PASS; final158runtime/local+25governance=183PASS. Actual owned subprocess bytes, timeout/oversize, concurrency, altered authority/config/deadline, secret canaries, real SIGTERM/SIGKILL/fresh public closeout covered. OwnedTLS server reaped,scratch absent;providerCalls0. Manifest,architecture,frozen baseline,complete consistency,whitespace PASS. Backend P08_OWNER_PROJECT_DIAGNOSTIC_CARD_20261109.md and P08_OWNER_PROJECT_DIAGNOSTIC_RESULT_20261109.json. All approved local checklist items complete; no live packet/window/approval/provider action.
+
+Next implementer, if requested: prepare smallest exact owner/project-only live packet on tested source with explicit SDK exception and hard-crash limitation; owner/credential role approves before launch. No DB attendance required. Q5 stall and Q4 permission causes remain UNKNOWN; success would establish only current bounded owner/project responsiveness. Prior consumed operations/private cleanup unchanged. Same-job Sandbox payment/owner acceptance remain;3A OPEN,accepted1A/1B/2A/2B4/8,R1newlyclosed0/27. No scope deviation beyond approved diagnostic addition.
+
 ## November 9 — owner/project-only diagnostic proposal complete
 
 Owner agreed to prepare smaller diagnostic after5f85c56 review. APP013_P08_OWNER_PROJECT_DIAGNOSTIC_PROPOSAL_20261109.md defines one existing-module local capability/entry, two unchanged SDK descriptors(owner then project),0SQL/HTTPS/cache/token-print, no password, existing30second/2second cleanup cap and explicit future SDK refresh/cache/internal-retry exception. Strict committed source/scope/window authority and durable sanitized receipts; no raw project/target/credential persistence. Hard-crash process ownership stays UNKNOWN; no unsafe kill/replay. Proposed, NOT IMPLEMENTED or scheduled; no external authority.
