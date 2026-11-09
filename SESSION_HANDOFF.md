@@ -1,5 +1,9 @@
 # Session Handoff
 
+## November 9 — P2 exact approval recorded
+
+Owner “yes i approve” approves912b7a4 exact P2 scope9c290a2ae77bf65894a0fd0c630ee251c84a2577fe182dc339b7e8471fd1ebbc,operation4f2b0b16-3bc7-4856-a463-18ff4b7564aa,source74eae71. Start11:40–before11:45EST,reads11:48,closeout11:50.3SDK/1cache/1HTTPS corrected14 permissions/0SQL; SDK exception and hard-crash limitation accepted. Actual clock16:29:45Z is before start. No launch yet. Implementer must wait for approved start, recheck actual authority/source/config/time, then one attempt and independent local closeout. No further approval required within exact scope/window. Permissions UNKNOWN;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 9 — P2 corrected permission qualification prepared
 
 APP013_P08_PROJECT_PERMISSION_DIAGNOSTIC_P2_20261109.md proposes one agent-run diagnostic11:40–11:50a.m.EST today;start before11:45,reads end11:48,closeout11:50. Source74eae71,operation4f2b0b16-3bc7-4856-a463-18ff4b7564aa,scope9c290a2ae77bf65894a0fd0c630ee251c84a2577fe182dc339b7e8471fd1ebbc. Exactly3SDK owner/project/private-token commands,1boundedcache(twoSELECTs),1HTTPS corrected14-permission request,0SQL/password; explicit SDK refresh/cache/internal-retry exception and hard-crash UNKNOWN retained. Pending decision false. Consumed P1 decision archived byte-for-byte; no retry under its authority.

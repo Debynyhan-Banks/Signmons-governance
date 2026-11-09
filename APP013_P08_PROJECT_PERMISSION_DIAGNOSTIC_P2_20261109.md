@@ -1,5 +1,9 @@
 # APP-013 / 3A / P08 — P2 corrected project-permission diagnostic
 
+## November 9 — P2 exact approval recorded
+
+Owner “yes i approve” approves912b7a4 exact P2 scope9c290a2ae77bf65894a0fd0c630ee251c84a2577fe182dc339b7e8471fd1ebbc,operation4f2b0b16-3bc7-4856-a463-18ff4b7564aa,source74eae71. Start11:40–before11:45EST,reads11:48,closeout11:50.3SDK/1cache/1HTTPS corrected14 permissions/0SQL; SDK exception and hard-crash limitation accepted. Actual clock16:29:45Z is before start. No launch yet. Implementer must wait for approved start, recheck actual authority/source/config/time, then one attempt and independent local closeout. No further approval required within exact scope/window. Permissions UNKNOWN;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 PENDING_OWNER_APPROVAL, qualification-only. Owner requested preparation after approved local implementation74eae7123565fa71419f76b2a4a194c3cd8101b8. No external call, credential-cache read, private input or execution entry used during preparation.
 
 ## Exact approval requested
