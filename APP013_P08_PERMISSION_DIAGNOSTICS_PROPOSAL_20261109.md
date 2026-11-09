@@ -46,3 +46,11 @@ Dependencies and owners: implementer owns source/schema/privacy/concurrency test
 Rollback: revert only the approved correction files to759a130 bytes; preserve immutable receipts and unrelated AGENTS.md. External entries remain disabled without fresh exact source-bound approval. No merge/push/deploy/billing/runtime activation or payment.
 
 Observable finish: all local diagnostic cases pass at actual parser/transport boundary; finite evidence identifies what a later failure can safely report. This is locally tested observability, not current access proof or completed3A. No section/dependency/acceptance-count change; modest bounded instrumentation/test work, duration not yet verified. Accepted1A/1B/2A/2B4/8; R1newlyclosed0/27. Q4 cleanup verified; owner decision is next. **No scope deviation implemented; bounded correction proposed before coding.**
+
+## Owner approval and implementation card — November 9
+
+Owner “i approve” approved b2f0c62 local correction before coding. Exact implementation: existing adapter receives an optional permission diagnostic sink from external _produce_current; exclusive permission-attempt marker before dispatch and permission-result after parsing. Fixed outcomes COMPLETE, MISSING, HTTP_REFUSED, INVALID_RESPONSE, RESPONSE_UNCONFIRMED; missing list null except valid subset or complete. Status is integer100..599 or null; descriptor IDs and permission names restricted to current source contract. Marker names bounded to ten permission descriptors. Both records bind operation/cleanup scope; incomplete attempt means UNKNOWN. Publication failure uses PERMISSION_DIAGNOSTIC_WRITE_UNCONFIRMED, existing reducer still performs independent cleanup. No transport/request/predicate/budget changes. Source759a130; existing test harnesses and full validation command above apply.
+
+## Completion
+
+Approved correction completed backend710e774. Final144runtime/local+25governance=169PASS; evidence card/result in backend. No new external operation or current permission proof. All local finite checklist items complete; actual provider cause UNKNOWN.
