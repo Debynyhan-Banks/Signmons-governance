@@ -1,5 +1,11 @@
 # Session Handoff
 
+## November 9 — R14 exact approval recorded; manual launch pending
+
+Owner “i approve” approves3542f74 R14 scope6d3e451534c51e146f74ec9ed74207b2c8cc93b4ace57736dbb144f72138a972,operationb61baf5a-c14c-40c0-9801-e37b0ee83a0a,qualification9105a995-cbc1-4737-84b7-c6bd884550b5,source74eae71. Start11:55a.m.–before12:05p.m.EST,reads12:10,resource closeout12:30,purge12:40.2SDK/3SQL and stated SDK exception,hidden SQL input,45minute retention approved. Actual clock16:50:58Z before start;no launch/private input yet.
+
+Implementer prepares existing manual Terminal launcher with actual-clock capability/source/config checks; owner runs it once during start window and enters hidden password. Source byte checks bind74eae71; later evidence-only HEADb9823df is not a source change. Next observable result recovery/independent resource closeout then mandatory private purge. Full qualification requires separate exact approval;other live prerequisites UNKNOWN.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 9 — remaining prerequisites reviewed; R14 recovery proposed
 
 P2 all14 project permissions observed/cleanup verified; no native candidate. CurrentAdapter still requires runtime/revision/secret state, service availability, identity/secret/Run permissions, retired policies/custom roles, exact database job/tenant/operator/role/session state and Firebase checks. Full QualificationCapability needs fingerprinted private projectNumber/targetId; Q5/R13 purge evidence and owned-path absence confirm those inputs are unavailable. P2 receipts cannot substitute for them or future complete qualification.
