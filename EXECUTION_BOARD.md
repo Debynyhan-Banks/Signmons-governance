@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## November 9 — R17 exact approval recorded; manual launch pending
+
+Owner "i approve" approves813e6ab R17 scopea34a086d46f756a383f991fed1d2484e654cb2d3d25238eb5daeca18286e7460,operation8f26afaf-7107-471f-8316-7c55b3fd84a6,sourcef939224. November9 3:15–4:00p.m.EST,start strictly before3:25,reads3:30,resource closeout3:50,purge4:00.2SDK/3SQL,disclosed SDK exception,hidden password and45minute retention approved. Clock20:00:35Z before start;no launch/private input. Implementer prepares existing manual launcher with committed authority/source/config checks;actual clock enforced at entry. Owner runs once within window. Independent closeout/authoritative purge mandatory;full qualification separately approved.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November 9 — R17 exact recovery packet prepared; approval pending
 
 Owner available after preparation. R17 proposes November9 3:15–4:00p.m.EST,start before3:25,reads3:30,resource closeout3:50,purge4:00. Source f939224,operation8f26afaf-7107-471f-8316-7c55b3fd84a6,qualification2b76a506-0d7a-41d0-98af-3ae63f3b38b9,scopea34a086d46f756a383f991fed1d2484e654cb2d3d25238eb5daeca18286e7460. Existing2SDK/3SQL,SDK exception,hidden Terminal password,45minute private retention;no directHTTPS/cache/token-print. APP013_P08_BINDING_RECOVERY_OPERATION_R17_20261109.md and readiness JSON record actual committed source/SDK/config/capability PASS using proposed decision/start only;fresh roots/prior inputs absent. Canonical approval false;R16 archived unchanged. No live action.
