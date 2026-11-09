@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## November 9 — approved local permission-name correction
+
+Owner “proceed” approved removal of unsupported apikeys.operations.get and local testing. Backend evidence/APP-013/P08_PERMISSION_NAME_CORRECTION_20261109.md records pre-code card, baseline4f7c377/evidencee50c6e2 and official Google API Keys mapping: operations.get requires serviceusage.operations.get, already present. Current request now has14 names; existing actual NativeIO mocked-HTTP test independently pins all14. Historical15-name packets/receipts and locked dependencies preserved. No live attempt or new external authority.
+
+Completed source correction and independent request assertion at backend74eae71:170local tests PASS in88.632seconds plus25governance tests PASS. OwnedTLS server reaped/scratch absent,providerCalls0; baseline/consistency/architecture/whitespace PASS. Full validation recorded in the backend card. P1 HTTP400 cause remains UNKNOWN, as does current effective permission set. Consumed P1 cannot replay. Next implementer: prepare fresh source-bound qualification-only packet/readiness if requested; owner/credential role separately authorizes exact external scope/window. Full qualification and same-job Sandbox payment/negative/replay/owner acceptance remain.3A OPEN;accepted1A/1B/2A/2B4/8;R1newlyclosed0/27. No scope deviation within approved correction.
+
 ## November 9 — P1 HTTP400 observed; permission set unknown; cleanup verified
 
 Approved4dde500/source4f7c377 P1 operationc5a6f1fa-d5d5-4eff-b71c-eafc178407b9 ran once in exact window. PROJECT_PERMISSIONS_UNQUALIFIED,OWNER_PERMISSION_NOT_READY;diagnostic HTTP_REFUSED,httpStatus400,missingPermissions null. Owner/project matched;SDK/cache token matched and expiry valid.3CLI/1cache/1HTTPS reservations,0SQL;not provider-internal request totals. Exact provider error body was intentionally not retained; missing permissions and reason for400 UNKNOWN. Do not infer a missing role or grant IAM from this result.
