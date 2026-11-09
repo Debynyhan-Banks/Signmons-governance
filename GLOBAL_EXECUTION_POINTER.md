@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## November 9 — exact R13 approval recorded; launch pending
+
+Owner confirmed10:00–10:45EST attendance and explicitly “i approve r13” after concrete63f8637 proposal. Decision APPROVE_EXACT_P08_BINDING_INPUT_RECOVERY,true,scope524a8261b8e43882aa4a414df3de029b5e7d84a67417d5850c60cdffd9d8620f. Source710e774,operationb9410013-c4c8-4bb0-a37b-d00b9ee2f041,qualification1506217a-894e-4a98-93e3-b80e5282eef6. Start10:00–before10:10,reads10:15,closeout10:35,purge10:45EST. Same2CLI/3SQL/SDK exception; no full qualification/native/payment authority. No launch or private input yet. Implementer prepares actual-clock/source/committed-authority-checked manual launcher; owner enters hidden password. Next observable result one recovery and independent cleanup/purge;3A OPEN,accepted4/8. No scope deviation.
+
 ## November 9 — corrected-source R13 recovery prepared, pending attendance and approval
 
 Fresh proposal APP013_P08_BINDING_RECOVERY_OPERATION_R13_20261109.md,source710e774,operationb9410013-c4c8-4bb0-a37b-d00b9ee2f041,qualification1506217a-894e-4a98-93e3-b80e5282eef6,scope524a8261b8e43882aa4a414df3de029b5e7d84a67417d5850c60cdffd9d8620f. Proposed10:00–10:45a.m.EST,start before10:10,reads10:15,closeout10:35,purge10:45. Same2CLI/3SQL/SDK exception and120-second capped hidden input. Attendance confirmation pending; decision pending false. R12 packet/approval preserved CONSUMED_R12; its raw inputs absent. Q4 consumed/closed,permission cause UNKNOWN. No live action or private input.

@@ -1,5 +1,9 @@
 # APP-013 / 3A / P08 — R13 corrected-source binding recovery proposal
 
+## November 9 — exact R13 approval recorded; launch pending
+
+Owner confirmed10:00–10:45EST attendance and explicitly “i approve r13” after concrete63f8637 proposal. Decision APPROVE_EXACT_P08_BINDING_INPUT_RECOVERY,true,scope524a8261b8e43882aa4a414df3de029b5e7d84a67417d5850c60cdffd9d8620f. Source710e774,operationb9410013-c4c8-4bb0-a37b-d00b9ee2f041,qualification1506217a-894e-4a98-93e3-b80e5282eef6. Start10:00–before10:10,reads10:15,closeout10:35,purge10:45EST. Same2CLI/3SQL/SDK exception; no full qualification/native/payment authority. No launch or private input yet. Implementer prepares actual-clock/source/committed-authority-checked manual launcher; owner enters hidden password. Next observable result one recovery and independent cleanup/purge;3A OPEN,accepted4/8. No scope deviation.
+
 Status PENDING_OWNER_APPROVAL; qualification-only. Owner requested continuation after approved permission diagnostics710e774. R12/Q4 consumed and fully purged; source changed. This is a fresh recovery proposal, not replay or retained authority. November9 local144runtime+25governance=169PASS; no runtime rerun for packet preparation. Proposed10:00–10:45a.m.EST attendance awaits confirmation. No provider calls or private input. Existing full qualification entry requires both fingerprinted bindings; no narrower standalone permission command exists in this approved source. No new transport/helper implementation is proposed. Full qualification remains a separate approval after binding.
 
 ## Exact decision
