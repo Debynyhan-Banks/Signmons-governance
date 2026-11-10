@@ -15,3 +15,5 @@ Later native mutation inventory remains exactly as reviewed in APP013_P08_BINDIN
 Implementer owns packet/preflight/cleanup; owner and credential/DB/provider custodians own attendance, hidden entry and exact authority. Next observable result is availability and exact first-operation approval; no live launch yet. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27. No scope deviation.
 
 Recovery operation 9d2bdbb0-1223-4719-a2e7-d0d044910c68; scope 42f8b9d799f1ad03f0dbf7748e45ff190d0dc27d18a5f07b06e0733d64beb4d4.
+
+R22 owner decision at17:27UTC November10: “Available and approve R22.” Attendance1–2pm Eastern and exact recovery read/cleanup scope42f8b9d799f1ad03f0dbf7748e45ff190d0dc27d18a5f07b06e0733d64beb4d4 approved. Launch1:00–strictly before1:05; purge by2pm. No launch yet, no downstream qualification/native approval. Historical R21 authority remains in its committed history; no replay. No scope deviation.
