@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## November10 — R19 exact approval recorded; manual launch pending
+
+Owner "i approve" approves packet369b205,operationee08b92e-3dd1-4e39-82d2-1fb07d0a775b,scopebe119f1fa5adaa76e045493e8c7b4dc1ce97edd69a127acaa58e97f32dab1d77,sourcec57972b. November10 8:20–9:05a.m.EST attendance,strict start cutoff8:30,reads8:35,resource closeout8:55,purge9:05.2SDK/3SQL,SDK existing-owner refresh/cache/internal-retry exception,hidden password and45minute bounded private retention approved. Clock13:08:01Z before start;no launch/private inputs. Implementer binds committed authority and prepares existing manual launcher with source/SDK/config/actual-clock checks. Owner runs once;normal/independent cleanup and mandatory purge included. Full qualification remains separately approved after successful binding;no correction replay or downstream payment authority.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November10 — remaining qualification reconciled; R19 exact recovery prepared
 
 Q10/R18 consumed and private inputs purged;their raw slots absent now. Q10 database ROLE_NOT_READY is addressed by TC1 verified corrected full role contract. Earlier P2 project permissions are historical. No repeat TEMP diagnosis/correction needed. Current provider/access/Firebase/job facts and exact private bindings still require existing full qualification;no historical evidence promoted.
