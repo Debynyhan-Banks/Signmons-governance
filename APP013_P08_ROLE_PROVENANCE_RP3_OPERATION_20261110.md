@@ -1,5 +1,15 @@
 # APP-013 / 3A / P08 — RP3 exact role provenance operation
 
+## November10 — RP3 provenance observed; cleanup verified; DB-owner decision remains
+
+RP3 operationc64ef2c8-b137-4472-9ab9-b76ead3cbd16,source4012c92,approval5049f36 returned DATABASE_ROLE_PROVENANCE_DIAGNOSED,complete true,liveObserved true,failure null. PostgreSQL180006. Exact membership: neondb_owner is an INCOMING member of p07_payment_runtime,grantor cloud_admin,admin true,inherit false,set false. This does not show the payment role inheriting owner privileges. Provider-management purpose/requirement remains UNKNOWN;do not remove it based on name alone.
+
+Effective TEMP true;sole usable source PUBLIC,grantor neondb_owner. Other TEMP ACL grantees neon_superuser and neondb_owner are unusable by target. aclDefault false,superuser false,roleCount1. This confirms the two DBR1 failing predicates' provenance,not role readiness or permission to weaken the prerequisite. PUBLIC correction impact on other roles/applications remains UNKNOWN.
+
+All3SQL reservations spent;normal and fresh independent cleanup complete. Public closeout verified true,residuals empty,zero additionalSQL/password. Candidate null/executionReady false. Backend evidence P08_ROLE_PROVENANCE_RP3_RESULT_20261110.json. RP3 consumed;no replay. No mutations,Google reads,customer data or full qualification retry. Owner can leave Terminal.
+
+Completed bounded observation/result/closeout. Remaining responsible decision:DB owner and implementer assess provider-managed administrative membership and shared PUBLIC TEMP impact,then propose exact correction or explicit prerequisite-contract change before implementation/live mutation. Next observable result is an evidence-backed impact/decision proposal;no blind revoke or silent test weakening. Full qualification held;3A OPEN,accepted1A/1B/2A/2B4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November10 — RP3 exact approval recorded; manual launch pending
 
 Owner "i approve" confirms b2e63fc RP3 and attendance6:20–6:40a.m.EST,start strictly before6:30,read end6:35,closeout6:40. Source4012c92,operationc64ef2c8-b137-4472-9ab9-b76ead3cbd16,scope07af14294dc8cdad1a070d3adf41852ca49cc4404fcf19261874af113222588e. Exact3SQL read-only catalog/normal/fresh independent cleanup,hidden password and bounded administrative metadata retention approved. Clock11:12:19Z before start;no launch/credentials/provider reads. Implementer prepares committed-authority manual launcher;actual source/resource/time gates enforce at entry. Owner runs once;cleanup included,no repeat approval needed. Full qualification held;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
