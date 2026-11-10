@@ -1,5 +1,8 @@
 # Signmons Execution Board
 
+QK2 exact owner approval November10 at22:57UTC: “I approve QK2.” Operation4420952b-5eb9-41b9-b2c3-9432c4c9a8f9; scopecd5a2a6b91b715bb8b3e7ca4d39aec0bb435fba780731b5a7c87e5c02a0d9fe9; proposal432ec9f; backend77e3b69. Current source/manifest/SDK/proposed-scope/time/fresh-root checks pass. Approved only27SDK/12GoogleHTTPS/2read-onlySQL/3StripeGET, one attempt before6:20pm Eastern; work ends6:30, absolute closeout6:40. Hidden owner key/endpoint/SQL password only; no mutation, payment, cost/hold release or QK1 revival. Implementer owns launch/safe receipt/process closure; current live facts remain UNKNOWN until observed. Accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 scope deviation only; no further deviation.
+
+
 ## November10 — QK1 expired unexecuted; QK2 read-only proposal ready
 
 Owner returned at22:53UTC approving QK1 after its4:55pm Eastern launch cutoff and5:15pm absolute closeout. Exact QK1 root absent; no entry launched, credentials requested or provider calls made. Evidence APP013_P08_QK1_EXPIRY_20261110.json. Do not revive/retime QK1 or use the late approval as QK2 authority.
