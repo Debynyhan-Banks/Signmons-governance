@@ -1,5 +1,11 @@
 # Session Handoff
 
+## November10 — RP3 prepared for owner present now; exact window pending
+
+Owner returned ready and approved proceeding. RP2 root still absent at11:07:59Z;expired authority not reused. RP3 proposes6:20–6:40a.m.EST,start strictly before6:30,read end6:35,closeout6:40. Source4012c92,operationc64ef2c8-b137-4472-9ab9-b76ead3cbd16,scope07af14294dc8cdad1a070d3adf41852ca49cc4404fcf19261874af113222588e. Same3SQL catalog/normal/fresh independent cleanup,zeroGoogle/HTTPS/cache,approved bounded administrative metadata,no mutations. APP013_P08_ROLE_PROVENANCE_RP3_OPERATION_20261110.md contains exact packet.
+
+Actual capability/source/query/runtime/environment PASS at2026-11-10T11:08:29.478737+00:00 with proposed authority/start only;fresh root absent. Exact newwindow confirmation pendingfalse. Implementer owns launch/cleanup;DB owner owns correction impact. Live facts UNKNOWN,full qualification held.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November10 — RP2 expired unexecuted; fresh owner decision required
 
 At2026-11-10T10:00:10Z,RP2's closeout deadline01:45Z had passed. Exact operation root `/private/tmp/p08-role-provenance-86a092fe-40d8-46ab-829c-a38f75a1a687` is absent. Source4012c92 creates that root and attempt markers before hidden credential input or SQL,so no exact launcher attempt,credential prompt,SQL reservation,result or closeout is evidenced. Backend evidence `P08_ROLE_PROVENANCE_RP2_EXPIRY_20261110.json`. The ae0c80f approval was operation/source/scope/window-bound and is expired;no retry,extension or reuse.
