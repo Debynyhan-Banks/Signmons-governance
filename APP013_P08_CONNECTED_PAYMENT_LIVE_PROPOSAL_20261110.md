@@ -1,5 +1,12 @@
 # APP-013 / 3A / P08 — connected Sandbox execution proposal
 
+## November10 — packet input audit found a recovery contract gap
+
+Source7f7b7b7: existing recovery retains only targetId/projectNumber; payment authority additionally requires current amount/currency/approvedAt/policyDigest/jobUpdatedAt/account hash. Recovery SQL omits job version/account fields. Current connected tests supply the payment binding synthetically before transfer. Execution/session/cleanup local proof stands; complete packet-input production is not yet implemented. Prior checklist5 closeout is reopened for this exact gap, without changing accepted milestones. Backend P08_PAYMENT_BINDING_PRODUCER_AUDIT_20261110.json records source evidence.
+
+APP013_P08_PAYMENT_BINDING_RECOVERY_CHANGE_20261110.md proposes expanding version2's existing read/retention contract and deriving six binding fields through the actual policy profile, with the same guard/deadline and2CLI/3SQL proposed call count. No new subsystem or standalone qualification session. Decision pending because existing recovered-inputs contract retains identifiers only; no source change/external read/private recovery occurred. Implementer owns bounded correction and full producer-to-consumer proof after decision; owner owns contract expansion. No Terminal attendance requested. Next observable result: explicit owner decision on that exact contract, then local SQL→binding→qualification→payment→cleanup proof before any live packet. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27. Explicit prerequisite contract deviation proposed; none implemented.
+
+
 Status: concrete sequence for review, NOT execution-ready, NOT approved, NOT scheduled. Local implementation approval159b9e7 persists. No request for another local approval. Source is backend checkpoint7f7b7b7 plus active runtime/qualification manifests, referenced by APP013_P08_CONNECTED_PAYMENT_CARD_20261110.md and backend P08_CONNECTED_PAYMENT_LOCAL_VERIFICATION_20261110.json. This proposal does not renew Q12 or authorize provider/credential reads.
 
 ## Outcome and fixed scope
