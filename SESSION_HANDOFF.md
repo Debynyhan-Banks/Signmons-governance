@@ -1,5 +1,14 @@
 # Session Handoff
 
+## November10 — QK2 consumed at endpoint pin check; cleanup verified
+
+QK2 operation4420952b-5eb9-41b9-b2c3-9432c4c9a8f9, source77e3b69, owner approval5bd3561: CR_K1_STOPPED, stageSANDBOX_KEY, codeKEY_ENDPOINT_PIN. Existing key_check.mjs checks endpoint format/hash before key decoding or any Stripe request. Source-order inference: Google/SQL preflight returned before this refusal, but detailed qualification values/call ledger were not retained in the failure receipt; do not reconstruct a usable qualification. Stripe requests0, provider mutations0; key validity/account/mode remain UNKNOWN. Owner reports an entered we_ prefix; exact copied-value/format/whitespace/endpoint-selection mismatch remains UNKNOWN. No raw input retained and no input can be reconstructed.
+
+LauncherPID12858 exited, direct children absent, only attempt.json/qualify-failure.json in the exact root. Owned private spec and Terminal launcher removed after exit; raw inputs absent. Evidence backend evidence/APP-013/p08-key-correction-20261110/qk2-result.json. QK2 consumed; no automatic replay or fresh password run. Do not alter the approved endpoint hash or claim a particular wrong Sandbox from this result.
+
+Remaining blocker: identify the exact existing approved endpoint value/selection before any new read attempt. Owner supplies correct Sandbox/endpoint selection; implementer reconciles it against the existing pin under the applicable read boundary. Next observable result: resolved endpoint binding, then a separately approved current qualification/correction packet. No new attended window prepared. Candidate binding remains LEGACY; new version/candidate/cost release/adoption and same-job payment/event/application/owner acceptance still outstanding. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 scope deviation only; no further deviation.
+
+
 QK2 exact owner approval November10 at22:57UTC: “I approve QK2.” Operation4420952b-5eb9-41b9-b2c3-9432c4c9a8f9; scopecd5a2a6b91b715bb8b3e7ca4d39aec0bb435fba780731b5a7c87e5c02a0d9fe9; proposal432ec9f; backend77e3b69. Current source/manifest/SDK/proposed-scope/time/fresh-root checks pass. Approved only27SDK/12GoogleHTTPS/2read-onlySQL/3StripeGET, one attempt before6:20pm Eastern; work ends6:30, absolute closeout6:40. Hidden owner key/endpoint/SQL password only; no mutation, payment, cost/hold release or QK1 revival. Implementer owns launch/safe receipt/process closure; current live facts remain UNKNOWN until observed. Accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 scope deviation only; no further deviation.
 
 
