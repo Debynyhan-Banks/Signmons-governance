@@ -1,5 +1,13 @@
 # Session Handoff
 
+## November10 — R20 recovery prepared from corrected admission source
+
+Owner requested proceeding after local correction6f2dc20. R19/Q11 consumed/purged;private slots absent. R20 operation40b6c75b-bbec-4483-aa02-83d7e46d4a88,prospective qualification5f5f3cf4-1e3e-4d8b-a1e9-9dd19838596e,source6f2dc20,scope0a1dd6e6b36ace0eb755c5a8ea9bdf0e325612dd7575387bf3872ac346a230a2 proposes November10 9:10–9:55a.m.EST,start strictly before9:20,reads9:25,resource closeout9:45,purge9:55. Existing2SDK/3SQL/0directHTTPS/cache/token-print,hidden password,SDK existing-owner refresh/cache/internal-retry exception and45minute retention. Exact packet/card APP013_P08_BINDING_RECOVERY_OPERATION_R20_20261110.md. Decision false;approval and attendance pending.
+
+Actual committed-source/dependency/SDK/config/BindingRecoveryCapability.prepare PASS at 2026-11-10T13:53:58.500936+00:00 with proposed authority/start clock only. New roots absent;no credential/provider access or private file.255runtime+25governance preceding correction proof reused,not new live evidence. Current live access/identity/Firebase/job facts and Q11 exact failed Boolean UNKNOWN. No TEMP replay or new helper.
+
+Completed exact recovery preparation/readiness. Next owner/credential/DB decision approves R20 and attendance;implementer binds committed authority/manual launcher and checks actual clock. Successful matched recovery permits preparation of separately approved current qualification in same purge window;never automatic. Mandatory cleanup/purge regardless.3A OPEN;accepted1A/1B/2A/2B4/8;R1newlyclosed0/27. No scope deviation.
+
 ## November10 — approved admission qualification correction complete locally
 
 Owner approved the bounded local correction after Q11 investigation. Pre-code APP013_P08_ADMISSION_CORRECTION_CARD_20261110.md traces the existing3A controlled-v2 admission contract. Current qualification now accepts reviewed-v1 or exact controlled-v2 actor/current approved payment timestamp/canonical digest without writing humanReviewed. Same bounded repeatable-read query adds only the tenant payment-policy member;no additional request. Current receipt adds sorted fixed databaseFailedChecks names;no raw policy/digest/identity retention. Full-role/ownership/session/calendar checks and deadlines/no-retry/independent cleanup/purge unchanged. Old source-bound packets cannot authorize changed source.

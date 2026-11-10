@@ -1,0 +1,21 @@
+{
+  "verifiedAt": "2026-11-10T13:53:58.500936+00:00",
+  "sourceCommit": "6f2dc20e7bd4f2dc46716b6d032dffe2b0d014ee",
+  "operationId": "40b6c75b-bbec-4483-aa02-83d7e46d4a88",
+  "qualificationId": "5f5f3cf4-1e3e-4d8b-a1e9-9dd19838596e",
+  "scopeSha256": "0a1dd6e6b36ace0eb755c5a8ea9bdf0e325612dd7575387bf3872ac346a230a2",
+  "manifestSha256": "ab35a1748e52197b0c9d09f8d6107b2d145dfa2d3f222693b2eea5053a999d81",
+  "sourceSdkConfigActualCapability": "PASS_PROPOSED_AUTHORITY_AND_CLOCK_ONLY",
+  "newRootsAbsent": true,
+  "priorR19Q11PrivateInputsAbsent": true,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "externalReadAuthorized": false,
+  "liveFacts": "UNKNOWN",
+  "limits": {
+    "cli": 2,
+    "sql": 3,
+    "https": 0,
+    "cache": 0
+  }
+}
