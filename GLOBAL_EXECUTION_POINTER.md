@@ -1,5 +1,8 @@
 # Global Execution Pointer
 
+QK5 exact owner approval November10: owner explicitly approves QK5 before7:10pm Eastern. Operationed308ba4-ce5a-4b72-a927-ea2538b2f4b4; scope60500c692b3153500afe9592e225d53c6a427d11a86288a146054808e4bdaaf1; proposal f9eba85; sourcea7ae8b3. Actual source/SDK/scope/window checks pass; fresh root absent. One read-only attempt max27SDK/12GoogleHTTPS/2SQL/3StripeGET. FIRST sk_test_ secret key, SECOND we_ Destination ID; SQL follows successful key checks. Cutoff7:10pm, work end7:20pm, absolute closeout7:30pm. No mutation or cost/hold release. Implementer owns launch/receipt/closure; live facts UNKNOWN until observed. Accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 scope deviation only; no further deviation.
+
+
 QK5 qualification-only proposal prepared November10 23:41UTC after owner identified we_ input at key prompt and confirmed sk_test_ key available. Operationed308ba4-ce5a-4b72-a927-ea2538b2f4b4; scope60500c692b3153500afe9592e225d53c6a427d11a86288a146054808e4bdaaf1; sourcea7ae8b3 unchanged. Actual source/SDK/proposed-scope/time verifier passes; fresh root absent. Exact read approval PENDING; no launch. FIRST sk_test_ key, SECOND we_ Destination ID. Same ceilings27SDK/12GoogleHTTPS/2SQL/3StripeGET; cutoff7:10pm Eastern, work end7:20, absolute closeout7:30 November10. See APP013_P08_KEY_QUALIFICATION_QK5_PROPOSAL_20261110.md. QK4 consumed; zero provider calls. Live key/access UNKNOWN. Implementer owns qualification/closure; owner supplies hidden inputs. Remaining correction/adoption/payment proof unchanged; accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 scope deviation only; no further deviation.
 
 
