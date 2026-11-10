@@ -1,0 +1,8 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_EXACT_P08_CONNECTED_PAYMENT",
+  "externalActionAuthorized": true,
+  "operationId": "8517526b-cf46-4ff8-87d4-f1ad99cae23d",
+  "scopeSha256": "d2a4e6b50c626ade63f00baa0467c4878aad07acf07ef9f58c1ca2d89fe7d62a",
+  "sourceManifestSha256": "67e9ad9ecd25ef73d069790465f50f41d2f9aa51ede1599bcd2a023ed6cbebbd"
+}

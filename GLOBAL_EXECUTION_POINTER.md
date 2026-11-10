@@ -1,5 +1,7 @@
 # Global Execution Pointer
 
+R22 native approval received at18:17UTC November10: owner “I approve R22 native Sandbox execution and cleanup.” Exact operation8517526b-cf46-4ff8-87d4-f1ad99cae23d, scoped2a4e6b50c626ade63f00baa0467c4878aad07acf07ef9f58c1ca2d89fe7d62a, proposalb273a8b. Existing waiting parent may launch1:28–before1:38pm Eastern, payment work ends1:46, work1:47, cleanup1:58, purge2:00. Full enumerated actions/limits/exclusions and mandatory cleanup remain unchanged. Approval is not execution or acceptance. No scope deviation.
+
 R22 exact qualification approved by owner “I approve R22 qualification.” at18:03UTC November10. Operationbdc6877e-2aa1-4dd4-9aee-e3b7cdf2da0b; scopee1163f76f4a1b7f01a18eed6531ae5d020ed80e62304dc7835545c1e6f2ce75f. Waiting parent may launch1:10–before1:22pm Eastern under unchanged limits; reads1:28, database cleanup1:33, purge2pm. No native/payment approval. No scope deviation.
 
 R22 owner decision at17:27UTC November10: “Available and approve R22.” Attendance1–2pm Eastern and exact recovery read/cleanup scope42f8b9d799f1ad03f0dbf7748e45ff190d0dc27d18a5f07b06e0733d64beb4d4 approved. Launch1:00–strictly before1:05; purge by2pm. No launch yet, no downstream qualification/native approval. Historical R21 authority remains in its committed history; no replay. No scope deviation.
