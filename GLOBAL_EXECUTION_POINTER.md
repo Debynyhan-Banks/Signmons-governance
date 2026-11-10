@@ -1,5 +1,13 @@
 # Global Execution Pointer
 
+## November9 — approved SQL-only role diagnostic complete locally
+
+Owner approved783a6b5 before implementation. Backend50144cb existing module now has --diagnose-database-role/--closeout-database-role,distinct committed authority/query/resource/runtime-file pins and exclusive operation/threeSQL reservations. Unchanged fixed-role query plus normal/fresh independent cleanup;zeroSDK/HTTPS/cache/config read/private-target recovery. Twelve fixed PASS/FAIL/UNKNOWN conditions plus authoritative classifier;strict native-byte JSON,unknown identity/type refusal,no raw rows/passwords/exception text,candidate always null/executionReady false. Hard-crash fresh cleanup preserves PROCESS_HISTORY_UNKNOWN;no replay of reserved reads.
+
+Full196runtime/local tests PASS93.455s,plus25governance=221PASS. Extra ACL matrix subcases in existing test PASS0.256s afterward;runtime unchanged. Actual PostgreSQL/TLS proves PUBLIC TEMP/CREATE versus direct ACL,extra column grant,and public SIGKILL/fresh-process cleanup;owned server reaped/scratch absent/providerCalls0. Source/manifest/baseline/consistency/architecture/whitespace PASS. Backend P08_SQL_ONLY_ROLE_DIAGNOSTIC_20261109.md. All five approved local checklist items complete;unrelated AGENTS.md preserved.
+
+No live packet/window/password/provider action or role change. Current failed live predicate UNKNOWN;full qualification remains held. Next if requested:prepare exact SQL-only operation and independent cleanup for owner/DB/credential review,without Google checks or identifier recovery;any state correction separately assessed/approved.3A OPEN,accepted1A/1B/2A/2B4/8,R1newlyclosed0/27. No scope deviation beyond approved bounded diagnostic extension.
+
 ## November9 — concrete SQL-only diagnostic interface proposal prepared
 
 Owner approves proceeding toward focused database check. Inspection confirms retired_role_evidence is local-only,full qualifier requires broad flow,and project diagnostics forbid SQL. APP013_P08_SQL_ONLY_ROLE_DIAGNOSTIC_PROPOSAL_20261109.md proposes two commands in existing module,reusing unchanged role/cleanup queries,NativeIO and authority/cleanup seams:one role read plus normal/independent cleanup,total3SQL,zeroSDK/HTTPS/cache/private-target recovery. Fixed per-predicate PASS/FAIL/UNKNOWN and authoritative classifier,no raw metadata/candidate. Exact files,finite tests,crash/cleanup/privacy/owners/exclusions recorded before implementation.

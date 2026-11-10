@@ -1,6 +1,14 @@
 # APP-013 / 3A / P08 — SQL-only role diagnostic change request and section card
 
-PENDING_OWNER_LOCAL_IMPLEMENTATION_APPROVAL. Owner approves proceeding toward a focused database check; this card makes the newly discovered execution-interface gap concrete before implementation. No live authority, window, password or new recovery. Starting backend2698ce0;runtimef939224;governance386dd71. No code changed.
+## November9 — approved SQL-only role diagnostic complete locally
+
+Owner approved783a6b5 before implementation. Backend50144cb existing module now has --diagnose-database-role/--closeout-database-role,distinct committed authority/query/resource/runtime-file pins and exclusive operation/threeSQL reservations. Unchanged fixed-role query plus normal/fresh independent cleanup;zeroSDK/HTTPS/cache/config read/private-target recovery. Twelve fixed PASS/FAIL/UNKNOWN conditions plus authoritative classifier;strict native-byte JSON,unknown identity/type refusal,no raw rows/passwords/exception text,candidate always null/executionReady false. Hard-crash fresh cleanup preserves PROCESS_HISTORY_UNKNOWN;no replay of reserved reads.
+
+Full196runtime/local tests PASS93.455s,plus25governance=221PASS. Extra ACL matrix subcases in existing test PASS0.256s afterward;runtime unchanged. Actual PostgreSQL/TLS proves PUBLIC TEMP/CREATE versus direct ACL,extra column grant,and public SIGKILL/fresh-process cleanup;owned server reaped/scratch absent/providerCalls0. Source/manifest/baseline/consistency/architecture/whitespace PASS. Backend P08_SQL_ONLY_ROLE_DIAGNOSTIC_20261109.md. All five approved local checklist items complete;unrelated AGENTS.md preserved.
+
+No live packet/window/password/provider action or role change. Current failed live predicate UNKNOWN;full qualification remains held. Next if requested:prepare exact SQL-only operation and independent cleanup for owner/DB/credential review,without Google checks or identifier recovery;any state correction separately assessed/approved.3A OPEN,accepted1A/1B/2A/2B4/8,R1newlyclosed0/27. No scope deviation beyond approved bounded diagnostic extension.
+
+OWNER_APPROVED_LOCAL_IMPLEMENTATION: owner "i approve" approved783a6b5 before coding. Owner approves proceeding toward a focused database check; this card makes the newly discovered execution-interface gap concrete before implementation. No live authority, window, password or new recovery. Starting backend2698ce0;runtimef939224;governance386dd71. No code changed.
 
 ## Demonstrated gap and alternatives
 
