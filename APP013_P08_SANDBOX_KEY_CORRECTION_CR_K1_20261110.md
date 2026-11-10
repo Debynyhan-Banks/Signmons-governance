@@ -1,5 +1,8 @@
 # APP-013 / 3A — CR-K1 Sandbox credential and candidate correction
 
+QK4 exact owner approval November10 at23:33UTC: owner approved QK4 before6:55pm Eastern. Operation97de78e4-32ba-4827-b3c2-26bff127d7c6; scope8339146cce4ebc2ea482f0cec4584c9794cf89d554fc8c5268b7090fb73c7b21; proposalfa0b088; sourcea7ae8b3. Current source/SDK/scope/time/fresh-root checks pass. One read-only attempt, max27SDK/12GoogleHTTPS/2SQL/3StripeGET, key check before cloud/SQL. Work ends7:05pm, absolute closeout7:15pm. Hidden owner inputs only; no mutation or cost/hold release. Implementer owns launch/safe receipt/closure. Current live facts UNKNOWN until observed. Accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 scope deviation only; no further deviation.
+
+
 Status: CR-K1 scope/local implementation APPROVED (ed64d49), implemented/tested backend77e3b69. External execution remains unapproved. Active candidate/version stays LEGACY. QK1 qualification-only packet prepared for exact read review; no credentials received or provider action performed.
 
 ## Demonstrated gap and acceptance trace

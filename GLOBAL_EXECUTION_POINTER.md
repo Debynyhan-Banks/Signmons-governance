@@ -1,5 +1,8 @@
 # Global Execution Pointer
 
+QK4 exact owner approval November10 at23:33UTC: owner approved QK4 before6:55pm Eastern. Operation97de78e4-32ba-4827-b3c2-26bff127d7c6; scope8339146cce4ebc2ea482f0cec4584c9794cf89d554fc8c5268b7090fb73c7b21; proposalfa0b088; sourcea7ae8b3. Current source/SDK/scope/time/fresh-root checks pass. One read-only attempt, max27SDK/12GoogleHTTPS/2SQL/3StripeGET, key check before cloud/SQL. Work ends7:05pm, absolute closeout7:15pm. Hidden owner inputs only; no mutation or cost/hold release. Implementer owns launch/safe receipt/closure. Current live facts UNKNOWN until observed. Accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 scope deviation only; no further deviation.
+
+
 ## November10 — attended endpoint input matches; QK4 read-only review ready
 
 Owner proceeded with local endpoint-only check. Actual result exactMatchtrue/formatValidtrue/inputLength27, no whitespace/URL/control/non-ASCII issue, providerCalls0. Process exited, owned launcher removed, raw input not persisted. Evidence backend evidence/APP-013/p08-key-correction-20261110/local-input-match-20261110.json. Current selected endpoint and current pasted input both match the unchanged pin. Prior failed raw inputs remain unknown; QK2/QK3 consumed, no replay.
