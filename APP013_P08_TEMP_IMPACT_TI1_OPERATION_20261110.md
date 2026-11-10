@@ -1,5 +1,9 @@
 # APP-013 / 3A / P08 — TI1 exact TEMP-impact qualification
 
+## November10 — TI1 exact approval recorded; manual launch pending
+
+Owner replied "i approve" to packet0b94dbc and attendance November10 7:10–7:30a.m.EST,start strictly before7:20,read end7:25,closeout7:30. Source79c5962,operation4b7d86a5-769c-4cd4-b7c9-e1b04b8a0f9b,scope09c958f3cec856ecd316c8fef68a7fef46e468d30a6b998cee58d2747b5bc3b1. Exact3SQL read-only catalog/normal/fresh independent cleanup,hidden password and bounded administrative metadata retention approved. Clock12:00:33Z before start. No credential input or provider reads. Implementer binds committed authority to existing manual launcher and verifies source/runtime/clock;owner runs once within window. Cleanup included;no further approval needed for this exact operation. No permission mutation or full qualification retry. Current live impact remains UNKNOWN pending result.3A OPEN,accepted1A/1B/2A/2B4/8,R1newlyclosed0/27. No scope deviation.
+
 PENDING exact owner/DB/credential-custodian approval and attendance. Owner approved proceeding with preparation; no exact timing had been presented. Qualification-only, not execution-ready. No live read, password prompt, permission mutation or full qualification retry.
 
 ## Exact operation
