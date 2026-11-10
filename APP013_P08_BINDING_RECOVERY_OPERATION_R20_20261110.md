@@ -1,5 +1,11 @@
 # APP-013 / 3A / P08 — R20 exact identifier recovery
 
+## November10 — R20 exact approval recorded; manual launch pending
+
+Owner “i approve” answers the exact R20 operation and attendance question. Approval covers packet3f90a79,operation40b6c75b-bbec-4483-aa02-83d7e46d4a88,source6f2dc20,scope0a1dd6e6b36ace0eb755c5a8ea9bdf0e325612dd7575387bf3872ac346a230a2. November10 9:10–9:55a.m.EST,start strictly before9:20,reads9:25,resource closeout9:45,purge9:55.2SDK/3SQL,existing SDK refresh/cache/internal-retry exception,hidden password and bounded45minute retention approved. Clock13:56:05Z precedes start;no live read or private inputs.
+
+Implementer binds committed authority to existing manual launcher,checks source/SDK/config and actual-clock prewindow refusal. Owner runs once in approved window;normal/independent resource closeout and private purge/guard exit verification mandatory. No further approval needed for this exact recovery/cleanup. Full qualification requires its separate concrete packet after fingerprint-matched recovery;no native/payment/mutation authority. Current live facts UNKNOWN.3A OPEN;accepted1A/1B/2A/2B4/8;R1newlyclosed0/27. No scope deviation.
+
 PENDING exact owner/credential-custodian/DB approval and attendance. User “proceed” authorizes preparation following completed admission correction; no live action is inferred. R19/Q11 consumed and purged. Q11 exact failed predicate UNKNOWN. Correction6f2dc20 supports the approved controlled admission and bounded failed-check reporting; no repeat TEMP correction/diagnosis. Existing recovery only; no new helper or customer workflow.
 
 ## Exact proposed operation

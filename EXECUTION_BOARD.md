@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## November10 — R20 exact approval recorded; manual launch pending
+
+Owner “i approve” answers the exact R20 operation and attendance question. Approval covers packet3f90a79,operation40b6c75b-bbec-4483-aa02-83d7e46d4a88,source6f2dc20,scope0a1dd6e6b36ace0eb755c5a8ea9bdf0e325612dd7575387bf3872ac346a230a2. November10 9:10–9:55a.m.EST,start strictly before9:20,reads9:25,resource closeout9:45,purge9:55.2SDK/3SQL,existing SDK refresh/cache/internal-retry exception,hidden password and bounded45minute retention approved. Clock13:56:05Z precedes start;no live read or private inputs.
+
+Implementer binds committed authority to existing manual launcher,checks source/SDK/config and actual-clock prewindow refusal. Owner runs once in approved window;normal/independent resource closeout and private purge/guard exit verification mandatory. No further approval needed for this exact recovery/cleanup. Full qualification requires its separate concrete packet after fingerprint-matched recovery;no native/payment/mutation authority. Current live facts UNKNOWN.3A OPEN;accepted1A/1B/2A/2B4/8;R1newlyclosed0/27. No scope deviation.
+
 ## November10 — R20 recovery prepared from corrected admission source
 
 Owner requested proceeding after local correction6f2dc20. R19/Q11 consumed/purged;private slots absent. R20 operation40b6c75b-bbec-4483-aa02-83d7e46d4a88,prospective qualification5f5f3cf4-1e3e-4d8b-a1e9-9dd19838596e,source6f2dc20,scope0a1dd6e6b36ace0eb755c5a8ea9bdf0e325612dd7575387bf3872ac346a230a2 proposes November10 9:10–9:55a.m.EST,start strictly before9:20,reads9:25,resource closeout9:45,purge9:55. Existing2SDK/3SQL/0directHTTPS/cache/token-print,hidden password,SDK existing-owner refresh/cache/internal-retry exception and45minute retention. Exact packet/card APP013_P08_BINDING_RECOVERY_OPERATION_R20_20261110.md. Decision false;approval and attendance pending.
