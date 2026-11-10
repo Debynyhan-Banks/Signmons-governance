@@ -1,5 +1,13 @@
 # Global Execution Pointer
 
+## November10 — local payment integration approved; destination contract unresolved
+
+Owner approved proposal159b9e7. Approval persists for all bounded local integration deliverables;do not request it again. Source inspection mapped existing auth token/session,30second child timeout,strict journal/private inventory,bridge payment context/route and cleanup seams. No runtime edits or new helper. APP013_P08_CONNECTED_PAYMENT_DESIGN_20261110.md records design constraints and next card requirements.
+
+Retained October22 destination JSON/screenshot does not expose object/API family. Official Stripe v1/v2 disable contracts differ;Dashboard Event destinations label is insufficient. Q12 did not query Stripe. Exact one-destination read-only proposal APP013_P08_STRIPE_DESTINATION_INSPECTION_20261110.md awaits external-read approval,not another local implementation approval. No password/SQL/full qualification/session scheduling. No account read or change yet.
+
+Next owner authorizes bounded existing-Sandbox destination inspection;implementer records type/contract or UNKNOWN,then completes already-approved connected card/code/tests. Material provider uncertainty blocks implementation-card completion under AGENTS.md. Q12 success/cleanup/purge unchanged;no retiming/reconstruction.3A OPEN,accepted1A/1B/2A/2B4/8,R1newlyclosed0/27. No scope deviation from local approval;external inspection proposed separately.
+
 ## November10 — payment execution gap identified; local integration decision pending
 
 Q12 succeeded and cleanup/purge remain verified. Read-only source inspection shows native entry proves authentication then immediately closes;existing payment controller --run explicitly refuses. Existing operator payment bridge is implemented locally but not connected to that session/lifecycle. Q12 candidate does not supply its required actor/account/amount/policy/job-version context. Earlier handoff understated this missing integration;no ready payment packet can honestly be issued now.

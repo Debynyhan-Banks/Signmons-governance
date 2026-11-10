@@ -1,5 +1,9 @@
 # APP-013 / 3A / P08 — connect existing authentication to payment
 
+## Owner decision — November10
+
+Owner “i approve” authorizes the proposed bounded local integration. This approval persists;do not ask again for those local implementation deliverables. No external destination inspection or mutation is included. Pre-code inspection below identifies an unresolved provider contract that must be resolved before finalizing the connected card.
+
 Status: owner decision pending. Read-only execution-packet inspection after Q12; no runtime changes,provider calls,credentials,new qualification or attended window. Source backend e77f281 (runtime6f2dc20),governance baf3b9f. Exact inspected file hashes/timestamp are in backend evidence/APP-013/P08_PAYMENT_EXECUTION_GAP_20261110.json.
 
 ## Demonstrated gap and correction to prior handoff
