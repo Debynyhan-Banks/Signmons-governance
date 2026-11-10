@@ -1,6 +1,14 @@
 # APP-013 / 3A / P08 — bounded role provenance extension
 
-Status: proposal only. Owner requested proceeding after DBR1; no exact extension or external operation was previously described. This record requests local implementation approval; no live authority or window is created.
+## November9 — approved role provenance extension complete locally
+
+Owner approved proposal3df4f79 before implementation. Backend4012c92 adds --diagnose-role-provenance/--closeout-role-provenance in the existing module, version2 with distinct committed authority/query/root. One bounded READ ONLY catalog observation plus normal/fresh independent cleanup;3SQL,zeroSDK/HTTPS/cache/private-target recovery. Exact membership directions/options/grantors and PUBLIC/direct/inherited TEMP provenance, with server effective-privilege checks;candidate null/executionReady false. Fixed64edge/64grant caps,65th-row overflow refusal,strict native-byte parsing and safe UNKNOWN on unsupported/null/malformed/inconsistent metadata. Original diagnostic/classifier preserved. No role change.
+
+All five local checklist items complete.214runtime/local tests PASS107.879s plus25governance=239PASS. Actual owned PostgreSQL16/TLS covers incoming/outgoing/chained inheritance,inherit false,PUBLIC/direct/default/absent grants,both overflow caps and public hard-crash/fresh cleanup.17/18 parser/catalog-contract compatibility is not actual-server proof. Server reaped,scratch absent,providerCalls0. Manifest/baseline/consistency/architecture/whitespace PASS. Evidence P08_ROLE_PROVENANCE_20261109.md and P08_ROLE_PROVENANCE_READINESS_20261109.json;source/query fingerprints and owners recorded. Unrelated backend AGENTS.md preserved.
+
+Remaining UNKNOWNs:live server version,memberships/grants,credential usability,provider-managed role semantics and shared-grant correction impact. Implementer owns exact read-only packet/readiness;DB owner owns interpretation/correction;credential custodian owns hidden input. Next observable result after separately prepared/approved qualification-only packet:bounded actual provenance and independent cleanup. No live packet/window/password operation or new provider reads now;full qualification held.3A OPEN,accepted1A/1B/2A/2B4/8,R1newlyclosed0/27. No scope deviation beyond approved bounded extension.
+
+Status: LOCAL IMPLEMENTATION APPROVED. Owner replied "i approve" to proposal3df4f79 on November9. No live operation approved. Historical proposal follows. Owner requested proceeding after DBR1; no exact extension or external operation was previously described. This record requests local implementation approval; no live authority or window is created.
 
 ## Demonstrated gap and customer connection
 
@@ -36,4 +44,4 @@ Impact: adds five bounded local tasks and one possible later read-only operation
 
 Finish: validated provenance capability and evidence, then separately reviewed live packet; eventually exact membership/grant-source facts with explicit UNKNOWNs to support a DB-owner correction decision. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27.
 
-Deviation proposal before implementation: expand existing diagnostic query and retained administrative metadata only. Owner decision PENDING. No scope deviation implemented.
+Deviation proposal before implementation: expand existing diagnostic query and retained administrative metadata only. Owner decision: approved local implementation of this exact extension. No external authority.
