@@ -1,5 +1,13 @@
 # Session Handoff
 
+## November10 — TI1 live impact observed and closed
+
+TI1 operation4b7d86a5-769c-4cd4-b7c9-e1b04b8a0f9b,source79c5962,approval29da259 returned TEMP_IMPACT_DIAGNOSED,complete true,liveObserved true,failure null. PostgreSQL180006;25 roles;21 would lose effective TEMP if PUBLIC TEMP alone were revoked. Four retain it:cloud_admin,neon_service,neon_superuser,neondb_owner. Affected application roles:p06_intake_runtime,p06_migration_owner,p06_migration_runner,p07_payment_runtime;also16 pg_* roles and token_roles. All affected roles NOLOGIN at observation;all25 had zero other database sessions. Neither fact proves lack of workload need. Existing explicit TEMP grants to neon_superuser/neondb_owner remain usable for retained roles;no grant recommendation inferred.
+
+All3SQL slots spent;normal and fresh independent cleanup complete. Public closeout returned DATABASE_ROLE_CLOSED,verified true,residuals empty,zero additionalSQL/password. Evidence backend evidence/APP-013/P08_TEMP_IMPACT_TI1_RESULT_20261110.json retains approved bounded administrative metadata. TI1 consumed,no replay. No permission mutation,customer data,Google calls or full qualification retry. Owner can leave Terminal.
+
+Completed exact inventory/result/closeout. Remaining blocker is DB-owner policy for affected non-payment roles,particularly the three P06 roles and token_roles;current workload need remains UNKNOWN. Next implementer prepares a concrete correction proposal using this inventory and existing role contracts,with explicit preserved-access policy,transaction preconditions,concurrency/readback/rollback and separate mutation approval. Do not blind revoke PUBLIC or blanket-grant all other roles. No further impact diagnostic is currently justified.3A OPEN;accepted1A/1B/2A/2B4/8;R1newlyclosed0/27. No scope deviation.
+
 ## November10 — TI1 exact approval recorded; manual launch pending
 
 Owner replied "i approve" to packet0b94dbc and attendance November10 7:10–7:30a.m.EST,start strictly before7:20,read end7:25,closeout7:30. Source79c5962,operation4b7d86a5-769c-4cd4-b7c9-e1b04b8a0f9b,scope09c958f3cec856ecd316c8fef68a7fef46e468d30a6b998cee58d2747b5bc3b1. Exact3SQL read-only catalog/normal/fresh independent cleanup,hidden password and bounded administrative metadata retention approved. Clock12:00:33Z before start. No credential input or provider reads. Implementer binds committed authority to existing manual launcher and verifies source/runtime/clock;owner runs once within window. Cleanup included;no further approval needed for this exact operation. No permission mutation or full qualification retry. Current live impact remains UNKNOWN pending result.3A OPEN,accepted1A/1B/2A/2B4/8,R1newlyclosed0/27. No scope deviation.
