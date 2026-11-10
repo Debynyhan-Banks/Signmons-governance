@@ -1,6 +1,6 @@
 {
   "owner": "Debynyhan Banks",
-  "decision": "PENDING_EXACT_OWNER_DB_CREDENTIAL_APPROVAL",
-  "externalReadAuthorized": false,
+  "decision": "APPROVE_EXACT_P08_DATABASE_ROLE_PROVENANCE",
+  "externalReadAuthorized": true,
   "scopeSha256": "dcb01b7064bbcdd0148bb5bd0e31449c6d73756114e14cbb46e18654f3bfd9bd"
 }

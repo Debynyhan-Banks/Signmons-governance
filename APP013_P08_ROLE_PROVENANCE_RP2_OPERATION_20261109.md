@@ -1,5 +1,9 @@
 # APP-013 / 3A / P08 — RP2 exact role provenance operation
 
+## November9 — RP2 exact approval and attendance confirmed; manual launch pending
+
+Owner answered yes to the combined exact RP2 approval/attendance question for d33debb. Approves8:25–8:45p.m.EST,strict start cutoff8:35,read end8:40,closeout8:45;3SQL read-only catalog/normal/fresh independent cleanup,hidden password and bounded administrative role/grant retention. Source4012c92,operation86a092fe-40d8-46ab-829c-a38f75a1a687,scopedcb01b7064bbcdd0148bb5bd0e31449c6d73756114e14cbb46e18654f3bfd9bd. Clock01:11:37Z before start;no credential/provider access or launch. Implementer prepares committed-authority manual launcher;actual source/pins/time enforced at entry. No repeat approval needed for this exact operation and cleanup. Full qualification held;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 PENDING exact owner/DB/credential approval and attendance. Qualification-only; not execution-ready. RP1 expired without execution: owner yes arrived after its closeout deadline; actual clock01:10:22Z. RP1 root absent, decision false archived unchanged. Same source/read-only scope; fresh operation/timing require exact confirmation. Preparation remains within requested scope. No external reads, credential entry or launcher execution.
 
 ## Exact scope
