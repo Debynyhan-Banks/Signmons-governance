@@ -1,5 +1,16 @@
 # APP-013 / 3A / P08 connected payment implementation card
 
+## November10 — R21 connected packet prepared; attendance confirmed, exact read approval pending
+
+Runtime sourcedbfeeac; existing packet builder adapted in backend evidence/APP-013/p08-connected-packet-20261110. Eight fresh local packet/schema/lifetime tests pass. It consumes actual recovery paymentBinding, keeps scope in the same parent process through qualification input purge, requires separately committed exact native approval, and invokes existing independent cleanup in finally. No provider transport, new private slot, automatic approval or new application feature. Prior actual TLS/browser proof remains local evidence and is not rerun or presented as current provider state.
+
+R21 operation92dda9fa-1203-40bc-839c-6c0e74ea27c9,prospective qualificationeea127d2-387a-4dbc-8a7b-45dee9e510d0,native16a99bd4-1e89-47b0-ab30-95e948a4a812. Proposed November10 noon–1p.m.EST; owner confirmed attendance. Recovery start before12:05,reads12:10,resource closeout12:15,purge1:00.2SDK/3SQL/0directHTTPS/cache/token-print,existing reviewed SDK refresh/cache/internal-retry exception,hidden SQL entry and same-window retention of the two identifiers plus six payment-binding fields. Exact proposal APP013_P08_BINDING_RECOVERY_OPERATION_R21_20261110.md; packet/spec/readiness/false decision draft named there. Scopea1e87b105c78ac929b8c99f422646ec997d201fea88935209fa3095ec7dbf932. No approval or live launch yet.
+
+Actual committed-source/35SDK-file/config/environment capability prepare PASS16:27:10Z with proposed authority/start clock only; actual clock refused RECOVERY_NOT_STARTED, all proposed roots absent. Qualification-only; current private inputs, endpoint binding, usable live permission and provider payment evidence UNKNOWN. Exact later qualification/native scopes must be bound from R21 before separate approval, consumed in the same custody window; no extending Q12 or retention. Native tag add/remove and all runtime/IAM/key/webhook actions are explicitly reserved for later native approval. Normal traffic percentages remain fixed by the original validators.
+
+Implementer owns exact approval binding, launch preflight and mandatory cleanup/purge/guard-exit readback; owner/credential/DB custodians own this next bounded read decision. Next observable result: exact R21 approval, then one attended recovery and its truthful receipt; decline/failure/expiry means cleanup without retry. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27. No scope deviation.
+
+
 ## November10 — approved payment binding recovery correction complete locally
 
 Owner “proceed” approved exact proposal44d6a98. Backend checkpointdbfeeac implements version2-only recovery SQL/paymentBinding retention and the shared application-profile derivation; old version1 query/output remains unchanged. The envelope pins the existing account hash, retains only six derived fields plus target/project identifiers under the same guard/deadline, and rejects changed payment fields at qualification handoff. No provider read, credential recovery or runtime/payment mutation occurred.

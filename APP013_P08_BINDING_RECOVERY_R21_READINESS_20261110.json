@@ -1,0 +1,20 @@
+{
+  "verifiedAt": "2026-11-10T16:27:10.482329+00:00",
+  "sourceCommit": "dbfeeac709c3dfb3f477eb5030bbb5b497253fad",
+  "operationId": "92dda9fa-1203-40bc-839c-6c0e74ea27c9",
+  "scopeSha256": "a1e87b105c78ac929b8c99f422646ec997d201fea88935209fa3095ec7dbf932",
+  "manifestSha256": "49dc5b14f3b5c41b8c8a917c982c908b6401a75a6af8d8695a3fd30f81ddd24a",
+  "sourceSdkConfigActualCapability": "PASS_PROPOSED_AUTHORITY_AND_CLOCK_ONLY",
+  "actualClockResult": "RECOVERY_NOT_STARTED",
+  "sdkFilesVerified": 35,
+  "configSnapshotSha256": "528ceadadc8a5491e54ee82dbad0026eda881252564f96f2be242d70d1d2f111",
+  "proposedRootsAbsent": true,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "externalReadAuthorized": false,
+  "attendanceConfirmed": true,
+  "liveFacts": "UNKNOWN",
+  "downstreamConstruction": "8 local packet/schema/lifetime tests passed; actual private endpoint and current binding remain absent",
+  "builderSha256": "d2680ce3bd3240b1076cd88a1a70b0935ee96585f296bd42dd5e57ef4e40ebbc",
+  "attendanceAnswer": "Yes, noon\u20131:00 p.m. works"
+}
