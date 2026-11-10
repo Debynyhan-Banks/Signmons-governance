@@ -41,3 +41,5 @@ Exact approval hashes and limits follow. The decision object below is a proposal
 ```
 
 Current usable permissions and external readiness remain UNKNOWN until this one read attempt. Implementer owns launch/receipts/cleanup; owner and credential/DB custodians own this exact decision/password entry. Next observable result CURRENT_EVIDENCE_OBSERVED or truthful failure and cleanup; successful qualification alone does not accept3A. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27. No scope deviation.
+
+Owner approved this exact qualification with “i approve this qualification” at17:18UTC November10. Canonical decision now binds the above hashes; unchanged timing and cleanup. Committing this decision releases the already waiting attended parent for this one attempt. No native/payment authority.
