@@ -1,5 +1,16 @@
 # Session Handoff
 
+## November10 — approved payment binding recovery correction complete locally
+
+Owner “proceed” approved exact proposal44d6a98. Backend checkpointdbfeeac implements version2-only recovery SQL/paymentBinding retention and the shared application-profile derivation; old version1 query/output remains unchanged. The envelope pins the existing account hash, retains only six derived fields plus target/project identifiers under the same guard/deadline, and rejects changed payment fields at qualification handoff. No provider read, credential recovery or runtime/payment mutation occurred.
+
+Completed all three local correction checklist items: source/schema/retention wiring; real local TLS recovery SQL → actual profile derivation → actual full local qualification → guarded native handoff → payment consumer → independent closeout/purge proof; source manifests and regression gates. No prepared paymentBinding was injected after the query. Provider/payment transports are synthetic; separate desktop/mobile tests use actual local SQL/application services. Measured recovery2CLI/3SQL reservations plus one bounded local derivation process. Guard exit, session absence, server reaping and scratch removal verified.
+
+Fresh results:238qualification/recovery tests,38native/TLS/browser tests,17Node transport/payment tests,5SQL/connected-projection tests and25governance tests PASS;lint/architecture/frozen-baseline/complete consistency/whitespace PASS. Backend evidence/APP-013/P08_PAYMENT_BINDING_PRODUCER_VERIFIED_20261110.json. Application code/compiled policy artifacts unchanged; their hashes are verified, no fresh build claimed. Prior local proof does not establish live Stripe delivery or owner acceptance.
+
+Remaining: implementer assembles source-bound version2 recovery qualification-only packet and locally checked downstream envelope construction/unconditional cleanup commands. Actual current identity/project/endpoint/payment values, live access/permissions, absolute attended timing and owner/custodian external authority remain unbound/UNKNOWN. Consume recovery output within its original custody window; do not repeat an authentication-only qualification or extend old Q12. No attendance/password/action needed now and no further approval required for this completed local correction. Next observable result: exact reviewable live packet, then separately authorized same-job Sandbox payment/authentic event/cleanup proof and owner acceptance. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27. No scope deviation beyond the owner-approved correction.
+
+
 ## November10 — packet input audit found a recovery contract gap
 
 Source7f7b7b7: existing recovery retains only targetId/projectNumber; payment authority additionally requires current amount/currency/approvedAt/policyDigest/jobUpdatedAt/account hash. Recovery SQL omits job version/account fields. Current connected tests supply the payment binding synthetically before transfer. Execution/session/cleanup local proof stands; complete packet-input production is not yet implemented. Prior checklist5 closeout is reopened for this exact gap, without changing accepted milestones. Backend P08_PAYMENT_BINDING_PRODUCER_AUDIT_20261110.json records source evidence.
