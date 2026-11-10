@@ -43,3 +43,5 @@ Exact approval hashes and limits follow. The decision object below is a proposal
 Current usable permissions and external readiness remain UNKNOWN until this one read attempt. Implementer owns launch/receipts/cleanup; owner and credential/DB custodians own this exact decision/password entry. Next observable result CURRENT_EVIDENCE_OBSERVED or truthful failure and cleanup; successful qualification alone does not accept3A. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27. No scope deviation.
 
 Corrected versioned wrapper6951593 waits for exact committed authority and the1:10pm start; absent/stale approval cannot dispatch.18 local packet/launcher tests previously passed; not new live evidence.
+
+R22 exact qualification approved by owner “I approve R22 qualification.” at18:03UTC November10. Operationbdc6877e-2aa1-4dd4-9aee-e3b7cdf2da0b; scopee1163f76f4a1b7f01a18eed6531ae5d020ed80e62304dc7835545c1e6f2ce75f. Waiting parent may launch1:10–before1:22pm Eastern under unchanged limits; reads1:28, database cleanup1:33, purge2pm. No native/payment approval. No scope deviation.
