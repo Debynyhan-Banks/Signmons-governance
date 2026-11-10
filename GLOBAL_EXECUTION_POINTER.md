@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## November9 — RP1 exact provenance packet prepared; approval/attendance pending
+
+RP1 proposes7:50–8:10p.m.EST,start strictly before8:00,read end8:05,closeout8:10. Source4012c92,operationffe27a7a-3c3b-473b-a204-f2932ded3e9f,scope3c59c06b1cea1c2cd9e30fef7f51e6f4357c9ed018d0ba70a2b9c829abad6897.3SQL catalog/normal/fresh independent cleanup;zeroGoogle/HTTPS/cache/private binding recovery. Bounded administrative role/grant metadata retained;no database mutation or full qualification retry. APP013_P08_ROLE_PROVENANCE_RP1_OPERATION_20261109.md contains exact review packet/readiness/cleanup.
+
+Actual capability/source/query/runtime/environment PASS at2026-11-10T00:36:54.653137+00:00 with proposed authority/start only;fresh root absent,no credential/provider reads. Live version/membership/grant/access facts UNKNOWN. Pending decision false;attendance for newwindow unconfirmed. Implementer prepares actual-clock launcher only after exact owner/DB/credential approval,then one observation and independent closeout;DB owner owns correction impact.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November9 — approved role provenance extension complete locally
 
 Owner approved proposal3df4f79 before implementation. Backend4012c92 adds --diagnose-role-provenance/--closeout-role-provenance in the existing module, version2 with distinct committed authority/query/root. One bounded READ ONLY catalog observation plus normal/fresh independent cleanup;3SQL,zeroSDK/HTTPS/cache/private-target recovery. Exact membership directions/options/grantors and PUBLIC/direct/inherited TEMP provenance, with server effective-privilege checks;candidate null/executionReady false. Fixed64edge/64grant caps,65th-row overflow refusal,strict native-byte parsing and safe UNKNOWN on unsupported/null/malformed/inconsistent metadata. Original diagnostic/classifier preserved. No role change.

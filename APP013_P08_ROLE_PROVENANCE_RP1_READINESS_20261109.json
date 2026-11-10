@@ -1,0 +1,14 @@
+{
+  "verifiedAt": "2026-11-10T00:36:54.653137+00:00",
+  "sourceCommit": "4012c9227919cdcde6a28276c7720430dc92e023",
+  "manifestSha256": "7c4096250885132742d124f28a45b094d8ceaa3369eed9216bfe791242d8d149",
+  "operationId": "ffe27a7a-3c3b-473b-a204-f2932ded3e9f",
+  "scopeSha256": "3c59c06b1cea1c2cd9e30fef7f51e6f4357c9ed018d0ba70a2b9c829abad6897",
+  "actualCapabilitySourceQueryRuntimeEnvironment": "PASS_PROPOSED_AUTHORITY_AND_CLOCK_ONLY",
+  "freshRootAbsent": true,
+  "sqlReads": 0,
+  "googleCalls": 0,
+  "credentialReads": 0,
+  "liveFacts": "UNKNOWN",
+  "attendance": "UNCONFIRMED_FOR_NEW_WINDOW"
+}
