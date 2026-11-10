@@ -1,5 +1,14 @@
 # Signmons Execution Board
 
+## November10 — selected endpoint matches approved pin; QK3 read-only review ready
+
+Existing Chrome tab metadata identifies Signmons LLC sandbox and its URL endpoint ID hashes exactly to the existing approved pin. Owner supplied expected label Signmons P07 same-job sandbox and expected webhook URL. Browser inventory only; detail-tab read failed, no provider API/secret read or mutation. Backend evidence/APP-013/p08-key-correction-20261110/endpoint-ui-pin-match-20261110.json retains hashes/labels only. QK2 raw input remains unavailable; the precise copied/typed-value mismatch is UNKNOWN. No pin or code change is justified by this evidence.
+
+QK3 exact proposal/spec APP013_P08_KEY_QUALIFICATION_QK3_PROPOSAL_20261110.md / APP013_P08_KEY_QUALIFICATION_QK3_SPEC_20261110.json: operation0a4ebb50-9eff-48a6-b9ca-5ac51238146d; scopef326f498a2fed4f9b1d4410dc016669347b5590d6a0fd8e360a28e5dedf84828; unchanged source77e3b69. One fresh read-only attempt, max27SDK/12GoogleHTTPS/2read-onlySQL/3StripeGET, start now–before6:40pm Eastern November10, work ends6:50, absolute closeout7:00. Source/SDK/proposed-binding/fresh-root checks pass; exact owner approval PENDING. At hidden endpoint input copy only the final we_ URL segment. No source/runtime tests repeated, no credentials requested yet, no QK2 replay.
+
+Implementer owns qualification/closure; owner owns exact read approval/hidden inputs. Live key/account/mode/endpoint-state/access facts UNKNOWN. Next observable result safe current qualification receipt; correction/cost/independent cleanup, adoption and same-job payment/event/application acceptance remain outstanding. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 scope deviation only; no further deviation.
+
+
 ## November10 — QK2 consumed at endpoint pin check; cleanup verified
 
 QK2 operation4420952b-5eb9-41b9-b2c3-9432c4c9a8f9, source77e3b69, owner approval5bd3561: CR_K1_STOPPED, stageSANDBOX_KEY, codeKEY_ENDPOINT_PIN. Existing key_check.mjs checks endpoint format/hash before key decoding or any Stripe request. Source-order inference: Google/SQL preflight returned before this refusal, but detailed qualification values/call ledger were not retained in the failure receipt; do not reconstruct a usable qualification. Stripe requests0, provider mutations0; key validity/account/mode remain UNKNOWN. Owner reports an entered we_ prefix; exact copied-value/format/whitespace/endpoint-selection mismatch remains UNKNOWN. No raw input retained and no input can be reconstructed.
