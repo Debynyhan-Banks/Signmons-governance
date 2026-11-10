@@ -1,5 +1,9 @@
 # Global Execution Pointer
 
+## November9 — DBR1 attendance and exact scope confirmed; manual launch pending
+
+Owner answered "yes i can" to the explicit combined attendance-and-exact-operation approval question for43b79ff DBR1. Record confirmation of7:20–7:40p.m.EST and exact3SQL read-only work/normal+independent cleanup,hidden password,zeroGoogle/cache/identifier recovery. Scope3ca7c8614de33ec4efc0ebe28cbcb9b97b184bc8eceaea29ff80d9c25b1895d5,operation327d284a-2bda-455b-9e53-a6676454625a,source50144cb. Start before7:30,role read7:35,closeout7:40. Clock00:07:29Z before start;no launch/credential read. Implementer prepares committed-authority launcher;actual source/query/resource/time checks enforce at entry. Owner runs once;no retry or database change.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November9 — DBR1 SQL-only packet ready; exact approval/attendance pending
 
 DBR1 proposes7:20–7:40p.m.EST,start before7:30,role read7:35,closeout7:40. Operation327d284a-2bda-455b-9e53-a6676454625a,source50144cb,scope3ca7c8614de33ec4efc0ebe28cbcb9b97b184bc8eceaea29ff80d9c25b1895d5.3SQL total:fixed role query plus normal/fresh independent cleanup;zeroSDK/HTTPS/cache/config/identifier recovery. Hidden password,read-only catalog/ACL metadata,no mutations. APP013_P08_DATABASE_ROLE_DIAGNOSTIC_DBR1_OPERATION_20261109.md contains exact packet/readiness/cleanup. Pending false;no launch or credentials.
