@@ -1,5 +1,15 @@
 # Signmons Execution Board
 
+## November10 — connected guard correction implemented and fully verified locally
+
+Owner “proceed” approved the bounded correction. Backend96bd05e separates one-use qualification/native guard acknowledgements and keeps the version2 guard alive through qualification-input deletion and delayed native approval until explicit closeout or the original deadline. Version1 expiry behavior and existing external limits remain unchanged. A discovered early-preflight reporting crash when payment state is null is also corrected; payment remains unobserved and independent cleanup still runs.
+
+Actual local proof now executes recovery guard subprocess, both handoff functions, qualification entry/input deletion, owned TLS SQL, delayed synthetic committed approval, Python/Node native execution, independent closeout, private purge and guard exit. No mock of synchronization, transfer, deletion or guard liveness. Provider transports/resource pins and temporary committed authority repository are synthetic fixture injections; no current live payment evidence. Tests cover duplicate/concurrent stage reservation, foreign acknowledgement, interruption, deadline purge and preflight failure. This closes the actual two-handoff test gap exposed by R22.
+
+Final passing checks:226qualification/recovery,17composed,39native/TLS/browser,18packet/launcher,17Node transport/payment,13focused lifecycle/guard/connected and25governance tests (focused counts overlap). Lint,architecture,backend governance,frozen baseline,complete consistency and whitespace pass. Committed corrected source/active manifests verified. Evidence backend evidence/APP-013/P08_CONNECTED_GUARD_LIFECYCLE_VERIFIED_20261110.json. R22 remains consumed; recovery/qualification succeeded, native never started, cleanup/purge/guard exit verified. No old packet may run against new pins.
+
+Completed all local correction checklist items. Remaining3A: fresh source-bound packet/authority, same-job Sandbox Checkout and authentic matching event/application gate/cleanup demonstration, then owner acceptance. No new attendance or credential request now. Implementer owns fresh packet/readiness; owner/provider/DB custodians own any future exact live decisions. Next observable result is a reviewable fresh packet using96bd05e, not an R22 retry. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27. No scope deviation.
+
 ## November10 — R22 stopped before native entry; guard lifecycle defect isolated
 
 R22 current qualification succeeded. Native handoff raised FileExistsError because both transfer stages exclusively reserve the same guard-sync.json. Local temporary-root reproduction confirms this. A second source-backed defect ends the guard when qualification input is deleted: purge receipt18:10:01Z preceded qualification result18:11:52Z. Earlier launcher tests mocked this boundary and did not establish full connected custody. No native root/attempt, runtime activation or payment occurred.
