@@ -1,5 +1,7 @@
 # Global Execution Pointer
 
+R21 exact read/cleanup approval received from owner “i approve” after the explicit R21 request, November10 at16:34UTC. Approval binds scopea1e87b105c78ac929b8c99f422646ec997d201fea88935209fa3095ec7dbf932 and the unchanged noon–1pm window. No execution yet; launch must be noon–before12:05. Mandatory cleanup/purge persists; downstream approvals remain separate. No scope deviation.
+
 ## November10 — R21 connected packet prepared; attendance confirmed, exact read approval pending
 
 Runtime sourcedbfeeac; existing packet builder adapted in backend evidence/APP-013/p08-connected-packet-20261110. Eight fresh local packet/schema/lifetime tests pass. It consumes actual recovery paymentBinding, keeps scope in the same parent process through qualification input purge, requires separately committed exact native approval, and invokes existing independent cleanup in finally. No provider transport, new private slot, automatic approval or new application feature. Prior actual TLS/browser proof remains local evidence and is not rerun or presented as current provider state.
