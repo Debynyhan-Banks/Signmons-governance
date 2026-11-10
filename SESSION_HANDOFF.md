@@ -1,5 +1,13 @@
 # Session Handoff
 
+## November10 — approved TEMP-impact extension complete locally
+
+Owner approved proposal dfacd87 before coding. Backend79c5962 adds version3 --diagnose-temp-impact / --closeout-temp-impact within the existing SQL diagnostic lifecycle, with distinct committed authority/query/source/resource pins and operation root. Fixed3SQL/0CLI/0HTTPS/0cache, unchanged hidden-input/cutoff/no-retry/independent closeout. Catalog-only bounded inventory:256 roles,64 TEMP ACL entries,64 usable non-PUBLIC sources per role;overflow or inconsistent metadata yields UNKNOWN. Projection distinguishes LOSE_TEMP,RETAINS_TEMP,NO_TEMP without selecting grants or claiming workload need. Group/NOLOGIN/CONNECT-false roles included;session counts are context,not concurrency exclusion.
+
+All five approved card items complete locally.234 current-suite tests plus25 governance tests PASS. Actual owned PostgreSQL/TLS covers inheritance/default ACL/ordinary database owner/session visibility/overflow and public-command hard-crash cleanup. Initial fixture bootstrap-demotion error corrected with temporary bootstrap rename and ordinary owner;focused and full regression pass. All owned servers reaped,scratch absent,providerCalls0. Architecture,frozen baseline,complete consistency,source manifests and whitespace PASS. Evidence P08_TEMP_IMPACT_EXTENSION_20261110.md and P08_TEMP_IMPACT_READINESS_20261110.json records exact hashes,timestamp,commands and owners. Existing membership/noTEMP policy unchanged;unrelated backend AGENTS.md preserved.
+
+Current live inventory,credentials,effective permissions,consumer needs and concurrent activity UNKNOWN. No live operation/window authorized or launched;no database permission changes. Implementer next prepares a separate exact source-bound qualification-only inventory packet;owner/custodian approval required for live reads,then DB owner decides preserved TEMP policy before any separately approved correction. Do not repeat full qualification while this prerequisite is unresolved.3A OPEN;accepted1A/1B/2A/2B4/8;R1newlyclosed0/27. No scope deviation beyond the owner-approved TEMP-impact extension.
+
 ## November10 — TEMP impact review complete; bounded inventory extension proposed
 
 Static src/prisma/scripts search found no application TEMP creation;payment-role proof explicitly denies it. Historical CHILD records include intake/migration roles,so absence of app SQL does not prove shared grant removal safe. RP3 confirms PUBLIC source but does not identify all roles that would lose effective TEMP. Google IAM role inventory is unrelated. Current consumer set/needs remain UNKNOWN.
