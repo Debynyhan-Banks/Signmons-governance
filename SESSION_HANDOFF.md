@@ -1,5 +1,9 @@
 # Session Handoff
 
+## November10 — RP3 exact approval recorded; manual launch pending
+
+Owner "i approve" confirms b2e63fc RP3 and attendance6:20–6:40a.m.EST,start strictly before6:30,read end6:35,closeout6:40. Source4012c92,operationc64ef2c8-b137-4472-9ab9-b76ead3cbd16,scope07af14294dc8cdad1a070d3adf41852ca49cc4404fcf19261874af113222588e. Exact3SQL read-only catalog/normal/fresh independent cleanup,hidden password and bounded administrative metadata retention approved. Clock11:12:19Z before start;no launch/credentials/provider reads. Implementer prepares committed-authority manual launcher;actual source/resource/time gates enforce at entry. Owner runs once;cleanup included,no repeat approval needed. Full qualification held;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November10 — RP3 prepared for owner present now; exact window pending
 
 Owner returned ready and approved proceeding. RP2 root still absent at11:07:59Z;expired authority not reused. RP3 proposes6:20–6:40a.m.EST,start strictly before6:30,read end6:35,closeout6:40. Source4012c92,operationc64ef2c8-b137-4472-9ab9-b76ead3cbd16,scope07af14294dc8cdad1a070d3adf41852ca49cc4404fcf19261874af113222588e. Same3SQL catalog/normal/fresh independent cleanup,zeroGoogle/HTTPS/cache,approved bounded administrative metadata,no mutations. APP013_P08_ROLE_PROVENANCE_RP3_OPERATION_20261110.md contains exact packet.
