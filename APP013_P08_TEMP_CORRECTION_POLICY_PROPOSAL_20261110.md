@@ -1,5 +1,11 @@
 # APP-013 / 3A / P08 — selective PUBLIC TEMP correction proposal
 
+## November10 — correction policy approved; concurrency guarantee requires clarification
+
+Owner approved b04abb4 selective preservation and local implementation/testing. Local owned PostgreSQL prerequisite probe proves ordinary-owner exact four-role grant/PUBLIC revoke and rollback. Adversarial SERIALIZABLE+advisory-lock test also proves a concurrent membership GRANT can commit after the final in-transaction check,and the correction can commit with payment TEMP restored. Fresh read detects it but cannot roll back a committed transaction. Evidence P08_TEMP_CORRECTION_CONCURRENCY_RESULT_20261110.json/probe;zero provider calls,server reaped,scratch absent.
+
+APP013_P08_TEMP_CORRECTION_CONCURRENCY_DECISION_20261110.md records smallest DB-owner decision:approve maintained quiet interval plus mandatory fresh exact readback and CORRECTION_UNCONFIRMED/no continuation/no automatic rollback on drift,or require an externally enforceable exclusion mechanism. Selective policy remains approved;do not ask for it again. Runtime/write capability not implemented pending this material guarantee clarification;no live reads/mutation/window. Completed prerequisite investigation;remaining decision,local guarded implementation/tests,then exact live approval.3A OPEN,accepted4/8,R1newlyclosed0/27. Guarantee clarification proposed before implementation;no deviation implemented.
+
 PENDING owner/DB-owner policy decision. Preparation authorized by "proceed" after TI1; no runtime implementation or live mutation authorized by this document. Source backend a959fe671da0fd2a69ca111b2e572a3bcce9ce3d (runtime79c5962),governance b19e7c8. Evidence P08_TEMP_IMPACT_TI1_RESULT_20261110.json;TI1 consumed and closed.
 
 ## Demonstrated gap and recommended decision

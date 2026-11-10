@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## November10 — correction policy approved; concurrency guarantee requires clarification
+
+Owner approved b04abb4 selective preservation and local implementation/testing. Local owned PostgreSQL prerequisite probe proves ordinary-owner exact four-role grant/PUBLIC revoke and rollback. Adversarial SERIALIZABLE+advisory-lock test also proves a concurrent membership GRANT can commit after the final in-transaction check,and the correction can commit with payment TEMP restored. Fresh read detects it but cannot roll back a committed transaction. Evidence P08_TEMP_CORRECTION_CONCURRENCY_RESULT_20261110.json/probe;zero provider calls,server reaped,scratch absent.
+
+APP013_P08_TEMP_CORRECTION_CONCURRENCY_DECISION_20261110.md records smallest DB-owner decision:approve maintained quiet interval plus mandatory fresh exact readback and CORRECTION_UNCONFIRMED/no continuation/no automatic rollback on drift,or require an externally enforceable exclusion mechanism. Selective policy remains approved;do not ask for it again. Runtime/write capability not implemented pending this material guarantee clarification;no live reads/mutation/window. Completed prerequisite investigation;remaining decision,local guarded implementation/tests,then exact live approval.3A OPEN,accepted4/8,R1newlyclosed0/27. Guarantee clarification proposed before implementation;no deviation implemented.
+
 ## November10 — selective TEMP correction policy proposed
 
 APP013_P08_TEMP_CORRECTION_POLICY_PROPOSAL_20261110.md uses TI1 a959fe6 and inspected P06/P07 role contracts. Recommend explicit TEMP grants without grant option to p06_intake_runtime,p06_migration_owner,p06_migration_runner,token_roles,then revoke PUBLIC TEMP RESTRICT in one guarded transaction. Preserves these roles' observed access and four provider/admin roles;payment and16 pg_* roles lose TEMP. Workload need remains UNKNOWN;selection is an explicit compatibility policy requiring owner/DB-owner decision. Effective target noTEMP/full role contract must pass or rollback;no blanket grant to predefined roles.

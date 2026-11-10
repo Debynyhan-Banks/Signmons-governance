@@ -1,0 +1,23 @@
+# APP-013 / 3A / P08 — correction concurrency decision
+
+Owner approved b04abb4 selective preservation policy and bounded local implementation/testing. Approval persists;no need to repeat that policy decision. Before writing a mutation entry point,the card requires supported transaction/concurrency semantics to be resolved. Current runtime remains unchanged,read-only TI1 consumed.
+
+## Actual owned PostgreSQL prerequisite evidence
+
+Backend evidence P08_TEMP_CORRECTION_CONCURRENCY_PROBE_20261110.py and P08_TEMP_CORRECTION_CONCURRENCY_RESULT_20261110.json reproduce the experiment using the existing owned PostgreSQL fixture,not a provider. Exact two-statement four-role grant/PUBLIC revoke works under an ordinary non-superuser database owner;payment TEMP false and all four preserved roles TEMP true. Explicit transaction rollback restores the original database ACL. These are local SQL semantics only,not full correction readiness.
+
+Concurrency counterexample:transaction A uses SERIALIZABLE plus pg_advisory_xact_lock,performs the exact delta and reads payment TEMP false. Before A commits,transaction B grants p06_intake_runtime to p07_payment_runtime WITH INHERIT TRUE. B commits;A also commits successfully. Fresh independent read sees payment TEMP true. Thus the earlier statement "payment role must lose TEMP or the transaction rolls back" is valid only for conflicts observed before commit,not every concurrent change. A fresh read detects this counterexample but cannot undo a committed transaction. The role-membership drift would also violate the full role contract;no readiness result may pass.
+
+ProviderCalls0;owned server reaped and scratch absent. The probe uses synthetic roles and local superuser for the competing admin;the ordinary-owner positive/rollback checks are separate. No provider-wide locking guarantee inferred. [PostgreSQL MVCC caveats](https://www.postgresql.org/docs/18/mvcc-caveats.html) states internal catalog access differs from transaction-isolation snapshot behavior. Advisory locks only cover cooperating actors. There is also inherently a gap after any final read in which another authorized administrator can change state.
+
+## Smallest unresolved owner/DB-owner decision
+
+The selected four-role preservation policy is APPROVED. Need resolution only of the observable concurrency guarantee before mutation implementation continues:
+
+Recommended: retain owner-maintained no-concurrent-DDL/role-grant/job maintenance interval; explicitly accept that this does not exclude provider/other administrator changes. Precommit detected conflict rolls back. Aftercommit fresh independent exact ACL/full-role readback is mandatory;any conflict,missing readback or uncertain commit means CORRECTION_UNCONFIRMED,no payment/full-qualification continuation,no automatic regrant/revoke/replay. Preserve evidence and refer uncertain or drifted state to DB owner. An exact post-state may be verified only at the observation timestamp,not guaranteed indefinitely. The later execution packet must include this limitation and any bounded recovery authority.
+
+Alternative: require guaranteed exclusion of every other privileged writer. That is not established by available authority/interfaces;DB owner/provider must supply an enforceable maintenance mechanism before implementation can claim that guarantee. Do not acquire privileged system-catalog locks,disable users or alter database connections as an unapproved substitute.
+
+This is an explicit refinement of the earlier absolute rollback assurance,not a new feature or changed payment noTEMP policy. Existing approved card already requires uncertainty/no replay and owner maintenance;the newly observed counterexample needs an explicit decision rather than silently weakening the promised outcome. No further live diagnostic needed and no new attendance window requested.
+
+Completed:approved policy recorded;ordinary-owner exact delta,rollback and adversarial concurrency prerequisite tested. Remaining:concurrency guarantee decision,then mutation capability/transaction guards/full tests,exact live readiness and separate live approval. No production/runtime helper implemented. Current source/manifest unchanged.3A OPEN;accepted1A/1B/2A/2B4/8;R1newlyclosed0/27. Proposed guarantee clarification before implementation;no scope deviation implemented.
