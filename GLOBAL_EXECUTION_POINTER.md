@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## November10 — corrected launcher verified; fresh R22 packet prepared, not approved
+
+Backend6951593 versions the corrected wrapper and exercises both absent-then-committed approval boundaries with real temporary Git, synthetic scope and mocked provider dispatch.18 packet tests pass including deadlines/interruption/cleanup. Runtime dbfeeac unchanged; no new live action. R21 remains consumed, qualification successful, native unstarted, private purge and guard exit verified.
+
+Fresh R22 proposal APP013_P08_BINDING_RECOVERY_OPERATION_R22_20261110.md proposes1–2pm Eastern November10; attendance/exact read approval pending. Source/35SDK/config capability checks pass with proposed authority/clock only; new roots absent. No raw inputs recovered. Remaining live private bindings/access UNKNOWN; same-window later qualification/native require separate exact authority. Implementer owns launch checks/cleanup; owner owns availability and decisions. Next observable result: availability, then exact read approval before1:05 start cutoff. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27. No scope deviation.
+
 ## November10 — R21 qualification succeeded; native approval wait failed and session safely closed
 
 Qualification eea127d2-387a-4dbc-8a7b-45dee9e510d0 returned CURRENT_EVIDENCE_OBSERVED, liveObserved true, failure null and no residuals. Native proposal was constructed but no native approval existed. The operation wrapper incorrectly used git show(check=True) for the absent decision file; CalledProcessError ended the parent. Native operation16a99bd4-1e89-47b0-ab30-95e948a4a812 never started; native root absent. This was an implementer launcher defect, not a failed owner input or failed live qualification.
