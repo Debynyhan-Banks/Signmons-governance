@@ -1,5 +1,8 @@
 # Signmons Execution Board
 
+QK3 exact owner approval November10 at23:14UTC: owner approves QK3 before6:40pm Eastern. Operation0a4ebb50-9eff-48a6-b9ca-5ac51238146d; scopef326f498a2fed4f9b1d4410dc016669347b5590d6a0fd8e360a28e5dedf84828; proposal80c6968; source77e3b69. Current source/SDK/scope/time/fresh-root checks pass. One read-only attempt max27SDK/12GoogleHTTPS/2SQL/3StripeGET; work ends6:50, absolute closeout7:00. Hidden key/endpoint/password, no mutation/hold release. Prior QK2 decision remains immutable at5bd3561; consumed attempts are not replayed. Implementer owns launch/safe receipt/closure; live key facts UNKNOWN. Accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 scope deviation only; no further deviation.
+
+
 ## November10 — selected endpoint matches approved pin; QK3 read-only review ready
 
 Existing Chrome tab metadata identifies Signmons LLC sandbox and its URL endpoint ID hashes exactly to the existing approved pin. Owner supplied expected label Signmons P07 same-job sandbox and expected webhook URL. Browser inventory only; detail-tab read failed, no provider API/secret read or mutation. Backend evidence/APP-013/p08-key-correction-20261110/endpoint-ui-pin-match-20261110.json retains hashes/labels only. QK2 raw input remains unavailable; the precise copied/typed-value mismatch is UNKNOWN. No pin or code change is justified by this evidence.
