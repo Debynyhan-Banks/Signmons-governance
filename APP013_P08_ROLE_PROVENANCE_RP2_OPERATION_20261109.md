@@ -1,5 +1,9 @@
 # APP-013 / 3A / P08 — RP2 exact role provenance operation
 
+## November10 — expired without execution
+
+At2026-11-10T10:00:10Z,the01:45Z closeout deadline had passed and exact operation root `/private/tmp/p08-role-provenance-86a092fe-40d8-46ab-829c-a38f75a1a687` was absent. Source4012c92 creates the root and attempt markers before hidden credential input or SQL;therefore no exact launcher attempt,credential prompt,SQL reservation,result or closeout is evidenced. Backend evidence `evidence/APP-013/P08_ROLE_PROVENANCE_RP2_EXPIRY_20261110.json`. RP2 is expired unexecuted;the approval,operation ID,scope and window cannot be retried,extended or reused. Live provenance remains UNKNOWN. A future read requires a new operation,window,packet and exact owner/DB/credential approval. No scope deviation.
+
 ## November9 — RP2 exact approval and attendance confirmed; manual launch pending
 
 Owner answered yes to the combined exact RP2 approval/attendance question for d33debb. Approves8:25–8:45p.m.EST,strict start cutoff8:35,read end8:40,closeout8:45;3SQL read-only catalog/normal/fresh independent cleanup,hidden password and bounded administrative role/grant retention. Source4012c92,operation86a092fe-40d8-46ab-829c-a38f75a1a687,scopedcb01b7064bbcdd0148bb5bd0e31449c6d73756114e14cbb46e18654f3bfd9bd. Clock01:11:37Z before start;no credential/provider access or launch. Implementer prepares committed-authority manual launcher;actual source/pins/time enforced at entry. No repeat approval needed for this exact operation and cleanup. Full qualification held;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.

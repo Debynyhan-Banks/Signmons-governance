@@ -1,5 +1,11 @@
 # Session Handoff
 
+## November10 — RP2 expired unexecuted; fresh owner decision required
+
+At2026-11-10T10:00:10Z,RP2's closeout deadline01:45Z had passed. Exact operation root `/private/tmp/p08-role-provenance-86a092fe-40d8-46ab-829c-a38f75a1a687` is absent. Source4012c92 creates that root and attempt markers before hidden credential input or SQL,so no exact launcher attempt,credential prompt,SQL reservation,result or closeout is evidenced. Backend evidence `P08_ROLE_PROVENANCE_RP2_EXPIRY_20261110.json`. The ae0c80f approval was operation/source/scope/window-bound and is expired;no retry,extension or reuse.
+
+Completed this bounded expiry reconciliation only. Live server version,memberships,TEMP grants,credential usability and correction impact remain UNKNOWN;full qualification stays held. Smallest next owner decision is defer,or name a future attended window with preparation lead time;then a fresh operation ID,scope-bound packet and separate exact owner/DB/credential approval are required before any read.3A OPEN,accepted1A/1B/2A/2B4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November9 — RP2 exact approval and attendance confirmed; manual launch pending
 
 Owner answered yes to the combined exact RP2 approval/attendance question for d33debb. Approves8:25–8:45p.m.EST,strict start cutoff8:35,read end8:40,closeout8:45;3SQL read-only catalog/normal/fresh independent cleanup,hidden password and bounded administrative role/grant retention. Source4012c92,operation86a092fe-40d8-46ab-829c-a38f75a1a687,scopedcb01b7064bbcdd0148bb5bd0e31449c6d73756114e14cbb46e18654f3bfd9bd. Clock01:11:37Z before start;no credential/provider access or launch. Implementer prepares committed-authority manual launcher;actual source/pins/time enforced at entry. No repeat approval needed for this exact operation and cleanup. Full qualification held;3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
