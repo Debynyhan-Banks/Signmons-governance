@@ -1,5 +1,11 @@
 # Session Handoff
 
+## November10 — TEMP impact review complete; bounded inventory extension proposed
+
+Static src/prisma/scripts search found no application TEMP creation;payment-role proof explicitly denies it. Historical CHILD records include intake/migration roles,so absence of app SQL does not prove shared grant removal safe. RP3 confirms PUBLIC source but does not identify all roles that would lose effective TEMP. Google IAM role inventory is unrelated. Current consumer set/needs remain UNKNOWN.
+
+APP013_P08_TEMP_IMPACT_PROPOSAL_20261110.md proposes one existing-module read-only impact mode,distinct authority,one bounded role/ACL projection plus normal/fresh independent cleanup,total3SQL/zeroGoogle/cache. Complete source/card,retention limits,tests,owners and exclusions recorded. No runtime code,live read,permission mutation or new window. Owner decision on local extension pending;DB owner selects preserved access only after evidence.3A OPEN,accepted4/8,R1newlyclosed0/27. Deviation proposed before implementation;none implemented.
+
 ## November10 — approved exact administrative membership correction complete locally
 
 Owner approved f0ae9aa;pre-code APP013_P08_ADMIN_MEMBERSHIP_IMPLEMENTATION_CARD_20261110.md completed before coding. Backendec7d913 implements shared strict policy:zero edges or exactly neondb_owner member of p07_payment_runtime,grantor cloud_admin,ADMIN true,INHERIT false,SET false,with fixed database/admin identity. Actual counts preserved;query adds bounded edge rows/version;extra/outgoing/foreign/options/count/type/null/version drift refuses. Current qualification and native active/retired/fresh independent readbacks share policy. Existing native adapter overrides only the inherited role branch;historical restore.py/receipts and frozen anchor unchanged. Current source/test manifests explicitly repinned with old/new hashes in evidence.
