@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## November10 — TC1 exact live approval recorded; manual launch pending
+
+Owner replied "i approve" to pending TC1 packet d618aef after section-status clarification. This approves the exact November10 8:00–8:20a.m.EST operation,attendance and pause of other user-controlled database maintenance;strict start cutoff8:10,readEnd8:15,closeout8:20. Operation4a768a38-27f1-469d-9132-8e71fff7eef8,source d3d35f7,scope3330273473e3df3912fc37e2b179f5283912727c9fcb696c369124f7697d6b6f. Exact four-role TEMP preservation/PUBLIC revoke,3connections/12SQL statements/2privilege statements cap,bounded administrative ACL retention,normal/fresh cleanup and approved uncertainty stop authorized. No other mutation,payment or full qualification authority.
+
+Clock12:45:41Z before window;source unchanged and unrelated AGENTS.md preserved. No operation root,password or SQL yet. Implementer binds committed authority and prepares existing manual launcher;actual source/runtime/command/environment/clock checks still enforce at launch. Owner enters hidden password once during window;no retry. Cleanup included,no further confirmation required for this exact operation. Live state remains UNKNOWN pending guarded execution.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November10 — TC1 live correction packet prepared; exact approval pending
 
 APP013_P08_TEMP_CORRECTION_TC1_OPERATION_20261110.md binds d3d35f7,version4,operation4a768a38-27f1-469d-9132-8e71fff7eef8,November10 8:00–8:20a.m.EST (strict start cutoff8:10,read end8:15). Exact four selective TEMP grants and PUBLIC TEMP revoke RESTRICT in one guarded transaction;3connections/12SQL statements/2privilege statements maximum;zeroCLI/HTTPS/cache provider operations. Includes bounded full database ACL checkpoint retention,normal/fresh independent cleanup,no replay,no automatic postcommit reversal and approved uncertainty stop.
