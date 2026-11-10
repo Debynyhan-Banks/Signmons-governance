@@ -1,0 +1,26 @@
+{
+  "mode": "qualify",
+  "sourceCommit": "a7ae8b3e82b302343d4c17c97721accdb806a3ae",
+  "sourceManifestSha256": "f18cbb8bdb686d2a1848e3100d3a50b2787bb1bd3264edccbb06104cf24b44b4",
+  "plan": {
+    "operationId": "ed308ba4-ce5a-4b72-a927-ea2538b2f4b4",
+    "projectNumberSha256": "37d4aa0f46ca5b8f0b81b1148bda235a0f4a9a424b6b4638ec993d889563be54",
+    "window": {
+      "start": 1794354000,
+      "cutoff": 1794355800,
+      "workEnd": 1794356400,
+      "cleanupEnd": 1794357000
+    },
+    "qualificationSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "sourceManifestSha256": "f18cbb8bdb686d2a1848e3100d3a50b2787bb1bd3264edccbb06104cf24b44b4"
+  },
+  "qualification": null,
+  "limits": {
+    "cli": 54,
+    "https": 24,
+    "sql": 4,
+    "child": 2
+  },
+  "costAllowanceUsd": 0,
+  "decisionCommit": null
+}
