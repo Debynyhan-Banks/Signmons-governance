@@ -1,8 +1,8 @@
 {
   "owner": "Debynyhan Banks",
-  "decision": "APPROVE_EXACT_CR_K1_QUALIFY",
-  "scopeSha256": "60500c692b3153500afe9592e225d53c6a427d11a86288a146054808e4bdaaf1",
+  "decision": "APPROVE_EXACT_CR_K1_RUN",
+  "scopeSha256": "262f07d65c5e5a13b7f2b1701e8857fe0e68aafa0303196efa4cdf2a54653b12",
   "externalReadAuthorized": true,
-  "externalMutationAuthorized": false,
-  "costHoldReleased": false
+  "externalMutationAuthorized": true,
+  "costHoldReleased": true
 }
