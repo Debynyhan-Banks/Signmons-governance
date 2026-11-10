@@ -1,0 +1,13 @@
+{
+  "verifiedAt": "2026-11-10T13:24:04.506665+00:00",
+  "sourceCommit": "c57972b4ac02d353d9ec37a78d196078bc06bba6",
+  "manifestSha256": "2af12b08f0b2183d6a77246e2036c2a0644a1ffbfdc22ad72a8918f4542372d4",
+  "scopeSha256": "ff3993f7b30647a37f72e26a6cd7fa266babf0d0fec1599b90e36e5bb3c48b73",
+  "cleanupScopeSha256": "5ddae180a979fee8b7a9b87ee13ad27031ece38574ee6befd1231960903b5d6c",
+  "sourceSdkConfigFingerprintActualCapability": "PASS_PROPOSED_AUTHORITY_AND_CLOCK_ONLY",
+  "guardPid": 95009,
+  "guardPresent": true,
+  "qualificationEnvelopeWritten": false,
+  "providerCalls": 0,
+  "remoteFullQualificationFacts": "UNKNOWN"
+}
