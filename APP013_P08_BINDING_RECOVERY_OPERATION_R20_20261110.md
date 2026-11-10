@@ -1,5 +1,15 @@
 # APP-013 / 3A / P08 — R20 exact identifier recovery
 
+## November10 — Q12 qualification observed; cleanup and purge verified
+
+Q12 operation5f5f3cf4-1e3e-4d8b-a1e9-9dd19838596e,source6f2dc20,approvalcf694c7 returned CURRENT_EVIDENCE_OBSERVED,liveObserved true,failure/failureStage null,residuals empty,databaseFailedChecks empty. All candidate checks true:billing,database,effectiveAccess,Firebase,job,owner,privateInventory,retiredRuntime,services.27CLI/20HTTPS/4SQL/1cache reservations,not provider-internal totals. The admission correction is live-qualified;Q11 exact failed predicate remains historically UNKNOWN.
+
+Candidate QUALIFIED_FOR_NATIVE_ENTRY is bound to prospective operation403d081c-ce6c-4de2-9a4d-3955752f423b,scopeda453f38e761860c120ac10b79443f0c6834d4d860cb2515d5fa52c7c73ee7e5,qualifiedUntil2026-11-10T14:52:00Z. This is time/scope-bound observed evidence,not durable authorization. executionReady false;no native execution/payment authority or payment demonstration. Do not extend validity or reuse for a different operation.
+
+Normal and fresh independent SQL cleanup verified. Approved R20 receipt-only closeout returned PRIVATE_PURGE_VERIFIED,onTime true,rawFilesAbsent true,resourceCloseout verified,residuals empty. Both private input slots absent and guard39795 absent verified. No additional SQL/password used. Q12/R20 consumed and purged;owner can leave Terminal. Backend evidence evidence/APP-013/P08_Q12_QUALIFICATION_RESULT_20261110.json records sanitized candidate/result/closure.
+
+Completed current qualification and all cleanup. Remaining3A is separately authorized same-job Sandbox native/payment execution,authentic signed-event and failure/duplicate/replay proof,then owner acceptance. Implementer next inspects existing native-entry/payment packet and its binding/retention requirements against this successful result before proposing concrete execution. Do not automatically restart recovery/qualification or treat the short prospective window as an approved payment session. Private values are purged and cannot be reconstructed from history. Any missing current binding/authority is an explicit prerequisite for that execution proposal,not permission to invent another helper. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27. No scope deviation.
+
 ## November10 — R20 handoff verified; Q12 exact qualification prepared
 
 R20 operation40b6c75b-bbec-4483-aa02-83d7e46d4a88 returned HANDOFF_RETAINED,failure null,resource closeout verified,residuals empty. Fingerprints verified privately;purge guard39795 present. Raw private bindings retained only under approved custody until9:55a.m.EST. No private qualification envelope written. Backend P08_BINDING_RECOVERY_R20_HANDOFF_20261110.json records sanitized evidence.
