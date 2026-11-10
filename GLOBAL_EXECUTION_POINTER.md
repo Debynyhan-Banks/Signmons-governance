@@ -1,5 +1,16 @@
 # Global Execution Pointer
 
+## November10 — CR-K1 locally implemented; QK1 read-only review ready
+
+Backend77e3b69 completes approved CR-K1 local correction: strict hidden key/connected-account/mode/existing-endpoint check, one-version/one-candidate driver, existing full-ACL/deployment/retirement seams, independent closeout and coordinated active bindings. Active binding remains LEGACY; no key received, provider operation, deployment or allowance release. Corrected native ordering enables/readbacks the exact new Stripe version before key preflight and other runtime activation. Historical sources/receipts preserved; unrelated backend AGENTS.md remains dirty/uncommitted.
+
+Current local checks pass:392 qualification/native/credential/packet/TLS tests plus25 governance tests, lint/architecture/baseline/consistency/whitespace. Evidence backend evidence/APP-013/p08-key-correction-20261110/verification.json and READINESS.md. These are local proofs, not live qualification or3A acceptance.
+
+QK1 proposal APP013_P08_KEY_QUALIFICATION_QK1_PROPOSAL_20261110.md/spec prepared; operation64d42ee5-5a0e-4288-bd59-d1b696bc9b27; scopee1c586c53a5038a3bba1458b13e7886bd5e536b482c9bd31540907e09a44524a; source77e3b69. Exact external read approval PENDING. At most27SDK/12GoogleHTTPS/2read-onlySQL/3StripeGET, one attempt; start strictly before4:55pm Eastern, work ends5:05, absolute closeout5:15 November10. Hidden key/endpoint/SQL password; no previous test-account recovery handoff required. Project number discovered in process and checked against public hash. Preparation source/SDK/proposed binding check passed; root absent, no launch.
+
+Implementer owns current qualification/cleanup; owner owns exact read approval and hidden inputs. Live key/account/mode/permissions/resource state remain UNKNOWN. After qualification, exact correction mutation+independent cleanup/cost decision, reviewed candidate adoption, and same-job Sandbox Checkout/authentic event/application gate/owner acceptance remain. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 scope deviation only; no further deviation.
+
+
 CR-K1 owner decision November10: “I approve CR-K1.” Approved bounded scope/local implementation from55b73cc: one additional numeric Sandbox-key secret version, one replacement same-image zero-normal-traffic test candidate, coordinated active pins and existing cleanup seams. No exact external secret/deploy/Stripe/SQL action, new allowance or hold release yet. Existing key available for hidden entry, value/usability UNKNOWN. Source1f54496. Implementer proceeds through finite card before requesting exact operation review. Accepted4/8;3A OPEN;R1newlyclosed0/27. Approved scope deviation CR-K1 only; no further deviation.
 
 ## November10 — CR-K1 credential/candidate correction proposed before implementation
