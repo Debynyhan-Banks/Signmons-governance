@@ -1,0 +1,30 @@
+{
+  "mode": "run",
+  "sourceCommit": "a7ae8b3e82b302343d4c17c97721accdb806a3ae",
+  "sourceManifestSha256": "f18cbb8bdb686d2a1848e3100d3a50b2787bb1bd3264edccbb06104cf24b44b4",
+  "plan": {
+    "operationId": "392807bd-8c43-4a01-b82d-3292f19fd222",
+    "projectNumberSha256": "37d4aa0f46ca5b8f0b81b1148bda235a0f4a9a424b6b4638ec993d889563be54",
+    "window": {
+      "start": 1794354600,
+      "cutoff": 1794356100,
+      "workEnd": 1794357000,
+      "cleanupEnd": 1794357900
+    },
+    "qualificationSha256": "dec7be0ea34afbd2930214cc24a5e82f07dc316f14670a72fd47937a63601b01",
+    "sourceManifestSha256": "f18cbb8bdb686d2a1848e3100d3a50b2787bb1bd3264edccbb06104cf24b44b4"
+  },
+  "qualification": {
+    "returnUrl": "https://signmons-calldesk.web.app/payment/status",
+    "roleAclSha256": "649d517af81c235f8045894d73207b7d892b3607ee165418151af6b9975c1560",
+    "runtimeEnvironmentSha256": "b3b3e19722bbd8f5ceadb94323e86612e4b26b8bc896b1d0223e74e683f67cc8"
+  },
+  "limits": {
+    "cli": 180,
+    "https": 40,
+    "sql": 40,
+    "child": 2
+  },
+  "costAllowanceUsd": 1,
+  "decisionCommit": null
+}
