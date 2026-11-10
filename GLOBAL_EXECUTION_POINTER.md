@@ -1,5 +1,7 @@
 # Global Execution Pointer
 
+R23 native approval19:16UTC November10: owner “I approve R23 native Sandbox execution and cleanup”. Exact operation695e247a-3a09-4841-95e6-cceecb6de7a4, scopee4ded971d20ec57817eec88a76049cdf23deec6e4e83370d279dfeb72b43cdaa, proposal1a83af3, corrected source96bd05e. Waiting parent may launch2:28–before2:38pm Eastern; payment work2:46, work2:47, independent cleanup2:58, private purge3:00. All enumerated temporary actions, limits, exclusions and mandatory cleanup unchanged. Approval is not execution or acceptance. No scope deviation.
+
 R23 exact qualification approved19:05UTC November10: owner “I approve R23 qualification.” Operation5e05f6db-df92-4fd5-abfe-2d56e0f51469; scope6cad6c5099e3932c629258e6ee6059f9361057667a8444d7575ec16c9397f0a8; source96bd05e. Existing parent may launch2:10–before2:22pm Eastern; reads2:28, database cleanup2:33, private purge3pm. Exact reviewed limits unchanged. No native/payment approval and no acceptance inferred. No scope deviation.
 
 R23 owner approval18:52UTC November10: “Available and approve R23.” Attendance2–3pm Eastern and exact recovery scope713776ec228170499bceb94ff19e6d82a10b64dd72a11308264b55e4acf28add approved. Operation07590e01-e5be-4760-aba4-c00fd6347096; corrected source96bd05e. Start2:00–strictly before2:05; reads2:10; database closeout2:15; purge3pm. No launch yet. Downstream qualification/native authority remains separate; consumed R21/R22 remain closed. No scope deviation.
