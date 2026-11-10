@@ -1,0 +1,25 @@
+{
+  "verifiedAt": "2026-11-10T19:40:28.945996+00:00",
+  "operationId": "8fe8703a-9313-4942-a991-0e142ee66b67",
+  "scopeSha256": "015643790d865b86f5794f8463c4db903b53e3b5b5d25a1d26db52a5c4696a37",
+  "runtimeSource": "f6f74cf3f24b27d48dfaa6c6afc90c18925e2c9e",
+  "packetSource": "f6f74cf3f24b27d48dfaa6c6afc90c18925e2c9e",
+  "publicationProof": "P08_CONNECTED_PUBLICATION_VERIFIED_20261110.json",
+  "capabilitySourceSdkConfig": "PASS_PROPOSED_CLOCK_AND_AUTHORITY_ONLY",
+  "sdkFilesVerified": 35,
+  "packetTests": 18,
+  "versionedLauncherSha256": "4d60aae554df54468bd6763adfd08eeaee4171bab902afc5004be158a260fbb5",
+  "rootsAbsent": true,
+  "attendanceConfirmed": false,
+  "externalReadAuthorized": false,
+  "providerCalls": 0,
+  "privateInputsRecovered": false,
+  "unknowns": [
+    "fresh private bindings",
+    "current live permissions",
+    "endpoint private input for fresh scope",
+    "attendance",
+    "exact external approval"
+  ],
+  "retention": "new operation only, maximum one hour; no consumed R21/R22/R23 reuse"
+}
