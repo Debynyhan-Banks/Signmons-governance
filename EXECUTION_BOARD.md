@@ -1,5 +1,11 @@
 # Signmons Execution Board
 
+## November10 — TC1 live correction packet prepared; exact approval pending
+
+APP013_P08_TEMP_CORRECTION_TC1_OPERATION_20261110.md binds d3d35f7,version4,operation4a768a38-27f1-469d-9132-8e71fff7eef8,November10 8:00–8:20a.m.EST (strict start cutoff8:10,read end8:15). Exact four selective TEMP grants and PUBLIC TEMP revoke RESTRICT in one guarded transaction;3connections/12SQL statements/2privilege statements maximum;zeroCLI/HTTPS/cache provider operations. Includes bounded full database ACL checkpoint retention,normal/fresh independent cleanup,no replay,no automatic postcommit reversal and approved uncertainty stop.
+
+Actual capability source/query/protocol/runtime/environment readiness PASS12:41:51Z using proposed authority/start clock only;fresh root absent,no SQL/password. Decision externalMutationAuthorized false. Current live state/credentials/maintenance interval UNKNOWN. Policy and concurrency decisions remain approved;next owner/DB/credential custodian confirms this exact live packet,attendance and no concurrent user-controlled maintenance. Implementer then binds committed authority and rechecks launch gates. Prepared only;no mutation or further diagnostic run.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November10 — approved guarded TEMP correction complete locally
 
 Owner approved selective policy b04abb4 and concurrency clarification0f5142f. Pre-code implementation entry card completed before edits. Backend d3d35f7 implements version4 EXTERNAL_BOUNDED_MUTATION,--correct-temp/--closeout-temp-correction,distinct committed authority/root and source/query/runtime/host/admin/window pins. Existing versions1–3 remain read-only. One owned interactive TLS psql transaction uses the existing Python impact/full retired-role validators before COMMIT;exact four-role grants and PUBLIC TEMP revoke RESTRICT only. Precommit detected failure/disconnection rolls back;uncertain commit or failed fresh readback stops without further writes/payment testing. No automatic postcommit reversal.

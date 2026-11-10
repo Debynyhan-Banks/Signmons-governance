@@ -1,0 +1,19 @@
+{
+  "verifiedAt": "2026-11-10T12:41:51.382597+00:00",
+  "sourceCommit": "d3d35f74526930e0e2ce9d5475d903444279afe1",
+  "manifestSha256": "2af12b08f0b2183d6a77246e2036c2a0644a1ffbfdc22ad72a8918f4542372d4",
+  "operationId": "4a768a38-27f1-469d-9132-8e71fff7eef8",
+  "scopeSha256": "3330273473e3df3912fc37e2b179f5283912727c9fcb696c369124f7697d6b6f",
+  "actualCapabilitySourceQueryRuntimeEnvironment": "PASS_PROPOSED_AUTHORITY_AND_CLOCK_ONLY",
+  "freshRootAbsent": true,
+  "externalMutationAuthorized": false,
+  "sqlReads": 0,
+  "credentialReads": 0,
+  "liveFacts": "UNKNOWN",
+  "attendance": "EXACT_WINDOW_PENDING",
+  "queryHashes": {
+    "temp_correction_snapshot": "6314bcdec00ac0d32eab6a9c76560459b4cecfa8543102ee16dfa184f5f0f6a6",
+    "closeout": "4c412c23a971f42bae3eb69210c98f6473476822ab0b16271f02de5ada8e76da",
+    "temp_correction_protocol": "d980e2aa8881b067c58267c0269d487e168080087b3162636029fd46fb492926"
+  }
+}
