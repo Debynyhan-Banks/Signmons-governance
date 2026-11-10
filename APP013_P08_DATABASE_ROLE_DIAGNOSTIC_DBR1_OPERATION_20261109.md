@@ -1,5 +1,13 @@
 # APP-013 / 3A / P08 — DBR1 exact SQL-only role observation
 
+## November9 — DBR1 diagnosed two role blockers; cleanup verified
+
+DBR1 operation327d284a-2bda-455b-9e53-a6676454625a, approved9a8e223/source50144cb, returned DATABASE_ROLE_DIAGNOSED with live ROLE_NOT_READY. Ten checks PASS; noMemberships and noDatabaseTemp FAIL. Memberships include either incoming or outgoing edges; identities/directions UNKNOWN. Effective database TEMP confirmed, but grant source and affected-role impact UNKNOWN; do not infer PUBLIC as the source. Exact direct ACL, disabled login, zero connection limit, finite/past expiry, no unsafe attributes/owned objects/sessions/schema CREATE, and exactly one role all PASS.
+
+Completed all three SQL reservations, normal and fresh independent cleanup, result inspection and public receipt-only closeout. Closeout verified true, residuals empty; no additional SQL/password for public closeout. Candidate null and executionReady false. Backend evidence: evidence/APP-013/P08_DATABASE_ROLE_DIAGNOSTIC_DBR1_RESULT_20261109.json. No database mutations, Google reads, private identifier recovery or full qualification retry. DBR1 consumed; no replay.
+
+Remaining: implementer and DB owner must identify exact membership directions/identities and TEMP grant provenance/impact before selecting a correction. Next observable result is a narrowly bounded metadata inventory proposal if requested; new external reads or corrections require their own exact scope and authority. Full qualification remains held. 3A OPEN; remaining full qualification and same-job Sandbox signed-event payment, negative/duplicate/replay checks and owner acceptance. Accepted1A/1B/2A/2B4/8; R1newlyclosed0/27. No scope deviation.
+
 ## November9 — DBR1 attendance and exact scope confirmed; manual launch pending
 
 Owner answered "yes i can" to the explicit combined attendance-and-exact-operation approval question for43b79ff DBR1. Record confirmation of7:20–7:40p.m.EST and exact3SQL read-only work/normal+independent cleanup,hidden password,zeroGoogle/cache/identifier recovery. Scope3ca7c8614de33ec4efc0ebe28cbcb9b97b184bc8eceaea29ff80d9c25b1895d5,operation327d284a-2bda-455b-9e53-a6676454625a,source50144cb. Start before7:30,role read7:35,closeout7:40. Clock00:07:29Z before start;no launch/credential read. Implementer prepares committed-authority launcher;actual source/query/resource/time checks enforce at entry. Owner runs once;no retry or database change.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
