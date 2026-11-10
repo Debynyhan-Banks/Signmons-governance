@@ -1,0 +1,13 @@
+{
+  "status": "EXPIRED_UNEXECUTED",
+  "operationId": "64d42ee5-5a0e-4288-bd59-d1b696bc9b27",
+  "scopeSha256": "e1c586c53a5038a3bba1458b13e7886bd5e536b482c9bd31540907e09a44524a",
+  "checkedAt": "2026-11-10T22:54:24.682224+00:00",
+  "returningUserMessage": "im back I approve QK1",
+  "launchCutoff": "2026-11-10T21:55:00Z",
+  "absoluteCloseout": "2026-11-10T22:15:00Z",
+  "operationRootAbsent": true,
+  "lateApprovalNotExecuted": true,
+  "externalCallsThisTurn": 0,
+  "renewal": "QK2_PENDING_EXACT_APPROVAL"
+}

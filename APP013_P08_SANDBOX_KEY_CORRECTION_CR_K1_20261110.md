@@ -70,3 +70,11 @@ Readiness evidence timestamp2026-11-10T21:32:53.960030Z, backend evidence/APP-01
 | Authority and next observable result | QK1 exact read-only proposal/spec; approval PENDING; no mutation hold released | Owner: exact read approval/hidden inputs; next current safe qualification receipt |
 
 Current blocking facts for mutation: successful current key/account/mode/endpoint/access/startup qualification, exact mutation+independent cleanup packet and cost/hold approval. New numeric version/candidate remain nonexistent from this work, active binding LEGACY. After actual correction/cleanup, adoption needs actual receipt and separate reviewed source commit. Final same-job payment/event/application/browser gate and owner acceptance remain unchanged. Accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 scope deviation only; no further deviation.
+
+## November10 — QK1 expired unexecuted; QK2 read-only proposal ready
+
+Owner returned at22:53UTC approving QK1 after its4:55pm Eastern launch cutoff and5:15pm absolute closeout. Exact QK1 root absent; no entry launched, credentials requested or provider calls made. Evidence APP013_P08_QK1_EXPIRY_20261110.json. Do not revive/retime QK1 or use the late approval as QK2 authority.
+
+Fresh QK2 proposal/spec APP013_P08_KEY_QUALIFICATION_QK2_PROPOSAL_20261110.md and APP013_P08_KEY_QUALIFICATION_QK2_SPEC_20261110.json; operation4420952b-5eb9-41b9-b2c3-9432c4c9a8f9; scopecd5a2a6b91b715bb8b3e7ca4d39aec0bb435fba780731b5a7c87e5c02a0d9fe9; same source77e3b69/manifest, same maximum27SDK/12GoogleHTTPS/2read-onlySQL/3StripeGET and no mutation/hold release. Start now–strictly before6:20pm Eastern November10; work ends6:30, absolute closeout6:40. Current committed-source/SDK/proposed binding check passes; new root absent. Earlier392 runtime tests are reused on unchanged source, not claimed rerun. Exact QK2 external-read approval PENDING.
+
+Implementer owns qualification/closeout; owner owns fresh exact read approval and hidden key/endpoint/SQL password entry. Live key/access/runtime facts UNKNOWN. Next observable result: current sanitized qualification receipt, then separately reviewed correction/cost/independent cleanup, adoption and connected payment proof. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 scope deviation only; no further deviation.
