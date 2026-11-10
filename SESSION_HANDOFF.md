@@ -1,5 +1,11 @@
 # Session Handoff
 
+## November10 — provider role contract review complete; narrow amendment proposed
+
+APP013_P08_PROVIDER_ROLE_CONTRACT_DECISION_20261110.md ties RP3 to PostgreSQL18 automatic creator-admin membership semantics and Neon managed-role constraints. Exact incoming ADMIN true/INHERIT false/SET false tuple matches documented pattern;historical bootstrap identity remains inference. Removing it is not an ordinary safe correction. Both access_check.py and native-entry entry.py enforce blanket memberships0,so a one-classifier patch would leave another blocker.
+
+Recommend owner policy decision permitting only zero edges or the exact neondb_owner -> p07_payment_runtime administrative edge granted by cloud_admin,with every extra/outgoing/options drift rejected. This is explicit prerequisite amendment,not implemented. Keep noTEMP and all other conditions. PUBLIC TEMP is additive/shared;target-only revoke cannot remove it,consumer impact remains DB-owner UNKNOWN. No new provenance/full qualification loop,mutation,password or live reads. Next owner decision on narrow membership policy,then complete implementation dependency card and separately bounded TEMP impact/correction proposal.3A OPEN,accepted4/8,R1newlyclosed0/27. Deviation proposed before implementation;none implemented.
+
 ## November10 — RP3 provenance observed; cleanup verified; DB-owner decision remains
 
 RP3 operationc64ef2c8-b137-4472-9ab9-b76ead3cbd16,source4012c92,approval5049f36 returned DATABASE_ROLE_PROVENANCE_DIAGNOSED,complete true,liveObserved true,failure null. PostgreSQL180006. Exact membership: neondb_owner is an INCOMING member of p07_payment_runtime,grantor cloud_admin,admin true,inherit false,set false. This does not show the payment role inheriting owner privileges. Provider-management purpose/requirement remains UNKNOWN;do not remove it based on name alone.
