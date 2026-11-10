@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## November10 — selective TEMP correction policy proposed
+
+APP013_P08_TEMP_CORRECTION_POLICY_PROPOSAL_20261110.md uses TI1 a959fe6 and inspected P06/P07 role contracts. Recommend explicit TEMP grants without grant option to p06_intake_runtime,p06_migration_owner,p06_migration_runner,token_roles,then revoke PUBLIC TEMP RESTRICT in one guarded transaction. Preserves these roles' observed access and four provider/admin roles;payment and16 pg_* roles lose TEMP. Workload need remains UNKNOWN;selection is an explicit compatibility policy requiring owner/DB-owner decision. Effective target noTEMP/full role contract must pass or rollback;no blanket grant to predefined roles.
+
+Concrete two-statement delta,alternatives,pre/post-state,concurrency limits,rollback/uncertain-commit behavior and finite local test card recorded. Read-only TI1 capability remains immutable;proposed bounded mutation path requires approval before coding. No implementation,live read,permission change,window or runtime-test rerun. Next owner decision on selective policy and bounded local correction implementation;actual transaction/authority/cleanup readiness must pass before separate live approval.3A OPEN;accepted4/8,R1newlyclosed0/27. Scope extension proposed before implementation;no deviation implemented.
+
 ## November10 — TI1 live impact observed and closed
 
 TI1 operation4b7d86a5-769c-4cd4-b7c9-e1b04b8a0f9b,source79c5962,approval29da259 returned TEMP_IMPACT_DIAGNOSED,complete true,liveObserved true,failure null. PostgreSQL180006;25 roles;21 would lose effective TEMP if PUBLIC TEMP alone were revoked. Four retain it:cloud_admin,neon_service,neon_superuser,neondb_owner. Affected application roles:p06_intake_runtime,p06_migration_owner,p06_migration_runner,p07_payment_runtime;also16 pg_* roles and token_roles. All affected roles NOLOGIN at observation;all25 had zero other database sessions. Neither fact proves lack of workload need. Existing explicit TEMP grants to neon_superuser/neondb_owner remain usable for retained roles;no grant recommendation inferred.
