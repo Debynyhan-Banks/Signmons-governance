@@ -1,5 +1,14 @@
 # Signmons Execution Board
 
+## November10 — QK3 closed; local input check added, full runs stopped
+
+QK3 operation0a4ebb50-9eff-48a6-b9ca-5ac51238146d source77e3b69/approvalc9292a4 again stopped at KEY_ENDPOINT_PIN before any Stripe request. Source-order inference reaches key input after Google/SQL preflight; detailed qualification values not retained. ProcessPID20413/direct children absent, only sanitized attempt/failure receipts retained, owned launcher/spec removed. Backend evidence/APP-013/p08-key-correction-20261110/qk3-result.json. QK3 consumed, no replay. Current Chrome endpoint hash matches the pin; exact earlier hidden-input difference remains UNKNOWN, not a reason to alter the pin.
+
+Within approved CR-K1 checklist1/4 input-boundary correction, backenda7ae8b3 extracts one shared endpoint predicate and adds a no-network endpoint-only local CLI. It reports booleans/length without ID text, diagnoses URL/whitespace/control-character mismatches, never automatically trims or accepts a different endpoint. Future qualification performs existing key validation before Google/SQL preflight, so bad endpoint input cannot trigger another SQL-password/cloud run. Provider ceilings and exact external source/approval gates preserved.25Python+18Node focused tests pass, including no-network CLI and refusal-before-preflight; real owned PTY timed-getpass→Python→Node synthetic test passes with providerCalls0/exit0. Previous392-test record remains historical and is not claimed rerun.
+
+Attended local endpoint-only probe ended without a diagnostic after124.33seconds; exact stop cause was not retained. No key/SQL password/provider port in this path. Tool blocked automated Terminal app input; no bypass performed. Probe processes absent/owned launcher removed, no raw input persisted. Evidence backend evidence/APP-013/p08-key-correction-20261110/local-input-check-20261110.json. Await owner readiness for only the local endpoint-ID prompt; no new full qualification/window/approval packet prepared. Implementer owns diagnostic and closure; owner supplies the locally entered ID. Current key/account/mode/access still UNKNOWN. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 scope deviation only; no further deviation.
+
+
 QK3 exact owner approval November10 at23:14UTC: owner approves QK3 before6:40pm Eastern. Operation0a4ebb50-9eff-48a6-b9ca-5ac51238146d; scopef326f498a2fed4f9b1d4410dc016669347b5590d6a0fd8e360a28e5dedf84828; proposal80c6968; source77e3b69. Current source/SDK/scope/time/fresh-root checks pass. One read-only attempt max27SDK/12GoogleHTTPS/2SQL/3StripeGET; work ends6:50, absolute closeout7:00. Hidden key/endpoint/password, no mutation/hold release. Prior QK2 decision remains immutable at5bd3561; consumed attempts are not replayed. Implementer owns launch/safe receipt/closure; live key facts UNKNOWN. Accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 scope deviation only; no further deviation.
 
 
