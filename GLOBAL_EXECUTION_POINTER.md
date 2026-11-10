@@ -1,5 +1,13 @@
 # Global Execution Pointer
 
+## November10 — approved admission qualification correction complete locally
+
+Owner approved the bounded local correction after Q11 investigation. Pre-code APP013_P08_ADMISSION_CORRECTION_CARD_20261110.md traces the existing3A controlled-v2 admission contract. Current qualification now accepts reviewed-v1 or exact controlled-v2 actor/current approved payment timestamp/canonical digest without writing humanReviewed. Same bounded repeatable-read query adds only the tenant payment-policy member;no additional request. Current receipt adds sorted fixed databaseFailedChecks names;no raw policy/digest/identity retention. Full-role/ownership/session/calendar checks and deadlines/no-retry/independent cleanup/purge unchanged. Old source-bound packets cannot authorize changed source.
+
+Backend implementation/evidence commit6f2dc20. All five local checklist items complete.255current-suite+25governancePASS,including actual SQL JSONB/TLS,application TypeScript validator digest comparison and existing concurrency/interruption/recovery gates. Owned servers reaped,scratch absent,providerCalls0. Baseline/complete consistency/architecture/whitespace PASS. Initial sandbox process/PostgreSQL restrictions resolved by isolated local test permissions. Evidence backend P08_ADMISSION_CORRECTION_20261110.md and P08_ADMISSION_CORRECTION_READINESS_20261110.json. Unrelated backend AGENTS.md preserved.
+
+Implemented/locally tested only;no live operation/window,credential entry or business mutation. Q11 exact failed predicate remains UNKNOWN;its failure cannot be retrospectively reduced to this mismatch alone. Current provider/config/identity/Firebase/job facts UNKNOWN. Q11/R19 consumed/purged;TC1 not replayed. Next implementer prepares any separately authorized current qualification from corrected source;owner/custodian approve exact external scope before launch. Remaining3A same-job Sandbox payment/authentic webhook/failure-recovery and owner acceptance. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27. No scope deviation beyond explicitly approved local correction.
+
 ## November10 — Q11 database-state refusal; cleanup/purge verified
 
 Q11 operationd5362106-2ff4-41cf-8eba-a1c2055f7bff,sourcec57972b,approvalb4472cb returned CURRENT_EVIDENCE_UNQUALIFIED,DATABASE_NOT_READY,failureStage database,candidate null,executionReady false,residuals empty.27CLI/19HTTPS/4SQL/1cache reservations,not provider-internal totals. Source qualification_launch.py CurrentAdapter.read_database and reducer ordering show full retired-role classifier passed before aggregate database classification refused;TC1 role correction is not the repeated failure. Firebase stage was not reached.
