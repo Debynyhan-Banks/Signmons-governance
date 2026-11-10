@@ -1,5 +1,7 @@
 # Session Handoff
 
+CR-K1 owner decision November10: “I approve CR-K1.” Approved bounded scope/local implementation from55b73cc: one additional numeric Sandbox-key secret version, one replacement same-image zero-normal-traffic test candidate, coordinated active pins and existing cleanup seams. No exact external secret/deploy/Stripe/SQL action, new allowance or hold release yet. Existing key available for hidden entry, value/usability UNKNOWN. Source1f54496. Implementer proceeds through finite card before requesting exact operation review. Accepted4/8;3A OPEN;R1newlyclosed0/27. Approved scope deviation CR-K1 only; no further deviation.
+
 ## November10 — CR-K1 credential/candidate correction proposed before implementation
 
 Owner confirmed existing correct-Sandbox secret key available for hidden entry; no value supplied or verified. D2 identified version1 format failure. Inspected candidate pins version1; Secret Manager values and Cloud Run revisions cannot be updated in place. CR-K1 APP013_P08_SANDBOX_KEY_CORRECTION_CR_K1_20261110.md proposes one new numeric version and one replacement zero-normal-traffic candidate using the same image, plus coordinated active pins and existing retirement seams. Current application passes key verbatim; startup also requires existing database/secret lifecycle, which must be fully enumerated in later exact readiness. No runtime code/secret/provider change this planning checkpoint.
