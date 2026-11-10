@@ -1,0 +1,27 @@
+# APP-013 / 3A / P08 — D1 exact secret-read diagnostic proposal
+
+Status: qualification-only; exact external secret-read approval PENDING. Owner approved preparation with “i approve proceed. lets fixed this once and for all”; this proposal is the concrete reviewable read, not an assumption that earlier R24 authority applies. Operation 71eeaa06-2470-4d25-a1f4-7a3d682503af; scope f84545a4bd51d8b56d2beb8e36ea81f4c73369f732f6914cc5fd65000087d0d9; source f43188d35f6082600d8e5805c672ce2ff4a49d10. Packet APP013_P08_SECRET_READ_D1_PACKET_20261110.json. Draft authority remains false. No provider call yet.
+
+## Finite action and boundaries
+
+November10 Eastern: start3:50–strictly before4:15pm; finish no later than4:20pm and within60seconds of actual launch. No attended Terminal password/session is needed. Atomic fresh root/attempt precedes commands; one attempt, no automatic retry or extension. Maximum6 existing-owner SDK commands: active account, three auth-override settings, exact signmons project number, existing-owner access-token acquisition. Require debynyhan@signmons.com, no overrides, and observed project-number SHA25637d4aa0f46ca5b8f0b81b1148bda235a0f4a9a424b6b4638ec993d889563be54. Existing SDK refresh/cache/internal-retry behavior is permitted only under the already reviewed35-file SDK inventory; command ceilings are not total internal network counts. No login or new credential creation.
+
+Exactly one application-level GET to Secret Manager projects/<freshly observed and hash-matched number>/secrets/signmons-staging-stripe-secret-key/versions/1:access, using the existing owner's token. This reads that secret payload into process memory solely to validate the existing strict test-key contract. Native payment and this diagnostic share the same bounded streaming response reader and decoder. Same request headers as the failing path; no silent quota/header/access change. No Stripe request, SQL/password/test-account recovery, runtime activation, IAM/configuration change, secret write, payment/charge/refund, deployment, customer action or new spending allowance.
+
+Retain only fixed diagnostic codes, stage, numeric HTTP status, allowlisted provider reason, request/command counts and operation ID. No key/token/raw body/project number in output, argv or files. Token travels only on a private child stdin pipe; process-memory strings are dropped and child exit releases memory, not a claim of guaranteed cryptographic erasure. Logging disabled; child timeout/interruption terminates and reaps the process. Only attempt/result receipts exist under the new operation root; verify that inventory. No provider mutations requiring rollback. SDK's existing credential cache remains under its disclosed exception. Never reconstruct R24 purged inputs or reuse its approval.
+
+## Readiness and exact interface
+
+Observed20:47:52UTC: actual validate function accepts exact proposed decision/start clock; source files equal committedf43188d35f6082600d8e5805c672ce2ff4a49d10;35SDK hashes verified; existing local_environment_gate passes; fresh root absent. Source f43188d extracts the actual reader/decoder without relaxing payload/key checks. Tests9 diagnostic Python,36 Node diagnostic/native transport/payment,39 native Python/TLS/browser,18 packet,17 composed pass; lint/architecture/source locks and whitespace pass. Actual child/streamed Response test covers valid/denied/missing/null/malformed/foreign/live/newline/oversized/transport/expired cases; one-attempt concurrent gate, approval mismatch, clock rollback, successful full injected command path and actual subprocess timeout/reaping pass. Fixtures are not current access/key evidence. Evidence backend evidence/APP-013/p08-secret-read-diagnostic-20261110/verification.json.
+
+After exact approval is committed to APP013_P08_SECRET_READ_DIAGNOSTIC_DECISION_20261110.json, run once:
+
+```sh
+/opt/homebrew/bin/python3.14 -I -B '/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-secret-read-diagnostic-20261110/launch.py' '/Users/debynyhanbanks/Web Projects/signmons-governance-r08-recovery/APP013_P08_SECRET_READ_D1_PACKET_20261110.json'
+```
+
+Actual command validates current time, committed approval, source, resource hash, SDK/config and root absence before live calls. No bypass, synthetic authority or reconstructed native envelope. Implementer owns one-shot execution/receipt review/child absence; owner owns explicit secret-read approval. Next observable result is a safe classification distinguishing key-read refusal/shape/key validation/transport from success. A successful diagnostic alone neither authenticates Stripe nor proves3A. An unknown result remains unknown and cannot authorize retries.
+
+Google's Secret Manager access reference confirms the resource endpoint used: https://docs.cloud.google.com/secret-manager/docs/access-secret-version . This does not establish the owner's current usable permission or the live R24 cause.
+
+Remaining: execute only after exact approval; interpret receipt; correct only a demonstrated issue under existing change control; then separately prepare connected payment evidence. No new full attended run is scheduled. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27. No scope deviation.
