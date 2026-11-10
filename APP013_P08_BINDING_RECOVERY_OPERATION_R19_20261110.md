@@ -1,5 +1,15 @@
 # APP-013 / 3A / P08 — R19 exact binding recovery after verified TC1
 
+## November10 — Q11 database-state refusal; cleanup/purge verified
+
+Q11 operationd5362106-2ff4-41cf-8eba-a1c2055f7bff,sourcec57972b,approvalb4472cb returned CURRENT_EVIDENCE_UNQUALIFIED,DATABASE_NOT_READY,failureStage database,candidate null,executionReady false,residuals empty.27CLI/19HTTPS/4SQL/1cache reservations,not provider-internal totals. Source qualification_launch.py CurrentAdapter.read_database and reducer ordering show full retired-role classifier passed before aggregate database classification refused;TC1 role correction is not the repeated failure. Firebase stage was not reached.
+
+Specific failed database Boolean UNKNOWN:only aggregate category retained,not raw database projection. Reducer checks jobExact,tenantActive,paymentGateExact,calendarAbsent,operatorExactDisabled,dbRoleRetired,sessionsAbsent,ownershipReceiptExact. dbRoleRetired set true only after full classifier passes. Do not infer which other flag failed or mutate business data. Passing previous stages does not provide durable current evidence for a future attempt.
+
+Normal and fresh independent SQL closeout completed. R19 closeout PRIVATE_PURGE_VERIFIED,onTime true,rawFilesAbsent true,resourceCloseout verified,residuals empty;both private input slots absent and guard95009 absent verified. No SQL replay or credential reread. Backend evidence P08_Q11_QUALIFICATION_RESULT_20261110.json. Q11/R19 consumed/purged;owner may leave Terminal.
+
+Completed attempt/cleanup/purge. Next implementer inspects existing business-state contracts and retained nonprivate evidence to isolate the failed predicate or propose the smallest specific evidence gap;no automatic qualification/recovery/attended-window cycle. Any new read or business mutation requires exact bounded authority. No new helper/diagnostic code authorized by this result.3A remains OPEN;remaining same-job Sandbox payment/webhook/failure-recovery and owner acceptance. Accepted1A/1B/2A/2B4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November10 — R19 handoff verified; Q11 exact qualification prepared
 
 R19 operationee08b92e-3dd1-4e39-82d2-1fb07d0a775b returned HANDOFF_RETAINED,failure null,resource closeout verified,residuals empty. Fingerprints verified privately;purge guard95009 present. Raw private bindings retained only under approved custody until9:05a.m.EST. No private qualification envelope written. Backend P08_BINDING_RECOVERY_R19_HANDOFF_20261110.json records sanitized evidence.
