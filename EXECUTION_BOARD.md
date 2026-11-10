@@ -1,5 +1,9 @@
 # Signmons Execution Board
 
+## November9 — role provenance extension proposed; no new live action
+
+DBR1 identifies membership and effective TEMP failures but the pinned fixed-flag query cannot identify their sources. APP013_P08_ROLE_PROVENANCE_PROPOSAL_20261109.md records the smallest existing-module extension, alternatives, five-task checklist, bounded metadata retention, version/output/cleanup tests and separate external authority. Local implementation decision pending; no code or live read. Implementer owns readiness; DB owner owns grant impact/correction. Next observable result after approval: tested provenance mode before any attendance or live packet. Full qualification held;3A OPEN,accepted4/8,R1newlyclosed0/27. Deviation proposed before implementation; none implemented.
+
 ## November9 — DBR1 diagnosed two role blockers; cleanup verified
 
 DBR1 operation327d284a-2bda-455b-9e53-a6676454625a, approved9a8e223/source50144cb, returned DATABASE_ROLE_DIAGNOSED with live ROLE_NOT_READY. Ten checks PASS; noMemberships and noDatabaseTemp FAIL. Memberships include either incoming or outgoing edges; identities/directions UNKNOWN. Effective database TEMP confirmed, but grant source and affected-role impact UNKNOWN; do not infer PUBLIC as the source. Exact direct ACL, disabled login, zero connection limit, finite/past expiry, no unsafe attributes/owned objects/sessions/schema CREATE, and exactly one role all PASS.
