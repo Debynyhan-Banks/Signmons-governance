@@ -1,5 +1,11 @@
 # APP-013 / 3A / P08 — Q12 exact current qualification
 
+## November10 — Q12 exact approval recorded; manual launch pending
+
+Owner “i approve” approves pending packet9326d69,Q12 operation5f5f3cf4-1e3e-4d8b-a1e9-9dd19838596e,source6f2dc20,workf49a7e9d00a7bbb10c184044e1528d6a99d1b250c461622aac0051a6c6dec67d and cleanup47aa6b339e95f2cf8b9abc5905b38b9d6738f2648ddf4998d0ef997f01c47bce. November10 start9:25–strictly before9:35a.m.EST,reads9:40,resource closeout9:45,private purge9:55.27SDK/20HTTPS/4SQL/1boundedcache,existing SDK exception,hidden password and independent cleanup approved. Clock14:13:13Z before start;no qualification launch or transfer. R20 custody/purge deadline unchanged.
+
+Implementer binds committed authority and verifies source/SDK/config/fingerprints/guard,then prepares existing manual launcher. Actual-clock gate before private handoff;owner runs once. No further approval needed for exact work and cleanup;no native/payment/mutation authority. Mandatory resource closure/private absence/guard exit verification regardless of outcome. Current full live facts UNKNOWN.3A OPEN,accepted1A/1B/2A/2B4/8,R1newlyclosed0/27. No scope deviation.
+
 PENDING exact owner/credential-custodian/DB-role approval. R20 fingerprint-matched handoff and resource closeout verified;purge guard39795 present by signal zero. TC1 corrected payment-role state verified and closed. No private qualification envelope written,no qualification launched. No repeat TEMP correction or standalone diagnostic.
 
 ## Exact scope and timing
