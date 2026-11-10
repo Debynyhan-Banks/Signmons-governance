@@ -1,5 +1,14 @@
 # Signmons Execution Board
 
+## November10 — attended endpoint input matches; QK4 read-only review ready
+
+Owner proceeded with local endpoint-only check. Actual result exactMatchtrue/formatValidtrue/inputLength27, no whitespace/URL/control/non-ASCII issue, providerCalls0. Process exited, owned launcher removed, raw input not persisted. Evidence backend evidence/APP-013/p08-key-correction-20261110/local-input-match-20261110.json. Current selected endpoint and current pasted input both match the unchanged pin. Prior failed raw inputs remain unknown; QK2/QK3 consumed, no replay.
+
+QK4 proposal/spec APP013_P08_KEY_QUALIFICATION_QK4_PROPOSAL_20261110.md / APP013_P08_KEY_QUALIFICATION_QK4_SPEC_20261110.json: operation97de78e4-32ba-4827-b3c2-26bff127d7c6; scope8339146cce4ebc2ea482f0cec4584c9794cf89d554fc8c5268b7090fb73c7b21; sourcea7ae8b3. Same max27SDK/12GoogleHTTPS/2SQL/3StripeGET, now key check BEFORE Google/SQL preflight. Start now–strictly before6:55pm Eastern November10, work ends7:05, absolute closeout7:15. Current source/SDK/proposed-scope/fresh-root checks pass; exact owner read approval PENDING.25Python+18Node focused tests/actual synthetic PTY are prior local proof for this source, not new runtime test claims. No key validation/provider calls during the endpoint-only check.
+
+Implementer owns qualification/closure; owner owns fresh exact read approval and hidden key/endpoint/password. Live key/account/mode/access facts UNKNOWN. Next safe qualification receipt, then exact correction/cost/independent cleanup, adoption and connected payment proof remain. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 scope deviation only; no further deviation.
+
+
 ## November10 — QK3 closed; local input check added, full runs stopped
 
 QK3 operation0a4ebb50-9eff-48a6-b9ca-5ac51238146d source77e3b69/approvalc9292a4 again stopped at KEY_ENDPOINT_PIN before any Stripe request. Source-order inference reaches key input after Google/SQL preflight; detailed qualification values not retained. ProcessPID20413/direct children absent, only sanitized attempt/failure receipts retained, owned launcher/spec removed. Backend evidence/APP-013/p08-key-correction-20261110/qk3-result.json. QK3 consumed, no replay. Current Chrome endpoint hash matches the pin; exact earlier hidden-input difference remains UNKNOWN, not a reason to alter the pin.
