@@ -1,5 +1,13 @@
 # Global Execution Pointer
 
+## November10 — R20 handoff verified; Q12 exact qualification prepared
+
+R20 operation40b6c75b-bbec-4483-aa02-83d7e46d4a88 returned HANDOFF_RETAINED,failure null,resource closeout verified,residuals empty. Fingerprints verified privately;purge guard39795 present. Raw private bindings retained only under approved custody until9:55a.m.EST. No private qualification envelope written. Backend P08_BINDING_RECOVERY_R20_HANDOFF_20261110.json records sanitized evidence.
+
+Q12 APP013_P08_CURRENT_QUALIFICATION_OPERATION_Q12_20261110.md binds source6f2dc20/runtime 6f2dc20,operation5f5f3cf4-1e3e-4d8b-a1e9-9dd19838596e,start9:25–before9:35,reads9:40,resource closeout9:45,purge9:55.27SDK/20HTTPS/4SQL/1boundedcache,existing SDK exception;workf49a7e9d00a7bbb10c184044e1528d6a99d1b250c461622aac0051a6c6dec67d,cleanup47aa6b339e95f2cf8b9abc5905b38b9d6738f2648ddf4998d0ef997f01c47bce. Actual capability/source/SDK/config/fingerprint readiness PASS14:11:43Z with proposed authority/start clock only. Canonical decision false;exact work+cleanup approval pending. No launch/native/payment authority.
+
+TC1 role blocker cleared;full current provider/identity/config facts UNKNOWN until Q12. Next owner approves exact qualification;implementer binds authority/manual handoff,then mandatory resource closeout and private purge regardless of result or approval. Do not extend R20 retention or replay TC1.3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
 ## November10 — R20 exact approval recorded; manual launch pending
 
 Owner “i approve” answers the exact R20 operation and attendance question. Approval covers packet3f90a79,operation40b6c75b-bbec-4483-aa02-83d7e46d4a88,source6f2dc20,scope0a1dd6e6b36ace0eb755c5a8ea9bdf0e325612dd7575387bf3872ac346a230a2. November10 9:10–9:55a.m.EST,start strictly before9:20,reads9:25,resource closeout9:45,purge9:55.2SDK/3SQL,existing SDK refresh/cache/internal-retry exception,hidden password and bounded45minute retention approved. Clock13:56:05Z precedes start;no live read or private inputs.
