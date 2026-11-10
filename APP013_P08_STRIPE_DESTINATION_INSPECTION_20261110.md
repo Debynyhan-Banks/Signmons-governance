@@ -1,5 +1,13 @@
 # APP-013 / 3A / P08 — one read-only Stripe destination inspection
 
+## November10 — approved Stripe inspection complete; destination API family resolved
+
+Owner authorized the one-destination read-only Chrome inspection. Existing Signmons LLC Sandbox destination “Signmons P07 same-job sandbox” is unique in the inspected list, Disabled, and explicitly displays a we_ identifier: v1 webhook endpoint family. Exact candidate webhook URL matches; API version 2026-03-25.dahlia; Connected accounts; all six subscribed event names observed. Sanitized evidence: backend evidence/APP-013/P08_STRIPE_DESTINATION_OBSERVED_20261110.json, recorded14:45:32Z. Raw object/account identifiers and secrets are not retained in the artifact. Initial tab was live home; inspection switched into the existing Sandbox before inspecting destination details. No configuration change, test event, payment, secret reveal or new tab.
+
+Completed: bounded external contract inspection. UNKNOWN: usable API credential permissions and future execution readiness; payload style not separately labeled. Local integration approval159b9e7 persists; no new local approval needed. Implementer next completes connected pre-code card and existing authentication/payment/cleanup integration with local tests, then concrete separate live proposal. No new recovery/qualification session now. 3A OPEN; accepted1A/1B/2A/2B4/8; R1newlyclosed0/27. No scope deviation.
+
+Historical pre-inspection record follows; pending/UNKNOWN object-family language below is superseded by the observation above.
+
 PENDING OWNER APPROVAL. Purpose:resolve existing destination object/API family and visible fixed contract before local payment-lifecycle implementation. Not a full qualification,mutation,secret read or payment session. Local integration is already approved.
 
 Exact target:existing signed-in Signmons LLC Sandbox/Test context,Workbench/Event destinations,existing destination named “Signmons P07 same-job sandbox” with the fixed app013-p07-atomic candidate /webhooks/stripe URL from retained October22 evidence. Use an already authenticated browser session;do not sign in as another identity or switch to live mode.
