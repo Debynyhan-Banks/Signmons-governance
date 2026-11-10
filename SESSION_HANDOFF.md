@@ -1,5 +1,11 @@
 # Session Handoff
 
+## November10 — R22 stopped before native entry; guard lifecycle defect isolated
+
+R22 current qualification succeeded. Native handoff raised FileExistsError because both transfer stages exclusively reserve the same guard-sync.json. Local temporary-root reproduction confirms this. A second source-backed defect ends the guard when qualification input is deleted: purge receipt18:10:01Z preceded qualification result18:11:52Z. Earlier launcher tests mocked this boundary and did not establish full connected custody. No native root/attempt, runtime activation or payment occurred.
+
+Recovery database closeout and private purge verified with no residuals; guard PID48345 exit verified. R22 is consumed, private values absent; no restart/reconstruction/retiming. Implementer owns bounded version2 guard correction and actual two-handoff/guard/qualification/native/cleanup lifecycle proof described in APP013_P08_CONNECTED_GUARD_CORRECTION_20261110.md before another session. No new attendance, credentials or live approval requested. Core correction not implemented in this diagnostic checkpoint. Next observable result: full local lifecycle proof including late native approval under the original custody deadline. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27. No scope deviation.
+
 R22 native approval received at18:17UTC November10: owner “I approve R22 native Sandbox execution and cleanup.” Exact operation8517526b-cf46-4ff8-87d4-f1ad99cae23d, scoped2a4e6b50c626ade63f00baa0467c4878aad07acf07ef9f58c1ca2d89fe7d62a, proposalb273a8b. Existing waiting parent may launch1:28–before1:38pm Eastern, payment work ends1:46, work1:47, cleanup1:58, purge2:00. Full enumerated actions/limits/exclusions and mandatory cleanup remain unchanged. Approval is not execution or acceptance. No scope deviation.
 
 R22 exact qualification approved by owner “I approve R22 qualification.” at18:03UTC November10. Operationbdc6877e-2aa1-4dd4-9aee-e3b7cdf2da0b; scopee1163f76f4a1b7f01a18eed6531ae5d020ed80e62304dc7835545c1e6f2ce75f. Waiting parent may launch1:10–before1:22pm Eastern under unchanged limits; reads1:28, database cleanup1:33, purge2pm. No native/payment approval. No scope deviation.
