@@ -1,0 +1,9 @@
+# APP-013 / 3A / P08 — R24 closeout and diagnosis
+
+## November10 — R24 closed without payment; payment-preflight failure requires local diagnosis
+
+R24 native operation48812ecf-d99a-4357-9038-43fa925c24c6 reached an actual attempt after approved sourcef6f74cf/decisionb6838d8. Final ENTRY_CLOSED, authenticationObservedfalse, paymentObservedfalse, privateInputsAbsenttrue, residuals empty. This is cleanup success, not3A success. Journal failure LOCAL_ADAPTER_OR_SOURCE_STOP; payment phasePREFLIGHT, secretReads1, endpointCalls0, enableIntentfalse, outcomeNOT_OBSERVED. Child1 mode--payment-preflight. Runtime/IAM/auth/key/service-enable attempt flags empty/false. Native reservations72CLI/0HTTPS/4SQL/1child; no assertion that these equal all provider network calls. No runtime activation, endpoint enablement or payment is recorded.
+
+Independent native closeout receipt exists; recovery resource-closeout verified/no residuals; PRIVATE_PURGE_VERIFIED onTime/rawFilesAbsenttrue/no residuals; guardPID36743 exit verified. R24 is consumed; no replay, retiming, reconstruction of purged private inputs or new live attempt. RESULT_READY_FOR_EXACT_APPROVAL is the wrapper publication label, not a new execution request or payment acceptance.
+
+Implementer owns bounded source/receipt diagnosis of the actual payment-preflight child boundary. Exact thrown exception remains UNKNOWN because the coordinator retained only a generic classification. Next observable result is a source-backed local diagnosis and, if warranted within the approved card, deterministic reproduction before correction or new attended proposal. Owner need not repeat credentials now. Same-job authentic Sandbox event/application gate and owner acceptance remain outstanding. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27. No scope deviation.
