@@ -1,5 +1,11 @@
 # Global Execution Pointer
 
+## November10 — R23 corrected-source packet prepared; attendance and exact approval pending
+
+Runtime96bd05e includes verified two-handoff guard correction and null-payment failure reporting. Fresh R23 proposal APP013_P08_BINDING_RECOVERY_OPERATION_R23_20261110.md proposes2–3pm Eastern today; no attendance or external authority yet. New operation07590e01-e5be-4760-aba4-c00fd6347096, scope713776ec228170499bceb94ff19e6d82a10b64dd72a11308264b55e4acf28add. First operation remains2SDK/3read-only SQL plus hidden input and same-window guarded retention, with reviewed SDK refresh/cache/internal-retry exception. Downstream qualification/native decisions remain separate.
+
+Actual source/35SDK/config capability validation passed18:47:46UTC with proposed clock/authority only; new roots absent. Full lifecycle evidence at96bd05e is local/synthetic, not live payment acceptance. Current private bindings/permissions remain UNKNOWN. No provider reads, credentials, private recovery or live launch this preparation. R21/R22 consumed and purged, not reused. Implementer owns launch/preflight/cleanup; owner/custodians own availability/exact decisions. Next observable result: attendance and exact R23 recovery approval, then one attempt; start2:00–before2:05, reads2:10, database cleanup2:15, purge3pm. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27. No scope deviation.
+
 ## November10 — connected guard correction implemented and fully verified locally
 
 Owner “proceed” approved the bounded correction. Backend96bd05e separates one-use qualification/native guard acknowledgements and keeps the version2 guard alive through qualification-input deletion and delayed native approval until explicit closeout or the original deadline. Version1 expiry behavior and existing external limits remain unchanged. A discovered early-preflight reporting crash when payment state is null is also corrected; payment remains unobserved and independent cleanup still runs.
