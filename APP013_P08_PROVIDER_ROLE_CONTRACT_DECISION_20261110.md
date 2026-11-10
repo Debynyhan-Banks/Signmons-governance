@@ -1,6 +1,14 @@
 # APP-013 / 3A / P08 — provider role contract and TEMP impact decision
 
-REVIEW ONLY. Owner requested proceeding with impact review after RP3. No code, provider mutation, new live operation, baseline change or correction authority created. Source4012c92; live RP3 evidence backend7f57a41; governance1b840dc. RP3 consumed and cleanup verified. Unrelated backend AGENTS.md preserved.
+## November10 — approved exact administrative membership correction complete locally
+
+Owner approved f0ae9aa;pre-code APP013_P08_ADMIN_MEMBERSHIP_IMPLEMENTATION_CARD_20261110.md completed before coding. Backendec7d913 implements shared strict policy:zero edges or exactly neondb_owner member of p07_payment_runtime,grantor cloud_admin,ADMIN true,INHERIT false,SET false,with fixed database/admin identity. Actual counts preserved;query adds bounded edge rows/version;extra/outgoing/foreign/options/count/type/null/version drift refuses. Current qualification and native active/retired/fresh independent readbacks share policy. Existing native adapter overrides only the inherited role branch;historical restore.py/receipts and frozen anchor unchanged. Current source/test manifests explicitly repinned with old/new hashes in evidence.
+
+All five local checklist items complete.122access+30native+6transport+216current+25governance=399PASS. Genuine non-superuser CREATE ROLE in owned PostgreSQL reproduces approved bootstrap-admin tuple;real SQL/TLS current/native phase proof passes. PUBLIC TEMP,changed INHERIT and extra edge still refuse. Original concurrency/deadline/crash/independent cleanup suites PASS;all owned servers reaped,scratch absent,providerCalls0. Architecture,manifest,frozen baseline,complete consistency,whitespace PASS. Evidence P08_ADMIN_MEMBERSHIP_CORRECTION_20261110.md and P08_ADMIN_MEMBERSHIP_READINESS_20261110.json. Unrelated backend AGENTS.md preserved.
+
+No live role/config/provider change,credential entry or full qualification run. Membership correction locally complete;RP3 observed PUBLIC TEMP remains an unresolved independent prerequisite. DB owner must bound shared consumer impact/preserved grants before any TEMP correction. Implementer next reviews existing records and prepares bounded impact/correction proposal,not another full qualification loop. Future live packet must bind new source/query/manifest;old operations consumed/expired.3A OPEN,accepted1A/1B/2A/2B4/8,R1newlyclosed0/27. No scope deviation beyond approved exact membership amendment.
+
+LOCAL IMPLEMENTATION APPROVED: owner replied "i approve" to f0ae9aa on November10. Historical review follows. Owner requested proceeding with impact review after RP3. No code, provider mutation, new live operation, baseline change or correction authority created. Source4012c92; live RP3 evidence backend7f57a41; governance1b840dc. RP3 consumed and cleanup verified. Unrelated backend AGENTS.md preserved.
 
 ## Findings and implications
 
