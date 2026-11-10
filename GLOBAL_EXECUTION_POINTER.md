@@ -1,5 +1,13 @@
 # Global Execution Pointer
 
+## November10 — payment execution gap identified; local integration decision pending
+
+Q12 succeeded and cleanup/purge remain verified. Read-only source inspection shows native entry proves authentication then immediately closes;existing payment controller --run explicitly refuses. Existing operator payment bridge is implemented locally but not connected to that session/lifecycle. Q12 candidate does not supply its required actor/account/amount/policy/job-version context. Earlier handoff understated this missing integration;no ready payment packet can honestly be issued now.
+
+APP013_P08_CONNECTED_PAYMENT_PROPOSAL_20261110.md records source-backed gap,alternatives and finite local integration scope. Evidence backend P08_PAYMENT_EXECUTION_GAP_20261110.json. No runtime changes/live calls/new session. Q12 time/scope cannot be extended;private inputs purged. Do not start another recovery/qualification before the connected execution card can use its result.
+
+Next owner decides bounded local composition of existing authentication/payment flow with one cleanup owner;implementer completes exact pre-code card,local connected tests and then concrete separate live proposal. Remaining3A same-job Sandbox/authentic webhook/failure-recovery/acceptance. Accepted1A/1B/2A/2B4/8;R1newlyclosed0/27. Explicit prerequisite deviation proposal;none implemented.
+
 ## November10 — Q12 qualification observed; cleanup and purge verified
 
 Q12 operation5f5f3cf4-1e3e-4d8b-a1e9-9dd19838596e,source6f2dc20,approvalcf694c7 returned CURRENT_EVIDENCE_OBSERVED,liveObserved true,failure/failureStage null,residuals empty,databaseFailedChecks empty. All candidate checks true:billing,database,effectiveAccess,Firebase,job,owner,privateInventory,retiredRuntime,services.27CLI/20HTTPS/4SQL/1cache reservations,not provider-internal totals. The admission correction is live-qualified;Q11 exact failed predicate remains historically UNKNOWN.
