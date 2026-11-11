@@ -1,0 +1,11 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_AW1_LOCAL_IMPLEMENTATION",
+  "proposalCommit": "c254b7a",
+  "proposalPath": "APP013_P08_AW1_APPROVAL_WORKFLOW_PROPOSAL_20261111.md",
+  "proposalSha256": "c196753ccaf31e7a8669be3806d3c0bc81b47592b51e06cb68ec0cd70cd24aef",
+  "instruction": "i approve",
+  "scope": "Exact attended Terminal stage confirmations with independent operator verification and existing committed capability gates",
+  "liveActionsAuthorized": false,
+  "futureSessionDelegationGranted": false
+}

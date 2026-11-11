@@ -1,5 +1,7 @@
 # APP-013 / 3A — AW1 attended approval workflow amendment
 
+Current status: owner approved local implementation after proposal commit c254b7a. Completed source3ab094b and readiness/result APP013_P08_AW1_LOCAL_RESULT_20261111.md. Original proposal below is retained as reviewed; its pending labels are historical. No future session delegation or live action authorized.
+
 PENDING OWNER REVIEW. This is a concrete workflow-change proposal, not implementation or live authority. User agreed to review simplification after R26. Backend base1de1d36 (runtimeb0ab7b7); governanceac0edc8. Preserve unrelated AGENTS.md. No live packet/window scheduled.
 
 ## Demonstrated problem and recommendation
