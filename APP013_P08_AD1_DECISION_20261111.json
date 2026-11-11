@@ -1,0 +1,11 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_AD1_LOCAL_ADOPTION_USING_KR7_AND_RC1",
+  "proposalCommit": "c1ce88d",
+  "approvedFiles": {
+    "APP013_P08_AD1_ADOPTION_PROPOSAL_20261111.md": "4594fa089b619b14bc322715e92980f07e2102718f86af755452f7faf7fd0b50",
+    "APP013_P08_AD1_CANDIDATE_PROPOSAL_20261111.json": "d384d310122470abe16b4dd034b91e8faa47e5f5db89b2d512534784f474e112",
+    "APP013_P08_AD1_EVIDENCE_PROPOSAL_20261111.json": "2b9f1c11cda3632ccf30bab106d73166f7a15799f3163a1ec808604b1953cd34"
+  },
+  "externalActionAuthorized": false
+}

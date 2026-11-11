@@ -1,5 +1,7 @@
 # APP-013 / 3A — AD1 local adoption amendment and section card
 
+AD1 LOCAL ADOPTION COMPLETE: owner explicitly approved AD1 using KR7+RC1 evidence. Exact candidate signmons-calldesk-staging-p07key7e45dc512e17 and Stripe numeric2 adopted; original correction operation7e45dc51-2e17-481c-9128-63fa568725a4. Approved evidence bundle copied byte-for-byte and hash-bound, included in current source manifest; original KR7 residual and RC1 success receipts unchanged.52correction Python/19Node/30native/248qualification regression pass (23focused current proof also passed);25governance/baseline/architecture/diff pass. Fixtures updated explicitly for pre-adoption correction and current version2; existing192CLI ceiling unchanged, full native191. No live provider action or runtime production-code change. Evidence backend ad1-verification.json and adoption-evidence-20261111.json. Next implementer task: prepare fresh source-bound same-job connected payment/browser qualification and execution review; owner retains external/payment/cost authority. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27. Approved AD1 evidence-path amendment in addition to CR-K1/CR-K1-R2; no further deviation.
+
 PENDING OWNER DECISION. Backend source ae25e7c156500b52791d26270f960c015b4f5fd8. Preparation only; active candidate.json remains LEGACY. No runtime/provider changes. Proposed candidate JSON and evidence bundle accompany this card.
 
 ## Demonstrated gap and smallest decision
