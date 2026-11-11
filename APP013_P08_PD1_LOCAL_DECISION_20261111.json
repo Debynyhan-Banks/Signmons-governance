@@ -1,0 +1,9 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_PD1_LOCAL_PASTE_DIAGNOSIS",
+  "proposalCommit": "6e4d543",
+  "proposalSha256": "5d9d5e16a61a268c35594a0b8d105da852cea7d2e4af05fd1bed6159725cb28d",
+  "instruction": "I approve PD1 local paste diagnosis.",
+  "providerActionsAuthorized": false,
+  "attendedSyntheticAttempts": 1
+}
