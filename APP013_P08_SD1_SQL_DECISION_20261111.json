@@ -1,0 +1,8 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_EXACT_SD1_SQL_READ",
+  "scopeSha256": "13c85c6b57e19616fdb6d1943a2a8f831f6bf9ea5e2abaad99f9430c90a3816c",
+  "externalReadAuthorized": true,
+  "externalMutationAuthorized": false,
+  "costHoldReleased": false
+}
