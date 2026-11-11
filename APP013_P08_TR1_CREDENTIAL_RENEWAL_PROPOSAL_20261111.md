@@ -1,5 +1,7 @@
 # APP-013 / 3A / P08 — TR1 bounded existing SDK credential renewal
 
+TR1 PREFLIGHT STOPPED UNSTARTED: historical access_check.native_readiness manifest pins older authority.py; current qualification/native source graph passes. No SDK/cache reservation, credential-store read or provider call; receipt directory absent and temporary script removed. Backend2006fb6 evidence evidence/APP-013/p08-connected-packet-20261110/tr1-preflight-result.json; approval9857194 not exercised. Preparation missed the actual legacy gate; no execution-readiness claim. No pin changed/bypassed and no rerun. PA1 local-only preflight alignment proposal APP013_P08_TR1_PREFLIGHT_ALIGNMENT_PROPOSAL_20261111.md pending owner review: map full current committed dependency coverage and prove exact preflight rejection before fresh external packet. Implementer owns reconciliation; owner procedure-adjustment and future credential authority. Accepted4/8;3A OPEN;R1newlyclosed0/27. Explicit adjustment proposed; none implemented.
+
 PENDING exact owner approval. No command, credential-store read or provider call performed. Sourceadb59ace240f1d21b925c32f8bd80c22066692ab; R29 consumed/closed. Its actual cache predicate failed because expiry did not exceed6:36pm Eastern; current expiry remains UNKNOWN. Reuse the existing November3 bounded renewal procedure in APP013_P08_KEY_ABSENCE_CREDENTIAL_RENEWAL_PROPOSAL_20261103.md, with fresh reservation/timing/approval only. No source implementation, new resolver or scope expansion.
 
 ## Gap, limits and alternative
