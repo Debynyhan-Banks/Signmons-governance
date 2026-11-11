@@ -1,5 +1,7 @@
 # APP-013 / 3A — CR-K1-R2 reuse existing version 2
 
+Owner decision: APPROVED LOCAL IMPLEMENTATION in conversation following bc5e733. Implemented locally with41Python+18Node verification; no external authority. Original proposal below retained.
+
 Status: PROPOSED LOCAL IMPLEMENTATION AMENDMENT; owner decision pending. No live operation/window, credential prompt or provider action. Source5528e09 (binding serialization corrected). KC1 safe receipt at backendff18dbe, file evidence/APP-013/p08-key-correction-20261110/kc1-result.json SHA256 9a2066e1c99ec6e50262a3ad0f05a489ac275ebf49b63e8044189e96160464d2. KC1 operation392807bd-8c43-4a01-b82d-3292f19fd222 is consumed and will not be replayed.
 
 ## Demonstrated gap and decision
