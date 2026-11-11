@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "execution": "EXTERNAL_READ_ONLY",
+  "operationId": "200fb94b-f1e6-4e92-b0c6-f8f63cb75170",
+  "qualificationId": "27681a9b-9bc8-40aa-9a25-7946d2485f1d",
+  "project": "signmons",
+  "owner": "debynyhan@signmons.com",
+  "database": {
+    "host": "ep-jolly-flower-ayc6w9hv.c-5.us-east-2.aws.neon.tech",
+    "port": 5432,
+    "database": "neondb",
+    "user": "neondb_owner"
+  },
+  "projectNumberSha256": "37d4aa0f46ca5b8f0b81b1148bda235a0f4a9a424b6b4638ec993d889563be54",
+  "targetSha256": "23d7b71141e7cdba27558c97333e6821fc76ec872a84cdc2f2f19a980bee029c",
+  "window": {
+    "start": "2026-11-11T21:26:00Z",
+    "cutoff": "2026-11-11T21:38:00Z",
+    "readEnd": "2026-11-11T21:43:00Z",
+    "closeoutEnd": "2026-11-11T21:48:00Z",
+    "purgeEnd": "2026-11-11T22:26:00Z"
+  },
+  "limits": {
+    "cli": 2,
+    "sql": 3,
+    "https": 0,
+    "cache": 0
+  },
+  "sdkException": "SDK_EXISTING_OWNER_REFRESH_CACHE_INTERNAL_RETRIES_NO_TOKEN_EXPORT",
+  "sdkFilesSha256": "6ffa3de34fe1f602cdd26a1e8e6f64ec2e5a9048b1bed5e3ae5d1ff325e43a6a",
+  "manifestSha256": "70329a7c86ef0156372033b336136e7a478064ce663188707899e7a0190184b6",
+  "sourceCommit": "ffa187e17e8ec237a682218a4e4c2e80d5a1f98a",
+  "nativeOperationId": "f619fa55-2c74-4abb-83e1-68ccf2c320d2",
+  "paymentAccountSha256": "a008b806d6ea2cbe47eda0e27bfc855f1d8a376752c434c5efc36c571ece0248"
+}

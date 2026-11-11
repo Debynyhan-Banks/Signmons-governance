@@ -1,0 +1,30 @@
+{
+  "recoveryId": "200fb94b-f1e6-4e92-b0c6-f8f63cb75170",
+  "qualificationId": "27681a9b-9bc8-40aa-9a25-7946d2485f1d",
+  "prospectiveOperationId": "f619fa55-2c74-4abb-83e1-68ccf2c320d2",
+  "sourceCommit": "ffa187e17e8ec237a682218a4e4c2e80d5a1f98a",
+  "manifestSha256": "70329a7c86ef0156372033b336136e7a478064ce663188707899e7a0190184b6",
+  "window": {
+    "start": "2026-11-11T21:26:00Z",
+    "cutoff": "2026-11-11T21:52:00Z",
+    "readEnd": "2026-11-11T21:57:00Z",
+    "closeoutEnd": "2026-11-11T22:02:00Z",
+    "purgeEnd": "2026-11-11T22:26:00Z"
+  },
+  "prospectiveWindow": {
+    "start": "2026-11-11T21:26:00Z",
+    "cutoff": "2026-11-11T22:04:00Z",
+    "workEnd": "2026-11-11T22:13:00Z",
+    "cleanupEnd": "2026-11-11T22:24:00Z",
+    "purgeEnd": "2026-11-11T22:26:00Z"
+  },
+  "prospectiveLimits": {
+    "cli": 192,
+    "https": 100,
+    "sql": 60,
+    "child": 6,
+    "childRequests": 200
+  },
+  "paymentRequestId": "ff1e90c7-ffc5-4f0e-8589-b01be1d3b7f5",
+  "paymentWorkEnd": "2026-11-11T22:12:00Z"
+}

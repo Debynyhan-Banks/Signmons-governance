@@ -1,0 +1,15 @@
+{
+  "verifiedAt": "2026-11-11T21:27:31.747091+00:00",
+  "operationId": "200fb94b-f1e6-4e92-b0c6-f8f63cb75170",
+  "scopeSha256": "17556a63e84bfa17a9cb8102d255077b67fc24f6157b0fc09a911d822a8f0592",
+  "sourceCommit": "ffa187e17e8ec237a682218a4e4c2e80d5a1f98a",
+  "capabilitySourceSdkConfig": "PASS_ACTUAL_CLOCK_PROPOSED_AUTHORITY_ONLY",
+  "sdkFilesVerified": 35,
+  "actualPacketBuilderSyntheticWindows": "PASS",
+  "rootsAbsent": true,
+  "attendanceConfirmed": true,
+  "externalReadAuthorized": false,
+  "providerCalls": 0,
+  "privateInputsRecovered": false,
+  "r25Disposition": "Consumed; original timeout flags retained; zero qualification reservations; recovery resource closeout/private purge and process absence verified."
+}
