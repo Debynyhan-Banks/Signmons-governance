@@ -1,0 +1,8 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_EXACT_VM1_METADATA_READ",
+  "scopeSha256": "c8b4bab104e2dee63746383d918d41272973b40b6ed220487f7ff8d671453a29",
+  "externalReadAuthorized": true,
+  "externalMutationAuthorized": false,
+  "costHoldReleased": false
+}
