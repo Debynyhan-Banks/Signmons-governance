@@ -1,5 +1,7 @@
 # APP-013 / 3A / P08 — R27 attended recovery and exact Terminal confirmations
 
+R27 CONSUMED/CLOSED: recovery HANDOFF_RETAINED with database closeout verified; owner typed abbreviated “Approve qualification” rather than full case-sensitive operation/nonce phrase. Owner reported ATTENDED_CONFIRMATION_REFUSED; no confirmation record, qualification/native roots absent, no payment execution. PRIVATE_PURGE_VERIFIED/onTime/rawFilesAbsent/residuals[], guard and launcher/connected processes independently absent, owned launcher/consent-reference removed. Backend evidence evidence/APP-013/p08-connected-packet-20261110/r27-result.json; source3ab094b, recovery/session approvalfa5697b. No source defect established, no retry/replay, no fresh session authorized. Implementer owns any fresh exact packet; owner must copy the entire displayed Terminal phrase after review. Next observable result fresh approved recovery or remain closed. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27. No scope deviation.
+
 PREPARED, NOT APPROVED. Owner confirmed continuous60minute Terminal/chat attendance after preparation. This is qualification-only entry, not native execution-ready. Source3ab094bf538250f2c4e1be6b720226f3cb92dcdb; AW1 governanceff7168b. R26 consumed, resource closeout/private purge verified, no qualification/native execution; no replay. Unrelated backend AGENTS.md preserved. No provider calls or private recovery during preparation.
 
 ## Exact approval requested
