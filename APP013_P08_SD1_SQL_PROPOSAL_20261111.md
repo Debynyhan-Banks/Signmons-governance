@@ -1,5 +1,7 @@
 # APP-013 / 3A — SD1 isolated SQL diagnosis
 
+SD1 completed and locally closed: SQL_READ_RETURNED_JSON, source f880db5, exact approval0267c54, operation46b46d31-dfff-451c-aec5-9d2307249cc4. Actual6 CLI/1 SQL/0 HTTPS/0child/0mutations; existing role metadata query succeeded through corrected NativeIO.sql. Password/token/raw metadata not persisted. Independent process-absence and owned temporary-file-absence checks passed. Evidence backend evidence/APP-013/p08-key-correction-20261110/sd1-result.json. Current SQL transport succeeded; role/ACL state was not validated by this diagnostic, original KR6 cause remains UNKNOWN. Operation consumed, no retry. Implementer next reconciles full qualification prerequisites and prepares exact remaining correction scope; owner retains live authority. No deployment/adoption/payment acceptance. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 plus CR-K1-R2 amendment only; no further deviation.
+
 Qualification-only; PENDING EXACT LIVE APPROVAL. Preparation authorized by owner “i approve proceed”. No new runtime implementation or scope expansion. Operation 46b46d31-dfff-451c-aec5-9d2307249cc4; source f880db5e34391bee8a71a22ea59e27d3f141a451; spec digest 13c85c6b57e19616fdb6d1943a2a8f831f6bf9ea5e2abaad99f9430c90a3816c. Reuse VM1 operator-orchestrated approach, not a supported launch.py mode. Do not fabricate a qualification decision or feed this spec to launch.py.
 
 ## Purpose and finite sequence
