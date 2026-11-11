@@ -1,5 +1,8 @@
 # APP-013 / 3A — CR-K1 Sandbox credential and candidate correction
 
+KR6 CLOSED with residuals[]; operation893e83f7-b7b5-4516-95eb-8aa34fc301af, source388ff8b, approvals02b4a84/5fd1bb7. Key/account/test-mode/Destination check passed; run stopped DATABASE_ROLE/VALIDATION_STOP/NATIVE_COMMAND_REFUSED on first SQL dispatch after11CLI/12HTTPS/1child. No mutation intents/version assignment/deployment. NativeIO code means nonzero command exit or stdout limit; authentication/connectivity/timeout/query/output cause UNKNOWN, raw stderr not retained. Independent closeout0calls/residuals[]; process absent, owned launchers/specs removed. Evidence backend evidence/APP-013/p08-key-correction-20261110/kr6-result.json. Input blocker passed for this attempt; next bounded local inspection is SQL error classification before any live diagnostic. No replay/new live window. Version2 last observed disabled VM1; candidate/adoption/payment/browser acceptance remain; accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 plus CR-K1-R2 amendment only; no further deviation.
+
+
 KR6 exact owner approval November11: owner approves deployment, independent cleanup and stated spending limitations before7:40am Eastern, proposal4f4f6a3. Operation893e83f7-b7b5-4516-95eb-8aa34fc301af; source388ff8b; both RUN/CLOSEOUT scopes approved. USD1 non-metered planning allowance/retained storage costs acknowledged. Source/SDK/receipt/scope/window/fresh-root checks pass. Key/ID checks before cloud/SQL; version2 reuse only, no create/payment/normal traffic change. Work ends7:55am, independent cleanup8:10am. Implementer owns launch/receipts/both closures; owner supplies hidden inputs. Accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 plus CR-K1-R2 amendment only; no further deviation.
 
 
