@@ -1,0 +1,30 @@
+{
+  "operationId": "f3122303-f4c9-406a-a28b-888408957f44",
+  "mode": "READ_EXISTING_VERSION2_METADATA_ONLY",
+  "sourceCommit": "f103a8bfd0e54d77891afd92983a0ad20e0f27dd",
+  "sourceManifestSha256": "950611d1984b4d7e51a71dec1292ce45a2e72d26959d3ace156f4a8b8642e922",
+  "reuse": {
+    "secret": "signmons-staging-stripe-secret-key",
+    "version": "2",
+    "operationId": "392807bd-8c43-4a01-b82d-3292f19fd222",
+    "receiptCommit": "ff18dbee2a4c7d94338b549f9d16d725a03b58ca",
+    "receiptSha256": "9a2066e1c99ec6e50262a3ad0f05a489ac275ebf49b63e8044189e96160464d2"
+  },
+  "projectNumberSha256": "37d4aa0f46ca5b8f0b81b1148bda235a0f4a9a424b6b4638ec993d889563be54",
+  "window": {
+    "start": 1794357900.0,
+    "cutoff": 1794359400.0,
+    "workEnd": 1794359700.0,
+    "cleanupEnd": 1794360300.0
+  },
+  "maximumCalls": {
+    "cli": 6,
+    "https": 1,
+    "sql": 0,
+    "child": 0
+  },
+  "externalMutationAuthorized": false,
+  "costHoldReleased": false,
+  "costAllowanceUsd": 0,
+  "automaticRetryAllowed": false
+}
