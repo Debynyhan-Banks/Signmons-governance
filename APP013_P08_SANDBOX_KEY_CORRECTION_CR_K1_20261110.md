@@ -1,5 +1,8 @@
 # APP-013 / 3A — CR-K1 Sandbox credential and candidate correction
 
+KR2 exact execution review prepared, not approved: APP013_P08_KR2_EXECUTION_PROPOSAL_20261110.md plus RUN/CLOSEOUT specs. Operation5cdba516-cbbf-4219-8112-c60d498fc30d; source1648cf8; reuse existing version2 only, no creation; QK5 hashes plus mandatory fresh in-run checks. Actual source/SDK/provenance/proposed-scope verifier passes, fresh root absent. Cutoff7:35pm Eastern November10, work end7:50, independent cleanup8:10. New proposed USD1 planning allowance, not enforced billing cap; exact owner decision required. No launch/provider call. Implementer owns both closures after approval; live state UNKNOWN until checked. Adoption/payment/browser acceptance remain; accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 plus CR-K1-R2 amendment only; no further deviation.
+
+
 CR-K1-R2 locally implemented under explicit owner approval of proposalbc5e733. Provenance-bound reuse of version2 with fresh disabled-state check; original KC1 operation rejected, no addVersion dispatch/intent in reuse; actual numeric2 lifecycle and independent cleanup tested.41Python+18Node pass; providerCalls0. Exact future source/window/allowance approval remains required; no launcher or live packet created. Candidate binding LEGACY; version2 last observed disabled at KC1, current live facts UNKNOWN. Implementer next prepares exact reuse/deploy/independent-cleanup review using QK5 hashes plus fresh in-run checks. Adoption/connected payment/browser/owner acceptance remain; accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 plus CR-K1-R2 amendment only; no further deviation.
 
 
