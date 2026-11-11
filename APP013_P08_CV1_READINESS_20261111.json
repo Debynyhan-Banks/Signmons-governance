@@ -1,0 +1,13 @@
+{
+  "verifiedAt": "2026-11-11T23:46:00.114131+00:00",
+  "sourceCommit": "d7c03fc763813db40acabe2ca42e55ced07d8bb0",
+  "scopeSha256": "88aa42d123e76919dfeb0c9d4ba4c182d652cf9de109986ad1f868fe6d75b3f3",
+  "sourceRuntimeConfiguration": "PASS",
+  "actualCredentialCacheRead": false,
+  "cacheContents": "UNKNOWN",
+  "validThrough745pm": "UNKNOWN",
+  "approvalRequired": true,
+  "providerCalls": 0,
+  "operatorProtocol": "Reserve exclusive operation receipt before one existing cache function call; discard token immediately; retain only fixed status; verify closure and remove owned operator script. No SDK or recovery.",
+  "syntheticCacheTestsPassed": 3
+}
