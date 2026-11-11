@@ -1,0 +1,22 @@
+{
+  "verifiedAt": "2026-11-11T22:16:50.505054+00:00",
+  "operationId": "308dbda2-021d-4c88-965c-85d866b6d4f5",
+  "scopeSha256": "4d012acf3a6b6e78b3a565d98a7ecf9ea6aa2fc81797d670ad43062aa6f6ab42",
+  "sourceCommit": "3ab094bf538250f2c4e1be6b720226f3cb92dcdb",
+  "capabilitySourceSdkConfig": "PASS_ACTUAL_CLOCK_PROPOSED_AUTHORITY_ONLY",
+  "sdkFilesVerified": 35,
+  "actualPacketBuilderSyntheticWindows": "PASS",
+  "attendedConsentSourceScope": "PASS_PROPOSED_AUTHORITY_ONLY",
+  "rootsAbsent": true,
+  "attendanceConfirmed": true,
+  "externalReadAuthorized": false,
+  "providerCalls": 0,
+  "privateInputsRecovered": false,
+  "owner": "Implementer for local readiness; owner for exact session authority and input; provider custodians for live access",
+  "unknown": [
+    "current usable provider permissions",
+    "private binding and payment amount",
+    "current endpoint match",
+    "live payment and application state"
+  ]
+}
