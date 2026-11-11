@@ -1,5 +1,8 @@
 # APP-013 / 3A — CR-K1 Sandbox credential and candidate correction
 
+KR4 exact owner approval November10: owner approves deployment, independent cleanup and stated spending limitations before8:15pm Eastern, proposal8c8dfba. Operation78fff79e-c0b4-4ede-8141-15fd8280224f; sourcef103a8b; both RUN/CLOSEOUT scopes approved with USD1 non-metered planning allowance/retained storage costs acknowledged. Current source/SDK/receipt/scope/window/fresh-root checks pass. Version2 reuse only; no create/payment/normal traffic change. Work end8:30pm, independent cleanup8:50pm. Implementer owns launch/receipts/both closures; owner supplies hidden inputs. KR3 historical cause remains UNKNOWN; current preflight repeated before writes. Accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 plus CR-K1-R2 amendment only; no further deviation.
+
+
 KR4 exact fresh deployment/independent-cleanup proposal prepared, not approved: APP013_P08_KR4_EXECUTION_PROPOSAL_20261110.md plus RUN/CLOSEOUT specs. Operation78fff79e-c0b4-4ede-8141-15fd8280224f; sourcef103a8b with repaired safe reporting. QD1 preflight82f963e and VM1 disabled-version2d96101c passed; KR3 historical cause remains UNKNOWN/not reproduced. Same finite version2 reuse/candidate/cleanup scope, no creation/payment. Source/SDK/provenance/proposed-scope/time checks pass; fresh root absent. Cutoff8:15pm Eastern November10, work end8:30, cleanup8:50. Proposed new USD1 planning allowance not enforced billing cap; fresh exact owner decision required. No launch/provider call. Implementer owns both closures after approval; adoption/payment/browser acceptance remain; accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 plus CR-K1-R2 amendment only; no further deviation.
 
 
