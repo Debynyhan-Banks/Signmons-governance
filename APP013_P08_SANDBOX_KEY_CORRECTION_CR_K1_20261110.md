@@ -1,5 +1,8 @@
 # APP-013 / 3A — CR-K1 Sandbox credential and candidate correction
 
+KR5 exact owner approval November10: owner approves deployment, independent cleanup and stated spending limitations before8:25pm Eastern, proposal7bf887c. Operationa5b95063-e4c6-4251-804d-5147041d99cf; source388ff8b; both RUN/CLOSEOUT scopes approved. USD1 non-metered planning allowance/retained storage costs acknowledged. Source/SDK/receipt/scope/window/fresh-root checks pass. Key/ID checks before cloud/SQL; version2 reuse only, no create/payment/normal traffic change. Work ends8:40pm, independent cleanup9:00pm. Implementer owns launch/receipts/both closures; owner supplies hidden inputs. Historical mismatch cause UNKNOWN; accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 plus CR-K1-R2 amendment only; no further deviation.
+
+
 KR5 fresh exact proposal prepared, not approved: APP013_P08_KR5_EXECUTION_PROPOSAL_20261110.md plus RUN/CLOSEOUT specs. Operationa5b95063-e4c6-4251-804d-5147041d99cf; source388ff8b; existing key/ID validation now BEFORE cloud/SQL with safe input flags; same limits/version2 reuse/one candidate/independent cleanup.50Python+19Node local proof reused; source/SDK/provenance/proposed-scope/time checks pass, root absent. KR4 consumed; mismatch cause UNKNOWN. Cutoff8:25pm Eastern November10, work end8:40, independent cleanup9:00. Proposed USD1 non-metered planning allowance, storage costs disclosed; fresh owner approval required. No launch/provider action. Implementer owns both closures after approval; adoption/payment/browser acceptance remain; accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 plus CR-K1-R2 amendment only; no further deviation.
 
 
