@@ -1,0 +1,37 @@
+{
+  "mode": "closeout",
+  "sourceCommit": "388ff8b5c5ff2e5270c3d3cc4148eef89f028f70",
+  "sourceManifestSha256": "f4132bd8afeddfc965ebdb310f764d86f82dc1e152c5f26498febe134d30f338",
+  "plan": {
+    "operationId": "893e83f7-b7b5-4516-95eb-8aa34fc301af",
+    "projectNumberSha256": "37d4aa0f46ca5b8f0b81b1148bda235a0f4a9a424b6b4638ec993d889563be54",
+    "window": {
+      "start": 1794399600.0,
+      "cutoff": 1794400800.0,
+      "workEnd": 1794401700.0,
+      "cleanupEnd": 1794402600.0
+    },
+    "qualificationSha256": "dec7be0ea34afbd2930214cc24a5e82f07dc316f14670a72fd47937a63601b01",
+    "sourceManifestSha256": "f4132bd8afeddfc965ebdb310f764d86f82dc1e152c5f26498febe134d30f338",
+    "reuse": {
+      "secret": "signmons-staging-stripe-secret-key",
+      "version": "2",
+      "operationId": "392807bd-8c43-4a01-b82d-3292f19fd222",
+      "receiptCommit": "ff18dbee2a4c7d94338b549f9d16d725a03b58ca",
+      "receiptSha256": "9a2066e1c99ec6e50262a3ad0f05a489ac275ebf49b63e8044189e96160464d2"
+    }
+  },
+  "qualification": {
+    "returnUrl": "https://signmons-calldesk.web.app/payment/status",
+    "roleAclSha256": "649d517af81c235f8045894d73207b7d892b3607ee165418151af6b9975c1560",
+    "runtimeEnvironmentSha256": "b3b3e19722bbd8f5ceadb94323e86612e4b26b8bc896b1d0223e74e683f67cc8"
+  },
+  "limits": {
+    "cli": 180,
+    "https": 40,
+    "sql": 40,
+    "child": 2
+  },
+  "costAllowanceUsd": 1,
+  "decisionCommit": null
+}
