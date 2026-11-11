@@ -1,5 +1,8 @@
 # Global Execution Pointer
 
+KR3 fresh exact deployment/independent-cleanup proposal prepared, not approved: APP013_P08_KR3_EXECUTION_PROPOSAL_20261110.md plus RUN/CLOSEOUT specs. Operation510b44b5-7eb9-4d93-abbb-f59e68cab297; source1648cf8 unchanged; version2 reuse only. KR2 consumed/no mutations; subsequent current paste exact-match evidence3909514; earlier mismatch bytes UNKNOWN. Source/SDK/provenance/proposed-scope/time checks pass; fresh root absent. Cutoff7:45pm Eastern November10, work end8:00, cleanup8:20. Same limits and proposed USD1 non-metered planning allowance; fresh owner decision required. No provider calls/launch; implementer owns both closures after approval. Adoption/payment/browser acceptance remain; accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 plus CR-K1-R2 amendment only; no further deviation.
+
+
 Post-KR2 attended local Destination ID check passed: exactMatchtrue, formatValidtrue, length27, no whitespace/URL/control/non-ASCII; providerCalls0. Process absent, owned launcher removed, raw input not retained. Evidence backend evidence/APP-013/p08-key-correction-20261110/post-kr2-input-match.json. Current paste matches unchanged pin; previous KR2 mismatch cause remains UNKNOWN and cannot be reconstructed. No provider retry or new external authority. Implementer must preserve this distinction when preparing any next step; candidate deployment/adoption/payment proof remain. Accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 plus CR-K1-R2 amendment only; no further deviation.
 
 
