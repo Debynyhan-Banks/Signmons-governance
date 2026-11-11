@@ -1,0 +1,22 @@
+{
+  "verifiedAt": "2026-11-11T22:37:27.983081+00:00",
+  "operationId": "2f7f17e8-7bd0-4ad6-8c71-352603480441",
+  "scopeSha256": "3de7c43b64a612312c7b9184f6f785e01d0807fb9af7defa48d6e2acfd7e3cfc",
+  "sourceCommit": "05b472ca9c673fdc15ce66cdb9bbde17b3a59d03",
+  "capabilitySourceSdkConfig": "PASS_ACTUAL_CLOCK_PROPOSED_AUTHORITY_ONLY",
+  "sdkFilesVerified": 35,
+  "actualPacketBuilderSyntheticWindows": "PASS",
+  "attendedConsentSourceScope": "PASS_PROPOSED_AUTHORITY_ONLY",
+  "rootsAbsent": true,
+  "attendance": "Exact R29 approval must confirm attendance through6:36pm Eastern",
+  "externalReadAuthorized": false,
+  "providerCalls": 0,
+  "privateInputsRecovered": false,
+  "unknown": [
+    "current usable access",
+    "private payment binding",
+    "endpoint match",
+    "payment and app state"
+  ],
+  "responsibility": "Implementer local readiness/supervision/cleanup; owner live authority/input; custodians effective access"
+}
