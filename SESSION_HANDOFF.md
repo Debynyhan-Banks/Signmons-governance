@@ -1,5 +1,8 @@
 # Session Handoff
 
+CR-K1-R2 local amendment proposed before implementation: APP013_P08_CR_K1_R2_REUSE_PROPOSAL_20261110.md. Existing driver always creates a version; proposed provenance-bound reuse of disabled version2 avoids another creation. Source5528e09, KC1 receiptff18dbe. Owner approval required for changed operation mode per AGENTS.md; no live window/credential request or provider action. Finite driver/ports/launcher/test card includes no-create guarantee, original receipt pin, fresh disabled-state checks and independent cleanup. Implementer prepares only after owner decision; live access/state UNKNOWN beyond KC1 observation. Adoption/payment acceptance remain; accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 scope deviation only to date; CR-K1-R2 amendment proposed, not approved or implemented.
+
+
 KC1 local binding serialization fix complete, no external action. Source baselinea7ae8b3; installed SDK binding add/remove return policy objects, existing command lacked JSON flag while wrapper required JSON; prior fixture returned empty output and missed boundary. Realistic policy-text fixture reproduced CURRENT_OUTPUT at first binding. Current ports.py appends --format=json only to authorized exact binding mutation vectors, safely classifies invalid output, retains strict reads and independent policy readback.28Python+18Node pass; no live cause claimed proven. Version2 remains last-observed disabled; KC1 consumed. Implementer must prepare owner decision on reusing version2 versus any additional-version scope before another operation; no new live proposal/launch now. Candidate/adoption/payment acceptance remain; accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 scope deviation only; no further deviation.
 
 
