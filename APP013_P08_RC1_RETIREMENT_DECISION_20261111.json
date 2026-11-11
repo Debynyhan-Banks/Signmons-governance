@@ -1,0 +1,8 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_EXACT_RC1_RETIREMENT_READ",
+  "scopeSha256": "f33cf3a0f94dd174b0a770c55368dc6d305e5e0a5b6c87a6d828da48d981741a",
+  "externalReadAuthorized": true,
+  "externalMutationAuthorized": false,
+  "costHoldReleased": false
+}
