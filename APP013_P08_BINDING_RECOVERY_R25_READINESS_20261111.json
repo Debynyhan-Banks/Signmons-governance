@@ -1,0 +1,27 @@
+{
+  "verifiedAt": "2026-11-11T20:59:58.034473+00:00",
+  "operationId": "745d8fbd-38f0-4def-a370-82880b7096b9",
+  "scopeSha256": "270a1b79418107df4b8c096368a492961fb9514556457f4428b796076eb33fb9",
+  "sourceCommit": "b0ab7b74df4924e4b3e58155102df8a6d06bfb11",
+  "capabilitySourceSdkConfig": "PASS_PROPOSED_CLOCK_AND_AUTHORITY_ONLY",
+  "sdkFilesVerified": 35,
+  "rootsAbsent": true,
+  "attendanceConfirmed": true,
+  "externalReadAuthorized": false,
+  "providerCalls": 0,
+  "privateInputsRecovered": false,
+  "tests": {
+    "native": 31,
+    "packet": 18,
+    "currentQualification": 23,
+    "correction": 52
+  },
+  "unknowns": [
+    "fresh private bindings/payment profile",
+    "current effective access",
+    "private endpoint input",
+    "authentic event and application state",
+    "final cleanup"
+  ],
+  "retention": "one new60minute custody window; no extension/replay"
+}
