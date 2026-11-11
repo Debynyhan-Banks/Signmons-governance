@@ -1,0 +1,39 @@
+{
+  "status": "PREFLIGHT_VERIFIED_NO_OPERATION_RESERVED",
+  "sourceCommit": "6dafad1223f2465f4c4e167f66a2a81a7328606f",
+  "dependencyMapping": {
+    "p08-exact-role-provisioning-local-20261028/source/role_provisioner.py": {
+      "historical": "e1fbc15d95450da7662db684e2cfe6f063c8a60fd7c8243053e5431fc3f973f9",
+      "current": "e1fbc15d95450da7662db684e2cfe6f063c8a60fd7c8243053e5431fc3f973f9",
+      "changed": false
+    },
+    "p08-native-entry-local-20261101/source/authority.py": {
+      "historical": "763dd24f5dac70b3ec87d350ab2efc6d0fe110aae9f261708aba8c54e481e365",
+      "current": "31f27e95a3601d310b19b6c04c51410c11955ab135d2ef3f8adf8393b30013de",
+      "changed": true
+    },
+    "p08-restoration-local-20261028/source/restore.py": {
+      "historical": "a0bf4bc90cca0bd52935915d710ccb44e065dd3deed841a12ab49cb3ac4a1cb9",
+      "current": "a0bf4bc90cca0bd52935915d710ccb44e065dd3deed841a12ab49cb3ac4a1cb9",
+      "changed": false
+    },
+    "p08-role-contract-local-20261029/source/composed_qualification.py": {
+      "historical": "2c2f9603cb71957239816f4942549be8277c446cbcc5f2b7bae1f139fd552df4",
+      "current": "2c2f9603cb71957239816f4942549be8277c446cbcc5f2b7bae1f139fd552df4",
+      "changed": false
+    },
+    "p08-role-contract-local-20261029/source/qualification_launch.py": {
+      "historical": "76722d3265cda655b6b2433bc83d3bbcee06c12c6d0f66c07cad9fe2ae2e7e18",
+      "current": "76722d3265cda655b6b2433bc83d3bbcee06c12c6d0f66c07cad9fe2ae2e7e18",
+      "changed": false
+    }
+  },
+  "sdkFilesVerified": 43,
+  "credentialStoresRead": false,
+  "providerCalls": 0,
+  "verifiedAt": "2026-11-11T22:54:38.185365+00:00",
+  "authority": "PROPOSED_TEST_AUTHORITY_ONLY",
+  "configuration": "SYNTHETIC_OWNED_CONFIG",
+  "actualGitTreeAndCommittedSource": "PASS",
+  "externalActionsAuthorized": false
+}
