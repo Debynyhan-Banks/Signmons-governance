@@ -1,5 +1,8 @@
 # Session Handoff
 
+KR5 CLOSED with residuals[]; source388ff8b, operationa5b95063-e4c6-4251-804d-5147041d99cf, approvalse6b101e/33ce174. Early KEY_ENDPOINT_PIN diagnostic:38 characters, formatValidfalse, no surrounding whitespace/URL/control/non-ASCII; exactMatchfalse. Prior local match was27 characters. Input differs; actual text/type UNKNOWN and not retained.0CLI/0HTTPS/0SQL,1localchild,0Stripe/provider calls/mutations. Independent closeout0calls; process absent, owned launchers/specs removed. Evidence backend evidence/APP-013/p08-key-correction-20261110/kr5-result.json. No further deployment proposed; owner should identify only source/type copied into second prompt, never paste value. Implementer holds live retries pending resolved input discrepancy. Version2 last observed disabled VM1; deployment/adoption/payment/browser acceptance remain; accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 plus CR-K1-R2 amendment only; no further deviation.
+
+
 KR5 exact owner approval November10: owner approves deployment, independent cleanup and stated spending limitations before8:25pm Eastern, proposal7bf887c. Operationa5b95063-e4c6-4251-804d-5147041d99cf; source388ff8b; both RUN/CLOSEOUT scopes approved. USD1 non-metered planning allowance/retained storage costs acknowledged. Source/SDK/receipt/scope/window/fresh-root checks pass. Key/ID checks before cloud/SQL; version2 reuse only, no create/payment/normal traffic change. Work ends8:40pm, independent cleanup9:00pm. Implementer owns launch/receipts/both closures; owner supplies hidden inputs. Historical mismatch cause UNKNOWN; accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 plus CR-K1-R2 amendment only; no further deviation.
 
 
