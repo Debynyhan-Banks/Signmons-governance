@@ -1,0 +1,23 @@
+{
+  "verifiedAt": "2026-11-11T23:09:13.634175+00:00",
+  "operationId": "7db6b94f-4f56-4e38-a1bf-8d759cc42058",
+  "scopeSha256": "05c34410ba4f32d6268961462b6eedab743da9ee41b35758a2db39a1aee75a6a",
+  "sourceCommit": "69584eeed42d857874a81418a1ce7d3708b59923",
+  "capabilitySourceSdkConfig": "PASS_ACTUAL_CLOCK_PROPOSED_AUTHORITY_ONLY",
+  "sdkFilesVerified": 35,
+  "actualPacketBuilderSyntheticWindows": "PASS_52_MINUTE_CUSTODY_11_MINUTE_NATIVE_CLEANUP_RESERVE",
+  "attendedConsentSourceScope": "PASS_PROPOSED_AUTHORITY_ONLY",
+  "rootsAbsent": true,
+  "credentialLifetimeEvidence": "TR4 one postcheck VALID_THROUGH_CUTOFF beyond7pm; no additional cache read",
+  "attendance": "Exact R30 approval must confirm continuous attendance through7pm Eastern",
+  "externalReadAuthorized": false,
+  "providerCalls": 0,
+  "privateInputsRecovered": false,
+  "unknown": [
+    "current usable resource permissions",
+    "private payment binding",
+    "endpoint match",
+    "payment and app state"
+  ],
+  "responsibility": "Implementer readiness/supervision/cleanup; owner exact authority/input; custodians resource access"
+}

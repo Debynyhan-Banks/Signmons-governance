@@ -1,5 +1,7 @@
 # APP-013 / 3A / P08 — TR3 one fresh owner browser sign-in
 
+Current result: Consumed/closed: exit1 before cache check; owner reports personal Gmail selected. Exact suppressed SDK error remains UNKNOWN. Independent owned-process/receipt closure verified; no repeated invocation under this authority. Evidence backend69584ee tr3-result.json/tr4-result.json and exact renewal receipts. Original proposal below retained as reviewed history.
+
 PENDING exact owner approval. Source85a68f5a195999023b51d4447369707df8167480. TR2 is consumed: ordinary SDK resolver exited0 but cached expiry did not exceed6:50pm; issuance/reuse and actual expiry UNKNOWN. Do not repeat it. This proposed remedy uses the installed SDK's supported browser sign-in path, not a custom authentication implementation. No launch, credential-store read or provider request occurred in preparation.
 
 ## Demonstrated change and exact authority

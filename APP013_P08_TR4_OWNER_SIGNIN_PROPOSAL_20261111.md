@@ -1,5 +1,7 @@
 # APP-013 / 3A / P08 — TR4 one fresh owner browser sign-in
 
+Current result: Consumed/succeeded: exit0, one cache postcheck VALID_THROUGH_CUTOFF beyond7pm Eastern November11, exact config unchanged; owned process/receipt closure independently verified. SDK/browser session retained as authorized; no payment authority. Evidence backend69584ee tr3-result.json/tr4-result.json and exact renewal receipts. Original proposal below retained as reviewed history.
+
 OWNER AUTHORIZED fresh repeat: after reporting that personal Gmail was selected by mistake, owner instructed “do it again”. This authorizes one fresh invocation of the same previously reviewed exact account, command, scopes,300second limit, original6:15 cutoff/6:22 closeout and7:00 validity horizon. TR3 remains consumed; this is new reservation TR4, not replay. No scope/window/source expansion. Source85a68f5a195999023b51d4447369707df8167480. TR2 is consumed: ordinary SDK resolver exited0 but cached expiry did not exceed6:50pm; issuance/reuse and actual expiry UNKNOWN. Do not repeat it. This proposed remedy uses the installed SDK's supported browser sign-in path, not a custom authentication implementation. No launch, credential-store read or provider request occurred in preparation.
 
 ## Demonstrated change and exact authority
