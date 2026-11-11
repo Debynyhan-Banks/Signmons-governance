@@ -1,0 +1,24 @@
+{
+  "operationId": "46b46d31-dfff-451c-aec5-9d2307249cc4",
+  "mode": "READ_EXISTING_ROLE_SQL_ONLY",
+  "sourceCommit": "f880db5e34391bee8a71a22ea59e27d3f141a451",
+  "sourceManifestSha256": "2cb2ca24cb2e1e605c4595eefa3525a097efb6fa16e8e58bfe1a4eda0a4bf0d7",
+  "querySha256": "5eeb1050dc471b956d5b8b37105d634f2cbdceecf36583a53939ba27d99337e1",
+  "projectNumberSha256": "37d4aa0f46ca5b8f0b81b1148bda235a0f4a9a424b6b4638ec993d889563be54",
+  "window": {
+    "start": 1794404100.0,
+    "cutoff": 1794405600.0,
+    "workEnd": 1794405900.0,
+    "cleanupEnd": 1794406500.0
+  },
+  "maximumCalls": {
+    "cli": 6,
+    "https": 0,
+    "sql": 1,
+    "child": 0
+  },
+  "externalMutationAuthorized": false,
+  "costHoldReleased": false,
+  "costAllowanceUsd": 0,
+  "automaticRetryAllowed": false
+}
