@@ -1,0 +1,14 @@
+{
+  "verifiedAt": "2026-11-11T22:44:10.093794+00:00",
+  "sourceCommit": "adb59ace240f1d21b925c32f8bd80c22066692ab",
+  "sdkSourceFilesMatched": 21,
+  "gcloudSha256": "8628b9f971d07c5e52fd2c6d469ee4a0940c75eb51820d628c3dd068981bd260",
+  "providerCalls": 0,
+  "credentialStoresRead": false,
+  "findings": [
+    "print-access-token calls LoadCredentialsWithScopes without force_refresh or min_expiry",
+    "existing SDK resolver may reuse currently valid cached token",
+    "read_cached_token requires expiry strictly greater than requested purge end",
+    "one renewal invocation needs one validity postcheck; exit zero alone insufficient"
+  ]
+}
