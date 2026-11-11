@@ -1,5 +1,8 @@
 # Global Execution Pointer
 
+KR3 exact owner approval November10: owner approves deployment, independent cleanup and stated spending limitations before7:45pm Eastern, proposal941c894. Operation510b44b5-7eb9-4d93-abbb-f59e68cab297; source1648cf8; both RUN/CLOSEOUT scopes approved. USD1 planning allowance not hard billing cap; retained storage costs acknowledged. Source/SDK/receipt/scope/window checks pass; fresh root absent. Reuse version2 only; no creation/payment/normal traffic change. Work ends8:00pm, independent cleanup8:20pm. Implementer owns launch/receipts/both closures; owner supplies hidden inputs. Adoption/payment acceptance remain; accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 plus CR-K1-R2 amendment only; no further deviation.
+
+
 KR3 fresh exact deployment/independent-cleanup proposal prepared, not approved: APP013_P08_KR3_EXECUTION_PROPOSAL_20261110.md plus RUN/CLOSEOUT specs. Operation510b44b5-7eb9-4d93-abbb-f59e68cab297; source1648cf8 unchanged; version2 reuse only. KR2 consumed/no mutations; subsequent current paste exact-match evidence3909514; earlier mismatch bytes UNKNOWN. Source/SDK/provenance/proposed-scope/time checks pass; fresh root absent. Cutoff7:45pm Eastern November10, work end8:00, cleanup8:20. Same limits and proposed USD1 non-metered planning allowance; fresh owner decision required. No provider calls/launch; implementer owns both closures after approval. Adoption/payment/browser acceptance remain; accepted4/8;3A OPEN;R1newlyclosed0/27. Approved CR-K1 plus CR-K1-R2 amendment only; no further deviation.
 
 
