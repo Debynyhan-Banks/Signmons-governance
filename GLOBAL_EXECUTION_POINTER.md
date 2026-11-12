@@ -1,5 +1,8 @@
 # Global Execution Pointer
 
+TR6 PREPARED, NOT APPROVED: APP013_P08_TR6_OWNER_SIGNIN_PROPOSAL_20261112.md. Sourcecd9c463; existing exact owner browser sign-in, seven disclosed SDK scopes, explicit internal-retry/cache-maintenance exception, one300second invocation and conditional single cache postcheck beyond8:15a.m. November12. Launch7:20–before7:30,close7:37. Actual current/committed source/runtime/config and43SDK union plus9additional hashes verified without credential reads. Browser outcome and credential horizon UNKNOWN. Owner availability through8:15 confirmed; exact sign-in authority pending. Implementer owns launch/cleanup; owner selects debynyhan@signmons.com. CV2/TR5/R31 consumed. No resource/payment execution authority. Accepted4/8;3A OPEN;R1newlyclosed0/27. No scope deviation; existing credential exception proposed only.
+
+
 CV2 CONSUMED/CLOSED: backend cd9c463, exact owner approval2fdc26a. One reserved immutable read-only cache check returned CACHED_TOKEN_EXPIRED for8:15a.m. Eastern November12; this means the horizon was not covered, not that the token was already expired. Actual token/expiry discarded, no SDK/provider/password/recovery calls or cache mutation. Helper completed; isolated exit0, owned process independently absent, receipt modes/inventory verified and temporary checker removed. Evidence evidence/APP-013/p08-connected-packet-20261110/cv2-result.json. No replay. Next: implementer prepares existing correct-owner sign-in/renewal remedy with exact later horizon; owner retains credential/scopes/SDK exception approval. No new recovery until current credential horizon is proven. R31 qualification session readback remains unconfirmed. 3A OPEN;accepted4/8;R1newlyclosed0/27. No scope deviation.
 
 
