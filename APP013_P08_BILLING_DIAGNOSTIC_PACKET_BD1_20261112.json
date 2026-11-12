@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "execution": "EXTERNAL_READ_ONLY",
+  "operationId": "29969570-0f53-43ea-9f30-2603c0139d17",
+  "project": "signmons",
+  "owner": "debynyhan@signmons.com",
+  "projectNumberSha256": "37d4aa0f46ca5b8f0b81b1148bda235a0f4a9a424b6b4638ec993d889563be54",
+  "sourceCommit": "9bae04860292bcfeca8591570b30627ff60c588d",
+  "manifestSha256": "3bb67a8ec2b7fb593466c4d256894ff7f52befbdbc64768a2f007d0502bc6cf4",
+  "sdkFilesSha256": "1d8bbdd38383d1e9dfae5d3c9b779fb945ba25517e0d2fc6cfe3d015d2243ec5",
+  "sdkException": "SDK_EXISTING_OWNER_REFRESH_CACHE_INTERNAL_RETRIES_NO_TOKEN_EXPORT",
+  "window": {
+    "start": "2026-11-12T13:29:00Z",
+    "cutoff": "2026-11-12T13:36:00Z",
+    "readEnd": "2026-11-12T13:38:00Z",
+    "closeoutEnd": "2026-11-12T13:39:00Z"
+  },
+  "limits": {
+    "cli": 3,
+    "sql": 0,
+    "https": 0,
+    "cache": 0
+  }
+}

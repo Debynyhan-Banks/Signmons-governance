@@ -1,0 +1,41 @@
+{
+  "verifiedAt": "2026-11-12T13:29:35.025346+00:00",
+  "sourceCommit": "9bae04860292bcfeca8591570b30627ff60c588d",
+  "scopeSha256": "958e31e8f2e813ffae79407426520e8ddb3183ea1cb74327256dd088c6354bce",
+  "actualCapabilityPrepare": "PASS_ACTUAL_CLOCK_PROPOSED_AUTHORITY_ONLY",
+  "sourceRuntimeConfigSdk": "PASS",
+  "sdkFilesVerified": 37,
+  "rootAbsent": true,
+  "commands": [
+    [
+      "/opt/homebrew/bin/gcloud",
+      "auth",
+      "list",
+      "--filter=status:ACTIVE",
+      "--format=json(account,status)"
+    ],
+    [
+      "/opt/homebrew/bin/gcloud",
+      "projects",
+      "describe",
+      "signmons",
+      "--format=json(projectId,projectNumber,lifecycleState)"
+    ],
+    [
+      "/opt/homebrew/bin/gcloud",
+      "billing",
+      "projects",
+      "describe",
+      "signmons",
+      "--format=json(billingAccountName,billingEnabled,projectId)"
+    ]
+  ],
+  "providerCalls": 0,
+  "credentialStoresRead": false,
+  "executionReady": false,
+  "unknown": [
+    "current live credentials/SDK refresh outcome",
+    "current billing read outcome",
+    "underlying R33 error"
+  ]
+}
