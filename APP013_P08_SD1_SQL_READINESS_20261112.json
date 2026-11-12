@@ -1,0 +1,42 @@
+{
+  "verifiedAt": "2026-11-12T14:35:40.000702+00:00",
+  "sourceCommit": "500b21ca909759c24db6fea035afbc5dcf9f9719",
+  "scopeSha256": "6aa03fd7ac75bd1fbe9f8300d3a4a6aa62f31b4d3ca4871be4c48aeee70129b8",
+  "actualCapability": "PASS_ACTUAL_SOURCE_RUNTIME_QUERY_ENV_CLOCK_PROPOSED_AUTHORITY_ONLY",
+  "rootAbsent": true,
+  "query": {
+    "id": "sql_connection_sessions",
+    "readOnly": true,
+    "sql": "SELECT json_build_object('databaseMatched',current_database()='neondb','userMatched',current_user='neondb_owner','sessionsAbsent',NOT EXISTS(SELECT 1 FROM pg_stat_activity WHERE (usename='p07_payment_runtime' OR application_name LIKE 'signmons_p08_qualification_%') AND pid<>pg_backend_pid()));"
+  },
+  "argv": [
+    "/opt/homebrew/opt/postgresql@16/bin/psql",
+    "-X",
+    "-q",
+    "-A",
+    "-t",
+    "-v",
+    "ON_ERROR_STOP=1",
+    "-v",
+    "VERBOSITY=sqlstate",
+    "-h",
+    "ep-jolly-flower-ayc6w9hv.c-5.us-east-2.aws.neon.tech",
+    "-U",
+    "neondb_owner",
+    "-d",
+    "neondb",
+    "-c",
+    "SELECT json_build_object('databaseMatched',current_database()='neondb','userMatched',current_user='neondb_owner','sessionsAbsent',NOT EXISTS(SELECT 1 FROM pg_stat_activity WHERE (usename='p07_payment_runtime' OR application_name LIKE 'signmons_p08_qualification_%') AND pid<>pg_backend_pid()));"
+  ],
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "localVerification": "451 passing tests including actual owned process and disposable PostgreSQL/TLS",
+  "unresolved": [
+    "live credential acceptance",
+    "current session absence",
+    "remote error compatibility",
+    "historical R36 cause"
+  ],
+  "qualificationOnly": true,
+  "executionReady": false
+}
