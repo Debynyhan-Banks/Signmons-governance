@@ -1,0 +1,9 @@
+{
+  "status": "PROPOSED_NOT_APPROVED",
+  "decisionForReview": {
+    "owner": "Debynyhan Banks",
+    "decision": "APPROVE_EXACT_P08_BILLING_DIAGNOSTIC",
+    "externalReadAuthorized": true,
+    "scopeSha256": "bda0dd0debdb9266b3bfe2d9a4a0e069d9d5dccd11f182bfd43b4f6d4bc1c4fa"
+  }
+}
