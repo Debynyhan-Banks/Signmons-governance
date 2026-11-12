@@ -1,6 +1,6 @@
 # APP-013 / 3A / P08 — PS1 policy serialization alignment proposal
 
-PROPOSED, NOT IMPLEMENTED. R32 is consumed and closed. Local source investigation only; no credential/provider reads. Approved section criterion remains the same connected customer payment journey; this change would remove an evidenced inconsistency in its access-preflight prerequisite, not create a new acceptance section. Accepted4/8;3A OPEN;R1newlyclosed0/27.
+OWNER APPROVED LOCAL IMPLEMENTATION on November12: “I approve PS1 local correction.” Implementation pending. R32 is consumed and closed. Local source investigation only; no credential/provider reads. Approved section criterion remains the same connected customer payment journey; this change would remove an evidenced inconsistency in its access-preflight prerequisite, not create a new acceptance section. Accepted4/8;3A OPEN;R1newlyclosed0/27.
 
 ## Demonstrated gap and limits
 
