@@ -1,0 +1,15 @@
+{
+  "verifiedAt": "2026-11-12T15:29:42.918757+00:00",
+  "sourceCommit": "5e029f9b36f7872f9e809499de6435b1cd367993",
+  "scopeSha256": "a2e06ec6302c9a7670e8165cb49ea2bb329418cad89993b569048eb4811dc048",
+  "currentCommittedSourcesSdkConfig": "PASS",
+  "actualDispatchValidation": "PASS",
+  "localBoundaryTests": 5,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "qualificationOnly": true,
+  "unknown": [
+    "current runtime identity disabled state",
+    "R38 mutation output cause"
+  ]
+}

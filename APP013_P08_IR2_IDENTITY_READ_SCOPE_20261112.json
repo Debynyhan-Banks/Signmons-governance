@@ -1,0 +1,61 @@
+{
+  "operationId": "8c2e54b8-dfaa-42bc-a3fa-a1351a15d284",
+  "sourceCommit": "5e029f9b36f7872f9e809499de6435b1cd367993",
+  "action": "READ_R38_RUNTIME_IDENTITY_STATE_ONCE",
+  "owner": "Debynyhan Banks",
+  "commands": [
+    {
+      "id": "owner",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "auth",
+        "list",
+        "--filter=status:ACTIVE",
+        "--format=json(account,status)"
+      ]
+    },
+    {
+      "id": "project",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "projects",
+        "describe",
+        "signmons",
+        "--format=json(projectId,projectNumber,lifecycleState)"
+      ]
+    },
+    {
+      "id": "identity",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "iam",
+        "service-accounts",
+        "describe",
+        "signmons-calldesk-p07-runtime@signmons.iam.gserviceaccount.com",
+        "--project",
+        "signmons",
+        "--format=json(email,disabled,uniqueId)"
+      ]
+    }
+  ],
+  "window": {
+    "start": "2026-11-12T15:29:00Z",
+    "cutoff": "2026-11-12T15:32:00Z",
+    "readEnd": "2026-11-12T15:33:00Z",
+    "closeoutEnd": "2026-11-12T15:34:00Z"
+  },
+  "limits": {
+    "cli": 3,
+    "sql": 0,
+    "https": 0,
+    "cache": 0
+  },
+  "sdkException": "SDK_EXISTING_OWNER_REFRESH_CACHE_INTERNAL_RETRIES_NO_TOKEN_EXPORT",
+  "sourceManifestSha256": "ea275649e82200606ae2309db1f20bd6016b22f7085abc6bea06e4d2ea8a4d3c",
+  "sdkFilesSha256": "1d8bbdd38383d1e9dfae5d3c9b779fb945ba25517e0d2fc6cfe3d015d2243ec5",
+  "mutationAuthorized": false,
+  "dispatchFiles": {
+    "ir_identity_dispatch.py": "116bacf6098189d87b8ec429a7dd0e4c56cc5c5f482b2dd44c44e9955b1e62af",
+    "ir_identity_dispatch_test.py": "3468d93940c2dc5c97b1ed7d8cf26ee6ed75de0d454f9c0c5fc4299bb40b11c4"
+  }
+}
