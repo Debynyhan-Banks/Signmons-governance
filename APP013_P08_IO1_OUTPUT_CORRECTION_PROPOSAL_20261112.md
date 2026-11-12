@@ -1,6 +1,6 @@
 # IO1 — exact identity mutation response correction
 
-PROPOSED local correction only; not implemented. Section 3A remains OPEN, accepted4/8. No acceptance criterion or payment/provider authority changes. No scope deviation.
+COMPLETED under owner approval052527a; implementation550ebfd, 452 local tests passed. See backend io1-local-verification.json. No external action. Section 3A remains OPEN, accepted4/8. No acceptance criterion or payment/provider authority changes. No scope deviation.
 
 Inspected source: backend f25b9f7, native_io.py NativeIO.cloud, restoration restore.command/readback, installed SDK583.0.0 enable/disable YAML, hooks, response translator and JSON printer. Evidence r38-output-local-diagnosis.json and reproducible r38_output_diagnosis.py in existing connected-packet directory. Both actual installed SDK hooks return None; actual printer emits []; actual native cloud parser rejects this with NATIVE_OUTPUT_SHAPE. Provider/credential calls zero. This demonstrates a compatibility defect, not the historical R38 cause, whose raw output was discarded. IR2 independently proved current identity DISABLED and closure.
 
