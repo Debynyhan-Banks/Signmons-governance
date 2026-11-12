@@ -1,0 +1,14 @@
+{
+  "verifiedAt": "2026-11-12T15:16:33.266884+00:00",
+  "sourceCommit": "f7c6bd1b375e32f4232f53ed2c6e9099e026397f",
+  "scopeSha256": "420ba34ee34ce8b7db5e68caddf0d52fadee47731ab3411e41cfed51c622d2ae",
+  "currentCommittedSourcesSdkConfig": "PASS",
+  "existingCliDescriptors": "VALIDATED_EXACT_OWNER_PROJECT_IDENTITY",
+  "credentialReads": 0,
+  "providerCalls": 0,
+  "unknown": [
+    "current runtime identity disabled state",
+    "R38 identity command failure cause"
+  ],
+  "qualificationOnly": true
+}
