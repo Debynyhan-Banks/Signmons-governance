@@ -1,0 +1,10 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_CV4_CACHE_VALIDITY_READ_ONCE",
+  "operationId": "7a14a7b4-bcc9-4c54-ada8-7b41c63d720e",
+  "sourceCommit": "14937c2c50970cf4c4f5a48de304bb9dc359b125",
+  "scopeSha256": "2eb61c6860bfc7a260e6285364f9a1fd99ec279bb6b7e41a5bda36e5d21c45bc",
+  "credentialReadAuthorized": true,
+  "approvedText": "I approve CV4 before 9:12 a.m. Eastern today",
+  "date": "2026-11-12"
+}
