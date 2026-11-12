@@ -40,3 +40,7 @@ SELECT json_build_object(
 ```
 
 Output must have exactly these three Boolean keys; databaseMatched/userMatched must be true. sessionsAbsent=false means observed residual sessions, not permission to terminate them. The existing filter includes R36 qualification application names and runtime sessions. No session identifiers or rows retained.
+
+## Owner decision
+
+Owner explicitly approved: "I approve SD1 local implementation." Implementation and local tests authorized; no external database read or credential input authorized. Implementer will reuse versioned RoleDiagnosticCapability with a distinct SQL diagnostic kind and exactly two slots; existing versions remain unchanged.
