@@ -1,5 +1,8 @@
 # APP-013 / 3A / P08 — R34 post-PS1 read-only native preflight qualification
 
+R34 recovery LIVE-DEMONSTRATED under15b599c: HANDOFF_RETAINED,failure null,residuals empty,resource closeout verified. Endpoint hash matched. Exact generated current qualification review APP013_P08_R34_QUALIFICATION_REVIEW_20261112.json awaits separate approval; scope 5dc7a32e01c53a3b5f1222679c7ed85543585e6c11d10b16a5de3b19d884e164;cleanup 0113a186d7fe26453f8c4e6ddfac9356a3e744cba8b8b83443f1e24cda25fac1. Max27CLI/20HTTPS/4SQL/1cache; start before9:06,reads9:11,close9:16,purge9:30. Existing SDK exception; no native/payment approval. Qualification starts another120second hidden SQL prompt. Guard retains custody. No further scope deviation.
+
+
 PREPARED, NOT APPROVED. Source f238db8d2ee985ecd8b3f12783b14fb5a77f10e2. CV3 immutable evidence verifies credential validity beyond9:30 a.m. Eastern November12; no new cache read. Owner confirmed attendance through9:30. R31/TR6/CV2 remain consumed. Existing 3A connected payment criterion is unchanged; this packet qualifies prerequisites only, not customer payment acceptance.
 
 ## Exact initial approval
