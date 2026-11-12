@@ -1,0 +1,20 @@
+{
+  "verifiedAt": "2026-11-12T15:01:44.623686+00:00",
+  "sourceCommit": "c0beb1fcedc24290fd06d128b92279deace3e388",
+  "scopeSha256": "237b526a289ec92c7637f520faeb835e97c49c644c8ad72baf4d4e0691e206b5",
+  "actualRecoverySourceSdkConfig": "PASS_ACTUAL_CLOCK_PROPOSED_AUTHORITY_ONLY",
+  "actualConstructNativeCapabilityPaymentReview": "PASS_SYNTHETIC_IDENTITIES_EXACT_WINDOWS",
+  "cleanupReserveMinutes": 11,
+  "credentialEvidence": "TR8 beyond10:35",
+  "databaseEvidence": "SD1 identity/session absence verified",
+  "billingEvidence": "BD2 current enabled/project/account matched",
+  "attendance": "through10:45 confirmed",
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "executionReady": false,
+  "unknown": [
+    "fresh bindings/access",
+    "actual payment amount/currency",
+    "authentication/payment outcome"
+  ]
+}

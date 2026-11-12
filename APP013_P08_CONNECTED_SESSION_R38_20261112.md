@@ -1,0 +1,29 @@
+# APP-013 / 3A / P08 — R38 full connected Sandbox packet
+
+PREPARED, NOT APPROVED. Sourcec0beb1fcedc24290fd06d128b92279deace3e388 contains RD1 corrected actual chat approval publisher and SD1 SQL-only diagnosis. TR8 proved credential validity beyond10:35am November12; owner attendance through10:45 confirmed. SD1 demonstrated current correct database/user and independent session absence; original R36 failure remainsUNKNOWN. R35/R36/SD1/TR8 consumed, no replay. Existing3A workflow and acceptance denominator unchanged.
+
+## Initial exact recovery scope
+
+APP013_P08_BINDING_RECOVERY_PACKET_R38_20261112.json binds version2 recovery, existing SDK refresh/cache/internal-retry exception and mandatory cleanup only. Exactly2owner/project CLI commands, up to3read-only SQL reservations including main/independent closeout,0directHTTPS/cache reads. Existing owner/project/database/target/account pins and verify-full TLS. Recover existing project/test-account IDs and payment binding into original-deadline guarded custody. Hidden password in Terminal/memory only. No IAM/runtime/secret payload/configuration/Stripe/payment/deployment/real charge/refund/message/booking/new spending from recovery approval.
+
+Separate chat approvals for actual current qualification and then full native execution. Corrected native publisher displays actual amount/currency/candidate/Stripe version/actions/limits/cost before owner approval; dynamic values not pre-approved. No Terminal nonce delegation. Decline/missing input/deadline stops and purges; no forced sign-in.
+
+## Fixed November12 Eastern windows
+
+Start10:01; recovery launch before10:09,reads10:14,database closeout10:19. Current qualification approval/start before10:13,reads10:18,cleanup10:23. Full native exact approval/start before10:15,payment work ends10:21,native work10:22,independent cleanup10:33,all private inputs purged10:35. Custody34minutes; native cleanup11minutes. Cutoffs are maximums, not waits. Do not compress reserve or extend deadlines. Confirm standalone Terminal visible before120second hidden password and warn before each qualification prompt.
+
+## Later stages, not yet authorized
+
+Qualification limits27CLI/20HTTPS/4SQL/1cache, existing resource/permission/job/account/endpoint/payment-policy checks. Full native192CLI/100HTTPS/60SQL/6children with200requests each, endpoint14call ceiling. Existing source-bound temporary runtime identity, numeric secret versions/bindings, candidate tag, database role, owned restricted key, test identities, existing Sandbox webhook, same-job Checkout/authentic event and independent cleanup. No new deployment/endpoint/normal traffic percentage change/real charge/refund/message/booking. Zero additional allowance is not a hard cloud billing cap; existing liabilities unchanged. Exact native scope and spending limitation need separate approval after fresh binding/qualification.
+
+SDK exception covers existing owner credential refresh/cache metadata maintenance/internal retries within exact authorized stages and independent cleanup; internal auth request countUNKNOWN. No standalone token/cache check, forced sign-in, alternative principal or configuration. Authorized SDK/browser credentials retained; no signout/cache erase.
+
+## Readiness and section card
+
+Actual BindingRecoveryCapability checks committed source graph, SDK37files, config,currentclock and fresh root absence under proposed authority. Actual construct_values, full native Capability and existing stage_review accepted exact windows/synthetic identities; local proof root removed. Corrected launcher matches source commit and44actual connected-wrapper tests; final SD1 regression451tests passed. See APP013_P08_BINDING_RECOVERY_R38_READINESS_20261112.json. Local tests/historical provider observations are not current access/payment proof. Fresh payment binding, current access and live outcomeUNKNOWN.
+
+Pinned Python invokes current qualification_launch.py --recover-binding-inputs exact private request; HANDOFF_RETAINED alone permits connected_launcher.py with R38 spec. Spec omits nativePurpose: full connected --run only after separate exact payment authority, followed by unconditional --closeout. Launcher waits for separate committed decisions. Before each release compare actual command/source/pins/authority/time. Existing guard owns private retention and purges even on stage failure. Independent native resource/process/session restoration/retirement readbacks required; unknown history/residuals block success. Never infer cleanup from zero calls or signal guessed PID. Retain safe receipts; remove owned temporary scripts after verified exit.
+
+Finite checklist: recovery approval/visible input; guarded recovery and resource closure; exact current qualification review/approval/result; actual native payment review/approval; connected authentication and same-job Sandbox payment/signed-event/application/browser proof as supported by receipts; independent resource/process/private closure; owner review/acceptance. Implementer owns readiness/execution/cleanup; owner input/decisions/acceptance; custodians external defects. No new diagnostic/subsystem/merge/deployment/prerequisite implementation. Rollback existing independent closeout; disabled absent exact stage authority. Required baseline/consistency/governance25/architecture/whitespace checks. Accepted1A/1B/2A/2B4/8;3A OPEN;R1newlyclosed0/27. No scope deviation.
+
+BD2 atc0beb1f demonstrated current billing enabled and exact owner/project/account; R37 stopped on billing timeout and closed, underlying causeUNKNOWN. No replay or timeout change. Exact updated actual capability/readiness passed without provider/cache reads; original native work and11minute cleanup reserve unchanged.
