@@ -1,0 +1,73 @@
+{
+  "approvalStatus": "PENDING_OWNER_APPROVAL",
+  "qualificationApproval": "a9015d8",
+  "qualificationResult": {
+    "status": "CURRENT_EVIDENCE_OBSERVED",
+    "failure": null,
+    "failureStage": null,
+    "liveObserved": true,
+    "residuals": [],
+    "transportReservations": {
+      "cache": 1,
+      "cli": 27,
+      "https": 20,
+      "sql": 4
+    },
+    "databaseFailedChecks": []
+  },
+  "review": {
+    "activationAuthorized": false,
+    "decisionForReview": {
+      "decision": "APPROVE_EXACT_P08_NATIVE_PREFLIGHT_READ",
+      "externalReadAuthorized": true,
+      "operationId": "22cfb3c3-a90a-4394-af05-f0426c99a3ca",
+      "owner": "Debynyhan Banks",
+      "scopeSha256": "aa90d16bcf830bd874d966fd7c4dc9d61c5c2e8a09778f5df521c69900892002",
+      "sourceManifestSha256": "c6dc15c627073995723013799ae9b53c32396f512fcfb3fa648ac62e55ae2cfe"
+    },
+    "effectiveLimits": {
+      "child": 0,
+      "cli": 40,
+      "https": 1,
+      "sql": 3
+    },
+    "limits": {
+      "child": 6,
+      "childRequests": 200,
+      "cli": 192,
+      "https": 100,
+      "sql": 60
+    },
+    "operationId": "22cfb3c3-a90a-4394-af05-f0426c99a3ca",
+    "paymentWorkEnd": "2026-11-12T14:16:00Z",
+    "purpose": "NATIVE_PREFLIGHT_ONLY",
+    "qualification": {
+      "checks": {
+        "billing": true,
+        "database": true,
+        "effectiveAccess": true,
+        "firebase": true,
+        "job": true,
+        "owner": true,
+        "privateInventory": true,
+        "retiredRuntime": true,
+        "services": true
+      },
+      "operationId": "22cfb3c3-a90a-4394-af05-f0426c99a3ca",
+      "qualifiedUntil": "2026-11-12T14:28:00Z",
+      "roleAclSha256": "649d517af81c235f8045894d73207b7d892b3607ee165418151af6b9975c1560",
+      "runtimeEnvironmentSha256": "e5fb2160ac529c02ef73d8d288bb25b2fe1d64209386478c21d37daf97a4d02d",
+      "scopeSha256": "9ece175089d918c39d0cb70fcd0956e0fe6b9dc6233ec1f447d23013af7fa1f1",
+      "status": "QUALIFIED_FOR_NATIVE_ENTRY"
+    },
+    "sourceCommit": "f238db8d2ee985ecd8b3f12783b14fb5a77f10e2",
+    "stage": "native",
+    "window": {
+      "cleanupEnd": "2026-11-12T14:28:00Z",
+      "cutoff": "2026-11-12T14:13:00Z",
+      "purgeEnd": "2026-11-12T14:30:00Z",
+      "start": "2026-11-12T13:35:00Z",
+      "workEnd": "2026-11-12T14:17:00Z"
+    }
+  }
+}
