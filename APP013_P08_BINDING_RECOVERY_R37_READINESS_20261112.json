@@ -1,0 +1,22 @@
+{
+  "verifiedAt": "2026-11-12T14:47:45.705569+00:00",
+  "sourceCommit": "9ac00a1791178a99e1c2e55b21de2e0dae2f8c05",
+  "scopeSha256": "a7a8abba36774a6a439cf0ba84917d10c68fab689ffa63fb6e7cbba5ed9a5ff3",
+  "recoveryId": "1a2207d3-097f-46d6-9b71-ea0cc9e25e5e",
+  "actualRecoverySourceSdkConfig": "PASS_ACTUAL_CLOCK_PROPOSED_AUTHORITY_ONLY",
+  "actualConstructNativeCapabilityAndPaymentReview": "PASS_SYNTHETIC_IDENTITIES_EXACT_WINDOWS_FULL_CONNECTED_MODE",
+  "actualChatPublisher": "RD1 actual-wrapper tests passed44; committed corrected launcher verified",
+  "sdkFileCount": 37,
+  "nativeCleanupReserveMinutes": 11,
+  "credentialEvidence": "TR8 9ac00a1 valid beyond10:35am",
+  "databaseEvidence": "SD1 45b5339 current identity/session absence observed independently; original R36 cause UNKNOWN",
+  "attendance": "Confirmed through10:45am",
+  "providerCalls": 0,
+  "privateInputsRecovered": false,
+  "executionReady": false,
+  "unknown": [
+    "fresh private bindings and actual payment amount/currency",
+    "current effective access",
+    "authentication and connected payment outcome"
+  ]
+}
