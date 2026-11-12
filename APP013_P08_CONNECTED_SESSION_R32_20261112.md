@@ -1,5 +1,8 @@
 # APP-013 / 3A / P08 — R32 read-only native preflight qualification
 
+R32 recovery LIVE-DEMONSTRATED: HANDOFF_RETAINED, failure null, residuals empty; recovery resource closeout verified. Exact generated qualification review is APP013_P08_R32_QUALIFICATION_REVIEW_20261112.json, pending separate owner approval. Endpoint hash matched; current qualification preflight passed proposed-clock check, not live qualification. Scope 6d2cb4d7e96a455ec8017e9c857f228384bbaec7eda047a87b3ef26af693fa41; cleanup scope 4199122bdbae1e7a303b16ca78d5308995b6845b4c7b62430e85c19738912c43. Existing max27CLI/20HTTPS/4SQL/1cache, read-only, SDK exception retained; start before7:51am, reads7:56,close8:01,purge8:15. Qualification begins another hidden SQL prompt (120seconds). Native preflight/payment not authorized. Guard retains private bindings until original purge deadline. No scope deviation.
+
+
 PREPARED, NOT APPROVED. Source c19398525618d0d6ba065c181551f1eda5c8fa04. TR6 immutable evidence verifies credential validity beyond8:15 a.m. Eastern November12; no new cache read. Owner confirmed attendance through8:15. R31/TR6/CV2 remain consumed. Existing 3A connected payment criterion is unchanged; this packet qualifies prerequisites only, not customer payment acceptance.
 
 ## Exact initial approval
