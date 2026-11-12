@@ -1,5 +1,8 @@
 # APP-013 / 3A / P08 — CV2 credential horizon qualification
 
+CV2 CONSUMED/CLOSED: backend cd9c463, exact owner approval2fdc26a. One reserved immutable read-only cache check returned CACHED_TOKEN_EXPIRED for8:15a.m. Eastern November12; this means the horizon was not covered, not that the token was already expired. Actual token/expiry discarded, no SDK/provider/password/recovery calls or cache mutation. Helper completed; isolated exit0, owned process independently absent, receipt modes/inventory verified and temporary checker removed. Evidence evidence/APP-013/p08-connected-packet-20261110/cv2-result.json. No replay. Next: implementer prepares existing correct-owner sign-in/renewal remedy with exact later horizon; owner retains credential/scopes/SDK exception approval. No new recovery until current credential horizon is proven. R31 qualification session readback remains unconfirmed. 3A OPEN;accepted4/8;R1newlyclosed0/27. No scope deviation.
+
+
 PREPARED, NOT APPROVED. One fresh read-only credential-cache qualification; CV1, TR5 and R31 remain consumed. Source `34e6b183c04269825a4a6d117ab1d1dacd3f3790`. Scope `APP013_P08_CV2_SCOPE_20261112.json`, SHA256 `a2171ddffc936fb4674253ab1bd39b776b7751f0053481bb537cb06e862caba2`; operation `88c0bb91-9ab1-473c-982a-5ea01d1172c8`.
 
 Owner confirmed availability through 8:15 a.m. Eastern November 12. The standalone Terminal dummy-input check passed at 12:10:03Z, with zero provider calls, no raw input retained and launcher absent. This proves visibility for that check only. Confirm the standalone window is visible before any future timed password prompt. No live recovery is scheduled or authorized by this card.
