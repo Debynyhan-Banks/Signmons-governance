@@ -1,0 +1,35 @@
+{
+  "status": "PENDING_EXACT_OWNER_APPROVAL",
+  "recoveryStatus": "HANDOFF_RETAINED",
+  "recoveryResourceCloseoutVerified": true,
+  "recoveryResiduals": [],
+  "publicReview": {
+    "decisionForReview": {
+      "cleanupScopeSha256": "8f265ada6a5018dbe2fdda6df35f27029bd179566d1250fba1bd62bf007df29a",
+      "decision": "APPROVE_EXACT_P08_CURRENT_QUALIFICATION",
+      "externalReadAuthorized": true,
+      "owner": "Debynyhan Banks",
+      "scopeSha256": "2667af30e236ad76ab4f1516dc476978323eb88692bbc3dc986da1e302b02623"
+    },
+    "endpointHashMatched": true,
+    "limits": {
+      "cache": 1,
+      "cli": 27,
+      "https": 20,
+      "sql": 4
+    },
+    "localCapabilityPreflight": "PASS_PROPOSED_CLOCK_ONLY",
+    "nativeScopeSha256": "2117e718d5211064d827d9bc3de4311e2acc022aa3176342c93b272b5016144a",
+    "operationId": "6dbfc966-d37f-4b50-acf7-89d290307ce0",
+    "providerCalls": 0,
+    "sourceCommit": "c0beb1fcedc24290fd06d128b92279deace3e388",
+    "stage": "qualification",
+    "window": {
+      "closeoutEnd": "2026-11-12T15:23:00Z",
+      "cutoff": "2026-11-12T15:13:00Z",
+      "purgeEnd": "2026-11-12T15:35:00Z",
+      "readEnd": "2026-11-12T15:18:00Z",
+      "start": "2026-11-12T15:01:00Z"
+    }
+  }
+}
