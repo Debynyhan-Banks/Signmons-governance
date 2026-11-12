@@ -1,0 +1,29 @@
+{
+  "verifiedAt": "2026-11-12T13:36:23.497502+00:00",
+  "sourceCommit": "f238db8d2ee985ecd8b3f12783b14fb5a77f10e2",
+  "scopeSha256": "5f82c6dc652b736fd9e8d4666e0ac0a56faebd8c1c5bc291a877b9b2eb60dcf0",
+  "recoveryId": "93b46d56-56f1-45b8-981e-b77c0b641c4c",
+  "actualRecoverySourceSdkConfig": "PASS_ACTUAL_CLOCK_PROPOSED_AUTHORITY_ONLY",
+  "actualConstructAndNativeCapability": "PASS_SYNTHETIC_IDENTITIES_EXACT_WINDOWS_PREFLIGHT_PURPOSE",
+  "sdkFileCount": 37,
+  "custodyMinutes": 55,
+  "nativeCleanupReserveMinutes": 11,
+  "effectiveNativeLimits": {
+    "cli": 40,
+    "https": 1,
+    "sql": 3,
+    "child": 0
+  },
+  "rootsAbsent": true,
+  "credentialEvidence": "CV3 f238db8 observed validity beyond9:30am; no new credential read",
+  "billingEvidence": "BD1 b8261db observed exact enabled billing; current qualification still required",
+  "providerCalls": 0,
+  "privateInputsRecovered": false,
+  "attendanceConfirmed": true,
+  "executionReady": false,
+  "unknown": [
+    "fresh private bindings",
+    "current effective access",
+    "post-PS1 native outcome"
+  ]
+}

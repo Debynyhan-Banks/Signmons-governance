@@ -1,0 +1,31 @@
+{
+  "recoveryId": "93b46d56-56f1-45b8-981e-b77c0b641c4c",
+  "qualificationId": "ae860fb8-2aaf-4110-bf2e-f502304f9d2f",
+  "prospectiveOperationId": "22cfb3c3-a90a-4394-af05-f0426c99a3ca",
+  "sourceCommit": "f238db8d2ee985ecd8b3f12783b14fb5a77f10e2",
+  "manifestSha256": "3bb67a8ec2b7fb593466c4d256894ff7f52befbdbc64768a2f007d0502bc6cf4",
+  "window": {
+    "start": "2026-11-12T13:35:00Z",
+    "cutoff": "2026-11-12T14:06:00Z",
+    "readEnd": "2026-11-12T14:11:00Z",
+    "closeoutEnd": "2026-11-12T14:16:00Z",
+    "purgeEnd": "2026-11-12T14:30:00Z"
+  },
+  "prospectiveWindow": {
+    "start": "2026-11-12T13:35:00Z",
+    "cutoff": "2026-11-12T14:13:00Z",
+    "workEnd": "2026-11-12T14:17:00Z",
+    "cleanupEnd": "2026-11-12T14:28:00Z",
+    "purgeEnd": "2026-11-12T14:30:00Z"
+  },
+  "prospectiveLimits": {
+    "cli": 192,
+    "https": 100,
+    "sql": 60,
+    "child": 6,
+    "childRequests": 200
+  },
+  "paymentRequestId": "66581be5-f231-4bb5-bf74-d4699d4556bf",
+  "paymentWorkEnd": "2026-11-12T14:16:00Z",
+  "nativePurpose": "NATIVE_PREFLIGHT_ONLY"
+}
