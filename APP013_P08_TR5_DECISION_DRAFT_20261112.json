@@ -1,0 +1,11 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "PENDING_OWNER_APPROVAL",
+  "proposalSha256": "f52f22dbcb396fd5c2e30265d3e395b43c373f1997b4f7c01bcc21110f026e68",
+  "sourceCommit": "5e4dab382e8ef9b72e2e3a674f007f5f3305bba4",
+  "reservation": "owner-signin-20261112-tr5",
+  "cutoff": "2026-11-12T12:05:00Z",
+  "closeoutEnd": "2026-11-12T12:12:00Z",
+  "validThrough": "2026-11-12T12:40:00Z",
+  "externalActionAuthorized": false
+}
