@@ -62,6 +62,6 @@
     "rawFilesAbsent": true,
     "residuals": []
   },
-  "launcherClosure": "PENDING_EXISTING_DEADLINE",
-  "next": "Close waiting launcher at existing deadline; prepare bounded correction proposal for existing sanitized native review publisher before another session."
+  "launcherClosure": "VERIFIED_OWNED_LAUNCHER_WRAPPER_GUARD_ABSENT",
+  "next": "RD1 correction completed at14937c2; fresh packet required, no replay"
 }
