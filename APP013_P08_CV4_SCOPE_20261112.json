@@ -1,0 +1,23 @@
+{
+  "operationId": "7a14a7b4-bcc9-4c54-ada8-7b41c63d720e",
+  "sourceCommit": "14937c2c50970cf4c4f5a48de304bb9dc359b125",
+  "action": "CHECK_EXISTING_OWNER_CACHE_VALIDITY_ONCE",
+  "owner": "Debynyhan Banks",
+  "account": "debynyhan@signmons.com",
+  "cacheFunction": "access_check.read_cached_token",
+  "sourcePath": "evidence/APP-013/p08-narrow-access-check-local-20261101/source/access_check.py",
+  "sourceSha256": "720842849586323e06eef0993578b0a7e10d35bcf6266d68628228242c5be9d9",
+  "validThrough": "2026-11-12T15:15:00Z",
+  "window": {
+    "start": "2026-11-12T14:00:00Z",
+    "cutoff": "2026-11-12T14:12:00Z",
+    "closeoutEnd": "2026-11-12T14:13:00Z"
+  },
+  "cacheAccountReads": 1,
+  "providerCalls": 0,
+  "sdkInvocations": 0,
+  "cacheMutations": false,
+  "automaticRetryAllowed": false,
+  "rawTokenOrExpiryRetained": false,
+  "recoveryAuthorized": false
+}
