@@ -1,0 +1,30 @@
+{
+  "verifiedAt": "2026-11-12T13:45:32.872193+00:00",
+  "sourceCommit": "e5ecc86e002d9d165111e14d0320f59ace87e27f",
+  "scopeSha256": "25cb1ec537933eceb6652e2e62a2943167c8ce48c34d326dc2453a3274c1fb2a",
+  "recoveryId": "97bb54e0-2350-405b-a8ae-7e9a977f8f12",
+  "actualRecoverySourceSdkConfig": "PASS_ACTUAL_CLOCK_PROPOSED_AUTHORITY_ONLY",
+  "actualConstructAndNativeCapability": "PASS_SYNTHETIC_IDENTITIES_EXACT_WINDOWS_FULL_CONNECTED_MODE",
+  "sdkFileCount": 37,
+  "custodyMinutes": 45,
+  "nativeCleanupReserveMinutes": 11,
+  "nativeLimits": {
+    "cli": 192,
+    "https": 100,
+    "sql": 60,
+    "child": 6,
+    "childRequests": 200
+  },
+  "rootsAbsent": true,
+  "credentialEvidence": "CV3 f238db8 valid beyond9:30; no new cache read",
+  "readinessEvidence": "R34 e5ecc86 current qualification/native preflight passed live and closed; fresh qualification still required",
+  "providerCalls": 0,
+  "privateInputsRecovered": false,
+  "attendanceConfirmed": true,
+  "executionReady": false,
+  "unknown": [
+    "fresh private bindings and exact payment amount/currency",
+    "current effective resource access",
+    "authentication and connected Sandbox payment outcome"
+  ]
+}
