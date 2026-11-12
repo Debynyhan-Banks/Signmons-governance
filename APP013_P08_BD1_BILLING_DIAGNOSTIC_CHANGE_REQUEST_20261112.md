@@ -1,6 +1,6 @@
 # APP-013 / 3A / P08 — BD1 bounded billing diagnostic proposal
 
-PROPOSED, NOT IMPLEMENTED. Source baseline backend3187fd0 (runtime PS1 e99abe0). R33 consumed/closed. Approved 3A criterion remains connected customer payment and proof; this proposal resolves only the failed billing-read prerequisite. No new acceptance section or provider configuration work.
+OWNER APPROVED LOCAL IMPLEMENTATION November12: “I approve BD1 local implementation.” Implementation pending. Source baseline backend3187fd0 (runtime PS1 e99abe0). R33 consumed/closed. Approved 3A criterion remains connected customer payment and proof; this proposal resolves only the failed billing-read prerequisite. No new acceptance section or provider configuration work.
 
 ## Evidence and missing behavior
 
