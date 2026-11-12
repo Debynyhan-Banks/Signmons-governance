@@ -1,5 +1,8 @@
 # APP-013 / 3A / P08 — PS1 policy serialization alignment proposal
 
+PS1 LOCAL CORRECTION COMPLETE at backende99abe0 under owner approval52f4a6a. Current entry.Ports projects only exact project/identity access policy reads to bindings/etag/version, matching qualification; current PreflightIO permits those exact vectors while retaining runtime full-policy reads. Historical bridge/parser/restoration sources unchanged. Native43,connected43,correction52,focusedqualification39,governance25 passed; baseline/consistency/architecture/whitespace and current/committed source gates passed. Initial test fixture setup corrected; two sandbox-restricted payment fixtures passed unchanged with local-server permissions. Evidence evidence/APP-013/p08-connected-packet-20261110/ps1-local-verification.json. No provider/credential/policy change. R32 exact live response remains UNKNOWN; local reproduction is not live proof. Next implementer prepares fresh source-bound diagnostic readiness and checks remaining credential/attendance horizon before proposing execution; owner retains exact external authority. R32/TR6/CV2 consumed. 3A OPEN;accepted4/8;R1newlyclosed0/27. No scope deviation.
+
+
 OWNER APPROVED LOCAL IMPLEMENTATION on November12: “I approve PS1 local correction.” Implementation pending. R32 is consumed and closed. Local source investigation only; no credential/provider reads. Approved section criterion remains the same connected customer payment journey; this change would remove an evidenced inconsistency in its access-preflight prerequisite, not create a new acceptance section. Accepted4/8;3A OPEN;R1newlyclosed0/27.
 
 ## Demonstrated gap and limits
