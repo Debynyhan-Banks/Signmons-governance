@@ -1,0 +1,95 @@
+{
+  "status": "PENDING_EXACT_OWNER_APPROVAL",
+  "qualificationApproval": "bc072d3",
+  "qualificationStatus": "CURRENT_EVIDENCE_OBSERVED",
+  "publicReview": {
+    "decisionForReview": {
+      "decision": "APPROVE_EXACT_P08_CONNECTED_PAYMENT",
+      "externalActionAuthorized": true,
+      "operationId": "0140c900-a13a-4ed4-aef7-95dd1255ba1c",
+      "owner": "Debynyhan Banks",
+      "scopeSha256": "2ac5c1abca51ae3899bc3e26471e26e45c6f8b3935f5e62b45147b1dafa00c8c",
+      "sourceManifestSha256": "0dfd38e37af7dcc05726122a8de600e88ae6aa9697bc356ca4297abfe8b5602a"
+    },
+    "limits": {
+      "child": 6,
+      "childRequests": 200,
+      "cli": 192,
+      "https": 100,
+      "sql": 60
+    },
+    "operationId": "0140c900-a13a-4ed4-aef7-95dd1255ba1c",
+    "paymentWorkEnd": "2026-11-12T15:21:00Z",
+    "qualification": {
+      "checks": {
+        "billing": true,
+        "database": true,
+        "effectiveAccess": true,
+        "firebase": true,
+        "job": true,
+        "owner": true,
+        "privateInventory": true,
+        "retiredRuntime": true,
+        "services": true
+      },
+      "operationId": "0140c900-a13a-4ed4-aef7-95dd1255ba1c",
+      "qualifiedUntil": "2026-11-12T15:33:00Z",
+      "roleAclSha256": "649d517af81c235f8045894d73207b7d892b3607ee165418151af6b9975c1560",
+      "runtimeEnvironmentSha256": "e5fb2160ac529c02ef73d8d288bb25b2fe1d64209386478c21d37daf97a4d02d",
+      "scopeSha256": "2117e718d5211064d827d9bc3de4311e2acc022aa3176342c93b272b5016144a",
+      "status": "QUALIFIED_FOR_NATIVE_ENTRY"
+    },
+    "sourceCommit": "c0beb1fcedc24290fd06d128b92279deace3e388",
+    "stage": "native",
+    "summary": {
+      "actions": [
+        "Temporarily enable exact runtime identity, numeric secret versions and resource bindings",
+        "Activate bounded database role and candidate tag; normal traffic percentages unchanged",
+        "Create/delete owned restricted key; enable/close exact test identities",
+        "Enable existing Sandbox webhook; one same-job Sandbox Checkout and authentic event check",
+        "Mandatory independent cleanup and private purge"
+      ],
+      "amountTotalCents": 9900,
+      "candidate": "signmons-calldesk-staging-p07key7e45dc512e17",
+      "cost": {
+        "allowanceUsd": 0,
+        "existingLiabilitiesUnchanged": true,
+        "hardBillingCap": false
+      },
+      "currency": "usd",
+      "limits": {
+        "child": 6,
+        "childRequests": 200,
+        "cli": 192,
+        "https": 100,
+        "sql": 60
+      },
+      "paymentWorkEnd": "2026-11-12T15:21:00Z",
+      "realChargesRefundsBookingCustomerMessagesAuthorized": false,
+      "sandboxOnly": true,
+      "stripeVersion": "2"
+    },
+    "window": {
+      "cleanupEnd": "2026-11-12T15:33:00Z",
+      "cutoff": "2026-11-12T15:15:00Z",
+      "purgeEnd": "2026-11-12T15:35:00Z",
+      "start": "2026-11-12T15:01:00Z",
+      "workEnd": "2026-11-12T15:22:00Z"
+    }
+  },
+  "sourceBoundResourcePins": {
+    "candidate": "signmons-calldesk-staging-p07key7e45dc512e17",
+    "image": "us-east5-docker.pkg.dev/signmons/signmons/signmons-calldesk-backend@sha256:36f887749947c0b01db683482c081ca663534e7ffe597560b24597f3d46be9da",
+    "normalRevision": "signmons-calldesk-staging-app013dbrot2",
+    "identity": "signmons-calldesk-p07-runtime@signmons.iam.gserviceaccount.com",
+    "secretVersions": {
+      "signmons-staging-p07-payment-database-url": "1",
+      "signmons-staging-p07-stripe-webhook-secret": "1",
+      "signmons-staging-p07-disabled-openai-key": "1",
+      "signmons-staging-p07-admin-token": "1",
+      "signmons-staging-p07-conversation-key": "1",
+      "signmons-staging-p07-technician-link-key": "1",
+      "signmons-staging-stripe-secret-key": "2"
+    }
+  }
+}
