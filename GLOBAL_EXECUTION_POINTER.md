@@ -1,5 +1,8 @@
 # Global Execution Pointer
 
+CV2 PREPARED, NOT APPROVED: APP013_P08_CV2_CACHE_VALIDITY_PROPOSAL_20261112.md and exact scope. One read-only owner credential-cache check for validity beyond 8:15 a.m. Eastern November12, launch7:13–before7:25,close7:26; no SDK/provider/password/cache mutation. Actual source/runtime/non-secret config checks PASS; credential horizon UNKNOWN. Standalone Terminal dummy check passed; owner available through8:15. Owner exact cache-read approval pending; implementer owns reservation/cleanup. R31 consumed, qualification session readback remains unconfirmed. Local governance25/baseline/consistency/architecture/whitespace checks passed. 3A OPEN,accepted4/8,R1newlyclosed0/27. No scope deviation.
+
+
 ## R31 closeout — November 12, 2026
 
 Current section: APP-013 / 3A / P08, still OPEN. R31 recovery succeeded; qualification and its automatic independent cleanup each stopped at hidden SQL-password timeout. Qualification reserved zero cache, CLI, HTTPS and SQL transports; native diagnostic never started, and no authentication or payment was observed. Recovery database closeout was verified. Private inputs were purged on time; owned launcher/guard processes and temporary launch scripts are absent. Qualification database-session cleanup readback remains UNCONFIRMED; historical process/session uncertainty in the independent receipt is preserved, not replaced by the later local process-absence check.
