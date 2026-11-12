@@ -1,0 +1,67 @@
+{
+  "status": "BLOCKED_NATIVE_REVIEW_INCOMPLETE",
+  "qualificationStatus": "CURRENT_EVIDENCE_OBSERVED",
+  "qualificationApproval": "255fee7",
+  "publicReview": {
+    "decisionForReview": {
+      "decision": "APPROVE_EXACT_P08_CONNECTED_PAYMENT",
+      "externalActionAuthorized": true,
+      "operationId": "6117e91c-99a6-44ce-b54f-c7e9bd75c727",
+      "owner": "Debynyhan Banks",
+      "scopeSha256": "9d79acd0f69b4eea508791f3e099fcca1e9a5523e14676f65e8219b4f2128850",
+      "sourceManifestSha256": "c6dc15c627073995723013799ae9b53c32396f512fcfb3fa648ac62e55ae2cfe"
+    },
+    "limits": {
+      "child": 6,
+      "childRequests": 200,
+      "cli": 192,
+      "https": 100,
+      "sql": 60
+    },
+    "operationId": "6117e91c-99a6-44ce-b54f-c7e9bd75c727",
+    "paymentWorkEnd": "2026-11-12T14:16:00Z",
+    "qualification": {
+      "checks": {
+        "billing": true,
+        "database": true,
+        "effectiveAccess": true,
+        "firebase": true,
+        "job": true,
+        "owner": true,
+        "privateInventory": true,
+        "retiredRuntime": true,
+        "services": true
+      },
+      "operationId": "6117e91c-99a6-44ce-b54f-c7e9bd75c727",
+      "qualifiedUntil": "2026-11-12T14:28:00Z",
+      "roleAclSha256": "649d517af81c235f8045894d73207b7d892b3607ee165418151af6b9975c1560",
+      "runtimeEnvironmentSha256": "e5fb2160ac529c02ef73d8d288bb25b2fe1d64209386478c21d37daf97a4d02d",
+      "scopeSha256": "243f35da94a9d6501e72d7d272ddbe3899887e6f5f179cdfeb16f74e448d3605",
+      "status": "QUALIFIED_FOR_NATIVE_ENTRY"
+    },
+    "sourceCommit": "e5ecc86e002d9d165111e14d0320f59ace87e27f",
+    "stage": "native",
+    "window": {
+      "cleanupEnd": "2026-11-12T14:28:00Z",
+      "cutoff": "2026-11-12T14:10:00Z",
+      "purgeEnd": "2026-11-12T14:30:00Z",
+      "start": "2026-11-12T13:45:00Z",
+      "workEnd": "2026-11-12T14:17:00Z"
+    }
+  },
+  "missing": [
+    "actual amountTotalCents and currency",
+    "actual candidate and secret version review"
+  ],
+  "cause": "Chat approval publisher omits payment/resource summary; qualifier input removed after handoff, native scope remains only in waiting launcher memory. No process memory inspection or provider reread attempted.",
+  "nativeApproved": false,
+  "nativeStarted": false,
+  "purge": {
+    "status": "PRIVATE_PURGE_VERIFIED",
+    "onTime": true,
+    "rawFilesAbsent": true,
+    "residuals": []
+  },
+  "launcherClosure": "PENDING_EXISTING_DEADLINE",
+  "next": "Close waiting launcher at existing deadline; prepare bounded correction proposal for existing sanitized native review publisher before another session."
+}
