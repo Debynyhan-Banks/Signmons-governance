@@ -1,0 +1,10 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_CV3_CACHE_VALIDITY_READ_ONCE",
+  "operationId": "345bc43d-879c-42ac-90c5-8a1251143813",
+  "sourceCommit": "b8261db0ba62356f4f5d82a7a86d1ab4c127c9d1",
+  "scopeSha256": "5c74b6b314e74b53ff88548d7be55c0a45bd46e58ab2f8f5fa85dcd7c6a9ce63",
+  "credentialReadAuthorized": true,
+  "approvedText": "I approve CV3 before 8:45 a.m. Eastern today",
+  "date": "2026-11-12"
+}
