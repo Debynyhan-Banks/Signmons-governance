@@ -1,5 +1,14 @@
 # APP-013 / 3A / P08 — R31 read-only native preflight qualification
 
+## R31 closeout — November 12, 2026
+
+Current section: APP-013 / 3A / P08, still OPEN. R31 recovery succeeded; qualification and its automatic independent cleanup each stopped at hidden SQL-password timeout. Qualification reserved zero cache, CLI, HTTPS and SQL transports; native diagnostic never started, and no authentication or payment was observed. Recovery database closeout was verified. Private inputs were purged on time; owned launcher/guard processes and temporary launch scripts are absent. Qualification database-session cleanup readback remains UNCONFIRMED; historical process/session uncertainty in the independent receipt is preserved, not replaced by the later local process-absence check.
+
+Evidence: backend commit `34e6b18`, `evidence/APP-013/p08-connected-packet-20261110/r31-result.json`; recovery approval `3236ad0`, qualification approval `b3b3c97`. R31 is consumed and must not be replayed. Completed: recovery, attempted qualification, independent cleanup attempt, verified private purge and local process closure. Remaining: current qualification, separately authorized native preflight, connected customer payment demonstration and owner acceptance. Blocker: password was not received before either prompt deadline; owner attendance and executor prompt coordination are required for any separately prepared fresh attempt. Next observable result requires a fresh exact packet and approval, with successful hidden input; no new operation is launched by this closeout. Accepted milestones remain 1A/1B/2A/2B (4/8); newly closed R1 items remain 0/27. No scope deviation.
+
+Earlier preparation and approval entries below are historical.
+
+
 PREPARED, NOT APPROVED. Source de52c53ce39afe8cd2fb45ce2f51dc4109a0574b includes NQ1. TR5's immutable result verifies credential validity strictly beyond7:40a.m. Eastern November12, configuration unchanged and independent closure. No further cache/credential read occurred during this preparation. R30/CV1/TR5 remain consumed; no payment execution is proposed.
 
 ## Initial decision and exact resources
