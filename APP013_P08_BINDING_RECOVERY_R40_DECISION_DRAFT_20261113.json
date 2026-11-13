@@ -1,0 +1,9 @@
+{
+  "status": "PROPOSED_NOT_APPROVED",
+  "decisionForReview": {
+    "owner": "Debynyhan Banks",
+    "decision": "APPROVE_EXACT_P08_BINDING_INPUT_RECOVERY",
+    "externalReadAuthorized": true,
+    "scopeSha256": "1ab2c7ff0e4b5155c50b6058008f343c95903063e5864e7c954ebb100369effa"
+  }
+}
