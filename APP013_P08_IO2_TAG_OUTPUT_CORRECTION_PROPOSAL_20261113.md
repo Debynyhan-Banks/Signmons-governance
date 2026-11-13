@@ -1,6 +1,6 @@
 # IO2 — exact candidate-tag output correction
 
-PROPOSED LOCAL ONLY; not implemented. Section3A, accepted4/8,R1newlyclosed0/27. No scope deviation. Sourceb99b529. Runtime tag state resolved separately by SR1: tag absent, normal expected revision100percent; no payment. Historical R39 activation and missing independent-closeout result causes remain UNKNOWN.
+COMPLETED LOCALLY under5e9ea4b; source9de914d,454tests passed. See io2-local-verification.json. No external action. Section3A, accepted4/8,R1newlyclosed0/27. No scope deviation. Sourceb99b529. Runtime tag state resolved separately by SR1: tag absent, normal expected revision100percent; no payment. Historical R39 activation and missing independent-closeout result causes remain UNKNOWN.
 
 Demonstrated gap: installed SDK583.0.0 update_traffic.Run returns TrafficTargetPair list. Actual installed TrafficTargetPair plus resource_printer.Print produces nonempty JSON list; actual NativeIO.cloud rejects it for both exact tag activation and removal with NATIVE_OUTPUT_SHAPE. Evidence r39-local-diagnosis.json and r39_local_diagnosis.py, zero provider/credential calls. Full synthetic connected run injecting the tag mismatch retained work-result, and fresh independent closeout produced ENTRY_CONTAINMENT_UNCONFIRMED; missing historical final result was not reproduced. Do not claim IO2 resolves that unknown or invent a second correction.
 
