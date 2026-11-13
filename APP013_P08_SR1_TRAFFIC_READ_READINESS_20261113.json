@@ -1,0 +1,14 @@
+{
+  "verifiedAt": "2026-11-13T23:11:09.161897+00:00",
+  "scopeSha256": "641f79fc5727f29700fe553ef0c6c3eb67ac4766045dec397528168a87b081d3",
+  "currentCommittedSourceSdkConfig": "PASS",
+  "actualNativeIOCliBoundary": "PASS_SOURCE_TUPLES_MOCKED_PROCESS",
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "unknown": [
+    "current candidate tag state",
+    "current normal traffic distribution",
+    "exact R39 closeout failure"
+  ],
+  "qualificationOnly": true
+}

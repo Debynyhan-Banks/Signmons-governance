@@ -1,0 +1,58 @@
+{
+  "operationId": "75c7b6c7-9d8e-4c98-9bfd-dd1265c9cd37",
+  "sourceCommit": "50315f84733d4b0671bbc79956e6163d8ecd9b02",
+  "action": "READ_R39_SERVICE_TRAFFIC_STATE_ONCE",
+  "commands": [
+    {
+      "id": "owner",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "auth",
+        "list",
+        "--filter=status:ACTIVE",
+        "--format=json(account,status)"
+      ]
+    },
+    {
+      "id": "project",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "projects",
+        "describe",
+        "signmons",
+        "--format=json(projectId,projectNumber,lifecycleState)"
+      ]
+    },
+    {
+      "id": "service",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "run",
+        "services",
+        "describe",
+        "signmons-calldesk-staging",
+        "--project",
+        "signmons",
+        "--region",
+        "us-east5",
+        "--format=json(metadata.name,spec.template.spec.serviceAccountName,status.traffic,status.latestReadyRevisionName)"
+      ]
+    }
+  ],
+  "window": {
+    "start": "2026-11-13T23:10:00Z",
+    "cutoff": "2026-11-13T23:20:00Z",
+    "readEnd": "2026-11-13T23:22:00Z",
+    "closeoutEnd": "2026-11-13T23:23:00Z"
+  },
+  "limits": {
+    "cli": 3,
+    "sql": 0,
+    "https": 0,
+    "cache": 0
+  },
+  "sdkException": "SDK_EXISTING_OWNER_REFRESH_CACHE_INTERNAL_RETRIES_NO_TOKEN_EXPORT",
+  "sourceManifestSha256": "ea275649e82200606ae2309db1f20bd6016b22f7085abc6bea06e4d2ea8a4d3c",
+  "sdkFilesSha256": "1d8bbdd38383d1e9dfae5d3c9b779fb945ba25517e0d2fc6cfe3d015d2243ec5",
+  "mutationAuthorized": false
+}
