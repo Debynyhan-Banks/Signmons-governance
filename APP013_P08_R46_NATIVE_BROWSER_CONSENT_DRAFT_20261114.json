@@ -1,0 +1,31 @@
+{
+  "status": "PROPOSED_NOT_APPROVED",
+  "owner": "Debynyhan Banks",
+  "operationId": "6c03d490-2a71-4392-baaa-a41dd274dc41",
+  "sourceCommit": "ec4f51f015f7382d3cf1089a692a0672d1c8060c",
+  "nativeScopeSha256": "199d39f8e36f997e2154221a2e26bff18e6bd4faadeb50a0f1f2cd6c0785855e",
+  "cardPath": "APP013_P08_CONNECTED_SESSION_R46_20261114.md",
+  "cardSha256": "914ba8c7856dbbc3151022d9d1ca1ba0410ce3b6f0592672398a14656f6d4b89",
+  "browserAction": "ONE_SOURCE_BOUND_BOOTSTRAP_OPEN_AT_ACTUAL_ATTENDED_IN_OWNED_INCOGNITO_CHROME_WINDOW",
+  "ownerOperatesPayment": true,
+  "automaticSubmissionReloadRetry": false,
+  "payment": {
+    "sandboxOnly": true,
+    "amountTotalCents": 9900,
+    "currency": "usd"
+  },
+  "cost": {
+    "allowanceUsd": 0,
+    "existingLiabilitiesUnchanged": true,
+    "hardBillingCap": false
+  },
+  "independentCleanupAndPrivatePurge": true,
+  "paymentWorkEnd": "2026-11-14T15:16:00Z",
+  "window": {
+    "cleanupEnd": "2026-11-14T15:28:00Z",
+    "cutoff": "2026-11-14T15:00:00Z",
+    "purgeEnd": "2026-11-14T15:30:00Z",
+    "start": "2026-11-14T14:30:00Z",
+    "workEnd": "2026-11-14T15:17:00Z"
+  }
+}

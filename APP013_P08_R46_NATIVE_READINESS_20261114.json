@@ -1,0 +1,49 @@
+{
+  "verifiedAt": "2026-11-14T14:45:08.448864+00:00",
+  "sourceCommit": "ec4f51f015f7382d3cf1089a692a0672d1c8060c",
+  "nativeScopeSha256": "199d39f8e36f997e2154221a2e26bff18e6bd4faadeb50a0f1f2cd6c0785855e",
+  "qualificationScopeSha256": "20c7fea4db0e1bf7fbfed3d3d79bd7d6969c99b3754d310d4b168882bd598bec",
+  "qualification": "CURRENT_EVIDENCE_OBSERVED_ALL_NINE_CHECKS",
+  "qualificationResiduals": [],
+  "sourceManifests": "PASS_CURRENT_AND_COMMITTED_SOURCE_BOUND_BY_QUALIFICATION",
+  "compiledDynamicPaymentPins": "PASS_ACTUAL_PLAN_HASHES",
+  "resourceBinding": "CURRENT_NATIVE_REVIEW_MATCHES_FRESH_QUALIFICATION",
+  "limits": {
+    "child": 6,
+    "childRequests": 200,
+    "cli": 192,
+    "https": 100,
+    "sql": 60
+  },
+  "window": {
+    "cleanupEnd": "2026-11-14T15:28:00Z",
+    "cutoff": "2026-11-14T15:00:00Z",
+    "purgeEnd": "2026-11-14T15:30:00Z",
+    "start": "2026-11-14T14:30:00Z",
+    "workEnd": "2026-11-14T15:17:00Z"
+  },
+  "paymentWorkEnd": "2026-11-14T15:16:00Z",
+  "candidate": "signmons-calldesk-staging-p07key7e45dc512e17",
+  "stripeVersion": "2",
+  "amountTotalCents": 9900,
+  "currency": "usd",
+  "browserOpener": "CURRENT_SOURCE_BOUND_BOOTSTRAP_OPEN_PY_ONE_ATTEMPT_ONLY_AT_ACTUAL_ATTENDED",
+  "terminalWindowId": 23931,
+  "terminalFocus": "FOREGROUND_BEFORE_AND_AFTER_EXACT_NATIVE_DECISION",
+  "nativeCleanupReserveSeconds": 660,
+  "purgeReserveSeconds": 120,
+  "newProviderOrCredentialCallsDuringReadiness": 0,
+  "unknown": [
+    "future mutation/propagation outcomes",
+    "test authentication and browser payment outcome",
+    "matching signed event and application payment gate",
+    "native independent resource/process/session cleanup outcome"
+  ],
+  "ownerNativeApproval": "PENDING",
+  "responsibleOwners": {
+    "implementationSupervision": "implementer",
+    "inputApprovalBrowserPaymentAcceptance": "owner",
+    "unresolvedLiveAccess": "cloud/credential/database custodians"
+  },
+  "independentReadOnlyReview": "NO_BLOCKING_FINDING_BROWSER_ACTION_MUST_BE_EXPLICIT_IN_APPROVAL"
+}
