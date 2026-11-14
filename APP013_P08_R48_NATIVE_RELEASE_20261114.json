@@ -1,0 +1,64 @@
+{
+  "owner": "Debynyhan Banks",
+  "response": "Approve R48 native execution, Chrome opening, spending limits and cleanup; ready now",
+  "recordedAt": "2026-11-14T20:22:31.672291+00:00",
+  "decision": {
+    "decision": "APPROVE_EXACT_P08_CONNECTED_PAYMENT",
+    "externalActionAuthorized": true,
+    "operationId": "b61c9d85-3f26-42cb-8d50-68fca0394005",
+    "owner": "Debynyhan Banks",
+    "scopeSha256": "9304b66cfff961d82b7840a281737cc0e4d0041aa301bd263a5da5fa2402317b",
+    "sourceManifestSha256": "a04dd4473a6c40056fa2d5ea30df7c9750662ccac6b62d2d6984cbfb8233aae1"
+  },
+  "sourceCommit": "45c4da2c4a87ff9c90147ec0a0dd5a3884d4376a",
+  "publicReviewSha256": "f36ab61cacfbdbbe8c17e0a7de337910e02e17098cf93b1eb8f9b847405785a1",
+  "window": {
+    "cleanupEnd": "2026-11-14T20:58:00Z",
+    "cutoff": "2026-11-14T20:30:00Z",
+    "purgeEnd": "2026-11-14T21:00:00Z",
+    "start": "2026-11-14T20:00:00Z",
+    "workEnd": "2026-11-14T20:47:00Z"
+  },
+  "paymentWorkEnd": "2026-11-14T20:46:00Z",
+  "limits": {
+    "child": 6,
+    "childRequests": 200,
+    "cli": 192,
+    "https": 100,
+    "sql": 60
+  },
+  "summary": {
+    "actions": [
+      "Temporarily enable exact runtime identity, numeric secret versions and resource bindings",
+      "Activate bounded database role and candidate tag; normal traffic percentages unchanged",
+      "Create/delete owned restricted key; enable/close exact test identities",
+      "Enable existing Sandbox webhook; one same-job Sandbox Checkout and authentic event check",
+      "Mandatory independent cleanup and private purge"
+    ],
+    "amountTotalCents": 9900,
+    "candidate": "signmons-calldesk-staging-p07key7e45dc512e17",
+    "cost": {
+      "allowanceUsd": 0,
+      "existingLiabilitiesUnchanged": true,
+      "hardBillingCap": false
+    },
+    "currency": "usd",
+    "limits": {
+      "child": 6,
+      "childRequests": 200,
+      "cli": 192,
+      "https": 100,
+      "sql": 60
+    },
+    "paymentWorkEnd": "2026-11-14T20:46:00Z",
+    "realChargesRefundsBookingCustomerMessagesAuthorized": false,
+    "sandboxOnly": true,
+    "stripeVersion": "2"
+  },
+  "guardedChromeIncognitoOpeningAuthorized": true,
+  "manualSandboxCheckoutRequired": true,
+  "terminalForegroundBeforeRelease": 24463,
+  "ownerPasswordReady": true,
+  "r47HistoricalResiduals": "UNCHANGED_UNKNOWN",
+  "scopeDeviation": "No scope deviation"
+}
