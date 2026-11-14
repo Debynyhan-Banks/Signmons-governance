@@ -1,0 +1,44 @@
+{
+  "status": "QUALIFICATION_ONLY_PREPARED_NOT_APPROVED",
+  "verifiedAt": "2026-11-14T19:59:04.738772+00:00",
+  "sourceCommit": "45c4da2c4a87ff9c90147ec0a0dd5a3884d4376a",
+  "scopeSha256": "de983ae1d3a84954bcf8d5d0c38ac750352532b288b8989071a9e9bc6d9c0cdb",
+  "actualRecoverySourceSdkConfigClock": "PASS_PROPOSED_AUTHORITY_AND_CLOCK_ONLY",
+  "fullNativeConstruction": "PASS_ACTUAL_CAPABILITY_EXACT_PUBLIC_IDS_WINDOWS_PINS_SYNTHETIC_PRIVATE_BINDINGS",
+  "connectedCommittedSources": "PASS_AC1_AND_IMMUTABLE_R47_EVIDENCE_INCLUDED",
+  "sdkFilesVerified": 43,
+  "configurationSnapshotSha256": "528ceadadc8a5491e54ee82dbad0026eda881252564f96f2be242d70d1d2f111",
+  "compiledRecoveryPaymentContract": {
+    "status": "PASS_ALL_ACTUAL_PLAN_COMPILED_HASHES",
+    "filesVerified": 2
+  },
+  "proposedRootsAbsent": true,
+  "nativeCleanupReserveSeconds": 660,
+  "purgeReserveSeconds": 120,
+  "nativeCutoffToWorkEndSeconds": 1020,
+  "browserOpenerSourceBound": true,
+  "lateQualificationMayPrecludeNativeLaunch": true,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "freshBindingsEndpointAccessAuthenticationPayment": "UNKNOWN",
+  "freshCredentialHorizonAndAttendance": "PENDING_TR21_EXACT_APPROVAL_AND_OBSERVATION",
+  "qualificationClaim": "CURRENT_ENTRY_CONDITIONS_ONLY_NOT_R47_REVOCATION_OR_EXACT_SESSION_CERTIFICATE",
+  "priorR47Residuals": "UNCHANGED_UNKNOWN_ACCOUNT_SESSION_AUTH_OUTCOME_UNKNOWN_AUTH_REVOKE",
+  "liveKeyPrerequisite": "KQ3_HISTORICAL_CLOSED_AND_R47_NATIVE_KEY_CLOSURE_PRESERVED",
+  "localImplementationEvidence": "ac1-local-verification-20261114/verification.json;674 prior tests, not rerun",
+  "responsibleOwners": {
+    "sourceReadinessSupervisionCleanup": "Implementer",
+    "credentialInputExternalDecisionsPaymentInteractionAcceptance": "Owner/custodian"
+  },
+  "scopeDeviation": "No scope deviation",
+  "requiredChecks": "BACKEND_BASELINE_ARCHITECTURE_GOVERNANCE_FROZEN_CONSISTENCY_WHITESPACE_PASS",
+  "newGovernanceTests": {
+    "passed": 25,
+    "failed": 0,
+    "logSha256": "3b1b14a0352648a341119a74d9c60cdbfa9fb1842bffb1cbdcbdb3a5add94633"
+  },
+  "preparationCompletedAt": "2026-11-14T20:03:08.421181+00:00",
+  "independentReadOnlyReview": "PASS_EXACT_SOURCE_IDS_LIMITS_TIMING_AND_CURRENT_ENTRY_CLAIMS",
+  "independentReviewAt": "2026-11-14T20:03:41.174472+00:00",
+  "lateCredentialClosureMayPrecludeRecovery": true
+}
