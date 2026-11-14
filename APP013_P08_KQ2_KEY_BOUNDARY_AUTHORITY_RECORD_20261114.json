@@ -1,0 +1,31 @@
+{
+  "status": "OWNER_APPROVED_KQ2_EXACT_QUALIFICATION_AND_CLEANUP",
+  "approvedInChat": true,
+  "owner": "Debynyhan Banks",
+  "response": "Approve KQ2 and cleanup; reachable through 1:45 p.m.",
+  "recordedAt": "2026-11-14T18:13:13.961657+00:00",
+  "proposalCommit": "dccc38088723c5a10ac404abeec78a734b6d8f58",
+  "scopeSha256": "9bf8b781603709a3bc2fc5e3a31e42a1599a5c62839e23f65b8111eab65933e7",
+  "operationId": "82ab0998-1d08-4405-91d7-3dcac62c6e67",
+  "scopeFile": "APP013_P08_KQ1_KEY_BOUNDARY_SCOPE_00000002.json",
+  "approvalFile": "APP013_P08_KQ1_KEY_BOUNDARY_APPROVAL_00000002.json",
+  "reachableThrough": "2026-11-14T18:45:00Z",
+  "sourceCommit": "4173ec0b3b8bf3dc81d607275a427101615a4c35",
+  "limits": {
+    "cli": 4,
+    "cache": 2,
+    "https": 25,
+    "mainHttps": 11,
+    "cleanupHttps": 14,
+    "create": 1,
+    "delete": 1,
+    "sql": 0,
+    "child": 0
+  },
+  "sdkException": "SDK_EXISTING_OWNER_REFRESH_CACHE_INTERNAL_RETRIES_NO_TOKEN_EXPORT",
+  "allowanceUsd": 0,
+  "automaticRetryAllowed": false,
+  "qualificationOnly": true,
+  "paymentAuthorized": false,
+  "independentCleanupAuthorized": true
+}
