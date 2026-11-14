@@ -1,0 +1,39 @@
+{
+  "recordedAt": "2026-11-14T19:20:58.662028+00:00",
+  "proposalCommit": "f5c5c544fd3f68f604e8bd32ec37c305ce06a9d7",
+  "response": "Approve R47 native execution, Chrome opening, spending limits and cleanup; ready now",
+  "owner": "Debynyhan Banks",
+  "operationId": "bea4fe6b-2202-48ed-9df1-84a17d23fcd8",
+  "scopeSha256": "a94e42c428ef33b4cc1b14b3f1c38eeb9c4f6feb40be3c41d34244e7497d3fb5",
+  "sourceCommit": "cd9ab2e725f6798e790daac620fe8ad1f09bc359",
+  "sourceManifestSha256": "2e0ec73ff321ab156a77b43941d73a4de5f587e34458d622bf220ad24285380a",
+  "nativeExecutionAuthorized": true,
+  "guardedChromeIncognitoOpenAuthorized": true,
+  "manualSandboxCheckoutAmountCents": 9900,
+  "currency": "usd",
+  "realChargeRefundBookingCustomerMessageAuthorized": false,
+  "cost": {
+    "allowanceUsd": 0,
+    "existingLiabilitiesUnchanged": true,
+    "hardBillingCap": false
+  },
+  "limits": {
+    "child": 6,
+    "childRequests": 200,
+    "cli": 192,
+    "https": 100,
+    "sql": 60
+  },
+  "window": {
+    "cleanupEnd": "2026-11-14T19:53:00Z",
+    "cutoff": "2026-11-14T19:25:00Z",
+    "purgeEnd": "2026-11-14T19:55:00Z",
+    "start": "2026-11-14T19:00:00Z",
+    "workEnd": "2026-11-14T19:42:00Z"
+  },
+  "paymentWorkEnd": "2026-11-14T19:41:00Z",
+  "independentCleanupPrivatePurgeAuthorized": true,
+  "terminalReady": true,
+  "terminalWindowId": 24395,
+  "attendanceThrough": "2026-11-14T20:05:00Z"
+}
