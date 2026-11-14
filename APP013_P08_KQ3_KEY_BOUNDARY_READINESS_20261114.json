@@ -1,0 +1,193 @@
+{
+  "status": "QUALIFICATION_ONLY_PREPARED_NOT_APPROVED",
+  "section": "APP-013/3A/P08",
+  "attemptLabel": "KQ3",
+  "recordedAt": "2026-11-14T18:32:44.382257+00:00",
+  "sourceCommit": "d2acad66cf6b9b7006b4b5867c92e9b3b194375b",
+  "sourceEvidenceCommit": "d2acad66cf6b9b7006b4b5867c92e9b3b194375b",
+  "scopeFile": "APP013_P08_KQ1_KEY_BOUNDARY_SCOPE_00000003.json",
+  "approvalFile": "APP013_P08_KQ1_KEY_BOUNDARY_APPROVAL_00000003.json",
+  "filenameSuffixMeaning": "00000003 is numeric qualification revision3, not a calendar date; prior KQ1/KQ2 files remain unchanged.",
+  "scopeSha256": "0b2f616b40acdb9a30ccbfd72a38839d0439e258598dc9cdee1f01fae5eeda26",
+  "operatorSha256": "d178de94e373be00517f252de0cfde6e7bd5d07309100242037a528731428c71",
+  "configurationSnapshotSha256": "528ceadadc8a5491e54ee82dbad0026eda881252564f96f2be242d70d1d2f111",
+  "configurationHashMethod": "sha256(repr(actual acl.config_snapshot result).encode()) under pinned Python runtime",
+  "currentLocalSourceGuard": "PASS",
+  "sourceGuardSeconds": 0.537921,
+  "actualScopeValidator": "PASS",
+  "actualApprovalParserNegativeCheck": "Existing unchanged parser was verified with falseauthority numericrevision2 in KQ2 preparation; revision3 uses same accepted interface. No approval file exists.",
+  "operationRootAbsent": true,
+  "commandArgv": {
+    "run": [
+      "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+      "-I",
+      "-B",
+      "-c",
+      "import runpy,sys;path=sys.argv.pop(1);sys.path.insert(0,sys.argv.pop(1));sys.argv[0]=path;runpy.run_path(path,run_name=\"__main__\")",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/kq1_key_boundary.py",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110",
+      "--run",
+      "<FULL_GOVERNANCE_APPROVAL_COMMIT>",
+      "APP013_P08_KQ1_KEY_BOUNDARY_SCOPE_00000003.json",
+      "APP013_P08_KQ1_KEY_BOUNDARY_APPROVAL_00000003.json"
+    ],
+    "cleanup": [
+      "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+      "-I",
+      "-B",
+      "-c",
+      "import runpy,sys;path=sys.argv.pop(1);sys.path.insert(0,sys.argv.pop(1));sys.argv[0]=path;runpy.run_path(path,run_name=\"__main__\")",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/kq1_key_boundary.py",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110",
+      "--cleanup",
+      "<FULL_GOVERNANCE_APPROVAL_COMMIT>",
+      "APP013_P08_KQ1_KEY_BOUNDARY_SCOPE_00000003.json",
+      "APP013_P08_KQ1_KEY_BOUNDARY_APPROVAL_00000003.json"
+    ],
+    "purge": [
+      "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+      "-I",
+      "-B",
+      "-c",
+      "import runpy,sys;path=sys.argv.pop(1);sys.path.insert(0,sys.argv.pop(1));sys.argv[0]=path;runpy.run_path(path,run_name=\"__main__\")",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/kq1_key_boundary.py",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110",
+      "--purge",
+      "<FULL_GOVERNANCE_APPROVAL_COMMIT>",
+      "APP013_P08_KQ1_KEY_BOUNDARY_SCOPE_00000003.json",
+      "APP013_P08_KQ1_KEY_BOUNDARY_APPROVAL_00000003.json"
+    ]
+  },
+  "commandDisplay": {
+    "run": "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14 -I -B -c 'import runpy,sys;path=sys.argv.pop(1);sys.path.insert(0,sys.argv.pop(1));sys.argv[0]=path;runpy.run_path(path,run_name=\"__main__\")' '/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/kq1_key_boundary.py' '/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110' --run '<FULL_GOVERNANCE_APPROVAL_COMMIT>' APP013_P08_KQ1_KEY_BOUNDARY_SCOPE_00000003.json APP013_P08_KQ1_KEY_BOUNDARY_APPROVAL_00000003.json",
+    "cleanup": "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14 -I -B -c 'import runpy,sys;path=sys.argv.pop(1);sys.path.insert(0,sys.argv.pop(1));sys.argv[0]=path;runpy.run_path(path,run_name=\"__main__\")' '/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/kq1_key_boundary.py' '/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110' --cleanup '<FULL_GOVERNANCE_APPROVAL_COMMIT>' APP013_P08_KQ1_KEY_BOUNDARY_SCOPE_00000003.json APP013_P08_KQ1_KEY_BOUNDARY_APPROVAL_00000003.json",
+    "purge": "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14 -I -B -c 'import runpy,sys;path=sys.argv.pop(1);sys.path.insert(0,sys.argv.pop(1));sys.argv[0]=path;runpy.run_path(path,run_name=\"__main__\")' '/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/kq1_key_boundary.py' '/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110' --purge '<FULL_GOVERNANCE_APPROVAL_COMMIT>' APP013_P08_KQ1_KEY_BOUNDARY_SCOPE_00000003.json APP013_P08_KQ1_KEY_BOUNDARY_APPROVAL_00000003.json"
+  },
+  "requiredDecision": {
+    "owner": "Debynyhan Banks",
+    "decision": "APPROVE_KQ1_EXACT_CREATE_KEYSTRING_CONDITIONAL_DELETE_SDK_CACHE_AND_CLEANUP",
+    "scopeSha256": "0b2f616b40acdb9a30ccbfd72a38839d0439e258598dc9cdee1f01fae5eeda26",
+    "operatorSha256": "d178de94e373be00517f252de0cfde6e7bd5d07309100242037a528731428c71",
+    "externalActionAuthorized": true
+  },
+  "approvalState": "PENDING_EXACT_OWNER_DECISION",
+  "externalActionAuthorized": false,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "attemptReserved": false,
+  "currentCredentials": "TR19 observed valid beyond19:15Z at18:30:14Z, independently closed. Proposed purgeEnd19:05Z is earlier; included phase cache/identity gates still required before any key action.",
+  "currentProviderAccessAndKeyBehavior": "UNKNOWN; purpose of qualification",
+  "currentAttendance": "Owner confirmed reachable through19:20Z in TR19 approval; no renewed attendance question needed for19:05Z KQ3 closure.",
+  "testEvidence": "647 ET1 applicable tests at source4173ec0 and evidence e20c5e2; verified current source bytes match, not newly rerun in preparation",
+  "independentRuntimeReview": "PASS actual corrected interfaces, budget, ownership and cleanup; no additional local runtime blocker",
+  "independentPacketReview": "PASS_HASHES_COMMITTED_SOURCE_RESOURCE_PINS_COMMANDS_AUTHORITY_WINDOWS_CREDENTIAL_HORIZON_AND_CURRENT_REFERENCES",
+  "documentationChecks": {
+    "checkedAt": "2026-11-14T18:35:42.715760+00:00",
+    "frozenBaseline": "PASS",
+    "crossRepositoryConsistency": "PASS",
+    "backendGovernanceBaseline": "PASS",
+    "architecture": "PASS",
+    "whitespace": "PASS",
+    "governanceTestsPassed": 25,
+    "governanceTestsFailed": 0,
+    "logSha256": "2c067f2a9950f983eab08329596187e7b67519e1a0f43f6a0dc100f3ee789718",
+    "runtimeTestsRerun": false
+  },
+  "checklist": {
+    "scopeSourceWindowBound": true,
+    "localSourceConfigurationVerified": true,
+    "priorTestsMatchExactSource": true,
+    "reviewAndDocumentationChecks": true,
+    "exactApproval": false,
+    "liveQualification": false,
+    "independentCleanupAndPurge": false
+  },
+  "owners": {
+    "preparationExecutionEvidence": "implementer",
+    "externalDecisionAndCredentialCustody": "Debynyhan Banks",
+    "unresolvedProviderContainment": "cloud custodian"
+  },
+  "acceptance": "4/8 accepted; 3A OPEN; R1 newly closed 0/27",
+  "scopeDeviation": "No scope deviation",
+  "cleanupReserveSeconds": 480,
+  "cleanupTimingBasis": "Unchanged permitted source/SDK/provider operations: retained 480-second reviewed reserve plus 60-second purge reserve. Cleanup work stops70 seconds before cleanupEnd; final metadata read stops10 seconds before cleanupEnd.",
+  "nextObservableResult": "KEY_BOUNDARY_REACHED or one safe failure, then authoritative containment and private/process closeout. No authentication/payment acceptance.",
+  "prerequisites": [
+    {
+      "sourceCommit": "d2acad66cf6b9b7006b4b5867c92e9b3b194375b",
+      "evidenceTimestamp": "2026-11-14T18:32:44.382257+00:00",
+      "responsibleOwner": "Implementer",
+      "item": "Actual CLI/provider/key output contracts, serialization, parsing, missing/null fields and safe classification",
+      "verification": "LOCAL_PASS_SOURCE_MATCHED",
+      "source": "KQ operator main/dispatch/qualify_owner and current entry.Ports; native, connected, qualification and correction full suites",
+      "evidence": "Backend e20c5e2 et1-local-verification-20261114/verification.json; 647 tests completed in preceding ET1 section, not rerun in preparation",
+      "details": "Corrected sameUID currentetag seam is used by postcreate/authenticate. Original creation-reference diagnostic comparisons remain meaningful. No external SQL in scope."
+    },
+    {
+      "sourceCommit": "d2acad66cf6b9b7006b4b5867c92e9b3b194375b",
+      "evidenceTimestamp": "2026-11-14T18:32:44.382257+00:00",
+      "responsibleOwner": "Implementer",
+      "item": "Exact configuration, resource pins, runtime, SDK environment and dynamic settings",
+      "verification": "CURRENT_LOCAL_PASS",
+      "source": "Actual source_guard, validate_scope, _command and acl.config_snapshot",
+      "evidence": "This record includes source guard duration/hash, configuration digest and actual command vectors",
+      "details": "Actual source guard verifies current+committed graph and SDK/runtime; dynamicconfig matches permitted exact identity. New operation root absent; no reservation. Unique numericrevision3 uses the unchanged approved_scope interface."
+    },
+    {
+      "sourceCommit": "d2acad66cf6b9b7006b4b5867c92e9b3b194375b",
+      "evidenceTimestamp": "2026-11-14T18:32:44.382257+00:00",
+      "responsibleOwner": "Owner/credential custodian/cloud custodian",
+      "item": "Current owner credentials, effective permissions, API availability, restrictions and intended-client usability",
+      "verification": "CREDENTIAL_HORIZON_OBSERVED_KEY_ACCESS_UNKNOWN",
+      "source": "Included actual owner/project/cache/service gates; exact create/metadata/keyString and sameUID conditional cleanup",
+      "evidence": "Committed TR19 safe result/independentcloseout at backend d2acad6; no additional credential read during preparation.",
+      "details": "TR19 verified coverage beyond19:15Z; KQ3 purge19:05Z fits. Current provider availability, effective permissions and corrected keyString behavior remain qualification targets; included identity/cache/service gates still required."
+    },
+    {
+      "sourceCommit": "d2acad66cf6b9b7006b4b5867c92e9b3b194375b",
+      "evidenceTimestamp": "2026-11-14T18:32:44.382257+00:00",
+      "responsibleOwner": "Implementer",
+      "item": "Deadlines, no retry, concurrency and interruption/partial-failure recovery",
+      "verification": "LOCAL_PASS_SOURCE_MATCHED",
+      "source": "Existing KQ durable shared counts, phase lock, supervisor, private purge guard and actual Ports/KD interfaces",
+      "evidence": "ET1 full test evidence plus independent unchanged-code timing review",
+      "details": "11main+14cleanup HTTPS,4CLI,2cache,onecreate/onedelete;480scleanup+60spurge. Conservative cleanup bound301s plus main grace10 and local margin. Retain finalread window and explicit UNKNOWN after lost provenance or abruptprocessdeath."
+    },
+    {
+      "sourceCommit": "d2acad66cf6b9b7006b4b5867c92e9b3b194375b",
+      "evidenceTimestamp": "2026-11-14T18:32:44.382257+00:00",
+      "responsibleOwner": "Implementer",
+      "item": "Independent cleanup, authoritative readbacks, retention and process closeout",
+      "verification": "LOCAL_PASS_LIVE_PENDING",
+      "source": "Fresh cleanup process, KD exactUID/currentetag conditionalDELETE, finalread, originalroot inventory/purge",
+      "evidence": "ET1 recovery/concurrency tests and separately closed KQ1/KQ2 evidence; future KQ3 result not yet produced",
+      "details": "Rawtoken/keyString/providerbody never persisted or printed. Safe result/counts/matchflags/provenancehash retained; private purge is not providercontainment proof."
+    },
+    {
+      "sourceCommit": "d2acad66cf6b9b7006b4b5867c92e9b3b194375b",
+      "evidenceTimestamp": "2026-11-14T18:32:44.382257+00:00",
+      "responsibleOwner": "Implementer",
+      "item": "Finite checklist, exclusions, approvals and observable result",
+      "verification": "PREPARATION_COMPLETE_EXACT_OWNER_DECISION_PENDING",
+      "source": "KQ3 exact proposal and this record",
+      "evidence": "No external approval file00000003 exists; draftfalse only",
+      "details": "No approval file00000003 exists; draftfalse only. Remaining exactownerdecision, onequalification, independentcloseout and evidence reconciliation. Existing attendance covers thiswindow."
+    }
+  ],
+  "credentialEvidence": {
+    "approvalCommit": "005cfee3f2e6266f320d03005800738e23be3043",
+    "backendEvidenceCommit": "d2acad66cf6b9b7006b4b5867c92e9b3b194375b",
+    "result": "evidence/APP-013/p08-narrow-access-check-local-20261101/renewals/20261114-tr19/result.json",
+    "validThrough": "2026-11-14T19:15:00Z",
+    "observedAt": "2026-11-14T18:30:14Z",
+    "independentCloseout": "VERIFIED",
+    "notProofOfKQ2Cause": true
+  },
+  "historicalUnchangedInterfaceAndTimingReview": {
+    "status": "REUSED_HISTORICAL_KQ2_INTERFACE_AND_TIMING_REVIEW",
+    "reviewedAt": "2026-11-14T18:11:22.996961+00:00",
+    "finding": "Eight-digit suffix is numericrevision2, not date; no code change, old packet untouched. 480scleanup covers conservative301s calls/pacing/source/process bound plus main grace10 and margin; finalread/purge reserves retained.",
+    "relevance": "Unchanged operator accepts any eight-digit revision and uses the same call/cleanup limits. Current KQ3 exact packet receives its own independent review."
+  },
+  "reviewedAt": "2026-11-14T18:35:42.715760+00:00"
+}

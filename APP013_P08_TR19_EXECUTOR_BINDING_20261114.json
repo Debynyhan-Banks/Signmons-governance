@@ -1,0 +1,17 @@
+{
+  "status": "TR19_APPROVED_EXECUTOR_BOUND",
+  "boundAt": "2026-11-14T18:29:32.631688+00:00",
+  "approvalCommit": "005cfee3f2e6266f320d03005800738e23be3043",
+  "sourceCommit": "1dabb8f9195ee68b9150f6f4e32d0b951b049a4a",
+  "proposalSha256": "4173db8ca7e54e45332e980c4c5e2a8e4fc0cd23f8a2a42ebdb6dc8474bdf597",
+  "preparedExecutorSha256": "2e735c276c0b2c6a3286d34d33d32edafb61b1983062f5f1c1e9e330fe882ddd",
+  "approvedExecutorSha256": "62f2c04b00ba46efe10470154a2e8486710eda6ffb5932a88b4a4194d6b20578",
+  "onlyPostApprovalChange": "Replace the single exact pending approval commit placeholder",
+  "executorPath": "/private/tmp/signmons-tr19-owner-signin.py",
+  "credentialStoresRead": false,
+  "providerCalls": 0,
+  "operationReserved": false,
+  "actualApprovedPreflight": "PREFLIGHT_VERIFIED_NO_OPERATION_RESERVED",
+  "sourceCommandEnvironmentConfigurationAuthorityWindowMatch": true,
+  "prelaunchVerifiedAt": "2026-11-14T18:30:02.162129+00:00"
+}
