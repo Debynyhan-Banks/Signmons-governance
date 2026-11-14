@@ -1,0 +1,41 @@
+{
+  "status": "QUALIFICATION_ONLY_PREPARED_NOT_APPROVED",
+  "verifiedAt": "2026-11-14T18:56:21.112827+00:00",
+  "sourceCommit": "cd9ab2e725f6798e790daac620fe8ad1f09bc359",
+  "scopeSha256": "e16d37ce5197acc40ced55926acca79e5ef1412ecbdfc54a1bd6f9e626f2e97c",
+  "actualRecoverySourceSdkConfigClock": "PASS_PROPOSED_AUTHORITY_AND_CLOCK_ONLY",
+  "fullNativeConstruction": "PASS_ACTUAL_CAPABILITY_EXACT_PUBLIC_IDS_WINDOWS_PINS_SYNTHETIC_PRIVATE_BINDINGS",
+  "connectedCommittedSources": "PASS_ET1_AND_KQ3_EVIDENCE_INCLUDED",
+  "sdkFilesVerified": 43,
+  "configurationSnapshotSha256": "528ceadadc8a5491e54ee82dbad0026eda881252564f96f2be242d70d1d2f111",
+  "compiledRecoveryPaymentContract": {
+    "status": "PASS_ALL_ACTUAL_PLAN_COMPILED_HASHES",
+    "filesVerified": 2
+  },
+  "proposedRootsAbsent": true,
+  "nativeCleanupReserveSeconds": 660,
+  "purgeReserveSeconds": 120,
+  "nativeCutoffToWorkEndSeconds": 1020,
+  "browserOpenerSourceBound": true,
+  "lateQualificationMayPrecludeNativeLaunch": true,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "freshBindingsEndpointAccessAuthenticationPayment": "UNKNOWN",
+  "freshCredentialHorizonAndAttendance": "PENDING_TR20_EXACT_APPROVAL_AND_OBSERVATION",
+  "liveKeyPrerequisite": "KQ3_CLOSED_CONTROL_PLANE_DELETED_BOUNDARY_REACHED",
+  "localImplementationEvidence": "et1-local-verification-20261114/verification.json;647 prior tests, not rerun",
+  "responsibleOwners": {
+    "sourceReadinessSupervisionCleanup": "Implementer",
+    "credentialInputExternalDecisionsPaymentInteractionAcceptance": "Owner/custodian"
+  },
+  "scopeDeviation": "No scope deviation",
+  "independentReadOnlyReview": "PASS_NO_BLOCKING_FINDING",
+  "independentReviewAt": "2026-11-14T18:59:11.568627+00:00",
+  "requiredChecks": "BACKEND_BASELINE_ARCHITECTURE_GOVERNANCE_FROZEN_CONSISTENCY_WHITESPACE_PASS",
+  "newGovernanceTests": {
+    "passed": 25,
+    "failed": 0,
+    "logSha256": "ffb93bb9bfacd25028bcacd9532e0542f10af85db7f2a8efd137eb81b4be1cd8"
+  },
+  "preparationCompletedAt": "2026-11-14T18:59:11.568627+00:00"
+}
