@@ -1,0 +1,18 @@
+{
+  "verifiedAt": "2026-11-14T11:55:21.291139+00:00",
+  "sourceCommit": "ce282d1e4e9f76636bb189fa22287f6ba3a6973e",
+  "scopeSha256": "b3c2e8d78b38e48c0e904c8a3d7d2a56a736a49d2db3844e7d466f0657fba594",
+  "actualCurrentCommittedSourcesSdkConfig": "PASS",
+  "actualSourceDescriptorValidation": "PASS",
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "lookupState": "UNKNOWN",
+  "credentialHorizon": "TR14 beyond7:25am",
+  "attendance": "7:45am",
+  "actualBridgePolicyFixtureStates": [
+    "ABSENT",
+    "OWNED",
+    "UNKNOWN",
+    "UNKNOWN"
+  ]
+}

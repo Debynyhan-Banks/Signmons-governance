@@ -1,0 +1,61 @@
+{
+  "operationId": "99491ae3-9898-4e87-8ca8-9671da346c22",
+  "sourceCommit": "ce282d1e4e9f76636bb189fa22287f6ba3a6973e",
+  "action": "READ_R43_LOOKUP_POLICY_STATE_ONCE",
+  "commands": [
+    {
+      "id": "owner",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "auth",
+        "list",
+        "--filter=status:ACTIVE",
+        "--format=json(account,status)"
+      ]
+    },
+    {
+      "id": "project",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "projects",
+        "describe",
+        "signmons",
+        "--format=json(projectId,projectNumber,lifecycleState)"
+      ]
+    },
+    {
+      "id": "project_policy",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "projects",
+        "get-iam-policy",
+        "signmons",
+        "--format=json(bindings,etag,version)"
+      ]
+    }
+  ],
+  "r43OperationId": "bda096f5-b4fc-463d-8b4c-332faabc0e3f",
+  "r43Window": {
+    "start": "2026-11-14T11:39:00Z",
+    "cutoff": "2026-11-14T12:03:00Z",
+    "workEnd": "2026-11-14T12:12:00Z",
+    "cleanupEnd": "2026-11-14T12:23:00Z",
+    "purgeEnd": "2026-11-14T12:25:00Z"
+  },
+  "window": {
+    "start": "2026-11-14T11:55:00Z",
+    "cutoff": "2026-11-14T12:05:00Z",
+    "readEnd": "2026-11-14T12:07:00Z",
+    "closeoutEnd": "2026-11-14T12:08:00Z"
+  },
+  "limits": {
+    "cli": 3,
+    "sql": 0,
+    "https": 0,
+    "cache": 0
+  },
+  "sdkException": "SDK_EXISTING_OWNER_REFRESH_CACHE_INTERNAL_RETRIES_NO_TOKEN_EXPORT",
+  "sourceManifestSha256": "5cc0e4a1320685316b20a6d4739691a2bdf35cc1e846c8c63ab83b42e12eebbf",
+  "sdkFilesSha256": "ecd62311871d8d39cd2fc94a14b38a16b01a12032d7da04853226feacd6c71b2",
+  "mutationAuthorized": false
+}
