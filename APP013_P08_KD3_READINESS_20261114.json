@@ -65,12 +65,13 @@
   "currentKeyState": "KS2_PRESENT_MATCHING_UID_HISTORICAL_OBSERVATION_REVALIDATE_BEFORE_DELETE",
   "accountResiduals": "UNRESOLVED_NOT_IN_SCOPE",
   "nativePaymentAuthority": false,
-  "exactOwnerApproval": "PENDING",
+  "exactOwnerApproval": "APPROVED_IN_CHAT_20261114_KD3_EXACT_KEY_REMOVAL_CACHE_SDK_EXCEPTION_AND_CLEANUP",
   "nextObservable": "one exact key-state final readback and independently verified local closure",
   "noScopeDeviation": true,
   "focusedTestSha256": "7cdcb31977e65ae979f50229c7db24743ed6456c9f0087e2c7fe79d324b6b303",
   "existingTestCount": 27,
   "focusedTestCount": 6,
   "governanceTestCount": 25,
-  "allLocallyDiscoverablePrerequisites": "PASS"
+  "allLocallyDiscoverablePrerequisites": "PASS",
+  "approvalRecordedAt": "2026-11-14T15:11:47.753966+00:00"
 }
