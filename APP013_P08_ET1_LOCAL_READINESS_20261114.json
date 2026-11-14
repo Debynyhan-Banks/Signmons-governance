@@ -1,0 +1,20 @@
+{
+  "status": "LOCAL_CORRECTION_PROPOSED_NOT_IMPLEMENTED",
+  "recordedAt": "2026-11-14T17:46:27.992378+00:00",
+  "sourceBefore": "53925c43f95c2a713341dafdbba0be8d44c65668",
+  "proposalSha256": "3305612d4aca2cd7c5af481103d5876cdced1dba2e86f98adb652649cbea5507",
+  "sourceReview": "COMPLETE",
+  "liveGapEvidence": "KQ1 sameactiveUID creationetag mismatch at bothmetadatareads; keydeleted andprivate/processclosed",
+  "historicalR46Cause": "UNKNOWN",
+  "implementationAuthorized": false,
+  "externalActionAuthorized": false,
+  "localTests": "NOT_IMPLEMENTED_NOT_RUN",
+  "existingTestEvidence": "265_PASS_FOR_PRIOR_SOURCE_NOT_ET1",
+  "independentSourceReviews": "TWO_COMPLETE_AUTHENTICATION_AND_NATIVE_CLEANUP_COUPLED",
+  "nextDecision": "Owner local ET1 approval",
+  "acceptance": "4/8 accepted;3A OPEN",
+  "scopeDeviation": "PROPOSED_INTERNAL_POLICY_CORRECTION_NOT_IMPLEMENTED",
+  "independentProposalReview": "PASS_AFTER_EXPLICIT_EXISTING_CREATION_TIME_BOUNDS_AND_DELETED_READBACK_CLARIFICATIONS",
+  "reviewedAt": "2026-11-14T17:48:12.441298+00:00",
+  "documentationChecks": "FROZEN_BASELINE_CROSS_REPO_CONSISTENCY_ARCHITECTURE_WHITESPACE_AND_25_GOVERNANCE_TESTS_PASS"
+}
