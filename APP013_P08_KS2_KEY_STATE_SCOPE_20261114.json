@@ -1,0 +1,47 @@
+{
+  "operationId": "4a2f8a0e-e27f-4528-a133-ddcbdf202eb6",
+  "action": "READ_R46_KEY_METADATA_ONCE",
+  "r46OperationId": "6c03d490-2a71-4392-baaa-a41dd274dc41",
+  "keyId": "signmons-p08-6c03d4902a714392baaaa41dd274dc41",
+  "expectedUidSha256": "7e7192db4810e5f56d99e251ae43cf92bb0ecfcb9f23347ba69dba5d7b0af06b",
+  "sourceCommit": "5c20e11917f855ba6a0365e5102ad1b3e7326dcc",
+  "sourceManifestSha256": "5cc0e4a1320685316b20a6d4739691a2bdf35cc1e846c8c63ab83b42e12eebbf",
+  "sdkFilesSha256": "ecd62311871d8d39cd2fc94a14b38a16b01a12032d7da04853226feacd6c71b2",
+  "operatorSha256": "bed0a3649714cd7b6c184114b788dd3b0ce098cd1fd96be9b12e9191f3126be2",
+  "commands": [
+    {
+      "id": "owner",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "auth",
+        "list",
+        "--filter=status:ACTIVE",
+        "--format=json(account,status)"
+      ]
+    },
+    {
+      "id": "project",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "projects",
+        "describe",
+        "signmons",
+        "--format=json(projectId,projectNumber,lifecycleState)"
+      ]
+    }
+  ],
+  "limits": {
+    "cli": 2,
+    "cache": 1,
+    "https": 1,
+    "sql": 0,
+    "mutations": 0
+  },
+  "sdkException": "SDK_EXISTING_OWNER_REFRESH_CACHE_INTERNAL_RETRIES_NO_TOKEN_EXPORT",
+  "window": {
+    "start": "2026-11-14T14:50:00Z",
+    "cutoff": "2026-11-14T15:05:00Z",
+    "readEnd": "2026-11-14T15:08:00Z",
+    "closeoutEnd": "2026-11-14T15:10:00Z"
+  }
+}

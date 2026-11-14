@@ -1,0 +1,20 @@
+{
+  "verifiedAt": "2026-11-14T14:59:36.043383+00:00",
+  "sourceCommit": "5c20e11917f855ba6a0365e5102ad1b3e7326dcc",
+  "scopeSha256": "ffd06d20caf191f8f95bb38c7a6f449931918b717641225c1d4723e93e81c1fe",
+  "operatorSha256": "bed0a3649714cd7b6c184114b788dd3b0ce098cd1fd96be9b12e9191f3126be2",
+  "sourceSdkConfigRuntimeUidBinding": "PASS_ACTUAL_LOCAL_PREFLIGHT",
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "operationReserved": false,
+  "currentKeyState": "UNKNOWN",
+  "accountResiduals": "UNRESOLVED_NOT_IN_SCOPE",
+  "credentialHorizon": "TR18 beyond10:30",
+  "ownerAttendance": "confirmed10:45",
+  "operatorPurpose": "ONE_SHOT_PROPOSED_READ_USING_EXISTING_KS1_CLASSIFIER_AND_TRANSPORTS_NO_RUNTIME_IMPLEMENTATION_CHANGE",
+  "signalHandling": "TR17_DEFERRED_SIGNAL_PATTERN_AROUND_BOUNDED_OWNED_CLI_AND_CLEANUP",
+  "rawMetadataClearedInFinally": true,
+  "existingClassifierTests": "10_PASSED",
+  "signalProof": "ACTUAL_PREPARED_EXECUTE_WITH_SYNTHETIC_IO_SIGTERM_FIRST_CLI_STOPS_BEFORE_CACHE_HTTPS_AND_CLOSES",
+  "independentReadOnlyReview": "NO_BLOCKING_FINDING_AFTER_SIGNAL_AND_RAW_MEMORY_CORRECTIONS"
+}

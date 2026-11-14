@@ -1,0 +1,9 @@
+{
+  "status": "PROPOSED_NOT_APPROVED",
+  "decisionForReview": {
+    "owner": "Debynyhan Banks",
+    "decision": "APPROVE_KS2_KEY_METADATA_READ_CACHE_SDK_EXCEPTION_AND_CLEANUP",
+    "scopeSha256": "ffd06d20caf191f8f95bb38c7a6f449931918b717641225c1d4723e93e81c1fe",
+    "externalReadAuthorized": true
+  }
+}
