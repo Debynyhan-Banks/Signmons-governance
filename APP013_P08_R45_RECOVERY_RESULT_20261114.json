@@ -1,0 +1,27 @@
+{
+  "recordedAt": "2026-11-14T14:21:20.927510+00:00",
+  "approvalCommit": "bc0ddb0",
+  "ownerResponse": "Approve R45; Terminal visible and ready",
+  "sourceCommit": "12e69f607cefd02f66ae35d35b003b4eb8981fa1",
+  "recovery": {
+    "candidate": null,
+    "execution": "EXTERNAL_READ_ONLY",
+    "executionReady": false,
+    "failure": null,
+    "liveObserved": true,
+    "purgeEnd": "2026-11-14T14:55:00Z",
+    "residuals": [],
+    "status": "HANDOFF_RETAINED"
+  },
+  "resourceCloseout": {
+    "residuals": [],
+    "verified": true
+  },
+  "reservations": {
+    "cli": 2,
+    "sql": 3
+  },
+  "privateBindingValuesCopied": false,
+  "qualificationAuthorized": false,
+  "nativeAuthorized": false
+}
