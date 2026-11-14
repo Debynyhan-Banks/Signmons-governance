@@ -1,6 +1,6 @@
 # APP-013 / 3A / P08 — CC1 consolidated local correction
 
-PROPOSED, NOT APPROVED FOR IMPLEMENTATION. Owner requested consolidated review after repeated attempts; this is one bounded implementation decision, not another live run. Source5c191a350d03898074496a0a1ee1e6a517d9dd0c; governance6efc8deda8d65d99a31855e137a72937a94650c7. KD2 independently confirmed the R44 key deleted and local cleanup complete. Historical create failure cause remains UNKNOWN. No current live authority is inferred from TR16 or KD2.
+OWNER APPROVED CC1 CONSOLIDATED LOCAL IMPLEMENTATION in chat; external execution remains unauthorized. Owner requested consolidated review after repeated attempts; this is one bounded implementation decision, not another live run. Source5c191a350d03898074496a0a1ee1e6a517d9dd0c; governance6efc8deda8d65d99a31855e137a72937a94650c7. KD2 independently confirmed the R44 key deleted and local cleanup complete. Historical create failure cause remains UNKNOWN. No current live authority is inferred from TR16 or KD2.
 
 ## Criterion and inspected gap
 
@@ -46,4 +46,4 @@ This is a complete local implementation proposal, not execution-ready. Source/ev
 
 Observable local finish: all checklist items demonstrated together on final committed source, with one consolidated evidence report; zero provider/credential/mutation calls. Then perform a fresh source/config/authority/time/readiness review before proposing any live attempt. Full3A acceptance still requires the same-job live Sandbox result and owner review; local completion is not acceptance.
 
-Alternatives considered: continuing isolated live attempts rejected due demonstrated local gaps; rebuilding payment infrastructure or broad automatic key adoption excluded. Rollback: revert only current overlay/helper/test changes and regenerate current manifests; all external paths remain gated. This proposal changes internal lifecycle retention,process cleanup and supervised browser procedure before implementation; it does not change section order/count/acceptance/dependencies. Scope deviation proposal CC1 pending owner decision; no CC1 runtime implementation has occurred.
+Alternatives considered: continuing isolated live attempts rejected due demonstrated local gaps; rebuilding payment infrastructure or broad automatic key adoption excluded. Rollback: revert only current overlay/helper/test changes and regenerate current manifests; all external paths remain gated. This proposal changes internal lifecycle retention,process cleanup and supervised browser procedure before implementation; it does not change section order/count/acceptance/dependencies. CC1 internal change approved before implementation; no expansion beyond this card is authorized.
