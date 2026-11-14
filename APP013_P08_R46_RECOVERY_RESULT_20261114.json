@@ -1,0 +1,34 @@
+{
+  "recordedAt": "2026-11-14T14:40:53.966672+00:00",
+  "approvalCommit": "6fbed70",
+  "ownerResponse": "Approve R46; Terminal visible and ready",
+  "sourceCommit": "ec4f51f015f7382d3cf1089a692a0672d1c8060c",
+  "recovery": {
+    "candidate": null,
+    "execution": "EXTERNAL_READ_ONLY",
+    "executionReady": false,
+    "failure": null,
+    "liveObserved": true,
+    "purgeEnd": "2026-11-14T15:30:00Z",
+    "residuals": [],
+    "status": "HANDOFF_RETAINED"
+  },
+  "resourceCloseout": {
+    "residuals": [],
+    "verified": true
+  },
+  "reservations": {
+    "cli": 2,
+    "sql": 3
+  },
+  "privateBindingValuesCopied": false,
+  "qualificationAuthorized": false,
+  "nativeAuthorized": false,
+  "currentOwnedTerminalReferences": {
+    "recoveryWindowId": 23925,
+    "connectedWindowId": 23931,
+    "tabIndex": 1,
+    "contentsRead": false,
+    "scope": "R46_CURRENT_SESSION_ONLY"
+  }
+}
