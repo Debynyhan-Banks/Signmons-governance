@@ -1,0 +1,25 @@
+# APP-013 / 3A / P08 — R41 corrected connected session
+
+PREPARED, NOT APPROVED. Sourcedfdfceccf01b91dd37eb03ca1a59a04818b9d44f includes both IO1 identity and IO2 tag-response corrections,454 passing local tests. CV5 verified beyond8:35 p.m. November13;owner attendance9:00. SD2 independently resolved R40 database-session uncertainty. SR1 tag absent/normal100percent is historical evidence;R39 consumed,original missing independent-closeout cause UNKNOWN. Fresh current bindings/access/outcome UNKNOWN. Accepted4/8;3A OPEN;R1newlyclosed0/27. No scope deviation.
+
+## Exact initial recovery approval
+
+APP013_P08_BINDING_RECOVERY_PACKET_R41_20261113.json binds fresh UUIDs, version2, current source/SDK, existing project/owner/database/target/payment-account pins. Exactly2owner/project CLI reads and up to3read-only SQL reservations including independent session closeout;0directHTTPS/cache reads. Existing SDK owner refresh/cache maintenance/internal authentication retries exception required; internal authentication count UNKNOWN. Hidden Neon password entered only at visible standalone Terminal; no chat secret, password storage or raw private output. Recover project/test-account identifiers and payment binding into guarded custody through original purge deadline. Existing TLS verify-full, one-attempt/no-retry, bounded subprocesses and independent cleanup unchanged.
+
+This initial approval authorizes recovery and cleanup only. No IAM/runtime/secret mutation, Stripe action, payment, deployment, real charge/refund, customer communication or booking. No new spending authorized. Separately review current qualification and actual native scope in chat. No Terminal nonce delegation. No prompt starts until owner confirms standalone Terminal visible and ready.
+
+## November13 Eastern fixed windows
+
+Recovery launch before8:00 p.m.; reads8:05; resource/session closeout8:10. Qualification approval before8:10; reads8:15; closeout8:20. Native approval before8:13; payment work8:21; all work8:22; independent native cleanup8:33; private purge8:35. Full11minute native cleanup reserve unchanged; no deadline extension or replay. Missing approval/input or stage failure triggers existing closeout and original guard purge.
+
+## Existing connected workflow and readiness
+
+Reuse qualification_launch.py BindingRecoveryCapability, connected_launcher.py, packet.construct_values/native_envelope/stage_review and native entry/independent closeout. Exact source/committed dependencies, installed SDK/config/current-clock checks passed through actual recovery capability under proposed authority. Actual packet and full native Capability passed with synthetic fixture identities/payment binding at exact proposed windows; synthetic root removed. These local proofs are not live evidence. See R41_READINESS. Preparation fixture operation/expiry/root bindings were aligned before final passing check; no validators changed and no external calls made.
+
+Finite checklist: owner recovery approval; visible hidden input; guarded recovered bindings and resource closure; exact current qualification approval/result; actual native payment amount/currency/candidate/versions/actions/limits/spending review and approval; existing same-job authentication/Sandbox Checkout/authentic signed event/application and browser proof; independent runtime/process/session/private cleanup; owner acceptance. 3A acceptance remains APP013_REMAINING_EXECUTION_CONTRACT section3A and existing DATA_CONTRACTS payment binding. No substitute workflow or acceptance criterion.
+
+Qualification27CLI/20HTTPS/4SQL/1cache. Full native192CLI/100HTTPS/60SQL/6children,200requests each, endpoint14calls. Existing candidate/revision/digest/runtime identity/secret versions/bindings/tag/database role/owned restricted key/test identities/Sandbox webhook only. Actual amount/currency and numeric versions must be displayed after fresh binding; not pre-approved by this recovery. Zero additional allowance is not a hard cloud billing cap; existing liabilities unchanged. No new deployment/endpoint/normal traffic percentage change/real charge/refund/message/booking.
+
+Private data: guarded local memory/files only, restrictive permissions, original-deadline purge and sanitized immutable receipts. Independent authoritative cleanup readbacks required; UNKNOWN never equals success. Browser/SDK credentials retained only under approved exception. Rollback/disabled state is existing independent closeout; no automatic repairs or reruns. Implementer owns source/window/authority checks and cleanup; owner owns hidden input, exact external decisions and acceptance; custodians own unresolved provider facts. All fresh bindings/current access/payment outcomes UNKNOWN.
+
+Required checks: backend baseline, governance frozen baseline/consistency/25tests, architecture/whitespace; IO1/IO2 runtime suites already passed and no runtime code changed in this preparation. Next observable result after initial approval is guarded HANDOFF_RETAINED with verified recovery resource closeout, or a sanitized failure and purge evidence. No unattended operation inferred.
