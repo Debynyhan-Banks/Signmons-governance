@@ -1,0 +1,17 @@
+{
+  "status": "TR20_APPROVED_EXECUTOR_BOUND",
+  "boundAt": "2026-11-14T19:08:06.769491+00:00",
+  "approvalCommit": "5405a6363610a58f3834222366dd1555d2dcd256",
+  "sourceCommit": "cd9ab2e725f6798e790daac620fe8ad1f09bc359",
+  "proposalSha256": "ba8f1f972a5376d8fbccaf819efc51eeb9f2d8abf20a20baaae4af7405fef32b",
+  "preparedExecutorSha256": "9929b736bd6119ba19266adc505b8c1984c4d2112d6da20eb95d0f836c597a2d",
+  "approvedExecutorSha256": "6c0317ae931a81b4b1ef50e8ec9b48519b49122e22a2d300677191d8d816711c",
+  "onlyPostApprovalChange": "Replace the single exact pending approval commit placeholder",
+  "executorPath": "/private/tmp/signmons-tr20-owner-signin.py",
+  "credentialStoresRead": false,
+  "providerCalls": 0,
+  "operationReserved": false,
+  "actualApprovedPreflight": "PREFLIGHT_VERIFIED_NO_OPERATION_RESERVED",
+  "sourceCommandEnvironmentConfigurationAuthorityWindowMatch": true,
+  "prelaunchEvidence": "Actual --preflight returned PREFLIGHT_VERIFIED_NO_OPERATION_RESERVED before single --execute; attempt receipt records19:08:19.038811Z start."
+}

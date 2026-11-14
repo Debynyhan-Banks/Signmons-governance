@@ -21,7 +21,7 @@
   "providerCalls": 0,
   "credentialReads": 0,
   "freshBindingsEndpointAccessAuthenticationPayment": "UNKNOWN",
-  "freshCredentialHorizonAndAttendance": "PENDING_TR20_EXACT_APPROVAL_AND_OBSERVATION",
+  "freshCredentialHorizonAndAttendance": "OBSERVED_TR20_AND_CONFIRMED_OWNER",
   "liveKeyPrerequisite": "KQ3_CLOSED_CONTROL_PLANE_DELETED_BOUNDARY_REACHED",
   "localImplementationEvidence": "et1-local-verification-20261114/verification.json;647 prior tests, not rerun",
   "responsibleOwners": {
@@ -37,5 +37,10 @@
     "failed": 0,
     "logSha256": "ffb93bb9bfacd25028bcacd9532e0542f10af85db7f2a8efd137eb81b4be1cd8"
   },
-  "preparationCompletedAt": "2026-11-14T18:59:11.568627+00:00"
+  "preparationCompletedAt": "2026-11-14T18:59:11.568627+00:00",
+  "credentialHorizon": "TR20 live-observed strictly beyond2026-11-14T19:55:00Z;single cache read consumed",
+  "attendanceThrough": "2026-11-14T20:05:00Z owner-confirmed",
+  "currentActualClockPreflight": "PASS_PROPOSED_AUTHORITY_ONLY_NO_RESERVATION",
+  "currentRecheckAt": "2026-11-14T19:09:55.383796+00:00",
+  "credentialCloseout": "TR20_CLOSED_INDEPENDENT_PROCESS_CONFIG_CUSTODY_EXECUTOR_REMOVAL_VERIFIED"
 }
