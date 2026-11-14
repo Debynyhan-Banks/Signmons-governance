@@ -21,7 +21,7 @@
   "providerCalls": 0,
   "credentialReads": 0,
   "freshBindingsEndpointAccessAuthenticationPayment": "UNKNOWN",
-  "freshCredentialHorizonAndAttendance": "PENDING_TR21_EXACT_APPROVAL_AND_OBSERVATION",
+  "freshCredentialHorizonAndAttendance": "OBSERVED_TR21_AND_CONFIRMED_OWNER",
   "qualificationClaim": "CURRENT_ENTRY_CONDITIONS_ONLY_NOT_R47_REVOCATION_OR_EXACT_SESSION_CERTIFICATE",
   "priorR47Residuals": "UNCHANGED_UNKNOWN_ACCOUNT_SESSION_AUTH_OUTCOME_UNKNOWN_AUTH_REVOKE",
   "liveKeyPrerequisite": "KQ3_HISTORICAL_CLOSED_AND_R47_NATIVE_KEY_CLOSURE_PRESERVED",
@@ -40,5 +40,15 @@
   "preparationCompletedAt": "2026-11-14T20:03:08.421181+00:00",
   "independentReadOnlyReview": "PASS_EXACT_SOURCE_IDS_LIMITS_TIMING_AND_CURRENT_ENTRY_CLAIMS",
   "independentReviewAt": "2026-11-14T20:03:41.174472+00:00",
-  "lateCredentialClosureMayPrecludeRecovery": true
+  "lateCredentialClosureMayPrecludeRecovery": true,
+  "credentialHorizon": "TR21 live-observed strictly beyond2026-11-14T21:00:00Z;single cache read consumed",
+  "attendanceThrough": "2026-11-14T21:10:00Z owner-confirmed",
+  "credentialCloseout": "TR21_CLOSED_INDEPENDENT_PROCESS_CONFIG_CUSTODY_EXECUTOR_REMOVAL_VERIFIED",
+  "currentActualClockPreflight": "PASS_PROPOSED_AUTHORITY_ONLY_NO_RESERVATION",
+  "currentRecheckAt": "2026-11-14T20:08:48.844211+00:00",
+  "standaloneTerminalPrepared": {
+    "windowId": 24463,
+    "tty": "/dev/ttys000",
+    "passwordPromptStarted": false
+  }
 }
