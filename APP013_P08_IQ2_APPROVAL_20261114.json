@@ -1,0 +1,11 @@
+{
+  "decision": "APPROVE_IQ2_THREE_READS_SDK_EXCEPTION_AND_LOCAL_CLEANUP",
+  "operationId": "8a9f60c5-05f8-44ac-8973-0134f230f536",
+  "readinessSha256": "ae7ba01a8d86de1b5031c1577fc008b4061124a04eca0a6231c33fcadc17096f",
+  "proposalCommit": "6ef87e1",
+  "ownerMessage": "Approve IQ2 read-only checks and cleanup",
+  "recordedAt": "2026-11-14T22:02:08.740257+00:00",
+  "externalReadAuthorized": true,
+  "providerMutationsAuthorized": false,
+  "sdkException": "SDK_EXISTING_OWNER_REFRESH_CACHE_INTERNAL_RETRIES_NO_TOKEN_EXPORT"
+}
