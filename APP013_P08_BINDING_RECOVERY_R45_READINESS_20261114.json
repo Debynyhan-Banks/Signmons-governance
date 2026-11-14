@@ -1,0 +1,25 @@
+{
+  "verifiedAt": "2026-11-14T14:10:41.256143+00:00",
+  "sourceCommit": "12e69f607cefd02f66ae35d35b003b4eb8981fa1",
+  "scopeSha256": "5082da10429039c8eadc09b06149545239c961697851ab9087d356543d19bb65",
+  "actualRecoverySourceSdkConfigClock": "PASS_PROPOSED_AUTHORITY",
+  "fullNativeConstruction": "PASS_ACTUAL_CAPABILITY_EXACT_PUBLIC_IDS_AND_WINDOWS_SYNTHETIC_PRIVATE_BINDINGS",
+  "connectedCommittedSources": "PASS_CC1_INCLUDED",
+  "credentialHorizon": "TR17 beyond09:55 Eastern November14; consumed single cache read",
+  "attendanceThrough": "10:00 Eastern November14 owner-confirmed",
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "freshBindingsAccessPayment": "UNKNOWN",
+  "actualEndpointPin": "UNKNOWN_UNTIL_HIDDEN_INPUT",
+  "proposedRootsAbsent": true,
+  "nativeCleanupReserveSeconds": 660,
+  "browserOpenerSourceBound": true,
+  "lateQualificationMayPrecludeNativeLaunch": true,
+  "localImplementationEvidence": "cc1-local-verification.json",
+  "compiledRecoveryPaymentContract": {
+    "status": "PASS_ALL_ACTUAL_PLAN_COMPILED_HASHES",
+    "filesVerified": 2,
+    "checkedAt": "2026-11-14T14:13:36.823295+00:00"
+  },
+  "independentReadOnlyReview": "NO_BLOCKING_FINDING"
+}
