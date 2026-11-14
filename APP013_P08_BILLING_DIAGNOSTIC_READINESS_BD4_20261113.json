@@ -1,0 +1,53 @@
+{
+  "verifiedAt": "2026-11-14T01:17:50.393500+00:00",
+  "sourceCommit": "03655cec6829c72841379fd14f91f42bb143e8b4",
+  "scopeSha256": "807dcf73d93edb296f8f5f3ba67cb1d2e6fe9b8d201be20eba780178dfc77939",
+  "actualCapabilityAndPrepare": "PASS_PROPOSED_AUTHORITY",
+  "commands": [
+    {
+      "id": "owner",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "auth",
+        "list",
+        "--filter=status:ACTIVE",
+        "--format=json(account,status)"
+      ]
+    },
+    {
+      "id": "project",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "projects",
+        "describe",
+        "signmons",
+        "--format=json(projectId,projectNumber,lifecycleState)"
+      ]
+    },
+    {
+      "id": "billing_project",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "billing",
+        "projects",
+        "describe",
+        "signmons",
+        "--format=json(billingAccountName,billingEnabled,projectId)"
+      ]
+    }
+  ],
+  "billingChildEnvironment": {
+    "CLOUDSDK_CORE_HTTP_TIMEOUT": "10"
+  },
+  "outerSeconds": 30,
+  "cleanupReserveSeconds": 2,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "freshRootAbsent": true,
+  "unknown": [
+    "cause of billing timeout",
+    "current billing read outcome"
+  ],
+  "credentialHorizon": "CV5 beyond8:35pm November13",
+  "attendance": "through9:00pm November13"
+}

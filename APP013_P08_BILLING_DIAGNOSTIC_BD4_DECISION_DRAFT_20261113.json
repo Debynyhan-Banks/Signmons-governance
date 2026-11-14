@@ -1,0 +1,9 @@
+{
+  "status": "PROPOSED_NOT_APPROVED",
+  "decisionForReview": {
+    "owner": "Debynyhan Banks",
+    "decision": "APPROVE_EXACT_P08_BILLING_DIAGNOSTIC_SOCKET_TIMEOUT_10S",
+    "externalReadAuthorized": true,
+    "scopeSha256": "807dcf73d93edb296f8f5f3ba67cb1d2e6fe9b8d201be20eba780178dfc77939"
+  }
+}
