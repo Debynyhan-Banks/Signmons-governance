@@ -1,0 +1,26 @@
+{
+  "verifiedAt": "2026-11-14T19:19:29.941533+00:00",
+  "sourceCommit": "cd9ab2e725f6798e790daac620fe8ad1f09bc359",
+  "scopeSha256": "a94e42c428ef33b4cc1b14b3f1c38eeb9c4f6feb40be3c41d34244e7497d3fb5",
+  "nativeBaseScopeSha256": "b98d5ef679322d49d3cbcf0fc900e5b14c7c012e8cd2401ded305fba9e9e7114",
+  "qualificationApprovalCommit": "67e105d910de1fc2021b9e81f196bbbc60b61512",
+  "currentQualification": "CURRENT_EVIDENCE_OBSERVED_ALL_NINE_CHECKS_NO_FAILURE_NO_RESIDUALS",
+  "qualificationMatchesExactNativeReview": true,
+  "currentCommittedSourcesManifestsCompiledDynamicPaymentPins": "PASS",
+  "credentialCoverage": "TR20_OBSERVED_STRICTLY_BEYOND_1955Z",
+  "ownerAttendanceThrough": "2026-11-14T20:05:00Z",
+  "windowAndLimitsMatchApprovedPreparedCard": true,
+  "independentSafeReceiptReview": "PASS",
+  "guardedBrowserOpening": "SEPARATE_EXACT_NATIVE_APPROVAL_REQUIRED_AT_ACTUAL_ATTENDED_ONLY",
+  "terminalWindowId": 24395,
+  "terminalForeground": "REQUIRED_BEFORE_AND_AFTER_EXACT_RELEASE_AND_EACH_HIDDEN_PROMPT",
+  "additionalProviderOrCredentialCalls": 0,
+  "nativeAuthorized": false,
+  "authenticationPaymentAndNativeCleanup": "UNKNOWN_UNTIL_APPROVED_EXECUTION",
+  "responsibleOwners": {
+    "sourceTimeSupervisionIndependentCleanup": "Implementer",
+    "externalDecisionHiddenInputManualCheckoutAcceptance": "Owner/custodian"
+  },
+  "nextObservableResult": "AUTHENTICATION_AND_ATTENDED_THEN_SAME_JOB_PAYMENT_STATUS_OR_SAFE_STOP_AND_INDEPENDENT_CLEANUP",
+  "scopeDeviation": "No scope deviation"
+}

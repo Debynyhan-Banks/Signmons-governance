@@ -1,0 +1,75 @@
+{
+  "decisionForReview": {
+    "decision": "APPROVE_EXACT_P08_CONNECTED_PAYMENT",
+    "externalActionAuthorized": true,
+    "operationId": "bea4fe6b-2202-48ed-9df1-84a17d23fcd8",
+    "owner": "Debynyhan Banks",
+    "scopeSha256": "a94e42c428ef33b4cc1b14b3f1c38eeb9c4f6feb40be3c41d34244e7497d3fb5",
+    "sourceManifestSha256": "2e0ec73ff321ab156a77b43941d73a4de5f587e34458d622bf220ad24285380a"
+  },
+  "limits": {
+    "child": 6,
+    "childRequests": 200,
+    "cli": 192,
+    "https": 100,
+    "sql": 60
+  },
+  "operationId": "bea4fe6b-2202-48ed-9df1-84a17d23fcd8",
+  "paymentWorkEnd": "2026-11-14T19:41:00Z",
+  "qualification": {
+    "checks": {
+      "billing": true,
+      "database": true,
+      "effectiveAccess": true,
+      "firebase": true,
+      "job": true,
+      "owner": true,
+      "privateInventory": true,
+      "retiredRuntime": true,
+      "services": true
+    },
+    "operationId": "bea4fe6b-2202-48ed-9df1-84a17d23fcd8",
+    "qualifiedUntil": "2026-11-14T19:53:00Z",
+    "roleAclSha256": "649d517af81c235f8045894d73207b7d892b3607ee165418151af6b9975c1560",
+    "runtimeEnvironmentSha256": "e5fb2160ac529c02ef73d8d288bb25b2fe1d64209386478c21d37daf97a4d02d",
+    "scopeSha256": "b98d5ef679322d49d3cbcf0fc900e5b14c7c012e8cd2401ded305fba9e9e7114",
+    "status": "QUALIFIED_FOR_NATIVE_ENTRY"
+  },
+  "sourceCommit": "cd9ab2e725f6798e790daac620fe8ad1f09bc359",
+  "stage": "native",
+  "summary": {
+    "actions": [
+      "Temporarily enable exact runtime identity, numeric secret versions and resource bindings",
+      "Activate bounded database role and candidate tag; normal traffic percentages unchanged",
+      "Create/delete owned restricted key; enable/close exact test identities",
+      "Enable existing Sandbox webhook; one same-job Sandbox Checkout and authentic event check",
+      "Mandatory independent cleanup and private purge"
+    ],
+    "amountTotalCents": 9900,
+    "candidate": "signmons-calldesk-staging-p07key7e45dc512e17",
+    "cost": {
+      "allowanceUsd": 0,
+      "existingLiabilitiesUnchanged": true,
+      "hardBillingCap": false
+    },
+    "currency": "usd",
+    "limits": {
+      "child": 6,
+      "childRequests": 200,
+      "cli": 192,
+      "https": 100,
+      "sql": 60
+    },
+    "paymentWorkEnd": "2026-11-14T19:41:00Z",
+    "realChargesRefundsBookingCustomerMessagesAuthorized": false,
+    "sandboxOnly": true,
+    "stripeVersion": "2"
+  },
+  "window": {
+    "cleanupEnd": "2026-11-14T19:53:00Z",
+    "cutoff": "2026-11-14T19:25:00Z",
+    "purgeEnd": "2026-11-14T19:55:00Z",
+    "start": "2026-11-14T19:00:00Z",
+    "workEnd": "2026-11-14T19:42:00Z"
+  }
+}
