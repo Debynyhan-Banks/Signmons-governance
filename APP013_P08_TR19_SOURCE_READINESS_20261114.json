@@ -1,0 +1,201 @@
+{
+  "status": "QUALIFICATION_ONLY_PREPARED_NOT_APPROVED",
+  "verifiedAt": "2026-11-14T18:24:28.693625+00:00",
+  "sourceCommit": "1dabb8f9195ee68b9150f6f4e32d0b951b049a4a",
+  "actualPreflight": {
+    "status": "PREFLIGHT_VERIFIED_NO_OPERATION_RESERVED",
+    "sourceCommit": "1dabb8f9195ee68b9150f6f4e32d0b951b049a4a",
+    "dependencyMapping": {
+      "p08-exact-role-provisioning-local-20261028/source/role_provisioner.py": {
+        "historical": "e1fbc15d95450da7662db684e2cfe6f063c8a60fd7c8243053e5431fc3f973f9",
+        "current": "e1fbc15d95450da7662db684e2cfe6f063c8a60fd7c8243053e5431fc3f973f9",
+        "changed": false
+      },
+      "p08-native-entry-local-20261101/source/authority.py": {
+        "historical": "763dd24f5dac70b3ec87d350ab2efc6d0fe110aae9f261708aba8c54e481e365",
+        "current": "ca62510e43a9ee95c7e6bb8b5a21dd827013ef87cd36c7678ae62247ad06f6e3",
+        "changed": true
+      },
+      "p08-restoration-local-20261028/source/restore.py": {
+        "historical": "a0bf4bc90cca0bd52935915d710ccb44e065dd3deed841a12ab49cb3ac4a1cb9",
+        "current": "a0bf4bc90cca0bd52935915d710ccb44e065dd3deed841a12ab49cb3ac4a1cb9",
+        "changed": false
+      },
+      "p08-role-contract-local-20261029/source/composed_qualification.py": {
+        "historical": "2c2f9603cb71957239816f4942549be8277c446cbcc5f2b7bae1f139fd552df4",
+        "current": "2c2f9603cb71957239816f4942549be8277c446cbcc5f2b7bae1f139fd552df4",
+        "changed": false
+      },
+      "p08-role-contract-local-20261029/source/qualification_launch.py": {
+        "historical": "76722d3265cda655b6b2433bc83d3bbcee06c12c6d0f66c07cad9fe2ae2e7e18",
+        "current": "76722d3265cda655b6b2433bc83d3bbcee06c12c6d0f66c07cad9fe2ae2e7e18",
+        "changed": false
+      }
+    },
+    "sdkFilesVerified": 51,
+    "credentialStoresRead": false,
+    "providerCalls": 0
+  },
+  "preflightSeconds": 0.416529,
+  "authority": "PROPOSED_ONLY_NO_OPERATION_RESERVED",
+  "preflightAuthorityMethod": "Actual renewal_preflight with proposed exact-decision bytes injected only at the governance read seam; all backend committed/source/configuration/SDK checks real. No executor, SDK command or cache read invoked.",
+  "sdkAdditionalFiles": {
+    "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/surface/auth/login.py": "c18aa067c11869f2ecb57427dfe50c4cf7ca27164d4e2d3cd219adc08c0cb999",
+    "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/command_lib/auth/auth_util.py": "f9991b16c3207c4765f3cac9bd4dfbccb743820e793f53b68bc14fe74cbf7418",
+    "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/core/config.py": "fc06f07045d0a8054355f904fa4aac12151a1d1e08c6c366620b405c4ee98f52",
+    "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/auth/util.py": "3aabd710e4e5733ddc935ee23746b20b62f0516aaf610c6cb811570abd4cb069",
+    "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/flow.py": "2969c14764c8f0ec8bc1b4862e086f557815f6efbdfb5a4552954ad5b3152de6",
+    "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/google_auth_credentials.py": "10bfbd2989207638461fde3544fb7619d7430980999e8b47e00c37c45441b413",
+    "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/command_lib/util/check_browser.py": "e0fcfe555c74736e1474a33a719eaf52060a8709431acb0ac402c54e4be50b28",
+    "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/third_party/google_auth_oauthlib/flow.py": "cc79b28b1453eeaa59146fc664c70a30b2d2809151d7ff4c86d02e2a1f6abd91",
+    "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/third_party/google_auth_oauthlib/helpers.py": "c89b0455952ffb4893da3828068fa58c0bd6cdeebe9edbe31fdd91e97a75a9b1"
+  },
+  "configurationSnapshotSha256": "528ceadadc8a5491e54ee82dbad0026eda881252564f96f2be242d70d1d2f111",
+  "configurationHashMethod": "sha256(repr(actual config_snapshot).encode()) under pinned runtime",
+  "commandArgv": [
+    "/opt/homebrew/bin/gcloud",
+    "auth",
+    "login",
+    "debynyhan@signmons.com",
+    "--force",
+    "--no-activate",
+    "--brief",
+    "--quiet",
+    "--verbosity=none"
+  ],
+  "sdkEnvironmentSha256": "b2edc5d581e1f337dc71f9a55a39846d586aa126fcc08740d85a794ee73f1a56",
+  "proposalSha256": "4173db8ca7e54e45332e980c4c5e2a8e4fc0cd23f8a2a42ebdb6dc8474bdf597",
+  "decisionFilename": "APP013_P08_TR19_DECISION_20261114.json",
+  "proposedDecisionSha256": "36673a56ab04940df4a4a79041a96fd048d47681cc6678dd5f9a6a2f814b0238",
+  "reservationRootAbsent": true,
+  "providerCalls": 0,
+  "credentialStoresRead": false,
+  "browserLaunched": false,
+  "ownerAttendance": "PENDING browser ready; reachable through14:20EasternNovember14",
+  "existingExecutorRecovery": "EXACT_TR18_EXECUTED_HASH_VERIFIED",
+  "preparedExecutorSha256": "2e735c276c0b2c6a3286d34d33d32edafb61b1983062f5f1c1e9e330fe882ddd",
+  "executorApprovalCommit": "PENDING_EXACT_TR19_APPROVAL",
+  "independentReview": "PASS_EXACT_RECOVERED_AND_PREPARED_HASHES_BINDING_ONLY_DIFF_SOURCE_COMMAND_SCOPES_WINDOWS_AND_CLOSE_BEFORE_CACHE_ORDER",
+  "documentationChecks": "FROZEN_BASELINE_CROSS_REPOSITORY_CONSISTENCY_ARCHITECTURE_WHITESPACE_PASS",
+  "unknown": [
+    "Owner exact approval and attendance through14:20",
+    "Owner browser identity/consent outcome",
+    "Credential validity beyond14:15Eastern",
+    "KQ2 historical failure cause",
+    "Effective provider access and connected payment state"
+  ],
+  "acceptance": "4/8 accepted;3A OPEN;R1 newly closed0/27",
+  "scopeDeviation": "No scope deviation",
+  "existingExecutorHashVerified": "9da97a366649e32cb98cc2c99e333f549ff2a4702957c515f283960f4a35fa04",
+  "preparedExecutorPath": "/private/tmp/signmons-tr19-owner-signin.py",
+  "executorBindingChanges": [
+    {
+      "before": "TR18",
+      "after": "TR19",
+      "count": 15
+    },
+    {
+      "before": "tr18",
+      "after": "tr19",
+      "count": 2
+    },
+    {
+      "before": "SOURCE='12e69f607cefd02f66ae35d35b003b4eb8981fa1'",
+      "after": "SOURCE='1dabb8f9195ee68b9150f6f4e32d0b951b049a4a'",
+      "count": 1
+    },
+    {
+      "before": "COMMIT='3130cac9ed8cd963f816dc3b71278eca232372f1'",
+      "after": "COMMIT='PENDING_EXACT_TR19_APPROVAL'",
+      "count": 1
+    },
+    {
+      "before": "2026-11-14T15:45:00Z",
+      "after": "2026-11-14T19:20:00Z",
+      "count": 1
+    }
+  ],
+  "executorSyntax": "PASS_AST_PARSE",
+  "executorRecoveryEvidence": "Prior TR18 receipt-verification.json pins the exact recovered executed bytes. Only enumerated substitutions applied.",
+  "executorPreparedAt": "2026-11-14T18:25:28.303912+00:00",
+  "actualExecutorPreflight": {
+    "status": "PREFLIGHT_VERIFIED_NO_OPERATION_RESERVED",
+    "verifiedAt": "2026-11-14T18:26:21.869634+00:00",
+    "elapsedSeconds": 0.319549,
+    "method": "Actual recovered/bound executor preflight; proposed governance bytes including unconfirmed candidate attendance supplied in memory only. Real backend source, SDK and configuration checks; no main/execute call.",
+    "credentialStoresRead": false,
+    "providerCalls": 0,
+    "operationReserved": false
+  },
+  "executorBindingOnlyDiff": "PASS exact old hash and enumerated substitutions",
+  "approvalAndAttendance": "PENDING_EXACT_OWNER_DECISION",
+  "independentReviewedAt": "2026-11-14T18:27:27.510155+00:00",
+  "checklist": {
+    "exactSourceAndScopePrepared": true,
+    "recoveredExecutorHashVerified": true,
+    "bindingOnlyReuseVerified": true,
+    "actualRenewalAndExecutorPreflightsPassed": true,
+    "independentReviewPassed": true,
+    "documentationChecksPassed": true,
+    "exactOwnerDecision": false,
+    "ownerBrowserReadyAndReachableThrough1420": false,
+    "oneSigninAndConditionalCacheValidation": false,
+    "independentCloseoutAndExecutorRemoval": false
+  },
+  "prerequisites": [
+    {
+      "sourceCommit": "1dabb8f9195ee68b9150f6f4e32d0b951b049a4a",
+      "evidenceTimestamp": "2026-11-14T18:27:27.510155+00:00",
+      "responsibleOwner": "Implementer",
+      "item": "Actual CLI/cache output contracts, parsing and safe error classification",
+      "verification": "LOCAL_SOURCE_VERIFIED",
+      "source": "Exact recovered TR18 executor and unchanged packet.renewal_preflight/access_check.read_cached_token",
+      "details": "OS_DEVNULL for OAuth output; conditional cache parser uses existing exact schema/owner/format/horizon contract and safe enum allowlist. No raw expiry/token persists. ET1 full tests include unchanged renewal preflight; not newly rerun."
+    },
+    {
+      "sourceCommit": "1dabb8f9195ee68b9150f6f4e32d0b951b049a4a",
+      "evidenceTimestamp": "2026-11-14T18:27:27.510155+00:00",
+      "responsibleOwner": "Implementer",
+      "item": "Source/configuration/environment/resource identity and intended client",
+      "verification": "LOCAL_PREFLIGHT_PASS_LIVE_UNKNOWN",
+      "source": "Current committed evidence HEAD, actual renewal_tree_check/renewal_preflight/config_snapshot/sdk_environment and nine sign-in SDK files",
+      "details": "Actual command requests seven reviewed standard scopes. Current graph/SDK/runtime and config passed. Owner browser identity/consent, requested future horizon and effective provider access remain UNKNOWN."
+    },
+    {
+      "sourceCommit": "1dabb8f9195ee68b9150f6f4e32d0b951b049a4a",
+      "evidenceTimestamp": "2026-11-14T18:27:27.510155+00:00",
+      "responsibleOwner": "Implementer",
+      "item": "Deadline/no retry/concurrency/interruption/recovery",
+      "verification": "REUSED_REVIEWED_EXECUTOR_PASS",
+      "source": "Exact TR18 executed hash; only enumerated TR19 bindings changed",
+      "details": "Exclusive receipt directory and nonblocking lock; deferred-signal child registration; 300second monotonic plus wall-clock bounds; owned TERM/KILL/reap; no retry. Closure, leader/group absence and unchangedconfig gate one8second cache check."
+    },
+    {
+      "sourceCommit": "1dabb8f9195ee68b9150f6f4e32d0b951b049a4a",
+      "evidenceTimestamp": "2026-11-14T18:27:27.510155+00:00",
+      "responsibleOwner": "Implementer and credential custodian",
+      "item": "Retention, independent closeout and remaining obligations",
+      "verification": "PREPARED_EXECUTION_PENDING",
+      "source": "Executor result/receipt custody and reviewed SDK cache exception",
+      "details": "Retain safe0600 receipts only; discard token; remove owned executor after closure. SDK/browser credentials persist by explicit requested exception. No processcloseout or freshcredential success claimed beforeexecution."
+    },
+    {
+      "sourceCommit": "1dabb8f9195ee68b9150f6f4e32d0b951b049a4a",
+      "evidenceTimestamp": "2026-11-14T18:27:27.510155+00:00",
+      "responsibleOwner": "Owner/credential custodian",
+      "item": "Approval, exclusions and next observable result",
+      "verification": "EXACT_OWNER_DECISION_PENDING",
+      "source": "TR19 exact proposal and non-authoritative draft",
+      "details": "No operation reserved. Remaining oneownerbrowser sign-in, conditionalfuturecoverage proof, independentclosure. No providerresource probe, keyretry, SQL or payment. Nextresult VALID_THROUGH_CUTOFF or safeunqualifiedstop."
+    }
+  ],
+  "temporaryRecoveryCopiesRemoved": true,
+  "preparedExecutorRetainedPendingDecision": true,
+  "newGovernanceTests": {
+    "passed": 25,
+    "failed": 0,
+    "log": "/private/tmp/tr19-preparation-governance-tests.log",
+    "sha256": "a5585117f5a86a2b16f56e0a68cea5c9ccc07c174fb3566c141e817f010a7fe2"
+  },
+  "preparationCompletedAt": "2026-11-14T18:27:54.990501+00:00"
+}
