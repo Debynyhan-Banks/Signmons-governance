@@ -1,0 +1,14 @@
+{
+  "status": "KQ2_PRELAUNCH_MATCH_PASS",
+  "checkedAt": "2026-11-14T18:13:58.608886+00:00",
+  "approvalCommit": "88089a8c65b6f0269a844ef9ade964b99799cd2d",
+  "scopeSha256": "9bf8b781603709a3bc2fc5e3a31e42a1599a5c62839e23f65b8111eab65933e7",
+  "sourceCommit": "4173ec0b3b8bf3dc81d607275a427101615a4c35",
+  "configurationMatchesReadiness": true,
+  "operationRootAbsent": true,
+  "commandMatchesReadiness": true,
+  "withinApprovedWindow": true,
+  "credentialReads": 0,
+  "providerCalls": 0,
+  "localComparisonNote": "Initial local comparison helper replaced the mode position instead of the approval placeholder and failed before launch. Corrected exact-placeholder substitution; actual approved command/readiness unchanged, no root or external action before successful comparison."
+}

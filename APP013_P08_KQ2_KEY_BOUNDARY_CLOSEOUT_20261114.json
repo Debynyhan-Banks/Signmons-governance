@@ -1,0 +1,66 @@
+{
+  "status": "KQ2_CONSUMED_CLOSED_BEFORE_KEY_API_CALLS",
+  "closedAt": "2026-11-14T18:16:30.230612+00:00",
+  "approvalCommit": "88089a8c65b6f0269a844ef9ade964b99799cd2d",
+  "sourceCommit": "4173ec0b3b8bf3dc81d607275a427101615a4c35",
+  "operationId": "82ab0998-1d08-4405-91d7-3dcac62c6e67",
+  "scopeSha256": "9bf8b781603709a3bc2fc5e3a31e42a1599a5c62839e23f65b8111eab65933e7",
+  "resultEvidence": "evidence/APP-013/p08-connected-packet-20261110/kq2-result.json",
+  "mainResultEvidence": "evidence/APP-013/p08-connected-packet-20261110/kq2-work-result.json",
+  "mainFailure": "KQ1_OPERATION_UNCONFIRMED",
+  "boundaryReached": false,
+  "keyState": "NOT_CREATED",
+  "counts": {
+    "cache": 1,
+    "cleanupHttps": 0,
+    "cli": 2,
+    "https": 0,
+    "mainHttps": 0
+  },
+  "authenticationObserved": false,
+  "paymentObserved": false,
+  "privateInputsAbsent": true,
+  "providerContainmentConfirmed": true,
+  "processCleanupVerified": true,
+  "independentProcessSnapshot": {
+    "operationProcessCount": 0,
+    "operationProcessesAbsent": true,
+    "matching": "Exact operator argv and approval commit; no raw process list retained"
+  },
+  "rootIdentityAnd0700_0600CustodyVerified": true,
+  "configurationUnchanged": true,
+  "residuals": [],
+  "onTime": true,
+  "automaticRetryAllowed": false,
+  "currentCredentialFailureReason": "UNKNOWN; one cache allowance was reserved, not proof the cache read completed. No token-expiry or horizon-only diagnosis is possible from retained receipts.",
+  "keyVersionCorrectionLiveQualification": "NOT_REACHED",
+  "nextResponsibleRole": "Credential custodian: separately prepared owner credential renewal and fresh coverage; implementer: exact new qualification only after readiness and owner approval. No KQ2 replay.",
+  "acceptance": "4/8 accepted; 3A OPEN; R1 newly closed 0/27",
+  "scopeDeviation": "No scope deviation",
+  "failureBoundaryReview": {
+    "status": "COMPLETE_READ_ONLY_SOURCE_AND_SAFE_RECEIPTS",
+    "reviewedAt": "2026-11-14T18:17:42.165255+00:00",
+    "established": [
+      "Both fixed owner/project responses passed validation before cache reservation",
+      "Cache counter1 is a reservation; key transport requests and matches remain empty",
+      "No key-service request, creation, ET1 metadata refresh, keyString, account authentication or payment was reached"
+    ],
+    "possibleRegion": "Cache reservation/read through post-cache credential/configuration checks, Ports construction and first service-dispatch prerequisites before HTTPS reservation.",
+    "safeErrorLimitation": "Existing _code excludes acl.Stop; timeout/cache state/schema/token format/horizon errors can collapse to KQ1_OPERATION_UNCONFIRMED. Raw exceptions were not retained.",
+    "notCreatedMeaning": "This attempt made no key mutation; this is not a new provider-absence readback. SDK internal requests remain outside the explicit HTTPS counter under the approved exception.",
+    "nextResponsibleDecision": "Credential custodian re-establishes owner credential coverage through the existing separately approved sign-in procedure for a fresh window; renewal will not prove historical cause or guarantee next qualification."
+  },
+  "documentationVerification": {
+    "checkedAt": "2026-11-14T18:18:12.542427+00:00",
+    "frozenBaseline": "PASS",
+    "crossRepositoryConsistency": "PASS",
+    "backendGovernanceBaseline": "PASS",
+    "architecture": "PASS",
+    "whitespace": "PASS",
+    "governanceTestsPassed": 25,
+    "governanceTestsFailed": 0,
+    "governanceLogSha256": "1ed68bff4f91b04d7e50ae1c841770273f0a027fcec9744fdda3b8af51ec80bc",
+    "runtimeTestsRerun": false,
+    "reason": "Closeout evidence and documentation only; runtime unchanged."
+  }
+}
