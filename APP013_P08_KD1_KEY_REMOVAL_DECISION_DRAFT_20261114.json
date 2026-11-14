@@ -1,0 +1,9 @@
+{
+  "status": "PROPOSED_NOT_APPROVED",
+  "decisionForReview": {
+    "owner": "Debynyhan Banks",
+    "decision": "APPROVE_KD1_EXACT_KEY_ADOPTION_DELETE_CACHE_SDK_EXCEPTION_AND_CLEANUP",
+    "scopeSha256": "a3beac7062ef0f9c2003762a1556a7b65058e1b4e4aae4413982247f74f04b32",
+    "externalActionAuthorized": true
+  }
+}

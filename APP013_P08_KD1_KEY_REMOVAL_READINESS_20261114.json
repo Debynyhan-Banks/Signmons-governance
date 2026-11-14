@@ -1,0 +1,16 @@
+{
+  "verifiedAt": "2026-11-14T12:44:14.165581+00:00",
+  "sourceCommit": "4f8140b55c650db57844f1effe924f5bb4da5a89",
+  "scopeSha256": "a3beac7062ef0f9c2003762a1556a7b65058e1b4e4aae4413982247f74f04b32",
+  "actualCommittedSourceSdkRuntimeConfigurationAndEvidence": "PASS",
+  "localTests": 15,
+  "independentReview": "PASS_NO_BLOCKER_FOUND",
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "mutationCalls": 0,
+  "currentKeyState": "UNKNOWN_SINCE_KS1_OBSERVATION",
+  "adoptionDeletionApproval": "PENDING",
+  "credentialHorizon": "TR15 beyond08:10 Eastern November14",
+  "attendanceThrough": "08:15 Eastern November14",
+  "fullPaymentReady": false
+}
