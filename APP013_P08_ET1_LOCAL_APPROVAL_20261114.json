@@ -1,0 +1,10 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_ET1_LOCAL_OWNED_KEY_VERSION_CORRECTION_AND_TESTS",
+  "sourceBefore": "53925c43f95c2a713341dafdbba0be8d44c65668",
+  "proposalSha256": "3305612d4aca2cd7c5af481103d5876cdced1dba2e86f98adb652649cbea5507",
+  "proposalCommit": "d028d8ad7a5b2a0aeb24e7c57c6e96373e89ee4b",
+  "externalActionAuthorized": false,
+  "approvedInChat": true,
+  "notedAt": "2026-11-14T17:49:27.284404+00:00"
+}
