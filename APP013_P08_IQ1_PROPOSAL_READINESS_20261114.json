@@ -1,0 +1,94 @@
+{
+  "status": "LOCAL_PROPOSAL_READINESS_ONLY_NOT_IMPLEMENTED",
+  "recordedAt": "2026-11-14T21:14:17.074287+00:00",
+  "sourceCommit": "6ea74f09195dce87a86fea0fad7f5f48da1a29b3",
+  "sourceFiles": {
+    "evidence/APP-013/p08-native-entry-local-20261101/source/entry.py": "7da6a40e455c1c318d91bec9a3947deb4b16f5139f54ad4ef8bea1150598b981",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/native_io.py": "b05001e4fcf462c1727ae58b649fe35b110444da3c43941622213d456004119c",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/private_inventory.py": "97d2f27b6c4047420ff97f3a08e42bcc718d2577adecea3aaebaf98a99e446d0",
+    "evidence/APP-013/p08-restoration-local-20261028/source/restore.py": "a0bf4bc90cca0bd52935915d710ccb44e065dd3deed841a12ab49cb3ac4a1cb9",
+    "evidence/APP-013/p08-https-output-category-local-20261029/source/qualification_launch.py": "d86a6c51a25d9caf10bf6f096249f79b7ae730e19424a8b36bce5c186f2b4dda",
+    "evidence/APP-013/p08-connected-packet-20261110/kq1_key_boundary.py": "d178de94e373be00517f252de0cfde6e7bd5d07309100242037a528731428c71"
+  },
+  "commandsForProposedProcedure": {
+    "owner": [
+      "/opt/homebrew/bin/gcloud",
+      "auth",
+      "list",
+      "--filter=status:ACTIVE",
+      "--format=json(account,status)"
+    ],
+    "project": [
+      "/opt/homebrew/bin/gcloud",
+      "projects",
+      "describe",
+      "signmons",
+      "--format=json(projectId,projectNumber,lifecycleState)"
+    ],
+    "identity": [
+      "/opt/homebrew/bin/gcloud",
+      "iam",
+      "service-accounts",
+      "describe",
+      "signmons-calldesk-p07-runtime@signmons.iam.gserviceaccount.com",
+      "--project",
+      "signmons",
+      "--format=json(email,disabled,uniqueId)"
+    ],
+    "enable": [
+      "/opt/homebrew/bin/gcloud",
+      "iam",
+      "service-accounts",
+      "enable",
+      "signmons-calldesk-p07-runtime@signmons.iam.gserviceaccount.com",
+      "--project=signmons",
+      "--quiet",
+      "--format=json"
+    ],
+    "disable": [
+      "/opt/homebrew/bin/gcloud",
+      "iam",
+      "service-accounts",
+      "disable",
+      "signmons-calldesk-p07-runtime@signmons.iam.gserviceaccount.com",
+      "--project=signmons",
+      "--quiet",
+      "--format=json"
+    ],
+    "classifiedReadback": [
+      "/opt/homebrew/bin/gcloud",
+      "iam",
+      "service-accounts",
+      "describe",
+      "signmons-calldesk-p07-runtime@signmons.iam.gserviceaccount.com",
+      "--project=signmons",
+      "--format=json(email,disabled)"
+    ]
+  },
+  "commandsExecuted": false,
+  "sourceValidation": "PASS_CURRENT_GRAPH",
+  "proposedLimits": {
+    "cli": 11,
+    "enable": 1,
+    "disable": 1,
+    "explicitCredentialCacheReads": 0,
+    "directHttps": 0,
+    "sql": 0,
+    "payment": 0
+  },
+  "underlyingSdkRequests": "UNKNOWN_INTERNAL_SDK_AUTHENTICATION_RETRIES_REQUIRE_SEPARATE_LIVE_EXCEPTION",
+  "liveIdentityUidAndState": "UNKNOWN",
+  "liveAuthority": false,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "scopeDeviation": "No scope deviation implemented",
+  "descriptorDerivation": "ACTUAL_RUNTIMEADAPTER_AND_NATIVEIO_METHODS_WITH_IN_MEMORY_SYNTHETIC_CLI;OWNER_PROJECT_METADATA_FROM_EXISTING_CONTRACT",
+  "proposalSha256": "8afa86ec5053acd2a49217f11cc6d9b2d503187b7e9f998820084a0b86f41d00",
+  "documentationChecks": "PASS_FROZEN_BASELINE_CROSS_REPOSITORY_CONSISTENCY_ARCHITECTURE_WHITESPACE_AND_25_GOVERNANCE_TESTS",
+  "newProcedureTests": "NOT_IMPLEMENTED_NOT_RUN",
+  "remainingBeforeLiveApproval": [
+    "Owner local implementation decision",
+    "Six-item implementation and actual-boundary local proof checklist",
+    "Exact committed live scope/authority/current credential and resource readiness"
+  ]
+}
