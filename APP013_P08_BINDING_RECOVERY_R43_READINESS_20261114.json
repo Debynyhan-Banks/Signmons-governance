@@ -1,0 +1,15 @@
+{
+  "verifiedAt": "2026-11-14T11:39:54.100063+00:00",
+  "sourceCommit": "80923007f149bcc6c509a22e2c83036a1959be60",
+  "scopeSha256": "978395902cd5c6183614ea31e6629ffcda9fb38ec21a46ae47fc64f414085c6c",
+  "actualRecoverySourceSdkConfigClock": "PASS_PROPOSED_AUTHORITY",
+  "fullNativeConstruction": "PASS_ACTUAL_CAPABILITY_SYNTHETIC_BINDINGS",
+  "connectedCommittedSources": "PASS_EP1_INCLUDED",
+  "credentialHorizon": "TR14 beyond07:25 Eastern November14",
+  "attendanceThrough": "07:45 Eastern November14",
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "freshBindingsAccessPayment": "UNKNOWN",
+  "actualEndpointPin": "UNKNOWN_UNTIL_HIDDEN_INPUT",
+  "proposedRootsAbsent": true
+}
