@@ -1,0 +1,8 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_LR1_LOOKUP_READ_SDK_EXCEPTION_AND_CLEANUP",
+  "operationId": "99491ae3-9898-4e87-8ca8-9671da346c22",
+  "sourceCommit": "ce282d1e4e9f76636bb189fa22287f6ba3a6973e",
+  "scopeSha256": "b3c2e8d78b38e48c0e904c8a3d7d2a56a736a49d2db3844e7d466f0657fba594",
+  "externalReadAuthorized": true
+}
