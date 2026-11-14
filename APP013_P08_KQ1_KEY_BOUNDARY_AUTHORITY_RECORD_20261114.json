@@ -1,0 +1,14 @@
+{
+  "status": "OWNER_APPROVED_NOT_YET_LAUNCHED",
+  "owner": "Debynyhan Banks",
+  "decision": "Approve KQ1 live qualification and cleanup; available through 1:00 p.m.",
+  "proposalCommit": "444da3211f5c84068a06a8e53a37147de98c1b4a",
+  "scopeSha256": "b468db73640603e85bf1d97ad782cb4b9292643ec1b111bb917eccd9003582d1",
+  "recordedAt": "2026-11-14T17:38:12.020236+00:00",
+  "availabilityThrough": "2026-11-14T18:00:00Z",
+  "sourceConfigurationWindowRootAndCommandPins": "PASS",
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "independentCleanupAuthorized": true,
+  "spendingAllowanceUsd": 0
+}
