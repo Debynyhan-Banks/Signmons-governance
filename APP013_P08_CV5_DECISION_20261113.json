@@ -1,0 +1,10 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_CV5_CACHE_VALIDITY_READ_ONCE",
+  "operationId": "b9c02123-e94f-4c59-b7ce-83cda20e93e6",
+  "sourceCommit": "46057317072c21e5a4158c12372ee0e8eda8dc09",
+  "scopeSha256": "459ba708438d2088d0170ada2968bc8d3dae2518ec06dceaf677150e2a3913a3",
+  "credentialReadAuthorized": true,
+  "approvedText": "I approve CV5 diagnostic read and cleanup before 8:00 p.m. Eastern tonight",
+  "date": "2026-11-13"
+}
