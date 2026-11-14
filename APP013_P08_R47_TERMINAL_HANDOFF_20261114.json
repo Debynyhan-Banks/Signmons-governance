@@ -1,0 +1,9 @@
+{
+  "windowId": 24391,
+  "tty": "/dev/ttys000",
+  "launchedAt": "2026-11-14T19:12:55.390626+00:00",
+  "stage": "RECOVERY",
+  "approvalCommit": "e3868c5dc8c48b429a0654ca9499ae862dab0830",
+  "sourceCommit": "cd9ab2e725f6798e790daac620fe8ad1f09bc359",
+  "privateTerminalContentsRead": false
+}

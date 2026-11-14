@@ -1,0 +1,24 @@
+{
+  "observedAt": "2026-11-14T19:15:23.213843+00:00",
+  "approvalCommit": "e3868c5dc8c48b429a0654ca9499ae862dab0830",
+  "recovery": {
+    "candidate": null,
+    "execution": "EXTERNAL_READ_ONLY",
+    "executionReady": false,
+    "failure": null,
+    "liveObserved": true,
+    "purgeEnd": "2026-11-14T19:55:00Z",
+    "residuals": [],
+    "status": "HANDOFF_RETAINED"
+  },
+  "resourceCloseout": {
+    "residuals": [],
+    "verified": true
+  },
+  "reservations": {
+    "cli": 2,
+    "sql": 3
+  },
+  "privateBindings": "GUARDED_HANDOFF_RETAINED_UNTIL_ORIGINAL_PURGE",
+  "reviewReady": true
+}

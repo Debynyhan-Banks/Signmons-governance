@@ -1,0 +1,25 @@
+{
+  "verifiedAt": "2026-11-14T19:15:23.213843+00:00",
+  "sourceCommit": "cd9ab2e725f6798e790daac620fe8ad1f09bc359",
+  "scopeSha256": "5b0d53742b8221ed8f6f3cc60843695c2cda81095ceb59071c177fef5e61eff4",
+  "cleanupScopeSha256": "3781b7b6f001b4120b16d61e5a893691d4d8db99b69563069f2f5167562305aa",
+  "actualPacketAndQualificationCapability": "PASS_THROUGH_REAL_CONNECTED_LAUNCHER_PROPOSED_APPROVAL_CLOCK_ONLY",
+  "clockWithinReviewedWindow": true,
+  "endpointHashMatched": true,
+  "recoveryAndIndependentDatabaseCloseout": "LIVE_OBSERVED_NO_FAILURE_OR_RESIDUAL",
+  "credentialCoverage": "TR20_OBSERVED_BEYOND_1955Z_CONSUMED_CACHE_READ",
+  "ownerAttendanceThrough": "2026-11-14T20:05:00Z",
+  "sourceManifestSdkDynamicConfiguration": "UNCHANGED_FROM_R47_ACTUAL_SOURCE_CHECK_AND_LAUNCHER_PREPARE",
+  "standaloneTerminal": {
+    "windowId": 24395,
+    "tty": "/dev/ttys000",
+    "foregroundBeforeAndAfterExactApproval": "REQUIRED_OPERATOR_ACTION_PENDING_APPROVAL"
+  },
+  "qualificationProviderCalls": 0,
+  "qualificationAuthorized": false,
+  "nativePaymentAuthorized": false,
+  "currentEffectiveAccessAndPayment": "UNKNOWN",
+  "nextObservableResult": "CURRENT_EVIDENCE_OBSERVED_OR_SAFE_FAILURE_WITH_INDEPENDENT_CLOSEOUT",
+  "scopeDeviation": "No scope deviation",
+  "independentSafeRecoveryReceiptReview": "PASS_HANDOFF_AND_RESOURCE_CLOSEOUT_CUSTODY_NO_BLOCKER;counts/source checked separately by root and actual capabilities"
+}
