@@ -1,0 +1,13 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_AC1_LOCAL_CORRECTION_AND_TESTS",
+  "response": "Approve AC1 local correction and tests",
+  "proposalCommit": "a0f3048820b1de30a3c2c093aea93e7837eeae1a",
+  "proposalSha256": "de085179b384370295e7fb0dec33ef7f7d674ac32d62122f129bbde49c24b86c",
+  "sourceBefore": "ae7f2b15a948adb9f10d835180e1919291382eeb",
+  "localImplementationAuthorized": true,
+  "externalActionAuthorized": false,
+  "credentialReadsAuthorized": false,
+  "recordedAt": "2026-11-14T19:36:21.297333+00:00",
+  "scope": "Two existing boundaries and finite tests/manifests in exact AC1 proposal;preserve immutable R47 evidence and unknown containment"
+}
