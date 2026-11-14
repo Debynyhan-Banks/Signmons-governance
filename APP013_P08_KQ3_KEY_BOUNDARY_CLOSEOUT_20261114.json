@@ -1,0 +1,100 @@
+{
+  "status": "KQ3_KEY_BOUNDARY_LIVE_QUALIFIED_AND_CLOSED",
+  "recordedAt": "2026-11-14T18:42:49.535717+00:00",
+  "approvalCommit": "8f7fbd932a7c239722bde1e1357c3a1e9cdf7521",
+  "sourceCommit": "d2acad66cf6b9b7006b4b5867c92e9b3b194375b",
+  "operationId": "8be45e96-ac92-4b7a-86fe-0739366f619c",
+  "scopeSha256": "0b2f616b40acdb9a30ccbfd72a38839d0439e258598dc9cdee1f01fae5eeda26",
+  "resultEvidence": "evidence/APP-013/p08-connected-packet-20261110/kq3-result.json",
+  "resultSha256": "3493ffa6424733e670792c34be3419600a5c63397d8aa4f757396206b6691b26",
+  "mainResultEvidence": "evidence/APP-013/p08-connected-packet-20261110/kq3-work-result.json",
+  "mainResultSha256": "36209dfabcb5397ef74e06a97812fe7d96aced8021f2b7d023252b2f37eb0404",
+  "boundaryReached": true,
+  "mainFailure": null,
+  "keyState": "CONTROL_PLANE_DELETED",
+  "counts": {
+    "cache": 2,
+    "cleanupHttps": 4,
+    "cli": 4,
+    "https": 11,
+    "mainHttps": 7
+  },
+  "requests": {
+    "absence": 1,
+    "authenticate": 1,
+    "cleanupRead": 1,
+    "create": 1,
+    "createPoll": 1,
+    "delete": 1,
+    "deletePoll": 1,
+    "finalRead": 1,
+    "keyString": 1,
+    "postcreate": 1,
+    "service": 1
+  },
+  "matchesAgainstOriginalCreation": {
+    "authenticate": {
+      "active": true,
+      "etag": false,
+      "uid": true
+    },
+    "postcreate": {
+      "active": true,
+      "etag": false,
+      "uid": true
+    }
+  },
+  "authenticationObserved": false,
+  "paymentObserved": false,
+  "privateInputsAbsent": true,
+  "providerContainmentConfirmed": true,
+  "processCleanupVerified": true,
+  "independentProcessSnapshot": {
+    "operationProcessCount": 0,
+    "operationProcessesAbsent": true,
+    "matching": "Exact operator argv and approval commit; raw process list not retained"
+  },
+  "rootIdentityAnd0700_0600CustodyVerified": true,
+  "configurationUnchanged": true,
+  "independentSafeReceiptReview": "PASS source/approval/operation/root/receipt shapes/request counts and bounds",
+  "residuals": [],
+  "onTime": true,
+  "automaticRetryAllowed": false,
+  "demonstrated": [
+    "Actual restricted key creation and retained creation provenance",
+    "Same active owned UID through postcreate and authentication metadata with fresh etags different from creation",
+    "One keyString read through corrected native boundary and inert receipt sink",
+    "Independent sameUID currentetag conditional deletion with authoritative control-plane deletion readback",
+    "Private operation file purge and independent exact-operation process absence"
+  ],
+  "notDemonstrated": [
+    "Application authentication or actual IdentityToolkit client usability",
+    "Stripe payment, matching webhook, application payment gate or owner acceptance",
+    "Native full-workflow key_delete path; this qualification uses the reviewed KD cleanup path",
+    "Instant global revocation or cause of provider etag changes",
+    "KQ2 or R46 historical cause"
+  ],
+  "nextResponsibleRole": "Implementer prepares readiness for existing connected same-job Sandbox journey; owner separately authorizes its recovery/qualification/native/payment actions and accepts final section evidence. No further key-only diagnostic indicated by this receipt.",
+  "remainingSectionWork": [
+    "Fresh connected workflow identity/configuration/recovery and qualification",
+    "Existing application authentication then admitted-job Sandbox Checkout",
+    "Authentic matching signed event and application payment-gate/recovery evidence",
+    "Independent cleanup and owner acceptance"
+  ],
+  "credentialEvidence": "TR19 observed coverage beyond2026-11-14T19:15:00Z; attendance confirmed through19:20Z. This consumed KQ3 receipt grants no future external action.",
+  "acceptance": "1A/1B/2A/2B accepted,4/8;3A OPEN;R1 newly closed0/27",
+  "scopeDeviation": "No scope deviation",
+  "documentationVerification": {
+    "checkedAt": "2026-11-14T18:44:20.527790+00:00",
+    "frozenBaseline": "PASS",
+    "backendGovernanceBaseline": "PASS",
+    "crossRepositoryConsistency": "PASS",
+    "architecture": "PASS",
+    "whitespace": "PASS",
+    "governanceTestsPassed": 25,
+    "governanceTestsFailed": 0,
+    "governanceLogSha256": "7664fad8c247e7a0b766e2c32a09aba8c87c811b39c2c5e826b994f6b660a18b",
+    "runtimeTestsRerun": false,
+    "reason": "Evidence and documentation only; corrected runtime unchanged."
+  }
+}

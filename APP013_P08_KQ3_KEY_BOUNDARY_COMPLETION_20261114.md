@@ -1,0 +1,19 @@
+# APP-013 / 3A / P08 — KQ3 key prerequisite qualified
+
+KQ3 passed its live key qualification and independently closed on November 14, 2026. Exact approval `8f7fbd932a7c239722bde1e1357c3a1e9cdf7521` bound source `d2acad66cf6b9b7006b4b5867c92e9b3b194375b`, operation `8be45e96-ac92-4b7a-86fe-0739366f619c`, and scope digest `0b2f616b40acdb9a30ccbfd72a38839d0439e258598dc9cdee1f01fae5eeda26`. The operation is consumed; no replay is authorized.
+
+The corrected native path created the one restricted Google key, retained its creation provenance, validated the same active UID through post-create and authentication metadata, and read keyString once into the inert sink. Both later metadata etags differed from the original creation etag; the diagnostic flags correctly retained that fact while the validated current-version handling succeeded. No account authentication or Stripe operation ran.
+
+Independent cleanup validated the same proven UID and current etag, issued one conditional DELETE, polled once and read back CONTROL_PLANE_DELETED. Private operation files were purged. Exact root identity, owner custody, 0700/0600 modes and absence of operation processes were independently checked. The final receipt has no failure or residual; configuration remained unchanged. This control-plane readback is not a claim of instantaneous global revocation.
+
+The actual counts were 4 owner/project CLI calls, 2 cache reads and 11 explicit HTTPS requests: 7 main requests (service, absence, create, one create poll, post-create metadata, authentication metadata and keyString), followed by 4 cleanup requests (metadata, conditional delete, one poll and final readback). All stayed within the approved bounds. SDK internal authentication request count remains UNKNOWN under the approved exception. No raw keyString or token was retained in operation evidence or printed; approved SDK credential-cache maintenance remains separate.
+
+Evidence is preserved unchanged from the safe root receipts at backend `evidence/APP-013/p08-connected-packet-20261110/kq3-result.json` and `kq3-work-result.json`. The source-bound counts, hashes, independent verification and evidence limits are in `APP013_P08_KQ3_KEY_BOUNDARY_CLOSEOUT_20261114.json`. Independent receipt review passed. The main receipt's pre-cleanup uncertainty is resolved by the final cleanup receipt; it is not rewritten.
+
+Completed: exact owner approval, current source/configuration/command/time comparison, one key lifecycle, actual corrected metadata/keyString boundary, independent conditional removal, private purge, process closeout and safe evidence reconciliation. No further key-only diagnostic is indicated by this result.
+
+Remaining section 3A work is the existing connected journey: fresh identity/configuration recovery and qualification, actual application authentication, the admitted job's owner-completed Sandbox Checkout, a matching signed account/mode/amount/currency event and application payment-gate/recovery evidence, then independent cleanup and owner acceptance. The key-only sink did not prove IdentityToolkit client usability, account authentication, payment or the full native cleanup path (KQ3 uses the reviewed KD cleanup path). Those remain within the existing connected workflow and its separate approval boundaries; no new subsystem or substitute demonstration is proposed.
+
+The implementer owns the next current-readiness review and exact packet. The owner authorizes external actions and accepts the completed section. TR19 observed credential coverage beyond 2:15 p.m. Eastern, with reachability confirmed through 2:20; future work must fit valid authority/timing and cannot reuse a consumed operation. KQ2/R46 historical failure causes and the reason the provider etag changed remain UNKNOWN.
+
+Accepted 1A/1B/2A/2B remain **4/8**; **3A OPEN**; R1 newly closed **0/27**. This is live qualification of a prerequisite, not customer payment acceptance. **No scope deviation.**

@@ -1,0 +1,14 @@
+{
+  "status": "KQ3_PRELAUNCH_MATCH_PASS",
+  "checkedAt": "2026-11-14T18:39:14.968520+00:00",
+  "approvalCommit": "8f7fbd932a7c239722bde1e1357c3a1e9cdf7521",
+  "scopeSha256": "0b2f616b40acdb9a30ccbfd72a38839d0439e258598dc9cdee1f01fae5eeda26",
+  "sourceCommit": "d2acad66cf6b9b7006b4b5867c92e9b3b194375b",
+  "configurationMatchesReadiness": true,
+  "operationRootAbsent": true,
+  "commandMatchesReadiness": true,
+  "withinApprovedWindow": true,
+  "fitsTR19ObservedCredentialHorizon": true,
+  "credentialReads": 0,
+  "providerCalls": 0
+}
