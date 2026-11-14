@@ -1,0 +1,9 @@
+{
+  "status": "PROPOSED_NOT_APPROVED",
+  "decisionForReview": {
+    "owner": "Debynyhan Banks",
+    "decision": "APPROVE_EXACT_P08_DATABASE_ROLE_SQL_CONNECTION",
+    "externalReadAuthorized": true,
+    "scopeSha256": "1ee8eb4a4c5274531569672abffca5d009baedcb45f8811130aa095222ada034"
+  }
+}
