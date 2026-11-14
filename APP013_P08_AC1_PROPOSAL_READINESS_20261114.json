@@ -1,0 +1,43 @@
+{
+  "status": "PROPOSED_NOT_APPROVED",
+  "preparedAt": "2026-11-14T19:34:26.360556+00:00",
+  "section": "APP-013 / 3A / P08",
+  "sourceCommit": "ae7f2b15a948adb9f10d835180e1919291382eeb",
+  "executedRuntimeSource": "cd9ab2e725f6798e790daac620fe8ad1f09bc359",
+  "proposalSha256": "de085179b384370295e7fb0dec33ef7f7d674ac32d62122f129bbde49c24b86c",
+  "implementationAuthorized": false,
+  "externalActionAuthorized": false,
+  "traceability": [
+    {
+      "gap": "Native timestamp parser/session/version agreement",
+      "evidence": "Canonical User TIMESTAMP(3), installed pg OID1114/parser, actual native transport and historical CAS SQL",
+      "liveObservation": "R47 ACTIVATION_CONFLICT at ACTIVATE_INTENT",
+      "preciseHistoricalCause": "UNKNOWN",
+      "owner": "Implementer local reproduction;owner approval"
+    },
+    {
+      "gap": "Independent account readback depends on retired payment credential",
+      "evidence": "native_child readback endpoint GET before account checks;coordinator main secret retirement before independent readback",
+      "liveObservation": "R47 final ACCOUNT_SESSION with secretReads3/endpointCalls2",
+      "preciseDiscardedChildError": "UNKNOWN",
+      "owner": "Implementer local reproduction;owner approval"
+    }
+  ],
+  "currentContainment": "R47 account/auth residuals remain UNKNOWN;key/IAM/runtime/role/traffic closure and private/process absence verified",
+  "newRuntimeTestsRun": false,
+  "implementationFilesChanged": false,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "finiteChecklist": "Six tasks in exact proposal;two existing boundaries only",
+  "futureExecutionGate": "Separate current source/readiness/exact authority required;no R47 replay",
+  "acceptance": "4/8 accepted;3A OPEN;R1 newly closed0/27",
+  "scopeDeviation": "No scope deviation implemented;bounded local correction proposed before implementation",
+  "independentReadOnlyReview": "PASS_TWO_BOUNDED_GAPS_AND_SAFETY_CONSTRAINTS;existing_receipt_representation_selected",
+  "reviewedAt": "2026-11-14T19:35:23.002378+00:00",
+  "requiredChecks": "FROZEN_BASELINE_CROSS_REPOSITORY_CONSISTENCY_ARCHITECTURE_WHITESPACE_PASS",
+  "governanceTests": {
+    "passed": 25,
+    "failed": 0,
+    "logSha256": "38eed9784f2228ceee7a7474f745950b127c0b8030f76a0a0214ef52ece73d69"
+  }
+}

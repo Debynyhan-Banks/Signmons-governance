@@ -1,0 +1,50 @@
+{
+  "verifiedAt": "2026-11-14T19:28:16.947584+00:00",
+  "operationId": "bea4fe6b-2202-48ed-9df1-84a17d23fcd8",
+  "sourceCommit": "cd9ab2e725f6798e790daac620fe8ad1f09bc359",
+  "nativeApprovalCommit": "58648366bf559dae2f01d0f40fe76ebd4f48d8a8",
+  "status": "R47_CONSUMED_PRIVATE_AND_PROCESS_CLOSEOUT_VERIFIED_ACCOUNT_CONTAINMENT_UNCONFIRMED",
+  "finalNativeStatus": "ENTRY_CONTAINMENT_UNCONFIRMED",
+  "residuals": [
+    "ACCOUNT_SESSION",
+    "AUTH_OUTCOME_UNKNOWN",
+    "AUTH_REVOKE"
+  ],
+  "authenticationObserved": false,
+  "paymentObserved": false,
+  "browserOpened": false,
+  "privateInputsAbsent": true,
+  "privatePurgeOnTime": true,
+  "privatePurgedAt": "2026-11-14T19:24:06.789915+00:00",
+  "originalRootIdentitiesVerified": true,
+  "receiptCustodyVerified": true,
+  "locksReleased": true,
+  "exactOperationProcessesAbsent": true,
+  "configurationUnchanged": true,
+  "calls": {
+    "child": 6,
+    "cli": 162,
+    "https": 18,
+    "sql": 8
+  },
+  "authFailure": {
+    "failureCode": "ACTIVATION_CONFLICT",
+    "failureStage": "ACTIVATE_INTENT",
+    "phase": "CLOSEOUT_FINISHED",
+    "status": "P08_COORDINATOR_AUTH_CONTAINMENT_UNCONFIRMED",
+    "authenticated": false,
+    "sessionClosed": true,
+    "tokenIssueIntent": false,
+    "firebaseEnableIntent": false,
+    "activationIntent": true,
+    "residuals": [
+      "ACTIVATION_OUTCOME_UNKNOWN"
+    ]
+  },
+  "independentResourceContainment": "KEY_IAM_RUNTIME_DB_ROLE_AND_TRAFFIC_READBACKS_PASSED;ACCOUNT_AUTH_RESIDUALS_RETAINED",
+  "originalResultSha256": "fcb1eebc0764b9686cf97966cb5f41d535e4386015ec60d71ec10bc39dfab0d1",
+  "scopeDeviation": "No scope deviation",
+  "independentSafeReceiptAndSourceReview": "PASS;preserve_three_account_auth_residuals",
+  "requiredChecks": "FROZEN_BASELINE_CROSS_REPOSITORY_CONSISTENCY_ARCHITECTURE_WHITESPACE_AND_25_GOVERNANCE_TESTS_PASS",
+  "backendEvidenceCommit": "ae7f2b15a948adb9f10d835180e1919291382eeb"
+}
