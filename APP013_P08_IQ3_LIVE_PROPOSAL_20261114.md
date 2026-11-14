@@ -1,0 +1,31 @@
+# APP-013 / 3A — IQ3 corrected identity-only qualification proposal
+
+Prepared, NOT APPROVED. This is a fresh operation using the existing corrected IQ1 executable, not a replay. Operation 37c34fd2-6b2e-4b7f-bd1a-108756c5c627; source512c5842bc5b29f559564d816d5818f8ce090610; exact scope hash7109322a135fd52d04d779ec08b07b890e0c60263edf050961ca6abb66c0755c. APP013_P08_IQ3_LIVE_READINESS_20261114.json contains the complete logical/wrapped commands, configuration/manifest pins, launcher argv and authority path. No runtime implementation is proposed.
+
+## Named question and changed behavior
+
+Can the existing runtime identity pass its enabled-state predicate and independent disabled-state/UID closure with the corrected final-read path? IQ1 enabled-state predicate passed but immediate cleanup read omitted disabled; IQ2 later proved exact-UID disabled. The source512c584 correction now performs the already-budgeted final metadata read after a classified readback mismatch and preserves the original failure. A matching final disabled state can confirm restoration, but cannot turn the failed qualification into success. The cause of IQ1's omission remains UNKNOWN. A local installed-SDK resource_printer.Print probe preserved true/false/null/missing semantics in both json(email,disabled) and json(email,disabled,uniqueId); this is synthetic formatter evidence, not a provider observation or proof of cause.
+
+## Exact scope and limits
+
+Target signmons-calldesk-p07-runtime@signmons.iam.gserviceaccount.com in project signmons, existing owner debynyhan@signmons.com. Main maximum5 CLI: owner, project, initially-disabled exact email/UID metadata, one enable, one enabled-state readback. Independent cleanup maximum6 CLI: owner, project, matching UID metadata, at most one disable of the proven identity, disabled-state readback, final UID metadata. Reuse the exact RuntimeAdapter/NativeTransport and fixed vectors. At most one enable and one disable; no polling, retry, permission expansion, replacement key or alternate identity. Initial enabled/foreign/malformed metadata stops before mutation.
+
+Each operational SDK command uses the existing 8-second owned-process boundary and the approved sandbox-exec deny-process-fork wrapper with pinned Python/SDK. The detached cleanup worker owns all provider subprocesses and the IQ1 resource lease. No unsandboxed fallback. Owner confirms no other Signmons operation overlaps because that lease does not cover every other operation. Worker loss or missing receipts remains UNKNOWN.
+
+Zero explicit cache reads, direct HTTPS, SQL, secret/key reads, token export, browser sign-in, payment, refund, booking or customer message. Permit only SDK_EXISTING_OWNER_REFRESH_CACHE_INTERNAL_RETRIES_NO_TOKEN_EXPORT: existing-owner SDK refresh/internal authentication retries/cache maintenance, not new scopes, credential renewal commands or explicit token export. SDK internal requests are not claimed to be zero or capped at11. Current credential usability and effective permissions remain UNKNOWN and are qualified through the initial gates. Failure does not authorize renewal/retry. Additional allowance $0 is not a hard cloud-billing cap; existing liabilities remain unchanged.
+
+## Exact window — November14 Eastern
+
+Earliest start5:30 p.m.; launch before5:45; main ends5:50; independent cleanup ends6:01; input removal/private inventory ends6:03. Confirm reachability through6:05 and no overlapping operation. No password or Terminal attendance is required. This is a maximum window, not a waiting requirement. The existing660-second cleanup and120-second purge reserves are unchanged. Do not launch after cutoff or reuse expired approval.
+
+## Readiness, custody and closure
+
+Actual scope validator, committed source guard, configuration snapshot, descriptor equality, inert authority-shape check and local sandbox fork-denial/process-closure probe PASS. Historical same-source local tests:195 connected (59IQ1),135 native; no new runtime tests claimed. Current provider state/UID/permissions/credential usability remain UNKNOWN. This is qualification-only; full payment is not ready. Before launch recheck source/configuration/commands/current time, committed exact decision, absent operation root and non-overlap. Any mismatch stops without rebasing.
+
+After approval only, bind the committed owner decision to the public scope in a0600 envelope under exclusive0700 /private/tmp/p08-iq1-input-37c34fd2-6b2e-4b7f-bd1a-108756c5c627. Use only launchArgv in readiness. Safe receipts reside in /private/tmp/p08-iq1-37c34fd2-6b2e-4b7f-bd1a-108756c5c627. Do not reserve an attempt during preparation. Verify read_result custody, worker/process closure, immutable counts/intents and configuration. Remove input envelope/directory after worker copy is available and by6:03. Raw SDK output/UID/project number remain transient; retain only existing safe flags/hashes/status/count/time evidence. Preserve the safe lease inode; do not delete SDK cache. No new raw diagnostic field or retention change.
+
+One failure ends this operation after independent cleanup. Report exact classified stop, final same-UID restoration result and remaining UNKNOWNs; do not automatically launch a follow-up or full payment attempt. Repeated missing-state failure calls for engineering/cloud-custodian review, not a third blind repeat. Implementer owns bounded execution and closure; owner/cloud/credential custodians own authority and unresolved external facts.
+
+Requested decision: approve IQ3 identity-only qualification, the stated SDK exception, $0 additional allowance and independent cleanup/input removal; confirm reachability through6:05 and no overlapping Signmons operation. AGENTS.md requires explicit approval for provider configuration changes; current proceed authorizes this preparation, not the proposed temporary enable/disable.
+
+Remaining after this decision: current account containment/entry prerequisites (R47 historical UNKNOWNs preserved), authentication, same-job Sandbox event/application outcome and recovery, independent closure and owner acceptance. No additional account diagnostic or implementation authorized here. Accepted1A/1B/2A/2B remain4/8;3A OPEN;R1 newly closed0/27. No scope deviation.
