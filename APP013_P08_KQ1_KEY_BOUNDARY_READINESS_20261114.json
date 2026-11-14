@@ -1,0 +1,102 @@
+{
+  "status": "QUALIFICATION_ONLY_PREPARED_NOT_APPROVED",
+  "section": "APP-013/3A/P08/KQ1",
+  "recordedAt": "2026-11-14T17:32:26.767778+00:00",
+  "sourceCommit": "a26065ed7ae497733ded4d7ea93fa52f930193b2",
+  "sourceEvidenceCommit": "402ee6ab6d4b484669c3a849b972e9163a0e0621",
+  "scopeSha256": "b468db73640603e85bf1d97ad782cb4b9292643ec1b111bb917eccd9003582d1",
+  "operatorSha256": "979ff9343c3ca994f70610bcf10e995cef415980141983bc40d6be953905c9e7",
+  "configurationSnapshotSha256": "308344695a2de6db0a7aa0d6c7e978d6c0db115933e1522655123609175c9948",
+  "currentLocalSourceGuard": "PASS",
+  "sourceGuardSeconds": 0.590262,
+  "actualScopeValidator": "PASS",
+  "operationRootAbsent": true,
+  "commandArgv": {
+    "run": [
+      "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+      "-I",
+      "-B",
+      "-c",
+      "import runpy,sys;path=sys.argv.pop(1);sys.path.insert(0,sys.argv.pop(1));sys.argv[0]=path;runpy.run_path(path,run_name=\"__main__\")",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/kq1_key_boundary.py",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110",
+      "--run",
+      "<FULL_GOVERNANCE_APPROVAL_COMMIT>",
+      "APP013_P08_KQ1_KEY_BOUNDARY_SCOPE_20261114.json",
+      "APP013_P08_KQ1_KEY_BOUNDARY_APPROVAL_20261114.json"
+    ],
+    "cleanup": [
+      "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+      "-I",
+      "-B",
+      "-c",
+      "import runpy,sys;path=sys.argv.pop(1);sys.path.insert(0,sys.argv.pop(1));sys.argv[0]=path;runpy.run_path(path,run_name=\"__main__\")",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/kq1_key_boundary.py",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110",
+      "--cleanup",
+      "<FULL_GOVERNANCE_APPROVAL_COMMIT>",
+      "APP013_P08_KQ1_KEY_BOUNDARY_SCOPE_20261114.json",
+      "APP013_P08_KQ1_KEY_BOUNDARY_APPROVAL_20261114.json"
+    ],
+    "purge": [
+      "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+      "-I",
+      "-B",
+      "-c",
+      "import runpy,sys;path=sys.argv.pop(1);sys.path.insert(0,sys.argv.pop(1));sys.argv[0]=path;runpy.run_path(path,run_name=\"__main__\")",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/kq1_key_boundary.py",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110",
+      "--purge",
+      "<FULL_GOVERNANCE_APPROVAL_COMMIT>",
+      "APP013_P08_KQ1_KEY_BOUNDARY_SCOPE_20261114.json",
+      "APP013_P08_KQ1_KEY_BOUNDARY_APPROVAL_20261114.json"
+    ]
+  },
+  "commandDisplay": {
+    "run": "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14 -I -B -c 'import runpy,sys;path=sys.argv.pop(1);sys.path.insert(0,sys.argv.pop(1));sys.argv[0]=path;runpy.run_path(path,run_name=\"__main__\")' '/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/kq1_key_boundary.py' '/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110' --run '<FULL_GOVERNANCE_APPROVAL_COMMIT>' APP013_P08_KQ1_KEY_BOUNDARY_SCOPE_20261114.json APP013_P08_KQ1_KEY_BOUNDARY_APPROVAL_20261114.json",
+    "cleanup": "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14 -I -B -c 'import runpy,sys;path=sys.argv.pop(1);sys.path.insert(0,sys.argv.pop(1));sys.argv[0]=path;runpy.run_path(path,run_name=\"__main__\")' '/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/kq1_key_boundary.py' '/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110' --cleanup '<FULL_GOVERNANCE_APPROVAL_COMMIT>' APP013_P08_KQ1_KEY_BOUNDARY_SCOPE_20261114.json APP013_P08_KQ1_KEY_BOUNDARY_APPROVAL_20261114.json",
+    "purge": "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14 -I -B -c 'import runpy,sys;path=sys.argv.pop(1);sys.path.insert(0,sys.argv.pop(1));sys.argv[0]=path;runpy.run_path(path,run_name=\"__main__\")' '/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/kq1_key_boundary.py' '/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110' --purge '<FULL_GOVERNANCE_APPROVAL_COMMIT>' APP013_P08_KQ1_KEY_BOUNDARY_SCOPE_20261114.json APP013_P08_KQ1_KEY_BOUNDARY_APPROVAL_20261114.json"
+  },
+  "requiredDecision": {
+    "owner": "Debynyhan Banks",
+    "decision": "APPROVE_KQ1_EXACT_CREATE_KEYSTRING_CONDITIONAL_DELETE_SDK_CACHE_AND_CLEANUP",
+    "scopeSha256": "b468db73640603e85bf1d97ad782cb4b9292643ec1b111bb917eccd9003582d1",
+    "operatorSha256": "979ff9343c3ca994f70610bcf10e995cef415980141983bc40d6be953905c9e7",
+    "externalActionAuthorized": true
+  },
+  "approvalState": "PENDING_EXACT_OWNER_DECISION",
+  "externalActionAuthorized": false,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "attemptReserved": false,
+  "currentCredentials": "UNKNOWN; proposed phase cache check must cover purgeEnd before creation",
+  "currentProviderAccessAndKeyBehavior": "UNKNOWN; purpose of qualification",
+  "currentAttendance": "PENDING; no password or sign-in is part of KQ1",
+  "testEvidence": "Prior unchanged-source 44 focused, 136 connected, 104 native, 25 governance PASS; not rerun in this preparation",
+  "independentReview": "PASS_SCOPE_HASH_SOURCE_COMMANDS_AUTHORITY_AND_UTC_EASTERN_WINDOWS_MATCH",
+  "checklist": {
+    "scopeSourceWindowBound": true,
+    "localSourceConfigurationVerified": true,
+    "priorTestsMatchExactSource": true,
+    "reviewAndDocumentationChecks": true,
+    "exactApproval": false,
+    "liveQualification": false,
+    "independentCleanupAndPurge": false
+  },
+  "owners": {
+    "preparationExecutionEvidence": "implementer",
+    "externalDecisionAndCredentialCustody": "Debynyhan Banks",
+    "unresolvedProviderContainment": "cloud custodian"
+  },
+  "acceptance": "4/8 accepted; 3A OPEN; R1 newly closed 0/27",
+  "scopeDeviation": "No scope deviation",
+  "cleanupReserveSeconds": 480,
+  "cleanupTimingBasis": "296 seconds conservative reused-boundary cleanup work, plus main process grace10, final-read cutoff70 before cleanupEnd and filesystem/source margin; selected480 exceeds420 recommended review minimum.",
+  "reviewedAt": "2026-11-14T17:36:50.551395+00:00",
+  "documentationChecks": "FROZEN_BASELINE_CROSS_REPO_CONSISTENCY_ARCHITECTURE_WHITESPACE_PASS",
+  "newGovernanceTests": {
+    "passed": 25,
+    "failed": 0,
+    "log": "/private/tmp/kq1-live-preparation-governance-tests.log"
+  }
+}
