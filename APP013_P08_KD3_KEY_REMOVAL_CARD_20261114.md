@@ -1,0 +1,37 @@
+# APP-013 / 3A / P08 — KD3 exact R46 key containment card
+
+PREPARED, NOT APPROVED. This is a separately scoped cleanup of one known leftover key, not R46 replay or payment qualification. Section3A remains the admitted-job Sandbox payment and authentic event/application-state acceptance in APP013_REMAINING_EXECUTION_CONTRACT.md. R46 native final receipt retained OWNED_KEY; KS2 observed PRESENT_MATCHING_METADATA with uidMatched true at10:01:36 Eastern November14. KS2 local cleanup was independently verified10:05:45. Source 136ec7289410ad803e8cb1afc849fcbc88096d83; evidence backend r46-result.json and ks2-result.json. Exact missing behavior: authoritative containment of R46's owned key. This removes a residual from the connected workflow; it does not complete its payment criterion.
+
+## Exact behavior and reuse
+
+Operation 1d8d4749-365f-4ac5-8195-244fbcd6b754; exact original R46 operation 6c03d490-2a71-4392-baaa-a41dd274dc41; key `signmons-p08-6c03d4902a714392baaaa41dd274dc41` in the pinned Signmons project/global location. Reuse unchanged kd1_cleanup.Cleanup/send/metadata, ks1_read.classify, RequestAdapter, Controller.wait, current owner/project CLI descriptors, NativeIO, credential-cache reader and committed source validators. Existing KD1/KD2 execute/preflight remain hard-bound to R44 and will not be called or edited. Prepare only a hash-bound one-shot operator procedure invoking these parameterized seams with exact R46 approval and evidence; no deployed/runtime source change or manifest rebaseline.
+
+Fresh owner/project checks and one credential-cache read precede exact metadata GET. Strict name/display marker/Firebase-only restrictions/canonical UID/bounded etag and createTime inside14:30:00Z through epoch1794667799.119128 are required. Before adoption, hash returned UID in memory and match retained R46 journal UID hash and KS2 observation. Any mismatch refuses DELETE. The engine adopts current etag only for this separately approved removal, then makes at most one etag-conditional DELETE and up to5paced10second operation GET polls. A fresh final metadata GET is attempted in finally, even after lost deletion response or poll/interruption failure while authority/time remain. This final request is authoritative within the same procedure, not a separate process. No second DELETE or resumed mutation.
+
+Exact matching UID with deleteTime yields CONTROL_PLANE_DELETED; typed404 is separately ABSENT_AT_READ, not a rewritten engine success flag. Present, denied, drift, malformed or timeout remains unresolved. Do not infer instantaneous global invalidation or account/session closure. Retain historical R46 receipts unchanged. Account residuals ACCOUNT_SESSION,AUTH_OUTCOME_UNKNOWN,AUTH_REVOKE remain UNKNOWN and outside this action.
+
+## Data, state and retention
+
+Maximum2CLI reads (30seconds each),1reserved8second credential-cache read,8HTTPS requests (initialGET+1DELETE+5polls+finalGET),0SQL. Each direct request has8second maximum,65536byte response cap,no proxy/redirect/retry and response closure. Existing-owner SDK refresh/internal authentication retry/cache-maintenance exception applies only to the2CLI reads; internal countUNKNOWN. No keyString/list/create/undelete,other key,IAM/runtime/Stripe activation,sign-in,customer data,message,booking,real charge or Sandbox payment. No new spending allowance or billing change; existing liabilities unchanged.
+
+Token/project number/raw metadata/current UID and etag stay in memory and are cleared finally, never printed or persisted. The comparison hashes only the UID against the already retained safe hash; no raw credential hashing. Receipt root /private/tmp/p08-kd3-1d8d4749-365f-4ac5-8195-244fbcd6b754 is exclusive0700 with0600 safe immutable attempt/call/result receipts and nonblockinglock. Deletion reservation precedes send. SIGINT/SIGTERM defer across bounded owned CLI spawn/run and cleanup, stop before new work, and retain final readback allowance. Independent supervisor verifies owned processes absent, nonsecret configuration unchanged receipt, receipt inventory/modes and exact temporary executor removal. Abrupt kill remains UNKNOWN, never authorization to replay.
+
+## Fixed window and owners
+
+November14 Eastern: launch before10:20a.m.; mutation/poll work ends10:23; final read ends10:24; local cleanup and raw-memory/executor purge end10:25. At least60seconds reserved for final read and60seconds for local closure. TR18 observed horizon beyond10:30; owner attendance10:45 already confirmed. No extension/retry. Exact approval decision must bind entire scope and operator/source hashes. Before launch compare source,command,resource,pins,authority,time and readiness; mismatch blocks. Implementer owns preparation/supervision/closure; owner and credential custodian own exact adoption/removal/cache/SDK decision; cloud custodian owns unresolved containment.
+
+## Finite checklist and verification
+
+1. Reconcile R46/KS2 immutable receipts and approved native creation interval; complete.
+2. Prepare scope, exact one-shot operator, this card/proposal and decision draft; complete.
+3. Actual local preflight verifies committed source/SDK/runtime/config/command vectors/UID provenance/operatorSHA/root absence; PASS at the readiness timestamp.
+4. Reuse17existing cleanup tests covering positive async/fifthpoll,foreign fields/creationtime/UID drift,already absent/deleted,lostDELETE/interruption/finalread reserve,HTTP closure; 6focused synthetic new UID binding and deferred-signal checks; PASS. Concurrency uses existing exclusive root/lock and immutable reservations; inspect and test refusal before external action. Browser test not applicable; no browser launched.
+5. Independent source/readiness review plus baseline,consistency,governance25tests,architecture and both whitespace checks; PASS.
+6. Exact owner external action approval; pending. No provider/cache read or reservation during preparation.
+7. One execution, authoritative final metadata enum, independent local verification and sanitized result; pending.
+
+Commands: Python unittest test_kd1_cleanup/test_ks1_read, prepared operator preflight and focused synthetic interfaces only; backend SIGNMONS_GOVERNANCE_REPO=<governance> node scripts/check-governance-baseline.mjs and npm run arch:check; governance frozen-baseline-check/docs-consistency-check and three prescribed test files; git diff --check both. Readiness record carries source/time/outcome/owner for each prerequisite. Locally discoverable blockers must be resolved before approval. Passing fixtures are not current provider state or access proof; fresh access and deletion outcome remainUNKNOWN.
+
+Disabled/rollback: no execution before committed exact approval; consumed operation never replayed. Deletion is the proposed containment action; do not restore/recreate automatically. Observable finish is sanitized key-state result plus independent local closeout, or an explicit unresolved state and responsible cloud custodian. No scope/dependency/acceptance changes. Accepted1A/1B/2A/2B remain4/8;3A OPEN;R1newlyclosed0/27. No scope deviation.
+
+Readiness complete at 2026-11-14T15:10:45.298962+00:00: APP013_P08_KD3_READINESS_20261114.json. Actual operatorSHA ff211ed3fa1417c155c7842c0cc0436b7435a37e699af81595d816e6e54a4e2b;27existing plus6focused tests and25governance tests PASS. Independent review found no code/sequence blocker. No live/cache calls or operation reservation. Only exact owner authority and resulting live observations/closure remain pending.

@@ -1,0 +1,76 @@
+{
+  "verifiedAt": "2026-11-14T15:10:45.298962+00:00",
+  "sourceCommit": "136ec7289410ad803e8cb1afc849fcbc88096d83",
+  "scopeSha256": "d6a6a950a6f7ad79e3cc747037f4b0ab9e95561dd55482763b9d10cff2121cbc",
+  "operatorSha256": "ff211ed3fa1417c155c7842c0cc0436b7435a37e699af81595d816e6e54a4e2b",
+  "prerequisites": [
+    {
+      "prerequisite": "source/sdk/runtime/nonsecret config/command vectors",
+      "source": "actual prepared operator preflight plus existing qualification source validators",
+      "result": "PASS_CURRENT_AND_COMMITTED",
+      "owner": "implementer"
+    },
+    {
+      "prerequisite": "exact R46 UID and creation interval provenance",
+      "source": "committed R46 journal/purge,KS2 scope and successful receipt,R46 approved prospectiveWindow",
+      "result": "PASS",
+      "owner": "implementer"
+    },
+    {
+      "prerequisite": "provider metadata serialization and strict classifier",
+      "source": "unchanged RequestAdapter/classify/metadata/Cleanup/send through27existing tests",
+      "result": "PASS_LOCAL_ONLY",
+      "owner": "implementer"
+    },
+    {
+      "prerequisite": "deadlines/no retry/concurrency/finalread/purge",
+      "source": "exact operator exclusive root/lock/reservations,unchanged Cleanup and17existing cleanup tests",
+      "result": "PASS_SOURCE_REVIEW_AND_LOCAL_TESTS",
+      "owner": "implementer"
+    },
+    {
+      "prerequisite": "focused new UID and signal procedure tests",
+      "source": "/private/tmp/test_signmons_kd3_local.py",
+      "result": "PASS_6_SYNTHETIC_ACTUAL_BOUNDARY_TESTS",
+      "owner": "implementer"
+    },
+    {
+      "prerequisite": "effective owner access and current provider state",
+      "source": "KS2 observation10:01:36, KD3 fresh owner/project/metadata must requalify beforeDELETE",
+      "result": "UNKNOWN_UNTIL_APPROVED_FRESH_READS",
+      "owner": "cloud and credential custodian"
+    },
+    {
+      "prerequisite": "credential horizon and attendance",
+      "source": "TR18 result beyond10:30 and owner confirmation10:45",
+      "result": "COVERS_PROPOSED_CLOSEOUT10:25",
+      "owner": "owner and credential custodian"
+    },
+    {
+      "prerequisite": "independent read-only review",
+      "source": "key_boundary_review final stable operator",
+      "result": "NO_CODE_SEQUENCE_BLOCKER",
+      "owner": "independent reviewer"
+    },
+    {
+      "prerequisite": "baseline consistency architecture whitespace governance tests",
+      "source": "current prescribed repository commands",
+      "result": "PASS_25_GOVERNANCE_TESTS",
+      "owner": "implementer"
+    }
+  ],
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "operationReserved": false,
+  "currentKeyState": "KS2_PRESENT_MATCHING_UID_HISTORICAL_OBSERVATION_REVALIDATE_BEFORE_DELETE",
+  "accountResiduals": "UNRESOLVED_NOT_IN_SCOPE",
+  "nativePaymentAuthority": false,
+  "exactOwnerApproval": "PENDING",
+  "nextObservable": "one exact key-state final readback and independently verified local closure",
+  "noScopeDeviation": true,
+  "focusedTestSha256": "7cdcb31977e65ae979f50229c7db24743ed6456c9f0087e2c7fe79d324b6b303",
+  "existingTestCount": 27,
+  "focusedTestCount": 6,
+  "governanceTestCount": 25,
+  "allLocallyDiscoverablePrerequisites": "PASS"
+}
