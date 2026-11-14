@@ -1,5 +1,8 @@
 # Global Execution Pointer
 
+IQ1 CONTAINMENT AMENDMENT PREPARED; LOCAL OWNER DECISION PENDING. APP013_P08_IQ1_CONTAINMENT_AMENDMENT_20261114.md proposes one IQ1-only OS-restricted SDK launch using existing transport; original implementation approval fa98c82 retained. Five local design checks passed: single process, fork/spawn/detached-child denial and isolated SDK help parser. No provider/real credential calls; live compatibility UNKNOWN. New executable/manifest and full IQ1 checklist remain incomplete. Implementer owns local completion after amendment decision; next observable result is enforced process containment with original tests passing. No attendance or live packet. Accepted4/8;3A OPEN;R1 newly closed0/27;R48 consumed;R47 uncertainty unchanged. Explicit prospective deviation proposal: IQ1 launch semantics only; no deviation implemented.
+
+
 IQ1 LOCAL APPROVED; PREREQUISITE PROCESS-CLOSURE TEST BLOCKED IMPLEMENTATION. Approval fa98c82 is retained. Actual existing owned transport returned success/closed before a finite synthetic detached descendant finished; no provider or credential calls. See APP013_P08_IQ1_LOCAL_BLOCKER_20261114.md and backend iq1-local-verification/process-boundary-result.json. This is not proof of actual SDK escape or R48 cause. The approved stop clause applies: no IQ1 executable/live packet or transport-semantic expansion. Implementer owns bounded pinned-SDK/transport design review; next observable result is reliable local descendant closure or truthful refusal under the exact approved boundary. Remaining checklist incomplete; no attendance needed. R48 consumed; R47 uncertainty unchanged. Accepted4/8;3A OPEN;R1 newly closed0/27. No scope deviation.
 
 
