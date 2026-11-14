@@ -1,0 +1,46 @@
+{
+  "verifiedAt": "2026-11-14T00:58:33.844381+00:00",
+  "sourceCommit": "2bdd5627e3c9d373d138ba96afe31e1ce1f9f96e",
+  "scopeSha256": "ee4d4d455b861bfb67565f6afd6118abab9e31c49b92d0f0929d8fd408c52f30",
+  "actualCapabilityAndPrepare": "PASS_PROPOSED_AUTHORITY",
+  "commands": [
+    {
+      "id": "owner",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "auth",
+        "list",
+        "--filter=status:ACTIVE",
+        "--format=json(account,status)"
+      ]
+    },
+    {
+      "id": "project",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "projects",
+        "describe",
+        "signmons",
+        "--format=json(projectId,projectNumber,lifecycleState)"
+      ]
+    },
+    {
+      "id": "billing_project",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "billing",
+        "projects",
+        "describe",
+        "signmons",
+        "--format=json(billingAccountName,billingEnabled,projectId)"
+      ]
+    }
+  ],
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "freshRootAbsent": true,
+  "unknown": [
+    "cause of R41 billing timeout",
+    "current billing read outcome"
+  ]
+}
