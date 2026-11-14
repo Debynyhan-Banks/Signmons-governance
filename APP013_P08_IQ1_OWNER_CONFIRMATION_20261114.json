@@ -1,0 +1,9 @@
+{
+  "ownerMessage": "Approve IQ1; reachable through 5:30; no overlapping operation",
+  "recordedAt": "2026-11-14T21:56:33.778379+00:00",
+  "proposalCommit": "0f5006f",
+  "operationId": "1993c5da-d093-4a4c-a950-bf50cb5bae48",
+  "availabilityThrough": "2026-11-14T22:30:00Z",
+  "noOverlappingOperationConfirmed": true,
+  "decisionPath": "APP013_P08_IQ1_EXTERNAL_20261114_1993c5da.json"
+}
