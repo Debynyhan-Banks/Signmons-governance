@@ -1,0 +1,10 @@
+{
+  "decision": "APPROVE_AL1_READ_ONLY_DIAGNOSIS_AND_CLEANUP",
+  "operationId": "5bbe2947-783c-4f04-adf3-380151414d11",
+  "readinessSha256": "8f8f396d35bd955b2f22503a9775ae381f6a150f57b485af519c70c8bd24ef2d",
+  "cliLimit": 4,
+  "sdkException": "EXISTING_OWNER_REFRESH_INTERNAL_AUTH_RETRY_CACHE_AND_READ_PAGINATION_WITHIN_PROCESS_DEADLINE_NO_TOKEN_EXPORT",
+  "cleanupAuthorized": true,
+  "mutationAuthorized": false,
+  "paymentAuthorized": false
+}
