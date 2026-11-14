@@ -1,0 +1,97 @@
+{
+  "recordedAt": "2026-11-14T14:27:49.779271+00:00",
+  "section": "APP-013/3A/P08",
+  "sourceCommit": "12e69f607cefd02f66ae35d35b003b4eb8981fa1",
+  "recoveryApproval": "bc0ddb0",
+  "qualificationApproval": "6685425",
+  "status": "CONSUMED_UNQUALIFIED",
+  "ownerPromptReport": "I saw it only later",
+  "receipts": {
+    "recoveryResult": {
+      "sha256": "5ae672b326e90c77c7ff1126d56617010f14dcc7572d7b02c4f6d8beb9cf50d8",
+      "receipt": {
+        "candidate": null,
+        "execution": "EXTERNAL_READ_ONLY",
+        "executionReady": false,
+        "failure": null,
+        "liveObserved": true,
+        "purgeEnd": "2026-11-14T14:55:00Z",
+        "residuals": [],
+        "status": "HANDOFF_RETAINED"
+      },
+      "fileModifiedAt": "2026-11-14T14:19:54.940010+00:00"
+    },
+    "recoveryResourceCloseout": {
+      "sha256": "cb524bb80fbd3f6723cf552f276e21639827ecf27ef8bc93e8d3102a701c9223",
+      "receipt": {
+        "residuals": [],
+        "verified": true
+      },
+      "fileModifiedAt": "2026-11-14T14:19:54.936969+00:00"
+    },
+    "privatePurge": {
+      "sha256": "0b933a7004914a6929ddf1c6f8680cea58b86daf1cc935a3bb84eb042c93307c",
+      "receipt": {
+        "completedAt": 1794666282.203286,
+        "onTime": true,
+        "operationId": "c75ce405-6f29-4dec-a717-305b8dd1d4c5",
+        "rawFilesAbsent": true,
+        "residuals": [],
+        "status": "PRIVATE_PURGE_VERIFIED"
+      },
+      "fileModifiedAt": "2026-11-14T14:24:42.203362+00:00"
+    },
+    "qualificationResult": {
+      "sha256": "ab84db8dd926d0e041d094121f7d5a5e52aac4c12cb0c3e4bd510ba4dee514e2",
+      "receipt": {
+        "candidate": null,
+        "databaseFailedChecks": [],
+        "execution": "EXTERNAL_READ_ONLY",
+        "executionReady": false,
+        "failure": "RECOVERY_PASSWORD_TIMEOUT",
+        "failureStage": "preparation",
+        "liveObserved": false,
+        "reservationSemantics": "RESERVATIONS_NOT_PROVIDER_REQUEST_COUNTS",
+        "residuals": [
+          "CLOSEOUT_UNCONFIRMED",
+          "INDEPENDENT_UNCONFIRMED"
+        ],
+        "status": "CURRENT_EVIDENCE_UNQUALIFIED",
+        "transportReservations": {
+          "cache": 0,
+          "cli": 0,
+          "https": 0,
+          "sql": 0
+        }
+      },
+      "fileModifiedAt": "2026-11-14T14:24:38.214157+00:00"
+    },
+    "qualificationRecoveryResult": {
+      "sha256": "71c7587f71e0c269a9e4c1e9f1c2db8f7190de9b910375a9f097c033cf89d6b7",
+      "receipt": {
+        "candidate": null,
+        "execution": "EXTERNAL_READ_ONLY",
+        "executionReady": false,
+        "liveObserved": true,
+        "privateInputsAbsent": true,
+        "residuals": [
+          "OWNED_PROCESS_HISTORY_UNKNOWN"
+        ],
+        "status": "CURRENT_EVIDENCE_UNQUALIFIED"
+      },
+      "fileModifiedAt": "2026-11-14T14:24:41.988662+00:00"
+    }
+  },
+  "privateInputPathsAbsent": true,
+  "nativeRootAbsent": true,
+  "nativeAuthorized": false,
+  "paymentObserved": false,
+  "currentProcessObservation": {
+    "checkedAt": "2026-11-14T14:26:07.476534+00:00",
+    "matchingR45PythonProcesses": [],
+    "historicalOwnershipStillUnknown": true
+  },
+  "independentSourceReview": "PASSWORD_TIMEOUT_PRECEDES_ADAPTER_AND_ALL_MAIN_TRANSPORTS; CLEANUP_HISTORY_UNKNOWN_IS_CONSERVATIVE_AND_UNCONDITIONAL",
+  "nextAction": "No replay. Before a separately approved fresh attempt, foreground the exact owned standalone Terminal window at each hidden prompt; no code defect established.",
+  "noScopeDeviation": true
+}
