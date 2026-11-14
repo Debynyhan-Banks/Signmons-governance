@@ -1,0 +1,25 @@
+{
+  "verifiedAt": "2026-11-14T14:36:00.927934+00:00",
+  "sourceCommit": "ec4f51f015f7382d3cf1089a692a0672d1c8060c",
+  "scopeSha256": "c47b585d094781f8548c200ae82680325049f96d539452520f504c4dc4d823d2",
+  "actualRecoverySourceSdkConfigClock": "PASS_PROPOSED_AUTHORITY",
+  "fullNativeConstruction": "PASS_ACTUAL_CAPABILITY_EXACT_PUBLIC_IDS_AND_WINDOWS_SYNTHETIC_PRIVATE_BINDINGS",
+  "connectedCommittedSources": "PASS_CC1_INCLUDED",
+  "credentialHorizon": "TR18 beyond10:30 Eastern November14; consumed single cache read",
+  "attendanceThrough": "10:45 Eastern November14 owner-confirmed",
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "freshBindingsAccessPayment": "UNKNOWN",
+  "actualEndpointPin": "UNKNOWN_UNTIL_HIDDEN_INPUT",
+  "proposedRootsAbsent": true,
+  "nativeCleanupReserveSeconds": 660,
+  "browserOpenerSourceBound": true,
+  "lateQualificationMayPrecludeNativeLaunch": true,
+  "localImplementationEvidence": "cc1-local-verification.json",
+  "compiledRecoveryPaymentContract": {
+    "status": "PASS_ALL_ACTUAL_PLAN_COMPILED_HASHES",
+    "filesVerified": 2
+  },
+  "terminalFocus": "Owned exact standalone Terminal window reference retained and foregrounded at every hidden prompt; no weakening of120second bound",
+  "independentReadOnlyReview": "NO_BLOCKING_FINDING"
+}
