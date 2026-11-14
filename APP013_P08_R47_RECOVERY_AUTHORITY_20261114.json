@@ -1,0 +1,12 @@
+{
+  "status": "R47_RECOVERY_APPROVED",
+  "proposalCommit": "a53471d6b4fa4d86dc66cb12e579eea75e7a0f02",
+  "sourceCommit": "cd9ab2e725f6798e790daac620fe8ad1f09bc359",
+  "scopeSha256": "e16d37ce5197acc40ced55926acca79e5ef1412ecbdfc54a1bd6f9e626f2e97c",
+  "response": "Approve R47; Terminal visible and ready",
+  "owner": "Debynyhan Banks",
+  "standaloneTerminalVisibleAndReady": true,
+  "attendanceThrough": "2026-11-14T20:05:00Z",
+  "recordedAt": "2026-11-14T19:12:08.224467+00:00",
+  "nativePaymentAuthorized": false
+}
