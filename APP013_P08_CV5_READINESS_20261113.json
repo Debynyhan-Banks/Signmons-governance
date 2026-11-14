@@ -1,0 +1,16 @@
+{
+  "verifiedAt": "2026-11-14T00:46:25.137178+00:00",
+  "sourceCommit": "46057317072c21e5a4158c12372ee0e8eda8dc09",
+  "scopeSha256": "459ba708438d2088d0170ada2968bc8d3dae2518ec06dceaf677150e2a3913a3",
+  "actualCurrentCommittedSourcesSdkConfig": "PASS",
+  "python": "3.14.2",
+  "sqlite": "3.51.1",
+  "credentialStoreReads": 0,
+  "providerCalls": 0,
+  "result": "QUALIFICATION_ONLY",
+  "ownerAttendance": "Confirmed through9:00pm November13",
+  "unknown": [
+    "credential validity through8:35pm",
+    "fresh connected payment outcome"
+  ]
+}
