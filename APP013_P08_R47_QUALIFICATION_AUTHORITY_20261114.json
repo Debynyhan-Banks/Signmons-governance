@@ -1,0 +1,12 @@
+{
+  "recordedAt": "2026-11-14T19:17:10.496120+00:00",
+  "proposalCommit": "88f9e96ac53cb86b5dc074dbc1cb205cfb1e96fc",
+  "response": "Approve R47 qualification; ready for the password prompt now",
+  "scopeSha256": "5b0d53742b8221ed8f6f3cc60843695c2cda81095ceb59071c177fef5e61eff4",
+  "cleanupScopeSha256": "3781b7b6f001b4120b16d61e5a893691d4d8db99b69563069f2f5167562305aa",
+  "sourceCommit": "cd9ab2e725f6798e790daac620fe8ad1f09bc359",
+  "sourceManifestCompiledPinsActualClock": "PASS",
+  "terminalWindowId": 24395,
+  "terminalReady": true,
+  "nativePaymentAuthorized": false
+}
