@@ -1,0 +1,178 @@
+{
+  "status": "QUALIFICATION_ONLY_PREPARED_NOT_APPROVED",
+  "section": "APP-013/3A/P08",
+  "attemptLabel": "KQ2",
+  "recordedAt": "2026-11-14T18:09:48.734701+00:00",
+  "sourceCommit": "4173ec0b3b8bf3dc81d607275a427101615a4c35",
+  "sourceEvidenceCommit": "e20c5e28c7f23c759e3232a5886600a26a56666c",
+  "scopeFile": "APP013_P08_KQ1_KEY_BOUNDARY_SCOPE_00000002.json",
+  "approvalFile": "APP013_P08_KQ1_KEY_BOUNDARY_APPROVAL_00000002.json",
+  "filenameSuffixMeaning": "00000002 is a unique numeric qualification revision, not a calendar date. Existing operator accepts eight digits and separately validates exact UTC window. Original 20261114 packet remains untouched.",
+  "scopeSha256": "9bf8b781603709a3bc2fc5e3a31e42a1599a5c62839e23f65b8111eab65933e7",
+  "operatorSha256": "d178de94e373be00517f252de0cfde6e7bd5d07309100242037a528731428c71",
+  "configurationSnapshotSha256": "528ceadadc8a5491e54ee82dbad0026eda881252564f96f2be242d70d1d2f111",
+  "configurationHashMethod": "sha256(repr(actual acl.config_snapshot result).encode()) under pinned Python runtime",
+  "currentLocalSourceGuard": "PASS",
+  "sourceGuardSeconds": 0.508513,
+  "actualScopeValidator": "PASS",
+  "actualApprovalParserNegativeCheck": "Accepted new filename form and refused false external authority; synthetic committed-reader only, no execute/NativeIO/cache/provider access.",
+  "operationRootAbsent": true,
+  "commandArgv": {
+    "run": [
+      "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+      "-I",
+      "-B",
+      "-c",
+      "import runpy,sys;path=sys.argv.pop(1);sys.path.insert(0,sys.argv.pop(1));sys.argv[0]=path;runpy.run_path(path,run_name=\"__main__\")",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/kq1_key_boundary.py",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110",
+      "--run",
+      "<FULL_GOVERNANCE_APPROVAL_COMMIT>",
+      "APP013_P08_KQ1_KEY_BOUNDARY_SCOPE_00000002.json",
+      "APP013_P08_KQ1_KEY_BOUNDARY_APPROVAL_00000002.json"
+    ],
+    "cleanup": [
+      "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+      "-I",
+      "-B",
+      "-c",
+      "import runpy,sys;path=sys.argv.pop(1);sys.path.insert(0,sys.argv.pop(1));sys.argv[0]=path;runpy.run_path(path,run_name=\"__main__\")",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/kq1_key_boundary.py",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110",
+      "--cleanup",
+      "<FULL_GOVERNANCE_APPROVAL_COMMIT>",
+      "APP013_P08_KQ1_KEY_BOUNDARY_SCOPE_00000002.json",
+      "APP013_P08_KQ1_KEY_BOUNDARY_APPROVAL_00000002.json"
+    ],
+    "purge": [
+      "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+      "-I",
+      "-B",
+      "-c",
+      "import runpy,sys;path=sys.argv.pop(1);sys.path.insert(0,sys.argv.pop(1));sys.argv[0]=path;runpy.run_path(path,run_name=\"__main__\")",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/kq1_key_boundary.py",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110",
+      "--purge",
+      "<FULL_GOVERNANCE_APPROVAL_COMMIT>",
+      "APP013_P08_KQ1_KEY_BOUNDARY_SCOPE_00000002.json",
+      "APP013_P08_KQ1_KEY_BOUNDARY_APPROVAL_00000002.json"
+    ]
+  },
+  "commandDisplay": {
+    "run": "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14 -I -B -c 'import runpy,sys;path=sys.argv.pop(1);sys.path.insert(0,sys.argv.pop(1));sys.argv[0]=path;runpy.run_path(path,run_name=\"__main__\")' '/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/kq1_key_boundary.py' '/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110' --run '<FULL_GOVERNANCE_APPROVAL_COMMIT>' APP013_P08_KQ1_KEY_BOUNDARY_SCOPE_00000002.json APP013_P08_KQ1_KEY_BOUNDARY_APPROVAL_00000002.json",
+    "cleanup": "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14 -I -B -c 'import runpy,sys;path=sys.argv.pop(1);sys.path.insert(0,sys.argv.pop(1));sys.argv[0]=path;runpy.run_path(path,run_name=\"__main__\")' '/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/kq1_key_boundary.py' '/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110' --cleanup '<FULL_GOVERNANCE_APPROVAL_COMMIT>' APP013_P08_KQ1_KEY_BOUNDARY_SCOPE_00000002.json APP013_P08_KQ1_KEY_BOUNDARY_APPROVAL_00000002.json",
+    "purge": "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14 -I -B -c 'import runpy,sys;path=sys.argv.pop(1);sys.path.insert(0,sys.argv.pop(1));sys.argv[0]=path;runpy.run_path(path,run_name=\"__main__\")' '/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/kq1_key_boundary.py' '/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110' --purge '<FULL_GOVERNANCE_APPROVAL_COMMIT>' APP013_P08_KQ1_KEY_BOUNDARY_SCOPE_00000002.json APP013_P08_KQ1_KEY_BOUNDARY_APPROVAL_00000002.json"
+  },
+  "requiredDecision": {
+    "owner": "Debynyhan Banks",
+    "decision": "APPROVE_KQ1_EXACT_CREATE_KEYSTRING_CONDITIONAL_DELETE_SDK_CACHE_AND_CLEANUP",
+    "scopeSha256": "9bf8b781603709a3bc2fc5e3a31e42a1599a5c62839e23f65b8111eab65933e7",
+    "operatorSha256": "d178de94e373be00517f252de0cfde6e7bd5d07309100242037a528731428c71",
+    "externalActionAuthorized": true
+  },
+  "approvalState": "PENDING_EXACT_OWNER_DECISION",
+  "externalActionAuthorized": false,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "attemptReserved": false,
+  "currentCredentials": "UNKNOWN; included cache checks must cover purgeEnd before creation and cleanup",
+  "currentProviderAccessAndKeyBehavior": "UNKNOWN; purpose of qualification",
+  "currentAttendance": "PENDING owner reachable through completion, at latest 13:45 Eastern November14; no Terminal/password required",
+  "testEvidence": "647 ET1 applicable tests at source4173ec0 and evidence e20c5e2; verified current source bytes match, not newly rerun in preparation",
+  "independentRuntimeReview": "PASS actual corrected interfaces, budget, ownership and cleanup; no additional local runtime blocker",
+  "independentPacketReview": "PASS_HASHES_COMMITTED_SOURCE_COMMANDS_AUTHORITY_RESOURCE_PINS_AND_UTC_EASTERN_WINDOWS_MATCH",
+  "documentationChecks": "FROZEN_BASELINE_CROSS_REPOSITORY_CONSISTENCY_ARCHITECTURE_WHITESPACE_PASS",
+  "checklist": {
+    "scopeSourceWindowBound": true,
+    "localSourceConfigurationVerified": true,
+    "priorTestsMatchExactSource": true,
+    "reviewAndDocumentationChecks": true,
+    "exactApproval": false,
+    "liveQualification": false,
+    "independentCleanupAndPurge": false
+  },
+  "owners": {
+    "preparationExecutionEvidence": "implementer",
+    "externalDecisionAndCredentialCustody": "Debynyhan Banks",
+    "unresolvedProviderContainment": "cloud custodian"
+  },
+  "acceptance": "4/8 accepted; 3A OPEN; R1 newly closed 0/27",
+  "scopeDeviation": "No scope deviation",
+  "cleanupReserveSeconds": 480,
+  "cleanupTimingBasis": "Unchanged permitted source/SDK/provider operations: retained 480-second reviewed reserve plus 60-second purge reserve. Cleanup work stops70 seconds before cleanupEnd; final metadata read stops10 seconds before cleanupEnd.",
+  "nextObservableResult": "KEY_BOUNDARY_REACHED or one safe failure, then authoritative containment and private/process closeout. No authentication/payment acceptance.",
+  "prerequisites": [
+    {
+      "sourceCommit": "4173ec0b3b8bf3dc81d607275a427101615a4c35",
+      "evidenceTimestamp": "2026-11-14T18:09:48.734701+00:00",
+      "responsibleOwner": "Implementer",
+      "item": "Actual CLI/provider/key output contracts, serialization, parsing, missing/null fields and safe classification",
+      "verification": "LOCAL_PASS_SOURCE_MATCHED",
+      "source": "KQ operator main/dispatch/qualify_owner and current entry.Ports; native, connected, qualification and correction full suites",
+      "evidence": "Backend e20c5e2 et1-local-verification-20261114/verification.json; 647 tests completed in preceding ET1 section, not rerun in preparation",
+      "details": "Corrected sameUID currentetag seam is used by postcreate/authenticate. Original creation-reference diagnostic comparisons remain meaningful. No external SQL in scope."
+    },
+    {
+      "sourceCommit": "4173ec0b3b8bf3dc81d607275a427101615a4c35",
+      "evidenceTimestamp": "2026-11-14T18:09:48.734701+00:00",
+      "responsibleOwner": "Implementer",
+      "item": "Exact configuration, resource pins, runtime, SDK environment and dynamic settings",
+      "verification": "CURRENT_LOCAL_PASS",
+      "source": "Actual source_guard, validate_scope, _command and acl.config_snapshot",
+      "evidence": "This record includes source guard duration/hash, configuration digest and actual command vectors",
+      "details": "Source guard verifies current+committed graph and installed SDK/runtime. New operation root absent; no reservation. Numericrevision00000002 accepted by actual approval parser; falseauthority draft refused."
+    },
+    {
+      "sourceCommit": "4173ec0b3b8bf3dc81d607275a427101615a4c35",
+      "evidenceTimestamp": "2026-11-14T18:09:48.734701+00:00",
+      "responsibleOwner": "Owner/credential custodian/cloud custodian",
+      "item": "Current owner credentials, effective permissions, API availability, restrictions and intended-client usability",
+      "verification": "UNKNOWN_QUALIFICATION_PURPOSE",
+      "source": "Included actual owner/project/cache/service gates; exact create/metadata/keyString and sameUID conditional cleanup",
+      "evidence": "No current provider/cache call in this preparation; original KQ1 etag stop and cleanup remain immutable historical evidence",
+      "details": "Coverage must exceed purgeEnd; no cache read or create before exact approval. Only inert sink, not account authentication. Metadata does not imply usable access."
+    },
+    {
+      "sourceCommit": "4173ec0b3b8bf3dc81d607275a427101615a4c35",
+      "evidenceTimestamp": "2026-11-14T18:09:48.734701+00:00",
+      "responsibleOwner": "Implementer",
+      "item": "Deadlines, no retry, concurrency and interruption/partial-failure recovery",
+      "verification": "LOCAL_PASS_SOURCE_MATCHED",
+      "source": "Existing KQ durable shared counts, phase lock, supervisor, private purge guard and actual Ports/KD interfaces",
+      "evidence": "ET1 full test evidence plus independent unchanged-code timing review",
+      "details": "11main+14cleanup HTTPS,4CLI,2cache,onecreate/onedelete;480scleanup+60spurge. Conservative cleanup bound301s plus main grace10 and local margin. Retain finalread window and explicit UNKNOWN after lost provenance or abruptprocessdeath."
+    },
+    {
+      "sourceCommit": "4173ec0b3b8bf3dc81d607275a427101615a4c35",
+      "evidenceTimestamp": "2026-11-14T18:09:48.734701+00:00",
+      "responsibleOwner": "Implementer",
+      "item": "Independent cleanup, authoritative readbacks, retention and process closeout",
+      "verification": "LOCAL_PASS_LIVE_PENDING",
+      "source": "Fresh cleanup process, KD exactUID/currentetag conditionalDELETE, finalread, originalroot inventory/purge",
+      "evidence": "ET1 recovery/concurrency tests and KQ1 separately closed evidence; future KQ2 result not yet produced",
+      "details": "Rawtoken/keyString/providerbody never persisted or printed. Safe result/counts/matchflags/provenancehash retained; private purge is not providercontainment proof."
+    },
+    {
+      "sourceCommit": "4173ec0b3b8bf3dc81d607275a427101615a4c35",
+      "evidenceTimestamp": "2026-11-14T18:09:48.734701+00:00",
+      "responsibleOwner": "Implementer",
+      "item": "Finite checklist, exclusions, approvals and observable result",
+      "verification": "PREPARATION_COMPLETE_EXACT_OWNER_DECISION_PENDING",
+      "source": "KQ2 exact proposal and this record",
+      "evidence": "No external approval file00000002 exists; draftfalse only",
+      "details": "Remaining ownerapproval/availability,onequalification,independentcloseout,evidencereconciliation. Nextboundaryresult not paymentacceptance;accepted4/8,3AOPEN."
+    }
+  ],
+  "independentFilenameAndTimingReview": {
+    "status": "PASS",
+    "reviewedAt": "2026-11-14T18:11:22.996961+00:00",
+    "finding": "Eight-digit suffix is numericrevision2, not date; no code change, old packet untouched. 480scleanup covers conservative301s calls/pacing/source/process bound plus main grace10 and margin; finalread/purge reserves retained."
+  },
+  "reviewedAt": "2026-11-14T18:12:17.059575+00:00",
+  "newGovernanceTests": {
+    "passed": 25,
+    "failed": 0,
+    "logSha256": "e1844401302b926bcb0c75c4835c24aff57361c4a8d4ffacb9bb72c9db63bc8e",
+    "log": "/private/tmp/kq2-preparation-governance-tests.log"
+  }
+}
