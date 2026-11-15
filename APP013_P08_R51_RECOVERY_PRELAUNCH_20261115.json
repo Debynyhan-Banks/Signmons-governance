@@ -1,0 +1,21 @@
+{
+  "verifiedAt": "2026-11-15T21:52:16.553051+00:00",
+  "approvalCommit": "68ef24bc2ac2558640298f1531f70b6987c06c69",
+  "sourceCommit": "d3d6e6bc150e8ff8c2bccf002d587c90c1f1758c",
+  "scopeSha256": "a378a7a72920b190f54a04b41d1bc22c56eb59864adb139a08c4f5a3a9d5f23a",
+  "sourceSdkConfigurationAuthorityClock": "PASS",
+  "commandArgv": [
+    "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+    "-I",
+    "-B",
+    "-c",
+    "import runpy,sys;sys.path.insert(0,sys.argv[1]);sys.argv=sys.argv[2:];runpy.run_module(\"qualification_launch\",run_name=\"__main__\")",
+    "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-https-output-category-local-20261029/source",
+    "qualification_launch.py",
+    "--recover-binding-inputs",
+    "/private/tmp/p08-binding-request-c7dcf7c8-c4f5-4c7c-a83e-61c85966312e/envelope.json"
+  ],
+  "standaloneTerminalReady": "OWNER_CONFIRMED",
+  "providerCalls": 0,
+  "credentialReads": 0
+}
