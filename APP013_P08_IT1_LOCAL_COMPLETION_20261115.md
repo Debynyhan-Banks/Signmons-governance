@@ -1,0 +1,22 @@
+# APP-013 / 3A — IT1 local implementation complete
+
+Owner approval7e6c813; exact proposal9052a44. Runtime943f1c9477e5f66e0a57c9f873f56c90d0962231, IQ1 manifestebbd1c9bda6aa8a9a157397d8d486dfb2be70ed3714d42deaaa79290f2e6158f. Only IQ1 implementation/tests/own manifest changed; shared adapters, SDK and application code unchanged. Support remains out of scope.
+
+Existing final result now includes at most11 safe observations for the same existing calls: phase/step/ordinal, UTC start/return, monotonic transport elapsed, fixed transport outcome, read-only shape/email/state-type/UID comparison labels. Exact raw bytes still pass to the original serializer/predicate. Baseline UID is labelled validated only after existing metadata/disabled checks; reads not requesting UID say NOT_REQUESTED. Before baseline validation a numeric UID has NOT_CLASSIFIED status. Diagnostic clock/classifier failure leaves fields absent/null rather than fabricated; transport failure has no return timestamp or state. Diagnostic exceptions do not replace the underlying success/failure or cleanup path. No raw values are added to retention.
+
+The existing pre-disable cleanup metadata can now be compared with the earlier enabled-state readback. A synthetic first BOOL_TRUE then later BOOL_FALSE is preserved as evidence of two different observations, while original STATE_MISMATCH/FAILED_AND_CLOSED remains. Both BOOL_TRUE observations remain failure. This is not a propagation diagnosis or an extra read. Mutations, vectors, ordering, deadline/budget, lease, source/configuration/custody controls and success predicates remain unchanged. Observations are bounded in memory until final result publication; worker death/publication failure still leaves UNKNOWN. No new journal files or crash-proof telemetry claim.
+
+Validation:
+-205 connected tests passed, including69IQ1 (10 new tests);135 native tests passed. Existing local loopback/browser/process and disposable TLS database fixtures included; native fixture confirms server reaped/scratch absent/providerCalls0.
+-New tests cover positive counts/baseline binding, changing/unchanged state, type/missing/invalid labels, UID mismatch, secret-sentinel omission/large strings, diagnostic classifier/clock failure, transport error and result-publication failure after cleanup. Existing clock/lease/source/deadline/interruption/final-read cleanup regressions passed.
+-Committed source guard passed in0.506s at2026-11-15T14:06:42Z; architecture/baseline/consistency/whitespace checks pass.25 governance tests passed in final closeout (365 total tests).
+-IQ1/IQ2/IQ3/AL1 prior receipt trees unchanged against80edf70. No TypeScript input changed; no new build/lint result claimed.
+-The initial nested-sandbox run could not install its local process sandbox; it also exposed one misplaced existing assertion in the edited test. Assertion placement was corrected, then full suites passed under approved local process-test permissions. No test was weakened or skipped. Final elapsed timing excludes diagnostic parsing time.
+
+Evidence: backend evidence/APP-013/p08-connected-packet-20261110/it1-local-verification/{connected.log,native.log,readiness.json}. Logs record full commands' suite results; tests are synthetic/local and do not prove the live issue fixed.
+
+Checklist1–7 complete locally: bounded implementation; positive/negative/diagnostic-failure coverage; existing concurrency/recovery/browser regressions; manifest/source checks; retained evidence; handoff. No provider/account/cache read, sign-in, remote SQL, identity mutation, support contact or payment occurred. No live operation is scheduled or authorized; old approvals remain consumed.
+
+Next implementer prepares a separately reviewed, source-pinned single identity qualification only after current local readiness/command/configuration checks and exact external scope are concrete. Its purpose would be to observe the previously discarded state/timing without adding calls, not promise successful payment or a root-cause diagnosis. Current external permissions/state/credential usability are UNKNOWN. Owner/cloud/credential custodians retain the live decision. No Terminal/password needed for this completed local work.
+
+3A remains OPEN: identity prerequisite, current account containment/entry and preserved R47 UNKNOWNs, authenticated same-job Sandbox payment/event/application recovery, independent cleanup and owner acceptance. Accepted1A/1B/2A/2B remain4/8;R1 newly closed0/27. No scope deviation beyond the explicitly approved IT1 safe observation fields.
