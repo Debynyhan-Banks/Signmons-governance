@@ -1,0 +1,24 @@
+{
+  "observedAt": "2026-11-15T15:43:17.131331+00:00",
+  "scopeSha256": "c26e0403b9ceb15e02b5693b314758c8373c3281b7361755e5a22d69c2e28f35",
+  "operationId": "94b345bd-287d-4a8a-92cf-cf50d2a18dd5",
+  "sourceGuard": "PASS",
+  "configurationMetadata": "PASS_NO_TOKEN_CACHE_READ",
+  "inertAuthorityValidation": "PASS_NOT_OWNER_APPROVAL",
+  "decisionPath": "APP013_P08_CT2_EXTERNAL_20261115_94b345bd.json",
+  "externalCalls": 0,
+  "credentialReads": 0,
+  "command": [
+    "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+    "-I",
+    "-B",
+    "-c",
+    "import sys,runpy;sys.path.insert(0,sys.argv.pop(1));sys.argv[0]=\"account_containment_read\";runpy.run_module(\"account_containment_read\",run_name=\"__main__\")",
+    "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110",
+    "--run",
+    "/private/tmp/p08-ct2-read1-94b345bd-287d-4a8a-92cf-cf50d2a18dd5-envelope.json"
+  ],
+  "localSandboxAndProcessClosure": "PASS",
+  "ownerApproval": "PENDING",
+  "attendanceAndNoOverlap": "PENDING"
+}
