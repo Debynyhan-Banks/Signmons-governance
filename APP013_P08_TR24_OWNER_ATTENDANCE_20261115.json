@@ -3,7 +3,8 @@
   "attendanceThrough": "2026-11-16T01:10:00Z",
   "proposalSha256": "7b140d580efc51c6ad712eba7d3b3eb036455c029898d107f7c58d139ad69f55",
   "confirmedInChat": true,
-  "browserReady": false,
+  "browserReady": true,
   "response": "Yes, available through8:10p.m.",
-  "browserReadiness": "PENDING_WITH_EXACT_SIGNIN_APPROVAL"
+  "browserReadiness": "OWNER_CONFIRMED_BROWSER_READY_WITH_EXACT_TR24_APPROVAL",
+  "signInApprovalResponse": "Approve TR24; browser ready"
 }
