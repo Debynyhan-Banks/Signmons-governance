@@ -10,7 +10,7 @@
   "configurationSha256": "528ceadadc8a5491e54ee82dbad0026eda881252564f96f2be242d70d1d2f111",
   "providerCalls": 0,
   "credentialReads": 0,
-  "credentialCoverage": "UNKNOWN_NOT_READ",
+  "credentialCoverage": "TR22_LIVE_OBSERVED_STRICTLY_BEYOND_2026-11-15T18:00:00Z_SINGLE_READ_CONSUMED",
   "attendance": "OWNER_CONFIRMED_2026-11-15_NOON_TO_13:10_EASTERN_AVAILABILITY_ONLY",
   "nativeCleanupReserveSeconds": 660,
   "purgeReserveSeconds": 120,
@@ -20,5 +20,8 @@
   "currentPrivateBindingsEndpointEffectiveAccessPayment": "UNKNOWN",
   "actualNativeCapability": "PASS_PROOF_ONLY_EXACT_PUBLIC_WINDOWS_IDS_PINS_SYNTHETIC_PRIVATE_FIELDS",
   "temporaryProofRootRemoved": true,
-  "preparationCorrection": "Initial fixture root belonged to another operation and was correctly refused; matching empty proof root passed and was removed without attempt/private data."
+  "preparationCorrection": "Initial fixture root belonged to another operation and was correctly refused; matching empty proof root passed and was removed without attempt/private data.",
+  "currentActualClockPreflight": "PASS_PROPOSED_AUTHORITY_ONLY_NO_RESERVATION",
+  "currentRecheckAt": "2026-11-15T17:01:28.686982+00:00",
+  "credentialCloseout": "TR22_CLOSED_PROCESS_CONFIG_CUSTODY_EXECUTOR_REMOVAL_VERIFIED"
 }
