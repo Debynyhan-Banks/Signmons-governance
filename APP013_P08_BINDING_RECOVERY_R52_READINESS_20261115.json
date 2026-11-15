@@ -13,7 +13,7 @@
   "currentContainmentEvidence": "CT3 live2 observed 2026-11-15T23:41:35Z; independent closeout 23:42:59Z",
   "historicalR51AuthOutcome": "UNKNOWN",
   "credentialCoverageBeyond20_00Eastern": "UNKNOWN",
-  "attendanceThrough20_10Eastern": "PENDING",
+  "attendanceThrough20_10Eastern": "OWNER_CONFIRMED_AVAILABLE_THROUGH_2026-11-16T01:10:00Z",
   "currentPrivateBindingsAndStoredKeyUsability": "UNKNOWN",
   "liveAuthenticationPayment": "UNKNOWN",
   "qualificationManifestSha256": "320c8894217e460bc527aac5150c06a9b4d1d60410d3d4692685c601633be499",
