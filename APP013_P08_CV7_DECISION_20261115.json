@@ -1,0 +1,10 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_CV7_CACHE_VALIDITY_READ_ONCE",
+  "operationId": "f1d0acdb-8347-4a0f-9a17-3f9fd4d11260",
+  "sourceCommit": "49b4afb43d9464299b367a9b640dfec6fb1dc7cf",
+  "scopeSha256": "cf5ec3c368c32073921de3b2e3570ecf8a7246e7e7cc876189b13ae94c22f0d9",
+  "credentialReadAuthorized": true,
+  "approvedText": "i approve",
+  "date": "2026-11-15"
+}
