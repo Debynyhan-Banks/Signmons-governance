@@ -80,5 +80,5 @@
   "priorLocalBoundaryEvidence": "Reused unchanged CT3 PTY/source/worker evidence; full-gate endpoint probe from LIVE1 readiness remains local evidence, not live access proof.",
   "mainReserveSeconds": 300,
   "cleanupReserveSeconds": 240,
-  "independentReviewAt": "2026-11-15T23:37:00Z"
+  "independentReviewRecordedAt": "2026-11-15T23:37:42.408068+00:00"
 }
