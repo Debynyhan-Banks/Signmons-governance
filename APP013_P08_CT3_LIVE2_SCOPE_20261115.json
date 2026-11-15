@@ -1,0 +1,89 @@
+{
+  "action": "VERIFY_R51_CURRENT_CONTAINMENT_WITH_CONDITIONAL_CORRECTION_ONCE",
+  "operationId": "7012b349-11ed-4aaf-b94c-ee3e536e9d46",
+  "sourceCommit": "148d2dcd20847e650c001bf7cb94a14cfde6690b",
+  "manifestSha256": "0440dddaf370be8574212ead7ee040acae911423911bb65fc9ade39c1e624a76",
+  "configSha256": "528ceadadc8a5491e54ee82dbad0026eda881252564f96f2be242d70d1d2f111",
+  "window": {
+    "start": "2026-11-15T23:35:00Z",
+    "cutoff": "2026-11-15T23:49:00Z",
+    "readEnd": "2026-11-15T23:54:00Z",
+    "cleanupEnd": "2026-11-15T23:58:00Z",
+    "purgeEnd": "2026-11-15T23:59:00Z"
+  },
+  "limits": {
+    "cli": 3,
+    "accountSql": 1,
+    "firebase": 3,
+    "firebaseUpdate": 1,
+    "stripe": 3,
+    "stripeDisable": 1,
+    "child": 3,
+    "closeoutSql": 1,
+    "cache": 0
+  },
+  "sdkException": "SDK_OWNER_REFRESH_RETRY_CACHE_EXPLICIT_TOKEN_MEMORY_ONLY",
+  "commands": [
+    {
+      "id": "owner",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "auth",
+        "list",
+        "--filter=status:ACTIVE",
+        "--format=json(account,status)"
+      ]
+    },
+    {
+      "id": "project",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "projects",
+        "describe",
+        "signmons",
+        "--format=json(projectId,projectNumber,lifecycleState)"
+      ]
+    },
+    {
+      "id": "token",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "auth",
+        "print-access-token"
+      ]
+    }
+  ],
+  "policy": {
+    "kind": "POST_PROCESS_OBSERVATION",
+    "historicalOperationId": "cc2c1ce5-640f-41f4-a993-31063630207c",
+    "minimumValidSince": 1794780123,
+    "historicalAuthentication": "UNKNOWN"
+  },
+  "resources": {
+    "targetSha256": "23d7b71141e7cdba27558c97333e6821fc76ec872a84cdc2f2f19a980bee029c",
+    "projectNumberSha256": "37d4aa0f46ca5b8f0b81b1148bda235a0f4a9a424b6b4638ec993d889563be54",
+    "endpointSha256": "dbaae6448069a186dc4b9e2fc6182707dda7b61218376e9e97cd21b20b4bfeae",
+    "endpointUrl": "https://app013-p07-atomic---signmons-calldesk-staging-p572d6wipq-ul.a.run.app/webhooks/stripe",
+    "apiVersion": "2026-03-25.dahlia",
+    "node": "/Users/debynyhanbanks/.nvm/versions/node/v24.12.0/bin/node",
+    "worker": "evidence/APP-013/p08-key-correction-20261110/key_check.mjs",
+    "database": {
+      "psql": "/opt/homebrew/opt/postgresql@16/bin/psql",
+      "host": "ep-jolly-flower-ayc6w9hv.c-5.us-east-2.aws.neon.tech",
+      "user": "neondb_owner",
+      "name": "neondb",
+      "tls": "verify-full",
+      "ca": "/etc/ssl/cert.pem"
+    },
+    "sql": [
+      {
+        "id": "ct3_account",
+        "sql": "BEGIN TRANSACTION ISOLATION LEVEL REPEATABLE READ READ ONLY;\nSET LOCAL statement_timeout='15s'; SET LOCAL lock_timeout='5s';\nWITH j AS (SELECT id,\"tenantId\",\"policySnapshot\",\"calendarEventId\" FROM \"Job\" WHERE id='9180bef4-561d-47a0-869f-925e6a3dfd96'::uuid AND \"tenantId\"='a1adcfd4-15be-404b-9ac3-5edb1fda20f0'::uuid),\nt AS (SELECT id,status,settings->'organizationPaymentPolicyV1' AS \"paymentPolicy\" FROM \"TenantOrganization\" WHERE id='a1adcfd4-15be-404b-9ac3-5edb1fda20f0'::uuid),\nu AS (SELECT id,\"tenantId\",email,\"fullName\",role,status FROM \"User\" WHERE \"tenantId\"='a1adcfd4-15be-404b-9ac3-5edb1fda20f0'::uuid AND email='debynyhan@signmons.com')\nSELECT json_build_object(\n 'jobCount',(SELECT count(*) FROM j),'job',(SELECT row_to_json(j) FROM j),\n 'tenantCount',(SELECT count(*) FROM t),'tenant',(SELECT row_to_json(t) FROM t),\n 'operatorCount',(SELECT count(*) FROM u),'operator',(SELECT row_to_json(u) FROM u),\n 'calendarCount',(SELECT count(*) FROM \"CalendarOperation\" WHERE \"jobId\"='9180bef4-561d-47a0-869f-925e6a3dfd96'::uuid AND \"tenantId\"='a1adcfd4-15be-404b-9ac3-5edb1fda20f0'::uuid),\n 'roleCount',(SELECT count(*) FROM pg_roles WHERE rolname='p07_payment_runtime'),\n 'sessionCount',(SELECT count(*) FROM pg_stat_activity WHERE (usename='p07_payment_runtime' OR application_name LIKE 'signmons_p08_qualification_%' OR application_name IN ('p08-auth-cc2c1ce5-640f-41f4-a993-31063630207c','p08-runtime-cc2c1ce5-640f-41f4-a993-31063630207c','p08-probe-cc2c1ce5-640f-41f4-a993-31063630207c')) AND pid<>pg_backend_pid()));\nROLLBACK;"
+      },
+      {
+        "id": "ct3_closeout",
+        "sql": "BEGIN TRANSACTION ISOLATION LEVEL REPEATABLE READ READ ONLY;\nSET LOCAL statement_timeout='15s'; SET LOCAL lock_timeout='5s';\nWITH u AS (SELECT id,\"tenantId\",email,\"fullName\",role,status FROM \"User\"\n WHERE \"tenantId\"='a1adcfd4-15be-404b-9ac3-5edb1fda20f0'::uuid AND email='debynyhan@signmons.com')\nSELECT json_build_object('operatorCount',(SELECT count(*) FROM u),\n 'operator',(SELECT row_to_json(u) FROM u),\n 'sessionsAbsent',NOT EXISTS(SELECT 1 FROM pg_stat_activity WHERE (usename='p07_payment_runtime' OR application_name LIKE 'signmons_p08_qualification_%' OR application_name IN ('p08-auth-cc2c1ce5-640f-41f4-a993-31063630207c','p08-runtime-cc2c1ce5-640f-41f4-a993-31063630207c','p08-probe-cc2c1ce5-640f-41f4-a993-31063630207c')) AND pid<>pg_backend_pid()));\nROLLBACK;"
+      }
+    ]
+  }
+}

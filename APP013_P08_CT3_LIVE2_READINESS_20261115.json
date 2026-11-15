@@ -1,0 +1,84 @@
+{
+  "status": "QUALIFICATION_ONLY_PENDING_EXACT_OWNER_APPROVAL",
+  "observedAt": "2026-11-15T23:34:47.177725+00:00",
+  "operationId": "7012b349-11ed-4aaf-b94c-ee3e536e9d46",
+  "sourceCommit": "148d2dcd20847e650c001bf7cb94a14cfde6690b",
+  "scopeSha256": "09db0efa0b92aea2b6a5ab00cd812cb1007d3ef7b8fec4f348c1aabc39c53e27",
+  "sourceGuard": "PASS",
+  "sourceGuardSeconds": 0.965,
+  "configurationMetadata": "PASS_NO_CREDENTIAL_CACHE_READ",
+  "configSha256": "528ceadadc8a5491e54ee82dbad0026eda881252564f96f2be242d70d1d2f111",
+  "resourcesSha256": "5fa63feea88513e402b813ccaa07a168e346a0d24431aa9440f09fcad46ddc41",
+  "inertAuthorityValidation": "PASS_NOT_PERSISTED_OR_LAUNCHED",
+  "inertWindowEvaluationAt": "2026-11-15T23:35:01Z",
+  "localSandboxAndProcessClosure": "PASS",
+  "emptyTransportClosure": true,
+  "leaseAvailableAtObservation": true,
+  "operationRootAbsent": true,
+  "launchEnvelopeAbsent": true,
+  "command": [
+    "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+    "-I",
+    "-B",
+    "-c",
+    "import sys,runpy;sys.path.insert(0,sys.argv.pop(1));sys.argv[0]=\"account_containment_read\";runpy.run_module(\"account_containment_read\",run_name=\"__main__\")",
+    "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110",
+    "--run-ct3",
+    "/private/tmp/p08-ct3-live2-7012b349-11ed-4aaf-b94c-ee3e536e9d46-envelope.json"
+  ],
+  "decisionPath": "APP013_P08_CT3_EXTERNAL_20261115_7012b349.json",
+  "launchEnvelope": "/private/tmp/p08-ct3-live2-7012b349-11ed-4aaf-b94c-ee3e536e9d46-envelope.json",
+  "operationRoot": "/private/tmp/p08-ct3-7012b349-11ed-4aaf-b94c-ee3e536e9d46",
+  "latestLaunch": "2026-11-15T23:41:00Z",
+  "latestLaunchEnforcement": "IMPLEMENTER_PRELAUNCH_CHECK; PROGRAM_ENFORCES_INPUT_CUTOFF",
+  "reachabilityRequestedThrough": "2026-11-16T00:00:00Z",
+  "runtimeFiles": {
+    "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14": {
+      "resolvedPath": "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+      "sha256": "2cbb3ee843d8abcf93ed35bb9102391f18eefccb03d47908547bd8db67bc395c"
+    },
+    "/Users/debynyhanbanks/.nvm/versions/node/v24.12.0/bin/node": {
+      "resolvedPath": "/Users/debynyhanbanks/.nvm/versions/node/v24.12.0/bin/node",
+      "sha256": "90ee1d271eec831fd38d16c78c19cc36809548ac5cd034a6e0c10c4389c881ef"
+    },
+    "/opt/homebrew/opt/postgresql@16/bin/psql": {
+      "resolvedPath": "/opt/homebrew/Cellar/postgresql@16/16.11_1/bin/psql",
+      "sha256": "e67224e11a8d29541c02528b814b17c0757da7d961f16c58003561e20263528d"
+    },
+    "/etc/ssl/cert.pem": {
+      "resolvedPath": "/private/etc/ssl/cert.pem",
+      "sha256": "9dae8d76e55cb08991f2b672d58999ea15560d910759c16b544f843bdffbb994"
+    }
+  },
+  "endpointActualFullGateProbe": {
+    "status": "ENDPOINT_OBSERVED",
+    "code": "NONE",
+    "elapsedSeconds": 4.168,
+    "workerHorizonSeconds": 7,
+    "fullSourceConfigGateSeconds": [
+      1.309,
+      0.911,
+      1.053,
+      0.893
+    ],
+    "processClosure": true,
+    "syntheticProviderOnly": true
+  },
+  "externalCalls": 0,
+  "credentialReads": 0,
+  "attemptReserved": false,
+  "liveAuthorityCreated": false,
+  "ownerApproval": "PENDING",
+  "attendanceInputReadinessAndNoOverlap": "CONFIRMED_FOR_LIVE1_RECONFIRM_INPUT_ORDER_AND_NO_OVERLAP_WITH_LIVE2_APPROVAL",
+  "liveCredentialUsability": "UNKNOWN",
+  "effectivePermissions": "UNKNOWN",
+  "currentProviderContainment": "UNKNOWN",
+  "historicalAuthentication": "UNKNOWN",
+  "independentPacketReview": "PASS_SCOPE_ARGV_SOURCE_POLICY_LIMITS_TIMING_INPUT_ORDER",
+  "governanceChecks": "PASS_25_TESTS_BASELINE_CONSISTENCY_ARCHITECTURE_WHITESPACE",
+  "reachabilityConfirmedThrough": "2026-11-16T00:00:00Z",
+  "priorLocalBoundaryEvidence": "Reused unchanged CT3 PTY/source/worker evidence; full-gate endpoint probe from LIVE1 readiness remains local evidence, not live access proof.",
+  "mainReserveSeconds": 300,
+  "cleanupReserveSeconds": 240,
+  "independentReviewAt": "2026-11-15T23:37:00Z"
+}
