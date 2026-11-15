@@ -1,0 +1,15 @@
+{
+  "status": "PROPOSED_NOT_APPROVED",
+  "externalActionAuthorized": false,
+  "decisionForReview": {
+    "owner": "Debynyhan Banks",
+    "decision": "APPROVE_TR1_CREDENTIAL_RENEWAL_SDK_RETRY_CACHE_AND_CLEANUP",
+    "proposalSha256": "6430870dea031cd07631beaf33bb9173f3794dcdcc8f3b4a14eb7c28d8d8541d",
+    "sourceCommit": "24925b9e32eccded2c85b0a4509f4f274521fc76",
+    "reservation": "owner-signin-20261115-tr22",
+    "cutoff": "2026-11-15T17:10:00Z",
+    "closeoutEnd": "2026-11-15T17:17:00Z",
+    "validThrough": "2026-11-15T18:00:00Z",
+    "externalActionAuthorized": true
+  }
+}
