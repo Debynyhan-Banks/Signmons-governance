@@ -1,0 +1,79 @@
+{
+  "status": "QUALIFICATION_ONLY_PENDING_EXACT_OWNER_APPROVAL",
+  "observedAt": "2026-11-15T23:22:25.191174+00:00",
+  "operationId": "2512649e-f563-4311-b8a7-00b37ed32258",
+  "sourceCommit": "148d2dcd20847e650c001bf7cb94a14cfde6690b",
+  "scopeSha256": "ae7ab2261432466193b0b72c1013b95c544095abb5060d6763548813181b3560",
+  "sourceGuard": "PASS",
+  "sourceGuardSeconds": 1.081,
+  "configurationMetadata": "PASS_NO_CREDENTIAL_CACHE_READ",
+  "configSha256": "528ceadadc8a5491e54ee82dbad0026eda881252564f96f2be242d70d1d2f111",
+  "resourcesSha256": "5fa63feea88513e402b813ccaa07a168e346a0d24431aa9440f09fcad46ddc41",
+  "inertAuthorityValidation": "PASS_NOT_PERSISTED_OR_LAUNCHED",
+  "inertWindowEvaluationAt": "2026-11-15T23:25:01Z",
+  "localSandboxAndProcessClosure": "PASS",
+  "emptyTransportClosure": true,
+  "leaseAvailableAtObservation": true,
+  "operationRootAbsent": true,
+  "launchEnvelopeAbsent": true,
+  "command": [
+    "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+    "-I",
+    "-B",
+    "-c",
+    "import sys,runpy;sys.path.insert(0,sys.argv.pop(1));sys.argv[0]=\"account_containment_read\";runpy.run_module(\"account_containment_read\",run_name=\"__main__\")",
+    "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110",
+    "--run-ct3",
+    "/private/tmp/p08-ct3-live1-2512649e-f563-4311-b8a7-00b37ed32258-envelope.json"
+  ],
+  "decisionPath": "APP013_P08_CT3_EXTERNAL_20261115_2512649e.json",
+  "launchEnvelope": "/private/tmp/p08-ct3-live1-2512649e-f563-4311-b8a7-00b37ed32258-envelope.json",
+  "operationRoot": "/private/tmp/p08-ct3-2512649e-f563-4311-b8a7-00b37ed32258",
+  "latestLaunch": "2026-11-15T23:35:00Z",
+  "latestLaunchEnforcement": "IMPLEMENTER_PRELAUNCH_CHECK; PROGRAM_ENFORCES_INPUT_CUTOFF",
+  "reachabilityRequestedThrough": "2026-11-16T00:00:00Z",
+  "runtimeFiles": {
+    "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14": {
+      "resolvedPath": "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+      "sha256": "2cbb3ee843d8abcf93ed35bb9102391f18eefccb03d47908547bd8db67bc395c"
+    },
+    "/Users/debynyhanbanks/.nvm/versions/node/v24.12.0/bin/node": {
+      "resolvedPath": "/Users/debynyhanbanks/.nvm/versions/node/v24.12.0/bin/node",
+      "sha256": "90ee1d271eec831fd38d16c78c19cc36809548ac5cd034a6e0c10c4389c881ef"
+    },
+    "/opt/homebrew/opt/postgresql@16/bin/psql": {
+      "resolvedPath": "/opt/homebrew/Cellar/postgresql@16/16.11_1/bin/psql",
+      "sha256": "e67224e11a8d29541c02528b814b17c0757da7d961f16c58003561e20263528d"
+    },
+    "/etc/ssl/cert.pem": {
+      "resolvedPath": "/private/etc/ssl/cert.pem",
+      "sha256": "9dae8d76e55cb08991f2b672d58999ea15560d910759c16b544f843bdffbb994"
+    }
+  },
+  "endpointActualFullGateProbe": {
+    "status": "ENDPOINT_OBSERVED",
+    "code": "NONE",
+    "elapsedSeconds": 4.168,
+    "workerHorizonSeconds": 7,
+    "fullSourceConfigGateSeconds": [
+      1.309,
+      0.911,
+      1.053,
+      0.893
+    ],
+    "processClosure": true,
+    "syntheticProviderOnly": true
+  },
+  "externalCalls": 0,
+  "credentialReads": 0,
+  "attemptReserved": false,
+  "liveAuthorityCreated": false,
+  "ownerApproval": "PENDING",
+  "attendanceInputReadinessAndNoOverlap": "PENDING",
+  "liveCredentialUsability": "UNKNOWN",
+  "effectivePermissions": "UNKNOWN",
+  "currentProviderContainment": "UNKNOWN",
+  "historicalAuthentication": "UNKNOWN",
+  "independentPacketReview": "PASS_SCOPE_ARGV_SOURCE_POLICY_LIMITS_TIMING",
+  "governanceChecks": "PASS_25_TESTS_BASELINE_CONSISTENCY_ARCHITECTURE_WHITESPACE"
+}
