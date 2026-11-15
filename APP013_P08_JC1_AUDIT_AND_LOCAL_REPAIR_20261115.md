@@ -1,6 +1,6 @@
 # APP-013 / 3A — R51 audit and JC1 local repair proposal
 
-Status: audit complete; proposed local repair NOT IMPLEMENTED and NOT APPROVED. JC1 is an internal correction within 3A, not another acceptance section. User requested a thorough review to stop repeated inconclusive attempts. This document grants no live authority.
+Status: owner-approved JC1 IMPLEMENTED AND LOCALLY VERIFIED at backend72f0390. Exact decision: APP013_P08_JC1_APPROVAL_20261115.md; completed evidence: APP013_P08_JC1_LOCAL_COMPLETION_20261115.md. JC1 is an internal correction within 3A, not another acceptance section. User requested a thorough review to stop repeated inconclusive attempts. This document grants no live authority.
 
 ## Finding and correction to the earlier interpretation
 
@@ -75,10 +75,10 @@ Independent dependency review found 14 files total and 32 affected hash referenc
 | --- | --- | --- |
 | Trace source and reproduce failure | Actual full-parent failure reproduced; distinguish historical UNKNOWN | Complete / implementer |
 | Reconcile final cleanup labels | Conservative final labels explained without clearing them | Complete / implementer |
-| Review complete local scope | Seven functional/test files, seven manifests, bounded interfaces above | Prepared; owner decision pending |
-| Implement contract and safe failure path | No new actions; exact schemas; valid child evidence survives | Pending / implementer after decision |
-| Verify complete matrix below | Before/after regression and independent review pass | Pending / implementer |
-| Publish local completion | Source/manifest hashes, commands/results, limitations, unchanged acceptance | Pending / implementer |
+| Review complete local scope | Seven functional/test files, seven manifests, bounded interfaces above | Approved / owner decision recorded |
+| Implement contract and safe failure path | No new actions; exact schemas; valid child evidence survives | Complete / implementer;72f0390 |
+| Verify complete matrix below | Before/after regression and independent review pass | Complete / implementer; completion report |
+| Publish local completion | Source/manifest hashes, commands/results, limitations, unchanged acceptance | Complete / implementer; completion report |
 
 Local finish means diagnosis survives the actual parent and cleanup path; it does not mean provider authentication or payment works. Rollback is to retain the current disabled/no-launch state and revert only the approved repair. Consumed R51 remains consumed.
 
@@ -123,5 +123,5 @@ The smallest endpoint observation is one GET of the exact existing Sandbox endpo
 
 Alternatives considered: repeat the current full run (rejected: proven evidence-loss defect remains); add only three field names (insufficient validation and leaves the nearby generic startup blind spot); build a new diagnostics/cleanup subsystem (excluded: use current seams). Recommended scope adds no acceptance section and leaves 3A's finish unchanged. Effort is local repair and integrated verification, followed by separately reviewed containment; no reliable end-to-end completion time is claimed.
 
-Accepted 1A/1B/2A/2B remain 4/8; 3A OPEN; R1 newly closed 0/27. Implementer owns local repair/readiness; owner owns the proposed interface-scope decision and later external authority; cloud/DB custodians own credential/provider actions. No scope deviation in this audit. The JC1 interface extension is explicitly proposed and not implemented.
+Accepted 1A/1B/2A/2B remain 4/8; 3A OPEN; R1 newly closed 0/27. Implementer owns local repair/readiness; owner owns the proposed interface-scope decision and later external authority; cloud/DB custodians own credential/provider actions. No scope deviation in this audit. The JC1 interface extension was explicitly approved and is now locally verified; see the completion report. No live authority is inferred.
 
