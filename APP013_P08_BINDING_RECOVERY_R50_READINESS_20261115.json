@@ -1,0 +1,19 @@
+{
+  "sourceCommit": "d3d6e6bc150e8ff8c2bccf002d587c90c1f1758c",
+  "verifiedAt": "2026-11-15T17:44:51.952443+00:00",
+  "status": "LOCAL_PREPARED_NOT_APPROVED",
+  "recoverySourceSdkConfig": "PASS_PROPOSED_AUTHORITY_CLOCK_NO_DISPATCH",
+  "actualNativeCapability": "PASS_PROOF_ONLY_EXACT_PUBLIC_SPEC_SYNTHETIC_PRIVATE_FIELDS",
+  "temporaryProofRootRemoved": true,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "sdkFiles": 43,
+  "credentialCoverageBeyond14Eastern": "UNKNOWN",
+  "attendanceThrough14_10Eastern": "PENDING",
+  "runtimeCleanupReserveSeconds": 660,
+  "purgeReserveSeconds": 120,
+  "currentPrivateBindingsEndpointEffectiveAccessPayment": "UNKNOWN",
+  "historicalAuthOutcome": "UNKNOWN",
+  "currentWebhookVersion": "SV1_DISABLED_OBSERVED_12_30_53_EASTERN_NOT_FRESH_ENTRY_PROOF",
+  "preparationCorrection": "Synthetic candidate operation ID and qualifiedUntil initially retained fixture values; exact binding checks refused before dispatch. Both now match exact R50 public operation/window in PROOF_ONLY."
+}
