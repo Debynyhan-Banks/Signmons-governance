@@ -1,0 +1,41 @@
+# APP-013 / 3A — R49 local diagnosis and proposed correction
+
+Local inspection only, source 24ee4bb. No credential/provider read, mutation, password prompt or retry. R49 remains consumed with containment unconfirmed.
+
+## Demonstrated gap
+
+The actual native_child.mjs imports bound-clients.mjs, which imports the coordinator-auth client.mjs adapters. issue() tracks SIGN then EXCHANGE, but replaces every exception with SIGN_EXCHANGE_REFUSED and authStage. The actual recovery-sequence.mjs catch persists only failureStage=this.state.phase and safeCode(error); authStage is discarded. Thus TOKEN_INTENT cannot distinguish signing, key-string retrieval, token exchange, transport refusal or response validation. R49's existing retained receipt cannot reconstruct the discarded fact. No particular provider denial is proven.
+
+Coordinator cleanup records a runtime residual on either a failed change or a failed readback. The webhook-version residual alone cannot distinguish those cases or prove the version remains enabled. Current state is UNKNOWN. Account/session checks did not add their own residuals, but missing childResultSha256 preserves AUTH_OUTCOME_UNKNOWN; do not erase that historical uncertainty.
+
+## Proposed bounded local correction — owner decision required
+
+Purpose: support the unchanged 3A authenticated same-job payment criterion by making a future failure actionable before scheduling another full session. No acceptance count or workflow change.
+
+Reuse client.mjs issue/call, recovery-sequence.mjs safeCode/catch and existing injected-transport tests. Add only bounded allowlisted failure observations distinguishing SIGN, KEY_READ and EXCHANGE, plus transport/HTTP-status/response-validation categories. Persist no URL, body, token, key, account identifier or raw exception message. Unknown errors remain UNKNOWN. Do not add requests, retries, delays, permissions, success-predicate changes or live diagnostic mode.
+
+Expected files: existing coordinator client and real-client recovery sequence, their focused tests, and required source manifests. Before implementation complete the section card with exact interfaces, manifest dependency closure and test commands. Test positive success and negative signing/key-read/exchange failures through actual adapters; verify secret-free output, interruption/deadline behavior and unchanged independent cleanup. Existing concurrency and no-retry checks must remain passing. No code implemented by this proposal.
+
+## Separate cleanup verification prerequisite
+
+Prepare a metadata-only read of the exact R49 webhook secret version using the existing secrets versions describe boundary, with owner/project checks and existing supervised cleanup. Never access secret contents or mutate the version. Recover the exact numeric version pin from approved retained public source/descriptor evidence before presenting an executable packet; the safe residual names only the secret. This review has not yet established that pin or a launch-ready packet. If unavailable, report the binding gap rather than guess latest. New source/time/authority readiness is required; no external launch is authorized here.
+
+Completed: local call-path and error-loss diagnosis; bounded prospective correction. Remaining: owner local correction decision, exact metadata-read binding/readiness, separately approved state observation, authentication/payment/event/application proof and acceptance. Implementer owns preparation; owner/cloud custodian owns external authorization. Next observable result: reviewed local correction with safe diagnostic tests, and an exact read-only cleanup packet. Accepted4/8;3A OPEN;R1 newly closed0/27. Explicit prospective diagnostic correction only; no implementation or scope change performed.
+
+## Approved implementation card — AD2, November 15
+
+Owner approved the preceding bounded correction in chat ("i approve"). Source24ee4bb; section3A exact criterion remains authenticated same-job Sandbox payment plus signed event/application gate. Missing diagnostic behavior is traced above to the actual adapter/catch.
+
+Finite checklist: (1) add bounded in-memory stage/category/status observations to existing adapter; (2) sanitize those fields at actual recovery journal boundary; (3) test actual adapter failures and sequence persistence/cleanup, success, unknown values and one-attempt guards; (4) refresh only dependent current source manifests; (5) run focused suites and governance/architecture/whitespace gates; (6) record completion and unresolved live facts.
+
+Interfaces: existing SIGN_EXCHANGE_REFUSED gains authStage SIGN/KEY_READ/EXCHANGE, failureCategory UNKNOWN/TRANSPORT/HTTP/RESPONSE_VALIDATION and nullable integer HTTP status100..599. Journal stores only allowlisted values when that failure code is present. No raw exception, body, URL, credential or identity retained. Existing journal version/CAS and private retention/purge unchanged. Gates, requests, response validation, success predicates, cleanup and no retries unchanged. No new dependency or browser behavior; browser test not applicable to this diagnostic-only change. Existing adapter/sequence tests cover positive/negative/deadline/interruption/concurrency/recovery. Commands: node --test coordinator-auth/source/test_client.mjs real-client-binding/source/test_bound.mjs (under evidence/APP-013 with dated directories); existing native/connected focused tests; required governance25, architecture and git diff --check. Manifest closure follows exact changed-file hash references in current source manifests only; immutable operation receipts are excluded. Rollback is reverting scoped code/manifests together; disabled local state remains. Implementer owns tests/source closure; owner retains all external decisions. Observable finish: safe local diagnostic tests pass, with R49 cause and webhook restoration still UNKNOWN. No live action or new live-read packet authorized.
+
+## AD2 implementation checkpoint — incomplete, execution blocked
+
+Diagnostic code and tests are implemented locally;29focused tests pass. Exact historical-source extraction equality is preserved by enumerating diagnostic-only substitutions in authority.mjs. No provider actions occurred. Broader assembled verification fails SOURCE_DRIFT because intermediate dependency hashes remain. Initial sandboxed suites also hit loopback/subprocess restrictions; no broader passing result is claimed. Governance25, frozen baseline, consistency and architecture checks passed, but they do not clear source guards.
+
+Automatic approval review rejected completing dependency closure, interpreting nine current manifests and two hash-only handoff lock tables as an integrity-pin rebaseline beyond the diagnostic approval. Do not bypass. Explicit owner decision is now needed for exactly: coordinator-auth/source/source-manifest.json; serialized-handoff/source/source-manifest.json; real-client-binding/source/source-manifest.json; native-entry/source/source-manifest.json and test-manifest.json; key-correction/source-manifest.json; connected-packet/iq1-source-manifest.json, account-containment-source-manifest.json and account-containment-read-source-manifest.json; serialized-handoff/source/handoff.py and real-client-binding/source/bound_handoff.py LOCKS digest values only. These abbreviated paths identify the dated existing P08 directories named above. No baseline anchors, operation receipts, guard predicates or external authority may change. Exact final code hashes and every dependent reference must be verified before rerunning local suites. Work remains uncommitted and not launch-ready. R49 residuals and accepted4/8 remain unchanged.
+
+## Explicit dependency approval
+
+Owner replied "i approve" to the exact nine-manifest/two-lock-table update request. The enumerated dependency closure is authorized locally, followed by local tests. No frozen-baseline anchor, historical receipt, guard predicate, live authority or provider action is included. Earlier rejection is retained as history; the specific scope is now approved.
