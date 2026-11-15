@@ -1,0 +1,12 @@
+{
+  "decision": "APPROVE_CT3_CONTAINMENT_CONDITIONAL_CORRECTION_AND_INDEPENDENT_CLEANUP",
+  "operationId": "2512649e-f563-4311-b8a7-00b37ed32258",
+  "scopeSha256": "ae7ab2261432466193b0b72c1013b95c544095abb5060d6763548813181b3560",
+  "externalReadAuthorized": true,
+  "conditionalRevocationAuthorized": true,
+  "conditionalEndpointDisableAuthorized": true,
+  "independentCleanupAuthorized": true,
+  "noOverlappingOperationConfirmed": true,
+  "sdkException": "SDK_OWNER_REFRESH_RETRY_CACHE_EXPLICIT_TOKEN_MEMORY_ONLY",
+  "paymentAuthorized": false
+}
