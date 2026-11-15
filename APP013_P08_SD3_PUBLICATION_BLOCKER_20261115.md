@@ -1,0 +1,11 @@
+# APP-013 / 3A — SD3 prerequisite publication blocker
+
+Local implementation approval3f55f45 against proposala431c60 is retained. Before wiring any wrapper, two disposable-file tests exercised the actual inv.reserve and Journal.inspect. Complete publication permits inspection. Injected interruption after two bytes leaves a0600 partial JSON file; subsequent Journal.inspect raises JSONDecodeError. The test uses an already allowed filename to isolate publication from the proposed new filename allowlist. No live operation, provider call, credential read or installed SDK change.
+
+Source: private_inventory.py reserve uses O_EXCL followed by write/fsync; it does not atomically hide an incomplete file. IQ1 Journal.inspect parses every allowed file, and Boundary.gate calls it before cleanup dispatch. Thus putting optional child-written receipts into that same journal can convert a diagnostic write failure into a blocked cleanup gate. Removing a partial file in a catch cannot cover child death between creation and completion. Simply ignoring malformed journal entries would weaken custody and is not authorized.
+
+Evidence: backend evidence/APP-013/p08-connected-packet-20261110/test_identity_sdk_observation.py; pinned Python3.14 -I -B unittest discovery for that file:2tests PASS (one positive, one fault-injection). Passing here proves the blocker, not SD3 implementation readiness. Runtime943f1c9 and manifest unchanged; no wrapper created. Existing historic receipts unchanged. No unrelated runtime regression claimed.
+
+The approved proposal states: “If that distinction cannot be made within existing safe primitives, stop implementation and report the design blocker; do not weaken custody.” This is that stop, not a generic request to repeat approval. Remaining SD3 checklist is incomplete; the safe classifier/wrapper/sidecars are not implemented.
+
+Next responsible decision: owner reviews the separate proposed diagnostic-storage isolation amendment. Implementer can then complete the existing finite SD3 task if approved. No live identity repeat, sign-in, password prompt, payment or support contact. Accepted4/8;3A OPEN;R1 newly closed0/27;R47 UNKNOWNs unchanged. No unintended scope deviation; explicit amendment proposed before implementation.
