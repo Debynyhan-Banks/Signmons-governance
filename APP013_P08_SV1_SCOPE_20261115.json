@@ -1,0 +1,64 @@
+{
+  "operationId": "a6bb293e-ca06-42cd-aa72-7e57b89c56ca",
+  "sourceCommit": "b82ef35c059d0c267f30bfec58314a21f718b493",
+  "action": "READ_R49_WEBHOOK_VERSION_STATE_ONCE",
+  "commands": [
+    {
+      "id": "owner",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "auth",
+        "list",
+        "--filter=status:ACTIVE",
+        "--format=json(account,status)"
+      ]
+    },
+    {
+      "id": "project",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "projects",
+        "describe",
+        "signmons",
+        "--format=json(projectId,projectNumber,lifecycleState)"
+      ]
+    },
+    {
+      "id": "secret_state_1",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "secrets",
+        "versions",
+        "describe",
+        "1",
+        "--secret",
+        "signmons-staging-p07-stripe-webhook-secret",
+        "--project",
+        "signmons",
+        "--format=json(name,state)"
+      ]
+    }
+  ],
+  "secret": "signmons-staging-p07-stripe-webhook-secret",
+  "version": "1",
+  "owner": "debynyhan@signmons.com",
+  "project": "signmons",
+  "projectNumberSha256": "37d4aa0f46ca5b8f0b81b1148bda235a0f4a9a424b6b4638ec993d889563be54",
+  "window": {
+    "start": "2026-11-15T17:30:00Z",
+    "cutoff": "2026-11-15T17:40:00Z",
+    "readEnd": "2026-11-15T17:42:00Z",
+    "closeoutEnd": "2026-11-15T17:45:00Z"
+  },
+  "limits": {
+    "cli": 3,
+    "sql": 0,
+    "https": 0,
+    "cache": 0,
+    "mutations": 0
+  },
+  "sdkException": "SDK_EXISTING_OWNER_REFRESH_CACHE_INTERNAL_RETRIES_NO_TOKEN_EXPORT",
+  "sourceManifestSha256": "320c8894217e460bc527aac5150c06a9b4d1d60410d3d4692685c601633be499",
+  "sdkFilesSha256": "ecd62311871d8d39cd2fc94a14b38a16b01a12032d7da04853226feacd6c71b2",
+  "mutationAuthorized": false
+}

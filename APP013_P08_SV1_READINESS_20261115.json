@@ -1,0 +1,20 @@
+{
+  "verifiedAt": "2026-11-15T17:27:35.842462+00:00",
+  "sourceCommit": "b82ef35c059d0c267f30bfec58314a21f718b493",
+  "scopeSha256": "fffe1a667889d3380b76d37a05699361bfb6eb12b9501eda8f3a50c5f54fb6d4",
+  "actualNativeIOCliBoundary": "PASS_SOURCE_DESCRIPTORS_MOCKED_PROCESS",
+  "currentCommittedSourceSdkConfig": "PASS",
+  "descriptorCount": 3,
+  "sdkFileCount": 43,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "qualificationOnly": true,
+  "unknown": [
+    "current exact version state",
+    "current usable credentials/access",
+    "historical R49 failure cause"
+  ],
+  "owner": "implementer prepares and verifies; owner/cloud custodian authorizes external read",
+  "metadataBoundarySyntheticCases": 8,
+  "metadataBoundarySyntheticResult": "PASS_DISABLED_ENABLED_DESTROYED_MISSING_NULL_FOREIGN_UNKNOWN"
+}
