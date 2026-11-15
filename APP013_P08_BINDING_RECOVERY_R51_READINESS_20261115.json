@@ -8,12 +8,13 @@
   "providerCalls": 0,
   "credentialReads": 0,
   "sdkFiles": 43,
-  "credentialCoverageBeyond17_50Eastern": "UNKNOWN",
+  "credentialCoverageBeyond17_50Eastern": "TR23_LIVE_OBSERVED_STRICTLY_BEYOND_2026-11-15T22:50:00Z_SINGLE_READ_CONSUMED",
   "attendanceThrough17_56Eastern": "OWNER_CONFIRMED_70_MINUTES_FROM16_46_EASTERN_AVAILABILITY_ONLY",
   "runtimeCleanupReserveSeconds": 660,
   "purgeReserveSeconds": 120,
   "currentPrivateBindingsEndpointEffectiveAccessPayment": "UNKNOWN",
   "historicalAuthOutcome": "UNKNOWN",
   "currentWebhookVersion": "SV1_DISABLED_OBSERVED_12_30_53_EASTERN_NOT_FRESH_ENTRY_PROOF",
-  "preparationCorrection": "Exact future public bindings and synthetic qualification lifetime passed without dispatch."
+  "preparationCorrection": "Exact future public bindings and synthetic qualification lifetime passed without dispatch.",
+  "credentialCloseout": "TR23_INDEPENDENT_PID_GROUP_CUSTODY_EXECUTOR_REMOVAL_VERIFIED"
 }
