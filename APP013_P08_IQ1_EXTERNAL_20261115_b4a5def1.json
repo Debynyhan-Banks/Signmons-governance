@@ -1,0 +1,9 @@
+{
+  "decision": "APPROVE_IQ1_IDENTITY_QUALIFICATION_SDK_EXCEPTION_AND_INDEPENDENT_CLEANUP",
+  "scopeSha256": "953db2c93ee4f0641c634bdfe5d83aa8d28bd4fdd2dd5833974b55c278a57365",
+  "operationId": "b4a5def1-2e23-4e3a-986b-ae936a9fca36",
+  "externalActionAuthorized": true,
+  "independentCleanupAuthorized": true,
+  "sdkException": "SDK_EXISTING_OWNER_REFRESH_CACHE_INTERNAL_RETRIES_NO_TOKEN_EXPORT",
+  "paymentAuthorized": false
+}
