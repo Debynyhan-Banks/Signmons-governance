@@ -1,0 +1,11 @@
+{
+  "sourceCommit": "d3d6e6bc150e8ff8c2bccf002d587c90c1f1758c",
+  "verifiedAt": "2026-11-15T17:42:43.396374+00:00",
+  "committedSourceAndSdkGuards": "PASS",
+  "sdkFiles": 43,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "liveAuthentication": "UNKNOWN",
+  "readiness": "LOCAL_REVIEW_COMPLETE_NOT_LIVE_EXECUTION_AUTHORITY",
+  "remainingQuestion": "Which of SIGN, KEY_READ, EXCHANGE or application authentication succeeds or refuses through the actual native path?"
+}
