@@ -1,0 +1,9 @@
+{
+  "decision": "APPROVE_CT2_READS_AND_INDEPENDENT_CLEANUP",
+  "operationId": "94b345bd-287d-4a8a-92cf-cf50d2a18dd5",
+  "scopeSha256": "c26e0403b9ceb15e02b5693b314758c8373c3281b7361755e5a22d69c2e28f35",
+  "externalReadAuthorized": true,
+  "independentCleanupAuthorized": true,
+  "sdkException": "SDK_OWNER_REFRESH_RETRY_CACHE_EXPLICIT_TOKEN_MEMORY_ONLY",
+  "paymentAuthorized": false
+}

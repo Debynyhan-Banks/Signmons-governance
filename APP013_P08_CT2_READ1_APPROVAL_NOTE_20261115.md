@@ -1,0 +1,3 @@
+# CT2 read1 owner approval
+
+Owner replied “i approve” to packet56a7a2e, including the in-memory token read, SDK refresh/cache exception and cleanup for November15 11:00–11:32 Eastern. Exact decision APP013_P08_CT2_EXTERNAL_20261115_94b345bd.json binds the prepared scope and does not authorize payment. Current source/config checks pass. At approval verification the time was10:45 Eastern, before the authorized11:00 start. No launch, provider/credential read, envelope or password prompt occurred. Reconfirm immediate standalone Terminal readiness and no overlap before launch within11:00–11:15; do not change the window or ask for the same operation approval again. No automated launch is scheduled. Accepted4/8;3A OPEN;R1 newly closed0/27. No scope deviation.
