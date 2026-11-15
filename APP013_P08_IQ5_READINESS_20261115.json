@@ -1,0 +1,98 @@
+{
+  "operationId": "9205dbf8-6597-412f-abc9-243ad8cffa7e",
+  "sourceCommit": "943f1c9477e5f66e0a57c9f873f56c90d0962231",
+  "manifestSha256": "ebbd1c9bda6aa8a9a157397d8d486dfb2be70ed3714d42deaaa79290f2e6158f",
+  "configSha256": "528ceadadc8a5491e54ee82dbad0026eda881252564f96f2be242d70d1d2f111",
+  "uidSha256": "3d299bbf03a6c3e2315034fb3a809aedbb6f978c6e6741ff0201fe4464798f72",
+  "commands": {
+    "owner": [
+      "/opt/homebrew/bin/gcloud",
+      "auth",
+      "list",
+      "--filter=status:ACTIVE",
+      "--format=json(account,status)"
+    ],
+    "project": [
+      "/opt/homebrew/bin/gcloud",
+      "projects",
+      "describe",
+      "signmons",
+      "--format=json(projectId,projectNumber,lifecycleState)"
+    ],
+    "identity": [
+      "/opt/homebrew/bin/gcloud",
+      "iam",
+      "service-accounts",
+      "describe",
+      "signmons-calldesk-p07-runtime@signmons.iam.gserviceaccount.com",
+      "--project",
+      "signmons",
+      "--format=json(email,disabled,uniqueId)"
+    ]
+  },
+  "wrappedCommands": {
+    "owner": [
+      "/usr/bin/sandbox-exec",
+      "-p",
+      "(version 1)(allow default)(deny process-fork)",
+      "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+      "-I",
+      "-B",
+      "-S",
+      "/opt/homebrew/share/google-cloud-sdk/lib/gcloud.py",
+      "auth",
+      "list",
+      "--filter=status:ACTIVE",
+      "--format=json(account,status)"
+    ],
+    "project": [
+      "/usr/bin/sandbox-exec",
+      "-p",
+      "(version 1)(allow default)(deny process-fork)",
+      "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+      "-I",
+      "-B",
+      "-S",
+      "/opt/homebrew/share/google-cloud-sdk/lib/gcloud.py",
+      "projects",
+      "describe",
+      "signmons",
+      "--format=json(projectId,projectNumber,lifecycleState)"
+    ],
+    "identity": [
+      "/usr/bin/sandbox-exec",
+      "-p",
+      "(version 1)(allow default)(deny process-fork)",
+      "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+      "-I",
+      "-B",
+      "-S",
+      "/opt/homebrew/share/google-cloud-sdk/lib/gcloud.py",
+      "iam",
+      "service-accounts",
+      "describe",
+      "signmons-calldesk-p07-runtime@signmons.iam.gserviceaccount.com",
+      "--project",
+      "signmons",
+      "--format=json(email,disabled,uniqueId)"
+    ]
+  },
+  "window": {
+    "cutoff": "2026-11-15T14:25:00Z",
+    "readsEnd": "2026-11-15T14:28:00Z",
+    "cleanupEnd": "2026-11-15T14:30:00Z"
+  },
+  "limits": {
+    "cli": 3,
+    "mutations": 0,
+    "explicitCache": 0,
+    "sql": 0,
+    "payment": 0
+  },
+  "sdkException": "SDK_EXISTING_OWNER_REFRESH_CACHE_INTERNAL_RETRIES_NO_TOKEN_EXPORT",
+  "status": "PREPARED_NOT_APPROVED",
+  "readiness": "IQ4 source/configuration/process/custody reverified2026-11-15T14:11:12Z; same wrapped descriptors and local sandbox proof; fresh gates mandatory before dispatch",
+  "authority": "PENDING_EXACT_OWNER_DECISION",
+  "currentState": "UNKNOWN",
+  "automaticRetryAllowed": false
+}

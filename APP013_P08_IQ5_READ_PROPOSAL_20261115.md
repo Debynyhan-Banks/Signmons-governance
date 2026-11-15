@@ -1,0 +1,17 @@
+# APP-013 / 3A — IQ5 read-only restoration observation
+
+Prepared, not approved. Purpose: reconcile IQ4's current IDENTITY_RESTORATION_UNKNOWN after its final same-UID response omitted disabled. No mutation or re-execution of IQ4. Exact operation/source/configuration/commands/window: APP013_P08_IQ5_READINESS_20261115.json.
+
+Maximum3CLI only: owner debynyhan@signmons.com, projectsignmons and describe exact signmons-calldesk-p07-runtime@signmons.iam.gserviceaccount.com with json(email,disabled,uniqueId). Match existing project validator and retained UID hash3d299bbf03a6c3e2315034fb3a809aedbb6f978c6e6741ff0201fe4464798f72. Reuse source943f1c9, manifest and configuration pins; same sandbox-wrapped vectors and NativeIO owned transport directly supervised under this new exact approval, not by replaying IQ4 authority. No new executable or allowlist expansion.
+
+Before dispatch verify committed decision/scope, actual source/configuration/commands/current time and fresh exclusive receipt root. Stop after first failure, no retry/polling. Each invocation uses existing8-second boundary/65536-byte output cap. Explicit boolean disabled:true with matching identity yields CURRENT_DISABLED_CONFIRMED; false yields CURRENT_ENABLED_OBSERVED; missing/null/invalid state or identity mismatch yields CURRENT_STATE_UNKNOWN. Do not infer disabled from acknowledgement, missing fields, prior read or elapsed time. Raw UID/project number/output remain transient; preserve only fixed presence/type/match flags, UID hash/status/count/time and local closure. Close all owned processes, verify safe inventory/configuration/source and absence of private input files. No cleanup mutation is authorized by a failed read.
+
+Window November15 Eastern: launch before9:25 a.m., reads end9:28, independent local cleanup/private removal9:30. Existing reachability through9:45 and no-overlap confirmed for IQ4 retained; no password/Terminal attendance needed. Local readiness uses identical vectors/wrapper tested during IQ4 preparation and source/configuration/custody reverified at9:11:12; these are local/historical checks, not current state proof. Recompare all pins before dispatch; unknown live credentials/permissions are not presumed valid.
+
+Permit existing-owner SDK refresh/internal authentication retry/cache maintenance under SDK_EXISTING_OWNER_REFRESH_CACHE_INTERNAL_RETRIES_NO_TOKEN_EXPORT. No new scopes/sign-in/renewal or explicit token/cache export. SDK underlying requests are not asserted zero/capped at3. Zero direct HTTPS, SQL, keys/secrets, mutation, payment/refund/booking/message/support action. Additional allowance$0 is not a hard cloud billing cap; liabilities unchanged.
+
+After approval retain exact decision and safe receipts in exclusive0700 /private/tmp/p08-iq5-<operationId>, files0600. No credential input file is needed. Preserve only safe result/call/closure evidence; do not delete SDK cache. Missing process/configuration/state evidence stays UNKNOWN. Do not automatically disable an enabled identity or start a payment run.
+
+Requested decision: approve IQ5's3 diagnostic reads, stated SDK exception and independent local cleanup. AGENTS.md external boundaries require this because IQ4's allowance is consumed. Implementer owns execution/closure; owner/cloud custodian owns external access and any subsequent unresolved-state decision.
+
+Completed: IQ4 attempt/local closure; pending current restoration observation and original cause. Accepted4/8;3A OPEN;R1 newly closed0/27;R47 history unchanged. No scope deviation.
