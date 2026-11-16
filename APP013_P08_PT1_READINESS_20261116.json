@@ -1,0 +1,136 @@
+{
+  "status": "QUALIFICATION_ONLY_PENDING_EXACT_APPROVAL",
+  "section": "APP-013/3A/P08",
+  "operationId": "ac1bd7cc-5c28-4255-9203-22e80494848b",
+  "recordedAt": "2026-11-16T14:36:57.087566+00:00",
+  "backendSource": "48a0a7d01481bb054ba47b5b73a70f8b0df94058",
+  "sourceManifestSha256": "d572ac13394a4db8b35fa91e2da3ff904fb9d713df4a74f7349bb87ad2cca0cc",
+  "iq1ManifestSha256": "aa4874c488ae2fdcd25b475534a26a4c537b669963e59aa699c8e029d9136b03",
+  "configSha256": "528ceadadc8a5491e54ee82dbad0026eda881252564f96f2be242d70d1d2f111",
+  "projectNumberSha256": "37d4aa0f46ca5b8f0b81b1148bda235a0f4a9a424b6b4638ec993d889563be54",
+  "owner": "debynyhan@signmons.com",
+  "project": "signmons",
+  "commands": {
+    "owner": [
+      "/opt/homebrew/bin/gcloud",
+      "auth",
+      "list",
+      "--filter=status:ACTIVE",
+      "--format=json(account,status)"
+    ],
+    "project": [
+      "/opt/homebrew/bin/gcloud",
+      "projects",
+      "describe",
+      "signmons",
+      "--format=json(projectId,projectNumber,lifecycleState)"
+    ]
+  },
+  "window": {
+    "cutoff": "2026-11-16T14:55:00Z",
+    "readEnd": "2026-11-16T14:57:00Z",
+    "cleanupEnd": "2026-11-16T15:00:00Z",
+    "reviewEnd": "2026-11-16T15:02:00Z"
+  },
+  "maxCli": 2,
+  "directHttps": 0,
+  "explicitCacheReads": 0,
+  "maxCommandEnvelopeSeconds": {
+    "owner": 8,
+    "project": 32
+  },
+  "maximumReadSecondsExcludingClosure": {
+    "owner": 6,
+    "project": 30
+  },
+  "bootstrap": {
+    "owner": "import sys,os,time,threading,runpy\nsys.argv.pop(0); end=float(sys.argv.pop(0)); remaining=min(8.0,end-time.time())\nif remaining<=0: os._exit(124)\ndef expire():\n threading.Event().wait(remaining); os._exit(124)\nthreading.Thread(target=expire,daemon=True).start()\nrunpy.run_path(sys.argv[0],run_name='__main__')\n",
+    "project": "import sys,os,time,threading,runpy\nsys.argv.pop(0); end=float(sys.argv.pop(0)); remaining=min(30.0,end-time.time())\nif remaining<=0: os._exit(124)\ndef expire():\n threading.Event().wait(remaining); os._exit(124)\nthreading.Thread(target=expire,daemon=True).start()\nrunpy.run_path(sys.argv[0],run_name='__main__')\n"
+  },
+  "bootstrapSha256": {
+    "owner": "2a59db5a3c4cf612c5ac9e06d9ec5ca98f00d6374a91c9857f497b3354e355b4",
+    "project": "ca537fb127e258ce9de7c11b9fade7c8dda2bfc0fa59fac3c1b396824aa09bbc"
+  },
+  "transportSource": "evidence/APP-013/p08-https-output-category-local-20261029/source/qualification_launch.py",
+  "retainedFields": [
+    "slot",
+    "status",
+    "safeFailureCode",
+    "elapsedMonotonicSeconds",
+    "ownerMatch",
+    "projectMatch",
+    "processClosed",
+    "sourceClosed",
+    "configurationClosed",
+    "privateInputsAbsent",
+    "onTime"
+  ],
+  "classification": [
+    "MATCHED_WITHIN_SIX_SECONDS",
+    "MATCHED_AFTER_SIX_SECONDS",
+    "PROCESS_TIMEOUT",
+    "PROCESS_REFUSED",
+    "OUTPUT_OR_BINDING_UNCONFIRMED",
+    "OTHER_SAFE_FAILURE"
+  ],
+  "sourceGuard": "PASS",
+  "configurationMatch": true,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "scope": "Existing direct bounded read composition; numeric watchdog parameter change only for this diagnostic. No installed runner, source, manifest or global timeout change.",
+  "unknowns": [
+    "Current SDK/project-read outcome and usable credentials",
+    "SQ2 remote timeout cause",
+    "ST1 live signing outcome"
+  ],
+  "requiredApproval": "Two exact read-only CLI calls; project32-second envelope and30-second watchdog/read horizon; stated SDK refresh/auth/read-retry/cache exception; no mutation/token export/sign-in/payment; independent local cleanup; no overlap.",
+  "localBoundaryVerification": {
+    "result": "PASS",
+    "cases": [
+      {
+        "case": "success",
+        "result": "PASS",
+        "safeOutcome": "MATCH",
+        "elapsedSeconds": 0.023,
+        "processClosed": true
+      },
+      {
+        "case": "timeout",
+        "result": "PASS",
+        "safeOutcome": "SQ1_PROCESS_TIMEOUT",
+        "elapsedSeconds": 0.514,
+        "processClosed": true
+      },
+      {
+        "case": "malformed",
+        "result": "PASS",
+        "safeOutcome": "SQ1_UNKNOWN",
+        "elapsedSeconds": 0.051,
+        "processClosed": true
+      },
+      {
+        "case": "wrong_binding",
+        "result": "PASS",
+        "safeOutcome": "SQ1_UNKNOWN",
+        "elapsedSeconds": 0.033,
+        "processClosed": true
+      }
+    ],
+    "initialFailure": "Empty synthetic environment refused HOME_OVERRIDE before subprocess dispatch; corrected to the existing validated sdk_environment(os.environ) call. No guard changed.",
+    "note": "Exact proposed project bootstrap through existing owned transport; only SDK entrypoint replaced by temporary inert script, with shortened absolute deadlines. No cloud SDK/cache/provider access. No repository executable changed."
+  },
+  "preparationChecks": {
+    "result": "PASS",
+    "checkedAt": "2026-11-16T14:41:06.688754+00:00",
+    "governanceTests": 25,
+    "checks": [
+      "frozen baseline",
+      "backend governance baseline",
+      "cross-repository docs consistency",
+      "architecture",
+      "whitespace both repos"
+    ],
+    "newRuntimeSuiteRuns": 0
+  },
+  "rootAbsent": true
+}

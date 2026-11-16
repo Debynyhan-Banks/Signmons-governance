@@ -1,0 +1,19 @@
+{
+  "status": "DRAFT_NOT_AUTHORITY",
+  "proposedDecision": {
+    "decision": "APPROVE_PT1_EXACT_OWNER_PROJECT_READS_DIAGNOSTIC_TIMING_SDK_EXCEPTION_AND_CLEANUP",
+    "operationId": "ac1bd7cc-5c28-4255-9203-22e80494848b",
+    "readinessSha256": "8e3c8c66b89ea0c0491fdd66b528f794d2de1a36c35d1f1f269ded98360bedf2",
+    "externalReadAuthorized": true,
+    "maxCli": 2,
+    "ownerEnvelopeSeconds": 8,
+    "projectEnvelopeSeconds": 32,
+    "projectReadSeconds": 30,
+    "sdkException": "SDK_EXISTING_OWNER_REFRESH_INTERNAL_AUTH_READ_RETRY_CACHE_WITHIN_BOUND",
+    "independentCleanupAuthorized": true,
+    "providerMutationAuthorized": false,
+    "paymentAuthorized": false,
+    "allowanceUsd": 0
+  },
+  "requires": "Separate exact owner approval and no overlap before9:55Eastern; prior10:10availability covers cleanup. No current approval file or live attempt."
+}
