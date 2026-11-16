@@ -1,0 +1,132 @@
+{
+  "status": "QUALIFICATION_ONLY_PENDING_EXACT_APPROVAL",
+  "section": "APP-013/3A/P08",
+  "label": "SQ3 using unchanged SQ1 runner with approved ST1",
+  "preparedAt": "2026-11-16T14:59:57.496827+00:00",
+  "scopeCommit": "0d588f0c6bd485c19f954d40f91da167fba3b89a",
+  "scopePath": "APP013_P08_SQ1_SCOPE_20261116_7a2fb87f.json",
+  "scopeSha256": "6a3e32bae383dd175a47f053ec2d83dc7651c1780ffd24f3dfd5ae17327a836b",
+  "operationId": "7a2fb87f-65da-4de9-9684-102a6f18e7db",
+  "sourceCommit": "48a0a7d01481bb054ba47b5b73a70f8b0df94058",
+  "sourceManifestSha256": "d572ac13394a4db8b35fa91e2da3ff904fb9d713df4a74f7349bb87ad2cca0cc",
+  "decisionPath": "APP013_P08_SQ1_APPROVAL_20261116_7a2fb87f.json",
+  "decisionCommit": "NOT_CREATED",
+  "sourceGuard": "PASS",
+  "sourceGuardSeconds": 1.148,
+  "configurationMatch": true,
+  "operationRootAbsent": true,
+  "actualCliAuthorityRefusal": {
+    "observed": true,
+    "safeCode": "SQ1_UNKNOWN",
+    "nativeConstructors": 0,
+    "openerConstructors": 0,
+    "cacheReads": 0,
+    "operationRootCreated": false,
+    "reason": "Required approval absent from exact immutable scope commit; no replacement approval synthesized."
+  },
+  "window": {
+    "cleanupEnd": "2026-11-16T15:46:00Z",
+    "cutoff": "2026-11-16T15:15:00Z",
+    "purgeEnd": "2026-11-16T15:48:00Z",
+    "start": "2026-11-16T15:05:00Z",
+    "workEnd": "2026-11-16T15:35:00Z"
+  },
+  "limits": {
+    "cache": 2,
+    "cleanupCli": 12,
+    "cleanupHttps": 4,
+    "disable": 1,
+    "enable": 1,
+    "mainCli": 13,
+    "mainHttps": 10,
+    "policyAdd": 1,
+    "policyRemove": 1,
+    "sign": 1
+  },
+  "timing": {
+    "settleSeconds": 420,
+    "entryAndPreEnableSeconds": 720,
+    "preWaitSeconds": 480,
+    "minimumMainSecondsAtLatestLaunch": 1200,
+    "cleanupReserveSeconds": 660,
+    "closeoutReserveSeconds": 120,
+    "totalWindowSeconds": 2580,
+    "schemaChecks": "Actual validate_scope passes at proposed start and just before cutoff; future-time checks are preparation only, not launch."
+  },
+  "testsReused": {
+    "focused": 100,
+    "connectedIncludingFocused": 422,
+    "sourceCommit": "48a0a7d01481bb054ba47b5b73a70f8b0df94058",
+    "evidenceCommit": "d862794",
+    "newRuntimeTestsThisPreparation": 0
+  },
+  "readinessTrace": [
+    {
+      "item": "Provider outputs/serialization/null/missing/error classifications",
+      "source": "commands, policy_state, bounded_request, classify_sign_response",
+      "evidence": "ST1 same-source focused/connected logs",
+      "result": "LOCAL_PASS",
+      "owner": "implementer"
+    },
+    {
+      "item": "Source/configuration/dynamic commands/exact pins",
+      "source": "validate_scope/source_guard/x.configuration/native_main",
+      "evidence": "Current static source/config and absent-authority check in this record",
+      "result": "LOCAL_PASS",
+      "owner": "implementer"
+    },
+    {
+      "item": "Timing/no retry/concurrency/interruption/cleanup/private retention",
+      "source": "Driver.require_remaining/settle/gate/cleanup, Journal, run_phase, supervise",
+      "evidence": "ST1 100focused/422connected including real interruption during wait; exact43-minute scope",
+      "result": "LOCAL_PASS",
+      "owner": "implementer"
+    },
+    {
+      "item": "Current owner credential horizon, effective permissions, APIs, UID/policy and signing",
+      "source": "Driver.owner_project_uid/credentials/main/cleanup",
+      "evidence": "No current provider/cache observation; existing guarded qualification slots only",
+      "result": "UNKNOWN_REQUIRES_QUALIFICATION",
+      "owner": "cloud/credential custodians"
+    },
+    {
+      "item": "Live approval/reachability/no overlap",
+      "source": "approved_scope and direct owner reply",
+      "evidence": "No approval; new10:50reachability pending; recent no-overlap recorded and PT1 closed",
+      "result": "PENDING_LIVE_APPROVAL_AND_REACHABILITY",
+      "owner": "owner"
+    }
+  ],
+  "externalActionAuthorized": false,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "signingRequests": 0,
+  "paymentObserved": false,
+  "remaining": "Exact owner/cloud/credential live approval and reachability through10:50Eastern; existing recent no-overlap confirmation recorded, invalidated by contrary information or observed conflict. Then exact prelaunch source/configuration/authority/time/root comparison. No retry/reschedule.",
+  "nextObservable": "One safe current SIGN outcome after bounded wait, or explicit refusal/UNKNOWN, plus independent policy/identity/process/private closure.",
+  "review": "Implementer actual-interface review; source unchanged since ST1. No independent-agent review claimed.",
+  "scopeDeviation": "No scope deviation beyond approved ST1; SQ3 live action pending separate approval.",
+  "noOverlapConfirmation": {
+    "answer": "No other Signmons operation is running",
+    "source": "Most recent direct user answer before PT1; PT1 now independently closed",
+    "status": "RECORDED_UNLESS_CONTRARY_INFORMATION_OR_CONFLICT",
+    "newConfirmationRequested": false
+  },
+  "priorEvidence": {
+    "PT1": "Owner/project matched in0.421/0.899seconds at14:53:20UTC; process/private closure14:54:33, backend4a07b59. Does not prove current signing/credential horizon or SQ2 historical cause.",
+    "SQ2": "Consumed project timeout; no mutation/wait/sign; no retry inferred."
+  },
+  "preparationChecks": {
+    "result": "PASS",
+    "checkedAt": "2026-11-16T15:00:47.555595+00:00",
+    "governanceTests": 25,
+    "newRuntimeTests": 0,
+    "checks": [
+      "frozen baseline",
+      "backend governance wrapper",
+      "cross-repository documentation consistency",
+      "architecture",
+      "whitespace both repositories"
+    ]
+  }
+}
