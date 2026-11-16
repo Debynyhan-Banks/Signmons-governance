@@ -1,0 +1,35 @@
+{
+  "status": "EXACT_PRELAUNCH_PASS",
+  "checkedAt": "2026-11-16T13:40:08.335488+00:00",
+  "operationId": "73e461e4-a1f6-4ded-b1a1-f4372c19e7e1",
+  "refs": {
+    "scopeCommit": "9071663c10fcafb403b32c5dfe36f8b6068c3703",
+    "scopePath": "APP013_P08_SQ1_SCOPE_20261116_73e461e4.json",
+    "decisionCommit": "c8250f1311f316403d6dbca66ecdc0bf9501cbe1",
+    "decisionPath": "APP013_P08_SQ1_APPROVAL_20261116_73e461e4.json"
+  },
+  "sourceCommit": "bf2d2c1cc5e6c73dde5e6247d9ee610fd04f0eb4",
+  "scopeSha256": "3037dad95f288cd18276f3ecb5f775d020fb0568b9dd19a908446ec7226fe1b0",
+  "sourceAndConfigurationMatch": true,
+  "currentWindowPass": true,
+  "operationRootAbsent": true,
+  "ownerNoOverlapConfirmed": true,
+  "reachabilityConfirmedUntil": "2026-11-16T14:10:00Z",
+  "argv": [
+    "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+    "-I",
+    "-B",
+    "-c",
+    "import sys,runpy;sys.path.insert(0,sys.argv.pop(1));sys.argv=sys.argv[1:];runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+    "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110",
+    "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/sq1_signing_boundary.py",
+    "--run",
+    "9071663c10fcafb403b32c5dfe36f8b6068c3703",
+    "APP013_P08_SQ1_SCOPE_20261116_73e461e4.json",
+    "c8250f1311f316403d6dbca66ecdc0bf9501cbe1",
+    "APP013_P08_SQ1_APPROVAL_20261116_73e461e4.json"
+  ],
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "priorAutomaticReviewBlock": "Resolved for approval commit after new direct plain-chat authorization; no bypass or scope change."
+}
