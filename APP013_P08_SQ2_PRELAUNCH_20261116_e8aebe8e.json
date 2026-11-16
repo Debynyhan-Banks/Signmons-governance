@@ -1,0 +1,36 @@
+{
+  "status": "EXACT_PRELAUNCH_PASS",
+  "checkedAt": "2026-11-16T14:25:21.186805+00:00",
+  "refs": {
+    "scopeCommit": "0b5c64f7a25034b0330d3433a69db3fd446de41a",
+    "scopePath": "APP013_P08_SQ1_SCOPE_20261116_e8aebe8e.json",
+    "decisionCommit": "ee52799a268b139d646c091b1b0e5606fdc7c573",
+    "decisionPath": "APP013_P08_SQ1_APPROVAL_20261116_e8aebe8e.json"
+  },
+  "readinessCommit": "f0e998899940dd44db66e0724bf810930db9129b",
+  "operationId": "e8aebe8e-3fa9-4385-8a4a-4f587a6b8d61",
+  "sourceCommit": "48a0a7d01481bb054ba47b5b73a70f8b0df94058",
+  "scopeSha256": "be6316e6ed67144bb1e2a2a6ff122f1defc20999af7a48fd34bb63b33524c6c2",
+  "sourceConfigurationResourcePinsMatch": true,
+  "currentWindowPass": true,
+  "operationRootAbsent": true,
+  "reachabilityConfirmedUntil": "2026-11-16T15:10:00Z",
+  "noOverlapConfirmed": true,
+  "argv": [
+    "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+    "-I",
+    "-B",
+    "-c",
+    "import sys,runpy;sys.path.insert(0,sys.argv.pop(1));sys.argv=sys.argv[1:];runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+    "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110",
+    "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/sq1_signing_boundary.py",
+    "--run",
+    "0b5c64f7a25034b0330d3433a69db3fd446de41a",
+    "APP013_P08_SQ1_SCOPE_20261116_e8aebe8e.json",
+    "ee52799a268b139d646c091b1b0e5606fdc7c573",
+    "APP013_P08_SQ1_APPROVAL_20261116_e8aebe8e.json"
+  ],
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "priorLocalPreparationRefusal": "Abbreviated readiness commit rejected by committed-reference validator; resolved immutable full SHA. No native dispatch or attempt root occurred."
+}
