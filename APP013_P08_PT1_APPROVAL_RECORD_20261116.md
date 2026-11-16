@@ -1,0 +1,5 @@
+# PT1 exact approval and launch conditions
+
+Owner directly replied “i approve” to the exact PT1 review, then explicitly confirmed “No other Signmons operation is running.” Availability through10:10Eastern was already confirmed. All conditions reconciled at 2026-11-16T14:52:59.412165+00:00. Proposal/readiness f4eb64108ae894bf05d39a003187a890b0146d14; operationac1bd7cc-5c28-4255-9203-22e80494848b; source48a0a7d; exact readiness digest8e3c8c66b89ea0c0491fdd66b528f794d2de1a36c35d1f1f269ded98360bedf2. Current source/configuration/operator hash/root absence/time checks pass.
+
+Approved2read-only CLI calls: owner8-second envelope, project32-second envelope/30-second read horizon, stated existing-owner SDK refresh/auth/read-retry/cache exception, $0 additional allowance limitation and independent local cleanup. Launchbefore9:55/reads9:57/cleanup10:00/finalreview10:02EasternNovember16. No explicit cache export, IAM mutation, SIGN, sign-in, payment, retry or reschedule. No provider action in this approval record. No scope deviation beyond exact PT1 approval.
