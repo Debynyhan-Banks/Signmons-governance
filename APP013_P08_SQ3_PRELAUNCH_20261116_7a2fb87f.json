@@ -1,0 +1,35 @@
+{
+  "status": "EXACT_PRELAUNCH_PASS",
+  "checkedAt": "2026-11-16T15:05:24.238931+00:00",
+  "refs": {
+    "scopeCommit": "0d588f0c6bd485c19f954d40f91da167fba3b89a",
+    "scopePath": "APP013_P08_SQ1_SCOPE_20261116_7a2fb87f.json",
+    "decisionCommit": "0fac483fe41664d89bb8f6a9fbd7a64f0fbe0db5",
+    "decisionPath": "APP013_P08_SQ1_APPROVAL_20261116_7a2fb87f.json"
+  },
+  "readinessCommit": "1a401fe6df28539e04f7cddc0002931d56c4866b",
+  "operationId": "7a2fb87f-65da-4de9-9684-102a6f18e7db",
+  "sourceCommit": "48a0a7d01481bb054ba47b5b73a70f8b0df94058",
+  "scopeSha256": "6a3e32bae383dd175a47f053ec2d83dc7651c1780ffd24f3dfd5ae17327a836b",
+  "sourceConfigurationResourcePinsMatch": true,
+  "currentWindowPass": true,
+  "operationRootAbsent": true,
+  "reachabilityConfirmedUntil": "2026-11-16T15:50:00Z",
+  "noOverlapConfirmation": "Recent explicit owner confirmation retained as reviewed; PT1 closed; no contrary information received. Existing lease remains enforced.",
+  "argv": [
+    "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+    "-I",
+    "-B",
+    "-c",
+    "import sys,runpy;sys.path.insert(0,sys.argv.pop(1));sys.argv=sys.argv[1:];runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+    "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110",
+    "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/sq1_signing_boundary.py",
+    "--run",
+    "0d588f0c6bd485c19f954d40f91da167fba3b89a",
+    "APP013_P08_SQ1_SCOPE_20261116_7a2fb87f.json",
+    "0fac483fe41664d89bb8f6a9fbd7a64f0fbe0db5",
+    "APP013_P08_SQ1_APPROVAL_20261116_7a2fb87f.json"
+  ],
+  "providerCalls": 0,
+  "credentialReads": 0
+}
