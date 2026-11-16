@@ -23,7 +23,6 @@
     "fresh private bindings",
     "current effective access/provider state",
     "credential coverage beyond purge",
-    "owner attendance",
     "authentication exchange/payment/event/gate"
   ],
   "ownerAttendanceRequestedThrough": "2026-11-16T17:25:00Z",
@@ -34,5 +33,6 @@
     "database custodian",
     "credential custodian"
   ],
-  "historicalR52AuthOutcome": "UNKNOWN_UNCHANGED"
+  "historicalR52AuthOutcome": "UNKNOWN_UNCHANGED",
+  "ownerAttendance": "CONFIRMED_2026-11-16T16:15Z_THROUGH_17:25Z"
 }
