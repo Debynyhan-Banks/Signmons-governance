@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "section": "APP-013/3A",
+  "status": "LOCAL_VERIFIED_QUALIFICATION_ONLY",
+  "checkedAt": "2026-11-16T13:18:57.999451+00:00",
+  "approvedProposal": "APP013_P08_SQ1_SIGNING_DIAGNOSTIC_PROPOSAL_20261116.md",
+  "localApprovalCommit": "ffe2913d6ffb12c8c5489435a58ef902204e8ef0",
+  "backendSourceCommit": "bf2d2c1cc5e6c73dde5e6247d9ee610fd04f0eb4",
+  "sourceManifestSha256": "34ae6ef74c6bd1195e82b6599073c2d27daa402ef12bc92612b28d697f56a9d9",
+  "evidenceRoot": "evidence/APP-013/p08-connected-packet-20261110/sq1-local-verification",
+  "focusedTests": 80,
+  "connectedPacketTests": 402,
+  "governanceTests": 25,
+  "readiness": [
+    {
+      "prerequisite": "Provider/CLI/HTTP output and error contracts",
+      "source": "sq1_signing_boundary.py: commands, policy_state, bounded_request, classify_sign_response",
+      "evidence": [
+        "focused-tests.log",
+        "connected-packet-tests.log"
+      ],
+      "result": "LOCAL_PASS",
+      "owner": "implementer",
+      "details": "Role projection uses required actual fields; condition-free policy versions and conditional version3; exact empty mutation success; real urllib error/redirect/stream/timeout boundary; finite safe result schema."
+    },
+    {
+      "prerequisite": "Source, dynamic configuration, identity and effective access",
+      "source": "sq1_signing_boundary.py: source_guard, validate_scope, Driver.owner_project_uid, credentials, main",
+      "evidence": [
+        "source-guard.json",
+        "focused-tests.log"
+      ],
+      "result": "LOCAL_GATES_PASS_LIVE_FACTS_UNKNOWN",
+      "owner": "implementer / cloud and credential custodians",
+      "details": "51 repository and61 SDK pins; actual read vectors and exact descriptors; current credential/cache coverage, provider permissions, services, same UID/state and signBlob usability require future approved qualification."
+    },
+    {
+      "prerequisite": "Deadlines, no retry, concurrency, interruption and recovery",
+      "source": "sq1_signing_boundary.py: Driver.gate/reserve/cleanup, run_phase, supervise, native_main, SDK_BOOTSTRAP",
+      "evidence": [
+        "focused-tests.log",
+        "connected-packet-tests.log"
+      ],
+      "result": "LOCAL_PASS",
+      "owner": "implementer",
+      "details": "Fixed25 CLI/14 HTTPS/2 cache ceilings; exclusive phase/write reservations; seven actual process cases plus orphan SDK watchdog; same identity lease across fresh cleanup interpreter; conservative UNKNOWN on lost acknowledgements or missing ownership proof."
+    },
+    {
+      "prerequisite": "Private data, receipt custody and independent cleanup",
+      "source": "sq1_signing_boundary.py: Journal, validate_result, validate_sign_result, Driver.close/cleanup",
+      "evidence": [
+        "focused-tests.log",
+        "source-guard.json"
+      ],
+      "result": "LOCAL_PASS",
+      "owner": "implementer",
+      "details": "No raw token/policy/signature/keyId retained; exact safe receipt schema; independent policy and identity branches; current etag and exact owned binding; no raw data inherited across cleanup exec."
+    },
+    {
+      "prerequisite": "Frozen scope and complete local checklist",
+      "source": "APP013_P08_SQ1_LOCAL_COMPLETION_20261116.md",
+      "evidence": [
+        "checks.json"
+      ],
+      "result": "LOCAL_PASS",
+      "owner": "implementer / product owner",
+      "details": "Exactly3 new implementation files plus permitted verification/governance artifacts; unchanged old runtime/manifests/acceptance criteria; all8 local checklist items complete."
+    }
+  ],
+  "liveUnknowns": [
+    "Current owner credential and coverage beyond a future purge deadline",
+    "Current exact UID/state and policy",
+    "Current effective permissions and service availability",
+    "Actual SIGN response and provider denial detail availability",
+    "R52 historical denial reason and AUTH_OUTCOME_UNKNOWN"
+  ],
+  "externalActionAuthorized": false,
+  "credentialReads": 0,
+  "providerCalls": 0,
+  "signingRequests": 0,
+  "paymentObserved": false,
+  "liveWindow": null,
+  "nextObservable": "Separately approved exact qualification yields one safe signing response and independent restoration evidence, or an explicit bounded refusal/UNKNOWN.",
+  "limits": [
+    "Host loss or loss of both supervisor and worker cannot prove restoration.",
+    "Identity lease covers participating IQ/SQ operations only.",
+    "A current result cannot explain the historical R52 denial or accept application authentication/payment."
+  ],
+  "acceptedMilestones": "1A/1B/2A/2B:4/8;3A OPEN;R1 newly closed0/27",
+  "scopeDeviation": "None beyond explicitly approved SQ1 local prerequisite expansion."
+}
