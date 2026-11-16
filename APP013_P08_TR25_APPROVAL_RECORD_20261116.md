@@ -1,0 +1,3 @@
+# TR25 approval received; launch pending
+
+Owner directly replied "i approve" to the prepared TR25 exact sign-in/scopes/SDK-cache exception/conditional validity check/cleanup request. Proposal24e6fc1 and its hash-bound decision draft are approved. At15:49:06Z (10:49:06Eastern), the11:15 lower bound has not arrived. No sign-in/cache/provider action or reservation occurred. Proposal/executor hashes match and operation root is absent. Browser readiness at launch remains pending; do not ask for approval again. Launch must be no earlier16:15Z and before16:18Z; cleanup by16:25Z; coverage strictly beyond17:15Z. R53 recovery cutoff16:20Z remains unchanged. No scope deviation.
