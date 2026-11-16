@@ -1,0 +1,26 @@
+{
+  "verifiedAt": "2026-11-16T00:03:36.711005+00:00",
+  "status": "PROPOSED_AUTHORITY_CURRENT_CLOCK_NO_DISPATCH",
+  "sourceCommit": "e4212d9c11856fb6b75684773b96c244ef497743",
+  "scopeSha256": "3318c00c0bd3118d8837db4ca6794af643bfdbcf21d3129ace518f03c7fe50c3",
+  "sourceSdkConfigurationClock": "PASS",
+  "commandArgv": [
+    "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+    "-I",
+    "-B",
+    "-c",
+    "import runpy,sys;sys.path.insert(0,sys.argv[1]);sys.argv=sys.argv[2:];runpy.run_module(\"qualification_launch\",run_name=\"__main__\")",
+    "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-https-output-category-local-20261029/source",
+    "qualification_launch.py",
+    "--recover-binding-inputs",
+    "/private/tmp/p08-binding-request-1b716b0d-9dfc-43e6-a20c-5f5adec29912/envelope.json"
+  ],
+  "credentialCoverageEvidence": "TR24_e81209b_VALID_THROUGH_CUTOFF_STRICTLY_BEYOND_2026-11-16T01:00Z",
+  "credentialCoverageSingleReadConsumed": true,
+  "ownerAvailabilityThrough": "2026-11-16T01:10:00Z",
+  "exactRecoveryApproval": "PENDING",
+  "standaloneTerminalReady": "PENDING_WITH_EXACT_APPROVAL",
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "operationReserved": false
+}
