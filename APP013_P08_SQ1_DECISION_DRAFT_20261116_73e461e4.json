@@ -1,0 +1,14 @@
+{
+  "proposedDecision": {
+    "allowanceUsd": 0,
+    "decision": "APPROVE_SQ1_SIGNING_DIAGNOSTIC_SDK_CACHE_AND_INDEPENDENT_CLEANUP",
+    "externalActionAuthorized": true,
+    "independentCleanupAuthorized": true,
+    "operationId": "73e461e4-a1f6-4ded-b1a1-f4372c19e7e1",
+    "paymentAuthorized": false,
+    "scopeSha256": "3037dad95f288cd18276f3ecb5f775d020fb0568b9dd19a908446ec7226fe1b0",
+    "sdkException": "SDK_READ_OWNER_REFRESH_INTERNAL_AUTH_RETRY_CACHE_NO_MUTATION_RETRY"
+  },
+  "requires": "Explicit owner/cloud/credential approval, no-overlap confirmation, and reachability through09:10 Eastern November16. No decision file is authorized or created by this draft.",
+  "status": "DRAFT_NOT_AUTHORITY"
+}
