@@ -1,0 +1,75 @@
+{
+  "recordedAt": "2026-11-16T12:38:21.878551+00:00",
+  "section": "APP-013/3A",
+  "status": "LOCAL_PROPOSAL_NOT_IMPLEMENTED_NOT_EXECUTION_READY",
+  "sourceCommit": "b51631b1aca881cfe8f820c46ff75ac4dd167a5c",
+  "runtimeSource": "e4212d9c11856fb6b75684773b96c244ef497743",
+  "sourceHashes": {
+    "p08-connected-packet-20261110/iq1_identity_boundary.py": "676f9236b68efe2d076d466ec85df88c1a4547a8ff21461cd28d143deef90bd3",
+    "p08-connected-packet-20261110/kq1_key_boundary.py": "d178de94e373be00517f252de0cfde6e7bd5d07309100242037a528731428c71",
+    "p08-native-entry-local-20261101/source/native_io.py": "b05001e4fcf462c1727ae58b649fe35b110444da3c43941622213d456004119c",
+    "p08-native-entry-local-20261101/source/transports.mjs": "ff9ed3b2d51b69d43457bbe414f7209b32ceac517ea46fefcf9355bfd10cf584",
+    "p08-coordinator-auth-local-20261031/source/client.mjs": "4dd54eb7caaea2d334c3a4c82ef49a6d914dc0feb58a7e089a280656f53d4dec",
+    "p08-https-output-category-local-20261029/source/qualification_launch.py": "d86a6c51a25d9caf10bf6f096249f79b7ae730e19424a8b36bce5c186f2b4dda",
+    "p08-native-bridge-local-20261029/source/bridge.py": "58835555ea5d062bd84af91ace67c71762b9332a2f6fd9bf31ecec08c7a7dfce",
+    "p08-restoration-local-20261028/source/restore.py": "a0bf4bc90cca0bd52935915d710ccb44e065dd3deed841a12ab49cb3ac4a1cb9",
+    "p08-access-sequence-local-20261028/source/diagnostics_stage.py": "483b27f06ce844632e7bd2b43198920e88307c52d18f94b1b2b6d8ee979526d3",
+    "p08-exact-role-provisioning-local-20261028/source/role_provisioner.py": "e1fbc15d95450da7662db684e2cfe6f063c8a60fd7c8243053e5431fc3f973f9",
+    "p08-narrow-access-check-local-20261101/source/access_check.py": "720842849586323e06eef0993578b0a7e10d35bcf6266d68628228242c5be9d9"
+  },
+  "sdkHashes": {
+    "/opt/homebrew/share/google-cloud-sdk/lib/googlecloudsdk/command_lib/util/apis/yaml_command_translator.py": "c2354584e6dab008777aca8c24d5b38349858208b2a1d9c987d391ee2c47358f",
+    "/opt/homebrew/share/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis_internal.py": "26a4abfb4c327e8c38b376e30bec4c9eb0398f6dc25f86ab578852dc6a7a6e37",
+    "/opt/homebrew/share/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py": "5e2ad1e9565f101fe347302a4085494079dfa6ceead73c2240e2a15f8318733c",
+    "/opt/homebrew/share/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py": "7d87e9abe3cb3813b22b34d640bf21d8c3572e7efeb04e3543a24495f749e1f0",
+    "/opt/homebrew/share/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/iam/v1/iam_v1_client.py": "304f81531be1e0f8bb05c726aec9a6053f80a11cec1867245231f6276ad0ebcf",
+    "/opt/homebrew/share/google-cloud-sdk/lib/surface/iam/service_accounts/add_iam_policy_binding.yaml": "fcf41f4485dcdb29457feb081a82829013ff74c78543e3d1777fe6b01ad22042",
+    "/opt/homebrew/share/google-cloud-sdk/lib/surface/iam/service_accounts/remove_iam_policy_binding.yaml": "aab7901682cb9f8af9240a1b01bdc351f3ee3857dc83aaae268934657ed1bdc4",
+    "/opt/homebrew/share/google-cloud-sdk/lib/surface/iam/service_accounts/enable.yaml": "cbb6c09e67deca5ebc24e3ef88bbb2739145815a45500dcc46c657e8c05f02cd",
+    "/opt/homebrew/share/google-cloud-sdk/lib/surface/iam/service_accounts/disable.yaml": "6460c4d148f6d4904d66e873760e732301dc6337be57ef0b6576b9108812ba2b"
+  },
+  "findings": {
+    "existingFullAuthUnsuitable": "SIGN constructs JWT then KEY_READ/EXCHANGE; body intentionally discarded",
+    "existingIqRunnerUnsuitable": "fixed identity-only action and limits",
+    "existingHttpAllowlistUnsuitable": "no IAMCredentials descriptor in Python; Node requires full auth/database capability",
+    "sdkMutationRequestRetryPossible": true,
+    "selectedApproach": "isolated three-file composition; single-dispatch REST mutation/SIGN; unchanged existing capabilities",
+    "currentProviderCause": "UNKNOWN"
+  },
+  "proposedLocalFiles": [
+    "sq1_signing_boundary.py",
+    "test_sq1_signing_boundary.py",
+    "sq1-source-manifest.json"
+  ],
+  "prospectiveCeilingsNotLiveAuthority": {
+    "mainCli": 13,
+    "cleanupCli": 12,
+    "mainHttps": 10,
+    "cleanupHttps": 4,
+    "cache": 2,
+    "enable": 1,
+    "disable": 1,
+    "policyAdd": 1,
+    "policyRemove": 1,
+    "sign": 1
+  },
+  "verificationState": {
+    "sourceInspection": "COMPLETE",
+    "budgetArithmeticReview": "COMPLETE_NOT_IMPLEMENTATION_PROOF",
+    "code": "NOT_IMPLEMENTED",
+    "tests": "NOT_RUN",
+    "actualDescriptorTrace": "UNKNOWN",
+    "independentRecoveryProof": "UNKNOWN",
+    "liveFacts": "UNKNOWN",
+    "independentDesignReview": "PASS_AFTER_PRE_POST_MUTATION_WORDING_CLARIFICATION"
+  },
+  "localNativeActions": 0,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "implementationAuthorized": false,
+  "externalReadAuthorized": false,
+  "mutationAuthorized": false,
+  "paymentAuthorized": false,
+  "liveWindow": null,
+  "reviewedAt": "2026-11-16T12:42:54.939081+00:00"
+}
