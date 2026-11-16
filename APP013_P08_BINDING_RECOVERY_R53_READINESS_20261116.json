@@ -1,0 +1,38 @@
+{
+  "status": "LOCAL_PREPARED_NOT_APPROVED",
+  "sourceCommit": "c57cb9c86c8f06dac70c856ea6bc7de9887715e7",
+  "verifiedAt": "2026-11-16T15:40:10.214361+00:00",
+  "recoveryStaticPrepare": "PASS_IN_MEMORY_AUTHORITY_PROPOSED_CLOCK_NO_DISPATCH",
+  "nativeCapability": "PASS_EXACT_PUBLIC_SPEC_PROOF_ONLY_SYNTHETIC_PRIVATE_FIELDS",
+  "ct4ActualAdmissionAndSettle": "PASS_AT_LATEST_LAUNCH_MINUS_ONE_SECOND",
+  "syntheticMonotonicWaitSeconds": 420,
+  "postWaitReserveSecondsAtLatestLaunch": 1441.0,
+  "setupAllowanceBeforeCt4AdmissionSeconds": 480.0,
+  "nativeCleanupReserveSeconds": 660.0,
+  "purgeReserveSeconds": 120,
+  "outerAndInnerRetentionSeconds": 3600,
+  "temporaryProofRootRemoved": true,
+  "attemptCreated": false,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "liveAuthorityCreated": false,
+  "nativeManifestSha256": "0cf5d21d98c38a2558ce531686027c8033caa4d8f34dabe8cf750effc6224528",
+  "qualificationManifestSha256": "320c8894217e460bc527aac5150c06a9b4d1d60410d3d4692685c601633be499",
+  "sdkFiles": 43,
+  "unknown": [
+    "fresh private bindings",
+    "current effective access/provider state",
+    "credential coverage beyond purge",
+    "owner attendance",
+    "authentication exchange/payment/event/gate"
+  ],
+  "ownerAttendanceRequestedThrough": "2026-11-16T17:25:00Z",
+  "responsibleRoles": [
+    "implementer",
+    "owner",
+    "cloud custodian",
+    "database custodian",
+    "credential custodian"
+  ],
+  "historicalR52AuthOutcome": "UNKNOWN_UNCHANGED"
+}

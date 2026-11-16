@@ -1,0 +1,39 @@
+{
+  "section": "APP-013/3A/P08/R53",
+  "sourceCommit": "c57cb9c86c8f06dac70c856ea6bc7de9887715e7",
+  "packetTestsPassed": 5,
+  "governanceTestsPassed": 25,
+  "checks": [
+    {
+      "name": "backend baseline",
+      "exitCode": 0
+    },
+    {
+      "name": "architecture",
+      "exitCode": 0
+    },
+    {
+      "name": "backend whitespace",
+      "exitCode": 0
+    },
+    {
+      "name": "frozen",
+      "exitCode": 0
+    },
+    {
+      "name": "consistency",
+      "exitCode": 0
+    },
+    {
+      "name": "governance tests",
+      "exitCode": 0
+    },
+    {
+      "name": "governance whitespace",
+      "exitCode": 0
+    }
+  ],
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "liveAuthority": false
+}
