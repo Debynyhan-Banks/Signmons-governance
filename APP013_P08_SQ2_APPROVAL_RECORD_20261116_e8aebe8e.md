@@ -1,0 +1,7 @@
+# SQ2 exact live approval — November16,2026
+
+At 2026-11-16T14:23:21.655115+00:00, authorization is reconciled from the owner's direct chat “i approve” in response to the exact SQ2 live review, followed by “i will be available” to the explicit reachability-through10:10a.m. Eastern question, and the explicit answer “No other Signmons operation is running.” All three launch conditions are now confirmed; availability alone was not treated as approval.
+
+Proposal f0e9988 / APP013_P08_SQ2_LIVE_PROPOSAL_20261116.md; scope0b5c64f7a25034b0330d3433a69db3fd446de41a / APP013_P08_SQ1_SCOPE_20261116_e8aebe8e.json; operatione8aebe8e-3fa9-4385-8a4a-4f587a6b8d61; digestbe6316e6ed67144bb1e2a2a6ff122f1defc20999af7a48fd34bb63b33524c6c2. Source48a0a7d01481bb054ba47b5b73a70f8b0df94058 and the exact prepared pins/limits remain unchanged.
+
+Approved: one exact temporary identity enable and conditional signing grant, guarded420-second wait, one harmless non-JWT SIGN, independent exact binding removal/identity disable/readbacks and process/private cleanup. Maximum25CLI/14directHTTPS/2cache, stated SDK refresh/auth/read-retry/cache exception and$0 additional allowance limitation. Launch9:25–before9:35Eastern; main9:55; cleanup10:06; finalcloseout10:08; reachability10:10. No password, sign-in, payment, retry, reschedule or other resource. Machine decision is APP013_P08_SQ1_APPROVAL_20261116_e8aebe8e.json. Recording this decision performs no provider or credential action. Accepted4/8;3A OPEN;R1newlyclosed0/27. No scope deviation beyond approved ST1 and this exact SQ2 approval.

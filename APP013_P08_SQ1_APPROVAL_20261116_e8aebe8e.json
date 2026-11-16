@@ -1,0 +1,10 @@
+{
+  "decision": "APPROVE_SQ1_SIGNING_DIAGNOSTIC_SDK_CACHE_AND_INDEPENDENT_CLEANUP",
+  "scopeSha256": "be6316e6ed67144bb1e2a2a6ff122f1defc20999af7a48fd34bb63b33524c6c2",
+  "operationId": "e8aebe8e-3fa9-4385-8a4a-4f587a6b8d61",
+  "externalActionAuthorized": true,
+  "independentCleanupAuthorized": true,
+  "sdkException": "SDK_READ_OWNER_REFRESH_INTERNAL_AUTH_RETRY_CACHE_NO_MUTATION_RETRY",
+  "paymentAuthorized": false,
+  "allowanceUsd": 0
+}
