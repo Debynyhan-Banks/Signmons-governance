@@ -1,0 +1,26 @@
+{
+  "status": "LOCAL_LAUNCH_COMPOSITION_VERIFIED_AWAITING_NO_OVERLAP",
+  "checkedAt": "2026-11-16T14:51:43.960234+00:00",
+  "operationId": "ac1bd7cc-5c28-4255-9203-22e80494848b",
+  "ownerDirectApprovalReceived": true,
+  "ownerReply": "i approve",
+  "noOverlapConfirmation": "PENDING_ASYNC_REPLY",
+  "reachabilityThrough": "2026-11-16T15:10:00Z",
+  "proposalCommit": "f4eb64108ae894bf05d39a003187a890b0146d14",
+  "readinessSha256": "8e3c8c66b89ea0c0491fdd66b528f794d2de1a36c35d1f1f269ded98360bedf2",
+  "operatorPath": "/private/tmp/p08-pt1-operator-ac1bd7cc.py",
+  "operatorSha256": "74e8edd63f11781332fc0422c9ccf88a13af7d87bf16a35b9ab2b8411ccf198f",
+  "actualOperatorSigtermDeferral": "PASS; one fake call, next read prevented, local closure true",
+  "sourceConfigurationMatch": true,
+  "operationRootAbsent": true,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "approvalFileCreated": false,
+  "windowUnchanged": {
+    "cutoff": "2026-11-16T14:55:00Z",
+    "readEnd": "2026-11-16T14:57:00Z",
+    "cleanupEnd": "2026-11-16T15:00:00Z",
+    "reviewEnd": "2026-11-16T15:02:00Z"
+  },
+  "next": "Confirm no overlap and before9:55 recheck clock/source/configuration/operator, record exact committed approval and launch once; no reapproval needed for already received owner decision while this window remains valid."
+}
