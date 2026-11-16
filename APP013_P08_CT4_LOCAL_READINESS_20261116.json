@@ -1,0 +1,58 @@
+{
+  "section": "APP-013/3A/P08/CT4",
+  "checkedAt": "2026-11-16T15:34:46.541454+00:00",
+  "sourceCommit": "c57cb9c86c8f06dac70c856ea6bc7de9887715e7",
+  "ownerDecision": "Direct approval of proposal3dcef5b",
+  "localChecklistCompleted": 8,
+  "localChecklistTotal": 8,
+  "nativeTests": 156,
+  "connectedTests": 422,
+  "nodeTests": 57,
+  "newTimingTests": 9,
+  "manifestReferencesVerified": 400,
+  "actualCommittedSourceGuard": "PASS",
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "executionReady": false,
+  "prerequisites": [
+    {
+      "topic": "output contracts and parsing",
+      "evidence": "Existing actual native/child/TLS suites and nine CT4 boundary tests",
+      "result": "LOCAL_PASS",
+      "owner": "implementer"
+    },
+    {
+      "topic": "configuration and source pins",
+      "evidence": "Seven derived manifests400references; actual committed guard",
+      "result": "LOCAL_PASS; current provider state UNKNOWN",
+      "owner": "implementer/cloud custodian"
+    },
+    {
+      "topic": "deadline interruption concurrency cleanup",
+      "evidence": "Earlier payment deadline test; actual killed native worker during wait; independent cleanup; existing process-supervision suites",
+      "result": "LOCAL_PASS",
+      "owner": "implementer"
+    },
+    {
+      "topic": "retention and identities",
+      "evidence": "Existing private inventory and exact IAM ownership readbacks unchanged; fixture retention issue corrected without live retention change",
+      "result": "LOCAL_PASS; future packet retention/window not prepared",
+      "owner": "implementer/credential custodian"
+    },
+    {
+      "topic": "future authority and effective access",
+      "evidence": "No new live packet or current credential observation",
+      "result": "UNKNOWN_NOT_AUTHORIZED",
+      "owner": "owner/cloud/credential custodian"
+    }
+  ],
+  "excluded": [
+    "provider actions",
+    "credentials",
+    "deployment",
+    "payment",
+    "support contact"
+  ],
+  "nextObservableResult": "Fresh actual-interface packet with matching source/windows/retention and sufficient credential horizon, before attendance or live approval",
+  "scopeDeviation": "No scope deviation beyond approved CT4"
+}
