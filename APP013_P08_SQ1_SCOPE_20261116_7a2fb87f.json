@@ -1,0 +1,109 @@
+{
+  "action": "SQ1_EXACT_NON_AUTHENTICATION_SIGN_ONCE",
+  "allowanceUsd": 0,
+  "automaticRetryAllowed": false,
+  "commands": {
+    "config_access_token": [
+      "/opt/homebrew/bin/gcloud",
+      "config",
+      "get-value",
+      "auth/access_token_file"
+    ],
+    "config_credential": [
+      "/opt/homebrew/bin/gcloud",
+      "config",
+      "get-value",
+      "auth/credential_file_override"
+    ],
+    "config_impersonation": [
+      "/opt/homebrew/bin/gcloud",
+      "config",
+      "get-value",
+      "auth/impersonate_service_account"
+    ],
+    "identity": [
+      "/opt/homebrew/bin/gcloud",
+      "iam",
+      "service-accounts",
+      "describe",
+      "signmons-calldesk-p07-runtime@signmons.iam.gserviceaccount.com",
+      "--project",
+      "signmons",
+      "--format=json(email,disabled,uniqueId)"
+    ],
+    "owner": [
+      "/opt/homebrew/bin/gcloud",
+      "auth",
+      "list",
+      "--filter=status:ACTIVE",
+      "--format=json(account,status)"
+    ],
+    "project": [
+      "/opt/homebrew/bin/gcloud",
+      "projects",
+      "describe",
+      "signmons",
+      "--format=json(projectId,projectNumber,lifecycleState)"
+    ],
+    "readback": [
+      "/opt/homebrew/bin/gcloud",
+      "iam",
+      "service-accounts",
+      "describe",
+      "signmons-calldesk-p07-runtime@signmons.iam.gserviceaccount.com",
+      "--project=signmons",
+      "--format=json(email,disabled)"
+    ],
+    "role": [
+      "/opt/homebrew/bin/gcloud",
+      "iam",
+      "roles",
+      "describe",
+      "signmonsP08ServiceAccountSignBlob",
+      "--project",
+      "signmons",
+      "--format=json(name,title,description,includedPermissions,stage,deleted,etag)"
+    ],
+    "token": [
+      "/opt/homebrew/bin/gcloud",
+      "auth",
+      "print-access-token",
+      "--account=debynyhan@signmons.com"
+    ],
+    "token_owner": [
+      "/opt/homebrew/bin/gcloud",
+      "auth",
+      "list",
+      "--filter=status:ACTIVE",
+      "--format=value(account)"
+    ]
+  },
+  "configSha256": "528ceadadc8a5491e54ee82dbad0026eda881252564f96f2be242d70d1d2f111",
+  "iq1ManifestSha256": "aa4874c488ae2fdcd25b475534a26a4c537b669963e59aa699c8e029d9136b03",
+  "limits": {
+    "cache": 2,
+    "cleanupCli": 12,
+    "cleanupHttps": 4,
+    "disable": 1,
+    "enable": 1,
+    "mainCli": 13,
+    "mainHttps": 10,
+    "policyAdd": 1,
+    "policyRemove": 1,
+    "sign": 1
+  },
+  "manifestSha256": "d572ac13394a4db8b35fa91e2da3ff904fb9d713df4a74f7349bb87ad2cca0cc",
+  "operationId": "7a2fb87f-65da-4de9-9684-102a6f18e7db",
+  "projectNumberSha256": "37d4aa0f46ca5b8f0b81b1148bda235a0f4a9a424b6b4638ec993d889563be54",
+  "sdkException": "SDK_READ_OWNER_REFRESH_INTERNAL_AUTH_RETRY_CACHE_NO_MUTATION_RETRY",
+  "sourceCommit": "48a0a7d01481bb054ba47b5b73a70f8b0df94058",
+  "uidSha256": "3d299bbf03a6c3e2315034fb3a809aedbb6f978c6e6741ff0201fe4464798f72",
+  "version": 1,
+  "window": {
+    "cleanupEnd": "2026-11-16T15:46:00Z",
+    "cutoff": "2026-11-16T15:15:00Z",
+    "purgeEnd": "2026-11-16T15:48:00Z",
+    "start": "2026-11-16T15:05:00Z",
+    "workEnd": "2026-11-16T15:35:00Z"
+  }
+}

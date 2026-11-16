@@ -1,0 +1,14 @@
+{
+  "status": "DRAFT_NOT_AUTHORITY",
+  "proposedDecision": {
+    "decision": "APPROVE_SQ1_SIGNING_DIAGNOSTIC_SDK_CACHE_AND_INDEPENDENT_CLEANUP",
+    "scopeSha256": "6a3e32bae383dd175a47f053ec2d83dc7651c1780ffd24f3dfd5ae17327a836b",
+    "operationId": "7a2fb87f-65da-4de9-9684-102a6f18e7db",
+    "externalActionAuthorized": true,
+    "independentCleanupAuthorized": true,
+    "sdkException": "SDK_READ_OWNER_REFRESH_INTERNAL_AUTH_RETRY_CACHE_NO_MUTATION_RETRY",
+    "paymentAuthorized": false,
+    "allowanceUsd": 0
+  },
+  "requires": "Exact owner/cloud/credential approval, new reachability through10:50Eastern and no overlap. Prior10:10availability is insufficient; no approval file or operation root created."
+}
