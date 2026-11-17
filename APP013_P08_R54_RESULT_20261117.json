@@ -1,0 +1,85 @@
+{
+  "section": "APP-013/3A/P08",
+  "operation": "R54",
+  "observedAt": "2026-11-17T10:58:56.614240+00:00",
+  "sourceCommit": "c57cb9c86c8f06dac70c856ea6bc7de9887715e7",
+  "approvalCommit": "44be5fd",
+  "result": {
+    "authProofReady": false,
+    "authenticationObserved": false,
+    "childResultSha256": null,
+    "liveAuthorization": true,
+    "operationId": "87fba4ce-03dd-4f97-bb1c-da56d875e526",
+    "paymentObserved": false,
+    "paymentReadyForAcceptance": false,
+    "privateInputsAbsent": true,
+    "residuals": [
+      "ACCOUNT_SESSION",
+      "AUTH_OUTCOME_UNKNOWN",
+      "AUTH_REVOKE",
+      "PAYMENT_ENDPOINT_UNCONFIRMED"
+    ],
+    "status": "ENTRY_CONTAINMENT_UNCONFIRMED"
+  },
+  "failure": "LOCAL_ADAPTER_OR_SOURCE_STOP",
+  "calls": {
+    "child": 6,
+    "cli": 191,
+    "https": 18,
+    "sql": 10
+  },
+  "childObservations": [
+    {
+      "childCall": 1,
+      "code": "NONE",
+      "journalMerge": "ACCEPTED",
+      "mode": "--payment-preflight",
+      "processOutcome": "RETURNED",
+      "stage": "RESULT"
+    },
+    {
+      "childCall": 2,
+      "code": "START_CUTOFF",
+      "journalMerge": "ABSENT",
+      "mode": "--run",
+      "processOutcome": "REFUSED",
+      "stage": "AUTHORITY"
+    },
+    {
+      "childCall": 3,
+      "code": "AUTH_JOURNAL_REQUIRED",
+      "journalMerge": "ABSENT",
+      "mode": "--closeout",
+      "processOutcome": "REFUSED",
+      "stage": "CLOSEOUT"
+    },
+    {
+      "childCall": 4,
+      "code": "REVOCATION_READBACK",
+      "journalMerge": "ABSENT",
+      "mode": "--readback",
+      "processOutcome": "REFUSED",
+      "stage": "READBACK"
+    },
+    {
+      "childCall": 5,
+      "code": "AUTH_JOURNAL_REQUIRED",
+      "journalMerge": "ABSENT",
+      "mode": "--closeout",
+      "processOutcome": "REFUSED",
+      "stage": "CLOSEOUT"
+    },
+    {
+      "childCall": 6,
+      "code": "REVOCATION_READBACK",
+      "journalMerge": "ABSENT",
+      "mode": "--readback",
+      "processOutcome": "REFUSED",
+      "stage": "READBACK"
+    }
+  ],
+  "interpretation": "Authentication child refused at AUTHORITY with START_CUTOFF after the CT4 settling interval. No accepted authentication or payment. Containment flags remain unresolved; private inputs absent. No retry or correction implemented.",
+  "next": "Implementer must trace parent and child cutoff composition before proposing a bounded correction. Cloud/database/Stripe custodians must resolve containment through separately scoped authority.",
+  "scope": "No scope deviation",
+  "acceptedMilestones": "1A/1B/2A/2B remain accepted; 3A OPEN; no new acceptance."
+}
