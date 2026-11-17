@@ -1,0 +1,59 @@
+{
+  "status": "QUALIFICATION_ONLY_PENDING_EXACT_APPROVAL",
+  "observedAt": "2026-11-17T11:32:31.110493+00:00",
+  "operationId": "f63f2b87-7f68-40f6-a022-1f06c2c3102c",
+  "sourceCommit": "2894598b0d39feace413c2daac4de0ad25b94fa2",
+  "scopeSha256": "aaf2b4e521510dedc9e334364b6e741671e02bc5d4ce90f47cf5e0334afb2dc9",
+  "actualSourceSdkGuard": "PASS",
+  "guardSeconds": 0.973009874811396,
+  "configurationMetadata": "PASS_NO_CACHE_READ",
+  "inertAuthorityParser": "PASS_NOT_LIVE_AUTHORITY",
+  "dynamicPolicyAndResources": "PASS",
+  "sandboxAndOwnedProcessProbe": "PASS",
+  "leaseAvailableAtObservation": true,
+  "operationRootAbsent": true,
+  "envelopeAbsent": true,
+  "decisionPath": "APP013_P08_CT3_EXTERNAL_20261117_f63f2b87.json",
+  "command": [
+    "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+    "-I",
+    "-B",
+    "-c",
+    "import sys,runpy;sys.path.insert(0,sys.argv.pop(1));sys.argv[0]=\"account_containment_read\";runpy.run_module(\"account_containment_read\",run_name=\"__main__\")",
+    "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110",
+    "--run-ct3",
+    "/private/tmp/p08-ct6-live1-f63f2b87-7f68-40f6-a022-1f06c2c3102c-envelope.json"
+  ],
+  "launchEnvelope": "/private/tmp/p08-ct6-live1-f63f2b87-7f68-40f6-a022-1f06c2c3102c-envelope.json",
+  "operationRoot": "/private/tmp/p08-ct3-f63f2b87-7f68-40f6-a022-1f06c2c3102c",
+  "latestLaunch": "2026-11-17T11:40:00Z",
+  "earliestLaunch": "2026-11-17T11:35:00Z",
+  "latestLaunchEnforcement": "IMPLEMENTER_CHECK_PROGRAM_ENFORCES_INPUT_CUTOFF",
+  "mainReserveSeconds": 300,
+  "cleanupReserveSeconds": 240,
+  "inputReserveSeconds": 480,
+  "credentialEvidence": "TR27 VALID_THROUGH_CUTOFF strictly beyond2026-11-17T12:05:00Z",
+  "credentialReRead": false,
+  "attendanceConfirmedThrough": "2026-11-17T12:15:00Z",
+  "actualEndpointFullGateProbe": {
+    "result": "PASS",
+    "syntheticProviderOnly": true,
+    "elapsedSeconds": 3.8599097919650376,
+    "gateSeconds": [
+      1.006243625190109,
+      0.9486546250991523,
+      0.9648655410856009,
+      0.9383300000336021
+    ],
+    "processClosed": true
+  },
+  "externalCalls": 0,
+  "credentialReads": 0,
+  "attemptReserved": false,
+  "liveAuthority": false,
+  "unknown": [
+    "current effective permissions",
+    "current database/Firebase/webhook containment",
+    "historical R54 authentication"
+  ]
+}
