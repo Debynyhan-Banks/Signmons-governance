@@ -1,0 +1,33 @@
+{
+  "verifiedAt": "2026-11-17T11:22:46.410130+00:00",
+  "sourceCommit": "8b29beba642415572e85c875ec32e9f088bf5a58",
+  "scopeSha256": "469e57c093a94dce7b6e8568567ed4f304da880ced58be2e90ee30ffe15fadae",
+  "sourceSdkConfig": "PASS_CURRENT_COMMITTED_GUARD_AND_EXACT_HELPER",
+  "configurationSha256": "528ceadadc8a5491e54ee82dbad0026eda881252564f96f2be242d70d1d2f111",
+  "credentialReads": 0,
+  "providerCalls": 0,
+  "childSyntax": "PASS_NOT_EXECUTED",
+  "childArgv": [
+    "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+    "-I",
+    "-B",
+    "-c",
+    "import sys,datetime\nsys.path.insert(0,sys.argv[1])\nimport access_check as a\nvalue=None\ntry:\n horizon=datetime.datetime.strptime(sys.argv[2],\"%Y-%m-%dT%H:%M:%SZ\").replace(tzinfo=datetime.timezone.utc).timestamp()\n value=a.read_cached_token(a.CONFIG_ROOT,horizon)\n value=None\n print(\"VALID_THROUGH_CUTOFF\")\nexcept BaseException as error:\n print(\"CACHED_TOKEN_EXPIRED\" if type(error) is a.Stop and str(error)==\"CACHED_TOKEN_EXPIRED\" else \"CACHE_READ_UNCONFIRMED\")\nfinally:\n value=None\n",
+    "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-narrow-access-check-local-20261101/source",
+    "2026-11-17T11:45:00Z"
+  ],
+  "childSha256": "2673c0cdf4bcacef9ad5b9e5a3b6d4534c1b6219503e352705140684e2071b41",
+  "childEnvironment": {
+    "HOME": "/Users/debynyhanbanks",
+    "PATH": "/usr/bin:/bin",
+    "LANG": "en_US.UTF-8",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "supervisor": "Existing NativeIO._owned_run with exact clean childEnvironment below, then independent close; never sdk_environment as child env",
+  "actualChildEnvironmentConfigGate": "PASS_NO_CACHE_OPEN",
+  "receiptRoot": "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-narrow-access-check-local-20261101/renewals/20261117-cv8",
+  "operationRootAbsent": true,
+  "credentialCoverage": "UNKNOWN",
+  "liveAuthority": false,
+  "historicalGuardObservation": "Standalone access_check.verify_sources refuses its historical native authority hash. It is not invoked by the approved CV7 read_cached_token procedure. No manifest updated or guard disabled; current committed CT6 nested source/SDK guard and exact unchanged cache helper hash passed."
+}
