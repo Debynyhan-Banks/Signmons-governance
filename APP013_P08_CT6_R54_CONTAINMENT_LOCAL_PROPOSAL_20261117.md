@@ -1,0 +1,38 @@
+# CT6 — R54 containment adaptation, local-only proposal
+
+PROPOSED, NOT IMPLEMENTED. APP-013 / 3A / P08. Base backend581d997; CT5 runtime correctioned961d5. No new acceptance section or change to accepted1A/1B/2A/2B4/8. 3A remains OPEN;R1newlyclosed0/27.
+
+## Requirement and evidence
+3A requires the existing same-job Sandbox payment workflow and failure recovery (APP013_REMAINING_EXECUTION_CONTRACT.md section3A). R54 failed before child authentication journal creation; native result remains ENTRY_CONTAINMENT_UNCONFIRMED with ACCOUNT_SESSION, AUTH_OUTCOME_UNKNOWN, AUTH_REVOKE and PAYMENT_ENDPOINT_UNCONFIRMED. Resolving these is a prerequisite to another connected attempt, not evidence of payment or historical authentication.
+
+Local observation2026-11-17T11:10:48.108259+00:00 verifies no matching operation process, restrictive safe receipt custody and native private-file absence. The actual native result independently reports privateInputsAbsent true. This is local closure only, not provider readback. Safe backend archive: evidence/APP-013/p08-connected-packet-20261110/r54-live-20261117.
+
+Exact operation87fba4ce-03dd-4f97-bb1c-da56d875e526. Native-result SHA256849697fd584717ebfaf79c14936a53222fc6a5257e95b5aaa9a45c7d45baba24. Local-closeout SHA25601a728cdf75149f4ede558bd41bec8413a86ae00d0f6d2a2672b805d06a011e9. Journal SHA256f3d41b78abd317c7dbb05554e9c71f65558633c48c7c3025e8a215c8c6388e12. Proposed minimum revocation second1794913849 is ceil of this post-process observation. It is a new current-containment policy, not an invented R54 historical revocation intent.
+
+Inspected account_containment.py r51_policy/current_firebase and account_containment_read.py ct3_policy/sql_contract/resources/authorize/transport/run/cleanup show the existing runner is expressly R51-pinned at action, receipt hashes, SQL application names and policy minimum. Reusing it unchanged would test the wrong session names and older bound.
+
+## Alternatives and bounded proposed behavior
+Do not replay consumed R54 closeout, clear UNKNOWN flags from local reasoning, or merely supply R54 values to an R51 authority. Reuse existing CT3 orchestration, validators, transports, hidden-input sequence, lease, journals and independent cleanup. Rebind its active qualification to exact R54 evidence and action; do not add a general arbitrary-operation repair tool.
+
+Add an exact R54 policy validator pinned to both safe evidence hashes and the verified observation timestamp; retain the historical R51 validator unchanged. Pass the validated R54 minimum through current Firebase validation, requested revocation validation and transport checks. If an optional policy parameter is needed to preserve historical pure-validator tests, accept only the explicitly supported pinned policy values; never accept an arbitrary caller-provided lower bound. Active live authorization must select only the R54 action/policy/resource set and reject old R51 decisions.
+
+Change exact scoped SQL session names to p08-auth/runtime/probe-R54 while retaining existing runtime-user and qualification-session predicates. Thread the same derived descriptors through main reads, transport allowlists and independent final reads. Final revocation bound=max(R54policy,initial observed,requested); preserve missing/null/type/future-time refusals and identity/disabled/claims/email checks. Do not infer account/token changes from the child refusal. HistoricalAuthentication stays UNKNOWN even if current containment is later confirmed.
+
+Keep original limits:3CLI,2read-only SQL,3Firebase requests including at most1conditional revocation update,3Stripe requests including at most1conditional exact webhook disable,at most3owned Node workers,0explicit cache reads. Keep exact account/destination hash,URL,event set,API version,binaries,TLS,one-attempt/no-retry,SDK exception,existing money restrictions and independent final readbacks. No new permission, resource, endpoint, account activation, SQL mutation, session termination, authentication or payment. Values remain hidden and transient; no new raw payload logging.
+
+## Expected files / interfaces / finite checklist
+Runtime files: existing account_containment.py and account_containment_read.py only. Tests: existing test_account_containment.py and test_account_containment_read.py. Derived hashes only: account-containment-source-manifest.json and account-containment-read-source-manifest.json. Safe R54 evidence and local verification/governance records included. Any additional implementation file/interface requirement is a stop for review.
+
+1. Pin and test exact R54 evidence/observation derivation; reject modified/foreign/missing receipts and unsupported policies.
+2. Rebind active action, SQL resources and policy flow through both real transport boundaries and independent cleanup. Preserve existing R51 pure historical validator tests.
+3. Positive synthetic main/final containment, below-policy conditional revocation, already sufficient revocation, disabled/enabled exact Sandbox webhook. Negative wrong identity/endpoint/operation, malformed/missing/null/future timestamps, old policy/authority, lower-bound substitution, unexpected SQL and source/config drift.
+4. Reuse actual PTY input-order, Python-to-Node, loopback TLS/SQL, bounded process, cutoff/clock/concurrency/interruption and lost-ack/no-retry cleanup tests. Verify final SQL targets R54 names and final Firebase bound cannot regress. No browser/payment tests are needed for this containment-only adaptation; existing endpoint worker remains unchanged.
+5. Run focused containment unittest modules, full connected unittest discovery, actual source/configuration/resource derivation with inert authority, manifest closure, backend governance-baseline/architecture/whitespace, governance frozen-baseline/docs-consistency/25tests/whitespace. Record exact commands/results and original failures. No provider/credential call permitted in verification.
+6. Finish with committed local source/evidence, safe UNKNOWN boundaries and an exact future qualification proposal only after local verification. Do not schedule attendance or start a timed input yet.
+
+## Readiness and ownership
+Source inspection and local R54 process/receipt/private-file verification are complete as of the timestamp above; owner approval, implementation and tests are PENDING. Existing transport/call/cleanup seams are reusable, but their new composed policy/SQL flow must be verified through actual interfaces. No claim of live readiness. Current credentials, permissions, disabled account/session state, Firebase state and webhook state remain UNKNOWN; respective cloud/database/Stripe custodians own live evidence. Implementer owns source, clocks, pin comparison, independent closure and retention verification.
+
+Approval requested is local implementation/tests/manifests/evidence only. A later live proposal must separately specify exact command/source/configuration, resources, current credential horizon, scope/SDK/cache effects, call limits, conditional mutations, owner no-overlap/readiness, input order, finite main/independent cleanup/purge window and spending restrictions. No further full payment run before containment is verified. If account is active or identity drifts, this bounded helper must stop UNKNOWN; it does not gain account-disable or session-kill authority.
+
+Rollback/disabled state: retain old committed evidence; do not run either old or new source without fresh exact authority. No deployment or packet replay. Finish is local qualification readiness, not current provider containment or 3A acceptance. Explicit prospective CT6 adaptation; no code or external action performed.
