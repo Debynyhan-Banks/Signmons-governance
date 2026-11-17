@@ -1,0 +1,10 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_CV8_CACHE_VALIDITY_READ_ONCE",
+  "operationId": "f7edbe1e-2f0d-4450-a565-bd3010a637ee",
+  "sourceCommit": "8b29beba642415572e85c875ec32e9f088bf5a58",
+  "scopeSha256": "469e57c093a94dce7b6e8568567ed4f304da880ced58be2e90ee30ffe15fadae",
+  "credentialReadAuthorized": true,
+  "approvedText": "Approve CV8 one-read validity check and cleanup",
+  "date": "2026-11-17"
+}
