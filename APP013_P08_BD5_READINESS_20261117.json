@@ -1,0 +1,47 @@
+{
+  "status": "LOCAL_PREFLIGHT_PASS_NO_DISPATCH",
+  "verifiedAt": "2026-11-17T12:17:22.614422+00:00",
+  "sourceCommit": "5c94e76b9e92838446dae161ac023f956fafd88b",
+  "scopeSha256": "8948a9b90da9bfa03ebf3899be42d869d5d16810ab9ea0e19968978c3988dee5",
+  "commands": [
+    {
+      "id": "owner",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "auth",
+        "list",
+        "--filter=status:ACTIVE",
+        "--format=json(account,status)"
+      ]
+    },
+    {
+      "id": "project",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "projects",
+        "describe",
+        "signmons",
+        "--format=json(projectId,projectNumber,lifecycleState)"
+      ]
+    },
+    {
+      "id": "billing_project",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "billing",
+        "projects",
+        "describe",
+        "signmons",
+        "--format=json(billingAccountName,billingEnabled,projectId)"
+      ]
+    }
+  ],
+  "rootAbsent": true,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "unknown": [
+    "current billing result",
+    "R55 qualification database cleanup"
+  ],
+  "responsibleOwner": "owner approval; implementer execution and closeout"
+}
