@@ -1,0 +1,35 @@
+{
+  "version": 5,
+  "execution": "EXTERNAL_READ_ONLY",
+  "operationId": "3c79f494-ce73-45b5-8274-4e889518c348",
+  "database": {
+    "host": "ep-jolly-flower-ayc6w9hv.c-5.us-east-2.aws.neon.tech",
+    "port": 5432,
+    "database": "neondb",
+    "user": "neondb_owner"
+  },
+  "role": "p07_payment_runtime",
+  "sourceCommit": "25839987bd6eb05e417af8497acd81accaae16af",
+  "manifestSha256": "320c8894217e460bc527aac5150c06a9b4d1d60410d3d4692685c601633be499",
+  "runtimeFiles": {
+    "/opt/homebrew/opt/postgresql@16/bin/psql": "e67224e11a8d29541c02528b814b17c0757da7d961f16c58003561e20263528d",
+    "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14": "2cbb3ee843d8abcf93ed35bb9102391f18eefccb03d47908547bd8db67bc395c",
+    "/etc/ssl/cert.pem": "9dae8d76e55cb08991f2b672d58999ea15560d910759c16b544f843bdffbb994",
+    "/opt/homebrew/opt/postgresql@16/lib/libpq.5.dylib": "c4342c4c349f076dea1ffa55c13128ff7c8c02a44cc65928aac45073d533bb2f"
+  },
+  "queryHashes": {
+    "sql_connection_sessions": "de7615a7d48b232563abd886d8e849b36b10addba1ebb9882464cfd9b5474924"
+  },
+  "window": {
+    "start": "2026-11-17T12:20:00Z",
+    "cutoff": "2026-11-17T12:28:00Z",
+    "readEnd": "2026-11-17T12:32:00Z",
+    "closeoutEnd": "2026-11-17T12:37:00Z"
+  },
+  "limits": {
+    "sql": 2,
+    "cli": 0,
+    "https": 0,
+    "cache": 0
+  }
+}
