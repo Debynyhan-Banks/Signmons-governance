@@ -1,0 +1,12 @@
+{
+  "status": "EXPIRED_UNEXECUTED_LOCAL_CLOSEOUT",
+  "checkedAt": "2026-11-17T10:16:19.954233+00:00",
+  "TR25RootAbsent": true,
+  "R53RootsAbsent": true,
+  "exactExecutorProcessAbsent": true,
+  "preparedExecutorHashVerifiedAndRemoved": true,
+  "providerCallsThisCheck": 0,
+  "credentialReadsThisCheck": 0,
+  "historicalRuntimeState": "UNKNOWN_NOT_READ_BACK",
+  "retryAuthorized": false
+}
