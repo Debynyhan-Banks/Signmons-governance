@@ -1,0 +1,20 @@
+{
+  "reviewedAt": "2026-11-17T12:24:00.058515+00:00",
+  "sourceCommit": "ce9bccfd71a989b20a0323e0d047dbd81332a59e",
+  "section": "APP-013/3A/P08",
+  "status": "FRESH_SESSION_PREPARATION_REQUIRED",
+  "credentialEvidenceThrough": "2026-11-17T13:05:00Z",
+  "attendanceThrough": "2026-11-17T13:15:00Z",
+  "secondsUntilCredentialEvidenceHorizon": 2459,
+  "existingReviewedSessionDurationSeconds": 3600,
+  "currentSessionFitsExistingFullSchedule": false,
+  "billingDiagnosticElapsedMilliseconds": 492,
+  "billingDiagnosticSocketTimeoutSeconds": 10,
+  "normalQualificationSocketTimeout": "SDK_DEFAULT_NOT_BD5_OVERRIDE",
+  "billingHistoricalTimeoutCause": "UNKNOWN",
+  "currentDatabaseSessionAbsence": "LIVE_VERIFIED_SD3",
+  "historicalQualificationCleanup": "UNCONFIRMED_UNCHANGED",
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "next": "Prepare fresh full session and credential horizon; do not compress cleanup or silently adopt diagnostic timeout in qualification"
+}
