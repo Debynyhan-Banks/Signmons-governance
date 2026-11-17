@@ -1,6 +1,6 @@
 # CT6 — R54 containment adaptation, local-only proposal
 
-PROPOSED, NOT IMPLEMENTED. APP-013 / 3A / P08. Base backend581d997; CT5 runtime correctioned961d5. No new acceptance section or change to accepted1A/1B/2A/2B4/8. 3A remains OPEN;R1newlyclosed0/27.
+OWNER APPROVED for local adaptation and tests on November17,2026: "i Approve CT6 local adaptation and tests". Implementation pending. APP-013 / 3A / P08. Base backend581d997; CT5 runtime correctioned961d5. No new acceptance section or change to accepted1A/1B/2A/2B4/8. 3A remains OPEN;R1newlyclosed0/27.
 
 ## Requirement and evidence
 3A requires the existing same-job Sandbox payment workflow and failure recovery (APP013_REMAINING_EXECUTION_CONTRACT.md section3A). R54 failed before child authentication journal creation; native result remains ENTRY_CONTAINMENT_UNCONFIRMED with ACCOUNT_SESSION, AUTH_OUTCOME_UNKNOWN, AUTH_REVOKE and PAYMENT_ENDPOINT_UNCONFIRMED. Resolving these is a prerequisite to another connected attempt, not evidence of payment or historical authentication.
