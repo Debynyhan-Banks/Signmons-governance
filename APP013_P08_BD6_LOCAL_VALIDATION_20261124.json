@@ -1,0 +1,289 @@
+{
+  "section": "APP-013 / 3A / P08",
+  "status": "LOCAL_CORRECTION_VERIFIED",
+  "recordedAt": "2026-11-24T12:07:22.024919+00:00",
+  "ownerApprovalCommit": "392c0c7",
+  "beforeReproduction": {
+    "sourceCommit": "2cde22cc73d032cdb1f8d211cb5d5493caa6acb5",
+    "method": "Actual billing fixture, runner, NativeIO and inert Popen; actual SIGINT/SIGTERM before registration; independently owned harness cleanup",
+    "observations": [
+      {
+        "cliReservations": 1,
+        "createdChildAlive": true,
+        "createdChildCount": 1,
+        "failure": "INTERRUPTED",
+        "reportedCleanup": true,
+        "signal": "SIGINT",
+        "status": "BILLING_METADATA_UNQUALIFIED"
+      },
+      {
+        "harnessOwnedChildren": 1,
+        "independentCanaryReaped": true,
+        "signal": "SIGINT"
+      },
+      {
+        "cliReservations": 1,
+        "createdChildAlive": true,
+        "createdChildCount": 1,
+        "failure": "INTERRUPTED",
+        "reportedCleanup": true,
+        "signal": "SIGTERM",
+        "status": "BILLING_METADATA_UNQUALIFIED"
+      },
+      {
+        "harnessOwnedChildren": 1,
+        "independentCanaryReaped": true,
+        "signal": "SIGTERM"
+      }
+    ],
+    "logSha256": "99455f0ea35d3ae6e726b3e09760bc5f758214ce075155aeeda7250a3a8bd4ce"
+  },
+  "externalActions": 0,
+  "runtimeValidation": {
+    "passed": 420,
+    "failed": 0,
+    "runs": [
+      {
+        "suite": "qualification",
+        "tests": 267,
+        "failures": 0,
+        "errors": 0,
+        "logPath": "/private/tmp/bd6-qualification-final.log",
+        "logSha256": "54a3061d994fee670fca3f27adbd26220cba38d2ca80832d5fbfb93681d9b0b3"
+      },
+      {
+        "suite": "SQ1",
+        "tests": 100,
+        "failures": 0,
+        "errors": 0,
+        "logPath": "/private/tmp/bd6-sq1-final.log",
+        "logSha256": "5a93960effce4be78f3bc5dc8c8a55f0a2a282ade9aab19d4e5034e06323d3fb"
+      },
+      {
+        "suite": "VM2",
+        "tests": 53,
+        "failures": 0,
+        "errors": 0,
+        "logPath": "/private/tmp/bd6-vm2-final.log",
+        "logSha256": "464b217fe249f455881bc662df519b5904f673f5de15fdda8be5b7c36b7c1bd9"
+      }
+    ]
+  },
+  "independentReview": "PASS: billing lifecycle and completion protocol; fixture alignment uses existing packet-only mode without runtime or assertion changes",
+  "manifestRefresh": [
+    {
+      "path": "evidence/APP-013/p08-https-output-category-local-20261029/source/source-manifest.json",
+      "hashReplacements": 2,
+      "before": "320c8894217e460bc527aac5150c06a9b4d1d60410d3d4692685c601633be499",
+      "after": "f97f04298c4c35a287bb213a5659745d7b62fd301c8cbb4a459f75ed74de81d4"
+    },
+    {
+      "path": "evidence/APP-013/p08-native-entry-local-20261101/source/source-manifest.json",
+      "hashReplacements": 2,
+      "before": "86e85ec13f1647924e12ef724b32b0123a0baaf3f2732d41bd51a59ffcc0c94c",
+      "after": "0aac4804986f94e027fd13f6607a0b8724c32ead072b2b0977bbbdff62386fa8"
+    },
+    {
+      "path": "evidence/APP-013/p08-key-correction-20261110/source-manifest.json",
+      "hashReplacements": 4,
+      "before": "d82c0c0fb95f6358fb7d4eebc919e50c0ae751c1ae98cbda0e6006b0aa757dc5",
+      "after": "56ae329be17a084cea232e19a7d7ee582d76e330e505a39a22b911d42e72d1ad"
+    },
+    {
+      "path": "evidence/APP-013/p08-connected-packet-20261110/iq1-source-manifest.json",
+      "hashReplacements": 3,
+      "before": "916e5d1220fa82346905fc71d9453579a3638a07a97b0a8d693910c0c34a923b",
+      "after": "c7289399eaabaaeb364b657ec3d67328525404b2c4cce642dde98c3607ed9886"
+    },
+    {
+      "path": "evidence/APP-013/p08-connected-packet-20261110/account-containment-source-manifest.json",
+      "hashReplacements": 4,
+      "before": "5795951b6456776dd0f8bbb7b7a10d053c086818b2e2e472b8e64d902cf3bd03",
+      "after": "e938e1998cd7de48996369f753e4145c154d47656ecfbb60bd36cceb1980c67b"
+    },
+    {
+      "path": "evidence/APP-013/p08-connected-packet-20261110/sq1-source-manifest.json",
+      "hashReplacements": 4,
+      "before": "5f168012a754e60b75f251659939b461c44acaee719aa5fc3457351108946f59",
+      "after": "839245d6d1f7e8bb935b22a9d475da706c1564dd89672d4311b523363c953ea2"
+    },
+    {
+      "path": "evidence/APP-013/p08-connected-packet-20261110/account-containment-read-source-manifest.json",
+      "hashReplacements": 6,
+      "before": "f7fecf49da23d370b8707e521c5362871abcd59071b3a057c23a1aa179ec00de",
+      "after": "da025032c81fcfaa40aa96400aaaefafaaeed676055934b1e7adb270a564ff41"
+    },
+    {
+      "path": "evidence/APP-013/p08-connected-packet-20261110/vm2-source-manifest.json",
+      "hashReplacements": 2,
+      "before": "14f905b89d9958d13bdff49ec22e2eee53a66e57e29744036039ba4f4802ce6f",
+      "after": "06134b79631ed7b159b5799243a9b0e016399c935f24a672466730526d5b13dd"
+    }
+  ],
+  "afterSha256": {
+    "evidence/APP-013/p08-https-output-category-local-20261029/source/qualification_launch.py": "de3118e66897e7c2480f5f02245e54c3152bbe0400c085e1102299bed29a0572",
+    "evidence/APP-013/p08-https-output-category-local-20261029/source/test_qualification_launch.py": "3d198559e0781e4bd79cea1d7a104f1a560d8423987433f919a10d9c54e68bd6",
+    "evidence/APP-013/p08-https-output-category-local-20261029/source/source-manifest.json": "f97f04298c4c35a287bb213a5659745d7b62fd301c8cbb4a459f75ed74de81d4",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/source-manifest.json": "0aac4804986f94e027fd13f6607a0b8724c32ead072b2b0977bbbdff62386fa8",
+    "evidence/APP-013/p08-key-correction-20261110/source-manifest.json": "56ae329be17a084cea232e19a7d7ee582d76e330e505a39a22b911d42e72d1ad",
+    "evidence/APP-013/p08-connected-packet-20261110/iq1-source-manifest.json": "c7289399eaabaaeb364b657ec3d67328525404b2c4cce642dde98c3607ed9886",
+    "evidence/APP-013/p08-connected-packet-20261110/account-containment-source-manifest.json": "e938e1998cd7de48996369f753e4145c154d47656ecfbb60bd36cceb1980c67b",
+    "evidence/APP-013/p08-connected-packet-20261110/sq1-source-manifest.json": "839245d6d1f7e8bb935b22a9d475da706c1564dd89672d4311b523363c953ea2",
+    "evidence/APP-013/p08-connected-packet-20261110/account-containment-read-source-manifest.json": "da025032c81fcfaa40aa96400aaaefafaaeed676055934b1e7adb270a564ff41",
+    "evidence/APP-013/p08-connected-packet-20261110/vm2-source-manifest.json": "06134b79631ed7b159b5799243a9b0e016399c935f24a672466730526d5b13dd"
+  },
+  "immutableEvidenceFilesUnchanged": 45,
+  "initialFocusedRun": {
+    "tests": 59,
+    "failures": 2,
+    "errors": 4,
+    "logSha256": "e27c0930c9fe8c2bc7eb10b0eeb10f6818d9a1eeaa34254454390fd3a0335166",
+    "resolution": "Normalize missing completion to safe refusal; three tests construct capabilities before Popen interception; boundary test injects inside actual inherited guard. Assertions preserved."
+  },
+  "finalSourceAudit": {
+    "currentFileReferencesVerified": 260,
+    "immutableEvidenceFilesUnchanged": 45,
+    "unchangedDefinitions": [
+      "NativeIO",
+      "ProjectDiagnosticCapability",
+      "ProjectDiagnosticIO",
+      "ProjectPermissionCapability",
+      "ProjectPermissionIO"
+    ],
+    "manifestMetadataAndSdkPinsUnchanged": true,
+    "bd6LiveRootAbsent": true
+  },
+  "broadQualificationRun": {
+    "testsRun": 208,
+    "failures": 15,
+    "errors": 42,
+    "distinctFailedMethods": 42,
+    "failedMethods": [
+      "test_qualification_launch.CacheTransportTests.test_cache_failures_reach_full_result_without_private_text",
+      "test_qualification_launch.CurrentProofTests.test_concurrent_reservation_and_expired_entry_refuse_before_dispatch",
+      "test_qualification_launch.CurrentProofTests.test_controlled_admission_through_current_boundary",
+      "test_qualification_launch.CurrentProofTests.test_current_positive_exact_counts_and_native_scope",
+      "test_qualification_launch.CurrentProofTests.test_exact_admin_membership_current_qualifier_and_temp_refusal",
+      "test_qualification_launch.CurrentProofTests.test_finalization_failure_clears_candidate_and_inventory_still_refuses",
+      "test_qualification_launch.CurrentProofTests.test_firebase_actual_native_byte_boundary",
+      "test_qualification_launch.CurrentProofTests.test_key_absence_documented_http_error_shapes",
+      "test_qualification_launch.ExternalBindingTests.test_actual_committed_decision_and_source_before_credentials",
+      "test_qualification_launch.ExternalBindingTests.test_cleanup_cannot_read_work_and_budget_rollback_refuse",
+      "test_qualification_launch.ExternalBindingTests.test_complete_external_branch_with_injected_observations_and_no_native_entry",
+      "test_qualification_launch.ExternalBindingTests.test_concurrent_recovery_lock_refuses_before_password",
+      "test_qualification_launch.ExternalBindingTests.test_foreign_inventory_refuses_before_recovery_password",
+      "test_qualification_launch.ExternalBindingTests.test_forged_uncommitted_wrong_action_and_source_refuse",
+      "test_qualification_launch.ExternalBindingTests.test_permission_diagnostic_duplicate_concurrency_refuses_before_dispatch",
+      "test_qualification_launch.ExternalBindingTests.test_permission_diagnostic_shapes_privacy_and_cleanup",
+      "test_qualification_launch.ExternalBindingTests.test_permission_diagnostic_transport_failure_is_unknown_and_closes",
+      "test_qualification_launch.ExternalBindingTests.test_permission_diagnostic_write_failure_closes_without_candidate",
+      "test_qualification_launch.ExternalBindingTests.test_permission_raw_transport_response_reaches_durable_diagnostic",
+      "test_qualification_launch.ExternalBindingTests.test_public_dispatch_after_actual_committed_approval",
+      "test_qualification_launch.ExternalBindingTests.test_recovery_one_read_never_qualifies_or_replays",
+      "test_qualification_launch.QualificationRestartTests.test_actual_parent_death_then_fresh_public_closeout_without_original_input",
+      "test_qualification_launch.QualificationRestartTests.test_cleanup_capability_cannot_dispatch_work",
+      "test_qualification_launch.QualificationRestartTests.test_cleanup_decision_reference_source_and_original_input_path_refuse",
+      "test_qualification_launch.QualificationRestartTests.test_concurrent_restart_refuses_before_prompt",
+      "test_qualification_launch.QualificationRestartTests.test_expired_restart_purges_owned_input_without_password_or_sql",
+      "test_qualification_launch.QualificationRestartTests.test_foreign_raw_input_is_not_purged",
+      "test_qualification_launch.QualificationRestartTests.test_forged_cleanup_scope_or_missing_committed_cleanup_hash_refuses",
+      "test_qualification_launch.QualificationRestartTests.test_interrupted_permission_receipt_allows_fresh_cleanup_without_work_replay",
+      "test_qualification_launch.QualificationRestartTests.test_legacy_approval_without_cleanup_scope_is_not_restart_authority",
+      "test_qualification_launch.QualificationRestartTests.test_prompt_timeout_is_sanitized_and_consumes_independent_attempt",
+      "test_qualification_launch.QualificationRestartTests.test_total_four_sql_reservations_cannot_reset_across_restart",
+      "test_qualification_launch.QualificationRestartTests.test_work_prompt_failure_still_writes_unqualified_result",
+      "test_qualification_launch.SDKDiagnosticTests.test_actual_crash_leaves_reservation_unknown_and_fresh_cleanup_still_works",
+      "test_qualification_launch.SDKDiagnosticTests.test_actual_owned_timeout_identifies_label_and_closes_child",
+      "test_qualification_launch.SDKDiagnosticTests.test_all_labels_and_dynamic_account_never_record_raw_values",
+      "test_qualification_launch.SDKDiagnosticTests.test_diagnostic_write_failure_stops_work_but_preserves_independent_cleanup",
+      "test_qualification_launch.SDKDiagnosticTests.test_duplicate_and_over_limit_reservations_never_dispatch",
+      "test_qualification_launch.SDKDiagnosticTests.test_partial_receipt_does_not_block_cleanup_or_create_candidate",
+      "test_qualification_launch.SDKDiagnosticTests.test_unknown_descriptor_or_changed_argv_refuses_before_record_or_invoke",
+      "test_qualification_launch.SDKDiagnosticTests.test_unrecognized_exception_text_is_never_retained_or_propagated",
+      "test_qualification_launch.ServiceProjectionTests.test_actual_request_projects_large_config_and_exact_names_parse"
+    ],
+    "logSha256": "70554156d9723ff8db340c5eaf29dd88567daa0c23932669a0e683cc4e82aea3",
+    "classification": "Pre-existing fixture mismatch reproduced against baseline; corrected via existing packet-only fixture mode; final full267 suite passes"
+  },
+  "expiryFixtureControl": {
+    "applicability": "Pre-existing synthetic full-qualification fixture mismatch is reproduced on retained baseline source/tests. It is not a BD6 billing lifecycle regression or a passing broader-suite result. No live readiness or external authority is inferred.",
+    "baseline": "2cde22c",
+    "broaderSuite": {
+      "allReportedProblemsTracedToExpiry": true,
+      "distinctAffectedMethods": 42,
+      "methods": 208,
+      "reportedErrors": 42,
+      "reportedFailures": 15
+    },
+    "control": {
+      "baseline": {
+        "errors": 1,
+        "failures": 2,
+        "methods": 3
+      },
+      "current": {
+        "errors": 1,
+        "failures": 2,
+        "methods": 3
+      },
+      "excessSeconds": 1720,
+      "expiryPredicatesModified": false,
+      "guardsModified": false,
+      "nativeCleanupOffsetSeconds": 2720,
+      "qualificationPurgeOffsetSeconds": 1000,
+      "realOwnedTransportCalls": 0
+    },
+    "productionDefinitions": [
+      {
+        "astIdentical": true,
+        "definition": "produce_native_qualification",
+        "sha256": "c93b283f88a4dd642e834b124bba5afe7400469fa1ae4de7b194f0c0f2eb71b2"
+      },
+      {
+        "astIdentical": true,
+        "definition": "_produce_current",
+        "sha256": "63bf81e5a30c6ae431aa03b36ef69e1916f0b8ee1a7b02250b8779595c699e99"
+      },
+      {
+        "astIdentical": true,
+        "definition": "QualificationCapability",
+        "sha256": "5d23e4687cbeb7d219200ee7800affd32bb0427010e43d951093377146f7dfa6"
+      }
+    ],
+    "repositoryFilesEdited": false
+  },
+  "fixtureAlignment": {
+    "review": "Independent review confirms routine regression-fixture alignment within approved test file",
+    "change": "CurrentProofTests uses existing EntryTests.setUp(timing=False) for packet construction; it never executes native",
+    "nativeFixtureCleanupOffsetSeconds": 900,
+    "qualificationFixturePurgeOffsetSeconds": 1000,
+    "runtimeGuardsChanged": false,
+    "assertionsRelaxed": false,
+    "liveWindowsChanged": false
+  },
+  "completedAt": "2026-11-24T12:35:54.571155+00:00",
+  "sourceCommit": "1e21bb87a3640ef5f5ceb3f76fe569ca6ea4a612",
+  "committedSourceGuard": {
+    "status": "PASS",
+    "sourceCommit": "1e21bb87a3640ef5f5ceb3f76fe569ca6ea4a612",
+    "manifestSha256": "f97f04298c4c35a287bb213a5659745d7b62fd301c8cbb4a459f75ed74de81d4",
+    "interface": "model.verify_local_manifest, model.verify_locked_sources, authority.verify_sources, verify_qualification_sources"
+  },
+  "externalAuthority": false,
+  "currentBillingState": "UNKNOWN",
+  "secretMetadata403Cause": "UNKNOWN",
+  "remaining": "Fresh exact billing qualification proposal and owner decision; no live window scheduled",
+  "scope": "No scope deviation beyond the explicitly approved local correction and regression tests",
+  "finalGovernanceChecks": {
+    "recordedAt": "2026-11-24T12:36:21.060210+00:00",
+    "frozenBaseline": "PASS",
+    "completeConsistency": "PASS",
+    "backendGovernanceWrapper": "PASS",
+    "architecture": "PASS",
+    "whitespaceBoth": "PASS",
+    "testsPassed": 25,
+    "testsFailed": 0,
+    "logSha256": "43742c1883c3993c57bde6bd022a2fdb6c718ef66a58b3c97d94355d8916009a"
+  },
+  "totalFinalPassingTests": 445
+}
