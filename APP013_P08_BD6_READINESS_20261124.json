@@ -1,0 +1,94 @@
+{
+  "status": "QUALIFICATION_ONLY_LOCAL_PREPARATION_PASS",
+  "recordedAt": "2026-11-24T11:48:15.445103+00:00",
+  "sourceCommit": "c1ee4b0ec834505936c1de66cb965b42f697f8e4",
+  "scopeSha256": "59c119f6891461b074f4c6f8dd25d1c5439e7dc3ca46a3d009c97e4a13d13879",
+  "manifestSha256": "320c8894217e460bc527aac5150c06a9b4d1d60410d3d4692685c601633be499",
+  "sdkFilesSha256": "ecd62311871d8d39cd2fc94a14b38a16b01a12032d7da04853226feacd6c71b2",
+  "operationId": "722fce5c-1266-421b-9863-a0790c72436c",
+  "rootAbsent": true,
+  "actualInterface": "BillingDiagnosticCapability + prepare; inert draft decision/clock in memory only",
+  "configurationSnapshotSha256": "528ceadadc8a5491e54ee82dbad0026eda881252564f96f2be242d70d1d2f111",
+  "commands": [
+    {
+      "id": "owner",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "auth",
+        "list",
+        "--filter=status:ACTIVE",
+        "--format=json(account,status)"
+      ]
+    },
+    {
+      "id": "project",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "projects",
+        "describe",
+        "signmons",
+        "--format=json(projectId,projectNumber,lifecycleState)"
+      ]
+    },
+    {
+      "id": "billing_project",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "billing",
+        "projects",
+        "describe",
+        "signmons",
+        "--format=json(billingAccountName,billingEnabled,projectId)"
+      ]
+    }
+  ],
+  "limits": {
+    "cli": 3,
+    "sql": 0,
+    "https": 0,
+    "cache": 0
+  },
+  "window": {
+    "start": "2026-11-24T11:50:00Z",
+    "cutoff": "2026-11-24T11:56:00Z",
+    "readEnd": "2026-11-24T11:58:00Z",
+    "closeoutEnd": "2026-11-24T12:00:00Z"
+  },
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "sdkException": "SDK_EXISTING_OWNER_REFRESH_CACHE_INTERNAL_RETRIES_NO_TOKEN_EXPORT",
+  "liveAuthority": false,
+  "purpose": "Observe separate current billingEnabled prerequisite; not unique diagnosis of VM2HTTP403",
+  "unresolved": [
+    "Current billingEnabled and account binding",
+    "Current provider response"
+  ],
+  "owners": {
+    "implementer": "exactsource/command/time comparison and independentcloseout",
+    "owner": "exactreaddecision",
+    "billingAdministrator": "currentbillingstate and any later decision"
+  },
+  "existingAttendance": "Confirmedthrough2026-11-24T12:00:00Z",
+  "credentialEvidence": "VM2actualcachegatepassedstrictbeyond2026-11-24T12:00:00Z; no newcache/signinproposed",
+  "focusedExistingTests": {
+    "command": "pinnedPython-I-B unittest BillingDiagnosticTests",
+    "passed": 9,
+    "failed": 0,
+    "logSha256": "f7a9210d17bda1ea014e9782f74ec02bf124ca020bc79a6af0b21282f3b3d4c8",
+    "completedAt": "2026-11-24T11:50:27.494820+00:00",
+    "scope": "synthetic fixtures; no providers or realcredentials"
+  },
+  "finalDocumentChecks": {
+    "frozenBaseline": "PASS",
+    "completeConsistency": "PASS",
+    "backendGovernanceWrapper": "PASS",
+    "architecture": "PASS",
+    "whitespaceBoth": "PASS",
+    "governanceTests": {
+      "passed": 25,
+      "failed": 0
+    },
+    "governanceLogSha256": "1d9daef81399d0a77a77d2d92a855dbf9016ef561ed808f6715b9eb42f108a95",
+    "recordedAt": "2026-11-24T11:51:16.000032+00:00"
+  }
+}
