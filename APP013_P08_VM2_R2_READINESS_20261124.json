@@ -1,0 +1,40 @@
+{
+  "status": "QUALIFICATION_ONLY_LOCAL_PREFLIGHT_PASSED_PROPOSED_CLOCK",
+  "recordedAt": "2026-11-24T11:38:19.399251+00:00",
+  "scopePath": "APP013_P08_VM2_SCOPE_20261124_e086e085.json",
+  "approvalPath": "APP013_P08_VM2_APPROVAL_20261124_e086e085.json",
+  "scopeSha256": "c99a6688f97eb5c8969aef906a60242a727b76d65d622f958ab21c79b5f639a1",
+  "sourceCommit": "c1ee4b0ec834505936c1de66cb965b42f697f8e4",
+  "manifestSha256": "14f905b89d9958d13bdff49ec22e2eee53a66e57e29744036039ba4f4802ce6f",
+  "configSha256": "528ceadadc8a5491e54ee82dbad0026eda881252564f96f2be242d70d1d2f111",
+  "realSourceSdkConfigurationChecks": "PASS",
+  "clockSeam": "PROPOSED_START_ONLY; actual launch must satisfy original real-clock gate",
+  "operationRootAbsent": true,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "unchangedImplementation": "c1ee4b0;53focused+100SQ1+20cache+25governance previously passed; no runtime tests rerun",
+  "currentCredentialCoverage": "UNKNOWN; TR30 only evidenced strictly beyond11:30Z and cannot establish12:00Z coverage",
+  "qualificationPurpose": "Existing SDK owner/project reads may refresh/cache under the explicitly proposed SDK exception; one cache read must then prove expiry strictly beyond12:00Z. Failure stops without sign-in/retry. No current horizon is presumed.",
+  "effectiveAccessApiVersionState": "UNKNOWN; exactmetadataGET is the boundedqualification",
+  "availability": "PENDING_REACHABILITY_THROUGH_12:00Z; no Terminal attendance needed",
+  "liveAuthority": false,
+  "firstWindow": "EXPIRED_UNEXECUTED; source/limits unchanged; new operation/window require new exact decision",
+  "responsibleRoles": {
+    "owner": "exact replacement read decision and reachability",
+    "implementer": "real source/command/clock comparison, bounds and independent local closeout",
+    "cloudCredentialCustodian": "current credential/API/access state"
+  },
+  "scopeDeviation": "None beyond approved VM2",
+  "finalDocumentChecks": {
+    "frozenBaseline": "PASS",
+    "docsConsistency": "PASS",
+    "backendGovernanceWrapper": "PASS",
+    "architecture": "PASS",
+    "governanceTests": {
+      "passed": 25,
+      "failed": 0
+    },
+    "governanceLogSha256": "40b8786cfe1e156199e05e8c901e6b6da79631249da49bbb51b27d9cbf24937c",
+    "recordedAt": "2026-11-24T11:40:12.502767+00:00"
+  }
+}

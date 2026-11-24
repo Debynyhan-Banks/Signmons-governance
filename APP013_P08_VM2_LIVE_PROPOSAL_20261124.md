@@ -1,5 +1,7 @@
 # VM2 — exact metadata qualification and independent local cleanup
 
+**Expired without execution:** first clock check11:35:55Z was after the11:24cutoff. Owner approval is recorded as late in APP013_P08_VM2_WINDOW1_EXPIRED_20261124.json. No external action ran; no deadline is extended. The replacement proposal requires its own exact decision.
+
 PENDING EXACT OWNER APPROVAL. Qualification-only, not payment execution readiness. APP-013 / 3A / P08; owner-approved local preparation874ce21 is complete at backendc1ee4b0ec834505936c1de66cb965b42f697f8e4. This proposed read cannot reuse consumed R57 authority. R57's discarded error remains UNKNOWN; this operation establishes a current observation only.
 
 ## Exact scope and command

@@ -1,0 +1,23 @@
+{
+  "section": "APP-013 / 3A / P08",
+  "status": "EXPIRED_UNEXECUTED",
+  "operationId": "aad7e63a-4e18-43de-8aa6-c92d208bb56b",
+  "scopeSha256": "eb8e0e4a9e18a21945a23d84968a704bfd3112b69ca959e49616f10a3c5f90be",
+  "observedAt": "2026-11-24T11:38:18.419994+00:00",
+  "firstClockCheck": "2026-11-24T11:35:55Z",
+  "launchCutoff": "2026-11-24T11:24:00Z",
+  "closeoutEnd": "2026-11-24T11:29:00Z",
+  "ownerResponse": "Approve VM2 metadata diagnosis and cleanup",
+  "questionCall": "call_90168de4e68f428782f12cf321feda71",
+  "approvalObservedAfterWindow": true,
+  "actualScopeValidator": "VM2_CUTOFF",
+  "operationRootAbsent": true,
+  "cliCalls": 0,
+  "credentialReads": 0,
+  "httpsCalls": 0,
+  "privateInputsCreated": false,
+  "cleanupRequired": false,
+  "currentCredentialCoverage": "UNKNOWN",
+  "providerCause": "UNKNOWN",
+  "scopeDeviation": "None; original window preserved"
+}
