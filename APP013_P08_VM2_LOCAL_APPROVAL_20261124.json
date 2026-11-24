@@ -1,0 +1,21 @@
+{
+  "section": "APP-013 / 3A / P08",
+  "owner": "Debynyhan Banks",
+  "recordedAt": "2026-11-24T10:57:17.345870+00:00",
+  "proposalCommit": "c02e6f9ff0e353618417ddb6275f0465de682fa8",
+  "proposalPath": "APP013_P08_VM2_LOCAL_DIAGNOSTIC_PROPOSAL_20261124.md",
+  "proposalSha256": "2a1586079e00aa42b34d815e862dbaadcb8037ce4447720463bc06fa77ccddc7",
+  "questionCall": "call_f9e4133101fe4a709860c124d988a5ae",
+  "ownerResponse": "Approve VM2 local preparation and tests",
+  "localScopeApproved": true,
+  "externalActionAuthorized": false,
+  "credentialReadAuthorized": false,
+  "paymentAuthorized": false,
+  "expectedNewBackendFiles": [
+    "evidence/APP-013/p08-connected-packet-20261110/vm2_metadata_read.py",
+    "evidence/APP-013/p08-connected-packet-20261110/test_vm2_metadata_read.py",
+    "evidence/APP-013/p08-connected-packet-20261110/vm2-source-manifest.json"
+  ],
+  "sourceBase": "9a753930eb23f84c02880d37dd34d8339ca4af79",
+  "scopeDeviation": "Owner-approved finite diagnostic preparation; no further change"
+}
