@@ -1,0 +1,19 @@
+{
+  "section": "APP-013 / 3A / P08",
+  "decision": "APPROVE_BD6_LOCAL_RUNNER_CORRECTION_AND_TESTS",
+  "owner": "Debynyhan Banks",
+  "ownerResponse": "Approve BD6 local runner correction and tests",
+  "questionCallId": "call_a41059a8934547cfa62c774a042262e6",
+  "recordedAt": "2026-11-24T12:03:37.441814+00:00",
+  "proposalCommit": "26c39d9",
+  "proposalPath": "APP013_P08_BD6_LOCAL_CORRECTION_PROPOSAL_20261124.md",
+  "proposalSha256": "56e78ed74b7a48bfe66d5aee7d42aa51de40612c4e06d5f7a21fdcf1b809a088",
+  "runtimeSourceCommit": "c1ee4b0ec834505936c1de66cb965b42f697f8e4",
+  "backendEvidenceHead": "2cde22c",
+  "scope": "Two existing Python files and eight named current manifest hashes, plus governance evidence, as reviewed in the proposal",
+  "liveAuthority": false,
+  "credentialReadsAuthorized": false,
+  "providerCallsAuthorized": false,
+  "paymentAuthorized": false,
+  "terminalAttendanceRequired": false
+}
