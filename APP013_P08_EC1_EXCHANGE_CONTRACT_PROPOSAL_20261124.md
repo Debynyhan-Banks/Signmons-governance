@@ -1,5 +1,32 @@
 # EC1 — correct the custom-token exchange response contract
 
+## Implementation closeout — November 24, 2026
+
+**EC1_LOCAL_VERIFIED.** Backend 6df778d9858ff728d10e02f2b69084886a7cb102 completes the approved six-item checklist. This completion and the recorded owner decision supersede the original pending/blocking proposal language retained below. The reproduced local mismatch is resolved; no live-readiness or customer-acceptance claim is made. Exact evidence, initial test-fixture failures, final results and exclusions are in APP013_P08_EC1_LOCAL_COMPLETION_20261124.md and backend ec1-local-20261124/verification.md.
+
+| Approved checklist item | Completed evidence |
+| --- | --- |
+| 1. Decision and pre-edit inventory | Governance 807cf80, before coding; 18 expected files inventoried; owner changes preserved |
+| 2. Predicate, exact guard and two fixtures | Exact approved absence-or-match/nonempty-token predicate; complete source equality still enforced; lookup/update contracts untouched |
+| 3. Actual client and native regression path | 21 new direct client tests plus 21 native subcases in three methods; documented response succeeds, conflicting identity/claims/time/server failures block payment |
+| 4. Recovery, privacy, no retry and current pins | Existing timeout/interruption/concurrency/cleanup suites pass; 417 references verified, 39 JSON and five embedded digest replacements; 10 R56 files unchanged |
+| 5. Applicable checks | 720 local tests pass; final governance/baseline/consistency/architecture/whitespace and 25 governance tests recorded in APP013_P08_EC1_FINAL_GATES_20261124.json |
+| 6. Independent review and handoff | Independent source/evidence review passed; canonical pointer, board, handoff, ticket and 3A card updated |
+
+### Final source-bound readiness record
+
+Verified November 24, 2026 against backend 6df778d; exact hashes and local check time are retained in source-audit.json and source-guards.json. This replaces only the local readiness findings in the original proposal.
+
+| Prerequisite | Result / source evidence | Responsible owner |
+| --- | --- | --- |
+| Actual response contract, null/missing fields, safe refusal and same execution boundary | PASS locally: actual adapters and native child/journal/parent cases; authenticate() byte-for-byte unchanged; documented response succeeds and invalid token/server conditions refuse | Implementer |
+| Current source/config/resource/dynamic pins | PASS for current source graph and existing source guards. Credentials, effective live access, APIs, key/client compatibility and current account state UNKNOWN; local fixtures are not their proof | Implementer; cloud/database/Stripe custodians for external facts |
+| Cutoffs, no retry, concurrency, interrupted/partial recovery, independent cleanup and privacy | PASS locally in applicable full suites. Fixture deadlines share the parent clock; production limits unchanged. R56 historical outcome and live restoration remain UNKNOWN | Implementer; relevant custodian for external evidence |
+| Finite checklist, approvals, exclusions and next observable result | Six approved local items complete. No external authority. Next is fresh source-bound readiness reconciliation and the smallest necessary qualification proposal; no new session scheduled | Implementer prepares; owner decides any live action |
+
+Accepted 4/8; 3A OPEN; R1 newly closed 0/27. R56 AUTH_OUTCOME_UNKNOWN and null stopped proof remain immutable. No scope deviation beyond approved EC1.
+
+
 ## Owner decision — approved local implementation, November 24
 
 Owner replied **“Approve EC1 local correction and tests”** to the exact prepared review at governance c91285a. This direct decision authorizes the finite correction, fixture/test updates and derived references specified below; it grants no live authority. The proposal's original pending language is retained as review history and is superseded by this recorded decision. Backend base f675067 contains only the read-only review added after runtime 9f5f5bf. The 18-file pre-edit inventory is APP013_P08_EC1_SOURCE_INVENTORY_20261124.json. Frozen-baseline and complete consistency checks pass before coding; unrelated owner edits and renewal files are preserved.
