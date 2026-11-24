@@ -1,0 +1,11 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_VM2_METADATA_READ_CACHE_SDK_EXCEPTION_AND_CLEANUP",
+  "scopeSha256": "b961a79f3ce262f7f6b8de0ecd023485ce447550d3dfbec13085ce8186647b9e",
+  "operationId": "0d360f5b-2f79-476c-a1d1-0434c7a8a210",
+  "externalReadAuthorized": true,
+  "independentCleanupAuthorized": true,
+  "sdkException": "SDK_EXISTING_OWNER_REFRESH_CACHE_INTERNAL_RETRIES_NO_TOKEN_EXPORT",
+  "paymentAuthorized": false,
+  "allowanceUsd": 0
+}

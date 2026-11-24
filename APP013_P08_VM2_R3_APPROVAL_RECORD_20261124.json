@@ -1,0 +1,17 @@
+{
+  "recordedAt": "2026-11-24T13:47:48.286851+00:00",
+  "owner": "Debynyhan Banks",
+  "decision": "Approve VM2 R3 and cleanup; reachable through 9:03 a.m.",
+  "questionCallId": "call_e8c980fe7b4d4576a94c507695000ca7",
+  "reviewedProposalCommit": "881bce5",
+  "scopePath": "APP013_P08_VM2_SCOPE_20261124_0d360f5b.json",
+  "scopeSha256": "b961a79f3ce262f7f6b8de0ecd023485ce447550d3dfbec13085ce8186647b9e",
+  "operationId": "0d360f5b-2f79-476c-a1d1-0434c7a8a210",
+  "sourceCommit": "7dff026642106719ea3990c53f5723f9199e36b0",
+  "launchBefore": "2026-11-24T13:58:00Z",
+  "readsEnd": "2026-11-24T14:00:00Z",
+  "closeoutEnd": "2026-11-24T14:03:00Z",
+  "scopeUnchanged": true,
+  "newSignInOrPasswordRequired": false,
+  "manualCloseoutInterpretation": "Use actual exit status and returned resultSha256 with authoritative read_result/veto; independently check process absence/configuration/owned inputs. Stop or abnormal death stays UNKNOWN."
+}
