@@ -1,0 +1,26 @@
+{
+  "baseBackendCommit": "f675067cf976ff624393453f7af125545793247a",
+  "runtimeReviewedCommit": "9f5f5bfb3379343b1a9ff20480371fe6fd1582d9",
+  "proposalCommit": "c91285a78e96848cf0aa64985cdc68079abc4583",
+  "ownerDecision": "Approve EC1 local correction and tests",
+  "files": {
+    "evidence/APP-013/p08-coordinator-auth-local-20261031/source/client.mjs": "e8b3d5987dc4701a9869233cb932de891ecacdbbc342bf5a2d7dc4d70b2ac2b4",
+    "evidence/APP-013/p08-coordinator-auth-local-20261031/source/authority.mjs": "12027fff16bd534dc483ba5de232e544af3a0961aee4143aeff3c05d83a893d9",
+    "evidence/APP-013/p08-coordinator-auth-local-20261031/source/test_client.mjs": "c24cac09b10782726361f3ec739e5f8648391a23c94987f83e18b60f935d46b2",
+    "evidence/APP-013/p08-real-client-binding-local-20261031/source/bound-child.mjs": "8d817ef9a473e9712ae59f3ebdb8a9c863cd4c166d0b3f5c3497f042b2f6062f",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/fixture_ports.mjs": "997f1ec95806ee98434b091dc9714274d1dae61c2d64bf83690aa1b68efbb2c6",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/test_entry.py": "912dafc5833c08de09a76147e0058d7c68847cfd23111150976c53906a226619",
+    "evidence/APP-013/p08-serialized-handoff-local-20261031/source/handoff.py": "55ebb37bc2dbaf984908ce904caea1e12662cb1f584490a1df459fc6ae9080bb",
+    "evidence/APP-013/p08-real-client-binding-local-20261031/source/bound_handoff.py": "2db219e6b3ccceac4cf3e65a7eb2b98b727553250cc4b2cb5770039deeddf887",
+    "evidence/APP-013/p08-coordinator-auth-local-20261031/source/source-manifest.json": "462e09c5ff6e6d85ae14590583875e910fd594a1023ea919d255a449495c4c63",
+    "evidence/APP-013/p08-serialized-handoff-local-20261031/source/source-manifest.json": "f7bb4f0e839667e1c86d74998c82919632c0a3b35a596aaebef630fe494d4ceb",
+    "evidence/APP-013/p08-real-client-binding-local-20261031/source/source-manifest.json": "5c30ce849c4a5db9067b63abc5cb2db3e564868757de2c0e904b28da93cc90d3",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/source-manifest.json": "9ad5fea47a6657ece084377ca307f10551cc25e9d7992fa834d262a63f233cfe",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/test-manifest.json": "f0b1e2f73d0b3aea34299f84aa60870d34ac7196266140515e50fa851c4ed847",
+    "evidence/APP-013/p08-key-correction-20261110/source-manifest.json": "95ebe94ec964e3b01682b15c9fde2495079e633a9e1db2006e5bb04c5eae0f67",
+    "evidence/APP-013/p08-connected-packet-20261110/iq1-source-manifest.json": "0a14775009e0f0937979b5b975905b8fee4d173d40a7261ccd9ccdf1d4610f8e",
+    "evidence/APP-013/p08-connected-packet-20261110/sq1-source-manifest.json": "841abb8b5733662af6d86f6bbebfc767a18fb749c7c30665e92f5a8283fa613e",
+    "evidence/APP-013/p08-connected-packet-20261110/account-containment-source-manifest.json": "f60f4da766c1bb8ff50d73b0761866a053eecb677064b4dfd7c41493479067c9",
+    "evidence/APP-013/p08-connected-packet-20261110/account-containment-read-source-manifest.json": "362d722271401c2e27adc269f62a628d4fcf1f493962c6aa1c7b185ae937b7c5"
+  }
+}

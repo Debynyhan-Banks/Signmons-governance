@@ -1,5 +1,11 @@
 # EC1 — correct the custom-token exchange response contract
 
+## Owner decision — approved local implementation, November 24
+
+Owner replied **“Approve EC1 local correction and tests”** to the exact prepared review at governance c91285a. This direct decision authorizes the finite correction, fixture/test updates and derived references specified below; it grants no live authority. The proposal's original pending language is retained as review history and is superseded by this recorded decision. Backend base f675067 contains only the read-only review added after runtime 9f5f5bf. The 18-file pre-edit inventory is APP013_P08_EC1_SOURCE_INVENTORY_20261124.json. Frozen-baseline and complete consistency checks pass before coding; unrelated owner edits and renewal files are preserved.
+
+Implementation uses this complete card and its six-item checklist. Root implements the exact client predicate/guard, direct client tests and all hash refreshes. Delegated implementation is limited to the two specified synthetic response producers and native test_entry.py. Independent review and all applicable local verification precede completion. No scope deviation beyond approved EC1.
+
 **Decision requested: local correction and tests only. No implementation or live action is authorized by this proposal.** APP-013 / 3A / P08 remains the same admitted-job Sandbox payment journey; EC1 is an internal correction, not a new acceptance section. Source: backend `9f5f5bfb3379343b1a9ff20480371fe6fd1582d9`; governance checkpoint `f474fed59f9c4ccc213106ddbdfc4f488009ba86`. Reviewed November 24, 2026.
 
 ## Demonstrated gap and customer acceptance
