@@ -1,0 +1,20 @@
+{
+  "recordedAt": "2026-11-24T13:52:04.338539+00:00",
+  "backendEvidenceCommit": "2f13f90ae4cda3a61e719308d54cc19c1dd3c0d1",
+  "runtimeSourceCommit": "7dff026642106719ea3990c53f5723f9199e36b0",
+  "frozenBaseline": "PASS",
+  "completeConsistency": "PASS",
+  "backendGovernanceWrapper": "PASS",
+  "architecture": "PASS",
+  "bothWhitespaceChecks": "PASS",
+  "governanceTests": {
+    "passed": 25,
+    "failed": 0,
+    "logSha256": "996a70fa79118349459f74d4900ee3302366086942c27daf5af726c42f5962c8"
+  },
+  "runtimeTests": "Not rerun for result-only retention;60VM2+100SQ1 passed for source7dff026",
+  "independentEvidenceReview": "PASS7safe receipts+inventory+summary; original/copied read_result; custody and private-data exclusion",
+  "resultSha256": "35fbae206df686735eb6a5df8bb662bc55db95aee0b57e724777ee2aef494ee5",
+  "providerOrCacheCallsDuringCloseout": 0,
+  "scopeDeviation": "None"
+}

@@ -1,0 +1,27 @@
+{
+  "recordedAt": "2026-11-24T13:49:12.214556+00:00",
+  "operationId": "0d360f5b-2f79-476c-a1d1-0434c7a8a210",
+  "actualMainExitCode": 0,
+  "actualReturnedResultSha256": "35fbae206df686735eb6a5df8bb662bc55db95aee0b57e724777ee2aef494ee5",
+  "authoritativeResultReadback": "PASS",
+  "interruptionVetoAbsent": true,
+  "mainClosure": {
+    "configurationUnchanged": true,
+    "independentProcessAbsence": true,
+    "onTime": true,
+    "processCleanupVerified": true,
+    "responseClosed": true
+  },
+  "independentPostExitConfigurationUnchanged": true,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "postExitOsAbsenceCheck": "PASS",
+  "ownedTemporaryInputs": "NONE_CREATED; direct reviewed command used",
+  "safeAttemptMarkersPreserved": true,
+  "postExitMatchingProcessCount": 0,
+  "inspectionAncestorsExcluded": true,
+  "rawProcessSnapshotRetained": false,
+  "signalsSent": 0,
+  "independentCloseoutCompletedAt": "2026-11-24T13:49:15.843917+00:00",
+  "onTime": true
+}

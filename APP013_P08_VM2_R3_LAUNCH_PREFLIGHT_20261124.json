@@ -1,0 +1,16 @@
+{
+  "recordedAt": "2026-11-24T13:48:16.610111+00:00",
+  "status": "PASS_BEFORE_LAUNCH",
+  "approvalCommit": "9add929ce0deec9175489db90c21fc2dafe3f758",
+  "operationId": "0d360f5b-2f79-476c-a1d1-0434c7a8a210",
+  "scopeSha256": "b961a79f3ce262f7f6b8de0ecd023485ce447550d3dfbec13085ce8186647b9e",
+  "sourceCommit": "7dff026642106719ea3990c53f5723f9199e36b0",
+  "manifestSha256": "0c3c90cdad6cf8a1c742a37de20d9cbf8f9fcd7ad772f97fbd486dbfe71bec78",
+  "configSha256": "528ceadadc8a5491e54ee82dbad0026eda881252564f96f2be242d70d1d2f111",
+  "actualSourceSdkRuntimeConfigurationCommandsClock": "PASS",
+  "operationRootAbsent": true,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "expectedCommand": "Pinned Python -I -B plus reviewed runpy bootstrap; vm2_metadata_read.py and exact approved commit/scope/approval",
+  "ownerReachableThrough": "2026-11-24T14:03:00Z"
+}
