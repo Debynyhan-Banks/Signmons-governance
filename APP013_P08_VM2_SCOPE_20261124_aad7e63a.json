@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "action": "VM2_EXACT_SECRET_VERSION_METADATA_ONCE",
+  "operationId": "aad7e63a-4e18-43de-8aa6-c92d208bb56b",
+  "sourceCommit": "c1ee4b0ec834505936c1de66cb965b42f697f8e4",
+  "manifestSha256": "14f905b89d9958d13bdff49ec22e2eee53a66e57e29744036039ba4f4802ce6f",
+  "configSha256": "528ceadadc8a5491e54ee82dbad0026eda881252564f96f2be242d70d1d2f111",
+  "projectNumberSha256": "37d4aa0f46ca5b8f0b81b1148bda235a0f4a9a424b6b4638ec993d889563be54",
+  "commands": [
+    {
+      "id": "owner",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "auth",
+        "list",
+        "--filter=status:ACTIVE",
+        "--format=json(account,status)"
+      ]
+    },
+    {
+      "id": "project",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "projects",
+        "describe",
+        "signmons",
+        "--format=json(projectId,projectNumber,lifecycleState)"
+      ]
+    }
+  ],
+  "limits": {
+    "cli": 2,
+    "cache": 1,
+    "https": 1,
+    "sql": 0,
+    "mutations": 0
+  },
+  "sdkException": "SDK_EXISTING_OWNER_REFRESH_CACHE_INTERNAL_RETRIES_NO_TOKEN_EXPORT",
+  "allowanceUsd": 0,
+  "automaticRetryAllowed": false,
+  "window": {
+    "start": "2026-11-24T11:15:00Z",
+    "cutoff": "2026-11-24T11:24:00Z",
+    "readEnd": "2026-11-24T11:26:00Z",
+    "closeoutEnd": "2026-11-24T11:29:00Z"
+  }
+}

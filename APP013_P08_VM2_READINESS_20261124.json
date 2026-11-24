@@ -1,0 +1,88 @@
+{
+  "status": "QUALIFICATION_ONLY_LOCAL_PREFLIGHT_PASSED",
+  "recordedAt": "2026-11-24T11:15:25.272914+00:00",
+  "scopePath": "APP013_P08_VM2_SCOPE_20261124_aad7e63a.json",
+  "scopeSha256": "eb8e0e4a9e18a21945a23d84968a704bfd3112b69ca959e49616f10a3c5f90be",
+  "sourceCommit": "c1ee4b0ec834505936c1de66cb965b42f697f8e4",
+  "manifestSha256": "14f905b89d9958d13bdff49ec22e2eee53a66e57e29744036039ba4f4802ce6f",
+  "configSha256": "528ceadadc8a5491e54ee82dbad0026eda881252564f96f2be242d70d1d2f111",
+  "actualCurrentClockPreflight": true,
+  "sourceGuard": "PASS_LOCAL_AND_COMMITTED_TRANSITIVE_SOURCE_SDK_RUNTIME",
+  "configuration": "PASS_EXISTING_NONSECRET_METADATA_HELPER",
+  "operationRootAbsent": true,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "unresolved": [
+    "Current owner/project API responses",
+    "Current credential coverage at the new read",
+    "Current Secret Manager permission/API availability/version metadata",
+    "Provider reported error classification"
+  ],
+  "limits": {
+    "cli": 2,
+    "cache": 1,
+    "https": 1,
+    "sql": 0,
+    "mutations": 0
+  },
+  "ownerAttendancePreviouslyConfirmedThrough": "2026-11-24T11:40:00Z",
+  "priorCredentialCoverageEvidence": "TR30 VALID_THROUGH_CUTOFF strictly beyond 2026-11-24T11:30:00Z; new cache read still required",
+  "liveAuthority": false,
+  "approvedLocalScopeCommit": "874ce21",
+  "scopeDeviation": "None beyond approved VM2",
+  "prerequisiteTrace": [
+    {
+      "prerequisite": "Actual CLI/HTTP metadata and error output contracts",
+      "sourceCommit": "c1ee4b0ec834505936c1de66cb965b42f697f8e4",
+      "inspectedSource": "evidence/APP-013/p08-connected-packet-20261110/vm2_metadata_read.py classify_metadata/bounded_metadata_request/run",
+      "evidence": "APP013_P08_VM2_LOCAL_TEST_RESULTS_20261124.json",
+      "evidenceTimestamp": "2026-11-24T11:17:51.105153+00:00",
+      "verification": "PASS53actual-boundarysynthetic tests; live response UNKNOWN",
+      "responsibleOwner": "implementer"
+    },
+    {
+      "prerequisite": "Configuration/resource identity, dynamic project resolution and credential compatibility",
+      "sourceCommit": "c1ee4b0ec834505936c1de66cb965b42f697f8e4",
+      "inspectedSource": "evidence/APP-013/p08-connected-packet-20261110/vm2_metadata_read.py preflight/source_guard/metadata_descriptor; existing cache helper",
+      "evidence": "APP013_P08_VM2_LOCAL_TEST_RESULTS_20261124.json",
+      "evidenceTimestamp": "2026-11-24T11:17:51.105153+00:00",
+      "verification": "PASSactualcommittedsource/config/SDK/runtime guard; current usable permission/API/cache UNKNOWN",
+      "responsibleOwner": "implementer and cloud/credential custodian"
+    },
+    {
+      "prerequisite": "Deadlines, single attempt, concurrency, interruption and private retention",
+      "sourceCommit": "c1ee4b0ec834505936c1de66cb965b42f697f8e4",
+      "inspectedSource": "evidence/APP-013/p08-connected-packet-20261110/vm2_metadata_read.py validate_scope/Journal/run/interruption_handlers/read_result",
+      "evidence": "APP013_P08_VM2_LOCAL_TEST_RESULTS_20261124.json",
+      "evidenceTimestamp": "2026-11-24T11:17:51.105153+00:00",
+      "verification": "PASSfocused tests including signal-registration/publication/veto/deletion/owned-inert-child closure; SIGKILL remains UNKNOWN requiring independent observation",
+      "responsibleOwner": "implementer"
+    },
+    {
+      "prerequisite": "Finite checklist, approvals, exclusions and next result",
+      "sourceCommit": "c1ee4b0ec834505936c1de66cb965b42f697f8e4",
+      "inspectedSource": "APP013_P08_VM2_LOCAL_DIAGNOSTIC_PROPOSAL_20261124.md; APP013_P08_VM2_LIVE_PROPOSAL_20261124.md",
+      "evidence": "APP013_P08_VM2_LOCAL_TEST_RESULTS_20261124.json",
+      "evidenceTimestamp": "2026-11-24T11:17:51.105153+00:00",
+      "verification": "Local checklist COMPLETE; exact live decision PENDING; qualification-only",
+      "responsibleOwner": "owner and implementer"
+    }
+  ],
+  "finalChecks": {
+    "frozenBaseline": "PASS",
+    "docsConsistency": "PASS",
+    "backendGovernanceWrapper": "PASS",
+    "architecture": "PASS",
+    "governanceTests": {
+      "passed": 25,
+      "failed": 0
+    },
+    "whitespaceBoth": "PASS",
+    "recordedAt": "2026-11-24T11:17:51.105153+00:00"
+  },
+  "sourceFiles": {
+    "vm2_metadata_read.py": "3ee60ecce214dee90487638d717281c0aeb55e1f1a53a595488f967a7754da6e",
+    "test_vm2_metadata_read.py": "e835200dabfeb67e30bda0c9acee9ed40df181b439336ba4a03b3b19c46c0a75",
+    "vm2-source-manifest.json": "14f905b89d9958d13bdff49ec22e2eee53a66e57e29744036039ba4f4802ce6f"
+  }
+}

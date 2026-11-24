@@ -1,0 +1,76 @@
+{
+  "recordedAt": "2026-11-24T11:17:14.158783+00:00",
+  "sourceCommit": "c1ee4b0ec834505936c1de66cb965b42f697f8e4",
+  "results": [
+    {
+      "label": "VM2 focused tests:53PASS",
+      "sourceLogSha256": "9f0e1b1c28f5b46450fc33538df325ad68cc4b1116541523347f008fc4fb8968",
+      "retainedSummary": [
+        "test_exact_scope_and_existing_owner_project_descriptors (test_vm2_metadata_read.ScopeContract.test_exact_scope_and_existing_owner_project_descriptors) ... ok",
+        "test_preflight_rechecks_cutoff_after_source_inspection (test_vm2_metadata_read.ScopeContract.test_preflight_rechecks_cutoff_after_source_inspection) ... ok",
+        "test_preflight_source_and_configuration_refuse_before_factory_or_reservation (test_vm2_metadata_read.ScopeContract.test_preflight_source_and_configuration_refuse_before_factory_or_reservation) ... ok",
+        "test_scope_rejects_extra_fields_types_identity_limits_and_mutated_commands (test_vm2_metadata_read.ScopeContract.test_scope_rejects_extra_fields_types_identity_limits_and_mutated_commands) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 53 tests in 0.233s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "label": "Existing SQ1 regression:100PASS",
+      "sourceLogSha256": "e3cef957fb4cbe3ce00086ec53eaef6fa17b3c629e5c1bfe9b809554ab06ddbc",
+      "retainedSummary": [
+        "....................................................................................................",
+        "----------------------------------------------------------------------",
+        "Ran 100 tests in 18.653s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "label": "Governance:25PASS",
+      "sourceLogSha256": "198acf7b9b728aef94e4da56b538be6f6c16f5f4fa432fd45544dc1cc5896e98",
+      "retainedSummary": [
+        "\u2714 full acceptance promotion can advance to the remaining suffix (0.057ms)",
+        "\u2139 tests 25",
+        "\u2139 suites 0",
+        "\u2139 pass 25",
+        "\u2139 fail 0",
+        "\u2139 cancelled 0",
+        "\u2139 skipped 0",
+        "\u2139 todo 0",
+        "\u2139 duration_ms 239.444625"
+      ]
+    },
+    {
+      "label": "Existing access-check CacheTests/ManifestTests/SDKRetryTests:20PASS",
+      "command": "pinned Python -I -B unittest loader selecting CacheTests, ManifestTests and SDKRetryTests",
+      "result": "Ran20tests in0.288s; OK",
+      "toolOutput": "2570a2"
+    }
+  ],
+  "totalPassed": 198,
+  "runtimeAndFocusedPassed": 173,
+  "governancePassed": 25,
+  "initialAttempts": [
+    {
+      "suite": "overbroad standalone legacy access_check discovery",
+      "result": "114run/81SOURCE_DRIFTerrors",
+      "cause": "legacy lockedSources pins historical p08-native-entry authority.py; unchanged before VM2. Applicable cache/manifest/SDKclasses20passed. No historical manifest changed."
+    },
+    {
+      "suite": "SQ1 sandboxed full regression",
+      "result": "100run/15errors/2failures",
+      "cause": "sandbox denies /bin/ps, loopback bind and nested sandbox-exec. Same unchanged injected-provider suite passed100/100 with host permissions."
+    },
+    {
+      "suite": "new execute interruption test",
+      "result": "initial53test run had one fixture VM2_CUTOFF error",
+      "cause": "synthetic fixture used old clock while execute uses currenttime. Rebased only fixtureclock using identical offsets; final53pass."
+    }
+  ],
+  "providerCalls": 0,
+  "realCredentialReads": 0,
+  "scopeDeviation": "None beyond approved VM2"
+}

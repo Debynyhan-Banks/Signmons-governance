@@ -1,5 +1,7 @@
 # VM2 — proposed local preparation for one metadata diagnosis
 
+**Completed under owner approval874ce21:** backendc1ee4b0 contains the three approved files. Local completion/tests/readiness are recorded in APP013_P08_VM2_LOCAL_COMPLETION_20261124.md. The original decision-pending text below is historical; no external authority is granted.
+
 PENDING OWNER DECISION; no implementation or new external action is authorized. APP-013 / 3A / P08. Backend runtime source 6df778d9858ff728d10e02f2b69084886a7cb102; R57 safe closeout evidence commit 9a75393. This is a bounded diagnostic preparation, not an additional acceptance section or a new connected workflow.
 
 ## Demonstrated gap, traceability and alternatives
