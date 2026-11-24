@@ -24,6 +24,8 @@ Retain only safe HTTP/status, finite metadata state, fixed reason/domain/equalit
 
 Independently close/read back actual owned process handles and responses, compare nonsecret configuration, check result digest/interruption veto and process exit/absence, and remove only owned temporary inputs. No provider cleanup, additional credential read or SDK cache deletion. SIGKILL/operator death remains UNKNOWN requiring local inspection; no disk PID is adopted for destructive cleanup.
 
+The code performs owned-handle/response/configuration closure and authoritative result/veto checks. After exit, the implementer separately verifies process exit/absence, safe receipt inventory/digest and removal of owned temporary inputs; those post-exit checks are manual closeout duties, not claimed automated enforcement.
+
 ## Readiness and decision
 
 APP013_P08_VM2_R3_READINESS_20261124.json records the actual current-clock preflight against committed source, transitive SDK/runtime guards, exact descriptors, nonsecret configuration and absent root. Synthetic actual-boundary tests cover output contracts, domain/unknown/conflict handling, privacy, deadlines, replay, concurrency, interruption and independent cleanup. Source, tests and independent review are complete; **current credential horizon, API availability, usable permission, version state and response remain UNKNOWN**, precisely the purpose of this bounded qualification. No source or acceptance guard is bypassed.
