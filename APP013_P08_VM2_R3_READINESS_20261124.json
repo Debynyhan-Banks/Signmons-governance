@@ -1,0 +1,74 @@
+{
+  "status": "QUALIFICATION_ONLY_LOCAL_PREFLIGHT_PASSED",
+  "recordedAt": "2026-11-24T13:43:44.915224Z",
+  "scopePath": "APP013_P08_VM2_SCOPE_20261124_0d360f5b.json",
+  "approvalPath": "APP013_P08_VM2_APPROVAL_20261124_0d360f5b.json",
+  "scopeSha256": "b961a79f3ce262f7f6b8de0ecd023485ce447550d3dfbec13085ce8186647b9e",
+  "sourceCommit": "7dff026642106719ea3990c53f5723f9199e36b0",
+  "manifestSha256": "0c3c90cdad6cf8a1c742a37de20d9cbf8f9fcd7ad772f97fbd486dbfe71bec78",
+  "configSha256": "528ceadadc8a5491e54ee82dbad0026eda881252564f96f2be242d70d1d2f111",
+  "actualCurrentClockPreflight": true,
+  "sourceSdkRuntimeGuard": "PASS_LOCAL_AND_COMMITTED_TRANSITIVE",
+  "commands": "PASS_EXISTING_EXACT_DESCRIPTOR_VALIDATORS",
+  "configuration": "PASS_NONSECRET_HELPER_ONLY",
+  "operationRootAbsent": true,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "liveAuthority": false,
+  "availability": "PENDING_REACHABILITY_THROUGH_CLOSEOUT",
+  "currentCredentialCoverage": "UNKNOWN; existing SDK exception may refresh; single cache gate requires expiry beyond closeout before GET",
+  "effectiveAccessApiVersionState": "UNKNOWN; purpose of bounded qualification",
+  "historicalCause": "UNKNOWN; discarded VM2 R2 response cannot be reconstructed",
+  "billingEvidence": "BD7 billingEnabled true at13:17Z, closed13:19Z; not re-read",
+  "localScopeAuthority": "874ce21 and current proceed; routine correction within original3VM2files",
+  "correctionCard": "APP013_P08_VM2_REASON_CORRECTION_20261124.md",
+  "prerequisiteTrace": [
+    {
+      "prerequisite": "Actual output contracts and safe failure projection",
+      "sourceCommit": "7dff026642106719ea3990c53f5723f9199e36b0",
+      "evidenceTimestamp": "2026-11-24T13:43:44.915224Z",
+      "evidence": "60VM2 actual-boundary tests; independent43label contract comparison and conflict/privacy checks",
+      "verification": "PASS_SYNTHETIC; current live output UNKNOWN",
+      "owner": "implementer and independent reviewer"
+    },
+    {
+      "prerequisite": "Resource/config/SDK/source/command pins",
+      "sourceCommit": "7dff026642106719ea3990c53f5723f9199e36b0",
+      "evidenceTimestamp": "2026-11-24T13:43:44.915224Z",
+      "evidence": "actual vm2.preflight with real current clock and native source/config guards",
+      "verification": "PASS_LOCAL; usable current credentials/API permissions UNKNOWN",
+      "owner": "implementer; cloud custodian for external facts"
+    },
+    {
+      "prerequisite": "Deadlines/no-retry/concurrency/interruption/cleanup/retention",
+      "sourceCommit": "7dff026642106719ea3990c53f5723f9199e36b0",
+      "evidenceTimestamp": "2026-11-24T13:43:44.915224Z",
+      "evidence": "Existing53VM2 cases plus7projection regressions; authority/resource/transport/cleanup AST unchanged",
+      "verification": "PASS_LOCAL; live closeout required for any future attempt",
+      "owner": "implementer"
+    },
+    {
+      "prerequisite": "Approvals and exclusions",
+      "sourceCommit": "7dff026642106719ea3990c53f5723f9199e36b0",
+      "evidenceTimestamp": "2026-11-24T13:43:44.915224Z",
+      "evidence": "scope2CLI1cache1GET; noSQL/mutation/payment; fresh exact decision file absent",
+      "verification": "PENDING_OWNER_EXTERNAL_APPROVAL_AND_REACHABILITY",
+      "owner": "owner"
+    }
+  ],
+  "nextObservableResult": "One exact metadata state or safe current denial classification with independent closure; no automatic connected retry",
+  "acceptedMilestones": "4/8;3AOPEN;R1newlyclosed0/27",
+  "scopeDeviation": "None",
+  "finalDocumentChecks": {
+    "frozenBaseline": "PASS",
+    "completeConsistency": "PASS",
+    "backendGovernanceWrapper": "PASS",
+    "architecture": "PASS",
+    "bothWhitespaceChecks": "PASS",
+    "governanceTests": {
+      "passed": 25,
+      "failed": 0
+    },
+    "recordedAt": "2026-11-24T13:45:47.631098+00:00"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "section": "APP-013 / 3A / P08 / VM2",
+  "kind": "LOCAL_REASON_CORRECTION_VALIDATION",
+  "recordedAt": "2026-11-24T13:44:58.237724+00:00",
+  "baselineCommit": "2bfb60630ae0cd0180767696ac0face172706e3d",
+  "currentCommit": "7dff026642106719ea3990c53f5723f9199e36b0",
+  "runtimeSha256": "591f621ef30a08d6f1034f9fd3a6cd2c2698781023017358b846130afaed5622",
+  "testSha256": "6944f6a079370c90c3c89819c9cce43ef67623cc4332c13ec66ea3d64749412b",
+  "manifestSha256": "0c3c90cdad6cf8a1c742a37de20d9cbf8f9fcd7ad772f97fbd486dbfe71bec78",
+  "manifestDependenciesUnchanged": true,
+  "manifestFilesMatch": true,
+  "changedFiles": [
+    "evidence/APP-013/p08-connected-packet-20261110/test_vm2_metadata_read.py",
+    "evidence/APP-013/p08-connected-packet-20261110/vm2-source-manifest.json",
+    "evidence/APP-013/p08-connected-packet-20261110/vm2_metadata_read.py"
+  ],
+  "documentedNonDefaultGoogleReasons": 43,
+  "publicContract": "https://raw.githubusercontent.com/googleapis/googleapis/master/google/api/error_reason.proto",
+  "baselineEvidence": "/private/tmp/vm2-reason-baseline.json",
+  "baselineEvidenceSha256": "996c98ce436cc6d13b1f3c46c4fc01479ebb5d680654d99319a438507a5ae9e3",
+  "tests": {
+    "VM2": {
+      "passed": 60,
+      "failed": 0,
+      "seconds": 0.293
+    },
+    "SQ1Restricted": {
+      "total": 100,
+      "failures": 2,
+      "errors": 15,
+      "cause": "Local process checks, loopback binds and nested sandbox-exec denied by environment",
+      "seconds": 20.054
+    },
+    "SQ1LocalFixturesEscalated": {
+      "passed": 100,
+      "failed": 0,
+      "seconds": 19.231
+    }
+  },
+  "logSha256": {
+    "vm2-reason-sq1-tests-escalated.log": "faa8591d4db21e621cf30d63a4ec2d988fbfd951233bfcf7cdad0573932793c6",
+    "vm2-reason-tests.log": "72ca42e5a53dfd5864e68e28a9698c8732b9fa766b0959bf63054790cbd685df",
+    "vm2-reason-sq1-tests.log": "fcbf2d34a2fedd5b94913a700bc48422c9ce1422d495f698b760416a8c701499",
+    "vm2-reason-governance-tests.log": "64f02695d4f3afc679e27b810bf446371569f91130e63ac1bc698d8df373ea65"
+  },
+  "independentReview": {
+    "status": "PASS",
+    "reviewer": "rv1_journal",
+    "publicEnumLabels": 43,
+    "syntheticCases": 60,
+    "baselineComparisons": 9,
+    "actualTransportAndReceiptTests": 2,
+    "blockingFindings": 0,
+    "scope": "Three approved VM2 files; no shared SQ1, authority, transport, cleanup or schema changes"
+  },
+  "providerOperations": 0,
+  "credentialReads": 0,
+  "historicalReason": "UNKNOWN; raw response was discarded",
+  "liveAuthority": false,
+  "sourceCommit": "7dff026642106719ea3990c53f5723f9199e36b0",
+  "baselineReproduction": {
+    "kind": "SYNTHETIC_BASELINE",
+    "sourceSha256": "3ee60ecce214dee90487638d717281c0aeb55e1f1a53a595488f967a7754da6e",
+    "syntheticInputReason": "BILLING_DISABLED",
+    "metadata": {
+      "httpStatus": 403,
+      "outcome": "UNKNOWN",
+      "state": "UNKNOWN",
+      "resourceMatched": false,
+      "failureCategory": "HTTP",
+      "errorStatus": "PERMISSION_DENIED",
+      "errorCode": 403,
+      "errorInfo": [
+        {
+          "reason": "UNKNOWN",
+          "domain": "googleapis.com",
+          "metadataMatches": {
+            "permission": "MATCH",
+            "service": "MATCH",
+            "consumer": "MATCH",
+            "target": "MATCH"
+          }
+        }
+      ],
+      "errorEnvelopeValid": true,
+      "failure": null,
+      "responseClosed": true
+    },
+    "httpsCalls": 1,
+    "responseCloseCount": 1,
+    "providerCalls": 0,
+    "credentialReads": 0
+  },
+  "repositoryChecks": {
+    "backendArchitecture": "PASS",
+    "backendGovernanceWrapper": "PASS",
+    "governanceTests": {
+      "passed": 25,
+      "failed": 0,
+      "logSha256": "64f02695d4f3afc679e27b810bf446371569f91130e63ac1bc698d8df373ea65"
+    },
+    "finalDocumentationChecks": {
+      "frozenBaseline": "PASS",
+      "completeConsistency": "PASS",
+      "backendGovernanceWrapper": "PASS",
+      "architecture": "PASS",
+      "bothWhitespaceChecks": "PASS",
+      "governanceTests": {
+        "passed": 25,
+        "failed": 0
+      },
+      "recordedAt": "2026-11-24T13:45:47.631098+00:00"
+    }
+  }
+}
