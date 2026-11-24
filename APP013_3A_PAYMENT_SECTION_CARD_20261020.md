@@ -1,5 +1,11 @@
 # APP-013 / 3A / P07 section card — same-job Sandbox payment wiring
 
+## November 24 — readiness blocked by documented exchange response mismatch
+
+Current backend 9f5f5bf / governance f474fed; source-bound review and two actual native-child injected probes are in backend ec1-contract-review-20261124. The client requires a localId field absent from Google's documented custom-token exchange response; existing success fixtures supplied it. The documented shape is rejected before authentication; both probes close, refuse reuse and purge fixture inputs. Exact source/evidence, public contract links, current constraints and responsible owners are recorded in APP013_P08_EC1_EXCHANGE_CONTRACT_PROPOSAL_20261124.md, including its complete readiness table.
+
+Completed: RV1 local observability, current read-only contract review and reproduced mismatch. Remaining local blocker: owner decision on EC1's explicit predicate/fixture/test correction, then implementer verification through unchanged authentication, payment gating and cleanup. Current credentials/permissions/provider account state remain UNKNOWN; historical R56 AUTH_OUTCOME_UNKNOWN cannot be cleared by this finding. No attendance, password prompt or new live operation is scheduled. Next observable result is approved local documented-response compatibility with all negative identity cases still refused. Same 3A acceptance and accepted 4/8 remain unchanged. No scope deviation performed; EC1 is prospective.
+
 ## October 22 — runtime readiness live-demonstrated; role closed; P08 remains next
 
 R1-W01 / APP-013/3A/P07 active. Exact owner-approved SQL-corrected operation `b8d2ac94-3310-4f84-b36a-8495cc919097` reserved once at **6:15:24 p.m. Eastern** and completed **`P07_REPAIRED_RUNTIME_READY_DISABLED`** (result local file time approximately **6:29:50 p.m.**, not a provider timestamp). Owner Terminal status matches; earlier differing-output report resolved. No retry. Backend local evidence commit `1f22f47`: `evidence/APP-013/p07-sql-contract1-runtime-result-20261022/README.md`, sanitized correlated receipts/hashes and disabled/zero-delivery screenshot. Frozen baseline, cross-repository consistency, all 25 safeguard tests, architecture, receipt integrity and final whitespace checks passed. Manifest/controller/binding protected hashes unchanged.
