@@ -1,0 +1,19 @@
+{
+  "recordedAt": "2026-11-24T10:54:10.234406+00:00",
+  "section": "APP-013 / 3A / P08",
+  "status": "LOCAL_SCOPE_DECISION_PENDING_NOT_EXECUTION_READY",
+  "runtimeSourceCommit": "6df778d9858ff728d10e02f2b69084886a7cb102",
+  "evidenceCommit": "9a75393",
+  "sourcePins": {
+    "evidence/APP-013/p08-https-output-category-local-20261029/source/qualification_launch.py": "d86a6c51a25d9caf10bf6f096249f79b7ae730e19424a8b36bce5c186f2b4dda",
+    "evidence/APP-013/p08-narrow-access-check-local-20261101/source/access_check.py": "720842849586323e06eef0993578b0a7e10d35bcf6266d68628228242c5be9d9",
+    "evidence/APP-013/p08-connected-packet-20261110/sq1_signing_boundary.py": "1796a00ae12bba47c2b1049bfa8cf78a6065f3782814153112bc621fffe65768",
+    "evidence/APP-013/p08-connected-packet-20261110/packet.py": "110c97b6a59aad444aebbb60c45333b12efa931b3360a06a249af73a72d7a9fa"
+  },
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "implementationPerformed": false,
+  "localGap": "Exact Secret Manager-specific operator composition not implemented or tested; owner local-scope decision required",
+  "providerCause": "UNKNOWN",
+  "liveAuthority": false
+}

@@ -1,5 +1,7 @@
 # R57 — corrected connected Sandbox session, proposed
 
+**Closed outcome, November 24:** qualification approval40cfb79 was executed once and stopped at secret_state_0 metadata with PROCESS_REFUSED. Independent cleanup and private purge verified; provider cause UNKNOWN. No native/payment attempt or authority. See APP013_P08_R57_STOP_RESULT_20261124.md. The original proposed schedule below is historical and cannot be reused.
+
 LOCAL PREPARATION ONLY; no live authority. APP-013 / 3A / P08 remains the same admitted job's $99 USD Sandbox Checkout, matching authentic signed event/application settlement and owner acceptance. Source 6df778d9858ff728d10e02f2b69084886a7cb102 includes completed RV1 safe failure reasons and EC1 documented response handling. No further runtime implementation is proposed. Fresh IDs distinguish this proposal from consumed R56; historical AUTH_OUTCOME_UNKNOWN remains unchanged.
 
 ## One session overview
