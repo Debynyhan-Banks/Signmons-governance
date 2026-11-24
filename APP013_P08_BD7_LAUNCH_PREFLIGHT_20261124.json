@@ -1,0 +1,16 @@
+{
+  "recordedAt": "2026-11-24T13:16:36.209560+00:00",
+  "status": "ACTUAL_LAUNCH_PREFLIGHT_PASS",
+  "approvalCommit": "5485014c0a8e205388a6719edd90682f3d7d7bba",
+  "scopeSha256": "2d5dd83d2eec365d5ba2cb9b67c2470a469daf8d9600aabbf0aa7d22211b895a",
+  "sourceCommit": "1e21bb87a3640ef5f5ceb3f76fe569ca6ea4a612",
+  "manifestSha256": "f97f04298c4c35a287bb213a5659745d7b62fd301c8cbb4a459f75ed74de81d4",
+  "sdkFilesSha256": "ecd62311871d8d39cd2fc94a14b38a16b01a12032d7da04853226feacd6c71b2",
+  "configurationSnapshotSha256": "528ceadadc8a5491e54ee82dbad0026eda881252564f96f2be242d70d1d2f111",
+  "actualClockPassed": true,
+  "actualCommandsMatched": true,
+  "operationRootAbsent": true,
+  "requestRootAbsentBeforeCreation": true,
+  "providerCalls": 0,
+  "credentialReads": 0
+}

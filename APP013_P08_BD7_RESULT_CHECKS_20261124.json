@@ -1,0 +1,20 @@
+{
+  "section": "APP-013 / 3A / P08 / BD7",
+  "recordedAt": "2026-11-24T13:25:01.570311+00:00",
+  "evidenceCommit": "2bfb60630ae0cd0180767696ac0face172706e3d",
+  "sourceCommit": "1e21bb87a3640ef5f5ceb3f76fe569ca6ea4a612",
+  "sourceUnchanged": true,
+  "runtimeTestsRerun": false,
+  "safeReceiptsCopied": 11,
+  "copiedReceiptInventorySha256": "ac1a77da3c62c68a6686552488c3613b9cd4100bfd60ece53a77cd835b1da56d",
+  "independentReceiptAudit": "PASS",
+  "frozenBaseline": "PASS",
+  "completeConsistency": "PASS",
+  "backendGovernanceWrapper": "PASS",
+  "architecture": "PASS",
+  "whitespaceBoth": "PASS",
+  "governanceTestsPassed": 25,
+  "governanceTestsFailed": 0,
+  "governanceLogSha256": "98e75730858ef2f0083a2aff99904fcd9155778a8a8fb84be4feccbf52a53638",
+  "providerActionsAfterCloseout": 0
+}
