@@ -1,0 +1,64 @@
+from pathlib import Path
+from types import SimpleNamespace
+import copy,datetime,hashlib,json,os,sys,uuid
+B=Path('/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery')
+G=Path('/Users/debynyhanbanks/Web Projects/signmons-governance-r08-recovery')
+sys.path.insert(0,str(B/'evidence/APP-013/p08-connected-packet-20261110'))
+import packet
+q=packet.q;m=q.model;a=q.current_module('authority')
+source='6df778d9858ff728d10e02f2b69084886a7cb102'
+start=datetime.datetime(2026,11,24,10,30,tzinfo=datetime.timezone.utc).timestamp()
+iso=lambda seconds:datetime.datetime.fromtimestamp(start+seconds,datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+spec=json.loads((G/'APP013_P08_CONNECTED_SPEC_R56_20261117.json').read_text())
+for name in ('recoveryId','qualificationId','prospectiveOperationId','paymentRequestId'):spec[name]=str(uuid.uuid4())
+spec.update(sourceCommit=source,manifestSha256=q.source_manifest_sha256())
+spec['window']={k:iso(v) for k,v in dict(start=0,cutoff=720,readEnd=1020,closeoutEnd=1320,purgeEnd=3600).items()}
+spec['prospectiveWindow']={k:iso(v) for k,v in dict(start=0,cutoff=2760,workEnd=2820,cleanupEnd=3480,purgeEnd=3600).items()}
+spec['paymentWorkEnd']=iso(2760)
+recovery=json.loads((G/'APP013_P08_BINDING_RECOVERY_PACKET_R56_20261117.json').read_text())
+recovery.update(operationId=spec['recoveryId'],qualificationId=spec['qualificationId'],nativeOperationId=spec['prospectiveOperationId'],sourceCommit=source,manifestSha256=spec['manifestSha256'])
+recovery['window']={k:iso(v) for k,v in dict(start=0,cutoff=300,readEnd=540,closeoutEnd=840,purgeEnd=3600).items()}
+review={'owner':'Debynyhan Banks','decision':'APPROVE_EXACT_P08_BINDING_INPUT_RECOVERY','externalReadAuthorized':True,'scopeSha256':m.digest(recovery)}
+raw=json.dumps(review).encode();test={**recovery,'decision':{'commit':'0'*40,'path':'APP013_P08_BINDING_RECOVERY_OPERATION_20261124.json','sha256':m.digest(raw)}}
+def proposed_read(repo,commit,path):return raw if commit=='0'*40 else a.committed(repo,commit,path)
+cap=q.BindingRecoveryCapability(test,clock=lambda:start+1,read_commit=proposed_read)
+cap.prepare()
+sdk=m.verify_local_manifest()['sdkReview']['files']
+assert all(m.digest(Path(p).read_bytes())==h for p,h in sdk.items())
+sys.path.insert(0,str(a.HERE))
+import test_entry as fixture
+f=fixture.ConnectedEntryTests();f.setUp(timing=True)
+try:
+ values={'targetId':f.e['target']['id'],'projectNumber':f.e['plan']['projectNumber'],'paymentBinding':{k:f.e['payment'][k] for k in q.PAYMENT_BINDING_FIELDS}}
+ synthetic=SimpleNamespace(e={**recovery,'paymentAccountSha256':values['paymentBinding']['connectedAccountSha256']},external=False,times=cap.times,clock=cap.clock)
+ qualification=packet.construct_values(spec,values,'we_synthetic',synthetic)
+ candidate={**f.e['qualification'],'operationId':spec['prospectiveOperationId'],'scopeSha256':m.digest(qualification['nativeScope']),'qualifiedUntil':iso(3480)}
+ native=packet.native_envelope(qualification,candidate);native['execution']='PROOF_ONLY'
+ native['decision']={'decision':'APPROVE_LOCAL_NATIVE_ENTRY_PROOF','scopeSha256':m.digest(native)}
+ root=Path('/private/tmp/p08-coordinator-'+spec['prospectiveOperationId']);assert not root.exists();root.mkdir(mode=0o700)
+ a.Capability(native,root,clock=lambda:start+1)
+ # Invoke the same inherited gates and settling code with simulated wall/monotonic clocks.
+ c,t,calls=fixture.CT4TimingTests().controller()
+ wall=start+899+480;t['wall']=wall;t['mono']=0.;c.last=wall;c.last_monotonic=0.
+ c.times={k:m.timestamp(v) for k,v in spec['prospectiveWindow'].items()}
+ c.forward_end=m.timestamp(spec['paymentWorkEnd']);c.work_monotonic_end=c.forward_end-wall;c.child_monotonic_end=c.times['cutoff']-wall
+ c.invoke('change',owner=c.runtime);c.invoke('stage_a',owner=c.access)
+ assert calls==['change',('stage_a',420.)]
+ reserve=min(c.forward_end-t['wall'],c.times['cutoff']-t['wall']);assert reserve==961
+ # No injected authority, credential, payment scope or identifiers are retained.
+finally:
+ f.doCleanups()
+ if 'root' in locals() and root.exists():root.rmdir()
+assert not root.exists()
+result={'status':'LOCAL_PREPARED_NOT_APPROVED','sourceCommit':source,'verifiedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+ 'recoveryStaticPrepare':'PASS_IN_MEMORY_PROPOSED_AUTHORITY_NO_DISPATCH','nativeCapability':'PASS_EXACT_PUBLIC_SPEC_PROOF_ONLY_SYNTHETIC_PRIVATE_FIELDS',
+ 'ct5ActualAdmissionAndSettle':'PASS_LATEST_MANUAL_LAUNCH_PLUS_480_SECONDS_SETUP','syntheticMonotonicWaitSeconds':420,'postWaitReserveSecondsAtLatestLaunch':reserve,
+ 'latestNativeLaunch':iso(900),'latestNativeLaunchEnforcement':'IMPLEMENTER_CHECK_BEFORE_COMMIT_OR_DISPATCH_NOT_PROGRAM_CUTOFF','nativeCleanupReserveSeconds':660,'purgeReserveSeconds':120,
+ 'outerAndInnerRetentionSeconds':3600,'temporaryProofRootRemoved':True,'attemptCreated':False,'providerCalls':0,'credentialReads':0,'liveAuthorityCreated':False,
+ 'nativeManifestSha256':m.digest((a.HERE/'source-manifest.json').read_bytes()),'qualificationManifestSha256':q.source_manifest_sha256(),'sdkFiles':len(sdk),
+ 'ownerAttendanceRequestedThrough':iso(4200),'ownerAttendanceConfirmed':False,
+ 'unknown':['fresh private bindings and exact destination input','current effective access and provider/account state','credential coverage beyond purge','authentication exchange/payment/event/gate'],
+ 'historicalR56AuthOutcome':'UNKNOWN_UNCHANGED','responsibleRoles':['implementer','owner','cloud custodian','database custodian','Stripe custodian']}
+for filename,obj in [('APP013_P08_CONNECTED_SPEC_R57_20261124.json',spec),('APP013_P08_BINDING_RECOVERY_PACKET_R57_20261124.json',recovery),('APP013_P08_BINDING_RECOVERY_R57_DECISION_DRAFT_20261124.json',{'status':'PROPOSED_NOT_APPROVED','externalReadAuthorized':False,'decisionForReview':review}),('APP013_P08_BINDING_RECOVERY_R57_READINESS_20261124.json',result)]:
+ path=G/filename;assert not path.exists();path.write_text(json.dumps(obj,indent=2)+'\n')
+print(json.dumps(result,indent=2))

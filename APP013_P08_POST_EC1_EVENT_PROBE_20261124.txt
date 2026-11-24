@@ -1,0 +1,39 @@
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+import {createOperatorBridge,plan} from '/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-native-entry-local-20261101/source/operator_bridge.mjs';
+const require=createRequire('/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/package.json');
+const {PaymentRequestsService}=require('./dist/payments/payment-requests.service.js');
+const date=new Date('2026-11-24T12:00:00.000Z');
+const eventRow={id:'70000000-0000-4000-8000-000000000007',type:'checkout.session.completed',processingStatus:'PROCESSED',receivedAt:date,processedAt:date};
+let calls=[],closed=0,readWhere;
+const payments=new PaymentRequestsService({job:{findFirst:async()=>({payment:{id:'10000000-0000-4000-8000-000000000008'}})},stripeEvent:{findMany:async input=>{readWhere=input.where;return [eventRow];}}},{});
+const eventResponse=await payments.events(plan.tenantId,plan.jobId);
+assert.equal(eventResponse[0].status,'PROCESSED');
+assert.equal(Object.hasOwn(eventResponse[0],'processingStatus'),false);
+const q={status:'QUALIFIED_DATABASE',tenantId:plan.tenantId,jobId:plan.jobId,actorId:'10000000-0000-4000-8000-000000000001',actorRole:'owner',approvedAt:'2026-10-19T10:00:00.000Z',jobUpdatedAt:'2026-10-19T11:00:00.000Z',amountTotalCents:12500,currency:'usd',policyDigest:'a'.repeat(64),connectedAccountSha256:plan.connectedAccountSha256};
+const transport=async(url,options)=>{
+ assert.equal(new URL(url).origin,plan.origin);assert.equal(options.headers.Authorization,'Bearer local-synthetic-token');
+ const path=new URL(url).pathname;calls.push(options.method+' '+path);
+ let value;
+ if(path==='/job-payment-policy/apply')value={jobId:plan.jobId,updatedAt:'2026-10-19T11:00:01.000Z',policyBound:true,bookingAuthorized:false,deliveryAuthorized:false,paymentInitiated:false};
+ else if(path.endsWith('/payment-events'))value=eventResponse;
+ else if(path.endsWith('/payment-request'))value={status:'SUCCEEDED',amountTotalCents:12500,currency:'usd'};
+ else if(path==='/jobs/dispatch-board/'+plan.jobId)value={jobId:plan.jobId,paymentGate:{state:'UNLOCKED'}};
+ else throw Error('UNLISTED_SYNTHETIC_ROUTE');
+ return new Response(JSON.stringify(value));
+};
+const bridge=await createOperatorBridge({qualification:q,token:'local-synthetic-token',transport,deadline:Date.now()+30000,onClose:()=>{closed++;}});
+const localFetch=async(path,options)=>{assert.equal(new URL(path).hostname,'127.0.0.1');return fetch(path,options);};
+try {
+ const start=await localFetch(bridge.bootstrapUrl,{redirect:'manual'});assert.equal(start.status,303);
+ const cookie=start.headers.get('set-cookie').split(';')[0];
+ const page=await localFetch(bridge.origin+'/',{headers:{cookie}}),html=await page.text(),csrf=JSON.parse(html.match(/const csrf=("[^"]+")/)[1]);
+ const act=async action=>{const r=await localFetch(bridge.origin+'/action',{method:'POST',headers:{cookie,Origin:bridge.origin,'Content-Type':'application/json','X-P08-CSRF':csrf},body:JSON.stringify({action,acknowledged:true})});return {status:r.status,value:await r.json()};};
+ assert.equal((await act('bind')).status,200);
+ const read=await act('read');assert.equal(read.status,200);assert.equal(read.value.paymentStatus,'SUCCEEDED');assert.equal(read.value.paymentGate,'UNLOCKED');
+ assert.deepEqual(read.value.events,[{type:'checkout.session.completed'}]);
+ assert.match(read.value.message,/Verified payment succeeded/);
+ assert.equal((await act('clear')).status,200);assert.equal(bridge.state().closed,true);assert.equal(closed,1);
+ assert.deepEqual(bridge.counts(),{reads:3,creates:0,recovers:0,binds:1});
+ console.log(JSON.stringify({status:'EVENT_PROJECTION_REPRODUCED',providerCalls:0,databaseCalls:0,serviceEventKeys:Object.keys(eventResponse[0]),serviceEventStatus:eventResponse[0].status,bridgeEvent:read.value.events[0],paymentStatus:read.value.paymentStatus,paymentGate:read.value.paymentGate,visibleMessage:read.value.message,bridgeClosed:bridge.state().closed,onCloseCalls:closed,upstreamCounts:bridge.counts(),tenantFilterMatched:readWhere.tenantId===plan.tenantId}));
+} finally {await bridge.stop();}

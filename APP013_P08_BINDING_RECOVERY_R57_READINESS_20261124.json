@@ -1,0 +1,39 @@
+{
+  "status": "LOCAL_PREPARED_NOT_APPROVED",
+  "sourceCommit": "6df778d9858ff728d10e02f2b69084886a7cb102",
+  "verifiedAt": "2026-11-24T10:11:10.754585+00:00",
+  "recoveryStaticPrepare": "PASS_IN_MEMORY_PROPOSED_AUTHORITY_NO_DISPATCH",
+  "nativeCapability": "PASS_EXACT_PUBLIC_SPEC_PROOF_ONLY_SYNTHETIC_PRIVATE_FIELDS",
+  "ct5ActualAdmissionAndSettle": "PASS_LATEST_MANUAL_LAUNCH_PLUS_480_SECONDS_SETUP",
+  "syntheticMonotonicWaitSeconds": 420,
+  "postWaitReserveSecondsAtLatestLaunch": 961.0,
+  "latestNativeLaunch": "2026-11-24T10:45:00Z",
+  "latestNativeLaunchEnforcement": "IMPLEMENTER_CHECK_BEFORE_COMMIT_OR_DISPATCH_NOT_PROGRAM_CUTOFF",
+  "nativeCleanupReserveSeconds": 660,
+  "purgeReserveSeconds": 120,
+  "outerAndInnerRetentionSeconds": 3600,
+  "temporaryProofRootRemoved": true,
+  "attemptCreated": false,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "liveAuthorityCreated": false,
+  "nativeManifestSha256": "86e85ec13f1647924e12ef724b32b0123a0baaf3f2732d41bd51a59ffcc0c94c",
+  "qualificationManifestSha256": "320c8894217e460bc527aac5150c06a9b4d1d60410d3d4692685c601633be499",
+  "sdkFiles": 43,
+  "ownerAttendanceRequestedThrough": "2026-11-24T11:40:00Z",
+  "ownerAttendanceConfirmed": false,
+  "unknown": [
+    "fresh private bindings and exact destination input",
+    "current effective access and provider/account state",
+    "credential coverage beyond purge",
+    "authentication exchange/payment/event/gate"
+  ],
+  "historicalR56AuthOutcome": "UNKNOWN_UNCHANGED",
+  "responsibleRoles": [
+    "implementer",
+    "owner",
+    "cloud custodian",
+    "database custodian",
+    "Stripe custodian"
+  ]
+}
