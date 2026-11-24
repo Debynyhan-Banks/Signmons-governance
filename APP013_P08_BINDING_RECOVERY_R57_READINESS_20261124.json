@@ -21,7 +21,7 @@
   "qualificationManifestSha256": "320c8894217e460bc527aac5150c06a9b4d1d60410d3d4692685c601633be499",
   "sdkFiles": 43,
   "ownerAttendanceRequestedThrough": "2026-11-24T11:40:00Z",
-  "ownerAttendanceConfirmed": false,
+  "ownerAttendanceConfirmed": true,
   "unknown": [
     "fresh private bindings and exact destination input",
     "current effective access and provider/account state",
@@ -35,5 +35,6 @@
     "cloud custodian",
     "database custodian",
     "Stripe custodian"
-  ]
+  ],
+  "ownerAttendanceConfirmedThrough": "2026-11-24T11:40:00Z"
 }

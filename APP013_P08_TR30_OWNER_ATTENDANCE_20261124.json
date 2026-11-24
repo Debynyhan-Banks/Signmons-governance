@@ -1,0 +1,9 @@
+{
+  "attendanceThrough": "2026-11-24T11:40:00Z",
+  "proposalSha256": "ec21d0893ab5872cfa7cb9a22af8200d1097d218a1eb5f590a0fbe8222e22841",
+  "ownerConfirmed": true,
+  "confirmedText": "Approve TR30; browser ready; no overlap; available through 6:40 a.m.",
+  "availabilityOnly": true,
+  "browserReady": true,
+  "noOverlappingSignmonsOperation": true
+}
