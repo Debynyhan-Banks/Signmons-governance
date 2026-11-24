@@ -1,0 +1,26 @@
+{
+  "owner": "Debynyhan Banks",
+  "ownerResponse": "Approve BD7; reachable through 8:25; no overlap",
+  "questionCallId": "call_48f0c9c21413428d93cccad2ff3af23a",
+  "recordedAt": "2026-11-24T13:15:57.957815+00:00",
+  "proposalCommit": "a3745a3",
+  "operationId": "62f62363-56b5-4268-b346-410d1a52a7e5",
+  "scopeSha256": "2d5dd83d2eec365d5ba2cb9b67c2470a469daf8d9600aabbf0aa7d22211b895a",
+  "sourceCommit": "1e21bb87a3640ef5f5ceb3f76fe569ca6ea4a612",
+  "window": {
+    "start": "2026-11-24T13:15:00Z",
+    "cutoff": "2026-11-24T13:21:00Z",
+    "readEnd": "2026-11-24T13:23:00Z",
+    "closeoutEnd": "2026-11-24T13:25:00Z"
+  },
+  "limits": {
+    "cli": 3,
+    "sql": 0,
+    "https": 0,
+    "cache": 0
+  },
+  "sdkException": "SDK_EXISTING_OWNER_REFRESH_CACHE_INTERNAL_RETRIES_NO_TOKEN_EXPORT",
+  "reachableThrough": "2026-11-24T13:25:00Z",
+  "noOverlapConfirmed": true,
+  "paymentAuthorized": false
+}
