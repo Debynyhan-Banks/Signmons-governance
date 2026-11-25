@@ -1,0 +1,11 @@
+{
+  "allowanceUsd": 0,
+  "decision": "APPROVE_BA1_LINKED_ACCOUNT_STATUS_SDK_EXCEPTION_AND_CLEANUP",
+  "externalReadAuthorized": true,
+  "independentCleanupAuthorized": true,
+  "operationId": "089eb0aa-30dd-4931-bf61-8d099402d235",
+  "owner": "Debynyhan Banks",
+  "paymentAuthorized": false,
+  "scopeSha256": "dce4dbc58ca9715f195893dfd5c8010ee8dc5ca204dde3e9b493ec19d95b9d2c",
+  "sdkException": "SDK_EXISTING_OWNER_REFRESH_CACHE_INTERNAL_RETRIES_NO_TOKEN_EXPORT"
+}

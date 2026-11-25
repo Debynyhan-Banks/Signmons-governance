@@ -1,0 +1,3 @@
+# BA1 owner decision
+
+Owner reply: “Approve BA1; reachable through 9:40; no overlap.” Received in this chat after review of APP013_P08_BA1_LIVE_PROPOSAL_20261124.md at preparation commit35e4ece04312108139c846e10089a9739a287920. Current clock was November24,2026,9:20:40p.m.Eastern. Exact scope089eb0aa permits3orderedCLI, existingSDKrefresh/retry/cacheexception,$0additionalallowance and independentcleanup. Launch9:20-before9:35,reads9:38,cleanup9:40Eastern. No payment/sign-in/accountmutation or retry authorized. This decision includes reachability/nooverlap and applies only to the immutable matching scope/command. Actual launch comparison and independent result closeout remain required. APP-013/3A remainsOPEN;accepted4/8;R1newlyclosed0/27. No scope deviation.
