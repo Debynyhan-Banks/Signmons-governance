@@ -1,0 +1,47 @@
+{
+  "operationId": "089eb0aa-30dd-4931-bf61-8d099402d235",
+  "privateDataRetained": false,
+  "providerCallsDuringRetention": 0,
+  "receipts": [
+    {
+      "bytes": 571,
+      "file": "approved-preflight.json",
+      "sha256": "1e41ecb7b118b9bf9928079a23d7f86b312543d9451f047f21d1d7d14f8ba782"
+    },
+    {
+      "bytes": 283,
+      "file": "attempt.json",
+      "sha256": "b8149fdaeae7fe1c21a1d37cc64c61d3dcf4c601d3c02c9ead6a2cf257f67150"
+    },
+    {
+      "bytes": 147,
+      "file": "closeout.json",
+      "sha256": "0d00a7e78601c481312919029a136ec29ecc83f66edd9497481a42927d32e079"
+    },
+    {
+      "bytes": 1706,
+      "file": "independent-closeout.json",
+      "sha256": "a1faf1a5068f8b7250694f2ee2a418642d92fd8493c8f4d24540afa2e0d53fb6"
+    },
+    {
+      "bytes": 53,
+      "file": "metadata.json",
+      "sha256": "552090b121ac73fea53353238699254f2104a4b53eb6ff0ebb800e7f1725da85"
+    },
+    {
+      "bytes": 43,
+      "file": "owner.json",
+      "sha256": "da517d1f5e587f2787754a222230153e4b926e151f7314bcea7b841ea96a179f"
+    },
+    {
+      "bytes": 53,
+      "file": "project.json",
+      "sha256": "366751b7199d1953f7404f544e3479c178f2d68645e0c110bd5f8bce095ae4a7"
+    },
+    {
+      "bytes": 825,
+      "file": "result.json",
+      "sha256": "6bb453d023b2983a79cb3cbda103ef8eef238791145e1c3b7ba1355e12c55cd8"
+    }
+  ]
+}

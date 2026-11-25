@@ -1,0 +1,56 @@
+{
+  "cloudSdkProcessMatches": 0,
+  "completedAt": "2026-11-25T02:22:48Z",
+  "configUnchanged": true,
+  "credentialCacheReads": 0,
+  "mainExitObserved": 0,
+  "onTime": true,
+  "operationId": "089eb0aa-30dd-4931-bf61-8d099402d235",
+  "operationProcessMatches": 0,
+  "privateOperationInputsCreated": false,
+  "processObservation": "read-only post-exit snapshot; no raw command retention, no signals, no disk-PID adoption",
+  "providerCalls": 0,
+  "residuals": [],
+  "resultSha256": "f4bfd80328b7b2faadef6cd28ca9cb9ed5da98e8226f874b4b96ce04fdd31abe",
+  "safeInventory": [
+    {
+      "bytes": 283,
+      "mode": "0o600",
+      "name": "attempt.json",
+      "sha256": "b8149fdaeae7fe1c21a1d37cc64c61d3dcf4c601d3c02c9ead6a2cf257f67150"
+    },
+    {
+      "bytes": 147,
+      "mode": "0o600",
+      "name": "closeout.json",
+      "sha256": "0d00a7e78601c481312919029a136ec29ecc83f66edd9497481a42927d32e079"
+    },
+    {
+      "bytes": 53,
+      "mode": "0o600",
+      "name": "metadata.json",
+      "sha256": "552090b121ac73fea53353238699254f2104a4b53eb6ff0ebb800e7f1725da85"
+    },
+    {
+      "bytes": 43,
+      "mode": "0o600",
+      "name": "owner.json",
+      "sha256": "da517d1f5e587f2787754a222230153e4b926e151f7314bcea7b841ea96a179f"
+    },
+    {
+      "bytes": 53,
+      "mode": "0o600",
+      "name": "project.json",
+      "sha256": "366751b7199d1953f7404f544e3479c178f2d68645e0c110bd5f8bce095ae4a7"
+    },
+    {
+      "bytes": 825,
+      "mode": "0o600",
+      "name": "result.json",
+      "sha256": "6bb453d023b2983a79cb3cbda103ef8eef238791145e1c3b7ba1355e12c55cd8"
+    }
+  ],
+  "schemaDigestVetoAndActualExitVerified": true,
+  "sourceGuardPassed": true,
+  "status": "INDEPENDENT_CLOSEOUT_VERIFIED"
+}
