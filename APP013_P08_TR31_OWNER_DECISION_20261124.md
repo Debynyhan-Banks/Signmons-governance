@@ -1,0 +1,3 @@
+# TR31 owner decision
+
+Owner explicitly replied: “Approve TR31; browser ready; no overlap; available through 11:00.” Reviewed preparatione758ead, proposalSHAea28db70ada3c400679d0d1ef5339dc8e0bc33fa7b170a25e88b51039f410809. One Google sign-in asdebynyhan@signmons.com with the stated7scopes/SDKexception, conditional singlecachevaliditycheck and independentcleanup is authorized. Startnotbefore9:50p.m.EasternNovember24,launchbefore9:53,cleanup10:00;requiredcoverage beyond10:50;attendance11:00. NoR58recovery/qualification/native/payment authority follows. Exact committed decision and attendance JSON are the source interfaces. Final source/config/command/time/preflight and independentclosure remain required. Accepted4/8;3AOPEN;R1newlyclosed0/27. No scope deviation.

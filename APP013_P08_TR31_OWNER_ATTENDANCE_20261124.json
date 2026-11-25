@@ -1,0 +1,11 @@
+{
+  "attendanceThrough": "2026-11-25T04:00:00Z",
+  "browserReady": true,
+  "confirmedAt": "2026-11-25T02:46:48Z",
+  "noOverlappingSignmonsOperation": true,
+  "owner": "Debynyhan Banks",
+  "ownerReply": "Approve TR31; browser ready; no overlap; available through 11:00",
+  "proposalSha256": "ea28db70ada3c400679d0d1ef5339dc8e0bc33fa7b170a25e88b51039f410809",
+  "recoveryQualificationNativeAuthorized": false,
+  "source": "explicit owner response in this chat"
+}

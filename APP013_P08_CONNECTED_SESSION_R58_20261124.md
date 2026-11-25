@@ -1,6 +1,6 @@
 # R58 — connected Sandbox session preparation
 
-APP-013 / 3A / P08. LOCAL PREPARATION ONLY; no live authority or confirmed attendance. Source2f13f90ae4cda3a61e719308d54cc19c1dd3c0d1; governance startinge4aa0b7. Accepted1A/1B/2A/2B remain4/8;3AOPEN;R1newlyclosed0/27. No scope deviation.
+APP-013 / 3A / P08. R58 recovery/qualification/native authority remains pending. Owner confirmed attendance9:50–11:00p.m.Eastern and separately approved TR31 sign-in in APP013_P08_TR31_OWNER_ATTENDANCE_20261124.json. Source2f13f90ae4cda3a61e719308d54cc19c1dd3c0d1; governance startinge4aa0b7. Accepted1A/1B/2A/2B remain4/8;3AOPEN;R1newlyclosed0/27. No scope deviation.
 
 ## Requirement, gap and reuse
 
@@ -10,7 +10,7 @@ R57 stopped at retired secret_state_0 metadata before native work. BA1 at9:22p.m
 
 ## Proposed schedule, not yet confirmed
 
-November24Eastern9:50–10:50p.m.; owner attendance proposed through11:00. TR31 sign-in start9:50-before9:53, cleanup10:00, credential coverage strictly beyond10:50. Recovery before9:55, reads9:59, session cleanup10:04. Qualification approval before10:02, reads10:07, cleanup10:12. Native overall launch strictly before10:05; payment/child entry ends10:36, nativework10:37, independentcleanup10:48, privatepurge10:50. A late stage blocks continuation; no extension or compressed cleanup. Overall10:05 native launch is a manual implementer check before committing/dispatching; the waiter’s later cutoff is not permission to launch late.
+November24Eastern9:50–10:50p.m.; owner attendance confirmed through11:00. TR31 sign-in start9:50-before9:53, cleanup10:00, credential coverage strictly beyond10:50. Recovery before9:55, reads9:59, session cleanup10:04. Qualification approval before10:02, reads10:07, cleanup10:12. Native overall launch strictly before10:05; payment/child entry ends10:36, nativework10:37, independentcleanup10:48, privatepurge10:50. A late stage blocks continuation; no extension or compressed cleanup. Overall10:05 native launch is a manual implementer check before committing/dispatching; the waiter’s later cutoff is not permission to launch late.
 
 Each stage retains exact separate authority: TR31 sign-in, recovery, current qualification, native execution and final result/acceptance. No prompt starts from this document. Standalone macOS Terminal must be foregrounded and current label explained before readiness confirmation and a timed hidden input. Existing Neon password and pinned Sandbox we_ destination ID stay hidden. Chrome incognito opens only through the existing guarded native helper at ATTENDED; manual test Checkout is owner-operated.
 
