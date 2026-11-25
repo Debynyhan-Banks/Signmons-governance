@@ -1,0 +1,74 @@
+{
+  "commandSha256": "800f2a83f42a218aa18615156f984317d6c408994fb3a2a4685e884f153c37ab",
+  "evidenceFiles": {
+    "APP013_P08_ED1_LIVE1_INDEPENDENT_REVIEW_20261125.txt": "b09d8706a55c06658240216c1289d6b57f8ec89efae5c20aaccb7828c7858427",
+    "APP013_P08_ED1_LIVE1_TEST_20261125.py": "22cefcc5c6f7310ec3f235685ca10253678bc9892cad87e6be8aba7858630551",
+    "APP013_P08_ED1_LIVE1_TEST_RESULTS_20261125.txt": "f3f4a7f244fce1efa8ad17754e705878fc760f45bd47f0c2ce5dfaadc00ba139"
+  },
+  "externalActionsPerformed": 0,
+  "independentPacketReview": {
+    "checkedAt": "2026-11-25T14:06:22Z",
+    "externalDecisionAbsent": true,
+    "operationRootAbsent": true,
+    "scopeSha256": "0eb430a7df4dbd223f1bb3f309fefd25a9225d81c173d1771633e53bc572134b",
+    "sourceInterpreterResourcesAndWindowMatched": true,
+    "status": "PASS"
+  },
+  "localEvidence": {
+    "commandCompositionTests": 14,
+    "currentSourceGuards": "PASS under synthetic committed authority; no dispatch",
+    "endpointSourceEvidence": "ED1 committed 5ea6fcb; 415 affected tests and 25 governance tests retained from completed correction, not rerun",
+    "finalScopeBindingTest": {
+      "actualSourceGuards": true,
+      "logSha256": "d7a50de371b0a732e96592a8b9b64faa44baccdf3f0e1515c2e6d0d115da3ed4",
+      "status": "PASS",
+      "syntheticAuthorityOnly": true,
+      "testCount": 1
+    },
+    "hiddenInputs": "Existing tested TTY/getpass wrapper; key then destination; no password, echo fallback refused",
+    "independentFinalizationProbes": 4,
+    "interruptionAndCloseout": "Owned handles reaped and group absence independently checked; flag-only signals while child registered, original handlers restored before output; safe immutable readback/veto",
+    "liveState": "UNKNOWN; this is the qualification purpose",
+    "privateRetention": "Private strings only in TTY/process/stdin memory; no private file/argv/env/log persistence; references cleared and child exit verified",
+    "replayAndConcurrency": "Exclusive persistent operation root; nonblocking shared containment lease; cross-workflow no-overlap confirmation still required",
+    "requiredRepositoryChecks": "Frozen baseline, complete consistency, backend governance wrapper, architecture, whitespace and all25governance tests PASS",
+    "safeOutput": "Eight finite field labels plus validated legacy result, no raw provider fields; valid exit2 drift remains diagnosis not qualification",
+    "transport": "Existing one-call OBSERVE worker; 5-second HTTP abort, 64KiB body cap, 15-second worker work timeout plus up to2s owned cleanup, 8KiB streams; no redirect/application retry"
+  },
+  "noScopeDeviation": true,
+  "recordedAt": "2026-11-25T14:05:35.624132+00:00",
+  "resources": {
+    "apiVersion": "2026-03-25.dahlia",
+    "endpointSha256": "dbaae6448069a186dc4b9e2fc6182707dda7b61218376e9e97cd21b20b4bfeae",
+    "endpointUrl": "https://app013-p07-atomic---signmons-calldesk-staging-p572d6wipq-ul.a.run.app/webhooks/stripe",
+    "node": "/Users/debynyhanbanks/.nvm/versions/node/v24.12.0/bin/node",
+    "worker": "evidence/APP-013/p08-key-correction-20261110/key_check.mjs"
+  },
+  "responsibilities": {
+    "implementer": "exact launch comparison, one supervised command, safe result review, independent post-exit process/path check",
+    "owner": "external approval, correct hidden inputs, Terminal readiness, reachability through cleanup and no overlap"
+  },
+  "scopeByteSha256": "e60e77ebb94e1de228430a7184f4b8db39e3b8d362a27e5b6fa7cee9611587fc",
+  "section": "APP-013/3A/P08",
+  "sourceCommit": "92c4d03712153558717f918e1d53fc87a54de663",
+  "status": "QUALIFICATION_ONLY_PREPARED_EXTERNAL_APPROVAL_PENDING",
+  "unknowns": [
+    "actual Stripe key validity/account usability",
+    "current exact endpoint configuration and status",
+    "owner current Terminal readiness, hidden inputs and no overlap",
+    "exact external approval"
+  ],
+  "window": {
+    "cleanupEnd": "2026-11-25T14:30:00Z",
+    "inputCutoff": "2026-11-25T14:27:00Z",
+    "launchCutoff": "2026-11-25T14:22:00Z",
+    "readEnd": "2026-11-25T14:28:00Z",
+    "start": "2026-11-25T14:07:00Z"
+  },
+  "workerArgv": [
+    "/Users/debynyhanbanks/.nvm/versions/node/v24.12.0/bin/node",
+    "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-key-correction-20261110/key_check.mjs",
+    "--endpoint-once",
+    "--field-report"
+  ]
+}

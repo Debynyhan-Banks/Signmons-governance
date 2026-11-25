@@ -1,0 +1,1 @@
+{"status": "PASS", "checks": ["result_publication_handler_veto", "pending_signal_readback_veto_and_original_handler_delivery", "exception_restores_signal_mask_and_handler", "missing_dispatched_history_refuses_absence"], "providerCalls": 0, "realPrivateInputs": 0, "repositoryEdits": 0}
