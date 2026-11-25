@@ -1,0 +1,89 @@
+{
+  "actualSdkEnvironmentPassed": true,
+  "actualSourceGuardPassed": true,
+  "checkedAt": "2026-11-25T02:17:49Z",
+  "commandSha256": "e143e8bfe1a0910c69c564fb52c97ca84ca6a971a152d5f38944779352f28dd1",
+  "configSha256": "528ceadadc8a5491e54ee82dbad0026eda881252564f96f2be242d70d1d2f111",
+  "credentialCacheReads": 0,
+  "currentDescriptorValidationPassed": true,
+  "exclusiveRootAbsent": true,
+  "externalReadAuthorized": false,
+  "independentReview": {
+    "remainingFindings": 0,
+    "reviewedCommandSha256": "e143e8bfe1a0910c69c564fb52c97ca84ca6a971a152d5f38944779352f28dd1",
+    "reviewedVerificationSha256": "d4fc8ee4b408ecb21eb483df0b038c80d4870047e8d36833948682b7f6c5bf15",
+    "status": "PASS"
+  },
+  "localTests": {
+    "implementer": {
+      "exitCode": 0,
+      "passed": 18,
+      "sha256": "256b1bf8a2981fc4f7375388e88ff07214618e94f18b45337f846d4276e248f9",
+      "tests": 18
+    },
+    "independent": {
+      "exitCode": 0,
+      "passed": 18,
+      "sha256": "be26bf1cb488d29452cb6308225a7321546acda12c4d501b2a653bbc43d1c3fd",
+      "tests": 18
+    }
+  },
+  "manifestSha256": "0c3c90cdad6cf8a1c742a37de20d9cbf8f9fcd7ad772f97fbd486dbfe71bec78",
+  "operationId": "089eb0aa-30dd-4931-bf61-8d099402d235",
+  "providerCalls": 0,
+  "qualificationOnly": true,
+  "repositoryChecks": {
+    "backendArchitecture": "PASS",
+    "backendFilesChangedByBA1": 0,
+    "bothRepositoryWhitespace": "PASS",
+    "checkedAt": "2026-11-25T02:19:14Z",
+    "completeDocsConsistency": "PASS",
+    "crossRepositoryBaseline": "PASS",
+    "frozenBaseline": "PASS",
+    "governanceTests": {
+      "failed": 0,
+      "passed": 25
+    },
+    "unrelatedOwnerChangesPreserved": true
+  },
+  "resolvedLocalFindings": [
+    "Strict UTC Z fixture/completion formatting aligned with existing timestamp parser",
+    "Pending interruption checked after final environment/clock computation before dispatch"
+  ],
+  "scopeFile": "APP013_P08_BA1_SCOPE_20261124_089eb0aa.json",
+  "scopeSha256": "dce4dbc58ca9715f195893dfd5c8010ee8dc5ca204dde3e9b493ec19d95b9d2c",
+  "sdkContractProof": {
+    "actualSdkOpenSerialization": [
+      {
+        "input": "true",
+        "safeOutput": {
+          "open": true
+        }
+      },
+      {
+        "input": "false",
+        "safeOutput": {
+          "open": false
+        }
+      },
+      {
+        "input": "missing",
+        "safeOutput": {}
+      }
+    ],
+    "fakeGetCalls": 1,
+    "fullReferenceParsedAndRequestedExactly": true,
+    "initialFixtureFailures": [
+      "Missing SDK third_party path; aligned with actual gcloud bootstrap",
+      "Replacing socket class broke PySocks import; blocked network methods instead while preserving class"
+    ],
+    "isolatedTemporaryConfig": true,
+    "networkAndProcessCreationBlocked": true,
+    "providerCalls": 0,
+    "realCredentialReads": 0,
+    "status": "PASS"
+  },
+  "sourceCommit": "2f13f90ae4cda3a61e719308d54cc19c1dd3c0d1",
+  "status": "LOCAL_READINESS_PASS_PENDING_EXACT_APPROVAL",
+  "validationScriptSha256": "d4fc8ee4b408ecb21eb483df0b038c80d4870047e8d36833948682b7f6c5bf15"
+}

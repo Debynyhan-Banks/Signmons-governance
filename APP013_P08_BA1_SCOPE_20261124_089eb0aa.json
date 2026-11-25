@@ -1,0 +1,60 @@
+{
+  "action": "BA1_LINKED_BILLING_ACCOUNT_STATUS_ONCE",
+  "allowanceUsd": 0,
+  "automaticRetryAllowed": false,
+  "billingAccountSha256": "df8c89e72b72b59ac6b06c0a20fa7d5f85a15b5d6d7450ff57a72722be172935",
+  "commandSha256": "e143e8bfe1a0910c69c564fb52c97ca84ca6a971a152d5f38944779352f28dd1",
+  "commands": [
+    {
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "auth",
+        "list",
+        "--filter=status:ACTIVE",
+        "--format=json(account,status)"
+      ],
+      "id": "owner"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "billing",
+        "projects",
+        "describe",
+        "signmons",
+        "--format=json(billingAccountName,billingEnabled,projectId)"
+      ],
+      "id": "billing_project"
+    },
+    {
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "billing",
+        "accounts",
+        "describe",
+        "<discovered-account>",
+        "--format=json(open)"
+      ],
+      "id": "billing_account"
+    }
+  ],
+  "configSha256": "528ceadadc8a5491e54ee82dbad0026eda881252564f96f2be242d70d1d2f111",
+  "limits": {
+    "cache": 0,
+    "cli": 3,
+    "https": 0,
+    "mutations": 0,
+    "sql": 0
+  },
+  "manifestSha256": "0c3c90cdad6cf8a1c742a37de20d9cbf8f9fcd7ad772f97fbd486dbfe71bec78",
+  "operationId": "089eb0aa-30dd-4931-bf61-8d099402d235",
+  "sdkException": "SDK_EXISTING_OWNER_REFRESH_CACHE_INTERNAL_RETRIES_NO_TOKEN_EXPORT",
+  "sourceCommit": "2f13f90ae4cda3a61e719308d54cc19c1dd3c0d1",
+  "version": 1,
+  "window": {
+    "closeoutEnd": "2026-11-25T02:40:00Z",
+    "cutoff": "2026-11-25T02:35:00Z",
+    "readEnd": "2026-11-25T02:38:00Z",
+    "start": "2026-11-25T02:20:00Z"
+  }
+}
