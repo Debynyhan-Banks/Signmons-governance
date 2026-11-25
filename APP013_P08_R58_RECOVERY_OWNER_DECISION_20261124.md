@@ -1,0 +1,3 @@
+# R58 recovery owner decision
+
+Owner replied: “Approve R58 recovery; Terminal visible and ready.” Approves exact reviewed2CLI/up to3read-onlySQL, statedSDKrefresh/retry/cacheexception and independentcleanup. Launchbefore9:55p.m.EasternNovember24;reads9:59,sessioncleanup10:04,privatepurge10:50. Existingattendance11:00. No qualification/native/payment authority. HiddenNeonpassword followed by existingwe_destination prompt; no secretvalue inchat. Exact committed operation decision binds publicpacketSHA6e07e897ac529bd485d0fe9e1c0378d53877265ff9b9935d9a12113afa22ff94. Existing reviewed recovery and connectedlauncher composition reused; current source/config/time/capability validatedbeforedispatch. No scope deviation.
