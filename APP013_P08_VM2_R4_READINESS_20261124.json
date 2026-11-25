@@ -1,0 +1,95 @@
+{
+  "acceptedMilestones": "4/8;3AOPEN;R1newlyclosed0/27",
+  "actualCurrentClockPreflight": true,
+  "approvalPath": "APP013_P08_VM2_APPROVAL_20261124_55ea6664.json",
+  "availability": "Existing owner confirmation through21:40 Eastern; closeout21:39 is within it",
+  "configSha256": "528ceadadc8a5491e54ee82dbad0026eda881252564f96f2be242d70d1d2f111",
+  "configuration": "PASS_NONSECRET_HELPER_ONLY",
+  "credentialReads": 0,
+  "finalDocumentChecks": {
+    "architecture": "PASS",
+    "backendGovernanceWrapper": "PASS",
+    "bothWhitespaceChecks": "PASS",
+    "completeConsistency": "PASS",
+    "frozenBaseline": "PASS",
+    "governanceTests": {
+      "failed": 0,
+      "passed": 25
+    },
+    "recordedAt": "2026-11-25T02:29:33Z",
+    "runtimeTestsRerun": false
+  },
+  "independentPacketReview": {
+    "checks": "Actual scope/descriptor validation, source/manifest/config/window, unauthorized draft, root absent, limits/retention/closure and BA1 evidence interpretation",
+    "newProviderOrCacheReads": 0,
+    "recordedAt": "2026-11-25T02:29:23.256451Z",
+    "remainingFindings": 0,
+    "status": "PASS"
+  },
+  "launchArgvTemplate": [
+    "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+    "-I",
+    "-B",
+    "-c",
+    "import runpy,sys;sys.path.insert(0,'/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110');sys.argv=['/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/vm2_metadata_read.py',*sys.argv[1:]];runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+    "<exact-approved-governance-commit>",
+    "APP013_P08_VM2_SCOPE_20261124_55ea6664.json",
+    "APP013_P08_VM2_APPROVAL_20261124_55ea6664.json"
+  ],
+  "liveAuthority": false,
+  "liveEvidence": "BA1 at02:22Z accountOpen:true/billingEnabled:true; VM2R3 at13:48Z earlier403 BILLING_DISABLED; distinct observations",
+  "localImplementationChanged": false,
+  "manifestSha256": "0c3c90cdad6cf8a1c742a37de20d9cbf8f9fcd7ad772f97fbd486dbfe71bec78",
+  "nextObservableResult": "One exact current metadata response or safe denial with independent closure",
+  "operationRootAbsent": true,
+  "prerequisiteTrace": [
+    {
+      "evidence": "VM2 source/test/manifest byte-identical to R3; existing60VM2/100SQ1 test proof and independent review",
+      "owner": "implementer/reviewer",
+      "prerequisite": "Actual response/missing/null/error contract through real boundary",
+      "result": "PASS_LOCAL; live response UNKNOWN",
+      "source": "2f13f90ae4cda3a61e719308d54cc19c1dd3c0d1",
+      "timestamp": "2026-11-25T02:28:49Z"
+    },
+    {
+      "evidence": "Actual v.preflight + v.commands + sdk_environment; no credentials read; exact project and header audit in BA1_RESULT",
+      "owner": "implementer/cloud custodian",
+      "prerequisite": "Source/runtime/SDK/config/dynamic project/resource/request pins",
+      "result": "PASS_LOCAL; usable live permission UNKNOWN",
+      "source": "2f13f90ae4cda3a61e719308d54cc19c1dd3c0d1",
+      "timestamp": "2026-11-25T02:28:49Z"
+    },
+    {
+      "evidence": "Unchanged original VM2 scope guard, actual transport/readback tests and safe R3 closeout;120sec read/180sec cleanup reserves",
+      "owner": "implementer",
+      "prerequisite": "Deadline/no retry/lease/interruption/retention/independent closeout",
+      "result": "PASS_LOCAL; live closure required",
+      "source": "2f13f90ae4cda3a61e719308d54cc19c1dd3c0d1",
+      "timestamp": "2026-11-25T02:28:49Z"
+    },
+    {
+      "evidence": "R4 draft explicitly unauthorized; BA1 excludes new GET/cache and prior VM2 attempt consumed",
+      "owner": "Debynyhan Banks",
+      "prerequisite": "Exact external decision",
+      "result": "PENDING_OWNER_EXACT_READ_APPROVAL",
+      "source": "2f13f90ae4cda3a61e719308d54cc19c1dd3c0d1",
+      "timestamp": "2026-11-25T02:28:49Z"
+    }
+  ],
+  "priorTestEvidence": "APP013_P08_VM2_REASON_VALIDATION_20261124.json:60VM2/100SQ1 passed; not rerun",
+  "providerCalls": 0,
+  "recordedAt": "2026-11-25T02:28:49Z",
+  "scopeDeviation": "None",
+  "scopePath": "APP013_P08_VM2_SCOPE_20261124_55ea6664.json",
+  "scopeSha256": "6d32b9538d8b5fdaa54a80d672a68e9efe53718dcf2affdcacc626a2363c82c1",
+  "sourceCommit": "2f13f90ae4cda3a61e719308d54cc19c1dd3c0d1",
+  "sourceSdkRuntimeGuard": "PASS_CURRENT_AND_COMMITTED_TRANSITIVE",
+  "status": "QUALIFICATION_ONLY_LOCAL_PREFLIGHT_PASSED",
+  "unknowns": [
+    "current credential coverage beyond closeout",
+    "current exact metadata usable access",
+    "current version state",
+    "historical refusal cause",
+    "future operation closeout"
+  ]
+}

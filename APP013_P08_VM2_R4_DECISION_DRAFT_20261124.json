@@ -1,0 +1,8 @@
+{
+  "approvalPath": "APP013_P08_VM2_APPROVAL_20261124_55ea6664.json",
+  "externalReadAuthorized": false,
+  "paymentAuthorized": false,
+  "scopePath": "APP013_P08_VM2_SCOPE_20261124_55ea6664.json",
+  "scopeSha256": "6d32b9538d8b5fdaa54a80d672a68e9efe53718dcf2affdcacc626a2363c82c1",
+  "status": "PROPOSED_NOT_AUTHORIZED"
+}
