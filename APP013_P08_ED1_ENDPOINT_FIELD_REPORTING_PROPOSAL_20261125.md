@@ -1,5 +1,7 @@
 # APP-013 / 3A / P08 — ED1 endpoint-field reporting correction
 
+Current status: local ED1 continuation and implementation are complete; see APP013_P08_ED1_LOCAL_DECISION_20261125.md and APP013_P08_ED1_LOCAL_COMPLETION_20261125.md. The proposal and pending-decision language below is the preserved pre-implementation record, not current status or external authority.
+
 PROPOSED, NOT APPROVED. Local implementation and synthetic tests only. Current backend head `badc26fbe79ed87523a944d813db1bee856f6caf`; executable R58 source `2f13f90ae4cda3a61e719308d54cc19c1dd3c0d1`. R58 operation `46930f3d-edaf-48c0-a633-66b24b2af018` is consumed and must not be replayed. No provider read, credential action, endpoint mutation, payment, browser action or fresh connected session is authorized by this proposal.
 
 ## Requirement traceability and demonstrated gap
