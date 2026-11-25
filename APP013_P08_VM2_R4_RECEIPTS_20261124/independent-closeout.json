@@ -1,0 +1,64 @@
+{
+  "actualExitDigestVetoAndSafeInventoryVerified": true,
+  "cloudSdkProcessMatches": 0,
+  "completedAt": "2026-11-25T02:32:57Z",
+  "configurationUnchanged": true,
+  "credentialCacheReads": 0,
+  "diskPidAdopted": false,
+  "mainExitObserved": 0,
+  "onTime": true,
+  "operationId": "55ea6664-1173-4581-8166-092ed1890438",
+  "operationProcessMatches": 0,
+  "privateOperationInputsCreated": false,
+  "providerCalls": 0,
+  "rawProcessArgumentsRetained": false,
+  "residuals": [],
+  "resultSha256": "34a4cb57268dacc0ca581fab3e9ddb050f401a079e39239e9dd7ea3d7d4ffc8c",
+  "safeInventory": [
+    {
+      "bytes": 198,
+      "mode": "0o600",
+      "name": "attempt.json",
+      "sha256": "5cdda57532b90bb2c84363ac2ad774b347842ca8898707976ecd59988c301596"
+    },
+    {
+      "bytes": 18,
+      "mode": "0o600",
+      "name": "cache.json",
+      "sha256": "dec38fd20b66d52e7720eb45319ba68f6c6501a20a2ae090d8edfa384f2b4a26"
+    },
+    {
+      "bytes": 139,
+      "mode": "0o600",
+      "name": "closeout.json",
+      "sha256": "790cc78abcb8ffb0ae05be056d7368773ab3e9a40f88eea75832bee693be71f3"
+    },
+    {
+      "bytes": 18,
+      "mode": "0o600",
+      "name": "metadata.json",
+      "sha256": "dec38fd20b66d52e7720eb45319ba68f6c6501a20a2ae090d8edfa384f2b4a26"
+    },
+    {
+      "bytes": 18,
+      "mode": "0o600",
+      "name": "owner.json",
+      "sha256": "dec38fd20b66d52e7720eb45319ba68f6c6501a20a2ae090d8edfa384f2b4a26"
+    },
+    {
+      "bytes": 18,
+      "mode": "0o600",
+      "name": "project.json",
+      "sha256": "dec38fd20b66d52e7720eb45319ba68f6c6501a20a2ae090d8edfa384f2b4a26"
+    },
+    {
+      "bytes": 662,
+      "mode": "0o600",
+      "name": "result.json",
+      "sha256": "aeeb3229ffdc850e104abea6b446323555928b8c224d4551f0b54a8c80802536"
+    }
+  ],
+  "signalsSent": false,
+  "sourceGuardPassed": true,
+  "status": "INDEPENDENT_CLOSEOUT_VERIFIED"
+}

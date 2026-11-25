@@ -1,0 +1,15 @@
+{
+  "actualArgvMatchesCommittedReadiness": true,
+  "actualTimeWindowPassed": true,
+  "approvalCommit": "a151e59cf528c7a75e8a9e6d51ab7f6fee23510a",
+  "checkedAt": "2026-11-25T02:31:35Z",
+  "configMatched": true,
+  "credentialCacheReads": 0,
+  "launchArgvSha256": "c11a8ff8d7bc8b823248646fa8a29013a8e291d4594fffe70adb618e5e7ec49d",
+  "manifestSha256": "0c3c90cdad6cf8a1c742a37de20d9cbf8f9fcd7ad772f97fbd486dbfe71bec78",
+  "operationRootAbsent": true,
+  "providerCalls": 0,
+  "scopeSha256": "6d32b9538d8b5fdaa54a80d672a68e9efe53718dcf2affdcacc626a2363c82c1",
+  "sourceCommit": "2f13f90ae4cda3a61e719308d54cc19c1dd3c0d1",
+  "status": "APPROVED_LAUNCH_COMPARISON_PASS"
+}

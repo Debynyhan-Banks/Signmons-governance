@@ -1,0 +1,52 @@
+{
+  "operationId": "55ea6664-1173-4581-8166-092ed1890438",
+  "privateDataRetained": false,
+  "providerCallsDuringRetention": 0,
+  "receipts": [
+    {
+      "bytes": 666,
+      "file": "approved-preflight.json",
+      "sha256": "f33bbd0e74e84533ab0127cbdcc0d338dcb373c757a89af78bd98313501496e6"
+    },
+    {
+      "bytes": 198,
+      "file": "attempt.json",
+      "sha256": "5cdda57532b90bb2c84363ac2ad774b347842ca8898707976ecd59988c301596"
+    },
+    {
+      "bytes": 18,
+      "file": "cache.json",
+      "sha256": "dec38fd20b66d52e7720eb45319ba68f6c6501a20a2ae090d8edfa384f2b4a26"
+    },
+    {
+      "bytes": 139,
+      "file": "closeout.json",
+      "sha256": "790cc78abcb8ffb0ae05be056d7368773ab3e9a40f88eea75832bee693be71f3"
+    },
+    {
+      "bytes": 1861,
+      "file": "independent-closeout.json",
+      "sha256": "08802848f44a73ed3d27e291d0b64b03fea38163abb9b99b564058d5419e665f"
+    },
+    {
+      "bytes": 18,
+      "file": "metadata.json",
+      "sha256": "dec38fd20b66d52e7720eb45319ba68f6c6501a20a2ae090d8edfa384f2b4a26"
+    },
+    {
+      "bytes": 18,
+      "file": "owner.json",
+      "sha256": "dec38fd20b66d52e7720eb45319ba68f6c6501a20a2ae090d8edfa384f2b4a26"
+    },
+    {
+      "bytes": 18,
+      "file": "project.json",
+      "sha256": "dec38fd20b66d52e7720eb45319ba68f6c6501a20a2ae090d8edfa384f2b4a26"
+    },
+    {
+      "bytes": 662,
+      "file": "result.json",
+      "sha256": "aeeb3229ffdc850e104abea6b446323555928b8c224d4551f0b54a8c80802536"
+    }
+  ]
+}
