@@ -1,0 +1,13 @@
+{
+  "decision": "APPROVE_ED2_CONDITIONAL_DISABLE_VERIFY_AND_CLEANUP",
+  "owner": "Debynyhan Banks",
+  "operationId": "195cb801-cacb-4552-9265-08614c0c0e28",
+  "scopeSha256": "b989ac89fb6161aeb37fa5bbbd22ba6f7ff7aea727dd9639111b0c356de498e1",
+  "externalReadAuthorized": true,
+  "conditionalDisableAuthorized": true,
+  "independentCleanupAuthorized": true,
+  "terminalReady": true,
+  "noOverlappingOperation": true,
+  "reachableThrough": "2026-11-26T03:45:00Z",
+  "paymentAuthorized": false
+}
