@@ -1,0 +1,16 @@
+{
+  "status": "BOUND_NOT_LAUNCHED",
+  "boundAt": "2026-11-26T19:51:29.818883+00:00",
+  "approvalCommit": "2008eb02e1db0cbf5f9145c033989e4c26094ee3",
+  "preparedCommit": "4f52a0f15bfbca0466f6d2d41e9f314fd215f49d",
+  "sourceCommit": "fabd4561a2a25f4618aa7d2395fbba1eff1c3795",
+  "signInExecutor": "/private/tmp/signmons-tr37-owner-signin.py",
+  "signInExecutorSha256": "8a7fb1fa2fccd5d73d3d08c5e1c3aff7ad4834604ddcd0dc630f71b2031ebd48",
+  "recoveryDispatcher": "/private/tmp/r64-recovery-dispatcher.py",
+  "recoveryDispatcherSha256": "4cb27fbc2d0ed7053b133962c2332e4d65b36aba5005955815b7085713964a36",
+  "onlyBindingChanges": "PENDING_APPROVAL_LITERAL_TO_EXACT_COMMIT",
+  "lowerStartBound": "2026-11-26T20:00:00Z",
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "terminalDispatch": false
+}
