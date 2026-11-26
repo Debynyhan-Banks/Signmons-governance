@@ -1,0 +1,23 @@
+{
+  "status": "R63_EXPIRED_UNSTARTED",
+  "recordedAt": "2026-11-26T19:40:04.074583+00:00",
+  "firstCurrentClockObservation": "2026-11-26T19:36:29Z",
+  "approvedLaunchCutoff": "2026-11-26T19:20:00Z",
+  "ownerStatement": "Approve R63 recovery; inputs ready",
+  "lateApprovalNotActivated": true,
+  "actualRecoveryDecisionCreated": false,
+  "operationRootsAbsent": true,
+  "ownedCommandFileAbsent": true,
+  "unboundDispatcherRemoved": true,
+  "removedDispatcherSha256": "3836a85e6f91cd4f75db884b9b14b8b8e4554eee39bb9b2a714ecfef2b2d8a7e",
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "sqlCalls": 0,
+  "passwordPromptStarted": false,
+  "privateInputsCollected": false,
+  "tr36OwnerObservation": "Completed sign-in as debynyhan@signmons.com",
+  "tr36ObservationProvenance": "OWNER_REPORT_FROM_THIS_REPLY",
+  "tr36VerifiedHorizon": "2026-11-26T20:15:00Z",
+  "attendanceThrough": "2026-11-26T20:25:00Z",
+  "replayAuthorized": false
+}

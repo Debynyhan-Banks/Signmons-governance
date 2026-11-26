@@ -1,5 +1,7 @@
 # R63 — fresh connected-workflow readiness after TG1
 
+**EXPIRED UNSTARTED.** The next reply was processed at2:36p.m.Eastern, after the2:20 recovery cutoff. No operation root, command file or input prompt was created. The exact unbound dispatcher was hash-verified and removed. Late approval was not activated; see APP013_P08_R63_EXPIRED_UNSTARTED_20261126.json. This historical preparation cannot authorize replay.
+
 **LOCAL PREPARATION COMPLETE; QUALIFICATION ONLY, NOT EXECUTION-READY OR APPROVED.** APP-013 / 3A / P08. No new scope deviation; TG1's disclosed test-selection incident and owner-directed correction remain recorded. No new runtime code, tests, PostgreSQL fixture, credential read, sign-in, provider call or browser action occurred during this preparation.
 
 ## Acceptance and source
