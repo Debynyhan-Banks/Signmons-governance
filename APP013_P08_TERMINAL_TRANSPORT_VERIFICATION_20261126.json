@@ -1,0 +1,37 @@
+{
+  "status": "TERMINAL_TRANSPORT_LOCAL_VERIFIED",
+  "verifiedAt": "2026-11-26T15:29:21.105942+00:00",
+  "templateSha256": "30a8b01a8df50b7fde39dfa0e38a894e294093243886f1cc4d4fd77b04fc2002",
+  "testHarnessSha256": "9dc11373e1e41bff6c320c9f034ada1ce8aa3f1a97abdac714003732bb34be08",
+  "actualTerminalBoundary": true,
+  "cases": [
+    {
+      "case": "positive",
+      "status": "PASS",
+      "fullCommandBytes": 2389,
+      "terminalInputBytes": 68,
+      "argumentBytesVerified": 1728,
+      "cwdMatched": true,
+      "secondStageRan": true,
+      "exclusiveCollisionRefused": true,
+      "mode": "0600"
+    },
+    {
+      "case": "first_stage_failure",
+      "status": "PASS",
+      "fullCommandBytes": 2411,
+      "terminalInputBytes": 79,
+      "argumentBytesVerified": 1728,
+      "cwdMatched": true,
+      "secondStageRan": false,
+      "exclusiveCollisionRefused": true,
+      "mode": "0600"
+    }
+  ],
+  "ownedWindowsClosed": 2,
+  "testProcessesAbsent": true,
+  "ownedTestFilesAndRootAbsent": true,
+  "credentialReads": 0,
+  "providerCalls": 0,
+  "recoveryOrPaymentAttempt": false
+}

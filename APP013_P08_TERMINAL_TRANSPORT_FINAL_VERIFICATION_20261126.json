@@ -1,0 +1,72 @@
+{
+  "status": "TERMINAL_TRANSPORT_LOCAL_VERIFIED",
+  "verifiedAt": "2026-11-26T15:30:26.446614+00:00",
+  "templateSha256": "751bb5f4a9f0b6545e7f611c1e99f4d34e893f9bd04b316f427cde43601c852f",
+  "testHarnessSha256": "b94e1e6b7c33562d01280a8ab484774f28fdab368b6f44f8a6c4411f2890d32a",
+  "actualTerminalBoundary": true,
+  "cases": [
+    {
+      "case": "positive",
+      "status": "PASS",
+      "fullCommandBytes": 2389,
+      "terminalInputBytes": 68,
+      "argumentBytesVerified": 1728,
+      "cwdMatched": true,
+      "secondStageRan": true,
+      "exclusiveCollisionRefused": true,
+      "mode": "0600"
+    },
+    {
+      "case": "first_stage_failure",
+      "status": "PASS",
+      "fullCommandBytes": 2411,
+      "terminalInputBytes": 79,
+      "argumentBytesVerified": 1728,
+      "cwdMatched": true,
+      "secondStageRan": false,
+      "exclusiveCollisionRefused": true,
+      "mode": "0600"
+    },
+    {
+      "case": "expired_cutoff",
+      "status": "PASS",
+      "fileCreated": false,
+      "terminalInvocation": false
+    },
+    {
+      "case": "cutoff_crossed_after_file_write",
+      "status": "PASS",
+      "terminalInvocations": 0,
+      "ownedFileVerifiedAndRemoved": true
+    }
+  ],
+  "ownedWindowsClosed": 2,
+  "testProcessesAbsent": true,
+  "ownedTestFilesAndRootAbsent": true,
+  "credentialReads": 0,
+  "providerCalls": 0,
+  "recoveryOrPaymentAttempt": false,
+  "lastAdditionalCheckAt": "2026-11-26T15:30:51.774342+00:00",
+  "independentReview": {
+    "status": "PASS",
+    "sourceStatementsPreserved": 26,
+    "comparison": "AST equality against exact retained dispatcher with R60/date substitutions",
+    "authorityArgvAndSequencingPreserved": true,
+    "reviewer": "independent agent",
+    "scopeDeviation": false
+  },
+  "repositoryChecks": {
+    "frozenBaseline": "PASS",
+    "completeConsistency": "PASS",
+    "governanceSafeguards": {
+      "passed": 25,
+      "failed": 0
+    },
+    "backendWrapper": "PASS",
+    "architecture": "PASS",
+    "bothWhitespaceChecks": "PASS",
+    "newBackendRuntimeTests": false
+  },
+  "ephemeralTestHarnessRemoved": true,
+  "finalizedAt": "2026-11-26T15:32:48.168507+00:00"
+}
