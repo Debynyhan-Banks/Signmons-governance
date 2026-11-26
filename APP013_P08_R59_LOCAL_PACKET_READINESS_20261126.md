@@ -37,6 +37,15 @@ Completed locally:
 
 No runtime application source, schema, UI, dependency or configuration changed. Build, lint, database integration and live browser QA were therefore inapplicable to this evidence-only readiness section; the 15 browser-isolation unit cases are not live browser acceptance.
 
+
+## November 26 current-source refresh
+
+At 2026-11-26T13:31:11.862778Z, current source/manifest/SDK/renewal-tree checks passed on backend `b72ecb89f1907a25c988bbe3f33388bfdab77976`. The change from tested `742bcb6` is exactly the R59 verification receipt; executable packet, launcher, qualification and native sources are unchanged. Reuse the 557-test proof without rerunning it. Fresh execution bindings must use `b72ecb8`, because the existing renewal tree check compares the complete tracked evidence tree. No guard is weakened or rebaselined.
+
+The exact retained sign-in template was recovered to `/private/tmp/r59-tr21-template.py`, mode0600, 7156bytes/99lines, SHA256 `9a1688d47181d96312047d8e2dca96fa01ab2bb2234449ee5a8ecfab508bcd38`. Existing local preparation harness `/private/tmp/r58-local-prepare.py` matches its prior recorded hash `7871b4158e02109fd3771b0192703339ea9f62ee9adbd9a7fcb5cf1b0e8d662f`; it was inspected, not executed. Only after attendance is confirmed may its existing bindings be adapted to fresh R59 paths/IDs/source/window. Never execute its old R58 writes unchanged. The future sign-in remains an exact constants-only TR32 binding with separate approval.
+
+Availability for November26 8:45–9:55a.m.Eastern, standalone Terminal/browser readiness and no overlap have been requested and remain pending. No new operation IDs, windows, decisions, credential reads, provider actions or prompts have been created. Implementer owns exact preparation; owner owns attendance and external decisions. Next observable is a confirmed attended window, followed by a fully bound sign-in review. Accepted4/8;3A OPEN;R1newlyclosed0/27. No scope deviation.
+
 ## Pending inputs, approvals and observable finish
 
 No operation IDs, execution windows, decision files or private references were created. Current credential horizon, owner attendance, Terminal/browser readiness, no-overlap state, endpoint current state, other provider/account/runtime facts, authentication, payment, event, gate and owner acceptance are UNKNOWN.
