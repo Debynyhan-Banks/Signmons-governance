@@ -1,0 +1,95 @@
+{
+  "status": "R64_QUALIFICATION_TERMINAL_CONFIRMATION_VERIFIED",
+  "verifiedAt": "2026-11-26T20:02:56.448055+00:00",
+  "delegationCommit": "2008eb02e1db0cbf5f9145c033989e4c26094ee3",
+  "expectedReview": {
+    "stage": "qualification",
+    "operationId": "4c80bc00-c2b4-4dcb-9940-a9b0306b2033",
+    "recoveryId": "bdb20cfb-e4f8-4f89-8e3e-7ce84a8f7464",
+    "sourceCommit": "fabd4561a2a25f4618aa7d2395fbba1eff1c3795",
+    "decision": {
+      "cleanupScopeSha256": "95c3ff5362b78a776c3a260c3d44fab8d688a60375a734459a6735a7d2089106",
+      "decision": "APPROVE_EXACT_P08_CURRENT_QUALIFICATION",
+      "externalReadAuthorized": true,
+      "owner": "Debynyhan Banks",
+      "scopeSha256": "bde212afea7058b982f52f207387f3f1a1fd7b01d0838812bf303f60110620ba"
+    },
+    "window": {
+      "start": "2026-11-26T20:00:00Z",
+      "cutoff": "2026-11-26T20:12:00Z",
+      "readEnd": "2026-11-26T20:17:00Z",
+      "closeoutEnd": "2026-11-26T20:22:00Z",
+      "purgeEnd": "2026-11-26T21:00:00Z"
+    },
+    "summary": {
+      "actions": [
+        "Read cloud identity/configuration/permissions and retired resources",
+        "Read test identity and same-job payment policy",
+        "Independent database closeout and private purge"
+      ],
+      "providerMutations": false,
+      "limits": {
+        "cache": 1,
+        "cli": 27,
+        "https": 20,
+        "sql": 4
+      },
+      "spendingAuthorized": false
+    },
+    "consentSha256": "38b1d1a3494df23b86a971e1ff941b43a7954cf4a2f9cf5af44abc94a2df91ef"
+  },
+  "publishedReview": {
+    "decisionForReview": {
+      "cleanupScopeSha256": "95c3ff5362b78a776c3a260c3d44fab8d688a60375a734459a6735a7d2089106",
+      "decision": "APPROVE_EXACT_P08_CURRENT_QUALIFICATION",
+      "externalReadAuthorized": true,
+      "owner": "Debynyhan Banks",
+      "scopeSha256": "bde212afea7058b982f52f207387f3f1a1fd7b01d0838812bf303f60110620ba"
+    },
+    "endpointHashMatched": true,
+    "limits": {
+      "cache": 1,
+      "cli": 27,
+      "https": 20,
+      "sql": 4
+    },
+    "localCapabilityPreflight": "PASS_PROPOSED_CLOCK_ONLY",
+    "nativeScopeSha256": "a5d0d883859940078966352d6d8ed5d2a80e2ed5c16856f83d57438afbdc4be8",
+    "operationId": "4c80bc00-c2b4-4dcb-9940-a9b0306b2033",
+    "providerCalls": 0,
+    "sourceCommit": "fabd4561a2a25f4618aa7d2395fbba1eff1c3795",
+    "stage": "qualification",
+    "window": {
+      "closeoutEnd": "2026-11-26T20:22:00Z",
+      "cutoff": "2026-11-26T20:12:00Z",
+      "purgeEnd": "2026-11-26T21:00:00Z",
+      "readEnd": "2026-11-26T20:17:00Z",
+      "start": "2026-11-26T20:00:00Z"
+    }
+  },
+  "confirmation": {
+    "confirmedAt": 1795723342.390177,
+    "consentSha256": "38b1d1a3494df23b86a971e1ff941b43a7954cf4a2f9cf5af44abc94a2df91ef",
+    "decisionSha256": "79192ea171c4399fa3d762b1c1a392ad7f08f4d7527188961f8bf22ca729a92f",
+    "expiresAt": 1795723920.0,
+    "nonce": "42c9fdc6047fbae9",
+    "operationId": "4c80bc00-c2b4-4dcb-9940-a9b0306b2033",
+    "recoveryId": "bdb20cfb-e4f8-4f89-8e3e-7ce84a8f7464",
+    "reviewSha256": "96eb8d0976ece4bb1825c62b5ada6741eebd35e533e72f20a10c089376fed060",
+    "sourceCommit": "fabd4561a2a25f4618aa7d2395fbba1eff1c3795",
+    "stage": "qualification"
+  },
+  "consumed": {
+    "consumedAt": 1795723376.4470232,
+    "decisionSha256": "79192ea171c4399fa3d762b1c1a392ad7f08f4d7527188961f8bf22ca729a92f"
+  },
+  "decisionForCommit": {
+    "cleanupScopeSha256": "95c3ff5362b78a776c3a260c3d44fab8d688a60375a734459a6735a7d2089106",
+    "decision": "APPROVE_EXACT_P08_CURRENT_QUALIFICATION",
+    "externalReadAuthorized": true,
+    "owner": "Debynyhan Banks",
+    "scopeSha256": "bde212afea7058b982f52f207387f3f1a1fd7b01d0838812bf303f60110620ba"
+  },
+  "providerCallsByVerifier": 0,
+  "privateValuesReadByVerifier": false
+}
