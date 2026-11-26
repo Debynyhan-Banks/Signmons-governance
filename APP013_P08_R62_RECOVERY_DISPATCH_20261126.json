@@ -1,0 +1,13 @@
+{
+  "status": "R62_RECOVERY_DISPATCHED_TO_STANDALONE_TERMINAL",
+  "recordedAt": "2026-11-26T18:03:40.811022+00:00",
+  "terminalWindowId": 39837,
+  "decisionCommit": "073ac2a0ece18b5755101dffb1f6ce0189b79025",
+  "sourceCommit": "b72ecb89f1907a25c988bbe3f33388bfdab77976",
+  "ownedDispatcherPath": "/private/tmp/r62-recovery-dispatcher.py",
+  "ownedDispatcherSha256": "b50edaa0f9bde0da91708a7c11a7ed1870521179d20fbecdd296466cc71da640",
+  "ownedCommandPath": "/private/tmp/p08-terminal-launch-e968049f-3478-4767-82ae-261d5296e8c3.command",
+  "ownedCommandSha256": "4b7ccb09782a750d257d5f837e97c82aace77aec639e69e079740172ede8fef3",
+  "qualificationNativeApproved": false,
+  "cleanup": "REMOVE_ONLY_EXACT_HASH_MATCHED_COMMAND_AND_DISPATCHER_AFTER_CONNECTED_CLOSEOUT"
+}
