@@ -1,0 +1,133 @@
+{
+  "section": "APP-013/3A/P08",
+  "operationId": "195cb801-cacb-4552-9265-08614c0c0e28",
+  "state": "PREPARED_EXACT_LIVE_APPROVAL_PENDING",
+  "sourceCommit": "afe3afe5d6c292fa8c721683ac521b615c4b7784",
+  "observedAt": "2026-11-26T03:17:34.374426+00:00",
+  "card": "APP013_P08_ED2_PREPARATION_CARD_20261125.md",
+  "scopeFile": "APP013_P08_ED2_SCOPE_20261125.json",
+  "sourceAndInterpreterGuards": "PASS",
+  "resourceDerivation": "existing ct3_resources subset and actual endpointOnce worker",
+  "commandSha256": "d35b71eed6535267db0bc5f90ce85808cbd52e9b60761c6ab6d6e02307f7d26a",
+  "window": {
+    "start": "2026-11-26T03:15:00Z",
+    "launchCutoff": "2026-11-26T03:30:00Z",
+    "inputCutoff": "2026-11-26T03:37:00Z",
+    "readEnd": "2026-11-26T03:39:00Z",
+    "verifyEnd": "2026-11-26T03:42:00Z",
+    "cleanupEnd": "2026-11-26T03:45:00Z"
+  },
+  "checks": [
+    {
+      "item": "Provider/serialization contract",
+      "source": "key_check.mjs endpointOnce; account_containment_read.py endpoint_result; connected_payment.mjs endpoint",
+      "evidence": "Historical ED1 HTTP200 and existing worker tests;21 current synthetic composition tests passed",
+      "result": "PASS local contract/phase parsing; current live state UNKNOWN",
+      "owner": "implementer"
+    },
+    {
+      "item": "Current endpoint/state/credential usability",
+      "source": "Pinned existing endpoint and hidden sk_test_ input",
+      "evidence": "ED1 observation 2026-11-25T14:18Z is historical tonight",
+      "result": "UNKNOWN; fresh OBSERVE before conditional mutation, VERIFY afterward",
+      "owner": "Stripe custodian"
+    },
+    {
+      "item": "Actual pins/interpreters/manifests",
+      "source": "scope source/argv/resources/interpreters; current source guards",
+      "evidence": "Final real-source synthetic-authority test PASS 2.022s and independent packet review 2026-11-26T03:16:47.751324Z",
+      "result": "PASS exact final binding and independent review",
+      "owner": "implementer"
+    },
+    {
+      "item": "Deadline, attempt, concurrency and failure",
+      "source": "ED2 authorize/gate/phase_call; existing lease/owned child/immutable journal",
+      "evidence": "21 focused tests including real inert children, consumed roots, lease, source/clock integrity, lost POST/no retry and interruption",
+      "result": "PASS local",
+      "owner": "implementer"
+    },
+    {
+      "item": "Independent cleanup and private retention",
+      "source": "ED2 finally: independent VERIFY then local process closure, memory reference purge, authoritative immutable result/veto",
+      "evidence": "21 focused tests include separate VERIFY, owned history/closure, veto, mask restoration and private sentinel exclusion",
+      "result": "PASS local; live closure UNKNOWN",
+      "owner": "implementer"
+    },
+    {
+      "item": "Owner decision/readiness",
+      "source": "future exact ED2 decision JSON",
+      "evidence": "No decision file; no live attempt directory",
+      "result": "PENDING exact mutation/read/cleanup authority, Terminal inputs, no overlap, reachability",
+      "owner": "Debynyhan Banks / Stripe custodian"
+    }
+  ],
+  "limits": {
+    "cache": 0,
+    "child": 3,
+    "https": 3,
+    "mutations": 1,
+    "sdk": 0,
+    "sql": 0
+  },
+  "costAllowanceUsd": 0,
+  "externalActionsPerformed": 0,
+  "acceptance": {
+    "acceptedMilestones": "4/8",
+    "section3A": "OPEN",
+    "r1NewlyClosed": "0/27"
+  },
+  "unknowns": [
+    "current key validity and write permission",
+    "current exact endpoint metadata and state",
+    "future mutation acknowledgment and final state",
+    "future process cleanup and private purge",
+    "same-job payment/event/gate acceptance"
+  ],
+  "excluded": [
+    "SQL",
+    "Google sign-in",
+    "SDK/cache reads",
+    "Firebase/account actions",
+    "endpoint create/delete/re-enable",
+    "payment or event resend",
+    "production",
+    "customer messages"
+  ],
+  "nextObservable": "fresh exact endpoint DISABLED final readback or bounded UNKNOWN; independent closure",
+  "testResults": {
+    "focusedComposition": {
+      "passed": 21,
+      "failed": 0,
+      "seconds": 4.698,
+      "log": "APP013_P08_ED2_TEST_RESULTS_20261125.txt",
+      "sha256": "4cfb146a90677a48ec2e6e95d2d00187712e7425031a7f688b8c332e7dad2f08"
+    },
+    "governanceTests": {
+      "passed": 25,
+      "failed": 0
+    },
+    "frozenBaseline": "PASS",
+    "fullConsistency": "PASS",
+    "backendWrapper": "PASS",
+    "architecture": "PASS",
+    "whitespace": "PASS"
+  },
+  "testSourceSha256": "94c047e8d5f2de12a8edab168f51dfb58326385962cdfdc3f6b61d82de12eb1a",
+  "finalScopeBindingTest": {
+    "result": "PASS",
+    "count": 1,
+    "seconds": 2.022,
+    "actualCurrentSourceGuards": true,
+    "syntheticAuthorityOnly": true,
+    "externalDispatch": false,
+    "log": "APP013_P08_ED2_FINAL_BINDING_20261125.txt",
+    "sha256": "6fc684e8abf6f4c4fc5aa99247d59ef7947da37e2d7e6991e0e78802932abcb5"
+  },
+  "scopeSha256": "b989ac89fb6161aeb37fa5bbbd22ba6f7ff7aea727dd9639111b0c356de498e1",
+  "independentReview": {
+    "file": "APP013_P08_ED2_INDEPENDENT_REVIEW_20261125.json",
+    "sha256": "4bc11caf5af339860eeef80c3ff173e5c982ce8cdafd277ccfbce418d3d4018b",
+    "result": "PASS",
+    "reviewedAt": "2026-11-26T03:16:47.751324Z"
+  }
+}

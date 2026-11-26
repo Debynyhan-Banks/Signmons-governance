@@ -1,0 +1,28 @@
+{
+  "reviewedAt": "2026-11-26T03:16:47.751324Z",
+  "reviewer": "independent agent rv1_journal",
+  "result": "PASS",
+  "commandSha256": "d35b71eed6535267db0bc5f90ce85808cbd52e9b60761c6ab6d6e02307f7d26a",
+  "testSha256": "94c047e8d5f2de12a8edab168f51dfb58326385962cdfdc3f6b61d82de12eb1a",
+  "scopeSha256": "b989ac89fb6161aeb37fa5bbbd22ba6f7ff7aea727dd9639111b0c356de498e1",
+  "sourceCommit": "afe3afe5d6c292fa8c721683ac521b615c4b7784",
+  "resourcesArgvLimitsMatch": true,
+  "interpreterHashesMatch": true,
+  "proposalReadinessWindowMatch": true,
+  "windowSeconds": 1800,
+  "operationRootAbsent": true,
+  "decisionAbsent": true,
+  "absenceObservedAt": "2026-11-26T03:16:35.943898Z",
+  "externalActions": 0,
+  "blockers": [],
+  "pending": [
+    "exact live decision",
+    "Terminal/input readiness",
+    "no-overlap confirmation",
+    "reachability through cleanup"
+  ],
+  "unknown": [
+    "current endpoint state",
+    "current key/write access"
+  ]
+}
