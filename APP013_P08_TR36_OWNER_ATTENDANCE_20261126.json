@@ -1,0 +1,13 @@
+{
+  "owner": "Debynyhan Banks",
+  "recordedAt": "2026-11-26T18:59:06.277202+00:00",
+  "attendanceStart": "2026-11-26T19:15:00Z",
+  "attendanceThrough": "2026-11-26T20:25:00Z",
+  "proposalSha256": "98103e0e500b8a28c81f2c5d50b34ab0ce179d1142e0ec7fa7a8adb1c6f10d88",
+  "ownerStatement": "Approve TR36; ready, no overlap, available 2:15\u20133:25",
+  "terminalReady": true,
+  "browserReady": true,
+  "noOverlapConfirmed": true,
+  "signinAuthorized": true,
+  "recoveryQualificationNativeAuthorized": false
+}
