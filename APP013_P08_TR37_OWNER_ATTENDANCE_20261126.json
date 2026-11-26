@@ -1,0 +1,12 @@
+{
+  "owner": "Debynyhan Banks",
+  "confirmed": true,
+  "start": "2026-11-26T20:00:00Z",
+  "attendanceThrough": "2026-11-26T21:10:00Z",
+  "browserReady": true,
+  "terminalReady": true,
+  "noOverlapConfirmed": true,
+  "proposalSha256": "1e3d9d2cf5235600596be8151e7a5d4b78b8d28cadf5a22a47884eb43a2e50ec",
+  "ownerStatement": "Approve opening package; ready, no overlap, available through 4:10",
+  "recordedAt": "2026-11-26T19:50:58.310577+00:00"
+}
