@@ -1,0 +1,25 @@
+{
+  "commandExits": {
+    "closeoutExit": 2,
+    "workExit": 2
+  },
+  "decisionForReview": {},
+  "native": {
+    "authProofReady": false,
+    "authenticationObserved": false,
+    "childResultSha256": null,
+    "liveAuthorization": true,
+    "operationId": "27fcabdf-9bd5-4dff-84ef-9c9ce9cd1217",
+    "paymentObserved": false,
+    "paymentReadyForAcceptance": false,
+    "privateInputsAbsent": true,
+    "residuals": [
+      "RUNTIME_FINAL",
+      "TRAFFIC_PRIVATE_PLANS"
+    ],
+    "status": "ENTRY_CONTAINMENT_UNCONFIRMED"
+  },
+  "paymentReadyForAcceptance": false,
+  "privateInputsAbsent": true,
+  "stage": "result"
+}

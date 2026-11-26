@@ -1,0 +1,23 @@
+{
+  "events": [
+    {
+      "status": "OWNER_BREAK_INPUT_CANCELLATION_SENT",
+      "at": "2026-11-26T20:15:11.115588+00:00",
+      "pid": 32863,
+      "signal": "SIGINT",
+      "exactCloseoutCommandAndParentVerified": true,
+      "activeChildren": 0,
+      "parentPreservedForCleanup": true,
+      "providerActionStartedByOperator": false
+    },
+    {
+      "status": "SECOND_REMAINING_INPUT_CHECK_CANCELLED",
+      "at": "2026-11-26T20:15:39.473503+00:00",
+      "pid": 32863,
+      "signal": "SIGINT",
+      "exactCloseoutCommandAndParentVerified": true,
+      "activeChildren": 0,
+      "parentPreservedForCleanup": true
+    }
+  ]
+}

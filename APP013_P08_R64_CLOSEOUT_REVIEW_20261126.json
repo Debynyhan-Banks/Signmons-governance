@@ -1,0 +1,159 @@
+{
+  "status": "R64_STOPPED_BEFORE_AUTHENTICATION_FINAL_RETIREMENT_UNCONFIRMED",
+  "recordedAt": "2026-11-26T20:17:15.209813+00:00",
+  "sourceCommit": "fabd4561a2a25f4618aa7d2395fbba1eff1c3795",
+  "openingApprovalCommit": "2008eb02e1db0cbf5f9145c033989e4c26094ee3",
+  "qualificationDecisionCommit": "e4a9e8d",
+  "nativeDecisionCommit": "2644f5e",
+  "nativeResultUnchanged": {
+    "authProofReady": false,
+    "authenticationObserved": false,
+    "childResultSha256": null,
+    "liveAuthorization": true,
+    "operationId": "27fcabdf-9bd5-4dff-84ef-9c9ce9cd1217",
+    "paymentObserved": false,
+    "paymentReadyForAcceptance": false,
+    "privateInputsAbsent": true,
+    "residuals": [
+      "RUNTIME_FINAL",
+      "TRAFFIC_PRIVATE_PLANS"
+    ],
+    "status": "ENTRY_CONTAINMENT_UNCONFIRMED"
+  },
+  "workResultUnchanged": {
+    "authProofReady": false,
+    "liveAuthorization": true,
+    "operationId": "27fcabdf-9bd5-4dff-84ef-9c9ce9cd1217",
+    "paymentObserved": false,
+    "paymentReadyForAcceptance": false,
+    "privateInputsAbsent": false,
+    "residuals": [
+      "RUNTIME_FINAL",
+      "RUNTIME_identity:signmons-calldesk-p07-runtime@signmons.iam.gserviceaccount.com"
+    ],
+    "status": "ENTRY_AWAITING_INDEPENDENT_CLOSEOUT"
+  },
+  "connectedResultUnchanged": {
+    "commandExits": {
+      "closeoutExit": 2,
+      "workExit": 2
+    },
+    "decisionForReview": {},
+    "native": {
+      "authProofReady": false,
+      "authenticationObserved": false,
+      "childResultSha256": null,
+      "liveAuthorization": true,
+      "operationId": "27fcabdf-9bd5-4dff-84ef-9c9ce9cd1217",
+      "paymentObserved": false,
+      "paymentReadyForAcceptance": false,
+      "privateInputsAbsent": true,
+      "residuals": [
+        "RUNTIME_FINAL",
+        "TRAFFIC_PRIVATE_PLANS"
+      ],
+      "status": "ENTRY_CONTAINMENT_UNCONFIRMED"
+    },
+    "paymentReadyForAcceptance": false,
+    "privateInputsAbsent": true,
+    "stage": "result"
+  },
+  "receiptSha256": {
+    "/private/tmp/p08-coordinator-27fcabdf-9bd5-4dff-84ef-9c9ce9cd1217/attempt.json": "a91c18e13d9f57d7bd0e1cf9df62e0933bcd3f4acac419fd3b85404ce6802982",
+    "/private/tmp/p08-coordinator-27fcabdf-9bd5-4dff-84ef-9c9ce9cd1217/work-result.json": "86eb3c2b87453924b9476115c594d95d5b5ef0d406c54d429a5770741c000a1f",
+    "/private/tmp/p08-coordinator-27fcabdf-9bd5-4dff-84ef-9c9ce9cd1217/closeout.json": "37ff64688b28de9828b2b2fc08cfbbdae336295a4d3aed6bae78fbbb29e59089",
+    "/private/tmp/p08-coordinator-27fcabdf-9bd5-4dff-84ef-9c9ce9cd1217/independent-closeout.json": "37ff64688b28de9828b2b2fc08cfbbdae336295a4d3aed6bae78fbbb29e59089",
+    "/private/tmp/p08-coordinator-27fcabdf-9bd5-4dff-84ef-9c9ce9cd1217/result.json": "0fba20f014383ff1526f557379806d6867efbf4eadad61ba4b647408b2dab488",
+    "/private/tmp/p08-coordinator-27fcabdf-9bd5-4dff-84ef-9c9ce9cd1217/journal.json": "89311fa0a5285f4a7be6868daf4dcda7b45989b78622ea315ecf49f0f96d5953",
+    "/private/tmp/p08-binding-recovery-bdb20cfb-e4f8-4f89-8e3e-7ce84a8f7464/recovery-result.json": "7b2fd9e6bbdb50271c146c6331882a836b7b7b57c862d849d8fa42fabef392d1",
+    "/private/tmp/p08-binding-recovery-bdb20cfb-e4f8-4f89-8e3e-7ce84a8f7464/resource-closeout.json": "cb524bb80fbd3f6723cf552f276e21639827ecf27ef8bc93e8d3102a701c9223",
+    "/private/tmp/p08-binding-recovery-bdb20cfb-e4f8-4f89-8e3e-7ce84a8f7464/purge-result.json": "4532220f461b91cafc556c481e8671d160d551b9b012dbde1ecccab46d2b38b4",
+    "/private/tmp/p08-current-external-4c80bc00-c2b4-4dcb-9940-a9b0306b2033/result.json": "b3a219689ae46c00fbca09257aadf423a5d318c8a9ad1417a87109fb49d8b4f4",
+    "/private/tmp/p08-current-external-4c80bc00-c2b4-4dcb-9940-a9b0306b2033/independent-closeout.json": "12f1b0605767070b5c5c4b8386718fc928480b45037a66509bc0b6aab3fcb230",
+    "/private/tmp/p08-public-review-bdb20cfb-e4f8-4f89-8e3e-7ce84a8f7464/result.json": "824bc2d2cb77571a42979a6285ac226f8d31ebd33ea001e704a6e2f11072b3ea"
+  },
+  "safeJournalProjection": {
+    "phase": "CLOSED",
+    "failure": "RUNTIME_IDENTITY_STATE_MISMATCH",
+    "preflightStage": "ACCESS_PREFLIGHT",
+    "unknown": [],
+    "residuals": [
+      "RUNTIME_FINAL",
+      "TRAFFIC_PRIVATE_PLANS"
+    ],
+    "runtimeAttempted": [
+      [
+        "version",
+        "signmons-staging-stripe-secret-key"
+      ],
+      [
+        "identity",
+        "signmons-calldesk-p07-runtime@signmons.iam.gserviceaccount.com"
+      ]
+    ],
+    "runtimeOwned": [
+      [
+        "version",
+        "signmons-staging-stripe-secret-key"
+      ]
+    ],
+    "runtimeCleanupAttempted": [
+      [
+        "identity",
+        "signmons-calldesk-p07-runtime@signmons.iam.gserviceaccount.com"
+      ],
+      [
+        "version",
+        "signmons-staging-stripe-secret-key"
+      ]
+    ],
+    "iamAttempted": [],
+    "keyCreateAttempted": false,
+    "authAttempted": false,
+    "authProofAccepted": false
+  },
+  "nativeCalls": {
+    "child": 1,
+    "cli": 94,
+    "https": 1,
+    "sql": 2
+  },
+  "qualification": {
+    "status": "CURRENT_EVIDENCE_OBSERVED",
+    "liveObserved": true,
+    "failure": null,
+    "residuals": []
+  },
+  "recoveryResourceCloseout": {
+    "residuals": [],
+    "verified": true
+  },
+  "privatePurge": {
+    "completedAt": 1795724139.7991612,
+    "onTime": true,
+    "operationId": "bdb20cfb-e4f8-4f89-8e3e-7ce84a8f7464",
+    "rawFilesAbsent": true,
+    "residuals": [],
+    "status": "PRIVATE_PURGE_VERIFIED"
+  },
+  "independentPrivateInventoryAbsent": true,
+  "ownedOperationProcessesAbsent": true,
+  "removedOwnedFiles": {
+    "/private/tmp/p08-terminal-launch-bdb20cfb-e4f8-4f89-8e3e-7ce84a8f7464.command": "a361d82001c3da9276a98ad653d866df3efd98786e07ff6f751f3b4a0e60d110",
+    "/private/tmp/r64-recovery-dispatcher.py": "4cb27fbc2d0ed7053b133962c2332e4d65b36aba5005955815b7085713964a36",
+    "/private/tmp/p08-attended-reference-bdb20cfb-e4f8-4f89-8e3e-7ce84a8f7464.json": "a79188d6600deada0d2e1276ffb1edff4db16edba07ae11e3916b4f8ca338d9a"
+  },
+  "browserOpened": false,
+  "ownerBreakRequested": true,
+  "inputCancellationRecord": "APP013_P08_R64_BREAK_CANCELLATION_20261126.json",
+  "retirementStillUnconfirmed": [
+    "RUNTIME_FINAL",
+    "TRAFFIC_PRIVATE_PLANS"
+  ],
+  "mainIdentityMismatchCause": "UNKNOWN",
+  "nextAction": "NO_REPLAY_OR_NEW_PROVIDER_ACTION; review retained evidence and bounded unresolved retirement checks when owner returns",
+  "acceptedMilestones": "4/8",
+  "section": "3A OPEN",
+  "newlyClosedR1": "0/27",
+  "scopeDeviation": "No new scope deviation; owner break handled with normal input interruption and original cleanup/purge."
+}
