@@ -115,5 +115,21 @@
     "architecture": "PASS",
     "whitespace": "PASS",
     "runtimeSuiteRerun": false
+  },
+  "recoveryDispatcherPreparation": {
+    "preparedAt": "2026-11-26T14:41:50.328216+00:00",
+    "path": "/private/tmp/r60-recovery-dispatcher.py",
+    "sha256": "0dedf89c0f82acfcee2c957bc08450e46e0e540815807e31ee62cd0669f3f258",
+    "retainedTemplateSha256": "90656c49d54865681d9eafbb2b892a35d3620c6c6f38512013862f94ffec4e77",
+    "changes": [
+      "R58 to R60, four occurrences",
+      "20261124 to 20261126, three occurrences"
+    ],
+    "algorithmChanged": false,
+    "astParse": "PASS",
+    "executionOrImportPerformed": false,
+    "actualRecoveryDecision": "PENDING_SEPARATE_OWNER_APPROVAL",
+    "providerCalls": 0,
+    "credentialReads": 0
   }
 }
