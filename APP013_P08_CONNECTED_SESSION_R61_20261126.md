@@ -1,0 +1,39 @@
+# R61 — connected Sandbox session preparation
+
+APP-013 / 3A / P08. **Local preparation only; proposed attendance and every exact external decision remain pending.** R60 expired after its long Terminal command was truncated before any recovery root or receipt appeared. Its counters are not established, its owned request/dispatcher were removed, and it cannot be replayed. This fresh packet uses the locally verified short Terminal dispatch reference. No scope deviation.
+
+The unchanged criterion is the same admitted job's $99 USD Sandbox Checkout, its authentic matching signed event/account/job/amount/currency, application payment-gate clearance, independent closeout and owner acceptance. Reuse the existing recovery, qualification, native entry, authentication, payment, bridge, browser opener and cleanup. No backend runtime, provider configuration, acceptance criterion or subsystem changes. ED2's disabled-endpoint observation is historical; current state and the historical R58 failed field remain UNKNOWN. R56 authentication remains UNKNOWN.
+
+## Source and existing proof
+
+Bind backend `b72ecb89f1907a25c988bbe3f33388bfdab77976`. Its only change from tested source `742bcb6` is the safe R59 verification receipt. Reuse the 557-test proof in `APP013_P08_R59_LOCAL_PACKET_READINESS_20261126.md`; no full suite is rerun or claimed as new. Preserve the unrelated `AGENTS.md` and historical renewal artifacts.
+
+Current qualification manifest is `6665c7e5fe9fa4f78af777b725417f2b77ac60616c37b68d0a77b96ca7c17ecf`, qualification SDK inventory is `ecd62311871d8d39cd2fc94a14b38a16b01a12032d7da04853226feacd6c71b2`, and native manifest is `2bef573fc894a0c9bc3213a22ada602b0d58e83a33862a440f0462f457b3ed08`. The reused harness invokes actual `BindingRecoveryCapability.prepare`, `packet.construct_values`, native `Capability` and admission/settling code with synthetic private fields and an in-memory proposed decision. It verifies current source/SDK/configuration bindings, performs no external dispatch, and removes its temporary proof roots.
+
+## Proposed window and finite limits
+
+November 26 Eastern: start **10:45 a.m.**, private purge **11:45**, requested attendance through **11:55**; none of this new attendance is confirmed. Recovery must start before **10:50**, reads end **10:54**, session closeout ends **10:59**. Qualification approval must occur before **10:57**, reads end **11:02**, closeout ends **11:07**. Native approval and actual dispatch must both occur strictly before **11:00**. Payment/child entry ends **11:31**, native work **11:32**, independent cleanup **11:43**, and private purge **11:45**. UTC start/purge are `15:45`/`16:45`; the manual native cutoff is `16:00`.
+
+The actual-controller proof uses latest manual native launch minus one second, plus 480 seconds setup and 420 seconds settling, leaving 961 seconds. Preserve 660 seconds cleanup, 120 seconds purge, and the existing 3,600-second outer/inner retention. The latest-launch setup margin is only one second beyond that assumption. Delays may cause a safe stop; do not extend cutoffs, compress cleanup or treat the later program waiter cutoff as permission to launch late.
+
+Limits remain recovery **2 CLI / 3 read-only SQL**; qualification **27 CLI / 20 HTTPS / 4 SQL / 1 cache**; native **192 CLI / 100 HTTPS / 60 SQL / 6 child / 200 child requests**. SDK refresh/internal authentication retry/cache exceptions and exact temporary runtime/IAM/key/account/webhook actions require their separate explicit approvals. The $0 additional allowance is not a hard cloud billing cap. No real charge, refund, booking, customer/support contact, production deployment or new infrastructure.
+
+TR33 proved credential coverage only beyond `16:15 UTC`; that is insufficient evidence for R61's `16:45` purge horizon. TR34 exact-template preparation and actual inert executor preflight passed; its exact sign-in decision, current horizon proof and independent closeout remain separate pending prerequisites. No additional cache read or sign-in follows from this card.
+
+## Terminal delivery, identity and retention
+
+Reuse `APP013_P08_SHORT_TERMINAL_DISPATCH_TEMPLATE_20261126.py`, SHA256 `751bb5f4a9f0b6545e7f611c1e99f4d34e893f9bd04b316f427cde43601c852f`. `APP013_P08_TERMINAL_TRANSPORT_FINAL_VERIFICATION_20261126.json` proves actual harmless Terminal delivery of 2,389/2,411-byte commands via 68/79-byte references, all 1,728 argument bytes and cwd, failure sequencing, exclusive collision refusal and both cutoff refusals. Owned test windows/processes/files were closed or removed. This proves local delivery, not credential/provider readiness. Before any live dispatch, bind and review the exact R61 command, current authority/source/pins/clock and owned command-file cleanup; no approval-bound dispatcher, command file or operation is created by this packet preparation.
+
+The separately prepared, unexecuted R61 dispatcher is `/private/tmp/r61-recovery-dispatcher.py`, mode `0600`, SHA256 `ac81976d61557f7d10393fef86c154a07d0227a6492d72db37fca48bc527602f`. It retains `PENDING_EXACT_R61_RECOVERY_APPROVAL`. Its future exclusive command file is `/private/tmp/p08-terminal-launch-<recoveryId>.command`; the implementer must retain the returned exact path/hash and independently remove only that hash-matched owned file, plus the exact owned dispatcher, on completion, error or abandonment. This manual cleanup responsibility is not claimed as automatic script enforcement. No command file has been created.
+
+Use only fresh R61 public IDs in `APP013_P08_CONNECTED_SPEC_R61_20261126.json` and `APP013_P08_BINDING_RECOVERY_PACKET_R61_20261126.json`. The recovery decision draft is explicitly nonauthorizing. Existing same-date decisions for R60 cannot match R61's fresh scope and provide no authority. Qualification and native decisions remain separately committed after their safe reviews.
+
+Dynamic resource and same-job payment bindings come from the actual existing validators. Neon password and pinned `we_` destination ID remain hidden in standalone Terminal under the existing retention contract. No private value, raw provider payload or credential is included in these artifacts. The owner must confirm current Terminal/browser readiness, no overlap and fresh attendance before a new prompt. R61 uses a new owned Terminal window; the expired R60 closeout record remains historical. The guarded one-shot incognito opener runs only after approved native execution reaches ATTENDED; Checkout remains owner-operated. Independent resource/session/endpoint closeout and private purge remain required after failure or interruption.
+
+## Checklist, owners and finish
+
+- COMPLETE: current source/manifest/SDK bindings and reused 557-test evidence; fresh public IDs/window and actual synthetic recovery/native/admission/settling proof; corrected Terminal transport evidence linked; independent R61 packet review; TR34 exact-template preparation/preflight.
+- PENDING: final governance checks; owner fresh attendance/Terminal/browser/no-overlap confirmation; exact sign-in, recovery, qualification and native decisions.
+- UNKNOWN: credential horizon beyond purge, private bindings, effective permissions, current provider/account/runtime/endpoint state, authentication, same-job payment, authentic event, gate, live cleanup and owner acceptance.
+
+The implementer owns preparation, actual launch comparison, supervision and independent closure. The owner and cloud/database/Stripe custodians own attendance, external decisions, hidden inputs and manual Checkout. Observable finish is the same-job authentic payment/event/application evidence with independent closeout, or a bounded truthful stop. A helper, passing proof, redirect or receipt alone does not accept 3A. Rollback remains independent closure/purge; no replay or automatic mutation retry. Accepted milestones remain **4/8**, **3A OPEN**, R1 newly closed **0/27**.
