@@ -1,0 +1,56 @@
+{
+  "status": "LOCAL_BROWSER_ROUTING_REVIEW_ONLY",
+  "observedAt": "2026-11-26T16:09:43.569244+00:00",
+  "sourceCommit": "b72ecb89f1907a25c988bbe3f33388bfdab77976",
+  "ownerReport": "No sign-in page appeared during TR34",
+  "tr34Outcome": "SIGNIN_UNCONFIRMED",
+  "tr34RootCause": "UNKNOWN",
+  "historicalTr34Handler": "NOT_RECORDED",
+  "chromeInstalled": true,
+  "sdkChildBrowserOverride": "ABSENT_BY_EXPLICIT_ENVIRONMENT_CONSTRUCTION",
+  "sdkBrowserOpenResult": "IGNORED_BY_SDK",
+  "sdkCallbackWait": "NO_INTERNAL_TIMEOUT_AT_REVIEWED_BOUNDARY",
+  "supervisorBoundSeconds": 300,
+  "sdkOutputDisposition": "OS_DEVNULL",
+  "sourceHashes": {
+    "qualificationEnvironment": "de3118e66897e7c2480f5f02245e54c3152bbe0400c085e1102299bed29a0572",
+    "sdkFlow": "2969c14764c8f0ec8bc1b4862e086f557815f6efbdfb5a4552954ad5b3152de6",
+    "pythonBrowser": "006f62a80308c86408c06ac4425a834a0d7d687841be5257ab5db74d4976a016"
+  },
+  "sourceLocations": {
+    "environment": "qualification_launch.py:1280-1291",
+    "sdkOpenAndWait": "credentials/flow.py:341-348",
+    "defaultController": "webbrowser.py:479-487",
+    "browserPreferenceAndFallback": "webbrowser.py:554-573;91-95",
+    "macOsBrowserDispatch": "webbrowser.py:607-653"
+  },
+  "browserLaunched": false,
+  "credentialReads": 0,
+  "providerCalls": 0,
+  "newSigninAuthorized": false,
+  "scopeDeviation": false,
+  "storedLaunchServicesHttpAndHttpsPreference": "com.openai.atlas",
+  "currentApiResolvedHttpAndHttpsHandler": "com.apple.Safari",
+  "liveResolutionMethod": "NSWorkspace.URLForApplicationToOpenURL with synthetic example.invalid HTTP/HTTPS URLs; metadata only, no URL opened",
+  "sandboxLookup": "UNAVAILABLE_IN_SANDBOX_CONTEXT_NOT_BROWSER_FAILURE",
+  "routingRecordedAt": "2026-11-26T16:12:29.819729+00:00",
+  "independentReview": {
+    "status": "PASS",
+    "recordedAt": "2026-11-26T16:13:40.508269+00:00",
+    "allSourceHashesMatched": true,
+    "proposalScopeAndBoundsReviewed": true,
+    "historicalCauseRemainsUnknown": true
+  },
+  "repositoryChecks": {
+    "frozenBaseline": "PASS",
+    "fullConsistency": "PASS",
+    "governanceSafeguards": {
+      "passed": 25,
+      "failed": 0
+    },
+    "backendWrapper": "PASS",
+    "architecture": "PASS",
+    "whitespace": "PASS",
+    "newRuntimeTests": false
+  }
+}
