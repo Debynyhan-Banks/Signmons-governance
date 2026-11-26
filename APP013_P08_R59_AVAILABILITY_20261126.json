@@ -1,0 +1,12 @@
+{
+  "owner": "Debynyhan Banks",
+  "availabilityConfirmed": true,
+  "attendanceStart": "2026-11-26T13:45:00Z",
+  "attendanceThrough": "2026-11-26T14:55:00Z",
+  "standaloneTerminalReady": true,
+  "browserReady": true,
+  "noOverlappingOperationConfirmed": true,
+  "externalActionAuthorized": false,
+  "paymentAuthorized": false,
+  "basis": "Owner answer to November26 availability question; availability only"
+}

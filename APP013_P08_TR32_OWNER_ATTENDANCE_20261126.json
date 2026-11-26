@@ -1,0 +1,14 @@
+{
+  "owner": "Debynyhan Banks",
+  "source": "explicit owner confirmation in this conversation, relayed by parent agent",
+  "ownerResponseSummary": "Available 8:45\u20139:55 a.m. Eastern November 26; Terminal/browser ready; no overlap.",
+  "recordedAt": "2026-11-26T13:50:54Z",
+  "attendanceStart": "2026-11-26T13:45:00Z",
+  "attendanceThrough": "2026-11-26T14:55:00Z",
+  "browserReady": true,
+  "terminalReady": true,
+  "noOverlappingSignmonsOperation": true,
+  "proposalSha256": "97c7dd039c94e85fbf7e600837db44c7344acdc625c04e775da91e592f9d3c40",
+  "signinAuthorized": false,
+  "recoveryQualificationNativeAuthorized": false
+}
