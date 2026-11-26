@@ -1,0 +1,376 @@
+{
+  "status": "R62_STOPPED_HISTORICAL_TAG_MUTATION_UNKNOWN",
+  "recordedAt": "2026-11-26T18:18:04.882703+00:00",
+  "sourceCommit": "b72ecb89f1907a25c988bbe3f33388bfdab77976",
+  "nativeDecisionCommit": "9748a28",
+  "nativeResultUnchanged": {
+    "authProofReady": false,
+    "authenticationObserved": false,
+    "childResultSha256": null,
+    "liveAuthorization": true,
+    "operationId": "bc814e95-a864-4ca4-99b7-5fd31191cb40",
+    "paymentObserved": false,
+    "paymentReadyForAcceptance": false,
+    "privateInputsAbsent": true,
+    "residuals": [
+      "RUNTIME:tag:app013-p07-atomic"
+    ],
+    "status": "ENTRY_CONTAINMENT_UNCONFIRMED"
+  },
+  "workResultUnchanged": {
+    "authProofReady": false,
+    "liveAuthorization": true,
+    "operationId": "bc814e95-a864-4ca4-99b7-5fd31191cb40",
+    "paymentObserved": false,
+    "paymentReadyForAcceptance": false,
+    "privateInputsAbsent": false,
+    "residuals": [
+      "RUNTIME:tag:app013-p07-atomic",
+      "RUNTIME_identity:signmons-calldesk-p07-runtime@signmons.iam.gserviceaccount.com"
+    ],
+    "status": "ENTRY_AWAITING_INDEPENDENT_CLOSEOUT"
+  },
+  "connectedResultUnchanged": {
+    "commandExits": {
+      "closeoutExit": 2,
+      "workExit": 2
+    },
+    "decisionForReview": {},
+    "native": {
+      "authProofReady": false,
+      "authenticationObserved": false,
+      "childResultSha256": null,
+      "liveAuthorization": true,
+      "operationId": "bc814e95-a864-4ca4-99b7-5fd31191cb40",
+      "paymentObserved": false,
+      "paymentReadyForAcceptance": false,
+      "privateInputsAbsent": true,
+      "residuals": [
+        "RUNTIME:tag:app013-p07-atomic"
+      ],
+      "status": "ENTRY_CONTAINMENT_UNCONFIRMED"
+    },
+    "paymentReadyForAcceptance": false,
+    "privateInputsAbsent": true,
+    "stage": "result"
+  },
+  "receiptSha256": {
+    "/private/tmp/p08-coordinator-bc814e95-a864-4ca4-99b7-5fd31191cb40/attempt.json": "72e069e02c8fd3f2500f74fabb907181246b577fcdd40c59e04b8b73ae99348e",
+    "/private/tmp/p08-coordinator-bc814e95-a864-4ca4-99b7-5fd31191cb40/work-result.json": "c44e90eb266c4ebc678f5a97a61d269e601bb8e66c7e1645d20ddf74aef26a56",
+    "/private/tmp/p08-coordinator-bc814e95-a864-4ca4-99b7-5fd31191cb40/closeout.json": "3fa56f16ca34278b965399c53ab180d9790d0511c64880d58ca620e9d4f074e8",
+    "/private/tmp/p08-coordinator-bc814e95-a864-4ca4-99b7-5fd31191cb40/independent-closeout.json": "3fa56f16ca34278b965399c53ab180d9790d0511c64880d58ca620e9d4f074e8",
+    "/private/tmp/p08-coordinator-bc814e95-a864-4ca4-99b7-5fd31191cb40/result.json": "1a16ca65365a4fa0c74500015cec23735f6ed09202b25171cf4412955fd14b38",
+    "/private/tmp/p08-current-external-1e3e334d-696a-4ffa-821f-11efdc7ed4a9/result.json": "42ab00e641ce15a75de8bd9737fefa46e96e2f7b7f6872fb1d8c461385da9668",
+    "/private/tmp/p08-current-external-1e3e334d-696a-4ffa-821f-11efdc7ed4a9/independent-closeout.json": "f18151c384d1851b88100fb83d2e80096193fb00272352e197c791ba2c0f571b",
+    "/private/tmp/p08-binding-recovery-e968049f-3478-4767-82ae-261d5296e8c3/recovery-result.json": "fce6565b0d9ee0759ef1e23bd5a7d8d38097ade317a75cb4c96f9e4b4b57ec86",
+    "/private/tmp/p08-binding-recovery-e968049f-3478-4767-82ae-261d5296e8c3/resource-closeout.json": "cb524bb80fbd3f6723cf552f276e21639827ecf27ef8bc93e8d3102a701c9223",
+    "/private/tmp/p08-binding-recovery-e968049f-3478-4767-82ae-261d5296e8c3/purge-result.json": "f49099255d68feab0c222454c02d0b2c78379e3adb5bc4cd710d7f0523e44817",
+    "/private/tmp/p08-public-review-e968049f-3478-4767-82ae-261d5296e8c3/result.json": "7d9ee243dd1d7b2d8c503cf4dd6b3ba6f6d0671379013dec374f37986968e871"
+  },
+  "safeJournalProjection": {
+    "phase": "CLOSED",
+    "failure": "LOCAL_ADAPTER_OR_SOURCE_STOP",
+    "unknown": [
+      "RUNTIME:tag:app013-p07-atomic"
+    ],
+    "residuals": [
+      "RUNTIME:tag:app013-p07-atomic"
+    ],
+    "runtimeAttempted": [
+      [
+        "version",
+        "signmons-staging-stripe-secret-key"
+      ],
+      [
+        "identity",
+        "signmons-calldesk-p07-runtime@signmons.iam.gserviceaccount.com"
+      ],
+      [
+        "version",
+        "signmons-staging-p07-payment-database-url"
+      ],
+      [
+        "version",
+        "signmons-staging-p07-stripe-webhook-secret"
+      ],
+      [
+        "version",
+        "signmons-staging-p07-disabled-openai-key"
+      ],
+      [
+        "version",
+        "signmons-staging-p07-admin-token"
+      ],
+      [
+        "version",
+        "signmons-staging-p07-conversation-key"
+      ],
+      [
+        "version",
+        "signmons-staging-p07-technician-link-key"
+      ],
+      [
+        "secretBinding",
+        "signmons-staging-p07-payment-database-url"
+      ],
+      [
+        "secretBinding",
+        "signmons-staging-p07-stripe-webhook-secret"
+      ],
+      [
+        "secretBinding",
+        "signmons-staging-p07-disabled-openai-key"
+      ],
+      [
+        "secretBinding",
+        "signmons-staging-p07-admin-token"
+      ],
+      [
+        "secretBinding",
+        "signmons-staging-p07-conversation-key"
+      ],
+      [
+        "secretBinding",
+        "signmons-staging-p07-technician-link-key"
+      ],
+      [
+        "secretBinding",
+        "signmons-staging-stripe-secret-key"
+      ],
+      [
+        "tag",
+        "app013-p07-atomic"
+      ]
+    ],
+    "runtimeOwned": [
+      [
+        "version",
+        "signmons-staging-stripe-secret-key"
+      ],
+      [
+        "identity",
+        "signmons-calldesk-p07-runtime@signmons.iam.gserviceaccount.com"
+      ],
+      [
+        "version",
+        "signmons-staging-p07-payment-database-url"
+      ],
+      [
+        "version",
+        "signmons-staging-p07-stripe-webhook-secret"
+      ],
+      [
+        "version",
+        "signmons-staging-p07-disabled-openai-key"
+      ],
+      [
+        "version",
+        "signmons-staging-p07-admin-token"
+      ],
+      [
+        "version",
+        "signmons-staging-p07-conversation-key"
+      ],
+      [
+        "version",
+        "signmons-staging-p07-technician-link-key"
+      ],
+      [
+        "secretBinding",
+        "signmons-staging-p07-payment-database-url"
+      ],
+      [
+        "secretBinding",
+        "signmons-staging-p07-stripe-webhook-secret"
+      ],
+      [
+        "secretBinding",
+        "signmons-staging-p07-disabled-openai-key"
+      ],
+      [
+        "secretBinding",
+        "signmons-staging-p07-admin-token"
+      ],
+      [
+        "secretBinding",
+        "signmons-staging-p07-conversation-key"
+      ],
+      [
+        "secretBinding",
+        "signmons-staging-p07-technician-link-key"
+      ],
+      [
+        "secretBinding",
+        "signmons-staging-stripe-secret-key"
+      ]
+    ],
+    "runtimeCleanupAttempted": [
+      [
+        "tag",
+        "app013-p07-atomic"
+      ],
+      [
+        "secretBinding",
+        "signmons-staging-stripe-secret-key"
+      ],
+      [
+        "secretBinding",
+        "signmons-staging-p07-technician-link-key"
+      ],
+      [
+        "secretBinding",
+        "signmons-staging-p07-conversation-key"
+      ],
+      [
+        "secretBinding",
+        "signmons-staging-p07-admin-token"
+      ],
+      [
+        "secretBinding",
+        "signmons-staging-p07-disabled-openai-key"
+      ],
+      [
+        "secretBinding",
+        "signmons-staging-p07-stripe-webhook-secret"
+      ],
+      [
+        "secretBinding",
+        "signmons-staging-p07-payment-database-url"
+      ],
+      [
+        "version",
+        "signmons-staging-p07-technician-link-key"
+      ],
+      [
+        "version",
+        "signmons-staging-p07-conversation-key"
+      ],
+      [
+        "version",
+        "signmons-staging-p07-admin-token"
+      ],
+      [
+        "version",
+        "signmons-staging-p07-disabled-openai-key"
+      ],
+      [
+        "version",
+        "signmons-staging-p07-stripe-webhook-secret"
+      ],
+      [
+        "version",
+        "signmons-staging-p07-payment-database-url"
+      ],
+      [
+        "identity",
+        "signmons-calldesk-p07-runtime@signmons.iam.gserviceaccount.com"
+      ],
+      [
+        "version",
+        "signmons-staging-stripe-secret-key"
+      ]
+    ],
+    "iamAttempted": [],
+    "iamOwned": [],
+    "authAttempted": false,
+    "keyCreateAttempted": false,
+    "authProofAccepted": false,
+    "nativeCalls": {
+      "child": 1,
+      "cli": 178,
+      "https": 1,
+      "sql": 5
+    },
+    "payment": {
+      "phase": "QUALIFIED",
+      "outcome": "NOT_OBSERVED",
+      "enableIntent": false,
+      "endpointDisabled": true,
+      "bridgeClosed": true,
+      "endpointCalls": 1,
+      "secretReads": 1,
+      "residuals": [],
+      "failureCode": null
+    },
+    "childObservations": [
+      {
+        "childCall": 1,
+        "code": "NONE",
+        "journalMerge": "ACCEPTED",
+        "mode": "--payment-preflight",
+        "processOutcome": "RETURNED",
+        "stage": "RESULT"
+      }
+    ]
+  },
+  "qualification": {
+    "status": "CURRENT_EVIDENCE_OBSERVED",
+    "liveObserved": true,
+    "failure": null,
+    "residuals": []
+  },
+  "recoveryPurge": {
+    "completedAt": 1795716735.005363,
+    "onTime": true,
+    "operationId": "e968049f-3478-4767-82ae-261d5296e8c3",
+    "rawFilesAbsent": true,
+    "residuals": [],
+    "status": "PRIVATE_PURGE_VERIFIED"
+  },
+  "recoveryResourceCloseout": {
+    "residuals": [],
+    "verified": true
+  },
+  "independentPrivateAbsence": {
+    "allAbsent": true,
+    "paths": [
+      "/private/tmp/p08-coordinator-bc814e95-a864-4ca4-99b7-5fd31191cb40/envelope.json",
+      "/private/tmp/p08-coordinator-bc814e95-a864-4ca4-99b7-5fd31191cb40/owned-receipt.json",
+      "/private/tmp/p08-coordinator-bc814e95-a864-4ca4-99b7-5fd31191cb40/payment-bootstrap.json",
+      "/private/tmp/p08-coordinator-bc814e95-a864-4ca4-99b7-5fd31191cb40/key-lifecycle-private.json",
+      "/private/tmp/p08-coordinator-bc814e95-a864-4ca4-99b7-5fd31191cb40/key-lifecycle-private.json.next",
+      "/private/tmp/p08-binding-recovery-e968049f-3478-4767-82ae-261d5296e8c3/recovered-inputs.json",
+      "/private/tmp/p08-current-input-1e3e334d-696a-4ffa-821f-11efdc7ed4a9/envelope.json"
+    ]
+  },
+  "terminalBusyObserved": false,
+  "ownedTerminalWindowId": 39837,
+  "ownedLaunchFilesRemoved": [
+    "/private/tmp/p08-terminal-launch-e968049f-3478-4767-82ae-261d5296e8c3.command",
+    "/private/tmp/r62-recovery-dispatcher.py"
+  ],
+  "browserOpened": false,
+  "authenticationAttempted": false,
+  "paymentAttempted": false,
+  "cleanupInterpretation": {
+    "basis": "SOURCE_CONTROL_FLOW_AND_IMMUTABLE_INDEPENDENT_RESULT_NOT_NEW_PROVIDER_READ",
+    "tagRemovalAndRetirementChecksPassed": true,
+    "originalUncertaintyLatchPreserved": true,
+    "reason": "Colon-form RUNTIME:tag is copied from original unknown; current cleanup failures use RUNTIME_tag and RUNTIME_FINAL, neither appears after completed independent closeout",
+    "historicalTagMutationCause": "UNKNOWN_NO_PER_COMMAND_DIAGNOSTIC_RETAINED",
+    "source": "evidence/APP-013/p08-live-binder-local-20261029/source/coordinator.py:210-250"
+  },
+  "retryAuthorized": false,
+  "additionalProviderReads": 0,
+  "additionalCredentialReads": 0,
+  "acceptedMilestones": "4/8",
+  "section3A": "OPEN",
+  "R1NewlyClosed": "0/27",
+  "independentReview": {
+    "status": "PASS",
+    "reviewedAt": "2026-11-26T18:23:09.377523+00:00",
+    "originalResultsPreserved": true,
+    "latchVersusCleanupDistinction": "PASS_SOURCE_BASED_INFERENCE_EXPLICIT",
+    "localPrivateAndLauncherAbsence": "PASS",
+    "additionalExternalActions": false
+  },
+  "localChecks": {
+    "frozenBaseline": "PASS",
+    "completeConsistency": "PASS",
+    "governanceSafeguards": 25,
+    "backendWrapper": "PASS",
+    "architecture": "PASS",
+    "bothWhitespace": "PASS",
+    "newRuntimeTests": false
+  }
+}
