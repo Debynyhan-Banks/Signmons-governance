@@ -1,0 +1,21 @@
+{
+  "status": "TR33_VALID_THROUGH_CUTOFF_CLOSED",
+  "verifiedAt": "2026-11-26T15:17:25.695873+00:00",
+  "sourceCommit": "b72ecb89f1907a25c988bbe3f33388bfdab77976",
+  "decisionCommit": "448be6eb1f16983a904552ca6c01f593e99f251a",
+  "safeResultSha256": "309e9c3f095b835cad9dcd331049b703894031a24ad9ac1d041f4b6fc2d54f62",
+  "exitCode": 0,
+  "credentialCoverageStrictlyBeyond": "2026-11-26T16:15:00Z",
+  "ownerConfirmedBrowserCompletion": true,
+  "independentOwnedPidAndGroupAbsent": true,
+  "configurationUnchanged": true,
+  "ownedFilesRemoved": [
+    "signmons-tr33-owner-signin.py",
+    "r60-tr21-template.py"
+  ],
+  "credentialValuesRetained": false,
+  "existingSdkCachePreserved": true,
+  "additionalProviderCalls": 0,
+  "localResiduals": [],
+  "paymentAuthorized": false
+}
