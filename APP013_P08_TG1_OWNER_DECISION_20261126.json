@@ -1,0 +1,13 @@
+{
+  "owner": "Debynyhan Banks",
+  "recordedAt": "2026-11-26T18:28:00.107425+00:00",
+  "ownerStatement": "Approve TG1 local diagnostics and tests",
+  "decision": "APPROVE_TG1_LOCAL_DIAGNOSTICS_AND_TESTS",
+  "proposalCommit": "eeadceb",
+  "proposalPath": "APP013_P08_TG1_TAG_FAILURE_DIAGNOSTIC_LOCAL_PROPOSAL_20261126.md",
+  "proposalSha256": "d36c971d11339f0fea6bd5b35a9c465be7e0c7c05cb759c3caeee0fe32f93109",
+  "sourceCommit": "b72ecb89f1907a25c988bbe3f33388bfdab77976",
+  "scope": "Three existing source/test files and eight current manifests; seven fixed tag-only error categories with preserved commands/timeouts/retries/predicates/cleanup",
+  "externalActionsAuthorized": false,
+  "credentialsProviderSigninPaymentAuthorized": false
+}
