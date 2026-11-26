@@ -1,0 +1,22 @@
+{
+  "status": "APPROVAL_BOUND_NOT_LAUNCHED",
+  "recordedAt": "2026-11-26T18:59:30.973518+00:00",
+  "approvalCommit": "8f4049373c651db36452ce802c3a1030f52ec3ea",
+  "sourceCommit": "fabd4561a2a25f4618aa7d2395fbba1eff1c3795",
+  "preparedSha256": "00bf6da49ecc3a33b37fadc11252233433948bb33caa47962be36891134a38f1",
+  "boundExecutorSha256": "206a5bf3a88076a711067b092b0fed9e4ccdd1c64430a17ed7f11938336a6831",
+  "onlyChange": "PENDING_EXACT_TR36_APPROVAL replaced by actual approval commit",
+  "startNotBefore": "2026-11-26T19:15:00Z",
+  "cutoff": "2026-11-26T19:18:00Z",
+  "closeoutEnd": "2026-11-26T19:25:00Z",
+  "executorPath": "/private/tmp/signmons-tr36-owner-signin.py",
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "approvedPreflight": {
+    "status": "PREFLIGHT_VERIFIED_NO_OPERATION_RESERVED",
+    "recordedAt": "2026-11-26T19:00:16.777491+00:00",
+    "providerCalls": 0,
+    "credentialStoresRead": false,
+    "operationReserved": false
+  }
+}
