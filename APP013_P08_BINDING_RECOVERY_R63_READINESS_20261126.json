@@ -1,0 +1,157 @@
+{
+  "status": "LOCAL_PREPARED_QUALIFICATION_ONLY_NOT_EXECUTION_READY",
+  "sourceCommit": "fabd4561a2a25f4618aa7d2395fbba1eff1c3795",
+  "verifiedAt": "2026-11-26T18:51:24.114130+00:00",
+  "recoveryStaticPrepare": "PASS_IN_MEMORY_PROPOSED_AUTHORITY_NO_DISPATCH",
+  "nativeCapability": "PASS_EXACT_PUBLIC_SPEC_PROOF_ONLY_SYNTHETIC_PRIVATE_FIELDS",
+  "ct5ActualAdmissionAndSettle": "PASS_LATEST_MANUAL_LAUNCH_PLUS_480_SECONDS_SETUP",
+  "syntheticMonotonicWaitSeconds": 420,
+  "postWaitReserveSecondsAtLatestLaunch": 961.0,
+  "latestNativeLaunch": "2026-11-26T19:30:00Z",
+  "latestNativeLaunchEnforcement": "IMPLEMENTER_CHECK_BEFORE_COMMIT_OR_DISPATCH_NOT_PROGRAM_CUTOFF",
+  "nativeCleanupReserveSeconds": 660,
+  "purgeReserveSeconds": 120,
+  "outerAndInnerRetentionSeconds": 3600,
+  "temporaryProofRootRemoved": true,
+  "attemptCreated": false,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "liveAuthorityCreated": false,
+  "nativeManifestSha256": "c7314cb29c41554fdfa22313f528aa2211b0fc8eafb509e20071fa7c5042971c",
+  "qualificationManifestSha256": "6665c7e5fe9fa4f78af777b725417f2b77ac60616c37b68d0a77b96ca7c17ecf",
+  "sdkFiles": 43,
+  "ownerAttendanceRequestedThrough": "2026-11-26T20:25:00Z",
+  "ownerAttendanceConfirmed": false,
+  "unknown": [
+    "fresh private bindings and exact destination input",
+    "current effective access and provider/account state",
+    "credential coverage beyond purge",
+    "authentication exchange/payment/event/gate",
+    "live tag command outcome despite locally verified TG1 categories",
+    "actual Google page delivery",
+    "new live cleanup and owner acceptance"
+  ],
+  "historicalR56AuthOutcome": "UNKNOWN_UNCHANGED",
+  "responsibleRoles": [
+    "implementer",
+    "owner",
+    "cloud custodian",
+    "database custodian",
+    "Stripe custodian"
+  ],
+  "localProofScriptSha256": "7fd2959f88a8104a6311867af91efacd46e137a7f0673b664513482b7c73c679",
+  "localProofCommand": [
+    "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+    "-I",
+    "-B",
+    "/private/tmp/r63-local-prepare.py"
+  ],
+  "reusedProof": {
+    "tg1": "APP013_P08_TG1_LOCAL_VALIDATION_20261126.md",
+    "backendVerification": "evidence/APP-013/p08-connected-packet-20261110/tg1-local-20261126/verification.json",
+    "sha256": "efbe6311e14e1aab083d269ea610fd2e34fd46ca593de6cd48450c02c66c2efe",
+    "freshRuntimeTestSuite": false,
+    "databaseFixtureRun": false
+  },
+  "operationRootsAbsent": true,
+  "commandFileAbsent": true,
+  "localBindingComparison": "PASS: source updates to approved TG1; four fresh IDs and timestamps +75 minutes; same manifest, pins and limits",
+  "historicalR62": "CONSUMED_ORIGINAL_TAG_CAUSE_UNKNOWN_INDEPENDENT_RETIREMENT_AND_PURGE_RECORDED",
+  "smallestExistingSequence": "Sign-in prerequisite, recovery, then read-only current-evidence qualification. Native mode is separately approved; existing preflight mode cannot prove forward tag mutation. No isolated tag runner added.",
+  "unboundDispatcher": {
+    "path": "/private/tmp/r63-recovery-dispatcher.py",
+    "sha256": "3836a85e6f91cd4f75db884b9b14b8b8e4554eee39bb9b2a714ecfef2b2d8a7e",
+    "mode": "0600",
+    "template": "APP013_P08_SHORT_TERMINAL_DISPATCH_TEMPLATE_20261126.py",
+    "templateSha256": "751bb5f4a9f0b6545e7f611c1e99f4d34e893f9bd04b316f427cde43601c852f",
+    "constantsOnly": "Four operation-name bindings R60 to R63; historical docstring and behavior unchanged",
+    "approval": "PENDING_EXACT_R63_RECOVERY_APPROVAL",
+    "futureOwnedCommand": "/private/tmp/p08-terminal-launch-014f8d55-ac6f-4837-8ac1-bee8fbf874d4.command",
+    "cleanupOwner": "IMPLEMENTER_HASH_MATCHED_REMOVAL_AFTER_CLOSURE_OR_ABANDONMENT"
+  },
+  "signInPreparation": {
+    "operation": "TR36",
+    "proposal": "APP013_P08_TR36_OWNER_SIGNIN_PROPOSAL_20261126.md",
+    "readiness": "APP013_P08_TR36_SOURCE_READINESS_20261126.json",
+    "proposalSha256": "98103e0e500b8a28c81f2c5d50b34ab0ce179d1142e0ec7fa7a8adb1c6f10d88",
+    "preparedExecutorSha256": "00bf6da49ecc3a33b37fadc11252233433948bb33caa47962be36891134a38f1",
+    "actualExecutorPreflight": "PASS_INERT_PROPOSED_AUTHORITY_ATTENDANCE_ACTUAL_AND_PROPOSED_CLOCK_NO_EXECUTE",
+    "approved": false,
+    "attendanceConfirmed": false
+  },
+  "review": {
+    "status": "ROOT_SOURCE_AND_INTERFACE_REVIEW_PASS",
+    "independentReview": "PRIOR_TG1_TEMPLATE_AND_TERMINAL_REVIEWS_REUSED; no new independent review claimed"
+  },
+  "noNewScopeDeviation": true,
+  "prerequisiteTrace": [
+    {
+      "prerequisite": "Output contracts, serialization, missing/null/type and safe errors",
+      "sourceCommit": "fabd4561a2a25f4618aa7d2395fbba1eff1c3795",
+      "verifiedAt": "2026-11-26T18:51:24.114130+00:00",
+      "evidence": "TG1 exact original-predicate/SDK controls and native/packet/dependency tests",
+      "result": "PASS_LOCAL; actual provider responses UNKNOWN",
+      "responsibleOwner": "implementer"
+    },
+    {
+      "prerequisite": "Dynamic configuration, resource pins and identity",
+      "sourceCommit": "fabd4561a2a25f4618aa7d2395fbba1eff1c3795",
+      "verifiedAt": "2026-11-26T18:51:24.114130+00:00",
+      "evidence": "Actual recovery.prepare, construct_values, native Capability and SDK/source checks with synthetic private values",
+      "result": "PASS_LOCAL; private bindings/effective permissions/API/key usability UNKNOWN",
+      "responsibleOwner": "implementer and cloud/database/Stripe custodians"
+    },
+    {
+      "prerequisite": "Timing, concurrency, interruption and private retention",
+      "sourceCommit": "fabd4561a2a25f4618aa7d2395fbba1eff1c3795",
+      "verifiedAt": "2026-11-26T18:51:24.114130+00:00",
+      "evidence": "Actual admission/420-second settling proof; 961 seconds remaining, 660 cleanup,120 purge; reused concurrency/recovery tests",
+      "result": "PASS_LOCAL; manual launch cutoff19:30Z; live closure UNKNOWN",
+      "responsibleOwner": "implementer"
+    },
+    {
+      "prerequisite": "Terminal delivery and browser preference",
+      "sourceCommit": "fabd4561a2a25f4618aa7d2395fbba1eff1c3795",
+      "verifiedAt": "2026-11-26T18:51:24.114130+00:00",
+      "evidence": "Committed short-dispatch and Chrome-first templates; prior delivery/cleanup evidence; TR36 actual inert preflight",
+      "result": "PASS_LOCAL; current owner readiness and Google page delivery UNKNOWN",
+      "responsibleOwner": "implementer and owner"
+    },
+    {
+      "prerequisite": "Credential horizon and explicit authority",
+      "sourceCommit": "fabd4561a2a25f4618aa7d2395fbba1eff1c3795",
+      "verifiedAt": "2026-11-26T18:51:24.114130+00:00",
+      "evidence": "TR36 sign-in proposal and source readiness; no cache read",
+      "result": "PENDING_EXACT_OWNER_DECISION; horizon beyond20:15Z UNKNOWN",
+      "responsibleOwner": "owner credential custodian"
+    },
+    {
+      "prerequisite": "Finite finish/exclusions and independent cleanup",
+      "sourceCommit": "fabd4561a2a25f4618aa7d2395fbba1eff1c3795",
+      "verifiedAt": "2026-11-26T18:51:24.114130+00:00",
+      "evidence": "Existing connected interfaces; unchanged3A criterion; source-bound public R63 card",
+      "result": "QUALIFICATION_ONLY; no new payment or provider authority",
+      "responsibleOwner": "implementer and owner"
+    }
+  ],
+  "finalConstantsAndAuthorityReview": {
+    "status": "PASS",
+    "reviewedAt": "2026-11-26T18:56:33.991803+00:00",
+    "constantsOnly": true,
+    "actualAuthorityAbsent": true,
+    "actualAttendanceAbsent": true,
+    "noLiveDispatch": true
+  },
+  "localChecks": {
+    "frozenBaseline": "PASS",
+    "completeConsistency": "PASS",
+    "governanceSafeguards": "25_PASS",
+    "backendGovernanceWrapper": "PASS",
+    "architecture": "PASS",
+    "bothWhitespace": "PASS",
+    "runtimeTests": "REUSED_NOT_RERUN",
+    "browserTest": "NOT_RERUN",
+    "databaseFixture": "NOT_RUN",
+    "completedAt": "2026-11-26T18:57:19.588612+00:00"
+  }
+}
