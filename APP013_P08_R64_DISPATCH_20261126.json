@@ -1,0 +1,13 @@
+{
+  "status": "R64_RECOVERY_DISPATCHED",
+  "recordedAt": "2026-11-26T20:01:08.392365+00:00",
+  "approvalCommit": "2008eb02e1db0cbf5f9145c033989e4c26094ee3",
+  "sourceCommit": "fabd4561a2a25f4618aa7d2395fbba1eff1c3795",
+  "terminalWindowId": 40097,
+  "terminalTab": 1,
+  "ownedCommandPath": "/private/tmp/p08-terminal-launch-bdb20cfb-e4f8-4f89-8e3e-7ce84a8f7464.command",
+  "ownedCommandSha256": "a361d82001c3da9276a98ad653d866df3efd98786e07ff6f751f3b4a0e60d110",
+  "recoveryPrerequisite": "TR37_SIGNIN_AND_INDEPENDENT_CLEANUP_VERIFIED",
+  "qualificationApproved": false,
+  "nativeApproved": false
+}
