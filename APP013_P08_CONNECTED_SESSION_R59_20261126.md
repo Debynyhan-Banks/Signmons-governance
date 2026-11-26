@@ -1,5 +1,7 @@
 # R59 — connected Sandbox session preparation
 
+**EXPIRED UNUSED — November 26.** TR32 approval was received at 9:27 a.m. Eastern, after its 8:58 cutoff and R59’s 9:10 native launch cutoff. No sign-in, recovery, qualification or native operation started. No TR32 execution decision or reservation root was created. The hash-verified owned executor/template were removed. The packet below is historical and cannot authorize a late start. See APP013_P08_TR32_EXPIRED_CLOSEOUT_20261126.json. Later-window preparation requires a fresh exact decision and attendance confirmation. Accepted milestones remain 4/8; 3A OPEN. No scope deviation.
+
 APP-013 / 3A / P08. Owner confirmed availability November26 8:45–9:55a.m.Eastern, standalone Terminal/browser readiness and no overlap. This authorizes preparation only; exact TR32/recovery/qualification/native decisions remain separate and pending. No scope deviation.
 
 The unchanged criterion is same admitted-job $99USD Sandbox Checkout, authentic matching signed event/account/job/amount/currency, settled application gate, independent closeout and owner acceptance. Reuse all existing payment/runtime/authentication/qualification/bridge/opener/cleanup interfaces; no new runtime code, acceptance criterion or subsystem. ED2 corrected the exact destination to disabled yesterday; current state remains UNKNOWN and must be observed by actual current validators. R58 is consumed; R56 historical authentication outcome remains UNKNOWN.

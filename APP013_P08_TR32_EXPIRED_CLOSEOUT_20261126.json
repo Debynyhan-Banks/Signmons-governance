@@ -1,0 +1,19 @@
+{
+  "status": "APPROVAL_RECEIVED_AFTER_CUTOFF_NO_OPERATION_STARTED",
+  "owner": "Debynyhan Banks",
+  "approvalReceivedObservedAt": "2026-11-26T14:27:05.179705Z",
+  "launchCutoff": "2026-11-26T13:58:00Z",
+  "externalActionPerformed": false,
+  "credentialReads": 0,
+  "providerCalls": 0,
+  "actualDecisionCreated": false,
+  "reservationRootAbsent": true,
+  "ownedExecutorAndTemplateRemoved": [
+    "signmons-tr32-owner-signin.py",
+    "r59-tr21-template.py"
+  ],
+  "closedAt": "2026-11-26T14:30:19.605047+00:00",
+  "r59NativeCutoffAlsoExpired": true,
+  "sameWindowReplayAuthorized": false,
+  "scopeDeviation": false
+}
