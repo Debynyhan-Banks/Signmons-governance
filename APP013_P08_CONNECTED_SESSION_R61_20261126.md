@@ -1,5 +1,7 @@
 # R61 — connected Sandbox session preparation
 
+**CLOSED UNUSED — November 26.** TR34 sign-in was not confirmed within its 300-second bound. R61 recovery was never approved or dispatched, and its 10:50 a.m. cutoff passed. Its pending dispatcher was removed. The preparation below is historical, grants no retry authority and must not be launched late. See APP013_P08_TR34_R61_CLOSEOUT_20261126.json. The verified Terminal transport correction remains available for a future separately authorized session.
+
 APP-013 / 3A / P08. **Local preparation only; proposed attendance and every exact external decision remain pending.** R60 expired after its long Terminal command was truncated before any recovery root or receipt appeared. Its counters are not established, its owned request/dispatcher were removed, and it cannot be replayed. This fresh packet uses the locally verified short Terminal dispatch reference. No scope deviation.
 
 The unchanged criterion is the same admitted job's $99 USD Sandbox Checkout, its authentic matching signed event/account/job/amount/currency, application payment-gate clearance, independent closeout and owner acceptance. Reuse the existing recovery, qualification, native entry, authentication, payment, bridge, browser opener and cleanup. No backend runtime, provider configuration, acceptance criterion or subsystem changes. ED2's disabled-endpoint observation is historical; current state and the historical R58 failed field remain UNKNOWN. R56 authentication remains UNKNOWN.

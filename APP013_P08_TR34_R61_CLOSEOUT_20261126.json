@@ -1,0 +1,35 @@
+{
+  "status": "TR34_SIGNIN_UNCONFIRMED_CLOSED_R61_RECOVERY_UNUSED",
+  "verifiedAt": "2026-11-26T15:51:14.683748+00:00",
+  "sourceCommit": "b72ecb89f1907a25c988bbe3f33388bfdab77976",
+  "decisionCommit": "0880afaeed120ea6bb2319f8ed6129e353ce62ed",
+  "safeResultSha256": "806d5ff23b00ea2d5c08439d34b77567aae577b5a71ee00cacf00f1dbd79618f",
+  "elapsedSeconds": 300.115,
+  "exitCode": null,
+  "cacheReads": 0,
+  "credentialCoverageBeyondNewHorizon": "UNKNOWN",
+  "independentOwnedPidAndGroupAbsent": true,
+  "configurationUnchanged": true,
+  "ownedFilesRemoved": [
+    "signmons-tr34-owner-signin.py",
+    "r61-tr21-template.py",
+    "r61-recovery-dispatcher.py"
+  ],
+  "existingSdkCachePreserved": true,
+  "additionalProviderCalls": 0,
+  "localResiduals": [],
+  "r61RecoveryApprovalCreated": false,
+  "r61RecoveryDispatched": false,
+  "r61RecoveryCutoffPassed": true,
+  "replayAuthorized": false,
+  "paymentObserved": false,
+  "scopeDeviation": false,
+  "independentReview": {
+    "status": "PASS",
+    "reviewedAt": "2026-11-26T15:51:37.792523Z",
+    "ownedPidAndGroupAbsent": true,
+    "r61OperationRootsAbsent": 6,
+    "authoritySourceCustodyAndTimingMatch": true,
+    "credentialHorizonNotEstablished": true
+  }
+}
