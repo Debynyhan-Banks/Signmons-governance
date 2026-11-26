@@ -1,0 +1,21 @@
+{
+  "owner": "Debynyhan Banks",
+  "recordedAt": "2026-11-26T18:09:45.232169+00:00",
+  "ownerStatement": "Approve R62 native execution, Chrome opening, spending limits and cleanup; ready now",
+  "operationId": "bc814e95-a864-4ca4-99b7-5fd31191cb40",
+  "scopeSha256": "9326f83a300570fc9e8312862038eaab39ac5190e4bd793c6059e37f11896047",
+  "reviewPath": "APP013_P08_R62_NATIVE_REVIEW_20261126.json",
+  "guardedChromeOpen": "ONCE_ONLY_AT_ATTENDED_USING_EXISTING_BOOTSTRAP_OPENER",
+  "manualSandboxCheckout": {
+    "amountTotalCents": 9900,
+    "currency": "usd"
+  },
+  "overallLaunchBefore": "2026-11-26T18:15:00Z",
+  "paymentWorkEnd": "2026-11-26T18:46:00Z",
+  "cleanupEnd": "2026-11-26T18:58:00Z",
+  "purgeEnd": "2026-11-26T19:00:00Z",
+  "allowanceUsd": 0,
+  "hardBillingCap": false,
+  "existingLiabilitiesUnchanged": true,
+  "realChargesRefundsBookingCustomerMessagesAuthorized": false
+}
