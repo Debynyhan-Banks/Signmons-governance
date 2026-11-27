@@ -1,0 +1,29 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_CRV1_READS_SDK_EXCEPTION_AND_INDEPENDENT_CLEANUP",
+  "externalReadAuthorized": true,
+  "mutationAuthorized": false,
+  "preparedCommit": "63186b15459b019c48d7bdc0104e2573bd084b8d",
+  "operationId": "1f61fff3-5061-4eb0-ab3d-f57f1ca6f4f3",
+  "scopeSha256": "141bded54bcb3a2f7a8b7e8088fba6545e7fe28d9d5000ed8ff65b719ff0b18c",
+  "sourceCommit": "fabd4561a2a25f4618aa7d2395fbba1eff1c3795",
+  "recordedAt": "2026-11-27T01:24:25.560607+00:00",
+  "ownerReply": "Approve CRV1; reachable through 8:50; no overlap",
+  "reachableThrough": "2026-11-27T01:50:00Z",
+  "noOverlapConfirmed": true,
+  "window": {
+    "start": "2026-11-27T01:25:00Z",
+    "cutoff": "2026-11-27T01:45:00Z",
+    "readEnd": "2026-11-27T01:48:00Z",
+    "closeoutEnd": "2026-11-27T01:50:00Z"
+  },
+  "limits": {
+    "cli": 5,
+    "https": 0,
+    "sql": 0,
+    "cache": 0
+  },
+  "sdkException": "SDK_EXISTING_OWNER_REFRESH_CACHE_INTERNAL_RETRIES_NO_TOKEN_EXPORT",
+  "allowanceUsd": 0,
+  "automaticRetryAllowed": false
+}
