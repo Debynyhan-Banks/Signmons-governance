@@ -1,5 +1,7 @@
 # CRV1 — current Cloud Run configuration qualification
 
+CONSUMED AND CLOSED. Approved via6cc3231; one attempt completed five reads successfully. Current traffic/candidate configuration matches and independent local cleanup is verified in APP013_P08_CRV1_RESULT_20261126.json. No remaining authority, retry or payment approval. The prepared proposal below is historical and unchanged.
+
 Prepared; exact live approval pending. Section APP-013 / 3A / P08. No backend change or new subsystem. No scope deviation. Accepted 1A/1B/2A/2B = 4/8; 3A OPEN; R1 newly closed 0/27.
 
 ## Requirement and demonstrated gap

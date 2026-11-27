@@ -1,0 +1,111 @@
+{
+  "status": "CRV1_CONFIGURATION_MATCH_AND_LOCAL_CLEANUP_VERIFIED",
+  "verifiedAt": "2026-11-27T01:26:49.876416+00:00",
+  "preparedCommit": "63186b15459b019c48d7bdc0104e2573bd084b8d",
+  "authorityCommit": "6cc3231f922fa39870bd901b0d2aefcf3545cdd4",
+  "launchBindingCommit": "e0d9ec4",
+  "originalResult": {
+    "cliReservations": 5,
+    "facts": {
+      "candidateIdentityExact": true,
+      "candidateImageExact": true,
+      "candidateReady": true,
+      "configurationShape": "AUTH_SECTION_OMITTED",
+      "environmentContractValid": true,
+      "environmentMatchesRetainedQualification": true,
+      "ownerExact": true,
+      "projectExact": true,
+      "runtimeCloseoutEnvironmentMatch": true,
+      "trafficRetired": true
+    },
+    "failure": null,
+    "lastStage": "revision",
+    "localTransportClosed": true,
+    "operationId": "1f61fff3-5061-4eb0-ab3d-f57f1ca6f4f3",
+    "paymentObserved": false,
+    "qualificationOnly": true,
+    "residuals": [],
+    "scopeSha256": "141bded54bcb3a2f7a8b7e8088fba6545e7fe28d9d5000ed8ff65b719ff0b18c",
+    "sourceCommit": "fabd4561a2a25f4618aa7d2395fbba1eff1c3795",
+    "status": "CLOUD_RUN_CONFIGURATION_OBSERVED"
+  },
+  "originalCloseout": {
+    "closed": true,
+    "finishedAt": 1795742775.036523,
+    "onTime": true,
+    "processes": [
+      {
+        "closed": true,
+        "pgid": 64499,
+        "pid": 64499,
+        "returnCode": 0
+      },
+      {
+        "closed": true,
+        "pgid": 64511,
+        "pid": 64511,
+        "returnCode": 0
+      },
+      {
+        "closed": true,
+        "pgid": 64523,
+        "pid": 64523,
+        "returnCode": 0
+      },
+      {
+        "closed": true,
+        "pgid": 64535,
+        "pid": 64535,
+        "returnCode": 0
+      },
+      {
+        "closed": true,
+        "pgid": 64547,
+        "pid": 64547,
+        "returnCode": 0
+      }
+    ],
+    "rawResponsesRetained": false
+  },
+  "receiptSha256": {
+    "entry.json": "f5de916dc216cd9ac900f440b2b7e231c77be2924227c86eebf5085fc02cd44e",
+    "revision-observed.json": "728d499906c25d9fe020fe1ffef48207b720b1fc80ed5c9b66ee5c7ca222fb27",
+    "service-reserved.json": "df6026c74f73bca3356213194d1768749c1d4e66c3dc23171a83dc06e3e0d627",
+    "config-observed.json": "fcff49f0ef0ecef2b52f65893f6c0765432402f4af3fc937687e729e2198db75",
+    "result.json": "e978ebead5e0784c5ede9fd2aa91e12322c9bfc8738998fa417dbc723ab91fbe",
+    "project-reserved.json": "696c4139c2f0dbc63e517f6f506a831145e490a5e69eee2d3361500fde31d659",
+    "owner-observed.json": "98353f3cd9cfd33c841532ac92a227bc56deab38b8ffd7eb63564060df938266",
+    "project-observed.json": "3f39d69136c849a590ac6f436a8fb3e6a68aa445d4de1847053324077720a329",
+    "service-observed.json": "dcaed915d869c57f11e09f36f919bf3b9511035ff8af94bf08426fb384e08b13",
+    "config-reserved.json": "82d2323feb2dc8362c54cea04bc0166bf19d4bf911906520bd83eb47d36b7d67",
+    "revision-reserved.json": "da99b0f0555d4f969f5c4ff3f2852fd29dbb27fd00dd8d94e546524f35c36d7f",
+    "closeout.json": "d60c5607f4c5805ad8feb22239994081ca0d1f74fd4b49dce4d2e00ed9b7636c",
+    "owner-reserved.json": "9f729577c9742a6736d3fe0ac9e86cc5d31896022206c35a2d3943a94a042b34"
+  },
+  "independentVerification": {
+    "expectedInventoryOnly": true,
+    "safeReceiptModes": true,
+    "executorAndFiveChildrenAbsent": true,
+    "fiveOwnedProcessGroupsAbsent": true,
+    "hashMatchedTemporaryInvocationRemoved": true,
+    "noAdditionalProviderCalls": true
+  },
+  "interpretation": "At these sequential observations the exact company owner/configuration/project passed; normal traffic and exact candidate tag retirement passed; candidate image, service identity, Ready condition,19-variable contract and exact retained environment digest matched. No assertion of current runtime identity enabled/disabled state or explanation of R64 historical mismatch. No payment or full runtime retirement acceptance.",
+  "remaining": [
+    "Explain R64 original identity-state mismatch using retained evidence first",
+    "Fresh connected Sandbox payment/event/application-gate demonstration and owner acceptance"
+  ],
+  "acceptedMilestones": "1A/1B/2A/2B 4/8",
+  "section3A": "OPEN",
+  "scopeDeviation": "NONE",
+  "localReconciliationChecks": {
+    "verifiedAt": "2026-11-27T01:27:24.118448+00:00",
+    "frozenBaseline": "PASS",
+    "completeConsistency": "PASS",
+    "governanceSafeguardTests": "25_PASS",
+    "backendGovernanceWrapper": "PASS",
+    "architecture": "PASS",
+    "bothWhitespaceChecks": "PASS",
+    "newRuntimeTestsRun": false
+  }
+}
