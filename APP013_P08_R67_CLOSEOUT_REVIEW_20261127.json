@@ -1,0 +1,145 @@
+{
+  "section": "APP-013 / 3A / P08",
+  "recordedAt": "2026-11-27T12:06:22.234784+00:00",
+  "sourceCommit": "fef39a05cd7e83b54e74a6774716c2b9ab5a4286",
+  "openingCommit": "0a858888d6fdcfd17bc5a8330abe38ef03a5d2dd",
+  "qualificationApprovalCommit": "1ff4201",
+  "nativeApprovalCommit": "76b1bef",
+  "result": {
+    "authProofReady": false,
+    "authenticationObserved": false,
+    "childResultSha256": null,
+    "liveAuthorization": true,
+    "operationId": "fd51ea99-bdcf-42a0-b4d5-2a3caaf00630",
+    "paymentObserved": false,
+    "paymentReadyForAcceptance": false,
+    "privateInputsAbsent": true,
+    "residuals": [
+      "AUTH_OUTCOME_UNKNOWN"
+    ],
+    "status": "ENTRY_CONTAINMENT_UNCONFIRMED"
+  },
+  "nativeFailure": "LOCAL_ADAPTER_OR_SOURCE_STOP",
+  "authClient": {
+    "activationIntent": true,
+    "authenticated": false,
+    "closeoutAttempted": true,
+    "failureCode": "ADAPTER_REFUSED_OR_UNKNOWN",
+    "failureStage": "RUNTIME_AUTH_INTENT",
+    "firebaseEnableIntent": true,
+    "phase": "CLOSEOUT_FINISHED",
+    "residuals": [],
+    "sessionClosed": true,
+    "status": "P08_COORDINATOR_AUTH_STOPPED_AND_CLOSED",
+    "tokenIssueIntent": true
+  },
+  "calls": {
+    "child": 6,
+    "cli": 191,
+    "https": 18,
+    "sql": 10
+  },
+  "childObservations": [
+    {
+      "childCall": 1,
+      "code": "NONE",
+      "journalMerge": "ACCEPTED",
+      "mode": "--payment-preflight",
+      "processOutcome": "RETURNED",
+      "stage": "RESULT"
+    },
+    {
+      "childCall": 2,
+      "code": "NONE",
+      "journalMerge": "ACCEPTED",
+      "mode": "--run",
+      "processOutcome": "RETURNED",
+      "stage": "RESULT"
+    },
+    {
+      "childCall": 3,
+      "code": "NONE",
+      "journalMerge": "ACCEPTED",
+      "mode": "--closeout",
+      "processOutcome": "RETURNED",
+      "stage": "RESULT"
+    },
+    {
+      "childCall": 4,
+      "code": "NONE",
+      "journalMerge": "ACCEPTED",
+      "mode": "--readback",
+      "processOutcome": "RETURNED",
+      "stage": "RESULT"
+    },
+    {
+      "childCall": 5,
+      "code": "NONE",
+      "journalMerge": "ACCEPTED",
+      "mode": "--closeout",
+      "processOutcome": "RETURNED",
+      "stage": "RESULT"
+    },
+    {
+      "childCall": 6,
+      "code": "NONE",
+      "journalMerge": "ACCEPTED",
+      "mode": "--readback",
+      "processOutcome": "RETURNED",
+      "stage": "RESULT"
+    }
+  ],
+  "identityReadbacks": [
+    {
+      "decodedState": "MISSING",
+      "elapsedMs": 385.974,
+      "identity": "MATCH",
+      "ordinal": 1,
+      "phase": "MAIN",
+      "requestedEnabled": true,
+      "result": "MATCH"
+    },
+    {
+      "decodedState": "BOOL_TRUE",
+      "elapsedMs": 425.381,
+      "identity": "MATCH",
+      "ordinal": 1,
+      "phase": "CLEANUP",
+      "requestedEnabled": false,
+      "result": "MATCH"
+    }
+  ],
+  "payment": {
+    "bridgeClosed": true,
+    "enableIntent": false,
+    "endpointCalls": 2,
+    "endpointDisabled": true,
+    "failureCode": null,
+    "outcome": "NOT_OBSERVED",
+    "phase": "QUALIFIED",
+    "residuals": [],
+    "revision": 6,
+    "secretReads": 2
+  },
+  "resourceResidualsReported": [],
+  "authenticationOutcome": "UNKNOWN",
+  "recoveryPurgeStatus": "PRIVATE_PURGE_VERIFIED",
+  "recoveryRawFilesAbsent": true,
+  "browserOpened": false,
+  "receiptSha256": {
+    "/private/tmp/p08-coordinator-fd51ea99-bdcf-42a0-b4d5-2a3caaf00630/attempt.json": "b5857f9e0b9424df362067d82a4e0dc706ebe2bd6a24fe991db81c04a4a96836",
+    "/private/tmp/p08-coordinator-fd51ea99-bdcf-42a0-b4d5-2a3caaf00630/journal.json": "4fc73a7b3e9e4bac4f0dc22c981e426125739b8b386b83300d26e1a3049104bf",
+    "/private/tmp/p08-coordinator-fd51ea99-bdcf-42a0-b4d5-2a3caaf00630/work-result.json": "af85b41542ab320790aae2acceb12361c9e993fd65fc2fab373da9a5c6b7d8cd",
+    "/private/tmp/p08-coordinator-fd51ea99-bdcf-42a0-b4d5-2a3caaf00630/result.json": "057d2d6f2acb35c18a05be4e5fe2e70136dd7e2c744eae65953493f94fe31924",
+    "/private/tmp/p08-coordinator-fd51ea99-bdcf-42a0-b4d5-2a3caaf00630/closeout.json": "acb34c1d6e4a5236fb056deedf31719923cfecdd7f8fd5e056a85a579d495bfb",
+    "/private/tmp/p08-coordinator-fd51ea99-bdcf-42a0-b4d5-2a3caaf00630/independent-closeout.json": "acb34c1d6e4a5236fb056deedf31719923cfecdd7f8fd5e056a85a579d495bfb",
+    "/private/tmp/p08-binding-recovery-276750d7-5c5b-46f0-9c0f-a874220f74d0/recovery-result.json": "4a47e838f54dfc952bfba7f1091b589d7f101fb294fe7670020bab9f03ca9a3d",
+    "/private/tmp/p08-binding-recovery-276750d7-5c5b-46f0-9c0f-a874220f74d0/resource-closeout.json": "cb524bb80fbd3f6723cf552f276e21639827ecf27ef8bc93e8d3102a701c9223",
+    "/private/tmp/p08-binding-recovery-276750d7-5c5b-46f0-9c0f-a874220f74d0/purge-result.json": "86596f214924b49821ae36fe7659e16309740d464a383b06fa09915c17618d07",
+    "/private/tmp/p08-current-external-7e846d1c-50eb-4177-bb14-f985db4e0c16/result.json": "db9460d41e771d037b11a47f20c20ee7f4fac5a869931faf57b5dbb411dbad19",
+    "/private/tmp/p08-current-external-7e846d1c-50eb-4177-bb14-f985db4e0c16/independent-closeout.json": "579cabf1cd7bb456d8d3748b5f6c4d8a877c35555b64ec866195b6c1bce58154"
+  },
+  "automaticRetryAllowed": false,
+  "acceptedMilestones": "4/8; 3A OPEN; R1 newly closed 0/27",
+  "scopeStatement": "Approved timing-only deviation; no additional scope deviation."
+}

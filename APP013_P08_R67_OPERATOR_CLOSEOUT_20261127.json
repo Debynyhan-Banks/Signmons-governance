@@ -1,0 +1,18 @@
+{
+  "status": "OWNED_LAUNCH_ARTIFACTS_REMOVED",
+  "verifiedAt": "2026-11-27T12:05:35.425967+00:00",
+  "terminalWindow": 41135,
+  "terminalBusy": false,
+  "ownedPidsAbsent": [
+    70867,
+    71370,
+    75734
+  ],
+  "removedFiles": {
+    "/private/tmp/signmons-r67-recovery-dispatch.py": "273f4b12778acd930acf9c9be4593a1eeffd757cec43aa8aedeac67e0412ffa1",
+    "/private/tmp/p08-terminal-launch-276750d7-5c5b-46f0-9c0f-a874220f74d0.command": "b46982e3f4852bc877e58affe855f82f7fd1a7c4cbfc985cd97707fe6821ee31",
+    "/private/tmp/p08-attended-reference-276750d7-5c5b-46f0-9c0f-a874220f74d0.json": "0fa971129beba4e9a2e9cc6c2ce2e6d6c4d4de29fb239c61568380e2aa6cd2a0"
+  },
+  "allRemoved": true,
+  "browserOpened": false
+}
