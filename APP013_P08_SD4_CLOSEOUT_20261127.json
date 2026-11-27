@@ -1,0 +1,53 @@
+{
+  "section": "APP-013 / 3A / P08",
+  "status": "SD4_CURRENT_DATABASE_SESSIONS_VERIFIED_CLOSED",
+  "verifiedAt": "2026-11-27T20:42:07.296420+00:00",
+  "sourceCommit": "06bb7125004eb8a16bc0a190faae8a882ec92858",
+  "decisionCommit": "e8891de1ebdafa1be5a82729a6abe332247ff35f",
+  "mainResult": {
+    "candidate": null,
+    "executionReady": false,
+    "failure": null,
+    "failureStage": null,
+    "liveObserved": true,
+    "observation": {
+      "checks": {
+        "databaseMatched": true,
+        "sessionsAbsent": true,
+        "userMatched": true
+      },
+      "failure": null
+    },
+    "operationId": "1c571ea3-e045-47f6-9736-4b880088e9ba",
+    "residuals": [],
+    "scopeSha256": "69bea256cce81aa628964d6ea61235b73f663cd272cc1df801de9f10e000ea5b",
+    "sqlReservations": 2,
+    "status": "SQL_CONNECTION_DIAGNOSED"
+  },
+  "independentCloseout": {
+    "candidate": null,
+    "executionReady": false,
+    "operationId": "1c571ea3-e045-47f6-9736-4b880088e9ba",
+    "residuals": [],
+    "scopeSha256": "69bea256cce81aa628964d6ea61235b73f663cd272cc1df801de9f10e000ea5b",
+    "verified": true
+  },
+  "ownedTerminalBusy": false,
+  "ownedProcessesRemaining": [],
+  "ownedInputRemoved": true,
+  "ownedCommandRemoved": true,
+  "r68HistoricalFailureCause": "UNKNOWN",
+  "r68ImmutableReceiptNotRewritten": true,
+  "authenticationObserved": false,
+  "paymentObserved": false,
+  "receiptSha256": {
+    "sql-independent.json": "e921357d7d237ef373c257f2a61db583917abb92324de61aa7645ec1ac901856",
+    "result.json": "06984db8fa8c4481a27e7bc614b51a8fad73c7471c2da14190be985bcbfdf77a",
+    "sql-role.json": "c9d14b016f64e5bf28a79cd8a26ff67992df5f992e899afe2ccc33a7bb03c48e",
+    "attempt.json": "773e18144bec2830efbeb6797ab69e3ed5da808f33eec1b492443c5a6c529630",
+    "closeout.json": "1affce5921c7c27c90a27d9c724b09a14cdbeb0a0edf793647e8dde4a91c8b4e",
+    "envelope.json": "45fb44e8629fb576bf747055df1732891e5160d7196b7534981c7928fba37785",
+    "entry.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "scopeDeviation": "NONE"
+}
