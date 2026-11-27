@@ -1,0 +1,123 @@
+{
+  "operationId": "1f61fff3-5061-4eb0-ab3d-f57f1ca6f4f3",
+  "section": "APP-013/3A/P08",
+  "sourceCommit": "fabd4561a2a25f4618aa7d2395fbba1eff1c3795",
+  "action": "READ_R64_CURRENT_CLOUD_RUN_CONFIGURATION_ONCE",
+  "commands": [
+    {
+      "id": "owner",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "auth",
+        "list",
+        "--filter=status:ACTIVE",
+        "--format=json(account,status)"
+      ]
+    },
+    {
+      "id": "config",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "config",
+        "list",
+        "--format=json(core.project,auth.impersonate_service_account,auth.login_config_file,auth.credential_file_override)"
+      ]
+    },
+    {
+      "id": "project",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "projects",
+        "describe",
+        "signmons",
+        "--format=json(projectId,projectNumber,lifecycleState)"
+      ]
+    },
+    {
+      "id": "service",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "run",
+        "services",
+        "describe",
+        "signmons-calldesk-staging",
+        "--project",
+        "signmons",
+        "--region",
+        "us-east5",
+        "--format=json(metadata.name,spec.template.spec.serviceAccountName,status.traffic,status.latestReadyRevisionName)"
+      ]
+    },
+    {
+      "id": "revision",
+      "argv": [
+        "/opt/homebrew/bin/gcloud",
+        "run",
+        "revisions",
+        "describe",
+        "signmons-calldesk-staging-p07key7e45dc512e17",
+        "--project",
+        "signmons",
+        "--region",
+        "us-east5",
+        "--format=json(metadata.name,spec.serviceAccountName,spec.containers,status.conditions)"
+      ]
+    }
+  ],
+  "window": {
+    "start": "2026-11-27T01:25:00Z",
+    "cutoff": "2026-11-27T01:45:00Z",
+    "readEnd": "2026-11-27T01:48:00Z",
+    "closeoutEnd": "2026-11-27T01:50:00Z"
+  },
+  "limits": {
+    "cli": 5,
+    "https": 0,
+    "sql": 0,
+    "cache": 0
+  },
+  "sdkException": "SDK_EXISTING_OWNER_REFRESH_CACHE_INTERNAL_RETRIES_NO_TOKEN_EXPORT",
+  "sdkEnvironment": {
+    "HOME": "/Users/debynyhanbanks",
+    "PATH": "/usr/bin:/bin:/opt/homebrew/bin",
+    "LANG": "en_US.UTF-8",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "CLOUDSDK_CORE_DISABLE_FILE_LOGGING": "true",
+    "CLOUDSDK_CORE_MAX_LOG_DAYS": "0",
+    "CLOUDSDK_CORE_DISABLE_USAGE_REPORTING": "true",
+    "CLOUDSDK_CORE_DISABLE_PROMPTS": "true",
+    "CLOUDSDK_PYTHON": "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14"
+  },
+  "sourceManifestSha256": "6665c7e5fe9fa4f78af777b725417f2b77ac60616c37b68d0a77b96ca7c17ecf",
+  "sdkFilesSha256": "ecd62311871d8d39cd2fc94a14b38a16b01a12032d7da04853226feacd6c71b2",
+  "pins": {
+    "owner": "debynyhan@signmons.com",
+    "project": "signmons",
+    "projectNumberSha256": "37d4aa0f46ca5b8f0b81b1148bda235a0f4a9a424b6b4638ec993d889563be54",
+    "service": "signmons-calldesk-staging",
+    "region": "us-east5",
+    "candidate": "signmons-calldesk-staging-p07key7e45dc512e17",
+    "image": "us-east5-docker.pkg.dev/signmons/signmons/signmons-calldesk-backend@sha256:36f887749947c0b01db683482c081ca663534e7ffe597560b24597f3d46be9da",
+    "identity": "signmons-calldesk-p07-runtime@signmons.iam.gserviceaccount.com",
+    "normalRevision": "signmons-calldesk-staging-app013dbrot2",
+    "candidateConfiguration": {
+      "state": "CORRECTED",
+      "candidate": "signmons-calldesk-staging-p07key7e45dc512e17",
+      "stripeVersion": "2",
+      "correctionOperationId": "7e45dc51-2e17-481c-9128-63fa568725a4",
+      "correctionReceiptSha256": "2b9f1c11cda3632ccf30bab106d73166f7a15799f3163a1ec808604b1953cd34"
+    },
+    "runtimeEnvironmentSha256": "e5fb2160ac529c02ef73d8d288bb25b2fe1d64209386478c21d37daf97a4d02d"
+  },
+  "baseline": {
+    "path": "APP013_P08_R64_NATIVE_REVIEW_20261126.json",
+    "sha256": "da190da8f8ebdc72f3e4b0f6d7844575be211c75fc3ad0ac18d54470134dbca5",
+    "qualificationOperationId": "27fcabdf-9bd5-4dff-84ef-9c9ce9cd1217",
+    "historicalOnly": true
+  },
+  "mutationAuthorized": false,
+  "allowanceUsd": 0,
+  "hardBillingCap": false,
+  "automaticRetryAllowed": false,
+  "qualificationOnly": true
+}

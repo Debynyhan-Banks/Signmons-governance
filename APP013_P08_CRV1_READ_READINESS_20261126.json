@@ -1,0 +1,59 @@
+{
+  "verifiedAt": "2026-11-27T01:21:39.786618+00:00",
+  "scopeSha256": "141bded54bcb3a2f7a8b7e8088fba6545e7fe28d9d5000ed8ff65b719ff0b18c",
+  "sourceCommit": "fabd4561a2a25f4618aa7d2395fbba1eff1c3795",
+  "sourceSdkConfigGuards": "PASS",
+  "actualNativeIOCliBoundary": "PASS_FIVE_SOURCE_TUPLES_PROCESS_MOCKED",
+  "sanitizedEnvironment": "PASS_ACTUAL_CAPTURED_CHILD_ENV_EQUALS_EXISTING_SDK_ENV",
+  "environmentValidator": "PASS_ONE_POSITIVE_SIX_NEGATIVE_SYNTHETIC_CASES",
+  "existingFocusedTests": {
+    "count": 6,
+    "result": "PASS",
+    "coverage": [
+      "traffic omitted or explicit zero",
+      "unsafe traffic",
+      "config missing or empty auth",
+      "unsafe config",
+      "real harmless child timeout/output cleanup",
+      "real harmless child interruption/group cleanup"
+    ]
+  },
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "backendChanges": 0,
+  "qualificationOnly": true,
+  "manualOperatorControls": [
+    "exact approval and scope compare",
+    "fresh exclusive root and one-use reservation",
+    "clock/start/cutoff/readEnd/closeoutEnd checks before each boundary",
+    "safe response projection only",
+    "independent process absence and local receipt review"
+  ],
+  "unknown": [
+    "current usable existing credentials",
+    "effective Cloud Run read access",
+    "current service traffic/tag state",
+    "current candidate image/identity/environment",
+    "cause of R64 identity-state mismatch"
+  ],
+  "nextObservable": "Current Cloud Run configuration match/mismatch/unknown with independent local cleanup; not payment or overall retirement acceptance",
+  "governanceChecks": {
+    "verifiedAt": "2026-11-27T01:23:06.524900+00:00",
+    "frozenBaseline": "PASS",
+    "completeConsistency": "PASS",
+    "governanceSafeguardTests": "25_PASS",
+    "backendGovernanceWrapper": "PASS",
+    "architecture": "PASS",
+    "bothWhitespaceChecks": "PASS"
+  },
+  "focusedTestNames": [
+    "Tests.test_retired_traffic_accepts_absent_or_explicit_zero_candidate",
+    "Tests.test_retired_traffic_rejects_unsafe_or_ambiguous_routing",
+    "Tests.test_config_output_accepts_only_two_exact_safe_shapes",
+    "Tests.test_config_output_rejects_every_other_shape",
+    "OwnedProcessTests.test_real_child_success_oversize_timeout_and_group_cleanup",
+    "OwnedProcessTests.test_interruption_and_exited_leader_do_not_leave_owned_group"
+  ],
+  "testModule": "test_qualification_launch",
+  "localPreparationCorrection": "Unsupported current_module restore alias corrected to existing authority.load before output artifacts; no source or external action"
+}
