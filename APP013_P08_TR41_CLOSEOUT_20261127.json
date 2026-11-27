@@ -1,0 +1,31 @@
+{
+  "cacheReserved": 1,
+  "cliReserved": 1,
+  "completedAt": 1795811421.3994398,
+  "configurationUnchanged": true,
+  "decisionCommit": "30813df12eccba58e3a40a34ecd89e2a468001f5",
+  "elapsedSeconds": 8.105,
+  "exitCode": 0,
+  "groupAbsent": true,
+  "leaderReaped": true,
+  "localResiduals": [],
+  "onTime": true,
+  "outputDisposition": "OS_DEVNULL",
+  "ownedPid": 50812,
+  "providerResourceRequests": 0,
+  "reservation": "owner-signin-20261127-tr41",
+  "sdkAuthenticationRequestCount": "UNKNOWN",
+  "sdkCacheMaintenanceAuthorized": true,
+  "sourceCommit": "06bb7125004eb8a16bc0a190faae8a882ec92858",
+  "status": "VALID_THROUGH_CUTOFF",
+  "validThrough": "2026-11-27T21:30:00Z",
+  "executorRemoved": true,
+  "verifiedAt": "2026-11-27T20:30:38.575674+00:00",
+  "receiptSha256": {
+    "cache-reservation.json": "cabccbc54779154ca8fb755052e10a7597c77481c5f03691dcba34919b1ad04b",
+    "result.json": "89087ead2040b46c8beea1233b2f548a77a52c32d1167bcf6034e496e5854747",
+    "attempt.json": "f6e0856118565ff2364c699d7976b7c5b9bb5172d6b782a5ff22b7774a19ec3a",
+    "entry.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "paymentAuthorized": false
+}
