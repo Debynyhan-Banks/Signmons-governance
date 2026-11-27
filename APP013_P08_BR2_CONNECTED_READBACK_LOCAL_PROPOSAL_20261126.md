@@ -1,0 +1,65 @@
+# BR2 — bounded identity readback in the connected journey
+
+PROPOSED LOCAL CHANGE ONLY. Owner decision pending; no implementation, credential read, provider action, new attended session or payment is authorized. Section APP-013 / 3A / P08; accepted milestones remain 1A/1B/2A/2B = 4/8, 3A OPEN, R1 newly closed 0/27. Explicit prospective deviation: extend the existing BR1 semantic-read allowance to the connected runner; do not claim prior BR1 approval covered this integration.
+
+## Demonstrated gap and requirement
+
+Source fabd4561a2a25f4618aa7d2395fbba1eff1c3795 still calls one immediate RuntimeAdapter.readback after each acknowledged runtime change. R64 stopped at RUNTIME_IDENTITY_STATE_MISMATCH before authentication/payment. Its immutable journal records identity attempted but not owned and no change-exception UNKNOWN. The code distinguishes a returned exact-email opposite-state value from missing email, foreign identity, malformed output and transport failure. Its exact raw value and provider cause remain UNKNOWN.
+
+The existing BR1 implementation in iq1_identity_boundary.py already supports up to three bounded observations after an acknowledged identity mutation. APP013_P08_POST_IQ8_READINESS_RECONCILIATION_20261115.md explicitly documented that BR1/SD3 were not integrated into the connected runner. This remains true today. IQ6's same-response evidence showed the conflicting state in the pre-decoder response as well as decoded output. IQ8 later passed without extra observations, so it does not prove BR1's extra reads caused success. Another identical full attempt or current-state read would not close this integration gap or reconstruct R64's discarded response.
+
+The approved acceptance criterion is APP013_REMAINING_EXECUTION_CONTRACT.md §3A: same admitted job Sandbox Checkout, authentic matching signed event and application gate, failure/replay safety and independent cleanup. BR2 advances that connected journey's identity transition prerequisite; it creates no new milestone, payment stack or diagnostic subsystem. DBR2 role-policy verification and CRV1 Cloud Run configuration verification remain complete at their recorded observations. R64 original results remain immutable.
+
+## Exact proposed behavior
+
+Reuse the BR1 finite policy in the existing native entry.Coordinator.invoke seam. Keep the inherited coordinator, generic transport and RuntimeAdapter.readback acceptance predicate unchanged. Add only narrow same-process transition tracking around a successfully returned exact runtime identity change and its immediately following readback. Only a version2 full connected run can use this allowance. Preflight, baseline, final whole-runtime retirement, standalone RuntimeAdapter calls, legacy/nonpayment runs and unrelated resources remain single-read paths.
+
+- One initial observation; at most two additional semantic observations after 5 seconds then 10 seconds from the preceding return. Maximum45seconds monotonic per acknowledged transition. This is an experimental finite policy, not a provider consistency guarantee.
+- Additional reads only after a successfully returned, correctly shaped exact-email response with a strict boolean opposite state, or missing disabled field when the unchanged predicate rejects it. Foreign identity, malformed/null/invalid/numeric response, transport/credential/output failure, source/custody failure, interruption or deadline exhaustion stops the phase. Numeric compatibility of an immediately successful legacy predicate is not broadened into retry eligibility.
+- Never repeat enable/disable or other mutations. Never treat a later successful observation as proof of the historical cause, durable state or usable authentication. Exhaustion preserves a specific failure and triggers existing independent cleanup.
+- Track eligibility only after the current process's exact mutation acknowledgement. Consume the transition marker once. A fresh independent closeout cannot infer acknowledgement from an old journal or reset the three-observation allowance. If cleanup previously attempted its mutation, its existing read-only verification remains single-shot. If that process legitimately performs the one still-unused disable, it may reconcile its acknowledged transition under the same cap. At most two additional main reads and two additional cleanup reads per connected operation: four additional CLI reservations total.
+- Keep the existing overall192 CLI /100 HTTPS /60 SQL /6 child /200 child-request limits. Every observation uses normal cap.spend and exact current source-generated command. No budget increase, mutation retry or transport retry. Before admitting transition work, prove its remaining read budget and cleanup capacity; if the existing cap cannot accommodate the bounded worst case, stop local implementation for a separate reviewed decision rather than raising it silently.
+- Reuse Coordinator.gate, cap.gate, clock/monotonic checks and interruptible pause. Main waits must observe abort; cleanup preserves existing interruption semantics. Reserve the existing8-second command envelope plus local margin before each dispatch so no child can exceed the45-second phase bound. Recheck before/after waits and reads. Preserve420-second IAM settling,960-second post-settle work,660-second cleanup and120-second purge reserves. Include the additional main transition allowance in pre-mutation admission, without extending any source-bound cutoff. Verify actual packet/timing interfaces, not just constants.
+- Retain at most six fixed safe records in the existing nativeEntry journal area: phase, ordinal, elapsed duration, requested enabled/disabled direction, decoded state class, exact-identity match and fixed readback result. No raw value, provider response, UID, token, header, password, arbitrary error or new SDK observer. Labels describe decoded output only. Accumulate in memory and persist through existing authoritative save points; no extra diagnostic file or extra save solely for optional observations. Optional label failure must not change acceptance or suppress cleanup. Authoritative journal/custody failures retain their existing conservative behavior.
+
+## Existing seams and exact file boundary
+
+Implementation is limited to two existing files under evidence/APP-013/p08-native-entry-local-20261101/source:
+
+1. entry.py — existing RuntimeAdapter identity classifier and native Coordinator.invoke/admission/journal seams only.
+2. test_entry.py — direct classifier, assembled parent/child, timing, cleanup, interruption and no-replay tests with synthetic transport.
+
+Update only derived hashes in these eight current manifests, without changing their declared scopes or SDK file inventories:
+
+- p08-native-entry-local-20261101/source/source-manifest.json
+- p08-native-entry-local-20261101/source/test-manifest.json
+- p08-key-correction-20261110/source-manifest.json
+- p08-connected-packet-20261110/iq1-source-manifest.json
+- p08-connected-packet-20261110/sq1-source-manifest.json
+- p08-connected-packet-20261110/account-containment-source-manifest.json
+- p08-connected-packet-20261110/account-containment-read-source-manifest.json
+- p08-connected-packet-20261110/vm2-source-manifest.json
+
+Paths above are relative to evidence/APP-013. Safe local verification evidence and governance completion may be added. No changes to coordinator.py, restore.py, native_io.py, authority.py, packet.py, installed SDK, database/application schema, dependency versions, public API or acceptance criteria. If another source/interface change proves necessary, stop and present the concrete gap before editing it.
+
+## Finite checklist and test plan
+
+1. Validate current committed source, actual native invocation/authority, dynamic candidate configuration, manifests and legacy behavior. Reuse BR1 policy and existing tests as evidence; do not duplicate an entire diagnostic framework.
+2. Implement the narrow acknowledged-transition marker and bounded native invocation policy, strict retry eligibility, existing budget/deadline admission and bounded safe journal projection. Preserve first failure, all observed attempts, exhausted terminal reason and final independent cleanup result.
+3. Through the actual assembled native Coordinator/RuntimeAdapter/NativeIO boundary with injected transport, cover immediate success, mismatch→success, mismatch→mismatch→success, exhaustion, missing field, numeric/null/foreign/malformed values and unchanged direct acceptance. Verify exact mutation counts, at most3reads per acknowledged transition, at most4additional reads total, no fourth read and no extra read after success.
+4. Cover rejected mutation acknowledgement, nonzero command/timeout, insufficient remaining call budget, deadline before/within wait and before child dispatch, wall/monotonic rollback, interruption, concurrent entry lock, source/authority mismatch, journal failure, process restart and independent closeout. Prove preflight/final retirement/no-pending-marker paths remain single-read, no repeated disable across processes, and final disagreement remains unconfirmed. Use harmless local process tests only when needed; no PostgreSQL fixtures or remote services.
+5. Exercise actual packet construction and native timing/admission with synthetic identities and authority. Demonstrate worst-case extra reads/waits fit existing call/deadline/cleanup limits or report the exact blocker. Old source-bound approvals must not authorize changed source. Keep current full caller cleanup/public-result behavior and browser launch gating; no browser opens during local tests.
+6. Run direct tests, full native test_entry synthetic suite and relevant connected packet/launcher/browser-isolation synthetic tests; select explicit modules rather than broad discovery that could initialize PostgreSQL. Use the pinned Python3.14 -I -B interpreter. Run current source guards, frozen baseline, complete consistency,25 governance tests, backend governance wrapper, architecture and both git diff --check. No stale test results presented as new proof. Recheck immutable R64/IQ receipts and unrelated work preservation.
+7. Save source SHA, exact selected test commands/results, worst-case counts/timing, retained UNKNOWNs and rollback. Stop after local completion. No fresh credentials or live session is scheduled automatically.
+
+## Readiness, ownership and limits
+
+Inspected at sourcefabd456: entry.RuntimeAdapter.readback, entry.Coordinator.invoke/gate/admission, native_io.NativeIO.cloud/_run, authority.Capability.spend/gate, inherited coordinator run/closeout, restore.change/readback and existing BR1.reconcile. The R64 original receipt hashes were reverified against the committed closeout. Two existing tests passed locally: IdentityReadbackDiagnosticTests.test_same_native_read_preserves_legacy_predicate_and_classifies_rejections and test_specific_failures_survive_main_and_independent_closeout. They reproduce the current one-read stop through the actual assembled path and preserve cleanup; they do not validate proposed BR2 behavior. No database fixture/provider/credential read occurred. Evidence is APP013_P08_R64_IDENTITY_REVIEW_20261126.json.
+
+Implementation readiness is limited to the stated local scope. Live credentials, current identity state, mutation effectiveness and prospective convergence are UNKNOWN. Effective access still requires the authentic connected workflow; metadata is insufficient. The proposed finite allowance may fail and does not guarantee a successful payment run.
+
+Implementer owns the local change, evidence and readiness; owner approves the semantic-read/retention/admission scope before implementation; cloud/credential custodians retain any later live authority. No Terminal attendance or deadline is needed for this local decision. Alternatives considered: repeat unchanged full run (reject, same unresolved boundary); another identity-only qualification (does not integrate the behavior); weaken state checks or omit independent retirement (reject); add fixed sleep as a claimed provider guarantee (unsupported); new identity, REST client, SDK patch or support contact (excluded).
+
+Rollback: keep current committed backend and do not launch BR2; if needed restore the two sources and derived manifests together before any subsequent separately approved operation. Preserve historical authority and receipts. Observable local finish: bounded connected transition tests, full relevant synthetic regression and source/governance checks pass, with exact readiness and remaining UNKNOWNs; no claim of live success or section acceptance.
+
+Requested owner decision: approve BR2 local integration and tests in the two existing source/test files and eight derived manifests, including the bounded semantic observations, safe journal labels and admission checks described above. No credentials, provider calls, sign-in, SQL, payment, spending or support contact. This is a proposed scope deviation before implementation, required by AGENTS.md's “Do not change scope ... or substantial prerequisites without explicit owner approval BEFORE implementation.”

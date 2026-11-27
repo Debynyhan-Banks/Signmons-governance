@@ -1,0 +1,59 @@
+{
+  "status": "R64_RETAINED_EVIDENCE_REVIEW_COMPLETE_LOCAL_INTEGRATION_PROPOSED",
+  "verifiedAt": "2026-11-27T01:34:16.139419+00:00",
+  "sourceCommit": "fabd4561a2a25f4618aa7d2395fbba1eff1c3795",
+  "sourceSha256": {
+    "evidence/APP-013/p08-native-entry-local-20261101/source/entry.py": "6585e24df411dfc12b012797bb84156fca0cc27fed66e0f4475976e7ac3919cd",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/native_io.py": "2a6426ecf0dbbc1e19ad2391a296b781cc04fdd1e53ee83123a332101aea6e43",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/authority.py": "ca62510e43a9ee95c7e6bb8b5a21dd827013ef87cd36c7678ae62247ad06f6e3",
+    "evidence/APP-013/p08-live-binder-local-20261029/source/coordinator.py": "1eecc5241794cfed6d892db4385039274539e47b183f1d934899549eb5560f70",
+    "evidence/APP-013/p08-restoration-local-20261028/source/restore.py": "a0bf4bc90cca0bd52935915d710ccb44e065dd3deed841a12ab49cb3ac4a1cb9",
+    "evidence/APP-013/p08-connected-packet-20261110/iq1_identity_boundary.py": "676f9236b68efe2d076d466ec85df88c1a4547a8ff21461cd28d143deef90bd3",
+    "evidence/APP-013/p08-connected-packet-20261110/identity_sdk_observation.py": "c0a25ce0f584b12921201effc19b0f36e8cb5f3680bad3c6c03230f3ce9fa146"
+  },
+  "originalReceiptsHashVerified": {
+    "/private/tmp/p08-coordinator-27fcabdf-9bd5-4dff-84ef-9c9ce9cd1217/attempt.json": "a91c18e13d9f57d7bd0e1cf9df62e0933bcd3f4acac419fd3b85404ce6802982",
+    "/private/tmp/p08-coordinator-27fcabdf-9bd5-4dff-84ef-9c9ce9cd1217/work-result.json": "86eb3c2b87453924b9476115c594d95d5b5ef0d406c54d429a5770741c000a1f",
+    "/private/tmp/p08-coordinator-27fcabdf-9bd5-4dff-84ef-9c9ce9cd1217/closeout.json": "37ff64688b28de9828b2b2fc08cfbbdae336295a4d3aed6bae78fbbb29e59089",
+    "/private/tmp/p08-coordinator-27fcabdf-9bd5-4dff-84ef-9c9ce9cd1217/independent-closeout.json": "37ff64688b28de9828b2b2fc08cfbbdae336295a4d3aed6bae78fbbb29e59089",
+    "/private/tmp/p08-coordinator-27fcabdf-9bd5-4dff-84ef-9c9ce9cd1217/result.json": "0fba20f014383ff1526f557379806d6867efbf4eadad61ba4b647408b2dab488",
+    "/private/tmp/p08-coordinator-27fcabdf-9bd5-4dff-84ef-9c9ce9cd1217/journal.json": "89311fa0a5285f4a7be6868daf4dcda7b45989b78622ea315ecf49f0f96d5953",
+    "/private/tmp/p08-binding-recovery-bdb20cfb-e4f8-4f89-8e3e-7ce84a8f7464/recovery-result.json": "7b2fd9e6bbdb50271c146c6331882a836b7b7b57c862d849d8fa42fabef392d1",
+    "/private/tmp/p08-binding-recovery-bdb20cfb-e4f8-4f89-8e3e-7ce84a8f7464/resource-closeout.json": "cb524bb80fbd3f6723cf552f276e21639827ecf27ef8bc93e8d3102a701c9223",
+    "/private/tmp/p08-binding-recovery-bdb20cfb-e4f8-4f89-8e3e-7ce84a8f7464/purge-result.json": "4532220f461b91cafc556c481e8671d160d551b9b012dbde1ecccab46d2b38b4",
+    "/private/tmp/p08-current-external-4c80bc00-c2b4-4dcb-9940-a9b0306b2033/result.json": "b3a219689ae46c00fbca09257aadf423a5d318c8a9ad1417a87109fb49d8b4f4",
+    "/private/tmp/p08-current-external-4c80bc00-c2b4-4dcb-9940-a9b0306b2033/independent-closeout.json": "12f1b0605767070b5c5c4b8386718fc928480b45037a66509bc0b6aab3fcb230",
+    "/private/tmp/p08-public-review-bdb20cfb-e4f8-4f89-8e3e-7ce84a8f7464/result.json": "824bc2d2cb77571a42979a6285ac226f8d31ebd33ea001e704a6e2f11072b3ea"
+  },
+  "currentTests": {
+    "module": "test_entry.IdentityReadbackDiagnosticTests",
+    "names": [
+      "test_same_native_read_preserves_legacy_predicate_and_classifies_rejections",
+      "test_specific_failures_survive_main_and_independent_closeout"
+    ],
+    "result": "2_PASS",
+    "transport": "SYNTHETIC_NO_PROVIDER_NO_DATABASE_FIXTURE"
+  },
+  "finding": "Existing BR1 bounded readback handling is confined to iq1_identity_boundary.py; connected native Coordinator.invoke delegates one readback after identity change. This known integration gap remains in fabd456 and matches the R64 stop path.",
+  "historicalProviderCause": "UNKNOWN",
+  "confirmedLimits": [
+    "R64 state classification implies exact identity with an opposite accepted state value; original boolean versus numeric raw representation unavailable",
+    "No mutation exception recorded before readback; acknowledgement is not state proof",
+    "IQ6 same-response observations showed differing states before and after SDK decoding; not proof of R64 cause",
+    "IQ8 did not use extra observations; bounded policy is locally tested, not live-proven as the solution",
+    "DBR2 and CRV1 current verification do not rewrite original R64 residuals or prove current identity state"
+  ],
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "backendChanges": 0,
+  "next": "Owner decision on BR2 local connected integration; no live attempt prepared",
+  "reconciliationChecks": {
+    "verifiedAt": "2026-11-27T01:36:03.926007+00:00",
+    "frozenBaseline": "PASS",
+    "completeConsistency": "PASS",
+    "governanceSafeguardTests": "25_PASS",
+    "backendGovernanceWrapper": "PASS",
+    "architecture": "PASS",
+    "bothWhitespaceChecks": "PASS"
+  }
+}
