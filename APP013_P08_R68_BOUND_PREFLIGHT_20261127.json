@@ -17,5 +17,11 @@
   "qualificationAuthorized": false,
   "nativeAuthorized": false,
   "paymentAuthorized": false,
-  "scopeDeviation": "NONE"
+  "scopeDeviation": "NONE",
+  "boundNativeCapability": "PASS_ACTUAL_AQ1_PROOF_ONLY",
+  "boundAdmissionAndSettle": "PASS_976_SECONDS_REMAIN",
+  "boundNativeVerifiedAt": "2026-11-27T20:21:18.576962+00:00",
+  "dispatchProcedurePath": "/private/tmp/r68-dispatch.py",
+  "dispatchProcedureSha256": "472f591004cdd6db1c5bf5fa8e509f53a30d2718453c5333868e7f9a5adc3094",
+  "proofRootRemoved": true
 }
