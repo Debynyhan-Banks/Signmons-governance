@@ -1,0 +1,18 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_TR41_R68_OPENING_AND_ONE_TIME_BINDING",
+  "reviewCommit": "f31cf96",
+  "reviewSha256": "e4c6d850ca5c1cd1f00195fb88d9b4994c57ac80f87c6d2fc6d6e977f93e0f70",
+  "templateSha256": "b1bf3f80ac59a57978d1d99371f3807840ce0c190a67ffffe2e3cb470eab55ac",
+  "response": "Approve opening; ready, no overlap; available 75 minutes from start",
+  "recordedAt": "2026-11-27T20:16:02.071258+00:00",
+  "anchor": "2026-11-27T20:30:00Z",
+  "attendanceThrough": "2026-11-27T21:45:00Z",
+  "sourceCommit": "06bb7125004eb8a16bc0a190faae8a882ec92858",
+  "signInAndConditionalRecoveryAuthorized": true,
+  "qualificationAuthorized": false,
+  "nativeAuthenticationAuthorized": false,
+  "paymentAuthorized": false,
+  "terminalDelegationAuthorized": false,
+  "retryAuthorized": false
+}

@@ -1,0 +1,35 @@
+{
+  "status": "BOUND_ONCE_UNDER_EXPLICIT_OWNER_APPROVAL",
+  "bindingClockUtc": "2026-11-27T20:16:02.069204+00:00",
+  "anchor": "2026-11-27T20:30:00Z",
+  "templateSha256": "b1bf3f80ac59a57978d1d99371f3807840ce0c190a67ffffe2e3cb470eab55ac",
+  "nonTimeFieldsUnchanged": true,
+  "signInCutoff": "2026-11-27T20:33:00Z",
+  "signInCleanupEnd": "2026-11-27T20:40:00Z",
+  "recovery": {
+    "start": "2026-11-27T20:30:00Z",
+    "cutoff": "2026-11-27T20:35:00Z",
+    "readEnd": "2026-11-27T20:39:00Z",
+    "closeoutEnd": "2026-11-27T20:44:00Z",
+    "purgeEnd": "2026-11-27T21:30:00Z"
+  },
+  "qualification": {
+    "start": "2026-11-27T20:30:00Z",
+    "cutoff": "2026-11-27T20:42:00Z",
+    "readEnd": "2026-11-27T20:47:00Z",
+    "closeoutEnd": "2026-11-27T20:52:00Z",
+    "purgeEnd": "2026-11-27T21:30:00Z"
+  },
+  "native": {
+    "start": "2026-11-27T20:30:00Z",
+    "cutoff": "2026-11-27T21:16:00Z",
+    "workEnd": "2026-11-27T21:17:00Z",
+    "cleanupEnd": "2026-11-27T21:28:00Z",
+    "purgeEnd": "2026-11-27T21:30:00Z"
+  },
+  "manualNativeDispatchCutoff": "2026-11-27T20:44:00Z",
+  "credentialCoverageBeyond": "2026-11-27T21:30:00Z",
+  "attendanceThrough": "2026-11-27T21:45:00Z",
+  "recoveryPacketSha256": "2f4efcb0ec8d42b86a50cf75c619e4369c28b0f752e684b3700123bc2bd0999b",
+  "specSha256": "f3ae3921b8e0574e99a70843571c17fa668e9e5e4751037e653275488ce6069f"
+}

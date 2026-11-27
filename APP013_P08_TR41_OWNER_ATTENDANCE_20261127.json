@@ -1,0 +1,10 @@
+{
+  "owner": "Debynyhan Banks",
+  "attendanceStart": "2026-11-27T20:30:00Z",
+  "attendanceThrough": "2026-11-27T21:45:00Z",
+  "proposalSha256": "976ef1d06dad6ee22776cef5c6c1d8fbf8242f3575d4f0b1acc77eb9f9426915",
+  "terminalReady": true,
+  "browserReady": true,
+  "noOverlapConfirmed": true,
+  "source": "Owner R68 opening approval and one-time binding"
+}

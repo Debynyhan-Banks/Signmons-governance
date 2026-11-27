@@ -1,0 +1,31 @@
+{
+  "recoveryId": "2b76548d-16f5-4d6d-a552-6fd7e057f4f0",
+  "qualificationId": "13feda6f-f13c-470e-9292-8baedb1a10e7",
+  "prospectiveOperationId": "92b596a9-e21a-46ad-8e1c-fb7800e327c9",
+  "sourceCommit": "06bb7125004eb8a16bc0a190faae8a882ec92858",
+  "manifestSha256": "076970710eb76673a376cabbb7b7a0bc14921c893905e26b1768133a41bcabff",
+  "prospectiveLimits": {
+    "cli": 196,
+    "https": 100,
+    "sql": 60,
+    "child": 6,
+    "childRequests": 200
+  },
+  "paymentRequestId": "e49b824f-7532-455a-bf17-8fdfcb80214e",
+  "nativePurpose": "NATIVE_AUTH_QUALIFICATION_ONLY",
+  "window": {
+    "start": "2026-11-27T20:30:00Z",
+    "cutoff": "2026-11-27T20:42:00Z",
+    "readEnd": "2026-11-27T20:47:00Z",
+    "closeoutEnd": "2026-11-27T20:52:00Z",
+    "purgeEnd": "2026-11-27T21:30:00Z"
+  },
+  "prospectiveWindow": {
+    "start": "2026-11-27T20:30:00Z",
+    "cutoff": "2026-11-27T21:16:00Z",
+    "workEnd": "2026-11-27T21:17:00Z",
+    "cleanupEnd": "2026-11-27T21:28:00Z",
+    "purgeEnd": "2026-11-27T21:30:00Z"
+  },
+  "paymentWorkEnd": "2026-11-27T21:16:00Z"
+}

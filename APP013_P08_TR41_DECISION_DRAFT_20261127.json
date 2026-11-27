@@ -1,0 +1,14 @@
+{
+  "status": "APPROVED_BY_R68_OPENING_DECISION",
+  "decisionForReview": {
+    "owner": "Debynyhan Banks",
+    "decision": "APPROVE_TR1_CREDENTIAL_RENEWAL_SDK_RETRY_CACHE_AND_CLEANUP",
+    "proposalSha256": "976ef1d06dad6ee22776cef5c6c1d8fbf8242f3575d4f0b1acc77eb9f9426915",
+    "sourceCommit": "06bb7125004eb8a16bc0a190faae8a882ec92858",
+    "reservation": "owner-signin-20261127-tr41",
+    "cutoff": "2026-11-27T20:33:00Z",
+    "closeoutEnd": "2026-11-27T20:40:00Z",
+    "validThrough": "2026-11-27T21:30:00Z",
+    "externalActionAuthorized": true
+  }
+}
