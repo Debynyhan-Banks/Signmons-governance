@@ -1,0 +1,17 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_EXACT_ATTENDED_TERMINAL_CONFIRMATIONS",
+  "recoveryId": "276750d7-5c5b-46f0-9c0f-a874220f74d0",
+  "sourceCommit": "fef39a05cd7e83b54e74a6774716c2b9ab5a4286",
+  "specSha256": "b90c09748676946cc8ae9e382c4a2491b028fa19b1c59071f57658f5a3137d81",
+  "stages": [
+    "qualification",
+    "native"
+  ],
+  "purgeEnd": "2026-11-27T12:45:00Z",
+  "nativeCost": {
+    "allowanceUsd": 0,
+    "hardBillingCap": false,
+    "existingLiabilitiesUnchanged": true
+  }
+}

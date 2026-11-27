@@ -1,0 +1,13 @@
+# TR40 — sign-in prerequisite for R67
+
+BOUND UNDER THE OWNER-APPROVED R67 TIMING/OPENING DECISION. APP-013 / 3A / P08. Backend fef39a05cd7e83b54e74a6774716c2b9ab5a4286. Reuse the owner-approved Chrome-first template4d7cb81 with only operation/source/attendance constants changed.
+
+One command: `/opt/homebrew/bin/gcloud auth login debynyhan@signmons.com --force --no-activate --brief --quiet --verbosity=none`. Owner signs in personally. Seven existing scopes: openid; https://www.googleapis.com/auth/userinfo.email; https://www.googleapis.com/auth/cloud-platform; https://www.googleapis.com/auth/appengine.admin; https://www.googleapis.com/auth/sqlservice.login; https://www.googleapis.com/auth/compute; https://www.googleapis.com/auth/accounts.reauth.
+
+Proposed November27 Eastern sign-in6:45–strictly before6:48a.m.; at most300seconds; independent cleanup6:55. Credential coverage must extend strictly beyond7:45a.m. One conditional eight-second existing credential-cache validity check only after exit0, owned process/group absence and unchanged configuration. Token discarded immediately; safe status retained. Persistent SDK cache remains; cleanup is not sign-out. Existing SDK refresh/internal authentication retry/persistent-cache exception applies; internal request count UNKNOWN. No operator retry, alternate account or credential export. SDK output discarded. BROWSER=chrome is a preference, not exclusive routing; no browser default/profile change.
+
+Owner confirmed readiness/no overlap and75minutes after preparation; the exact6:45–8:00a.m. window is now bound under the approved one-time rule. No existing attendance deadline is reused. Lower start is a manual implementer gate; code enforces cutoff/cleanup. Prepared executor /private/tmp/signmons-tr40-owner-signin.py remains PENDING_EXACT_TR40_APPROVAL; exclusive renewal root20261127-tr40 must remain absent.
+
+Readiness uses actual executor.preflight and packet.renewal_preflight with in-memory inert authority, current source/SDK/browser pins and nonsecret configuration. No sign-in/cache read/browser opening is part of preparation. Independent cleanup includes owned group termination/reaping and exact hash-matched executor removal; persistent cache and unrelated processes remain. No resource probe, SQL, IAM/key/secret/billing change, payment, booking, real charge/refund, customer/support contact or deployment.
+
+Owner credential custodian approves/signs in; implementer compares exact source/command/authority/timing and closes. Observable result is coverage/closeout or bounded stop. R67 recovery is conditional on that result; later qualification/native authority remains separate via newly delegated exact Terminal confirmations. Accepted4/8;3A OPEN;R1newlyclosed0/27. No scope deviation.

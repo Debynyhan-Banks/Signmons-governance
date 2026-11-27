@@ -1,0 +1,33 @@
+{
+  "status": "QUALIFICATION_ONLY_PREPARATION_NOT_EXTERNAL_APPROVAL",
+  "sourceCommit": "fef39a05cd7e83b54e74a6774716c2b9ab5a4286",
+  "verifiedAt": "2026-11-27T11:40:55.760866+00:00",
+  "recoveryStaticPrepare": "PASS_ACTUAL_PREPARE_INERT_AUTHORITY",
+  "nativeCapability": "PASS_ACTUAL_PACKET_PROOF_ONLY_SYNTHETIC_PRIVATE_FIELDS",
+  "attendedConsent": "PASS_ACTUAL_VALIDATOR_INERT_AUTHORITY",
+  "actualAdmissionAndSettle": "PASS",
+  "latestNativeLaunch": "2026-11-27T11:59:00Z",
+  "postWaitReserveSecondsAtLatestLaunch": 976.0,
+  "nativeCleanupReserveSeconds": 660,
+  "purgeReserveSeconds": 120,
+  "retentionSeconds": 3600,
+  "sixOperationRootsAbsent": true,
+  "temporaryProofRootRemoved": true,
+  "attemptCreated": false,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "liveAuthorityCreated": false,
+  "sdkFiles": 43,
+  "nativeManifestSha256": "70128cb45f3fd8d0a7362b04b25b26dac1d8693a6cc3c371ab4b06d6dd1e618f",
+  "qualificationManifestSha256": "6665c7e5fe9fa4f78af777b725417f2b77ac60616c37b68d0a77b96ca7c17ecf",
+  "dispatcherSha256": "750700ebcd9797e0fb4fef554b169c9bcc612734b22bd41b6d8aa7f2eb1be04d",
+  "dispatcherDifference": "EXISTING_TEMPLATE_CONSTANTS_ONLY",
+  "priorLocalTests": "AP1 249 selected tests reused, not rerun",
+  "unknown": [
+    "current credential coverage and private bindings",
+    "current effective access/API/key compatibility",
+    "provider mutations and convergence",
+    "authentication/payment/event/gate"
+  ],
+  "ownerAttendance": "Ready75minutes after preparation; exact proposed6:45\u20138:00a.m.Eastern subject opening confirmation"
+}

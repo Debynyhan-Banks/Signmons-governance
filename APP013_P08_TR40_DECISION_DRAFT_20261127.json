@@ -1,0 +1,24 @@
+{
+  "status": "PROPOSED_NOT_APPROVED",
+  "externalActionAuthorized": false,
+  "availability": "Owner confirmed75minutes after preparation; exact proposed window requires opening decision",
+  "proposedAttendance": {
+    "start": "2026-11-27T11:45:00Z",
+    "through": "2026-11-27T13:00:00Z",
+    "confirmed": false,
+    "terminalReady": true,
+    "browserReady": true,
+    "noOverlapConfirmed": true
+  },
+  "decisionForReview": {
+    "owner": "Debynyhan Banks",
+    "decision": "APPROVE_TR1_CREDENTIAL_RENEWAL_SDK_RETRY_CACHE_AND_CLEANUP",
+    "proposalSha256": "81af1a3b9f404d8fb7e07bee225662b203ec0c0ba6966019cf967a0de31e5c22",
+    "sourceCommit": "fef39a05cd7e83b54e74a6774716c2b9ab5a4286",
+    "reservation": "owner-signin-20261127-tr40",
+    "cutoff": "2026-11-27T11:48:00Z",
+    "closeoutEnd": "2026-11-27T11:55:00Z",
+    "validThrough": "2026-11-27T12:45:00Z",
+    "externalActionAuthorized": true
+  }
+}

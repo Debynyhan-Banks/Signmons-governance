@@ -1,0 +1,17 @@
+{
+  "status": "BOUND_ONCE_UNDER_EXPLICIT_OWNER_AUTHORITY",
+  "ownerStatement": "Approve bounded-start opening; ready, no overlap, available",
+  "reviewCommit": "e4a561a8a02e86fbef599601218cb38ac43b51c8",
+  "templateSha256": "83bf802d24393b9d3615f5d15f6585c8e86030791b6cdbc27289287da1b9a1a2",
+  "bindingClockUtc": "2026-11-27T11:40:54Z",
+  "bindingClockEpoch": 1795779654.964994,
+  "anchor": "2026-11-27T11:45:00Z",
+  "sourceCommit": "fef39a05cd7e83b54e74a6774716c2b9ab5a4286",
+  "signInCutoff": "2026-11-27T11:48:00Z",
+  "signInCloseout": "2026-11-27T11:55:00Z",
+  "credentialCoverageBeyond": "2026-11-27T12:45:00Z",
+  "manualNativeDispatchBefore": "2026-11-27T11:59:00Z",
+  "purgeBy": "2026-11-27T12:45:00Z",
+  "attendanceThrough": "2026-11-27T13:00:00Z",
+  "rebindingAllowed": false
+}

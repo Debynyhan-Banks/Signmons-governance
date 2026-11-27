@@ -1,0 +1,12 @@
+{
+  "owner": "Debynyhan Banks",
+  "confirmed": true,
+  "start": "2026-11-27T11:45:00Z",
+  "attendanceThrough": "2026-11-27T13:00:00Z",
+  "browserReady": true,
+  "terminalReady": true,
+  "noOverlapConfirmed": true,
+  "proposalSha256": "81af1a3b9f404d8fb7e07bee225662b203ec0c0ba6966019cf967a0de31e5c22",
+  "ownerStatement": "Approve bounded-start opening; ready, no overlap, available",
+  "timingBinding": "APP013_P08_R67_TIMING_BINDING_20261127.json"
+}
