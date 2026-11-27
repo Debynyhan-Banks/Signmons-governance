@@ -1,0 +1,71 @@
+{
+  "section": "APP-013 / 3A / P08",
+  "status": "BR2_LOCAL_IMPLEMENTATION_VERIFIED",
+  "verifiedAt": "2026-11-27T01:52:32.576080+00:00",
+  "sourceCommit": "4e29a9114245990fd69712749505e5b069d9ca70",
+  "baselineCommit": "fabd4561a2a25f4618aa7d2395fbba1eff1c3795",
+  "approvalCommits": [
+    "8c56d0f",
+    "3779a95"
+  ],
+  "sourceAndEvidenceSha256": {
+    "evidence/APP-013/p08-connected-packet-20261110/account-containment-read-source-manifest.json": "542ea55bb84d366ab6fdf2ddccbec557a2ad5a7538a4a67436b880204ffc92b0",
+    "evidence/APP-013/p08-connected-packet-20261110/account-containment-source-manifest.json": "8007a0e2ed5163c438a4ea25da7ea7c8e59643d2262dcf98a06a2f66c7ba7f47",
+    "evidence/APP-013/p08-connected-packet-20261110/br2-local-verification/README.md": "e52f089c4ed81e6da071abc542daa569c627e36428e701cb8caaa9b5285de3fd",
+    "evidence/APP-013/p08-connected-packet-20261110/br2-local-verification/connected.txt": "07746955cbe58c25b480e88de3ee98878e336d247be14021f71c7d47a05d4a97",
+    "evidence/APP-013/p08-connected-packet-20261110/br2-local-verification/native.txt": "5e445be35f83500fc661f1c5ea05818f78c0cd00ba76cc44eb49589cf8ad8c22",
+    "evidence/APP-013/p08-connected-packet-20261110/iq1-source-manifest.json": "3a6b7c9c5715b7d7ac72c430ff5ce1d5fa2baa6c02b6fdbeb5f0d5e38c099d62",
+    "evidence/APP-013/p08-connected-packet-20261110/packet.py": "afe1d4b939fcf09ebaf56c442350bb1807588e37ef401655cc6fd7db0b773179",
+    "evidence/APP-013/p08-connected-packet-20261110/sq1-source-manifest.json": "335db3d4a2f08057928ff73acaa45ac47290c5a8bafdbf1c625453a3ebf8ca09",
+    "evidence/APP-013/p08-connected-packet-20261110/test_packet.py": "1242a5267d1bc20dee3d5658df8823d18dbf0c47204ddd931d8ca51aee4b1a9c",
+    "evidence/APP-013/p08-connected-packet-20261110/vm2-source-manifest.json": "3c74ba1ec1d6a65ed262bb93fee9c2cb928d842cc6dfe86e517207dd981e94bf",
+    "evidence/APP-013/p08-key-correction-20261110/source-manifest.json": "e14fd9eabf144d2be1ea31b2ff301522f0f0388fc48ee9c5e46afc2c771ec237",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/entry.py": "239513ab7c2fee5d42175110a6add91bf7e2c929b804148bc11a5986def54eef",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/source-manifest.json": "4784a8e066a39807d8ad5d8c18d3249a86937c123647f704100cbde2fcee3e2e",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/test-manifest.json": "9b68f72e97bb33b38645926ee0fe3721d9140b84270d53777514a83e7a9fde5f",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/test_entry.py": "14efc086685dbc139475839f86e70f1a1da4f100bda29cac86b4a9f7af376c7b"
+  },
+  "tests": {
+    "native": 129,
+    "connected": 60,
+    "governance": 25,
+    "result": "PASS",
+    "postgreSQLFixtures": false,
+    "providerCalls": 0,
+    "credentialReads": 0,
+    "browserOpens": 0
+  },
+  "syntheticCliCounts": {
+    "immediate": 191,
+    "oneExtraPerPhase": 193,
+    "twoExtraPerPhase": 195,
+    "approvedMaximum": 196
+  },
+  "mutationCountsPerSyntheticJourney": {
+    "enable": 1,
+    "disable": 1
+  },
+  "checks": [
+    "current source manifests",
+    "committed qualification sources",
+    "committed renewal tree",
+    "frozen baseline",
+    "complete consistency",
+    "backend governance wrapper",
+    "architecture",
+    "both whitespace checks"
+  ],
+  "historicalR64ReceiptHashesReverified": 12,
+  "liveQualified": false,
+  "ownerAccepted": false,
+  "unknowns": [
+    "R64 provider cause",
+    "current provider state and usable access",
+    "future identity convergence",
+    "authentic connected payment/event/application-gate acceptance"
+  ],
+  "acceptedMilestones": 4,
+  "milestoneDenominator": 8,
+  "R1NewlyClosed": 0,
+  "scope": "No scope deviation beyond approved BR2 integration and budget amendment"
+}
