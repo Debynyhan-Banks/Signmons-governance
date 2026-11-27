@@ -1,0 +1,30 @@
+{
+  "owner": "Debynyhan Banks",
+  "ownerStatement": "Approve opening package; ready, no overlap, available 9:15\u201310:25",
+  "recordedAt": "2026-11-27T01:58:24.859778+00:00",
+  "preparedCommit": "8f5c4f73ec6b39d072d357b782372463c592efbd",
+  "reviewPath": "APP013_P08_R65_ATTENDED_SESSION_REVIEW_20261126.md",
+  "reviewSha256": "812490fd1c56101a4cde98b0d60e9ed61fe51f46e79908503718989845bbb664",
+  "signInDecision": "APP013_P08_TR38_DECISION_20261126.json",
+  "recoveryDecision": "APP013_P08_BINDING_RECOVERY_OPERATION_20261126.json",
+  "recoveryDispatchConditions": [
+    "TR38 VALID_THROUGH_CUTOFF beyond 2026-11-27T03:15:00Z",
+    "TR38 independent cleanup verified without residuals",
+    "current source/pins/command/timing match",
+    "no overlapping operation",
+    "dispatch before 2026-11-27T02:20:00Z"
+  ],
+  "terminalConsent": "APP013_P08_ATTENDED_SESSION_20261126.json",
+  "qualificationAuthorizedInAdvance": false,
+  "nativeAuthorizedInAdvance": false,
+  "guardedChromeOpening": {
+    "maximum": 1,
+    "requiresExactNativeTerminalConfirmationAndCommittedApproval": true,
+    "requiresActualAttendedPaymentStage": true
+  },
+  "nativeCommitAndDispatchBefore": "2026-11-27T02:29:00Z",
+  "privatePurgeBy": "2026-11-27T03:15:00Z",
+  "availabilityThrough": "2026-11-27T03:25:00Z",
+  "realChargeAuthorized": false,
+  "automaticRetryAuthorized": false
+}
