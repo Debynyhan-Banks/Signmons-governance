@@ -1,0 +1,74 @@
+{
+  "section": "APP-013 / 3A / P08",
+  "status": "LOCAL_CORRECTION_COMPLETE_NO_LIVE_RETRY_AUTHORIZED",
+  "verifiedAt": "2026-11-27T21:01:43.036309+00:00",
+  "sourceCommit": "5bc936c3d13f42ebda7289688d6ec1cea67ada38",
+  "implementationCommit": "db205cd",
+  "approvedReviewCommit": "0924250",
+  "ownerDecisionCommit": "430d83f",
+  "priorAq1ManifestCompletionCommit": "5bc936c",
+  "priorAq1Authority": "bfa7d0f",
+  "files": {
+    "evidence/APP-013/p08-https-output-category-local-20261029/source/qualification_launch.py": "14f51a39a8b7bbef2a00e8dd7b28ff9a1d70e119064541998a74e57492b7c3d5",
+    "evidence/APP-013/p08-https-output-category-local-20261029/source/test_qualification_launch.py": "e7a5b693fb16d12e1da79832ee857943f6133cc48fc479ce8faaf9039e8ef80f",
+    "evidence/APP-013/p08-connected-packet-20261110/account-containment-read-source-manifest.json": "026e66264a150d3a5d4b4dff402d318e302f92ec1028388a40af8a50ec1e41f1",
+    "evidence/APP-013/p08-connected-packet-20261110/account-containment-source-manifest.json": "1fb90b1159a02f3421481007d084ebbcbebdd9300059c73a37faff8b38219804",
+    "evidence/APP-013/p08-connected-packet-20261110/iq1-source-manifest.json": "0b0682a7140ce82c6fb9da767c3eda07d44e65ee1f533b8dffd60e76fc8afa8b",
+    "evidence/APP-013/p08-connected-packet-20261110/sq1-source-manifest.json": "fbf57cb839e2a70b993970c1d4da226a69ab5fe703a4a5aeecc85202e63af2cb",
+    "evidence/APP-013/p08-connected-packet-20261110/vm2-source-manifest.json": "508b93d354dc65e40fe4814d0ef74826f058b51f9a77d83666c920c0a04b77f5",
+    "evidence/APP-013/p08-https-output-category-local-20261029/source/source-manifest.json": "8ece0d137a3b00d4e9a40b52901e80b6b3745d0e400b5090d751db317698e2a4",
+    "evidence/APP-013/p08-key-correction-20261110/source-manifest.json": "455c68cafcfb121373f5fc219a9827535536bd683116c97bfac9c756f931c7af",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/source-manifest.json": "054633002b62194027a890450ba0c0ee8d3dda157537b7b7a9b3824d9ff55e0e",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/test-manifest.json": "9459bd2e2337c40f69dfcaea64281330a77ef03408920b5f41a4586bfa6ecf9c"
+  },
+  "verification": {
+    "newReportingTests": 23,
+    "qualificationProcessRestartTotal": 89,
+    "connectedPacketTests": 3,
+    "governanceTests": 25,
+    "frozenBaseline": "PASS",
+    "completeConsistency": "PASS",
+    "backendWrapper": "PASS",
+    "architecture": "PASS",
+    "bothWhitespace": "PASS",
+    "committedGuards": {
+      "status": "COMMITTED_SOURCE_AND_DEPENDENCY_GUARDS_PASS",
+      "verifiedAt": "2026-11-27T21:00:43.119635+00:00",
+      "sourceCommit": "5bc936c3d13f42ebda7289688d6ec1cea67ada38",
+      "checks": [
+        "qualification current/committed",
+        "native source",
+        "locked source",
+        "renewal tree",
+        "IQ1",
+        "SQ1 via VM2",
+        "VM2",
+        "containment read",
+        "key/containment/native-test manifest file hashes"
+      ],
+      "providerCalls": 0,
+      "credentialStoresRead": false
+    }
+  },
+  "verificationLogSha256": "d24793563d2d3db12708e79dfe5b7f5932077de2bd9a318afee6faef8cd77406",
+  "retainedEvidenceSha256": {
+    "APP013_P08_R68_CLOSEOUT_REVIEW_20261127.json": "15356f935604b5ce3cae22de5c1e05bb97294dd86e5f1534ef03fb1cf9e8f22d",
+    "APP013_P08_SD4_CLOSEOUT_20261127.json": "782d1168b27e40abcdd888d895d4d9a09dba0c1b4307f5db3d1c76dc202d7936"
+  },
+  "allR68SD4ReceiptHashes": "UNCHANGED",
+  "initialRunNotes": [
+    "Initial 16-test run had one test-fixture error: cleanup-only capability incorrectly constructed as work transport; corrected fixture within approved test file.",
+    "Final committed IQ1 guard exposed pre-existing AQ1 packet hash omissions in five manifests. Existing AQ1 explicit approval covered exact source and all affected manifests; completed hash-only propagation under that authority. Old AQ1/R68/SD4 evidence was not rewritten."
+  ],
+  "sourceBehavior": "Guarded existing SQL classification; at most four safe slot/phase/query/category records for qualification and fresh cleanup; unchanged queries, attempt limits, success predicates and cleanup reserves",
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "databaseFixtures": 0,
+  "browserOpened": false,
+  "liveAuthentication": "UNKNOWN_NOT_RUN",
+  "historicalR68Cause": "UNKNOWN_DISCARDED",
+  "paymentObserved": false,
+  "externalActionAuthorized": false,
+  "acceptedMilestones": "1A/1B/2A/2B 4/8; 3A OPEN; R1 newly closed 0/27",
+  "scopeDeviation": "NONE_WITHIN_QSR1_AND_PREVIOUSLY_APPROVED_AQ1_HASH_COMPLETION"
+}

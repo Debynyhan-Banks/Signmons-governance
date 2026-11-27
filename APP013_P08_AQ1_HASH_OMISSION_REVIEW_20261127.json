@@ -1,0 +1,32 @@
+{
+  "section": "APP-013 / 3A / P08",
+  "status": "PREEXISTING_AQ1_HASH_OMISSION_IDENTIFIED_BEFORE_CORRECTION",
+  "verifiedAt": "2026-11-27T21:00:07.231372+00:00",
+  "authority": "bfa7d0f AQ1 exact 11 source/test and 9 manifest approval",
+  "proposal": "7c0825c APP013_P08_AQ1_AUTH_QUALIFICATION_LOCAL_PROPOSAL_20261127.md",
+  "approvedSourceCommit": "06bb7125004eb8a16bc0a190faae8a882ec92858",
+  "unchangedSourceFile": "evidence/APP-013/p08-connected-packet-20261110/packet.py",
+  "approvedCurrentSha256": "fd27a82968b71facec7d0ffd9677e213bad750f2ac77fab37d44cd2d8eed0321",
+  "staleExpectedSha256": "110c97b6a59aad444aebbb60c45333b12efa931b3360a06a249af73a72d7a9fa",
+  "affectedDirectManifests": [
+    "evidence/APP-013/p08-connected-packet-20261110/account-containment-read-source-manifest.json",
+    "evidence/APP-013/p08-connected-packet-20261110/account-containment-source-manifest.json",
+    "evidence/APP-013/p08-connected-packet-20261110/iq1-source-manifest.json",
+    "evidence/APP-013/p08-connected-packet-20261110/sq1-source-manifest.json",
+    "evidence/APP-013/p08-key-correction-20261110/source-manifest.json"
+  ],
+  "permittedTransitiveManifests": [
+    "evidence/APP-013/p08-connected-packet-20261110/account-containment-read-source-manifest.json",
+    "evidence/APP-013/p08-connected-packet-20261110/account-containment-source-manifest.json",
+    "evidence/APP-013/p08-connected-packet-20261110/iq1-source-manifest.json",
+    "evidence/APP-013/p08-connected-packet-20261110/sq1-source-manifest.json",
+    "evidence/APP-013/p08-connected-packet-20261110/vm2-source-manifest.json",
+    "evidence/APP-013/p08-https-output-category-local-20261029/source/source-manifest.json",
+    "evidence/APP-013/p08-key-correction-20261110/source-manifest.json",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/source-manifest.json",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/test-manifest.json"
+  ],
+  "correction": "Complete previously approved derived hash updates only; no executable or frozen baseline change",
+  "externalActionAuthorized": false,
+  "oldReceiptRewritten": false
+}
