@@ -1,0 +1,87 @@
+{
+  "status": "PROPOSED_UNBOUND_NO_LIVE_AUTHORITY",
+  "sourceCommit": "06bb7125004eb8a16bc0a190faae8a882ec92858",
+  "recoveryFields": {
+    "version": 2,
+    "execution": "EXTERNAL_READ_ONLY",
+    "operationId": "2b76548d-16f5-4d6d-a552-6fd7e057f4f0",
+    "qualificationId": "13feda6f-f13c-470e-9292-8baedb1a10e7",
+    "project": "signmons",
+    "owner": "debynyhan@signmons.com",
+    "database": {
+      "host": "ep-jolly-flower-ayc6w9hv.c-5.us-east-2.aws.neon.tech",
+      "port": 5432,
+      "database": "neondb",
+      "user": "neondb_owner"
+    },
+    "projectNumberSha256": "37d4aa0f46ca5b8f0b81b1148bda235a0f4a9a424b6b4638ec993d889563be54",
+    "targetSha256": "23d7b71141e7cdba27558c97333e6821fc76ec872a84cdc2f2f19a980bee029c",
+    "limits": {
+      "cli": 2,
+      "sql": 3,
+      "https": 0,
+      "cache": 0
+    },
+    "sdkException": "SDK_EXISTING_OWNER_REFRESH_CACHE_INTERNAL_RETRIES_NO_TOKEN_EXPORT",
+    "sdkFilesSha256": "ecd62311871d8d39cd2fc94a14b38a16b01a12032d7da04853226feacd6c71b2",
+    "manifestSha256": "076970710eb76673a376cabbb7b7a0bc14921c893905e26b1768133a41bcabff",
+    "sourceCommit": "06bb7125004eb8a16bc0a190faae8a882ec92858",
+    "nativeOperationId": "92b596a9-e21a-46ad-8e1c-fb7800e327c9",
+    "paymentAccountSha256": "a008b806d6ea2cbe47eda0e27bfc855f1d8a376752c434c5efc36c571ece0248"
+  },
+  "connectedSpecFields": {
+    "recoveryId": "2b76548d-16f5-4d6d-a552-6fd7e057f4f0",
+    "qualificationId": "13feda6f-f13c-470e-9292-8baedb1a10e7",
+    "prospectiveOperationId": "92b596a9-e21a-46ad-8e1c-fb7800e327c9",
+    "sourceCommit": "06bb7125004eb8a16bc0a190faae8a882ec92858",
+    "manifestSha256": "076970710eb76673a376cabbb7b7a0bc14921c893905e26b1768133a41bcabff",
+    "prospectiveLimits": {
+      "cli": 196,
+      "https": 100,
+      "sql": 60,
+      "child": 6,
+      "childRequests": 200
+    },
+    "paymentRequestId": "e49b824f-7532-455a-bf17-8fdfcb80214e",
+    "nativePurpose": "NATIVE_AUTH_QUALIFICATION_ONLY"
+  },
+  "timing": {
+    "earliestAnchor": "2026-11-27T20:30:00Z",
+    "latestAnchor": "2026-11-27T22:00:00Z",
+    "anchorRule": "S=max(earliestAnchor,ceil((bindingClockUtc+120)/60)*60); require S<=latestAnchor; bind once after explicit owner approval and before any external action",
+    "signInCutoffOffset": 180,
+    "signInCloseoutOffset": 600,
+    "credentialCoverageOffset": 3600,
+    "recovery": {
+      "start": 0,
+      "cutoff": 300,
+      "readEnd": 540,
+      "closeoutEnd": 840,
+      "purgeEnd": 3600
+    },
+    "qualification": {
+      "start": 0,
+      "cutoff": 720,
+      "readEnd": 1020,
+      "closeoutEnd": 1320,
+      "purgeEnd": 3600
+    },
+    "native": {
+      "start": 0,
+      "cutoff": 2760,
+      "workEnd": 2820,
+      "cleanupEnd": 3480,
+      "purgeEnd": 3600
+    },
+    "manualNativeDispatchCutoffOffset": 840,
+    "paymentWorkEndOffset": 2760,
+    "attendanceOffset": 4500,
+    "absoluteLatestPurge": "2026-11-27T23:00:00Z",
+    "absoluteAttendanceThrough": "2026-11-27T23:15:00Z"
+  },
+  "externalActionAuthorized": false,
+  "automaticRetryAuthorized": false,
+  "terminalDelegationAuthorized": false,
+  "paymentAuthorized": false,
+  "browserAtPaymentAuthorized": false
+}
