@@ -1,0 +1,73 @@
+{
+  "status": "AP1_PROPOSAL_READY_OWNER_DECISION_PENDING",
+  "reviewedAt": "2026-11-27T10:06:16Z",
+  "ticket": "APP-013",
+  "section": "3A",
+  "packet": "P08",
+  "backendHead": "4e29a9114245990fd69712749505e5b069d9ca70",
+  "governanceBase": "bbfe7b7b2643954b5a0783f55e4b919e9b5aa41c",
+  "r65": {
+    "consumed": true,
+    "replayAuthorized": false,
+    "finalStatus": "ENTRY_CONTAINMENT_UNCONFIRMED",
+    "residuals": [
+      "AUTH_OUTCOME_UNKNOWN"
+    ],
+    "authProofReady": false,
+    "authenticationObserved": false,
+    "childResultSha256": null,
+    "paymentObserved": false,
+    "browserOpened": false
+  },
+  "sourceFinding": {
+    "retainedFailureStage": "TOKEN_INTENT",
+    "retainedFailureCode": "ADAPTER_REFUSED_OR_UNKNOWN",
+    "issueAndAuthenticateSeparatedInJournal": false,
+    "runtimeAuthenticationAndPaymentHandoffSeparatedInNativeChild": false,
+    "historicalProviderCause": "UNKNOWN",
+    "recommendedCorrection": "Persist runtime authentication before an explicitly injected payment-handoff hook"
+  },
+  "prospectiveFiles": {
+    "evidence/APP-013/p08-real-client-binding-local-20261031/source/recovery-sequence.mjs": "dce019ea7fd95af03d7ea59dbedea8a26b6634c29abdacac60a16928bea3deab",
+    "evidence/APP-013/p08-real-client-binding-local-20261031/source/bound_handoff.py": "ecb138f5bd1401b7f84661aeab062c9fb0c0d26358d321f74ade93beac5b494f",
+    "evidence/APP-013/p08-real-client-binding-local-20261031/source/test_bound.mjs": "85d4104f44c53f2476cf5ff0ebfbd417b6dff92e1b73843d5fe8cbc54972d5b2",
+    "evidence/APP-013/p08-real-client-binding-local-20261031/source/test_bound.py": "3186f8f7cc898307379eaf3ac4388845e0b1f61400640878cd546012dcba3380",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/native_child.mjs": "0d1241a397de199a3ee5783a81c5c752c473e7e47f84f5cbfc13870a10851e6c",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/test_entry.py": "14efc086685dbc139475839f86e70f1a1da4f100bda29cac86b4a9f7af376c7b"
+  },
+  "derivedCurrentManifests": [
+    "evidence/APP-013/p08-real-client-binding-local-20261031/source/source-manifest.json",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/source-manifest.json",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/test-manifest.json",
+    "evidence/APP-013/p08-key-correction-20261110/source-manifest.json",
+    "evidence/APP-013/p08-connected-packet-20261110/iq1-source-manifest.json",
+    "evidence/APP-013/p08-connected-packet-20261110/sq1-source-manifest.json",
+    "evidence/APP-013/p08-connected-packet-20261110/account-containment-source-manifest.json",
+    "evidence/APP-013/p08-connected-packet-20261110/account-containment-read-source-manifest.json"
+  ],
+  "validation": {
+    "realClientNodeTests": 10,
+    "realClientPythonTests": 19,
+    "nativeBoundaryPythonTests": 8,
+    "focusedSyntheticTests": 37,
+    "governanceSafeguards": 25,
+    "frozenBaseline": "PASS",
+    "crossRepositoryConsistency": "PASS",
+    "backendGovernanceWrapper": "PASS",
+    "architecture": "PASS",
+    "json": "PASS",
+    "whitespace": "PASS",
+    "build": "INAPPLICABLE_DOCUMENTATION_ONLY",
+    "lint": "INAPPLICABLE_DOCUMENTATION_ONLY",
+    "prisma": "INAPPLICABLE_DOCUMENTATION_ONLY",
+    "databaseIntegration": "INAPPLICABLE_DOCUMENTATION_ONLY",
+    "browserQa": "INAPPLICABLE_NO_UI_OR_LIVE_JOURNEY"
+  },
+  "implementationAuthorized": false,
+  "externalActionAuthorized": false,
+  "nextDecision": "Owner approval or decline of the exact AP1 local six-file correction and eight derived current-manifest updates",
+  "acceptedMilestones": "4/8",
+  "newlyClosedR1": "0/27",
+  "overallCompletionEstimate": "UNVALIDATED",
+  "scopeDeviation": "Prospective AP1 correction proposed; no implementation or external action"
+}
