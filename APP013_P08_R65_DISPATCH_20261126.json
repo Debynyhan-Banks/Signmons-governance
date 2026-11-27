@@ -1,0 +1,11 @@
+{
+  "status": "R65_RECOVERY_DISPATCHED_TO_STANDALONE_TERMINAL",
+  "recordedAt": "2026-11-27T02:16:18.315447+00:00",
+  "terminalWindowId": 40573,
+  "sourceCommit": "4e29a9114245990fd69712749505e5b069d9ca70",
+  "openingAuthorityCommit": "c4d5f91c5c151afcdc13ca91c676b980f03bee18",
+  "commandPath": "/private/tmp/p08-terminal-launch-b3e7cdb5-058e-4b03-b942-6154725e9330.command",
+  "commandSha256": "4f2db24f5311f4c73c7ec1ba8c350d4e914ad3910632a8b208d5273400a100fb",
+  "dispatcherSha256": "4e6fbcdc44fb0911b41f24409c109a24573271cdba990c37fbaf2371a3b976ea",
+  "qualificationAndNativeAdvanceAuthority": false
+}

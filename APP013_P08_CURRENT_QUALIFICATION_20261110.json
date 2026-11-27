@@ -1,7 +1,7 @@
 {
-  "cleanupScopeSha256": "95c3ff5362b78a776c3a260c3d44fab8d688a60375a734459a6735a7d2089106",
+  "cleanupScopeSha256": "2e2e6e075a922b9f6a32f256f07591842ae05ef031931cb323fa92d43d83489d",
   "decision": "APPROVE_EXACT_P08_CURRENT_QUALIFICATION",
   "externalReadAuthorized": true,
   "owner": "Debynyhan Banks",
-  "scopeSha256": "bde212afea7058b982f52f207387f3f1a1fd7b01d0838812bf303f60110620ba"
+  "scopeSha256": "24ca60c0fed44daedc49cced618966e23b4a09f55fe6f180f9ac0a9520a61371"
 }
