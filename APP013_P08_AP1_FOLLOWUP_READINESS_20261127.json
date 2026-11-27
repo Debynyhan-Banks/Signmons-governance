@@ -1,0 +1,31 @@
+{
+  "status": "AP1_FOLLOWUP_LOCAL_REVIEW_COMPLETE_WINDOW_AND_FRESH_QUALIFICATION_REQUIRED",
+  "verifiedAt": "2026-11-27T11:06:43.427990+00:00",
+  "sourceCommit": "fef39a05cd7e83b54e74a6774716c2b9ab5a4286",
+  "currentCommittedSourceAndSdkGuards": "PASS",
+  "sdkFilesVerified": 43,
+  "nonsecretConfigurationGuard": "PASS",
+  "credentialCacheRead": false,
+  "providerCalls": 0,
+  "operationReserved": false,
+  "priorTests": "AP1 249 selected tests reused, not rerun",
+  "acceptedMilestones": "4/8 unchanged",
+  "section3A": "OPEN",
+  "routeReview": {
+    "authenticationOnlyNativeV1": "EXISTS_BUT_NOT_ADMISSIBLE_THROUGH_CURRENT_NATIVE_RECOVERY_HANDOFF",
+    "currentRecoveryHandoff": "requires recovery version 2 and native envelope version 2",
+    "boundedIdentityReadbacks": "enabled for version 2 only",
+    "selectedRoute": "existing corrected version-2 connected flow; no source adaptation"
+  },
+  "nextPrerequisite": "Owner attendance, standalone Terminal and Chrome readiness, no overlapping operation; then bind a fresh exact timed packet before external approval.",
+  "unknown": [
+    "fresh credential coverage",
+    "private bindings",
+    "current live provider/effective-access state",
+    "authentication outcome",
+    "same-job Sandbox payment/event/gate"
+  ],
+  "executionReady": false,
+  "liveAuthorityCreated": false,
+  "scopeDeviation": "No scope deviation"
+}
