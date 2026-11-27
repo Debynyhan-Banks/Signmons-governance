@@ -1,0 +1,61 @@
+{
+  "section": "APP-013 / 3A / P08",
+  "status": "PROPOSAL_ONLY_IMPLEMENTATION_PENDING_OWNER_DECISION",
+  "inspectedAt": "2026-11-27T12:50:32.158487+00:00",
+  "sourceCommit": "4d428ca792ceb28aa8aba59dfc1660b4cdcce4e5",
+  "governanceBaseline": "e7a03e643561a566c62bee0bee0e88ed1c1f61a7",
+  "responsibleOwner": "Implementer",
+  "sourceFiles": {
+    "evidence/APP-013/p08-native-entry-local-20261101/source/authority.py": "ca62510e43a9ee95c7e6bb8b5a21dd827013ef87cd36c7678ae62247ad06f6e3",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/entry.py": "239513ab7c2fee5d42175110a6add91bf7e2c929b804148bc11a5986def54eef",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/native_child.mjs": "4156a697e463ec7497eea744c02143d0a5f27ef6b83067828152f9192dc94710",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/connected_payment.mjs": "82222165db99e1e3a6e84cec2869b1f466e47c9599b7502627b2148cea6a93c9",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/test_entry.py": "0a091819877ec8d9fa65fec3201d054a6c64569c5857dba827a83f113e38e7f0",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/test_connected_payment.mjs": "4eb12fcbf00dd2202791554d936f84eeb9b52fc87cf539a71f93d8e58e6d95a2",
+    "evidence/APP-013/p08-connected-packet-20261110/packet.py": "afe1d4b939fcf09ebaf56c442350bb1807588e37ef401655cc6fd7db0b773179",
+    "evidence/APP-013/p08-connected-packet-20261110/connected_launcher.py": "b3f7f6a54a555761f20ae77eb9f946ce958d731277629f579baabbd74576c8f5",
+    "evidence/APP-013/p08-connected-packet-20261110/test_packet.py": "1242a5267d1bc20dee3d5658df8823d18dbf0c47204ddd931d8ca51aee4b1a9c",
+    "evidence/APP-013/p08-connected-packet-20261110/test_launcher.py": "9aabc06eb3614031ad019561def4b4437ba29d42861ea6a1c5a8674bf4c98355",
+    "evidence/APP-013/p08-connected-packet-20261110/test_bootstrap_open.py": "35a3cbd75db2147c8060072bcf0a4d6f19e09b29fde0169a09c9a3fb067d09a0"
+  },
+  "derivedManifests": {
+    "evidence/APP-013/p08-native-entry-local-20261101/source/source-manifest.json": "35cb192322134e93745543b0f5a8029b9d27452fec368ad6a88dcaa4792756be",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/test-manifest.json": "3a4cbe7a9aabea0d1749d6bcee549954c49adbc20c59b1370b825a54435f9e40",
+    "evidence/APP-013/p08-key-correction-20261110/source-manifest.json": "2d727afae96be79f70a0790dad3f8f17eac27cdbe92bca297986abe5136a0d18",
+    "evidence/APP-013/p08-https-output-category-local-20261029/source/source-manifest.json": "6665c7e5fe9fa4f78af777b725417f2b77ac60616c37b68d0a77b96ca7c17ecf",
+    "evidence/APP-013/p08-connected-packet-20261110/iq1-source-manifest.json": "1317c896f5ac2323b984e4b5bd54b69c92c68772339088b086505efea239a20f",
+    "evidence/APP-013/p08-connected-packet-20261110/sq1-source-manifest.json": "22834df66aa50dc5feed6b640037b5eb14c62a386115f0e3c7187c77cdd2869e",
+    "evidence/APP-013/p08-connected-packet-20261110/account-containment-source-manifest.json": "3e8d72dc3d63958fade808d1a6c6e088a06abe1fb10e1914a07208ecc49ed724",
+    "evidence/APP-013/p08-connected-packet-20261110/account-containment-read-source-manifest.json": "97370d07e0a89e93c1ab9ebf890aaa3cfbda9a3fe169dfde3497700b12bfb439",
+    "evidence/APP-013/p08-connected-packet-20261110/vm2-source-manifest.json": "d970a3f5c68b484e9805b15a42d3f121572a854a18779b457925a2168129abf9"
+  },
+  "currentSourceGuards": "PASS",
+  "preChangeFrozenBaselineAndConsistency": "PASS",
+  "retainedR67ReceiptHashesUnchanged": {
+    "/private/tmp/p08-coordinator-fd51ea99-bdcf-42a0-b4d5-2a3caaf00630/attempt.json": true,
+    "/private/tmp/p08-coordinator-fd51ea99-bdcf-42a0-b4d5-2a3caaf00630/journal.json": true,
+    "/private/tmp/p08-coordinator-fd51ea99-bdcf-42a0-b4d5-2a3caaf00630/work-result.json": true,
+    "/private/tmp/p08-coordinator-fd51ea99-bdcf-42a0-b4d5-2a3caaf00630/result.json": true,
+    "/private/tmp/p08-coordinator-fd51ea99-bdcf-42a0-b4d5-2a3caaf00630/closeout.json": true,
+    "/private/tmp/p08-coordinator-fd51ea99-bdcf-42a0-b4d5-2a3caaf00630/independent-closeout.json": true,
+    "/private/tmp/p08-binding-recovery-276750d7-5c5b-46f0-9c0f-a874220f74d0/recovery-result.json": true,
+    "/private/tmp/p08-binding-recovery-276750d7-5c5b-46f0-9c0f-a874220f74d0/resource-closeout.json": true,
+    "/private/tmp/p08-binding-recovery-276750d7-5c5b-46f0-9c0f-a874220f74d0/purge-result.json": true,
+    "/private/tmp/p08-current-external-7e846d1c-50eb-4177-bb14-f985db4e0c16/result.json": true,
+    "/private/tmp/p08-current-external-7e846d1c-50eb-4177-bb14-f985db4e0c16/independent-closeout.json": true
+  },
+  "newModeTests": "NOT_IMPLEMENTED",
+  "currentCredentialsEffectiveAccessRuntimeAuthentication": "UNKNOWN",
+  "externalActionAuthorized": false,
+  "paymentAuthorized": false,
+  "documentationVerification": {
+    "verifiedAt": "2026-11-27T12:50:49.189358+00:00",
+    "frozenBaseline": "PASS",
+    "completeConsistency": "PASS",
+    "backendGovernanceCheck": "PASS",
+    "architecture": "PASS",
+    "governanceTests": 25,
+    "whitespaceBothRepositories": "PASS",
+    "runtimeTestsRunForThisProposal": false
+  }
+}
