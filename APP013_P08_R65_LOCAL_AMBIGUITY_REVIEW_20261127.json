@@ -1,0 +1,38 @@
+{
+  "status": "EXISTING_BOUNDARY_AMBIGUITY_REPRODUCED",
+  "verifiedAt": "2026-11-27T10:37:58.126634+00:00",
+  "sourceCommit": "4e29a9114245990fd69712749505e5b069d9ca70",
+  "existingTestHelper": "test_entry.JournalContractIntegrationTests.ec1_completed",
+  "cases": [
+    {
+      "injectedBoundary": "TOKEN_CLAIM_REFUSAL",
+      "failureStage": "TOKEN_INTENT",
+      "failureCode": "ADAPTER_REFUSED_OR_UNKNOWN",
+      "authenticated": false,
+      "paymentObserved": false,
+      "residuals": [
+        "AUTH_OUTCOME_UNKNOWN"
+      ],
+      "privateInputsAbsent": true,
+      "childResultSha256": null
+    },
+    {
+      "injectedBoundary": "RUNTIME_HTTP_403",
+      "failureStage": "TOKEN_INTENT",
+      "failureCode": "ADAPTER_REFUSED_OR_UNKNOWN",
+      "authenticated": false,
+      "paymentObserved": false,
+      "residuals": [
+        "AUTH_OUTCOME_UNKNOWN"
+      ],
+      "privateInputsAbsent": true,
+      "childResultSha256": null
+    }
+  ],
+  "historicalR65Cause": "UNKNOWN_NOT_INFERRED_FROM_FIXTURES",
+  "originalReceiptHashesUnchanged": 12,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "databaseFixtures": 0,
+  "implementationChanges": 0
+}
