@@ -1,0 +1,200 @@
+{
+  "status": "R65_CLOSED_WITH_AUTH_OUTCOME_UNKNOWN",
+  "verifiedAt": "2026-11-27T02:32:19.221105+00:00",
+  "sourceCommit": "4e29a9114245990fd69712749505e5b069d9ca70",
+  "originalFinalResult": {
+    "authProofReady": false,
+    "authenticationObserved": false,
+    "childResultSha256": null,
+    "liveAuthorization": true,
+    "operationId": "6a99c3a5-2be9-4a6c-a29e-32ef2bc62347",
+    "paymentObserved": false,
+    "paymentReadyForAcceptance": false,
+    "privateInputsAbsent": true,
+    "residuals": [
+      "AUTH_OUTCOME_UNKNOWN"
+    ],
+    "status": "ENTRY_CONTAINMENT_UNCONFIRMED"
+  },
+  "originalWorkResult": {
+    "authProofReady": false,
+    "liveAuthorization": true,
+    "operationId": "6a99c3a5-2be9-4a6c-a29e-32ef2bc62347",
+    "paymentObserved": false,
+    "paymentReadyForAcceptance": false,
+    "privateInputsAbsent": false,
+    "residuals": [
+      "AUTH_OUTCOME_UNKNOWN"
+    ],
+    "status": "ENTRY_AWAITING_INDEPENDENT_CLOSEOUT"
+  },
+  "publicResult": {
+    "commandExits": {
+      "closeoutExit": 2,
+      "workExit": 2
+    },
+    "decisionForReview": {},
+    "native": {
+      "authProofReady": false,
+      "authenticationObserved": false,
+      "childResultSha256": null,
+      "liveAuthorization": true,
+      "operationId": "6a99c3a5-2be9-4a6c-a29e-32ef2bc62347",
+      "paymentObserved": false,
+      "paymentReadyForAcceptance": false,
+      "privateInputsAbsent": true,
+      "residuals": [
+        "AUTH_OUTCOME_UNKNOWN"
+      ],
+      "status": "ENTRY_CONTAINMENT_UNCONFIRMED"
+    },
+    "paymentReadyForAcceptance": false,
+    "privateInputsAbsent": true,
+    "stage": "result"
+  },
+  "privatePurge": {
+    "completedAt": 1795746646.701729,
+    "onTime": true,
+    "operationId": "b3e7cdb5-058e-4b03-b942-6154725e9330",
+    "rawFilesAbsent": true,
+    "residuals": [],
+    "status": "PRIVATE_PURGE_VERIFIED"
+  },
+  "receiptSha256": {
+    "/private/tmp/p08-coordinator-6a99c3a5-2be9-4a6c-a29e-32ef2bc62347/attempt.json": "eaa5ceda8ef685d5f97153532b5e5c5abf711dcda953cb6213baa81ad242d6ed",
+    "/private/tmp/p08-coordinator-6a99c3a5-2be9-4a6c-a29e-32ef2bc62347/work-result.json": "4726df8796a5bbffef8371116cc04d09d237ffb6aef3cc6ac1ac44e58d28973b",
+    "/private/tmp/p08-coordinator-6a99c3a5-2be9-4a6c-a29e-32ef2bc62347/closeout.json": "07f087de97527878dd976dbbfdb9e83c08d01e22779df1805e119a865c626466",
+    "/private/tmp/p08-coordinator-6a99c3a5-2be9-4a6c-a29e-32ef2bc62347/independent-closeout.json": "07f087de97527878dd976dbbfdb9e83c08d01e22779df1805e119a865c626466",
+    "/private/tmp/p08-coordinator-6a99c3a5-2be9-4a6c-a29e-32ef2bc62347/result.json": "bf207cda68865384517ad5eecbccc549f05497754c752c41147e081f6e0ef98c",
+    "/private/tmp/p08-coordinator-6a99c3a5-2be9-4a6c-a29e-32ef2bc62347/journal.json": "45c33328fdf83467276218f6f5990bcac1d5d447573cd18ad9e9d8e6ef437e32",
+    "/private/tmp/p08-binding-recovery-b3e7cdb5-058e-4b03-b942-6154725e9330/recovery-result.json": "86979e16c398bfd59fe6d87ddad8e4e6a180584007ffb9c16e00df7cd477bd48",
+    "/private/tmp/p08-binding-recovery-b3e7cdb5-058e-4b03-b942-6154725e9330/resource-closeout.json": "cb524bb80fbd3f6723cf552f276e21639827ecf27ef8bc93e8d3102a701c9223",
+    "/private/tmp/p08-binding-recovery-b3e7cdb5-058e-4b03-b942-6154725e9330/purge-result.json": "f2599e394bcaf42a87540ee46aba9ea06d2c9fc817c2c9984da4fe1541e1cb90",
+    "/private/tmp/p08-current-external-b2a6940f-d108-4892-bf84-c14498de3cc0/result.json": "2732fcb45f519a52c4133ead6cdfce4bf2618fe420fd160685491c9482454239",
+    "/private/tmp/p08-current-external-b2a6940f-d108-4892-bf84-c14498de3cc0/independent-closeout.json": "26f8bbe906fd308b36e9b4ae1c95ee5e23ca3b073375193cd5a1ee70bdbe230b",
+    "/private/tmp/p08-public-review-b3e7cdb5-058e-4b03-b942-6154725e9330/result.json": "d5b9576fd881e97d70b8a291bd93d5eee0a4581b5b83379c7b62c722896c2ecd"
+  },
+  "journalProjection": {
+    "phase": "CLOSED",
+    "failure": "LOCAL_ADAPTER_OR_SOURCE_STOP",
+    "authAttempted": true,
+    "authProofAccepted": false,
+    "authClient": {
+      "activatedVersion": "2026-11-27T02:28:39.784Z",
+      "activationIntent": true,
+      "authenticated": false,
+      "closeoutAttempted": true,
+      "disabledVersion": "2026-11-27T02:28:46.763Z",
+      "failureCode": "ADAPTER_REFUSED_OR_UNKNOWN",
+      "failureStage": "TOKEN_INTENT",
+      "firebaseEnableIntent": true,
+      "operationId": "6a99c3a5-2be9-4a6c-a29e-32ef2bc62347",
+      "phase": "CLOSEOUT_FINISHED",
+      "residuals": [],
+      "revocationIntentAt": "2026-11-27T02:28:45.000Z",
+      "sessionClosed": true,
+      "status": "P08_COORDINATOR_AUTH_STOPPED_AND_CLOSED",
+      "tokenIssueIntent": true,
+      "version": 9
+    },
+    "childResultSha256": null,
+    "nativeEntry": {
+      "calls": {
+        "child": 6,
+        "cli": 191,
+        "https": 18,
+        "sql": 10
+      },
+      "childObservations": [
+        {
+          "childCall": 1,
+          "code": "NONE",
+          "journalMerge": "ACCEPTED",
+          "mode": "--payment-preflight",
+          "processOutcome": "RETURNED",
+          "stage": "RESULT"
+        },
+        {
+          "childCall": 2,
+          "code": "NONE",
+          "journalMerge": "ACCEPTED",
+          "mode": "--run",
+          "processOutcome": "RETURNED",
+          "stage": "RESULT"
+        },
+        {
+          "childCall": 3,
+          "code": "NONE",
+          "journalMerge": "ACCEPTED",
+          "mode": "--closeout",
+          "processOutcome": "RETURNED",
+          "stage": "RESULT"
+        },
+        {
+          "childCall": 4,
+          "code": "NONE",
+          "journalMerge": "ACCEPTED",
+          "mode": "--readback",
+          "processOutcome": "RETURNED",
+          "stage": "RESULT"
+        },
+        {
+          "childCall": 5,
+          "code": "NONE",
+          "journalMerge": "ACCEPTED",
+          "mode": "--closeout",
+          "processOutcome": "RETURNED",
+          "stage": "RESULT"
+        },
+        {
+          "childCall": 6,
+          "code": "NONE",
+          "journalMerge": "ACCEPTED",
+          "mode": "--readback",
+          "processOutcome": "RETURNED",
+          "stage": "RESULT"
+        }
+      ],
+      "envelopeSha256": "90a06856176ed5224d3942fb825f805bfdba55339a4c268220db8fd4c651f211",
+      "identityReadbacks": [
+        {
+          "decodedState": "MISSING",
+          "elapsedMs": 389.39,
+          "identity": "MATCH",
+          "ordinal": 1,
+          "phase": "MAIN",
+          "requestedEnabled": true,
+          "result": "MATCH"
+        },
+        {
+          "decodedState": "BOOL_TRUE",
+          "elapsedMs": 494.428,
+          "identity": "MATCH",
+          "ordinal": 1,
+          "phase": "CLEANUP",
+          "requestedEnabled": false,
+          "result": "MATCH"
+        }
+      ]
+    },
+    "residuals": [
+      "AUTH_OUTCOME_UNKNOWN"
+    ],
+    "unknown": []
+  },
+  "independentPrivateInventoryAbsent": true,
+  "ownedOperationProcessesAbsent": true,
+  "removedOwnedFiles": {
+    "/private/tmp/p08-terminal-launch-b3e7cdb5-058e-4b03-b942-6154725e9330.command": "4f2db24f5311f4c73c7ec1ba8c350d4e914ad3910632a8b208d5273400a100fb",
+    "/private/tmp/r65-approved-dispatcher.py": "4e6fbcdc44fb0911b41f24409c109a24573271cdba990c37fbaf2371a3b976ea",
+    "/private/tmp/p08-attended-reference-b3e7cdb5-058e-4b03-b942-6154725e9330.json": "784f0d33f5b3db2bb7682c8d19a4a3007efb6d681ec5d51c627ff6fefdba1652"
+  },
+  "browserOpened": false,
+  "paymentObserved": false,
+  "historicalCause": "UNKNOWN",
+  "section": "3A OPEN",
+  "acceptedMilestones": "4/8",
+  "newlyClosedR1": "0/27",
+  "nextAction": "Review retained authentication source and evidence only; no replay or new provider action authorized",
+  "scopeDeviation": "No scope deviation"
+}
