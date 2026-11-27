@@ -1,0 +1,143 @@
+{
+  "status": "BR2_LOCAL_BUDGET_BLOCKER_CONFIRMED",
+  "verifiedAt": "2026-11-27T01:39:50.056302+00:00",
+  "baselineCommit": "fabd4561a2a25f4618aa7d2395fbba1eff1c3795",
+  "localApprovalCommit": "8c56d0f",
+  "sourceState": "APPROVED_PARTIAL_LOCAL_IMPLEMENTATION_UNCOMMITTED_NOT_EXECUTION_READY",
+  "results": [
+    {
+      "case": "IMMEDIATE_MATCH",
+      "workStatus": "ENTRY_AWAITING_INDEPENDENT_CLOSEOUT",
+      "finalStatus": "ENTRY_CLOSED",
+      "finalResiduals": [],
+      "calls": {
+        "child": 5,
+        "cli": 191,
+        "https": 16,
+        "sql": 10
+      },
+      "limit": 192,
+      "mutationCounts": {
+        "enable": 1,
+        "disable": 1
+      },
+      "identityReadbacks": [
+        {
+          "decodedState": "BOOL_FALSE",
+          "elapsedMs": 0.0,
+          "identity": "MATCH",
+          "ordinal": 1,
+          "phase": "MAIN",
+          "requestedEnabled": true,
+          "result": "MATCH"
+        },
+        {
+          "decodedState": "BOOL_TRUE",
+          "elapsedMs": 0.0,
+          "identity": "MATCH",
+          "ordinal": 1,
+          "phase": "CLEANUP",
+          "requestedEnabled": false,
+          "result": "MATCH"
+        }
+      ],
+      "privateInputsAbsent": true,
+      "providerCalls": 0
+    },
+    {
+      "case": "TWO_EXTRA_READS_PER_TRANSITION",
+      "workStatus": "ENTRY_AWAITING_INDEPENDENT_CLOSEOUT",
+      "finalStatus": "ENTRY_CONTAINMENT_UNCONFIRMED",
+      "finalResiduals": [
+        "TRAFFIC_PRIVATE_PLANS"
+      ],
+      "calls": {
+        "child": 5,
+        "cli": 192,
+        "https": 16,
+        "sql": 9
+      },
+      "limit": 192,
+      "mutationCounts": {
+        "enable": 1,
+        "disable": 1
+      },
+      "identityReadbacks": [
+        {
+          "decodedState": "BOOL_TRUE",
+          "elapsedMs": 0.0,
+          "identity": "MATCH",
+          "ordinal": 1,
+          "phase": "MAIN",
+          "requestedEnabled": true,
+          "result": "RUNTIME_IDENTITY_STATE_MISMATCH"
+        },
+        {
+          "decodedState": "BOOL_TRUE",
+          "elapsedMs": 5000.0,
+          "identity": "MATCH",
+          "ordinal": 2,
+          "phase": "MAIN",
+          "requestedEnabled": true,
+          "result": "RUNTIME_IDENTITY_STATE_MISMATCH"
+        },
+        {
+          "decodedState": "BOOL_FALSE",
+          "elapsedMs": 15000.0,
+          "identity": "MATCH",
+          "ordinal": 3,
+          "phase": "MAIN",
+          "requestedEnabled": true,
+          "result": "MATCH"
+        },
+        {
+          "decodedState": "BOOL_FALSE",
+          "elapsedMs": 0.0,
+          "identity": "MATCH",
+          "ordinal": 1,
+          "phase": "CLEANUP",
+          "requestedEnabled": false,
+          "result": "RUNTIME_IDENTITY_STATE_MISMATCH"
+        },
+        {
+          "decodedState": "BOOL_FALSE",
+          "elapsedMs": 5000.0,
+          "identity": "MATCH",
+          "ordinal": 2,
+          "phase": "CLEANUP",
+          "requestedEnabled": false,
+          "result": "RUNTIME_IDENTITY_STATE_MISMATCH"
+        },
+        {
+          "decodedState": "BOOL_TRUE",
+          "elapsedMs": 15000.0,
+          "identity": "MATCH",
+          "ordinal": 3,
+          "phase": "CLEANUP",
+          "requestedEnabled": false,
+          "result": "MATCH"
+        }
+      ],
+      "privateInputsAbsent": true,
+      "providerCalls": 0
+    }
+  ],
+  "requiredWorstCaseCli": 195,
+  "proposedCapPreservingOneCallHeadroom": 196,
+  "actualAuthorityCapChanged": false,
+  "providerCalls": 0,
+  "databaseFixturesRun": 0,
+  "credentialsRead": 0,
+  "partialEntrySha256": "239513ab7c2fee5d42175110a6add91bf7e2c929b804148bc11a5986def54eef",
+  "checks": {
+    "verifiedAt": "2026-11-27T01:41:40.514782+00:00",
+    "frozenBaseline": "PASS",
+    "completeConsistency": "PASS",
+    "governanceSafeguards": "25_PASS",
+    "backendGovernanceWrapper": "PASS",
+    "architecture": "PASS",
+    "whitespace": "PASS",
+    "initialNativeDiagnosticRegression": "6_PASS_2_EXPECTED_OBSOLETE_SINGLE_READ_ASSERTIONS",
+    "fullBR2Verification": "NOT_COMPLETE"
+  }
+}
