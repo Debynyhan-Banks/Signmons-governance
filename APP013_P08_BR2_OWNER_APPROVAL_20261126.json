@@ -1,0 +1,10 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_BR2_LOCAL_INTEGRATION_AND_TESTS",
+  "proposalCommit": "fb8bdc5",
+  "proposalPath": "APP013_P08_BR2_CONNECTED_READBACK_LOCAL_PROPOSAL_20261126.md",
+  "ownerReply": "Approve BR2 local integration and tests",
+  "recordedAt": "2026-11-27T01:36:33.548656+00:00",
+  "scope": "two existing source/test files and eight derived manifests; bounded observations, safe labels, unchanged acceptance and overall limits",
+  "externalActionsAuthorized": false
+}
