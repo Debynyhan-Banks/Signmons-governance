@@ -1,0 +1,66 @@
+{
+  "section": "APP-013 / 3A / P08",
+  "status": "LOCAL_REPORTING_GAP_REPRODUCED_NO_IMPLEMENTATION",
+  "verifiedAt": "2026-11-27T20:47:08.920892+00:00",
+  "sourceCommit": "06bb7125004eb8a16bc0a190faae8a882ec92858",
+  "actualProcessBoundaryCases": [
+    {
+      "syntheticCase": "authentication",
+      "qualification": "PROCESS_REFUSED",
+      "existingDiagnostic": "SQL_AUTHENTICATION_REFUSED"
+    },
+    {
+      "syntheticCase": "permission",
+      "qualification": "PROCESS_REFUSED",
+      "existingDiagnostic": "SQL_PERMISSION_REFUSED"
+    },
+    {
+      "syntheticCase": "unrecognized",
+      "qualification": "PROCESS_REFUSED",
+      "existingDiagnostic": "SQL_ERROR_UNKNOWN"
+    }
+  ],
+  "ownedChildrenClosed": true,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "databaseFixtures": 0,
+  "queriesExecuted": 0,
+  "sourceFilesChanged": false,
+  "proposedSourceFiles": [
+    "evidence/APP-013/p08-https-output-category-local-20261029/source/qualification_launch.py",
+    "evidence/APP-013/p08-https-output-category-local-20261029/source/test_qualification_launch.py"
+  ],
+  "dependentJsonFiles": [
+    "evidence/APP-013/p08-connected-packet-20261110/account-containment-read-source-manifest.json",
+    "evidence/APP-013/p08-connected-packet-20261110/account-containment-source-manifest.json",
+    "evidence/APP-013/p08-connected-packet-20261110/iq1-source-manifest.json",
+    "evidence/APP-013/p08-connected-packet-20261110/sq1-source-manifest.json",
+    "evidence/APP-013/p08-connected-packet-20261110/vm2-source-manifest.json",
+    "evidence/APP-013/p08-https-output-category-local-20261029/source/source-manifest.json",
+    "evidence/APP-013/p08-key-correction-20261110/source-manifest.json",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/source-manifest.json",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/test-manifest.json"
+  ],
+  "sourceSha256": {
+    "evidence/APP-013/p08-https-output-category-local-20261029/source/qualification_launch.py": "de3118e66897e7c2480f5f02245e54c3152bbe0400c085e1102299bed29a0572",
+    "evidence/APP-013/p08-https-output-category-local-20261029/source/test_qualification_launch.py": "3d198559e0781e4bd79cea1d7a104f1a560d8423987433f919a10d9c54e68bd6"
+  },
+  "retainedEvidenceSha256": {
+    "APP013_P08_R68_CLOSEOUT_REVIEW_20261127.json": "15356f935604b5ce3cae22de5c1e05bb97294dd86e5f1534ef03fb1cf9e8f22d",
+    "APP013_P08_SD4_CLOSEOUT_20261127.json": "782d1168b27e40abcdd888d895d4d9a09dba0c1b4307f5db3d1c76dc202d7936"
+  },
+  "historicalCause": "UNKNOWN",
+  "proposalChecks": {
+    "backendGovernanceWrapper": "PASS",
+    "frozenBaseline": "PASS",
+    "completeConsistency": "PASS",
+    "governanceTests": {
+      "passed": 25,
+      "failed": 0
+    },
+    "architecture": "PASS",
+    "bothWhitespace": "PASS",
+    "allR68SD4RetainedReceiptHashes": "UNCHANGED"
+  },
+  "implementationTests": "NOT_IMPLEMENTED_OR_RUN"
+}
