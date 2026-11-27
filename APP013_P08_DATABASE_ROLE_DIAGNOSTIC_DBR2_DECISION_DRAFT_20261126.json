@@ -1,0 +1,10 @@
+{
+  "status": "PROPOSED_NOT_APPROVED",
+  "externalReadAuthorized": false,
+  "decisionForReview": {
+    "owner": "Debynyhan Banks",
+    "decision": "APPROVE_EXACT_P08_DATABASE_ROLE_DIAGNOSTIC",
+    "externalReadAuthorized": true,
+    "scopeSha256": "003b81839d792764ff394f46ec35683e49cc3273654836166c14d4b646c82c5c"
+  }
+}

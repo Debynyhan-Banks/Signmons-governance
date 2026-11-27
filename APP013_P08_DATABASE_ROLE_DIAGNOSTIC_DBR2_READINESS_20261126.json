@@ -1,0 +1,69 @@
+{
+  "status": "LOCAL_PREPARED_NOT_APPROVED",
+  "verifiedAt": "2026-11-27T01:05:27.476613+00:00",
+  "sourceCommit": "fabd4561a2a25f4618aa7d2395fbba1eff1c3795",
+  "manifestSha256": "6665c7e5fe9fa4f78af777b725417f2b77ac60616c37b68d0a77b96ca7c17ecf",
+  "scopeSha256": "003b81839d792764ff394f46ec35683e49cc3273654836166c14d4b646c82c5c",
+  "operationId": "76816047-e669-467e-b6f4-f853d144fd56",
+  "actualCapabilityPrepare": "PASS_INERT_PROPOSED_AUTHORITY_AND_PROPOSED_CLOCK",
+  "exactCurrentQueryHashes": {
+    "retired_role": "18eef949e9260f689cc55e464608d843ff96fd973d90bcad79b4fdf728b4a961",
+    "closeout": "4c412c23a971f42bae3eb69210c98f6473476822ab0b16271f02de5ada8e76da"
+  },
+  "exactRuntimeFiles": {
+    "/opt/homebrew/opt/postgresql@16/bin/psql": "e67224e11a8d29541c02528b814b17c0757da7d961f16c58003561e20263528d",
+    "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14": "2cbb3ee843d8abcf93ed35bb9102391f18eefccb03d47908547bd8db67bc395c",
+    "/etc/ssl/cert.pem": "9dae8d76e55cb08991f2b672d58999ea15560d910759c16b544f843bdffbb994"
+  },
+  "rootAbsent": true,
+  "actualObservationBoundary": {
+    "noMembershipEdge": null,
+    "approvedAdministrativeEdge": null,
+    "approvedEdgeCountFlag": "FAIL",
+    "invalidAdministrativeEdge": "ROLE_NOT_READY"
+  },
+  "interpretation": "Use current authoritative observation.failure; noMemberships is a literal zero-count display, not the current administrative-edge policy. Report unchanged flags, never infer unsafe membership from this flag alone.",
+  "sqlReads": 0,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "postgresFixtureStarted": false,
+  "nativeSourceUnchanged": true,
+  "unknown": [
+    "current role flags, expiry, ownership, sessions, effective rights and ACL",
+    "database connectivity and usable administrator credentials",
+    "owner approval and attendance",
+    "later Cloud Run configuration/current cloud retirement"
+  ],
+  "purpose": "SQL_ONLY_QUALIFICATION_OF_UNRESOLVED_ROLE_NOT_PAYMENT_OR_FULL_RETIREMENT",
+  "responsibleOwners": [
+    "implementer",
+    "owner/database custodian"
+  ],
+  "historicalR64Unchanged": true,
+  "proposedDispatcher": "/Users/debynyhanbanks/Web Projects/signmons-governance-r08-recovery/APP013_P08_DBR2_PROPOSED_DISPATCHER_20261126.py",
+  "proposedDispatcherSha256": "b959ab51aee1f0fd205e3c4effb9e86e53431b088e18bb1c0866debf283d9ceb",
+  "transportFunction": "UNCHANGED_EXACT_PREFIX_FROM_COMMITTED_SHORT_TERMINAL_TEMPLATE",
+  "transportTemplateSha256": "751bb5f4a9f0b6545e7f611c1e99f4d34e893f9bd04b316f427cde43601c852f",
+  "preparationScriptSha256": "3447b6cde650e29121126541c6621dc7fde697f528ef8eb2d07689e29dc3fa57",
+  "dispatcherSyntax": "PASS_NO_EXECUTION",
+  "start": "2026-11-27T01:10:00Z",
+  "attendanceThrough": "2026-11-27T01:35:00Z",
+  "attendanceConfirmed": false,
+  "approvalCreated": false,
+  "proposalSha256": "df7aeb7adde52717a1b5b99427cc967fc6d83de3877235697d572cf74d488ecc",
+  "governanceResolution": "PASS_ACTUAL_AUTHORITY_GOV_MATCHES_FOCUSED_GOVERNANCE",
+  "requestAndCommandPathsAbsent": true,
+  "localChecks": {
+    "verifiedAt": "2026-11-27T01:08:16.827031+00:00",
+    "frozenBaseline": "PASS",
+    "completeConsistency": "PASS",
+    "governanceRegressions": "25_PASS",
+    "governanceLogSha256": "16102d451fcee40724fedc41957697edcd1a3e167a2676b2d34bd9ca19a550fd",
+    "backendGovernanceWrapper": "PASS",
+    "architecture": "PASS",
+    "whitespaceBoth": "PASS",
+    "runtimeSuite": "PRIOR_CURRENT_SOURCE_PROOF_REUSED",
+    "newBoundaryProbes": "3_SYNTHETIC_CLASSIFIER_CASES_PASS",
+    "databaseFixture": "NOT_RUN"
+  }
+}
