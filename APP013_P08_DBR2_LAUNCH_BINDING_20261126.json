@@ -1,0 +1,12 @@
+{
+  "status": "BOUND_NOT_EXECUTED",
+  "recordedAt": "2026-11-27T01:09:25.512576+00:00",
+  "approvalCommit": "b768cb533a479192cd4431f95ce6a03c59252df4",
+  "dispatcherPath": "/private/tmp/dbr2-dispatcher.py",
+  "dispatcherSha256": "8544044da2c57762b9a3532a2abe05567592b3126a45083bce5b72eb0b9b5b55",
+  "proposedDispatcherSha256": "b959ab51aee1f0fd205e3c4effb9e86e53431b088e18bb1c0866debf283d9ceb",
+  "onlyChange": "PENDING_APPROVAL_LITERAL_TO_EXACT_COMMIT",
+  "providerCalls": 0,
+  "sqlReads": 0,
+  "passwordPromptStarted": false
+}
