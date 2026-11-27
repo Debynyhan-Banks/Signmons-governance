@@ -1,0 +1,13 @@
+{
+  "status": "APPROVED_OPERATOR_INVOCATION_BOUND",
+  "operationId": "1f61fff3-5061-4eb0-ab3d-f57f1ca6f4f3",
+  "preparedCommit": "63186b15459b019c48d7bdc0104e2573bd084b8d",
+  "authorityCommit": "6cc3231f922fa39870bd901b0d2aefcf3545cdd4",
+  "scopeSha256": "141bded54bcb3a2f7a8b7e8088fba6545e7fe28d9d5000ed8ff65b719ff0b18c",
+  "operatorPath": "/private/tmp/crv1-invoke.py",
+  "operatorSha256": "6a92067e9a886e8a012a8373e527b04419d24a856d88535d0e32a57e6242266e",
+  "operatorMode": "0600",
+  "syntax": "PASS",
+  "boundAt": "2026-11-27T01:25:59.702904+00:00",
+  "review": "Five original source descriptors; existing NativeIO and classifiers; no backend edits; explicit authority/source/runtime/SDK/config/time gates, exclusive receipts, no retries, safe projections and finally closeout. Independent external process/receipt review remains manual."
+}
