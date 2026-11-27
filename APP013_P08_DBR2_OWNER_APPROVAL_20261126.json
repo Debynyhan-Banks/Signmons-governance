@@ -1,0 +1,19 @@
+{
+  "owner": "Debynyhan Banks",
+  "ownerStatement": "Approve DBR2; Terminal ready, no overlap, available through 8:35",
+  "recordedAt": "2026-11-27T01:09:14.234850+00:00",
+  "preparedCommit": "a9d751c281bbfca825a45566485cf5451e191557",
+  "proposalSha256": "df7aeb7adde52717a1b5b99427cc967fc6d83de3877235697d572cf74d488ecc",
+  "scopeSha256": "003b81839d792764ff394f46ec35683e49cc3273654836166c14d4b646c82c5c",
+  "operationId": "76816047-e669-467e-b6f4-f853d144fd56",
+  "sourceCommit": "fabd4561a2a25f4618aa7d2395fbba1eff1c3795",
+  "terminalReady": true,
+  "passwordReady": true,
+  "noOverlapConfirmed": true,
+  "attendanceThrough": "2026-11-27T01:35:00Z",
+  "launchNotBefore": "2026-11-27T01:10:00Z",
+  "launchBefore": "2026-11-27T01:25:00Z",
+  "sqlQueriesMaximum": 3,
+  "mutationAuthorized": false,
+  "paymentAuthorized": false
+}
