@@ -1,0 +1,15 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_BR2_LOCAL_BUDGET_AMENDMENT",
+  "proposalCommit": "2bf3d77f6028ffae62ac6b65b2a276bd763e6e75",
+  "proposalPath": "APP013_P08_BR2_BUDGET_AMENDMENT_20261126.md",
+  "ownerReply": "Approve BR2 local budget amendment",
+  "recordedAt": "2026-11-27T01:42:39.174666+00:00",
+  "prospectiveCliLimit": 196,
+  "additionalSemanticReadsMaximum": 4,
+  "additionalFiles": [
+    "packet.py",
+    "test_packet.py"
+  ],
+  "externalActionsAuthorized": false
+}
