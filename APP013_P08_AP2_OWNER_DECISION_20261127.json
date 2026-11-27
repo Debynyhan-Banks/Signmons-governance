@@ -1,0 +1,37 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_AP2_LOCAL_REPAIR_AND_TESTS",
+  "statement": "Approve AP2 local repair and tests",
+  "reviewCommit": "eb61387",
+  "recordedAt": "2026-11-27T12:17:14.914014+00:00",
+  "sourceCommit": "fef39a05cd7e83b54e74a6774716c2b9ab5a4286",
+  "sourceAndTestFiles": {
+    "evidence/APP-013/p08-coordinator-auth-local-20261031/source/client.mjs": "0a895a35ba29fe4b6968be842be220e0d8f4b08ffeb7fc634e0462ca3e9b0939",
+    "evidence/APP-013/p08-coordinator-auth-local-20261031/source/authority.mjs": "322f4d0201fe69386fa4de383a365bc08c25dffc65279e8ada976764159aa22c",
+    "evidence/APP-013/p08-coordinator-auth-local-20261031/source/test_client.mjs": "d503ad264f80fe04a1df1b10743d2d66c117ab04ffb3ab4cdfbba93781af3bd3",
+    "evidence/APP-013/p08-serialized-handoff-local-20261031/source/handoff.py": "ee2d6197c98b8db403315510a98303e0e93581b4126ce19847c4cd3fddc2e526",
+    "evidence/APP-013/p08-real-client-binding-local-20261031/source/bound_handoff.py": "daf1968060af0450e2655cdf74f36e13b4c2656074f3f37302aa6761955ab2be",
+    "evidence/APP-013/p08-real-client-binding-local-20261031/source/recovery-sequence.mjs": "ac5c339bd2c5f40d6239d0c5e9fdcca45dc4e91a337115f3e722abd0de4ce2f2",
+    "evidence/APP-013/p08-real-client-binding-local-20261031/source/test_bound.mjs": "5aec40ad11b3a3ddc0a92fcd5d723331ad1db453d608022565c5b12d4d4a2297",
+    "evidence/APP-013/p08-real-client-binding-local-20261031/source/test_bound.py": "3d811051571873e97f317f9b1e25cd6d742adb4a86e36bfc504928599579c600",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/transports.mjs": "ff9ed3b2d51b69d43457bbe414f7209b32ceac517ea46fefcf9355bfd10cf584",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/test_transports.mjs": "416274dad4b88fff9f1a375109566dd7c5c910e3ab9577a64714143b5ff51d14",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/test_entry.py": "cae90c7b40f883e4cfc39af5fb82133d0810ad31c76cfb09c687d1d0fdb892ca"
+  },
+  "derivedManifests": {
+    "evidence/APP-013/p08-coordinator-auth-local-20261031/source/source-manifest.json": "32f3db9da92377999b42cc80cb44e48cec78f2faa6d6426b486484d61958d077",
+    "evidence/APP-013/p08-serialized-handoff-local-20261031/source/source-manifest.json": "9ef5e75e28f3644626dd465f2308a3184dae5954e84e5e816b8f7cc9e4029e0b",
+    "evidence/APP-013/p08-real-client-binding-local-20261031/source/source-manifest.json": "83d8ac57a6a7da2c48128915113c5367aa32c01e055ea9ca8139061c34addb9b",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/source-manifest.json": "70128cb45f3fd8d0a7362b04b25b26dac1d8693a6cc3c371ab4b06d6dd1e618f",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/test-manifest.json": "c7c50c6ca5482506deccbf68e5b0a7bbab9c8092f9e0dc242aa75b519e127463",
+    "evidence/APP-013/p08-key-correction-20261110/source-manifest.json": "abaf8b15f77bb2440a762f905db6b105a6e41fb04370f0d1641dea994c0825f0",
+    "evidence/APP-013/p08-connected-packet-20261110/iq1-source-manifest.json": "2d0404361ca0e2320bb55019fcf69cbbd4578a6a4db5a154a9a5faba8d5d1f4b",
+    "evidence/APP-013/p08-connected-packet-20261110/sq1-source-manifest.json": "c0c4e2e984eba3a47dd312003e57b99525850e08e9da5d47e33376d6b2fb8997",
+    "evidence/APP-013/p08-connected-packet-20261110/account-containment-source-manifest.json": "22b701016e4350ec9e306c89617ae52ae7865e1e4054a5fe9a997ef319cf3cd7",
+    "evidence/APP-013/p08-connected-packet-20261110/account-containment-read-source-manifest.json": "eeba8ea9cb8b7c4609d97919519b66467777ef2f0bcea1d8c0d5958d7fd2e93b",
+    "evidence/APP-013/p08-connected-packet-20261110/vm2-source-manifest.json": "abbf48b987f6085c8cfc8b79198861d64fb9d5fd2bff0122924ee58203a61bdd"
+  },
+  "externalActionsAuthorized": false,
+  "terminalAttendanceRequired": false,
+  "scope": "Exact AP2 proposal; synthetic tests only; no PostgreSQL fixture or browser opening"
+}
