@@ -1,0 +1,21 @@
+{
+  "section": "APP-013 / 3A / P08",
+  "status": "BOUND_OPENING_PREFLIGHT_VERIFIED_NO_EXTERNAL_ACTION",
+  "verifiedAt": "2026-11-27T20:19:02.489392+00:00",
+  "sourceCommit": "06bb7125004eb8a16bc0a190faae8a882ec92858",
+  "openingDecisionCommit": "30813df12eccba58e3a40a34ecd89e2a468001f5",
+  "executorPath": "/private/tmp/signmons-tr41-owner-signin.py",
+  "executorSha256": "f4e52fce95231cf8036276174372bc874007e27c169152118b1c7ebcc7d4f345",
+  "signInPreflight": "PREFLIGHT_VERIFIED_NO_OPERATION_RESERVED",
+  "actualRecoveryPrepareAtBoundStart": "PASS_NO_RESERVATION",
+  "sourceGuards": "PASS",
+  "nativeTimingEvidence": "APP013_P08_R68_LOCAL_READINESS_20261127.json",
+  "lowerBoundOperatorGate": "2026-11-27T20:30:00Z",
+  "providerCalls": 0,
+  "credentialStoresRead": false,
+  "operationReserved": false,
+  "qualificationAuthorized": false,
+  "nativeAuthorized": false,
+  "paymentAuthorized": false,
+  "scopeDeviation": "NONE"
+}
