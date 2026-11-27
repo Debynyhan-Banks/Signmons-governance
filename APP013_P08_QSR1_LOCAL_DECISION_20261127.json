@@ -1,0 +1,11 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_QSR1_LOCAL_CORRECTION_AND_TESTS",
+  "ownerResponse": "Approve QSR1 local correction and tests",
+  "proposalCommit": "0924250",
+  "proposalSha256": "4c450f7f7c140f608c8ea313082103678e5f990e872a591e3d9947df49894ff5",
+  "recordedAt": "2026-11-27T20:50:48.602435+00:00",
+  "sourceFiles": 2,
+  "derivedManifests": 9,
+  "externalActionAuthorized": false
+}
