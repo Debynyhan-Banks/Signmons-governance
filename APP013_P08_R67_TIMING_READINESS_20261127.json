@@ -1,0 +1,43 @@
+{
+  "status": "R67_TIMING_PROPOSAL_LOCALLY_VERIFIED_NOT_APPROVED",
+  "sourceCommit": "fef39a05cd7e83b54e74a6774716c2b9ab5a4286",
+  "verifiedAt": "2026-11-27T11:37:18.821268+00:00",
+  "templateSha256": "83bf802d24393b9d3615f5d15f6585c8e86030791b6cdbc27289287da1b9a1a2",
+  "boundaryChecks": [
+    {
+      "anchor": "2026-11-27T11:45:00Z",
+      "recoveryPrepare": "PASS_INERT_AUTHORITY",
+      "nativeCapability": "PASS_PROOF_ONLY",
+      "actualAdmissionAndSettle": "PASS",
+      "postSettleReserveSeconds": 976.0
+    },
+    {
+      "anchor": "2026-11-27T12:15:00Z",
+      "recoveryPrepare": "PASS_INERT_AUTHORITY",
+      "nativeCapability": "PASS_PROOF_ONLY",
+      "actualAdmissionAndSettle": "PASS",
+      "postSettleReserveSeconds": 976.0
+    }
+  ],
+  "sourceSdkGuards": "PASS",
+  "sdkFilesVerified": 43,
+  "sixProspectiveRootsAbsent": true,
+  "noAttemptOrExecutorCreated": true,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "runtimeSourceChanges": 0,
+  "priorAP1Tests": "249_SELECTED_PASS_REUSED_NOT_RERUN",
+  "externalState": "UNKNOWN",
+  "exactBoundPacketRequiredBeforeLaunch": true,
+  "scopeDeviation": "PROPOSED_ONLY: owner delegates one constants-only timing binding within reviewed anchor interval; no implementation or live action",
+  "reviewSha256": "205eaebf7cc4369b3b2821e189cfdba402e121ca8725cd9d027cf10687281c61",
+  "documentationChecks": {
+    "completedAt": "2026-11-27T11:39:32.961969+00:00",
+    "frozenBaseline": "PASS",
+    "completeConsistency": "PASS",
+    "governanceTests": "25_PASS",
+    "backendWrapper": "PASS",
+    "architecture": "PASS",
+    "whitespaceBoth": "PASS"
+  }
+}

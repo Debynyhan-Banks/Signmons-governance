@@ -1,0 +1,31 @@
+{
+  "status": "R66_TR39_EXPIRED_UNSTARTED",
+  "ownerStatement": "Approve opening package; available 6:25\u20137:40",
+  "firstClockCheckUtc": "2026-11-27T11:33:53Z",
+  "signInCutoffUtc": "2026-11-27T11:28:00Z",
+  "recoveryCutoffUtc": "2026-11-27T11:30:00Z",
+  "reviewCommit": "63b19648a1691c1f706d3099ced30f18730b4ed7",
+  "externalAuthorityBound": false,
+  "signInStarted": false,
+  "recoveryStarted": false,
+  "providerCalls": 0,
+  "credentialReads": 0,
+  "operationAttempted": false,
+  "privateInputsCreated": false,
+  "ownedPathsAbsent": [
+    "/private/tmp/p08-binding-request-21158f8f-cfb9-488c-b097-b88f9b2e57a5",
+    "/private/tmp/p08-binding-recovery-21158f8f-cfb9-488c-b097-b88f9b2e57a5",
+    "/private/tmp/p08-current-input-2b3a8ef0-f408-4de5-a95c-f758519a597f",
+    "/private/tmp/p08-current-external-2b3a8ef0-f408-4de5-a95c-f758519a597f",
+    "/private/tmp/p08-coordinator-563261f5-15be-4841-8a8d-2d85c476723e",
+    "/private/tmp/p08-public-review-21158f8f-cfb9-488c-b097-b88f9b2e57a5",
+    "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-narrow-access-check-local-20261101/renewals/20261127-tr39",
+    "/private/tmp/p08-terminal-launch-21158f8f-cfb9-488c-b097-b88f9b2e57a5.command",
+    "/private/tmp/p08-attended-reference-21158f8f-cfb9-488c-b097-b88f9b2e57a5.json"
+  ],
+  "preparedExecutorHashMatchedAndRemoved": "9b5a40b4b61fd5ea0b6e75d96d1a496ffbd85ccb68af2270141b91d1d09b4ccf",
+  "closedAt": "2026-11-27T11:35:35.126317+00:00",
+  "automaticReplacementAuthorized": false,
+  "next": "Timing-only proposal for explicit owner review, no launch",
+  "scopeDeviation": "No scope deviation"
+}
