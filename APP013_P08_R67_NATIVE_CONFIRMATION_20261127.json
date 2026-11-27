@@ -1,0 +1,16 @@
+{
+  "status": "OWNER_TERMINAL_CONFIRMATION_INDEPENDENTLY_VERIFIED_AND_CONSUMED",
+  "verifiedAt": "2026-11-27T11:52:10.883278+00:00",
+  "decision": {
+    "decision": "APPROVE_EXACT_P08_CONNECTED_PAYMENT",
+    "externalActionAuthorized": true,
+    "operationId": "fd51ea99-bdcf-42a0-b4d5-2a3caaf00630",
+    "owner": "Debynyhan Banks",
+    "scopeSha256": "971127eeade275b044872050bd891c69f344171cffdb2f6b8c7c5c45efcf0780",
+    "sourceManifestSha256": "70128cb45f3fd8d0a7362b04b25b26dac1d8693a6cc3c371ab4b06d6dd1e618f"
+  },
+  "sourceCommit": "fef39a05cd7e83b54e74a6774716c2b9ab5a4286",
+  "reviewSha256": "30befb6d7ef6d2ff9b6ad4648f1c50789e3a465f2d652e14ac0200e3d3bb8d8f",
+  "confirmationSha256": "0041de863682d4e1e4c6659a949ecb1909163bcac52d8e9ed307610b5904868c",
+  "consumedSha256": "be959970ccfc45717214715387a0e675abfd6ec9f2440dfbac5dd5627ff5e9f3"
+}
