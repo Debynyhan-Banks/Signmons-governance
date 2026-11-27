@@ -1,0 +1,12 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_AQ1_LOCAL_ADAPTATION_AND_SYNTHETIC_TESTS",
+  "reviewCommit": "7c0825c",
+  "reviewSha256": "775a953eb2c6b51cba85f9c183bd396a734ca6cedb3a304eb5d939558744c266",
+  "recordedAt": "2026-11-27T12:51:39.120413+00:00",
+  "ownerResponse": "Approve AQ1 local adaptation and tests",
+  "scope": "11 existing source/test files and 9 derived manifests exactly as reviewed",
+  "externalActionAuthorized": false,
+  "credentialsAuthorized": false,
+  "paymentAuthorized": false
+}
