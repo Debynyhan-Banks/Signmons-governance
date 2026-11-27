@@ -1,0 +1,96 @@
+{
+  "status": "AP1_LOCAL_CORRECTION_VERIFIED_NOT_LIVE_EXECUTION_AUTHORITY",
+  "verifiedAt": "2026-11-27T10:49:39.186538+00:00",
+  "section": "APP-013 / 3A / P08",
+  "sourceCommit": "fef39a05cd7e83b54e74a6774716c2b9ab5a4286",
+  "baselineCommit": "4e29a9114245990fd69712749505e5b069d9ca70",
+  "ownerApprovalCommit": "5e701c5",
+  "approvedReviewCommit": "4331307b899e00a85c2ce127d5ef7f25da6f051b",
+  "files": {
+    "evidence/APP-013/p08-connected-packet-20261110/account-containment-read-source-manifest.json": "eeba8ea9cb8b7c4609d97919519b66467777ef2f0bcea1d8c0d5958d7fd2e93b",
+    "evidence/APP-013/p08-connected-packet-20261110/account-containment-source-manifest.json": "22b701016e4350ec9e306c89617ae52ae7865e1e4054a5fe9a997ef319cf3cd7",
+    "evidence/APP-013/p08-connected-packet-20261110/iq1-source-manifest.json": "2d0404361ca0e2320bb55019fcf69cbbd4578a6a4db5a154a9a5faba8d5d1f4b",
+    "evidence/APP-013/p08-connected-packet-20261110/sq1-source-manifest.json": "c0c4e2e984eba3a47dd312003e57b99525850e08e9da5d47e33376d6b2fb8997",
+    "evidence/APP-013/p08-connected-packet-20261110/vm2-source-manifest.json": "abbf48b987f6085c8cfc8b79198861d64fb9d5fd2bff0122924ee58203a61bdd",
+    "evidence/APP-013/p08-key-correction-20261110/source-manifest.json": "abaf8b15f77bb2440a762f905db6b105a6e41fb04370f0d1641dea994c0825f0",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/native_child.mjs": "4156a697e463ec7497eea744c02143d0a5f27ef6b83067828152f9192dc94710",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/source-manifest.json": "70128cb45f3fd8d0a7362b04b25b26dac1d8693a6cc3c371ab4b06d6dd1e618f",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/test-manifest.json": "c7c50c6ca5482506deccbf68e5b0a7bbab9c8092f9e0dc242aa75b519e127463",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/test_entry.py": "cae90c7b40f883e4cfc39af5fb82133d0810ad31c76cfb09c687d1d0fdb892ca",
+    "evidence/APP-013/p08-real-client-binding-local-20261031/source/bound_handoff.py": "daf1968060af0450e2655cdf74f36e13b4c2656074f3f37302aa6761955ab2be",
+    "evidence/APP-013/p08-real-client-binding-local-20261031/source/recovery-sequence.mjs": "ac5c339bd2c5f40d6239d0c5e9fdcca45dc4e91a337115f3e722abd0de4ce2f2",
+    "evidence/APP-013/p08-real-client-binding-local-20261031/source/source-manifest.json": "83d8ac57a6a7da2c48128915113c5367aa32c01e055ea9ca8139061c34addb9b",
+    "evidence/APP-013/p08-real-client-binding-local-20261031/source/test_bound.mjs": "5aec40ad11b3a3ddc0a92fcd5d723331ad1db453d608022565c5b12d4d4a2297",
+    "evidence/APP-013/p08-real-client-binding-local-20261031/source/test_bound.py": "3d811051571873e97f317f9b1e25cd6d742adb4a86e36bfc504928599579c600"
+  },
+  "verification": {
+    "directNodeTests": 15,
+    "directPythonTests": 20,
+    "fullNativeTests": 131,
+    "selectedConnectedTests": 58,
+    "governanceTests": 25,
+    "currentAndCommittedSourceGuards": "PASS",
+    "frozenBaseline": "PASS",
+    "completeConsistency": "PASS",
+    "architecture": "PASS",
+    "whitespaceBothRepositories": "PASS",
+    "postDocumentationChecks": "PASS"
+  },
+  "retainedR65Receipts": {
+    "count": 12,
+    "sha256Unchanged": true,
+    "historicalAuthenticationOutcome": "UNKNOWN",
+    "paymentObserved": false
+  },
+  "observedSyntheticDistinctions": [
+    {
+      "case": "invalid role claim",
+      "failureStage": "RUNTIME_AUTH_INTENT",
+      "failureCode": "TOKEN_CLAIMS_DRIFT",
+      "authenticated": false,
+      "paymentObserved": false,
+      "childResultSha256": null
+    },
+    {
+      "case": "runtime HTTP403",
+      "failureStage": "RUNTIME_AUTH_INTENT",
+      "failureCode": "AUTH_RUNTIME_REFUSED",
+      "authenticated": false,
+      "paymentObserved": false,
+      "childResultSha256": null
+    },
+    {
+      "case": "payment precondition refusal after runtime success",
+      "failureStage": "PAYMENT_HANDOFF_INTENT",
+      "failureCode": "ADAPTER_REFUSED_OR_UNKNOWN",
+      "authenticated": true,
+      "paymentObserved": false,
+      "parentProof": "only after exact returned result and existing readbacks"
+    },
+    {
+      "case": "handoff output loss, timeout, exit, interruption or parent merge drift",
+      "parentProofAccepted": false,
+      "childResultSha256": null,
+      "residual": "AUTH_OUTCOME_UNKNOWN"
+    }
+  ],
+  "testSelectionNote": "Initial 60-test connected selection contained two browser-opening fixtures. Sandbox localhost binding stopped both before browser launch. Corrected selection explicitly excludes these two and passes all 58 applicable synthetic tests. No PostgreSQL fixtures executed.",
+  "testLogSha256": {
+    "ap1-native-tests.log": "bc244378a871211660e4ab9cbfec385d42bfa339073f5cfec1fc5ded4e6a8280",
+    "ap1-connected-tests.log": "739cfabb0a8c984ae4fb5db9b425b582a3c3363ff06e2e6fabe5bc0d300a9c88",
+    "ap1-connected-selected.log": "ac9e6931063ac68430b99244570c6125caaa4b94b8a2523b65a875710260ae91",
+    "ap1-governance-tests.log": "60af9fb18d1451967e79f3a4e39caf3b029ddfbd5da6b15480097ccb6ca55efb",
+    "ap1-governance-postdocs.log": "5748e1cdf59465cbee78e012b2bd176926a3c9a9dedfff2f2e28e8689ddea4a6"
+  },
+  "acceptedMilestones": "4/8 unchanged",
+  "section3A": "OPEN",
+  "r1NewlyClosed": "0/27",
+  "externalActions": false,
+  "unknowns": [
+    "R65 original provider/runtime cause",
+    "Current provider/credential/effective-access state",
+    "Same-job authentic Sandbox event, application gate and owner acceptance"
+  ],
+  "nextObservableResult": "Review corrected source-bound prerequisites before any separately authorized qualification; do not repeat an unchanged full attended run.",
+  "scopeDeviation": "No scope deviation in implementation; test selection corrected before any browser launch."
+}
