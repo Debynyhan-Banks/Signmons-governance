@@ -1,5 +1,7 @@
 # APP-013 / 3A / P08 — DBR2 current role-retirement verification
 
+**COMPLETED AND CLOSED.** Current role policy and all three read/session-closeout reservations verified. See APP013_P08_DBR2_RESULT_20261126.json. Original reviewed proposal below is historical; the operation is consumed and cannot be replayed.
+
 PREPARED, NOT APPROVED. Reuse the existing SQL-only diagnostic without backend changes. This is the first bounded verification of R64's unresolved final checks, not a connected payment retry. No sign-in or Google credential access is needed. No scope deviation.
 
 ## Demonstrated gap and exact purpose

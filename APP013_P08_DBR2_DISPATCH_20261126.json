@@ -1,0 +1,9 @@
+{
+  "status": "DBR2_DISPATCHED",
+  "recordedAt": "2026-11-27T01:11:16.509543+00:00",
+  "terminalWindowId": 40510,
+  "terminalTab": 1,
+  "ownedCommandPath": "/private/tmp/p08-dbr2-terminal-76816047-e669-467e-b6f4-f853d144fd56.command",
+  "ownedCommandSha256": "619a2b2e2a4cf977807c7c3076b7969bc4373a7516cc1f14272933746994e798",
+  "decisionCommit": "b768cb533a479192cd4431f95ce6a03c59252df4"
+}

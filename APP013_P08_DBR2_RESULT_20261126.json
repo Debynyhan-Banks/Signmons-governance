@@ -1,0 +1,73 @@
+{
+  "status": "DBR2_CURRENT_ROLE_POLICY_AND_CLEANUP_VERIFIED",
+  "verifiedAt": "2026-11-27T01:12:54.286311+00:00",
+  "sourceCommit": "fabd4561a2a25f4618aa7d2395fbba1eff1c3795",
+  "approvalCommit": "b768cb533a479192cd4431f95ce6a03c59252df4",
+  "operationId": "76816047-e669-467e-b6f4-f853d144fd56",
+  "scopeSha256": "003b81839d792764ff394f46ec35683e49cc3273654836166c14d4b646c82c5c",
+  "originalResult": {
+    "candidate": null,
+    "executionReady": false,
+    "failure": null,
+    "failureStage": null,
+    "liveObserved": true,
+    "observation": {
+      "checks": {
+        "aclExact": "PASS",
+        "connectionLimitZero": "PASS",
+        "expiryFinite": "PASS",
+        "expiryPast": "PASS",
+        "loginDisabled": "PASS",
+        "noDatabaseTemp": "PASS",
+        "noMemberships": "FAIL",
+        "noOwnedObjects": "PASS",
+        "noSchemaCreate": "PASS",
+        "noSessions": "PASS",
+        "noUnsafeAttributes": "PASS",
+        "roleExistsExactlyOne": "PASS"
+      },
+      "failure": null
+    },
+    "operationId": "76816047-e669-467e-b6f4-f853d144fd56",
+    "residuals": [],
+    "scopeSha256": "003b81839d792764ff394f46ec35683e49cc3273654836166c14d4b646c82c5c",
+    "sqlReservations": 3,
+    "status": "DATABASE_ROLE_DIAGNOSED"
+  },
+  "originalCloseout": {
+    "candidate": null,
+    "executionReady": false,
+    "operationId": "76816047-e669-467e-b6f4-f853d144fd56",
+    "residuals": [],
+    "scopeSha256": "003b81839d792764ff394f46ec35683e49cc3273654836166c14d4b646c82c5c",
+    "verified": true
+  },
+  "receiptSha256": {
+    "attempt.json": "c4cc65e12395f9d650058e49248a3a4076f1f801907173f0bf933e5d3f9e5c80",
+    "result.json": "3fa3da61b77ec3d40bd71c6f45a23032f6016c2a024b9ed0cc34fc18bac0a070",
+    "closeout.json": "c56ae9cd698e4e9f2ca20a0a510592720257ad449708fc5295d2d2a09c4187b6",
+    "sql-role.json": "9c0626a9a8182baf3e0bf0cd62c7c86e6fba283191ea689b66e8aa9677e4e389",
+    "sql-normal.json": "265d931fd48ba7ae1e005d8e0b089d62756e0a3d6326e6a36760126b7f51c58c",
+    "sql-independent.json": "0f18d02bf74f5e59d57c9c009ff9c9a4ef4e656457cb066d9ac5b42a128822ca"
+  },
+  "ownedOperationProcessesAbsent": true,
+  "removedOwnedFiles": {
+    "/private/tmp/dbr2-dispatcher.py": "8544044da2c57762b9a3532a2abe05567592b3126a45083bce5b72eb0b9b5b55",
+    "/private/tmp/p08-dbr2-terminal-76816047-e669-467e-b6f4-f853d144fd56.command": "619a2b2e2a4cf977807c7c3076b7969bc4373a7516cc1f14272933746994e798",
+    "/private/tmp/p08-dbr2-request-76816047-e669-467e-b6f4-f853d144fd56/envelope.json": "830a5a6f039536cfb56f19200188b5c4eb054198b57b1935f1a400a0b20c8f9f"
+  },
+  "requestDirectoryAbsent": true,
+  "credentialPersisted": false,
+  "additionalSQLReads": 0,
+  "cloudCalls": 0,
+  "currentRoleInterpretation": "Authoritative current classifier accepted retired role and exact ACL; noMemberships is an unchanged zero-count flag. With classifier failure null, the nonzero edge is the exact approved administrative edge, not arbitrary membership.",
+  "remaining": [
+    "current Cloud Run/candidate configuration verification",
+    "original R64 identity state mismatch explanation",
+    "connected authentication/payment/event/gate and owner acceptance"
+  ],
+  "historicalR64ResultUnchanged": true,
+  "section": "3A OPEN",
+  "acceptedMilestones": "4/8",
+  "scopeDeviation": "No scope deviation"
+}
