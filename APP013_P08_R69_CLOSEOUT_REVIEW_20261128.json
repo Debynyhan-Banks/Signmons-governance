@@ -1,0 +1,120 @@
+{
+  "section": "APP-013/3A/P08",
+  "status": "R69_CONSUMED_BEFORE_AUTHENTICATION_TAG_TIMEOUT_LOCAL_CLOSEOUT_VERIFIED_FORWARD_OUTCOME_UNKNOWN",
+  "recordedAt": "2026-11-28T13:02:57.091647+00:00",
+  "sourceCommit": "ee98bc4891605ad8e96632f15553a7bafc50a4d3",
+  "ownerNativeApprovalCommit": "7f7da44",
+  "result": {
+    "authProofReady": false,
+    "authenticationObserved": false,
+    "childResultSha256": null,
+    "liveAuthorization": true,
+    "operationId": "34ed4e4f-3074-42a3-a42c-50e444566555",
+    "paymentObserved": false,
+    "paymentReadyForAcceptance": false,
+    "privateInputsAbsent": true,
+    "residuals": [
+      "RUNTIME:tag:app013-p07-atomic"
+    ],
+    "status": "ENTRY_CONTAINMENT_UNCONFIRMED"
+  },
+  "publishedResult": {
+    "commandExits": {
+      "closeoutExit": 2,
+      "workExit": 2
+    },
+    "decisionForReview": {},
+    "native": {
+      "authProofReady": false,
+      "authenticationObserved": false,
+      "childResultSha256": null,
+      "liveAuthorization": true,
+      "operationId": "34ed4e4f-3074-42a3-a42c-50e444566555",
+      "paymentObserved": false,
+      "paymentReadyForAcceptance": false,
+      "privateInputsAbsent": true,
+      "residuals": [
+        "RUNTIME:tag:app013-p07-atomic"
+      ],
+      "status": "ENTRY_CONTAINMENT_UNCONFIRMED"
+    },
+    "paymentReadyForAcceptance": false,
+    "privateInputsAbsent": true,
+    "stage": "result"
+  },
+  "journalSummary": {
+    "phase": "CLOSED",
+    "preflightStage": "ACCESS_PREFLIGHT",
+    "failure": "RUNTIME_TAG_COMMAND_TIMEOUT",
+    "authAttempted": false,
+    "authProofAccepted": false,
+    "iamAttempted": [],
+    "keyCreateAttempted": false,
+    "residuals": [
+      "RUNTIME:tag:app013-p07-atomic"
+    ],
+    "unknown": [
+      "RUNTIME:tag:app013-p07-atomic"
+    ]
+  },
+  "nativeCalls": {
+    "child": 1,
+    "cli": 179,
+    "https": 1,
+    "sql": 5
+  },
+  "privatePurge": {
+    "completedAt": 1795870680.697236,
+    "onTime": true,
+    "operationId": "4153143b-aaa3-4db5-98bb-fde132813703",
+    "rawFilesAbsent": true,
+    "residuals": [],
+    "status": "PRIVATE_PURGE_VERIFIED"
+  },
+  "recoveryResourceCloseout": {
+    "residuals": [],
+    "verified": true
+  },
+  "localClosure": {
+    "terminalWindowId": 42265,
+    "terminalBusy": false,
+    "nativeParentAbsent": true,
+    "purgeGuardianAbsent": true,
+    "mainOwnedChildren": 129,
+    "independentOwnedChildren": 56,
+    "allRecordedChildrenClosed": true,
+    "recordedGroupsAbsent": true,
+    "privatePathsAbsent": {
+      "/private/tmp/p08-coordinator-34ed4e4f-3074-42a3-a42c-50e444566555/envelope.json": true,
+      "/private/tmp/p08-current-input-edf2bc0f-8cdc-41e4-865c-d74aeb651bf7": true,
+      "/private/tmp/p08-binding-recovery-4153143b-aaa3-4db5-98bb-fde132813703/recovered-inputs.json": true,
+      "/private/tmp/p08-binding-request-4153143b-aaa3-4db5-98bb-fde132813703": true,
+      "/private/tmp/p08-terminal-launch-4153143b-aaa3-4db5-98bb-fde132813703.command": true
+    },
+    "ownedCommandRemovedAfterHashCheck": true,
+    "requestRemovedByRunnerAndAbsenceVerified": true
+  },
+  "safeReceiptHashes": {
+    "/private/tmp/p08-coordinator-34ed4e4f-3074-42a3-a42c-50e444566555/result.json": "98b58c41c742cd4cd36bb2fe097c3cf0dd5adba7ff5b13ea2199e83000f4a9d3",
+    "/private/tmp/p08-coordinator-34ed4e4f-3074-42a3-a42c-50e444566555/work-result.json": "e4e93485af5a77ebf1412cc7b524a0928a70f2560416cf2bc6991be2f58879ac",
+    "/private/tmp/p08-coordinator-34ed4e4f-3074-42a3-a42c-50e444566555/journal.json": "07d00729f0011b39a9fd15066fc08472eed3e21eb3a09a8217972f39c2d6974b",
+    "/private/tmp/p08-coordinator-34ed4e4f-3074-42a3-a42c-50e444566555/closeout.json": "a2c801d02facd3f0b586398ce5a9ade9db5be8941d0850c8774597c490c370dc",
+    "/private/tmp/p08-coordinator-34ed4e4f-3074-42a3-a42c-50e444566555/independent-closeout.json": "a2c801d02facd3f0b586398ce5a9ade9db5be8941d0850c8774597c490c370dc",
+    "/private/tmp/p08-public-review-4153143b-aaa3-4db5-98bb-fde132813703/result.json": "82ed502c5ed8b3d75913c39ea208ce4e71dd272489adb86040b13ff058c0629d",
+    "/private/tmp/p08-binding-recovery-4153143b-aaa3-4db5-98bb-fde132813703/purge-result.json": "59be8ab2c516eb0a25b99546dfc3975c17544951bcf36bcac95cf680545fd247",
+    "/private/tmp/p08-binding-recovery-4153143b-aaa3-4db5-98bb-fde132813703/resource-closeout.json": "cb524bb80fbd3f6723cf552f276e21639827ecf27ef8bc93e8d3102a701c9223"
+  },
+  "interpretation": {
+    "forwardTagCommandTimedOut": true,
+    "authAttempted": false,
+    "paymentAttempted": false,
+    "forwardProviderAcceptanceOrCompletion": "UNKNOWN",
+    "cleanupReadbackFailureLabelsPresent": false,
+    "historicalUnknownCleared": false,
+    "fullRestorationClaimed": false,
+    "retryAuthorized": false
+  },
+  "nextObservableResult": "Local inspection of exact synchronous tag-update SDK contract versus six-second command execution allowance; no fresh live attempt authorized",
+  "acceptedMilestones": "4/8;3A OPEN;R1 newly closed0/27",
+  "scopeDeviation": "NONE"
+}
