@@ -1,0 +1,18 @@
+{
+  "owner": "Debynyhan Banks",
+  "response": "Approve R69 authentication-only qualification and cleanup; ready now",
+  "reviewCommit": "4ebddc4",
+  "recordedAt": "2026-11-28T12:55:17.585735+00:00",
+  "decision": {
+    "decision": "APPROVE_EXACT_P08_AUTH_QUALIFICATION",
+    "externalActionAuthorized": true,
+    "operationId": "34ed4e4f-3074-42a3-a42c-50e444566555",
+    "owner": "Debynyhan Banks",
+    "scopeSha256": "bf5c92c6e3c64f989a406e32d0da18f8f0e28697ad37714d82c441cd49c65870",
+    "sourceManifestSha256": "a9ded0a8347397ccf10e3c8d9e4f7e4cdcc372824413ee2e7e2910d667e1f3bc"
+  },
+  "entryMustOccurBefore": "2026-11-28T13:04:00Z",
+  "nativePurpose": "NATIVE_AUTH_QUALIFICATION_ONLY",
+  "paymentAuthorized": false,
+  "cleanupLimitationsAcknowledged": true
+}

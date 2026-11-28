@@ -1,8 +1,8 @@
 {
-  "decision": "APPROVE_EXACT_P08_CONNECTED_PAYMENT",
+  "decision": "APPROVE_EXACT_P08_AUTH_QUALIFICATION",
   "externalActionAuthorized": true,
-  "operationId": "fd51ea99-bdcf-42a0-b4d5-2a3caaf00630",
+  "operationId": "34ed4e4f-3074-42a3-a42c-50e444566555",
   "owner": "Debynyhan Banks",
-  "scopeSha256": "971127eeade275b044872050bd891c69f344171cffdb2f6b8c7c5c45efcf0780",
-  "sourceManifestSha256": "70128cb45f3fd8d0a7362b04b25b26dac1d8693a6cc3c371ab4b06d6dd1e618f"
+  "scopeSha256": "bf5c92c6e3c64f989a406e32d0da18f8f0e28697ad37714d82c441cd49c65870",
+  "sourceManifestSha256": "a9ded0a8347397ccf10e3c8d9e4f7e4cdcc372824413ee2e7e2910d667e1f3bc"
 }
