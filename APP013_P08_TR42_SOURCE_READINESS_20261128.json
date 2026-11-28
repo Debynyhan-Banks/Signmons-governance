@@ -1,0 +1,27 @@
+{
+  "status": "BOUND_PREPARED_PENDING_COMMITTED_AUTHORITY_PREFLIGHT",
+  "sourceCommit": "ee98bc4891605ad8e96632f15553a7bafc50a4d3",
+  "sdkAdditionalFiles": {
+    "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/surface/auth/login.py": "c18aa067c11869f2ecb57427dfe50c4cf7ca27164d4e2d3cd219adc08c0cb999",
+    "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/command_lib/auth/auth_util.py": "f9991b16c3207c4765f3cac9bd4dfbccb743820e793f53b68bc14fe74cbf7418",
+    "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/core/config.py": "fc06f07045d0a8054355f904fa4aac12151a1d1e08c6c366620b405c4ee98f52",
+    "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/auth/util.py": "3aabd710e4e5733ddc935ee23746b20b62f0516aaf610c6cb811570abd4cb069",
+    "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/flow.py": "2969c14764c8f0ec8bc1b4862e086f557815f6efbdfb5a4552954ad5b3152de6",
+    "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/google_auth_credentials.py": "10bfbd2989207638461fde3544fb7619d7430980999e8b47e00c37c45441b413",
+    "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/command_lib/util/check_browser.py": "e0fcfe555c74736e1474a33a719eaf52060a8709431acb0ac402c54e4be50b28",
+    "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/third_party/google_auth_oauthlib/flow.py": "cc79b28b1453eeaa59146fc664c70a30b2d2809151d7ff4c86d02e2a1f6abd91",
+    "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/third_party/google_auth_oauthlib/helpers.py": "c89b0455952ffb4893da3828068fa58c0bd6cdeebe9edbe31fdd91e97a75a9b1",
+    "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/lib/python3.14/webbrowser.py": "006f62a80308c86408c06ac4425a834a0d7d687841be5257ab5db74d4976a016"
+  },
+  "preparedExecutorPath": "/private/tmp/signmons-tr42-owner-signin.py",
+  "templateSha256": "73686cddb7f5f70332155432d82f2d87c325c4a95a4a0bd1c8b717a00866084d",
+  "algorithmUnchangedConstantsOnly": true,
+  "startNotBefore": "2026-11-28T12:48:00Z",
+  "cutoff": "2026-11-28T12:51:00Z",
+  "closeoutEnd": "2026-11-28T12:58:00Z",
+  "validThrough": "2026-11-28T13:48:00Z",
+  "attendanceThrough": "2026-11-28T14:03:00Z",
+  "providerCalls": 0,
+  "credentialStoresRead": false,
+  "operationReserved": false
+}
