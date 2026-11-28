@@ -1,0 +1,17 @@
+{
+  "status": "VERIFIED_OPENING_RECEIPT_BOUND_BEFORE_RECOVERY",
+  "verifiedAt": "2026-11-28T12:49:15.452183+00:00",
+  "specBeforeSha256": "a580816aca54b592cd527ce798df696933b2e74ad79045dce1f3a17e08dd7703",
+  "specAfterSha256": "7903c5eff4b4c55374317f4064cdb293d8cae45ae7819af2b56117a1cda28313",
+  "opening": {
+    "receipt": {
+      "commit": "4326ae57edf75d3a7b0322b72b80e4a0df284987",
+      "path": "APP013_P08_TR42_CLOSEOUT_20261128.json",
+      "sha256": "21566acc44987c3cc8d6399a30d99a673bb28434a1f6969290910f99e73f95bd"
+    },
+    "decisionPath": "APP013_P08_TR42_DECISION_20261128.json"
+  },
+  "onlyOpeningReferenceChanged": true,
+  "deadlineOrAuthorityExpansion": false,
+  "privateInputsCreated": false
+}

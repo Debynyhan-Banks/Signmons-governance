@@ -28,5 +28,12 @@
     "purgeEnd": "2026-11-28T13:48:00Z"
   },
   "paymentWorkEnd": "2026-11-28T13:34:00Z",
-  "opening": {}
+  "opening": {
+    "receipt": {
+      "commit": "4326ae57edf75d3a7b0322b72b80e4a0df284987",
+      "path": "APP013_P08_TR42_CLOSEOUT_20261128.json",
+      "sha256": "21566acc44987c3cc8d6399a30d99a673bb28434a1f6969290910f99e73f95bd"
+    },
+    "decisionPath": "APP013_P08_TR42_DECISION_20261128.json"
+  }
 }
