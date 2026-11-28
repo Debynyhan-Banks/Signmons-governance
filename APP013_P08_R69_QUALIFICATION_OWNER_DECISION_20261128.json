@@ -1,0 +1,15 @@
+{
+  "owner": "Debynyhan Banks",
+  "response": "Approve R69 qualification; ready for the password prompt now",
+  "reviewCommit": "0d55dfc",
+  "recordedAt": "2026-11-28T12:52:41.427525+00:00",
+  "decision": {
+    "cleanupScopeSha256": "c027f8a2e281f1e581bc65d8319b69de01acfcc054b600d86db963a6d1b23691",
+    "decision": "APPROVE_EXACT_P08_CURRENT_QUALIFICATION",
+    "externalReadAuthorized": true,
+    "owner": "Debynyhan Banks",
+    "scopeSha256": "b1adaeffd059679a3f0b6dca8544078a4b0363e95aa5bc427935c7125ade9ed9"
+  },
+  "nativeAuthorized": false,
+  "paymentAuthorized": false
+}
