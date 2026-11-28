@@ -1,0 +1,446 @@
+{
+  "section": "APP-013/3A/P08",
+  "status": "LOCAL_CORRECTION_COMPLETE_NOT_LIVE_QUALIFIED",
+  "recordedAt": "2026-11-28T13:23:24.831845+00:00",
+  "approvalCommit": "04f9029",
+  "proposalCommit": "5f149d6",
+  "proposalSha256": "25d8175cb547420598ea750b4ca818d70ef9fe8a574c8bf47a099b0a08bfecf0",
+  "baselineSource": "ee98bc4891605ad8e96632f15553a7bafc50a4d3",
+  "sourceCommit": "4412f8025de1e105b205ad9de23eb826ef6ab532",
+  "exactChangedFiles": {
+    "evidence/APP-013/p08-connected-packet-20261110/account-containment-read-source-manifest.json": "e473fc130fa347665e847a1b8cc8607a686192d2eac7f1b00d9b539ec2c3f077",
+    "evidence/APP-013/p08-connected-packet-20261110/account-containment-source-manifest.json": "03729cf746d8d418a50687cd69635f6a2560f75966520c4b5154f93de519aef3",
+    "evidence/APP-013/p08-connected-packet-20261110/iq1-source-manifest.json": "a65cae764d4e9dcb442845550c32a134c9c1ea11a5f2f3a6b365f07b23c03edf",
+    "evidence/APP-013/p08-connected-packet-20261110/sq1-source-manifest.json": "95a37b2e6b548837f414789e599bd961a65e229f8272915b96317c5b2b953a08",
+    "evidence/APP-013/p08-connected-packet-20261110/vm2-source-manifest.json": "e33c0fe2ce8dad99a6bf8901280a11e96c551239c146800009bd12c45c04e6f5",
+    "evidence/APP-013/p08-key-correction-20261110/source-manifest.json": "976a676eea6b59d4e3ad203554949b170805de1a9f06f8be482b145b9bc16fd2",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/entry.py": "8f5442271b2d78ab3e100afe22f5f80fe3ab4db3f96dd7e94662c6c5ca271698",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/native_io.py": "749834f41ddaa73c88cf71e15020926d40d804945d1e2fb5ffb76ffb6ef31bda",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/source-manifest.json": "606ed87060b440ec15fb13f89e0da0ccb08af661bd731f15de9dbd00a4846101",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/test-manifest.json": "71858d006d2ae7b9f92b3c42a07660de9e321f2a9003b5047cd828543e2fdeb0",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/test_child_cleanup.py": "f32b2ed985472140cc5fb9c2f6b448fe8df344452ccaa069377d4245267ee8e1",
+    "evidence/APP-013/p08-native-entry-local-20261101/source/test_entry.py": "e4e8e9aa7a41b8b310e71bca7da3ba40413691bbb6a61cb3eb593aed9f83d2cc"
+  },
+  "behavior": {
+    "purpose": "NATIVE_AUTH_QUALIFICATION_ONLY",
+    "exactForwardAndRemovalTagSeconds": 30,
+    "reapReserveSeconds": 2,
+    "executionUpToSeconds": 28,
+    "tagCleanupReservationAtLeastSeconds": 38,
+    "allOtherCommandsAndPurposesSeconds": 8,
+    "overallPhaseAndCustodyLimitsChanged": false,
+    "requestsOrRetriesAdded": false,
+    "unknownOutcomesCleared": false
+  },
+  "focusedTests": {
+    "tc2-child-tests.log": {
+      "tests": 36,
+      "sha256": "f1ffd2507fb8c5fa244f3674037f65b9a541e10a627d2805aba25e48b66fdd7f",
+      "tail": [
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 36 tests in 26.487s",
+        "",
+        "OK"
+      ]
+    },
+    "tc2-entry-tests.log": {
+      "tests": 34,
+      "sha256": "bfbd45304529cf60060a202853efbf62f96794f531edbdfb582e5619825b8f22",
+      "tail": [
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 34 tests in 14.872s",
+        "",
+        "OK"
+      ]
+    }
+  },
+  "focusedTestsTotal": 70,
+  "newTests": 12,
+  "initialFailure": {
+    "logSha256": "f8dd4fd4799c505cb6660f245bf6f19581c45bfdd774e22f91abd416802d348c",
+    "description": "One new provenance fixture omitted the required runtime-operation prefix, causing two subcase errors; fixture corrected to actual prefix, production guard unchanged; all34 selected entry tests rerun and pass"
+  },
+  "manifestRefreshes": [
+    {
+      "status": "EIGHT_CURRENT_MANIFESTS_HASH_ONLY_UPDATED",
+      "baselineSourceCommit": "ee98bc4891605ad8e96632f15553a7bafc50a4d3",
+      "verifiedAt": "2026-11-28T13:17:01.114928+00:00",
+      "changes": {
+        "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-native-entry-local-20261101/source/source-manifest.json": {
+          "before": "a9ded0a8347397ccf10e3c8d9e4f7e4cdcc372824413ee2e7e2910d667e1f3bc",
+          "after": "606ed87060b440ec15fb13f89e0da0ccb08af661bd731f15de9dbd00a4846101",
+          "fields": [
+            {
+              "field": "/files/entry.py",
+              "before": "e8d17b3e0acafd5fbe5a45b2aea4b448c23b7424907f67ee66bcf7e0920deb77",
+              "after": "8f5442271b2d78ab3e100afe22f5f80fe3ab4db3f96dd7e94662c6c5ca271698"
+            },
+            {
+              "field": "/files/native_io.py",
+              "before": "7e015a9cc5ff9967b75479df13b1ea6de6b42f983a2f51cfd68da374ad134ed8",
+              "after": "749834f41ddaa73c88cf71e15020926d40d804945d1e2fb5ffb76ffb6ef31bda"
+            }
+          ]
+        },
+        "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-native-entry-local-20261101/source/test-manifest.json": {
+          "before": "3ead363a9d5342d7d26056f15ccb607b4c5ae5911deb7393dac1a8ec3f3197b6",
+          "after": "cf8ba11365194e1045a4fbf22897e5c3acc54726449899cd752bb8fefaf98a31",
+          "fields": [
+            {
+              "field": "/files/test_child_cleanup.py",
+              "before": "094324bd5a512f05685c7a4edee1bbfb753d3a10ca6281f7e452c664f9b56a6e",
+              "after": "f32b2ed985472140cc5fb9c2f6b448fe8df344452ccaa069377d4245267ee8e1"
+            },
+            {
+              "field": "/files/test_entry.py",
+              "before": "74fdf63c00f43589c0a09e0f8de86b7286e3ed3d8678a8acbc67d8d6949bb575",
+              "after": "2de0819b83de5eb1e2fbce3f9aa26022614a7ed5f789912a14c92e29da8136d6"
+            },
+            {
+              "field": "/runtimeManifestSha256",
+              "before": "a9ded0a8347397ccf10e3c8d9e4f7e4cdcc372824413ee2e7e2910d667e1f3bc",
+              "after": "606ed87060b440ec15fb13f89e0da0ccb08af661bd731f15de9dbd00a4846101"
+            }
+          ]
+        },
+        "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-key-correction-20261110/source-manifest.json": {
+          "before": "2c12bc2773311ef11d4c62571aac11526b87707cb1ff62977d80d01d683c62b6",
+          "after": "f85b8fd3060a9918e9da1b31410c576e564a710d439e5a5556486a5ebb28018d",
+          "fields": [
+            {
+              "field": "/files/evidence/APP-013/p08-native-entry-local-20261101/source/entry.py",
+              "before": "e8d17b3e0acafd5fbe5a45b2aea4b448c23b7424907f67ee66bcf7e0920deb77",
+              "after": "8f5442271b2d78ab3e100afe22f5f80fe3ab4db3f96dd7e94662c6c5ca271698"
+            },
+            {
+              "field": "/files/evidence/APP-013/p08-native-entry-local-20261101/source/native_io.py",
+              "before": "7e015a9cc5ff9967b75479df13b1ea6de6b42f983a2f51cfd68da374ad134ed8",
+              "after": "749834f41ddaa73c88cf71e15020926d40d804945d1e2fb5ffb76ffb6ef31bda"
+            },
+            {
+              "field": "/files/evidence/APP-013/p08-native-entry-local-20261101/source/source-manifest.json",
+              "before": "a9ded0a8347397ccf10e3c8d9e4f7e4cdcc372824413ee2e7e2910d667e1f3bc",
+              "after": "606ed87060b440ec15fb13f89e0da0ccb08af661bd731f15de9dbd00a4846101"
+            },
+            {
+              "field": "/files/evidence/APP-013/p08-native-entry-local-20261101/source/test-manifest.json",
+              "before": "3ead363a9d5342d7d26056f15ccb607b4c5ae5911deb7393dac1a8ec3f3197b6",
+              "after": "cf8ba11365194e1045a4fbf22897e5c3acc54726449899cd752bb8fefaf98a31"
+            },
+            {
+              "field": "/files/evidence/APP-013/p08-native-entry-local-20261101/source/test_child_cleanup.py",
+              "before": "094324bd5a512f05685c7a4edee1bbfb753d3a10ca6281f7e452c664f9b56a6e",
+              "after": "f32b2ed985472140cc5fb9c2f6b448fe8df344452ccaa069377d4245267ee8e1"
+            },
+            {
+              "field": "/files/evidence/APP-013/p08-native-entry-local-20261101/source/test_entry.py",
+              "before": "74fdf63c00f43589c0a09e0f8de86b7286e3ed3d8678a8acbc67d8d6949bb575",
+              "after": "2de0819b83de5eb1e2fbce3f9aa26022614a7ed5f789912a14c92e29da8136d6"
+            }
+          ]
+        },
+        "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/iq1-source-manifest.json": {
+          "before": "63018479d732441bc9947b5fdf39e4de8c8e012ea3ee37b63c4ebadab13df8cf",
+          "after": "a65cae764d4e9dcb442845550c32a134c9c1ea11a5f2f3a6b365f07b23c03edf",
+          "fields": [
+            {
+              "field": "/files/evidence/APP-013/p08-native-entry-local-20261101/source/entry.py",
+              "before": "e8d17b3e0acafd5fbe5a45b2aea4b448c23b7424907f67ee66bcf7e0920deb77",
+              "after": "8f5442271b2d78ab3e100afe22f5f80fe3ab4db3f96dd7e94662c6c5ca271698"
+            },
+            {
+              "field": "/files/evidence/APP-013/p08-native-entry-local-20261101/source/native_io.py",
+              "before": "7e015a9cc5ff9967b75479df13b1ea6de6b42f983a2f51cfd68da374ad134ed8",
+              "after": "749834f41ddaa73c88cf71e15020926d40d804945d1e2fb5ffb76ffb6ef31bda"
+            },
+            {
+              "field": "/files/evidence/APP-013/p08-native-entry-local-20261101/source/source-manifest.json",
+              "before": "a9ded0a8347397ccf10e3c8d9e4f7e4cdcc372824413ee2e7e2910d667e1f3bc",
+              "after": "606ed87060b440ec15fb13f89e0da0ccb08af661bd731f15de9dbd00a4846101"
+            }
+          ]
+        },
+        "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/sq1-source-manifest.json": {
+          "before": "355140412e51cad549bab6aef490b3f73ec889c9b257b32faa1e4300d231d454",
+          "after": "95a37b2e6b548837f414789e599bd961a65e229f8272915b96317c5b2b953a08",
+          "fields": [
+            {
+              "field": "/files/evidence/APP-013/p08-connected-packet-20261110/iq1-source-manifest.json",
+              "before": "63018479d732441bc9947b5fdf39e4de8c8e012ea3ee37b63c4ebadab13df8cf",
+              "after": "a65cae764d4e9dcb442845550c32a134c9c1ea11a5f2f3a6b365f07b23c03edf"
+            },
+            {
+              "field": "/files/evidence/APP-013/p08-native-entry-local-20261101/source/entry.py",
+              "before": "e8d17b3e0acafd5fbe5a45b2aea4b448c23b7424907f67ee66bcf7e0920deb77",
+              "after": "8f5442271b2d78ab3e100afe22f5f80fe3ab4db3f96dd7e94662c6c5ca271698"
+            },
+            {
+              "field": "/files/evidence/APP-013/p08-native-entry-local-20261101/source/native_io.py",
+              "before": "7e015a9cc5ff9967b75479df13b1ea6de6b42f983a2f51cfd68da374ad134ed8",
+              "after": "749834f41ddaa73c88cf71e15020926d40d804945d1e2fb5ffb76ffb6ef31bda"
+            },
+            {
+              "field": "/files/evidence/APP-013/p08-native-entry-local-20261101/source/source-manifest.json",
+              "before": "a9ded0a8347397ccf10e3c8d9e4f7e4cdcc372824413ee2e7e2910d667e1f3bc",
+              "after": "606ed87060b440ec15fb13f89e0da0ccb08af661bd731f15de9dbd00a4846101"
+            }
+          ]
+        },
+        "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/vm2-source-manifest.json": {
+          "before": "276a17fbd29a2b87f9abfee2b6cc62612343c874ccce400ddc0ee64576bb3cd7",
+          "after": "e33c0fe2ce8dad99a6bf8901280a11e96c551239c146800009bd12c45c04e6f5",
+          "fields": [
+            {
+              "field": "/dependencies/iq1ManifestSha256",
+              "before": "63018479d732441bc9947b5fdf39e4de8c8e012ea3ee37b63c4ebadab13df8cf",
+              "after": "a65cae764d4e9dcb442845550c32a134c9c1ea11a5f2f3a6b365f07b23c03edf"
+            },
+            {
+              "field": "/dependencies/sq1ManifestSha256",
+              "before": "355140412e51cad549bab6aef490b3f73ec889c9b257b32faa1e4300d231d454",
+              "after": "95a37b2e6b548837f414789e599bd961a65e229f8272915b96317c5b2b953a08"
+            }
+          ]
+        },
+        "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/account-containment-source-manifest.json": {
+          "before": "a6ad5151af3c012177397a419959c2755b77cd1d7ed1c03782f3ba0bc2916a4c",
+          "after": "03729cf746d8d418a50687cd69635f6a2560f75966520c4b5154f93de519aef3",
+          "fields": [
+            {
+              "field": "/files/evidence/APP-013/p08-connected-packet-20261110/iq1-source-manifest.json",
+              "before": "63018479d732441bc9947b5fdf39e4de8c8e012ea3ee37b63c4ebadab13df8cf",
+              "after": "a65cae764d4e9dcb442845550c32a134c9c1ea11a5f2f3a6b365f07b23c03edf"
+            },
+            {
+              "field": "/files/evidence/APP-013/p08-native-entry-local-20261101/source/entry.py",
+              "before": "e8d17b3e0acafd5fbe5a45b2aea4b448c23b7424907f67ee66bcf7e0920deb77",
+              "after": "8f5442271b2d78ab3e100afe22f5f80fe3ab4db3f96dd7e94662c6c5ca271698"
+            },
+            {
+              "field": "/files/evidence/APP-013/p08-native-entry-local-20261101/source/native_io.py",
+              "before": "7e015a9cc5ff9967b75479df13b1ea6de6b42f983a2f51cfd68da374ad134ed8",
+              "after": "749834f41ddaa73c88cf71e15020926d40d804945d1e2fb5ffb76ffb6ef31bda"
+            },
+            {
+              "field": "/files/evidence/APP-013/p08-native-entry-local-20261101/source/source-manifest.json",
+              "before": "a9ded0a8347397ccf10e3c8d9e4f7e4cdcc372824413ee2e7e2910d667e1f3bc",
+              "after": "606ed87060b440ec15fb13f89e0da0ccb08af661bd731f15de9dbd00a4846101"
+            }
+          ]
+        },
+        "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/account-containment-read-source-manifest.json": {
+          "before": "86b17666173a40781b1b90c872eb29a0402e805e0eff2f1b23d11b108be1a3f3",
+          "after": "7d7787e79803683eff41ccab87f138317cff87c55abe14716d887c0b0439d4b2",
+          "fields": [
+            {
+              "field": "/files/evidence/APP-013/p08-connected-packet-20261110/account-containment-source-manifest.json",
+              "before": "a6ad5151af3c012177397a419959c2755b77cd1d7ed1c03782f3ba0bc2916a4c",
+              "after": "03729cf746d8d418a50687cd69635f6a2560f75966520c4b5154f93de519aef3"
+            },
+            {
+              "field": "/files/evidence/APP-013/p08-connected-packet-20261110/iq1-source-manifest.json",
+              "before": "63018479d732441bc9947b5fdf39e4de8c8e012ea3ee37b63c4ebadab13df8cf",
+              "after": "a65cae764d4e9dcb442845550c32a134c9c1ea11a5f2f3a6b365f07b23c03edf"
+            },
+            {
+              "field": "/files/evidence/APP-013/p08-key-correction-20261110/source-manifest.json",
+              "before": "2c12bc2773311ef11d4c62571aac11526b87707cb1ff62977d80d01d683c62b6",
+              "after": "f85b8fd3060a9918e9da1b31410c576e564a710d439e5a5556486a5ebb28018d"
+            },
+            {
+              "field": "/files/evidence/APP-013/p08-native-entry-local-20261101/source/entry.py",
+              "before": "e8d17b3e0acafd5fbe5a45b2aea4b448c23b7424907f67ee66bcf7e0920deb77",
+              "after": "8f5442271b2d78ab3e100afe22f5f80fe3ab4db3f96dd7e94662c6c5ca271698"
+            },
+            {
+              "field": "/files/evidence/APP-013/p08-native-entry-local-20261101/source/native_io.py",
+              "before": "7e015a9cc5ff9967b75479df13b1ea6de6b42f983a2f51cfd68da374ad134ed8",
+              "after": "749834f41ddaa73c88cf71e15020926d40d804945d1e2fb5ffb76ffb6ef31bda"
+            },
+            {
+              "field": "/files/evidence/APP-013/p08-native-entry-local-20261101/source/source-manifest.json",
+              "before": "a9ded0a8347397ccf10e3c8d9e4f7e4cdcc372824413ee2e7e2910d667e1f3bc",
+              "after": "606ed87060b440ec15fb13f89e0da0ccb08af661bd731f15de9dbd00a4846101"
+            }
+          ]
+        }
+      },
+      "sourceHashes": {
+        "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-native-entry-local-20261101/source/native_io.py": "749834f41ddaa73c88cf71e15020926d40d804945d1e2fb5ffb76ffb6ef31bda",
+        "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-native-entry-local-20261101/source/entry.py": "8f5442271b2d78ab3e100afe22f5f80fe3ab4db3f96dd7e94662c6c5ca271698",
+        "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-native-entry-local-20261101/source/test_child_cleanup.py": "f32b2ed985472140cc5fb9c2f6b448fe8df344452ccaa069377d4245267ee8e1",
+        "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-native-entry-local-20261101/source/test_entry.py": "2de0819b83de5eb1e2fbce3f9aa26022614a7ed5f789912a14c92e29da8136d6"
+      },
+      "exactPinSourceFilesChanged": 0,
+      "nonHashValuesChanged": false,
+      "historicalManifestChanges": false,
+      "providerCalls": 0,
+      "credentialReads": 0
+    },
+    {
+      "status": "TC2_SECOND_MANIFEST_REFRESH_HASH_ONLY",
+      "baselineSourceCommit": "ee98bc4891605ad8e96632f15553a7bafc50a4d3",
+      "firstRefreshRecord": "/private/tmp/p08-tc2-manifest-update-20261128.json",
+      "reason": "Only test_entry.py synthetic cleanup fixture corrected to the valid restore.operations prefix through TAG; production unchanged",
+      "verifiedAt": "2026-11-28T13:19:48.054945+00:00",
+      "changes": {
+        "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-native-entry-local-20261101/source/test-manifest.json": {
+          "before": "cf8ba11365194e1045a4fbf22897e5c3acc54726449899cd752bb8fefaf98a31",
+          "after": "71858d006d2ae7b9f92b3c42a07660de9e321f2a9003b5047cd828543e2fdeb0",
+          "fields": [
+            {
+              "field": "/files/test_entry.py",
+              "before": "2de0819b83de5eb1e2fbce3f9aa26022614a7ed5f789912a14c92e29da8136d6",
+              "after": "e4e8e9aa7a41b8b310e71bca7da3ba40413691bbb6a61cb3eb593aed9f83d2cc"
+            }
+          ]
+        },
+        "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-key-correction-20261110/source-manifest.json": {
+          "before": "f85b8fd3060a9918e9da1b31410c576e564a710d439e5a5556486a5ebb28018d",
+          "after": "976a676eea6b59d4e3ad203554949b170805de1a9f06f8be482b145b9bc16fd2",
+          "fields": [
+            {
+              "field": "/files/evidence/APP-013/p08-native-entry-local-20261101/source/test-manifest.json",
+              "before": "cf8ba11365194e1045a4fbf22897e5c3acc54726449899cd752bb8fefaf98a31",
+              "after": "71858d006d2ae7b9f92b3c42a07660de9e321f2a9003b5047cd828543e2fdeb0"
+            },
+            {
+              "field": "/files/evidence/APP-013/p08-native-entry-local-20261101/source/test_entry.py",
+              "before": "2de0819b83de5eb1e2fbce3f9aa26022614a7ed5f789912a14c92e29da8136d6",
+              "after": "e4e8e9aa7a41b8b310e71bca7da3ba40413691bbb6a61cb3eb593aed9f83d2cc"
+            }
+          ]
+        },
+        "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/account-containment-read-source-manifest.json": {
+          "before": "7d7787e79803683eff41ccab87f138317cff87c55abe14716d887c0b0439d4b2",
+          "after": "e473fc130fa347665e847a1b8cc8607a686192d2eac7f1b00d9b539ec2c3f077",
+          "fields": [
+            {
+              "field": "/files/evidence/APP-013/p08-key-correction-20261110/source-manifest.json",
+              "before": "f85b8fd3060a9918e9da1b31410c576e564a710d439e5a5556486a5ebb28018d",
+              "after": "976a676eea6b59d4e3ad203554949b170805de1a9f06f8be482b145b9bc16fd2"
+            }
+          ]
+        }
+      },
+      "sourceHashes": {
+        "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-native-entry-local-20261101/source/native_io.py": "749834f41ddaa73c88cf71e15020926d40d804945d1e2fb5ffb76ffb6ef31bda",
+        "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-native-entry-local-20261101/source/entry.py": "8f5442271b2d78ab3e100afe22f5f80fe3ab4db3f96dd7e94662c6c5ca271698",
+        "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-native-entry-local-20261101/source/test_child_cleanup.py": "f32b2ed985472140cc5fb9c2f6b448fe8df344452ccaa069377d4245267ee8e1",
+        "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-native-entry-local-20261101/source/test_entry.py": "e4e8e9aa7a41b8b310e71bca7da3ba40413691bbb6a61cb3eb593aed9f83d2cc"
+      },
+      "nonHashValuesChanged": false,
+      "productionChangedSinceFirstRefresh": false,
+      "providerCalls": 0,
+      "credentialReads": 0
+    }
+  ],
+  "currentSourceGuards": {
+    "status": "TC2_CURRENT_SOURCE_GUARDS_PASS",
+    "verifiedAt": "2026-11-28T13:17:13.501502+00:00",
+    "checks": [
+      "qualification verify_local_manifest",
+      "qualification verify_locked_sources",
+      "native authority.verify_sources inherited locks",
+      "IQ1 source_guard committed=False"
+    ],
+    "committedNewSourceCheckPending": true,
+    "providerCalls": 0,
+    "credentialReads": 0,
+    "runtimeTestsRun": 0
+  },
+  "committedSourceGuards": {
+    "status": "TC2_COMMITTED_SOURCE_AND_DEPENDENCY_GUARDS_PASS",
+    "sourceCommit": "4412f8025de1e105b205ad9de23eb826ef6ab532",
+    "verifiedAt": "2026-11-28T13:22:18.436114+00:00",
+    "elapsedSeconds": 5.981,
+    "checks": [
+      "qualification current manifest",
+      "qualification locked sources",
+      "native source and inherited locks",
+      "qualification committed sources",
+      "renewal committed tree",
+      "IQ1 current/committed source guard",
+      "VM2 current/committed source guard including SQ1/IQ1",
+      "containment-read current/committed source guard including containment/key-correction",
+      "all8 current manifests exact committed bytes and referenced file hashes"
+    ],
+    "currentManifestCount": 8,
+    "manifests": {
+      "evidence/APP-013/p08-native-entry-local-20261101/source/source-manifest.json": {
+        "sha256": "606ed87060b440ec15fb13f89e0da0ccb08af661bd731f15de9dbd00a4846101",
+        "committedBytesMatch": true,
+        "fileHashesMatch": true
+      },
+      "evidence/APP-013/p08-native-entry-local-20261101/source/test-manifest.json": {
+        "sha256": "71858d006d2ae7b9f92b3c42a07660de9e321f2a9003b5047cd828543e2fdeb0",
+        "committedBytesMatch": true,
+        "fileHashesMatch": true
+      },
+      "evidence/APP-013/p08-key-correction-20261110/source-manifest.json": {
+        "sha256": "976a676eea6b59d4e3ad203554949b170805de1a9f06f8be482b145b9bc16fd2",
+        "committedBytesMatch": true,
+        "fileHashesMatch": true
+      },
+      "evidence/APP-013/p08-connected-packet-20261110/iq1-source-manifest.json": {
+        "sha256": "a65cae764d4e9dcb442845550c32a134c9c1ea11a5f2f3a6b365f07b23c03edf",
+        "committedBytesMatch": true,
+        "fileHashesMatch": true
+      },
+      "evidence/APP-013/p08-connected-packet-20261110/sq1-source-manifest.json": {
+        "sha256": "95a37b2e6b548837f414789e599bd961a65e229f8272915b96317c5b2b953a08",
+        "committedBytesMatch": true,
+        "fileHashesMatch": true
+      },
+      "evidence/APP-013/p08-connected-packet-20261110/vm2-source-manifest.json": {
+        "sha256": "e33c0fe2ce8dad99a6bf8901280a11e96c551239c146800009bd12c45c04e6f5",
+        "committedBytesMatch": true,
+        "fileHashesMatch": true
+      },
+      "evidence/APP-013/p08-connected-packet-20261110/account-containment-source-manifest.json": {
+        "sha256": "03729cf746d8d418a50687cd69635f6a2560f75966520c4b5154f93de519aef3",
+        "committedBytesMatch": true,
+        "fileHashesMatch": true
+      },
+      "evidence/APP-013/p08-connected-packet-20261110/account-containment-read-source-manifest.json": {
+        "sha256": "e473fc130fa347665e847a1b8cc8607a686192d2eac7f1b00d9b539ec2c3f077",
+        "committedBytesMatch": true,
+        "fileHashesMatch": true
+      }
+    },
+    "sourceHashes": {
+      "evidence/APP-013/p08-native-entry-local-20261101/source/native_io.py": "749834f41ddaa73c88cf71e15020926d40d804945d1e2fb5ffb76ffb6ef31bda",
+      "evidence/APP-013/p08-native-entry-local-20261101/source/entry.py": "8f5442271b2d78ab3e100afe22f5f80fe3ab4db3f96dd7e94662c6c5ca271698",
+      "evidence/APP-013/p08-native-entry-local-20261101/source/test_child_cleanup.py": "f32b2ed985472140cc5fb9c2f6b448fe8df344452ccaa069377d4245267ee8e1",
+      "evidence/APP-013/p08-native-entry-local-20261101/source/test_entry.py": "e4e8e9aa7a41b8b310e71bca7da3ba40413691bbb6a61cb3eb593aed9f83d2cc"
+    },
+    "providerCalls": 0,
+    "credentialStoresRead": false,
+    "runtimeTestsRun": 0,
+    "fixturesRun": 0,
+    "sourceEdited": false
+  },
+  "independentReviews": [
+    "workflow_audit: exact-label override and manifests, production/test diff PASS",
+    "runner_audit: production/test diff PASS after fixture-only correction; no remaining blocker"
+  ],
+  "governanceTests": 25,
+  "documentationAndArchitectureChecks": "PASS; exact commands recorded in proposal",
+  "privateOrExternalActionsDuringTC2": {
+    "credentialReads": 0,
+    "providerCalls": 0,
+    "realSql": 0,
+    "browserOpenings": 0,
+    "payment": false,
+    "postgresqlFixtures": false
+  },
+  "historicalR69CloseoutSha256": "4903f696feb16f2110d122b88dca726a44ddd5be369265adde334e28f3864124",
+  "liveAuthentication": "NOT_OBSERVED",
+  "forwardTagOutcome": "UNKNOWN",
+  "paymentObserved": false,
+  "acceptedMilestones": "1A/1B/2A/2B remain4/8;3A OPEN;R1 newly closed0/27",
+  "remaining": "Current tag-state/readiness observation and separately authorized authentication qualification, then original payment/event/gate/owner-acceptance work. No new live attempt scheduled. Normal-payment timing remains unchanged and needs its own readiness review before use.",
+  "scopeDeviation": "NONE; four approved source/test files and eight mechanical current manifests; unrelated AGENTS.md preserved"
+}
