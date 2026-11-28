@@ -1,0 +1,112 @@
+{
+  "section": "APP-013 / 3A / P08",
+  "status": "LOCAL_INDEPENDENT_AUDIT_COMPLETE_NO_LIVE_ACTION",
+  "recordedAt": "2026-11-28T07:05:43.030994+00:00",
+  "backendSourceCommit": "5bc936c3d13f42ebda7289688d6ec1cea67ada38",
+  "governanceBaselineCommit": "2b2eb40981bedf2c09d9a23990c7d9ae34d05a03",
+  "auditFile": "APP013_P08_INDEPENDENT_AUDIT_20261128.md",
+  "auditSha256": "9969c60132ce94f84fa0c6ac1fa087ae3d8537620ec669cca555a6759d55874f",
+  "parallelReadOnlyReviews": [
+    "application_authentication_payment",
+    "qualification_native_scripts",
+    "governance_timing_operator_workflow"
+  ],
+  "evidenceSha256": {
+    "APP013_P08_R68_TIMING_TEMPLATE_20261127.json": "b1bf3f80ac59a57978d1d99371f3807840ce0c190a67ffffe2e3cb470eab55ac",
+    "APP013_P08_R68_LOCAL_READINESS_20261127.json": "c2d2d95d63afe00e433e80dbd4c986ca0cbf75c2da8dd26ee12164093cf5dd57",
+    "APP013_P08_R67_CLOSEOUT_REVIEW_20261127.json": "2ebc1429f469aa581ca7f219d1604cd5f5d0a81b48cee2bfa1b3bbd35a226840",
+    "APP013_P08_R68_CLOSEOUT_REVIEW_20261127.json": "15356f935604b5ce3cae22de5c1e05bb97294dd86e5f1534ef03fb1cf9e8f22d",
+    "APP013_P08_SD4_CLOSEOUT_20261127.json": "782d1168b27e40abcdd888d895d4d9a09dba0c1b4307f5db3d1c76dc202d7936",
+    "APP013_P08_QSR1_LOCAL_COMPLETION_20261127.json": "7e0ebb432425e89705e724f7429756ed12e04e022bbd6dcb380fe8ba76ba2bfd",
+    "APP013_P08_AP2_LOCAL_COMPLETION_20261127.json": "10c9c566a0874cf2ac9f9b4a3a19122fceb92aad389316a4553d430df3d4bfde",
+    "APP013_P08_AQ1_LOCAL_COMPLETION_20261127.json": "396c20380d4b0b0557ce6b0733e68bd435cb4d78c3fada63d8235d4327300c2e",
+    "APP013_P08_CT4_CONNECTED_SETTLING_PROPOSAL_20261116.md": "535a09e586a65ff5b6cf1f2274545a10800961b82598e4d34e04fc94bfaee47c"
+  },
+  "timingReproduction": {
+    "units": "seconds from S",
+    "qualificationReadEnd": 1020,
+    "qualificationCloseoutEnd": 1320,
+    "nextNativeDispatchCutoff": 840,
+    "qualificationCanFinishAfterNextDispatchCutoff": true,
+    "lateAllowedSignInFinish": 480,
+    "recoveryDispatchCutoff": 300,
+    "signInCanFinishAfterRecoveryDispatchCutoff": true,
+    "nativeSetupAssumptionFromPriorReadiness": 480,
+    "identityReserve": 45,
+    "settleReserve": 420,
+    "postSettleReserve": 960,
+    "independentCleanupReserve": 660,
+    "purgeReserve": 120,
+    "conservativeNativeTail": 2685,
+    "earliestFinishUsingFullQualificationAllowance": 4005,
+    "currentCustodyMaximum": 3600,
+    "ownerReviewCommitMarginIncluded": 0,
+    "interpretation": "Advertised maxima cannot compose. Not proof every fast run is impossible, nor the cause of R68 SQL refusal."
+  },
+  "canonicalDocumentsBeforeAudit": {
+    "GLOBAL_EXECUTION_POINTER.md": {
+      "bytes": 1598659,
+      "lines": 6616
+    },
+    "SESSION_HANDOFF.md": {
+      "bytes": 1918732,
+      "lines": 7815
+    },
+    "EXECUTION_BOARD.md": {
+      "bytes": 1529130,
+      "lines": 6543
+    },
+    "TICKETS/APP-013.md": {
+      "bytes": 1271771,
+      "lines": 4781
+    }
+  },
+  "preExistingBackendAgentsSha256": "26d9e44fa5af183f80f35b2110424448a0e0326d7ae107af68d3388089797ddc",
+  "freshChecks": {
+    "backendGovernanceWrapperBefore": "PASS",
+    "governanceFrozenBaselineBefore": "PASS",
+    "governanceConsistencyBefore": "PASS",
+    "bothWhitespaceBefore": "PASS",
+    "backendGovernanceWrapperAfter": "PASS",
+    "governanceFrozenBaselineAfter": "PASS",
+    "governanceConsistencyAfter": "PASS",
+    "architecture": "PASS",
+    "governanceTests": {
+      "total": 25,
+      "passed": 25,
+      "failed": 0
+    },
+    "bothWhitespaceAfter": "PASS",
+    "timingContradictionReproducedFromTemplateAndSourceConstants": true
+  },
+  "runtimeTestsRerun": false,
+  "priorRuntimeTestResults": "Inspected historical QSR1/AP2/AQ1 completion evidence only",
+  "executableChanges": false,
+  "externalActions": false,
+  "credentialReads": 0,
+  "providerCalls": 0,
+  "realSqlQueries": 0,
+  "databaseFixtures": 0,
+  "browserOpened": false,
+  "authenticationCurrent": "UNKNOWN",
+  "paymentObserved": false,
+  "nextObservableResult": "Feasible composed timing and bounded application contract repair review before attendance",
+  "acceptedMilestones": "1A/1B/2A/2B 4/8; 3A OPEN; R1 newly closed 0/27",
+  "scopeDeviation": "NONE_AUDIT_ONLY_RECOMMENDATIONS_NOT_IMPLEMENTED",
+  "verifiedAt": "2026-11-28T07:06:59.500664+00:00",
+  "oldReceiptsUnchanged": true,
+  "preExistingBackendChangesPreserved": true,
+  "canonicalHistoryPreserved": true,
+  "timingRepairDirection": {
+    "postSettleReserveOrigin": "Conservative prior connected-payment work allowance, not an auth-only derivation",
+    "proposedLocalWork": "Derive and test authentication-purpose admission budget through existing interfaces",
+    "replacementSeconds": null,
+    "keep": [
+      "420-second settle",
+      "cleanup horizons",
+      "3600-second custody ceiling",
+      "one attempt and no retries"
+    ],
+    "implemented": false
+  }
+}

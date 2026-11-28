@@ -1,0 +1,114 @@
+APP-013 / 3A / P08 local verification at 4470996ad3c94467c752dddbeb7cd66cdfbaedf1
+No live providers, credentials, PostgreSQL or browser.
+
+FILE auth-contract-20261128-tests.log
+
+> signmons-calldesk-backend@0.1.0 test
+> jest --runInBand --runTestsByPath src/auth/__tests__/authenticated-job-contract.spec.ts src/auth/__tests__/request-auth.guard.spec.ts src/jobs/dispatch-access.guard.spec.ts src/jobs/dispatch-board.service.spec.ts
+
+PASS src/jobs/dispatch-board.service.spec.ts
+PASS src/auth/__tests__/authenticated-job-contract.spec.ts
+PASS src/auth/__tests__/request-auth.guard.spec.ts
+PASS src/jobs/dispatch-access.guard.spec.ts
+
+Test Suites: 4 passed, 4 total
+Tests:       39 passed, 39 total
+Snapshots:   0 total
+Time:        0.826 s, estimated 1 s
+Ran all test suites within paths "src/auth/__tests__/authenticated-job-contract.spec.ts", "src/auth/__tests__/request-auth.guard.spec.ts", "src/jobs/dispatch-access.guard.spec.ts", "src/jobs/dispatch-board.service.spec.ts".
+
+FILE auth-contract-20261128-lint.log
+
+FILE auth-contract-20261128-types.log
+{"testFileDiagnostics":0,"importedFileDiagnostics":0,"emitted":false}
+
+FILE timing-http-20261128-tests.log
+Command: python3 -B -m unittest -v test_child_cleanup.ResponseCleanupTests test_child_cleanup.ChildCleanupTests
+Cwd: evidence/APP-013/p08-native-entry-local-20261101/source
+No provider, socket, credential or database I/O.
+
+test_active_alarm_is_preserved_and_refused_before_any_io (test_child_cleanup.ResponseCleanupTests.test_active_alarm_is_preserved_and_refused_before_any_io) ... ok
+test_close_failure_is_not_reported_as_success (test_child_cleanup.ResponseCleanupTests.test_close_failure_is_not_reported_as_success) ... ok
+test_expired_phase_refuses_before_open_and_respects_short_remaining_time (test_child_cleanup.ResponseCleanupTests.test_expired_phase_refuses_before_open_and_respects_short_remaining_time) ... ok
+test_http_error_body_timeout_is_bounded_and_response_closed (test_child_cleanup.ResponseCleanupTests.test_http_error_body_timeout_is_bounded_and_response_closed) ... ok
+test_http_error_response_is_always_closed (test_child_cleanup.ResponseCleanupTests.test_http_error_response_is_always_closed) ... ok
+test_normal_and_fallback_close_are_bounded_without_success (test_child_cleanup.ResponseCleanupTests.test_normal_and_fallback_close_are_bounded_without_success) ... ok
+test_original_handler_restored_on_success_and_timeout (test_child_cleanup.ResponseCleanupTests.test_original_handler_restored_on_success_and_timeout) ... ok
+test_primary_read_failure_survives_failing_or_hanging_cleanup (test_child_cleanup.ResponseCleanupTests.test_primary_read_failure_survives_failing_or_hanging_cleanup) ... ok
+test_read_failure_and_interruption_close_response (test_child_cleanup.ResponseCleanupTests.test_read_failure_and_interruption_close_response) ... ok
+test_success_malformed_oversized_and_decode_paths_close (test_child_cleanup.ResponseCleanupTests.test_success_malformed_oversized_and_decode_paths_close) ... ok
+test_whole_request_timer_includes_open_and_has_no_retry (test_child_cleanup.ResponseCleanupTests.test_whole_request_timer_includes_open_and_has_no_retry) ... ok
+test_whole_request_timer_stops_hanging_and_dripping_body (test_child_cleanup.ResponseCleanupTests.test_whole_request_timer_stops_hanging_and_dripping_body) ... ok
+test_actual_handoff_timeout_merges_journal_after_group_closure (test_child_cleanup.ChildCleanupTests.test_actual_handoff_timeout_merges_journal_after_group_closure) ... ok
+test_coordinator_abort_gate_interrupts_detached_child (test_child_cleanup.ChildCleanupTests.test_coordinator_abort_gate_interrupts_detached_child) ... ok
+test_input_bound_and_cleanup_reserve_refuse_before_spawn (test_child_cleanup.ChildCleanupTests.test_input_bound_and_cleanup_reserve_refuse_before_spawn) ... ok
+test_interruption_closes_actual_child_and_descendant (test_child_cleanup.ChildCleanupTests.test_interruption_closes_actual_child_and_descendant) ... ok
+test_oversized_stdout_and_stderr_close_owned_group (test_child_cleanup.ChildCleanupTests.test_oversized_stdout_and_stderr_close_owned_group) ... ok
+test_selector_setup_failure_still_closes_spawned_group (test_child_cleanup.ChildCleanupTests.test_selector_setup_failure_still_closes_spawned_group) ... ok
+test_success_and_nonzero_reap_descendants_and_keep_protocol (test_child_cleanup.ChildCleanupTests.test_success_and_nonzero_reap_descendants_and_keep_protocol) ... ok
+test_term_ignoring_child_is_killed_within_cleanup_budget (test_child_cleanup.ChildCleanupTests.test_term_ignoring_child_is_killed_within_cleanup_budget) ... ok
+test_timeout_and_descendant_held_pipe_close_owned_group (test_child_cleanup.ChildCleanupTests.test_timeout_and_descendant_held_pipe_close_owned_group) ... ok
+test_unknown_closure_is_sticky_failure (test_child_cleanup.ChildCleanupTests.test_unknown_closure_is_sticky_failure) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 3.657s
+
+OK
+
+FILE timing-auth-20261128-regressions.log
+test_atomic_interruption_before_publish_does_not_post (test_key_lifecycle.LifecycleTests.test_atomic_interruption_before_publish_does_not_post) ... ok
+test_combined_slow_create_delete_and_independent_read_budget (test_key_lifecycle.LifecycleTests.test_combined_slow_create_delete_and_independent_read_budget) ... ok
+test_corrupt_or_unfinished_receipt_refuses_recovery (test_key_lifecycle.LifecycleTests.test_corrupt_or_unfinished_receipt_refuses_recovery) ... ok
+test_create_replay_refused (test_key_lifecycle.LifecycleTests.test_create_replay_refused) ... ok
+test_deadline_never_sends_poll_and_budget_stop_is_safe (test_key_lifecycle.LifecycleTests.test_deadline_never_sends_poll_and_budget_stop_is_safe) ... ok
+test_delete_fifth_poll_and_uid_drift (test_key_lifecycle.LifecycleTests.test_delete_fifth_poll_and_uid_drift) ... ok
+test_delete_final_read_after_lost_reply_no_retry (test_key_lifecycle.LifecycleTests.test_delete_final_read_after_lost_reply_no_retry) ... ok
+test_dropped_post_stays_unowned_even_matching_metadata (test_key_lifecycle.LifecycleTests.test_dropped_post_stays_unowned_even_matching_metadata) ... ok
+test_foreign_operation_and_error_do_not_grant_uid (test_key_lifecycle.LifecycleTests.test_foreign_operation_and_error_do_not_grant_uid) ... ok
+test_fresh_process_recovery_uses_private_operation_provenance (test_key_lifecycle.LifecycleTests.test_fresh_process_recovery_uses_private_operation_provenance) ... ok
+test_immediate_done_and_nullable_creation_time (test_key_lifecycle.LifecycleTests.test_immediate_done_and_nullable_creation_time) ... ok
+test_interrupt_after_operation_publish_recovers_only_retained_operation (test_key_lifecycle.LifecycleTests.test_interrupt_after_operation_publish_recovers_only_retained_operation) ... ok
+test_invalid_creation_time_never_persists_uid (test_key_lifecycle.LifecycleTests.test_invalid_creation_time_never_persists_uid) ... ok
+test_lost_delete_active_remains_uncertain_no_retry (test_key_lifecycle.LifecycleTests.test_lost_delete_active_remains_uncertain_no_retry) ... ok
+test_malformed_pending_shapes_and_foreign_poll_refuse (test_key_lifecycle.LifecycleTests.test_malformed_pending_shapes_and_foreign_poll_refuse) ... ok
+test_pending_create_and_absence_remains_unconfirmed (test_key_lifecycle.LifecycleTests.test_pending_create_and_absence_remains_unconfirmed) ... ok
+test_pending_missing_done_first_and_fifth_poll (test_key_lifecycle.LifecycleTests.test_pending_missing_done_first_and_fifth_poll) ... ok
+test_poll_limit_retains_operation_and_recovery_finishes (test_key_lifecycle.LifecycleTests.test_poll_limit_retains_operation_and_recovery_finishes) ... ok
+test_private_uid_survives_public_journal_save_interruption (test_key_lifecycle.LifecycleTests.test_private_uid_survives_public_journal_save_interruption) ... ok
+test_real_capability_budget_refuses_poll_before_http (test_key_lifecycle.LifecycleTests.test_real_capability_budget_refuses_poll_before_http) ... ok
+test_real_capability_clock_rollback_refuses_before_request (test_key_lifecycle.LifecycleTests.test_real_capability_clock_rollback_refuses_before_request) ... ok
+test_retained_journal_and_receipt_exclude_secret_body (test_key_lifecycle.LifecycleTests.test_retained_journal_and_receipt_exclude_secret_body) ... ok
+test_stale_etag_and_foreign_metadata_refuse_mutation_or_success (test_key_lifecycle.LifecycleTests.test_stale_etag_and_foreign_metadata_refuse_mutation_or_success) ... ok
+test_terminal_create_error_not_adopted (test_key_lifecycle.LifecycleTests.test_terminal_create_error_not_adopted) ... ok
+test_absent_original_creation_time_is_not_backfilled (test_key_lifecycle.OwnedVersionTests.test_absent_original_creation_time_is_not_backfilled) ... ok
+test_deleted_and_uncertain_delete_reads_do_not_refresh_or_retry (test_key_lifecycle.OwnedVersionTests.test_deleted_and_uncertain_delete_reads_do_not_refresh_or_retry) ... ok
+test_distinct_versions_preserve_provenance_and_authenticate_then_delete (test_key_lifecycle.OwnedVersionTests.test_distinct_versions_preserve_provenance_and_authenticate_then_delete) ... ok
+test_fresh_process_cleanup_refreshes_before_any_authentication (test_key_lifecycle.OwnedVersionTests.test_fresh_process_cleanup_refreshes_before_any_authentication) ... ok
+test_interrupted_atomic_refresh_leaves_unadopted_version_and_purges (test_key_lifecycle.OwnedVersionTests.test_interrupted_atomic_refresh_leaves_unadopted_version_and_purges) ... ok
+test_invalid_identity_version_or_creation_metadata_never_reaches_keystring (test_key_lifecycle.OwnedVersionTests.test_invalid_identity_version_or_creation_metadata_never_reaches_keystring) ... ok
+test_later_conditional_conflict_is_not_retried_after_refresh (test_key_lifecycle.OwnedVersionTests.test_later_conditional_conflict_is_not_retried_after_refresh) ... ok
+test_missing_foreign_and_unproven_receipt_blocks_even_matching_live_metadata (test_key_lifecycle.OwnedVersionTests.test_missing_foreign_and_unproven_receipt_blocks_even_matching_live_metadata) ... ok
+test_pending_and_deleted_provenance_never_authenticate_at_same_or_changed_etag (test_key_lifecycle.OwnedVersionTests.test_pending_and_deleted_provenance_never_authenticate_at_same_or_changed_etag) ... ok
+test_provider_deleted_key_with_created_receipt_remains_readable_but_cannot_authenticate (test_key_lifecycle.OwnedVersionTests.test_provider_deleted_key_with_created_receipt_remains_readable_but_cannot_authenticate) ... ok
+test_published_refresh_recovers_after_interruption_before_memory_update (test_key_lifecycle.OwnedVersionTests.test_published_refresh_recovers_after_interruption_before_memory_update) ... ok
+test_refresh_persistence_failure_stops_before_sensitive_dispatch (test_key_lifecycle.OwnedVersionTests.test_refresh_persistence_failure_stops_before_sensitive_dispatch) ... ok
+test_same_instant_timestamp_representation_preserves_original_bytes (test_key_lifecycle.OwnedVersionTests.test_same_instant_timestamp_representation_preserves_original_bytes) ... ok
+test_submicrosecond_timestamp_change_refuses_version_refresh (test_key_lifecycle.OwnedVersionTests.test_submicrosecond_timestamp_change_refuses_version_refresh) ... ok
+test_actual_connected_interruption_closes_without_auth_or_browser (test_entry.CT4TimingTests.test_actual_connected_interruption_closes_without_auth_or_browser) ... ok
+test_actual_invoke_waits_before_prediction_once (test_entry.CT4TimingTests.test_actual_invoke_waits_before_prediction_once) ... ok
+test_actual_payment_deadline_refuses_before_first_mutation (test_entry.CT4TimingTests.test_actual_payment_deadline_refuses_before_first_mutation) ... ok
+test_admission_before_mutation_and_before_wait (test_entry.CT4TimingTests.test_admission_before_mutation_and_before_wait) ... ok
+test_early_wakeup_does_not_shorten_wait (test_entry.CT4TimingTests.test_early_wakeup_does_not_shorten_wait) ... ok
+test_exact_boundary_and_owned_bindings (test_entry.CT4TimingTests.test_exact_boundary_and_owned_bindings) ... ok
+test_freeze_rollback_nonfinite_and_interruption (test_entry.CT4TimingTests.test_freeze_rollback_nonfinite_and_interruption) ... ok
+test_killed_native_worker_during_wait_allows_independent_closeout (test_entry.CT4TimingTests.test_killed_native_worker_during_wait_allows_independent_closeout) ... ok
+test_wall_and_monotonic_horizons_both_enforced (test_entry.CT4TimingTests.test_wall_and_monotonic_horizons_both_enforced) ... ok
+test_actual_node_authority_after_parent_wait_and_delayed_child (test_entry.CT5DeadlineTests.test_actual_node_authority_after_parent_wait_and_delayed_child) ... ok
+test_child_cutoff_refuses_before_mutation_and_cleanup_remains_available (test_entry.CT5DeadlineTests.test_child_cutoff_refuses_before_mutation_and_cleanup_remains_available) ... ok
+test_child_horizon_rechecked_before_and_after_wait (test_entry.CT5DeadlineTests.test_child_horizon_rechecked_before_and_after_wait) ... ok
+test_r54_schedule_refused_before_any_forward_intent (test_entry.CT5DeadlineTests.test_r54_schedule_refused_before_any_forward_intent) ... ok
+
+----------------------------------------------------------------------
+Ran 51 tests in 1.441s
+
+OK
