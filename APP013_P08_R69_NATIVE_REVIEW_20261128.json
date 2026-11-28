@@ -1,0 +1,84 @@
+{
+  "decisionForReview": {
+    "decision": "APPROVE_EXACT_P08_AUTH_QUALIFICATION",
+    "externalActionAuthorized": true,
+    "operationId": "34ed4e4f-3074-42a3-a42c-50e444566555",
+    "owner": "Debynyhan Banks",
+    "scopeSha256": "bf5c92c6e3c64f989a406e32d0da18f8f0e28697ad37714d82c441cd49c65870",
+    "sourceManifestSha256": "a9ded0a8347397ccf10e3c8d9e4f7e4cdcc372824413ee2e7e2910d667e1f3bc"
+  },
+  "limits": {
+    "child": 6,
+    "childRequests": 200,
+    "cli": 196,
+    "https": 100,
+    "sql": 60
+  },
+  "operationId": "34ed4e4f-3074-42a3-a42c-50e444566555",
+  "paymentWorkEnd": "2026-11-28T13:34:00Z",
+  "purpose": "NATIVE_AUTH_QUALIFICATION_ONLY",
+  "qualification": {
+    "checks": {
+      "billing": true,
+      "database": true,
+      "effectiveAccess": true,
+      "firebase": true,
+      "job": true,
+      "owner": true,
+      "privateInventory": true,
+      "retiredRuntime": true,
+      "services": true
+    },
+    "operationId": "34ed4e4f-3074-42a3-a42c-50e444566555",
+    "qualifiedUntil": "2026-11-28T13:46:00Z",
+    "roleAclSha256": "649d517af81c235f8045894d73207b7d892b3607ee165418151af6b9975c1560",
+    "runtimeEnvironmentSha256": "e5fb2160ac529c02ef73d8d288bb25b2fe1d64209386478c21d37daf97a4d02d",
+    "scopeSha256": "8548a87407f4ad8acd6bad2cdd94149175d244b7e601b9b88925a52df9203803",
+    "status": "QUALIFIED_FOR_NATIVE_ENTRY"
+  },
+  "sourceCommit": "ee98bc4891605ad8e96632f15553a7bafc50a4d3",
+  "stage": "native",
+  "summary": {
+    "actions": [
+      "Retain current qualification and temporary runtime/IAM/key/test-account setup",
+      "Read exact Sandbox secret/disabled webhook preflight",
+      "Verify token and protected same-job authentication",
+      "Mandatory normal and independent cleanup/private purge"
+    ],
+    "browserAuthorized": false,
+    "cost": {
+      "allowanceUsd": 0,
+      "existingLiabilitiesUnchanged": true,
+      "hardBillingCap": false
+    },
+    "limits": {
+      "child": 6,
+      "childRequests": 200,
+      "cli": 196,
+      "https": 100,
+      "sql": 60
+    },
+    "paymentAuthorized": false,
+    "webhookEnableAuthorized": false
+  },
+  "window": {
+    "cleanupEnd": "2026-11-28T13:46:00Z",
+    "cutoff": "2026-11-28T13:34:00Z",
+    "purgeEnd": "2026-11-28T13:48:00Z",
+    "start": "2026-11-28T12:48:00Z",
+    "workEnd": "2026-11-28T13:35:00Z"
+  },
+  "entryMustOccurBefore": "2026-11-28T13:04:00Z",
+  "cleanupDisclosure": {
+    "independentIntervalSeconds": 660,
+    "activePhaseSeconds": 656,
+    "maximumCompletedMainWithFreshInputSeconds": [
+      642,
+      674
+    ],
+    "partialMainPendingKeyMaxBeforeInputSeconds": 915,
+    "guaranteedRestoration": false,
+    "incompleteMainProofDoesNotBecomeAcceptedAuthThroughContainment": true
+  },
+  "publishedReviewSha256": "8943d523ac9ca3ed2be8219294297be15d7b38bf9164ab38de6dbe68ec093a3d"
+}
