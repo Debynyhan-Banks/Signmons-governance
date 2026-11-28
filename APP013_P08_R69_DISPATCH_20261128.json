@@ -1,0 +1,18 @@
+{
+  "status": "R69_RECOVERY_DISPATCHED_TO_STANDALONE_TERMINAL",
+  "terminalWindowId": 42265,
+  "sourceCommit": "ee98bc4891605ad8e96632f15553a7bafc50a4d3",
+  "decisionCommit": "4cdc47cfd7fd6746f8e26265b614fad25cb85773",
+  "openingSpecCommit": "c0329ae478e5526d9138c7a510210943aaaf7f8b",
+  "ownedCommandPath": "/private/tmp/p08-terminal-launch-4153143b-aaa3-4db5-98bb-fde132813703.command",
+  "ownedCommandSha256": "f35183803f38f43f9745bc784bb99178b6643c562c684caee8880394859b726d",
+  "dispatchProcedurePath": "/private/tmp/r69-dispatch.py",
+  "dispatchProcedureSha256": "f4f43cff00c1cec126e30635b40064d77cf1a36a2a33ec356ba5c01e4c419f06",
+  "separateRecoveryDispatch": false,
+  "nativePurpose": "NATIVE_AUTH_QUALIFICATION_ONLY",
+  "qualificationAuthorized": false,
+  "nativeAuthorized": false,
+  "paymentAuthorized": false,
+  "recoveryStartedAt": "2026-11-28T12:50:06.490551+00:00",
+  "dispatchTimeEvidence": "actual recovery startedAt, not rounded operator estimate"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "HANDOFF_RETAINED",
+  "startedAt": 1795870206.490551,
+  "sourceCommit": "ee98bc4891605ad8e96632f15553a7bafc50a4d3",
+  "scopeSha256": "40534fa13699a4b7c7ccf2f837c6d71dfd61f17d9259bcf8fc3230f2040d0bf7",
+  "liveObserved": true,
+  "failure": null,
+  "residuals": [],
+  "verifiedAt": "2026-11-28T12:50:56.439858+00:00",
+  "receiptSha256": "3656ebe1356a0b36bbacb72fc2ac542d5288a4b2f6024e2a3be88caf62623631",
+  "privateValuesCopied": false
+}
