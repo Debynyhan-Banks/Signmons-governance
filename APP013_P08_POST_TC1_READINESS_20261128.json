@@ -1,0 +1,311 @@
+{
+  "section": "APP-013/3A/P08",
+  "status": "QUALIFICATION_ONLY_READINESS_REVIEW_COMPLETE_NOT_EXECUTION_READY",
+  "recordedAt": "2026-11-28T08:39:15.816652+00:00",
+  "sourceCommit": "ee98bc4891605ad8e96632f15553a7bafc50a4d3",
+  "governanceBaseline": "79a81d68a12cb2a2fe785a09509879faa14bc834",
+  "authority": "Owner proceed for local preparation; no external approval",
+  "sourceAudit": {
+    "section": "APP-013 / 3A / P08",
+    "status": "LOCAL_METADATA_CHECKS_PASS_FRESH_QUALIFICATION_PREPARATION_REQUIRED",
+    "recordedAt": "2026-11-28T08:36:35.766463+00:00",
+    "sourceCommit": "ee98bc4891605ad8e96632f15553a7bafc50a4d3",
+    "governanceCommit": "79a81d68a12cb2a2fe785a09509879faa14bc834",
+    "metadataOnly": true,
+    "sdkFilesVerified": 59,
+    "checks": [
+      {
+        "function": "packet.renewal_tree_check(sourceCommit)",
+        "result": "PASS"
+      },
+      {
+        "function": "q.model.verify_local_manifest()",
+        "result": "PASS"
+      },
+      {
+        "function": "q.model.verify_locked_sources()",
+        "result": "PASS"
+      },
+      {
+        "function": "q.current_module(authority).verify_sources()",
+        "result": "PASS"
+      },
+      {
+        "function": "q.verify_qualification_sources(sourceCommit, manifest, authority.committed)",
+        "result": "PASS"
+      },
+      {
+        "function": "q.sdk_environment(os.environ)",
+        "result": "PASS"
+      },
+      {
+        "function": "acl.config_snapshot(acl.CONFIG_ROOT, os.environ)",
+        "result": "PASS"
+      },
+      {
+        "function": "SHA256 union of renewal source-manifest sdkFiles, test-manifest sdkReviewFiles, current qualification sdkReview.files, TR41 sdkAdditionalFiles",
+        "result": "PASS"
+      },
+      {
+        "function": "(sys.platform, sys.version_info[:3], sqlite3.sqlite_version) == acl.LOCAL_RUNTIME",
+        "result": "PASS"
+      },
+      {
+        "function": "SHA256 of both p08-local-preparation plan.compiledHashes files",
+        "result": "PASS"
+      }
+    ],
+    "checkInvocation": {
+      "cwd": "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery",
+      "pythonArgv": [
+        "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+        "-I",
+        "-B",
+        "-"
+      ],
+      "imports": "Add existing p08-connected-packet-20261110 directory to sys.path; import packet; use its q/current authority/acl modules. Invoke only functions listed above.",
+      "credentialStoresRead": false,
+      "providerCalls": 0,
+      "operationsReserved": 0
+    },
+    "currentHashes": {
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/connected_launcher.py": "d56d81f415aafa2cb90c8f2369504b159ce8be6d51339a059ec4f00b7aa1e49b",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/packet.py": "7d6fb757e0db1c718a717a007fd96cf093b0c95edbe228f0aad83ec1a5d484ec",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-https-output-category-local-20261029/source/qualification_launch.py": "79204c1705a16ea8861b8f3d674706889f4a9db3a89933786cd041dd804d6ce4",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-key-correction-20261110/candidate.json": "d384d310122470abe16b4dd034b91e8faa47e5f5db89b2d512534784f474e112",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-https-output-category-local-20261029/source/source-manifest.json": "31f67453f7f4a52538c78812dd979c2ca41f754cd557e3a7c1f2db9b4cb03629",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-native-entry-local-20261101/source/source-manifest.json": "a9ded0a8347397ccf10e3c8d9e4f7e4cdcc372824413ee2e7e2910d667e1f3bc",
+      "/Users/debynyhanbanks/Web Projects/signmons-governance-r08-recovery/APP013_P08_CHROME_FIRST_SIGNIN_TEMPLATE_20261126.py": "73686cddb7f5f70332155432d82f2d87c325c4a95a4a0bd1c8b717a00866084d",
+      "/Users/debynyhanbanks/Web Projects/signmons-governance-r08-recovery/APP013_P08_R67_PROPOSED_DISPATCHER_20261127.py": "750700ebcd9797e0fb4fef554b169c9bcc612734b22bd41b6d8aa7f2eb1be04d"
+    },
+    "resourcePins": {
+      "candidate": "signmons-calldesk-staging-p07key7e45dc512e17",
+      "image": "us-east5-docker.pkg.dev/signmons/signmons/signmons-calldesk-backend@sha256:36f887749947c0b01db683482c081ca663534e7ffe597560b24597f3d46be9da",
+      "normalRevision": "signmons-calldesk-staging-app013dbrot2",
+      "identity": "signmons-calldesk-p07-runtime@signmons.iam.gserviceaccount.com",
+      "stripeSecretVersion": "2",
+      "otherSixSecretVersions": "1"
+    },
+    "requiredCommand": {
+      "status": "INTERFACE_ONLY_UNBOUND_NOT_EXECUTABLE_AUTHORITY",
+      "argv": [
+        "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+        "-I",
+        "-B",
+        "-c",
+        "import sys,runpy;sys.path.insert(0,sys.argv.pop(1));sys.argv=sys.argv[1:];runpy.run_path(sys.argv[0],run_name=\"__main__\")",
+        "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110",
+        "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/connected_launcher.py",
+        "<fresh reviewed public spec path>",
+        "--recover-first",
+        "<fresh exact recovery envelope path>"
+      ],
+      "separateRecoveryInvocation": false,
+      "terminalConsentArgument": false
+    },
+    "compatibilityNotes": [
+      "Retained R68 public spec lacks required opening receipt and has consumed historical source/window/operation bindings.",
+      "Retained TR41 decision lacks connectedSession. Fresh exact decision must include recoveryId, qualificationId, nativeOperationId and purgeEnd under connectedSession.",
+      "Fresh committed successful sign-in closeout must include independently verified executorRemoved; public spec opening.receipt binds commit/path/sha256 and opening.decisionPath selects the exact approved decision.",
+      "Existing Chrome-first template accepts the additional approved decision metadata through its existing exact draft comparison and renewal_preflight; no sign-in algorithm change indicated.",
+      "Reuse only deliver_to_terminal from retained R67 dispatcher. Replace old separate recovery/launcher and Terminal-consent composition with the required command interface.",
+      "Fresh source/manifests, identifiers, authority and feasible fixed-purge deadlines remain to be prepared. No old receipt grants retry."
+    ],
+    "liveUnknowns": [
+      "Credential validity and effective provider access",
+      "Billing and API state",
+      "Runtime identity, IAM and numeric-secret retirement",
+      "Database role and sessions",
+      "Exact current job, test account and Sandbox webhook binding",
+      "Protected same-job authentication"
+    ],
+    "limitations": [
+      "59 SDK hashes and configuration metadata establish local compatibility only.",
+      "No live operation or attendance is scheduled.",
+      "Independent 660-second cleanup interval is an attempt horizon, not a restoration guarantee."
+    ],
+    "scopeDeviation": false
+  },
+  "timingAudit": {
+    "status": "SYNTHETIC_TIMING_READINESS_PASS",
+    "sourceCommit": "ee98bc4891605ad8e96632f15553a7bafc50a4d3",
+    "command": "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14 -I -B /private/tmp/post-tc1-timing-readiness.py",
+    "methods": [
+      "BindingRecoveryCapability(PROOF_ONLY)",
+      "packet.construct_values",
+      "coordinator.authorize",
+      "authority.validate_payment(PROOF_ONLY)",
+      "composed_qualification.authorize",
+      "packet.verify_recovered_auth_opening",
+      "packet.composed_auth_timing",
+      "native Capability(PROOF_ONLY)",
+      "packet.auth_timing",
+      "packet.execute_connected with inert I/O adapters"
+    ],
+    "relativeWitnessSeconds": {
+      "recoveryWindow": {
+        "start": 0,
+        "cutoff": 300,
+        "readEnd": 540,
+        "closeoutEnd": 840,
+        "purgeEnd": 3600
+      },
+      "qualificationWindow": {
+        "start": 0,
+        "cutoff": 720,
+        "readEnd": 1020,
+        "closeoutEnd": 1320,
+        "purgeEnd": 3600
+      },
+      "nativeWindow": {
+        "start": 0,
+        "cutoff": 2760,
+        "workEnd": 2820,
+        "cleanupEnd": 3480,
+        "purgeEnd": 3600
+      },
+      "paymentWorkEnd": 2760,
+      "openingCompleted": 30,
+      "actualRecoveryStart": 60,
+      "nativeAdmission": 720,
+      "derivedLatestAdmission": 960
+    },
+    "nativeBoundaryChecks": [
+      {
+        "atOffset": 60,
+        "status": "ADMITTED"
+      },
+      {
+        "atOffset": 959,
+        "status": "ADMITTED"
+      },
+      {
+        "atOffset": 960,
+        "status": "PACKET_AUTH_ADMISSION"
+      },
+      {
+        "atOffset": 1020,
+        "status": "PACKET_AUTH_ADMISSION"
+      }
+    ],
+    "slowQualification": {
+      "finishedAtOffset": 1020,
+      "refusal": "PACKET_AUTH_ADMISSION",
+      "stage": "NATIVE_APPROVAL",
+      "nativeApprovalCallbackCalls": 0,
+      "nativeDispatchCalls": 0,
+      "recoveryCleanupCalls": 1
+    },
+    "allStageStartsEqualS": true,
+    "forcedQualificationWaitSeconds": 0,
+    "fixedPurge": true,
+    "openingVerifiedSynthetic": true,
+    "restorationGuaranteed": false,
+    "providerCalls": 0,
+    "credentialReads": 0,
+    "sqlCalls": 0,
+    "browserOpens": 0,
+    "liveSchedule": false,
+    "sourceSha256": {
+      "evidence/APP-013/p08-connected-packet-20261110/packet.py": "7d6fb757e0db1c718a717a007fd96cf093b0c95edbe228f0aad83ec1a5d484ec",
+      "evidence/APP-013/p08-connected-packet-20261110/connected_launcher.py": "d56d81f415aafa2cb90c8f2369504b159ce8be6d51339a059ec4f00b7aa1e49b",
+      "evidence/APP-013/p08-native-entry-local-20261101/source/authority.py": "07405d9de848fe8f620cff798cbc61944b5b30257cae58229a49fcc3f409cf9b",
+      "evidence/APP-013/p08-live-binder-local-20261029/source/coordinator.py": "829b0ea7d693862c78a4febd774229ba7c101fba059462476101059bdd86b8ab",
+      "evidence/APP-013/p08-https-output-category-local-20261029/source/qualification_launch.py": "79204c1705a16ea8861b8f3d674706889f4a9db3a89933786cd041dd804d6ce4",
+      "evidence/APP-013/p08-https-output-category-local-20261029/source/composed_qualification.py": "42c91024ad5fc2aae74a190127aebc4f964fb97b46d5674eab8eaaea602e092a",
+      "evidence/APP-013/p08-narrow-access-check-local-20261101/source/access_check.py": "720842849586323e06eef0993578b0a7e10d35bcf6266d68628228242c5be9d9"
+    },
+    "limitations": [
+      "Synthetic opening/qualification evidence is not current provider evidence or owner authority",
+      "Actual cached expiry must be strictly after fixedP; no credentials were read",
+      "Full external resource-pin validation and all-latency restoration are not established"
+    ]
+  },
+  "cleanupAudit": {
+    "status": "SOURCE_AUDIT_COMPLETE_BOUNDED_ATTEMPT_NOT_GUARANTEED_RESTORATION",
+    "runtimeResourceCount": 17,
+    "runtimeResourceKinds": {
+      "secretVersions": 7,
+      "secretBindings": 7,
+      "identity": 1,
+      "tag": 1,
+      "databaseRole": 1
+    },
+    "independentReserveSeconds": 660,
+    "activePhaseSecondsAtLatestStart": 656,
+    "freshHiddenInputAllowanceSeconds": 120,
+    "completedMainAcceptedAuthSecondsBeforeInputAndLocal": 522,
+    "completedMainAdditionalAuthCloseoutSecondsBeforeInputAndLocal": 554,
+    "partialMainPendingKeyCreateSecondsBeforeInputAndLocal": 915,
+    "admissionSecondsBeforeIntent": {
+      "key": 122,
+      "ordinaryRuntimeOrIam": 16,
+      "identity": 53
+    },
+    "budgetsSharedAcrossMainAndIndependent": true,
+    "issuedOrAmbiguousMutationRetried": false,
+    "cleanAuthProofRequiresMainAccountEndpointObservation": true,
+    "unknownContainmentMayRemain": true,
+    "sourceSha256": {
+      "evidence/APP-013/p08-key-correction-20261110/binding.py": "02c8ba41a789fc92090dcf04130360dd7a35ca77a407117e7852ae3a47209cbb",
+      "evidence/APP-013/p08-restoration-local-20261028/source/restore.py": "a0bf4bc90cca0bd52935915d710ccb44e065dd3deed841a12ab49cb3ac4a1cb9",
+      "evidence/APP-013/p08-live-binder-local-20261029/source/coordinator.py": "829b0ea7d693862c78a4febd774229ba7c101fba059462476101059bdd86b8ab",
+      "evidence/APP-013/p08-native-entry-local-20261101/source/entry.py": "e8d17b3e0acafd5fbe5a45b2aea4b448c23b7424907f67ee66bcf7e0920deb77",
+      "evidence/APP-013/p08-native-entry-local-20261101/source/connected_payment.mjs": "88c7450054883aff70a93dec08671a1ec1d0a4b1ef38367c6b72f337a763bdc1",
+      "evidence/APP-013/p08-native-entry-local-20261101/source/native_child.mjs": "cad66a57e00a8e25b163eaf904bfe360edf233ca311c8daa99adac2eb93c4fda",
+      "evidence/APP-013/p08-connected-packet-20261110/packet.py": "7d6fb757e0db1c718a717a007fd96cf093b0c95edbe228f0aad83ec1a5d484ec"
+    },
+    "sourceReferences": [
+      "p08-key-correction-20261110/binding.py:19-36",
+      "p08-restoration-local-20261028/source/restore.py:74-96",
+      "p08-live-binder-local-20261029/source/coordinator.py:215-290",
+      "p08-native-entry-local-20261101/source/entry.py:742-834,930-973",
+      "p08-native-entry-local-20261101/source/connected_payment.mjs:148-167",
+      "p08-native-entry-local-20261101/source/native_child.mjs:121-129,139-151,183",
+      "p08-connected-packet-20261110/packet.py:267-332"
+    ],
+    "actualCleanupDuration": "UNKNOWN_NOT_MEASURED_BY_THIS_REVIEW"
+  },
+  "timingVerificationScriptSha256": "7360c6bdbabe5a5965dd13766c914b8265becd59e0c72f09dbe20a7ae5dae850",
+  "timingVerificationScript": "import sys,json,copy,datetime,uuid,shutil,hashlib\nfrom pathlib import Path\nfrom types import SimpleNamespace\nfrom unittest.mock import patch\nB=Path('/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery')\nsys.path.insert(0,str(B/'evidence/APP-013/p08-connected-packet-20261110'))\nimport packet,test_packet\nq=packet.q\nimport test_qualification_launch as recovery_fixture\nS=1900000000; source='ee98bc4891605ad8e96632f15553a7bafc50a4d3'\niso=lambda n:datetime.datetime.fromtimestamp(S+n,datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')\nwindow=lambda values:{k:iso(v) for k,v in values.items()}\nfixture=test_packet.PacketTests();fixture.setUp();rec=None;native_root=None\nrelative={'recoveryWindow':{'start':0,'cutoff':300,'readEnd':540,'closeoutEnd':840,'purgeEnd':3600},'qualificationWindow':{'start':0,'cutoff':720,'readEnd':1020,'closeoutEnd':1320,'purgeEnd':3600},'nativeWindow':{'start':0,'cutoff':2760,'workEnd':2820,'cleanupEnd':3480,'purgeEnd':3600},'paymentWorkEnd':2760,'openingCompleted':30,'actualRecoveryStart':60,'nativeAdmission':720}\ntry:\n rf=recovery_fixture.BindingRecoveryTests();rf.raw=recovery_fixture.database_raw();recover=rf.envelope(S)\n recover.update(version=2,nativeOperationId=str(uuid.uuid4()),qualificationId=fixture.spec['qualificationId'],paymentAccountSha256=fixture.cap.e['paymentAccountSha256'],sourceCommit=source)\n recover['window']=window(relative['recoveryWindow']);rf.seal(recover)\n rec=q.BindingRecoveryCapability(recover,clock=lambda:S+60);rec.root.mkdir(mode=0o700)\n q.model.reserve(rec.root/'recovery-result.json',{'operationId':recover['operationId'],'sourceCommit':source,'scopeSha256':rec.hash,'startedAt':S+60,'status':'HANDOFF_RETAINED','failure':None,'residuals':[],'liveObserved':False})\n cap=q.BindingRecoveryCapability(recover,mode='handoff',clock=lambda:S+60)\n spec=copy.deepcopy(fixture.spec);spec.update(nativePurpose='NATIVE_AUTH_QUALIFICATION_ONLY',recoveryId=recover['operationId'],prospectiveOperationId=recover['nativeOperationId'],sourceCommit=source)\n spec['window']=window(relative['qualificationWindow']);spec['prospectiveWindow']=window(relative['nativeWindow']);spec['paymentWorkEnd']=iso(2760)\n result={'sourceCommit':source,'exitCode':0,'cliReserved':1,'cacheReserved':1,'executorRemoved':True,'decisionCommit':'c'*40,'reservation':'owner-signin-20500101-tr99','status':'VALID_THROUGH_CUTOFF','validThrough':iso(3600),'completedAt':S+30,'localResiduals':[],'onTime':True,'leaderReaped':True,'groupAbsent':True,'configurationUnchanged':True}\n decision={'owner':'Debynyhan Banks','decision':'APPROVE_TR1_CREDENTIAL_RENEWAL_SDK_RETRY_CACHE_AND_CLEANUP','externalActionAuthorized':True,'sourceCommit':source,'reservation':result['reservation'],'validThrough':result['validThrough'],'connectedSession':{'recoveryId':spec['recoveryId'],'qualificationId':spec['qualificationId'],'nativeOperationId':spec['prospectiveOperationId'],'purgeEnd':iso(3600)}}\n raw=json.dumps(result).encode();spec['opening']={'receipt':{'commit':'d'*40,'path':'APP013_P08_TR99_CLOSEOUT_20500101.json','sha256':q.model.digest(raw)},'decisionPath':'APP013_P08_TR99_DECISION_20500101.json'}\n original=q.current_module;authority=original('authority')\n def committed(repo,commit,path):\n  if commit=='d'*40:return raw\n  if commit=='c'*40:return json.dumps(decision).encode()\n  raise AssertionError('No real committed evidence access intended')\n with patch.object(authority,'committed',side_effect=committed),patch.object(q,'current_module',side_effect=lambda name:authority if name=='authority' else original(name)):\n  qe=packet.construct_values(spec,fixture.values,'we_synthetic',cap)\n  opening=packet.verify_recovered_auth_opening(spec,cap)\n candidate={**fixture.t.e['qualification'],'operationId':recover['nativeOperationId'],'scopeSha256':q.model.digest(qe['nativeScope']),'qualifiedUntil':iso(3480)}\n native=packet.native_envelope(qe,candidate,'NATIVE_AUTH_QUALIFICATION_ONLY');native['execution']='PROOF_ONLY'\n native['decision']={'decision':'APPROVE_LOCAL_AUTH_QUALIFICATION_PROOF','scopeSha256':q.model.digest(native)}\n native_root=cap.native_root;native_root.mkdir(mode=0o700)\n test_packet.Capability(native,native_root,clock=lambda:S+720)\n admitted=packet.auth_timing(native,S+720);boundary=[]\n for offset in (60,959,960,1020):\n  try:packet.auth_timing(native,S+offset);boundary.append({'atOffset':offset,'status':'ADMITTED'})\n  except Exception as error:boundary.append({'atOffset':offset,'status':str(error)})\n assert admitted['latestAdmission']==S+960\n assert boundary[-2:]==[{'atOffset':960,'status':'PACKET_AUTH_ADMISSION'},{'atOffset':1020,'status':'PACKET_AUTH_ADMISSION'}]\n clock=[S+60];sequence_cap=SimpleNamespace(external=True,mode='handoff',e={'qualificationId':spec['qualificationId']},root=rec.root,input_root=Path('/private/tmp/synthetic-timing-input'),native_root=native_root,clock=lambda:clock[0])\n def qualify(args):clock[0]=S+1020\n def read(path):\n  if path.name=='guard-envelope.json':return {}\n  return {'status':'CURRENT_EVIDENCE_OBSERVED','liveObserved':True,'failure':None,'residuals':[],'candidate':candidate}\n with patch.object(q,'handoff_recovered_bindings'),patch.object(q,'current_main',side_effect=qualify),patch.object(q,'private_json',side_effect=read),patch.object(q,'BindingRecoveryCapability'),patch.object(q,'closeout_binding_recovery',return_value={'rawFilesAbsent':True,'resourceCloseout':{'verified':True}}) as cleanup,patch.object(packet,'run_native_and_close') as dispatch:\n  from unittest.mock import Mock\n  approve=Mock()\n  try:packet.execute_connected(sequence_cap,qe,approve,'NATIVE_AUTH_QUALIFICATION_ONLY')\n  except Exception as error:\n   assert str(error)=='PACKET_AUTH_ADMISSION';assert error.connected_stage=='NATIVE_APPROVAL'\n  else:raise AssertionError('Slow qualification incorrectly advanced')\n  approve.assert_not_called();dispatch.assert_not_called();cleanup.assert_called_once()\n relative['derivedLatestAdmission']=960\n files=['evidence/APP-013/p08-connected-packet-20261110/packet.py','evidence/APP-013/p08-connected-packet-20261110/connected_launcher.py','evidence/APP-013/p08-native-entry-local-20261101/source/authority.py','evidence/APP-013/p08-live-binder-local-20261029/source/coordinator.py','evidence/APP-013/p08-https-output-category-local-20261029/source/qualification_launch.py','evidence/APP-013/p08-https-output-category-local-20261029/source/composed_qualification.py','evidence/APP-013/p08-narrow-access-check-local-20261101/source/access_check.py']\n output={'status':'SYNTHETIC_TIMING_READINESS_PASS','sourceCommit':source,'command':'/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14 -I -B /private/tmp/post-tc1-timing-readiness.py','methods':['BindingRecoveryCapability(PROOF_ONLY)','packet.construct_values','coordinator.authorize','authority.validate_payment(PROOF_ONLY)','composed_qualification.authorize','packet.verify_recovered_auth_opening','packet.composed_auth_timing','native Capability(PROOF_ONLY)','packet.auth_timing','packet.execute_connected with inert I/O adapters'],'relativeWitnessSeconds':relative,'nativeBoundaryChecks':boundary,'slowQualification':{'finishedAtOffset':1020,'refusal':'PACKET_AUTH_ADMISSION','stage':'NATIVE_APPROVAL','nativeApprovalCallbackCalls':0,'nativeDispatchCalls':0,'recoveryCleanupCalls':1},'allStageStartsEqualS':True,'forcedQualificationWaitSeconds':0,'fixedPurge':True,'openingVerifiedSynthetic':opening['openingVerified'],'restorationGuaranteed':False,'providerCalls':0,'credentialReads':0,'sqlCalls':0,'browserOpens':0,'liveSchedule':False,'sourceSha256':{p:hashlib.sha256((B/p).read_bytes()).hexdigest() for p in files},'limitations':['Synthetic opening/qualification evidence is not current provider evidence or owner authority','Actual cached expiry must be strictly after fixedP; no credentials were read','Full external resource-pin validation and all-latency restoration are not established']}\n path=Path('/private/tmp/post-tc1-timing-readiness.json');path.write_text(json.dumps(output,indent=2)+'\\n');path.chmod(0o600)\n print(json.dumps({'status':output['status'],'latestAdmission':960,'edges':boundary,'slowQualificationNativeDispatchCalls':0,'forcedQualificationWaitSeconds':0,'record':str(path)}))\nfinally:\n if native_root is not None:shutil.rmtree(native_root,ignore_errors=True)\n if rec is not None:shutil.rmtree(rec.root,ignore_errors=True)\n fixture.doCleanups()\n",
+  "historicalTestEvidence": {
+    "path": "APP013_P08_TC1_LOCAL_COMPLETION_20261128.json",
+    "sha256": "f23bb69d609d840259c40e0a1b8c55db5904a3830d0fc172c3074f98a0dc50ff",
+    "focusedTests": 226,
+    "rerunThisPreparation": false
+  },
+  "currentLiveFacts": "UNKNOWN",
+  "backendRuntimeChanged": false,
+  "credentialsRead": false,
+  "providerCalls": 0,
+  "realSqlQueries": 0,
+  "browserOpened": false,
+  "paymentPerformed": false,
+  "executorOrAttemptCreated": false,
+  "calendarStartBound": false,
+  "attendanceRequested": false,
+  "scopeDeviation": false,
+  "documentationChecks": {
+    "status": "PASS",
+    "verifiedAt": "2026-11-28T08:40:17.239734+00:00",
+    "frozenBaseline": "PASS",
+    "crossRepositoryConsistency": "PASS",
+    "backendWrapper": "PASS",
+    "architecture": "PASS",
+    "governanceTestsPassed": 25,
+    "whitespaceBoth": "PASS",
+    "runtimeTestsRerun": false,
+    "backendCommands": [
+      "SIGNMONS_GOVERNANCE_REPO='/Users/debynyhanbanks/Web Projects/signmons-governance-r08-recovery' node scripts/check-governance-baseline.mjs",
+      "npm run arch:check",
+      "git diff --check"
+    ],
+    "governanceCommands": [
+      "node scripts/frozen-baseline-check.mjs",
+      "SIGNMONS_BACKEND_REPO='/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery' node scripts/docs-consistency-check.mjs",
+      "node --test scripts/frozen-baseline-check.test.mjs scripts/execution-placement.test.mjs scripts/intelligence-alignment-check.test.mjs",
+      "git diff --check"
+    ]
+  },
+  "acceptedMilestones": "1A/1B/2A/2B =4/8;3A OPEN;R1newlyclosed0/27"
+}
