@@ -1,0 +1,415 @@
+{
+  "section": "APP-013/3A/P08",
+  "status": "R69_UNBOUND_QUALIFICATION_ONLY_LOCAL_READINESS_PASS_NOT_AUTHORIZED",
+  "recordedAt": "2026-11-28T12:41:52.315610+00:00",
+  "sourceCommit": "ee98bc4891605ad8e96632f15553a7bafc50a4d3",
+  "governanceBaseline": "b058ea0262c9db5bfa36676f72f2c38541a56992",
+  "authority": {
+    "ownerReadyReported": true,
+    "openingApproval": false,
+    "startTimeBound": false,
+    "qualificationApproved": false,
+    "nativeApproved": false,
+    "paymentAuthorized": false
+  },
+  "artifacts": {
+    "APP013_P08_R69_TIMING_TEMPLATE_20261128.json": "601d2ca016bb08628ee5300331d7edc2befee566af3cec188b049ec6765e9a4c",
+    "APP013_P08_R69_COMMAND_REVIEW_20261128.json": "eb1ded100f062aa1cab501c4a8da6a92b2c3157dc7eec07c76e96f310ab7388e",
+    "APP013_P08_TR42_OWNER_SIGNIN_PROPOSAL_20261128.md": "4688777486de564607259b7c61ce74c6600ecaad5f28a3c8295f183b49a67094",
+    "APP013_P08_R69_OPENING_REVIEW_20261128.md": "f627bd58089826400622dc165e6a3c10fcb7c5563598f9ff4c911f0c33bedebf",
+    "APP013_P08_POST_TC1_READINESS_20261128.json": "922a96ff3cf88037254775ab0b7513dbda1143bb458ae0dbc876ee62a1b0dae2",
+    "APP013_P08_TC1_LOCAL_COMPLETION_20261128.json": "f23bb69d609d840259c40e0a1b8c55db5904a3830d0fc172c3074f98a0dc50ff"
+  },
+  "signinPreflight": {
+    "section": "APP-013/3A/P08",
+    "status": "TR42_LOCAL_PREFLIGHT_VERIFIED_NO_AUTHORITY",
+    "verifiedAt": "2026-11-28T12:36:26.826226+00:00",
+    "sourceCommit": "ee98bc4891605ad8e96632f15553a7bafc50a4d3",
+    "timingTemplateSha256": "601d2ca016bb08628ee5300331d7edc2befee566af3cec188b049ec6765e9a4c",
+    "proposalSha256": "4688777486de564607259b7c61ce74c6600ecaad5f28a3c8295f183b49a67094",
+    "signInTemplateSha256": "73686cddb7f5f70332155432d82f2d87c325c4a95a4a0bd1c8b717a00866084d",
+    "commandReviewSha256": "eb1ded100f062aa1cab501c4a8da6a92b2c3157dc7eec07c76e96f310ab7388e",
+    "sdkFilesVerified": 59,
+    "sdkFiles": {
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/bin/gcloud": "8628b9f971d07c5e52fd2c6d469ee4a0940c75eb51820d628c3dd068981bd260",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis.py": "0110f091c7c86a18ce4e917c66cb0134c6a62a3cfc44c868bb6606c971f055fa",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/core/config.py": "fc06f07045d0a8054355f904fa4aac12151a1d1e08c6c366620b405c4ee98f52",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/creds.py": "f16148370c895672dcbacaeedd8ce14cedc9019ac665ca7019771a7a1b8021a9",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py": "5e2ad1e9565f101fe347302a4085494079dfa6ceead73c2240e2a15f8318733c",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/cloudresourcemanager/projects_api.py": "e08ed37b822d57201fab09c7d117e31fa5ab2fbb840f600cbdf87402e6370823",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/cloudresourcemanager/projects_util.py": "519d73fc95eb9fc2487c02e1dbda807a4d95557485a78efe254dd7e5821d8d23",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/iam/util.py": "c937f8fba54e954e6df7c36b05c15c3481cf3f491e9deb8836ca236c6f4f1ace",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/command_lib/auth/auth_util.py": "f9991b16c3207c4765f3cac9bd4dfbccb743820e793f53b68bc14fe74cbf7418",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/store.py": "1fcb3b856eb1584491d6f6160983808ca1f3574e44de86f53ac8d86f882e2a6f",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/core/properties.py": "840eb7f6f5adcb68d94c5ca3607e0436d40e9d26e09c9338e83307af36c974ba",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/cloudresourcemanager/v1/cloudresourcemanager_v1_client.py": "ea183ad692a17115f1babfda15ffd979ef6dde658fdd90b6d2074f45850f239e",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/iam/v1/iam_v1_client.py": "304f81531be1e0f8bb05c726aec9a6053f80a11cec1867245231f6276ad0ebcf",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/surface/auth/list.py": "5e6effb9cd500b77f157ca4ee2480ac2dbaa6a03a89a56c1bb9b8fd8c08f2c9f",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/surface/auth/print_access_token.py": "9cbe0e02400cc72bfe14aa75638f831b44585e7e9b957b53725ae094107b3cf4",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/surface/iam/roles/describe.py": "cd591253cbe70fcf12f3145cca2667203fa606b9842afa344de24c6c2eac3739",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/surface/projects/describe.py": "2a52b106094f65f096b7f0a971583483ef3186c8768f3bdd5c076836acb4787b",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py": "7d87e9abe3cb3813b22b34d640bf21d8c3572e7efeb04e3543a24495f749e1f0",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/third_party/google/auth/_exponential_backoff.py": "ab103d7a4f34ac1928011c741209766f5325614d03fa940d56a80299487e9605",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/third_party/google/oauth2/_client.py": "39230518c764aad2d8d2d178be6b49571b81c2ef386543f310869ad017071417",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/third_party/google/oauth2/credentials.py": "2d08c8e5eed77bcadbbcb3086e491e1a2fa2962cb66ee32832d50461c25d8e00",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/third_party/google/oauth2/reauth.py": "0a4903a6fefdffc4ac403ae8980c88dec6b6952dd5fccedb499a961598f7d27c",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/billing/billing_client.py": "1ebf0662c545c9365d0ca51430de0ea8f3887b73f2db750a7c55ca729b6a8f54",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/billing/utils.py": "ac438b4b9d1618bce82229de60b17c7995049b08e04ffe9a150374cac7f6def4",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/secrets/api.py": "44f4c1dd801fc060d93b5f150908af0d19ed52bc89ce52abbb7a922818ab3cd8",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/api_enablement.py": "771dd7387c07e5bb52a30e242207f52048bb0ddc06e72ec377d5d79ff0b7add2",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis_internal.py": "26a4abfb4c327e8c38b376e30bec4c9eb0398f6dc25f86ab578852dc6a7a6e37",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/exceptions.py": "a1c6b6d13f7e0a4501a1163a744e0ab5fe696a223059af6a4015c65026519d06",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/exceptions.py": "5e6ed013f00dac280a379e5ee99adc2b02ba2b0ff3dd7c98073b603378113673",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/command_lib/run/connection_context.py": "84cb229a9db64ed61e67c709c512482a244ed858fd064661fa4fad0e3675348f",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/command_lib/run/serverless_operations.py": "b7ca29dcc6eb77739965267323e842da3d55c76f28b65cf4f9baefc1d02ada02",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/core/console/console_io.py": "29250aaf0ab0a605140ad42a49d678c8be6d07dbeda40ac0f5faecd87a6f47f9",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/transport.py": "c3852175a2fe84eed488179a0ec91cd1d92776f089d42ab203874064397f00a9",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/transports.py": "78eff63f3201c88cc5bf9080a78a6f14d4d5dac03f5ffbf646be47a7d5638c2d",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/core/log.py": "b503b94fbc53943de0ec4a7ca93bc02fa764d35553f658a92e93a38fd4427b3e",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/core/requests.py": "bc7877f53c5795ecb5cc9658f59704c5e8118740a737a65a4c9a4700362168b8",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/core/transport.py": "c8b699f047f31c78d245fea040aa4e18dbec18802edce03b64ffc6be720d6d65",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/cloudbilling/v1/cloudbilling_v1_client.py": "e83788966dd73e85e772ab35e80de675954ace72bf5c13ea143c9c203f4c3129",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/surface/billing/accounts/describe.py": "b70d7c049d9323ba92c75fed147dbcbcd2ba9ea503300b0b4d8f456b9cb3f03f",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/surface/billing/projects/describe.py": "c153cc30fcdc331ecc1e7ee978f1a40384fe3fac8b4254d556ba20f39bed65d0",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/surface/config/list.py": "2d357f67bc0dd418768442652adc7257fc1aa923d3a8e0b7795930bbc9427e3c",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/surface/iam/service_accounts/describe.py": "e44a2fa74029ddf2205212c4ae5242abb396926389d01e7df0b7dc84c2ad9e97",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/surface/iam/service_accounts/get_iam_policy.py": "d462fb1e622d70dc1396b9834a3e73cfd42253939fc8d38f018a0a2b368493cb",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/surface/projects/get_iam_policy.py": "8c4b508f7d8edb65469e8379960af9fab9ad111b56b9867a4c1657598fa3b5b5",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/surface/run/revisions/describe.py": "8359ec90fc94143ce1a38ca96643dc80ffaa9a47c44cb1bc09e177129a65d390",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/surface/run/services/describe.py": "a845123bfef78944a64225b6cbf04d7334792241e817166e9be32f07dbc4b89c",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/surface/secrets/get_iam_policy.py": "8abd46e74184b8f105eac05123f1236987f3e617bf86e425d18e4009b214bb5f",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/surface/secrets/versions/describe.py": "c794b72f40428065a27c141830fdfa8df2eff2096dffe6497e7cfd02c657eddf",
+      "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14": "2cbb3ee843d8abcf93ed35bb9102391f18eefccb03d47908547bd8db67bc395c",
+      "/opt/homebrew/bin/gcloud": "8628b9f971d07c5e52fd2c6d469ee4a0940c75eb51820d628c3dd068981bd260",
+      "/opt/homebrew/opt/postgresql@16/bin/psql": "e67224e11a8d29541c02528b814b17c0757da7d961f16c58003561e20263528d",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/surface/auth/login.py": "c18aa067c11869f2ecb57427dfe50c4cf7ca27164d4e2d3cd219adc08c0cb999",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/auth/util.py": "3aabd710e4e5733ddc935ee23746b20b62f0516aaf610c6cb811570abd4cb069",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/flow.py": "2969c14764c8f0ec8bc1b4862e086f557815f6efbdfb5a4552954ad5b3152de6",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/core/credentials/google_auth_credentials.py": "10bfbd2989207638461fde3544fb7619d7430980999e8b47e00c37c45441b413",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/googlecloudsdk/command_lib/util/check_browser.py": "e0fcfe555c74736e1474a33a719eaf52060a8709431acb0ac402c54e4be50b28",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/third_party/google_auth_oauthlib/flow.py": "cc79b28b1453eeaa59146fc664c70a30b2d2809151d7ff4c86d02e2a1f6abd91",
+      "/opt/homebrew/Caskroom/gcloud-cli/583.0.0/google-cloud-sdk/lib/third_party/google_auth_oauthlib/helpers.py": "c89b0455952ffb4893da3828068fa58c0bd6cdeebe9edbe31fdd91e97a75a9b1",
+      "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/lib/python3.14/webbrowser.py": "006f62a80308c86408c06ac4425a834a0d7d687841be5257ab5db74d4976a016"
+    },
+    "checks": [
+      {
+        "anchor": "2026-11-28T12:45:00Z",
+        "result": "PASS_ACTUAL_SUPERVISOR_PREFLIGHT_INERT_AUTHORITY",
+        "actualRenewalPreflight": {
+          "status": "PREFLIGHT_VERIFIED_NO_OPERATION_RESERVED",
+          "sourceCommit": "ee98bc4891605ad8e96632f15553a7bafc50a4d3",
+          "dependencyMapping": {
+            "p08-exact-role-provisioning-local-20261028/source/role_provisioner.py": {
+              "historical": "e1fbc15d95450da7662db684e2cfe6f063c8a60fd7c8243053e5431fc3f973f9",
+              "current": "e1fbc15d95450da7662db684e2cfe6f063c8a60fd7c8243053e5431fc3f973f9",
+              "changed": false
+            },
+            "p08-native-entry-local-20261101/source/authority.py": {
+              "historical": "763dd24f5dac70b3ec87d350ab2efc6d0fe110aae9f261708aba8c54e481e365",
+              "current": "07405d9de848fe8f620cff798cbc61944b5b30257cae58229a49fcc3f409cf9b",
+              "changed": true
+            },
+            "p08-restoration-local-20261028/source/restore.py": {
+              "historical": "a0bf4bc90cca0bd52935915d710ccb44e065dd3deed841a12ab49cb3ac4a1cb9",
+              "current": "a0bf4bc90cca0bd52935915d710ccb44e065dd3deed841a12ab49cb3ac4a1cb9",
+              "changed": false
+            },
+            "p08-role-contract-local-20261029/source/composed_qualification.py": {
+              "historical": "2c2f9603cb71957239816f4942549be8277c446cbcc5f2b7bae1f139fd552df4",
+              "current": "2c2f9603cb71957239816f4942549be8277c446cbcc5f2b7bae1f139fd552df4",
+              "changed": false
+            },
+            "p08-role-contract-local-20261029/source/qualification_launch.py": {
+              "historical": "76722d3265cda655b6b2433bc83d3bbcee06c12c6d0f66c07cad9fe2ae2e7e18",
+              "current": "76722d3265cda655b6b2433bc83d3bbcee06c12c6d0f66c07cad9fe2ae2e7e18",
+              "changed": false
+            }
+          },
+          "sdkFilesVerified": 51,
+          "credentialStoresRead": false,
+          "providerCalls": 0
+        },
+        "connectedSession": {
+          "recoveryId": "4153143b-aaa3-4db5-98bb-fde132813703",
+          "qualificationId": "edf2bc0f-8cdc-41e4-865c-d74aeb651bf7",
+          "nativeOperationId": "34ed4e4f-3074-42a3-a42c-50e444566555",
+          "purgeEnd": "2026-11-28T13:45:00Z"
+        },
+        "attendanceThrough": "2026-11-28T14:00:00Z",
+        "constantsOnlyReversible": true,
+        "derivedSupervisorSha256": "e9f53b19c58093dcc71e0f2c9621f946d060520a5739014317843c6857fb44bd",
+        "chromeFirstEnvironment": true,
+        "nonsecretConfigurationSnapshot": "PASS",
+        "renewalRootAbsent": true,
+        "authorityDisposition": "IN_MEMORY_FIXTURE_ONLY_NO_COMMITTED_APPROVAL"
+      },
+      {
+        "anchor": "2026-11-28T13:30:00Z",
+        "result": "PASS_ACTUAL_SUPERVISOR_PREFLIGHT_INERT_AUTHORITY",
+        "actualRenewalPreflight": {
+          "status": "PREFLIGHT_VERIFIED_NO_OPERATION_RESERVED",
+          "sourceCommit": "ee98bc4891605ad8e96632f15553a7bafc50a4d3",
+          "dependencyMapping": {
+            "p08-exact-role-provisioning-local-20261028/source/role_provisioner.py": {
+              "historical": "e1fbc15d95450da7662db684e2cfe6f063c8a60fd7c8243053e5431fc3f973f9",
+              "current": "e1fbc15d95450da7662db684e2cfe6f063c8a60fd7c8243053e5431fc3f973f9",
+              "changed": false
+            },
+            "p08-native-entry-local-20261101/source/authority.py": {
+              "historical": "763dd24f5dac70b3ec87d350ab2efc6d0fe110aae9f261708aba8c54e481e365",
+              "current": "07405d9de848fe8f620cff798cbc61944b5b30257cae58229a49fcc3f409cf9b",
+              "changed": true
+            },
+            "p08-restoration-local-20261028/source/restore.py": {
+              "historical": "a0bf4bc90cca0bd52935915d710ccb44e065dd3deed841a12ab49cb3ac4a1cb9",
+              "current": "a0bf4bc90cca0bd52935915d710ccb44e065dd3deed841a12ab49cb3ac4a1cb9",
+              "changed": false
+            },
+            "p08-role-contract-local-20261029/source/composed_qualification.py": {
+              "historical": "2c2f9603cb71957239816f4942549be8277c446cbcc5f2b7bae1f139fd552df4",
+              "current": "2c2f9603cb71957239816f4942549be8277c446cbcc5f2b7bae1f139fd552df4",
+              "changed": false
+            },
+            "p08-role-contract-local-20261029/source/qualification_launch.py": {
+              "historical": "76722d3265cda655b6b2433bc83d3bbcee06c12c6d0f66c07cad9fe2ae2e7e18",
+              "current": "76722d3265cda655b6b2433bc83d3bbcee06c12c6d0f66c07cad9fe2ae2e7e18",
+              "changed": false
+            }
+          },
+          "sdkFilesVerified": 51,
+          "credentialStoresRead": false,
+          "providerCalls": 0
+        },
+        "connectedSession": {
+          "recoveryId": "4153143b-aaa3-4db5-98bb-fde132813703",
+          "qualificationId": "edf2bc0f-8cdc-41e4-865c-d74aeb651bf7",
+          "nativeOperationId": "34ed4e4f-3074-42a3-a42c-50e444566555",
+          "purgeEnd": "2026-11-28T14:30:00Z"
+        },
+        "attendanceThrough": "2026-11-28T14:45:00Z",
+        "constantsOnlyReversible": true,
+        "derivedSupervisorSha256": "cc45f5a0cb2bd92e39dd407c2f5d9fdfca37d87f3e27d1389249b450b995bde5",
+        "chromeFirstEnvironment": true,
+        "nonsecretConfigurationSnapshot": "PASS",
+        "renewalRootAbsent": true,
+        "authorityDisposition": "IN_MEMORY_FIXTURE_ONLY_NO_COMMITTED_APPROVAL"
+      }
+    ],
+    "functions": [
+      "derived unchanged Chrome-first supervisor.preflight()",
+      "packet.renewal_preflight() with fixed endpoint clock and inert committed decision reads",
+      "actual current and committed source/SDK/runtime/configuration guards from renewal_preflight",
+      "SDK/browser union SHA256 comparison"
+    ],
+    "checkInvocation": {
+      "cwd": "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery",
+      "python": "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14 -I -B -",
+      "inMemoryOnly": true
+    },
+    "sourceHashes": {
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/packet.py": "7d6fb757e0db1c718a717a007fd96cf093b0c95edbe228f0aad83ec1a5d484ec",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-connected-packet-20261110/connected_launcher.py": "d56d81f415aafa2cb90c8f2369504b159ce8be6d51339a059ec4f00b7aa1e49b",
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-https-output-category-local-20261029/source/qualification_launch.py": "79204c1705a16ea8861b8f3d674706889f4a9db3a89933786cd041dd804d6ce4"
+    },
+    "executorCreated": false,
+    "attemptCreated": false,
+    "credentialStoresRead": false,
+    "providerCalls": 0,
+    "realSqlQueries": 0,
+    "browserOpened": false,
+    "liveCredentialCoverage": "UNKNOWN",
+    "scopeDeviation": false
+  },
+  "packetPreflight": {
+    "status": "R69_UNBOUND_LOCAL_READINESS_PASS",
+    "sourceCommit": "ee98bc4891605ad8e96632f15553a7bafc50a4d3",
+    "actualOpeningAuthorization": false,
+    "liveReady": false,
+    "command": "/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14 -I -B /private/tmp/r69-packet-readiness.py",
+    "anchorChecks": [
+      {
+        "anchor": "2026-11-28T12:45:00Z",
+        "externalRecoveryConstructor": "PASS_SYNTHETIC_DECISION_ONLY",
+        "actualPrepare": "PASS_NONSECRET_CONFIG_METADATA_ONLY",
+        "publicSpec": "PASS",
+        "nativeAdmission720": "PASS",
+        "latestNativeAdmissionOffset": 960,
+        "missingOpeningRefusal": "PACKET_OPENING_REFERENCE",
+        "lateOffsetsRefused": [
+          960,
+          1020
+        ],
+        "fixedPurge": "2026-11-28T13:45:00Z"
+      },
+      {
+        "anchor": "2026-11-28T13:30:00Z",
+        "externalRecoveryConstructor": "PASS_SYNTHETIC_DECISION_ONLY",
+        "actualPrepare": "PASS_NONSECRET_CONFIG_METADATA_ONLY",
+        "publicSpec": "PASS",
+        "nativeAdmission720": "PASS",
+        "latestNativeAdmissionOffset": 960,
+        "missingOpeningRefusal": "PACKET_OPENING_REFERENCE",
+        "lateOffsetsRefused": [
+          960,
+          1020
+        ],
+        "fixedPurge": "2026-11-28T14:30:00Z"
+      }
+    ],
+    "commandInterface": "connected_launcher.py SPEC --recover-first RECOVERY_ENVELOPE",
+    "separateRecoveryDispatch": false,
+    "openingCallbackBeforeRecoveryIO": true,
+    "nativePurpose": "NATIVE_AUTH_QUALIFICATION_ONLY",
+    "nativeFullConstructorProof": {
+      "status": "REUSED_SAME_SOURCE_AND_EXACT_RELATIVE_WINDOWS",
+      "record": "/private/tmp/post-tc1-timing-readiness.json",
+      "syntheticPrivateInputsOnly": true
+    },
+    "prospectivePathsAbsentBeforeAndAfter": {
+      "/private/tmp/p08-binding-request-4153143b-aaa3-4db5-98bb-fde132813703": true,
+      "/private/tmp/p08-binding-recovery-4153143b-aaa3-4db5-98bb-fde132813703": true,
+      "/private/tmp/p08-current-input-edf2bc0f-8cdc-41e4-865c-d74aeb651bf7": true,
+      "/private/tmp/p08-current-external-edf2bc0f-8cdc-41e4-865c-d74aeb651bf7": true,
+      "/private/tmp/p08-coordinator-34ed4e4f-3074-42a3-a42c-50e444566555": true,
+      "/private/tmp/p08-public-review-4153143b-aaa3-4db5-98bb-fde132813703": true,
+      "/private/tmp/p08-terminal-launch-4153143b-aaa3-4db5-98bb-fde132813703.command": true,
+      "/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery/evidence/APP-013/p08-narrow-access-check-local-20261101/renewals/20261128-tr42": true
+    },
+    "hashes": {
+      "/Users/debynyhanbanks/Web Projects/signmons-governance-r08-recovery/APP013_P08_R69_TIMING_TEMPLATE_20261128.json": "601d2ca016bb08628ee5300331d7edc2befee566af3cec188b049ec6765e9a4c",
+      "/Users/debynyhanbanks/Web Projects/signmons-governance-r08-recovery/APP013_P08_R69_COMMAND_REVIEW_20261128.json": "eb1ded100f062aa1cab501c4a8da6a92b2c3157dc7eec07c76e96f310ab7388e",
+      "/Users/debynyhanbanks/Web Projects/signmons-governance-r08-recovery/APP013_P08_TR42_OWNER_SIGNIN_PROPOSAL_20261128.md": "4688777486de564607259b7c61ce74c6600ecaad5f28a3c8295f183b49a67094",
+      "/Users/debynyhanbanks/Web Projects/signmons-governance-r08-recovery/APP013_P08_R67_PROPOSED_DISPATCHER_20261127.py": "750700ebcd9797e0fb4fef554b169c9bcc612734b22bd41b6d8aa7f2eb1be04d",
+      "/Users/debynyhanbanks/Web Projects/signmons-governance-r08-recovery/APP013_P08_CHROME_FIRST_SIGNIN_TEMPLATE_20261126.py": "73686cddb7f5f70332155432d82f2d87c325c4a95a4a0bd1c8b717a00866084d"
+    },
+    "actualPrepare": "PASS; existing sdk_environment and active-config metadata only; token read, reservation and recovery I/O guarded against invocation",
+    "providerCalls": 0,
+    "credentialReads": 0,
+    "sqlCalls": 0,
+    "browserOpens": 0,
+    "limitations": [
+      "Fresh owner approval and one-time boundS still required",
+      "Successful verified TR42 closeout reference is deliberately absent; actual opening check refuses",
+      "Qualification and native approvals remain separate",
+      "Slow sign-in or qualification safely misses the next admission; no extension or retry",
+      "No current resource-pin qualification or restoration guarantee"
+    ]
+  },
+  "terminalDelivery": {
+    "status": "EXACT_EXISTING_FUNCTION_PASS",
+    "verifiedAt": "2026-11-28T12:38:02.443755+00:00",
+    "sourceSha256": "750700ebcd9797e0fb4fef554b169c9bcc612734b22bd41b6d8aa7f2eb1be04d",
+    "commandReviewSha256": "eb1ded100f062aa1cab501c4a8da6a92b2c3157dc7eec07c76e96f310ab7388e",
+    "fullCommandPreserved": true,
+    "hiddenInputOrTerminalCall": false,
+    "actualOsascriptCalls": 0,
+    "shortReferenceUnder256Bytes": true,
+    "expiredBeforeWriteAndDispatch": true,
+    "temporaryProofRemoved": true,
+    "newRuntimeImplementation": false
+  },
+  "verificationScript": {
+    "path": "/private/tmp/r69-packet-readiness.py",
+    "sha256": "b4afd47139059160f8bcb18ea913bd7015be36c0dff11aef7e0a07f6eb8a752b",
+    "source": "import sys,json,copy,datetime,hashlib,os\nfrom pathlib import Path\nfrom unittest.mock import patch\nB=Path('/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery');G=Path('/Users/debynyhanbanks/Web Projects/signmons-governance-r08-recovery')\nsys.path.insert(0,str(B/'evidence/APP-013/p08-connected-packet-20261110'))\nimport packet\nq=packet.q;a=q.current_module('authority')\ntemplate_path=G/'APP013_P08_R69_TIMING_TEMPLATE_20261128.json';command_path=G/'APP013_P08_R69_COMMAND_REVIEW_20261128.json';proposal_path=G/'APP013_P08_TR42_OWNER_SIGNIN_PROPOSAL_20261128.md'\ntemplate=json.loads(template_path.read_text());command=json.loads(command_path.read_text());source=template['sourceCommit']\nassert source=='ee98bc4891605ad8e96632f15553a7bafc50a4d3'\nids=template['recoveryFields'];timing=template['timing']\nroots=[Path('/private/tmp/p08-binding-request-'+ids['operationId']),Path('/private/tmp/p08-binding-recovery-'+ids['operationId']),Path('/private/tmp/p08-current-input-'+ids['qualificationId']),Path('/private/tmp/p08-current-external-'+ids['qualificationId']),Path('/private/tmp/p08-coordinator-'+ids['nativeOperationId']),Path('/private/tmp/p08-public-review-'+ids['operationId']),Path(command['ownedCommandPath']),B/'evidence/APP-013/p08-narrow-access-check-local-20261101/renewals/20261128-tr42']\nassert not any(os.path.lexists(p) for p in roots)\nchecks=[]\nfor anchor in (timing['earliestAnchor'],timing['latestAnchor']):\n S=q.model.timestamp(anchor)\n iso=lambda n:datetime.datetime.fromtimestamp(S+n,datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')\n bound=lambda name:{k:iso(v) for k,v in timing[name].items()}\n e=copy.deepcopy(ids);e['window']=bound('recovery')\n review={'owner':'Debynyhan Banks','decision':'APPROVE_EXACT_P08_BINDING_INPUT_RECOVERY','externalReadAuthorized':True,'scopeSha256':q.model.digest(e)}\n raw=json.dumps(review).encode();e['decision']={'commit':'f'*40,'path':'APP013_P08_BINDING_RECOVERY_OPERATION_20261128.json','sha256':q.model.digest(raw)}\n def read_commit(repo,commit,path):\n  if repo==G:\n   assert commit=='f'*40 and path==e['decision']['path'];return raw\n  assert repo==B and commit==source\n  return a.committed(repo,commit,path)\n cap=q.BindingRecoveryCapability(e,clock=lambda:S+60,read_commit=read_commit)\n acl=q.current_module('acl')\n def forbidden(*args,**kwargs):raise AssertionError('FORBIDDEN_READINESS_IO')\n with patch.object(acl,'read_cached_token',side_effect=forbidden),patch.object(q.model,'reserve',side_effect=forbidden),patch.object(q,'BindingRecoveryIO',side_effect=forbidden):\n  cap.prepare()\n assert cap.config is not None and cap.observed is False\n spec=copy.deepcopy(template['connectedSpecFields']);spec.update(window=bound('qualification'),prospectiveWindow=bound('native'),paymentWorkEnd=iso(timing['paymentWorkEndOffset']),opening={})\n packet.validate_public_spec(spec)\n envelope=packet.auth_spec_envelope(spec)\n composed=packet.composed_auth_timing(envelope,cap.times,{k:q.model.timestamp(v) for k,v in spec['window'].items()},now=S+720)\n assert composed['latestAdmission']==S+960 and composed['purgeEnd']==S+3600\n try:packet.verify_auth_opening(spec,cap)\n except Exception as error:\n  assert str(error)=='PACKET_OPENING_REFERENCE';refusal=str(error)\n else:raise AssertionError('Missing opening unexpectedly accepted')\n for delta in (960,1020):\n  try:packet.auth_timing(envelope,S+delta)\n  except Exception as error:assert str(error)=='PACKET_AUTH_ADMISSION'\n  else:raise AssertionError('Late admission unexpectedly accepted')\n checks.append({'anchor':anchor,'externalRecoveryConstructor':'PASS_SYNTHETIC_DECISION_ONLY','actualPrepare':'PASS_NONSECRET_CONFIG_METADATA_ONLY','publicSpec':'PASS','nativeAdmission720':'PASS','latestNativeAdmissionOffset':960,'missingOpeningRefusal':refusal,'lateOffsetsRefused':[960,1020],'fixedPurge':iso(3600)})\nassert command['connectedArgv'][0]==packet.PYTHON and command['connectedArgv'][-2]=='--recover-first'\nassert command['connectedArgv'][-1]==str(roots[0]/'envelope.json')\nassert '--terminal-consent' not in command['connectedArgv'] and command['separateRecoveryDispatch'] is False\nassert command['nativePurpose']=='NATIVE_AUTH_QUALIFICATION_ONLY' and command['nativeExternalDecision']=='APPROVE_EXACT_P08_AUTH_QUALIFICATION'\ndispatcher=G/command['terminalDeliverySource'];assert hashlib.sha256(dispatcher.read_bytes()).hexdigest()==command['terminalDeliverySourceSha256']\nsignin=G/'APP013_P08_CHROME_FIRST_SIGNIN_TEMPLATE_20261126.py';assert hashlib.sha256(signin.read_bytes()).hexdigest()=='73686cddb7f5f70332155432d82f2d87c325c4a95a4a0bd1c8b717a00866084d'\nprior=json.loads(Path('/private/tmp/post-tc1-timing-readiness.json').read_text());assert prior['sourceCommit']==source and prior['status']=='SYNTHETIC_TIMING_READINESS_PASS'\nassert prior['relativeWitnessSeconds']['recoveryWindow']==timing['recovery'] and prior['relativeWitnessSeconds']['qualificationWindow']==timing['qualification'] and prior['relativeWitnessSeconds']['nativeWindow']==timing['native']\nassert not any(os.path.lexists(p) for p in roots)\nresult={'status':'R69_UNBOUND_LOCAL_READINESS_PASS','sourceCommit':source,'actualOpeningAuthorization':False,'liveReady':False,'command':'/opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/python3.14 -I -B /private/tmp/r69-packet-readiness.py','anchorChecks':checks,'commandInterface':'connected_launcher.py SPEC --recover-first RECOVERY_ENVELOPE','separateRecoveryDispatch':False,'openingCallbackBeforeRecoveryIO':True,'nativePurpose':'NATIVE_AUTH_QUALIFICATION_ONLY','nativeFullConstructorProof':{'status':'REUSED_SAME_SOURCE_AND_EXACT_RELATIVE_WINDOWS','record':'/private/tmp/post-tc1-timing-readiness.json','syntheticPrivateInputsOnly':True},'prospectivePathsAbsentBeforeAndAfter':{str(p):True for p in roots},'hashes':{str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in (template_path,command_path,proposal_path,dispatcher,signin)},'actualPrepare':'PASS; existing sdk_environment and active-config metadata only; token read, reservation and recovery I/O guarded against invocation','providerCalls':0,'credentialReads':0,'sqlCalls':0,'browserOpens':0,'limitations':['Fresh owner approval and one-time boundS still required','Successful verified TR42 closeout reference is deliberately absent; actual opening check refuses','Qualification and native approvals remain separate','Slow sign-in or qualification safely misses the next admission; no extension or retry','No current resource-pin qualification or restoration guarantee']}\npath=Path('/private/tmp/r69-packet-readiness.json');path.write_text(json.dumps(result,indent=2)+'\\n');path.chmod(0o600);print(json.dumps({'status':result['status'],'record':str(path),'prospectivePathsAbsent':len(roots),'anchorChecks':len(checks)}))\n"
+  },
+  "historicalEvidence": {
+    "tc1FocusedTests": 226,
+    "rerunForThisReview": false,
+    "nativeConstructorAndComposedTiming": "Reused same ee98bc4 source and exact relative windows from POST_TC1; not claimed as a fresh full native test"
+  },
+  "independentReview": {
+    "reviewer": "workflow_audit",
+    "result": "No blocking inconsistency; fresh recovery proof separated from reused native proof; not-before S is operator-enforced"
+  },
+  "cleanupLimitations": {
+    "attemptSeconds": 660,
+    "activePhaseSeconds": 656,
+    "completedMainMaximaBeforeInput": [
+      522,
+      554
+    ],
+    "freshHiddenInputMaxSeconds": 120,
+    "partialMainPendingKeyApproxBeforeInput": 915,
+    "guaranteedRestoration": false,
+    "details": "Incomplete main authoritative proof is not repaired into accepted authentication by independent containment. Missing process-exit/owned-child absence proof blocks independent overlap."
+  },
+  "currentLiveFacts": {
+    "credentials": "UNKNOWN",
+    "effectivePermissions": "UNKNOWN",
+    "providerBaselines": "UNKNOWN",
+    "databaseRoleAndSession": "UNKNOWN",
+    "protectedJobAuthentication": "UNKNOWN",
+    "paymentObserved": false
+  },
+  "owners": {
+    "implementation": "Exact preparation, committed binding and source/authority/time recheck before launch; bounded supervision and evidence",
+    "owner": "Fresh external decisions, hidden input, no-overlap/availability confirmation and acceptance"
+  },
+  "nextObservableResult": "Only after exact opening approval and binding: company sign-in coverage/closeout, then conditional binding recovery",
+  "changes": {
+    "backendRuntime": false,
+    "providerCalls": 0,
+    "credentialReads": 0,
+    "realSqlQueries": 0,
+    "browserOpened": false,
+    "attemptOrExecutorCreated": false,
+    "scopeDeviation": false
+  },
+  "documentationChecks": [
+    {
+      "name": "backend baseline",
+      "command": "SIGNMONS_GOVERNANCE_REPO='/Users/debynyhanbanks/Web Projects/signmons-governance-r08-recovery' node scripts/check-governance-baseline.mjs",
+      "exitCode": 0,
+      "output": "docs-consistency-check passed\n"
+    },
+    {
+      "name": "governance frozen",
+      "command": "node scripts/frozen-baseline-check.mjs",
+      "exitCode": 0,
+      "output": "frozen-baseline-check passed\n"
+    },
+    {
+      "name": "governance consistency",
+      "command": "SIGNMONS_BACKEND_REPO='/Users/debynyhanbanks/Web Projects/signmons-backend-r08-recovery' node scripts/docs-consistency-check.mjs",
+      "exitCode": 0,
+      "output": "docs-consistency-check passed\n"
+    },
+    {
+      "name": "governance tests",
+      "command": "node --test scripts/frozen-baseline-check.test.mjs scripts/execution-placement.test.mjs scripts/intelligence-alignment-check.test.mjs",
+      "exitCode": 0,
+      "output": "✔ current pointer and handoff have properly placed status and ordered steps (3.947375ms)\n✔ prior swapped-row/step failure is rejected without touching repository files (3.842375ms)\n✔ missing or duplicated backend rows fail (4.778542ms)\n✔ missing or nonsequential next actions fail (4.45375ms)\n✔ current checkout passes pinned baseline (40.814875ms)\n✔ automatic-admission amendment changes exactly two frozen sections and leaves ticket intact (2.325667ms)\n✔ old operator requirement cannot replace adopted automatic admission (1.117ms)\n✔ core-release amendment changes exactly the approved two frozen sections (8.725042ms)\n✔ core-release proposal refuses malformed data and missing or duplicated targets (4.1615ms)\n✔ core-release amendment retains consent, delivery, privacy, audit and downstream safeguards (7.861125ms)\n✔ amendment does not permit weakening service or downstream authority (2.762708ms)\n✔ malformed amendment and missing or duplicate targets fail closed (0.174333ms)\n✔ changing acceptance text is rejected without editing repositories (0.872667ms)\n✔ changing section dependency is rejected (1.091041ms)\n✔ new section cannot silently increase denominator (0.938625ms)\n✔ reordering or renaming section is rejected (0.79ms)\n✔ missing and duplicate protected section refuse (2.400334ms)\n✔ ticket criterion mutation is rejected, checkbox evidence change permitted (2.079875ms)\n✔ status/evidence outside frozen requirements can be updated (0.802708ms)\n✔ missing pinned history fails closed (0.105458ms)\n✔ missing immutable core-release proposal fails closed even when older pins are available (53.04ms)\n✔ current synchronized dependency order passes (2.92225ms)\n✔ blank Next and stale backend fail (0.326583ms)\n✔ out-of-order queue and pointer fail (0.436917ms)\n✔ full acceptance promotion can advance to the remaining suffix (0.311875ms)\nℹ tests 25\nℹ suites 0\nℹ pass 25\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 273.54375\n"
+    },
+    {
+      "name": "backend architecture",
+      "command": "node scripts/architecture-check.mjs",
+      "exitCode": 0,
+      "output": "architecture-check passed\n"
+    },
+    {
+      "name": "backend whitespace",
+      "command": "git diff --check",
+      "exitCode": 0,
+      "output": ""
+    },
+    {
+      "name": "governance whitespace",
+      "command": "git diff --check",
+      "exitCode": 0,
+      "output": ""
+    }
+  ],
+  "acceptedMilestones": {
+    "accepted": [
+      "1A",
+      "1B",
+      "2A",
+      "2B"
+    ],
+    "acceptedCount": 4,
+    "denominator": 8,
+    "currentSection": "3A OPEN",
+    "r1NewlyClosed": "0/27"
+  }
+}
