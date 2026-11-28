@@ -1,0 +1,15 @@
+{
+  "owner": "Debynyhan Banks",
+  "decision": "APPROVE_TC2_LOCAL_TAG_TIMING_CORRECTION_AND_TESTS",
+  "response": "Approve TC2 local correction and tests",
+  "recordedAt": "2026-11-28T13:13:13.990853+00:00",
+  "proposalCommit": "5f149d6",
+  "proposalSha256": "25d8175cb547420598ea750b4ca818d70ef9fe8a574c8bf47a099b0a08bfecf0",
+  "sourceCommit": "ee98bc4891605ad8e96632f15553a7bafc50a4d3",
+  "scope": "Four existing source/test files and eight current mechanical manifests exactly as proposal",
+  "externalActionAuthorized": false,
+  "credentialAccessAuthorized": false,
+  "providerCallsAuthorized": false,
+  "paymentAuthorized": false,
+  "deadline": null
+}
