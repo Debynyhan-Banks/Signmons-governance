@@ -42,3 +42,7 @@ Browser behavior and real database/provider access remain excluded. The HTTPS co
 Implementer owns local derivation, exact contract tests, independent review and evidence. Owner retains material scope decisions, future external actions/hidden inputs and 3A acceptance. Observable local finish: the real application contract passes the stated safe tests, and the timing issue has a concrete source-derived disposition rather than another invitation to attend Terminal. This does not establish live authentication/payment. Remove the new test and restore these documentation edits to roll back; no provider rollback is required.
 
 Accepted 1A/1B/2A/2B remain4/8;3A OPEN;R1newlyclosed0/27. No scope deviation within the owner's local follow-up instruction. Further material changes remain prospective, not authorized by this card alone.
+
+## Item5 disposition — November28 follow-up
+
+Completed source-derived whole-path timing review in APP013_P08_TC1_TIMING_CLOSEOUT_REVIEW_20261128.md/json. The concrete prospective amendment includes child/setup limits, actual wait bounds, composed admission and safe normal-to-independent cleanup handoff. Existing cleanup-intent ordering and detached-child ownership prevent a timeout-only fix. No new runtime change or live readiness is claimed. The owner decision is required for the material phase/supervision change; all previously completed proof remains intact.

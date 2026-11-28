@@ -1,0 +1,85 @@
+# APP-013 / 3A / P08 — TC1 complete local timing and closeout correction review
+
+**PROPOSED; NOT IMPLEMENTED OR EXTERNALLY AUTHORIZED.** Source: backend `4470996ad3c94467c752dddbeb7cd66cdfbaedf1`; governance `020e985756477058fa91b86eacbbe164e695a693`. This completes item5 of `APP013_P08_TIMING_AUTH_LOCAL_CARD_20261128.md`: source-derived whole-path timing disposition and one concrete correction review. Three independent, read-only reviews covered native timing, application/process cleanup, and opening-to-purge sequencing. Their findings are consolidated here rather than starting another attended attempt.
+
+## Criterion and current evidence
+
+Existing 3A acceptance remains the same admitted job, authenticated protected access, owner Sandbox payment, authentic matching event and cleared application payment gate, cleanup and owner acceptance. TC1 advances the authentication prerequisite by making the existing AQ1 attempt and its cleanup schedulable and diagnosable. It creates no acceptance section and does not replace the customer workflow with a diagnostic.
+
+The application contract and native HTTPS correction are already locally verified at4470996; their previous results are not new tests in this review. R67's actual authentication cause and R68's actual SQL cause remain UNKNOWN. These timing findings are source-confirmed defects/constraints, not proof of either historical cause. Current credentials, provider access, deployed behavior and authentication remain UNKNOWN.
+
+## Findings that change the repair
+
+| Boundary | Inspected current source | Consequence |
+| --- | --- | --- |
+| Native authentication and preflight child | `native-entry/source/handoff.py:138-159` | Version2 receives the remaining work phase; it has no smaller authentication-purpose duration. |
+| Stream disposal | `native-entry/source/transports.mjs:100`, `connected_payment.mjs:318` | An awaited cancellation can hang and conceal the primary bounded failure. |
+| Qualification HTTPS | `https-output-category/source/qualification_launch.py:585-597` | Response close lies outside the request's15second wall deadline. |
+| Endpoint input and approval reads | `connected-packet/connected_launcher.py:38`; `packet.py:45-65` | Hidden destination input and individual Git reads lack a deadline. Checking the clock between calls cannot bound a hung call. |
+| Native setup | `native_io.py:109-115`; `entry.py:590-648` | Hidden input can consume the phase; the earlier480second setup assumption is not enforced or justified as a success bound. |
+| Main and independent cleanup | inherited `live-binder/source/coordinator.py:201-256`; native `entry.py:676-699` | Both consume the same cleanupEnd. The660second interval is not currently protected exclusively for the independent invocation. |
+| Cleanup intention ordering | inherited `coordinator.py:225-246` | A deadline failure after saving an intention can make untouched cleanup actions look consumed. Merely shortening the main cleanup deadline would strand these actions. An ambiguous issued mutation must still never be retried. |
+| Outer process supervision | `packet.py:67-80`; `native_io.py:307-309` | The packet waits without a timeout; Node children start separate sessions. Killing the parent process group does not prove those children are gone. |
+| Signals during normal cleanup | inherited `coordinator.py:196-199` | Original signal handlers are restored before normal cleanup, so a supervisor signal can terminate cleanup instead of requesting an orderly stop. |
+| Credential coverage | `narrow-access-check/source/access_check.py:278-321`; qualification `:1363-1369` | Cached expiry must be strictly after fixed purge. SDK refresh permission does not waive that gate. Moving sign-in earlier cannot justify resetting purge to a fresh hour afterward. |
+
+Paths above abbreviate existing `evidence/APP-013/p08-...` directories; the companion JSON records exact file hashes. No raw provider payload or credential was inspected.
+
+## Source-derived allowances, with their limits
+
+The AQ1 child successful path has27 semantic operations:12 HTTPS and15 CLI/database operations, plus a10second authorization subprocess. Conservative sizing `12*10 +15*5 +10 =205seconds` supports a proposed **240second enforced attempt cap**, leaving35seconds for local processing. Streaming reads/cancellation require an outer wall cap; operation counts alone do not provide it.
+
+Parent work after settling can use21 HTTPS requests and100seconds of polling, including the API-enablement branch. With the repaired8second native request and separately counted1second disposal, this is289seconds. Add240 for authentication,30 for existing readback and up to4 for owned-process reaping:563seconds. A proposed **600second AQ1 post-settle admission reserve** leaves37seconds. Ordinary payment retains960seconds; IAM settling stays420seconds.
+
+Pre-settle source allowances total approximately606seconds before password/local work:241 initial preflight,304 runtime/IAM setup,31 additional identity observations and30 proposed preflight-child allowance. A proposed **780second AQ1 setup attempt cap** includes120seconds for hidden input and allowance for the full45second identity interval. This is a finite attempt budget, not a guarantee that every provider call succeeds at its maximum latency.
+
+Normal cleanup is larger than prior assumptions: approximately803seconds after successful authentication,835 after an authentication failure, and875 for the pending-key-create branch, before local processing. Independent cleanup after completed normal cleanup is approximately522seconds, or554 with an additional authentication-closeout child, before hidden input/local processing. Partial-main recovery can require approximately915seconds at all maximum operation durations. **The existing660second cleanup allowance is a finite attempt horizon, not guaranteed restoration under every maximum-latency combination.** Do not represent this review as proof that all maxima fit in one hour.
+
+## One requested local amendment
+
+Authorize the following finite changes together. They are local implementation/tests only; no attendance or live authority is requested.
+
+1. **Enforce the existing waits at their actual boundaries.** Bound qualification response disposal, native stream cancellation, endpoint entry and Git approval reads by their applicable existing phase/cutoff. Retain primary safe error classifications. No additional provider request or retry; local disposal must not consume a child-request reservation. Native leftover disposal remains at most1second. Refuse conflicting signal timers before I/O and restore handlers. Endpoint input must finish before qualification admission; approval absence/timeouts never become consent.
+2. **Give AQ1 finite child/setup budgets.** Use240seconds for its `--run`,30 for its `--payment-preflight`,780 for setup including at most120 for its hidden prompt, and600 for its post-settle admission. Clamp each to the earlier actual phase/deadline using monotonic elapsed time and wall-clock rollback checks. Preserve30second closeout/readback caps, ordinary-payment timing and all call/mutation ceilings. Preserve cutoff as an entry rule, not a newly invented per-request authority rule.
+3. **Protect sequencing of normal and independent cleanup.** For AQ1, normal cleanup must yield by existing workEnd, leaving the existing660second cleanup interval to the independent invocation. Reserve the bounded action/readback before its intention. A pre-dispatch budget refusal must stop that cleanup sequence before consuming remaining, never-issued intentions. Cover the clock-expiry gap after intention persistence but before transport dispatch: only positive no-dispatch evidence may leave that first action eligible for independent cleanup; ambiguity remains consumed. Persist the stopped work result/journal so a cleanup deadline does not skip the existing result-writing path. Keep already-issued or ambiguous actions consumed; no retry or assumption of restoration. Preserve current ownership/readback predicates and immutable attempted-action evidence. Use explicit phase-aware admission before new cleanup intentions and actual I/O clamps; a top-level timer alone is insufficient.
+4. **Supervise the attended parent safely.** Keep its Terminal input/output interface. Request cooperative abort while the native parent still owns its detached children; keep appropriate handlers active through normal cleanup. Close/reap owned child groups before reporting closure. Independent cleanup may start only after the prior native process has exited, its owned-child closure is verified for this operation/source, and its own attempt is unconsumed. Closure proof must bind the exact operation, source, parent start and complete owned-child inventory to verified group absence and parent exit; an empty in-memory set is insufficient. Reserve time for reaping, acknowledgment publication and parent exit before workEnd. Refuse independent dispatch if its full unchanged660second interval is no longer available. If closure cannot be proved, retain containment UNKNOWN and do not overlap cleanup or automatically replay it. Never infer descendant absence from a parent-group kill. Bind any bounded closure acknowledgment to the existing operation/journal; do not create a general process-management service.
+5. **Use one composed admission calculation.** Reuse the actual recovery, qualification, native and payment windows and their validators. Keep absolute purge P fixed from the approved opening. Successful sign-in must cover P; actual recovery R must satisfy `R<P` and `P-R<=3600`. Do not reset P or read credentials again locally. For AQ1, derive latest native admission from the earlier applicable cutoff/forward deadline minus the implemented setup, settling and post-settle budgets (`780+420+600=1800seconds`). This covers forward work only; it is not a normal-cleanup or restoration guarantee. Readiness must also report the relevant residual-state cleanup bound and any inability to establish it; do not promote such a packet to execution-ready. Recheck actual time after qualification, before asking for native approval, after approval and before dispatch/first mutation. Narrow approval waiting to the derived earlier deadline; never slide it. A slow prior stage closes and stops. A fast successful stage need not wait for its cleanupEnd. Opening checks must consume the existing successful sign-in result; the packet must not claim it checks fields it has not received.
+
+This changes internal phase allocation and supervision, beyond the earlier card's approved three-file repair. It does not extend one-hour custody, credential coverage,420second settling,660second independent allowance,120second purge reserve, provider scope or success criteria. It does not guarantee a successful live run. If a complete tested packet cannot fit these unchanged constraints, report that blocker before requesting attendance; do not weaken the check or invent another schedule.
+
+## Exact implementation surface and reuse
+
+Existing backend files permitted:
+
+- `evidence/APP-013/p08-native-entry-local-20261101/source/`: `entry.py`, `authority.py`, `handoff.py`, `native_io.py`, `transports.mjs`, `connected_payment.mjs`, `test_entry.py`, `test_child_cleanup.py`, `test_transports.mjs`, `test_connected_payment.mjs`.
+- `evidence/APP-013/p08-connected-packet-20261110/`: `packet.py`, `connected_launcher.py`, `test_packet.py`.
+- `evidence/APP-013/p08-https-output-category-local-20261029/source/`: `qualification_launch.py`, `test_qualification_launch.py`.
+- `evidence/APP-013/p08-live-binder-local-20261029/source/`: `coordinator.py`, `test_coordinator.py`, `test_closeout.py`. Any hook must default to existing behavior outside AQ1; no replacement coordinator.
+- Derived source-hash values in the nine current native/qualification/key/connected manifests already listed in the timing card, plus exact current source-pin references required by those changed files. Do not alter source-guard algorithms, frozen-baseline anchors or historical manifests. Enumerate and independently review any additional current pin dependency before editing it; it must be a mechanical hash update, not another behavioral file.
+
+Reuse NativeIO's owned child handles, group termination/reaping, monotonic timers, Handoff journal merge and existing coordinator/qualification cleanup. The SQ1 supervisor is a reference only: its DEVNULL/stdin and descendant assumptions are not compatible drop-in implementations for attended native execution. Preserve unrelated backend AGENTS.md and historical untracked files.
+
+Governance changes: this review/decision/completion evidence and concise current entries in the pointer, board, handoff and APP-013 ticket. No new stage, acceptance denominator, deployment or external packet is included.
+
+## Finite verification and finish
+
+- Before coding: reconcile actual filenames/current pins, complete the decision record, run frozen baseline and cross-repository consistency. No implementation from this proposal without the owner's decision.
+- Exercise actual Handoff and harmless owned processes: purpose selection, clamp boundaries, real hanging child with detached descendant, timeout, interruption, output loss, journal merge after closure and no manufactured authentication proof.
+- Exercise real cancellation/deadline seams with synthetic responses and harmless Git/input substitutes: failure plus hanging cancel retains the primary failure; successful read plus unconfirmed disposal cannot succeed; cutoff/rollback/timer restoration; no extra reservation/request.
+- Exercise native normal-to-independent cleanup: expiry between resources and immediately before/after mutation intent; never-issued work remains available once, ambiguous issued work is not retried, independent attempt remains consumed after interruption, and a live/unknown previous child blocks overlapping cleanup.
+- Use a local PTY with fictional input only to prove the attended supervisor preserves prompts and no-echo hidden entry. Leave an unrelated sentinel process alive while verifying owned descendants are gone. No real Terminal attendance, browser, SQL server or PostgreSQL fixture.
+- Drive the actual connected sequence with an advancing synthetic clock: fast success; prior stages finishing just before/at/after derived admission; slow failure using cleanup without next-stage dispatch; inadequate credential horizon; unchanged fixed purge; no deadline rebinding or automatic retry. Keep AQ1 payment/webhook-enable/browser denial tests and ordinary-purpose regressions.
+- Run only inspected applicable suites in the listed files, excluding every PostgreSQL/browser fixture. Record exact test classes/commands before dispatch; no broad test discovery. Run current and committed dependency guards, backend architecture, governance baseline/consistency, the three required governance test files and both whitespace checks. Independently review the final diff and actual process evidence.
+- Observable local finish: one source-bound, tested duration/cleanup implementation and a composed validator that either admits a genuinely compatible synthetic fast path or rejects an incompatible packet before attendance. A fixture never certifies current provider access. Only after this finish may a separately approved, fresh authentication qualification be prepared.
+
+Rollback restores changed local files/pins; no provider rollback exists because this amendment authorizes no external activity. A failure of ownership, cleanup or baseline tests blocks completion; do not weaken them to obtain a pass.
+
+## Handoff and decision
+
+Completed: full source timing inventory, three independent reviews, prior application contract/native HTTPS repair, and this consolidated prospective correction. Remaining: owner decision on the phase/supervision amendment, its implementation/proof, then current authentication evidence and the unchanged payment/event/gate/acceptance work. Implementer owns the local correction and readiness proof; owner retains material policy decisions, all external approvals and hidden inputs.
+
+**Decision requested:** approve TC1 local timing and cleanup correction and its synthetic/process/PTY tests within this card. No deadline or owner attendance. No credential/cache read, sign-in, provider call, real database, payment, deployment, merge, customer message or support contact is included.
+
+The approval boundary comes from AGENTS.md: “Do not change scope, dependencies, section IDs/counts, acceptance criteria or substantial prerequisites without explicit owner approval BEFORE implementation.” The earlier timing card also explicitly withheld a numerical reserve/phase-policy change. This review supplies the concrete result for that single decision; it does not authorize itself.
+
+Accepted1A/1B/2A/2B remain4/8;3A OPEN;R1newlyclosed0/27. **No scope deviation in this read-only review. Explicit prospective TC1 timing/cleanup amendment; not implemented.**
